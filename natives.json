@@ -70226,11 +70226,28 @@
 			"return_type": "BOOL"
 		},
 		"0x5AE99C571D5BBE5D": {
-			"name": "_0x5AE99C571D5BBE5D",
-			"jhash": "",
-			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"name": "TRIGGER_SCRIPT_EVENT",
+			"jhash": "0x54763B35",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "eventGroup"
+				},
+				{
+					"type": "int*",
+					"name": "args"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "int",
+					"name": "bit"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x078EBE9809CCD637": {
 			"name": "SHUTDOWN_LOADING_SCREEN",
