@@ -43069,7 +43069,7 @@
 			"return_type": "Any"
 		},
 		"0x472841A026D26D8B": {
-			"name": "_0x472841A026D26D8B",
+			"name": "_REMOTE_CHEAT_DETECTED",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
@@ -50202,7 +50202,7 @@
 			"return_type": "Any"
 		},
 		"0x5626D9D6810730D5": {
-			"name": "_0x5626D9D6810730D5",
+			"name": "_NETWORK_REPORT_MYSELF",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
