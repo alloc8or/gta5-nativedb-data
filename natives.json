@@ -431,7 +431,7 @@
 			"return_type": "float"
 		},
 		"0x749B023950D2311C": {
-			"name": "char* APP_GET_STRING",
+			"name": "APP_GET_STRING",
 			"jhash": "0x849CEB80",
 			"comment": "",
 			"params": [
@@ -440,7 +440,7 @@
 					"name": "property"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x607E8E3D3E4F9611": {
 			"name": "APP_SET_INT",
@@ -2082,14 +2082,14 @@
 			"return_type": "int"
 		},
 		"0xF6D733C32076AD03": {
-			"name": "char* GET_PLAYER_RADIO_STATION_NAME",
+			"name": "GET_PLAYER_RADIO_STATION_NAME",
 			"jhash": "0xD909C107",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xB28ECA15046CA8B9": {
-			"name": "char* GET_RADIO_STATION_NAME",
+			"name": "GET_RADIO_STATION_NAME",
 			"jhash": "0x3DF493BC",
 			"comment": "",
 			"params": [
@@ -2098,7 +2098,7 @@
 					"name": "radioStation"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xA571991A7FE6CCEB": {
 			"name": "GET_PLAYER_RADIO_STATION_GENRE",
@@ -9239,11 +9239,11 @@
 			"return_type": "void"
 		},
 		"0x906B778CA1DC72B6": {
-			"name": "char* DATAFILE_GET_FILE_DICT",
+			"name": "DATAFILE_GET_FILE_DICT",
 			"jhash": "0x86DDF9C2",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x83BCCE3224735F05": {
 			"name": "_0x83BCCE3224735F05",
@@ -9465,7 +9465,7 @@
 			"return_type": "float"
 		},
 		"0x3D2FD9E763B24472": {
-			"name": "char* _OBJECT_VALUE_GET_STRING",
+			"name": "_OBJECT_VALUE_GET_STRING",
 			"jhash": "0x942160EC",
 			"comment": "",
 			"params": [
@@ -9478,7 +9478,7 @@
 					"name": "key"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x46CD3CB66E0825CC": {
 			"name": "_OBJECT_VALUE_GET_VECTOR3",
@@ -9693,7 +9693,7 @@
 			"return_type": "float"
 		},
 		"0xD3F2FFEB8D836F52": {
-			"name": "char* _ARRAY_VALUE_GET_STRING",
+			"name": "_ARRAY_VALUE_GET_STRING",
 			"jhash": "0x93F985A6",
 			"comment": "",
 			"params": [
@@ -9706,7 +9706,7 @@
 					"name": "arrayIndex"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x8D2064E5B64A628A": {
 			"name": "_ARRAY_VALUE_GET_VECTOR3",
@@ -10670,7 +10670,7 @@
 			"return_type": "Vector3"
 		},
 		"0xA6E9C38DB51D7748": {
-			"name": "char* GET_ENTITY_SCRIPT",
+			"name": "GET_ENTITY_SCRIPT",
 			"jhash": "0xB7F70784",
 			"comment": "",
 			"params": [
@@ -10683,7 +10683,7 @@
 					"name": "script"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xD5037BA82E12416F": {
 			"name": "GET_ENTITY_SPEED",
@@ -21615,7 +21615,7 @@
 			"return_type": "Any"
 		},
 		"0xE1E258829A885245": {
-			"name": "char* _GET_SCALEFORM_MOVIE_NAME",
+			"name": "_GET_SCALEFORM_MOVIE_NAME",
 			"jhash": "0x516862EB",
 			"comment": "",
 			"params": [
@@ -21624,7 +21624,7 @@
 					"name": "scaleform"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xC3D0841A0CC546A6": {
 			"name": "_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT",
@@ -22315,11 +22315,11 @@
 			"return_type": "void"
 		},
 		"0xD422FCC5F239A915": {
-			"name": "char* _IS_LOADING_PROMPT_BEING_DISPLAYED",
+			"name": "_IS_LOADING_PROMPT_BEING_DISPLAYED",
 			"jhash": "0xB8B3A5D0",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xB2A592B04648A9CB": {
 			"name": "_0xB2A592B04648A9CB",
@@ -23708,7 +23708,7 @@
 			"return_type": "void"
 		},
 		"0x169BD9382084C8C0": {
-			"name": "char* _GET_TEXT_SUBSTRING",
+			"name": "_GET_TEXT_SUBSTRING",
 			"jhash": "0x34A396EE",
 			"comment": "",
 			"params": [
@@ -23725,10 +23725,10 @@
 					"name": "length"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xB2798643312205C5": {
-			"name": "char* _GET_TEXT_SUBSTRING_SAFE",
+			"name": "_GET_TEXT_SUBSTRING_SAFE",
 			"jhash": "0x0183A66C",
 			"comment": "",
 			"params": [
@@ -23749,10 +23749,10 @@
 					"name": "maxLength"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xCE94AEBA5D82908A": {
-			"name": "char* _GET_TEXT_SUBSTRING_SLICE",
+			"name": "_GET_TEXT_SUBSTRING_SLICE",
 			"jhash": "0xFA6373BB",
 			"comment": "",
 			"params": [
@@ -23769,10 +23769,10 @@
 					"name": "endPosition"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x7B5280EBA9840C72": {
-			"name": "char* _GET_LABEL_TEXT",
+			"name": "_GET_LABEL_TEXT",
 			"jhash": "0x95C4B5AD",
 			"comment": "",
 			"params": [
@@ -23781,7 +23781,7 @@
 					"name": "labelName"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xCC33FA791322B9D9": {
 			"name": "CLEAR_PRINTS",
@@ -23943,7 +23943,7 @@
 			"return_type": "BOOL"
 		},
 		"0x98C3CF913D895111": {
-			"name": "char* _0x98C3CF913D895111",
+			"name": "_0x98C3CF913D895111",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -23956,7 +23956,7 @@
 					"name": "length"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x801BD273D3A23F74": {
 			"name": "GET_LENGTH_OF_STRING_WITH_THIS_TEXT_LABEL",
@@ -23995,7 +23995,7 @@
 			"return_type": "int"
 		},
 		"0xD0EF8A959B8A4CB9": {
-			"name": "char* GET_STREET_NAME_FROM_HASH_KEY",
+			"name": "GET_STREET_NAME_FROM_HASH_KEY",
 			"jhash": "0x1E8E310C",
 			"comment": "",
 			"params": [
@@ -24004,7 +24004,7 @@
 					"name": "hash"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x1930DFA731813EC4": {
 			"name": "IS_HUD_PREFERENCE_SWITCHED_ON",
@@ -30072,11 +30072,11 @@
 			"return_type": "Any"
 		},
 		"0x24DA7D7667FD7B09": {
-			"name": "char* _GET_GLOBAL_CHAR_BUFFER",
+			"name": "_GET_GLOBAL_CHAR_BUFFER",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x4DCDF92BF64236CD": {
 			"name": "_0x4DCDF92BF64236CD",
@@ -34809,11 +34809,11 @@
 			"return_type": "int"
 		},
 		"0x8362B09B91893647": {
-			"name": "char* GET_ONSCREEN_KEYBOARD_RESULT",
+			"name": "GET_ONSCREEN_KEYBOARD_RESULT",
 			"jhash": "0x44828FB3",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x58A39BE597CE99CD": {
 			"name": "_0x58A39BE597CE99CD",
@@ -37355,7 +37355,7 @@
 			"return_type": "Any"
 		},
 		"0x20194D48EAEC9A41": {
-			"name": "char* PROCESS_CASH_GIFT",
+			"name": "PROCESS_CASH_GIFT",
 			"jhash": "0xC5D8B1E9",
 			"comment": "",
 			"params": [
@@ -37372,7 +37372,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x7C99101F7FCE2EE5": {
 			"name": "_0x7C99101F7FCE2EE5",
@@ -39532,11 +39532,11 @@
 			"return_type": "Any"
 		},
 		"0xA6FA3979BED01B81": {
-			"name": "char* _NETWORK_GET_BANK_BALANCE_STRING",
+			"name": "_NETWORK_GET_BANK_BALANCE_STRING",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x700AF71AE615E6DD": {
 			"name": "_0x700AF71AE615E6DD",
@@ -40137,11 +40137,11 @@
 	},
 	"NETWORK": {
 		"0xFCA9373EF340AC0A": {
-			"name": "char* _GET_ONLINE_VERSION",
+			"name": "_GET_ONLINE_VERSION",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x054354A99211EB96": {
 			"name": "NETWORK_IS_SIGNED_IN",
@@ -44109,7 +44109,7 @@
 			"return_type": "BOOL"
 		},
 		"0x426141162EBE5CDB": {
-			"name": "char* NETWORK_GET_GAMERTAG_FROM_HANDLE",
+			"name": "NETWORK_GET_GAMERTAG_FROM_HANDLE",
 			"jhash": "0xA18A1B26",
 			"comment": "",
 			"params": [
@@ -44118,7 +44118,7 @@
 					"name": "networkHandle"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xD66C9E72B3CC4982": {
 			"name": "_0xD66C9E72B3CC4982",
@@ -44201,7 +44201,7 @@
 			"return_type": "Player"
 		},
 		"0xC82630132081BB6F": {
-			"name": "char* NETWORK_MEMBER_ID_FROM_GAMER_HANDLE",
+			"name": "NETWORK_MEMBER_ID_FROM_GAMER_HANDLE",
 			"jhash": "0x62EF0A63",
 			"comment": "",
 			"params": [
@@ -44210,7 +44210,7 @@
 					"name": "networkHandle"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x0F10B05DDF8D16E9": {
 			"name": "NETWORK_IS_GAMER_IN_MY_SESSION",
@@ -44237,7 +44237,7 @@
 			"return_type": "void"
 		},
 		"0x7718D2E2060837D2": {
-			"name": "char* NETWORK_PLAYER_GET_NAME",
+			"name": "NETWORK_PLAYER_GET_NAME",
 			"jhash": "0xCE48F260",
 			"comment": "",
 			"params": [
@@ -44246,10 +44246,10 @@
 					"name": "player"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x4927FC39CD0869A0": {
-			"name": "char* NETWORK_PLAYER_GET_USERID",
+			"name": "NETWORK_PLAYER_GET_USERID",
 			"jhash": "0x4EC0D983",
 			"comment": "",
 			"params": [
@@ -44262,7 +44262,7 @@
 					"name": "userID"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x544ABDDA3B409B6D": {
 			"name": "NETWORK_PLAYER_IS_ROCKSTAR_DEV",
@@ -44339,7 +44339,7 @@
 			"return_type": "int"
 		},
 		"0xE11EBBB2A783FE8B": {
-			"name": "char* NETWORK_GET_FRIEND_NAME",
+			"name": "NETWORK_GET_FRIEND_NAME",
 			"jhash": "0x97420B6D",
 			"comment": "",
 			"params": [
@@ -44348,10 +44348,10 @@
 					"name": "friendIndex"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x4164F227D052E293": {
-			"name": "char* _NETWORK_GET_FRIEND_NAME_FROM_INDEX",
+			"name": "_NETWORK_GET_FRIEND_NAME_FROM_INDEX",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44360,7 +44360,7 @@
 					"name": "friendIndex"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x425A44533437B64D": {
 			"name": "NETWORK_IS_FRIEND_ONLINE",
@@ -46563,7 +46563,7 @@
 			"return_type": "int"
 		},
 		"0x9E23B1777A927DAD": {
-			"name": "char* GET_TIME_AS_STRING",
+			"name": "GET_TIME_AS_STRING",
 			"jhash": "0x8218944E",
 			"comment": "",
 			"params": [
@@ -46572,7 +46572,7 @@
 					"name": "time"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xF12E6CD06C73D69E": {
 			"name": "_0xF12E6CD06C73D69E",
@@ -49120,7 +49120,7 @@
 			"return_type": "void"
 		},
 		"0xCD67AD041A394C9C": {
-			"name": "char* _GET_CONTENT_USER_ID",
+			"name": "_GET_CONTENT_USER_ID",
 			"jhash": "0x8F3137E6",
 			"comment": "",
 			"params": [
@@ -49129,7 +49129,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x584770794D758C18": {
 			"name": "_0x584770794D758C18",
@@ -49196,7 +49196,7 @@
 			"return_type": "int"
 		},
 		"0x55AA95F481D694D2": {
-			"name": "char* _GET_CONTENT_ID",
+			"name": "_GET_CONTENT_ID",
 			"jhash": "0x331AEABF",
 			"comment": "",
 			"params": [
@@ -49205,10 +49205,10 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xC0173D6BFF4E0348": {
-			"name": "char* _GET_ROOT_CONTENT_ID",
+			"name": "_GET_ROOT_CONTENT_ID",
 			"jhash": "0x0E5E8E5C",
 			"comment": "",
 			"params": [
@@ -49217,7 +49217,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xBF09786A7FCAB582": {
 			"name": "_0xBF09786A7FCAB582",
@@ -49914,7 +49914,7 @@
 			"return_type": "BOOL"
 		},
 		"0x3448505B6E35262D": {
-			"name": "char* TEXTURE_DOWNLOAD_GET_NAME",
+			"name": "TEXTURE_DOWNLOAD_GET_NAME",
 			"jhash": "0xA40EF65A",
 			"comment": "",
 			"params": [
@@ -49923,7 +49923,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x8BD6C6DEA20E82C6": {
 			"name": "_0x8BD6C6DEA20E82C6",
@@ -53563,7 +53563,7 @@
 			"return_type": "BOOL"
 		},
 		"0x0499D7B09FC9B407": {
-			"name": "char* GET_CONTROL_INSTRUCTIONAL_BUTTON",
+			"name": "GET_CONTROL_INSTRUCTIONAL_BUTTON",
 			"jhash": "0x3551727A",
 			"comment": "",
 			"params": [
@@ -53580,10 +53580,10 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x80C2FD58D720C801": {
-			"name": "char* _0x80C2FD58D720C801",
+			"name": "_0x80C2FD58D720C801",
 			"jhash": "0x3EE71F6A",
 			"comment": "",
 			"params": [
@@ -53600,7 +53600,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x8290252FFF36ACB5": {
 			"name": "_0x8290252FFF36ACB5",
@@ -64781,7 +64781,7 @@
 			"return_type": "BOOL"
 		},
 		"0xDB4EACD4AD0A5D6B": {
-			"name": "char* GET_PEDHEADSHOT_TXD_STRING",
+			"name": "GET_PEDHEADSHOT_TXD_STRING",
 			"jhash": "0x76D28E96",
 			"comment": "",
 			"params": [
@@ -64790,7 +64790,7 @@
 					"name": "handle"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xF0DAEF2F545BEE25": {
 			"name": "_0xF0DAEF2F545BEE25",
@@ -66521,7 +66521,7 @@
 			"return_type": "Any"
 		},
 		"0x6D0DE6A7B5DA71F8": {
-			"name": "char* GET_PLAYER_NAME",
+			"name": "GET_PLAYER_NAME",
 			"jhash": "0x406B4B20",
 			"comment": "",
 			"params": [
@@ -66530,7 +66530,7 @@
 					"name": "player"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x085DEB493BE80812": {
 			"name": "GET_WANTED_LEVEL_RADIUS",
@@ -70092,7 +70092,7 @@
 			"return_type": "BOOL"
 		},
 		"0x05A42BA9FC8DA96B": {
-			"name": "char* _GET_NAME_OF_THREAD",
+			"name": "_GET_NAME_OF_THREAD",
 			"jhash": "0xBE7ACD89",
 			"comment": "",
 			"params": [
@@ -70101,7 +70101,7 @@
 					"name": "threadId"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xDADFADA5A20143A8": {
 			"name": "_BEGIN_ENUMERATING_THREADS",
@@ -70144,11 +70144,11 @@
 			"return_type": "int"
 		},
 		"0x442E0A7EDE4A738A": {
-			"name": "char* GET_THIS_SCRIPT_NAME",
+			"name": "GET_THIS_SCRIPT_NAME",
 			"jhash": "0xA40FD5D9",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x8A1C8B1738FFE87E": {
 			"name": "GET_HASH_OF_THIS_SCRIPT_NAME",
@@ -70852,7 +70852,7 @@
 			"return_type": "BOOL"
 		},
 		"0xF3E31D16CBDCB304": {
-			"name": "char* _SC_INBOX_MESSAGE_GET_STRING",
+			"name": "_SC_INBOX_MESSAGE_GET_STRING",
 			"jhash": "0x2C959AF9",
 			"comment": "",
 			"params": [
@@ -70861,7 +70861,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xDA024BDBD600F44A": {
 			"name": "_0xDA024BDBD600F44A",
@@ -71056,11 +71056,11 @@
 			"return_type": "BOOL"
 		},
 		"0xDF649C4E9AFDD788": {
-			"name": "char* _ROCKSTAR_MESSAGE_GET_STRING",
+			"name": "_ROCKSTAR_MESSAGE_GET_STRING",
 			"jhash": "0x468668F0",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x1F1E9682483697C7": {
 			"name": "_0x1F1E9682483697C7",
@@ -71681,11 +71681,11 @@
 			"return_type": "void"
 		},
 		"0x198D161F458ECC7F": {
-			"name": "char* _SC_GET_NICKNAME",
+			"name": "_SC_GET_NICKNAME",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x225798743970412B": {
 			"name": "_0x225798743970412B",
@@ -72201,7 +72201,7 @@
 			"return_type": "BOOL"
 		},
 		"0xE50384ACC2C3DB74": {
-			"name": "char* STAT_GET_STRING",
+			"name": "STAT_GET_STRING",
 			"jhash": "0x10CE4BDE",
 			"comment": "",
 			"params": [
@@ -72214,7 +72214,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x350F82CCB186AA1B": {
 			"name": "STAT_GET_POS",
@@ -72273,7 +72273,7 @@
 			"return_type": "BOOL"
 		},
 		"0x2365C388E393BBE2": {
-			"name": "char* STAT_GET_USER_ID",
+			"name": "STAT_GET_USER_ID",
 			"jhash": "0xE2E8B6BA",
 			"comment": "",
 			"params": [
@@ -72282,10 +72282,10 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x5473D4195058B2E4": {
-			"name": "char* STAT_GET_LICENSE_PLATE",
+			"name": "STAT_GET_LICENSE_PLATE",
 			"jhash": "0x1544B29F",
 			"comment": "",
 			"params": [
@@ -72294,7 +72294,7 @@
 					"name": "statName"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x69FF13266D7296DA": {
 			"name": "STAT_SET_LICENSE_PLATE",
@@ -79505,7 +79505,7 @@
 			"return_type": "void"
 		},
 		"0x3A8CADC7D37AACC5": {
-			"name": "char* GET_CLIP_SET_FOR_SCRIPTED_GUN_TASK",
+			"name": "GET_CLIP_SET_FOR_SCRIPTED_GUN_TASK",
 			"jhash": "0x249EB4EB",
 			"comment": "",
 			"params": [
@@ -79514,7 +79514,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x9B53BB6E8943AF53": {
 			"name": "TASK_AIM_GUN_AT_ENTITY",
@@ -83959,7 +83959,7 @@
 			"return_type": "Any"
 		},
 		"0x717E4D1F2048376D": {
-			"name": "char* _0x717E4D1F2048376D",
+			"name": "_0x717E4D1F2048376D",
 			"jhash": "0x96C0277B",
 			"comment": "",
 			"params": [
@@ -83968,7 +83968,7 @@
 					"name": "ped"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x8423541E8B3A1589": {
 			"name": "_0x8423541E8B3A1589",
@@ -86956,7 +86956,7 @@
 			"return_type": "void"
 		},
 		"0x7CE1CCB9B293020E": {
-			"name": "char* GET_VEHICLE_NUMBER_PLATE_TEXT",
+			"name": "GET_VEHICLE_NUMBER_PLATE_TEXT",
 			"jhash": "0xE8522D58",
 			"comment": "",
 			"params": [
@@ -86965,7 +86965,7 @@
 					"name": "vehicle"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x4C4D6B2644F458CB": {
 			"name": "GET_NUMBER_OF_VEHICLE_NUMBER_PLATES",
@@ -89741,7 +89741,7 @@
 			"return_type": "void"
 		},
 		"0xB215AAC32D25D019": {
-			"name": "char* GET_DISPLAY_NAME_FROM_VEHICLE_MODEL",
+			"name": "GET_DISPLAY_NAME_FROM_VEHICLE_MODEL",
 			"jhash": "0xEC86DF39",
 			"comment": "",
 			"params": [
@@ -89750,7 +89750,7 @@
 					"name": "modelHash"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x4EC6CFBC7B2E9536": {
 			"name": "GET_VEHICLE_DEFORMATION_AT_POS",
@@ -91375,7 +91375,7 @@
 			"return_type": "void"
 		},
 		"0xB45085B721EFD38C": {
-			"name": "char* GET_VEHICLE_MOD_COLOR_1_NAME",
+			"name": "GET_VEHICLE_MOD_COLOR_1_NAME",
 			"jhash": "0x9A0840FD",
 			"comment": "",
 			"params": [
@@ -91388,10 +91388,10 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x4967A516ED23A5A1": {
-			"name": "char* GET_VEHICLE_MOD_COLOR_2_NAME",
+			"name": "GET_VEHICLE_MOD_COLOR_2_NAME",
 			"jhash": "0x9BDC0B49",
 			"comment": "",
 			"params": [
@@ -91400,7 +91400,7 @@
 					"name": "vehicle"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x9A83F5F9963775EF": {
 			"name": "_IS_VEHICLE_MOD_LOAD_DONE",
@@ -91539,7 +91539,7 @@
 			"return_type": "BOOL"
 		},
 		"0x8935624F8C5592CC": {
-			"name": "char* GET_MOD_TEXT_LABEL",
+			"name": "GET_MOD_TEXT_LABEL",
 			"jhash": "0x0BA39CA7",
 			"comment": "",
 			"params": [
@@ -91556,10 +91556,10 @@
 					"name": "modValue"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x51F0FEB9F6AE98C0": {
-			"name": "char* GET_MOD_SLOT_NAME",
+			"name": "GET_MOD_SLOT_NAME",
 			"jhash": "0x5E113483",
 			"comment": "",
 			"params": [
@@ -91572,10 +91572,10 @@
 					"name": "modType"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xB4C7A93837C91A1F": {
-			"name": "char* GET_LIVERY_NAME",
+			"name": "GET_LIVERY_NAME",
 			"jhash": "0xED80B5BE",
 			"comment": "",
 			"params": [
@@ -91588,7 +91588,7 @@
 					"name": "liveryIndex"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0x90A38E9838E0A8C1": {
 			"name": "GET_VEHICLE_MOD_MODIFIER_VALUE",
@@ -98053,7 +98053,7 @@
 			"return_type": "int"
 		},
 		"0xCD90657D4C30E1CA": {
-			"name": "char* GET_NAME_OF_ZONE",
+			"name": "GET_NAME_OF_ZONE",
 			"jhash": "0x7875CE91",
 			"comment": "",
 			"params": [
@@ -98070,7 +98070,7 @@
 					"name": "z"
 				}
 			],
-			"return_type": "const"
+			"return_type": "const char*"
 		},
 		"0xBA5ECEEA120E5611": {
 			"name": "SET_ZONE_ENABLED",
