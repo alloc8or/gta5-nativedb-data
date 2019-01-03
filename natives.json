@@ -43086,7 +43086,7 @@
 					"name": "b"
 				}
 			],
-			"return_type": "bool"
+			"return_type": "BOOL"
 		},
 		"0xEC5E3AF5289DCA81": {
 			"name": "BAD_SPORT_PLAYER_LEFT_DETECTED",
