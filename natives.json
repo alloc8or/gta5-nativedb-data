@@ -43072,8 +43072,21 @@
 			"name": "_REMOTE_CHEAT_DETECTED",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				},
+				{
+					"type": "int",
+					"name": "a"
+				},
+				{
+					"type": "int",
+					"name": "b"
+				}
+			],
+			"return_type": "bool"
 		},
 		"0xEC5E3AF5289DCA81": {
 			"name": "BAD_SPORT_PLAYER_LEFT_DETECTED",
@@ -50206,7 +50219,7 @@
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any"
+			"return_type": "void"
 		},
 		"0x64D779659BC37B19": {
 			"name": "_0x64D779659BC37B19",
