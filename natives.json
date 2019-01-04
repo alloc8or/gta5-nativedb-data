@@ -45808,11 +45808,24 @@
 			"build": "1103"
 		},
 		"0x472841A026D26D8B": {
-			"name": "_0x472841A026D26D8B",
+			"name": "_REMOTE_CHEAT_DETECTED",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				},
+				{
+					"type": "int",
+					"name": "a"
+				},
+				{
+					"type": "int",
+					"name": "b"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1103"
 		},
 		"0xEC5E3AF5289DCA81": {
@@ -53474,11 +53487,11 @@
 			"build": "323"
 		},
 		"0x5626D9D6810730D5": {
-			"name": "_0x5626D9D6810730D5",
+			"name": "_NETWORK_REPORT_MYSELF",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "350"
 		},
 		"0x64D779659BC37B19": {
@@ -74697,11 +74710,28 @@
 			"build": "323"
 		},
 		"0x5AE99C571D5BBE5D": {
-			"name": "_0x5AE99C571D5BBE5D",
+			"name": "TRIGGER_SCRIPT_EVENT",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "eventGroup"
+				},
+				{
+					"type": "int*",
+					"name": "args"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "int",
+					"name": "bit"
+				}
+			],
+			"return_type": "void",
 			"build": "323"
 		},
 		"0x078EBE9809CCD637": {
@@ -74836,7 +74866,7 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "1103"
 		}
 	},
 	"SHAPETEST": {
