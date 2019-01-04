@@ -37990,11 +37990,16 @@
 			"build": "323"
 		},
 		"0xFA700D8A9905F78A": {
-			"name": "_0xFA700D8A9905F78A",
+			"name": "_NETWORK_EARN_FROM_ASSASSINATE_TARGET_KILLED",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				}
+			],
+			"return_type": "void",
 			"build": "1604"
 		},
 		"0xF514621E8EA463D0": {
@@ -41559,8 +41564,21 @@
 			"name": "_0xE284D46FFDB82E36",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
 			"build": "1493"
 		},
 		"0x876056684281655D": {
@@ -41618,11 +41636,24 @@
 			"build": "1493"
 		},
 		"0x1BEA0CD93470BB1F": {
-			"name": "_0x1BEA0CD93470BB1F",
+			"name": "_NETWORK_SPENT_BOUNTY_HUNTER_MISSION",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
 			"build": "1493"
 		},
 		"0xF6C8A544E4CF14FC": {
@@ -41890,7 +41921,7 @@
 			"build": "1604"
 		},
 		"0x5E7AE8AABE8B7C0D": {
-			"name": "_NETWORK_EARN_FROM_ASSASSINATE_TARGET_KILLED",
+			"name": "_NETWORK_EARN_FROM_ASSASSINATE_TARGET_KILLED_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41903,11 +41934,16 @@
 			"build": "1604"
 		},
 		"0xA82959062361B259": {
-			"name": "_0xA82959062361B259",
+			"name": "_NETWORK_EARN_FROM_BB_EVENT_CARGO",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				}
+			],
+			"return_type": "void",
 			"build": "1604"
 		},
 		"0x76EF28DA05EA395A": {
