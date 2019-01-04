@@ -8678,8 +8678,8 @@
 			"build": "323"
 		},
 		"0x8117E09A19EEF4D3": {
-			"name": "_GET_UTC_TIME",
-			"jhash": "",
+			"name": "GET_UTC_TIME",
+			"jhash": "0xC589CD7D",
 			"comment": "",
 			"params": [
 				{
