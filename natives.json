@@ -22232,16 +22232,16 @@
 			"return_type": "void"
 		},
 		"0xE35B38A27E8E7179": {
-			"name": "_0xE35B38A27E8E7179",
+			"name": "_ANIMPOSTFX_GET_UNK",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "float"
 		},
 		"0x36AD3E690DA5ACEB": {
 			"name": "ANIMPOSTFX_IS_RUNNING",
