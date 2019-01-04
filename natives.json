@@ -9833,7 +9833,7 @@
 		"0xC5238C011AF405E4": {
 			"name": "_LOAD_UGC_FILE",
 			"jhash": "0x660C468E",
-			"comment": "Loads a User-Generated Content (UGC) file. These files can be found in \"[GTA5]\data\ugc\" and \"[GTA5]\common\patch\ugc\". They seem to follow a naming convention, most likely of \"[name]_[part].ugc\". See example below for usage.\n\nReturns whether or not the file was successfully loaded.\n\nExample:\nDATAFILE::_LOAD_UGC_FILE(\"RockstarPlaylists\") // loads \"rockstarplaylists_00.ugc\"",
+			"comment": "Loads a User-Generated Content (UGC) file. These files can be found in \"[GTA5]\\data\\ugc\" and \"[GTA5]\\common\\patch\\ugc\". They seem to follow a naming convention, most likely of \"[name]_[part].ugc\". See example below for usage.\n\nReturns whether or not the file was successfully loaded.\n\nExample:\nDATAFILE::_LOAD_UGC_FILE(\"RockstarPlaylists\") // loads \"rockstarplaylists_00.ugc\"",
 			"params": [
 				{
 					"type": "const char*",
@@ -10664,7 +10664,7 @@
 		"0x812595A0644CE1DE": {
 			"name": "IS_DLC_PRESENT",
 			"jhash": "0x1F321943",
-			"comment": "Example:\nDLC2::IS_DLC_PRESENT($\mpbusiness2\);\n($ = gethashkey)\n\nbruteforce these:\n0xB119F6D\n0x96F02EE6",
+			"comment": "Example:\nDLC2::IS_DLC_PRESENT($\\mpbusiness2\\);\n($ = gethashkey)\n\nbruteforce these:\n0xB119F6D\n0x96F02EE6",
 			"params": [
 				{
 					"type": "Hash",
@@ -12624,7 +12624,7 @@
 		"0x3910051CCECDB00C": {
 			"name": "_SET_ENTITY_SOMETHING",
 			"jhash": "0xD3850671",
-			"comment": "what does this native do?\n\nbool IsEntitySomething(Entity entity)\n{\n    auto addr = getScriptHandleBaseAddress(entity);\n   printf(\"addr: 0x%X \n\", addr);\n\n    if (addr)\n {\n     DWORD flag = *(DWORD *)(addr + 0x48D);\n        printf(\"flag: 0x%X \n\", flag);\n\n        return ((flag & (1 << 3)) != 0) || ((flag & (1 << 30)) != 0);\n }\n\n   return false;\n}\n\nwot ?",
+			"comment": "what does this native do?\n\nbool IsEntitySomething(Entity entity)\n{\n    auto addr = getScriptHandleBaseAddress(entity);\n   printf(\"addr: 0x%X \\n\", addr);\n\n    if (addr)\n {\n     DWORD flag = *(DWORD *)(addr + 0x48D);\n        printf(\"flag: 0x%X \\n\", flag);\n\n        return ((flag & (1 << 3)) != 0) || ((flag & (1 << 30)) != 0);\n }\n\n   return false;\n}\n\nwot ?",
 			"params": [
 				{
 					"type": "Entity",
@@ -22779,7 +22779,7 @@
 		"0x98C494FD5BDFBFD5": {
 			"name": "_PUSH_SCALEFORM_MOVIE_FUNCTION_FROM_HUD_COMPONENT",
 			"jhash": "0x5D66CE1E",
-			"comment": "Pushes a function from the Hud component Scaleform onto the stack. Same behavior as GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION, just a hud component id instead of a Scaleform.\n\nKnown components:\n19 - MP_RANK_BAR\n20 - HUD_DIRECTOR_MODE\n\nThis native requires more research - all information can be found inside of 'hud.gfx'. Using a decompiler, the different components are located under \"scripts\__Packages\com\rockstargames\gtav\hud\hudComponents\" and \"scripts\__Packages\com\rockstargames\gtav\Multiplayer\".",
+			"comment": "Pushes a function from the Hud component Scaleform onto the stack. Same behavior as GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION, just a hud component id instead of a Scaleform.\n\nKnown components:\n19 - MP_RANK_BAR\n20 - HUD_DIRECTOR_MODE\n\nThis native requires more research - all information can be found inside of 'hud.gfx'. Using a decompiler, the different components are located under \"scripts\\__Packages\\com\\rockstargames\\gtav\\hud\\hudComponents\" and \"scripts\\__Packages\\com\\rockstargames\\gtav\\Multiplayer\".",
 			"params": [
 				{
 					"type": "int",
@@ -24258,7 +24258,7 @@
 		"0x2ED7843F8F801023": {
 			"name": "_DRAW_NOTIFICATION",
 			"jhash": "0x08F7AF78",
-			"comment": "Draws a notification above the map and returns the notifications handle\n\nColor syntax:\n~r~ = Red\n~b~ = Blue\n~g~ = Green\n~y~ = Yellow\n~p~ = Purple\n~o~ = Orange\n~c~ = Grey\n~m~ = Darker Grey\n~u~ = Black\n~n~ = New Line\n~s~ = Default White\n~w~ = White\n~h~ = Bold Text\n~nrt~ = ???\n\nSpecial characters:\n¦ = Rockstar Verified Icon (U+00A6:Broken Bar - Alt+0166)\n÷ = Rockstar Icon (U+00F7:Division Sign - Alt+0247)\n? = Rockstar Icon 2 (U+2211:N-Ary Summation)\n\nExample C#:\n            Function.Call(Hash._ADD_TEXT_COMPONENT_STRING3, \"Now I need you to bring the ~b~vehicle~w~ back to me!\");",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -25021,7 +25021,7 @@
 		"0x6C188BE134E074AA": {
 			"name": "ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME",
 			"jhash": "0x27A244D8",
-			"comment": "• Description :\n\n Processes a string and removes the player name(max len 99)\n You can use this function to create notifications/subtitles\n--------------------------------------------------------------------\n• Usage(Colors) :\n\n ~r~ = red\n ~y~ = yellow\n ~g~ = green\n ~b~ = light blue\n ~w~ = white\n ~p~ = purple\n ~n~ = new line\n\n--------------------------------------------------------------------\n• Usage(Input) :\n~INPUT_CONTEXT~ will show button symbol (regarding last input device -> keyboard/gamepad)\nexample:\nstring info = \"Context action is assigned to ~INPUT_CONTEXT~!\";\n\n--------------------------------------------------------------------\n• Example (C++):\n\nvoid ShowNotification(char *text)  \n{ \n        UI::_SET_NOTIFICATION_TEXT_ENTRY(\"STRING\"); \n        UI::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text); \n        UI::_DRAW_NOTIFICATION(FALSE, FALSE); // if first param = 1, the message flashes 1 or 2 times\n}\n\n• Colors example : \n\nstring red = \"~r~Red test\";\nstring white_and_yellow = \"~w~White and ~y~yellow\";\nstring text_with_double_line = \"First line.~n~Second line\";\n\nThis native (along with 0x5F68520888E69014 and 0x94CF4AC034C9C986) do not actually filter anything. They simply add the provided text (as of 944)\n\nUsed to be known as _ADD_TEXT_COMPONENT_STRING",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -42626,7 +42626,7 @@
 		"0xFCA9373EF340AC0A": {
 			"name": "_GET_ONLINE_VERSION",
 			"jhash": "",
-			"comment": "Online version is defined here: update\update.rpf\common\data\version.txt\n\nExample:\n\n[ONLINE_VERSION_NUMBER]\n1.33\n\n_GET_ONLINE_VERSION() will return \"1.33\"\n\nBelongs in NETWORK",
+			"comment": "Online version is defined here: update\\update.rpf\\common\\data\\version.txt\n\nExample:\n\n[ONLINE_VERSION_NUMBER]\n1.33\n\n_GET_ONLINE_VERSION() will return \"1.33\"\n\nBelongs in NETWORK",
 			"params": [],
 			"return_type": "const char*",
 			"build": "323"
@@ -45808,26 +45808,26 @@
 			"build": "1103"
 		},
 		"0x472841A026D26D8B": {
-            "name": "_REMOTE_CHEAT_DETECTED",
-            "jhash": "",
-            "comment": "This native is not used in the scripts.",
-            "params": [
-                {
-                    "type": "Player",
-                    "name": "player"
-                },
-                {
-                    "type": "int",
-                    "name": "a"
-                },
-                {
-                    "type": "int",
-                    "name": "b"
-                }
-            ],
-            "return_type": "BOOL",
-            "build": "1103"
-        },
+			"name": "_REMOTE_CHEAT_DETECTED",
+			"jhash": "",
+			"comment": "This native is not used in the scripts.",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				},
+				{
+					"type": "int",
+					"name": "a"
+				},
+				{
+					"type": "int",
+					"name": "b"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1103"
+		},
 		"0xEC5E3AF5289DCA81": {
 			"name": "BAD_SPORT_PLAYER_LEFT_DETECTED",
 			"jhash": "0x4C2C6B6A",
@@ -50325,7 +50325,7 @@
 		"0x4BA92A18502BCA61": {
 			"name": "_0x4BA92A18502BCA61",
 			"jhash": "0x74D6B13C",
-			"comment": "Seems to call GET_PAUSED_MAP_STREAMING_REQUEST lol wtf\n\nseg001:000000000158C324 sub_158C324:                            # DATA XREF: OPD:stru_1C29978o\nseg001:000000000158C324\nseg001:000000000158C324 .set arg_10,  0x10\nseg001:000000000158C324\nseg001:000000000158C324                 mflr      r0\nseg001:000000000158C328                 bl        sub_1803774\nseg001:000000000158C32C                 stdu      r1, -0x80(r1)\nseg001:000000000158C330                 std       r0, 0x80+arg_10(r1)\nseg001:000000000158C334                 mr        r31, r3\nseg001:000000000158C338                 lwz       r3, 8(r31)\nseg001:000000000158C33C                 addic     r4, r3, 4\nseg001:000000000158C340                 addic     r5, r3, 0x10\nseg001:000000000158C344                 addic     r7, r3, 0x20\nseg001:000000000158C348                 lwz       r6, 0(r3)\nseg001:000000000158C34C                 lfs       f1, 0x1C(r3)\nseg001:000000000158C350                 lwz       r8, 0x2C(r3)\nseg001:000000000158C354                 extsw     r3, r6\nseg001:000000000158C358                 extsw     r8, r8\nseg001:000000000158C35C                 bl        GET_PAUSED_MAP_STREAMING_REQUEST\nseg001:000000000158C360                 lwz       r4, 0(r31)\nseg001:000000000158C364                 stw       r3, 0(r4)\nseg001:000000000158C368                 addi      r1, r1, 0x80\nseg001:000000000158C36C                 b         loc_18037D8\n\nsorta makes sense though since the one above this native and GET_PAUSED_MAP_STREAMING_REQUEST are used together often in scripts",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -53487,15 +53487,13 @@
 			"build": "323"
 		},
 		"0x5626D9D6810730D5": {
-            "name": "_NETWORK_REPORT_MYSELF",
-            "jhash": "",
-            "comment": "This native is not used in the scripts.",
-            "params": [
-                
-            ],
-            "return_type": "void",
-            "build": "350"
-        },
+			"name": "_NETWORK_REPORT_MYSELF",
+			"jhash": "",
+			"comment": "This native is not used in the scripts.",
+			"params": [],
+			"return_type": "void",
+			"build": "350"
+		},
 		"0x64D779659BC37B19": {
 			"name": "_0x64D779659BC37B19",
 			"jhash": "",
@@ -59895,7 +59893,7 @@
 		"0x95E3D6257B166CF2": {
 			"name": "SET_PED_DENSITY_MULTIPLIER_THIS_FRAME",
 			"jhash": "0x039C82BB",
-			"comment": "\n• Usage\n\n? Use this native inside a looped function.\n? Values:\n? 0.0 = no peds on streets\n? 1.0 = normal peds on streets",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -62133,7 +62131,7 @@
 		"0x6094AD011A2EA87D": {
 			"name": "GET_VEHICLE_PED_IS_USING",
 			"jhash": "0x6DE3AADA",
-			"comment": "Gets ID of vehicle player using. It means it can get ID at any interaction with vehicle. Enter\exit for example. And that means it is faster than GET_VEHICLE_PED_IS_IN but less safe.",
+			"comment": "Gets ID of vehicle player using. It means it can get ID at any interaction with vehicle. Enter\\exit for example. And that means it is faster than GET_VEHICLE_PED_IS_IN but less safe.",
 			"params": [
 				{
 					"type": "Ped",
@@ -74712,30 +74710,30 @@
 			"build": "323"
 		},
 		"0x5AE99C571D5BBE5D": {
-            "name": "TRIGGER_SCRIPT_EVENT",
-            "jhash": "0x54763B35",
-            "comment": "",
-            "params": [
-                {
-                    "type": "int",
-                    "name": "eventGroup"
-                },
-                {
-                    "type": "int*",
-                    "name": "args"
-                },
-                {
-                    "type": "int",
-                    "name": "argCount"
-                },
-                {
-                    "type": "int",
-                    "name": "bit"
-                }
-            ],
-            "return_type": "void",
-            "build": "323"
-        },
+			"name": "TRIGGER_SCRIPT_EVENT",
+			"jhash": "0x54763B35",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "eventGroup"
+				},
+				{
+					"type": "int*",
+					"name": "args"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "int",
+					"name": "bit"
+				}
+			],
+			"return_type": "void",
+			"build": "323"
+		},
 		"0x078EBE9809CCD637": {
 			"name": "SHUTDOWN_LOADING_SCREEN",
 			"jhash": "0xA2826D17",
@@ -88846,7 +88844,7 @@
 		"0x3123FAA6DB1CF7ED": {
 			"name": "TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING",
 			"jhash": "0x959818B6",
-			"comment": "task_vehicle_follow_waypoint_recording(Ped p0, Vehicle p1, string p2, int p3, int p4, int p5, int p6, float.x p7, float.Y p8, float.Z p9, bool p10, int p11)\n\np2 = Waypoint recording string (found in update\update.rpf\x64\levels\gta5\waypointrec.rpf\np3 = 786468\np4 = 0\np5 = 16\np6 = -1 (angle?)\np7/8/9 = usually v3.zero\np10 = bool (repeat?)\np11 = 1073741824\n\n-khorio",
+			"comment": "task_vehicle_follow_waypoint_recording(Ped p0, Vehicle p1, string p2, int p3, int p4, int p5, int p6, float.x p7, float.Y p8, float.Z p9, bool p10, int p11)\n\np2 = Waypoint recording string (found in update\\update.rpf\\x64\\levels\\gta5\\waypointrec.rpf\np3 = 786468\np4 = 0\np5 = 16\np6 = -1 (angle?)\np7/8/9 = usually v3.zero\np10 = bool (repeat?)\np11 = 1073741824\n\n-khorio",
 			"params": [
 				{
 					"type": "Ped",
@@ -90350,7 +90348,7 @@
 		"0x245A6883D966D537": {
 			"name": "SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME",
 			"jhash": "0xF4187E51",
-			"comment": "• Usage\n\n? Use this native inside a looped function.\n? Values:\n   ? 0.0 = no vehicles on streets\n   ? 1.0 = normal vehicles on streets\n\n\n\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
