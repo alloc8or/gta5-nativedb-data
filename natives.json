@@ -102002,7 +102002,7 @@
 		},
 		"0xFDBF4CDBC07E1706": {
 			"name": "_ADD_CURRENT_RISE",
-			"jhash": "",
+			"jhash": "0x45268B6F",
 			"comment": "",
 			"params": [
 				{
@@ -102031,7 +102031,7 @@
 		},
 		"0xB1252E3E59A82AAF": {
 			"name": "_REMOVE_CURRENT_RISE",
-			"jhash": "",
+			"jhash": "0x7DBCEF6F",
 			"comment": "",
 			"params": [
 				{
@@ -102044,7 +102044,7 @@
 		},
 		"0xB96B00E976BE977F": {
 			"name": "_SET_CURRENT_INTENSITY",
-			"jhash": "",
+			"jhash": "0x53B694B1",
 			"comment": "",
 			"params": [
 				{
@@ -102057,7 +102057,7 @@
 		},
 		"0x2B2A2CC86778B619": {
 			"name": "_GET_CURRENT_INTENSITY",
-			"jhash": "",
+			"jhash": "0xBD0A67FB",
 			"comment": "",
 			"params": [],
 			"return_type": "float",
@@ -102078,7 +102078,7 @@
 		},
 		"0x5E5E99285AE812DB": {
 			"name": "_RESET_CURRENT_INTENSITY",
-			"jhash": "",
+			"jhash": "0x4AD23212",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
