@@ -100682,7 +100682,7 @@
 			"build": "944"
 		},
 		"0x44CD1F493DB2A0A6": {
-			"name": "_SET_VEHICLE_SPECIAL_WEAPON_CAPACITY",
+			"name": "_SET_VEHICLE_WEAPON_CAPACITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -100703,7 +100703,7 @@
 			"build": "944"
 		},
 		"0x8181CE2F25CB9BB7": {
-			"name": "_0x8181CE2F25CB9BB7",
+			"name": "_GET_VEHICLE_WEAPON_CAPACITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -101252,13 +101252,13 @@
 			"build": "1180"
 		},
 		"0xF4B2ED59DEB5D774": {
-			"name": "_SET_AIRCRAFT_BOMB_COUNT",
+			"name": "_SET_VEHICLE_BOMB_COUNT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "aircraft"
+					"name": "vehicle"
 				},
 				{
 					"type": "int",
@@ -101269,26 +101269,26 @@
 			"build": "1180"
 		},
 		"0xEA12BD130D7569A1": {
-			"name": "_GET_AIRCRAFT_BOMB_COUNT",
+			"name": "_GET_VEHICLE_BOMB_COUNT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "aircraft"
+					"name": "vehicle"
 				}
 			],
 			"return_type": "int",
 			"build": "1180"
 		},
 		"0x9BDA23BF666F0855": {
-			"name": "_SET_AIRCRAFT_COUNTERMEASURE_COUNT",
+			"name": "_SET_VEHICLE_COUNTERMEASURE_COUNT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "aircraft"
+					"name": "vehicle"
 				},
 				{
 					"type": "int",
@@ -101299,13 +101299,13 @@
 			"build": "1180"
 		},
 		"0xF846AA63DF56B804": {
-			"name": "_GET_AIRCRAFT_COUNTERMEASURE_COUNT",
+			"name": "_GET_VEHICLE_COUNTERMEASURE_COUNT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "aircraft"
+					"name": "vehicle"
 				}
 			],
 			"return_type": "int",
