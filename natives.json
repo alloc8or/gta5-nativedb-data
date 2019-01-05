@@ -3262,7 +3262,7 @@
 			"build": "323"
 		},
 		"0x21442F412E8DE56B": {
-			"name": "SPECIAL_FRONTEND_EQUAL",
+			"name": "PLAY_STREAM_FROM_POSITION",
 			"jhash": "0x6FE5D865",
 			"comment": "",
 			"params": [
@@ -32591,7 +32591,7 @@
 			"jhash": "0xC9F67F28",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0xC5868A966E5BE3AE": {
@@ -32599,11 +32599,11 @@
 			"jhash": "0x1B09184F",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0xF6062E089251C898": {
-			"name": "_CREATE_LIGHTNING_THUNDER",
+			"name": "FORCE_LIGHTNING_FLASH",
 			"jhash": "0xDF38165E",
 			"comment": "creates single lightning+thunder at random position",
 			"params": [],
@@ -32624,26 +32624,26 @@
 			"build": "323"
 		},
 		"0x11B56FBBF7224868": {
-			"name": "_0x11B56FBBF7224868",
+			"name": "PRELOAD_CLOUD_HAT",
 			"jhash": "0x8727A4C5",
 			"comment": "Found in the scripts:\n\nGAMEPLAY::_11B56FBBF7224868(\"CONTRAILS\");",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xFC4842A34657BFCB": {
-			"name": "_SET_CLOUD_HAT_TRANSITION",
+			"name": "LOAD_CLOUD_HAT",
 			"jhash": "0xED88FC61",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "type"
+					"name": "name"
 				},
 				{
 					"type": "float",
@@ -32654,13 +32654,13 @@
 			"build": "323"
 		},
 		"0xA74802FB8D0B7814": {
-			"name": "_0xA74802FB8D0B7814",
+			"name": "UNLOAD_CLOUD_HAT",
 			"jhash": "0xC9FA6E07",
 			"comment": "Called 4 times in the b617d scripts:\nGAMEPLAY::_A74802FB8D0B7814(\"CONTRAILS\", 0);",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				},
 				{
 					"type": "float",
