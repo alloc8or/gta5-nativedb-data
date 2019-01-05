@@ -90335,17 +90335,17 @@
 			"build": "323"
 		},
 		"0xF7F203E31F96F6A1": {
-			"name": "_0xF7F203E31F96F6A1",
+			"name": "IS_SEAT_WARP_ONLY",
 			"jhash": "0x769E5CF2",
-			"comment": "IS_S*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
 					"name": "vehicle"
 				},
 				{
-					"type": "BOOL",
-					"name": "flag"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -90423,7 +90423,7 @@
 		"0xD4B8E3D1917BC86B": {
 			"name": "_UNK_SET_DISABLE_RANDOM_TRAINS",
 			"jhash": "0x09462665",
-			"comment": "SET_*_MULTIPLIER_THIS_FRAME",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -90643,8 +90643,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
