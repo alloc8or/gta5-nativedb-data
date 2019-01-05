@@ -9013,31 +9013,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				}
 			],
@@ -9528,9 +9528,9 @@
 		"0x708BDD8CD795B043": {
 			"name": "_0x708BDD8CD795B043",
 			"jhash": "0x4315A7C5",
-			"comment": "",
+			"comment": "HAS_CUTSCENE_*\n\nPossibly HAS_CUTSCENE_CUT_THIS_FRAME, needs more research.",
 			"params": [],
-			"return_type": "Hash*",
+			"return_type": "BOOL",
 			"build": "323"
 		}
 	},
@@ -37309,17 +37309,17 @@
 			"build": "323"
 		},
 		"0x14832BF2ABA53FC5": {
-			"name": "_0x14832BF2ABA53FC5",
+			"name": "_HAS_ALL_CHUNKS_ON_HDD",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns CFileMgr::ms_allChunksOnHdd\n\nOn PC this is hardcoded to always return true.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xC79AE21974B01FB2": {
-			"name": "_0xC79AE21974B01FB2",
+			"name": "_CLEANUP_ASYNC_INSTALL",
 			"jhash": "",
-			"comment": "",
+			"comment": "Calls CFileMgr::CleanupAsyncInstall",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
