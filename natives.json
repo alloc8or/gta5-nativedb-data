@@ -10656,7 +10656,7 @@
 		"0x241FCA5B1AA14F75": {
 			"name": "_0x241FCA5B1AA14F75",
 			"jhash": "0x0AF83036",
-			"comment": "Console Hash: 0x0AF83036\nOnly used once in scripts, in maintransition.\n\nmaintransition.c4, line ~82432:\nif (PED::_7350823473013C02(PLAYER::PLAYER_PED_ID()) && (DECORATOR::_241FCA5B1AA14F75() == 0)) {\n    g_2542A5 = a_1; // 'g_2542A5' used in 'building_controller.ysc' for IPL stuff?\n    return 1;\n}\n\nLikely used solely for the players ped. The function it's in seems to only be used for initialization/quitting. Called among natives to discard scaleforms, disable frontend, fading in/out, etc. Neighboring strings to some calls include \"HUD_JOINING\", \"HUD_QUITTING\".",
+			"comment": "Only used once in scripts, in maintransition.\n\nmaintransition.c4, line ~82432:\nif (PED::_7350823473013C02(PLAYER::PLAYER_PED_ID()) && (DECORATOR::_241FCA5B1AA14F75() == 0)) {\n    g_2542A5 = a_1; // 'g_2542A5' used in 'building_controller.ysc' for IPL stuff?\n    return 1;\n}\n\nLikely used solely for the players ped. The function it's in seems to only be used for initialization/quitting. Called among natives to discard scaleforms, disable frontend, fading in/out, etc. Neighboring strings to some calls include \"HUD_JOINING\", \"HUD_QUITTING\".",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -10734,7 +10734,7 @@
 		"0xD7C10C4A637992C9": {
 			"name": "_LOAD_SP_DLC_MAPS",
 			"jhash": "0x8BF60FC3",
-			"comment": "Unloads GROUP_MAP (GTAO/MP) DLC data and loads GROUP_MAP_SP DLC. Neither are loaded by default, 0888C3502DBBEEF5 is a cognate to this function and loads MP DLC (and unloads SP DLC by extension).\n\nThe original (and wrong) definition is below:\n\nThis unload the GTA:O DLC map parts (like high end garages/apartments).\nWorks in singleplayer.\n\nconsole hash: 0x8BF60FC3",
+			"comment": "Unloads GROUP_MAP (GTAO/MP) DLC data and loads GROUP_MAP_SP DLC. Neither are loaded by default, 0888C3502DBBEEF5 is a cognate to this function and loads MP DLC (and unloads SP DLC by extension).\n\nThe original (and wrong) definition is below:\n\nThis unload the GTA:O DLC map parts (like high end garages/apartments).\nWorks in singleplayer.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -10742,7 +10742,7 @@
 		"0x0888C3502DBBEEF5": {
 			"name": "_LOAD_MP_DLC_MAPS",
 			"jhash": "0xC65586A9",
-			"comment": "This loads the GTA:O dlc map parts (high end garages, apartments).\nWorks in singleplayer.\nIn order to use GTA:O heist IPL's you have to call this native with the following params: _9BAE5AD2508DF078(1);\n\nconsole hash: 0xC65586A9",
+			"comment": "This loads the GTA:O dlc map parts (high end garages, apartments).\nWorks in singleplayer.\nIn order to use GTA:O heist IPL's you have to call this native with the following params: _9BAE5AD2508DF078(1);",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -17167,8 +17167,8 @@
 		},
 		"0xDEADC0DEDEADC0DE": {
 			"name": "_UPDATE_ENTITY_SHIT_OR_SOMETHING",
-			"jhash": "",
-			"comment": "Only found twice in decompiled scripts. Something to do with an entity/object?\n\nOn a side note, it's very interesting how the hash for this native is \"DEADC0DE\" - this is usually used as padding for initializing a buffer of some sort. I wonder if this native is actually \"dead\"?\n\n\"carmod_shop.ysc\", line 9520:\nif (ENTITY::DOES_ENTITY_EXIST(l_324._f6)) {\n    GRAPHICS::_0xDEADC0DEDEADC0DE(l_324._f6);\n}\n\n\"fm_mission_controller.ysc\", line 189641:\nif (GAMEPLAY::IS_BIT_SET(g_1870E1._f7B64[a_0/*104*/]._f25, 28)) {\n    GRAPHICS::_0xDEADC0DEDEADC0DE(NETWORK::NET_TO_OBJ(l_4064._f26A._f87[a_0/*1*/]));\n    if (!GAMEPLAY::IS_BIT_SET(g_1870E1._f7B64[a_0/*104*/]._f25, 31)) {\n        if (!ENTITY::IS_ENTITY_DEAD(v_7)) {\n            AUDIO::PLAY_SOUND_FROM_ENTITY(-1, \"EMP_Vehicle_Hum\", v_7, \"DLC_HEIST_BIOLAB_DELIVER_EMP_SOUNDS\", 0, 0);\n            GAMEPLAY::SET_BIT(&g_1870E1._f7B64[a_0/*104*/]._f25, 31);\n        }\n    }\n}\n\nConsole Hash: 0xC12AC47A\n\n----------\n\nIt's most likely named UPDATE_* (like UPDATE_ENTITY_SHIT_OR_SOMETHING).",
+			"jhash": "0xC12AC47A",
+			"comment": "Only found twice in decompiled scripts. Something to do with an entity/object?\n\nOn a side note, it's very interesting how the hash for this native is \"DEADC0DE\" - this is usually used as padding for initializing a buffer of some sort. I wonder if this native is actually \"dead\"?\n\n\"carmod_shop.ysc\", line 9520:\nif (ENTITY::DOES_ENTITY_EXIST(l_324._f6)) {\n    GRAPHICS::_0xDEADC0DEDEADC0DE(l_324._f6);\n}\n\n\"fm_mission_controller.ysc\", line 189641:\nif (GAMEPLAY::IS_BIT_SET(g_1870E1._f7B64[a_0/*104*/]._f25, 28)) {\n    GRAPHICS::_0xDEADC0DEDEADC0DE(NETWORK::NET_TO_OBJ(l_4064._f26A._f87[a_0/*1*/]));\n    if (!GAMEPLAY::IS_BIT_SET(g_1870E1._f7B64[a_0/*104*/]._f25, 31)) {\n        if (!ENTITY::IS_ENTITY_DEAD(v_7)) {\n            AUDIO::PLAY_SOUND_FROM_ENTITY(-1, \"EMP_Vehicle_Hum\", v_7, \"DLC_HEIST_BIOLAB_DELIVER_EMP_SOUNDS\", 0, 0);\n            GAMEPLAY::SET_BIT(&g_1870E1._f7B64[a_0/*104*/]._f25, 31);\n        }\n    }\n}\n\n----------\n\nIt's most likely named UPDATE_* (like UPDATE_ENTITY_SHIT_OR_SOMETHING).",
 			"params": [
 				{
 					"type": "Object",
@@ -20291,8 +20291,8 @@
 		},
 		"0x8CDE909A0370BB3A": {
 			"name": "_0x8CDE909A0370BB3A",
-			"jhash": "",
-			"comment": "console hash: 0x19EC0001",
+			"jhash": "0x19EC0001",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -20997,9 +20997,9 @@
 			"build": "323"
 		},
 		"0x5F6DF3D92271E8A1": {
-			"name": "SET_PARTICLE_FX_BLOOD_SCALE",
+			"name": "_0x5F6DF3D92271E8A1",
 			"jhash": "0x18136DE0",
-			"comment": "hash collision",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -21153,7 +21153,7 @@
 			"build": "323"
 		},
 		"0x6C38AF3693A69A91": {
-			"name": "_USE_PARTICLE_FX_ASSET_NEXT_CALL",
+			"name": "USE_PARTICLE_FX_ASSET",
 			"jhash": "0x9C720B61",
 			"comment": " From the b678d decompiled scripts:\n\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"FM_Mission_Controler\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_apartment_mp\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_indep_fireworks\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_mp_cig_plane\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_mp_creator\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_ornate_heist\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_prison_break_heist_station\");",
 			"params": [
@@ -21166,9 +21166,9 @@
 			"build": "323"
 		},
 		"0xEA1E2D93F6F75ED9": {
-			"name": "_SET_PARTICLE_FX_ASSET_OLD_TO_NEW",
-			"jhash": "",
-			"comment": "console hash: 0xC92719A7",
+			"name": "SET_PARTICLE_FX_OVERRIDE",
+			"jhash": "0xC92719A7",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -21183,9 +21183,9 @@
 			"build": "323"
 		},
 		"0x89C8553DD3274AAE": {
-			"name": "_RESET_PARTICLE_FX_ASSET_OLD_TO_NEW",
-			"jhash": "",
-			"comment": "console hash: 0x9E8D8B72\nResets the effect of _SET_PARTICLE_FX_ASSET_OLD_TO_NEW",
+			"name": "RESET_PARTICLE_FX_OVERRIDE",
+			"jhash": "0x9E8D8B72",
+			"comment": "Resets the effect of SET_PARTICLE_FX_OVERRIDE",
 			"params": [
 				{
 					"type": "const char*",
@@ -47369,12 +47369,12 @@
 		},
 		"0x1B857666604B1A74": {
 			"name": "_0x1B857666604B1A74",
-			"jhash": "",
-			"comment": "Console Hash: 0x76A9FEB6",
+			"jhash": "0x76A9FEB6",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -48790,8 +48790,8 @@
 		},
 		"0xAAA553E7DD28A457": {
 			"name": "_0xAAA553E7DD28A457",
-			"jhash": "",
-			"comment": "console hash: 0xFD0F7EDD",
+			"jhash": "0xFD0F7EDD",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -51376,8 +51376,8 @@
 		},
 		"0x407091CF6037118E": {
 			"name": "_0x407091CF6037118E",
-			"jhash": "",
-			"comment": "Console Hash: 0x9F82917F",
+			"jhash": "0x9F82917F",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -51457,8 +51457,8 @@
 		},
 		"0x99B72C7ABDE5C910": {
 			"name": "_0x99B72C7ABDE5C910",
-			"jhash": "",
-			"comment": "console hash: 0x99F58A07",
+			"jhash": "0x99F58A07",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -61527,9 +61527,9 @@
 			"build": "323"
 		},
 		"0x6A03BF943D767C93": {
-			"name": "_IS_PED_STANDING_IN_COVER",
-			"jhash": "",
-			"comment": "Console Hash: 0xDD5D08A7",
+			"name": "IS_PED_IN_HIGH_COVER",
+			"jhash": "0xDD5D08A7",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -61626,9 +61626,9 @@
 			"build": "323"
 		},
 		"0x1E98817B311AE98A": {
-			"name": "_GET_PED_TIME_OF_DEATH",
-			"jhash": "",
-			"comment": "Console Hash: 0xDF6D5D54\n\nThere is no way this is the correct name. The only time this is called it's compared with the game timer and I used this to test something and noticed when I was killed by no matter what it was my 'Time Of Death' via this native was always 0, but my friends was some random big number like so, 147591.\n\nRetreives [CPed + 15CC] (as of 944)",
+			"name": "GET_PED_TIME_OF_DEATH",
+			"jhash": "0xDF6D5D54",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -63680,8 +63680,8 @@
 		},
 		"0x2746BD9D88C5C5D0": {
 			"name": "_GET_PED_HEAD_BLEND_DATA",
-			"jhash": "",
-			"comment": "The pointer is to a padded struct that matches the arguments to SET_PED_HEAD_BLEND_DATA(...). There are 4 bytes of padding after each field.\n\n(Edit) Console Hash: 0x44E1680C\n\npass this struct in the second parameter \ntypedef struct\n{\n        int shapeFirst, shapeSecond, shapeThird; \n        int skinFirst, skinSecond, skinThird; \n   float shapeMix, skinMix, thirdMix;\n} headBlendData;",
+			"jhash": "0x44E1680C",
+			"comment": "The pointer is to a padded struct that matches the arguments to SET_PED_HEAD_BLEND_DATA(...). There are 4 bytes of padding after each field.\npass this struct in the second parameter \ntypedef struct\n{\n        int shapeFirst, shapeSecond, shapeThird; \n        int skinFirst, skinSecond, skinThird; \n   float shapeMix, skinMix, thirdMix;\n} headBlendData;",
 			"params": [
 				{
 					"type": "Ped",
@@ -65871,8 +65871,8 @@
 		},
 		"0x5619BFA07CFD7833": {
 			"name": "_SET_PED_FACIAL_DECORATION",
-			"jhash": "",
-			"comment": "Console Hash: 0x8CD3E487\n",
+			"jhash": "0x8CD3E487",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -68817,8 +68817,8 @@
 		},
 		"0x781DE8FA214E87D2": {
 			"name": "_0x781DE8FA214E87D2",
-			"jhash": "",
-			"comment": "p1: \"MP_FEMALE_ACTION\" found multiple times in the b617d scripts.\n\nConsole Hash: 0x83BAE814",
+			"jhash": "0x83BAE814",
+			"comment": "p1: \"MP_FEMALE_ACTION\" found multiple times in the b617d scripts.",
 			"params": [
 				{
 					"type": "Ped",
@@ -73818,8 +73818,8 @@
 		},
 		"0x5006D96C995A5827": {
 			"name": "_EXPAND_WORLD_LIMITS",
-			"jhash": "",
-			"comment": "Appears only 3 times in the scripts, more specifically in michael1.ysc\n\nConsole hash: 0x64ddb07d\n\n-\nThis can be used to prevent dying if you are \"out of the world\"",
+			"jhash": "0x64DDB07D",
+			"comment": "Appears only 3 times in the scripts, more specifically in michael1.ysc\n\n-\nThis can be used to prevent dying if you are \"out of the world\"",
 			"params": [
 				{
 					"type": "float",
@@ -91167,8 +91167,8 @@
 		},
 		"0x26C10ECBDA5D043B": {
 			"name": "_GET_BOAT_ANCHOR",
-			"jhash": "",
-			"comment": "Console Hash: 0xE97A4F5E",
+			"jhash": "0xE97A4F5E",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99042,8 +99042,8 @@
 		},
 		"0x6D8EAC07506291FB": {
 			"name": "_0x6D8EAC07506291FB",
-			"jhash": "",
-			"comment": "Console Hash: 0x60E29B78 ",
+			"jhash": "0x60E29B78",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99110,8 +99110,8 @@
 		},
 		"0x9BDDC73CC6A115D4": {
 			"name": "_0x9BDDC73CC6A115D4",
-			"jhash": "",
-			"comment": "Console Hash: 0x50CDB295 ",
+			"jhash": "0x50CDB295",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99131,8 +99131,8 @@
 		},
 		"0x56EB5E94318D3FB6": {
 			"name": "_0x56EB5E94318D3FB6",
-			"jhash": "",
-			"comment": "console hash = 0x30F43FE3",
+			"jhash": "0x30F43FE3",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99620,8 +99620,8 @@
 		},
 		"0x500873A45724C863": {
 			"name": "_0x500873A45724C863",
-			"jhash": "",
-			"comment": "console hash: 0x004926A3",
+			"jhash": "0x004926A3",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100087,8 +100087,8 @@
 		},
 		"0x99C82F8A139F3E4E": {
 			"name": "_SET_VEHICLE_HUD_SPECIAL_ABILITY_BAR_ACTIVE",
-			"jhash": "",
-			"comment": "console hash: 0x71CDD52F",
+			"jhash": "0x71CDD52F",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102039,7 +102039,7 @@
 		"0xFDBF4CDBC07E1706": {
 			"name": "_ADD_CURRENT_RISE",
 			"jhash": "0x45268B6F",
-			"comment": "console hash: 0x45268B6F\n\nMost likely ADD_CURRENT_*",
+			"comment": "Most likely ADD_CURRENT_*",
 			"params": [
 				{
 					"type": "float",
@@ -102068,7 +102068,7 @@
 		"0xB1252E3E59A82AAF": {
 			"name": "_REMOVE_CURRENT_RISE",
 			"jhash": "0x7DBCEF6F",
-			"comment": "p0 is the handle returned from _0xFDBF4CDBC07E1706\n\nconsole hash: 0x7DBCEF6F\n\nMost likely REMOVE_CURRENT_*",
+			"comment": "p0 is the handle returned from _0xFDBF4CDBC07E1706\n\nMost likely REMOVE_CURRENT_*",
 			"params": [
 				{
 					"type": "int",
@@ -102081,7 +102081,7 @@
 		"0xB96B00E976BE977F": {
 			"name": "_SET_CURRENT_INTENSITY",
 			"jhash": "0x53B694B1",
-			"comment": "Sets a value that determines how aggressive the ocean waves will be. Values of 2.0 or more make for very aggressive waves like you see during a thunderstorm.\n\nWorks only ~200 meters around the player.\n\nconsole hash: 0x53B694B1\n\nMost likely SET_CURRENT_*",
+			"comment": "Sets a value that determines how aggressive the ocean waves will be. Values of 2.0 or more make for very aggressive waves like you see during a thunderstorm.\n\nWorks only ~200 meters around the player.\n\nMost likely SET_CURRENT_*",
 			"params": [
 				{
 					"type": "float",
@@ -102094,7 +102094,7 @@
 		"0x2B2A2CC86778B619": {
 			"name": "_GET_CURRENT_INTENSITY",
 			"jhash": "0xBD0A67FB",
-			"comment": "Gets the aggressiveness factor of the ocean waves.\n\nconsole hash: 0xBD0A67FB\n\nMost likely GET_CURRENT_*",
+			"comment": "Gets the aggressiveness factor of the ocean waves.\n\nMost likely GET_CURRENT_*",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
@@ -102115,7 +102115,7 @@
 		"0x5E5E99285AE812DB": {
 			"name": "_RESET_CURRENT_INTENSITY",
 			"jhash": "0x4AD23212",
-			"comment": "Sets the waves intensity back to original (1.0 in most cases).\n\nconsole hash: 0x4AD23212\n\nMost likely RESET_CURRENT_*",
+			"comment": "Sets the waves intensity back to original (1.0 in most cases).\n\nMost likely RESET_CURRENT_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
