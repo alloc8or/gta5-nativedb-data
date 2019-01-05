@@ -100692,11 +100692,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "weaponIndex"
 				},
 				{
 					"type": "int",
-					"name": "amount"
+					"name": "capacity"
 				}
 			],
 			"return_type": "void",
@@ -100708,15 +100708,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "weaponIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1011"
 		},
 		"0xBC9CFF381338CB4F": {
