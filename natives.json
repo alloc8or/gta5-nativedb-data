@@ -94132,7 +94132,7 @@
 		"0x33E8CD3322E2FE31": {
 			"name": "SET_VEHICLE_COLOUR_COMBINATION",
 			"jhash": "0xA557AEAD",
-			"comment": "dont be a dick",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -94277,7 +94277,7 @@
 		"0x055BF0AC0C34F4FD": {
 			"name": "GET_RANDOM_VEHICLE_MODEL_IN_MEMORY",
 			"jhash": "0xE2C45631",
-			"comment": "Not present in the retail version! It's just a nullsub.\n\np0 always true (except in one case)\np1 returns a random vehicle hash loaded in memory\np2 unsure, maybe returns a different model",
+			"comment": "Not present in the retail version! It's just a nullsub.\n\np0 always true (except in one case)\nsuccessIndicator: 0 if success, -1 if failed",
 			"params": [
 				{
 					"type": "BOOL",
@@ -94289,7 +94289,7 @@
 				},
 				{
 					"type": "int*",
-					"name": "p2"
+					"name": "successIndicator"
 				}
 			],
 			"return_type": "void",
@@ -94364,7 +94364,7 @@
 			"build": "323"
 		},
 		"0x27B926779DEB502D": {
-			"name": "_0x27B926779DEB502D",
+			"name": "IS_VEHICLE_BUMPER_BOUNCING",
 			"jhash": "0xB3A2CC4F",
 			"comment": "",
 			"params": [
@@ -95663,7 +95663,7 @@
 			"build": "463"
 		},
 		"0x3EC8BF18AA453FE9": {
-			"name": "WAS_COUNTER_ACTIVATED",
+			"name": "_0x3EC8BF18AA453FE9",
 			"jhash": "0x2916D69B",
 			"comment": "",
 			"params": [
@@ -95672,11 +95672,11 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "void",
 			"build": "323"
 		},
 		"0xBFDF984E2C22B94F": {
@@ -99717,7 +99717,7 @@
 			"build": "944"
 		},
 		"0xF796359A959DF65D": {
-			"name": "_DISPLAY_DISTANT_VEHICLES",
+			"name": "SET_DISTANT_CARS_ENABLED",
 			"jhash": "0xB5CC548B",
 			"comment": "Toggles to render distant vehicles. They may not be vehicles but images to look like vehicles.",
 			"params": [
