@@ -33790,7 +33790,7 @@
 			"build": "323"
 		},
 		"0x075F1D57402C93BA": {
-			"name": "_0x075F1D57402C93BA",
+			"name": "HAVE_CREDITS_REACHED_END",
 			"jhash": "0x2569C9A7",
 			"comment": "",
 			"params": [],
@@ -34203,13 +34203,13 @@
 			"build": "323"
 		},
 		"0x69FE6DC87BD2A5E9": {
-			"name": "_0x69FE6DC87BD2A5E9",
+			"name": "ADD_REPLAY_STAT_VALUE",
 			"jhash": "0x81216EE0",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
