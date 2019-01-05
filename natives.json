@@ -30092,26 +30092,26 @@
 			"build": "372"
 		},
 		"0xDD564BDD0472C936": {
-			"name": "_ADD_FRONTEND_MENU_CONTEXT",
+			"name": "PAUSE_MENU_ACTIVATE_CONTEXT",
 			"jhash": "0x9FE8FD5E",
-			"comment": "Seems to add/set the current menu context (to show/hide buttons?)\n\nPausemenu.xml:\n<Contexts>*ALL*, DISPLAY_CORONA_BUTTONS, *NONE*, BET_LOCKED, BET_AVAILABLE, SCROLL_OPTION</Contexts>\nCode:\nif (...) {\n    sub_bbd34(a_0, 0, \"FM_BET_HELP\");\n    UI::_DD564BDD0472C936(${bet_available}); // This native\n    UI::OBJECT_DECAL_TOGGLE(${bet_locked});\n} else { \n    sub_bbd34(a_0, 0, \"\");\n    UI::OBJECT_DECAL_TOGGLE(${bet_available});\n    UI::_DD564BDD0472C936(${bet_locked}); // This native\n}\n\nOBJECT_DECAL_TOGGLE seems to remove a context, It also has a hash collision\n\n// Old\nScripts do not make this native's purpose clear. However, this native most likely has something to do with decals since in nearly every instance, \"OBJECT_DECAL_TOGGLE\" is called prior.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "contextHash"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x444D8CF241EC25C5": {
-			"name": "_0x444D8CF241EC25C5",
+			"name": "PAUSE_MENU_DEACTIVATE_CONTEXT",
 			"jhash": "0x0029046E",
 			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "contextHash"
 				}
 			],
 			"return_type": "void",
@@ -30184,12 +30184,12 @@
 			"build": "323"
 		},
 		"0x4895BDEA16E7C080": {
-			"name": "ENABLE_DEATHBLOOD_SEETHROUGH",
+			"name": "_0x4895BDEA16E7C080",
 			"jhash": "0x15B24768",
-			"comment": "Please change back to _0x4895BDEA16E7C080 (hash collision)",
+			"comment": "",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p0"
 				}
 			],
