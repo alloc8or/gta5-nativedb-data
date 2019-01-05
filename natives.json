@@ -30367,9 +30367,9 @@
 			"build": "323"
 		},
 		"0xEF4CED81CEBEDC6D": {
-			"name": "SET_USERIDS_UIHIDDEN",
+			"name": "_0xEF4CED81CEBEDC6D",
 			"jhash": "0x4370999E",
-			"comment": "Hash collision! Please change back to _0xEF4CED81CEBEDC6D",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
