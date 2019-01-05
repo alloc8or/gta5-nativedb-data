@@ -10655,7 +10655,7 @@
 	"DLC": {
 		"0x241FCA5B1AA14F75": {
 			"name": "_0x241FCA5B1AA14F75",
-			"jhash": "",
+			"jhash": "0x0AF83036",
 			"comment": "Console Hash: 0x0AF83036\nOnly used once in scripts, in maintransition.\n\nmaintransition.c4, line ~82432:\nif (PED::_7350823473013C02(PLAYER::PLAYER_PED_ID()) && (DECORATOR::_241FCA5B1AA14F75() == 0)) {\n    g_2542A5 = a_1; // 'g_2542A5' used in 'building_controller.ysc' for IPL stuff?\n    return 1;\n}\n\nLikely used solely for the players ped. The function it's in seems to only be used for initialization/quitting. Called among natives to discard scaleforms, disable frontend, fading in/out, etc. Neighboring strings to some calls include \"HUD_JOINING\", \"HUD_QUITTING\".",
 			"params": [],
 			"return_type": "BOOL",
@@ -10733,7 +10733,7 @@
 		},
 		"0xD7C10C4A637992C9": {
 			"name": "_LOAD_SP_DLC_MAPS",
-			"jhash": "",
+			"jhash": "0x8BF60FC3",
 			"comment": "Unloads GROUP_MAP (GTAO/MP) DLC data and loads GROUP_MAP_SP DLC. Neither are loaded by default, 0888C3502DBBEEF5 is a cognate to this function and loads MP DLC (and unloads SP DLC by extension).\n\nThe original (and wrong) definition is below:\n\nThis unload the GTA:O DLC map parts (like high end garages/apartments).\nWorks in singleplayer.\n\nconsole hash: 0x8BF60FC3",
 			"params": [],
 			"return_type": "void",
@@ -10741,7 +10741,7 @@
 		},
 		"0x0888C3502DBBEEF5": {
 			"name": "_LOAD_MP_DLC_MAPS",
-			"jhash": "",
+			"jhash": "0xC65586A9",
 			"comment": "This loads the GTA:O dlc map parts (high end garages, apartments).\nWorks in singleplayer.\nIn order to use GTA:O heist IPL's you have to call this native with the following params: _9BAE5AD2508DF078(1);\n\nconsole hash: 0xC65586A9",
 			"params": [],
 			"return_type": "void",
