@@ -33737,7 +33737,7 @@
 		"0x7EC6F9A478A6A512": {
 			"name": "_0x7EC6F9A478A6A512",
 			"jhash": "",
-			"comment": "",
+			"comment": "CLEAR_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
