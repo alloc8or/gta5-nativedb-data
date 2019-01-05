@@ -93501,7 +93501,7 @@
 		"0x9537097412CF75FE": {
 			"name": "_IS_THIS_MODEL_A_JETSKI",
 			"jhash": "",
-			"comment": "Checks if model is a boat, then checks an additional flag.\n\nReturns true for these models:\nPREDATOR\nSEASHARK2\nSPEEDER",
+			"comment": "Checks if model is a boat, then checks for FLAG_IS_JETSKI.",
 			"params": [
 				{
 					"type": "Hash",
