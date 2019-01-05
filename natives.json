@@ -93616,16 +93616,16 @@
 			"build": "944"
 		},
 		"0xA1A9FC1C76A6730D": {
-			"name": "_0xA1A9FC1C76A6730D",
+			"name": "_IS_THIS_MODEL_AN_AMPHIBIOUS_QUADBIKE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1103"
 		},
 		"0xA178472EBB8AE60D": {
