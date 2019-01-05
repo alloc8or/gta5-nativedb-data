@@ -15384,7 +15384,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
+					"type": "FireId",
 					"name": "fireHandle"
 				}
 			],
@@ -15401,7 +15401,7 @@
 					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "FireId",
 			"build": "323"
 		},
 		"0x7F0DD2EBBB651AFF": {
@@ -15683,35 +15683,35 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "explosionType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "z2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xAB0F816885B0E483": {
@@ -15744,32 +15744,32 @@
 			"build": "323"
 		},
 		"0xB3CD51E3DB86F176": {
-			"name": "_0xB3CD51E3DB86F176",
+			"name": "_GET_ENTITY_INSIDE_EXPLOSION_AREA_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "explosionType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "radius"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1290"
 		},
 		"0xA079A6C51525DC4B": {
@@ -15814,7 +15814,7 @@
 			"build": "323"
 		},
 		"0x14BA4BA137AF6CEC": {
-			"name": "_GET_PED_INSIDE_EXPLOSION_AREA",
+			"name": "_GET_ENTITY_INSIDE_EXPLOSION_AREA",
 			"jhash": "0xAEC0D176",
 			"comment": "Returns a handle to the first entity within the a circle spawned inside the 2 points from a radius. It could return a ped or an entity, but the scripts expect a ped, but still check if it's a ped.",
 			"params": [
