@@ -100635,7 +100635,7 @@
 			"build": "1011"
 		},
 		"0x9078C0C5EF8C19E9": {
-			"name": "_GET_HAS_JUMPING_ABILITY",
+			"name": "_GET_CAN_VEHICLE_JUMP",
 			"jhash": "",
 			"comment": "",
 			"params": [
