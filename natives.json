@@ -81349,8 +81349,8 @@
 			"build": "323"
 		},
 		"0x5F61EBBE1A00F96D": {
-			"name": "_REMOVE_NAMED_PTFX_ASSET",
-			"jhash": "",
+			"name": "REMOVE_NAMED_PTFX_ASSET",
+			"jhash": "0xC44762A1",
 			"comment": "",
 			"params": [
 				{
@@ -85357,8 +85357,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -85370,15 +85370,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
 			"build": "1290"
 		},
 		"0xF7F9DCCA89E7505B": {
-			"name": "_0xF7F9DCCA89E7505B",
+			"name": "TASK_PLANE_GOTO_PRECISE_VTOL",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85594,7 +85594,7 @@
 			"build": "323"
 		},
 		"0x92C360B5F15D2302": {
-			"name": "_0x92C360B5F15D2302",
+			"name": "TASK_PLANE_TAXI",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86925,19 +86925,19 @@
 		"0xFA83CA6776038F64": {
 			"name": "_0xFA83CA6776038F64",
 			"jhash": "",
-			"comment": "",
+			"comment": "REMOVE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -89154,7 +89154,7 @@
 			"build": "323"
 		},
 		"0x3D45B0B355C5E0C9": {
-			"name": "_0x3D45B0B355C5E0C9",
+			"name": "_TASK_MOVE_NETWORK_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
