@@ -31256,7 +31256,7 @@
 			"build": "323"
 		},
 		"0x2CA429C029CCF247": {
-			"name": "_LOAD_INTERIOR",
+			"name": "PIN_INTERIOR_IN_MEMORY",
 			"jhash": "0x3ADA414E",
 			"comment": "Load interior",
 			"params": [
