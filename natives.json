@@ -74613,17 +74613,17 @@
 			"build": "323"
 		},
 		"0xDADFADA5A20143A8": {
-			"name": "_BEGIN_ENUMERATING_THREADS",
+			"name": "SCRIPT_THREAD_ITERATOR_RESET",
 			"jhash": "0xBB4E2F66",
-			"comment": "MulleDK19: Starts a new enumeration of the current threads.\nCall this first, then _GET_ID_OF_NEXT_THREAD_IN_ENUMERATION (0x30B4FA1C82DD4B9F)\n\n-----------------------------------------------------------------------\nSome other guy: See _GET_ID_OF_NEXT_THREAD_IN_ENUMERATION (0x30B4FA1C82DD4B9F) for an example",
+			"comment": "Starts a new iteration of the current threads.\nCall this first, then SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID (0x30B4FA1C82DD4B9F)",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x30B4FA1C82DD4B9F": {
-			"name": "_GET_ID_OF_NEXT_THREAD_IN_ENUMERATION",
+			"name": "SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID",
 			"jhash": "0x1E28B28F",
-			"comment": "MulleDK19: Gets the ID of the next active thread.\nFirst call _BEGIN_ENUMERATE_THREADS (0xDADFADA5A20143A8).\nAny subsequent call to this function will then return the ID of the next active thread.\n\nIf the function returns 0, the end of the enumeration has been reached.\n\n-----------------------------------------------------------------------\nSome other guy: Here's an example:\n\n   std::vector<int> vecCurrentThreads;\n void update_current_threads_list()\n    {\n     vecCurrentThreads.clear();\n        \n      _BEGIN_ENUMERATING_THREADS();\n     int id = _GET_ID_OF_NEXT_THREAD_IN_ENUMERATION();\n     \n      while (id != 0)\n       {\n         id = _GET_ID_OF_NEXT_THREAD_IN_ENUMERATION();\n         vecCurrentThreads.push_back(id);\n      }\n }",
+			"comment": "If the function returns 0, the end of the iteration has been reached.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -102855,7 +102855,7 @@
 			"build": "323"
 		},
 		"0x585847C5E4E11709": {
-			"name": "_GET_PED_AMMO",
+			"name": "_GET_MAX_AMMO_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -102876,7 +102876,7 @@
 			"build": "1103"
 		},
 		"0x2472622CE1F2D45F": {
-			"name": "_SET_PED_AMMO",
+			"name": "_ADD_PED_AMMO",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -103105,7 +103105,7 @@
 			"build": "323"
 		},
 		"0x840F03E9041E2C9C": {
-			"name": "_GET_LOCKON_RANGE_OF_CURRENT_PED_WEAPON",
+			"name": "GET_LOCKON_DISTANCE_OF_CURRENT_PED_WEAPON",
 			"jhash": "0x3612110D",
 			"comment": "",
 			"params": [
