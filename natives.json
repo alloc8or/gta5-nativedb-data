@@ -6412,9 +6412,9 @@
 			"build": "323"
 		},
 		"0xF4C8CF9E353AFECA": {
-			"name": "_0xF4C8CF9E353AFECA",
+			"name": "SHAKE_SCRIPT_GLOBAL",
 			"jhash": "0x2B0F05CD",
-			"comment": "Something to do with shake:\nCAM::_F4C8CF9E353AFECA(\"HAND_SHAKE\", 0.2);",
+			"comment": "CAM::SHAKE_SCRIPT_GLOBAL(\"HAND_SHAKE\", 0.2);",
 			"params": [
 				{
 					"type": "const char*",
@@ -6429,9 +6429,9 @@
 			"build": "323"
 		},
 		"0xC2EAE3FB8CDBED31": {
-			"name": "_0xC2EAE3FB8CDBED31",
+			"name": "ANIMATED_SHAKE_SCRIPT_GLOBAL",
 			"jhash": "0xCB75BD9C",
-			"comment": "CAM::_C2EAE3FB8CDBED31(\"SHAKE_CAM_medium\", \"medium\", \"\", 0.5f);",
+			"comment": "CAM::ANIMATED_SHAKE_SCRIPT_GLOBAL(\"SHAKE_CAM_medium\", \"medium\", \"\", 0.5f);",
 			"params": [
 				{
 					"type": "const char*",
@@ -6456,7 +6456,7 @@
 		"0xC912AF078AF19212": {
 			"name": "IS_SCRIPT_GLOBAL_SHAKING",
 			"jhash": "0x6AEFE6A5",
-			"comment": "In drunk_controller.c4, sub_309\nif (CAM::_C912AF078AF19212()) {\n    CAM::_1C9D7949FA533490(0);\n}\n\nWhat does \"IS_SCRIPT_GLOBAL_SHAKING\" mean..? :/ Is this a hash collision?",
+			"comment": "In drunk_controller.c4, sub_309\nif (CAM::IS_SCRIPT_GLOBAL_SHAKING()) {\n    CAM::STOP_SCRIPT_GLOBAL_SHAKING(0);\n}",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -6464,7 +6464,7 @@
 		"0x1C9D7949FA533490": {
 			"name": "STOP_SCRIPT_GLOBAL_SHAKING",
 			"jhash": "0x26FCFB96",
-			"comment": "In drunk_controller.c4, sub_309\nif (CAM::_C912AF078AF19212()) {\n    CAM::_1C9D7949FA533490(0);\n}",
+			"comment": "In drunk_controller.c4, sub_309\nif (CAM::IS_SCRIPT_GLOBAL_SHAKING()) {\n    CAM::STOP_SCRIPT_GLOBAL_SHAKING(0);\n}",
 			"params": [
 				{
 					"type": "BOOL",
@@ -23549,16 +23549,16 @@
 			"build": "323"
 		},
 		"0xE35B38A27E8E7179": {
-			"name": "_0xE35B38A27E8E7179",
+			"name": "_ANIMPOSTFX_GET_UNK",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "877"
 		},
 		"0x36AD3E690DA5ACEB": {
@@ -23583,13 +23583,13 @@
 			"build": "323"
 		},
 		"0xD2209BE128B5418C": {
-			"name": "_0xD2209BE128B5418C",
+			"name": "_ANIMPOSTFX_STOP_AND_DO_UNK",
 			"jhash": "",
-			"comment": "\"SwitchHUDFranklinOut\",\n\"SwitchHUDMichaelOut\",\n\"SwitchHUDOut\",\n\"SwitchHUDTrevorOut\",\n\"SwitchOpenFranklinOut\",\n\"SwitchOpenMichaelIn\",\n\"SwitchOpenNeutral\"",
+			"comment": "\"SwitchHUDFranklinOut\",\n\"SwitchHUDMichaelOut\",\n\"SwitchHUDOut\",\n\"SwitchHUDTrevorOut\",\n\"SwitchOpenFranklinOut\",\n\"SwitchOpenMichaelIn\",\n\"SwitchOpenNeutral\"\n\nStops the effect and sets a value (bool) in its data (+0x199) to false.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "graphicsName"
+					"name": "effectName"
 				}
 			],
 			"return_type": "void",
@@ -34378,7 +34378,7 @@
 			"build": "323"
 		},
 		"0xE3A7742E0B7A2F8B": {
-			"name": "_SHOOT_SINGLE_BULLET_BETWEEN_COORDS_WITH_ENTITY",
+			"name": "SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY",
 			"jhash": "0x52ACCB7B",
 			"comment": "entity - entity to ignore",
 			"params": [
@@ -34447,9 +34447,9 @@
 			"build": "323"
 		},
 		"0xBFE5756E7407064A": {
-			"name": "_SHOOT_SINGLE_BULLET_BETWEEN_COORDS_WITH_EXTRA_PARAMS",
-			"jhash": "",
-			"comment": "Since latest patches has 18 parameters.\n\nentity - entity to ignore",
+			"name": "SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW",
+			"jhash": "0xCCDC33CC",
+			"comment": "entity - entity to ignore",
 			"params": [
 				{
 					"type": "float",
