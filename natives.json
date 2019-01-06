@@ -683,9 +683,9 @@
 		"0xC8B1B2425604CDD0": {
 			"name": "_0xC8B1B2425604CDD0",
 			"jhash": "0x16FB88B5",
-			"comment": "",
+			"comment": "IS_MOBILE_PHONE_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xD2C91A0B572AAE56": {
@@ -2426,16 +2426,16 @@
 			"build": "323"
 		},
 		"0x66E49BF55B4B1874": {
-			"name": "GET_NUMBER_OF_PASSENGER_VOICE_VARIATIONS",
+			"name": "IS_MISSION_NEWS_STORY_UNLOCKED",
 			"jhash": "0x27305D37",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "newsStory"
 				}
 			],
-			"return_type": "int",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x50B196FC9ED6545B": {
@@ -2550,7 +2550,7 @@
 			"build": "323"
 		},
 		"0x2CB0075110BE1E56": {
-			"name": "_0x2CB0075110BE1E56",
+			"name": "_SET_RADIO_TRACK_MIX",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -2775,9 +2775,9 @@
 			"build": "1493"
 		},
 		"0x477D9DB48F889591": {
-			"name": "_SET_RADIO_STATION_DISABLED",
+			"name": "_LOCK_RADIO_STATION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disables the radio station (hides it from the radio wheel).",
 			"params": [
 				{
 					"type": "const char*",
