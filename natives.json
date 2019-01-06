@@ -30605,9 +30605,9 @@
 			"build": "323"
 		},
 		"0x9E778248D6685FE0": {
-			"name": "_0x9E778248D6685FE0",
+			"name": "SET_SOCIAL_CLUB_TOUR",
 			"jhash": "0x7AD67C95",
-			"comment": "UI::0x7AD67C95(\"Gallery\");\nUI::0x7AD67C95(\"Missions\");\nUI::0x7AD67C95(\"General\");\nUI::0x7AD67C95(\"Playlists\");",
+			"comment": "UI::SET_SOCIAL_CLUB_TOUR(\"Gallery\");\nUI::SET_SOCIAL_CLUB_TOUR(\"Missions\");\nUI::SET_SOCIAL_CLUB_TOUR(\"General\");\nUI::SET_SOCIAL_CLUB_TOUR(\"Playlists\");",
 			"params": [
 				{
 					"type": "const char*",
