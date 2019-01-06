@@ -98018,7 +98018,7 @@
 		"0xB2D06FAEDE65B577": {
 			"name": "GET_LAST_DRIVEN_VEHICLE",
 			"jhash": "0xFEB0C0C8",
-			"comment": "Not exactly sure on this one, but here's a snippet of code:\n\nif (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0)) {\n    v_2 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), 0);\n} else { \n    v_2 = VEHICLE::_B2D06FAEDE65B577();\n}",
+			"comment": "",
 			"params": [],
 			"return_type": "Vehicle",
 			"build": "323"
