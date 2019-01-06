@@ -50624,7 +50624,7 @@
 		"0xE679E3E06E363892": {
 			"name": "NETWORK_OVERRIDE_CLOCK_TIME",
 			"jhash": "0xC077BCD6",
-			"comment": "Works in Singleplayer too.\n\nActually has a 4th param (BOOL) that sets byte_14273C46C (in b944) to whatever was passed to p3.",
+			"comment": "Works in Singleplayer too.",
 			"params": [
 				{
 					"type": "int",
@@ -71152,9 +71152,9 @@
 			"build": "323"
 		},
 		"0xDE45D1A1EF45EE61": {
-			"name": "_SET_HUD_ANIMATION_STOP_LEVEL",
+			"name": "_0xDE45D1A1EF45EE61",
 			"jhash": "0x274631FE",
-			"comment": "No use in scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -71187,8 +71187,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -71922,7 +71922,7 @@
 			"jhash": "0x8AEA886C",
 			"comment": "This returns YOUR 'identity' as a Player type.\n\nAlways returns 0 in story mode.",
 			"params": [],
-			"return_type": "int",
+			"return_type": "Player",
 			"build": "323"
 		},
 		"0xD80958FC74E988A6": {
@@ -72494,8 +72494,8 @@
 		},
 		"0xB885852C39CC265D": {
 			"name": "_0xB885852C39CC265D",
-			"jhash": "",
-			"comment": "Old Gen: 0x47D6004E\n\nDisables something. Used only once in R* scripts (freemode.ysc).",
+			"jhash": "0x47D6004E",
+			"comment": "Disables something. Used only once in R* scripts (freemode.ysc).\n\nDISABLE_PLAYER_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -72619,7 +72619,7 @@
 		"0xC9A763D8FE87436A": {
 			"name": "_0xC9A763D8FE87436A",
 			"jhash": "0x4136829A",
-			"comment": "Seems to be called before SPECIAL_ABILITY_DEACTIVATE. Needs more research.\n\nSPECIAL_ABILITY_CHARGE_*",
+			"comment": "Seems to be called before SPECIAL_ABILITY_DEACTIVATE. Needs more research.\n\nSPECIAL_ABILITY_*\n\nSPECIAL_ABILITY_CHARGE_ON_MISSION_FAILED ?",
 			"params": [
 				{
 					"type": "Player",
