@@ -75256,9 +75256,9 @@
 			"build": "323"
 		},
 		"0x65287525D951F6BE": {
-			"name": "_GET_SHAPE_TEST_RESULT_EX",
+			"name": "GET_SHAPE_TEST_RESULT_INCLUDING_MATERIAL",
 			"jhash": "0x4301E10C",
-			"comment": "behaves exactly the same way as GET_SHAPE_TEST_RESULT except it has one extra parameter (_materialHash).\n\nQuick disassembly seems to indicate that the unknown is a hash. EDIT: Seems to be the hash of the hit material or surface type.\n\nfound a materialFX.dat list of them but not sure if it has to do with this native yet.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
