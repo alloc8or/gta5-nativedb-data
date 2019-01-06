@@ -15375,7 +15375,7 @@
 					"name": "isGasFire"
 				}
 			],
-			"return_type": "int",
+			"return_type": "FireId",
 			"build": "323"
 		},
 		"0x7FF548385680673F": {
@@ -80839,7 +80839,7 @@
 			"jhash": "0xC76E023C",
 			"comment": "",
 			"params": [],
-			"return_type": "Vector3*",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x41CA5A33160EA4AB": {
