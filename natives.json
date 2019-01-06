@@ -98420,9 +98420,9 @@
 			"build": "323"
 		},
 		"0x8D474C8FAEFF6CDE": {
-			"name": "_IS_VEHICLE_SHOP_RESPRAY_ALLOWED",
+			"name": "IS_VEHICLE_SPRAYABLE",
 			"jhash": "0x5EB00A6A",
-			"comment": "Checks some flag in the vehicle's model. If this function returns false, mod shops will not allow respray. it checks for FLAG_NO_RESPRAY",
+			"comment": "Returns false if the vehicle has the FLAG_NO_RESPRAY flag set.",
 			"params": [
 				{
 					"type": "Vehicle",
