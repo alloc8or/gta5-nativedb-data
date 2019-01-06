@@ -31258,7 +31258,7 @@
 		"0x2CA429C029CCF247": {
 			"name": "PIN_INTERIOR_IN_MEMORY",
 			"jhash": "0x3ADA414E",
-			"comment": "Load interior",
+			"comment": "",
 			"params": [
 				{
 					"type": "Interior",
