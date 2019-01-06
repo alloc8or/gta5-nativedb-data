@@ -35827,7 +35827,7 @@
 			"build": "323"
 		},
 		"0xA735353C77334EA0": {
-			"name": "_0xA735353C77334EA0",
+			"name": "_REGISTER_INT64_TO_SAVE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -35836,8 +35836,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -35980,9 +35980,9 @@
 			"build": "323"
 		},
 		"0xBF737600CDDBEADD": {
-			"name": "_START_SAVE_STRUCT",
+			"name": "START_SAVE_STRUCT_WITH_SIZE",
 			"jhash": "0xFB45728E",
-			"comment": "Second parameter might be length.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
@@ -35990,7 +35990,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "size"
 				},
 				{
 					"type": "const char*",
@@ -36009,9 +36009,9 @@
 			"build": "323"
 		},
 		"0x60FE567DF1B1AF9D": {
-			"name": "_START_SAVE_ARRAY",
+			"name": "START_SAVE_ARRAY_WITH_SIZE",
 			"jhash": "0x893A342C",
-			"comment": "Second parameter might be length.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
@@ -36019,7 +36019,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "size"
 				},
 				{
 					"type": "const char*",
@@ -36076,13 +36076,13 @@
 			"build": "323"
 		},
 		"0x9B2BD3773123EA2F": {
-			"name": "_0x9B2BD3773123EA2F",
+			"name": "BLOCK_DISPATCH_SERVICE_RESOURCE_CREATION",
 			"jhash": "0xE0F0684F",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "type"
+					"name": "dispatchService"
 				},
 				{
 					"type": "BOOL",
@@ -36093,7 +36093,7 @@
 			"build": "323"
 		},
 		"0xEB4A0C2D56441717": {
-			"name": "_GET_NUMBER_OF_DISPATCHED_UNITS_FOR_PLAYER",
+			"name": "_GET_NUM_DISPATCHED_UNITS_FOR_PLAYER",
 			"jhash": "0x3CE5BF6B",
 			"comment": "",
 			"params": [
