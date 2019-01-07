@@ -75149,9 +75149,9 @@
 			"build": "323"
 		},
 		"0xE6AC6C45FBE83004": {
-			"name": "_START_SHAPE_TEST_CAPSULE_2",
+			"name": "START_SHAPE_TEST_SWEPT_SPHERE",
 			"jhash": "0x4559460A",
-			"comment": "Performs the same type of trace as START_SHAPE_TEST_CAPSULE, but with some different hardcoded parameters.",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -75402,7 +75402,7 @@
 					"name": "context"
 				},
 				{
-					"type": "const char*",
+					"type": "char*",
 					"name": "out"
 				}
 			],
@@ -75410,7 +75410,7 @@
 			"build": "323"
 		},
 		"0x9A2C8064B6C1E41A": {
-			"name": "_SC_INBOX_MESSAGE_PUSH",
+			"name": "SC_INBOX_MESSAGE_DO_APPLY",
 			"jhash": "0xEBE420A4",
 			"comment": "",
 			"params": [
@@ -75581,8 +75581,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Player*",
-					"name": "player"
+					"type": "int*",
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "void",
@@ -76409,10 +76409,10 @@
 		"0x5688585E6D563CD8": {
 			"name": "_0x5688585E6D563CD8",
 			"jhash": "0xC62406A6",
-			"comment": "",
+			"comment": "STAT_SET_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -77128,7 +77128,7 @@
 			"build": "323"
 		},
 		"0x68F01422BE1D838F": {
-			"name": "_STAT_SET_PROFILE_SETTING",
+			"name": "STAT_SET_PROFILE_SETTING_VALUE",
 			"jhash": "0x24DD4929",
 			"comment": "Does not take effect immediately, unfortunately.\n\nprofileSetting seems to only be 936, 937 and 938 in scripts",
 			"params": [
