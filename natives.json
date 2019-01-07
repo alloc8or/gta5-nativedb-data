@@ -77375,13 +77375,13 @@
 			"build": "323"
 		},
 		"0x5009DFD741329729": {
-			"name": "_PLAYSTATS_GAMETYPE_GENERIC",
+			"name": "PLAYSTATS_BACKGROUND_SCRIPT_ACTION",
 			"jhash": "0x61ECC465",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "type"
+					"name": "action"
 				},
 				{
 					"type": "int",
