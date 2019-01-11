@@ -82621,8 +82621,8 @@
 			"build": "323"
 		},
 		"0x9C00E77AF14B2DFF": {
-			"name": "_TASK_GET_OFF_BOAT",
-			"jhash": "",
+			"name": "TASK_GET_OFF_BOAT",
+			"jhash": "0x4293601F",
 			"comment": "",
 			"params": [
 				{
