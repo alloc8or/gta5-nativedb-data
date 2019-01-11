@@ -49638,9 +49638,9 @@
 			"build": "1103"
 		},
 		"0x9A73240B49945C76": {
-			"name": "_GET_POSIX_TIME",
+			"name": "GET_CLOUD_TIME_AS_INT",
 			"jhash": "0xF2FDF2E0",
-			"comment": "Return POSIX timestamp.",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
