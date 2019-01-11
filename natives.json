@@ -42135,7 +42135,7 @@
 	},
 	"NETSHOPPING": {
 		"0x7D2708796355B20B": {
-			"name": "_NETWORK_SHOULD_USE_TRANSACTION_MANAGER",
+			"name": "_NETWORK_SHOULD_USE_SERVER_TRANSACTIONS",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -42145,7 +42145,7 @@
 		"0xBD4D7EAF8A30F637": {
 			"name": "_NETWORK_SHOP_DOES_ITEM_EXIST",
 			"jhash": "",
-			"comment": "Belongs in UNK3, non-hashed version of 0x247F0F73A182EA0B",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -42303,13 +42303,13 @@
 			"build": "323"
 		},
 		"0xB24F0944DA203D9E": {
-			"name": "_NETWORK_SHOP_GET_TRANSACTIONS_ENABLED_FOR_CHARACTER",
+			"name": "_NETWORK_SHOP_IS_SESSION_VALID",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "mpChar"
+					"name": "charIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -42342,7 +42342,7 @@
 			"build": "323"
 		},
 		"0x810E8431C0614BF9": {
-			"name": "_NETWORK_SHOP_GET_TRANSACTIONS_DISABLED",
+			"name": "_NETWORK_SHOP_IS_SESSION_REFRESH_PENDING",
 			"jhash": "",
 			"comment": "",
 			"params": [],
