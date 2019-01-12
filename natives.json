@@ -74792,9 +74792,9 @@
 			"build": "323"
 		},
 		"0x18C1270EA7F199BC": {
-			"name": "_GET_NO_LOADING_SCREEN",
+			"name": "GET_NO_LOADING_SCREEN",
 			"jhash": "",
-			"comment": "",
+			"comment": "Even though we don't have a jenkins hash for this one, the name is 100% confirmed.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
