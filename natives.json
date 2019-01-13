@@ -59152,7 +59152,7 @@
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Ped",
 			"build": "463"
 		},
 		"0xE952D6431689AD9A": {
