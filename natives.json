@@ -59127,25 +59127,25 @@
 			"build": "323"
 		},
 		"0x668FD40BCBA5DE48": {
-			"name": "_0x668FD40BCBA5DE48",
+			"name": "_CLONE_PED_EX",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "thisScriptCheck"
 				},
 				{
 					"type": "Any",
@@ -59173,17 +59173,17 @@
 			"build": "323"
 		},
 		"0x148B08C2D2ACB884": {
-			"name": "_0x148B08C2D2ACB884",
+			"name": "_CLONE_PED_TO_TARGET_EX",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "targetPed"
 				},
 				{
 					"type": "Any",
