@@ -83549,7 +83549,7 @@
 			"build": "323"
 		},
 		"0xF35425A4204367EC": {
-			"name": "SET_PED_PATHS_WIDTH_PLANT",
+			"name": "SET_PED_PATH_MAY_ENTER_WATER",
 			"jhash": "0x9C606EE3",
 			"comment": "",
 			"params": [
@@ -84189,9 +84189,9 @@
 			"build": "323"
 		},
 		"0x3FA00D4F4641BFAE": {
-			"name": "_TASK_STOP_PHONE_GESTURE_ANIMATION",
-			"jhash": "",
-			"comment": "TODO: add hash from x360\n^^^\nI got you, x360 Hash: 0x5A32D4B4. \nNote: Whoever named this I just compared it and the hash matches, it was the correct name thanks. \n\nNote: Alexander Blade, needs to fix this site or his code one, as when we do find the right name the server throws an error saying the name is already in use. AB is a legend coder, so I'm sure this is a simple fix for him.",
+			"name": "TASK_STOP_PHONE_GESTURE_ANIMATION",
+			"jhash": "0x5A32D4B4",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
