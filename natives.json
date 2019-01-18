@@ -85124,9 +85124,9 @@
 			"build": "323"
 		},
 		"0xFC545A9F0626E3B6": {
-			"name": "_TASK_VEHICLE_FOLLOW",
-			"jhash": "",
-			"comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle:\n0 = Rushed\n1 = Ignore Traffic Lights\n2 = Fast\n3 = Normal (Stop in Traffic)\n4 = Fast avoid traffic\n5 = Fast, stops in traffic but overtakes sometimes\n6 = Fast avoids traffic extremely\n\nAI::_TASK_VEHICLE_FOLLOW(l_244[3/*1*/], l_268[3/*1*/], l_278, 40.0, 262144, 10);\n\nWhat is this known as in the decompiled scripts ffs. I need more examples. I've searched in all scripts for keywords suchas,\nTASK_VEHICLE_FOLLOW, FC545A9F0626E3B6, 0xFC545A9F0626E3B6, all the parameters in the above example even just search the last few params '40.0, 262144, 10' and couldnt find where this native is used in scripts at all unless whoever decompiled the scripts gave it a whack a.. name.",
+			"name": "TASK_VEHICLE_FOLLOW",
+			"jhash": "0xA8B917D7",
+			"comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle:\n0 = Rushed\n1 = Ignore Traffic Lights\n2 = Fast\n3 = Normal (Stop in Traffic)\n4 = Fast avoid traffic\n5 = Fast, stops in traffic but overtakes sometimes\n6 = Fast avoids traffic extremely",
 			"params": [
 				{
 					"type": "Ped",
