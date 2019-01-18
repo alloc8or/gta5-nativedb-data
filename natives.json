@@ -31879,7 +31879,7 @@
 			"build": "323"
 		},
 		"0xFEAD16FC8F9DFC0F": {
-			"name": "_GET_FREE_STACK_SLOTS_COUNT",
+			"name": "_GET_NUMBER_OF_FREE_STACKS_WITH_THIS_SIZE",
 			"jhash": "0x11A178B8",
 			"comment": "",
 			"params": [
@@ -31944,8 +31944,8 @@
 			"comment": "If the parameter is true, sets the random event flag to true, if the parameter is false, the function does nothing at all.\nDoes nothing if the mission flag is set.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -31956,7 +31956,7 @@
 			"jhash": "0x794CC92C",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x24DA7D7667FD7B09": {
