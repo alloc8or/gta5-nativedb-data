@@ -56326,20 +56326,20 @@
 			"build": "323"
 		},
 		"0xE84EB93729C5F36A": {
-			"name": "_0xE84EB93729C5F36A",
+			"name": "_GET_OBJECT_TEXTURE_VARIATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "757"
 		},
 		"0x971DA0055324D033": {
-			"name": "_SET_OBJECT_TEXTURE_VARIANT",
+			"name": "_SET_OBJECT_TEXTURE_VARIATION",
 			"jhash": "",
 			"comment": "enum ObjectPaintVariants\n{\n Pacific = 0,\n  Azure = 1,\n    Nautical = 2,\n Continental = 3,\n  Battleship = 4,\n   Intrepid = 5,\n Uniform = 6,\n  Classico = 7,\n Mediterranean = 8,\n    Command = 9,\n  Mariner = 10,\n Ruby = 11,\n    Vintage = 12,\n Pristine = 13,\n    Merchant = 14,\n    Voyager = 15\n};",
 			"params": [
@@ -56349,7 +56349,7 @@
 				},
 				{
 					"type": "int",
-					"name": "paintIndex"
+					"name": "textureVariation"
 				}
 			],
 			"return_type": "void",
