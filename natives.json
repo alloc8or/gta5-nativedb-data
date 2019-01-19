@@ -42726,7 +42726,7 @@
 		"0x85443FF4C328F53B": {
 			"name": "_NETWORK_ARE_ROS_AVAILABLE",
 			"jhash": "0x3FB40673",
-			"comment": "Returns whether the Rockstar game services are available or not:\n\nSCLB_NO_ROS = The Rockstar game services are unavailable right now. Please try again later.\n\nprod.ros.rockstargames.com\nprod.telemetry.ros.rockstargames.com\nconductor-prod.ros.rockstargames.com",
+			"comment": "Returns whether the Rockstar game services are available or not",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -47453,10 +47453,10 @@
 		},
 		"0xC0D2AF00BCC234CA": {
 			"name": "_0xC0D2AF00BCC234CA",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0xAC00A5BE",
+			"comment": "NETWORK_IS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xF2FD55CB574BCC55": {
