@@ -42662,7 +42662,7 @@
 		"0xFCA9373EF340AC0A": {
 			"name": "_GET_ONLINE_VERSION",
 			"jhash": "",
-			"comment": "Online version is defined here: update\\update.rpf\\common\\data\\version.txt\n\nExample:\n\n[ONLINE_VERSION_NUMBER]\n1.33\n\n_GET_ONLINE_VERSION() will return \"1.33\"\n\nBelongs in NETWORK",
+			"comment": "Online version is defined here: update\\update.rpf\\common\\data\\version.txt\n\nExample:\n\n[ONLINE_VERSION_NUMBER]\n1.33\n\n_GET_ONLINE_VERSION() will return \"1.33\"",
 			"params": [],
 			"return_type": "const char*",
 			"build": "323"
