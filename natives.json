@@ -15870,8 +15870,8 @@
 			"build": "323"
 		},
 		"0x0A25F80D5BADC013": {
-			"name": "_0x0A25F80D5BADC013",
-			"jhash": "",
+			"name": "DRAW_DEBUG_LINE",
+			"jhash": "0xABF783AB",
 			"comment": "",
 			"params": [
 				{
@@ -16025,8 +16025,8 @@
 			"build": "323"
 		},
 		"0x6A3E157475DBFCD9": {
-			"name": "_0x6A3E157475DBFCD9",
-			"jhash": "",
+			"name": "DRAW_DEBUG_BOX",
+			"jhash": "0x8524A848",
 			"comment": "",
 			"params": [
 				{
