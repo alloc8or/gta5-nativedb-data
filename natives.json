@@ -55153,7 +55153,7 @@
 					"name": "name"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Object",
 			"build": "323"
 		},
 		"0x5C29F698D404C5E1": {
