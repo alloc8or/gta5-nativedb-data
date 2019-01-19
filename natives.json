@@ -55128,9 +55128,9 @@
 			"build": "323"
 		},
 		"0xB48FCED898292E52": {
-			"name": "_GET_DES_OBJECT",
+			"name": "GET_RAYFIRE_MAP_OBJECT",
 			"jhash": "0xA286DE96",
-			"comment": "Gets a destructible object's handle\n\nExample:\nOBJECT::_B48FCED898292E52(-809.9619750976562, 170.919, 75.7406997680664, 3.0, \"des_tvsmash\");\n\nAll found arguments for p4 starts with \"des_\" like \"DES_FIB_Floor\" and \"des_shipsink\".",
+			"comment": "Example:\nOBJECT::GET_RAYFIRE_MAP_OBJECT(-809.9619750976562, 170.919, 75.7406997680664, 3.0, \"des_tvsmash\");",
 			"params": [
 				{
 					"type": "float",
@@ -55157,13 +55157,13 @@
 			"build": "323"
 		},
 		"0x5C29F698D404C5E1": {
-			"name": "_SET_DES_OBJECT_STATE",
+			"name": "SET_STATE_OF_RAYFIRE_MAP_OBJECT",
 			"jhash": "0x21F51560",
-			"comment": "Defines the state of a destructible object.\nUse the \"0xB48FCED898292E52\" native to find an object's handle with its name / coords\n\nState 2 == object just spawned\nState 4 == Beginning of the animation\nState 6 == Start animation\nState 9 == End of the animation",
+			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "handle"
+					"type": "Object",
+					"name": "object"
 				},
 				{
 					"type": "int",
@@ -55174,39 +55174,39 @@
 			"build": "323"
 		},
 		"0x899BA936634A322E": {
-			"name": "_GET_DES_OBJECT_STATE",
+			"name": "GET_STATE_OF_RAYFIRE_MAP_OBJECT",
 			"jhash": "0xF1B8817A",
-			"comment": "Get a destrictible object's state.\nSubstract 1 to get the real state.\nSee _SET_DES_OBJECT_STATE to see the different states\n\nFor example, if the object just spawned (state 2), the native will return 3.",
+			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "handle"
+					"type": "Object",
+					"name": "object"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x52AF537A0C5B8AAD": {
-			"name": "_DOES_DES_OBJECT_EXIST",
+			"name": "DOES_RAYFIRE_MAP_OBJECT_EXIST",
 			"jhash": "0xE08C834D",
-			"comment": "Returns true if a destructible object with this handle exists, false otherwise.",
+			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "handle"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x260EE4FDBDF4DB01": {
-			"name": "_0x260EE4FDBDF4DB01",
+			"name": "GET_RAYFIRE_MAP_OBJECT_ANIM_PHASE",
 			"jhash": "0x020497DE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "float",
