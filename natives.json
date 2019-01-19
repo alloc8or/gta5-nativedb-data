@@ -54366,9 +54366,9 @@
 			"build": "323"
 		},
 		"0xC153C43EA202C8C1": {
-			"name": "_DOES_DOOR_EXIST",
+			"name": "IS_DOOR_REGISTERED_WITH_SYSTEM",
 			"jhash": "0x5AFCD8A1",
-			"comment": "Always used prior a door functions Example \n\nif (OBJECT::_DOES_DOOR_EXIST(doorHash)) \n{\n    OBJECT::REMOVE_DOOR_FROM_SYSTEM(doorHash);\n}",
+			"comment": "if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(doorHash)) \n{\n    OBJECT::REMOVE_DOOR_FROM_SYSTEM(doorHash);\n}",
 			"params": [
 				{
 					"type": "Hash",
@@ -54385,7 +54385,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "door"
+					"name": "doorHash"
 				}
 			],
 			"return_type": "BOOL",
