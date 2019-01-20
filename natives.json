@@ -15318,7 +15318,7 @@
 					"name": "hash"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Hash",
 			"build": "323"
 		},
 		"0x6BEDF5769AC2DC07": {
@@ -96525,7 +96525,7 @@
 		"0x53AF99BAA671CA47": {
 			"name": "_GET_VEHICLE_MAX_SPEED",
 			"jhash": "0x7D1A0616",
-			"comment": "GET_VEHICLE_MAX_*\nsfink: this returns the vehicle property \"Assisted Steering\" or at least, it returned 37.5 when i was in a car with that value as assisted steering.",
+			"comment": "GET_VEHICLE_*\nsfink: this returns the vehicle property \"Assisted Steering\" or at least, it returned 37.5 when i was in a car with that value as assisted steering.",
 			"params": [
 				{
 					"type": "Vehicle",
