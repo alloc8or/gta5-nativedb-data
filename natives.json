@@ -64983,7 +64983,7 @@
 			"build": "323"
 		},
 		"0x26695EC767728D84": {
-			"name": "_SET_PED_RAGDOLL_BLOCKING_FLAGS",
+			"name": "SET_RAGDOLL_BLOCKING_FLAGS",
 			"jhash": "0x9C8F830D",
 			"comment": "Works for both player and peds, but some flags don't seem to work for the player (1, for example)\n\n1 - Blocks ragdolling when shot.\n2 - Blocks ragdolling when hit by a vehicle. The ped still might play a falling animation.\n4 - Blocks ragdolling when set on fire.\n\n-----------------------------------------------------------------------\n\nThere seem to be 26 flags",
 			"params": [
@@ -65000,7 +65000,7 @@
 			"build": "323"
 		},
 		"0xD86D101FCFD00A4B": {
-			"name": "_RESET_PED_RAGDOLL_BLOCKING_FLAGS",
+			"name": "CLEAR_RAGDOLL_BLOCKING_FLAGS",
 			"jhash": "0x77CBA290",
 			"comment": "There seem to be 26 flags",
 			"params": [
