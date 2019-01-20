@@ -15135,7 +15135,7 @@
 			"jhash": "0x6641A864",
 			"comment": "outfit = a structure passing though it - see GET_SHOP_PED_QUERY_OUTFIT\nslot - outfit slot\nitem - holds 3 ints in a struct",
 			"params": [
-				
+				{
 					"type": "Any",
 					"name": "outfit"
 				},
