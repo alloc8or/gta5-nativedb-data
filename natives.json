@@ -26798,20 +26798,20 @@
 		"0x2C173AE2BDB9385E": {
 			"name": "_0x2C173AE2BDB9385E",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_BLIP_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "463"
 		},
 		"0xF87683CDF73C3F6E": {
 			"name": "SET_BLIP_ROTATION",
 			"jhash": "0x6B8F44FE",
-			"comment": "After some testing, looks like you need to use UI:CEIL() on the rotation (vehicle/ped heading) before using it there.",
+			"comment": "After some testing, looks like you need to use CEIL() on the rotation (vehicle/ped heading) before using it there.",
 			"params": [
 				{
 					"type": "Blip",
@@ -27048,9 +27048,9 @@
 			"build": "323"
 		},
 		"0x5C90988E7C8E1AF4": {
-			"name": "DISABLE_BLIP_NAME_FOR_VAR",
+			"name": "_0x5C90988E7C8E1AF4",
 			"jhash": "0xFFD7476C",
-			"comment": "Hash collision!!! \n\nReturns a blip handle.",
+			"comment": "",
 			"params": [],
 			"return_type": "Blip",
 			"build": "323"
@@ -27307,24 +27307,24 @@
 			"build": "323"
 		},
 		"0x75A16C3DA34F1245": {
-			"name": "_0x75A16C3DA34F1245",
+			"name": "SHOW_HEIGHT_ON_BLIP",
 			"jhash": "0x1D99F676",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x74513EA3E505181E": {
-			"name": "_SET_BLIP_CHECKED",
+			"name": "SHOW_TICK_ON_BLIP",
 			"jhash": "0x3DCF0092",
 			"comment": "Adds a green checkmark on top of a blip.",
 			"params": [
@@ -27358,7 +27358,7 @@
 			"build": "323"
 		},
 		"0xB81656BC81FE24D1": {
-			"name": "_SET_BLIP_FRIENDLY",
+			"name": "SHOW_OUTLINE_INDICATOR_ON_BLIP",
 			"jhash": "0x8DE82C15",
 			"comment": "Highlights a blip by a cyan color circle.\n \nColor can be changed with SET_BLIP_SECONDARY_COLOUR\n\n",
 			"params": [
@@ -27375,7 +27375,7 @@
 			"build": "323"
 		},
 		"0x23C3EB807312F01A": {
-			"name": "_SET_BLIP_FRIEND",
+			"name": "SHOW_FRIEND_INDICATOR_ON_BLIP",
 			"jhash": "0x4C8F02B4",
 			"comment": "Highlights a blip by a half cyan circle.",
 			"params": [
@@ -64946,7 +64946,7 @@
 		"0xD1871251F3B5ACD7": {
 			"name": "_0xD1871251F3B5ACD7",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -65140,7 +65140,7 @@
 			"build": "323"
 		},
 		"0xE4723DB6E736CCFF": {
-			"name": "_0xE4723DB6E736CCFF",
+			"name": "SET_PED_DEFENSIVE_SPHERE_ATTACHED_TO_VEHICLE",
 			"jhash": "0x4763B2C6",
 			"comment": "",
 			"params": [
@@ -65149,24 +65149,24 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "target"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "xOffset"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "yOffset"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "zOffset"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "radius"
 				},
 				{
 					"type": "BOOL",
@@ -73601,9 +73601,9 @@
 			"build": "323"
 		},
 		"0xD2B315B6689D537D": {
-			"name": "_0xD2B315B6689D537D",
+			"name": "SET_AUTO_GIVE_SCUBA_GEAR_WHEN_EXIT_VEHICLE",
 			"jhash": "0xA25D767E",
-			"comment": "1.0.335.2, 1.0.350.1/2, 1.0.372.2, 1.0.393.2, 1.0.393.4, 1.0.463.1;",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -73611,7 +73611,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
