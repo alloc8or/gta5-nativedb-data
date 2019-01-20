@@ -73874,7 +73874,7 @@
 		"0xFF300C7649724A0B": {
 			"name": "_0xFF300C7649724A0B",
 			"jhash": "0xAD8383FA",
-			"comment": "gets byte at offset 0x862 in the specified players data (ped data + 0xbd0) and stores the bool p1 in it.\nlwz       r3, 0xBD0(r3) ;r3 is player data\nlbz       r4, 0x862(r3) ;r4 is now the byte\ninsrwi    r4, r31, 1,28 ;stores p1 as a bit in place 28 idk\nstb       r4, 0x862(r3) ; puts the newly modified one back in\n\nSET_PLAYER_*",
+			"comment": "SET_PLAYER_*\n\nSET_PLAYER_LEAVE_PED_BEHIND ?",
 			"params": [
 				{
 					"type": "Player",
@@ -82037,9 +82037,9 @@
 			"build": "323"
 		},
 		"0x08C2D6C52A3104BB": {
-			"name": "SET_PLAYER_INVERTED_UP",
+			"name": "_0x08C2D6C52A3104BB",
 			"jhash": "0x569847E3",
-			"comment": "",
+			"comment": "GET_PLAYER_*",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
