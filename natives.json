@@ -15127,34 +15127,34 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xA9F9C2E0FDE11CBB": {
-			"name": "_0xA9F9C2E0FDE11CBB",
+			"name": "GET_SHOP_PED_OUTFIT_PROP_VARIANT",
 			"jhash": "0x6641A864",
-			"comment": "",
+			"comment": "outfit = a structure passing though it - see GET_SHOP_PED_QUERY_OUTFIT\nslot - outfit slot\nitem - holds 3 ints in a struct",
 			"params": [
-				{
+				
 					"type": "Any",
-					"name": "p0"
+					"name": "outfit"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "slot"
 				},
 				{
 					"type": "Any*",
-					"name": "p2"
+					"name": "item"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x19F2A026EDF0013F": {
-			"name": "_GET_PROP_FROM_OUTFIT",
+			"name": "GET_SHOP_PED_OUTFIT_COMPONENT_VARIANT",
 			"jhash": "0x818534AC",
-			"comment": "outfit = a structure passing though it - see GET_SHOP_PED_QUERY_OUTFIT\nslot - outfit slot\nitem - hold 3 ints in a struct, you can use Vector3 structure\n\nGET_SHOP_PED_???",
+			"comment": "outfit = a structure passing though it - see GET_SHOP_PED_QUERY_OUTFIT\nslot - outfit slot\nitem - holds 3 ints in a struct",
 			"params": [
 				{
 					"type": "Any",
@@ -15283,13 +15283,13 @@
 			"build": "323"
 		},
 		"0xD4D7B033C3AA243C": {
-			"name": "_IS_DLC_DATA_EMPTY",
+			"name": "IS_CONTENT_ITEM_LOCKED",
 			"jhash": "0x06396058",
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "dlcData"
+					"type": "Hash",
+					"name": "itemHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -15298,24 +15298,24 @@
 		"0x0564B9FF9631B82C": {
 			"name": "IS_DLC_VEHICLE_MOD",
 			"jhash": "0x35BCA844",
-			"comment": "Use _GET_VEHICLE_MOD_DATA for modData",
+			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "modData"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xC098810437312FFF": {
-			"name": "_0xC098810437312FFF",
+			"name": "GET_DLC_VEHICLE_MOD_LOCK_HASH",
 			"jhash": "0x59352658",
-			"comment": "Use _GET_VEHICLE_MOD_DATA for modData\n\nAppears to be a GET_DLC_VEHICLE_MOD_* native.",
+			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "modData"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
 			"return_type": "int",
@@ -15324,11 +15324,11 @@
 		"0x6BEDF5769AC2DC07": {
 			"name": "_0x6BEDF5769AC2DC07",
 			"jhash": "",
-			"comment": "",
+			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::_0x3C1978285B036B25(joaat(\"GROUP_MAP_SP\"));\nFILES::_0x6BEDF5769AC2DC07(joaat(\"GROUP_MAP\"));",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
 			"return_type": "void",
@@ -15337,11 +15337,11 @@
 		"0x3C1978285B036B25": {
 			"name": "_0x3C1978285B036B25",
 			"jhash": "",
-			"comment": "",
+			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::_0x3C1978285B036B25(joaat(\"GROUP_MAP_SP\"));\nFILES::_0x6BEDF5769AC2DC07(joaat(\"GROUP_MAP\"));",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
 			"return_type": "void",
@@ -97371,7 +97371,7 @@
 			"build": "323"
 		},
 		"0x4593CF82AA179706": {
-			"name": "_GET_VEHICLE_MOD_DATA",
+			"name": "GET_VEHICLE_MOD_IDENTIFIER_HASH",
 			"jhash": "0x94850968",
 			"comment": "Can be used for IS_DLC_VEHICLE_MOD and _0xC098810437312FFF",
 			"params": [
@@ -97388,7 +97388,7 @@
 					"name": "modIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "323"
 		},
 		"0x758F49C24925568A": {
