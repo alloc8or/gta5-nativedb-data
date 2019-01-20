@@ -96601,9 +96601,9 @@
 			"build": "323"
 		},
 		"0xBFBA3BA79CFF7EBF": {
-			"name": "_0xBFBA3BA79CFF7EBF",
+			"name": "GET_VEHICLE_MODEL_MAX_BRAKING_MAX_MODS",
 			"jhash": "0xF3A7293F",
-			"comment": "GET_VEHICLE_MODEL_MAX_*\nmax braking if air vehicle, else max braking + 0.1\n\n-------------------\n\nFor a full list, see here: pastebin.com/Cb9L1Cn0",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
