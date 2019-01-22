@@ -1369,7 +1369,7 @@
 			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/A8Ny8AHZ",
 			"params": [
 				{
-					"type": "Player",
+					"type": "int",
 					"name": "soundId"
 				},
 				{
@@ -3008,9 +3008,9 @@
 			"build": "323"
 		},
 		"0xBCC29F935ED07688": {
-			"name": "GET_PLAYER_HEADSET_SOUND_ALTERNATE",
+			"name": "_0xBCC29F935ED07688",
 			"jhash": "0xD63CF33A",
-			"comment": "Called 5 times in the scripts. All occurrences found in b617d, sorted alphabetically and identical lines removed: \n\nAUDIO::GET_PLAYER_HEADSET_SOUND_ALTERNATE(\"INOUT\", 0.0);\nAUDIO::GET_PLAYER_HEADSET_SOUND_ALTERNATE(\"INOUT\", 1.0);",
+			"comment": "Called 5 times in the scripts. All occurrences found in b617d, sorted alphabetically and identical lines removed: \n\nAUDIO::_0xBCC29F935ED07688(\"INOUT\", 0.0);\nAUDIO::_0xBCC29F935ED07688(\"INOUT\", 1.0);",
 			"params": [
 				{
 					"type": "const char*",
@@ -3027,7 +3027,7 @@
 		"0xDFEBD56D9BD1EB16": {
 			"name": "PLAY_POLICE_REPORT",
 			"jhash": "0x3F277B62",
-			"comment": "Please change to void. (Does not return anything!)\n\nPlays the given police radio message.\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/GBnsQ5hr",
+			"comment": "Plays the given police radio message.\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/GBnsQ5hr",
 			"params": [
 				{
 					"type": "const char*",
@@ -3112,7 +3112,7 @@
 		"0x02E93C796ABD3A97": {
 			"name": "_0x02E93C796ABD3A97",
 			"jhash": "0x3C395AEE",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [
 				{
 					"type": "BOOL",
@@ -3975,7 +3975,7 @@
 			"jhash": "0xD633C809",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x159B7318403A1CD8": {
@@ -4450,7 +4450,7 @@
 			"build": "323"
 		},
 		"0x12561FCBB62D5B9C": {
-			"name": "_0x12561FCBB62D5B9C",
+			"name": "SET_AUDIO_SPECIAL_EFFECT_MODE",
 			"jhash": "0x62B43677",
 			"comment": "p0 is usually 0. sometimes 2. Not sure what this does.",
 			"params": [
@@ -6834,7 +6834,7 @@
 			"build": "323"
 		},
 		"0x487A82C650EB7799": {
-			"name": "CUSTOM_MENU_COORDINATES",
+			"name": "_0x487A82C650EB7799",
 			"jhash": "0xA6E73135",
 			"comment": "some camera effect that is used in the drunk-cheat, and turned off (by setting it to 0.0) along with the shaking effects once the drunk cheat is disabled.",
 			"params": [
@@ -19773,7 +19773,7 @@
 			"build": "323"
 		},
 		"0x5CCABFFCA31DDE33": {
-			"name": "IS_PARTICLE_FX_DELAYED_BLINK",
+			"name": "_0x5CCABFFCA31DDE33",
 			"jhash": "0xEA432A94",
 			"comment": "",
 			"params": [],
