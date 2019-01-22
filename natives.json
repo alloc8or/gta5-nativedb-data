@@ -39784,8 +39784,8 @@
 			"build": "323"
 		},
 		"0x9D26502BB97BFE62": {
-			"name": "_NETWORK_SPENT_REQUEST_HEIST",
-			"jhash": "",
+			"name": "NETWORK_SPENT_REQUEST_HEIST",
+			"jhash": "0xF4287778",
 			"comment": "",
 			"params": [
 				{
@@ -39839,7 +39839,7 @@
 		},
 		"0x7C4FCCD2E4DEB394": {
 			"name": "_0x7C4FCCD2E4DEB394",
-			"jhash": "",
+			"jhash": "0x468CC978",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
