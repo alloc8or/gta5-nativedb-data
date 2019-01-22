@@ -37797,11 +37797,11 @@
 			"build": "791"
 		},
 		"0xFB2456B2040A6A67": {
-			"name": "_0xFB2456B2040A6A67",
+			"name": "_NETWORK_GET_IS_HIGH_EARNER",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA921DED15FDF28F5": {
@@ -37885,11 +37885,36 @@
 			"build": "323"
 		},
 		"0x18B7AE224B087E26": {
-			"name": "_0x18B7AE224B087E26",
+			"name": "_NETWORK_DEDUCT_CASH",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				},
+				{
+					"type": "const char*",
+					"name": "p2"
+				},
+				{
+					"type": "BOOL",
+					"name": "p3"
+				},
+				{
+					"type": "BOOL",
+					"name": "p4"
+				},
+				{
+					"type": "BOOL",
+					"name": "p5"
+				}
+			],
+			"return_type": "void",
 			"build": "323"
 		},
 		"0x81404F3DC124FE5B": {
@@ -38063,16 +38088,16 @@
 			"build": "323"
 		},
 		"0xC8407624CEF2354B": {
-			"name": "_0xC8407624CEF2354B",
+			"name": "_NETWORK_EARN_FROM_PREMIUM_JOB",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -38222,7 +38247,7 @@
 		"0x02CE1D6AC0FC73EA": {
 			"name": "NETWORK_EARN_FROM_ROCKSTAR",
 			"jhash": "0x5A3733CC",
-			"comment": "This merely adds an entry in the Network Transaction Log; \nit does not grant cash to the player (on PC).\n\nMax value for amount is 9999999.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -38235,7 +38260,7 @@
 		"0xB539BD8A4C1EECF8": {
 			"name": "NETWORK_EARN_FROM_VEHICLE",
 			"jhash": "0xF803589D",
-			"comment": "Now has 8 params.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -38276,7 +38301,7 @@
 		"0x3F4D00167E41E0AD": {
 			"name": "NETWORK_EARN_FROM_PERSONAL_VEHICLE",
 			"jhash": "0x96B8BEE8",
-			"comment": "Now has 9 parameters.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -38341,7 +38366,7 @@
 		},
 		"0xFB6DB092FBAE29E6": {
 			"name": "NETWORK_EARN_FROM_AMBIENT_JOB",
-			"jhash": "",
+			"jhash": "0xA14CC95D",
 			"comment": "Example for p1: \"AM_DISTRACT_COPS\"",
 			"params": [
 				{
@@ -38382,8 +38407,8 @@
 			"build": "1290"
 		},
 		"0x6816FB4416760775": {
-			"name": "_NETWORK_EARN_FROM_JOB_BONUS",
-			"jhash": "",
+			"name": "NETWORK_EARN_FROM_JOB_BONUS",
+			"jhash": "0xBEE23713",
 			"comment": "",
 			"params": [
 				{
@@ -38512,11 +38537,20 @@
 			"build": "573"
 		},
 		"0x3E4ADAFF1830F146": {
-			"name": "_0x3E4ADAFF1830F146",
+			"name": "_NETWORK_EARN_FROM_WAREHOUSE",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "int",
+					"name": "id"
+				}
+			],
+			"return_type": "void",
 			"build": "757"
 		},
 		"0xECA658CE2A4E5A72": {
