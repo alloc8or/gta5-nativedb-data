@@ -90870,7 +90870,7 @@
 			"build": "323"
 		},
 		"0x07116E24E9D1929D": {
-			"name": "STEER_UNLOCK_BIAS",
+			"name": "SET_VEHICLE_IS_RACING",
 			"jhash": "0xA59E3DCD",
 			"comment": "p1 (toggle) was always 1 (true) except in one case in the b678 scripts.",
 			"params": [
