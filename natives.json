@@ -90395,8 +90395,8 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -90674,7 +90674,7 @@
 		"0x76D26A22750E849E": {
 			"name": "_0x76D26A22750E849E",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
