@@ -22294,9 +22294,9 @@
 			"build": "1290"
 		},
 		"0x0C1C5D756FB5F337": {
-			"name": "_HAS_NAMED_SCALEFORM_MOVIE_LOADED",
+			"name": "_HAS_SCALEFORM_MOVIE_LOADED_WITH_NAME",
 			"jhash": "",
-			"comment": "Pretty sure it's the real name (not 100% sure so I added the _ prefix); can someone else confirm it?\n\nOnly values used in the scripts are:\n\n\"heist_mp\"\n\"heistmap_mp\"\n\"instructional_buttons\"\n\"heist_pre\"",
+			"comment": "Only values used in the scripts are:\n\n\"heist_mp\"\n\"heistmap_mp\"\n\"instructional_buttons\"\n\"heist_pre\"",
 			"params": [
 				{
 					"type": "const char*",
@@ -25277,7 +25277,7 @@
 			"build": "323"
 		},
 		"0x6009F9F1AE90D8A6": {
-			"name": "_REQUEST_ADDITIONAL_TEXT_2",
+			"name": "REQUEST_ADDITIONAL_TEXT_FOR_DLC",
 			"jhash": "0xF4D27EBE",
 			"comment": "",
 			"params": [
@@ -25672,7 +25672,7 @@
 		"0x60296AF4BA14ABC5": {
 			"name": "ADD_NEXT_MESSAGE_TO_PREVIOUS_BRIEFS",
 			"jhash": "0xB58B25BD",
-			"comment": "hash collision?",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -25696,13 +25696,13 @@
 			"build": "323"
 		},
 		"0xBD12C5EEE184C337": {
-			"name": "RESPONDING_AS_TEMP",
+			"name": "SET_RADAR_ZOOM_PRECISE",
 			"jhash": "0xDCA3F423",
-			"comment": "Please change back to _0xBD12C5EEE184C33 (hash collision)\nactual native starts with SET_RADAR_ZOOM_...",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "zoom"
 				}
 			],
 			"return_type": "void",
