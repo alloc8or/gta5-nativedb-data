@@ -22894,7 +22894,7 @@
 		"0xE1E258829A885245": {
 			"name": "_GET_SCALEFORM_MOVIE_NAME",
 			"jhash": "0x516862EB",
-			"comment": "Unsurprisingly, this native is incorrectly named. Instead, this returns the name of the scaleform movie.\n\nHASH COLLISION. PLEASE REMOVE NATIVE NAME.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -23652,7 +23652,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Pickup",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x9245E81072704B8A": {
