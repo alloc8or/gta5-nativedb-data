@@ -23177,81 +23177,81 @@
 			"build": "323"
 		},
 		"0xF7B38B8305F1FE8B": {
-			"name": "_0xF7B38B8305F1FE8B",
+			"name": "SET_TV_CHANNEL_PLAYLIST",
 			"jhash": "0xB262DE67",
-			"comment": "SET_TV_???",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "TV_Channel"
+					"name": "tvChannel"
 				},
 				{
 					"type": "const char*",
-					"name": "VideoSequence"
+					"name": "playlistName"
 				},
 				{
 					"type": "BOOL",
-					"name": "Restart"
+					"name": "restart"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x2201C576FACAEBE8": {
-			"name": "_0x2201C576FACAEBE8",
+			"name": "SET_TV_CHANNEL_PLAYLIST_AT_HOUR",
 			"jhash": "0x78C4DCBE",
-			"comment": "SET_TV_???",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "tvChannel"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "playlistName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "hour"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xBEB3D46BB7F043C0": {
-			"name": "_0xBEB3D46BB7F043C0",
+			"name": "CLEAR_TV_CHANNEL_PLAYLIST",
 			"jhash": "0xCBE7068F",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "tvChannel"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x1F710BFF7DAE6261": {
-			"name": "_0x1F710BFF7DAE6261",
+			"name": "_IS_PLAYLIST_UNK",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "tvChannel"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1604"
 		},
 		"0x0AD973CA1E077B60": {
 			"name": "_LOAD_TV_CHANNEL",
 			"jhash": "0x4D1EB0FB",
-			"comment": "",
+			"comment": "IS_*",
 			"params": [
 				{
 					"type": "Hash",
@@ -23262,13 +23262,13 @@
 			"build": "323"
 		},
 		"0x74C180030FDE4B69": {
-			"name": "_0x74C180030FDE4B69",
+			"name": "ENABLE_MOVIE_KEYFRAME_WAIT",
 			"jhash": "0x796DE696",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -23290,7 +23290,7 @@
 		"0x30432A0118736E00": {
 			"name": "_0x30432A0118736E00",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_CURRENT_*",
 			"params": [],
 			"return_type": "Any",
 			"build": "1493"
