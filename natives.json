@@ -3400,7 +3400,7 @@
 		"0x9C11908013EA4715": {
 			"name": "_SOUND_VEHICLE_HORN_THIS_FRAME",
 			"jhash": "0xDE8BA3CD",
-			"comment": "",
+			"comment": "SET_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -23292,7 +23292,7 @@
 			"jhash": "",
 			"comment": "GET_CURRENT_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1493"
 		},
 		"0x873FA65C778AD970": {
