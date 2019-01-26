@@ -16844,9 +16844,9 @@
 			"build": "323"
 		},
 		"0xDC54A7AF8B3A14EF": {
-			"name": "_GET_MAXIMUM_NUMBER_OF_PHOTOS_2",
+			"name": "GET_MAXIMUM_NUMBER_OF_CLOUD_PHOTOS",
 			"jhash": "0x239272BD",
-			"comment": "",
+			"comment": "This function is hard-coded to always return 96.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
