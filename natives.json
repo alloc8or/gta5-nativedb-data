@@ -11987,7 +11987,7 @@
 		"0x694E00132F2823ED": {
 			"name": "_0x694E00132F2823ED",
 			"jhash": "0x40C84A74",
-			"comment": "what does it do?",
+			"comment": "SET_ENTITY_R*",
 			"params": [
 				{
 					"type": "Entity",
@@ -11995,7 +11995,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -12624,7 +12624,7 @@
 		"0x3910051CCECDB00C": {
 			"name": "_SET_ENTITY_SOMETHING",
 			"jhash": "0xD3850671",
-			"comment": "what does this native do?\n\nbool IsEntitySomething(Entity entity)\n{\n    auto addr = getScriptHandleBaseAddress(entity);\n   printf(\"addr: 0x%X \\n\", addr);\n\n    if (addr)\n {\n     DWORD flag = *(DWORD *)(addr + 0x48D);\n        printf(\"flag: 0x%X \\n\", flag);\n\n        return ((flag & (1 << 3)) != 0) || ((flag & (1 << 30)) != 0);\n }\n\n   return false;\n}\n\nwot ?",
+			"comment": "SET_ENTITY_*",
 			"params": [
 				{
 					"type": "Entity",
