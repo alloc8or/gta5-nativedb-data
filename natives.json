@@ -22203,16 +22203,16 @@
 			"build": "323"
 		},
 		"0x67D02A194A2FC2BD": {
-			"name": "_0x67D02A194A2FC2BD",
+			"name": "_REQUEST_SCALEFORM_MOVIE_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "scaleformName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "372"
 		},
 		"0x11FE353CF9733E6F": {
@@ -22231,7 +22231,7 @@
 		"0xC514489CFB8AF806": {
 			"name": "REQUEST_SCALEFORM_MOVIE_INSTANCE",
 			"jhash": "0x7CC8057D",
-			"comment": "Also used by 0x67D02A194A2FC2BD",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
