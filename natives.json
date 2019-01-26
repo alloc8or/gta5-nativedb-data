@@ -22084,56 +22084,56 @@
 			"build": "323"
 		},
 		"0xBBF327DED94E4DEB": {
-			"name": "_0xBBF327DED94E4DEB",
+			"name": "SET_CURRENT_PLAYER_TCMODIFIER",
 			"jhash": "0x85BA15A4",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "modifierName"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xBDEB86F4D5809204": {
-			"name": "_0xBDEB86F4D5809204",
+			"name": "SET_PLAYER_TCMODIFIER_TRANSITION",
 			"jhash": "0x9559BB38",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xBF59707B3E5ED531": {
-			"name": "_0xBF59707B3E5ED531",
+			"name": "SET_NEXT_PLAYER_TCMODIFIER",
 			"jhash": "0x554BA16E",
-			"comment": "Something to do with timecycles.",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "modifierName"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x1A8E2C8B9CF4549C": {
-			"name": "_0x1A8E2C8B9CF4549C",
+			"name": "ADD_TCMODIFIER_OVERRIDE",
 			"jhash": "0xE8F538B5",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "modifierName1"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "modifierName2"
 				}
 			],
 			"return_type": "void",
@@ -22145,7 +22145,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -22153,20 +22153,20 @@
 			"build": "323"
 		},
 		"0x5096FD9CCB49056D": {
-			"name": "_0x5096FD9CCB49056D",
+			"name": "_SET_EXTRA_TIMECYCLE_MODIFIER",
 			"jhash": "0x908A335E",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "modifierName"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x92CCC17A7A2285DA": {
-			"name": "_0x92CCC17A7A2285DA",
+			"name": "_CLEAR_EXTRA_TIMECYCLE_MODIFIER",
 			"jhash": "0x6776720A",
 			"comment": "",
 			"params": [],
@@ -22174,28 +22174,28 @@
 			"build": "323"
 		},
 		"0xBB0527EC6341496D": {
-			"name": "_0xBB0527EC6341496D",
+			"name": "_GET_EXTRA_TIMECYCLE_MODIFIER_INDEX",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x2C328AF17210F009": {
-			"name": "_0x2C328AF17210F009",
+			"name": "_SET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "strength"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x2BF72AD5B41AA739": {
-			"name": "_0x2BF72AD5B41AA739",
+			"name": "_RESET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -22218,7 +22218,7 @@
 		"0x11FE353CF9733E6F": {
 			"name": "REQUEST_SCALEFORM_MOVIE",
 			"jhash": "0xC67E3DCB",
-			"comment": "Gets a new native after almost every update.\n\nUpdate 1.0.393.2\n0x67D02A194A2FC2BD\n\nUpdate 1.0.463.1\n0xC97D787CE7726A2F\n\nUpdate 1.0.505.2\n0x36ECDA4DD9A3F08D\n\nUpdate 1.0.573.1\n0xE3C796DC28BC3254\n\nUpdate 1.0.678.1\n0x2F14983962462691\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -30732,13 +30732,13 @@
 			"build": "323"
 		},
 		"0xCEF214315D276FD1": {
-			"name": "_0xCEF214315D276FD1",
+			"name": "_SET_IS_IN_TOURNAMENT",
 			"jhash": "0xFF06772A",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -32228,7 +32228,7 @@
 			"build": "323"
 		},
 		"0xFB5045B7C42B75BF": {
-			"name": "_SET_WEATHER_TYPE_OVER_TIME",
+			"name": "SET_WEATHER_TYPE_OVERTIME_PERSIST",
 			"jhash": "0x386F0D25",
 			"comment": "",
 			"params": [
