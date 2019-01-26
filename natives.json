@@ -16854,7 +16854,7 @@
 		"0x473151EBC762C6DA": {
 			"name": "_GET_NUMBER_OF_PHOTOS",
 			"jhash": "0x21DBF0C9",
-			"comment": "Returns an unknown value (dword_142317A08 in b944).\nUsed in appcamera.ysc and maintransition.ysc",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -29947,9 +29947,9 @@
 			"build": "323"
 		},
 		"0x2309595AD6145265": {
-			"name": "_GET_CURRENT_FRONTEND_MENU",
+			"name": "GET_CURRENT_FRONTEND_MENU_VERSION",
 			"jhash": "0x33D6868F",
-			"comment": "if (UI::_2309595AD6145265() == ${fe_menu_version_empty_no_background})\n\nSeems to get the current frontend menu",
+			"comment": "if (HUD::GET_CURRENT_FRONTEND_MENU_VERSION() == joaat(\"fe_menu_version_empty_no_background\"))",
 			"params": [],
 			"return_type": "Hash",
 			"build": "323"
