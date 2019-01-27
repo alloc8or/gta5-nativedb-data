@@ -70788,16 +70788,16 @@
 			"build": "323"
 		},
 		"0x1FC200409F10E6F1": {
-			"name": "_0x1FC200409F10E6F1",
+			"name": "_GET_NUMBER_OF_PLAYERS_IN_TEAM",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "team"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1180"
 		},
 		"0x6D0DE6A7B5DA71F8": {
