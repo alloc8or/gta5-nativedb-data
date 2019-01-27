@@ -22811,9 +22811,9 @@
 			"build": "323"
 		},
 		"0xAB58C27C2E6123C6": {
-			"name": "_PUSH_SCALEFORM_MOVIE_FUNCTION_N",
+			"name": "BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND",
 			"jhash": "0xF6015178",
-			"comment": "Possibly calls \"global\" Scaleform functions - needs more research!",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -22845,60 +22845,60 @@
 			"build": "323"
 		},
 		"0xC50AA39A577AF886": {
-			"name": "_POP_SCALEFORM_MOVIE_FUNCTION",
+			"name": "END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE",
 			"jhash": "0x2F38B526",
-			"comment": "Pops and calls the Scaleform movie on the stack. Returns data from the function (not sure if this is a string).",
+			"comment": "",
 			"params": [],
-			"return_type": "int",
+			"return_type": "Any",
 			"build": "323"
 		},
 		"0x768FF8961BA904D6": {
-			"name": "_0x768FF8961BA904D6",
+			"name": "IS_SCALEFORM_MOVIE_RETURN_VALUE_READY",
 			"jhash": "0x5CD7C3C0",
-			"comment": "Seems to take data that is returned from \"_POP_SCALEFORM_MOVIE_FUNCTION\" and checks to see if it's not null/empty.\n\n\"agency_heist3b.ysc\", line 71836:\nif (CONTROLS::IS_CONTROL_JUST_PRESSED(2, 201) || CONTROLS::IS_CONTROL_JUST_PRESSED(2, 237)) {\n    GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(l_46, \"SET_INPUT_EVENT_SELECT\");\n    l_45 = GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION();\n}\nif (GRAPHICS::_0x768FF8961BA904D6(l_45)) {\n    v_13 = GRAPHICS::_0x2DE7EFA66B906036(l_45);\n    if (v_13 == 6) {\n        sub_73269(a_0);\n    }\n}\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "funcData"
+					"name": "returnValueData"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2DE7EFA66B906036": {
-			"name": "_0x2DE7EFA66B906036",
+			"name": "GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT",
 			"jhash": "0x2CFB0E6D",
-			"comment": "Needs a bit more research, but it seems to return an int.\n\n\"agency_heist3b.ysc\", line 71836:\nif (CONTROLS::IS_CONTROL_JUST_PRESSED(2, 201) || CONTROLS::IS_CONTROL_JUST_PRESSED(2, 237)) {\n    GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(l_46, \"SET_INPUT_EVENT_SELECT\");\n    l_45 = GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION();\n}\nif (GRAPHICS::_0x768FF8961BA904D6(l_45)) {\n    v_13 = GRAPHICS::_0x2DE7EFA66B906036(l_45);\n    if (v_13 == 6) {\n        sub_73269(a_0);\n    }\n}",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "funcData"
+					"name": "returnValueData"
 				}
 			],
 			"return_type": "int",
 			"build": "323"
 		},
 		"0xD80A80346A45D761": {
-			"name": "_0xD80A80346A45D761",
+			"name": "_GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_BOOL",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "returnValueData"
 				}
 			],
 			"return_type": "Any",
 			"build": "757"
 		},
 		"0xE1E258829A885245": {
-			"name": "_GET_SCALEFORM_MOVIE_NAME",
+			"name": "GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING",
 			"jhash": "0x516862EB",
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "scaleform"
+					"type": "Any",
+					"name": "returnValueData"
 				}
 			],
 			"return_type": "const char*",
