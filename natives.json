@@ -22646,7 +22646,7 @@
 			"build": "323"
 		},
 		"0xD0837058AE2E4BEE": {
-			"name": "_CALL_SCALEFORM_MOVIE_FUNCTION_FLOAT_PARAMS",
+			"name": "CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER",
 			"jhash": "0x557EDA1D",
 			"comment": "Calls the Scaleform function and passes the parameters as floats.\n\nThe number of parameters passed to the function varies, so the end of the parameter list is represented by -1.0.",
 			"params": [
@@ -22656,7 +22656,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "functionName"
+					"name": "methodName"
 				},
 				{
 					"type": "float",
@@ -22683,7 +22683,7 @@
 			"build": "323"
 		},
 		"0x51BC1ED3CC44E8F7": {
-			"name": "_CALL_SCALEFORM_MOVIE_FUNCTION_STRING_PARAMS",
+			"name": "CALL_SCALEFORM_MOVIE_METHOD_WITH_STRING",
 			"jhash": "0x91A7FCEB",
 			"comment": "Calls the Scaleform function and passes the parameters as strings.\n\nThe number of parameters passed to the function varies, so the end of the parameter list is represented by 0 (NULL).",
 			"params": [
@@ -22693,7 +22693,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "functionName"
+					"name": "methodName"
 				},
 				{
 					"type": "const char*",
@@ -22720,7 +22720,7 @@
 			"build": "323"
 		},
 		"0xEF662D8D57E290B1": {
-			"name": "_CALL_SCALEFORM_MOVIE_FUNCTION_MIXED_PARAMS",
+			"name": "CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER_AND_STRING",
 			"jhash": "0x6EAF56DE",
 			"comment": "Calls the Scaleform function and passes both float and string parameters (in their respective order).\n\nThe number of parameters passed to the function varies, so the end of the float parameters is represented by -1.0, and the end of the string parameters is represented by 0 (NULL).\n\nNOTE: The order of parameters in the function prototype is important! All float parameters must come first, followed by the string parameters.\n\nExamples:\n// function MY_FUNCTION(floatParam1, floatParam2, stringParam)\nGRAPHICS::_CALL_SCALEFORM_MOVIE_FUNCTION_MIXED_PARAMS(scaleform, \"MY_FUNCTION\", 10.0, 20.0, -1.0, -1.0, -1.0, \"String param\", 0, 0, 0, 0);\n\n// function MY_FUNCTION_2(floatParam, stringParam1, stringParam2)\nGRAPHICS::_CALL_SCALEFORM_MOVIE_FUNCTION_MIXED_PARAMS(scaleform, \"MY_FUNCTION_2\", 10.0, -1.0, -1.0, -1.0, -1.0, \"String param #1\", \"String param #2\", 0, 0, 0);",
 			"params": [
@@ -22730,7 +22730,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "functionName"
+					"name": "methodName"
 				},
 				{
 					"type": "float",
@@ -22787,7 +22787,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "functionName"
+					"name": "methodName"
 				}
 			],
 			"return_type": "BOOL",
@@ -22804,7 +22804,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "functionName"
+					"name": "methodName"
 				}
 			],
 			"return_type": "BOOL",
@@ -22817,20 +22817,20 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "functionName"
+					"name": "methodName"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xB9449845F73F5E9C": {
-			"name": "_0xB9449845F73F5E9C",
+			"name": "BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER",
 			"jhash": "0x5E219B67",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "functionName"
+					"name": "methodName"
 				}
 			],
 			"return_type": "BOOL",
