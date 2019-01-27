@@ -22905,7 +22905,7 @@
 			"build": "323"
 		},
 		"0xC3D0841A0CC546A6": {
-			"name": "_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT",
+			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT",
 			"jhash": "0x716777CB",
 			"comment": "Pushes an integer for the Scaleform function onto the stack.",
 			"params": [
@@ -22918,7 +22918,7 @@
 			"build": "323"
 		},
 		"0xD69736AAE04DB51A": {
-			"name": "_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_FLOAT",
+			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT",
 			"jhash": "0x9A01FFDA",
 			"comment": "Pushes a float for the Scaleform function onto the stack.",
 			"params": [
@@ -22931,7 +22931,7 @@
 			"build": "323"
 		},
 		"0xC58424BA936EB458": {
-			"name": "_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_BOOL",
+			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL",
 			"jhash": "0x0D4AE8CB",
 			"comment": "Pushes a boolean for the Scaleform function onto the stack.",
 			"params": [
@@ -23644,7 +23644,7 @@
 			"jhash": "0xB8B3A5D0",
 			"comment": "",
 			"params": [],
-			"return_type": "const char*",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xB2A592B04648A9CB": {
@@ -24924,25 +24924,25 @@
 			"build": "323"
 		},
 		"0x8F9EE5687F8EECCD": {
-			"name": "_BEGIN_TEXT_COMMAND_TIMER",
+			"name": "BEGIN_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT",
 			"jhash": "0xBF855650",
-			"comment": "  void message(char *text)\n  {\n     _BEGIN_TEXT_COMMAND_TIMER(\"STRING\");\n        ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n       _END_TEXT_COMMAND_TIMER(0);\n   }",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "gxtEntry"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xA86911979638106F": {
-			"name": "_END_TEXT_COMMAND_TIMER",
+			"name": "END_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT",
 			"jhash": "0x6E7FDA1C",
 			"comment": "",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -25066,9 +25066,9 @@
 			"build": "323"
 		},
 		"0x761B77454205A61D": {
-			"name": "_ADD_TEXT_COMPONENT_APP_TITLE",
+			"name": "ADD_TEXT_COMPONENT_SUBSTRING_PHONE_NUMBER",
 			"jhash": "0x65E1D404",
-			"comment": "p1 was always -1.\nused for phone applications; scaleform",
+			"comment": "p1 was always -1",
 			"params": [
 				{
 					"type": "const char*",
@@ -25098,7 +25098,7 @@
 		"0x5F68520888E69014": {
 			"name": "_ADD_TEXT_COMPONENT_SCALEFORM",
 			"jhash": "0x0829A799",
-			"comment": "This native (along with 0x6C188BE134E074AA and 0x94CF4AC034C9C986) do not actually filter anything. They simply add the provided text (as of 944)\n\ndid you even check the disassembly?",
+			"comment": "ADD_TEXT_COMPONENT_SUBSTRING_*",
 			"params": [
 				{
 					"type": "const char*",
