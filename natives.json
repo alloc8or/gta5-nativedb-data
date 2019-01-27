@@ -13533,48 +13533,48 @@
 			"build": "323"
 		},
 		"0xBE8CD9BE829BBEBF": {
-			"name": "_0xBE8CD9BE829BBEBF",
+			"name": "_GET_ENTITY_PROOFS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL*",
+					"name": "bulletProof"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL*",
+					"name": "fireProof"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL*",
+					"name": "explosionProof"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL*",
+					"name": "collisionProof"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "BOOL*",
+					"name": "meleeProof"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL*",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL*",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL*",
+					"name": "drownProof"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1604"
 		},
 		"0x77B21BE7AC540F07": {
