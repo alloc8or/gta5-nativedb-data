@@ -22888,7 +22888,7 @@
 					"name": "returnValueData"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "757"
 		},
 		"0xE1E258829A885245": {
