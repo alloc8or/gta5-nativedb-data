@@ -37341,7 +37341,7 @@
 			"build": "323"
 		},
 		"0x4EBB7E87AA0DBED4": {
-			"name": "_SET_SHOW_PED_IN_PAUSE_MENU",
+			"name": "_SET_PLAYER_IS_IN_ANIMAL_FORM",
 			"jhash": "",
 			"comment": "If toggle is true, the ped's head is shown in the pause menu\nIf toggle is false, the ped's head is not shown in the pause menu",
 			"params": [
@@ -37354,9 +37354,9 @@
 			"build": "323"
 		},
 		"0x9689123E3F213AA5": {
-			"name": "_GET_SHOW_PED_IN_PAUSE_MENU",
+			"name": "GET_IS_PLAYER_IN_ANIMAL_FORM",
 			"jhash": "",
-			"comment": "",
+			"comment": "Although we don't have a jenkins hash for this one, the name is 100% confirmed.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -57345,11 +57345,11 @@
 		"0xEDE476E5EE29EDB1": {
 			"name": "SET_INPUT_EXCLUSIVE",
 			"jhash": "0x4E8E29E6",
-			"comment": "",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -57362,11 +57362,11 @@
 		"0xFE99B66D079CF6BC": {
 			"name": "DISABLE_CONTROL_ACTION",
 			"jhash": "0x3800C0DC",
-			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev_v3/source/scripting/Controls.cs\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.\n\nControl values from the decompiled scripts: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,\n28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,5\n4,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,\n79,80,81,82,85,86,87,88,89,90,91,92,93,95,96,97,98,99,100,101,102,103,105,\n107,108,109,110,111,112,113,114,115,116,117,118,119,123,126,129,130,131,132,\n133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,\n153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,171,172\n,177,187,188,189,190,195,196,199,200,201,202,203,205,207,208,209,211,212,213, 217,219,220,221,225,226,230,234,235,236,237,238,239,240,241,242,243,244,257,\n261,262,263,264,265,270,271,272,273,274,278,279,280,281,282,283,284,285,286,\n287,288,289,337.\n\nExample: CONTROLS::DISABLE_CONTROL_ACTION(2, 19, true) disables the switching UI from appearing both when using a keyboard and Xbox 360 controller. Needs to be executed each frame. \n \nControl group 1 and 0 gives the same results as 2. Same results for all players. ",
+			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev_v3/source/scripting/Controls.cs\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,\n28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,5\n4,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,\n79,80,81,82,85,86,87,88,89,90,91,92,93,95,96,97,98,99,100,101,102,103,105,\n107,108,109,110,111,112,113,114,115,116,117,118,119,123,126,129,130,131,132,\n133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,\n153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,171,172\n,177,187,188,189,190,195,196,199,200,201,202,203,205,207,208,209,211,212,213, 217,219,220,221,225,226,230,234,235,236,237,238,239,240,241,242,243,244,257,\n261,262,263,264,265,270,271,272,273,274,278,279,280,281,282,283,284,285,286,\n287,288,289,337.\n\nExample: CONTROLS::DISABLE_CONTROL_ACTION(2, 19, true) disables the switching UI from appearing both when using a keyboard and Xbox 360 controller. Needs to be executed each frame. \n \nControl group 1 and 0 gives the same results as 2. Same results for all players. ",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -57383,11 +57383,11 @@
 		"0x351220255D64C155": {
 			"name": "ENABLE_CONTROL_ACTION",
 			"jhash": "0xD2753551",
-			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev/source/scripting/Controls.hpp\n\n0, 1 and 2 used in the scripts.\n\nControl values from the decompiled scripts: \n0,1,2,3,4,5,6,8,9,10,11,14,15,16,17,19,21,22,24,25,26,30,31,32,33,34,35,36,\n37,44,46,47,59,60,65,68,69,70,71,72,73,74,75,76,79,80,81,82,86,95,98,99,100\n,101,114,140,141,143,172,173,174,175,176,177,178,179,180,181,187,188,189,19\n0,195,196,197,198,199,201,202,203,204,205,206,207,208,209,210,217,218,219,2\n20,221,225,228,229,230,231,234,235,236,237,238,239,240,241,242,245,246,257,\n261,262,263,264,286,287,288,289,337,338,339,340,341,342,343\n\nINPUTGROUP_MOVE\nINPUTGROUP_LOOK\nINPUTGROUP_WHEEL\nINPUTGROUP_CELLPHONE_NAVIGATE\nINPUTGROUP_CELLPHONE_NAVIGATE_UD\nINPUTGROUP_CELLPHONE_NAVIGATE_LR\nINPUTGROUP_FRONTEND_DPAD_ALL\nINPUTGROUP_FRONTEND_DPAD_UD\nINPUTGROUP_FRONTEND_DPAD_LR\nINPUTGROUP_FRONTEND_LSTICK_ALL\nINPUTGROUP_FRONTEND_RSTICK_ALL\nINPUTGROUP_FRONTEND_GENERIC_UD\nINPUTGROUP_FRONTEND_GENERIC_LR\nINPUTGROUP_FRONTEND_GENERIC_ALL\nINPUTGROUP_FRONTEND_BUMPERS\nINPUTGROUP_FRONTEND_TRIGGERS\nINPUTGROUP_FRONTEND_STICKS\nINPUTGROUP_SCRIPT_DPAD_ALL\nINPUTGROUP_SCRIPT_DPAD_UD\nINPUTGROUP_SCRIPT_DPAD_LR\nINPUTGROUP_SCRIPT_LSTICK_ALL\nINPUTGROUP_SCRIPT_RSTICK_ALL\nINPUTGROUP_SCRIPT_BUMPERS\nINPUTGROUP_SCRIPT_TRIGGERS\nINPUTGROUP_WEAPON_WHEEL_CYCLE\nINPUTGROUP_FLY\nINPUTGROUP_SUB\nINPUTGROUP_VEH_MOVE_ALL\nINPUTGROUP_CURSOR\nINPUTGROUP_CURSOR_SCROLL\nINPUTGROUP_SNIPER_ZOOM_SECONDARY\nINPUTGROUP_VEH_HYDRAULICS_CONTROL\n\n\nTook those in IDA Pro.Not sure in which order they go",
+			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev/source/scripting/Controls.hpp\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: \n0,1,2,3,4,5,6,8,9,10,11,14,15,16,17,19,21,22,24,25,26,30,31,32,33,34,35,36,\n37,44,46,47,59,60,65,68,69,70,71,72,73,74,75,76,79,80,81,82,86,95,98,99,100\n,101,114,140,141,143,172,173,174,175,176,177,178,179,180,181,187,188,189,19\n0,195,196,197,198,199,201,202,203,204,205,206,207,208,209,210,217,218,219,2\n20,221,225,228,229,230,231,234,235,236,237,238,239,240,241,242,245,246,257,\n261,262,263,264,286,287,288,289,337,338,339,340,341,342,343\n\nINPUTGROUP_MOVE\nINPUTGROUP_LOOK\nINPUTGROUP_WHEEL\nINPUTGROUP_CELLPHONE_NAVIGATE\nINPUTGROUP_CELLPHONE_NAVIGATE_UD\nINPUTGROUP_CELLPHONE_NAVIGATE_LR\nINPUTGROUP_FRONTEND_DPAD_ALL\nINPUTGROUP_FRONTEND_DPAD_UD\nINPUTGROUP_FRONTEND_DPAD_LR\nINPUTGROUP_FRONTEND_LSTICK_ALL\nINPUTGROUP_FRONTEND_RSTICK_ALL\nINPUTGROUP_FRONTEND_GENERIC_UD\nINPUTGROUP_FRONTEND_GENERIC_LR\nINPUTGROUP_FRONTEND_GENERIC_ALL\nINPUTGROUP_FRONTEND_BUMPERS\nINPUTGROUP_FRONTEND_TRIGGERS\nINPUTGROUP_FRONTEND_STICKS\nINPUTGROUP_SCRIPT_DPAD_ALL\nINPUTGROUP_SCRIPT_DPAD_UD\nINPUTGROUP_SCRIPT_DPAD_LR\nINPUTGROUP_SCRIPT_LSTICK_ALL\nINPUTGROUP_SCRIPT_RSTICK_ALL\nINPUTGROUP_SCRIPT_BUMPERS\nINPUTGROUP_SCRIPT_TRIGGERS\nINPUTGROUP_WEAPON_WHEEL_CYCLE\nINPUTGROUP_FLY\nINPUTGROUP_SUB\nINPUTGROUP_VEH_MOVE_ALL\nINPUTGROUP_CURSOR\nINPUTGROUP_CURSOR_SCROLL\nINPUTGROUP_SNIPER_ZOOM_SECONDARY\nINPUTGROUP_VEH_HYDRAULICS_CONTROL\n\n\nTook those in IDA Pro.Not sure in which order they go",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -57404,11 +57404,11 @@
 		"0x5F4B6931816E599B": {
 			"name": "DISABLE_ALL_CONTROL_ACTIONS",
 			"jhash": "0x16753CF4",
-			"comment": "",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				}
 			],
 			"return_type": "void",
@@ -57417,11 +57417,11 @@
 		"0xA5FFE9B05F199DE7": {
 			"name": "ENABLE_ALL_CONTROL_ACTIONS",
 			"jhash": "0xFC2F119F",
-			"comment": "",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				}
 			],
 			"return_type": "void",
@@ -57920,7 +57920,7 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x45905BE8654AE067": {
@@ -84501,7 +84501,7 @@
 		"0x77F1BEB8863288D5": {
 			"name": "GET_SCRIPT_TASK_STATUS",
 			"jhash": "0xB2477B23",
-			"comment": "Gets the status of a script-assigned task. The hash does not seem to match the actual native name, but is assigned hardcoded from the executable during task creation.\n\nStatuses are specific to tasks, in addition '7' means the specified task is not assigned to the ped.\n\nA few hashes found in the executable (although not a complete list) can be found at pastebin.com/R9iK6M9W as it was too long for this wiki.",
+			"comment": "Gets the status of a script-assigned task. taskHash: hash of SCRIPT_ + task name (e.g. SCRIPT_TASK_GO_STRAIGHT_TO_COORD)",
 			"params": [
 				{
 					"type": "Ped",
