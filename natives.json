@@ -14330,13 +14330,13 @@
 			"build": "791"
 		},
 		"0x6CE177D014502E8A": {
-			"name": "_0x6CE177D014502E8A",
+			"name": "_ENABLE_ENTITY_UNK",
 			"jhash": "",
-			"comment": "",
+			"comment": "ENABLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -21497,7 +21497,7 @@
 		"0x99AC7F0D8B9C893D": {
 			"name": "_0x99AC7F0D8B9C893D",
 			"jhash": "0xE3938B0B",
-			"comment": "",
+			"comment": "START_*",
 			"params": [
 				{
 					"type": "float",
@@ -21513,19 +21513,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -28765,13 +28765,13 @@
 			"build": "323"
 		},
 		"0x09C0403ED9A751C2": {
-			"name": "_0x09C0403ED9A751C2",
+			"name": "IS_SCRIPTED_HUD_COMPONENT_HIDDEN_THIS_FRAME",
 			"jhash": "0xE8C8E535",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
@@ -28804,9 +28804,9 @@
 			"build": "323"
 		},
 		"0xA4DEDE28B1814289": {
-			"name": "_0xA4DEDE28B1814289",
+			"name": "_HIDE_AREA_AND_VEHICLE_NAME_THIS_FRAME",
 			"jhash": "0x52746FE1",
-			"comment": "",
+			"comment": "HIDE_*_THIS_FRAME\n\nHides area and vehicle name HUD components for one frame.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -29062,7 +29062,7 @@
 			"build": "323"
 		},
 		"0x6DD05E9D83EFA4C9": {
-			"name": "_SET_MP_GAMER_TAG_COLOR",
+			"name": "CREATE_MP_GAMER_TAG_WITH_CREW_COLOR",
 			"jhash": "0xC969F2D0",
 			"comment": "",
 			"params": [
@@ -29107,7 +29107,7 @@
 			"build": "323"
 		},
 		"0x6E0EB3EB47C8D7AA": {
-			"name": "_HAS_MP_GAMER_TAG",
+			"name": "IS_MP_GAMER_TAG_MOVIE_ACTIVE",
 			"jhash": "0xEFD2564A",
 			"comment": "",
 			"params": [],
@@ -29115,9 +29115,9 @@
 			"build": "323"
 		},
 		"0xBFEFE3321A3F5015": {
-			"name": "_CREATE_MP_GAMER_TAG",
+			"name": "_CREATE_CLAN_MP_GAMER_TAG",
 			"jhash": "0xF5CD2AA4",
-			"comment": "p0 was the return of NET_TO_PED in fm_mission_controler.\np4 was always \"\".\nreturns headDisplayId",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -29174,9 +29174,9 @@
 			"build": "323"
 		},
 		"0x595B5178E412E199": {
-			"name": "ADD_TREVOR_RANDOM_MODIFIER",
+			"name": "IS_MP_GAMER_TAG_FREE",
 			"jhash": "0x63959059",
-			"comment": "Hash collision!\n_IS_MP_GAMER_TAG_ACTIVE_2",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -29212,13 +29212,13 @@
 			"build": "323"
 		},
 		"0xEE76FF7E6A0166B0": {
-			"name": "_SET_MP_GAMER_TAG_",
+			"name": "_0xEE76FF7E6A0166B0",
 			"jhash": "0x767DED29",
-			"comment": "",
+			"comment": "SET_*",
 			"params": [
 				{
 					"type": "int",
-					"name": "headDisplayId"
+					"name": "gamerTagId"
 				},
 				{
 					"type": "BOOL",
@@ -29235,7 +29235,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "headDisplayId"
+					"name": "gamerTagId"
 				},
 				{
 					"type": "BOOL",
@@ -29360,16 +29360,16 @@
 			"build": "323"
 		},
 		"0x9C16459B2324B2CF": {
-			"name": "_0x9C16459B2324B2CF",
+			"name": "_SET_MP_GAMER_TAG_UNK",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -29407,9 +29407,9 @@
 			"build": "323"
 		},
 		"0x7B7723747CCB55B6": {
-			"name": "_SET_MP_GAMER_TAG_CHATTING",
+			"name": "SET_MP_GAMER_TAG_BIG_TEXT",
 			"jhash": "0x939218AB",
-			"comment": "Set's the string displayed when flag 3 (AudioSpeaker) active.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -30015,9 +30015,9 @@
 		"0x2F057596F2BD0061": {
 			"name": "_0x2F057596F2BD0061",
 			"jhash": "0xC85C4487",
-			"comment": "Appears to return whether the player is using the pause menu store. Can't be sure though.",
+			"comment": "Appears to return whether the player is using the pause menu store. Can't be sure though.\n\nIS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x272ACD84970869C5": {
@@ -30031,7 +30031,7 @@
 		"0x5BFF36D6ED83E0AE": {
 			"name": "_0x5BFF36D6ED83E0AE",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_PAUSE_MENU_*",
 			"params": [],
 			"return_type": "Vector3",
 			"build": "323"
@@ -30673,7 +30673,7 @@
 			"build": "573"
 		},
 		"0xB118AF58B5F332A1": {
-			"name": "_IS_TEXT_CHAT_ACTIVE",
+			"name": "_IS_MULTIPLAYER_CHAT_ACTIVE",
 			"jhash": "",
 			"comment": "Returns whether or not the text chat (MULTIPLAYER_CHAT Scaleform component) is active.\n\n-- NTAuthority (http://fivem.net)",
 			"params": [],
@@ -36293,75 +36293,75 @@
 			"build": "323"
 		},
 		"0x67F6413D3220E18D": {
-			"name": "_0x67F6413D3220E18D",
+			"name": "ADD_POP_MULTIPLIER_AREA",
 			"jhash": "0x42BF09B3",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x1327E2FE9746BAEE": {
-			"name": "_0x1327E2FE9746BAEE",
+			"name": "_DOES_POP_MULTIPLIER_AREA_EXIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xB129E447A2EDA4BF": {
-			"name": "_0xB129E447A2EDA4BF",
+			"name": "REMOVE_POP_MULTIPLIER_AREA",
 			"jhash": "0xFBDBE374",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
 					"type": "BOOL",
