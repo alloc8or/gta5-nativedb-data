@@ -24731,9 +24731,9 @@
 			"build": "323"
 		},
 		"0x54CE8AC98E120CAB": {
-			"name": "_BEGIN_TEXT_COMMAND_WIDTH",
+			"name": "_BEGIN_TEXT_COMMAND_GET_WIDTH",
 			"jhash": "0x51E7A037",
-			"comment": "Example:\n_BEGIN_TEXT_COMMAND_WIDTH(\"NUMBER\");\nADD_TEXT_COMPONENT_FLOAT(69.420f, 2);\nfloat width = _END_TEXT_COMMAND_GET_WIDTH(1);",
+			"comment": "BEGIN_TEXT_COMMAND_*\n\nExample:\n_BEGIN_TEXT_COMMAND_GET_WIDTH(\"NUMBER\");\nADD_TEXT_COMPONENT_FLOAT(69.420f, 2);\nfloat width = _END_TEXT_COMMAND_GET_WIDTH(1);",
 			"params": [
 				{
 					"type": "const char*",
@@ -24746,7 +24746,7 @@
 		"0x85F061DA64ED2F67": {
 			"name": "_END_TEXT_COMMAND_GET_WIDTH",
 			"jhash": "0xD12A643A",
-			"comment": "In scripts font most of the time is passed as 1.\nUse _BEGIN_TEXT_COMMAND_WIDTH\n\nparam is not font from what i've tested",
+			"comment": "END_TEXT_COMMAND_*\n\nIn scripts font most of the time is passed as 1.\nUse _BEGIN_TEXT_GET_COMMAND_GET_WIDTH\n\nparam is not font from what i've tested",
 			"params": [
 				{
 					"type": "BOOL",
@@ -24759,7 +24759,7 @@
 		"0x521FB041D93DD0E4": {
 			"name": "_BEGIN_TEXT_COMMAND_LINE_COUNT",
 			"jhash": "0x94B82066",
-			"comment": "get's line count\n\n\nint GetLineCount(char *text, float x, float y)\n    {\n     _BEGIN_TEXT_COMMAND_LINE_COUNT(\"STRING\");\n                ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n      return _END_TEXT_COMMAND_GET_LINE_COUNT(x, y);\n    }",
+			"comment": "BEGIN_TEXT_COMMAND_*\n\nget's line count\n\n\nint GetLineCount(char *text, float x, float y)\n    {\n     _BEGIN_TEXT_COMMAND_LINE_COUNT(\"STRING\");\n                ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n      return _END_TEXT_COMMAND_GET_LINE_COUNT(x, y);\n    }",
 			"params": [
 				{
 					"type": "const char*",
@@ -24770,9 +24770,9 @@
 			"build": "323"
 		},
 		"0x9040DFB09BE75706": {
-			"name": "_GET_TEXT_SCREEN_LINE_COUNT",
+			"name": "_END_TEXT_COMMAND_LINE_COUNT",
 			"jhash": "0xAA318785",
-			"comment": "Determines how many lines the text string will use when drawn on screen. \nMust use 0x521FB041D93DD0E4 for setting up",
+			"comment": "END_TEXT_COMMAND_*\n\nDetermines how many lines the text string will use when drawn on screen. \nMust use 0x521FB041D93DD0E4 for setting up",
 			"params": [
 				{
 					"type": "float",
@@ -24805,7 +24805,7 @@
 			"comment": "shape goes from -1 to 50 (may be more).\np0 is always 0.\n\nExample:\nvoid FloatingHelpText(const char* text)\n{\n    BEGIN_TEXT_COMMAND_DISPLAY_HELP(\"STRING\");\n  ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_DISPLAY_HELP (0, 0, 1, -1);\n}\n\nImage:\n- imgbin.org/images/26209.jpg\n\nmore inputs/icons:\n- pastebin.com/nqNYWMSB\n\nUsed to be known as _DISPLAY_HELP_TEXT_FROM_STRING_LABEL",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -53743,11 +53743,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0x2FDFF4107B8C1147": {
@@ -53998,11 +53998,11 @@
 		"0x163F8B586BC95F2A": {
 			"name": "_0x163F8B586BC95F2A",
 			"jhash": "0x65213FC3",
-			"comment": "only documented params\ndont know what this does.... To Be Continued... ",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "coords"
+					"type": "Object",
+					"name": "object"
 				},
 				{
 					"type": "float",
@@ -55103,12 +55103,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -56467,15 +56467,15 @@
 		"0x3B2FD68DB5F8331C": {
 			"name": "_0x3B2FD68DB5F8331C",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_OBJECT_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
