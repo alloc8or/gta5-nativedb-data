@@ -57034,11 +57034,11 @@
 		"0xA571D46727E2B718": {
 			"name": "_IS_INPUT_DISABLED",
 			"jhash": "",
-			"comment": "Seems to return true if the input is currently disabled. \"_GET_LAST_INPUT_METHOD\" didn't seem very accurate, but I've left the original description below.\n\n--\n\nindex usually 2\n\nreturns true if the last input method was made with mouse + keyboard, false if it was made with a gamepad\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nSeems to return true if the input is currently disabled. \"_GET_LAST_INPUT_METHOD\" didn't seem very accurate, but I've left the original description below.\n\n--\n\nindex usually 2\n\nreturns true if the last input method was made with mouse + keyboard, false if it was made with a gamepad",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				}
 			],
 			"return_type": "BOOL",
@@ -57047,11 +57047,11 @@
 		"0x13337B38DB572509": {
 			"name": "_IS_INPUT_JUST_DISABLED",
 			"jhash": "",
-			"comment": "I may be wrong with this one, but from the looks of the scripts, it sets keyboard related stuff as soon as this returns true.\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nI may be wrong with this one, but from the looks of the scripts, it sets keyboard related stuff as soon as this returns true.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				}
 			],
 			"return_type": "BOOL",
