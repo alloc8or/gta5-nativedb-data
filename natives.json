@@ -14394,20 +14394,20 @@
 			"build": "1011"
 		},
 		"0x1F922734E259BD26": {
-			"name": "_0x1F922734E259BD26",
-			"jhash": "",
-			"comment": "",
+			"name": "_GET_ENTITY_PICKUP",
+			"jhash": "Seems to return the handle of the entity's portable pickup.",
+			"comment": "GET_ENTITY_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "modelHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "1180"
 		},
 		"0xD7B80E7C3BEFC396": {
@@ -18543,7 +18543,7 @@
 		"0x2202A3F42C8E5F79": {
 			"name": "_IS_NIGHTVISION_ACTIVE",
 			"jhash": "0x62619061",
-			"comment": "Gets whether or not NIGHTVISION is Active.\n\nNote:  When nightvision is actually active, this native will return TRUE!",
+			"comment": "GET_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -19528,7 +19528,7 @@
 		"0x44B80ABAB9D80BD3": {
 			"name": "_IS_SEETHROUGH_ACTIVE",
 			"jhash": "0x1FE547F2",
-			"comment": "Returns whether or not SEETHROUGH is active.",
+			"comment": "GET_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -55467,7 +55467,7 @@
 		"0x125494B98A21AAF7": {
 			"name": "_CREATE_PORTABLE_PICKUP_2",
 			"jhash": "0x56A02502",
-			"comment": "",
+			"comment": "CREATE_*",
 			"params": [
 				{
 					"type": "Hash",
@@ -56749,11 +56749,11 @@
 		"0x1CEA6BFDF248E5D9": {
 			"name": "IS_CONTROL_ENABLED",
 			"jhash": "0x9174AF84",
-			"comment": "Control Groups:\n\nenum InputGroups\n{\n    INPUTGROUP_MOVE = 0,\n  INPUTGROUP_LOOK = 1,\n  INPUTGROUP_WHEEL = 2,\n INPUTGROUP_CELLPHONE_NAVIGATE = 3,\n    INPUTGROUP_CELLPHONE_NAVIGATE_UD = 4,\n INPUTGROUP_CELLPHONE_NAVIGATE_LR = 5,\n INPUTGROUP_FRONTEND_DPAD_ALL = 6,\n INPUTGROUP_FRONTEND_DPAD_UD = 7,\n  INPUTGROUP_FRONTEND_DPAD_LR = 8,\n  INPUTGROUP_FRONTEND_LSTICK_ALL = 9,\n   INPUTGROUP_FRONTEND_RSTICK_ALL = 10,\n  INPUTGROUP_FRONTEND_GENERIC_UD = 11,\n  INPUTGROUP_FRONTEND_GENERIC_LR = 12,\n  INPUTGROUP_FRONTEND_GENERIC_ALL = 13,\n INPUTGROUP_FRONTEND_BUMPERS = 14,\n INPUTGROUP_FRONTEND_TRIGGERS = 15,\n    INPUTGROUP_FRONTEND_STICKS = 16,\n  INPUTGROUP_SCRIPT_DPAD_ALL = 17,\n  INPUTGROUP_SCRIPT_DPAD_UD = 18,\n   INPUTGROUP_SCRIPT_DPAD_LR = 19,\n   INPUTGROUP_SCRIPT_LSTICK_ALL = 20,\n    INPUTGROUP_SCRIPT_RSTICK_ALL = 21,\n    INPUTGROUP_SCRIPT_BUMPERS = 22,\n   INPUTGROUP_SCRIPT_TRIGGERS = 23,\n  INPUTGROUP_WEAPON_WHEEL_CYCLE = 24,\n   INPUTGROUP_FLY = 25,\n  INPUTGROUP_SUB = 26,\n  INPUTGROUP_VEH_MOVE_ALL = 27,\n INPUTGROUP_CURSOR = 28,\n   INPUTGROUP_CURSOR_SCROLL = 29,\n    INPUTGROUP_SNIPER_ZOOM_SECONDARY = 30,\n    INPUTGROUP_VEH_HYDRAULICS_CONTROL = 31,\n   MAX_INPUTGROUPS = 32,\n INPUTGROUP_INVALID = 33\n};\n0, 1 and 2 used in the scripts.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56766,11 +56766,11 @@
 		"0xF3A21BCD95725A4A": {
 			"name": "IS_CONTROL_PRESSED",
 			"jhash": "0x517A4384",
-			"comment": "index always is 2 for xbox 360 controller and razerblade\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56783,11 +56783,11 @@
 		"0x648EE3E7F38877DD": {
 			"name": "IS_CONTROL_RELEASED",
 			"jhash": "0x1F91A06E",
-			"comment": "0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56800,11 +56800,11 @@
 		"0x580417101DDB492F": {
 			"name": "IS_CONTROL_JUST_PRESSED",
 			"jhash": "0x4487F579",
-			"comment": "",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56817,11 +56817,11 @@
 		"0x50F940259D3841E6": {
 			"name": "IS_CONTROL_JUST_RELEASED",
 			"jhash": "0x2314444B",
-			"comment": "",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56834,11 +56834,11 @@
 		"0xD95E79E8686D2C27": {
 			"name": "GET_CONTROL_VALUE",
 			"jhash": "0xC526F3C6",
-			"comment": "\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56851,7 +56851,7 @@
 		"0xEC3C9B8D5327B563": {
 			"name": "GET_CONTROL_NORMAL",
 			"jhash": "0x5DE226A5",
-			"comment": "Returns the value of CONTROLS::GET_CONTROL_VALUE Normalized (ie a real number value between -1 and 1)\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "Returns the value of GET_CONTROL_VALUE normalized (i.e. a real number value between -1 and 1)\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
@@ -56881,11 +56881,11 @@
 		"0x5B84D09CEC5209C5": {
 			"name": "_0x5B84D09CEC5209C5",
 			"jhash": "0xC49343BB",
-			"comment": "Seems to return values between -1 and 1 for controls like gas and steering.\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "Seems to return values between -1 and 1 for controls like gas and steering.\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56898,11 +56898,11 @@
 		"0xE8A25867FBA3B05E": {
 			"name": "_SET_CONTROL_NORMAL",
 			"jhash": "",
-			"comment": "This is for simulating player input.\namount is a float value from 0 - 1\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "This is for simulating player input.\namount is a float value from 0 - 1\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56919,11 +56919,11 @@
 		"0xE2587F8CBBD87B1D": {
 			"name": "IS_DISABLED_CONTROL_PRESSED",
 			"jhash": "0x32A93544",
-			"comment": "0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56953,11 +56953,11 @@
 		"0x91AEF906BCA88877": {
 			"name": "IS_DISABLED_CONTROL_JUST_PRESSED",
 			"jhash": "0xEE6ABD32",
-			"comment": "0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56970,11 +56970,11 @@
 		"0x305C8DCD79DA8B0F": {
 			"name": "IS_DISABLED_CONTROL_JUST_RELEASED",
 			"jhash": "0xD6A679E1",
-			"comment": "0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -56987,11 +56987,11 @@
 		"0x11E65974A982637C": {
 			"name": "GET_DISABLED_CONTROL_NORMAL",
 			"jhash": "0x66FF4FAA",
-			"comment": "control - c# works with (int)GTA.Control.CursorY / (int)GTA.Control.CursorX and returns the mouse movement (additive).\n\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "control - c# works with (int)GTA.Control.CursorY / (int)GTA.Control.CursorX and returns the mouse movement (additive).\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -57004,11 +57004,11 @@
 		"0x4F8A26A890FD62FB": {
 			"name": "_0x4F8A26A890FD62FB",
 			"jhash": "0xF2A65A4C",
-			"comment": "The \"disabled\" variant of _0x5B84D09CEC5209C5.\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "The \"disabled\" variant of _0x5B84D09CEC5209C5.\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -60793,9 +60793,9 @@
 			"build": "323"
 		},
 		"0x26AF0E8E30BD2A2C": {
-			"name": "_0x26AF0E8E30BD2A2C",
+			"name": "_IS_PED_OPENING_A_DOOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_PED_*\n\nReturns true if the ped is currently opening a door (CTaskOpenDoor).",
 			"params": [
 				{
 					"type": "Ped",
@@ -67593,7 +67593,7 @@
 			"build": "323"
 		},
 		"0xDCCA191DF9980FD7": {
-			"name": "_0xDCCA191DF9980FD7",
+			"name": "IS_PED_PERFORMING_MELEE_ACTION",
 			"jhash": "0x139C0875",
 			"comment": "",
 			"params": [
@@ -67621,7 +67621,7 @@
 		"0xEBD0EDBA5BE957CF": {
 			"name": "_0xEBD0EDBA5BE957CF",
 			"jhash": "0x9BE7C860",
-			"comment": "",
+			"comment": "IS_PED_*\n\nSomething to do with melee action.",
 			"params": [
 				{
 					"type": "Ped",
@@ -67684,7 +67684,7 @@
 			"build": "323"
 		},
 		"0x61767F73EACEED21": {
-			"name": "_0x61767F73EACEED21",
+			"name": "WAS_PED_KNOCKED_OUT",
 			"jhash": "0x3993092B",
 			"comment": "",
 			"params": [
@@ -67737,15 +67737,15 @@
 		"0x2016C603D6B8987C": {
 			"name": "_0x2016C603D6B8987C",
 			"jhash": "0xA6F2C057",
-			"comment": "",
+			"comment": "SET_PED_STE*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
