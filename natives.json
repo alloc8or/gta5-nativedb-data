@@ -11573,9 +11573,9 @@
 			"build": "323"
 		},
 		"0xF6F5161F4534EDFF": {
-			"name": "_GET_ENTITY_POPULATION_TYPE",
-			"jhash": "",
-			"comment": "Returns range from 0-10\n\n--------------------------------------------------------------\n\nThe type name can be retrieved by using this:\n\ntypedef LPSTR(__fastcall *GetEntityPopulationTypeName_t)(unsigned __int16 entityPopulationType, bool scriptName);\n   GetEntityPopulationTypeName_t GetEntityPopulationTypeName = (GetEntityPopulationTypeName_t)FindPattern(\"44 0F B7 C1 4C 8D 0D ?? ?? ?? ?? 41 83 F8 07\");",
+			"name": "GET_ENTITY_POPULATION_TYPE",
+			"jhash": "0xFC30DDFF",
+			"comment": "enum ePopulationType\n{\n\tPOPTYPE_UNKNOWN = 0,\n\tPOPTYPE_RANDOM_PERMANENT,\n\tPOPTYPE_RANDOM_PARKED,\n\tPOPTYPE_RANDOM_PATROL,\n\tPOPTYPE_RANDOM_SCENARIO,\n\tPOPTYPE_RANDOM_AMBIENT,\n\tPOPTYPE_PERMANENT,\n\tPOPTYPE_MISSION,\n\tPOPTYPE_REPLAY,\n\tPOPTYPE_CACHE,\n\tPOPTYPE_TOOL\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -13136,8 +13136,8 @@
 			"build": "323"
 		},
 		"0xCCF1E97BEFDAE480": {
-			"name": "_GET_ENTITY_COLLISON_DISABLED",
-			"jhash": "",
+			"name": "GET_ENTITY_COLLISION_DISABLED",
+			"jhash": "0xE8C0C629",
 			"comment": "",
 			"params": [
 				{
@@ -13149,8 +13149,8 @@
 			"build": "323"
 		},
 		"0x9EBC85ED0FFFE51C": {
-			"name": "_SET_ENTITY_COLLISION_2",
-			"jhash": "",
+			"name": "SET_ENTITY_COMPLETELY_DISABLE_COLLISION",
+			"jhash": "0xBD0D4831",
 			"comment": "p2 - mainly set as false in scripts",
 			"params": [
 				{
@@ -13212,8 +13212,8 @@
 		},
 		"0x621873ECE1178967": {
 			"name": "_SET_ENTITY_COORDS_2",
-			"jhash": "",
-			"comment": "does the same as SET_ENTITY_COORDS.",
+			"jhash": "0x749B282E",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -16852,9 +16852,9 @@
 			"build": "323"
 		},
 		"0x473151EBC762C6DA": {
-			"name": "_GET_NUMBER_OF_PHOTOS",
+			"name": "_GET_CURRENT_NUMBER_OF_PHOTOS",
 			"jhash": "0x21DBF0C9",
-			"comment": "",
+			"comment": "GET_CURRENT_*",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -16922,7 +16922,7 @@
 		"0x40AFB081F8ADD4EE": {
 			"name": "_RETURN_TWO",
 			"jhash": "0x762E5C5F",
-			"comment": "It returns two lol\n\nli r3, 2\nblr\n\nthats all it does.\n\nmov dword ptr [rax], 2",
+			"comment": "GET_*\n\nHardcoded to always return 2.",
 			"params": [
 				{
 					"type": "int",
