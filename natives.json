@@ -56855,7 +56855,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -57090,11 +57090,11 @@
 		"0x6CD79468A1E595C6": {
 			"name": "_0x6CD79468A1E595C6",
 			"jhash": "",
-			"comment": "",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				}
 			],
 			"return_type": "BOOL",
@@ -57103,11 +57103,11 @@
 		"0x0499D7B09FC9B407": {
 			"name": "GET_CONTROL_INSTRUCTIONAL_BUTTON",
 			"jhash": "0x3551727A",
-			"comment": "formerly called _GET_CONTROL_ACTION_NAME incorrectly\n\np2 appears to always be true.\np2 is unused variable in function.\n\nEG:\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 201, 1) /*INPUT_FRONTEND_ACCEPT (e.g. Enter button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 202, 1) /*INPUT_FRONTEND_CANCEL (e.g. ESC button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 51, 1) /*INPUT_CONTEXT (e.g. E button)*/\n\ngtaforums.com/topic/819070-c-draw-instructional-buttons-scaleform-movie/#entry1068197378\n\n\n0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "formerly called _GET_CONTROL_ACTION_NAME incorrectly\n\np2 appears to always be true.\np2 is unused variable in function.\n\nEG:\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 201, 1) /*INPUT_FRONTEND_ACCEPT (e.g. Enter button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 202, 1) /*INPUT_FRONTEND_CANCEL (e.g. ESC button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 51, 1) /*INPUT_CONTEXT (e.g. E button)*/\n\ngtaforums.com/topic/819070-c-draw-instructional-buttons-scaleform-movie/#entry1068197378\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
@@ -57124,11 +57124,11 @@
 		"0x80C2FD58D720C801": {
 			"name": "_0x80C2FD58D720C801",
 			"jhash": "0x3EE71F6A",
-			"comment": "0, 1 and 2 used in the scripts. 0 is by far the most common of them.",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "p0"
 				},
 				{
 					"type": "int",
