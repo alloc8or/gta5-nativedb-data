@@ -25512,11 +25512,11 @@
 		"0xCD74233600C4EA6B": {
 			"name": "_0xCD74233600C4EA6B",
 			"jhash": "",
-			"comment": "",
+			"comment": "Setter for 0xC2D2AD9EAAE265B8\n\nSET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -25525,9 +25525,9 @@
 		"0xC2D2AD9EAAE265B8": {
 			"name": "_0xC2D2AD9EAAE265B8",
 			"jhash": "",
-			"comment": "",
+			"comment": "Getter for 0xCD74233600C4EA6B\n\nGET_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0xA86478C6958735C5": {
@@ -28029,9 +28029,9 @@
 		"0x801879A9B4F4B2FB": {
 			"name": "_0x801879A9B4F4B2FB",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "372"
 		},
 		"0x960C9FF8F616E41C": {
