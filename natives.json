@@ -7494,9 +7494,9 @@
 			"build": "323"
 		},
 		"0x74BD83EA840F6BC9": {
-			"name": "_0x74BD83EA840F6BC9",
+			"name": "_IS_AIM_CAM_THIRD_PERSON_ACTIVE",
 			"jhash": "0x8F320DE4",
-			"comment": "",
+			"comment": "IS_A*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -8061,9 +8061,9 @@
 			"build": "323"
 		},
 		"0xE3433EADAAF7EE40": {
-			"name": "GET_IS_MULTIPLAYER_BRIEF",
+			"name": "_0xE3433EADAAF7EE40",
 			"jhash": "0x2F0CE859",
-			"comment": "Hash collision",
+			"comment": "SET_GAMEPLAY_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -25483,7 +25483,7 @@
 		"0x7669F9E39DC17063": {
 			"name": "_0x7669F9E39DC17063",
 			"jhash": "0xC380AC85",
-			"comment": "",
+			"comment": "DISPLAY_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -25491,7 +25491,7 @@
 		"0x402F9ED62087E898": {
 			"name": "_0x402F9ED62087E898",
 			"jhash": "0xC47AB1B0",
-			"comment": "",
+			"comment": "DISPLAY_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -25503,7 +25503,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "Toggle"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -27962,7 +27962,7 @@
 			"build": "323"
 		},
 		"0xC2D15BEF167E27BC": {
-			"name": "_0xC2D15BEF167E27BC",
+			"name": "SET_MULTIPLAYER_WALLET_CASH",
 			"jhash": "0xF4F3C796",
 			"comment": "",
 			"params": [],
@@ -27970,7 +27970,7 @@
 			"build": "323"
 		},
 		"0x95CF81BD06EE1887": {
-			"name": "_0x95CF81BD06EE1887",
+			"name": "REMOVE_MULTIPLAYER_WALLET_CASH",
 			"jhash": "0x7BFFE82F",
 			"comment": "",
 			"params": [],
