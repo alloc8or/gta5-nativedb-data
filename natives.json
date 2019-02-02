@@ -43829,7 +43829,7 @@
 			"build": "323"
 		},
 		"0x86E0660E4F5C956D": {
-			"name": "_0x86E0660E4F5C956D",
+			"name": "NETWORK_CLEAR_GET_GAMER_STATUS",
 			"jhash": "0x3F7EDBBD",
 			"comment": "",
 			"params": [],
@@ -43837,7 +43837,7 @@
 			"build": "323"
 		},
 		"0xC6F8AB8A4189CF3A": {
-			"name": "NETWORK_IS_PLAYER_ANIMATION_DRAWING_SYNCHRONIZED",
+			"name": "NETWORK_SESSION_JOIN_INVITE",
 			"jhash": "0x3D6360B5",
 			"comment": "",
 			"params": [],
@@ -44868,7 +44868,7 @@
 			"jhash": "0x0C0900BC",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x6B5C83BA3EFE6A10": {
@@ -45827,9 +45827,9 @@
 		"0x172F75B6EE2233BA": {
 			"name": "_0x172F75B6EE2233BA",
 			"jhash": "0x1720ABA6",
-			"comment": "",
+			"comment": "NETWORK_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x19D8DA0E5A68045A": {
