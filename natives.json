@@ -46518,13 +46518,13 @@
 			"build": "323"
 		},
 		"0x524FF0AEFF9C3973": {
-			"name": "_0x524FF0AEFF9C3973",
+			"name": "NETWORK_SET_LOCAL_PLAYER_SYNC_LOOK_AT",
 			"jhash": "0xB72F086D",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
