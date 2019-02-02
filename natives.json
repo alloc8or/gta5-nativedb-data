@@ -43485,10 +43485,10 @@
 		"0xCAE55F48D3D7875C": {
 			"name": "_0xCAE55F48D3D7875C",
 			"jhash": "0x5BE529F7",
-			"comment": "",
+			"comment": "NETWORK_SESSION_*\n\np0 must be <= 4",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -43648,7 +43648,7 @@
 		"0x6D03BFBD643B2A02": {
 			"name": "_NETWORK_GET_SERVER_TIME",
 			"jhash": "0x74E8C53E",
-			"comment": "",
+			"comment": "NETWORK_GET_*",
 			"params": [
 				{
 					"type": "int*",
@@ -43879,7 +43879,7 @@
 		"0x62A0296C1BB1CEB3": {
 			"name": "_NETWORK_ACCEPT_INVITE",
 			"jhash": "0x0907A6BF",
-			"comment": "",
+			"comment": "NETWORK_R*\n\nTriggers a CEventNetworkInviteConfirmed event",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -44133,9 +44133,9 @@
 		"0x53AFD64C6758F2F9": {
 			"name": "_0x53AFD64C6758F2F9",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_SESSION_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x9C1556705F864230": {
@@ -48823,13 +48823,13 @@
 			"build": "505"
 		},
 		"0xAAA553E7DD28A457": {
-			"name": "_0xAAA553E7DD28A457",
+			"name": "SET_NETWORK_CUTSCENE_ENTITIES",
 			"jhash": "0xFD0F7EDD",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -50550,7 +50550,7 @@
 			"jhash": "0x755A2B3E",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x35F0B98A8387274D": {
@@ -50558,20 +50558,20 @@
 			"jhash": "0xA003C40B",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x3B39236746714134": {
 			"name": "_0x3B39236746714134",
 			"jhash": "0x5E1020CC",
-			"comment": "",
+			"comment": "NETWORK_GET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x9DE986FC9A87C474": {
@@ -68838,7 +68838,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
@@ -68850,9 +68850,9 @@
 			"build": "323"
 		},
 		"0x781DE8FA214E87D2": {
-			"name": "_0x781DE8FA214E87D2",
+			"name": "SET_MOVEMENT_MODE_OVERRIDE",
 			"jhash": "0x83BAE814",
-			"comment": "p1: \"MP_FEMALE_ACTION\" found multiple times in the b617d scripts.",
+			"comment": "name: \"MP_FEMALE_ACTION\" found multiple times in the b617d scripts.",
 			"params": [
 				{
 					"type": "Ped",
@@ -68860,7 +68860,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -95949,7 +95949,7 @@
 			"build": "323"
 		},
 		"0xFE54B92A344583CA": {
-			"name": "_SET_TOW_TRUCK_CRANE_HEIGHT",
+			"name": "SET_VEHICLE_TOW_TRUCK_ARM_POSITION",
 			"jhash": "0x88236E22",
 			"comment": "Sets how much the crane on the tow truck is raised, where 0.0 is fully lowered and 1.0 is fully raised.",
 			"params": [
@@ -96202,9 +96202,9 @@
 			"build": "463"
 		},
 		"0x30D779DE7C4F6DD3": {
-			"name": "_SET_DESIRED_VERTICAL_FLIGHT_PHASE",
+			"name": "_SET_VEHICLE_DESIRED_VERTICAL_FLIGHT_PHASE",
 			"jhash": "0xA7DF64D7",
-			"comment": "possibly   ENABLE_VEHICLE_FOREVER_HYDRAULICS",
+			"comment": "SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96219,9 +96219,9 @@
 			"build": "323"
 		},
 		"0x9AA47FFF660CB932": {
-			"name": "_SET_VERTICAL_FLIGHT_PHASE",
+			"name": "_SET_VEHICLE_VERTICAL_FLIGHT_PHASE",
 			"jhash": "0xDD7936F5",
-			"comment": "",
+			"comment": "SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96780,7 +96780,7 @@
 		"0x2CE544C68FB812A0": {
 			"name": "_ADD_SPEED_ZONE_FOR_COORD",
 			"jhash": "0xD6685803",
-			"comment": "",
+			"comment": "ADD_*",
 			"params": [
 				{
 					"type": "float",
@@ -96813,7 +96813,7 @@
 		"0x1033371FC8E842A7": {
 			"name": "_REMOVE_SPEED_ZONE",
 			"jhash": "0x0C0332A6",
-			"comment": "",
+			"comment": "REMOVE_*",
 			"params": [
 				{
 					"type": "int",
@@ -97757,9 +97757,9 @@
 			"build": "1493"
 		},
 		"0x54B0F614960F4A5F": {
-			"name": "_0x54B0F614960F4A5F",
+			"name": "_ADD_VEHICLE_COMBAT_AVOIDANCE_AREA",
 			"jhash": "0x5AB26C2B",
-			"comment": "",
+			"comment": "ADD_*",
 			"params": [
 				{
 					"type": "float",
@@ -97794,9 +97794,9 @@
 			"build": "323"
 		},
 		"0xE30524E1871F481D": {
-			"name": "_0xE30524E1871F481D",
+			"name": "REMOVE_VEHICLE_COMBAT_AVOIDANCE_AREA",
 			"jhash": "0xEF05F807",
-			"comment": "REMOTE_VEHICLE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
