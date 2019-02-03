@@ -45499,14 +45499,14 @@
 		"0x71DC455F5CD1C2B1": {
 			"name": "_0x71DC455F5CD1C2B1",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_HAS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "networkHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0x3855FB5EB2C5E8B2": {
@@ -46533,11 +46533,11 @@
 		"0xB07D3185E11657A5": {
 			"name": "_0xB07D3185E11657A5",
 			"jhash": "0xEDA68956",
-			"comment": "",
+			"comment": "NETWORK_HAS_*",
 			"params": [
 				{
 					"type": "Entity",
-					"name": "p0"
+					"name": "entity"
 				}
 			],
 			"return_type": "BOOL",
@@ -46676,14 +46676,14 @@
 		"0x7242F8B741CE1086": {
 			"name": "_0x7242F8B741CE1086",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_IS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "678"
 		},
 		"0xB69317BF5E782347": {
