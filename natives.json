@@ -4078,7 +4078,7 @@
 		"0x062D5EAD4DA2FA6A": {
 			"name": "_0x062D5EAD4DA2FA6A",
 			"jhash": "0xD87AF337",
-			"comment": "",
+			"comment": "FORCE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4287,7 +4287,7 @@
 		"0xD57AAAE0E2214D11": {
 			"name": "_0xD57AAAE0E2214D11",
 			"jhash": "",
-			"comment": "",
+			"comment": "FREEZE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -17753,11 +17753,11 @@
 		"0xDC459CFA0CCE245B": {
 			"name": "_0xDC459CFA0CCE245B",
 			"jhash": "0x7E946E87",
-			"comment": "",
+			"comment": "FORCE_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -21142,7 +21142,7 @@
 		"0x9B079E5221D984D3": {
 			"name": "_0x9B079E5221D984D3",
 			"jhash": "",
-			"comment": "",
+			"comment": "FORCE_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -25685,10 +25685,10 @@
 		"0x57D760D55F54E071": {
 			"name": "_0x57D760D55F54E071",
 			"jhash": "0x9854485F",
-			"comment": "",
+			"comment": "FORCE_*",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -25943,11 +25943,11 @@
 		"0xBA8D65C1C65702E5": {
 			"name": "_0xBA8D65C1C65702E5",
 			"jhash": "",
-			"comment": "",
+			"comment": "FORCE_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -30639,7 +30639,7 @@
 			"build": "323"
 		},
 		"0x8817605C2BA76200": {
-			"name": "_0x8817605C2BA76200",
+			"name": "_FORCE_CLEANUP_OF_TEXT_INPUT_BOX",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -31151,7 +31151,7 @@
 			"build": "1493"
 		},
 		"0x920D853F3E17F1DA": {
-			"name": "_0x920D853F3E17F1DA",
+			"name": "FORCE_ROOM_FOR_GAME_VIEWPORT",
 			"jhash": "0xD79803B5",
 			"comment": "",
 			"params": [
