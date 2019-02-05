@@ -39233,11 +39233,24 @@
 			"build": "323"
 		},
 		"0x75AF80E61248EEBD": {
-			"name": "_0x75AF80E61248EEBD",
-			"jhash": "",
+			"name": "NETWORK_BUY_SMOKES",
+			"jhash": "0xC0AB03EB",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
 			"build": "323"
 		},
 		"0x7BF1D73DB2ECA492": {
@@ -39697,10 +39710,23 @@
 			"build": "323"
 		},
 		"0x6A445B64ED7ABEB5": {
-			"name": "_0x6A445B64ED7ABEB5",
-			"jhash": "",
+			"name": "NETWORK_SPENT_FROM_ROCKSTAR",
+			"jhash": "0x54198922",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
 			"return_type": "Any",
 			"build": "323"
 		},
@@ -39734,11 +39760,28 @@
 			"build": "323"
 		},
 		"0x7C99101F7FCE2EE5": {
-			"name": "_0x7C99101F7FCE2EE5",
-			"jhash": "",
+			"name": "NETWORK_SPENT_PLAYER_HEALTHCARE",
+			"jhash": "0x3D96A21C",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "BOOL",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "323"
 		},
 		"0xD5BB406F4E04019F": {
@@ -39805,11 +39848,28 @@
 			"build": "323"
 		},
 		"0xD987F2489969668C": {
-			"name": "_0xD987F2489969668C",
-			"jhash": "",
+			"name": "NETWORK_BUY_LOTTERY_TICKET",
+			"jhash": "0xF64DF4CF",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "BOOL",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "323"
 		},
 		"0x8A7B3952DD64D2B5": {
@@ -41202,11 +41262,20 @@
 			"build": "1290"
 		},
 		"0xCAC672087B4A24AB": {
-			"name": "_0xCAC672087B4A24AB",
+			"name": "_NETWORK_EARN_FROM_DAR_CHALLENGE",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
 			"build": "1290"
 		},
 		"0x128A747F4A230952": {
@@ -42095,23 +42164,40 @@
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5D17BE59D2123284": {
-			"name": "_0x5D17BE59D2123284",
-			"jhash": "",
+			"name": "NETWORK_CAN_RECEIVE_PLAYER_CASH",
+			"jhash": "0x41F5F10E",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                }
+            ],
 			"return_type": "Any",
 			"build": "323"
 		},
 		"0xEA560AC9EEB1E19B": {
-			"name": "_0xEA560AC9EEB1E19B",
-			"jhash": "",
+			"name": "_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS_AMOUNT",
+			"jhash": "0xA9021211",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xF70EFA14FE091429": {
