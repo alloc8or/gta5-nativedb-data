@@ -3859,10 +3859,10 @@
 		"0xA5F377B175A699C5": {
 			"name": "_0xA5F377B175A699C5",
 			"jhash": "0xE812925D",
-			"comment": "",
+			"comment": "SET_AUDIO_S*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -3870,17 +3870,17 @@
 			"build": "323"
 		},
 		"0x153973AB99FE8980": {
-			"name": "_DYNAMIC_MIXER_RELATED_FN",
+			"name": "ADD_ENTITY_TO_AUDIO_MIX_GROUP",
 			"jhash": "0x2BC93264",
-			"comment": "ADD_E* (most likely ADD_ENTITY_*)\n\nAll found occurrences in b678d:\npastebin.com/ceu67jz8\n\nStill not sure on the functionality of this native but it has something to do with dynamic mixer groups defined in dynamix.dat15",
+			"comment": "All found occurrences in b678d:\npastebin.com/ceu67jz8",
 			"params": [
 				{
 					"type": "Entity",
-					"name": "p0"
+					"name": "entity"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "groupName"
 				},
 				{
 					"type": "float",
@@ -3912,7 +3912,7 @@
 			"jhash": "0x86E995D1",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2DD39BF3E2F9C47F": {
@@ -3963,11 +3963,11 @@
 			"build": "323"
 		},
 		"0xA097AB275061FB21": {
-			"name": "_0xA097AB275061FB21",
+			"name": "IS_MUSIC_ONESHOT_PLAYING",
 			"jhash": "0x2705C4D5",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xE7A0D23DC414507B": {
