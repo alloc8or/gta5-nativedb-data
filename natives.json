@@ -39585,11 +39585,24 @@
 			"build": "323"
 		},
 		"0xCA230C9682556CF1": {
-			"name": "_0xCA230C9682556CF1",
-			"jhash": "",
+			"name": "NETWORK_SPENT_BANK_INTEREST",
+			"jhash": "0xF02E92D7",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
 			"build": "323"
 		},
 		"0xB21B89501CFAC79E": {
@@ -39727,12 +39740,12 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "323"
 		},
 		"0x9B5016A6433A68C5": {
 			"name": "_0x9B5016A6433A68C5",
-			"jhash": "",
+			"jhash": "0xBD64F1B7",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "Any",
