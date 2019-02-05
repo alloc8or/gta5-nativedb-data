@@ -22142,7 +22142,7 @@
 		"0x15E33297C3E8DC60": {
 			"name": "_0x15E33297C3E8DC60",
 			"jhash": "0x805BAB08",
-			"comment": "",
+			"comment": "CLEAR_A*",
 			"params": [
 				{
 					"type": "const char*",
@@ -34172,15 +34172,15 @@
 		"0x2107A3773771186D": {
 			"name": "_0x2107A3773771186D",
 			"jhash": "0x78350773",
-			"comment": "",
+			"comment": "HAS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x06462A961E94B67C": {
 			"name": "_0x06462A961E94B67C",
 			"jhash": "0x5A45B11A",
-			"comment": "",
+			"comment": "CLEAR_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -35226,7 +35226,7 @@
 		"0xA72BC0B675B1519E": {
 			"name": "IS_ORBIS_VERSION",
 			"jhash": "0x40282018",
-			"comment": "PS4\n\nMulleDK19: This function is hard-coded to always return 0.\n\nForce67: I patched return result and got this : i.imgur.com/hUn7zSj.jpg\n\ntranslate please?",
+			"comment": "PS4",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -35234,7 +35234,7 @@
 		"0x4D982ADB1978442D": {
 			"name": "IS_DURANGO_VERSION",
 			"jhash": "0x46FB06A5",
-			"comment": "XBOX ONE\n\nMulleDK19: This function is hard-coded to always return 0.",
+			"comment": "XBOX ONE",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -35242,7 +35242,7 @@
 		"0xF6201B4DAF662A9D": {
 			"name": "IS_XBOX360_VERSION",
 			"jhash": "0x24005CC8",
-			"comment": "XBOX 360\n\nMulleDK19: This function is hard-coded to always return 0.",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -35250,7 +35250,7 @@
 		"0xCCA1072C29D096C2": {
 			"name": "IS_PS3_VERSION",
 			"jhash": "0x4C0D5303",
-			"comment": "PS3\n\nMulleDK19: This function is hard-coded to always return 0.",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -35258,7 +35258,7 @@
 		"0x48AF36444B965238": {
 			"name": "IS_PC_VERSION",
 			"jhash": "0x4D5D9EE3",
-			"comment": "PC\n\nMulleDK19: This function is hard-coded to always return 1.",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
