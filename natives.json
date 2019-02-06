@@ -36387,7 +36387,7 @@
 		"0x32C7A7E8C43A1F80": {
 			"name": "_0x32C7A7E8C43A1F80",
 			"jhash": "",
-			"comment": "",
+			"comment": "ADD_*",
 			"params": [
 				{
 					"type": "float",
@@ -89386,7 +89386,7 @@
 		"0x717E4D1F2048376D": {
 			"name": "_0x717E4D1F2048376D",
 			"jhash": "0x96C0277B",
-			"comment": "If the function fails, returns \"Unknown\".\n\nCould be task (sequence) name. Needs more research.",
+			"comment": "GET_*\n\nReturns a string stored inside the ped's CTaskMoVEScripted task.\nIf the function fails, returns \"Unknown\".",
 			"params": [
 				{
 					"type": "Ped",
@@ -91378,28 +91378,28 @@
 		"0xB0AD1238A709B1A2": {
 			"name": "_0xB0AD1238A709B1A2",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "573"
 		},
 		"0x8F719973E1445BA2": {
 			"name": "_0x8F719973E1445BA2",
 			"jhash": "0x35614622",
-			"comment": "No observed effect.",
+			"comment": "SET_BOAT_*",
 			"params": [
 				{
 					"type": "Vehicle",
 					"name": "vehicle"
 				},
 				{
-					"type": "Vehicle",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -100557,26 +100557,26 @@
 		"0x428AD3E26C8D9EB0": {
 			"name": "_0x428AD3E26C8D9EB0",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				}
 			],
@@ -100586,7 +100586,7 @@
 		"0xE2F53F172B45EDE1": {
 			"name": "_0xE2F53F172B45EDE1",
 			"jhash": "",
-			"comment": "",
+			"comment": "RESET_*\n\nResets the effect of 0x428AD3E26C8D9EB0",
 			"params": [],
 			"return_type": "void",
 			"build": "877"
@@ -100597,11 +100597,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "877"
 		},
 		"0x80E3357FDEF45C21": {
