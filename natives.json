@@ -1422,17 +1422,17 @@
 			"build": "323"
 		},
 		"0xCADA5A0D0702381E": {
-			"name": "_0xCADA5A0D0702381E",
+			"name": "PLAY_DEFERRED_SOUND_FRONTEND",
 			"jhash": "0xC70E6CFA",
-			"comment": "Only call found in the b617d scripts:\n\nAUDIO::_CADA5A0D0702381E(\"BACK\", \"HUD_FREEMODE_SOUNDSET\");",
+			"comment": "Only call found in the b617d scripts:\n\nAUDIO::PLAY_DEFERRED_SOUND_FRONTEND(\"BACK\", \"HUD_FREEMODE_SOUNDSET\");",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "soundName"
 				},
 				{
 					"type": "const char*",
-					"name": "soundset"
+					"name": "soundsetName"
 				}
 			],
 			"return_type": "void",
@@ -1813,10 +1813,10 @@
 		"0x13AD665062541A7E": {
 			"name": "OVERRIDE_TREVOR_RAGE",
 			"jhash": "0x05B9B5CF",
-			"comment": "",
+			"comment": "Sets audio flag \"TrevorRageIsOverriden\"",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -1832,17 +1832,17 @@
 			"build": "323"
 		},
 		"0xEA241BB04110F091": {
-			"name": "SET_PLAYER_ANGRY",
+			"name": "_SET_PED_SPEECH_DISABLED",
 			"jhash": "0x782CA58D",
-			"comment": "Hash collision! Disables speech.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "playerPed"
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
-					"name": "disabled"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
