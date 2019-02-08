@@ -18733,11 +18733,11 @@
 		"0x1268615ACE24D504": {
 			"name": "SET_ARTIFICIAL_LIGHTS_STATE",
 			"jhash": "0xAA2A0EAF",
-			"comment": "Disables all emissive textures and lights like city lights, car lights, cop car lights. Particles still emit light\n\nUsed in Humane Labs Heist for EMP.",
+			"comment": "Does not affect weapons, particles, fire/explosions, flashlights or the sun.\nWhen set to true, all emissive textures (including ped components that have light effects), street lights, building lights, vehicle lights, etc will all be turned off.\n\nUsed in Humane Labs Heist for EMP.\n\nstate: True turns off all artificial light sources in the map: buildings, street lights, car lights, etc. False turns them back on.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "enable"
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -26525,7 +26525,7 @@
 			"build": "323"
 		},
 		"0xCE5D0E5E315DB238": {
-			"name": "_0xCE5D0E5E315DB238",
+			"name": "_ADD_BLIP_FOR_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
