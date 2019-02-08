@@ -18731,7 +18731,7 @@
 			"build": "323"
 		},
 		"0x1268615ACE24D504": {
-			"name": "_SET_BLACKOUT",
+			"name": "SET_ARTIFICIAL_LIGHTS_STATE",
 			"jhash": "0xAA2A0EAF",
 			"comment": "Disables all emissive textures and lights like city lights, car lights, cop car lights. Particles still emit light\n\nUsed in Humane Labs Heist for EMP.",
 			"params": [
