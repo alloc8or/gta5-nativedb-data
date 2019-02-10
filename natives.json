@@ -68116,14 +68116,14 @@
 		"0x511F1A683387C7E2": {
 			"name": "_0x511F1A683387C7E2",
 			"jhash": "0x5B1B70AA",
-			"comment": "",
+			"comment": "GET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4C5E1F087CD10BB7": {
@@ -68159,7 +68159,7 @@
 		"0x6CD5A433374D4CFB": {
 			"name": "_CAN_PED_SEE_PED",
 			"jhash": "0x74A0F291",
-			"comment": "Returns true if ped1 can see ped2 in their line of vision",
+			"comment": "CAN_PED_*\n\nReturns true if ped1 can see ped2 in their line of vision",
 			"params": [
 				{
 					"type": "Ped",
@@ -68180,10 +68180,10 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p1"
 				}
 			],
@@ -68196,15 +68196,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "944"
 		},
 		"0x3F428D08BE5AAE31": {
