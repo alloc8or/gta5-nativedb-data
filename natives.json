@@ -70518,8 +70518,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "int",
@@ -70536,7 +70536,7 @@
 		"0x710311ADF0E20730": {
 			"name": "ACTIVATE_PHYSICS",
 			"jhash": "0x031711B8",
-			"comment": "seems to be frequently used with the NETWORK::NET_TO_x natives, particularly with vehicles. It is often the only ROPE:: native in a script.\n\n-- This is because the ROPE namespace should most likely be called PHYSICS alphabetically.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -70552,8 +70552,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "float",
@@ -70577,8 +70577,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "Vector3",
@@ -70590,8 +70590,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -70603,8 +70603,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "float",
@@ -70670,11 +70670,11 @@
 			"params": [
 				{
 					"type": "Object",
-					"name": "rope"
+					"name": "object"
 				},
 				{
 					"type": "BOOL",
-					"name": "enabled"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -70696,7 +70696,7 @@
 		"0x01BA3AED21C16CFB": {
 			"name": "SET_DISABLE_FRAG_DAMAGE",
 			"jhash": "0x97269DC8",
-			"comment": "sometimes used used with NET_TO_OBJ\nhash collision last 2 words",
+			"comment": "",
 			"params": [
 				{
 					"type": "Object",
