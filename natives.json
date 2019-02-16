@@ -51164,11 +51164,11 @@
 			"build": "323"
 		},
 		"0xFAFC23AEE23868DB": {
-			"name": "_0xFAFC23AEE23868DB",
+			"name": "_NETWORK_ALLOCATE_TUNABLES_REGISTRATION_DATA_MAP",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "393"
 		},
 		"0x40FCE03E50E8DBE8": {
@@ -63154,13 +63154,13 @@
 			"build": "323"
 		},
 		"0x9DBA107B4937F809": {
-			"name": "_0x9DBA107B4937F809",
+			"name": "_SET_PED_COVER_CLIPSET_OVERRIDE",
 			"jhash": "",
-			"comment": "Found in the b617d scripts:\nPED::_9DBA107B4937F809(v_7, \"trevor_heist_cover_2h\");",
+			"comment": "Found in the b617d scripts:\nPED::_9DBA107B4937F809(v_7, \"trevor_heist_cover_2h\");\n\nSET_PED_MO*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "const char*",
@@ -63171,13 +63171,13 @@
 			"build": "323"
 		},
 		"0xC79196DCB36F6121": {
-			"name": "_0xC79196DCB36F6121",
+			"name": "_CLEAR_PED_COVER_CLIPSET_OVERRIDE",
 			"jhash": "",
-			"comment": "",
+			"comment": "CLEAR_PED_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
