@@ -69883,7 +69883,7 @@
 					"name": "unkPtr"
 				}
 			],
-			"return_type": "Object",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x52B4829281364649": {
@@ -69892,8 +69892,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object*",
-					"name": "rope"
+					"type": "int*",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -69905,8 +69905,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -69915,11 +69915,11 @@
 		"0xFD5448BE3111ED96": {
 			"name": "DOES_ROPE_EXIST",
 			"jhash": "0x66E4A3AC",
-			"comment": "Ptr is correct",
+			"comment": "",
 			"params": [
 				{
-					"type": "Object*",
-					"name": "rope"
+					"type": "int*",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "BOOL",
@@ -69931,8 +69931,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object*",
-					"name": "rope"
+					"type": "int*",
+					"name": "ropeId"
 				},
 				{
 					"type": "BOOL",
@@ -69948,8 +69948,8 @@
 			"comment": "Rope presets can be found in the gamefiles. One example is \"ropeFamily3\", it is NOT a hash but rather a string.",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "const char*",
@@ -69965,8 +69965,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "int",
@@ -69994,8 +69994,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "int",
@@ -70011,8 +70011,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "int",
@@ -70024,8 +70024,8 @@
 			"comment": "Attaches entity 1 to entity 2.",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "Entity",
@@ -70089,8 +70089,8 @@
 			"comment": "The position supplied can be anywhere, and the entity should anchor relative to that point from it's origin.",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "Entity",
@@ -70122,8 +70122,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "Entity",
@@ -70139,8 +70139,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -70199,8 +70199,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "Vector3",
@@ -70212,8 +70212,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "int",
@@ -70229,8 +70229,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -70242,8 +70242,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -70255,8 +70255,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -70268,8 +70268,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -70281,8 +70281,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "void",
@@ -70318,8 +70318,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "BOOL",
@@ -70429,13 +70429,13 @@
 			"build": "323"
 		},
 		"0x73040398DFF9A4A6": {
-			"name": "_GET_ROPE_LENGTH",
+			"name": "ROPE_GET_DISTANCE_BETWEEN_ENDS",
 			"jhash": "0xFD309DC8",
-			"comment": "Get a rope's length.  Can be modified with ROPE_FORCE_LENGTH",
+			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "float",
@@ -70447,8 +70447,8 @@
 			"comment": "Forces a rope to a certain length.",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "float",
@@ -70464,8 +70464,8 @@
 			"comment": "Reset a rope to a certain length.",
 			"params": [
 				{
-					"type": "Object",
-					"name": "rope"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "float",
