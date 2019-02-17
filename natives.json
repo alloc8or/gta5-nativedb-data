@@ -39133,11 +39133,28 @@
 			"build": "323"
 		},
 		"0xA3EDDAA42411D3B9": {
-			"name": "_0xA3EDDAA42411D3B9",
-			"jhash": "",
+			"name": "NETWORK_BUY_BACKUP_GANG",
+			"jhash": "0x2AD2EC51",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "BOOL",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "323"
 		},
 		"0x81AA4610E3FD3A69": {
@@ -51898,7 +51915,7 @@
 		"0x4F18196C8D38768D": {
 			"name": "CLOUD_CHECK_AVAILABILITY",
 			"jhash": "0xC38E9DB0",
-			"comment": "Downloads prod.cloud.rockstargames.com/titles/gta5/<platform>/check.json in the same manner that NETWORK_REQUEST_CLOUD_TUNABLES downloads the tunables.",
+			"comment": "Downloads prod.cloud.rockstargames.com/titles/gta5/[platform]/check.json",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -82206,7 +82223,7 @@
 			"jhash": "0x7154B6FD",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0xA76359FC80B2438E": {
