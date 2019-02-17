@@ -82104,9 +82104,9 @@
 			"build": "323"
 		},
 		"0xDFA80CB25D0A19B3": {
-			"name": "_0xDFA80CB25D0A19B3",
+			"name": "IS_SWITCH_READY_FOR_DESCENT",
 			"jhash": "0x408F7148",
-			"comment": "IS_SWITCH_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -82164,7 +82164,7 @@
 		"0x933BBEEB8C61B5F4": {
 			"name": "_0x933BBEEB8C61B5F4",
 			"jhash": "0x74C16879",
-			"comment": "IS_SWITCH_*",
+			"comment": "Probably IS_SWITCH_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
