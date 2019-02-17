@@ -81601,17 +81601,17 @@
 			"build": "323"
 		},
 		"0xAF12610C644A35C9": {
-			"name": "_0xAF12610C644A35C9",
+			"name": "_SET_MAP_CULLBOX_ACTIVE",
 			"jhash": "0x403CD434",
 			"comment": "Possible p0 values:\n\n\"prologue\"\n\"Prologue_Main\"",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -82106,9 +82106,9 @@
 		"0xDFA80CB25D0A19B3": {
 			"name": "_0xDFA80CB25D0A19B3",
 			"jhash": "0x408F7148",
-			"comment": "",
+			"comment": "IS_SWITCH_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xD4793DFF3AF2ABCD": {
@@ -82164,9 +82164,9 @@
 		"0x933BBEEB8C61B5F4": {
 			"name": "_0x933BBEEB8C61B5F4",
 			"jhash": "0x74C16879",
-			"comment": "",
+			"comment": "IS_SWITCH_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x08C2D6C52A3104BB": {
@@ -82186,11 +82186,11 @@
 			"build": "323"
 		},
 		"0x5B74EA8CFD5E3E7E": {
-			"name": "DESTROY_PLAYER_IN_PAUSE_MENU",
+			"name": "IS_SWITCH_SKIPPING_DESCENT",
 			"jhash": "0x90F64284",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x1E9057A74FD73E23": {
