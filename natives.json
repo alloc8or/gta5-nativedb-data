@@ -79486,7 +79486,7 @@
 		"0x3270F67EED31FBC1": {
 			"name": "_STAT_SAVE_MIGRATION_CONSUME_CONTENT_UNLOCK",
 			"jhash": "",
-			"comment": "STAT_SAVE_*\n\n",
+			"comment": "STAT_SAVE_*",
 			"params": [
 				{
 					"type": "int",
@@ -80969,7 +80969,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "x"
 				},
 				{
