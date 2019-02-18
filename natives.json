@@ -13680,7 +13680,7 @@
 		"0xC34BC448DA29F5E9": {
 			"name": "_0xC34BC448DA29F5E9",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_ENTITY_*",
 			"params": [
 				{
 					"type": "Entity",
@@ -79380,13 +79380,13 @@
 			"build": "323"
 		},
 		"0xA5C80D8E768A9E66": {
-			"name": "_0xA5C80D8E768A9E66",
+			"name": "_STAT_MIGRATE_SAVE",
 			"jhash": "",
-			"comment": "",
+			"comment": "STAT_*\n\nplatformName must be one of the following: ps3, xbox360, ps4, xboxone",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "platformName"
 				}
 			],
 			"return_type": "BOOL",
@@ -79484,21 +79484,21 @@
 			"build": "323"
 		},
 		"0x3270F67EED31FBC1": {
-			"name": "_0x3270F67EED31FBC1",
+			"name": "_STAT_SAVE_MIGRATION_CONSUME_CONTENT_UNLOCK",
 			"jhash": "",
-			"comment": "",
+			"comment": "STAT_SAVE_*\n\n",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "contentId"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "srcPlatform"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "srcGamerHandle"
 				}
 			],
 			"return_type": "BOOL",
