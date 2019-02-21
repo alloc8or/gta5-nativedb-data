@@ -36038,21 +36038,21 @@
 			"build": "323"
 		},
 		"0x213AEB2B90CBA7AC": {
-			"name": "_0x213AEB2B90CBA7AC",
+			"name": "_COPY_MEMORY",
 			"jhash": "",
-			"comment": "",
+			"comment": "mov     rdx, [rcx+10h]\nmov     eax, [rdx+10h]\nmov     rcx, [rdx]\nmov     rdx, [rdx+8]\nshl     eax, 3\nmovsxd  r8, eax\nlea     rsp, [rsp-8]\nmov     [rsp+8+var_8], rbp\nlea     rbp, memmove\nxchg    rbp, [rsp+8+var_8]\nlea     rsp, [rsp+8]\njmp     [rsp+var_8]",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "dst"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "src"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "size"
 				}
 			],
 			"return_type": "void",
@@ -90048,11 +90048,11 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "canBeLockedOn"
 				},
 				{
-					"type": "bool",
+					"type": "BOOL",
 					"name": "unk"
 				}
 			],
