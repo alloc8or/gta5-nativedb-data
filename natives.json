@@ -4452,11 +4452,11 @@
 		"0x12561FCBB62D5B9C": {
 			"name": "SET_AUDIO_SPECIAL_EFFECT_MODE",
 			"jhash": "0x62B43677",
-			"comment": "p0 is usually 0. sometimes 2. Not sure what this does.",
+			"comment": "enum audSpecialEffectMode\n{\nkSpecialEffectModeNormal,\nkSpecialEffectModeUnderwater,\nkSpecialEffectModeStoned,\nkSpecialEffectModePauseMenu,\nkSpecialEffectModeSlowMotion,\nkSpecialEffectModeDrunkStage01,\nkSpecialEffectModeDrunkStage02,\nkSpecialEffectModeDrunkStage03,\nNUM_AUDSPECIALEFFECTMODE\n};",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "mode"
 				}
 			],
 			"return_type": "void",
