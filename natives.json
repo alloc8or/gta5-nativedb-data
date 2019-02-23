@@ -4452,7 +4452,7 @@
 		"0x12561FCBB62D5B9C": {
 			"name": "SET_AUDIO_SPECIAL_EFFECT_MODE",
 			"jhash": "0x62B43677",
-			"comment": "enum audSpecialEffectMode\n{\nkSpecialEffectModeNormal,\nkSpecialEffectModeUnderwater,\nkSpecialEffectModeStoned,\nkSpecialEffectModePauseMenu,\nkSpecialEffectModeSlowMotion,\nkSpecialEffectModeDrunkStage01,\nkSpecialEffectModeDrunkStage02,\nkSpecialEffectModeDrunkStage03,\nNUM_AUDSPECIALEFFECTMODE\n};",
+			"comment": "enum audSpecialEffectMode\n{\n\tkSpecialEffectModeNormal,\n\tkSpecialEffectModeUnderwater,\n\tkSpecialEffectModeStoned,\n\tkSpecialEffectModePauseMenu,\n\tkSpecialEffectModeSlowMotion,\n\tkSpecialEffectModeDrunkStage01,\n\tkSpecialEffectModeDrunkStage02,\n\tkSpecialEffectModeDrunkStage03,\n\tNUM_AUDSPECIALEFFECTMODE\n};",
 			"params": [
 				{
 					"type": "int",
