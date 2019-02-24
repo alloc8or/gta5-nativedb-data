@@ -10687,7 +10687,7 @@
 			"jhash": "0xC2169164",
 			"comment": "MulleDK19: This function is hard-coded to always return 0.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA213B11DFF526300": {
@@ -10695,15 +10695,15 @@
 			"jhash": "0xF79A97F5",
 			"comment": "MulleDK19: This function is hard-coded to always return 1.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x8D30F648014A92B5": {
-			"name": "_0x8D30F648014A92B5",
+			"name": "_GET_EXTRA_CONTENT_PACK_HAS_BEEN_INSTALLED",
 			"jhash": "0xF69B729C",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x10D0A8F259E93EC9": {
@@ -82554,9 +82554,9 @@
 		"0x3D3D8B3BE5A83D35": {
 			"name": "_0x3D3D8B3BE5A83D35",
 			"jhash": "0x3E9C4CBE",
-			"comment": "",
+			"comment": "GET_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		}
 	},
