@@ -78695,11 +78695,11 @@
 			"build": "323"
 		},
 		"0xA31FD15197B192BD": {
-			"name": "_0xA31FD15197B192BD",
+			"name": "LEADERBOARDS_READ_ANY_PENDING",
 			"jhash": "0x1789437B",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2FB19228983E832C": {
@@ -79022,7 +79022,7 @@
 			"build": "323"
 		},
 		"0x0BCA1D2C47B0D269": {
-			"name": "_0x0BCA1D2C47B0D269",
+			"name": "LEADERBOARDS_WRITE_ADD_COLUMN",
 			"jhash": "0x7524E27B",
 			"comment": "",
 			"params": [
@@ -79043,7 +79043,7 @@
 			"build": "323"
 		},
 		"0x2E65248609523599": {
-			"name": "_0x2E65248609523599",
+			"name": "LEADERBOARDS_WRITE_ADD_COLUMN_LONG",
 			"jhash": "0x1C5CCC3A",
 			"comment": "",
 			"params": [
