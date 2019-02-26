@@ -62328,9 +62328,9 @@
 			"build": "323"
 		},
 		"0xF92691AED837A5FC": {
-			"name": "SET_EXCLUSIVE_PHONE_RELATIONSHIPS",
+			"name": "GET_VEHICLE_PED_IS_ENTERING",
 			"jhash": "0x56E0C163",
-			"comment": "In appcamera.c4, Line 106:\nif (VEHICLE::IS_VEHICLE_DRIVEABLE(PED::SET_EXCLUSIVE_PHONE_RELATIONSHIPS(PLAYER::PLAYER_PED_ID()), 0))\nSo return type could be a vehicle?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
