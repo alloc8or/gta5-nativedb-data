@@ -68759,7 +68759,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p3"
 				},
 				{
@@ -69538,24 +69538,24 @@
 			"build": "323"
 		},
 		"0xCB968B53FC7F916D": {
-			"name": "_0xCB968B53FC7F916D",
+			"name": "SET_FORCE_STEP_TYPE",
 			"jhash": "0xC0F1BC91",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "type"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
