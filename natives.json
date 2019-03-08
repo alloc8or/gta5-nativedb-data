@@ -32077,7 +32077,7 @@
 		"0xE8B9C0EC9E183F35": {
 			"name": "_0xE8B9C0EC9E183F35",
 			"jhash": "",
-			"comment": "",
+			"comment": "HAS_*\n\nHardcoded to return false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -32122,9 +32122,9 @@
 			"build": "323"
 		},
 		"0xB335F761606DB47C": {
-			"name": "_0xB335F761606DB47C",
+			"name": "_GET_BASE_ELEMENT_METADATA",
 			"jhash": "",
-			"comment": "This line found 48 times in the scripts:\n\nGAMEPLAY::_B335F761606DB47C(&v_4, &v_7, a_0, v_A);",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
@@ -38846,7 +38846,7 @@
 			"build": "323"
 		},
 		"0x7303E27CC6532080": {
-			"name": "_0x7303E27CC6532080",
+			"name": "_NETWORK_CAN_SPEND_MONEY_2",
 			"jhash": "",
 			"comment": "NETWORK_CAN_R??? or NETWORK_CAN_S???",
 			"params": [
@@ -53492,11 +53492,11 @@
 			"build": "323"
 		},
 		"0x91B87C55093DE351": {
-			"name": "_0x91B87C55093DE351",
+			"name": "_NETWORK_GET_ROS_PRIVILEGE_25",
 			"jhash": "",
-			"comment": "bool?\nam_crate_drop.c\n<...>\nif (network::_network_are_ros_available())\n{\n    if (network::_0x91B87C55093DE351())\n<..>",
+			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x36391F397731595D": {
@@ -74826,7 +74826,7 @@
 		"0x5F92A689A06620AA": {
 			"name": "GET_NUMBER_OF_EVENTS",
 			"jhash": "0xA3525D60",
-			"comment": "",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)",
 			"params": [
 				{
 					"type": "int",
@@ -74839,7 +74839,7 @@
 		"0x936E6168A9BCEDB5": {
 			"name": "GET_EVENT_EXISTS",
 			"jhash": "0xA1B447B5",
-			"comment": "",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)",
 			"params": [
 				{
 					"type": "int",
@@ -74856,7 +74856,7 @@
 		"0xD8F66A3A60C62153": {
 			"name": "GET_EVENT_AT_INDEX",
 			"jhash": "0xB49C1442",
-			"comment": "",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)",
 			"params": [
 				{
 					"type": "int",
@@ -74873,7 +74873,7 @@
 		"0x2902843FCD2B2D79": {
 			"name": "GET_EVENT_DATA",
 			"jhash": "0x4280F92F",
-			"comment": "",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)",
 			"params": [
 				{
 					"type": "int",
@@ -74898,7 +74898,7 @@
 		"0x5AE99C571D5BBE5D": {
 			"name": "TRIGGER_SCRIPT_EVENT",
 			"jhash": "0x54763B35",
-			"comment": "",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)",
 			"params": [
 				{
 					"type": "int",
@@ -75032,7 +75032,7 @@
 		"0xA40CC53DF8E50837": {
 			"name": "_TRIGGER_SCRIPT_EVENT_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)",
 			"params": [
 				{
 					"type": "int",
@@ -77807,15 +77807,15 @@
 		"0x6DEE77AFF8C21BD1": {
 			"name": "_0x6DEE77AFF8C21BD1",
 			"jhash": "0x489E27E7",
-			"comment": "",
+			"comment": "PLAYSTATS_*",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "int*",
+					"name": "playerAccountId"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "posixTime"
 				}
 			],
 			"return_type": "BOOL",
@@ -77888,7 +77888,7 @@
 			"build": "323"
 		},
 		"0x1CAE5D2E3F9A07F0": {
-			"name": "_0x1CAE5D2E3F9A07F0",
+			"name": "_PLAYSTATS_CRATE_DROP",
 			"jhash": "0x6602CED6",
 			"comment": "",
 			"params": [
@@ -77929,7 +77929,7 @@
 			"build": "323"
 		},
 		"0xAFC7E5E075A96F46": {
-			"name": "_PLAYSTATS_AMBIENT_MISSION_CRATE_CREATED",
+			"name": "_PLAYSTATS_CRATE_CREATED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -77950,7 +77950,7 @@
 			"build": "323"
 		},
 		"0xCB00196B31C39EB1": {
-			"name": "_PLAYSTATS_AMBIENT_MISSION_HOLD_UP",
+			"name": "_PLAYSTATS_HOLD_UP",
 			"jhash": "0x759E0EC9",
 			"comment": "",
 			"params": [
@@ -77975,7 +77975,7 @@
 			"build": "323"
 		},
 		"0x2B69F5074C894811": {
-			"name": "_PLAYSTATS_AMBIENT_MISSION_IMP_EXP",
+			"name": "_PLAYSTATS_IMP_EXP",
 			"jhash": "0x62073DF7",
 			"comment": "",
 			"params": [
@@ -78000,7 +78000,7 @@
 			"build": "323"
 		},
 		"0xADDD1C754E2E2914": {
-			"name": "_PLAYSTATS_AMBIENT_MISSION_RACE_TO_POINT",
+			"name": "_PLAYSTATS_RACE_TO_POINT",
 			"jhash": "0x06CE3692",
 			"comment": "",
 			"params": [
@@ -80466,7 +80466,7 @@
 			"build": "877"
 		},
 		"0x501478855A6074CE": {
-			"name": "_0x501478855A6074CE",
+			"name": "_PLAYSTATS_EARNED_MC_POINTS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -80622,7 +80622,7 @@
 			"build": "944"
 		},
 		"0xB7257BA2550EA10A": {
-			"name": "_0xB7257BA2550EA10A",
+			"name": "_PLAYSTATS_COPY_RANK_INTO_NEW_SLOT",
 			"jhash": "",
 			"comment": "",
 			"params": [
