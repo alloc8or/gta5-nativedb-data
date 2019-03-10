@@ -37325,19 +37325,19 @@
 			"build": "323"
 		},
 		"0x684A41975F077262": {
-			"name": "_0x684A41975F077262",
+			"name": "_IS_IN_POWER_SAVING_MODE",
 			"jhash": "",
-			"comment": "example:\n\n if (GAMEPLAY::_684A41975F077262()) {\n        (a_0) = GAMEPLAY::_ABB2FA71C83A1B72();\n    } else { \n        (a_0) = -1;\n    }",
+			"comment": "aka \"constrained\"",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xABB2FA71C83A1B72": {
-			"name": "_0xABB2FA71C83A1B72",
+			"name": "_GET_POWER_SAVING_MODE_DURATION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns duration of how long the game has been in power-saving mode (aka \"constrained\") in miliseconds.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4EBB7E87AA0DBED4": {
