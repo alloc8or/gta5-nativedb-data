@@ -4230,17 +4230,17 @@
 			"build": "1493"
 		},
 		"0xD2CC78CD3D0B50F9": {
-			"name": "_0xD2CC78CD3D0B50F9",
+			"name": "OVERRIDE_PLAYER_GROUND_MATERIAL",
 			"jhash": "0xC307D531",
-			"comment": "",
+			"comment": "Sets audio flag \"OverridePlayerGroundMaterial\"",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -4268,17 +4268,17 @@
 			"build": "323"
 		},
 		"0x75773E11BA459E90": {
-			"name": "_0x75773E11BA459E90",
+			"name": "_OVERRIDE_MICROPHONE_SETTINGS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets audio flag \"OverrideMicrophoneSettings\"",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -21852,33 +21852,33 @@
 			"build": "323"
 		},
 		"0x2A2A52824DB96700": {
-			"name": "_0x2A2A52824DB96700",
+			"name": "OVERRIDE_INTERIOR_SMOKE_NAME",
 			"jhash": "0x0F486429",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x1600FD8CF72EBC12": {
-			"name": "_0x1600FD8CF72EBC12",
+			"name": "OVERRIDE_INTERIOR_SMOKE_LEVEL",
 			"jhash": "0xD87CC710",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "level"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xEFB55E7C25D3B3BE": {
-			"name": "_0xEFB55E7C25D3B3BE",
+			"name": "OVERRIDE_INTERIOR_SMOKE_END",
 			"jhash": "0xE29EE145",
 			"comment": "",
 			"params": [],
@@ -37335,7 +37335,7 @@
 		"0xABB2FA71C83A1B72": {
 			"name": "_GET_POWER_SAVING_MODE_DURATION",
 			"jhash": "",
-			"comment": "Returns duration of how long the game has been in power-saving mode (aka \"constrained\") in miliseconds.",
+			"comment": "Returns duration of how long the game has been in power-saving mode (aka \"constrained\") in milliseconds.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
