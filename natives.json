@@ -42110,7 +42110,7 @@
 		},
 		"0x5D1E75F91C07DEE5": {
 			"name": "_0x5D1E75F91C07DEE5",
-			"jhash": "",
+			"jhash": "0xF1EDB7F4",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -42118,7 +42118,7 @@
 		},
 		"0x4F54F3B6C202FB4E": {
 			"name": "_0x4F54F3B6C202FB4E",
-			"jhash": "",
+			"jhash": "0x56485B56",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "Any",
@@ -42126,7 +42126,7 @@
 		},
 		"0xF9B10B529DCFB33B": {
 			"name": "_0xF9B10B529DCFB33B",
-			"jhash": "",
+			"jhash": "0xC1A11435",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "Any",
@@ -42134,15 +42134,15 @@
 		},
 		"0xA6FA3979BED01B81": {
 			"name": "_NETWORK_GET_BANK_BALANCE_STRING",
-			"jhash": "",
-			"comment": "Console Hash: Probably 0xAA7EA3BD",
+			"jhash": "0xAA7EA3BD",
+			"comment": "",
 			"params": [],
 			"return_type": "const char*",
 			"build": "323"
 		},
 		"0x700AF71AE615E6DD": {
 			"name": "_0x700AF71AE615E6DD",
-			"jhash": "",
+			"jhash": "0x7D4FD28C",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "Any",
@@ -42150,7 +42150,7 @@
 		},
 		"0xED5AB8860415BABA": {
 			"name": "_0xED5AB8860415BABA",
-			"jhash": "",
+			"jhash": "0x0EA2188C",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "Any",
@@ -42158,7 +42158,7 @@
 		},
 		"0xA31FD6A0865B6D14": {
 			"name": "_0xA31FD6A0865B6D14",
-			"jhash": "",
+			"jhash": "0xABED6020",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "Any",
@@ -42166,8 +42166,8 @@
 		},
 		"0xDC18531D7019A535": {
 			"name": "_0xDC18531D7019A535",
-			"jhash": "",
-			"comment": "probably 0x3461981 on console",
+			"jhash": "0xCA23FD25",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -42183,7 +42183,7 @@
 		},
 		"0x13A8DE2FD77D04F3": {
 			"name": "_0x13A8DE2FD77D04F3",
-			"jhash": "",
+			"jhash": "0xC670C814",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "Any",
@@ -42191,7 +42191,7 @@
 		},
 		"0x08E8EEADFD0DC4A0": {
 			"name": "_0x08E8EEADFD0DC4A0",
-			"jhash": "",
+			"jhash": "0x03461981",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "BOOL",
