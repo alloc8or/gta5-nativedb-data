@@ -42219,7 +42219,7 @@
                     "name": "p3"
                 }
             ],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xEA560AC9EEB1E19B": {
@@ -95898,7 +95898,7 @@
 			"build": "323"
 		},
 		"0x2B6747FAA9DB9D6B": {
-			"name": "_0x2B6747FAA9DB9D6B",
+			"name": "SET_VEHICLE_DISABLE_TOWING",
 			"jhash": "0x95A9ACCB",
 			"comment": "",
 			"params": [
@@ -95908,7 +95908,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -97820,7 +97820,7 @@
 		"0x1CF38D529D7441D9": {
 			"name": "_0x1CF38D529D7441D9",
 			"jhash": "0xDF594D8D",
-			"comment": "what does this do?\nyou'RE mother",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98174,25 +98174,25 @@
 			"build": "323"
 		},
 		"0xE01903C47C7AC89E": {
-			"name": "_0xE01903C47C7AC89E",
-			"jhash": "",
+			"name": "CLEAR_LAST_DRIVEN_VEHICLE",
+			"jhash": "0x07186AD9",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x02398B627547189C": {
-			"name": "_0x02398B627547189C",
+			"name": "SET_VEHICLE_HAS_BEEN_DRIVEN_FLAG",
 			"jhash": "0x08CD58F9",
 			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "p0"
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -99480,9 +99480,9 @@
 			"build": "323"
 		},
 		"0x068F64F2470F9656": {
-			"name": "_SET_VEHICLE_CREATES_MONEY_PICKUPS_WHEN_EXPLODED",
+			"name": "SET_VEHICLE_DROPS_MONEY_WHEN_BLOWN_UP",
 			"jhash": "0x4BB5605D",
-			"comment": "Money pickups are created around cars when they explodes. Only works when the vehicle model is a car. A single pickup is between 1 and 18 dollars in size. All car models seems to give the same amount of money.\n\nyoutu.be/3arlUxzHl5Y \ni.imgur.com/WrNpYFs.jpg\n\nFrom the scripts:\nVEHICLE::_068F64F2470F9656(l_36, 0);\n\nFound a \"correct\" name for this :P\n_dead_vehicle_pickups_dies_when_set_exploded_destroy_it_drops_on_money\n\nSET_VEHICLE_D* or SET_VEHICLE_E*",
+			"comment": "Money pickups are created around cars when they explode. Only works when the vehicle model is a car. A single pickup is between 1 and 18 dollars in size. All car models seem to give the same amount of money.\n\nyoutu.be/3arlUxzHl5Y \ni.imgur.com/WrNpYFs.jpg",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99541,24 +99541,24 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "hash"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x79DF7E806202CE01": {
-			"name": "_0x79DF7E806202CE01",
+			"name": "SET_VEHICLE_EXTENDED_REMOVAL_RANGE",
 			"jhash": "0xAEF9611C",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "range"
 				}
 			],
 			"return_type": "void",
