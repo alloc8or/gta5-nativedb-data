@@ -36342,8 +36342,8 @@
 			"build": "323"
 		},
 		"0x1327E2FE9746BAEE": {
-			"name": "_DOES_POP_MULTIPLIER_AREA_EXIST",
-			"jhash": "",
+			"name": "DOES_POP_MULTIPLIER_AREA_EXIST",
+			"jhash": "0xE933B34A",
 			"comment": "",
 			"params": [
 				{
@@ -37798,7 +37798,7 @@
 		},
 		"0xFB2456B2040A6A67": {
 			"name": "_NETWORK_GET_IS_HIGH_EARNER",
-			"jhash": "",
+			"jhash": "0x63F093A6",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "BOOL",
@@ -38344,8 +38344,8 @@
 			"build": "323"
 		},
 		"0x6EA318C91C1A8786": {
-			"name": "_NETWORK_EARN_FROM_DAILY_OBJECTIVE",
-			"jhash": "",
+			"name": "NETWORK_EARN_FROM_DAILY_OBJECTIVES",
+			"jhash": "0xAB6BD72F",
 			"comment": "",
 			"params": [
 				{
@@ -39763,7 +39763,7 @@
 		"0x9B5016A6433A68C5": {
 			"name": "_0x9B5016A6433A68C5",
 			"jhash": "0xBD64F1B7",
-			"comment": "This native is not used in the scripts.",
+			"comment": "This native is not used in the scripts.\n\nHardcoded to return 0.",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -40036,28 +40036,28 @@
 			"build": "573"
 		},
 		"0x30FD873ECE50E9F6": {
-			"name": "_0x30FD873ECE50E9F6",
+			"name": "_NETWORK_BUY_CONTRABAND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -42882,9 +42882,9 @@
 			"build": "323"
 		},
 		"0x8D11E61A4ABF49CC": {
-			"name": "_NETWORK_IS_PSN_AVAILABLE",
-			"jhash": "",
-			"comment": "Maybe NETWORK_IS_PSN_AVAILABLE as it only applies to the PS4 version.",
+			"name": "_0x8D11E61A4ABF49CC",
+			"jhash": "0xBDC8F63E",
+			"comment": "NETWORK_IS_*\n\nSeems to be related to PlayStation",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -43995,7 +43995,7 @@
 		"0x62A0296C1BB1CEB3": {
 			"name": "_NETWORK_ACCEPT_INVITE",
 			"jhash": "0x0907A6BF",
-			"comment": "NETWORK_R*\n\nTriggers a CEventNetworkInviteConfirmed event",
+			"comment": "NETWORK_RE*\n\nTriggers a CEventNetworkInviteConfirmed event",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -45775,12 +45775,12 @@
 			"build": "323"
 		},
 		"0xE26CCFF8094D8C74": {
-			"name": "USING_NETWORK_WEAPONTYPE",
+			"name": "_0xE26CCFF8094D8C74",
 			"jhash": "0xF49C1533",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -45801,44 +45801,44 @@
 			"build": "323"
 		},
 		"0x2FC5650B0271CB57": {
-			"name": "_0x2FC5650B0271CB57",
+			"name": "NETWORK_IS_IN_PLATFORM_PARTY",
 			"jhash": "0xA812B6CB",
-			"comment": "NETWORK_IS_IN_???",
+			"comment": "Hardcoded to return false.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x01ABCE5E7CBDA196": {
-			"name": "_0x01ABCE5E7CBDA196",
+			"name": "_NETWORK_GET_PLATFORM_PARTY_UNK",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x120364DE2845DAF8": {
-			"name": "_0x120364DE2845DAF8",
+			"name": "NETWORK_GET_PLATFORM_PARTY_MEMBERS",
 			"jhash": "0xF30E5814",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "data"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "dataSize"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xFD8B834A8BA05048": {
 			"name": "_0xFD8B834A8BA05048",
 			"jhash": "0xC6609191",
-			"comment": "NETWORK_IS_IN_???",
+			"comment": "NETWORK_IS_IN_*\n\nHardcoded to return false.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x8DE9945BCC9AEC52": {
@@ -46427,7 +46427,7 @@
 		"0x741A3D8380319A81": {
 			"name": "_0x741A3D8380319A81",
 			"jhash": "0x331D9A27",
-			"comment": "",
+			"comment": "Has something to do with a host request.\n\nNETWORK_RE*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -51585,21 +51585,21 @@
 			"build": "323"
 		},
 		"0xBD0BE0BFC927EAC1": {
-			"name": "_NETWORK_CACHE_LOCAL_PLAYER_HEAD_BLEND_DATA",
-			"jhash": "",
+			"name": "NETWORK_CACHE_LOCAL_PLAYER_HEAD_BLEND_DATA",
+			"jhash": "0x94AB35A9",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x237D5336A9A54108": {
-			"name": "_0x237D5336A9A54108",
-			"jhash": "",
+			"name": "NETWORK_HAS_CACHED_PLAYER_HEAD_BLEND_DATA",
+			"jhash": "0x7B2A0337",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "BOOL",
@@ -74943,8 +74943,8 @@
 		},
 		"0x18C1270EA7F199BC": {
 			"name": "GET_NO_LOADING_SCREEN",
-			"jhash": "",
-			"comment": "Even though we don't have a jenkins hash for this one, the name is 100% confirmed.",
+			"jhash": "0x27512BA0",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -91466,8 +91466,8 @@
 			"build": "323"
 		},
 		"0xB5CC40FBCB586380": {
-			"name": "_IS_VEHICLE_SIREN_SOUND_ON",
-			"jhash": "",
+			"name": "IS_VEHICLE_SIREN_AUDIO_ON",
+			"jhash": "0xC9458688",
 			"comment": "",
 			"params": [
 				{
@@ -94799,7 +94799,7 @@
 		},
 		"0x206BC5DC9D1AC70A": {
 			"name": "_0x206BC5DC9D1AC70A",
-			"jhash": "",
+			"jhash": "0x8EACBD13",
 			"comment": "",
 			"params": [
 				{
@@ -94808,7 +94808,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -99660,7 +99660,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "height"
 				}
 			],
 			"return_type": "void",
