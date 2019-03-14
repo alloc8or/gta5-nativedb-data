@@ -92688,17 +92688,17 @@
 			"build": "323"
 		},
 		"0x21973BBF8D17EDFA": {
-			"name": "_0x21973BBF8D17EDFA",
+			"name": "SET_TRAIN_TRACK_SPAWN_FREQUENCY",
 			"jhash": "0xD5774FB7",
 			"comment": "Only called once inside main_persitant with the parameters, 0 - 120000",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "trackIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "frequency"
 				}
 			],
 			"return_type": "void",
@@ -98634,26 +98634,26 @@
 			"build": "323"
 		},
 		"0x4198AB0022B15F87": {
-			"name": "_VEHICLE_HAS_LANDING_GEAR",
+			"name": "IS_PLANE_LANDING_GEAR_INTACT",
 			"jhash": "0xBD085DCA",
-			"comment": "Vehicle has landing gear?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "plane"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x755D6D5267CBBD7E": {
-			"name": "_ARE_PROPELLERS_UNDAMAGED",
+			"name": "ARE_PLANE_PROPELLERS_INTACT",
 			"jhash": "0xABBDD5C6",
-			"comment": "Found this in the decompiled scripts, I'd do more research before changing the name --\n\nif (!ENTITY::IS_ENTITY_DEAD(l_1911)) {\n    if (!VEHICLE::_755D6D5267CBBD7E(l_1911)) {\n        sub_1ba80(\"TRAFFICKING AIR: FAILING - PROPELLERS ARE DAMAGED\");\n        l_12CE = 9;\n    }\n}",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "plane"
 				}
 			],
 			"return_type": "BOOL",
@@ -98741,13 +98741,13 @@
 			"build": "323"
 		},
 		"0x5991A01434CE9677": {
-			"name": "_ARE_VEHICLE_WINGS_INTACT",
+			"name": "_ARE_PLANE_WINGS_INTACT",
 			"jhash": "0xAF8CB3DF",
 			"comment": "ADD_A_MARKER_OVER_VEHICLE was a hash collision!!!\n\nCan be used for planes only!",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "plane"
 				}
 			],
 			"return_type": "BOOL",
@@ -99634,12 +99634,12 @@
 		},
 		"0xF78F94D60248C737": {
 			"name": "_0xF78F94D60248C737",
-			"jhash": "",
+			"jhash": "0x3B51B348",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
@@ -99719,8 +99719,8 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -99728,8 +99728,8 @@
 		},
 		"0xB5C51B5502E85E83": {
 			"name": "_SET_VEHICLE_EXCLUSIVE_DRIVER_2",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0xFF62D324",
+			"comment": "index: 0 - 1",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99741,7 +99741,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "index"
 				}
 			],
 			"return_type": "void",
