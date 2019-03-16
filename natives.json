@@ -29674,52 +29674,52 @@
 			"build": "1493"
 		},
 		"0x15803FEC3B9A872B": {
-			"name": "_0x15803FEC3B9A872B",
+			"name": "_SET_WARNING_MESSAGE_4",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p10"
 				},
 				{
@@ -70166,11 +70166,11 @@
 		"0xDC57A637A20006ED": {
 			"name": "_0xDC57A637A20006ED",
 			"jhash": "0x80DB77A7",
-			"comment": "",
+			"comment": "ROPE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "Any",
@@ -70183,11 +70183,11 @@
 		"0x36CCB9BE67B970FD": {
 			"name": "_0x36CCB9BE67B970FD",
 			"jhash": "0xC67D5CF6",
-			"comment": "",
+			"comment": "ROPE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
 					"type": "BOOL",
@@ -70431,14 +70431,14 @@
 		"0xB743F735C03D7810": {
 			"name": "_0xB743F735C03D7810",
 			"jhash": "0x686672DD",
-			"comment": "",
+			"comment": "ROPE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -70703,8 +70703,8 @@
 			"comment": "RESET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
@@ -73261,7 +73261,7 @@
 				},
 				{
 					"type": "float",
-					"name": "damageAmount"
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
@@ -73277,7 +73277,7 @@
 					"name": "player"
 				},
 				{
-					"type": "ScrHandle",
+					"type": "float",
 					"name": "modifier"
 				}
 			],
@@ -74011,7 +74011,7 @@
 		"0xD55DDFB47991A294": {
 			"name": "HAS_PLAYER_LEFT_THE_WORLD",
 			"jhash": "0xFEA40B6C",
-			"comment": "Gets the player's info and calls a function that checks the player's ped position.\n\nHere's the decompiled function that checks the position: pastebin.com/ZdHG2E7n",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -92690,7 +92690,7 @@
 		"0x21973BBF8D17EDFA": {
 			"name": "SET_TRAIN_TRACK_SPAWN_FREQUENCY",
 			"jhash": "0xD5774FB7",
-			"comment": "Only called once inside main_persitant with the parameters, 0 - 120000",
+			"comment": "Only called once inside main_persitant with the parameters p0 = 0, p1 = 120000\n\ntrackIndex: 0 - 26",
 			"params": [
 				{
 					"type": "int",
