@@ -9293,7 +9293,7 @@
 		"0xC61B86C9F61EB404": {
 			"name": "_0xC61B86C9F61EB404",
 			"jhash": "0x35721A08",
-			"comment": "Toggles a value (bool) for cutscenes.",
+			"comment": "Toggles a value (bool) for cutscenes.\n\nSET_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -20951,8 +20951,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
@@ -99550,7 +99550,7 @@
 		"0x79DF7E806202CE01": {
 			"name": "SET_VEHICLE_EXTENDED_REMOVAL_RANGE",
 			"jhash": "0xAEF9611C",
-			"comment": "",
+			"comment": "Max value is 32767",
 			"params": [
 				{
 					"type": "Vehicle",
