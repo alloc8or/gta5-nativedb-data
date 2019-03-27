@@ -28641,7 +28641,7 @@
 			"build": "323"
 		},
 		"0xD201F3FF917A506D": {
-			"name": "_SET_MINIMAP_ATTITUDE_INDICATOR_LEVEL",
+			"name": "_SET_MINIMAP_ALTITUDE_INDICATOR_LEVEL",
 			"jhash": "0x0308EDF6",
 			"comment": "Argument must be 0.0f or above 38.0f, or it will be ignored.",
 			"params": [
@@ -29394,9 +29394,9 @@
 			"build": "323"
 		},
 		"0xEB709A36958ABE0D": {
-			"name": "_HAS_MP_GAMER_TAG_2",
+			"name": "_IS_VALID_MP_GAMER_TAG_MOVIE",
 			"jhash": "0xF11414C4",
-			"comment": "",
+			"comment": "IS_*",
 			"params": [
 				{
 					"type": "int",
@@ -48407,7 +48407,7 @@
 			"build": "505"
 		},
 		"0x579CCED0265D4896": {
-			"name": "_NETWORK_PLAYER_IS_IN_CLAN",
+			"name": "NETWORK_CLAN_SERVICE_IS_VALID",
 			"jhash": "0xF5F4BD95",
 			"comment": "",
 			"params": [],
@@ -74199,11 +74199,11 @@
 		"0x5501B7A5CDB79D37": {
 			"name": "_0x5501B7A5CDB79D37",
 			"jhash": "",
-			"comment": "DISABLE_*\n\np0 seems to be Player or int",
+			"comment": "DISABLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
