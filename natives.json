@@ -42521,7 +42521,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "372"
 		},
 		"0x897433D292B44130": {
@@ -48487,9 +48487,9 @@
 			"build": "323"
 		},
 		"0x1F471B79ACC90BEF": {
-			"name": "_GET_NUM_MEMBERSHIP_DESC",
+			"name": "_NETWORK_CLAN_GET_NUM_MEMBERSHIP_DESC",
 			"jhash": "0x807B3450",
-			"comment": "",
+			"comment": "NETWORK_CLAN_*",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -57578,13 +57578,13 @@
 			"build": "323"
 		},
 		"0x7F4724035FDCA1DD": {
-			"name": "_DISABLE_INPUT_GROUP",
+			"name": "_0x7F4724035FDCA1DD",
 			"jhash": "0x2CEDE6C5",
-			"comment": "",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nA*",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "a1"
 				}
 			],
 			"return_type": "void",
@@ -57595,7 +57595,7 @@
 		"0xBF1A602B5BA52FEE": {
 			"name": "SET_ROADS_IN_AREA",
 			"jhash": "0xEBC7B918",
-			"comment": "/* Corrected conflicting parameter names */",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -58605,28 +58605,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z3"
 				}
 			],
 			"return_type": "void",
@@ -58757,58 +58757,58 @@
 			"build": "323"
 		},
 		"0xD3A6A0EF48823A8C": {
-			"name": "_0xD3A6A0EF48823A8C",
-			"jhash": "",
+			"name": "GET_NEXT_GPS_DISABLED_ZONE_INDEX",
+			"jhash": "0xBE92551F",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xD0BC1C6FB18EE154": {
-			"name": "_0xD0BC1C6FB18EE154",
-			"jhash": "",
+			"name": "SET_GPS_DISABLED_ZONE_AT_INDEX",
+			"jhash": "0x98BDB311",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x2801D0012266DF07": {
-			"name": "_0x2801D0012266DF07",
-			"jhash": "",
+			"name": "CLEAR_GPS_DISABLED_ZONE_AT_INDEX",
+			"jhash": "0x59090745",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "void",
@@ -58846,9 +58846,9 @@
 		"0x705A844002B39DC0": {
 			"name": "_0x705A844002B39DC0",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "944"
 		},
 		"0x4C8872D8CDBE1B8B": {
@@ -92956,7 +92956,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0x2DACD605FC681475": {
@@ -93049,8 +93049,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
@@ -93066,8 +93066,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -93079,8 +93079,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -93092,8 +93092,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -93105,8 +93105,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "BOOL",
@@ -93118,8 +93118,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "BOOL",
@@ -93131,11 +93131,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xAB8E2EDA0C0A5883": {
@@ -93144,8 +93144,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
