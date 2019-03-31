@@ -607,7 +607,7 @@
 			"jhash": "0x784D550B",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x44151AEA95C8A003": {
@@ -1016,7 +1016,7 @@
 			"jhash": "0x9620E41F",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x8530AD776CD72B12": {
@@ -1050,7 +1050,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x9663FE6B7A61EB00": {
@@ -8909,20 +8909,20 @@
 		"0x0ABC54DE641DC0FC": {
 			"name": "_0x0ABC54DE641DC0FC",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_*",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cutsceneName"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x186D5CB5E7B0FF7B": {
 			"name": "START_CUTSCENE",
 			"jhash": "0x210106F6",
-			"comment": "some kind of flag. Usually 0.",
+			"comment": "p0: some kind of flag. Usually 0.",
 			"params": [
 				{
 					"type": "int",
@@ -9538,11 +9538,11 @@
 		"0xAD6875BBC0FC899C": {
 			"name": "_0xAD6875BBC0FC899C",
 			"jhash": "0x621388FF",
-			"comment": "",
+			"comment": "Appears to set current datafile handle",
 			"params": [
 				{
-					"type": "Blip",
-					"name": "x"
+					"type": "int",
+					"name": "p0"
 				}
 			],
 			"return_type": "void",
@@ -19802,7 +19802,7 @@
 			"build": "323"
 		},
 		"0xEB3DAC2C86001E5E": {
-			"name": "_0xEB3DAC2C86001E5E",
+			"name": "_GET_RENDER_PHASES_ARE_ACTIVE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -73787,11 +73787,11 @@
 		"0x690A61A6D13583F6": {
 			"name": "_0x690A61A6D13583F6",
 			"jhash": "0x1D371529",
-			"comment": "p0 seems to be Ped",
+			"comment": "IS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "BOOL",
@@ -80123,7 +80123,7 @@
 			"build": "573"
 		},
 		"0x792271AB35C356A4": {
-			"name": "_0x792271AB35C356A4",
+			"name": "_HIRED_LIMO",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -80140,7 +80140,7 @@
 			"build": "573"
 		},
 		"0xCEA553E35C2246E1": {
-			"name": "_0xCEA553E35C2246E1",
+			"name": "_ORDERED_BOSS_VEHICLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -80153,8 +80153,8 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "vehicleHash"
 				}
 			],
 			"return_type": "void",
@@ -80685,13 +80685,13 @@
 			"build": "1011"
 		},
 		"0x0EACDF8487D5155A": {
-			"name": "_0x0EACDF8487D5155A",
+			"name": "_PLAYSTATS_GUNRUN_MISSION_ENDED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
@@ -82299,12 +82299,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "iplName1"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "iplName2"
 				}
 			],
 			"return_type": "void",
@@ -82323,7 +82323,7 @@
 			"jhash": "0x17B0A1CD",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xF4A0DADB70F57FA6": {
@@ -82797,7 +82797,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -82807,7 +82807,7 @@
 		"0xD2F1C53C97EE81AB": {
 			"name": "TASK_PARACHUTE",
 			"jhash": "0xEC3060A2",
-			"comment": "This function has a third parameter as well (bool).\nSecond parameter is unused.\n\nseconds parameter was for jetpack in the early stages of gta and the hard coded code is now removed",
+			"comment": "Second parameter is unused.\n\nsecond parameter was for jetpack in the early stages of gta and the hard coded code is now removed",
 			"params": [
 				{
 					"type": "Ped",
@@ -82818,7 +82818,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -82895,15 +82895,15 @@
 		"0x09693B0312F91649": {
 			"name": "TASK_RAPPEL_FROM_HELI",
 			"jhash": "0x2C7ADB93",
-			"comment": "Only appears twice in the scripts.\n\nAI::TASK_RAPPEL_FROM_HELI(PLAYER::PLAYER_PED_ID(), 0x41200000);\nAI::TASK_RAPPEL_FROM_HELI(a_0, 0x41200000);\n\nFixed, definitely not a float and since it's such a big number obviously not a bool. All though note when I thought it was a bool and set it to 1 it seemed to work that same as int 0x41200000.",
+			"comment": "Only appears twice in the scripts.\n\nTASK::TASK_RAPPEL_FROM_HELI(PLAYER::PLAYER_PED_ID(), 0x41200000);\nTASK::TASK_RAPPEL_FROM_HELI(a_0, 0x41200000);",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "int",
-					"name": "unused"
+					"type": "float",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -97923,7 +97923,7 @@
 			"build": "323"
 		},
 		"0x291E373D483E7EE7": {
-			"name": "_ANY_PASSENGERS_RAPPELING",
+			"name": "_IS_ANY_PASSENGER_RAPPELING_FROM_VEHICLE",
 			"jhash": "0xD656E7E5",
 			"comment": "",
 			"params": [
