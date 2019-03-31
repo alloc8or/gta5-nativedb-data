@@ -19803,7 +19803,7 @@
 		},
 		"0xEB3DAC2C86001E5E": {
 			"name": "_GET_RENDER_PHASES_ARE_ACTIVE",
-			"jhash": "",
+			"jhash": "0xD4F5D07D",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
