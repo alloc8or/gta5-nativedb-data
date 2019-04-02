@@ -25096,7 +25096,7 @@
 			"build": "323"
 		},
 		"0x5F68520888E69014": {
-			"name": "_ADD_TEXT_COMPONENT_SCALEFORM",
+			"name": "_ADD_TEXT_COMPONENT_SUBSTRING_UNK",
 			"jhash": "0x0829A799",
 			"comment": "ADD_TEXT_COMPONENT_SUBSTRING_*",
 			"params": [
@@ -65999,7 +65999,7 @@
 			"build": "323"
 		},
 		"0x5F5D1665E352A839": {
-			"name": "_SET_PED_DECORATION",
+			"name": "ADD_PED_DECORATION_FROM_HASHES",
 			"jhash": "0x70559AC7",
 			"comment": "Applies an Item from a PedDecorationCollection to a ped. These include tattoos and shirt decals.\n\ncollection - PedDecorationCollection filename hash\noverlay - Item name hash\n\nExample:\nEntry inside \"mpbeach_overlays.xml\" -\n<Item>\n  <uvPos x=\"0.500000\" y=\"0.500000\" />\n  <scale x=\"0.600000\" y=\"0.500000\" />\n  <rotation value=\"0.000000\" />\n  <nameHash>FM_Hair_Fuzz</nameHash>\n  <txdHash>mp_hair_fuzz</txdHash>\n  <txtHash>mp_hair_fuzz</txtHash>\n  <zone>ZONE_HEAD</zone>\n  <type>TYPE_TATTOO</type>\n  <faction>FM</faction>\n  <garment>All</garment>\n  <gender>GENDER_DONTCARE</gender>\n  <award />\n  <awardLevel />\n</Item>\n\nCode:\nPED::_0x5F5D1665E352A839(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"mpbeach_overlays\"), GAMEPLAY::GET_HASH_KEY(\"fm_hair_fuzz\"))",
 			"params": [
@@ -66020,7 +66020,7 @@
 			"build": "323"
 		},
 		"0x5619BFA07CFD7833": {
-			"name": "_SET_PED_FACIAL_DECORATION",
+			"name": "ADD_PED_DECORATION_FROM_HASHES_IN_CORONA",
 			"jhash": "0x8CD3E487",
 			"comment": "",
 			"params": [
@@ -66041,9 +66041,9 @@
 			"build": "323"
 		},
 		"0x9FD452BFBE7A7A8B": {
-			"name": "_GET_TATTOO_ZONE",
+			"name": "GET_PED_DECORATION_ZONE_FROM_HASHES",
 			"jhash": "0x3543019E",
-			"comment": "Returns the zoneID for the overlay if it is a member of collection.\nenum TattooZoneData\n{\n ZONE_TORSO = 0,\n   ZONE_HEAD = 1,\n    ZONE_LEFT_ARM = 2,\n    ZONE_RIGHT_ARM = 3,\n   ZONE_LEFT_LEG = 4,\n    ZONE_RIGHT_LEG = 5,\n   ZONE_UNKNOWN = 6,\n ZONE_NONE = 7,\n};",
+			"comment": "Returns the zoneID for the overlay if it is a member of collection.\nenum ePedDecorationZone\n{\n\tZONE_TORSO = 0,\n\tZONE_HEAD = 1,\n\tZONE_LEFT_ARM = 2,\n\tZONE_RIGHT_ARM = 3,\n\tZONE_LEFT_LEG = 4,\n\tZONE_RIGHT_LEG = 5,\n\tZONE_UNKNOWN = 6,\n\tZONE_NONE = 7\n};",
 			"params": [
 				{
 					"type": "Hash",
@@ -66071,7 +66071,7 @@
 			"build": "323"
 		},
 		"0xE3B27E70CEAB9F0C": {
-			"name": "_CLEAR_PED_FACIAL_DECORATIONS",
+			"name": "CLEAR_PED_DECORATIONS_LEAVE_SCARS",
 			"jhash": "0xEFD58EB9",
 			"comment": "",
 			"params": [
