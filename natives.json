@@ -46237,7 +46237,7 @@
 			"build": "323"
 		},
 		"0xCF61D4B4702EE9EB": {
-			"name": "_0xCF61D4B4702EE9EB",
+			"name": "NETWORK_GET_TOTAL_NUM_PLAYERS",
 			"jhash": "0xF4F13B06",
 			"comment": "",
 			"params": [],
@@ -60737,29 +60737,29 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xFD325494792302D7": {
-			"name": "SET_TIME_EXCLUSIVE_DISPLAY_TEXTURE",
+			"name": "_0xFD325494792302D7",
 			"jhash": "0x7F67671D",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
