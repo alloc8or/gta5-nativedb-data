@@ -7347,9 +7347,9 @@
 			"build": "323"
 		},
 		"0x9DFE13ECDC1EC196": {
-			"name": "SET_TIME_IDLE_DROP",
+			"name": "_0x9DFE13ECDC1EC196",
 			"jhash": "0x92302899",
-			"comment": "hash collision?",
+			"comment": "SET_FOLLOW_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -38554,13 +38554,13 @@
 			"build": "757"
 		},
 		"0xECA658CE2A4E5A72": {
-			"name": "_0xECA658CE2A4E5A72",
+			"name": "_NETWORK_EARN_FROM_CONTRABAND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
 					"type": "Any",
@@ -39045,7 +39045,7 @@
 			"build": "323"
 		},
 		"0xD99DB210089617FE": {
-			"name": "_0xD99DB210089617FE",
+			"name": "_NETWORK_SPENT_WAGER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39058,8 +39058,8 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -46276,8 +46276,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "BOOL",
@@ -46296,7 +46296,7 @@
 			"jhash": "0x89EA7B54",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "323"
 		},
 		"0x1D6A14F1F9A736FC": {
@@ -46317,7 +46317,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Player",
 			"build": "323"
 		},
 		"0x3B3D11CD9FFCDFC9": {
