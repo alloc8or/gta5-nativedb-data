@@ -45951,13 +45951,13 @@
 		"0x19D8DA0E5A68045A": {
 			"name": "NETWORK_PLAYER_IS_BADSPORT",
 			"jhash": "0xA19708E3",
-			"comment": "Returns whether the player has been reported too often or not.\nExample : griefing.",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x46FB3ED415C7641C": {
-			"name": "_NETWORK_IS_PLAYER_IN_SCRIPT",
+			"name": "_NETWORK_DO_SCRIPT_CRC_CHECK",
 			"jhash": "0xF9A51B92",
 			"comment": "p1 = 6",
 			"params": [
