@@ -99533,7 +99533,7 @@
 		"0x10655FAB9915623D": {
 			"name": "_SET_VEHICLE_HANDLING_HASH_FOR_AI",
 			"jhash": "",
-			"comment": "Use the <AIHandling> string found in handling.meta",
+			"comment": "Use the \"AIHandling\" string found in handling.meta",
 			"params": [
 				{
 					"type": "Vehicle",
