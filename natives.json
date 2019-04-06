@@ -99531,9 +99531,9 @@
 			"build": "1604"
 		},
 		"0x10655FAB9915623D": {
-			"name": "_0x10655FAB9915623D",
+			"name": "_SET_VEHICLE_HANDLING_HASH_FOR_AI",
 			"jhash": "",
-			"comment": "",
+			"comment": "Use the <AIHandling> string found in handling.meta",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101835,42 +101835,42 @@
 			"build": "1604"
 		},
 		"0xA2459F72C14E2E8D": {
-			"name": "_0xA2459F72C14E2E8D",
+			"name": "_GET_IS_VEHICLE_SHUNT_BOOST_ACTIVE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1604"
 		},
 		"0xE8718FAF591FD224": {
 			"name": "_0xE8718FAF591FD224",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_H*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1604"
 		},
 		"0x04F2FA6E234162F7": {
-			"name": "_0x04F2FA6E234162F7",
+			"name": "_GET_LAST_RAMMED_VEHICLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns last vehicle that was rammed by the given vehicle using the shunt boost.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vehicle",
 			"build": "1604"
 		},
 		"0x143921E45EC44D62": {
@@ -101947,7 +101947,7 @@
 			"build": "1604"
 		},
 		"0x71AFB258CCED3A27": {
-			"name": "_0x71AFB258CCED3A27",
+			"name": "_GET_DOES_VEHICLE_HAVE_TOMBSTONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -101960,7 +101960,7 @@
 			"build": "1604"
 		},
 		"0xAE71FB656C600587": {
-			"name": "_0xAE71FB656C600587",
+			"name": "_HIDE_VEHICLE_TOMBSTONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -101979,7 +101979,7 @@
 		"0x0506ED94363AD905": {
 			"name": "_GET_IS_VEHICLE_EMP_DISABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Return whether this vehicle is currently disabled by an EMP mine.",
 			"params": [
 				{
 					"type": "Vehicle",
