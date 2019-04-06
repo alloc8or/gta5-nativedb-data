@@ -101798,11 +101798,11 @@
 		"0x36DE109527A2C0C4": {
 			"name": "_0x36DE109527A2C0C4",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing. It's a nullsub.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -101811,11 +101811,11 @@
 		"0x82E0AC411E41A5B4": {
 			"name": "_0x82E0AC411E41A5B4",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing. It's a nullsub.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -101824,11 +101824,11 @@
 		"0x99A05839C46CE316": {
 			"name": "_0x99A05839C46CE316",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing. It's a nullsub.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -101979,7 +101979,7 @@
 		"0x0506ED94363AD905": {
 			"name": "_GET_IS_VEHICLE_EMP_DISABLED",
 			"jhash": "",
-			"comment": "Return whether this vehicle is currently disabled by an EMP mine.",
+			"comment": "Returns whether this vehicle is currently disabled by an EMP mine.",
 			"params": [
 				{
 					"type": "Vehicle",
