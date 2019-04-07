@@ -49095,7 +49095,7 @@
 		"0x1F4ED342ACEFE62D": {
 			"name": "NETWORK_FADE_IN_ENTITY",
 			"jhash": "0x9B9FCD02",
-			"comment": "state - 0 does 5 fades\nstate - 1 does 6 fades\n\nnative is missing third argument, also boolean, setting to 1 made vehicle fade in slower, probably \"slow\" as per NETWORK_FADE_OUT_ENTITY",
+			"comment": "state - 0 does 5 fades\nstate - 1 does 6 fades\n\np3: setting to 1 made vehicle fade in slower, probably \"slow\" as per NETWORK_FADE_OUT_ENTITY",
 			"params": [
 				{
 					"type": "Entity",
