@@ -51699,9 +51699,9 @@
 			"build": "323"
 		},
 		"0x2A7776C709904AB0": {
-			"name": "_0x2A7776C709904AB0",
+			"name": "GET_COMMERCE_ITEM_NUM_CATS",
 			"jhash": "0x1CF89DA5",
-			"comment": "GET_COMMERCE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
