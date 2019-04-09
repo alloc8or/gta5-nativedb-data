@@ -51623,19 +51623,19 @@
 			"build": "323"
 		},
 		"0xF2EAC213D5EA0623": {
-			"name": "_0xF2EAC213D5EA0623",
+			"name": "GET_NUM_COMMERCE_ITEMS",
 			"jhash": "0x965EA007",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xEA14EEF5B7CD2C30": {
-			"name": "_0xEA14EEF5B7CD2C30",
+			"name": "IS_COMMERCE_DATA_VALID",
 			"jhash": "0xEEFC8A55",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xB606E6CC59664972": {
@@ -51654,35 +51654,35 @@
 		"0x1D4DC17C38FEAFF0": {
 			"name": "_0x1D4DC17C38FEAFF0",
 			"jhash": "0xED4A272F",
-			"comment": "",
+			"comment": "IS_COMMERCE_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x662635855957C411": {
-			"name": "_0x662635855957C411",
+			"name": "GET_COMMERCE_ITEM_ID",
 			"jhash": "0x4ACF110C",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "323"
 		},
 		"0xB4271092CA7EDF48": {
-			"name": "_0xB4271092CA7EDF48",
+			"name": "GET_COMMERCE_ITEM_NAME",
 			"jhash": "0x1AA3A0D5",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "323"
 		},
 		"0xCA94551B50B4932C": {
@@ -51701,37 +51701,37 @@
 		"0x2A7776C709904AB0": {
 			"name": "_0x2A7776C709904AB0",
 			"jhash": "0x1CF89DA5",
-			"comment": "",
+			"comment": "GET_COMMERCE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x6F44CBF56D79FAC0": {
-			"name": "_0x6F44CBF56D79FAC0",
+			"name": "GET_COMMERCE_ITEM_CAT",
 			"jhash": "0x16E53875",
-			"comment": "",
+			"comment": "index2 is unused",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "323"
 		},
 		"0x58C21165F6545892": {
 			"name": "_0x58C21165F6545892",
 			"jhash": "0x365C50EE",
-			"comment": "Has a 3rd param (int) since patch [???].",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -51771,13 +51771,13 @@
 			"build": "323"
 		},
 		"0xA2F952104FC6DD4B": {
-			"name": "_0xA2F952104FC6DD4B",
+			"name": "REQUEST_COMMERCE_ITEM_IMAGE",
 			"jhash": "0x1FDC75DC",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "BOOL",
@@ -51860,17 +51860,17 @@
 		"0x754615490A029508": {
 			"name": "_0x754615490A029508",
 			"jhash": "",
-			"comment": "",
+			"comment": "Checks some commerce stuff",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1290"
 		},
 		"0x155467ACA0F55705": {
 			"name": "_0x155467ACA0F55705",
 			"jhash": "",
-			"comment": "",
+			"comment": "Checks some commerce stuff",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1290"
 		},
 		"0xC64DED7EF0D2FE37": {
@@ -53534,11 +53534,11 @@
 			"build": "323"
 		},
 		"0x659CF2EF7F550C4F": {
-			"name": "_0x659CF2EF7F550C4F",
+			"name": "_NETWORK_HAS_GAME_BEEN_ALTERED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns true if dinput8.dll is present in the game directory.\nYou will get following error message if that is true: \"You are attempting to access GTA Online servers with an altered version of the game.\"",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1011"
 		},
 		"0xB7C7F6AD6424304B": {
@@ -69022,20 +69022,20 @@
 					"name": "ped"
 				}
 			],
-			"return_type": "ScrHandle",
+			"return_type": "int",
 			"build": "877"
 		},
 		"0x953563CE563143AF": {
-			"name": "_0x953563CE563143AF",
+			"name": "REGISTER_PEDHEADSHOT_TRANSPARENT",
 			"jhash": "0x4DD03628",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x96B1361D9B24C2FF": {
@@ -69045,7 +69045,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "handle"
+					"name": "id"
 				}
 			],
 			"return_type": "void",
@@ -69058,7 +69058,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "handle"
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
@@ -69071,7 +69071,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "handle"
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
@@ -69084,7 +69084,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "handle"
+					"name": "id"
 				}
 			],
 			"return_type": "const char*",
