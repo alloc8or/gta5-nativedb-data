@@ -51805,11 +51805,11 @@
 			"build": "323"
 		},
 		"0x883D79C4071E18B3": {
-			"name": "_0x883D79C4071E18B3",
+			"name": "IS_STORE_AVAILABLE_TO_USER",
 			"jhash": "0xD32FA11F",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x265635150FB0D82E": {
