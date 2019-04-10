@@ -51742,7 +51742,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -51823,7 +51823,7 @@
 		"0x444C4525ECE0A4B9": {
 			"name": "_0x444C4525ECE0A4B9",
 			"jhash": "0xCC7DCE24",
-			"comment": "sfink: related to: NETWORK_BAIL\nNETWORK_BAIL_TRANSITION\nNETWORK_JOIN_GROUP_ACTIVITY\nNETWORK_JOIN_TRANSITION\nNETWORK_LAUNCH_TRANSITION\nNETWORK_SESSION_HOST\nNETWORK_SESSION_HOST_CLOSED\nNETWORK_SESSION_HOST_FRIENDS_ONLY\nNETWORK_SESSION_HOST_SINGLE_PLAYER\nNETWORK_SESSION_VOICE_LEAVE",
+			"comment": "RESET_*\n\nsfink: related to: NETWORK_BAIL\nNETWORK_BAIL_TRANSITION\nNETWORK_JOIN_GROUP_ACTIVITY\nNETWORK_JOIN_TRANSITION\nNETWORK_LAUNCH_TRANSITION\nNETWORK_SESSION_HOST\nNETWORK_SESSION_HOST_CLOSED\nNETWORK_SESSION_HOST_FRIENDS_ONLY\nNETWORK_SESSION_HOST_SINGLE_PLAYER\nNETWORK_SESSION_VOICE_LEAVE",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -51831,26 +51831,26 @@
 		"0x59328EB08C5CEB2B": {
 			"name": "_0x59328EB08C5CEB2B",
 			"jhash": "0x70F6D3AD",
-			"comment": "",
+			"comment": "IS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xFAE628F1E9ADB239": {
 			"name": "_0xFAE628F1E9ADB239",
-			"jhash": "",
+			"jhash": "0xD59A822B",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p2"
 				}
 			],
