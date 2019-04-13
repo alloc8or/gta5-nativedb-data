@@ -42285,7 +42285,7 @@
 	},
 	"NETSHOPPING": {
 		"0x7D2708796355B20B": {
-			"name": "_NETWORK_SHOULD_USE_SERVER_TRANSACTIONS",
+			"name": "_NET_GAMESERVER_USE_SERVER_TRANSACTIONS",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -42293,7 +42293,7 @@
 			"build": "1290"
 		},
 		"0xBD4D7EAF8A30F637": {
-			"name": "_NETWORK_SHOP_DOES_ITEM_EXIST",
+			"name": "_NET_GAMESERVER_DOES_ITEM_EXIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42306,9 +42306,9 @@
 			"build": "323"
 		},
 		"0x247F0F73A182EA0B": {
-			"name": "_NETWORK_SHOP_DOES_ITEM_EXIST_HASH",
+			"name": "_NET_GAMESERVER_DOES_ITEM_EXIST_HASH",
 			"jhash": "",
-			"comment": "ex.:\n\nv_15 = sub_10cc8(VEHICLE::GET_VEHICLE_WHEEL_TYPE(a_2));\nif (!MOBILE::_247F0F73A182EA0B(v_15)) {\n    return 1;\n}\n\nBelongs in UNK3, hashed version of 0xBD4D7EAF8A30F637",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -42319,7 +42319,7 @@
 			"build": "323"
 		},
 		"0xC27009422FCCA88D": {
-			"name": "NETWORK_SHOP_GET_PRICE",
+			"name": "NET_GAMESERVER_GET_PRICE",
 			"jhash": "",
 			"comment": "bool is always true in game scripts",
 			"params": [
@@ -42340,7 +42340,7 @@
 			"build": "323"
 		},
 		"0x3C4487461E9B0DCB": {
-			"name": "_NETWORK_SHOP_IS_CATALOG_READY",
+			"name": "_NET_GAMESERVER_IS_CATALOG_READY",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -42348,7 +42348,7 @@
 			"build": "323"
 		},
 		"0x2B949A1E6AEC8F6A": {
-			"name": "_NETWORK_SHOP_IS_CATALOG_VALID",
+			"name": "_NET_GAMESERVER_IS_CATALOG_VALID",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -42372,7 +42372,7 @@
 			"build": "323"
 		},
 		"0xCF38DAFBB49EDE5E": {
-			"name": "_NETWORK_SHOP_GET_CATALOG_STATE",
+			"name": "_NET_GAMESERVER_GET_CATALOG_STATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42406,7 +42406,7 @@
 			"build": "323"
 		},
 		"0xA135AC892A58FC07": {
-			"name": "NETWORK_SHOP_START_SESSION",
+			"name": "NET_GAMESERVER_START_SESSION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42453,7 +42453,7 @@
 			"build": "323"
 		},
 		"0xB24F0944DA203D9E": {
-			"name": "_NETWORK_SHOP_IS_SESSION_VALID",
+			"name": "NET_GAMESERVER_IS_SESSION_VALID",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42479,7 +42479,7 @@
 			"build": "323"
 		},
 		"0x2F41D51BA3BCD1F1": {
-			"name": "NETWORK_SHOP_SESSION_APPLY_RECEIVED_DATA",
+			"name": "NET_GAMESERVER_SESSION_APPLY_RECEIVED_DATA",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42492,7 +42492,7 @@
 			"build": "323"
 		},
 		"0x810E8431C0614BF9": {
-			"name": "_NETWORK_SHOP_IS_SESSION_REFRESH_PENDING",
+			"name": "NET_GAMESERVER_IS_SESSION_REFRESH_PENDING",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -42525,7 +42525,7 @@
 			"build": "372"
 		},
 		"0x897433D292B44130": {
-			"name": "_NETWORK_SHOP_GET_TRANSACTION_MANAGER_DATA",
+			"name": "_NET_GAMESERVER_GET_TRANSACTION_MANAGER_DATA",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42542,7 +42542,7 @@
 			"build": "323"
 		},
 		"0x279F08B1A4B29B7E": {
-			"name": "NETWORK_SHOP_BASKET_START",
+			"name": "NET_GAMESERVER_BASKET_START",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42575,7 +42575,7 @@
 			"build": "372"
 		},
 		"0xA65568121DF2EA26": {
-			"name": "NETWORK_SHOP_BASKET_END",
+			"name": "NET_GAMESERVER_BASKET_END",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -42583,7 +42583,7 @@
 			"build": "323"
 		},
 		"0xF30980718C8ED876": {
-			"name": "NETWORK_SHOP_BASKET_ADD_ITEM",
+			"name": "NET_GAMESERVER_BASKET_ADD_ITEM",
 			"jhash": "",
 			"comment": "p0 is pointer to a script array",
 			"params": [
@@ -42600,7 +42600,7 @@
 			"build": "323"
 		},
 		"0x27F76CC6C55AD30E": {
-			"name": "NETWORK_SHOP_BASKET_IS_FULL",
+			"name": "NET_GAMESERVER_BASKET_IS_FULL",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -42608,9 +42608,9 @@
 			"build": "323"
 		},
 		"0xE1A0450ED46A7812": {
-			"name": "NETWORK_SHOP_BASKET_APPLY_SERVER_DATA",
+			"name": "NET_GAMESERVER_BASKET_APPLY_SERVER_DATA",
 			"jhash": "",
-			"comment": "p0 => unk3::_network_shop_basket_apply_server_data(Global_2590199[iParam0 /*76*/], &uVar6); => script array",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -42625,13 +42625,13 @@
 			"build": "323"
 		},
 		"0x39BE7CEA8D9CC8E6": {
-			"name": "NETWORK_SHOP_CHECKOUT_START",
+			"name": "NET_GAMESERVER_CHECKOUT_START",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
@@ -42654,9 +42654,9 @@
 			"build": "1365"
 		},
 		"0x3C5FD37B5499582E": {
-			"name": "NETWORK_SHOP_BEGIN_SERVICE",
+			"name": "NET_GAMESERVER_BEGIN_SERVICE",
 			"jhash": "",
-			"comment": "int netShop = 2147483647;\nUNK3::_NETWORK_SHOP_BEGIN_SERVICE(&netShop, 1474183246, 1982688246, 1445302971, 90000000, 4);\nif (!UNK3::_NETWORK_SHOP_CHECKOUT_START(netShop)) {\nshowNotification(\"Transaction failed!\");\n}",
+			"comment": "",
 			"params": [
 				{
 					"type": "int*",
@@ -42687,7 +42687,7 @@
 			"build": "323"
 		},
 		"0xE2A99A9B524BEFFF": {
-			"name": "NETWORK_SHOP_END_SERVICE",
+			"name": "NET_GAMESERVER_END_SERVICE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42729,7 +42729,7 @@
 			"build": "323"
 		},
 		"0x112CEF1615A1139F": {
-			"name": "NETWORK_SHOP_DELETE_SET_TELEMETRY_NONCE_SEED",
+			"name": "NET_GAMESERVER_DELETE_SET_TELEMETRY_NONCE_SEED",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -42737,9 +42737,9 @@
 			"build": "323"
 		},
 		"0xD47A2C1BA117471D": {
-			"name": "_NETWORK_TRANSFER_BANK_TO_WALLET",
+			"name": "_NET_GAMESERVER_TRANSFER_BANK_TO_WALLET",
 			"jhash": "",
-			"comment": "used in atm_trigger script.\n\nusage:\n\nint iVar0;        STATS::STAT_GET_INT(GAMEPLAY::GET_HASH_KEY(\"mpply_last_mp_char\"), &iVar0, -1);\nUNK3::_NETWORK_TRANSFER_WALLET_TO_BANK(iVar0, amount);\n\nused to deposit money into bank from wallet, shows up in transaction log.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -42754,9 +42754,9 @@
 			"build": "323"
 		},
 		"0xC2F7FE5309181C7D": {
-			"name": "_NETWORK_TRANSFER_WALLET_TO_BANK",
+			"name": "_NET_GAMESERVER_TRANSFER_WALLET_TO_BANK",
 			"jhash": "",
-			"comment": "used in atm_trigger script.\n\nusage:\n\nint iVar0;        STATS::STAT_GET_INT(GAMEPLAY::GET_HASH_KEY(\"mpply_last_mp_char\"), &iVar0, -1);\nUNK3::_NETWORK_TRANSFER_BANK_TO_WALLET(iVar0, amount);\n\nused to withdraw money from bank into wallet, shows up in transaction log.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -42787,15 +42787,15 @@
 			"build": "323"
 		},
 		"0x498C1E05CE5F7877": {
-			"name": "NETWORK_SHOP_CASH_TRANSFER_SET_TELEMETRY_NONCE_SEED",
+			"name": "_NET_GAMESERVER_TRANSFER_CASH_SET_TELEMETRY_NONCE_SEED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used to be NETWORK_SHOP_CASH_TRANSFER_SET_TELEMETRY_NONCE_SEED",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x9507D4271988E1AE": {
-			"name": "NETWORK_SHOP_SET_TELEMETRY_NONCE_SEED",
+			"name": "NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED",
 			"jhash": "",
 			"comment": "",
 			"params": [
