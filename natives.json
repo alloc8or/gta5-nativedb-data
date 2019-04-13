@@ -37752,11 +37752,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "wallet"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "bank"
 				}
 			],
 			"return_type": "void",
@@ -46868,8 +46868,8 @@
 			"build": "323"
 		},
 		"0xC01E93FAC20C3346": {
-			"name": "_NETWORK_HAS_CONTROL_OF_PAVEMENT_STATS",
-			"jhash": "",
+			"name": "NETWORK_IS_DOOR_NETWORKED",
+			"jhash": "0xD14D9C07",
 			"comment": "",
 			"params": [
 				{
@@ -51050,13 +51050,13 @@
 		"0x924426BFFD82E915": {
 			"name": "NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS",
 			"jhash": "0x29532731",
-			"comment": "Start the downloading of BG_NG.RPF from R* Cloud which contains hotfix.",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x8132C0EB8B2B3293": {
-			"name": "_NETWORK_HAVE_BACKGROUND_SCRIPTS_BEEN_DOWNLOADED",
+			"name": "_NETWORK_IS_CLOUD_BACKGROUND_SCRIPTS_REQUEST_ACTIVE",
 			"jhash": "0x29532731",
 			"comment": "",
 			"params": [],
@@ -51066,13 +51066,13 @@
 		"0x42FB3B532D526E6C": {
 			"name": "NETWORK_REQUEST_CLOUD_TUNABLES",
 			"jhash": "0xD760CAD5",
-			"comment": "This native start the download of tunables from R* cloud",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x0467C11ED88B7D28": {
-			"name": "_NETWORK_HAVE_TUNABLES_BEEN_DOWNLOADED",
+			"name": "_NETWORK_IS_TUNABLES_REQUEST_ACTIVE",
 			"jhash": "0x47978D7F",
 			"comment": "",
 			"params": [],
@@ -51090,7 +51090,7 @@
 		"0x85E5F8B9B898B20A": {
 			"name": "NETWORK_DOES_TUNABLE_EXIST",
 			"jhash": "0x9FCE9C9A",
-			"comment": "Some of the tunable contexts used in the PC scripts:\n\n- \"CONTENT_MODIFIER_MP_FM_RACES\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_SEA\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_AIR\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CYCLE\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_BIKE\"\n- \"CONTENT_MODIFIER_MP_FM_MISSIONS\"\n- \"CONTENT_MODIFIER_MP_FM_CONTACT\"\n- \"CONTENT_MODIFIER_MP_FM_RANDOM\"\n- \"CONTENT_MODIFIER_MP_FM_VERSUS\"\n- \"CONTENT_MODIFIER_MP_FM_LTS\"\n- \"CONTENT_MODIFIER_MP_FM_CAPTURE\"\n- \"CONTENT_MODIFIER_MP_FM_DM\"\n- \"CONTENT_MODIFIER_MP_FM_SURVIVAL\"\n- \"CONTENT_MODIFIER_MP_FM_GANG_ATTACK\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"BASE_GLOBALS\"\n- \"MP_GLOBAL\"\n\nand some of the tunable names used in the PC scripts:\n\n- \"XP_MULTIPLIER\"\n- \"CASH_MULTIPLIER\"\n- \"ARMOUR_REWARD_GIFT\"\n- \"TOGGLE_CREATORS_OFF\"\n- \"MULTIPLAYER_DISABLED\"",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -51107,7 +51107,7 @@
 		"0x8BE1146DFD5D4468": {
 			"name": "NETWORK_ACCESS_TUNABLE_INT",
 			"jhash": "0xE4B3726A",
-			"comment": "Some of the tunable contexts used in the PC scripts:\n\n- \"CONTENT_MODIFIER_MP_FM_RACES\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_SEA\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_AIR\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CYCLE\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_BIKE\"\n- \"CONTENT_MODIFIER_MP_FM_MISSIONS\"\n- \"CONTENT_MODIFIER_MP_FM_CONTACT\"\n- \"CONTENT_MODIFIER_MP_FM_RANDOM\"\n- \"CONTENT_MODIFIER_MP_FM_VERSUS\"\n- \"CONTENT_MODIFIER_MP_FM_LTS\"\n- \"CONTENT_MODIFIER_MP_FM_CAPTURE\"\n- \"CONTENT_MODIFIER_MP_FM_DM\"\n- \"CONTENT_MODIFIER_MP_FM_SURVIVAL\"\n- \"CONTENT_MODIFIER_MP_FM_GANG_ATTACK\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"BASE_GLOBALS\"\n- \"MP_GLOBAL\"\n\nand some of the tunable names used in the PC scripts:\n\n- \"XP_MULTIPLIER\"\n- \"CASH_MULTIPLIER\"\n- \"ARMOUR_REWARD_GIFT\"\n- \"TOGGLE_CREATORS_OFF\"\n- \"MULTIPLAYER_DISABLED\"",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -51128,7 +51128,7 @@
 		"0xE5608CA7BC163A5F": {
 			"name": "NETWORK_ACCESS_TUNABLE_FLOAT",
 			"jhash": "0x41E8912A",
-			"comment": "Some of the tunable contexts used in the PC scripts:\n\n- \"CONTENT_MODIFIER_MP_FM_RACES\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_SEA\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_AIR\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CYCLE\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_BIKE\"\n- \"CONTENT_MODIFIER_MP_FM_MISSIONS\"\n- \"CONTENT_MODIFIER_MP_FM_CONTACT\"\n- \"CONTENT_MODIFIER_MP_FM_RANDOM\"\n- \"CONTENT_MODIFIER_MP_FM_VERSUS\"\n- \"CONTENT_MODIFIER_MP_FM_LTS\"\n- \"CONTENT_MODIFIER_MP_FM_CAPTURE\"\n- \"CONTENT_MODIFIER_MP_FM_DM\"\n- \"CONTENT_MODIFIER_MP_FM_SURVIVAL\"\n- \"CONTENT_MODIFIER_MP_FM_GANG_ATTACK\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"BASE_GLOBALS\"\n- \"MP_GLOBAL\"\n- \"MP_CNC_TEAM_COP\"\n- \"MP_CNC_TEAM_VAGOS\"\n- \"MP_CNC_TEAM_LOST\"\n- \"MP_FM_DM\"\n- \"MP_FM_RACES\"\n- \"MP_FM_RACES_CAR\"\n- \"MP_FM_RACES_BIKE\"\n- \"MP_FM_RACES_CYCLE\"\n- \"MP_FM_RACES_AIR\"\n- \"MP_FM_RACES_SEA\"\n- \"MP_FM_MISSIONS\"\n- \"MP_FM_SURVIVAL\n- \"MP_FM_BASEJUMP\"\n- \"MP_FM_CAPTURE\"\n- \"MP_FM_LTS\"\n-\"MP_FM_GANG_ATTACK\"\n\n\nand some of the tunable names used in the PC scripts:\n\n- \"XP_MULTIPLIER\"\n- \"CASH_MULTIPLIER\"\n- \"ARMOUR_REWARD_GIFT\"\n- \"TOGGLE_CREATORS_OFF\"\n- \"MULTIPLAYER_DISABLED\"",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -51149,7 +51149,7 @@
 		"0xAA6A47A573ABB75A": {
 			"name": "NETWORK_ACCESS_TUNABLE_BOOL",
 			"jhash": "0x8A04E1FE",
-			"comment": "Some of the tunable contexts used in the PC scripts:\n\n- \"CONTENT_MODIFIER_MP_FM_RACES\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_SEA\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_AIR\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CYCLE\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_BIKE\"\n- \"CONTENT_MODIFIER_MP_FM_MISSIONS\"\n- \"CONTENT_MODIFIER_MP_FM_CONTACT\"\n- \"CONTENT_MODIFIER_MP_FM_RANDOM\"\n- \"CONTENT_MODIFIER_MP_FM_VERSUS\"\n- \"CONTENT_MODIFIER_MP_FM_LTS\"\n- \"CONTENT_MODIFIER_MP_FM_CAPTURE\"\n- \"CONTENT_MODIFIER_MP_FM_DM\"\n- \"CONTENT_MODIFIER_MP_FM_SURVIVAL\"\n- \"CONTENT_MODIFIER_MP_FM_GANG_ATTACK\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"BASE_GLOBALS\"\n- \"MP_GLOBAL\"\n\nand some of the tunable names used in the PC scripts:\n\n- \"XP_MULTIPLIER\"\n- \"CASH_MULTIPLIER\"\n- \"ARMOUR_REWARD_GIFT\"\n- \"TOGGLE_CREATORS_OFF\"\n- \"MULTIPLAYER_DISABLED\"\n- \"TURN_ON_SUMO\" <<-- used to hide the sumo gamemode before release",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -53667,9 +53667,14 @@
 		"0x52C1EADAF7B10302": {
 			"name": "_0x52C1EADAF7B10302",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"comment": "This native is not used in the scripts.\n\nReturns oldest resend count to the given player (netConnectionManager::GetOldestResendCount).\n\nNETWORK_GET_*",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x5626D9D6810730D5": {
@@ -76653,11 +76658,11 @@
 		"0xF434A10BA01C37D0": {
 			"name": "_0xF434A10BA01C37D0",
 			"jhash": "0xCE7A2411",
-			"comment": "",
+			"comment": "STAT_S*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
