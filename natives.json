@@ -30567,7 +30567,7 @@
 		"0x805D7CBB36FD6C4C": {
 			"name": "_SHOW_SOCIAL_CLUB_LEGAL_SCREEN",
 			"jhash": "0x19FCBBB2",
-			"comment": "probs one frame",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -30577,7 +30577,7 @@
 			"jhash": "0x850690FF",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x6F72CD94F7B5B68C": {
@@ -37104,7 +37104,7 @@
 		"0x6FDDF453C0C756EC": {
 			"name": "_0x6FDDF453C0C756EC",
 			"jhash": "0xC3C10FCC",
-			"comment": "- if (GAMEPLAY::_6FDDF453C0C756EC() || GAMEPLAY::IS_PC_VERSION()) {\n\n- if (((!g_1) && (!GAMEPLAY::IS_PC_VERSION())) && GAMEPLAY::_6FDDF453C0C756EC()) {\n",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -37118,11 +37118,11 @@
 			"build": "323"
 		},
 		"0x5AA3BEFA29F03AD4": {
-			"name": "_0x5AA3BEFA29F03AD4",
+			"name": "ARE_PROFILE_SETTINGS_VALID",
 			"jhash": "0x46B5A15C",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xE3D969D2785FFB5E": {
