@@ -42293,7 +42293,7 @@
 			"build": "1290"
 		},
 		"0xBD4D7EAF8A30F637": {
-			"name": "_NET_GAMESERVER_DOES_ITEM_EXIST",
+			"name": "_NET_GAMESERVER_CATALOG_ITEM_EXISTS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42306,7 +42306,7 @@
 			"build": "323"
 		},
 		"0x247F0F73A182EA0B": {
-			"name": "_NET_GAMESERVER_DOES_ITEM_EXIST_HASH",
+			"name": "_NET_GAMESERVER_CATALOG_ITEM_EXISTS_HASH",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42340,7 +42340,7 @@
 			"build": "323"
 		},
 		"0x3C4487461E9B0DCB": {
-			"name": "_NET_GAMESERVER_IS_CATALOG_READY",
+			"name": "_NET_GAMESERVER_CATALOG_IS_READY",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -42398,7 +42398,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p0"
 				}
 			],
@@ -42412,7 +42412,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "characterId"
+					"name": "characterIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -42432,7 +42432,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p0"
 				}
 			],
@@ -42445,7 +42445,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p0"
 				}
 			],
@@ -42459,7 +42459,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "charIndex"
+					"name": "characterIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -42484,8 +42484,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "characterIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -42547,20 +42547,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "int*",
+					"name": "id"
+				},
+				{
+					"type": "Hash",
+					"name": "categoryHash"
+				},
+				{
+					"type": "Hash",
+					"name": "actionHash"
 				},
 				{
 					"type": "int",
-					"name": "p1"
-				},
-				{
-					"type": "int",
-					"name": "p2"
-				},
-				{
-					"type": "int",
-					"name": "p3"
+					"name": "flags"
 				}
 			],
 			"return_type": "BOOL",
@@ -42585,15 +42585,15 @@
 		"0xF30980718C8ED876": {
 			"name": "NET_GAMESERVER_BASKET_ADD_ITEM",
 			"jhash": "",
-			"comment": "p0 is pointer to a script array",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "itemData"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "quantity"
 				}
 			],
 			"return_type": "BOOL",
@@ -42783,7 +42783,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x498C1E05CE5F7877": {
