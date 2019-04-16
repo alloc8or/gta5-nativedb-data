@@ -22967,7 +22967,7 @@
 		"0xAE4E8157D9ECF087": {
 			"name": "_END_TEXT_COMMAND_SCALEFORM_STRING_2",
 			"jhash": "0x2E80DB52",
-			"comment": "",
+			"comment": "Same as END_TEXT_COMMAND_SCALEFORM_STRING but does not perform HTML conversion for text tokens.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -36658,8 +36658,8 @@
 			"build": "323"
 		},
 		"0xEB2DB0CAD13154B3": {
-			"name": "_0xEB2DB0CAD13154B3",
-			"jhash": "",
+			"name": "RESET_DISPATCH_TIME_BETWEEN_SPAWN_ATTEMPTS",
+			"jhash": "0x1479E85A",
 			"comment": "",
 			"params": [
 				{
