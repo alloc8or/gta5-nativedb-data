@@ -29480,35 +29480,35 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "entryLine1"
+					"name": "titleMsg"
 				},
 				{
 					"type": "int",
-					"name": "instructionalKey"
+					"name": "flags"
 				},
 				{
 					"type": "const char*",
-					"name": "entryLine2"
+					"name": "promptMsg"
 				},
 				{
 					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p5"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p6"
 				},
 				{
 					"type": "BOOL",
-					"name": "background"
+					"name": "showBg"
 				},
 				{
 					"type": "Any",
@@ -29525,19 +29525,19 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "entryHeader"
+					"name": "titleMsg"
 				},
 				{
 					"type": "const char*",
-					"name": "entryLine1"
+					"name": "p1"
 				},
 				{
 					"type": "int",
-					"name": "instructionalKey"
+					"name": "flags"
 				},
 				{
 					"type": "const char*",
-					"name": "entryLine2"
+					"name": "promptMsg"
 				},
 				{
 					"type": "BOOL",
@@ -29557,7 +29557,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "background"
+					"name": "showBg"
 				},
 				{
 					"type": "Any",
@@ -29635,7 +29635,7 @@
 				},
 				{
 					"type": "int",
-					"name": "instructionalKey"
+					"name": "flags"
 				},
 				{
 					"type": "const char*",
@@ -29659,7 +29659,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "background"
+					"name": "showBg"
 				},
 				{
 					"type": "Any",
@@ -29731,41 +29731,41 @@
 			"build": "573"
 		},
 		"0x81DF9ABA6C83DFF9": {
-			"name": "_0x81DF9ABA6C83DFF9",
+			"name": "_GET_WARNING_MESSAGE_TITLE_HASH",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "1290"
 		},
 		"0x0C5A80A9E096D529": {
-			"name": "_0x0C5A80A9E096D529",
+			"name": "_SET_WARNING_MESSAGE_LIST_ROW",
 			"jhash": "",
-			"comment": "",
+			"comment": "Param names copied from the corresponding scaleform function \"SET_LIST_ROW\"",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "cash"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "rp"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "lvl"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "colour"
 				}
 			],
 			"return_type": "BOOL",
@@ -79402,7 +79402,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4C89FE2BDEB3F169": {
