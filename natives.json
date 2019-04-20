@@ -84505,8 +84505,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object*",
-					"name": "taskSequence"
+					"type": "int*",
+					"name": "taskSequenceId"
 				}
 			],
 			"return_type": "void",
@@ -84518,8 +84518,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "taskSequence"
+					"type": "int",
+					"name": "taskSequenceId"
 				}
 			],
 			"return_type": "void",
@@ -84535,25 +84535,25 @@
 					"name": "ped"
 				},
 				{
-					"type": "Object",
-					"name": "taskSequence"
+					"type": "int",
+					"name": "taskSequenceId"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x8C33220C8D78CA0D": {
-			"name": "_0x8C33220C8D78CA0D",
+			"name": "TASK_PERFORM_SEQUENCE_LOCALLY",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "taskSequenceId"
 				}
 			],
 			"return_type": "void",
@@ -84565,8 +84565,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object*",
-					"name": "taskSequence"
+					"type": "int*",
+					"name": "taskSequenceId"
 				}
 			],
 			"return_type": "void",
@@ -84578,8 +84578,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "taskSequence"
+					"type": "int",
+					"name": "taskSequenceId"
 				},
 				{
 					"type": "BOOL",
@@ -84605,7 +84605,7 @@
 		"0xB0760331C7AA4155": {
 			"name": "GET_IS_TASK_ACTIVE",
 			"jhash": "0x86FDDF55",
-			"comment": "from docks_heistb.c4:\nAI::GET_IS_TASK_ACTIVE(PLAYER::PLAYER_PED_ID(), 2))\n\nKnown Tasks: pastebin.com/2gFqJ3Px",
+			"comment": "Known Tasks: pastebin.com/2gFqJ3Px",
 			"params": [
 				{
 					"type": "Ped",
