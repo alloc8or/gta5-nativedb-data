@@ -25191,7 +25191,7 @@
 		"0x7B5280EBA9840C72": {
 			"name": "_GET_LABEL_TEXT",
 			"jhash": "0x95C4B5AD",
-			"comment": "Gets a string literal from a label name.",
+			"comment": "Gets a string literal from a label name.\n\nGET_F*",
 			"params": [
 				{
 					"type": "const char*",
@@ -25547,8 +25547,8 @@
 			"build": "323"
 		},
 		"0xAF754F20EB5CD51A": {
-			"name": "_IS_RADAR_ENABLED",
-			"jhash": "",
+			"name": "IS_MINIMAP_RENDERING",
+			"jhash": "0x9CD18314",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -74627,7 +74627,7 @@
 		"0x6EB5F71AA68F2E8E": {
 			"name": "REQUEST_SCRIPT",
 			"jhash": "0xE26B2666",
-			"comment": "For a full list, see here: pastebin.com/yLNWicUi",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -74640,7 +74640,7 @@
 		"0xC90D2DCACD56184C": {
 			"name": "SET_SCRIPT_AS_NO_LONGER_NEEDED",
 			"jhash": "0x6FCB7795",
-			"comment": "For a full list, see here: pastebin.com/yLNWicUi",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -74653,7 +74653,7 @@
 		"0xE6CC9F3BA0FB9EF1": {
 			"name": "HAS_SCRIPT_LOADED",
 			"jhash": "0x5D67F751",
-			"comment": "Returns if a script has been loaded into the game. Used to see if a script was loaded after requesting.\n\nFor a full list, see here: pastebin.com/yLNWicUi",
+			"comment": "Returns if a script has been loaded into the game. Used to see if a script was loaded after requesting.",
 			"params": [
 				{
 					"type": "const char*",
@@ -74666,7 +74666,7 @@
 		"0xFC04745FBE67C19A": {
 			"name": "DOES_SCRIPT_EXIST",
 			"jhash": "0xDEAB87AB",
-			"comment": "For a full list, see here: pastebin.com/yLNWicUi",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -74757,7 +74757,7 @@
 		"0x05A42BA9FC8DA96B": {
 			"name": "_GET_NAME_OF_THREAD",
 			"jhash": "0xBE7ACD89",
-			"comment": "The reversed code looks like this (Sasuke78200)\n\n//\nchar g_szScriptName[64];\n\nconst char* _0xBE7ACD89(int a_iThreadID)\n{\n  scrThread* l_pThread;\n \n  // Get the script thread\n  l_pThread = GetThreadByID(a_iThreadID); \n  \n  if(l_pThread == 0 || l_pThread->m_iThreadState == 2)\n   {\n     strncpy(g_szScriptName, \"\", 64);\n    }\n else\n  {\n     strncpy(g_szScriptName, l_pThread->m_szScriptName, 64);\n    }   \n  \n  return g_szScriptName;\n}",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -74802,7 +74802,7 @@
 		"0x2C83A9DA6BFFC4F9": {
 			"name": "_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH",
 			"jhash": "0x029D3841",
-			"comment": "Gets the number of instances of the specified script is currently running.\n\nActually returns numInstances - 1.\nif (scriptPtr)\n    v3 = GetNumberOfInstancesOfScript(scriptPtr) - 1;\nreturn v3;",
+			"comment": "Gets the number of instances of the specified script is currently running.\n\nActually returns numInstances - 1.\nif (program)\n\tv3 = rage::scrProgram::GetNumRefs(program) - 1;\nreturn v3;",
 			"params": [
 				{
 					"type": "Hash",
@@ -77326,7 +77326,7 @@
 			"build": "323"
 		},
 		"0x80C75307B1C42837": {
-			"name": "_GET_PSTAT_BOOL_HASH",
+			"name": "GET_PACKED_BOOL_STAT_KEY",
 			"jhash": "0xB5BF87B2",
 			"comment": "",
 			"params": [
@@ -77351,7 +77351,7 @@
 			"build": "323"
 		},
 		"0x61E111E323419E07": {
-			"name": "_GET_PSTAT_INT_HASH",
+			"name": "GET_PACKED_INT_STAT_KEY",
 			"jhash": "0x1F938864",
 			"comment": "",
 			"params": [
@@ -77376,7 +77376,7 @@
 			"build": "323"
 		},
 		"0xC4BB08EE7907471E": {
-			"name": "_GET_TUPSTAT_BOOL_HASH",
+			"name": "_GET_PACKED_TITLE_UPDATE_BOOL_STAT_KEY",
 			"jhash": "0x3F8E893B",
 			"comment": "",
 			"params": [
@@ -77401,7 +77401,7 @@
 			"build": "323"
 		},
 		"0xD16C2AD6B8E32854": {
-			"name": "_GET_TUPSTAT_INT_HASH",
+			"name": "_GET_PACKED_TITLE_UPDATE_INT_STAT_KEY",
 			"jhash": "0xFB93C5A2",
 			"comment": "",
 			"params": [
@@ -94127,9 +94127,9 @@
 			"build": "323"
 		},
 		"0x218297BF0CFD853B": {
-			"name": "_GET_PED_USING_VEHICLE_DOOR",
-			"jhash": "",
-			"comment": "Quick disassembly and test seems to indicate that this native gets the Ped currently using the specified door.",
+			"name": "GET_PED_USING_VEHICLE_DOOR",
+			"jhash": "0x0630101F",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
