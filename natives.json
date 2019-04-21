@@ -3,7 +3,7 @@
 		"0x4EDE34FBADD967A6": {
 			"name": "WAIT",
 			"jhash": "0x7715C03B",
-			"comment": "Pauses execution of the current script, please note this behavior is only seen when called from one of the game script files(ysc). In order to wait an asi script use \n    static void WAIT(DWORD time);\nfound in main.h \n\n--------------------------------------------------------------------\nIt does not actually seem to wait the amount of milliseconds stated like the normal WAIT() command does, but it does seem to make task sequences work more smoothly\n\nSystem native hashes do not change on gameupdate",
+			"comment": "Pauses execution of the current script, please note this behavior is only seen when called from one of the game script files(ysc). In order to wait an asi script use \"static void WAIT(DWORD time);\" found in main.h",
 			"params": [
 				{
 					"type": "int",
@@ -28500,7 +28500,7 @@
 		"0xF8DEE0A5600CBB93": {
 			"name": "_SET_MINIMAP_REVEALED",
 			"jhash": "0xD8D77733",
-			"comment": "If true, the entire map will be revealed.",
+			"comment": "If true, the entire map will be revealed.\n\nSET_MINIMAP_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -28519,9 +28519,9 @@
 			"build": "323"
 		},
 		"0x6E31B91145873922": {
-			"name": "_IS_MINIMAP_AREA_REVEALED",
+			"name": "_GET_MINIMAP_AREA_IS_REVEALED",
 			"jhash": "0x65B705F6",
-			"comment": "",
+			"comment": "GET_MI*",
 			"params": [
 				{
 					"type": "float",
