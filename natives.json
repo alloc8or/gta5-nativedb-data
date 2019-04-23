@@ -44879,7 +44879,7 @@
 			"jhash": "0x17146B2B",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x73B000F7FBC55829": {
@@ -45034,7 +45034,7 @@
 			"jhash": "0xA357A2C6",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x292564C735375EDF": {
@@ -45042,15 +45042,15 @@
 			"jhash": "0x8262C70E",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xC571D0E77D8BBC29": {
 			"name": "_0xC571D0E77D8BBC29",
-			"jhash": "",
-			"comment": "NETWORK_IS_TRANSITION_???",
+			"jhash": "0x4F4BB300",
+			"comment": "NETWORK_IS_TRANSITION_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x1398582B7F72B3ED": {
