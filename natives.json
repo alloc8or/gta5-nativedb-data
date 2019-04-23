@@ -45258,13 +45258,13 @@
 			"build": "323"
 		},
 		"0x4A9FDE3A5A6D0437": {
-			"name": "_NETWORK_BLOCK_INVITES_2",
+			"name": "_0x4A9FDE3A5A6D0437",
 			"jhash": "0x18F03AFD",
-			"comment": "",
+			"comment": "Does nothing. It's just a nullsub.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
