@@ -35710,8 +35710,8 @@
 			"comment": "Formerly known as _LOWER_MAP_PROP_DENSITY and wrongly due to idiots as _ENABLE_MP_DLC_MAPS.\nSets the maximum prop density and changes a loading screen flag from 'loading story mode' to 'loading GTA Online'. Does not touch DLC map data at all.\n\nIn fact, I doubt this changes the flag whatsoever, that's the OTHER native idiots use together with this that does so, this one only causes a loading screen to show as it reloads map data.",
 			"params": [
 				{
-					"type": "BOOL",
-					"name": "toggle"
+					"type": "int",
+					"name": "p0"
 				}
 			],
 			"return_type": "void",
@@ -43506,9 +43506,9 @@
 			"build": "323"
 		},
 		"0xD6D09A6F32F49EF1": {
-			"name": "_NETWORK_SESSION_IS_PLAYER_VOTED_TO_KICK",
+			"name": "_NETWORK_SESSION_GET_IS_PLAYER_VOTED_TO_KICK",
 			"jhash": "0x8A559D26",
-			"comment": "",
+			"comment": "NETWORK_SESSION_GET_*",
 			"params": [
 				{
 					"type": "Player",
@@ -44024,17 +44024,17 @@
 		"0xD313DE83394AF134": {
 			"name": "_0xD313DE83394AF134",
 			"jhash": "0x3EA9D44C",
-			"comment": "",
+			"comment": "NETWORK_SESSION_IS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xBDB6F89C729CF388": {
 			"name": "_0xBDB6F89C729CF388",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0x9374523F",
+			"comment": "NETWORK_SESSION_IS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA0682D67EF1FBA3D": {
@@ -44064,13 +44064,13 @@
 			"build": "323"
 		},
 		"0xCFEB8AF24FC1D0BB": {
-			"name": "_0xCFEB8AF24FC1D0BB",
-			"jhash": "",
+			"name": "_NETWORK_BLOCK_INVITES_2",
+			"jhash": "0x8AB4890B",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -44247,9 +44247,9 @@
 			"build": "323"
 		},
 		"0x53AFD64C6758F2F9": {
-			"name": "_0x53AFD64C6758F2F9",
-			"jhash": "",
-			"comment": "NETWORK_SESSION_*",
+			"name": "NETWORK_SESSION_GET_PRIVATE_SLOTS",
+			"jhash": "0xE642F2FD",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -44340,7 +44340,7 @@
 		"0x3A214F2EC889B100": {
 			"name": "NETWORK_SEND_TEXT_MESSAGE",
 			"jhash": "0xAFFEA720",
-			"comment": "how can I increase the character limit on this native?\n--------------------------------\n\nreturn - it's possible for it to have an error and return a value. One error is if it cannot find space to create the event it doesn't send the text and returns zero. It also returns 0 is the strlen is 0 or the strlen > 0x100 (I thought it was 64 so idk why it's checking 265. I may just be dumb :P ) There are other ways it could return 0 also but who the hell cares cuz it's very unlikely, but it returns a bool.\n\n\nto the top guy, idk if it is possible. It is probably read a max of 64 characters on the recieving end so even if we did modify it to send more it probably wouldn't work. One of the other problems is that in part of the function it copies the string to the local stack which means we would have to change that to make it work.",
+			"comment": "Message is limited to 64 characters.",
 			"params": [
 				{
 					"type": "const char*",
@@ -44372,7 +44372,7 @@
 			"jhash": "0xAF329720",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x0E4F77F7B9D74D84": {
@@ -44608,33 +44608,33 @@
 			"build": "323"
 		},
 		"0x6512765E3BE78C50": {
-			"name": "_0x6512765E3BE78C50",
-			"jhash": "",
+			"name": "NETWORK_IS_TRANSITION_CLOSED_FRIENDS",
+			"jhash": "0x95FFACF8",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x0DBD5D7E3C5BEC3B": {
-			"name": "_0x0DBD5D7E3C5BEC3B",
-			"jhash": "",
+			"name": "NETWORK_IS_TRANSITION_CLOSED_CREW",
+			"jhash": "0xB97A966B",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5DC577201723960A": {
-			"name": "_0x5DC577201723960A",
-			"jhash": "",
-			"comment": "NETWORK_IS_TRANSITION_???",
+			"name": "NETWORK_IS_TRANSITION_SOLO",
+			"jhash": "0x063DC4A5",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5A6AA44FF8E931E6": {
-			"name": "_0x5A6AA44FF8E931E6",
-			"jhash": "",
-			"comment": "NETWORK_IS_TRANSITION_???",
+			"name": "NETWORK_IS_TRANSITION_PRIVATE",
+			"jhash": "0x104DDE8D",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -44642,9 +44642,9 @@
 		"0x617F49C2668E6155": {
 			"name": "_0x617F49C2668E6155",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_GET_NUM_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "757"
 		},
 		"0x261E97AD7BCF3D40": {
@@ -45109,16 +45109,16 @@
 			"build": "323"
 		},
 		"0x37A4494483B9F5C9": {
-			"name": "_0x37A4494483B9F5C9",
+			"name": "NETWORK_IS_TRANSITION_OPEN_TO_MATCHMAKING",
 			"jhash": "0xC901AA9F",
-			"comment": "NETWORK_IS_TRANSITION_???",
+			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x0C978FDA19692C2C": {
-			"name": "_0x0C978FDA19692C2C",
-			"jhash": "",
+			"name": "NETWORK_SET_TRANSITION_VISIBILITY_LOCK",
+			"jhash": "0x4AF0ADF5",
 			"comment": "",
 			"params": [
 				{
@@ -45134,11 +45134,11 @@
 			"build": "323"
 		},
 		"0xD0A484CB2F829FBE": {
-			"name": "_0xD0A484CB2F829FBE",
-			"jhash": "",
+			"name": "NETWORK_IS_TRANSITION_VISIBILITY_LOCKED",
+			"jhash": "0xF637166E",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x30DE938B516F0AD2": {
@@ -57589,7 +57589,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "a1"
+					"name": "p0"
 				}
 			],
 			"return_type": "void",
@@ -60184,7 +60184,7 @@
 		"0x4759CC730F947C81": {
 			"name": "_0x4759CC730F947C81",
 			"jhash": "0x8C555ADD",
-			"comment": "",
+			"comment": "Something regarding ped population.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
