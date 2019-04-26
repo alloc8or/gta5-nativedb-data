@@ -9549,8 +9549,8 @@
 			"build": "323"
 		},
 		"0x6CC86E78358D5119": {
-			"name": "_0x6CC86E78358D5119",
-			"jhash": "",
+			"name": "DATAFILE_CLEAR_WATCH_LIST",
+			"jhash": "0x5B39D0AC",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -9558,12 +9558,12 @@
 		},
 		"0xFCCAE5B92A830878": {
 			"name": "_0xFCCAE5B92A830878",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0x01393D16",
+			"comment": "DATAFILE_IS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "BOOL",
@@ -9571,7 +9571,7 @@
 		},
 		"0x15FF52B809DB2353": {
 			"name": "_0x15FF52B809DB2353",
-			"jhash": "",
+			"jhash": "0x36FB8B3F",
 			"comment": "",
 			"params": [
 				{
@@ -9584,7 +9584,7 @@
 		},
 		"0xF8CC1EBE0B62E29F": {
 			"name": "_0xF8CC1EBE0B62E29F",
-			"jhash": "",
+			"jhash": "0x2A9411DA",
 			"comment": "",
 			"params": [
 				{
