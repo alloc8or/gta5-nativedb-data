@@ -9622,153 +9622,153 @@
 			"build": "323"
 		},
 		"0xC84527E235FCA219": {
-			"name": "_0xC84527E235FCA219",
+			"name": "UGC_CREATE_CONTENT",
 			"jhash": "0xF09157B0",
 			"comment": "",
 			"params": [
 				{
+					"type": "Any*",
+					"name": "data"
+				},
+				{
+					"type": "int",
+					"name": "dataCount"
+				},
+				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "contentName"
+				},
+				{
+					"type": "const char*",
+					"name": "description"
+				},
+				{
+					"type": "const char*",
+					"name": "tagsCsv"
+				},
+				{
+					"type": "const char*",
+					"name": "contentTypeName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
-				},
-				{
-					"type": "const char*",
-					"name": "p2"
-				},
-				{
-					"type": "Any*",
-					"name": "p3"
-				},
-				{
-					"type": "Any*",
-					"name": "p4"
-				},
-				{
-					"type": "const char*",
-					"name": "type"
-				},
-				{
-					"type": "BOOL",
-					"name": "p6"
+					"name": "publish"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA5EFC3E847D60507": {
-			"name": "_0xA5EFC3E847D60507",
+			"name": "UGC_CREATE_MISSION",
 			"jhash": "0xD96860FC",
-			"comment": "NOTE: 'p1' might be some kind of array.",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "contentName"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "description"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "tagsCsv"
 				},
 				{
 					"type": "const char*",
-					"name": "p3"
+					"name": "contentTypeName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "publish"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x648E7A5434AF7969": {
-			"name": "_UGC_UPDATE_CONTENT",
+			"name": "UGC_UPDATE_CONTENT",
 			"jhash": "0x459F2683",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "contentId"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "data"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
-				},
-				{
-					"type": "Any*",
-					"name": "p3"
-				},
-				{
-					"type": "Any*",
-					"name": "p4"
-				},
-				{
-					"type": "Any*",
-					"name": "p5"
+					"type": "int",
+					"name": "dataCount"
 				},
 				{
 					"type": "const char*",
-					"name": "type"
+					"name": "contentName"
+				},
+				{
+					"type": "const char*",
+					"name": "description"
+				},
+				{
+					"type": "const char*",
+					"name": "tagsCsv"
+				},
+				{
+					"type": "const char*",
+					"name": "contentTypeName"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x4645DE9980999E93": {
-			"name": "_0x4645DE9980999E93",
+			"name": "UGC_UPDATE_MISSION",
 			"jhash": "0xDBB83E2B",
-			"comment": "NOTE: 'p2' might be some kind of array.",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "contentId"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "contentName"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "description"
 				},
 				{
 					"type": "const char*",
-					"name": "p3"
+					"name": "tagsCsv"
 				},
 				{
 					"type": "const char*",
-					"name": "type"
+					"name": "contentTypeName"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x692D808C34A82143": {
-			"name": "_0x692D808C34A82143",
+			"name": "UGC_SET_PLAYER_DATA",
 			"jhash": "0xBB6321BD",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "contentId"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "rating"
 				},
 				{
 					"type": "const char*",
-					"name": "type"
+					"name": "contentTypeName"
 				}
 			],
 			"return_type": "BOOL",
