@@ -33511,7 +33511,7 @@
 		"0x01C7B9B38428AEB6": {
 			"name": "CLEAR_AREA_OF_VEHICLES",
 			"jhash": "0x63320F3C",
-			"comment": "Example:         CLEAR_AREA_OF_VEHICLES(0, 0, 0, 10000, false, false, false, false, false);",
+			"comment": "Example:\nCLEAR_AREA_OF_VEHICLES(0.0f, 0.0f, 0.0f, 10000.0f, false, false, false, false, false, false);",
 			"params": [
 				{
 					"type": "float",
@@ -33550,7 +33550,7 @@
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				}
 			],
@@ -45957,7 +45957,7 @@
 			"build": "323"
 		},
 		"0x46FB3ED415C7641C": {
-			"name": "_NETWORK_DO_SCRIPT_CRC_CHECK",
+			"name": "_TRIGGER_SCRIPT_CRC_CHECK_ON_PLAYER",
 			"jhash": "0xF9A51B92",
 			"comment": "p1 = 6",
 			"params": [
@@ -63711,14 +63711,14 @@
 		"0xC8A9481A01E63C28": {
 			"name": "SET_PED_RANDOM_COMPONENT_VARIATION",
 			"jhash": "0x4111BA46",
-			"comment": "p1 is always false in R* scripts.\n\nQuick disassembly seems to indicate that p1 is unused.\n\nList of component/props ID\ngtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html",
+			"comment": "p1 is always 0 in R* scripts.\n\nList of component/props ID\ngtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -73320,7 +73320,7 @@
 					"name": "modifier"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
