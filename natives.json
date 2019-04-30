@@ -31863,7 +31863,7 @@
 		"0xA8AE43AEC1A61314": {
 			"name": "_GET_USER_LANGUAGE",
 			"jhash": "",
-			"comment": "Returns the user's defined langauge as ID \n\nenglish: 12\nfrench = 7\ngerman = 22\nitalian = 21\njapanese = 9\nkorean = 17\nportuguese = 16\nspanish = 10\nrussian = 25",
+			"comment": "Returns the user's defined language as ID \n\nenglish: 12\nfrench = 7\ngerman = 22\nitalian = 21\njapanese = 9\nkorean = 17\nportuguese = 16\nspanish = 10\nrussian = 25",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -31879,7 +31879,7 @@
 			"build": "323"
 		},
 		"0xFEAD16FC8F9DFC0F": {
-			"name": "_GET_NUMBER_OF_FREE_STACKS_WITH_THIS_SIZE",
+			"name": "GET_NUMBER_OF_FREE_STACKS_OF_THIS_SIZE",
 			"jhash": "0x11A178B8",
 			"comment": "",
 			"params": [
@@ -32123,7 +32123,7 @@
 		},
 		"0xB335F761606DB47C": {
 			"name": "_GET_BASE_ELEMENT_METADATA",
-			"jhash": "",
+			"jhash": "0xE23416C1",
 			"comment": "",
 			"params": [
 				{
