@@ -9536,13 +9536,13 @@
 	},
 	"DATAFILE": {
 		"0xAD6875BBC0FC899C": {
-			"name": "_0xAD6875BBC0FC899C",
+			"name": "DATAFILE_WATCH_REQUEST_ID",
 			"jhash": "0x621388FF",
-			"comment": "Appears to set current datafile handle",
+			"comment": "Adds the given request ID to the watch list.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "id"
 				}
 			],
 			"return_type": "void",
@@ -52309,12 +52309,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "contentId"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "contentTypeName"
 				}
 			],
 			"return_type": "BOOL",
@@ -52327,15 +52327,15 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "data"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "dataCount"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "contentTypeName"
 				}
 			],
 			"return_type": "BOOL",
@@ -52584,7 +52584,7 @@
 			"comment": "Return the mission id of a job.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52597,7 +52597,7 @@
 			"comment": "Return the root content id of a job.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52636,15 +52636,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "323"
 		},
 		"0xCFD115B373C0DF63": {
@@ -52858,32 +52858,32 @@
 			"build": "323"
 		},
 		"0x7FD2990AF016795E": {
-			"name": "_0x7FD2990AF016795E",
+			"name": "_UGC_REQUEST_CLOUD_FILE",
 			"jhash": "0x38FC2EEB",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "contentTypeName"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "contentId"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x5E0165278F6339EE": {
