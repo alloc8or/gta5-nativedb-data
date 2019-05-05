@@ -31796,7 +31796,7 @@
 			"build": "323"
 		},
 		"0xFC309E94546FCDB5": {
-			"name": "_IS_IN_LOADING_SCREEN",
+			"name": "_0xFC309E94546FCDB5",
 			"jhash": "0x7D90EEE5",
 			"comment": "Only occurrence was false, in maintransition.\n\n-Something related to UI loading screens for multiplayer",
 			"params": [
@@ -48232,11 +48232,11 @@
 			"build": "323"
 		},
 		"0x9ECA15ADFE141431": {
-			"name": "_0x9ECA15ADFE141431",
+			"name": "_SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0xF808475FA571D823": {
