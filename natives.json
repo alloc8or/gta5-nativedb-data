@@ -30124,7 +30124,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "contextHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -48161,7 +48161,7 @@
 			"build": "323"
 		},
 		"0xF03755696450470C": {
-			"name": "_0xF03755696450470C",
+			"name": "NETWORK_CLEAR_VOICE_PROXIMITY_OVERRIDE",
 			"jhash": "0x7F9B9052",
 			"comment": "",
 			"params": [],
@@ -53552,11 +53552,11 @@
 		"0xC505036A35AFD01B": {
 			"name": "_0xC505036A35AFD01B",
 			"jhash": "0xA100CC97",
-			"comment": "",
+			"comment": "NETWORK_D*\n\nProbably NETWORK_DISABLE_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
