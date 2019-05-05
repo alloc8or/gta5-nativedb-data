@@ -30118,7 +30118,7 @@
 			"build": "323"
 		},
 		"0x84698AB38D0C6636": {
-			"name": "_0x84698AB38D0C6636",
+			"name": "PAUSE_MENU_IS_CONTEXT_ACTIVE",
 			"jhash": "0xC51BC42F",
 			"comment": "",
 			"params": [
@@ -44885,18 +44885,18 @@
 		"0x73B000F7FBC55829": {
 			"name": "NETWORK_GET_TRANSITION_MEMBERS",
 			"jhash": "0x31F19263",
-			"comment": "",
+			"comment": "Returns count.",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "data"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "dataCount"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x521638ADA1BA0D18": {
@@ -44905,11 +44905,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -44917,17 +44917,17 @@
 			"build": "323"
 		},
 		"0xEBEFC2E77084F599": {
-			"name": "_0xEBEFC2E77084F599",
+			"name": "NETWORK_APPLY_TRANSITION_PARAMETER_STRING",
 			"jhash": "0xE0C28DB5",
-			"comment": "example from scripts:\nunk_0xE0C28DB5(0,Global_2398291.imm_726,1);\nthat global is for ps3/xbox not pc\nno idea what this does does",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "string"
 				},
 				{
 					"type": "BOOL",
@@ -47849,8 +47849,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "float",
@@ -47863,7 +47863,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -47874,7 +47874,7 @@
 			"jhash": "0x19991ADD",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0xBABEC9E69A91C57B": {
@@ -47960,7 +47960,7 @@
 			"build": "573"
 		},
 		"0x6F697A66CE78674E": {
-			"name": "_0x6F697A66CE78674E",
+			"name": "NETWORK_OVERRIDE_TEAM_RESTRICTIONS",
 			"jhash": "0xC8CC9E75",
 			"comment": "",
 			"params": [
@@ -48059,9 +48059,9 @@
 			"build": "323"
 		},
 		"0x97DD4C5944CC2E6A": {
-			"name": "_NETWORK_OVERRIDE_SEND_RESTRICTIONS",
-			"jhash": "",
-			"comment": "This is used alongside the native,\n'NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS'. Read it's description for more info.",
+			"name": "NETWORK_OVERRIDE_SEND_RESTRICTIONS",
+			"jhash": "0x6C344AE3",
+			"comment": "This is used alongside the native,\n'NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS'. Read its description for more info.",
 			"params": [
 				{
 					"type": "Player",
@@ -48078,11 +48078,11 @@
 		"0x57B192B4D4AD23D5": {
 			"name": "_NETWORK_CHAT_MUTE",
 			"jhash": "0x2F98B405",
-			"comment": "this function is toggle when people report you and you get the auto mute message ",
+			"comment": "NETWORK_OVERRIDE_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -48108,11 +48108,11 @@
 		"0x0FF2862B61A58AF9": {
 			"name": "_0x0FF2862B61A58AF9",
 			"jhash": "0x1BCD3DDF",
-			"comment": "p0 is always false in scripts.",
+			"comment": "p0 is always false in scripts.\n\nNETWORK_OVERRIDE_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -48124,8 +48124,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "channel"
 				}
 			],
 			"return_type": "void",
@@ -48140,7 +48140,7 @@
 			"build": "323"
 		},
 		"0xDBD2056652689917": {
-			"name": "IS_NETWORK_VEHICLE_BEEN_DAMAGED_BY_ANY_OBJECT",
+			"name": "NETWORK_APPLY_VOICE_PROXIMITY_OVERRIDE",
 			"jhash": "0xF1E84832",
 			"comment": "",
 			"params": [
@@ -52631,7 +52631,7 @@
 			"build": "323"
 		},
 		"0xBAF6BABF9E7CCC13": {
-			"name": "_0xBAF6BABF9E7CCC13",
+			"name": "_UGC_GET_CLOUD_PATH",
 			"jhash": "0x744A9EA5",
 			"comment": "",
 			"params": [
@@ -52687,7 +52687,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52700,7 +52700,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52841,24 +52841,24 @@
 			"build": "323"
 		},
 		"0x171DF6A0C07FB3DC": {
-			"name": "_0x171DF6A0C07FB3DC",
+			"name": "_UGC_REQUEST_CLOUD_FILE",
 			"jhash": "0x84315226",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x7FD2990AF016795E": {
-			"name": "_UGC_REQUEST_CLOUD_FILE",
+			"name": "_UGC_REQUEST_CLOUD_FILE_BY_CONTENT_ID",
 			"jhash": "0x38FC2EEB",
 			"comment": "",
 			"params": [
