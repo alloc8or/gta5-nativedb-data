@@ -4249,19 +4249,19 @@
 		"0xBF4DC1784BE94DFA": {
 			"name": "_0xBF4DC1784BE94DFA",
 			"jhash": "",
-			"comment": "",
+			"comment": "Something like UPDATE_PED_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
 			"return_type": "void",
@@ -4285,9 +4285,9 @@
 			"build": "323"
 		},
 		"0xD57AAAE0E2214D11": {
-			"name": "_0xD57AAAE0E2214D11",
-			"jhash": "",
-			"comment": "FREEZE_*",
+			"name": "FREEZE_MICROPHONE",
+			"jhash": "0x2B9D91E8",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4543,8 +4543,8 @@
 			"build": "323"
 		},
 		"0x806058BBDC136E06": {
-			"name": "_0x806058BBDC136E06",
-			"jhash": "",
+			"name": "STOP_CUTSCENE_AUDIO",
+			"jhash": "0x55461BE6",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -64847,9 +64847,9 @@
 			"build": "323"
 		},
 		"0xDED5AF5A0EA4B297": {
-			"name": "_0xDED5AF5A0EA4B297",
+			"name": "SET_DRIVER_RACING_MODIFIER",
 			"jhash": "0x6D55B3B3",
-			"comment": "Scripts use 0.2, 0.5 and 1.0.\n\nSET_DRIVER_*",
+			"comment": "Scripts use 0.2, 0.5 and 1.0. Value must be >= 0.0 && <= 1.0",
 			"params": [
 				{
 					"type": "Ped",
@@ -64857,7 +64857,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
