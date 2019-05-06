@@ -2312,20 +2312,20 @@
 		"0x0BE4BE946463F917": {
 			"name": "_0x0BE4BE946463F917",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_VEHICLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0xC1805D05E6D4FE10": {
 			"name": "_0xC1805D05E6D4FE10",
 			"jhash": "0x7ABB89D2",
-			"comment": "",
+			"comment": "SET_VEH*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -37261,17 +37261,17 @@
 			"build": "323"
 		},
 		"0x3BBBD13E5041A79E": {
-			"name": "_0x3BBBD13E5041A79E",
+			"name": "_LANDING_MENU_IS_ACTIVE",
 			"jhash": "",
-			"comment": "",
+			"comment": "L*\n\nReturns true if the current frontend menu is FE_MENU_VERSION_LANDING_MENU",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA049A5BE0F04F2F8": {
-			"name": "_0xA049A5BE0F04F2F8",
+			"name": "_IS_COMMAND_LINE_BENCHMARK_VALUE_SET",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_C*\n\nReturns true if command line option '-benchmark' is set.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -51641,7 +51641,7 @@
 		"0xB606E6CC59664972": {
 			"name": "_0xB606E6CC59664972",
 			"jhash": "0x866D1B67",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [
 				{
 					"type": "Any",
@@ -74563,7 +74563,7 @@
 		"0x7E2BD3EF6C205F09": {
 			"name": "_0x7E2BD3EF6C205F09",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [
 				{
 					"type": "const char*",
