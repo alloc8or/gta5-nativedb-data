@@ -2370,7 +2370,7 @@
 			"build": "323"
 		},
 		"0x651D3228960D08AF": {
-			"name": "_LINK_RADIO_EMITTER_TO_ENTITY",
+			"name": "_LINK_STATIC_EMITTER_TO_ENTITY",
 			"jhash": "",
 			"comment": "L* (LINK_*?)",
 			"params": [
