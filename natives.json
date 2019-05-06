@@ -2370,17 +2370,17 @@
 			"build": "323"
 		},
 		"0x651D3228960D08AF": {
-			"name": "_0x651D3228960D08AF",
+			"name": "_LINK_RADIO_EMITTER_TO_ENTITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "L* (LINK_*?)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "emitterName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -14395,8 +14395,8 @@
 		},
 		"0x1F922734E259BD26": {
 			"name": "_GET_ENTITY_PICKUP",
-			"jhash": "Seems to return the handle of the entity's portable pickup.",
-			"comment": "GET_ENTITY_*",
+			"jhash": "",
+			"comment": "GET_ENTITY_*\n\nSeems to return the handle of the entity's portable pickup.",
 			"params": [
 				{
 					"type": "Entity",
@@ -31767,7 +31767,7 @@
 			"build": "323"
 		},
 		"0xEF7D17BC6C85264C": {
-			"name": "_0xEF7D17BC6C85264C",
+			"name": "_LOADINGSCREEN_GET_LOAD_FREEMODE",
 			"jhash": "0xD87F3A9E",
 			"comment": "",
 			"params": [],
@@ -31775,41 +31775,41 @@
 			"build": "323"
 		},
 		"0xB0C56BD3D808D863": {
-			"name": "_0xB0C56BD3D808D863",
+			"name": "_LOADINGSCREEN_SET_LOAD_FREEMODE",
 			"jhash": "0xC0B971EA",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x8AA464D4E0F6ACCD": {
-			"name": "_0x8AA464D4E0F6ACCD",
+			"name": "_LOADINGSCREEN_GET_LOAD_FREEMODE_WITH_EVENT_NAME",
 			"jhash": "0x94BCAC7C",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xFC309E94546FCDB5": {
-			"name": "_0xFC309E94546FCDB5",
+			"name": "_LOADINGSCREEN_SET_LOAD_FREEMODE_WITH_EVENT_NAME",
 			"jhash": "0x7D90EEE5",
-			"comment": "Only occurrence was false, in maintransition.\n\n-Something related to UI loading screens for multiplayer",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xC6DC823253FBB366": {
-			"name": "_IS_UI_LOADING_MULTIPLAYER",
+			"name": "_LOADINGSCREEN_IS_LOADING_FREEMODE",
 			"jhash": "0x734CFEDA",
 			"comment": "",
 			"params": [],
@@ -31817,13 +31817,13 @@
 			"build": "323"
 		},
 		"0xC7E7181C09F33B69": {
-			"name": "_0xC7E7181C09F33B69",
+			"name": "_LOADINGSCREEN_SET_IS_LOADING_FREEMODE",
 			"jhash": "0x8C227332",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -31836,7 +31836,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -31845,7 +31845,7 @@
 	},
 	"LOCALIZATION": {
 		"0x497420E022796B3F": {
-			"name": "_GET_SYSTEM_LANGUAGE",
+			"name": "_LOCALIZATION_GET_SYSTEM_LANGUAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -31853,15 +31853,15 @@
 			"build": "877"
 		},
 		"0x2BDD44CC428A7EAE": {
-			"name": "_GET_CURRENT_PLAYER_LANGUAGE",
-			"jhash": "",
+			"name": "GET_CURRENT_LANGUAGE",
+			"jhash": "0x761BE00B",
 			"comment": "american = 0\nfrench = 1 \ngerman = 2\nitalian =3\nspanish = 4\nportuguese = 5\npolish = 6\nrussian = 7\nkorean = 8\nchinese = 9\njapanese = 10\nmexican = 11",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
 		},
 		"0xA8AE43AEC1A61314": {
-			"name": "_GET_USER_LANGUAGE",
+			"name": "_LOCALIZATION_GET_USER_LANGUAGE",
 			"jhash": "",
 			"comment": "Returns the user's defined language as ID \n\nenglish: 12\nfrench = 7\ngerman = 22\nitalian = 21\njapanese = 9\nkorean = 17\nportuguese = 16\nspanish = 10\nrussian = 25",
 			"params": [],
@@ -34658,17 +34658,17 @@
 			"build": "323"
 		},
 		"0xD3D15555431AB793": {
-			"name": "_0xD3D15555431AB793",
+			"name": "SHOULD_USE_METRIC_MEASUREMENTS",
 			"jhash": "0xBAF17315",
-			"comment": "",
+			"comment": "Returns whether the game's measurement system is set to metric (profile setting 227).",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xC488FF2356EA7791": {
 			"name": "GET_PROFILE_SETTING",
 			"jhash": "0xD374BEBC",
-			"comment": "anyone have a settingid dump?",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -34681,7 +34681,7 @@
 		"0x0C515FAB3FF9EA92": {
 			"name": "ARE_STRINGS_EQUAL",
 			"jhash": "0x877C0BC5",
-			"comment": "is this like strcmp??",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
