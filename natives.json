@@ -2256,17 +2256,17 @@
 			"build": "323"
 		},
 		"0x0626A247D2405330": {
-			"name": "_0x0626A247D2405330",
-			"jhash": "",
+			"name": "IS_RADIO_FADED_OUT",
+			"jhash": "0x815CAE99",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xFF266D1D0EB1195D": {
 			"name": "_0xFF266D1D0EB1195D",
 			"jhash": "0x53DB6994",
-			"comment": "Tune Forward... ?",
+			"comment": "Tune Forward... ?\n\nSET_RADIO_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -2274,7 +2274,7 @@
 		"0xDD6BCF9E94425DF9": {
 			"name": "_0xDD6BCF9E94425DF9",
 			"jhash": "0xD70ECC80",
-			"comment": "Tune Backwards... ?",
+			"comment": "Tune Backwards... ?\n\nSET_RADIO_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -8474,7 +8474,7 @@
 			"build": "877"
 		},
 		"0x8BFCEB5EA1B161B6": {
-			"name": "_GET_REPLAY_FREE_CAM_MAX_RANGE",
+			"name": "_REPLAY_FREE_CAM_GET_MAX_RANGE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -25722,30 +25722,30 @@
 			"build": "323"
 		},
 		"0xF98E4B3E56AFC7B1": {
-			"name": "_0xF98E4B3E56AFC7B1",
+			"name": "SET_RADAR_ZOOM_TO_BLIP",
 			"jhash": "0x25EC28C0",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "zoom"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xCB7CC0D58405AD41": {
-			"name": "_SET_RADAR_ZOOM_LEVEL_THIS_FRAME",
+			"name": "SET_RADAR_ZOOM_TO_DISTANCE",
 			"jhash": "0x09CF1CE5",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "zoomLevel"
+					"name": "zoom"
 				}
 			],
 			"return_type": "void",
