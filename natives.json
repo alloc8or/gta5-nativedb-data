@@ -37769,7 +37769,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "characterIndex"
+					"name": "characterSlot"
 				},
 				{
 					"type": "BOOL",
@@ -37790,7 +37790,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "characterSlot"
 				}
 			],
 			"return_type": "void",
@@ -37810,8 +37810,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "characterSlot"
 				}
 			],
 			"return_type": "void",
@@ -37923,8 +37923,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
 					"type": "BOOL",
@@ -37955,13 +37955,18 @@
 			"name": "NETWORK_CAN_BUY_LOTTERY_TICKET",
 			"jhash": "0x334B9364",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "cost"
+				}
+			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xCD0F5B5D932AE473": {
 			"name": "_0xCD0F5B5D932AE473",
-			"jhash": "",
+			"jhash": "0xC4CD928D",
 			"comment": "This native is not used in the scripts.\n\nDoes nothing (it's a nullsub).",
 			"params": [],
 			"return_type": "void",
