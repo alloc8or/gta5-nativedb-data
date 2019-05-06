@@ -37944,35 +37944,52 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xC62DD18375C99130": {
-			"name": "_0xC62DD18375C99130",
-			"jhash": "",
+			"name": "NETWORK_CAN_BUY_LOTTERY_TICKET",
+			"jhash": "0x334B9364",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xCD0F5B5D932AE473": {
 			"name": "_0xCD0F5B5D932AE473",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "This native is not used in the scripts.\n\nDoes nothing (it's a nullsub).",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "323"
 		},
 		"0x9777734DAD16992F": {
-			"name": "_0x9777734DAD16992F",
+			"name": "_CAN_PAY_GOON",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"comment": "This native is not used in the scripts.\n\nCAN_*",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "int*",
+					"name": "p3"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "573"
 		},
 		"0xEFE9C9A1651B81E6": {
@@ -39909,7 +39926,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "amountSpent"
+					"name": "amount"
 				},
 				{
 					"type": "Any",
@@ -39936,37 +39953,67 @@
 			"build": "323"
 		},
 		"0x28F174A67B8D0C2F": {
-			"name": "_0x28F174A67B8D0C2F",
+			"name": "_NETWORK_SPENT_JOB_SKIP",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "const char*",
+					"name": "matchId"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "BOOL",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "323"
 		},
 		"0xFFBE02CD385356BD": {
-			"name": "_0xFFBE02CD385356BD",
+			"name": "_NETWORK_SPENT_BOSS",
 			"jhash": "",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "573"
 		},
 		"0x08A1B82B91900682": {
-			"name": "_0x08A1B82B91900682",
+			"name": "_NETWORK_SPENT_PAY_GOON",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
