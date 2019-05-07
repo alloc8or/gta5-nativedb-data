@@ -703,7 +703,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "index"
 				},
 				{
 					"type": "const char*",
@@ -760,14 +760,14 @@
 		"0x95D9F4BC443956E7": {
 			"name": "ADD_PED_TO_CONVERSATION",
 			"jhash": "0xF8D5EB86",
-			"comment": "4 calls in the b617d scripts. The only one with p0 and p2 in clear text:\n\nAUDIO::ADD_PED_TO_CONVERSATION(5, l_AF, \"DINAPOLI\");\n\n=================================================\nOne of the 2 calls in dialogue_handler.c p0 is in a while-loop, and so is determined to also possibly be 0 - 15.\nBased on it asking if does_entity_exist for the global I have determined that p1 is, in fact, the ped, but could be wrong.",
+			"comment": "4 calls in the b617d scripts. The only one with p0 and p2 in clear text:\n\nAUDIO::ADD_PED_TO_CONVERSATION(5, l_AF, \"DINAPOLI\");\n\n=================================================\nOne of the 2 calls in dialogue_handler.c p0 is in a while-loop, and so is determined to also possibly be 0 - 15.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "ped"
 				},
 				{
@@ -3038,7 +3038,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xB4F90FAF7670B16F": {
@@ -79463,7 +79463,7 @@
 		"0xA5C80D8E768A9E66": {
 			"name": "_STAT_MIGRATE_SAVE",
 			"jhash": "",
-			"comment": "STAT_*\n\nplatformName must be one of the following: ps3, xbox360, ps4, xboxone",
+			"comment": "platformName must be one of the following: ps3, xbox360, ps4, xboxone",
 			"params": [
 				{
 					"type": "const char*",
@@ -79528,46 +79528,46 @@
 			"build": "323"
 		},
 		"0xC70DDCE56D0D3A99": {
-			"name": "_0xC70DDCE56D0D3A99",
+			"name": "STAT_SAVE_MIGRATION_STATUS_START",
 			"jhash": "0x54E775E0",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x886913BBEACA68C1": {
-			"name": "_0x886913BBEACA68C1",
+			"name": "STAT_GET_SAVE_MIGRATION_STATUS",
 			"jhash": "0xE3F0D62D",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "data"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4FEF53183C3C6414": {
-			"name": "_0x4FEF53183C3C6414",
+			"name": "_STAT_SAVE_MIGRATION_CANCEL",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x567384DFA67029E6": {
-			"name": "_0x567384DFA67029E6",
+			"name": "_STAT_GET_CANCEL_SAVE_MIGRATION_STATUS",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x3270F67EED31FBC1": {
 			"name": "_STAT_SAVE_MIGRATION_CONSUME_CONTENT_UNLOCK",
 			"jhash": "",
-			"comment": "STAT_SAVE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
