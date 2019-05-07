@@ -42134,7 +42134,7 @@
 		"0x76EF28DA05EA395A": {
 			"name": "NETWORK_GET_VC_BANK_BALANCE",
 			"jhash": "0x16184FB5",
-			"comment": "From what I can see in ida, I believe it retrieves the players online bank balance.",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -42142,11 +42142,11 @@
 		"0xA40F9C2623F6A8B5": {
 			"name": "NETWORK_GET_VC_WALLET_BALANCE",
 			"jhash": "0x4F5B781C",
-			"comment": "From what I understand, it retrieves STAT_WALLET_BALANCE for the specified character (-1 means use MPPLY_LAST_MP_CHAR)",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "character"
+					"name": "characterSlot"
 				}
 			],
 			"return_type": "int",
@@ -42161,31 +42161,36 @@
 			"build": "323"
 		},
 		"0x5D1E75F91C07DEE5": {
-			"name": "_0x5D1E75F91C07DEE5",
+			"name": "NETWORK_GET_EVC_BALANCE",
 			"jhash": "0xF1EDB7F4",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4F54F3B6C202FB4E": {
-			"name": "_0x4F54F3B6C202FB4E",
+			"name": "NETWORK_GET_PVC_BALANCE",
 			"jhash": "0x56485B56",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xF9B10B529DCFB33B": {
-			"name": "_0xF9B10B529DCFB33B",
+			"name": "NETWORK_GET_STRING_WALLET_BALANCE",
 			"jhash": "0xC1A11435",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "characterSlot"
+				}
+			],
+			"return_type": "const char*",
 			"build": "323"
 		},
 		"0xA6FA3979BED01B81": {
-			"name": "_NETWORK_GET_BANK_BALANCE_STRING",
+			"name": "NETWORK_GET_STRING_BANK_BALANCE",
 			"jhash": "0xAA7EA3BD",
 			"comment": "",
 			"params": [],
@@ -42193,59 +42198,78 @@
 			"build": "323"
 		},
 		"0x700AF71AE615E6DD": {
-			"name": "_0x700AF71AE615E6DD",
+			"name": "NETWORK_GET_STRING_BANK_WALLET_BALANCE",
 			"jhash": "0x7D4FD28C",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "323"
 		},
 		"0xED5AB8860415BABA": {
-			"name": "_0xED5AB8860415BABA",
+			"name": "_NETWORK_GET_VC_WALLET_BALANCE_IS_NOT_LESS_THAN",
 			"jhash": "0x0EA2188C",
-			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"comment": "This native is not used in the scripts.\n\nReturns true if wallet balance >= amount.",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "int",
+					"name": "characterSlot"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA31FD6A0865B6D14": {
-			"name": "_0xA31FD6A0865B6D14",
+			"name": "_NETWORK_GET_VC_BANK_BALANCE_IS_NOT_LESS_THAN",
 			"jhash": "0xABED6020",
-			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any",
+			"comment": "This native is not used in the scripts.\n\nReturns true if bank balance >= amount.",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xDC18531D7019A535": {
-			"name": "_0xDC18531D7019A535",
+			"name": "_NETWORK_GET_VC_BANK_WALLET_BALANCE_IS_NOT_LESS_THAN",
 			"jhash": "0xCA23FD25",
-			"comment": "",
+			"comment": "Returns true if bank balance + wallet balance >= amount.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "characterSlot"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x13A8DE2FD77D04F3": {
-			"name": "_0x13A8DE2FD77D04F3",
+			"name": "_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS",
 			"jhash": "0xC670C814",
-			"comment": "This native is not used in the scripts.",
+			"comment": "This native is not used in the scripts.\n\nSame as 0xEA560AC9EEB1E19B.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x08E8EEADFD0DC4A0": {
 			"name": "_0x08E8EEADFD0DC4A0",
 			"jhash": "0x03461981",
-			"comment": "This native is not used in the scripts.",
-			"params": [],
+			"comment": "This native is not used in the scripts.\n\nReturns false if amount > wallet balance or daily transfer limit has been hit.",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				}
+			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
@@ -42275,9 +42299,9 @@
 			"build": "323"
 		},
 		"0xEA560AC9EEB1E19B": {
-			"name": "_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS_AMOUNT",
+			"name": "_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS_2",
 			"jhash": "0xA9021211",
-			"comment": "This native is not used in the scripts.",
+			"comment": "This native is not used in the scripts.\n\nSame as 0x13A8DE2FD77D04F3.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
