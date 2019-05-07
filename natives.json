@@ -38997,8 +38997,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
 					"type": "BOOL",
@@ -39019,11 +39019,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "value"
+					"name": "amount"
 				},
 				{
-					"type": "int*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "matchId"
 				},
 				{
 					"type": "BOOL",
@@ -39043,16 +39043,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "matchId"
 				},
 				{
 					"type": "BOOL",
