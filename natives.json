@@ -76668,7 +76668,7 @@
 			"jhash": "0xC3FD3822",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xBBB6AD006F1BBEA3": {
@@ -76676,7 +76676,7 @@
 			"jhash": "0xA3407CA3",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x49A49BED12794D70": {
@@ -79772,15 +79772,15 @@
 		"0xB3DA2606774A8E2D": {
 			"name": "_0xB3DA2606774A8E2D",
 			"jhash": "",
-			"comment": "This function is hard-coded to always return 1.",
+			"comment": "This function is hard-coded to always return 1.\n\nNETWORK_IS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xDAC073C7901F9E15": {
 			"name": "_0xDAC073C7901F9E15",
 			"jhash": "",
-			"comment": "Set profile setting 866",
+			"comment": "Sets profile setting 866",
 			"params": [
 				{
 					"type": "Any",
@@ -79791,13 +79791,13 @@
 			"build": "323"
 		},
 		"0xF6792800AC95350D": {
-			"name": "_0xF6792800AC95350D",
+			"name": "_SET_SAVE_MIGRATION_TRANSACTION_ID",
 			"jhash": "",
-			"comment": "Set profile setting 501",
+			"comment": "Sets profile setting 501",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "transactionId"
 				}
 			],
 			"return_type": "void",
