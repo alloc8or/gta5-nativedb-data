@@ -30581,15 +30581,15 @@
 			"build": "323"
 		},
 		"0x6F72CD94F7B5B68C": {
-			"name": "_0x6F72CD94F7B5B68C",
+			"name": "_IS_SOCIAL_CLUB_MENU_INITIALIZED",
 			"jhash": "0x9D4934F4",
 			"comment": "",
 			"params": [],
-			"return_type": "int",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x75D3691713C3B05A": {
-			"name": "_0x75D3691713C3B05A",
+			"name": "OPEN_SOCIAL_CLUB_MENU",
 			"jhash": "0x57218529",
 			"comment": "",
 			"params": [],
@@ -30597,7 +30597,7 @@
 			"build": "323"
 		},
 		"0xD2B32BE3FC1626C6": {
-			"name": "_0xD2B32BE3FC1626C6",
+			"name": "CLOSE_SOCIAL_CLUB_MENU",
 			"jhash": "0x5F86AA39",
 			"comment": "",
 			"params": [],
@@ -30681,9 +30681,9 @@
 			"build": "323"
 		},
 		"0x1AC8F4AD40E22127": {
-			"name": "_ABORT_TEXT_CHAT",
+			"name": "_CLOSE_MULTIPLAYER_CHAT",
 			"jhash": "",
-			"comment": "Aborts the current message in the text chat.",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -30745,17 +30745,17 @@
 			"build": "323"
 		},
 		"0xD30C50DF888D58B5": {
-			"name": "_SET_PED_AI_BLIP",
+			"name": "SET_PED_HAS_AI_BLIP",
 			"jhash": "0x96C4C4DD",
-			"comment": "Previously named _0xD30C50DF888D58B5, this native turns on the AI blip on the specified ped. It also disappears automatically when the ped is too far or if the ped is dead. You don't need to control it with other natives. \n\nSee gtaforums.com/topic/884370-native-research-ai-blips for further information.",
+			"comment": "This native turns on the AI blip on the specified ped. It also disappears automatically when the ped is too far or if the ped is dead. You don't need to control it with other natives. \n\nSee gtaforums.com/topic/884370-native-research-ai-blips for further information.",
 			"params": [
 				{
-					"type": "int",
-					"name": "pedHandle"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
-					"name": "showViewCones"
+					"name": "hasCone"
 				}
 			],
 			"return_type": "void",
@@ -30796,7 +30796,7 @@
 			"build": "323"
 		},
 		"0xE52B8E7F85D39A08": {
-			"name": "_SET_AI_BLIP_TYPE",
+			"name": "SET_PED_AI_BLIP_GANG_ID",
 			"jhash": "0xD8E31B1A",
 			"comment": "",
 			"params": [
@@ -30806,31 +30806,31 @@
 				},
 				{
 					"type": "int",
-					"name": "type"
+					"name": "gangId"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x3EED80DFF7325CAA": {
-			"name": "HIDE_SPECIAL_ABILITY_LOCKON_OPERATION",
+			"name": "SET_PED_AI_BLIP_HAS_CONE",
 			"jhash": "0x872C2CFB",
-			"comment": "Hash collision",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x0C4BBF625CA98C4E": {
-			"name": "_IS_AI_BLIP_ALWAYS_SHOWN",
+			"name": "SET_PED_AI_BLIP_FORCED_ON",
 			"jhash": "0xFFDF46F0",
 			"comment": "",
 			"params": [
@@ -30840,16 +30840,16 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "flag"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x97C65887D4B37FA9": {
-			"name": "_SET_AI_BLIP_MAX_DISTANCE",
+			"name": "SET_PED_AI_BLIP_NOTICE_RANGE",
 			"jhash": "0xF9DC2AF7",
-			"comment": "Previously named _0x97C65887D4B37FA9.\nSets the maximum view distance for the AI BIP",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -30857,31 +30857,31 @@
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "range"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xFCFACD0DB9D7A57D": {
-			"name": "_0xFCFACD0DB9D7A57D",
+			"name": "_SET_PED_AI_BLIP_SPRITE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "spriteId"
 				}
 			],
 			"return_type": "void",
 			"build": "877"
 		},
 		"0x7CD934010E115C2C": {
-			"name": "_0x7CD934010E115C2C",
+			"name": "_GET_AI_BLIP_2",
 			"jhash": "0x06349065",
 			"comment": "",
 			"params": [
@@ -30890,7 +30890,7 @@
 					"name": "ped"
 				}
 			],
-			"return_type": "Blip*",
+			"return_type": "Blip",
 			"build": "323"
 		},
 		"0x56176892826A4FE8": {
@@ -91336,7 +91336,7 @@
 		"0xC59872A5134879C7": {
 			"name": "_JITTER_VEHICLE",
 			"jhash": "0x4A46E814",
-			"comment": "When I called this with what the script was doing, which was -190f for yaw pitch and roll, all my car did was jitter a little. I also tried 0 and 190f. I altered the p1 variable between TRUE and FALSE and didn't see a difference.\n\nThis might have something to do with the physbox of the vehicle, but I'm not sure.",
+			"comment": "When I called this with what the script was doing, which was -190f for yaw pitch and roll, all my car did was jitter a little. I also tried 0 and 190f. I altered the p1 variable between TRUE and FALSE and didn't see a difference.\n\nThis might have something to do with the physbox of the vehicle, but I'm not sure.\n\nSET_*",
 			"params": [
 				{
 					"type": "Vehicle",
