@@ -809,12 +809,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -31898,7 +31898,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "time"
+					"name": "seed"
 				}
 			],
 			"return_type": "void",
@@ -31911,7 +31911,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "time"
+					"name": "timeScale"
 				}
 			],
 			"return_type": "void",
@@ -56544,8 +56544,8 @@
 			"build": "1290"
 		},
 		"0x11D1E53A726891FE": {
-			"name": "_0x11D1E53A726891FE",
-			"jhash": "",
+			"name": "IS_PICKUP_WEAPON_OBJECT_VALID",
+			"jhash": "0x883DAB2D",
 			"comment": "",
 			"params": [
 				{
@@ -61161,7 +61161,7 @@
 			"build": "323"
 		},
 		"0x52D59AB61DDC05DD": {
-			"name": "_0x52D59AB61DDC05DD",
+			"name": "SET_PED_HIGHLY_PERCEPTIVE",
 			"jhash": "0x9A2180FF",
 			"comment": "",
 			"params": [
@@ -61171,7 +61171,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -67305,8 +67305,8 @@
 		},
 		"0x14590DDBEDB1EC85": {
 			"name": "_0x14590DDBEDB1EC85",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0xA1008E0E",
+			"comment": "IS_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -67364,7 +67364,7 @@
 					"name": "propIndex"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -67372,24 +67372,24 @@
 			"build": "323"
 		},
 		"0x3F7325574E41B44D": {
-			"name": "_0x3F7325574E41B44D",
+			"name": "_SET_PED_HELMET_UNK",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -67397,16 +67397,16 @@
 			"build": "791"
 		},
 		"0xB9496CE47546DB2C": {
-			"name": "_0xB9496CE47546DB2C",
+			"name": "_IS_PED_HELMET_UNK",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "791"
 		},
 		"0xF1550C4BD22582E2": {
@@ -69818,14 +69818,14 @@
 		"0x3795688A307E1EB6": {
 			"name": "_0x3795688A307E1EB6",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_PED_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "Ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0x0F62619393661D6E": {
@@ -74014,7 +74014,7 @@
 			"build": "323"
 		},
 		"0x38D28DA81E4E9BF9": {
-			"name": "_0x38D28DA81E4E9BF9",
+			"name": "IS_PLAYER_BATTLE_AWARE",
 			"jhash": "0x013B4F72",
 			"comment": "Returns true if an unk value is greater than 0.0f",
 			"params": [
@@ -74048,7 +74048,7 @@
 			"build": "323"
 		},
 		"0x5006D96C995A5827": {
-			"name": "_EXPAND_WORLD_LIMITS",
+			"name": "EXTEND_WORLD_BOUNDARY_FOR_PLAYER",
 			"jhash": "0x64DDB07D",
 			"comment": "Appears only 3 times in the scripts, more specifically in michael1.ysc\n\n-\nThis can be used to prevent dying if you are \"out of the world\"",
 			"params": [
@@ -74069,8 +74069,8 @@
 			"build": "323"
 		},
 		"0xDA1DF03D5A315F4E": {
-			"name": "_0xDA1DF03D5A315F4E",
-			"jhash": "",
+			"name": "RESET_WORLD_BOUNDARY_FOR_PLAYER",
+			"jhash": "0xA97C2F6C",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -74876,9 +74876,9 @@
 			"build": "323"
 		},
 		"0x2C83A9DA6BFFC4F9": {
-			"name": "_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH",
+			"name": "_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH",
 			"jhash": "0x029D3841",
-			"comment": "Gets the number of instances of the specified script is currently running.\n\nActually returns numInstances - 1.\nif (program)\n\tv3 = rage::scrProgram::GetNumRefs(program) - 1;\nreturn v3;",
+			"comment": "Gets the number of instances of the specified script is currently running.\n\nActually returns numRefs - 1.\nif (program)\n\tv3 = rage::scrProgram::GetNumRefs(program) - 1;\nreturn v3;",
 			"params": [
 				{
 					"type": "Hash",
