@@ -37799,10 +37799,11 @@
 		"0xFB2456B2040A6A67": {
 			"name": "_NETWORK_GET_IS_HIGH_EARNER",
 			"jhash": "0x63F093A6",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xA921DED15FDF28F5": {
 			"name": "NETWORK_CLEAR_CHARACTER_WALLET",
@@ -37887,7 +37888,7 @@
 		"0x18B7AE224B087E26": {
 			"name": "_NETWORK_DEDUCT_CASH",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -37915,7 +37916,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x81404F3DC124FE5B": {
 			"name": "NETWORK_MONEY_CAN_BET",
@@ -37954,7 +37956,7 @@
 		"0xC62DD18375C99130": {
 			"name": "NETWORK_CAN_BUY_LOTTERY_TICKET",
 			"jhash": "0x334B9364",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -37962,20 +37964,22 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xCD0F5B5D932AE473": {
 			"name": "_0xCD0F5B5D932AE473",
 			"jhash": "0xC4CD928D",
-			"comment": "This native is not used in the scripts.\n\nDoes nothing (it's a nullsub).",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x9777734DAD16992F": {
 			"name": "_CAN_PAY_GOON",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.\n\nCAN_*",
+			"comment": "CAN_*",
 			"params": [
 				{
 					"type": "int",
@@ -37983,7 +37987,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "p1"
 				},
 				{
 					"type": "int",
@@ -37995,7 +37999,8 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "573"
+			"build": "573",
+			"unused": true
 		},
 		"0xEFE9C9A1651B81E6": {
 			"name": "_NETWORK_EARN_FROM_CASHING_OUT",
@@ -38039,7 +38044,7 @@
 		"0xFA700D8A9905F78A": {
 			"name": "_NETWORK_EARN_FROM_ASSASSINATE_TARGET_KILLED",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -38047,7 +38052,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1604"
+			"build": "1604",
+			"unused": true
 		},
 		"0xF514621E8EA463D0": {
 			"name": "_NETWORK_EARN_FROM_ARMOUR_TRUCK",
@@ -38561,7 +38567,7 @@
 		"0x3E4ADAFF1830F146": {
 			"name": "_NETWORK_EARN_FROM_WAREHOUSE",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -38573,7 +38579,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "757"
+			"build": "757",
+			"unused": true
 		},
 		"0xECA658CE2A4E5A72": {
 			"name": "_NETWORK_EARN_FROM_CONTRABAND",
@@ -39157,7 +39164,7 @@
 		"0xA3EDDAA42411D3B9": {
 			"name": "NETWORK_BUY_BACKUP_GANG",
 			"jhash": "0x2AD2EC51",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -39177,7 +39184,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x81AA4610E3FD3A69": {
 			"name": "NETWORK_BUY_HELI_STRIKE",
@@ -39274,7 +39282,7 @@
 		"0x75AF80E61248EEBD": {
 			"name": "NETWORK_BUY_SMOKES",
 			"jhash": "0xC0AB03EB",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -39290,7 +39298,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x7BF1D73DB2ECA492": {
 			"name": "NETWORK_SPENT_HELI_PICKUP",
@@ -39626,7 +39635,7 @@
 		"0xCA230C9682556CF1": {
 			"name": "NETWORK_SPENT_BANK_INTEREST",
 			"jhash": "0xF02E92D7",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -39642,7 +39651,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xB21B89501CFAC79E": {
 			"name": "NETWORK_SPENT_PROSTITUTES",
@@ -39764,7 +39774,7 @@
 		"0x6A445B64ED7ABEB5": {
 			"name": "NETWORK_SPENT_FROM_ROCKSTAR",
 			"jhash": "0x54198922",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -39780,15 +39790,17 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x9B5016A6433A68C5": {
 			"name": "_0x9B5016A6433A68C5",
 			"jhash": "0xBD64F1B7",
-			"comment": "This native is not used in the scripts.\n\nHardcoded to return 0.",
+			"comment": "Hardcoded to return 0.",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x20194D48EAEC9A41": {
 			"name": "PROCESS_CASH_GIFT",
@@ -39814,7 +39826,7 @@
 		"0x7C99101F7FCE2EE5": {
 			"name": "NETWORK_SPENT_PLAYER_HEALTHCARE",
 			"jhash": "0x3D96A21C",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -39834,7 +39846,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xD5BB406F4E04019F": {
 			"name": "NETWORK_SPENT_NO_COPS",
@@ -39902,7 +39915,7 @@
 		"0xD987F2489969668C": {
 			"name": "NETWORK_BUY_LOTTERY_TICKET",
 			"jhash": "0xF64DF4CF",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -39922,7 +39935,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x8A7B3952DD64D2B5": {
 			"name": "NETWORK_BUY_FAIRGROUND_RIDE",
@@ -39960,7 +39974,7 @@
 		"0x28F174A67B8D0C2F": {
 			"name": "_NETWORK_SPENT_JOB_SKIP",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -39980,12 +39994,13 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xFFBE02CD385356BD": {
 			"name": "_NETWORK_SPENT_BOSS",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -40001,7 +40016,8 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "573"
+			"build": "573",
+			"unused": true
 		},
 		"0x08A1B82B91900682": {
 			"name": "_NETWORK_SPENT_PAY_GOON",
@@ -40906,18 +40922,20 @@
 		"0xB18AC2ECBB15CB6A": {
 			"name": "_0xB18AC2ECBB15CB6A",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1180"
+			"build": "1180",
+			"unused": true
 		},
 		"0xB1F1346FD57685D7": {
 			"name": "_0xB1F1346FD57685D7",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1180"
+			"build": "1180",
+			"unused": true
 		},
 		"0xAC272C0AE01B4BD8": {
 			"name": "_0xAC272C0AE01B4BD8",
@@ -41346,7 +41364,7 @@
 		"0xCAC672087B4A24AB": {
 			"name": "_NETWORK_EARN_FROM_DAR_CHALLENGE",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -41358,7 +41376,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1290"
+			"build": "1290",
+			"unused": true
 		},
 		"0x128A747F4A230952": {
 			"name": "_NETWORK_EARN_FROM_DOOMSDAY_FINALE_BONUS",
@@ -41422,10 +41441,11 @@
 		"0x1B882107C23A9022": {
 			"name": "_0x1B882107C23A9022",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1290"
+			"build": "1290",
+			"unused": true
 		},
 		"0xA19EC0786E326E06": {
 			"name": "_0xA19EC0786E326E06",
@@ -41455,10 +41475,11 @@
 		"0x5ECE6FD7B4EC8D6A": {
 			"name": "_0x5ECE6FD7B4EC8D6A",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1290"
+			"build": "1290",
+			"unused": true
 		},
 		"0xED26584F6BDCBBFD": {
 			"name": "_NETWORK_EARN_FROM_GANGOPS_JOBS_PREP_PARTICIPATION",
@@ -41620,10 +41641,11 @@
 		"0xE8815FE993896AD3": {
 			"name": "_0xE8815FE993896AD3",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1493"
+			"build": "1493",
+			"unused": true
 		},
 		"0xED76D195E6E3BF7F": {
 			"name": "_0xED76D195E6E3BF7F",
@@ -41748,7 +41770,7 @@
 		"0xE284D46FFDB82E36": {
 			"name": "_0xE284D46FFDB82E36",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -41764,7 +41786,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1493"
+			"build": "1493",
+			"unused": true
 		},
 		"0x876056684281655D": {
 			"name": "_NETWORK_SPENT_NIGHTCLUB_ENTRY_FEE",
@@ -41823,7 +41846,7 @@
 		"0x1BEA0CD93470BB1F": {
 			"name": "_NETWORK_SPENT_BOUNTY_HUNTER_MISSION",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -41839,7 +41862,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1493"
+			"build": "1493",
+			"unused": true
 		},
 		"0xF6C8A544E4CF14FC": {
 			"name": "_NETWORK_SPENT_REHIRE_DJ",
@@ -42121,7 +42145,7 @@
 		"0xA82959062361B259": {
 			"name": "_NETWORK_EARN_FROM_BB_EVENT_CARGO",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -42129,7 +42153,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1604"
+			"build": "1604",
+			"unused": true
 		},
 		"0x76EF28DA05EA395A": {
 			"name": "NETWORK_GET_VC_BANK_BALANCE",
@@ -42171,15 +42196,16 @@
 		"0x4F54F3B6C202FB4E": {
 			"name": "NETWORK_GET_PVC_BALANCE",
 			"jhash": "0x56485B56",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xF9B10B529DCFB33B": {
 			"name": "NETWORK_GET_STRING_WALLET_BALANCE",
 			"jhash": "0xC1A11435",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -42187,7 +42213,8 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xA6FA3979BED01B81": {
 			"name": "NETWORK_GET_STRING_BANK_BALANCE",
@@ -42200,15 +42227,16 @@
 		"0x700AF71AE615E6DD": {
 			"name": "NETWORK_GET_STRING_BANK_WALLET_BALANCE",
 			"jhash": "0x7D4FD28C",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xED5AB8860415BABA": {
 			"name": "_NETWORK_GET_VC_WALLET_BALANCE_IS_NOT_LESS_THAN",
 			"jhash": "0x0EA2188C",
-			"comment": "This native is not used in the scripts.\n\nReturns true if wallet balance >= amount.",
+			"comment": "Returns true if wallet balance >= amount.",
 			"params": [
 				{
 					"type": "int",
@@ -42220,12 +42248,13 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xA31FD6A0865B6D14": {
 			"name": "_NETWORK_GET_VC_BANK_BALANCE_IS_NOT_LESS_THAN",
 			"jhash": "0xABED6020",
-			"comment": "This native is not used in the scripts.\n\nReturns true if bank balance >= amount.",
+			"comment": "Returns true if bank balance >= amount.",
 			"params": [
 				{
 					"type": "int",
@@ -42233,7 +42262,8 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xDC18531D7019A535": {
 			"name": "_NETWORK_GET_VC_BANK_WALLET_BALANCE_IS_NOT_LESS_THAN",
@@ -42255,15 +42285,16 @@
 		"0x13A8DE2FD77D04F3": {
 			"name": "_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS",
 			"jhash": "0xC670C814",
-			"comment": "This native is not used in the scripts.\n\nSame as 0xEA560AC9EEB1E19B.",
+			"comment": "Same as 0xEA560AC9EEB1E19B.",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x08E8EEADFD0DC4A0": {
 			"name": "_0x08E8EEADFD0DC4A0",
 			"jhash": "0x03461981",
-			"comment": "This native is not used in the scripts.\n\nReturns false if amount > wallet balance or daily transfer limit has been hit.",
+			"comment": "Returns false if amount > wallet balance or daily transfer limit has been hit.",
 			"params": [
 				{
 					"type": "int",
@@ -42271,40 +42302,43 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x5D17BE59D2123284": {
 			"name": "NETWORK_CAN_RECEIVE_PLAYER_CASH",
 			"jhash": "0x41F5F10E",
-			"comment": "This native is not used in the scripts.",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                },
-                {
-                    "type": "Any",
-                    "name": "p1"
-                },
-                {
-                    "type": "Any",
-                    "name": "p2"
-                },
-                {
-                    "type": "Any",
-                    "name": "p3"
-                }
-            ],
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xEA560AC9EEB1E19B": {
 			"name": "_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS_2",
 			"jhash": "0xA9021211",
-			"comment": "This native is not used in the scripts.\n\nSame as 0x13A8DE2FD77D04F3.",
+			"comment": "Same as 0x13A8DE2FD77D04F3.",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xF70EFA14FE091429": {
 			"name": "_0xF70EFA14FE091429",
@@ -42716,18 +42750,20 @@
 		"0xC830417D630A50F9": {
 			"name": "_0xC830417D630A50F9",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1365"
+			"build": "1365",
+			"unused": true
 		},
 		"0x79EDAC677CA62F81": {
 			"name": "_0x79EDAC677CA62F81",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1365"
+			"build": "1365",
+			"unused": true
 		},
 		"0x3C5FD37B5499582E": {
 			"name": "NET_GAMESERVER_BEGIN_SERVICE",
@@ -46056,23 +46092,25 @@
 		"0xA12D3A5A3753CC23": {
 			"name": "_0xA12D3A5A3753CC23",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1103"
+			"build": "1103",
+			"unused": true
 		},
 		"0xF287F506767CC8A9": {
 			"name": "_0xF287F506767CC8A9",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1103"
+			"build": "1103",
+			"unused": true
 		},
 		"0x472841A026D26D8B": {
 			"name": "_REMOTE_CHEAT_DETECTED",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -46088,7 +46126,8 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1103"
+			"build": "1103",
+			"unused": true
 		},
 		"0xEC5E3AF5289DCA81": {
 			"name": "BAD_SPORT_PLAYER_LEFT_DETECTED",
@@ -53695,55 +53734,61 @@
 		"0x16D3D49902F697BB": {
 			"name": "_0x16D3D49902F697BB",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xD414BE129BB81B32": {
 			"name": "_0xD414BE129BB81B32",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x0E3A041ED6AC2B45": {
 			"name": "_0x0E3A041ED6AC2B45",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x350C23949E43686C": {
 			"name": "_0x350C23949E43686C",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xFF8FCF9FFC458A1C": {
 			"name": "_0xFF8FCF9FFC458A1C",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x3765C3A3E8192E10": {
 			"name": "_0x3765C3A3E8192E10",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x52C1EADAF7B10302": {
 			"name": "_0x52C1EADAF7B10302",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.\n\nReturns oldest resend count to the given player (netConnectionManager::GetOldestResendCount).\n\nNETWORK_GET_*",
+			"comment": "Returns oldest resend count to the given player (netConnectionManager::GetOldestResendCount).\n\nNETWORK_GET_*",
 			"params": [
 				{
 					"type": "Player",
@@ -53751,15 +53796,17 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x5626D9D6810730D5": {
 			"name": "_NETWORK_REPORT_MYSELF",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "350"
+			"build": "350",
+			"unused": true
 		},
 		"0x64D779659BC37B19": {
 			"name": "_0x64D779659BC37B19",
@@ -53803,34 +53850,38 @@
 		"0xAA5FAFCD2C5F5E47": {
 			"name": "_0xAA5FAFCD2C5F5E47",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "1103"
+			"build": "1103",
+			"unused": true
 		},
 		"0xAEDF1BC1C133D6E3": {
 			"name": "_0xAEDF1BC1C133D6E3",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x2555CF7DA5473794": {
 			"name": "_0x2555CF7DA5473794",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x6FD992C4A1C1B986": {
 			"name": "_0x6FD992C4A1C1B986",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		}
 	},
 	"OBJECT": {
@@ -74999,7 +75050,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x078EBE9809CCD637": {
 			"name": "SHUTDOWN_LOADING_SCREEN",
@@ -75041,74 +75093,83 @@
 		"0x836B62713E0534CA": {
 			"name": "_0x836B62713E0534CA",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x760910B49D2B98EA": {
 			"name": "_0x760910B49D2B98EA",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x75B18E49607874C7": {
 			"name": "_0x75B18E49607874C7",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x107E5CC7CA942BC1": {
 			"name": "_0x107E5CC7CA942BC1",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x9D5A25BADB742ACD": {
 			"name": "_0x9D5A25BADB742ACD",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xDC2BACD920D0A0DD": {
 			"name": "_0xDC2BACD920D0A0DD",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x0F6F1EBBC4E1D5E6": {
 			"name": "_0x0F6F1EBBC4E1D5E6",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x22E21FBCFC88C149": {
 			"name": "_0x22E21FBCFC88C149",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x829CD22E043A2577": {
 			"name": "_0x829CD22E043A2577",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xA40CC53DF8E50837": {
 			"name": "_TRIGGER_SCRIPT_EVENT_2",
@@ -75133,7 +75194,7 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1103"
+			"build": "323"
 		}
 	},
 	"SHAPETEST": {
@@ -75902,10 +75963,11 @@
 		"0xC4C4575F62534A24": {
 			"name": "_0xC4C4575F62534A24",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x287F1F75D2803595": {
 			"name": "_0x287F1F75D2803595",
@@ -75944,18 +76006,20 @@
 		"0xC85A7127E7AD02AA": {
 			"name": "_0xC85A7127E7AD02AA",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xA770C8EEC6FB2AC5": {
 			"name": "_0xA770C8EEC6FB2AC5",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x8416FE4E4629D7D7": {
 			"name": "_0x8416FE4E4629D7D7",
@@ -75973,18 +76037,20 @@
 		"0x7FFCBFEE44ECFABF": {
 			"name": "_0x7FFCBFEE44ECFABF",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x2D874D4AE612A65F": {
 			"name": "_0x2D874D4AE612A65F",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x75632C5ECD7ED843": {
 			"name": "_SC_START_CHECK_STRING_TASK",
@@ -76284,50 +76350,56 @@
 		"0x4ED9C8D6DA297639": {
 			"name": "_0x4ED9C8D6DA297639",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x710BCDA8071EDED1": {
 			"name": "_0x710BCDA8071EDED1",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x50A8A36201DBF83E": {
 			"name": "_0x50A8A36201DBF83E",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x9DE5D2F723575ED0": {
 			"name": "_0x9DE5D2F723575ED0",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xC2C97EA97711D1AE": {
 			"name": "_0xC2C97EA97711D1AE",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x450819D8CF90C416": {
 			"name": "_0x450819D8CF90C416",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x4A7D6E727F941747": {
 			"name": "_0x4A7D6E727F941747",
@@ -76345,42 +76417,47 @@
 		"0xE75A4A2E5E316D86": {
 			"name": "_0xE75A4A2E5E316D86",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x2570E26BE63964E3": {
 			"name": "_0x2570E26BE63964E3",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x1D12A56FC95BE92E": {
 			"name": "_0x1D12A56FC95BE92E",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x33DF47CC0642061B": {
 			"name": "_0x33DF47CC0642061B",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0xA468E0BE12B12C70": {
 			"name": "_0xA468E0BE12B12C70",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x8CC469AB4D349B7C": {
 			"name": "_0x8CC469AB4D349B7C",
@@ -76406,10 +76483,11 @@
 		"0xC5A35C73B68F3C49": {
 			"name": "_0xC5A35C73B68F3C49",
 			"jhash": "",
-			"comment": "This native is not used in the scripts.",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"unused": true
 		},
 		"0x699E4A5C8C893A18": {
 			"name": "_0x699E4A5C8C893A18",
