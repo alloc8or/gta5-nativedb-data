@@ -42815,7 +42815,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "id"
+					"name": "transactionId"
 				}
 			],
 			"return_type": "BOOL",
@@ -46161,16 +46161,16 @@
 			"build": "323"
 		},
 		"0xE66C690248F11150": {
-			"name": "_0xE66C690248F11150",
+			"name": "NETWORK_APPLY_PED_SCAR_DATA",
 			"jhash": "0x4818ACD0",
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -51731,7 +51731,7 @@
 			"build": "323"
 		},
 		"0x99B72C7ABDE5C910": {
-			"name": "_0x99B72C7ABDE5C910",
+			"name": "NETWORK_APPLY_CACHED_PLAYER_HEAD_BLEND_DATA",
 			"jhash": "0x99F58A07",
 			"comment": "",
 			"params": [
