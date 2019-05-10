@@ -47177,8 +47177,8 @@
 			"build": "323"
 		},
 		"0xBC1D768F2F5D6C05": {
-			"name": "_NETWORK_HASH_FROM_PLAYER_HANDLE",
-			"jhash": "",
+			"name": "NETWORK_HASH_FROM_PLAYER_HANDLE",
+			"jhash": "0xF8D7AF3B",
 			"comment": "",
 			"params": [
 				{
@@ -47190,8 +47190,8 @@
 			"build": "323"
 		},
 		"0x58575AC3CF2CA8EC": {
-			"name": "_NETWORK_HASH_FROM_GAMER_HANDLE",
-			"jhash": "",
+			"name": "NETWORK_HASH_FROM_GAMER_HANDLE",
+			"jhash": "0x5AC9F04D",
 			"comment": "",
 			"params": [
 				{
@@ -51999,16 +51999,16 @@
 			"build": "1290"
 		},
 		"0xC64DED7EF0D2FE37": {
-			"name": "_0xC64DED7EF0D2FE37",
+			"name": "CLOUD_DELETE_MEMBER_FILE",
 			"jhash": "0x2B7B57B3",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4C61B39930D045DA": {
