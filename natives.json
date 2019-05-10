@@ -28376,9 +28376,9 @@
 			"build": "323"
 		},
 		"0x1A5CD7752DD28CD3": {
-			"name": "_SET_MINIMAP_FOCUS_PED",
+			"name": "_SET_MINIMAP_OVERRIDE_CENTER_PED",
 			"jhash": "0xD5BFCADB",
-			"comment": "SET_MI*",
+			"comment": "SET_MINIMAP_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -30611,7 +30611,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				}
 			],
 			"return_type": "void",
@@ -42522,7 +42522,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "characterIndex"
+					"name": "charSlot"
 				}
 			],
 			"return_type": "BOOL",
@@ -42569,7 +42569,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "characterIndex"
+					"name": "charSlot"
 				}
 			],
 			"return_type": "BOOL",
@@ -42578,7 +42578,7 @@
 		"0x74A0FD0688F1EE45": {
 			"name": "_0x74A0FD0688F1EE45",
 			"jhash": "",
-			"comment": "",
+			"comment": "NET_GAMESERVER_*",
 			"params": [
 				{
 					"type": "int",
@@ -42595,7 +42595,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "characterIndex"
+					"name": "charSlot"
 				}
 			],
 			"return_type": "BOOL",
@@ -42677,11 +42677,11 @@
 			"build": "323"
 		},
 		"0xFA336E7F40C0A0D0": {
-			"name": "_0xFA336E7F40C0A0D0",
+			"name": "_NET_GAMESERVER_BASKET_DELETE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "372"
 		},
 		"0xA65568121DF2EA26": {
@@ -42741,7 +42741,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "id"
+					"name": "transactionId"
 				}
 			],
 			"return_type": "BOOL",
@@ -42750,18 +42750,28 @@
 		"0xC830417D630A50F9": {
 			"name": "_0xC830417D630A50F9",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "NET_GAMESERVER_*\n\nChecks if the transaction status is equal to 1.",
+			"params": [
+				{
+					"type": "int",
+					"name": "transactionId"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1365",
 			"unused": true
 		},
 		"0x79EDAC677CA62F81": {
 			"name": "_0x79EDAC677CA62F81",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "NET_GAMESERVER_*\n\nChecks if the transaction status is equal to 3.",
+			"params": [
+				{
+					"type": "int",
+					"name": "transactionId"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1365",
 			"unused": true
 		},
@@ -42772,7 +42782,7 @@
 			"params": [
 				{
 					"type": "int*",
-					"name": "id"
+					"name": "transactionId"
 				},
 				{
 					"type": "Hash",
@@ -42812,32 +42822,32 @@
 			"build": "323"
 		},
 		"0x51F1A8E48C3D2F6D": {
-			"name": "_0x51F1A8E48C3D2F6D",
+			"name": "_NET_GAMESERVER_DELETE_CHARACTER_SLOT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "slot"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "transfer"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "reason"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x0A6D923DFFC9BD89": {
-			"name": "_0x0A6D923DFFC9BD89",
+			"name": "_NET_GAMESERVER_DELETE_CHARACTER_SLOT_GET_STATUS",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x112CEF1615A1139F": {
@@ -42855,7 +42865,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "charStatInt"
+					"name": "charSlot"
 				},
 				{
 					"type": "int",
@@ -42872,7 +42882,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "charStatInt"
+					"name": "charSlot"
 				},
 				{
 					"type": "int",
@@ -42883,17 +42893,17 @@
 			"build": "323"
 		},
 		"0x23789E777D14CE44": {
-			"name": "_0x23789E777D14CE44",
+			"name": "_NET_GAMESERVER_TRANSFER_CASH_GET_STATUS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as 0x350AA5EBC03D3BD2",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x350AA5EBC03D3BD2": {
-			"name": "_0x350AA5EBC03D3BD2",
+			"name": "_NET_GAMESERVER_TRANSFER_CASH_GET_STATUS_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as 0x23789E777D14CE44",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -54578,7 +54588,7 @@
 		"0x65499865FCA6E5EC": {
 			"name": "_0x65499865FCA6E5EC",
 			"jhash": "0xB74C3BD7",
-			"comment": "possibly called:\nADD_DOOR_EXPERIMENTAL_MATRIX",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -54758,7 +54768,7 @@
 			"build": "323"
 		},
 		"0x024A60DEB0EA69F0": {
-			"name": "_0x024A60DEB0EA69F0",
+			"name": "IS_PLAYER_ENTIRELY_INSIDE_GARAGE",
 			"jhash": "0xC33ED360",
 			"comment": "",
 			"params": [
@@ -54783,7 +54793,7 @@
 			"build": "323"
 		},
 		"0x1761DC5D8471CBAA": {
-			"name": "_0x1761DC5D8471CBAA",
+			"name": "IS_PLAYER_PARTIALLY_INSIDE_GARAGE",
 			"jhash": "0x41924877",
 			"comment": "",
 			"params": [
@@ -57308,7 +57318,7 @@
 		"0xFC695459D4D0E219": {
 			"name": "_SET_CURSOR_LOCATION",
 			"jhash": "",
-			"comment": "Renamed to SET_CURSOR_LOCATION (I previously named it _SET_CURSOR_POSTION) which is the correct name as far as I can tell.",
+			"comment": "Renamed to _SET_CURSOR_LOCATION (I previously named it _SET_CURSOR_POSTION) which is the correct name as far as I can tell.",
 			"params": [
 				{
 					"type": "float",
@@ -57325,10 +57335,10 @@
 		"0x23F09EADC01449D6": {
 			"name": "_0x23F09EADC01449D6",
 			"jhash": "",
-			"comment": "",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nHardcoded to return false.",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -68816,7 +68826,7 @@
 		"0x7F2F4F13AC5257EF": {
 			"name": "_0x7F2F4F13AC5257EF",
 			"jhash": "0x72CF2514",
-			"comment": "",
+			"comment": "IS_S*",
 			"params": [
 				{
 					"type": "Any",
@@ -70332,11 +70342,11 @@
 		"0x84DE3B5FB3E666F0": {
 			"name": "_0x84DE3B5FB3E666F0",
 			"jhash": "0x7A18BB9C",
-			"comment": "",
+			"comment": "IS_*",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "int*",
+					"name": "ropeId"
 				}
 			],
 			"return_type": "BOOL",
@@ -89047,8 +89057,8 @@
 			"build": "323"
 		},
 		"0xE70BA7B90F8390DC": {
-			"name": "_0xE70BA7B90F8390DC",
-			"jhash": "",
+			"name": "WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED",
+			"jhash": "0xBD5F0EB8",
 			"comment": "",
 			"params": [
 				{
