@@ -8748,7 +8748,7 @@
 		"0x7A86743F475D9E09": {
 			"name": "REQUEST_CUTSCENE",
 			"jhash": "0xB5977853",
-			"comment": "p1: usually 8",
+			"comment": "flags: Usually 8",
 			"params": [
 				{
 					"type": "const char*",
@@ -8756,16 +8756,16 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xC23DE0E91C30B58C": {
-			"name": "_REQUEST_CUTSCENE_EX",
+			"name": "REQUEST_CUTSCENE_WITH_PLAYBACK_LIST",
 			"jhash": "0xD98F656A",
-			"comment": "Example:\nCUTSCENE::_0xC23DE0E91C30B58C(\"JOSH_1_INT_CONCAT\", 13, 8);",
+			"comment": "flags: Usually 8\n\nplaybackFlags: Which scenes should be played.\nExample: 0x105 (bit 0, 2 and 8 set) will enable scene 1, 3 and 9.",
 			"params": [
 				{
 					"type": "const char*",
@@ -8773,11 +8773,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "playbackFlags"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -8909,7 +8909,7 @@
 		"0x0ABC54DE641DC0FC": {
 			"name": "_0x0ABC54DE641DC0FC",
 			"jhash": "",
-			"comment": "GET_*",
+			"comment": "REQUEST_*",
 			"params": [
 				{
 					"type": "const char*",
@@ -8922,11 +8922,11 @@
 		"0x186D5CB5E7B0FF7B": {
 			"name": "START_CUTSCENE",
 			"jhash": "0x210106F6",
-			"comment": "p0: some kind of flag. Usually 0.",
+			"comment": "flags: Usually 0.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -8935,7 +8935,7 @@
 		"0x1C9ADDA3244A1FBF": {
 			"name": "START_CUTSCENE_AT_COORDS",
 			"jhash": "0x58BEA436",
-			"comment": "p3: some kind of flag. Usually 0.",
+			"comment": "flags: Usually 0.",
 			"params": [
 				{
 					"type": "float",
@@ -8951,7 +8951,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -21922,7 +21922,7 @@
 		"0x98EDF76A7271E4F2": {
 			"name": "_0x98EDF76A7271E4F2",
 			"jhash": "",
-			"comment": "",
+			"comment": "REQUEST_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -42658,7 +42658,7 @@
 			"params": [
 				{
 					"type": "int*",
-					"name": "id"
+					"name": "transactionId"
 				},
 				{
 					"type": "Hash",
@@ -74593,9 +74593,9 @@
 			"build": "323"
 		},
 		"0xAF66DCEE6609B148": {
-			"name": "_0xAF66DCEE6609B148",
+			"name": "_RENDERING_CAM_WAS_CHANGED_DURING_RECORDING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets a bool that indicates the rendering camera was changed during recording.\nThis will disable the ability to make camera changes in R* Editor.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
