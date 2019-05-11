@@ -8868,48 +8868,48 @@
 			"build": "323"
 		},
 		"0x06A3524161C502BA": {
-			"name": "_0x06A3524161C502BA",
-			"jhash": "",
-			"comment": "",
+			"name": "REQUEST_CUT_FILE",
+			"jhash": "0x0D732CD6",
+			"comment": "Simply loads the cutscene and doesn't do extra stuff that REQUEST_CUTSCENE does.",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cutsceneName"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xA1C996C2A744262E": {
-			"name": "_0xA1C996C2A744262E",
-			"jhash": "",
-			"comment": "",
+			"name": "HAS_CUT_FILE_LOADED",
+			"jhash": "0x56D5B144",
+			"comment": "Simply checks if the cutscene has loaded and doesn't check via CutSceneManager as opposed to HAS_[THIS]_CUTSCENE_LOADED.",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cutsceneName"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xD00D76A7DFC9D852": {
-			"name": "_0xD00D76A7DFC9D852",
-			"jhash": "",
-			"comment": "",
+			"name": "REMOVE_CUT_FILE",
+			"jhash": "0xB70D7C6D",
+			"comment": "Simply unloads the cutscene and doesn't do extra stuff that REMOVE_CUTSCENE does.",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "cutsceneName"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x0ABC54DE641DC0FC": {
-			"name": "_0x0ABC54DE641DC0FC",
-			"jhash": "",
-			"comment": "REQUEST_*",
+			"name": "GET_CUT_FILE_OFFSET",
+			"jhash": "0x68BB439F",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
