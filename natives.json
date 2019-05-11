@@ -8907,9 +8907,9 @@
 			"build": "323"
 		},
 		"0x0ABC54DE641DC0FC": {
-			"name": "_GET_CUT_FILE_UNK",
+			"name": "_GET_CUT_FILE_NUM_SECTIONS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Jenkins hash probably is 0xFD8B1AC2",
 			"params": [
 				{
 					"type": "const char*",
