@@ -8815,52 +8815,52 @@
 		"0x8D9DF6ECA8768583": {
 			"name": "_0x8D9DF6ECA8768583",
 			"jhash": "0x25A2CABC",
-			"comment": "Example of usage:\n\nv_2 = SCRIPT::_30B4FA1C82DD4B9F(); // int _GET_ID_OF_NEXT_SCRIPT_IN_ENUMERATION()\nCUTSCENE::_8D9DF6ECA8768583(v_2);",
+			"comment": "SET_SCRIPT_*\n\nSets the cutscene's owning thread ID.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "threadId"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xB56BBBCC2955D9CB": {
-			"name": "_0xB56BBBCC2955D9CB",
+			"name": "CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY",
 			"jhash": "0xDD8878E9",
-			"comment": "\"Can request assets for cutscene entity\"? (found in decompiled scripts)",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x71B74D2AE19338D0": {
-			"name": "_0x71B74D2AE19338D0",
+			"name": "IS_CUTSCENE_PLAYBACK_FLAG_SET",
 			"jhash": "0x7B93CDAA",
-			"comment": "It's 100% an IS_CUTSCENE_* native.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "flag"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x4C61C75BEE8184C2": {
-			"name": "_0x4C61C75BEE8184C2",
+			"name": "SET_CUTSCENE_ENTITY_STREAMING_FLAGS",
 			"jhash": "0x47DB08A9",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "cutsceneEntName"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
