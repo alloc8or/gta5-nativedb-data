@@ -9459,7 +9459,7 @@
 			"build": "323"
 		},
 		"0x2A56C06EBEF2B0D9": {
-			"name": "_0x2A56C06EBEF2B0D9",
+			"name": "SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED",
 			"jhash": "0x1E7DA95E",
 			"comment": "",
 			"params": [
