@@ -8907,8 +8907,8 @@
 			"build": "323"
 		},
 		"0x0ABC54DE641DC0FC": {
-			"name": "GET_CUT_FILE_OFFSET",
-			"jhash": "0x68BB439F",
+			"name": "_GET_CUT_FILE_UNK",
+			"jhash": "",
 			"comment": "",
 			"params": [
 				{
