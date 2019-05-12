@@ -75738,7 +75738,7 @@
 			"build": "323"
 		},
 		"0xDA024BDBD600F44A": {
-			"name": "_0xDA024BDBD600F44A",
+			"name": "_SC_INBOX_MESSAGE_PUSH_GAMER_TO_EVENT_RECIP_LIST",
 			"jhash": "0x0B9A3512",
 			"comment": "",
 			"params": [
@@ -75751,7 +75751,7 @@
 			"build": "323"
 		},
 		"0xA68D3D229F4F3B06": {
-			"name": "_TRIGGER_UGC_STAT_UPDATE_EVENT",
+			"name": "_SC_INBOX_MESSAGE_SEND_UGC_STAT_UPDATE_EVENT",
 			"jhash": "0x75324674",
 			"comment": "",
 			"params": [
@@ -75781,7 +75781,7 @@
 			"build": "323"
 		},
 		"0x6AFD2CD753FEEF83": {
-			"name": "_TRIGGER_BOUNTY_PRESENCE_EVENT",
+			"name": "_SC_INBOX_MESSAGE_SEND_BOUNTY_PRESENCE_EVENT",
 			"jhash": "0x628F489B",
 			"comment": "",
 			"params": [
@@ -76032,13 +76032,13 @@
 			"unused": true
 		},
 		"0x8416FE4E4629D7D7": {
-			"name": "_0x8416FE4E4629D7D7",
+			"name": "_SC_GET_IS_PROFILE_ATTRIBUTE_SET",
 			"jhash": "0xDF45B2A7",
 			"comment": "sfink: from scripts:\nfunc_720(socialclub::_0x8416FE4E4629D7D7(\"bIgnoreCheaterOverride\"));\nfunc_719(socialclub::_0x8416FE4E4629D7D7(\"bIgnoreBadSportOverride\"));\n",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				}
 			],
 			"return_type": "BOOL",
@@ -76063,7 +76063,7 @@
 			"unused": true
 		},
 		"0x75632C5ECD7ED843": {
-			"name": "_SC_START_CHECK_STRING_TASK",
+			"name": "SC_PROFANITY_CHECK_STRING",
 			"jhash": "0xDF084A6B",
 			"comment": "Starts a task to check an entered string for profanity on the ROS/Social Club services.\n\nSee also: 1753344C770358AE, 82E4A58BABC15AE7.",
 			"params": [
@@ -76080,7 +76080,7 @@
 			"build": "323"
 		},
 		"0xEB2BF817463DFA28": {
-			"name": "_SC_START_CHECK_STRING_TASK_UGC",
+			"name": "_SC_PROFANITY_CHECK_UGC_STRING",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -76097,9 +76097,9 @@
 			"build": "678"
 		},
 		"0x1753344C770358AE": {
-			"name": "_SC_HAS_CHECK_STRING_TASK_COMPLETED",
+			"name": "SC_PROFANITY_GET_CHECK_IS_VALID",
 			"jhash": "0xFFED3676",
-			"comment": "Returns whether or not a task started with _SC_START_CHECK_STRING_TASK has completed.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -76110,16 +76110,16 @@
 			"build": "323"
 		},
 		"0x82E4A58BABC15AE7": {
-			"name": "_SC_GET_CHECK_STRING_STATUS",
+			"name": "SC_PROFANITY_GET_CHECK_IS_PENDING",
 			"jhash": "0xA796D7A7",
-			"comment": "Returns the status of a _SC_START_CHECK_STRING_TASK task.\n\nPossible return values:\n\n0: not a profane string\n1: a profane string\n3: server error occurred\n-1: internal error occurred",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
 					"name": "taskHandle"
 				}
 			],
-			"return_type": "int",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x85535ACF97FC0969": {
@@ -79658,7 +79658,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "contentId"
 				},
 				{
@@ -79674,16 +79674,16 @@
 			"build": "323"
 		},
 		"0xCE5AA445ABA8DEE0": {
-			"name": "_0xCE5AA445ABA8DEE0",
+			"name": "_STAT_GET_SAVE_MIGRATION_CONSUME_CONTENT_UNLOCK_STATUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x98E2BC1CA26287C3": {
@@ -79866,13 +79866,13 @@
 			"build": "323"
 		},
 		"0xDAC073C7901F9E15": {
-			"name": "_0xDAC073C7901F9E15",
+			"name": "_SET_HAS_CONTENT_UNLOCKS_FLAGS",
 			"jhash": "",
-			"comment": "Sets profile setting 866",
+			"comment": "Sets profile setting 866\n\nSET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
