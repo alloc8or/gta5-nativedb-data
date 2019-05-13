@@ -14811,8 +14811,8 @@
 			"build": "323"
 		},
 		"0x5D5CAFF661DDF6FC": {
-			"name": "_0x5D5CAFF661DDF6FC",
-			"jhash": "",
+			"name": "GET_SHOP_PED_PROP",
+			"jhash": "0xDB0A7A58",
 			"comment": "",
 			"params": [
 				{
@@ -23598,9 +23598,9 @@
 	},
 	"HUD": {
 		"0xABA17D7CE615ADBF": {
-			"name": "_SET_LOADING_PROMPT_TEXT_ENTRY",
+			"name": "BEGIN_TEXT_COMMAND_BUSYSPINNER_ON",
 			"jhash": "0xCB7C8994",
-			"comment": "Initializes the text entry for the the text next to a loading prompt. All natives for for building UI texts can be used here\n\n\ne.g\nvoid StartLoadingMessage(char *text, int spinnerType = 3)\n  {\n     _SET_LOADING_PROMPT_TEXT_ENTRY(\"STRING\");\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n       _SHOW_LOADING_PROMPT(spinnerType);\n    }\n/*OR*/\n void ShowLoadingMessage(char *text, int spinnerType = 3, int timeMs = 10000)\n  {\n     _SET_LOADING_PROMPT_TEXT_ENTRY(\"STRING\");\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n       _SHOW_LOADING_PROMPT(spinnerType);\n        WAIT(timeMs);\n     _REMOVE_LOADING_PROMPT();\n }\n\n\nThese are some localized strings used in the loading spinner.\n\"PM_WAIT\"                   = Please Wait\n\"CELEB_WPLYRS\"              = Waiting For Players.\n\"CELL_SPINNER2\"             = Scanning storage.\n\"ERROR_CHECKYACHTNAME\" = Registering your yacht's name. Please wait.\n\"ERROR_CHECKPROFANITY\"   = Checking your text for profanity. Please wait.\n\"FM_COR_AUTOD\"                        = Just spinner no text\n\"FM_IHELP_WAT2\"                        = Waiting for other players\n\"FM_JIP_WAITO\"                            = Game options are being set\n\"FMMC_DOWNLOAD\"                    = Downloading\n\"FMMC_PLYLOAD\"                         = Loading\n\"FMMC_STARTTRAN\"                    = Launching session\n\"HUD_QUITTING\"                           =  Quiting session\n\"KILL_STRIP_IDM\"                         = Waiting for to accept\n\"MP_SPINLOADING\"                      = Loading",
+			"comment": "Initializes the text entry for the the text next to a loading prompt. All natives for building UI texts can be used here\n\n\ne.g\nvoid StartLoadingMessage(char *text, int spinnerType = 3)\n  {\n     _SET_LOADING_PROMPT_TEXT_ENTRY(\"STRING\");\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n       _SHOW_LOADING_PROMPT(spinnerType);\n    }\n/*OR*/\n void ShowLoadingMessage(char *text, int spinnerType = 3, int timeMs = 10000)\n  {\n     _SET_LOADING_PROMPT_TEXT_ENTRY(\"STRING\");\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n       _SHOW_LOADING_PROMPT(spinnerType);\n        WAIT(timeMs);\n     _REMOVE_LOADING_PROMPT();\n }\n\n\nThese are some localized strings used in the loading spinner.\n\"PM_WAIT\"                   = Please Wait\n\"CELEB_WPLYRS\"              = Waiting For Players.\n\"CELL_SPINNER2\"             = Scanning storage.\n\"ERROR_CHECKYACHTNAME\" = Registering your yacht's name. Please wait.\n\"ERROR_CHECKPROFANITY\"   = Checking your text for profanity. Please wait.\n\"FM_COR_AUTOD\"                        = Just spinner no text\n\"FM_IHELP_WAT2\"                        = Waiting for other players\n\"FM_JIP_WAITO\"                            = Game options are being set\n\"FMMC_DOWNLOAD\"                    = Downloading\n\"FMMC_PLYLOAD\"                         = Loading\n\"FMMC_STARTTRAN\"                    = Launching session\n\"HUD_QUITTING\"                           =  Quiting session\n\"KILL_STRIP_IDM\"                         = Waiting for to accept\n\"MP_SPINLOADING\"                      = Loading",
 			"params": [
 				{
 					"type": "const char*",
@@ -23611,9 +23611,9 @@
 			"build": "323"
 		},
 		"0xBD12F8228410D9B4": {
-			"name": "_SHOW_LOADING_PROMPT",
+			"name": "END_TEXT_COMMAND_BUSYSPINNER_ON",
 			"jhash": "0x903F5EE4",
-			"comment": "This does NOT get called per frame. Call it once to show, then use UI::_REMOVE_LOADING_PROMPT to remove it\n\nChanges the the above native's (UI::_SET_LOADING_PROMPT_TEXT_ENTRY) spinning circle type.\n\nTypes:\nenum LoadingPromptTypes\n{\n LOADING_PROMPT_LEFT,\n  LOADING_PROMPT_LEFT_2,\n    LOADING_PROMPT_LEFT_3,\n    SAVE_PROMPT_LEFT,\n LOADING_PROMPT_RIGHT,\n};",
+			"comment": "enum eBusySpinnerType\n{\n\tBUSY_SPINNER_LEFT,\n\tBUSY_SPINNER_LEFT_2,\n\tBUSY_SPINNER_LEFT_3,\n\tBUSY_SPINNER_SAVE,\n\tBUSY_SPINNER_RIGHT,\n};",
 			"params": [
 				{
 					"type": "int",
@@ -23624,23 +23624,23 @@
 			"build": "323"
 		},
 		"0x10D373323E5B9C0D": {
-			"name": "_REMOVE_LOADING_PROMPT",
+			"name": "BUSYSPINNER_OFF",
 			"jhash": "0x94119534",
-			"comment": "Removes the loading prompt at the bottom right of the screen, created by the UI::_SHOW_LOADING_PROMPT native.",
+			"comment": "Removes the loading prompt at the bottom right of the screen.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xC65AB383CD91DF98": {
-			"name": "_0xC65AB383CD91DF98",
+			"name": "PRELOAD_BUSYSPINNER",
 			"jhash": "0x71077FBD",
-			"comment": "Often called after _REMOVE_LOADING_PROMPT. Unsure what exactly it does, but It references busy_spinner, I can only guess its freeing the busy_spinner scaleform from memory",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xD422FCC5F239A915": {
-			"name": "_IS_LOADING_PROMPT_BEING_DISPLAYED",
+			"name": "BUSYSPINNER_IS_ON",
 			"jhash": "0xB8B3A5D0",
 			"comment": "",
 			"params": [],
@@ -23648,8 +23648,8 @@
 			"build": "323"
 		},
 		"0xB2A592B04648A9CB": {
-			"name": "_0xB2A592B04648A9CB",
-			"jhash": "",
+			"name": "BUSYSPINNER_IS_DISPLAYING",
+			"jhash": "0x3AF34DEF",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -23658,7 +23658,7 @@
 		"0x9245E81072704B8A": {
 			"name": "_0x9245E81072704B8A",
 			"jhash": "",
-			"comment": "",
+			"comment": "DISABLE_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -28511,7 +28511,7 @@
 			"build": "323"
 		},
 		"0xE0130B41D3CF4574": {
-			"name": "_0xE0130B41D3CF4574",
+			"name": "_GET_MINIMAP_REVEAL_PERCENTAGE",
 			"jhash": "0xA4098ACC",
 			"comment": "",
 			"params": [],
@@ -35533,11 +35533,11 @@
 		"0xFB80AB299D2EE1BD": {
 			"name": "_0xFB80AB299D2EE1BD",
 			"jhash": "",
-			"comment": "",
+			"comment": "Toggles some stunt jump stuff.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -35799,14 +35799,14 @@
 		"0xA09F896CE912481F": {
 			"name": "_0xA09F896CE912481F",
 			"jhash": "0x9EF0BC64",
-			"comment": "",
+			"comment": "GET_S*",
 			"params": [
 				{
 					"type": "BOOL",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x34C9EE5986258415": {
@@ -43239,11 +43239,11 @@
 			"build": "1180"
 		},
 		"0x5EA784D197556507": {
-			"name": "_0x5EA784D197556507",
+			"name": "_NETWORK_HAVE_ONLINE_PRIVILEGE_2",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA8ACB6459542A8C8": {
@@ -45987,9 +45987,9 @@
 		"0x14922ED3E38761F0": {
 			"name": "_0x14922ED3E38761F0",
 			"jhash": "0x8FA6EE0E",
-			"comment": "",
+			"comment": "NETWORK_IS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x6CE50E47F5543D0C": {
@@ -51457,7 +51457,7 @@
 			"build": "323"
 		},
 		"0x187382F8A3E0A6C3": {
-			"name": "_GET_TUNABLES_CONTENT_MODIFIER_ID",
+			"name": "NETWORK_CONTENT_MODIFIER_LIST_ID",
 			"jhash": "0xA78571CA",
 			"comment": "Return the content modifier id (the tunables context if you want) of a specific content.\n\nIt takes the content hash (which is the mission id hash), and return the content modifier id, used as the tunables context.\n\nThe mission id can be found on the Social club, for example, 'socialclub.rockstargames.com/games/gtav/jobs/job/A8M6Bz8MLEC5xngvDCzGwA'\n\n'A8M6Bz8MLEC5xngvDCzGwA' is the mission id, so the game hash this and use it as the parameter for this native.\n",
 			"params": [
@@ -51474,23 +51474,23 @@
 			"jhash": "0x053BB329",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x72433699B4E6DD64": {
 			"name": "NETWORK_RESET_BODY_TRACKER",
 			"jhash": "0x3914463F",
-			"comment": "hash collision?? - Not sure, but fits alphabetically",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xD38C4A6D047C019D": {
-			"name": "_0xD38C4A6D047C019D",
+			"name": "_NETWORK_GET_NUM_BODY_TRACKERS",
 			"jhash": "0x17CBC608",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x2E0BF682CC778D49": {
@@ -53543,25 +53543,25 @@
 			"build": "323"
 		},
 		"0x8020A73847E0CA7D": {
-			"name": "_IS_ROCKSTAR_BANNED",
+			"name": "_NETWORK_HAS_PLAYER_BEEN_BANNED",
 			"jhash": "0xD3BBE42F",
-			"comment": "if(NETWORK::_IS_ROCKSTAR_BANNED() == 0) means the player is rockstar banned",
+			"comment": "Returns ROS privilege 7 (\"Has player been banned\").\n\nNETWORK_HAVE_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA0AD7E2AF5349F61": {
-			"name": "_IS_SOCIALCLUB_BANNED",
+			"name": "_NETWORK_HAVE_SOCIAL_CLUB_PRIVILEGE",
 			"jhash": "0xBDBB5948",
-			"comment": "if(_IS_SOCIALCLUB_BANNED() == 0) means the player is social club banned",
+			"comment": "NETWORK_HAVE_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5F91D5D0B36AA310": {
-			"name": "_CAN_PLAY_ONLINE",
+			"name": "_NETWORK_GET_ROS_PRIVILEGE_3",
 			"jhash": "0x97287D68",
-			"comment": "if(_CAN_PLAY_ONLINE() == 0) means the player is banned(Social Club or Rockstar)",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -53569,7 +53569,7 @@
 		"0x422D396F80A96547": {
 			"name": "_NETWORK_GET_ROS_PRIVILEGE_4",
 			"jhash": "0xC6EA802E",
-			"comment": "",
+			"comment": "NETWORK_HAVE_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -53577,7 +53577,7 @@
 		"0xA699957E60D80214": {
 			"name": "NETWORK_HAS_ROS_PRIVILEGE",
 			"jhash": "0xFD261E30",
-			"comment": "p0 is always 18 in scripts",
+			"comment": "index is always 18 in scripts",
 			"params": [
 				{
 					"type": "int",
@@ -53667,7 +53667,7 @@
 			"build": "1011"
 		},
 		"0xB7C7F6AD6424304B": {
-			"name": "_0xB7C7F6AD6424304B",
+			"name": "_NETWORK_UPDATE_PLAYER_SCARS",
 			"jhash": "0x371BBA08",
 			"comment": "",
 			"params": [],
@@ -53707,11 +53707,11 @@
 		"0x6BFF5F84102DF80A": {
 			"name": "_0x6BFF5F84102DF80A",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -53744,9 +53744,14 @@
 		"0x16D3D49902F697BB": {
 			"name": "_0x16D3D49902F697BB",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "NETWORK_IS_*",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -72845,11 +72850,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -73395,7 +73400,7 @@
 		"0xCE07B9F7817AADA3": {
 			"name": "SET_PLAYER_WEAPON_DAMAGE_MODIFIER",
 			"jhash": "0xB02C2F39",
-			"comment": "This modifies the damage value of your weapon. Whether it is a multiplier or base damage is unknown. \n\nBased on tests, it is unlikely to be a multiplier.",
+			"comment": "This modifies the damage value of your weapon. Whether it is a multiplier or base damage is unknown. \n\nBased on tests, it is unlikely to be a multiplier.\n\nmodifier's min value is 0.1",
 			"params": [
 				{
 					"type": "Player",
@@ -73412,7 +73417,7 @@
 		"0x2D83BC011CA14A3C": {
 			"name": "SET_PLAYER_WEAPON_DEFENSE_MODIFIER",
 			"jhash": "0xAE446344",
-			"comment": "",
+			"comment": "modifier's min value is 0.1",
 			"params": [
 				{
 					"type": "Player",
@@ -73427,17 +73432,17 @@
 			"build": "323"
 		},
 		"0xBCFDE9EDE4CF27DC": {
-			"name": "_0xBCFDE9EDE4CF27DC",
+			"name": "_SET_PLAYER_WEAPON_DEFENSE_MODIFIER_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "modifier's min value is 0.1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
@@ -73446,7 +73451,7 @@
 		"0x4A3DC7ECCC321032": {
 			"name": "SET_PLAYER_MELEE_WEAPON_DAMAGE_MODIFIER",
 			"jhash": "0x362E69AD",
-			"comment": "",
+			"comment": "modifier's min value is 0.1",
 			"params": [
 				{
 					"type": "Player",
@@ -73467,7 +73472,7 @@
 		"0xAE540335B4ABC4E2": {
 			"name": "SET_PLAYER_MELEE_WEAPON_DEFENSE_MODIFIER",
 			"jhash": "0x9F3D577F",
-			"comment": "",
+			"comment": "modifier's min value is 0.1",
 			"params": [
 				{
 					"type": "Player",
@@ -73484,7 +73489,7 @@
 		"0xA50E117CDDF82F0C": {
 			"name": "SET_PLAYER_VEHICLE_DAMAGE_MODIFIER",
 			"jhash": "0x823ECA63",
-			"comment": "",
+			"comment": "modifier's min value is 0.1",
 			"params": [
 				{
 					"type": "Player",
@@ -73492,7 +73497,7 @@
 				},
 				{
 					"type": "float",
-					"name": "damageAmount"
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
@@ -73501,7 +73506,7 @@
 		"0x4C60E6EFDAFF2462": {
 			"name": "SET_PLAYER_VEHICLE_DEFENSE_MODIFIER",
 			"jhash": "0xA16626C7",
-			"comment": "",
+			"comment": "modifier's min value is 0.1",
 			"params": [
 				{
 					"type": "Player",
@@ -73518,14 +73523,14 @@
 		"0x8D768602ADEF2245": {
 			"name": "_0x8D768602ADEF2245",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_PLAYER_MAX_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
