@@ -29801,7 +29801,7 @@
 			"build": "323"
 		},
 		"0x7792424AA0EAC32E": {
-			"name": "_0x7792424AA0EAC32E",
+			"name": "CLEAR_DYNAMIC_PAUSE_MENU_ERROR_MESSAGE",
 			"jhash": "0x2F9A309C",
 			"comment": "",
 			"params": [],
@@ -57467,7 +57467,7 @@
 		"0x14D29BB12D47F68C": {
 			"name": "_0x14D29BB12D47F68C",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [
 				{
 					"type": "Any",
@@ -72558,13 +72558,13 @@
 			"build": "323"
 		},
 		"0x5702B917B99DB1CD": {
-			"name": "_0x5702B917B99DB1CD",
-			"jhash": "",
-			"comment": "Jenkins hash: 0x772DA539\n\np0 looks like Player or int (found in \"am_pi_menu\")",
+			"name": "SET_PLAYER_TARGET_LEVEL",
+			"jhash": "0x772DA539",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "targetLevel"
 				}
 			],
 			"return_type": "void",
