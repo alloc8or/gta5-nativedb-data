@@ -13914,7 +13914,7 @@
 		"0x78E8E3A640178255": {
 			"name": "_0x78E8E3A640178255",
 			"jhash": "",
-			"comment": "Related to cutscene entities. Unsure about the use.",
+			"comment": "Related to cutscene entities. Unsure about the use.\n\nSET_ENTITY_*",
 			"params": [
 				{
 					"type": "Entity",
@@ -57561,11 +57561,11 @@
 			"build": "323"
 		},
 		"0x59B9A7AF4C95133C": {
-			"name": "_0x59B9A7AF4C95133C",
+			"name": "_GET_LOCAL_PLAYER_AIM_STATE_2",
 			"jhash": "",
 			"comment": "Same behavior as GET_LOCAL_PLAYER_AIM_STATE but only used on the PC version.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x25AAA32BDC98F2A3": {
@@ -57577,17 +57577,17 @@
 			"build": "1365"
 		},
 		"0x0F70731BACCFBB96": {
-			"name": "_0x0F70731BACCFBB96",
-			"jhash": "",
-			"comment": "",
+			"name": "GET_IS_USING_ALTERNATE_DRIVEBY",
+			"jhash": "0xC1AFABD5",
+			"comment": "Returns profile setting 225.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xFC859E2374407556": {
-			"name": "_0xFC859E2374407556",
-			"jhash": "",
-			"comment": "",
+			"name": "GET_ALLOW_MOVEMENT_WHILE_ZOOMED",
+			"jhash": "0xC0823820",
+			"comment": "Returns profile setting 17.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -72350,33 +72350,33 @@
 			"build": "323"
 		},
 		"0xC2AFFFDABBDC2C5C": {
-			"name": "_0xC2AFFFDABBDC2C5C",
+			"name": "_SET_ACHIEVEMENT_PROGRESSION",
 			"jhash": "",
-			"comment": "This seems to be related to Steam achievements.\n\np0 and p1 are int (?)\n\n------\n\nCan't say anything about the Steam version but it is hardcoded to always return false in the retail version.",
+			"comment": "For Steam.\nDoes nothing and always returns false in the retail version of the game.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "achievement"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "progression"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x1C186837D0619335": {
-			"name": "_0x1C186837D0619335",
+			"name": "_GET_ACHIEVEMENT_PROGRESSION",
 			"jhash": "",
-			"comment": "p0 = int (?)",
+			"comment": "For Steam.\nAlways returns 0 in retail version of the game.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "achievement"
 				}
 			],
-			"return_type": "Cam",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x867365E111A3B6EB": {
@@ -72547,7 +72547,7 @@
 		"0xB1906895227793F3": {
 			"name": "SET_PLAYER_TARGETING_MODE",
 			"jhash": "0x61CAE253",
-			"comment": "Sets your targeting mode.\n0 = Traditional GTA\n1 = Assisted Aiming\n2 = Free Aim\n\nEven tho gtaforums nor Alexander B supports this, if you're online in freemode already it's nice to have this since retail or otherwise you have to go to SP to change it.",
+			"comment": "Sets your targeting mode.\n0 = Traditional GTA\n1 = Assisted Aiming\n2 = Free Aim",
 			"params": [
 				{
 					"type": "int",
@@ -72573,17 +72573,17 @@
 		"0xB9CF1F793A9F1BF1": {
 			"name": "_0xB9CF1F793A9F1BF1",
 			"jhash": "",
-			"comment": "Seem to return bool",
+			"comment": "Returns profile setting 237.\n\nGET_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xCB645E85E97EA48B": {
 			"name": "_0xCB645E85E97EA48B",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns profile setting 243.\n\nGET_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "372"
 		},
 		"0xF0B67A4DE6AB5F98": {
