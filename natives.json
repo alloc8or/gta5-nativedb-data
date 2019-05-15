@@ -91971,13 +91971,13 @@
 			"build": "323"
 		},
 		"0x375E7FC44F21C8AB": {
-			"name": "_GET_VEHICLE_ATTACHED_TO_ENTITY",
+			"name": "_FIND_VEHICLE_CARRYING_THIS_ENTITY",
 			"jhash": "0x70DD5E25",
-			"comment": "Get the vehicle attached to the object/entity? May also just convert it to a vehicle, but I'm not sure.",
+			"comment": "Finds the vehicle that is carrying this entity with a handler frame.\nThe model of the entity must be prop_contr_03b_ld or the function will return 0.",
 			"params": [
 				{
-					"type": "Vehicle",
-					"name": "object"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "Vehicle",
@@ -103566,7 +103566,7 @@
 		"0x8C0D57EA686FAD87": {
 			"name": "_PED_SKIP_NEXT_RELOADING",
 			"jhash": "0x82EEAF0F",
-			"comment": "[23.03.2017 19:08] by ins1de :\n\n\"_IS_PED_RELOADING\" is totally a wrong name...\n\nThis native actually disables the reloading animation and script for the specified ped. Native renamed.",
+			"comment": "[23.03.2017 19:08] by ins1de :\n\n\"_IS_PED_RELOADING\" is totally a wrong name...\n\nThis native actually disables the reloading animation and script for the specified ped. Native renamed.\n\nR*",
 			"params": [
 				{
 					"type": "Ped",
@@ -104038,17 +104038,17 @@
 			"build": "323"
 		},
 		"0x3133B907D8B32053": {
-			"name": "_0x3133B907D8B32053",
-			"jhash": "",
+			"name": "GET_WEAPON_DAMAGE",
+			"jhash": "0xE81649C0",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "componentHash"
 				}
 			],
 			"return_type": "float",
@@ -104102,9 +104102,9 @@
 			"build": "323"
 		},
 		"0xB4C8D77C80C0421E": {
-			"name": "_0xB4C8D77C80C0421E",
+			"name": "SET_PED_SHOOT_ORDNANCE_WEAPON",
 			"jhash": "0xEC2E5304",
-			"comment": "This does not take a weapon hash...",
+			"comment": "Returns handle of the projectile.",
 			"params": [
 				{
 					"type": "Ped",
@@ -104115,7 +104115,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Entity",
+			"return_type": "Object",
 			"build": "323"
 		},
 		"0x48164DBB970AC3F0": {
@@ -104162,7 +104162,7 @@
 			"build": "323"
 		},
 		"0x4B7620C47217126C": {
-			"name": "SET_WEAPON_SMOKEGRENADE_ASSIGNED",
+			"name": "IS_FLASH_LIGHT_ON",
 			"jhash": "0x76876154",
 			"comment": "",
 			"params": [
@@ -104244,114 +104244,114 @@
 			"build": "323"
 		},
 		"0x91EF34584710BE99": {
-			"name": "_0x91EF34584710BE99",
+			"name": "_CREATE_AIR_DEFENSE_SPHERE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "573"
 		},
 		"0x9DA58CDBF6BDBC08": {
-			"name": "_0x9DA58CDBF6BDBC08",
+			"name": "_CREATE_AIR_DEFENSE_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1011"
 		},
 		"0x0ABF535877897560": {
-			"name": "_0x0ABF535877897560",
+			"name": "_REMOVE_AIR_DEFENSE_ZONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "zoneId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "573"
 		},
 		"0x1E45B34ADEBEE48E": {
-			"name": "_0x1E45B34ADEBEE48E",
+			"name": "_REMOVE_ALL_AIR_DEFENSE_ZONES",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -104359,109 +104359,109 @@
 			"build": "573"
 		},
 		"0xECDC202B25E5CF48": {
-			"name": "_0xECDC202B25E5CF48",
+			"name": "_SET_PLAYER_AIR_DEFENSE_ZONE_FLAGS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "zoneId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0xDAB963831DBFD3F4": {
-			"name": "_0xDAB963831DBFD3F4",
+			"name": "_IS_AIR_DEFENSE_ZONE_INSIDE_SPHERE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "zoneId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1103"
 		},
 		"0x44F1012B69313374": {
-			"name": "_0x44F1012B69313374",
+			"name": "_FIRE_AIR_DEFENSE_WEAPON",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "sphereId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0xCD79A550999D7D4F": {
-			"name": "_0xCD79A550999D7D4F",
+			"name": "_DOES_AIR_DEFENSE_ZONE_EXIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "zoneId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "678"
 		},
 		"0xB4771B9AAF4E68E4": {
 			"name": "_0xB4771B9AAF4E68E4",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -104470,15 +104470,15 @@
 		"0xEFF296097FF1E509": {
 			"name": "_0xEFF296097FF1E509",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does the same as 0xB4771B9AAF4E68E4 except for all weapons.\n\nSET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
