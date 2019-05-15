@@ -104447,9 +104447,9 @@
 			"build": "678"
 		},
 		"0xB4771B9AAF4E68E4": {
-			"name": "_0xB4771B9AAF4E68E4",
+			"name": "_SET_CAN_PED_SELECT_WEAPON",
 			"jhash": "",
-			"comment": "SET_*",
+			"comment": "For the player ped this will also gray out the weapon in the weapon wheel.",
 			"params": [
 				{
 					"type": "Ped",
@@ -104468,9 +104468,9 @@
 			"build": "1103"
 		},
 		"0xEFF296097FF1E509": {
-			"name": "_0xEFF296097FF1E509",
+			"name": "_SET_CAN_PED_SELECT_ALL_WEAPONS",
 			"jhash": "",
-			"comment": "Does the same as 0xB4771B9AAF4E68E4 except for all weapons.\n\nSET_*",
+			"comment": "Does the same as 0xB4771B9AAF4E68E4 except for all weapons.",
 			"params": [
 				{
 					"type": "Ped",
