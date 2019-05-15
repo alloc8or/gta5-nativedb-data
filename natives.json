@@ -104415,7 +104415,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "sphereId"
+					"name": "zoneId"
 				},
 				{
 					"type": "float",
