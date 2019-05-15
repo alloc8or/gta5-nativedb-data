@@ -14233,8 +14233,8 @@
 		},
 		"0xDC6F8601FAF2E893": {
 			"name": "_0xDC6F8601FAF2E893",
-			"jhash": "",
-			"comment": "SET_ENTITY_*\n\nx360 Hash: 0xA0466A69\n\nOnly called within 1 script for x360. 'fm_mission_controller' and it used on an object. \n\nRan after these 2 natives,\nset_object_targettable(uParam0, 0);\nset_entity_invincible(uParam0, 1);",
+			"jhash": "0xA0466A69",
+			"comment": "SET_*\n\nOnly called within 1 script for x360. 'fm_mission_controller' and it used on an object. \n\nRan after these 2 natives,\nset_object_targettable(uParam0, 0);\nset_entity_invincible(uParam0, 1);",
 			"params": [
 				{
 					"type": "Entity",
@@ -14242,7 +14242,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -36040,7 +36040,7 @@
 		"0x213AEB2B90CBA7AC": {
 			"name": "_COPY_MEMORY",
 			"jhash": "",
-			"comment": "mov\trdx, [rcx+10h]\nmov\teax, [rdx+10h]\nmov\trcx, [rdx]\nmov\trdx, [rdx+8]\nshl\teax, 3\nmovsxd\tr8, eax\nlea\trsp, [rsp-8]\nmov\t[rsp+8+var_8], rbp\nlea\trbp, memmove\nxchg\trbp, [rsp+8+var_8]\nlea\trsp, [rsp+8]\njmp\t[rsp+var_8]",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
@@ -36061,7 +36061,7 @@
 		"0xDC0F817884CDD856": {
 			"name": "ENABLE_DISPATCH_SERVICE",
 			"jhash": "0x0B710A51",
-			"comment": "Directly from R*:\nenum eDispatchType : UINT16\n{\n    DT_PoliceAutomobile = 1,\n    DT_PoliceHelicopter = 2,\n    DT_FireDepartment = 3,\n    DT_SwatAutomobile = 4,\n    DT_AmbulanceDepartment = 5,\n    DT_PoliceRiders = 6,\n    DT_PoliceVehicleRequest = 7,\n    DT_PoliceRoadBlock = 8,\n    DT_PoliceAutomobileWaitPulledOver = 9,\n    DT_PoliceAutomobileWaitCruising = 10,\n    DT_Gangs = 11,\n    DT_SwatHelicopter = 12,\n    DT_PoliceBoat = 13,\n    DT_ArmyVehicle = 14,\n    DT_BikerBackup = 15\n};\n\nBy making toggle false it disables the dispatch.\n\ncurious if this is what they used when you toggled on and off cops in a GTA IV freemode you hosted. Sad they got rid of the option to make a private session without cops.\nAlso on x360 seems with or without neverWanted on, setting these to all false in SP of course doesn't seem to work. I would understand getting stars, but cops are still dispatched and combat you.",
+			"comment": "Directly from R*:\nenum eDispatchType : uint16_t\n{\n\tDT_PoliceAutomobile = 1,\n\tDT_PoliceHelicopter = 2,\n\tDT_FireDepartment = 3,\n\tDT_SwatAutomobile = 4,\n\tDT_AmbulanceDepartment = 5,\n\tDT_PoliceRiders = 6,\n\tDT_PoliceVehicleRequest = 7,\n\tDT_PoliceRoadBlock = 8,\n\tDT_PoliceAutomobileWaitPulledOver = 9,\n\tDT_PoliceAutomobileWaitCruising = 10,\n\tDT_Gangs = 11,\n\tDT_SwatHelicopter = 12,\n\tDT_PoliceBoat = 13,\n\tDT_ArmyVehicle = 14,\n\tDT_BikerBackup = 15\n};\n\nBy making toggle false it disables the dispatch.\n\ncurious if this is what they used when you toggled on and off cops in a GTA IV freemode you hosted. Sad they got rid of the option to make a private session without cops.\nAlso on x360 seems with or without neverWanted on, setting these to all false in SP of course doesn't seem to work. I would understand getting stars, but cops are still dispatched and combat you.",
 			"params": [
 				{
 					"type": "int",
@@ -36790,7 +36790,7 @@
 		"0xD9F692D349249528": {
 			"name": "_0xD9F692D349249528",
 			"jhash": "0xE0C9307E",
-			"comment": "",
+			"comment": "RESET_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -36798,14 +36798,14 @@
 		"0xE532EC1A63231B4F": {
 			"name": "_0xE532EC1A63231B4F",
 			"jhash": "0xA0D8C749",
-			"comment": "",
+			"comment": "SET_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -41439,33 +41439,38 @@
 			"build": "1290"
 		},
 		"0x1B882107C23A9022": {
-			"name": "_0x1B882107C23A9022",
-			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
-			"build": "1290",
-			"unused": true
-		},
-		"0xA19EC0786E326E06": {
-			"name": "_0xA19EC0786E326E06",
+			"name": "_NETWORK_RIVAL_DELIVERY_COMPLETED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "earnedMoney"
+				}
+			],
+			"return_type": "void",
+			"build": "1290",
+			"unused": true
+		},
+		"0xA19EC0786E326E06": {
+			"name": "_NETWORK_SPENT_GANGOPS_START_STRAND",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "type"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -41473,11 +41478,24 @@
 			"build": "1290"
 		},
 		"0x5ECE6FD7B4EC8D6A": {
-			"name": "_0x5ECE6FD7B4EC8D6A",
+			"name": "_NETWORK_SPENT_GANGOPS_TRIP_SKIP",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
 			"build": "1290",
 			"unused": true
 		},
@@ -41639,11 +41657,28 @@
 			"build": "1493"
 		},
 		"0xE8815FE993896AD3": {
-			"name": "_0xE8815FE993896AD3",
+			"name": "_NETWORK_EARN_FROM_HACKER_TRUCK_MISSION",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "1493",
 			"unused": true
 		},
@@ -41768,7 +41803,7 @@
 			"build": "1493"
 		},
 		"0xE284D46FFDB82E36": {
-			"name": "_0xE284D46FFDB82E36",
+			"name": "_NETWORK_SPENT_RDRHATCHET_BONUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -72350,7 +72385,7 @@
 			"build": "323"
 		},
 		"0xC2AFFFDABBDC2C5C": {
-			"name": "_SET_ACHIEVEMENT_PROGRESSION",
+			"name": "_SET_ACHIEVEMENT_PROGRESS",
 			"jhash": "",
 			"comment": "For Steam.\nDoes nothing and always returns false in the retail version of the game.",
 			"params": [
@@ -72360,14 +72395,14 @@
 				},
 				{
 					"type": "int",
-					"name": "progression"
+					"name": "progress"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x1C186837D0619335": {
-			"name": "_GET_ACHIEVEMENT_PROGRESSION",
+			"name": "_GET_ACHIEVEMENT_PROGRESS",
 			"jhash": "",
 			"comment": "For Steam.\nAlways returns 0 in retail version of the game.",
 			"params": [
@@ -76669,13 +76704,13 @@
 			"build": "323"
 		},
 		"0x418DC16FAE452C1C": {
-			"name": "_0x418DC16FAE452C1C",
+			"name": "_SC_GET_HAS_ACHIEVEMENT_BEEN_PASSED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as HAS_ACHIEVEMENT_BEEN_PASSED",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "achievement"
 				}
 			],
 			"return_type": "BOOL",
@@ -104359,7 +104394,7 @@
 			"build": "573"
 		},
 		"0xECDC202B25E5CF48": {
-			"name": "_SET_PLAYER_AIR_DEFENSE_ZONE_FLAGS",
+			"name": "_SET_PLAYER_AIR_DEFENSE_ZONE_FLAG",
 			"jhash": "",
 			"comment": "",
 			"params": [
