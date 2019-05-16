@@ -18533,17 +18533,17 @@
 			"build": "323"
 		},
 		"0x35FB78DC42B7BD21": {
-			"name": "_0x35FB78DC42B7BD21",
-			"jhash": "",
+			"name": "GET_REQUESTINGNIGHTVISION",
+			"jhash": "0xF3A6309E",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2202A3F42C8E5F79": {
-			"name": "_IS_NIGHTVISION_ACTIVE",
+			"name": "GET_USINGNIGHTVISION",
 			"jhash": "0x62619061",
-			"comment": "GET_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -19526,9 +19526,9 @@
 			"build": "323"
 		},
 		"0x44B80ABAB9D80BD3": {
-			"name": "_IS_SEETHROUGH_ACTIVE",
+			"name": "GET_USINGSEETHROUGH",
 			"jhash": "0x1FE547F2",
-			"comment": "GET_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -19542,137 +19542,137 @@
 			"build": "323"
 		},
 		"0xA78DE25577300BA1": {
-			"name": "_0xA78DE25577300BA1",
+			"name": "_SEETHROUGH_SET_FADE_START_DISTANCE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "distance"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0x9D75795B9DC6EBBF": {
-			"name": "_0x9D75795B9DC6EBBF",
+			"name": "_SEETHROUGH_SET_FADE_END_DISTANCE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "distance"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0x43DBAE39626CE83F": {
-			"name": "_0x43DBAE39626CE83F",
+			"name": "_SEETHROUGH_GET_MAX_THICKNESS",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1290"
 		},
 		"0x0C8FAC83902A62DF": {
-			"name": "_0x0C8FAC83902A62DF",
+			"name": "_SEETHROUGH_SET_MAX_THICKNESS",
 			"jhash": "",
-			"comment": "",
+			"comment": "min: 1.0\nmax:10000.0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "thickness"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0xFF5992E1C9E65D05": {
-			"name": "_0xFF5992E1C9E65D05",
+			"name": "_SEETHROUGH_SET_NOISE_AMOUNT_MIN",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0xFEBFBFDFB66039DE": {
-			"name": "_0xFEBFBFDFB66039DE",
+			"name": "_SEETHROUGH_SET_NOISE_AMOUNT_MAX",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0x19E50EB6E33E1D28": {
-			"name": "_0x19E50EB6E33E1D28",
+			"name": "_SEETHROUGH_SET_HI_LIGHT_INTENSITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0x1636D7FC127B10D2": {
-			"name": "_0x1636D7FC127B10D2",
+			"name": "_SEETHROUGH_SET_HI_LIGHT_NOISE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "noise"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0xD7D0B00177485411": {
-			"name": "_0xD7D0B00177485411",
+			"name": "SEETHROUGH_SET_HEATSCALE",
 			"jhash": "0x654F0287",
-			"comment": "",
+			"comment": "min: 0.0\nmax: 0.75",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "heatScale"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x1086127B3A63505E": {
-			"name": "_0x1086127B3A63505E",
+			"name": "_SEETHROUGH_SET_COLOR_NEAR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "blue"
 				}
 			],
 			"return_type": "void",
@@ -34240,32 +34240,32 @@
 			"build": "323"
 		},
 		"0x2B626A0150E4D449": {
-			"name": "_0x2B626A0150E4D449",
+			"name": "GET_REPLAY_STAT_MISSION_TYPE",
 			"jhash": "0x710E5D1E",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xDC9274A7EF6B2867": {
-			"name": "_0xDC9274A7EF6B2867",
+			"name": "GET_REPLAY_STAT_COUNT",
 			"jhash": "0xC7BD1AF0",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x8098C8D6597AAE18": {
-			"name": "_0x8098C8D6597AAE18",
+			"name": "GET_REPLAY_STAT_AT_INDEX",
 			"jhash": "0x22BE2423",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x1B1AB132A16FDA55": {
@@ -37221,25 +37221,25 @@
 			"build": "323"
 		},
 		"0x92790862E36C2ADA": {
-			"name": "_0x92790862E36C2ADA",
+			"name": "_START_BENCHMARK_RECORDING",
 			"jhash": "",
-			"comment": "I can 100% confirm this is some kind of START_* native.\n\nNext character in the name is either C, D or E.\n\nUsed only once in the scripts (benchmark.ysc).",
+			"comment": "Begins with START_*. Next character in the name is either D or E.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xC7DB36C24634F52B": {
-			"name": "_0xC7DB36C24634F52B",
+			"name": "_STOP_BENCHMARK_RECORDING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Begins with STOP_*. Next character in the name is either D or E.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x437138B6A830166A": {
-			"name": "_0x437138B6A830166A",
+			"name": "_RESET_BENCHMARK_RECORDING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Begins with RESET_*. Next character in the name is either D or E.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -37263,7 +37263,7 @@
 		"0x3BBBD13E5041A79E": {
 			"name": "_LANDING_MENU_IS_ACTIVE",
 			"jhash": "",
-			"comment": "L*\n\nReturns true if the current frontend menu is FE_MENU_VERSION_LANDING_MENU",
+			"comment": "Returns true if the current frontend menu is FE_MENU_VERSION_LANDING_MENU",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -37271,29 +37271,29 @@
 		"0xA049A5BE0F04F2F8": {
 			"name": "_IS_COMMAND_LINE_BENCHMARK_VALUE_SET",
 			"jhash": "",
-			"comment": "IS_C*\n\nReturns true if command line option '-benchmark' is set.",
+			"comment": "Returns true if command line option '-benchmark' is set.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x4750FC27570311EC": {
-			"name": "_0x4750FC27570311EC",
+			"name": "_GET_BENCHMARK_ITERATIONS_FROM_COMMAND_LINE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns value of the '-benchmarkIterations' command line option.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x1B2366C3F2A5C8DF": {
-			"name": "_0x1B2366C3F2A5C8DF",
+			"name": "_GET_BENCHMARK_PASS_FROM_COMMAND_LINE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns value of the '-benchmarkPass' command line option.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xE574A662ACAEFBB1": {
-			"name": "_0xE574A662ACAEFBB1",
+			"name": "_RESTART_GAME",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -79333,16 +79333,16 @@
 			"build": "323"
 		},
 		"0x58A651CD201D89AD": {
-			"name": "_0x58A651CD201D89AD",
+			"name": "LEADERBOARDS_GET_CACHE_NUMBER_OF_ROWS",
 			"jhash": "0xCE7CB520",
-			"comment": "LEADERBOARDS_GET_CACHE_???",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x9120E8DBA3D69273": {
@@ -79556,7 +79556,7 @@
 			"build": "323"
 		},
 		"0xC980E62E33DF1D5C": {
-			"name": "_0xC980E62E33DF1D5C",
+			"name": "LEADERBOARDS2_WRITE_DATA_FOR_EVENT_TYPE",
 			"jhash": "0x62C19A3D",
 			"comment": "",
 			"params": [
