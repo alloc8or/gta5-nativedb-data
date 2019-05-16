@@ -26071,10 +26071,10 @@
 		"0xA50ABC31E3CDFAFF": {
 			"name": "SET_TEXT_LEADING",
 			"jhash": "0x98CE21D4",
-			"comment": "from script am_mp_yacht.c int?\nui::set_text_leading(2);",
+			"comment": "",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -89291,8 +89291,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "BOOL",
@@ -89317,11 +89317,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x8A4E6AC373666BC5": {
@@ -89330,8 +89330,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -89343,8 +89343,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -89356,8 +89356,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -89369,12 +89369,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -89419,9 +89419,9 @@
 			"build": "323"
 		},
 		"0x2D537BA194896636": {
-			"name": "_TASK_MOVE_NETWORK",
+			"name": "TASK_MOVE_NETWORK_BY_NAME",
 			"jhash": "0x6F5D215F",
-			"comment": "Example:\nAI::_2D537BA194896636(PLAYER::PLAYER_PED_ID(), \"arm_wrestling_sweep_paired_a_rev3\", 0.0, 1, \"mini@arm_wrestling\", 0);",
+			"comment": "Example:\nTASK::TASK_MOVE_NETWORK_BY_NAME(PLAYER::PLAYER_PED_ID(), \"arm_wrestling_sweep_paired_a_rev3\", 0.0f, true, \"mini@arm_wrestling\", 0);",
 			"params": [
 				{
 					"type": "Ped",
@@ -89452,9 +89452,9 @@
 			"build": "323"
 		},
 		"0xD5B35BEA41919ACB": {
-			"name": "_TASK_MOVE_NETWORK_ADVANCED",
+			"name": "TASK_MOVE_NETWORK_ADVANCED_BY_NAME",
 			"jhash": "0x71A5C5DB",
-			"comment": "Example:\nAI::_D5B35BEA41919ACB(PLAYER::PLAYER_PED_ID(), \"minigame_tattoo_michael_parts\", 324.13, 181.29, 102.6, 0.0, 0.0, 22.32, 2, 0, 0, 0, 0);",
+			"comment": "Example:\nTASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME(PLAYER::PLAYER_PED_ID(), \"minigame_tattoo_michael_parts\", 324.13f, 181.29f, 102.6f, 0.0f, 0.0f, 22.32f, 2, 0, false, 0, 0);",
 			"params": [
 				{
 					"type": "Ped",
@@ -89513,37 +89513,37 @@
 			"build": "323"
 		},
 		"0x3D45B0B355C5E0C9": {
-			"name": "_TASK_MOVE_NETWORK_2",
+			"name": "_TASK_MOVE_NETWORK_SCRIPTED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used only once in the scripts (am_mp_nightclub)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "data"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "const char*",
+					"name": "animDict"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -89551,32 +89551,32 @@
 		},
 		"0x921CE12C489C4C41": {
 			"name": "_0x921CE12C489C4C41",
-			"jhash": "0x902656EB",
+			"jhash": "IS_TASK_MOVE_NETWORK_ACTIVE",
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "PlayerID"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x30ED88D5E0C56A37": {
-			"name": "_0x30ED88D5E0C56A37",
+			"name": "IS_TASK_MOVE_NETWORK_READY_FOR_TRANSITION",
 			"jhash": "0x92FDBAE6",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xD01015C7316AE176": {
-			"name": "_0xD01015C7316AE176",
+			"name": "REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION",
 			"jhash": "0x885724DE",
 			"comment": "",
 			"params": [
@@ -89586,7 +89586,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "name"
 				}
 			],
 			"return_type": "Any",
@@ -89610,9 +89610,9 @@
 			"build": "323"
 		},
 		"0x717E4D1F2048376D": {
-			"name": "_0x717E4D1F2048376D",
+			"name": "GET_TASK_MOVE_NETWORK_STATE",
 			"jhash": "0x96C0277B",
-			"comment": "GET_*\n\nReturns a string stored inside the ped's CTaskMoVEScripted task.\nIf the function fails, returns \"Unknown\".",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -89644,7 +89644,7 @@
 			"build": "1493"
 		},
 		"0xD5BB4025AE449A4E": {
-			"name": "_0xD5BB4025AE449A4E",
+			"name": "SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT",
 			"jhash": "0xA79BE783",
 			"comment": "p0 - PLAYER::PLAYER_PED_ID();\np1 - \"Phase\", \"Wobble\", \"x_axis\",\"y_axis\",\"introphase\",\"speed\".\np2 - From what i can see it goes up to 1f (maybe).\n\n-LcGamingHD\n\nExample: AI::_D5BB4025AE449A4E(PLAYER::PLAYER_PED_ID(), \"Phase\", 0.5);",
 			"params": [
@@ -89747,7 +89747,7 @@
 		"0xA7FFBA498E4AAF67": {
 			"name": "_0xA7FFBA498E4AAF67",
 			"jhash": "0x1EBB6F3D",
-			"comment": "Found in scripts:\n\nif (AI::_A7FFBA498E4AAF67(l_9BC, \"Run\")) {\nif (AI::_A7FFBA498E4AAF67(l_9BC, \"Escape\")) {\n\np0 is probably Ped and this native checks if the ped is doing the AI task in p1. Just a guess though. ",
+			"comment": "Found in scripts:\n\nif (AI::_A7FFBA498E4AAF67(l_9BC, \"Run\")) {\nif (AI::_A7FFBA498E4AAF67(l_9BC, \"Escape\")) {\n\np0 is probably Ped and this native checks if the ped is doing the AI task in p1. Just a guess though.\n\nGET_TASK_MOVE_NETWORK_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -89762,7 +89762,7 @@
 			"build": "323"
 		},
 		"0xB4F47213DF45A64C": {
-			"name": "_0xB4F47213DF45A64C",
+			"name": "GET_TASK_MOVE_NETWORK_EVENT",
 			"jhash": "0x72FA5EF2",
 			"comment": "",
 			"params": [
@@ -89772,7 +89772,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "eventName"
 				}
 			],
 			"return_type": "BOOL",
@@ -89945,17 +89945,17 @@
 			"build": "323"
 		},
 		"0x19D1B791CB3670FE": {
-			"name": "_0x19D1B791CB3670FE",
+			"name": "TASK_AGITATED_ACTION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped2"
 				}
 			],
 			"return_type": "void",
@@ -100241,7 +100241,7 @@
 			"build": "323"
 		},
 		"0xDBA3C090E3D74690": {
-			"name": "_REQUEST_VEHICLE_SCALEFORM_MOVIE",
+			"name": "_REQUEST_VEHICLE_DASHBOARD_SCALEFORM_MOVIE",
 			"jhash": "",
 			"comment": "REQUEST_VEHICLE_*",
 			"params": [
