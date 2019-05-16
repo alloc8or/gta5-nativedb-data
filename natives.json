@@ -19681,7 +19681,7 @@
 		"0xB3C641F3630BF6DA": {
 			"name": "_0xB3C641F3630BF6DA",
 			"jhash": "0xF6B837F0",
-			"comment": "",
+			"comment": "Setter for 0xE59343E9E96529E7\n\nSET_M*",
 			"params": [
 				{
 					"type": "float",
@@ -19694,19 +19694,19 @@
 		"0xE59343E9E96529E7": {
 			"name": "_0xE59343E9E96529E7",
 			"jhash": "0xD906A3A9",
-			"comment": "",
+			"comment": "Getter for 0xB3C641F3630BF6DA\n\nGET_M*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0x6A51F78772175A51": {
 			"name": "_0x6A51F78772175A51",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_F*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -19789,7 +19789,7 @@
 			"build": "323"
 		},
 		"0xDFC252D8A3E15AB7": {
-			"name": "_TOGGLE_PAUSE_RENDER_PHASES",
+			"name": "TOGGLE_PAUSED_RENDERPHASES",
 			"jhash": "0x30ADE541",
 			"comment": "",
 			"params": [
@@ -23669,15 +23669,15 @@
 			"build": "323"
 		},
 		"0xAAE7CE1D63167423": {
-			"name": "_SHOW_CURSOR_THIS_FRAME",
+			"name": "_SET_MOUSE_CURSOR_ACTIVE_THIS_FRAME",
 			"jhash": "",
-			"comment": "Shows the cursor on screen for the frame its called.",
+			"comment": "Shows the cursor on screen for one frame.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x8DB8CFFD58B62552": {
-			"name": "_SET_CURSOR_SPRITE",
+			"name": "_SET_MOUSE_CURSOR_SPRITE",
 			"jhash": "",
 			"comment": "Changes the mouse cursor's sprite. \n1 = Normal\n6 = Left Arrow\n7 = Right Arrow",
 			"params": [
