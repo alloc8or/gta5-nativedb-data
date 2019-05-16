@@ -19578,7 +19578,7 @@
 		"0x0C8FAC83902A62DF": {
 			"name": "_SEETHROUGH_SET_MAX_THICKNESS",
 			"jhash": "",
-			"comment": "min: 1.0\nmax:10000.0",
+			"comment": "min: 1.0\nmax: 10000.0",
 			"params": [
 				{
 					"type": "float",
@@ -20279,7 +20279,7 @@
 		"0x77168D722C58B2FC": {
 			"name": "SET_PARTICLE_FX_NON_LOOPED_ALPHA",
 			"jhash": "0x497EAFF2",
-			"comment": "Usage example for C#:\n\n        Function.Call(Hash.SET_PARTICLE_FX_NON_LOOPED_ALPHA, new InputArgument[] { 0.1f });\n\nNote: the argument alpha ranges from 0.0f-1.0f !",
+			"comment": "Usage example for C#:\n\nFunction.Call(Hash.SET_PARTICLE_FX_NON_LOOPED_ALPHA, new InputArgument[] { 0.1f });\n\nNote: the argument alpha ranges from 0.0f-1.0f !",
 			"params": [
 				{
 					"type": "float",
@@ -20291,12 +20291,12 @@
 		},
 		"0x8CDE909A0370BB3A": {
 			"name": "_0x8CDE909A0370BB3A",
-			"jhash": "0x19EC0001",
-			"comment": "",
+			"jhash": "",
+			"comment": "Used only once in the scripts (taxi_clowncar)\n\nSET_PARTICLE_FX_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -20478,9 +20478,9 @@
 			"build": "323"
 		},
 		"0xC6EB449E33977F0B": {
-			"name": "_START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE",
+			"name": "START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE",
 			"jhash": "",
-			"comment": "",
+			"comment": "0x23BF0F9B",
 			"params": [
 				{
 					"type": "const char*",
@@ -20846,7 +20846,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "Id"
+					"name": "noNetwork"
 				}
 			],
 			"return_type": "void",
@@ -21042,7 +21042,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "Toggle"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -28153,13 +28153,13 @@
 			"build": "323"
 		},
 		"0x1EAC5F91BCBC5073": {
-			"name": "_0x1EAC5F91BCBC5073",
+			"name": "SET_RACE_TRACK_RENDER",
 			"jhash": "0xFB9BABF5",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -28168,19 +28168,19 @@
 		"0x7AA5B4CE533C858B": {
 			"name": "CLEAR_GPS_RACE_TRACK",
 			"jhash": "0x40C59829",
-			"comment": "",
+			"comment": "Does the same as SET_RACE_TRACK_RENDER(false);",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xDB34E8D56FC13B08": {
-			"name": "_0xDB34E8D56FC13B08",
+			"name": "START_GPS_CUSTOM_ROUTE",
 			"jhash": "0x7F93799B",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "hudColor"
 				},
 				{
 					"type": "BOOL",
@@ -28195,41 +28195,41 @@
 			"build": "323"
 		},
 		"0x311438A071DD9B1A": {
-			"name": "_0x311438A071DD9B1A",
+			"name": "ADD_POINT_TO_GPS_CUSTOM_ROUTE",
 			"jhash": "0xEEBDFE55",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x900086F371220B6F": {
-			"name": "_0x900086F371220B6F",
+			"name": "SET_GPS_CUSTOM_ROUTE_RENDER",
 			"jhash": "0xDA0AF00E",
-			"comment": "SET_GPS_???",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -28237,7 +28237,7 @@
 			"build": "323"
 		},
 		"0xE6DE0561D9232A64": {
-			"name": "_0xE6DE0561D9232A64",
+			"name": "CLEAR_GPS_CUSTOM_ROUTE",
 			"jhash": "0xCF2E3E24",
 			"comment": "",
 			"params": [],
@@ -28245,13 +28245,13 @@
 			"build": "323"
 		},
 		"0x3D3D15AF7BCAAF83": {
-			"name": "_0x3D3D15AF7BCAAF83",
+			"name": "START_GPS_MULTI_ROUTE",
 			"jhash": "0xC3DCBEDB",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "hudColor"
 				},
 				{
 					"type": "BOOL",
@@ -28266,7 +28266,7 @@
 			"build": "323"
 		},
 		"0xA905192A6781C41B": {
-			"name": "_0xA905192A6781C41B",
+			"name": "ADD_POINT_TO_GPS_CUSTOM_ROUTE",
 			"jhash": "0xFE485135",
 			"comment": "",
 			"params": [
@@ -28287,22 +28287,22 @@
 			"build": "323"
 		},
 		"0x3DDA37128DD1ACA8": {
-			"name": "_0x3DDA37128DD1ACA8",
+			"name": "SET_GPS_MULTI_ROUTE_RENDER",
 			"jhash": "0xE87CBE4C",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x67EEDEA1B9BAFD94": {
-			"name": "_0x67EEDEA1B9BAFD94",
+			"name": "CLEAR_GPS_MULTI_ROUTE",
 			"jhash": "0x0D9969E4",
-			"comment": "",
+			"comment": "Does the same as SET_GPS_MULTI_ROUTE_RENDER(false);",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -33850,7 +33850,7 @@
 		"0xC8535819C450EBA8": {
 			"name": "DISABLE_HOSPITAL_RESTART",
 			"jhash": "0x09F49C72",
-			"comment": "The game by default has 5 hospital respawn points. Disabling them all will cause the player to respawn at the last position they were.\n\n\nDoesn't work....",
+			"comment": "The game by default has 5 hospital respawn points. Disabling them all will cause the player to respawn at the last position they were.",
 			"params": [
 				{
 					"type": "int",
@@ -33911,9 +33911,9 @@
 			"build": "323"
 		},
 		"0x706B5EDCAA7FA663": {
-			"name": "_SET_CUSTOM_RESPAWN_POSITION",
+			"name": "_SET_RESTART_CUSTOM_POSITION",
 			"jhash": "",
-			"comment": "Specifies a custom respawn position to be used in conjunction with _SET_NEXT_RESPAWN_TO_CUSTOM",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -33936,21 +33936,21 @@
 			"build": "323"
 		},
 		"0xA2716D40842EAF79": {
-			"name": "_SET_NEXT_RESPAWN_TO_CUSTOM",
+			"name": "_CLEAR_RESTART_CUSTOM_POSITION",
 			"jhash": "",
-			"comment": "Sets the next spawn location to the position supplied to _SET_CUSTOM_RESPAWN_POSITION. ",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x2C2B3493FBF51C71": {
-			"name": "_DISABLE_AUTOMATIC_RESPAWN",
+			"name": "PAUSE_DEATH_ARREST_RESTART",
 			"jhash": "0x296574AE",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "disableRespawn"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -79126,20 +79126,20 @@
 		},
 		"0xF1AE5DCDBFCA2721": {
 			"name": "_0xF1AE5DCDBFCA2721",
-			"jhash": "",
-			"comment": "LEADERBOARDS2_READ_BY_???",
+			"jhash": "_LEADERBOARDS2_READ_BY_PLATFORM",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "gamerHandleCsv"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "platformName"
 				}
 			],
 			"return_type": "BOOL",
@@ -90711,9 +90711,9 @@
 			"build": "323"
 		},
 		"0xE33FFA906CE74880": {
-			"name": "_0xE33FFA906CE74880",
-			"jhash": "",
-			"comment": "IS_*",
+			"name": "IS_TURRET_SEAT",
+			"jhash": "0x7C43D32A",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98721,27 +98721,27 @@
 		"0x36492C2F0D134C56": {
 			"name": "_0x36492C2F0D134C56",
 			"jhash": "0xA4A75FCF",
-			"comment": "Returns a float value related to slipstream.",
+			"comment": "Returns a float value related to slipstream.\n\nGET_VEHICLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0x48C633E94A8142A7": {
 			"name": "_0x48C633E94A8142A7",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_VEHICLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "877"
 		},
 		"0x06582AFF74894C75": {
