@@ -28266,7 +28266,7 @@
 			"build": "323"
 		},
 		"0xA905192A6781C41B": {
-			"name": "ADD_POINT_TO_GPS_CUSTOM_ROUTE",
+			"name": "ADD_POINT_TO_GPS_MULTI_ROUTE",
 			"jhash": "0xFE485135",
 			"comment": "",
 			"params": [
