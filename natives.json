@@ -21888,7 +21888,7 @@
 		"0xA44FF770DFBC5DAE": {
 			"name": "_0xA44FF770DFBC5DAE",
 			"jhash": "",
-			"comment": "",
+			"comment": "REGISTER_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -25489,9 +25489,9 @@
 			"build": "323"
 		},
 		"0x402F9ED62087E898": {
-			"name": "_0x402F9ED62087E898",
+			"name": "DISPLAY_HUD_WHEN_PAUSED_THIS_FRAME",
 			"jhash": "0xC47AB1B0",
-			"comment": "DISPLAY_*",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -27477,7 +27477,7 @@
 			"build": "323"
 		},
 		"0x25615540D894B814": {
-			"name": "_0x25615540D894B814",
+			"name": "SET_RADIUS_BLIP_EDGE",
 			"jhash": "0x40E25DB8",
 			"comment": "",
 			"params": [
@@ -89578,7 +89578,7 @@
 		"0xD01015C7316AE176": {
 			"name": "REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION",
 			"jhash": "0x885724DE",
-			"comment": "",
+			"comment": "It does not actually return anything. So the result will always be 0 (FALSE).",
 			"params": [
 				{
 					"type": "Ped",
@@ -89589,7 +89589,7 @@
 					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xAB13A5565480B6D9": {
@@ -100417,7 +100417,7 @@
 		"0xD4C4642CB7F50B5D": {
 			"name": "_0xD4C4642CB7F50B5D",
 			"jhash": "",
-			"comment": "Only used like this:\n\nif (VEHICLE::_D4C4642CB7F50B5D(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(v_3))) {                                                        sub_157e9c(g_40001._f1868, 0);\n}",
+			"comment": "Only used like this:\n\nif (VEHICLE::_D4C4642CB7F50B5D(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(v_3))) {\n\tsub_157e9c(g_40001._f1868, 0);\n}",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100445,7 +100445,7 @@
 			"build": "323"
 		},
 		"0x99C82F8A139F3E4E": {
-			"name": "_SET_VEHICLE_HUD_SPECIAL_ABILITY_BAR_ACTIVE",
+			"name": "SET_VEHICLE_KERS_ALLOWED",
 			"jhash": "0x71CDD52F",
 			"comment": "",
 			"params": [
@@ -100455,15 +100455,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "active"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x50634E348C8D44EF": {
-			"name": "_GET_VEHICLE_HAS_SPECIAL_ABILITY",
-			"jhash": "",
+			"name": "GET_VEHICLE_HAS_KERS",
+			"jhash": "0x0761E635",
 			"comment": "",
 			"params": [
 				{
