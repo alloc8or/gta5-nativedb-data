@@ -11023,9 +11023,9 @@
 			"build": "323"
 		},
 		"0xFEDDF04D62B8D790": {
-			"name": "_GET_ANIM_DURATION",
-			"jhash": "",
-			"comment": "Animations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"name": "GET_ANIM_DURATION",
+			"jhash": "0x8B5E3E3D",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -11123,8 +11123,8 @@
 		},
 		"0x846BF6291198A71E": {
 			"name": "_GET_ENTITY_PHYSICS_HEADING",
-			"jhash": "",
-			"comment": "Gets the heading of the entity physics in degrees, which tends to be more accurate than just \"GET_ENTITY_HEADING\". This can be clearly seen while, for example, ragdolling a ped/player.\n\nNOTE: The name and description of this native are based on independent research. If you find this native to be more suitable under a different name and/or described differently, please feel free to do so.\n",
+			"jhash": "0x9320E642",
+			"comment": "Gets the heading of the entity physics in degrees, which tends to be more accurate than just \"GET_ENTITY_HEADING\". This can be clearly seen while, for example, ragdolling a ped/player.\n\nNOTE: The name and description of this native are based on independent research. If you find this native to be more suitable under a different name and/or described differently, please feel free to do so.\n\nGET_ENTITY_HEADING_*",
 			"params": [
 				{
 					"type": "Entity",
@@ -75143,54 +75143,74 @@
 		"0x836B62713E0534CA": {
 			"name": "_0x836B62713E0534CA",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns true if bit 0 in GtaThread+0x154 is set.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
 		"0x760910B49D2B98EA": {
 			"name": "_0x760910B49D2B98EA",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets bit 1 in GtaThread+0x154",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "323",
 			"unused": true
 		},
 		"0x75B18E49607874C7": {
-			"name": "_0x75B18E49607874C7",
+			"name": "_BGR_INSERT_CONTEXT_HASH",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "Hashed version of 0x9D5A25BADB742ACD.",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "contextHash"
+				}
+			],
+			"return_type": "void",
 			"build": "323",
 			"unused": true
 		},
 		"0x107E5CC7CA942BC1": {
-			"name": "_0x107E5CC7CA942BC1",
+			"name": "_BGR_DELETE_CONTEXT_HASH",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "Hashed version of 0xDC2BACD920D0A0DD.",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "contextHash"
+				}
+			],
+			"return_type": "void",
 			"build": "323",
 			"unused": true
 		},
 		"0x9D5A25BADB742ACD": {
-			"name": "_0x9D5A25BADB742ACD",
+			"name": "_BGR_INSERT_CONTEXT",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "Inserts the given context into the background scripts context map.",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "contextName"
+				}
+			],
+			"return_type": "void",
 			"build": "323",
 			"unused": true
 		},
 		"0xDC2BACD920D0A0DD": {
-			"name": "_0xDC2BACD920D0A0DD",
+			"name": "_BGR_DELETE_CONTEXT",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "Deletes the given context from the background scripts context map.",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "contextName"
+				}
+			],
+			"return_type": "void",
 			"build": "323",
 			"unused": true
 		},
@@ -75198,8 +75218,17 @@
 			"name": "_0x0F6F1EBBC4E1D5E6",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "scriptIndex"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -75207,8 +75236,17 @@
 			"name": "_0x22E21FBCFC88C149",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "scriptIndex"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				}
+			],
+			"return_type": "int",
 			"build": "323",
 			"unused": true
 		},
@@ -75216,8 +75254,13 @@
 			"name": "_0x829CD22E043A2577",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
 			"build": "323",
 			"unused": true
 		},
