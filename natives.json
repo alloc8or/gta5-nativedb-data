@@ -36108,11 +36108,11 @@
 		"0x3F892CAF67444AE7": {
 			"name": "CREATE_INCIDENT",
 			"jhash": "0xFC5FF7B3",
-			"comment": "p0 could be type\n\n=====================================================\nenum IncidentTypes{\n    FireDepartment = 3,\n    Paramedics = 5,\n    Police = 7,\n    PedsInCavalcades = 11, \n    Merryweather = 14\n};\n\nAs for the 'police' incident, it will call police cars to you, but unlike PedsInCavalcades & Merryweather they won't start shooting at you unless you shoot first or shoot at them. The top 2 however seem to cancel theirselves if there is noone dead around you or a fire. I only figured them out as I found out the 3rd param is definately the amountOfPeople and they called incident 3 in scripts with 4 people (which the firetruck has) and incident 5 with 2 people (which the ambulence has). The 4 param I cant say is radius, but for the pedsInCavalcades and Merryweather R* uses 0.0f and for the top 3 (Emergency Services) they use 3.0f. \n\nSide Note: It seems calling the pedsInCavalcades or Merryweather then removing it seems to break you from calling the EmergencyEvents and I also believe pedsInCavalcades. (The V cavalcades of course not IV).\n\nSide Note 2: I say it breaks as if you call this proper,\nif(CREATE_INCIDENT) etc it will return false if you do as I said above.\n=====================================================",
+			"comment": "As for the 'police' incident, it will call police cars to you, but unlike PedsInCavalcades & Merryweather they won't start shooting at you unless you shoot first or shoot at them. The top 2 however seem to cancel theirselves if there is noone dead around you or a fire. I only figured them out as I found out the 3rd param is definately the amountOfPeople and they called incident 3 in scripts with 4 people (which the firetruck has) and incident 5 with 2 people (which the ambulence has). The 4 param I cant say is radius, but for the pedsInCavalcades and Merryweather R* uses 0.0f and for the top 3 (Emergency Services) they use 3.0f. \n\nSide Note: It seems calling the pedsInCavalcades or Merryweather then removing it seems to break you from calling the EmergencyEvents and I also believe pedsInCavalcades. (The V cavalcades of course not IV).\n\nSide Note 2: I say it breaks as if you call this proper,\nif(CREATE_INCIDENT) etc it will return false if you do as I said above.\n=====================================================",
 			"params": [
 				{
 					"type": "int",
-					"name": "incidentType"
+					"name": "dispatchService"
 				},
 				{
 					"type": "float",
@@ -36128,7 +36128,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "numUnits"
 				},
 				{
 					"type": "float",
@@ -36153,11 +36153,11 @@
 		"0x05983472F0494E60": {
 			"name": "CREATE_INCIDENT_WITH_ENTITY",
 			"jhash": "0xBBC35B03",
-			"comment": "p0 could be type (valueused in scripts: 14, 7, 5, 3, 11)\np1 is a return from get_player_ped() in am_gang_call.c, but player_ped_id() in other (non am) scripts.\np3 is usually 0f or 3f\n\n=====================================================\nenum IncidentTypes{\n    FireDepartment = 3,\n    Paramedics = 5,\n    Police = 7,\n    PedsInCavalcades = 11, \n    Merryweather = 14\n};\n\nAs for the 'police' incident, it will call police cars to you, but unlike PedsInCavalcades & Merryweather they won't start shooting at you unless you shoot first or shoot at them. The top 2 however seem to cancel theirselves if there is noone dead around you or a fire. I only figured them out as I found out the 3rd param is definately the amountOfPeople and they called incident 3 in scripts with 4 people (which the firetruck has) and incident 5 with 2 people (which the ambulence has). The 4 param I cant say is radius, but for the pedsInCavalcades and Merryweather R* uses 0.0f and for the top 3 (Emergency Services) they use 3.0f. \n\nSide Note: It seems calling the pedsInCavalcades or Merryweather then removing it seems to break you from calling the EmergencyEvents and I also believe pedsInCavalcades. (The V cavalcades of course not IV).\n\nSide Note 2: I say it breaks as if you call this proper,\nif(CREATE_INCIDENT) etc it will return false if you do as I said above.\n=====================================================",
+			"comment": "As for the 'police' incident, it will call police cars to you, but unlike PedsInCavalcades & Merryweather they won't start shooting at you unless you shoot first or shoot at them. The top 2 however seem to cancel theirselves if there is noone dead around you or a fire. I only figured them out as I found out the 3rd param is definately the amountOfPeople and they called incident 3 in scripts with 4 people (which the firetruck has) and incident 5 with 2 people (which the ambulence has). The 4 param I cant say is radius, but for the pedsInCavalcades and Merryweather R* uses 0.0f and for the top 3 (Emergency Services) they use 3.0f. \n\nSide Note: It seems calling the pedsInCavalcades or Merryweather then removing it seems to break you from calling the EmergencyEvents and I also believe pedsInCavalcades. (The V cavalcades of course not IV).\n\nSide Note 2: I say it breaks as if you call this proper,\nif(CREATE_INCIDENT) etc it will return false if you do as I said above.\n=====================================================",
 			"params": [
 				{
 					"type": "int",
-					"name": "incidentType"
+					"name": "dispatchService"
 				},
 				{
 					"type": "Ped",
@@ -36165,7 +36165,7 @@
 				},
 				{
 					"type": "int",
-					"name": "amountOfPeople"
+					"name": "numUnits"
 				},
 				{
 					"type": "float",
@@ -36214,34 +36214,34 @@
 			"build": "323"
 		},
 		"0xB08B85D860E7BA3C": {
-			"name": "_0xB08B85D860E7BA3C",
+			"name": "SET_INCIDENT_REQUESTED_UNITS",
 			"jhash": "0x0242D88E",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "incidentId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "dispatchService"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "numUnits"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xD261BA3E7E998072": {
-			"name": "_0xD261BA3E7E998072",
+			"name": "_SET_INCIDENT_UNK",
 			"jhash": "0x1F38102E",
-			"comment": "",
+			"comment": "SET_INCIDENT_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "incidentId"
 				},
 				{
 					"type": "float",
