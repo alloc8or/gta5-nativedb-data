@@ -19783,9 +19783,9 @@
 		"0x7B226C785A52A0A9": {
 			"name": "_0x7B226C785A52A0A9",
 			"jhash": "0x926B8734",
-			"comment": "",
+			"comment": "IS_SC*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xDFC252D8A3E15AB7": {
@@ -19802,7 +19802,7 @@
 			"build": "323"
 		},
 		"0xEB3DAC2C86001E5E": {
-			"name": "_GET_RENDER_PHASES_ARE_ACTIVE",
+			"name": "_GET_RENDERPHASES_ARE_ACTIVE",
 			"jhash": "0xD4F5D07D",
 			"comment": "",
 			"params": [],
@@ -36372,22 +36372,22 @@
 			"build": "323"
 		},
 		"0x1312F4B242609CE3": {
-			"name": "_0x1312F4B242609CE3",
+			"name": "_IS_POP_MULTIPLIER_AREA_UNK",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1290"
 		},
 		"0x32C7A7E8C43A1F80": {
-			"name": "_0x32C7A7E8C43A1F80",
-			"jhash": "",
-			"comment": "ADD_*",
+			"name": "ADD_POP_MULTIPLIER_SPHERE",
+			"jhash": "0xCE4A3D20",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -36426,26 +36426,26 @@
 			"build": "323"
 		},
 		"0x171BAFB3C60389F4": {
-			"name": "_0x171BAFB3C60389F4",
-			"jhash": "",
+			"name": "DOES_POP_MULTIPLIER_SPHERE_EXIST",
+			"jhash": "0xD2B7A5A0",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "id",
 			"build": "791"
 		},
 		"0xE6869BECDD8F2403": {
-			"name": "_0xE6869BECDD8F2403",
-			"jhash": "",
+			"name": "REMOVE_POP_MULTIPLIER_SPHERE",
+			"jhash": "0x92E7E4EB",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
 					"type": "BOOL",
