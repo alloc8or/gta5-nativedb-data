@@ -36422,7 +36422,7 @@
 					"name": "p7"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x171BAFB3C60389F4": {
@@ -36435,7 +36435,7 @@
 					"name": "id"
 				}
 			],
-			"return_type": "id",
+			"return_type": "BOOL",
 			"build": "791"
 		},
 		"0xE6869BECDD8F2403": {
