@@ -3514,8 +3514,8 @@
 			"comment": "2 calls found in the b617d scripts:\n\nAUDIO::_F1F8157B8C3F171C(l_A42, \"Franklin_Bike_Rev\", \"BIG_SCORE_3A_SOUNDS\");\nAUDIO::_F1F8157B8C3F171C(l_166, \"Trevor_Revs_Off\", \"PALETO_SCORE_SETUP_SOUNDS\");",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "const char*",
@@ -8170,7 +8170,7 @@
 			"build": "323"
 		},
 		"0xF4F2C0D4EE209E20": {
-			"name": "_0xF4F2C0D4EE209E20",
+			"name": "INVALIDATE_IDLE_CAM",
 			"jhash": "0xD75CDD75",
 			"comment": "",
 			"params": [],
@@ -19963,9 +19963,9 @@
 			"build": "323"
 		},
 		"0xF56B8137DF10135D": {
-			"name": "_START_PARTICLE_FX_NON_LOOPED_AT_COORD_2",
+			"name": "START_NETWORKED_PARTICLE_FX_NON_LOOPED_AT_COORD",
 			"jhash": "0x633F8C48",
-			"comment": "network fx",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -20081,9 +20081,9 @@
 			"build": "323"
 		},
 		"0xA41B6A43642AC2CF": {
-			"name": "_START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE_2",
+			"name": "START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_PED_BONE",
 			"jhash": "0x161780C1",
-			"comment": "network fx",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -20199,9 +20199,9 @@
 			"build": "323"
 		},
 		"0xC95EB1DB6E92113D": {
-			"name": "_START_PARTICLE_FX_NON_LOOPED_ON_ENTITY_2",
-			"jhash": "",
-			"comment": "network fx",
+			"name": "START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY",
+			"jhash": "0x469A2B4A",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -20479,8 +20479,8 @@
 		},
 		"0xC6EB449E33977F0B": {
 			"name": "START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE",
-			"jhash": "",
-			"comment": "0x23BF0F9B",
+			"jhash": "0x23BF0F9B",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -20539,9 +20539,9 @@
 			"build": "323"
 		},
 		"0x6F60E89A7B64EE1D": {
-			"name": "_START_PARTICLE_FX_LOOPED_ON_ENTITY_2",
+			"name": "START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY",
 			"jhash": "0x110752B2",
-			"comment": "network fx",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -20612,9 +20612,9 @@
 			"build": "323"
 		},
 		"0xDDE23F30CC5A0F03": {
-			"name": "_START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE_2",
-			"jhash": "",
-			"comment": "network fx",
+			"name": "START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE",
+			"jhash": "0xF478EFCF",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -29864,9 +29864,9 @@
 			"build": "323"
 		},
 		"0x1121BFA1A1A522A8": {
-			"name": "_0x1121BFA1A1A522A8",
+			"name": "FORCE_SONAR_BLIPS_THIS_FRAME",
 			"jhash": "0x3F4AFB13",
-			"comment": "",
+			"comment": "Doesn't actually return anything.",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -29976,7 +29976,7 @@
 			"build": "323"
 		},
 		"0xBA751764F0821256": {
-			"name": "_0xBA751764F0821256",
+			"name": "SUPPRESS_FRONTEND_RENDERING_THIS_FRAME",
 			"jhash": "0x7F349900",
 			"comment": "",
 			"params": [],
@@ -29984,7 +29984,7 @@
 			"build": "323"
 		},
 		"0xCC3FDDED67BCFC63": {
-			"name": "_0xCC3FDDED67BCFC63",
+			"name": "_ALLOW_PAUSE_MENU_WHEN_DEAD_THIS_FRAME",
 			"jhash": "0x630CD8EE",
 			"comment": "",
 			"params": [],
@@ -30015,7 +30015,7 @@
 		"0x2F057596F2BD0061": {
 			"name": "_0x2F057596F2BD0061",
 			"jhash": "0xC85C4487",
-			"comment": "Appears to return whether the player is using the pause menu store. Can't be sure though.\n\nIS_*",
+			"comment": "Returns something related to the store.\n\nIS_S*\n\nIS_STORE_EXIT_PURCHASE_CAPABILITY_ACTIVATED ?",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -30231,11 +30231,11 @@
 			"build": "323"
 		},
 		"0x3BAB9A4E4F2FF5C7": {
-			"name": "_0x3BAB9A4E4F2FF5C7",
+			"name": "IS_FRONTEND_READY_FOR_CONTROL",
 			"jhash": "0xD3BF3ABD",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xEC9264727EEC0F28": {
@@ -69099,7 +69099,7 @@
 		"0x7350823473013C02": {
 			"name": "_0x7350823473013C02",
 			"jhash": "0xF9FB4B71",
-			"comment": "",
+			"comment": "HAS_*",
 			"params": [
 				{
 					"type": "Ped",
