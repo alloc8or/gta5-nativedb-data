@@ -2603,11 +2603,11 @@
 		"0x1098355A16064BB3": {
 			"name": "SET_MOBILE_RADIO_ENABLED_DURING_GAMEPLAY",
 			"jhash": "0x990085F0",
-			"comment": "Enables Radio on phone.",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "Toggle"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -31194,9 +31194,9 @@
 			"build": "323"
 		},
 		"0xA6575914D2A0B450": {
-			"name": "_GET_ROOM_KEY_FROM_GAMEPLAY_CAM",
+			"name": "GET_ROOM_KEY_FOR_GAME_VIEWPORT",
 			"jhash": "0x4FF3D3F5",
-			"comment": "Returns the room hash key from the current gameplay cam.",
+			"comment": "",
 			"params": [],
 			"return_type": "Hash",
 			"build": "323"
