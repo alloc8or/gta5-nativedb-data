@@ -3556,17 +3556,17 @@
 			"build": "323"
 		},
 		"0x59E7B488451F4D3A": {
-			"name": "_0x59E7B488451F4D3A",
+			"name": "SET_VEHICLE_AUDIO_ENGINE_DAMAGE_FACTOR",
 			"jhash": "0x23BE6432",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "damageFactor"
 				}
 			],
 			"return_type": "void",
@@ -3575,11 +3575,11 @@
 		"0x01BB4D577D38BD9E": {
 			"name": "_0x01BB4D577D38BD9E",
 			"jhash": "0xE81FAC68",
-			"comment": "",
+			"comment": "SET_VEHICLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
@@ -3592,32 +3592,32 @@
 		"0x1C073274E065C6D2": {
 			"name": "_0x1C073274E065C6D2",
 			"jhash": "0x9365E042",
-			"comment": "",
+			"comment": "ENABLE_VEHICLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x2BE4BC731D039D5A": {
-			"name": "_0x2BE4BC731D039D5A",
+			"name": "ENABLE_VEHICLE_EXHAUST_POPS",
 			"jhash": "0x2A60A90E",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -18723,7 +18723,7 @@
 			"build": "323"
 		},
 		"0x3669F1B198DCAA4F": {
-			"name": "_0x3669F1B198DCAA4F",
+			"name": "DISABLE_OCCLUSION_THIS_FRAME",
 			"jhash": "0x0DCC0B8B",
 			"comment": "",
 			"params": [],
@@ -22184,7 +22184,7 @@
 		"0x2C328AF17210F009": {
 			"name": "_SET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
 			"jhash": "",
-			"comment": "",
+			"comment": "ENABLE_*",
 			"params": [
 				{
 					"type": "float",
@@ -31421,7 +31421,7 @@
 			"build": "1604"
 		},
 		"0x55E86AF2712B36A1": {
-			"name": "_ENABLE_INTERIOR_PROP",
+			"name": "ACTIVATE_INTERIOR_ENTITY_SET",
 			"jhash": "0xC80A5DDF",
 			"comment": "More info: http://gtaforums.com/topic/836367-adding-props-to-interiors/",
 			"params": [
@@ -31431,14 +31431,14 @@
 				},
 				{
 					"type": "const char*",
-					"name": "propName"
+					"name": "entitySetName"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x420BD37289EEE162": {
-			"name": "_DISABLE_INTERIOR_PROP",
+			"name": "DEACTIVATE_INTERIOR_ENTITY_SET",
 			"jhash": "0xDBA768A1",
 			"comment": "",
 			"params": [
@@ -31448,14 +31448,14 @@
 				},
 				{
 					"type": "const char*",
-					"name": "propName"
+					"name": "entitySetName"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x35F7DD45E8C0A16D": {
-			"name": "_IS_INTERIOR_PROP_ENABLED",
+			"name": "IS_INTERIOR_ENTITY_SET_ACTIVE",
 			"jhash": "0x39A3CC6F",
 			"comment": "",
 			"params": [
@@ -31465,7 +31465,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "propName"
+					"name": "entitySetName"
 				}
 			],
 			"return_type": "BOOL",
@@ -31508,7 +31508,7 @@
 		"0xA97F257D0151A6AB": {
 			"name": "_HIDE_MAP_OBJECT_THIS_FRAME",
 			"jhash": "0x1F375B4C",
-			"comment": "This is the native that is used to hide the exterior of GTA Online apartment buildings when you are inside an apartment.\n\nMore info: http://gtaforums.com/topic/836301-hiding-gta-online-apartment-exteriors/",
+			"comment": "This is the native that is used to hide the exterior of GTA Online apartment buildings when you are inside an apartment.\n\nMore info: http://gtaforums.com/topic/836301-hiding-gta-online-apartment-exteriors/\n\nENABLE_*",
 			"params": [
 				{
 					"type": "Hash",
@@ -31594,7 +31594,7 @@
 		"0x9E6542F0CE8E70A3": {
 			"name": "_0x9E6542F0CE8E70A3",
 			"jhash": "0x5EF9C5C2",
-			"comment": "Only found 4 times in Rockstar scripts.\nClearly has something to do with Cutscenes.",
+			"comment": "DISABLE_*",
 			"params": [
 				{
 					"type": "BOOL",
