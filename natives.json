@@ -22294,7 +22294,7 @@
 			"build": "1290"
 		},
 		"0x0C1C5D756FB5F337": {
-			"name": "HAS_SCALFORM_MOVIE_FILENAME_LOADED",
+			"name": "HAS_SCALEFORM_MOVIE_FILENAME_LOADED",
 			"jhash": "0x494A9E50",
 			"comment": "Only values used in the scripts are:\n\n\"heist_mp\"\n\"heistmap_mp\"\n\"instructional_buttons\"\n\"heist_pre\"",
 			"params": [
