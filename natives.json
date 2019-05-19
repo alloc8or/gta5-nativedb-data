@@ -31202,7 +31202,7 @@
 			"build": "323"
 		},
 		"0x23B59D8912F94246": {
-			"name": "_0x23B59D8912F94246",
+			"name": "CLEAR_ROOM_FOR_GAME_VIEWPORT",
 			"jhash": "0x617DC75D",
 			"comment": "",
 			"params": [],
@@ -31297,7 +31297,7 @@
 		"0x4C2330E61D3DEB56": {
 			"name": "_0x4C2330E61D3DEB56",
 			"jhash": "",
-			"comment": "Only used once in the entire game scripts, probably useless. Always returns 0.",
+			"comment": "Only used once in the entire game scripts.\nDoes not actually return anything.",
 			"params": [
 				{
 					"type": "Interior",
@@ -31333,9 +31333,9 @@
 			"build": "323"
 		},
 		"0xF0F77ADB9F67E79D": {
-			"name": "_UNK_GET_INTERIOR_AT_COORDS",
-			"jhash": "",
-			"comment": "Returns the interior ID at the given coords, but only if the unknown variable is set to 0, otherwise it will return 0.",
+			"name": "GET_INTERIOR_AT_COORDS_WITH_TYPEHASH",
+			"jhash": "0x11718507",
+			"comment": "Hashed version of GET_INTERIOR_AT_COORDS_WITH_TYPE",
 			"params": [
 				{
 					"type": "float",
@@ -31350,8 +31350,8 @@
 					"name": "z"
 				},
 				{
-					"type": "int",
-					"name": "unk"
+					"type": "Hash",
+					"name": "typeHash"
 				}
 			],
 			"return_type": "Interior",
@@ -33737,7 +33737,7 @@
 		"0x7EC6F9A478A6A512": {
 			"name": "_0x7EC6F9A478A6A512",
 			"jhash": "",
-			"comment": "CLEAR_*",
+			"comment": "Possibly used to clear scenario points.\n\nCLEAR_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
