@@ -4551,19 +4551,19 @@
 			"build": "323"
 		},
 		"0x544810ED9DB6BBE6": {
-			"name": "_0x544810ED9DB6BBE6",
+			"name": "_HAS_MULTIPLAYER_AUDIO_DATA_LOADED",
 			"jhash": "",
-			"comment": "",
+			"comment": "HAS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5B50ABB1FE3746F4": {
-			"name": "_0x5B50ABB1FE3746F4",
+			"name": "_HAS_MULTIPLAYER_AUDIO_DATA_UNLOADED",
 			"jhash": "",
-			"comment": "",
+			"comment": "HAS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xD53F3A29BCE2580E": {
@@ -10656,7 +10656,7 @@
 		"0x241FCA5B1AA14F75": {
 			"name": "_0x241FCA5B1AA14F75",
 			"jhash": "0x0AF83036",
-			"comment": "Only used once in scripts, in maintransition.\n\nmaintransition.c4, line ~82432:\nif (PED::_7350823473013C02(PLAYER::PLAYER_PED_ID()) && (DECORATOR::_241FCA5B1AA14F75() == 0)) {\n    g_2542A5 = a_1; // 'g_2542A5' used in 'building_controller.ysc' for IPL stuff?\n    return 1;\n}\n\nLikely used solely for the players ped. The function it's in seems to only be used for initialization/quitting. Called among natives to discard scaleforms, disable frontend, fading in/out, etc. Neighboring strings to some calls include \"HUD_JOINING\", \"HUD_QUITTING\".",
+			"comment": "Only used once in scripts, in maintransition.\n\nmaintransition.c4, line ~82432:\nif (PED::_7350823473013C02(PLAYER::PLAYER_PED_ID()) && (DECORATOR::_241FCA5B1AA14F75() == 0)) {\n    g_2542A5 = a_1; // 'g_2542A5' used in 'building_controller.ysc' for IPL stuff?\n    return 1;\n}\n\nLikely used solely for the players ped. The function it's in seems to only be used for initialization/quitting. Called among natives to discard scaleforms, disable frontend, fading in/out, etc. Neighboring strings to some calls include \"HUD_JOINING\", \"HUD_QUITTING\".\n\nMost likely ARE_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -10715,13 +10715,13 @@
 			"build": "323"
 		},
 		"0x46E2B844905BC5F0": {
-			"name": "_NULLIFY",
+			"name": "HAS_CLOUD_REQUESTS_FINISHED",
 			"jhash": "0x6087C10C",
-			"comment": "Sets the value of the specified variable to 0.\nAlways returns true.\n\nbool _NULLIFY(void* variable, int unused)\n{\n    *variable = NULL;\n    return true;\n}",
+			"comment": "Sets the value of the specified variable to 0.\nAlways returns true.",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "variable"
+					"type": "BOOL*",
+					"name": "p0"
 				},
 				{
 					"type": "Any",
@@ -28904,27 +28904,27 @@
 			"build": "323"
 		},
 		"0x523A590C1A3CC0D3": {
-			"name": "_DISPLAY_JOB_REPORT",
+			"name": "OPEN_REPORTUGC_MENU",
 			"jhash": "0x10DE5150",
-			"comment": "Shows a hud element for reporting jobs",
+			"comment": "Shows a menu for reporting UGC content.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xEE4C0E6DBC6F2C6F": {
-			"name": "_0xEE4C0E6DBC6F2C6F",
+			"name": "FORCE_CLOSE_REPORTUGC_MENU",
 			"jhash": "0x67649EE0",
-			"comment": "Hides the hud element displayed by _0x523A590C1A3CC0D3",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x9135584D09A3437E": {
-			"name": "_0x9135584D09A3437E",
+			"name": "IS_REPORTUGC_MENU_OPEN",
 			"jhash": "0x9D2C94FA",
-			"comment": "return bool according to scripts",
+			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2432784ACA090DA4": {
@@ -30565,7 +30565,7 @@
 			"build": "323"
 		},
 		"0x805D7CBB36FD6C4C": {
-			"name": "_SHOW_SOCIAL_CLUB_LEGAL_SCREEN",
+			"name": "OPEN_ONLINE_POLICIES_MENU",
 			"jhash": "0x19FCBBB2",
 			"comment": "",
 			"params": [],
@@ -30581,9 +30581,9 @@
 			"build": "323"
 		},
 		"0x6F72CD94F7B5B68C": {
-			"name": "_IS_SOCIAL_CLUB_MENU_INITIALIZED",
+			"name": "IS_ONLINE_POLICIES_MENU_ACTIVE",
 			"jhash": "0x9D4934F4",
-			"comment": "",
+			"comment": "Returns the same as IS_SOCIAL_CLUB_ACTIVE",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -30734,7 +30734,7 @@
 		"0xCEF214315D276FD1": {
 			"name": "_SET_IS_IN_TOURNAMENT",
 			"jhash": "0xFF06772A",
-			"comment": "",
+			"comment": "F*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -37104,7 +37104,7 @@
 		"0x6FDDF453C0C756EC": {
 			"name": "_0x6FDDF453C0C756EC",
 			"jhash": "0xC3C10FCC",
-			"comment": "",
+			"comment": "HAS_*\n\nProbably something like \"has game been started for the first time\".",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -37309,9 +37309,9 @@
 			"build": "323"
 		},
 		"0x14832BF2ABA53FC5": {
-			"name": "_HAS_ALL_CHUNKS_ON_HDD",
+			"name": "_HAS_ASYNC_INSTALL_FINISHED",
 			"jhash": "",
-			"comment": "Returns CFileMgr::ms_allChunksOnHdd\n\nOn PC this is hardcoded to always return true.",
+			"comment": "Hardcoded to always return true.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -37319,7 +37319,7 @@
 		"0xC79AE21974B01FB2": {
 			"name": "_CLEANUP_ASYNC_INSTALL",
 			"jhash": "",
-			"comment": "Calls CFileMgr::CleanupAsyncInstall",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
