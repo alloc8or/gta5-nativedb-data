@@ -37247,7 +37247,7 @@
 		"0x37DEB0AA183FB6D8": {
 			"name": "_SAVE_BENCHMARK_RECORDING",
 			"jhash": "",
-			"comment": "Saves the benchmark recording to %USERPROFILE%\Documents\Rockstar Games\GTA V\Benchmarks and submits some metrics.",
+			"comment": "Saves the benchmark recording to %USERPROFILE%\\Documents\\Rockstar Games\\GTA V\\Benchmarks and submits some metrics.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
