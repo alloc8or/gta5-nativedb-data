@@ -411,13 +411,13 @@
 			"build": "323"
 		},
 		"0x42B65DEEF2EDF2A1": {
-			"name": "_0x42B65DEEF2EDF2A1",
+			"name": "_SETUPDATETYPE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Can be 0, 1 or 2. Any other value will prevent the thread from being updated.\nDefault value is 1.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "type"
 				}
 			],
 			"return_type": "void",
@@ -35912,7 +35912,7 @@
 			"build": "323"
 		},
 		"0x6F7794F28C6B2535": {
-			"name": "_0x6F7794F28C6B2535",
+			"name": "_REGISTER_TEXT_LABEL_TO_SAVE_2",
 			"jhash": "0xE2089749",
 			"comment": "Seems to have the same functionality as REGISTER_TEXT_LABEL_TO_SAVE?\n\nGAMEPLAY::_6F7794F28C6B2535(&a_0._f1, \"tlPlateText\");\nGAMEPLAY::_6F7794F28C6B2535(&a_0._f1C, \"tlPlateText_pending\");\nGAMEPLAY::_6F7794F28C6B2535(&a_0._f10B, \"tlCarAppPlateText\");\n\n\"tl\" prefix sounds like \"Text Label\"",
 			"params": [
@@ -37245,17 +37245,17 @@
 			"build": "323"
 		},
 		"0x37DEB0AA183FB6D8": {
-			"name": "_0x37DEB0AA183FB6D8",
+			"name": "_SAVE_BENCHMARK_RECORDING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Saves the benchmark recording to %USERPROFILE%\Documents\Rockstar Games\GTA V\Benchmarks and submits some metrics.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xEA2F2061875EED90": {
-			"name": "_0xEA2F2061875EED90",
+			"name": "_UI_IS_SINGLEPLAYER_PAUSE_MENU_ACTIVE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns true if the current frontend menu is FE_MENU_VERSION_SP_PAUSE\n\nU*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
