@@ -31607,15 +31607,15 @@
 		"0x7241CCB7D020DB69": {
 			"name": "_0x7241CCB7D020DB69",
 			"jhash": "",
-			"comment": "",
+			"comment": "Jenkins hash _might_ be 0xFC227584.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -36970,8 +36970,8 @@
 		},
 		"0x58A39BE597CE99CD": {
 			"name": "_0x58A39BE597CE99CD",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0x196444BB",
+			"comment": "CANCEL_*",
 			"params": [],
 			"return_type": "void",
 			"build": "757"
@@ -63790,7 +63790,7 @@
 		},
 		"0x9E30E91FB03A2CAF": {
 			"name": "_0x9E30E91FB03A2CAF",
-			"jhash": "",
+			"jhash": "0x52559BB6",
 			"comment": "",
 			"params": [
 				{
@@ -63807,7 +63807,7 @@
 		},
 		"0x1E77FA7A62EE6C4C": {
 			"name": "_0x1E77FA7A62EE6C4C",
-			"jhash": "",
+			"jhash": "0x21F5B36",
 			"comment": "",
 			"params": [
 				{
@@ -63820,7 +63820,7 @@
 		},
 		"0xF033419D1B81FAE8": {
 			"name": "_0xF033419D1B81FAE8",
-			"jhash": "",
+			"jhash": "0x8FDDB5DB",
 			"comment": "",
 			"params": [
 				{
@@ -64110,7 +64110,7 @@
 		"0xA60EF3B6461A4D43": {
 			"name": "_GET_PED_HEAD_OVERLAY_VALUE",
 			"jhash": "",
-			"comment": "Likely a char, if that overlay is not set, e.i. \"None\" option, returns 255;\n",
+			"comment": "Likely a char, if that overlay is not set, e.i. \"None\" option, returns 255;\n\nThis might be the once removed native GET_PED_HEAD_OVERLAY.",
 			"params": [
 				{
 					"type": "Ped",
@@ -64394,7 +64394,7 @@
 		"0x71A5C1DBA060049E": {
 			"name": "_SET_PED_FACE_FEATURE",
 			"jhash": "",
-			"comment": "Sets the various freemode face features, e.g. nose length, chin shape. Scale ranges from -1.0 to 1.0.\n\nIndex can be 0 - 19",
+			"comment": "Sets the various freemode face features, e.g. nose length, chin shape. Scale ranges from -1.0 to 1.0.\n\nIndex can be 0 - 19\n\nSET_PED_M*",
 			"params": [
 				{
 					"type": "Ped",
@@ -65276,9 +65276,9 @@
 			"build": "323"
 		},
 		"0xD1871251F3B5ACD7": {
-			"name": "_0xD1871251F3B5ACD7",
-			"jhash": "",
-			"comment": "IS_PED_*",
+			"name": "IS_PED_RUNNING_MELEE_TASK",
+			"jhash": "0xBD4236F6",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -65304,7 +65304,7 @@
 		"0xA3F3564A5B3646C0": {
 			"name": "_0xA3F3564A5B3646C0",
 			"jhash": "0x97353375",
-			"comment": "Only called once in the scripts:\n\nif (sub_1abd() && (!PED::_A3F3564A5B3646C0(l_8C))) {\n    if (sub_52e3(\"RESNA_CELLR\", 0)) {\n        PED::SET_PED_CAN_PLAY_GESTURE_ANIMS(l_8C, 1);\n        PED::SET_PED_CAN_PLAY_AMBIENT_ANIMS(l_8C, 1);\n        PED::SET_PED_CAN_PLAY_VISEME_ANIMS(l_8C, 1, 0);\n        l_184 += 1;\n    }\n}",
+			"comment": "Only called once in the scripts:\n\nif (sub_1abd() && (!PED::_A3F3564A5B3646C0(l_8C))) {\n    if (sub_52e3(\"RESNA_CELLR\", 0)) {\n        PED::SET_PED_CAN_PLAY_GESTURE_ANIMS(l_8C, 1);\n        PED::SET_PED_CAN_PLAY_AMBIENT_ANIMS(l_8C, 1);\n        PED::SET_PED_CAN_PLAY_VISEME_ANIMS(l_8C, 1, 0);\n        l_184 += 1;\n    }\n}\n\nChecks something related to the mobile phone task.\n\nIS_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -65625,8 +65625,8 @@
 			"build": "323"
 		},
 		"0xBA63D9FE45412247": {
-			"name": "_0xBA63D9FE45412247",
-			"jhash": "",
+			"name": "IS_PED_DEFENSIVE_AREA_ACTIVE",
+			"jhash": "0x6D88BCD3",
 			"comment": "",
 			"params": [
 				{
@@ -66151,9 +66151,9 @@
 			"build": "323"
 		},
 		"0x6585D955A68452A5": {
-			"name": "_0x6585D955A68452A5",
+			"name": "CLEAR_PED_ENV_DIRT",
 			"jhash": "0xA993915F",
-			"comment": "Something related to clearing the ped because always used with CLEAR_PED_WETNESS, CLEAR_PED_BLOOD_DAMAGE and RESET_PED_VISIBLE_DAMAGE.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -76442,7 +76442,7 @@
 		},
 		"0x4ED9C8D6DA297639": {
 			"name": "_0x4ED9C8D6DA297639",
-			"jhash": "",
+			"jhash": "0xC5E08B66",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76451,7 +76451,7 @@
 		},
 		"0x710BCDA8071EDED1": {
 			"name": "_0x710BCDA8071EDED1",
-			"jhash": "",
+			"jhash": "0x04EE74A3",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76460,7 +76460,7 @@
 		},
 		"0x50A8A36201DBF83E": {
 			"name": "_0x50A8A36201DBF83E",
-			"jhash": "",
+			"jhash": "0x8DA93C3D",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76469,7 +76469,7 @@
 		},
 		"0x9DE5D2F723575ED0": {
 			"name": "_0x9DE5D2F723575ED0",
-			"jhash": "",
+			"jhash": "0x37DD48B5",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76478,7 +76478,7 @@
 		},
 		"0xC2C97EA97711D1AE": {
 			"name": "_0xC2C97EA97711D1AE",
-			"jhash": "",
+			"jhash": "0xF929F61D",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76487,7 +76487,7 @@
 		},
 		"0x450819D8CF90C416": {
 			"name": "_0x450819D8CF90C416",
-			"jhash": "",
+			"jhash": "0x0572EB5E",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76509,7 +76509,7 @@
 		},
 		"0xE75A4A2E5E316D86": {
 			"name": "_0xE75A4A2E5E316D86",
-			"jhash": "",
+			"jhash": "0x28C57FA0",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76518,7 +76518,7 @@
 		},
 		"0x2570E26BE63964E3": {
 			"name": "_0x2570E26BE63964E3",
-			"jhash": "",
+			"jhash": "0x59394583",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76527,7 +76527,7 @@
 		},
 		"0x1D12A56FC95BE92E": {
 			"name": "_0x1D12A56FC95BE92E",
-			"jhash": "",
+			"jhash": "0x92452C0E",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76536,7 +76536,7 @@
 		},
 		"0x33DF47CC0642061B": {
 			"name": "_0x33DF47CC0642061B",
-			"jhash": "",
+			"jhash": "0xBBA8D34D",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76545,7 +76545,7 @@
 		},
 		"0xA468E0BE12B12C70": {
 			"name": "_0xA468E0BE12B12C70",
-			"jhash": "",
+			"jhash": "0xB21288FA",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -76575,7 +76575,7 @@
 		},
 		"0xC5A35C73B68F3C49": {
 			"name": "_0xC5A35C73B68F3C49",
-			"jhash": "",
+			"jhash": "0x7E24BD6E",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -96783,7 +96783,7 @@
 		"0x684785568EF26A22": {
 			"name": "SET_VEHICLE_HANDBRAKE",
 			"jhash": "0xBA729A25",
-			"comment": "does this work while in air?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96798,17 +96798,17 @@
 			"build": "323"
 		},
 		"0xE4E2FD323574965C": {
-			"name": "_0xE4E2FD323574965C",
-			"jhash": "",
+			"name": "SET_VEHICLE_BRAKE",
+			"jhash": "0x5A36BC37",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
