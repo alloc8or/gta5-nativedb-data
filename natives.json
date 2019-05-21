@@ -1832,7 +1832,7 @@
 			"build": "323"
 		},
 		"0xEA241BB04110F091": {
-			"name": "_SET_PED_SPEECH_DISABLED",
+			"name": "SET_PLAYER_ANGRY",
 			"jhash": "0x782CA58D",
 			"comment": "",
 			"params": [
@@ -1874,8 +1874,8 @@
 			"build": "323"
 		},
 		"0xCE4AC0439F607045": {
-			"name": "_0xCE4AC0439F607045",
-			"jhash": "",
+			"name": "RELEASE_WEAPON_AUDIO",
+			"jhash": "0x6096504C",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -1973,8 +1973,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -1989,13 +1989,13 @@
 			"build": "372"
 		},
 		"0x7CDC8C3B89F661B3": {
-			"name": "_0x7CDC8C3B89F661B3",
+			"name": "_SET_PED_VOICE_GROUP",
 			"jhash": "",
-			"comment": "From the scripts:\n\nAUDIO::_7CDC8C3B89F661B3(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"PAIGE_PVG\"));\n                AUDIO::_7CDC8C3B89F661B3(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"TALINA_PVG\"));\n            AUDIO::_7CDC8C3B89F661B3(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_BLACK_PVG\"));\n            AUDIO::_7CDC8C3B89F661B3(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_WHITE_PVG\"));\n",
+			"comment": "From the scripts:\n\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"PAIGE_PVG\"));\n\tAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"TALINA_PVG\"));\n\tAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_BLACK_PVG\"));\n\tAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_WHITE_PVG\"));\n",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "playerPed"
+					"name": "ped"
 				},
 				{
 					"type": "Hash",
@@ -2011,8 +2011,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
@@ -2023,9 +2023,9 @@
 			"build": "323"
 		},
 		"0x7A73D05A607734C7": {
-			"name": "_SET_PED_MUTE",
-			"jhash": "",
-			"comment": "Stops speech.",
+			"name": "STOP_CURRENT_PLAYING_SPEECH",
+			"jhash": "0x5B7463F4",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -2038,7 +2038,7 @@
 		"0xB8BEC0CA6F0EDB0F": {
 			"name": "STOP_CURRENT_PLAYING_AMBIENT_SPEECH",
 			"jhash": "0xBB8E64BF",
-			"comment": "Needs to be called every frame. ",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -2055,7 +2055,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
