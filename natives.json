@@ -2794,10 +2794,10 @@
 		"0xC64A06D939F826F5": {
 			"name": "_0xC64A06D939F826F5",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_NE*",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "float*",
 					"name": "p0"
 				},
 				{
@@ -2805,7 +2805,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p2"
 				}
 			],
@@ -2815,7 +2815,7 @@
 		"0x3E65CDE5215832C1": {
 			"name": "_0x3E65CDE5215832C1",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_CURRENT_*",
 			"params": [
 				{
 					"type": "const char*",
@@ -2828,28 +2828,28 @@
 		"0x34D66BC058019CE0": {
 			"name": "_0x34D66BC058019CE0",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_CURRENT_*",
 			"params": [
 				{
 					"type": "const char*",
 					"name": "radioStationName"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Hash",
 			"build": "1493"
 		},
 		"0xF3365489E0DD50F9": {
 			"name": "_0xF3365489E0DD50F9",
 			"jhash": "0x8AFC488D",
-			"comment": "",
+			"comment": "SET_VEHICLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -2861,8 +2861,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "zoneName"
 				},
 				{
 					"type": "BOOL",
@@ -3042,7 +3042,7 @@
 			"build": "323"
 		},
 		"0xB4F90FAF7670B16F": {
-			"name": "_DISABLE_POLICE_REPORTS",
+			"name": "_CANCEL_CURRENT_POLICE_REPORT",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -3447,11 +3447,11 @@
 		"0x9D3AF56E94C9AE98": {
 			"name": "_0x9D3AF56E94C9AE98",
 			"jhash": "0x2F0A16D1",
-			"comment": "",
+			"comment": "SET_H*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
@@ -3634,7 +3634,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "Toggle"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -3660,7 +3660,7 @@
 		"0x06C0023BED16DD6B": {
 			"name": "_0x06C0023BED16DD6B",
 			"jhash": "0xE61110A2",
-			"comment": "",
+			"comment": "SET_S*",
 			"params": [
 				{
 					"type": "Any",
@@ -31962,7 +31962,7 @@
 		"0x24DA7D7667FD7B09": {
 			"name": "_GET_GLOBAL_CHAR_BUFFER",
 			"jhash": "",
-			"comment": "Returns a global c-style string buffer that is used internally by the game \n\nnope, it returns a reference to an empty string, the same empty string that's used by 1687 internal gta functions.   if it was used in a script (and i cannot find an instance of it being used), it would be as the source for a StringCopy or somesuch.",
+			"comment": "Returns pointer to an empty string.\n\nGET_C*",
 			"params": [],
 			"return_type": "const char*",
 			"build": "323"
@@ -31970,14 +31970,14 @@
 		"0x4DCDF92BF64236CD": {
 			"name": "_0x4DCDF92BF64236CD",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -31987,10 +31987,10 @@
 		"0x31125FD509D9043F": {
 			"name": "_0x31125FD509D9043F",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -32000,10 +32000,10 @@
 		"0xEBD3205A207939ED": {
 			"name": "_0xEBD3205A207939ED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -32013,7 +32013,7 @@
 		"0x97E7E2C04245115B": {
 			"name": "_0x97E7E2C04245115B",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
 					"type": "Any",
@@ -32026,14 +32026,14 @@
 		"0xEB078CA2B5E82ADD": {
 			"name": "_0xEB078CA2B5E82ADD",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -32043,10 +32043,10 @@
 		"0x703CC7F60CBB2B57": {
 			"name": "_0x703CC7F60CBB2B57",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -32056,7 +32056,7 @@
 		"0x8951EB9C6906D3C8": {
 			"name": "_0x8951EB9C6906D3C8",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -32064,10 +32064,10 @@
 		"0xBA4B8D83BDC75551": {
 			"name": "_0xBA4B8D83BDC75551",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -32075,9 +32075,9 @@
 			"build": "323"
 		},
 		"0xE8B9C0EC9E183F35": {
-			"name": "_0xE8B9C0EC9E183F35",
+			"name": "_HAS_RESUMED_FROM_SUSPEND",
 			"jhash": "",
-			"comment": "HAS_*\n\nHardcoded to return false.",
+			"comment": "Hardcoded to return false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -32085,11 +32085,11 @@
 		"0x65D2EBB47E1CEC21": {
 			"name": "_0x65D2EBB47E1CEC21",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets GtaThread+0x14A\n\nSET_S*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -32098,11 +32098,11 @@
 		"0x6F2135B6129620C1": {
 			"name": "_0x6F2135B6129620C1",
 			"jhash": "0x8B2DE971",
-			"comment": "",
+			"comment": "Sets bit 3 in GtaThread+0x150\n\nSET_T*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -32111,7 +32111,7 @@
 		"0x8D74E26F54B4E5C3": {
 			"name": "_0x8D74E26F54B4E5C3",
 			"jhash": "0xE77199F7",
-			"comment": "GAMEPLAY::_8D74E26F54B4E5C3(\"\");",
+			"comment": "I*",
 			"params": [
 				{
 					"type": "const char*",
@@ -71709,7 +71709,7 @@
 		"0xDC64D2C53493ED12": {
 			"name": "_0xDC64D2C53493ED12",
 			"jhash": "0xD15C4B1C",
-			"comment": "Has something to do with police.",
+			"comment": "Has something to do with police.\n\nRE*",
 			"params": [
 				{
 					"type": "Player",
