@@ -1991,7 +1991,7 @@
 		"0x7CDC8C3B89F661B3": {
 			"name": "_SET_PED_VOICE_GROUP",
 			"jhash": "",
-			"comment": "From the scripts:\n\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"PAIGE_PVG\"));\n\tAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"TALINA_PVG\"));\n\tAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_BLACK_PVG\"));\n\tAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_WHITE_PVG\"));\n",
+			"comment": "From the scripts:\n\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"PAIGE_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"TALINA_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_BLACK_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_WHITE_PVG\"));",
 			"params": [
 				{
 					"type": "Ped",
@@ -1999,7 +1999,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "voiceGroupHash"
 				}
 			],
 			"return_type": "void",
@@ -2244,7 +2244,7 @@
 			"jhash": "0x872CF0EA",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xA151A7394A214E65": {
