@@ -411,7 +411,7 @@
 			"build": "323"
 		},
 		"0x42B65DEEF2EDF2A1": {
-			"name": "_SETUPDATETYPE",
+			"name": "_SET_UPDATE_TYPE",
 			"jhash": "",
 			"comment": "Can be 0, 1 or 2. Any other value will prevent the thread from being updated.\nDefault value is 1.",
 			"params": [
@@ -3658,17 +3658,17 @@
 			"build": "323"
 		},
 		"0x06C0023BED16DD6B": {
-			"name": "_0x06C0023BED16DD6B",
+			"name": "SET_SCRIPT_UPDATE_DOOR_AUDIO",
 			"jhash": "0xE61110A2",
-			"comment": "SET_S*",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -3677,7 +3677,7 @@
 		"0x3A539D52857EA82D": {
 			"name": "PLAY_VEHICLE_DOOR_OPEN_SOUND",
 			"jhash": "0x84930330",
-			"comment": "p1 appears to only be \"0\" or \"3\". I personally use \"0\" as p1.\n-xNITEMAREx",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3685,7 +3685,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "doorIndex"
 				}
 			],
 			"return_type": "void",
@@ -3694,7 +3694,7 @@
 		"0x62A456AA4769EF34": {
 			"name": "PLAY_VEHICLE_DOOR_CLOSE_SOUND",
 			"jhash": "0xBA2CF407",
-			"comment": "This native only comes up once. And in that one instance, p1 is \"1\".\n-xNITEMAREx",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3702,7 +3702,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "doorIndex"
 				}
 			],
 			"return_type": "void",
@@ -3711,7 +3711,7 @@
 		"0xC15907D667F7CFB2": {
 			"name": "_0xC15907D667F7CFB2",
 			"jhash": "0x563B635D",
-			"comment": "",
+			"comment": "Works for planes only.\n\nENABLE_S*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -17854,24 +17854,24 @@
 		"0xC6372ECD45D73BCD": {
 			"name": "_0xC6372ECD45D73BCD",
 			"jhash": "0xF8FBCC25",
-			"comment": "",
+			"comment": "SET_SCRIPT_GFX_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x61BB1D9B3A95D802": {
-			"name": "_SET_2D_LAYER",
+			"name": "SET_SCRIPT_GFX_DRAW_ORDER",
 			"jhash": "0xADF81D24",
-			"comment": "Called before drawing stuff.\n\nExamples:\nGRAPHICS::_61BB1D9B3A95D802(7);\nGRAPHICS::DRAW_RECT(0.5, 0.5, 3.0, 3.0, v_4, v_5, v_6, a_0._f172, 0);\n\nGRAPHICS::_61BB1D9B3A95D802(1);\nGRAPHICS::DRAW_RECT(0.5, 0.5, 1.5, 1.5, 0, 0, 0, 255, 0);\n\nAppears to be the layer it's drawn on \n",
+			"comment": "Called before drawing stuff.\n\nExamples:\nGRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(7);\nGRAPHICS::DRAW_RECT(0.5, 0.5, 3.0, 3.0, v_4, v_5, v_6, a_0._f172, 0);\n\nGRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);\nGRAPHICS::DRAW_RECT(0.5, 0.5, 1.5, 1.5, 0, 0, 0, 255, 0);",
 			"params": [
 				{
 					"type": "int",
-					"name": "layer"
+					"name": "drawOrder"
 				}
 			],
 			"return_type": "void",
@@ -17903,7 +17903,7 @@
 			"build": "323"
 		},
 		"0xF5A2C681787E579D": {
-			"name": "_SCREEN_DRAW_POSITION_RATIO",
+			"name": "SET_SCRIPT_GFX_ALIGN_PARAMS",
 			"jhash": "0x76C641E4",
 			"comment": "",
 			"params": [
@@ -17930,7 +17930,7 @@
 		"0x6DD8F5AA635EB4B2": {
 			"name": "_0x6DD8F5AA635EB4B2",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_*",
 			"params": [
 				{
 					"type": "float",
@@ -17941,11 +17941,11 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "float*",
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
+					"type": "float*",
 					"name": "p3"
 				}
 			],
@@ -23770,7 +23770,7 @@
 			"build": "463"
 		},
 		"0x25F87B30C382FCA7": {
-			"name": "_0x25F87B30C382FCA7",
+			"name": "_HIDE_HUD_NOTIFICATIONS_THIS_FRAME",
 			"jhash": "0x1E63088A",
 			"comment": "",
 			"params": [],
@@ -25377,11 +25377,11 @@
 		"0x98C3CF913D895111": {
 			"name": "_0x98C3CF913D895111",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_F*",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "source"
+					"name": "string"
 				},
 				{
 					"type": "int",
@@ -33745,11 +33745,11 @@
 		"0xC9BF75D28165FF77": {
 			"name": "SET_SAVE_MENU_ACTIVE",
 			"jhash": "0xF5CCF164",
-			"comment": "The bool is not a toggle!!!",
+			"comment": "ignoreVehicle - bypasses vehicle check of the local player (it will not open when you are in a vehicle and this is set to false)",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "unk"
+					"name": "ignoreVehicle"
 				}
 			],
 			"return_type": "void",
