@@ -21116,10 +21116,10 @@
 		"0xBA3D194057C79A7B": {
 			"name": "_0xBA3D194057C79A7B",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_PARTICLE_FX_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -30951,34 +30951,34 @@
 	},
 	"INTERIOR": {
 		"0xF49B58631D9E22D9": {
-			"name": "_0xF49B58631D9E22D9",
+			"name": "_GET_INTERIOR_HEADING",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_INTERIOR_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Interior",
+					"name": "interior"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1493"
 		},
 		"0x252BDC06B73FA6EA": {
-			"name": "_0x252BDC06B73FA6EA",
+			"name": "_GET_INTERIOR_INFO",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_INTERIOR_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Interior",
+					"name": "interior"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vector3*",
+					"name": "position"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "nameHash"
 				}
 			],
 			"return_type": "void",
@@ -31003,8 +31003,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "interiorID"
+					"type": "Interior",
+					"name": "interior"
 				},
 				{
 					"type": "float",
@@ -31033,7 +31033,7 @@
 		"0x26B0E73D7EAAF4D3": {
 			"name": "IS_VALID_INTERIOR",
 			"jhash": "0x39C0B635",
-			"comment": "Return if interior is valid.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Interior",
@@ -31066,8 +31066,8 @@
 					"name": "entity"
 				},
 				{
-					"type": "int",
-					"name": "interiorID"
+					"type": "Interior",
+					"name": "interior"
 				},
 				{
 					"type": "Hash",
@@ -37377,7 +37377,7 @@
 		"0x23227DF0B2115469": {
 			"name": "_0x23227DF0B2115469",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -68188,7 +68188,7 @@
 		"0x2208438012482A1A": {
 			"name": "_0x2208438012482A1A",
 			"jhash": "0x187B9070",
-			"comment": "Function.Call(Hash._0x2208438012482A1A, ped, 0, 0);\n\nThis makes the ped have faster animations",
+			"comment": "Function.Call(Hash._0x2208438012482A1A, ped, 0, 0);\n\nThis makes the ped have faster animations\n\nFORCE_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -69576,7 +69576,7 @@
 		"0xED3C76ADFA6D07C4": {
 			"name": "_0xED3C76ADFA6D07C4",
 			"jhash": "0xFB4000DC",
-			"comment": "",
+			"comment": "FORCE_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -89443,7 +89443,7 @@
 		"0x4F056E1AFFEF17AB": {
 			"name": "TASK_FORCE_MOTION_STATE",
 			"jhash": "0xCAD2EF77",
-			"comment": "p2 always false\n\n[30/03/2017] ins1de :\n\nSee dev-c.com/nativedb/func/info/f28965d04f570dca\n\n",
+			"comment": "p2 always false\n\n[30/03/2017] ins1de :\n\nSee FORCE_PED_MOTION_STATE",
 			"params": [
 				{
 					"type": "Ped",
@@ -89621,7 +89621,7 @@
 		"0xD01015C7316AE176": {
 			"name": "REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION",
 			"jhash": "0x885724DE",
-			"comment": "It does not actually return anything. So the result will always be 0 (FALSE).",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
