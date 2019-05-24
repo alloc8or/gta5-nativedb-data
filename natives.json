@@ -56102,7 +56102,7 @@
 			"build": "323"
 		},
 		"0xF9C36251F6E48E33": {
-			"name": "_IS_PICKUP_WITHIN_RADIUS",
+			"name": "DOES_PICKUP_OF_TYPE_EXIST_IN_AREA",
 			"jhash": "0xF139681B",
 			"comment": "Pickup hashes: pastebin.com/8EuSv2r1",
 			"params": [
@@ -56322,24 +56322,24 @@
 			"build": "323"
 		},
 		"0x318516E02DE3ECE2": {
-			"name": "_0x318516E02DE3ECE2",
+			"name": "SET_PICKUP_GENERATION_RANGE_MULTIPLIER",
 			"jhash": "0x9879AC51",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xB3ECA65C7317F174": {
-			"name": "_0xB3ECA65C7317F174",
+			"name": "_GET_PICKUP_GENERATION_RANGE_MULTIPLIER",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "944"
 		},
 		"0x31F924B53EADDF65": {
