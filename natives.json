@@ -15322,9 +15322,9 @@
 			"build": "323"
 		},
 		"0x6BEDF5769AC2DC07": {
-			"name": "_0x6BEDF5769AC2DC07",
+			"name": "_LOAD_CONTENT_CHANGE_SET_GROUP",
 			"jhash": "",
-			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::_0x3C1978285B036B25(joaat(\"GROUP_MAP_SP\"));\nFILES::_0x6BEDF5769AC2DC07(joaat(\"GROUP_MAP\"));",
+			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::_UNLOAD_CONTENT_CHANGE_SET_GROUP(joaat(\"GROUP_MAP_SP\"));\nFILES::_LOAD_CONTENT_CHANGE_SET_GROUP(joaat(\"GROUP_MAP\"));",
 			"params": [
 				{
 					"type": "Hash",
@@ -15335,9 +15335,9 @@
 			"build": "1604"
 		},
 		"0x3C1978285B036B25": {
-			"name": "_0x3C1978285B036B25",
+			"name": "_UNLOAD_CONTENT_CHANGE_SET_GROUP",
 			"jhash": "",
-			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::_0x3C1978285B036B25(joaat(\"GROUP_MAP_SP\"));\nFILES::_0x6BEDF5769AC2DC07(joaat(\"GROUP_MAP\"));",
+			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::_UNLOAD_CONTENT_CHANGE_SET_GROUP(joaat(\"GROUP_MAP_SP\"));\nFILES::_LOAD_CONTENT_CHANGE_SET_GROUP(joaat(\"GROUP_MAP\"));",
 			"params": [
 				{
 					"type": "Hash",
