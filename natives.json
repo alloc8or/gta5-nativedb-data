@@ -20012,7 +20012,7 @@
 					"name": "zAxis"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p11"
 				}
 			],
@@ -51324,8 +51324,8 @@
 			"build": "323"
 		},
 		"0xE4E53E1419D81127": {
-			"name": "_NETWORK_DOES_TUNABLE_EXIST_HASH",
-			"jhash": "",
+			"name": "NETWORK_DOES_TUNABLE_EXIST_HASH",
+			"jhash": "0x25915CB9",
 			"comment": "",
 			"params": [
 				{
@@ -51349,8 +51349,8 @@
 			"build": "393"
 		},
 		"0x40FCE03E50E8DBE8": {
-			"name": "_NETWORK_ACCESS_TUNABLE_INT_HASH",
-			"jhash": "",
+			"name": "NETWORK_ACCESS_TUNABLE_INT_HASH",
+			"jhash": "0xB2E83B75",
 			"comment": "",
 			"params": [
 				{
@@ -51391,8 +51391,8 @@
 			"build": "393"
 		},
 		"0x972BC203BBC4C4D5": {
-			"name": "_NETWORK_ACCESS_TUNABLE_FLOAT_HASH",
-			"jhash": "",
+			"name": "NETWORK_ACCESS_TUNABLE_FLOAT_HASH",
+			"jhash": "0x3972551F",
 			"comment": "",
 			"params": [
 				{
@@ -51433,8 +51433,8 @@
 			"build": "393"
 		},
 		"0xEA16B69D93D71A45": {
-			"name": "_NETWORK_ACCESS_TUNABLE_BOOL_HASH",
-			"jhash": "",
+			"name": "NETWORK_ACCESS_TUNABLE_BOOL_HASH",
+			"jhash": "0x18867C61",
 			"comment": "",
 			"params": [
 				{
@@ -51471,9 +51471,9 @@
 			"build": "393"
 		},
 		"0xC7420099936CE286": {
-			"name": "_NETWORK_ACCESS_TUNABLE_BOOL_HASH_FAIL_VAL",
-			"jhash": "",
-			"comment": "Returns a default value if the tunable don't exist.",
+			"name": "NETWORK_TRY_ACCESS_TUNABLE_BOOL_HASH",
+			"jhash": "0x8AFE3D90",
+			"comment": "Returns defaultValue if the tunable doesn't exist.",
 			"params": [
 				{
 					"type": "Hash",
