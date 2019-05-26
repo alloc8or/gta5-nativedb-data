@@ -15508,7 +15508,7 @@
 		"0xE3AD2BDBAEE269AC": {
 			"name": "ADD_EXPLOSION",
 			"jhash": "0x10AF5258",
-			"comment": "BOOL isAudible = If explosion makes a sound.\nBOOL isInvisible = If the explosion is invisible or not.\n\nenum ExplosionTypes\n{\n    EXPLOSION_GRENADE,\n    EXPLOSION_GRENADELAUNCHER,\n    EXPLOSION_STICKYBOMB,\n    EXPLOSION_MOLOTOV,\n    EXPLOSION_ROCKET,\n    EXPLOSION_TANKSHELL,\n    EXPLOSION_HI_OCTANE,\n    EXPLOSION_CAR,\n    EXPLOSION_PLANE,\n    EXPLOSION_PETROL_PUMP,\n    EXPLOSION_BIKE,\n    EXPLOSION_DIR_STEAM,\n    EXPLOSION_DIR_FLAME,\n    EXPLOSION_DIR_WATER_HYDRANT,\n    EXPLOSION_DIR_GAS_CANISTER,\n    EXPLOSION_BOAT,\n    EXPLOSION_SHIP_DESTROY,\n    EXPLOSION_TRUCK,\n    EXPLOSION_BULLET,\n    EXPLOSION_SMOKEGRENADELAUNCHER,\n    EXPLOSION_SMOKEGRENADE,\n    EXPLOSION_BZGAS,\n    EXPLOSION_FLARE,\n    EXPLOSION_GAS_CANISTER,\n    EXPLOSION_EXTINGUISHER,\n    EXPLOSION_PROGRAMMABLEAR,\n    EXPLOSION_TRAIN,\n    EXPLOSION_BARREL,\n    EXPLOSION_PROPANE,\n    EXPLOSION_BLIMP,\n    EXPLOSION_DIR_FLAME_EXPLODE,\n    EXPLOSION_TANKER,\n    EXPLOSION_PLANE_ROCKET,\n    EXPLOSION_VEHICLE_BULLET,\n    EXPLOSION_GAS_TANK,\n    EXPLOSION_BIRD_CRAP\n};",
+			"comment": "BOOL isAudible = If explosion makes a sound.\nBOOL isInvisible = If the explosion is invisible or not.\n\nenum eExplosionTag\r\n{\r\n\tEXP_TAG_DONTCARE = -1,\r\n\tEXP_TAG_GRENADE,\r\n\tEXP_TAG_GRENADELAUNCHER,\r\n\tEXP_TAG_STICKYBOMB,\r\n\tEXP_TAG_MOLOTOV,\r\n\tEXP_TAG_ROCKET,\r\n\tEXP_TAG_TANKSHELL,\r\n\tEXP_TAG_HI_OCTANE,\r\n\tEXP_TAG_CAR,\r\n\tEXP_TAG_PLANE,\r\n\tEXP_TAG_PETROL_PUMP,\r\n\tEXP_TAG_BIKE,\r\n\tEXP_TAG_DIR_STEAM,\r\n\tEXP_TAG_DIR_FLAME,\r\n\tEXP_TAG_DIR_WATER_HYDRANT,\r\n\tEXP_TAG_DIR_GAS_CANISTER,\r\n\tEXP_TAG_BOAT,\r\n\tEXP_TAG_SHIP_DESTROY,\r\n\tEXP_TAG_TRUCK,\r\n\tEXP_TAG_BULLET,\r\n\tEXP_TAG_SMOKEGRENADELAUNCHER,\r\n\tEXP_TAG_SMOKEGRENADE,\r\n\tEXP_TAG_BZGAS,\r\n\tEXP_TAG_FLARE,\r\n\tEXP_TAG_GAS_CANISTER,\r\n\tEXP_TAG_EXTINGUISHER,\r\n\tEXP_TAG_PROGRAMMABLEAR,\r\n\tEXP_TAG_TRAIN,\r\n\tEXP_TAG_BARREL,\r\n\tEXP_TAG_PROPANE,\r\n\tEXP_TAG_BLIMP,\r\n\tEXP_TAG_DIR_FLAME_EXPLODE,\r\n\tEXP_TAG_TANKER,\r\n\tEXP_TAG_PLANE_ROCKET,\r\n\tEXP_TAG_VEHICLE_BULLET,\r\n\tEXP_TAG_GAS_TANK,\r\n\tEXP_TAG_BIRD_CRAP,\r\n\tEXP_TAG_RAILGUN,\r\n\tEXP_TAG_BLIMP2,\r\n\tEXP_TAG_FIREWORK,\r\n\tEXP_TAG_SNOWBALL,\r\n\tEXP_TAG_PROXMINE,\r\n\tEXP_TAG_VALKYRIE_CANNON,\r\n\tEXP_TAG_AIR_DEFENCE,\r\n\tEXP_TAG_PIPEBOMB,\r\n\tEXP_TAG_VEHICLEMINE,\r\n\tEXP_TAG_EXPLOSIVEAMMO,\r\n\tEXP_TAG_APCSHELL,\r\n\tEXP_TAG_BOMB_CLUSTER,\r\n\tEXP_TAG_BOMB_GAS,\r\n\tEXP_TAG_BOMB_INCENDIARY,\r\n\tEXP_TAG_BOMB_STANDARD,\r\n\tEXP_TAG_TORPEDO,\r\n\tEXP_TAG_TORPEDO_UNDERWATER,\r\n\tEXP_TAG_BOMBUSHKA_CANNON,\r\n\tEXP_TAG_BOMB_CLUSTER_SECONDARY,\r\n\tEXP_TAG_HUNTER_BARRAGE,\r\n\tEXP_TAG_HUNTER_CANNON,\r\n\tEXP_TAG_ROGUE_CANNON,\r\n\tEXP_TAG_MINE_UNDERWATER,\r\n\tEXP_TAG_ORBITAL_CANNON,\r\n\tEXP_TAG_BOMB_STANDARD_WIDE,\r\n\tEXP_TAG_EXPLOSIVEAMMO_SHOTGUN,\r\n\tEXP_TAG_OPPRESSOR2_CANNON,\r\n\tEXP_TAG_MORTAR_KINETIC,\r\n\tEXP_TAG_VEHICLEMINE_KINETIC,\r\n\tEXP_TAG_VEHICLEMINE_EMP,\r\n\tEXP_TAG_VEHICLEMINE_SPIKE,\r\n\tEXP_TAG_VEHICLEMINE_SLICK,\r\n\tEXP_TAG_VEHICLEMINE_TAR,\r\n\tEXP_TAG_SCRIPT_DRONE,\r\n\tEXP_TAG_RAYGUN,\r\n\tEXP_TAG_BURIEDMINE,\r\n\tEXP_TAG_SCRIPT_MISSILE\r\n};",
 			"params": [
 				{
 					"type": "float",
@@ -15553,7 +15553,7 @@
 		"0x172AA1B624FA1013": {
 			"name": "ADD_OWNED_EXPLOSION",
 			"jhash": "0x27EE0D67",
-			"comment": "BOOL isAudible = If explosion makes a sound.\nBOOL isInvisible = If the explosion is invisible or not.\n\nenum ExplosionTypes\n{\n    EXPLOSION_GRENADE,\n    EXPLOSION_GRENADELAUNCHER,\n    EXPLOSION_STICKYBOMB,\n    EXPLOSION_MOLOTOV,\n    EXPLOSION_ROCKET,\n    EXPLOSION_TANKSHELL,\n    EXPLOSION_HI_OCTANE,\n    EXPLOSION_CAR,\n    EXPLOSION_PLANE,\n    EXPLOSION_PETROL_PUMP,\n    EXPLOSION_BIKE,\n    EXPLOSION_DIR_STEAM,\n    EXPLOSION_DIR_FLAME,\n    EXPLOSION_DIR_WATER_HYDRANT,\n    EXPLOSION_DIR_GAS_CANISTER,\n    EXPLOSION_BOAT,\n    EXPLOSION_SHIP_DESTROY,\n    EXPLOSION_TRUCK,\n    EXPLOSION_BULLET,\n    EXPLOSION_SMOKEGRENADELAUNCHER,\n    EXPLOSION_SMOKEGRENADE,\n    EXPLOSION_BZGAS,\n    EXPLOSION_FLARE,\n    EXPLOSION_GAS_CANISTER,\n    EXPLOSION_EXTINGUISHER,\n    EXPLOSION_PROGRAMMABLEAR,\n    EXPLOSION_TRAIN,\n    EXPLOSION_BARREL,\n    EXPLOSION_PROPANE,\n    EXPLOSION_BLIMP,\n    EXPLOSION_DIR_FLAME_EXPLODE,\n    EXPLOSION_TANKER,\n    EXPLOSION_PLANE_ROCKET,\n    EXPLOSION_VEHICLE_BULLET,\n    EXPLOSION_GAS_TANK,\n    EXPLOSION_BIRD_CRAP\n};",
+			"comment": "isAudible: If explosion makes a sound.\nisInvisible: If the explosion is invisible or not.\nexplosionType: See ADD_EXPLOSION.",
 			"params": [
 				{
 					"type": "Ped",
@@ -15598,7 +15598,7 @@
 		"0x36DD3FE58B5E5212": {
 			"name": "ADD_EXPLOSION_WITH_USER_VFX",
 			"jhash": "0xCF358946",
-			"comment": "\n",
+			"comment": "isAudible: If explosion makes a sound.\nisInvisible: If the explosion is invisible or not.\nexplosionType: See ADD_EXPLOSION.",
 			"params": [
 				{
 					"type": "float",
@@ -15643,7 +15643,7 @@
 		"0x2E2EBA0EE7CED0E0": {
 			"name": "IS_EXPLOSION_IN_AREA",
 			"jhash": "0xFB40075B",
-			"comment": "",
+			"comment": "explosionType: See ADD_EXPLOSION.",
 			"params": [
 				{
 					"type": "int",
@@ -15680,7 +15680,7 @@
 		"0x6070104B699B2EF4": {
 			"name": "_0x6070104B699B2EF4",
 			"jhash": "",
-			"comment": "",
+			"comment": "explosionType: See ADD_EXPLOSION.",
 			"params": [
 				{
 					"type": "int",
@@ -15717,7 +15717,7 @@
 		"0xAB0F816885B0E483": {
 			"name": "IS_EXPLOSION_IN_SPHERE",
 			"jhash": "0xD455A7F3",
-			"comment": "",
+			"comment": "explosionType: See ADD_EXPLOSION.",
 			"params": [
 				{
 					"type": "int",
@@ -15746,7 +15746,7 @@
 		"0xB3CD51E3DB86F176": {
 			"name": "_GET_ENTITY_INSIDE_EXPLOSION_AREA_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "explosionType: See ADD_EXPLOSION.",
 			"params": [
 				{
 					"type": "int",
@@ -15775,7 +15775,7 @@
 		"0xA079A6C51525DC4B": {
 			"name": "IS_EXPLOSION_IN_ANGLED_AREA",
 			"jhash": "0x0128FED9",
-			"comment": "",
+			"comment": "explosionType: See ADD_EXPLOSION.",
 			"params": [
 				{
 					"type": "int",
@@ -15816,7 +15816,7 @@
 		"0x14BA4BA137AF6CEC": {
 			"name": "_GET_ENTITY_INSIDE_EXPLOSION_AREA",
 			"jhash": "0xAEC0D176",
-			"comment": "Returns a handle to the first entity within the a circle spawned inside the 2 points from a radius. It could return a ped or an entity, but the scripts expect a ped, but still check if it's a ped.",
+			"comment": "Returns a handle to the first entity within the a circle spawned inside the 2 points from a radius.\n\nexplosionType: See ADD_EXPLOSION.",
 			"params": [
 				{
 					"type": "int",
@@ -67095,7 +67095,7 @@
 		"0x1913FE4CBF41C463": {
 			"name": "SET_PED_CONFIG_FLAG",
 			"jhash": "0x9CFBE10D",
-			"comment": "Research help : pastebin.com/fPL1cSwB\nNew items added with underscore as first char\n-----------------------------------------------------------------------\n\nenum PedConfigFlags\n{\n  PED_FLAG_CAN_FLY_THRU_WINDSCREEN = 32,\n        PED_FLAG_DIES_BY_RAGDOLL = 33,\n    PED_FLAG_NO_COLLISION = 52,\n        _PED_FLAG_IS_SHOOTING = 58,\n        _PED_FLAG_IS_ON_GROUND = 60,\n    PED_FLAG_NO_COLLIDE = 62,\n PED_FLAG_DEAD = 71,\n        PED_FLAG_IS_SNIPER_SCOPE_ACTIVE = 72,\n    PED_FLAG_SUPER_DEAD = 73,\n        _PED_FLAG_IS_IN_AIR = 76,\n  PED_FLAG_IS_AIMING = 78,\n  PED_FLAG_DRUNK = 100,\n        _PED_FLAG_IS_NOT_RAGDOLL_AND_NOT_PLAYING_ANIM = 104,\n        PED_FLAG_NO_PLAYER_MELEE = 122,\n  PED_FLAG_NM_MESSAGE_466 = 125,\n    PED_FLAG_INJURED_LIMP = 166,\n  PED_FLAG_INJURED_LIMP_2 = 170,\n    PED_FLAG_INJURED_DOWN = 187,\n  PED_FLAG_SHRINK = 223,\n        PED_FLAG_MELEE_COMBAT = 224,\n        _PED_FLAG_IS_ON_STAIRS = 253,\n        _PED_FLAG_HAS_ONE_LEG_ON_GROUND = 276,\n   PED_FLAG_NO_WRITHE = 281,\n PED_FLAG_FREEZE = 292,\n    PED_FLAG_IS_STILL = 301,\n        PED_FLAG_NO_PED_MELEE = 314,\n        _PED_SWITCHING_WEAPON = 331,\n  PED_FLAG_ALPHA = 410,\n};\n\n(*) When flagId is set to 33 and the bool value to true, peds will die by starting ragdoll, so you should set this flag to false when you resurrect a ped.\nWhen flagId is set to 62 and the boolvalue to false this happens: Ped is taken out of vehicle and can't get back in when jacking their empty vehicle. If in a plane it falls from the sky and crashes. Sometimes peds vehicle continue to drive the route without its driver who's running after. \n\n(*)\nJUMPING CHANGES  60,61,104 TO FALSE\nBEING ON WATER CHANGES 60,61 TO FALSE AND 65,66,168 TO TRUE\nFALLING CHANGES 60,61,104,276 TO FALSE AND TO 76 TRUE\nDYING CHANGES 60,61,104,276* TO FALSE AND (NONE) TO TRUE\nDYING MAKES 60,61,104 TO FALSE\nBEING IN A CAR CHANGES 60,79,104 TO FALSE AND 62 TO TRUE\n\n(*)Maximum value for flagId is 0x1AA (426) in b944.\nID 0xF0 (240) appears to be a special flag which is handled different compared to the others IDs.\n",
+			"comment": "Research help : pastebin.com/fPL1cSwB\nNew items added with underscore as first char\n-----------------------------------------------------------------------\n\nenum PedConfigFlags\n{\n  PED_FLAG_CAN_FLY_THRU_WINDSCREEN = 32,\n\tPED_FLAG_DIES_BY_RAGDOLL = 33,\n\tPED_FLAG_NO_COLLISION = 52,\n\t_PED_FLAG_IS_SHOOTING = 58,\n\t_PED_FLAG_IS_ON_GROUND = 60,\n\tPED_FLAG_NO_COLLIDE = 62,\n PED_FLAG_DEAD = 71,\n\tPED_FLAG_IS_SNIPER_SCOPE_ACTIVE = 72,\n\tPED_FLAG_SUPER_DEAD = 73,\n\t_PED_FLAG_IS_IN_AIR = 76,\n\tPED_FLAG_IS_AIMING = 78,\n  PED_FLAG_DRUNK = 100,\n\t_PED_FLAG_IS_NOT_RAGDOLL_AND_NOT_PLAYING_ANIM = 104,\n\tPED_FLAG_NO_PLAYER_MELEE = 122,\n\tPED_FLAG_NM_MESSAGE_466 = 125,\n\tPED_FLAG_INJURED_LIMP = 166,\n\tPED_FLAG_INJURED_LIMP_2 = 170,\n\tPED_FLAG_INJURED_DOWN = 187,\n  PED_FLAG_SHRINK = 223,\n\tPED_FLAG_MELEE_COMBAT = 224,\n\t_PED_FLAG_IS_ON_STAIRS = 253,\n\t_PED_FLAG_HAS_ONE_LEG_ON_GROUND = 276,\n\tPED_FLAG_NO_WRITHE = 281,\n\tPED_FLAG_FREEZE = 292,\n\tPED_FLAG_IS_STILL = 301,\n\tPED_FLAG_NO_PED_MELEE = 314,\n\t_PED_SWITCHING_WEAPON = 331,\n\tPED_FLAG_ALPHA = 410,\n};\n\n(*) When flagId is set to 33 and the bool value to true, peds will die by starting ragdoll, so you should set this flag to false when you resurrect a ped.\nWhen flagId is set to 62 and the boolvalue to false this happens: Ped is taken out of vehicle and can't get back in when jacking their empty vehicle. If in a plane it falls from the sky and crashes. Sometimes peds vehicle continue to drive the route without its driver who's running after. \n\n(*)\nJUMPING CHANGES  60,61,104 TO FALSE\nBEING ON WATER CHANGES 60,61 TO FALSE AND 65,66,168 TO TRUE\nFALLING CHANGES 60,61,104,276 TO FALSE AND TO 76 TRUE\nDYING CHANGES 60,61,104,276* TO FALSE AND (NONE) TO TRUE\nDYING MAKES 60,61,104 TO FALSE\nBEING IN A CAR CHANGES 60,79,104 TO FALSE AND 62 TO TRUE\n\n(*)Maximum value for flagId is 0x1AA (426) in b944.\nID 0xF0 (240) appears to be a special flag which is handled different compared to the others IDs.\n",
 			"params": [
 				{
 					"type": "Ped",
@@ -70530,59 +70530,59 @@
 			"comment": "Most likely ROPE_ATTACH_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ropeId"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p12"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p13"
 				}
 			],
