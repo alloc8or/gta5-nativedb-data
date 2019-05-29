@@ -71000,7 +71000,7 @@
 		"0x048189FAC643DEEE": {
 			"name": "CHANGE_PLAYER_PED",
 			"jhash": "0xBE515485",
-			"comment": "b2 and/or b3 maybe got something to do with keeping values from the last ped. Both of them set to 1 works great. \n\nExamples from the decompiled scripts:\n\nPLAYER::CHANGE_PLAYER_PED(PLAYER::PLAYER_ID(), l_5C0[4/*14*/], 0, 1);\nPLAYER::CHANGE_PLAYER_PED(PLAYER::PLAYER_ID(), a_0[a_0._f7/*1*/], a_2, 0);\n\n\n===========================================================\nThe only way I ever got this to work in GTA Online once is by setting both to 0, 0. However, when you switch from your online character to whomever, your character will start walking away 'as if you left the game.' If from there you attempt to call this native once more to switch back to you online ped. You will freeze or if you try changing to another ped. I've tried all posibilities so far.\n1, 1 (Freeze), 0, 0(Works Once), 1, 0 & 0, 1 (Freeze). Note of course trying to call this on another online player will crash. Anyone have any idea if implementing a blr within the xex itself on a possible check if it would prevent this freezing?\n===========================================================",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -71012,11 +71012,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "b2"
+					"name": "p2"
 				},
 				{
 					"type": "BOOL",
-					"name": "b3"
+					"name": "resetDamage"
 				}
 			],
 			"return_type": "void",
@@ -71025,7 +71025,7 @@
 		"0xE902EF951DCE178F": {
 			"name": "GET_PLAYER_RGB_COLOUR",
 			"jhash": "0x6EF43BBB",
-			"comment": "Returns RGB color of the player (duh)",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -74633,9 +74633,9 @@
 			"build": "323"
 		},
 		"0xAF66DCEE6609B148": {
-			"name": "_RENDERING_CAM_WAS_CHANGED_DURING_RECORDING",
+			"name": "_DISABLE_ROCKSTAR_EDITOR_CAMERA_CHANGES",
 			"jhash": "",
-			"comment": "Sets a bool that indicates the rendering camera was changed during recording.\nThis will disable the ability to make camera changes in R* Editor.",
+			"comment": "This will disable the ability to make camera changes in R* Editor.\n\nRE*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
