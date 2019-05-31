@@ -28052,13 +28052,13 @@
 			"build": "323"
 		},
 		"0xEB354E5376BC81A7": {
-			"name": "_SHOW_WEAPON_WHEEL",
+			"name": "HUD_FORCE_WEAPON_WHEEL",
 			"jhash": "0x1EFFB02A",
-			"comment": "Forces the weapon wheel to appear on screen.",
+			"comment": "Forces the weapon wheel to show/hide.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "forcedShow"
+					"name": "show"
 				}
 			],
 			"return_type": "void",
