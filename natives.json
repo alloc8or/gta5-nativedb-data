@@ -15744,7 +15744,7 @@
 			"build": "323"
 		},
 		"0xB3CD51E3DB86F176": {
-			"name": "_GET_ENTITY_INSIDE_EXPLOSION_AREA_2",
+			"name": "_GET_ENTITY_INSIDE_EXPLOSION_SPHERE",
 			"jhash": "",
 			"comment": "explosionType: See ADD_EXPLOSION.",
 			"params": [
@@ -74555,7 +74555,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -74592,7 +74592,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p2"
 				}
 			],
