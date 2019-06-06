@@ -37362,13 +37362,13 @@
 			"build": "323"
 		},
 		"0x9D8D44ADBBA61EF2": {
-			"name": "_0x9D8D44ADBBA61EF2",
+			"name": "_SET_PLAYER_ROCKSTAR_EDITOR_DISABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_PLAYER_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -74794,7 +74794,7 @@
 		"0x49DA8145672B2725": {
 			"name": "_ACTIVATE_ROCKSTAR_EDITOR",
 			"jhash": "",
-			"comment": "Show Rockstar Editor Menu\n\nby I'm Not MentaL\n\n----------\n\n\"new_editor\" menu",
+			"comment": "Please note that you will need to call DO_SCREEN_FADE_IN after exiting the Rockstar Editor when you call this.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
