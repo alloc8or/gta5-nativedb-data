@@ -96448,8 +96448,8 @@
 			"build": "323"
 		},
 		"0xF8EBCCC96ADB9FB7": {
-			"name": "_0xF8EBCCC96ADB9FB7",
-			"jhash": "SET_VEHICLE_BULLDOZER_ARM_POSITION",
+			"name": "SET_VEHICLE_BULLDOZER_ARM_POSITION",
+			"jhash": "0xED23C8A3",
 			"comment": "",
 			"params": [
 				{
