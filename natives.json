@@ -34123,26 +34123,26 @@
 		"0xA4A0065E39C9F25C": {
 			"name": "_0xA4A0065E39C9F25C",
 			"jhash": "0xC4D71AB4",
-			"comment": "",
+			"comment": "GET_SAVE_*\n\nGET_SAVE_UNLESS_CUSTOM_DOT ?",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Vector3*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL*",
+					"name": "fadeInAfterLoad"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL*",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x50EEAAD86232EE55": {
@@ -74204,9 +74204,9 @@
 			"build": "323"
 		},
 		"0xFF300C7649724A0B": {
-			"name": "_0xFF300C7649724A0B",
+			"name": "SET_PLAYER_LEAVE_PED_BEHIND",
 			"jhash": "0xAD8383FA",
-			"comment": "SET_PLAYER_*\n\nSET_PLAYER_LEAVE_PED_BEHIND ?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -74214,7 +74214,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -90203,7 +90203,7 @@
 		"0x74E559B3BC910685": {
 			"name": "IS_PED_CUFFED",
 			"jhash": "0x511CE741",
-			"comment": "l",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -90218,7 +90218,7 @@
 		"0xAF35D0D2583051B0": {
 			"name": "CREATE_VEHICLE",
 			"jhash": "0xDD75460A",
-			"comment": "p6 - last parameter does not mean vehicle handle is returned\nmaybe a quick view in disassembly will tell us what is actually does\n\n\np6 seems to check for something with the script in the disassembly",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -90272,7 +90272,7 @@
 		"0x7D6F9A3EF26136A0": {
 			"name": "_0x7D6F9A3EF26136A0",
 			"jhash": "0xBB54ECCA",
-			"comment": "what does this native do?\n\nHere's some pseudocode of the internal setter function:\n\n__int64 __fastcall sub_140CD86B4(signed int vehicle, char a2, char a3)\n{\n  char v3; // di@1\n  char v4; // bl@1\n  __int64 result; // rax@1\n  __int16 v6; // cx@3\n\n  v3 = a3;\n  v4 = a2;\n  result = GetScriptHandleAddressVehicleCheck(vehicle);\n  if ( result )\n  {\n    if ( v3 || (v6 = *(_WORD *)(result + 0xDA), (v6 & 0xFu) - 6 <= 1) )\n    {\n      *(_BYTE *)(result + 0x89B) &= 0xDFu;\n      *(_BYTE *)(result + 0x89B) |= 32 * (v4 & 1);\n    }\n  }\n  return result;\n}\n\nNow it's time for you to find out :P",
+			"comment": "SET_VEHICLE_AL*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -90280,7 +90280,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
 					"type": "BOOL",
@@ -91097,7 +91097,7 @@
 		"0x2E0A74E1002380B1": {
 			"name": "SET_VEHICLE_TIMED_EXPLOSION",
 			"jhash": "0xDB8CB8E2",
-			"comment": "                                                VEHICLE::SET_VEHICLE_TIMED_EXPLOSION(v_3, PLAYER::GET_PLAYER_PED(v_5), 1);",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -91409,7 +91409,7 @@
 		"0x3AFDC536C3D01674": {
 			"name": "SET_VEHICLE_ENVEFF_SCALE",
 			"jhash": "0x8332730C",
-			"comment": "formerly known as _SET_VEHICLE_PAINT_FADE\n\nThe parameter fade is a value from 0-1, where 0 is fresh paint.\n------------------------------------------------------------------------------------\nThe actual value isn't stored as a float but as an unsigned char (BYTE). More info here: pastebin.com/r0h6EM5s",
+			"comment": "formerly known as _SET_VEHICLE_PAINT_FADE\n\nThe parameter fade is a value from 0-1, where 0 is fresh paint.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -91426,7 +91426,7 @@
 		"0xA82819CAC9C4C403": {
 			"name": "GET_VEHICLE_ENVEFF_SCALE",
 			"jhash": "0xD5F1EEE1",
-			"comment": "formerly known as _GET_VEHICLE_PAINT_FADE\n\nThe result is a value from 0-1, where 0 is fresh paint.\n-----------------------------------------------------------------------\nThe actual value isn't stored as a float but as an unsigned char (BYTE).",
+			"comment": "formerly known as _GET_VEHICLE_PAINT_FADE\n\nThe result is a value from 0-1, where 0 is fresh paint.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -95154,7 +95154,7 @@
 		"0xC50CE861B55EAB8B": {
 			"name": "_0xC50CE861B55EAB8B",
 			"jhash": "0x40C323AE",
-			"comment": "",
+			"comment": "SET_VEHICLE_LI*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96323,11 +96323,11 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "towTruck"
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "height"
+					"name": "position"
 				}
 			],
 			"return_type": "void",
@@ -96449,16 +96449,16 @@
 		},
 		"0xF8EBCCC96ADB9FB7": {
 			"name": "_0xF8EBCCC96ADB9FB7",
-			"jhash": "0xED23C8A3",
+			"jhash": "SET_VEHICLE_BULLDOZER_ARM_POSITION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "position"
 				},
 				{
 					"type": "BOOL",
@@ -96469,17 +96469,17 @@
 			"build": "323"
 		},
 		"0x56B94C6D7127DFBA": {
-			"name": "_0x56B94C6D7127DFBA",
+			"name": "SET_VEHICLE_TANK_TURRET_POSITION",
 			"jhash": "0xB1A52EF7",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "position"
 				},
 				{
 					"type": "BOOL",
@@ -98788,7 +98788,7 @@
 			"build": "877"
 		},
 		"0x06582AFF74894C75": {
-			"name": "_0x06582AFF74894C75",
+			"name": "SET_VEHICLE_INACTIVE_DURING_PLAYBACK",
 			"jhash": "0x50F89338",
 			"comment": "",
 			"params": [
@@ -98798,7 +98798,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -99564,7 +99564,7 @@
 		"0x2C4A1590ABF43E8B": {
 			"name": "_0x2C4A1590ABF43E8B",
 			"jhash": "0x2EC19A8B",
-			"comment": "",
+			"comment": "SET_VEHICLE_W* (next character is either H or I)",
 			"params": [
 				{
 					"type": "Vehicle",
