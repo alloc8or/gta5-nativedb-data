@@ -75159,7 +75159,7 @@
 			"unused": true
 		},
 		"0x75B18E49607874C7": {
-			"name": "_BGR_INSERT_CONTEXT_HASH",
+			"name": "_BGR_START_CONTEXT_HASH",
 			"jhash": "",
 			"comment": "Hashed version of 0x9D5A25BADB742ACD.",
 			"params": [
@@ -75173,7 +75173,7 @@
 			"unused": true
 		},
 		"0x107E5CC7CA942BC1": {
-			"name": "_BGR_DELETE_CONTEXT_HASH",
+			"name": "_BGR_END_CONTEXT_HASH",
 			"jhash": "",
 			"comment": "Hashed version of 0xDC2BACD920D0A0DD.",
 			"params": [
@@ -75187,7 +75187,7 @@
 			"unused": true
 		},
 		"0x9D5A25BADB742ACD": {
-			"name": "_BGR_INSERT_CONTEXT",
+			"name": "_BGR_START_CONTEXT",
 			"jhash": "",
 			"comment": "Inserts the given context into the background scripts context map.",
 			"params": [
@@ -75201,7 +75201,7 @@
 			"unused": true
 		},
 		"0xDC2BACD920D0A0DD": {
-			"name": "_BGR_DELETE_CONTEXT",
+			"name": "_BGR_END_CONTEXT",
 			"jhash": "",
 			"comment": "Deletes the given context from the background scripts context map.",
 			"params": [
@@ -97969,7 +97969,7 @@
 		"0xE495D1EF4C91FD20": {
 			"name": "GET_VEHICLE_CAUSE_OF_DESTRUCTION",
 			"jhash": "0x7F8C20DD",
-			"comment": "iVar3 = get_vehicle_cause_of_destruction(uLocal_248[iVar2]);\nif (iVar3 == joaat(\"weapon_stickybomb\"))\n{\n     func_171(726);\n     iLocal_260 = 1;\n}",
+			"comment": "iVar3 = get_vehicle_cause_of_destruction(uLocal_248[iVar2]);\nif (iVar3 == joaat(\"weapon_stickybomb\"))\n{\n\tfunc_171(726);\n\tiLocal_260 = 1;\n}",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97982,15 +97982,15 @@
 		"0x5EE5632F47AE9695": {
 			"name": "_0x5EE5632F47AE9695",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets some health value. Looks like it's used for helis.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "health"
 				}
 			],
 			"return_type": "void",
@@ -103342,11 +103342,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
