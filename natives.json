@@ -92186,9 +92186,9 @@
 			"build": "323"
 		},
 		"0xFC40CBF7B90CA77C": {
-			"name": "_SET_VEHICLE_TRUNK_UNK",
+			"name": "_SET_VEHICLE_TRUNK_FULLY_OPEN",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_C*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101039,7 +101039,7 @@
 		"0x9078C0C5EF8C19E9": {
 			"name": "_GET_CAN_VEHICLE_JUMP",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns true if the vehicle has the FLAG_JUMPING_CAR flag set.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101050,17 +101050,17 @@
 			"build": "944"
 		},
 		"0xF06A16CA55D138D8": {
-			"name": "_0xF06A16CA55D138D8",
+			"name": "_SET_USE_HIGHER_VEHICLE_JUMP_FORCE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Allows vehicles with the FLAG_JUMPING_CAR flag to jump higher.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -101069,15 +101069,15 @@
 		"0xB2E0C0D6922D31F2": {
 			"name": "_0xB2E0C0D6922D31F2",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_C*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
