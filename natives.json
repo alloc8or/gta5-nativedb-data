@@ -42645,17 +42645,17 @@
 			"build": "323"
 		},
 		"0x35A1B3E1D1315CFA": {
-			"name": "_0x35A1B3E1D1315CFA",
+			"name": "_NET_GAMESERVER_GET_BALANCE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Note: only one of the arguments can be set to true at a time",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "inventory"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "playerbalance"
 				}
 			],
 			"return_type": "BOOL",
