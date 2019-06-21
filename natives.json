@@ -25885,13 +25885,13 @@
 			"build": "323"
 		},
 		"0x1DFEDD15019315A9": {
-			"name": "_0x1DFEDD15019315A9",
+			"name": "_SET_ABILITY_BAR_VISIBILITY_IN_MULTIPLAYER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "visible"
 				}
 			],
 			"return_type": "void",
