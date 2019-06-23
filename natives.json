@@ -16650,7 +16650,7 @@
 		"0x4862437A486F91B0": {
 			"name": "_0x4862437A486F91B0",
 			"jhash": "0x56C1E488",
-			"comment": "",
+			"comment": "LOAD_*",
 			"params": [
 				{
 					"type": "Any*",
@@ -25754,7 +25754,7 @@
 		"0xD2049635DEB9C375": {
 			"name": "_0xD2049635DEB9C375",
 			"jhash": "0xE8D3A910",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -25789,9 +25789,9 @@
 			"build": "323"
 		},
 		"0xD68A5FF8A3A89874": {
-			"name": "_0xD68A5FF8A3A89874",
+			"name": "SET_SCRIPT_VARIABLE_HUD_COLOUR",
 			"jhash": "0x0E41E45C",
-			"comment": "",
+			"comment": "Sets the color of HUD_COLOUR_SCRIPT_VARIABLE",
 			"params": [
 				{
 					"type": "int",
@@ -25814,9 +25814,9 @@
 			"build": "323"
 		},
 		"0x16A304E6CB2BFAB9": {
-			"name": "_0x16A304E6CB2BFAB9",
+			"name": "_SET_SCRIPT_VARIABLE_2_HUD_COLOUR",
 			"jhash": "0x6BE3ACA8",
-			"comment": "",
+			"comment": "Sets the color of HUD_COLOUR_SCRIPT_VARIABLE_2",
 			"params": [
 				{
 					"type": "int",
@@ -25839,7 +25839,7 @@
 			"build": "323"
 		},
 		"0x1CCC708F0F850613": {
-			"name": "_SET_HUD_COLOURS_SWITCH",
+			"name": "REPLACE_HUD_COLOUR",
 			"jhash": "0x3B216749",
 			"comment": "HUD colors and their values: pastebin.com/d9aHPbXN\n--------------------------------------------------\nmakes hudColorIndex2 color into hudColorIndex color",
 			"params": [
@@ -25856,7 +25856,7 @@
 			"build": "323"
 		},
 		"0xF314CF4F0211894E": {
-			"name": "_SET_HUD_COLOUR",
+			"name": "REPLACE_HUD_COLOUR_WITH_RGBA",
 			"jhash": "0xF6E7E92B",
 			"comment": "HUD colors and their values: pastebin.com/d9aHPbXN",
 			"params": [
@@ -26973,11 +26973,11 @@
 		"0xDD2238F57B977751": {
 			"name": "_0xDD2238F57B977751",
 			"jhash": "0x3E47F357",
-			"comment": "",
+			"comment": "DOES_BLIP_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
 			"return_type": "BOOL",
@@ -26986,15 +26986,15 @@
 		"0x54318C915D27E4CE": {
 			"name": "_0x54318C915D27E4CE",
 			"jhash": "0x43996428",
-			"comment": "",
+			"comment": "SET_BLIP_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -27360,7 +27360,7 @@
 		"0xB81656BC81FE24D1": {
 			"name": "SHOW_OUTLINE_INDICATOR_ON_BLIP",
 			"jhash": "0x8DE82C15",
-			"comment": "Highlights a blip by a cyan color circle.\n \nColor can be changed with SET_BLIP_SECONDARY_COLOUR\n\n",
+			"comment": "Highlights a blip by a cyan color circle.\n\nColor can be changed with SET_BLIP_SECONDARY_COLOUR",
 			"params": [
 				{
 					"type": "Blip",
@@ -27462,7 +27462,7 @@
 		"0x2B6D467DAB714E8D": {
 			"name": "_SET_BLIP_SHRINK",
 			"jhash": "0xC575F0BC",
-			"comment": "Makes a blip go small when off the minimap.",
+			"comment": "Makes a blip go small when off the minimap.\n\nSET_BLIP_AS_*",
 			"params": [
 				{
 					"type": "Blip",
@@ -29115,7 +29115,7 @@
 			"build": "323"
 		},
 		"0xBFEFE3321A3F5015": {
-			"name": "_CREATE_CLAN_MP_GAMER_TAG",
+			"name": "CREATE_FAKE_MP_GAMER_TAG",
 			"jhash": "0xF5CD2AA4",
 			"comment": "",
 			"params": [
@@ -29214,7 +29214,7 @@
 		"0xEE76FF7E6A0166B0": {
 			"name": "_0xEE76FF7E6A0166B0",
 			"jhash": "0x767DED29",
-			"comment": "SET_*",
+			"comment": "SET_A*",
 			"params": [
 				{
 					"type": "int",
@@ -29426,9 +29426,9 @@
 		"0x01A358D9128B7A86": {
 			"name": "_0x01A358D9128B7A86",
 			"jhash": "0xAB5B7C18",
-			"comment": "native only found once in appinternet.c4",
+			"comment": "GET_CURRENT_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x97D47996FC48CBAD": {
@@ -48609,7 +48609,7 @@
 			"build": "323"
 		},
 		"0x7543BB439F63792B": {
-			"name": "_0x7543BB439F63792B",
+			"name": "NETWORK_CLAN_IS_ROCKSTAR_CLAN",
 			"jhash": "0x54E79E9C",
 			"comment": "bufferSize is 35 in the scripts.",
 			"params": [
@@ -48628,7 +48628,7 @@
 		"0xF45352426FF3A4F0": {
 			"name": "_0xF45352426FF3A4F0",
 			"jhash": "0xF633805A",
-			"comment": "bufferSize is 35 in the scripts.",
+			"comment": "bufferSize is 35 in the scripts.\n\nNETWORK_CLAN_*",
 			"params": [
 				{
 					"type": "int*",
@@ -48639,8 +48639,8 @@
 					"name": "bufferSize"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "char*",
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -48657,7 +48657,7 @@
 		"0x48DE78AF2C8885B8": {
 			"name": "NETWORK_CLAN_GET_MEMBERSHIP_DESC",
 			"jhash": "0x3369DD1F",
-			"comment": "networkMembershipMgr memShip;\n        int maxMemship = _GET_NUM_MEMBERSHIP_DESC();\n      for (int i = 0; i < maxMemship; i++)\n       {\n         NETWORK_CLAN_GET_MEMBERSHIP_DESC(&memShip.memHandle, i);\n      }",
+			"comment": "",
 			"params": [
 				{
 					"type": "int*",
@@ -90293,7 +90293,7 @@
 		"0x1DDA078D12879EEE": {
 			"name": "_SET_VEHICLE_CAN_BE_LOCKED_ON",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_VEHICLE_AL*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100698,14 +100698,14 @@
 		"0x4E20D2A627011E8E": {
 			"name": "_0x4E20D2A627011E8E",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_VEHICLE_D*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
