@@ -25109,13 +25109,13 @@
 			"build": "323"
 		},
 		"0x39BBF623FC803EAC": {
-			"name": "_SET_NOTIFICATION_COLOR_NEXT",
+			"name": "SET_COLOUR_OF_NEXT_TEXT_COMPONENT",
 			"jhash": "0x6F1A1901",
-			"comment": "sets font color for the next notification",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "hudIndex"
+					"name": "hudColor"
 				}
 			],
 			"return_type": "void",
