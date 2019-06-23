@@ -92186,9 +92186,9 @@
 			"build": "323"
 		},
 		"0xFC40CBF7B90CA77C": {
-			"name": "_SET_VEHICLE_TRUNK_FULLY_OPEN",
+			"name": "SET_CAR_BOOT_OPEN",
 			"jhash": "",
-			"comment": "SET_C*",
+			"comment": "Initially used in Max Payne 3, that's why we know the name.",
 			"params": [
 				{
 					"type": "Vehicle",
