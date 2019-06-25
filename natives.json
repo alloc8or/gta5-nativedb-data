@@ -23384,34 +23384,34 @@
 			"build": "323"
 		},
 		"0xA356990E161C9E65": {
-			"name": "_0xA356990E161C9E65",
+			"name": "TERRAINGRID_ACTIVATE",
 			"jhash": "0xA1CB6C94",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x1C4FC5752BCD8E48": {
-			"name": "_0x1C4FC5752BCD8E48",
+			"name": "TERRAINGRID_SET_PARAMS",
 			"jhash": "0x3B637AA7",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
@@ -23419,7 +23419,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "rotation"
 				},
 				{
 					"type": "float",
@@ -23427,11 +23427,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "width"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "height"
 				},
 				{
 					"type": "float",
@@ -23439,76 +23439,76 @@
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "scale"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "glowIntensity"
 				},
 				{
 					"type": "float",
-					"name": "p11"
+					"name": "normalHeight"
 				},
 				{
 					"type": "float",
-					"name": "p12"
+					"name": "heightDiff"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x5CE62918F8D703C7": {
-			"name": "_0x5CE62918F8D703C7",
+			"name": "TERRAINGRID_SET_COLOURS",
 			"jhash": "0xDF552973",
-			"comment": "Only called in golf and golf_mp\nparameters used are \nGRAPHICS::_0x5CE62918F8D703C7(255, 0, 0, 64, 255, 255, 255, 5, 255, 255, 0, 64);\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "lowR"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "lowG"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "lowB"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "lowAlpha"
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "r"
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "g"
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "b"
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "alpha"
 				},
 				{
 					"type": "int",
-					"name": "p8"
+					"name": "highR"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "highG"
 				},
 				{
 					"type": "int",
-					"name": "p10"
+					"name": "highB"
 				},
 				{
 					"type": "int",
-					"name": "p11"
+					"name": "highAlpha"
 				}
 			],
 			"return_type": "void",
@@ -63808,7 +63808,7 @@
 		"0x1E77FA7A62EE6C4C": {
 			"name": "_0x1E77FA7A62EE6C4C",
 			"jhash": "0x21F5B36",
-			"comment": "",
+			"comment": "GET_*",
 			"params": [
 				{
 					"type": "Any",
@@ -63821,7 +63821,7 @@
 		"0xF033419D1B81FAE8": {
 			"name": "_0xF033419D1B81FAE8",
 			"jhash": "0x8FDDB5DB",
-			"comment": "",
+			"comment": "GET_*",
 			"params": [
 				{
 					"type": "Any",
