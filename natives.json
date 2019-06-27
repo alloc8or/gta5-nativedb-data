@@ -2090,7 +2090,7 @@
 		"0x49B99BF3FDA89A7A": {
 			"name": "_CAN_PED_SPEAK",
 			"jhash": "0x8BD5F11E",
-			"comment": "Checks if the ped can play the speech or has the speech file, last parameter is usually 0",
+			"comment": "Checks if the ped can play the speech or has the speech file, last parameter is usually 0\n\nDOES_C*",
 			"params": [
 				{
 					"type": "Ped",
@@ -3992,25 +3992,25 @@
 			"build": "1103"
 		},
 		"0xFBE20329593DEC9D": {
-			"name": "_0xFBE20329593DEC9D",
+			"name": "RECORD_BROKEN_GLASS",
 			"jhash": "0x53FC3FEC",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -4333,7 +4333,7 @@
 		"0xB9EFD5C25018725A": {
 			"name": "SET_AUDIO_FLAG",
 			"jhash": "0x1C09C9E0",
-			"comment": "Possible flag names:\n\"ActivateSwitchWheelAudio\"\n\"AllowAmbientSpeechInSlowMo\"\n\"AllowCutsceneOverScreenFade\"\n\"AllowForceRadioAfterRetune\"\n\"AllowPainAndAmbientSpeechToPlayDuringCutscene\"\n\"AllowPlayerAIOnMission\"\n\"AllowPoliceScannerWhenPlayerHasNoControl\"\n\"AllowRadioDuringSwitch\"\n\"AllowRadioOverScreenFade\"\n\"AllowScoreAndRadio\"\n\"AllowScriptedSpeechInSlowMo\"\n\"AvoidMissionCompleteDelay\"\n\"DisableAbortConversationForDeathAndInjury\"\n\"DisableAbortConversationForRagdoll\"\n\"DisableBarks\"\n\"DisableFlightMusic\"\n\"DisableReplayScriptStreamRecording\"\n\"EnableHeadsetBeep\"\n\"ForceConversationInterrupt\"\n\"ForceSeamlessRadioSwitch\"\n\"ForceSniperAudio\"\n\"FrontendRadioDisabled\"\n\"HoldMissionCompleteWhenPrepared\"\n\"IsDirectorModeActive\"\n\"IsPlayerOnMissionForSpeech\"\n\"ListenerReverbDisabled\"\n\"LoadMPData\"\n\"MobileRadioInGame\"\n\"OnlyAllowScriptTriggerPoliceScanner\"\n\"PlayMenuMusic\"\n\"PoliceScannerDisabled\"\n\"ScriptedConvListenerMaySpeak\"\n\"SpeechDucksScore\"\n\"SuppressPlayerScubaBreathing\"\n\"WantedMusicDisabled\"\n\"WantedMusicOnMission\"\n\n-------------------------------\nNo added flag names between b393d and b573d, including b573d.\n\n#######################################################################\n\n\"IsDirectorModeActive\" is an audio flag which will allow you to play speech infinitely without any pauses like in Director Mode.\n\n-----------------------------------------------------------------------\n\nAll flag IDs and hashes:\n\nID: 01 | Hash: 0x20A7858F\nID: 02 | Hash: 0xA11C2259\nID: 03 | Hash: 0x08DE4700\nID: 04 | Hash: 0x989F652F\nID: 05 | Hash: 0x3C9E76BA\nID: 06 | Hash: 0xA805FEB0\nID: 07 | Hash: 0x4B94EA26\nID: 08 | Hash: 0x803ACD34\nID: 09 | Hash: 0x7C741226\nID: 10 | Hash: 0x31DB9EBD\nID: 11 | Hash: 0xDF386F18\nID: 12 | Hash: 0x669CED42\nID: 13 | Hash: 0x51F22743\nID: 14 | Hash: 0x2052B35C\nID: 15 | Hash: 0x071472DC\nID: 16 | Hash: 0xF9928BCC\nID: 17 | Hash: 0x7ADBDD48\nID: 18 | Hash: 0xA959BA1A\nID: 19 | Hash: 0xBBE89B60\nID: 20 | Hash: 0x87A08871\nID: 21 | Hash: 0xED1057CE\nID: 22 | Hash: 0x1584AD7A\nID: 23 | Hash: 0x8582CFCB\nID: 24 | Hash: 0x7E5E2FB0\nID: 25 | Hash: 0xAE4F72DB\nID: 26 | Hash: 0x5D16D1FA\nID: 27 | Hash: 0x06B2F4B8\nID: 28 | Hash: 0x5D4CDC96\nID: 29 | Hash: 0x8B5A48BA\nID: 30 | Hash: 0x98FBD539\nID: 31 | Hash: 0xD8CB0473\nID: 32 | Hash: 0x5CBB4874\nID: 33 | Hash: 0x2E9F93A9\nID: 34 | Hash: 0xD93BEA86\nID: 35 | Hash: 0x92109B7D\nID: 36 | Hash: 0xB7EC9E4D\nID: 37 | Hash: 0xCABDBB1D\nID: 38 | Hash: 0xB3FD4A52\nID: 39 | Hash: 0x370D94E5\nID: 40 | Hash: 0xA0F7938F\nID: 41 | Hash: 0xCBE1CE81\nID: 42 | Hash: 0xC27F1271\nID: 43 | Hash: 0x9E3258EB\nID: 44 | Hash: 0x551CDA5B\nID: 45 | Hash: 0xCB6D663C\nID: 46 | Hash: 0x7DACE87F\nID: 47 | Hash: 0xF9DE416F\nID: 48 | Hash: 0x882E6E9E\nID: 49 | Hash: 0x16B447E7\nID: 50 | Hash: 0xBD867739\nID: 51 | Hash: 0xA3A58604\nID: 52 | Hash: 0x7E046BBC\nID: 53 | Hash: 0xD95FDB98\nID: 54 | Hash: 0x5842C0ED\nID: 55 | Hash: 0x285FECC6\nID: 56 | Hash: 0x9351AC43\nID: 57 | Hash: 0x50032E75\nID: 58 | Hash: 0xAE6D0D59\nID: 59 | Hash: 0xD6351785\nID: 60 | Hash: 0xD25D71BC\nID: 61 | Hash: 0x1F7F6423\nID: 62 | Hash: 0xE24C3AA6\nID: 63 | Hash: 0xBFFDD2B7",
+			"comment": "Possible flag names:\n\"ActivateSwitchWheelAudio\"\n\"AllowAmbientSpeechInSlowMo\"\n\"AllowCutsceneOverScreenFade\"\n\"AllowForceRadioAfterRetune\"\n\"AllowPainAndAmbientSpeechToPlayDuringCutscene\"\n\"AllowPlayerAIOnMission\"\n\"AllowPoliceScannerWhenPlayerHasNoControl\"\n\"AllowRadioDuringSwitch\"\n\"AllowRadioOverScreenFade\"\n\"AllowScoreAndRadio\"\n\"AllowScriptedSpeechInSlowMo\"\n\"AvoidMissionCompleteDelay\"\n\"DisableAbortConversationForDeathAndInjury\"\n\"DisableAbortConversationForRagdoll\"\n\"DisableBarks\"\n\"DisableFlightMusic\"\n\"DisableReplayScriptStreamRecording\"\n\"EnableHeadsetBeep\"\n\"ForceConversationInterrupt\"\n\"ForceSeamlessRadioSwitch\"\n\"ForceSniperAudio\"\n\"FrontendRadioDisabled\"\n\"HoldMissionCompleteWhenPrepared\"\n\"IsDirectorModeActive\"\n\"IsPlayerOnMissionForSpeech\"\n\"ListenerReverbDisabled\"\n\"LoadMPData\"\n\"MobileRadioInGame\"\n\"OnlyAllowScriptTriggerPoliceScanner\"\n\"PlayMenuMusic\"\n\"PoliceScannerDisabled\"\n\"ScriptedConvListenerMaySpeak\"\n\"SpeechDucksScore\"\n\"SuppressPlayerScubaBreathing\"\n\"WantedMusicDisabled\"\n\"WantedMusicOnMission\"\n\n-------------------------------\nNo added flag names between b393d and b573d, including b573d.\n\n#######################################################################\n\n\"IsDirectorModeActive\" is an audio flag which will allow you to play speech infinitely without any pauses like in Director Mode.\n\n-----------------------------------------------------------------------\n\nAll flag IDs and hashes:\n\nID: 00 | Hash: 0x0FED7A7F\nID: 01 | Hash: 0x20A7858F\nID: 02 | Hash: 0xA11C2259\nID: 03 | Hash: 0x08DE4700\nID: 04 | Hash: 0x989F652F\nID: 05 | Hash: 0x3C9E76BA\nID: 06 | Hash: 0xA805FEB0\nID: 07 | Hash: 0x4B94EA26\nID: 08 | Hash: 0x803ACD34\nID: 09 | Hash: 0x7C741226\nID: 10 | Hash: 0x31DB9EBD\nID: 11 | Hash: 0xDF386F18\nID: 12 | Hash: 0x669CED42\nID: 13 | Hash: 0x51F22743\nID: 14 | Hash: 0x2052B35C\nID: 15 | Hash: 0x071472DC\nID: 16 | Hash: 0xF9928BCC\nID: 17 | Hash: 0x7ADBDD48\nID: 18 | Hash: 0xA959BA1A\nID: 19 | Hash: 0xBBE89B60\nID: 20 | Hash: 0x87A08871\nID: 21 | Hash: 0xED1057CE\nID: 22 | Hash: 0x1584AD7A\nID: 23 | Hash: 0x8582CFCB\nID: 24 | Hash: 0x7E5E2FB0\nID: 25 | Hash: 0xAE4F72DB\nID: 26 | Hash: 0x5D16D1FA\nID: 27 | Hash: 0x06B2F4B8\nID: 28 | Hash: 0x5D4CDC96\nID: 29 | Hash: 0x8B5A48BA\nID: 30 | Hash: 0x98FBD539\nID: 31 | Hash: 0xD8CB0473\nID: 32 | Hash: 0x5CBB4874\nID: 33 | Hash: 0x2E9F93A9\nID: 34 | Hash: 0xD93BEA86\nID: 35 | Hash: 0x92109B7D\nID: 36 | Hash: 0xB7EC9E4D\nID: 37 | Hash: 0xCABDBB1D\nID: 38 | Hash: 0xB3FD4A52\nID: 39 | Hash: 0x370D94E5\nID: 40 | Hash: 0xA0F7938F\nID: 41 | Hash: 0xCBE1CE81\nID: 42 | Hash: 0xC27F1271\nID: 43 | Hash: 0x9E3258EB\nID: 44 | Hash: 0x551CDA5B\nID: 45 | Hash: 0xCB6D663C\nID: 46 | Hash: 0x7DACE87F\nID: 47 | Hash: 0xF9DE416F\nID: 48 | Hash: 0x882E6E9E\nID: 49 | Hash: 0x16B447E7\nID: 50 | Hash: 0xBD867739\nID: 51 | Hash: 0xA3A58604\nID: 52 | Hash: 0x7E046BBC\nID: 53 | Hash: 0xD95FDB98\nID: 54 | Hash: 0x5842C0ED\nID: 55 | Hash: 0x285FECC6\nID: 56 | Hash: 0x9351AC43\nID: 57 | Hash: 0x50032E75\nID: 58 | Hash: 0xAE6D0D59\nID: 59 | Hash: 0xD6351785\nID: 60 | Hash: 0xD25D71BC\nID: 61 | Hash: 0x1F7F6423\nID: 62 | Hash: 0xE24C3AA6\nID: 63 | Hash: 0xBFFDD2B7",
 			"params": [
 				{
 					"type": "const char*",
@@ -4463,7 +4463,7 @@
 			"build": "323"
 		},
 		"0x044DBAD7A7FA2BE5": {
-			"name": "_0x044DBAD7A7FA2BE5",
+			"name": "SET_PORTAL_SETTINGS_OVERRIDE",
 			"jhash": "0x8AD670EC",
 			"comment": "Found in the b617d scripts, duplicates removed:  \n\nAUDIO::_044DBAD7A7FA2BE5(\"V_CARSHOWROOM_PS_WINDOW_UNBROKEN\", \"V_CARSHOWROOM_PS_WINDOW_BROKEN\");\n\n AUDIO::_044DBAD7A7FA2BE5(\"V_CIA_PS_WINDOW_UNBROKEN\", \"V_CIA_PS_WINDOW_BROKEN\");\n\n AUDIO::_044DBAD7A7FA2BE5(\"V_DLC_HEIST_APARTMENT_DOOR_CLOSED\", \"V_DLC_HEIST_APARTMENT_DOOR_OPEN\");\n\n AUDIO::_044DBAD7A7FA2BE5(\"V_FINALEBANK_PS_VAULT_INTACT\", \"V_FINALEBANK_PS_VAULT_BLOWN\");\n\n AUDIO::_044DBAD7A7FA2BE5(\"V_MICHAEL_PS_BATHROOM_WITH_WINDOW\", \"V_MICHAEL_PS_BATHROOM_WITHOUT_WINDOW\");",
 			"params": [
@@ -4480,7 +4480,7 @@
 			"build": "323"
 		},
 		"0xB4BBFD9CD8B3922B": {
-			"name": "_0xB4BBFD9CD8B3922B",
+			"name": "REMOVE_PORTAL_SETTINGS_OVERRIDE",
 			"jhash": "0xD24B4D0C",
 			"comment": " Found in the b617d scripts, duplicates removed: \n\n AUDIO::_B4BBFD9CD8B3922B(\"V_CARSHOWROOM_PS_WINDOW_UNBROKEN\");\n AUDIO::_B4BBFD9CD8B3922B(\"V_CIA_PS_WINDOW_UNBROKEN\");\n AUDIO::_B4BBFD9CD8B3922B(\"V_DLC_HEIST_APARTMENT_DOOR_CLOSED\");\n AUDIO::_B4BBFD9CD8B3922B(\"V_FINALEBANK_PS_VAULT_INTACT\");\n AUDIO::_B4BBFD9CD8B3922B(\"V_MICHAEL_PS_BATHROOM_WITH_WINDOW\");",
 			"params": [
@@ -4495,7 +4495,7 @@
 		"0xE4E6DD5566D28C82": {
 			"name": "_0xE4E6DD5566D28C82",
 			"jhash": "0x7262B5BA",
-			"comment": "",
+			"comment": "STOP_S*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -16309,7 +16309,7 @@
 		"0x29280002282F1928": {
 			"name": "_0x29280002282F1928",
 			"jhash": "",
-			"comment": "",
+			"comment": "DRAW_*",
 			"params": [
 				{
 					"type": "Any",
@@ -22025,7 +22025,7 @@
 		"0x1CBA05AE7BD7EE05": {
 			"name": "_0x1CBA05AE7BD7EE05",
 			"jhash": "0x56345F6B",
-			"comment": "",
+			"comment": "SET_TRA*",
 			"params": [
 				{
 					"type": "float",
@@ -30925,7 +30925,7 @@
 		"0x808519373FD336A3": {
 			"name": "_SET_DIRECTOR_MODE",
 			"jhash": "",
-			"comment": "If toggle is true, hides special ability bar / character name in the pause menu\nIf toggle is false, shows special ability bar / character name in the pause menu",
+			"comment": "If toggle is true, hides special ability bar / character name in the pause menu\nIf toggle is false, shows special ability bar / character name in the pause menu\n\nSET_PLAYER_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -42376,26 +42376,26 @@
 			"unused": true
 		},
 		"0xF70EFA14FE091429": {
-			"name": "_0xF70EFA14FE091429",
+			"name": "_WITHDRAW_CASH_FROM_BANK",
 			"jhash": "0x8B755993",
-			"comment": "",
+			"comment": "Does nothing and always returns 0.\n\nW*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xE260E0BB9CD995AC": {
-			"name": "_0xE260E0BB9CD995AC",
+			"name": "_DEPOSIT_CASH_IN_BANK",
 			"jhash": "0x8F266745",
-			"comment": "",
+			"comment": "Does nothing and always returns false.\n\nDE*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "BOOL",
@@ -53829,9 +53829,14 @@
 		"0x3765C3A3E8192E10": {
 			"name": "_0x3765C3A3E8192E10",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "NETWORK_*",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
+			"return_type": "int",
 			"build": "323",
 			"unused": true
 		},
