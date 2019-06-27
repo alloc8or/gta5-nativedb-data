@@ -6604,13 +6604,13 @@
 			"build": "323"
 		},
 		"0x503F5920162365B2": {
-			"name": "_0x503F5920162365B2",
+			"name": "SET_FLY_CAM_HORIZONTAL_RESPONSE",
 			"jhash": "0x56F9ED27",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
 					"type": "float",
@@ -6634,19 +6634,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -6654,7 +6654,7 @@
 			"build": "791"
 		},
 		"0xF9D02130ECDD1D77": {
-			"name": "_SET_CAMERA_RANGE",
+			"name": "SET_FLY_CAM_MAX_HEIGHT",
 			"jhash": "0x71570DBA",
 			"comment": "",
 			"params": [
@@ -6664,32 +6664,32 @@
 				},
 				{
 					"type": "float",
-					"name": "range"
+					"name": "height"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xC91C6C55199308CA": {
-			"name": "_0xC91C6C55199308CA",
+			"name": "SET_FLY_CAM_COORD_AND_CONSTRAIN",
 			"jhash": "0x60B345DE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -6702,7 +6702,7 @@
 			"params": [
 				{
 					"type": "Cam",
-					"name": "p0"
+					"name": "cam"
 				}
 			],
 			"return_type": "void",
@@ -6711,11 +6711,11 @@
 		"0x5C48A1D6E3B33179": {
 			"name": "_0x5C48A1D6E3B33179",
 			"jhash": "0xDA931D65",
-			"comment": "",
+			"comment": "W*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				}
 			],
 			"return_type": "BOOL",
@@ -6799,9 +6799,9 @@
 		"0x4879E4FE39074CDF": {
 			"name": "_0x4879E4FE39074CDF",
 			"jhash": "",
-			"comment": "",
+			"comment": "A*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "372"
 		},
 		"0x14D6F5678D8F1B37": {
@@ -7069,7 +7069,7 @@
 		"0xEA7F0AD7E9BA676F": {
 			"name": "_ENABLE_CROSSHAIR_THIS_FRAME",
 			"jhash": "0xA61FF9AC",
-			"comment": "Shows the crosshair even if it wouldn't show normally. Only works for one frame, so make sure to call it repeatedly.",
+			"comment": "Shows the crosshair even if it wouldn't show normally. Only works for one frame, so make sure to call it repeatedly.\n\nDISABLE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -7085,7 +7085,7 @@
 		"0x2AED6301F67007D5": {
 			"name": "_0x2AED6301F67007D5",
 			"jhash": "0x2701A9AD",
-			"comment": "                if (ENTITY::DOES_ENTITY_EXIST(l_228)) {\n                    CAM::_2AED6301F67007D5(l_228);",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -18756,7 +18756,7 @@
 			"jhash": "0x3129C31A",
 			"comment": "Creates a tracked point, useful for checking the visibility of a 3D point on screen.",
 			"params": [],
-			"return_type": "Object",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x164ECBB3CF750CB0": {
@@ -18765,7 +18765,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
+					"type": "int",
 					"name": "point"
 				},
 				{
@@ -18794,7 +18794,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
+					"type": "int",
 					"name": "point"
 				}
 			],
@@ -18807,7 +18807,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
+					"type": "int",
 					"name": "point"
 				}
 			],
