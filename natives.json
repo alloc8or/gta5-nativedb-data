@@ -6241,7 +6241,7 @@
 		"0x7BF1A54AE67AC070": {
 			"name": "SET_CAM_SPLINE_NODE_EXTRA_FLAGS",
 			"jhash": "0xC90B2DDC",
-			"comment": ",
+			"comment": "",
 			"params": [
 				{
 					"type": "Cam",
