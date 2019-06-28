@@ -5807,7 +5807,7 @@
 					"name": "cam"
 				},
 				{
-					"type": "int",
+					"type": "Ped",
 					"name": "ped"
 				},
 				{
@@ -5867,11 +5867,11 @@
 		"0x661B5C8654ADD825": {
 			"name": "_0x661B5C8654ADD825",
 			"jhash": "0xE1A0B2F1",
-			"comment": "",
+			"comment": "SET_CAM_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
 					"type": "BOOL",
@@ -5982,24 +5982,24 @@
 			"build": "323"
 		},
 		"0x0A9F2A468B328E74": {
-			"name": "_0x0A9F2A468B328E74",
+			"name": "ADD_CAM_SPLINE_NODE_USING_CAMERA_FRAME",
 			"jhash": "0x30510511",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Cam",
+					"name": "cam2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -6007,24 +6007,24 @@
 			"build": "323"
 		},
 		"0x0FB82563989CF4FB": {
-			"name": "_0x0FB82563989CF4FB",
+			"name": "ADD_CAM_SPLINE_NODE_USING_CAMERA",
 			"jhash": "0xBA6C085B",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Cam",
+					"name": "cam2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -6032,20 +6032,20 @@
 			"build": "323"
 		},
 		"0x609278246A29CA34": {
-			"name": "_0x609278246A29CA34",
+			"name": "ADD_CAM_SPLINE_NODE_USING_GAMEPLAY_FRAME",
 			"jhash": "0xB4737F03",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -6101,7 +6101,7 @@
 			"comment": "I named p1 as timeDuration as it is obvious. I'm assuming tho it is ran in ms(Milliseconds) as usual.",
 			"params": [
 				{
-					"type": "int",
+					"type": "Cam",
 					"name": "cam"
 				},
 				{
@@ -6113,17 +6113,17 @@
 			"build": "323"
 		},
 		"0xD1B0F412F109EA5D": {
-			"name": "_0xD1B0F412F109EA5D",
+			"name": "SET_CAM_SPLINE_SMOOTHING_STYLE",
 			"jhash": "0x15E141CE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "smoothingStyle"
 				}
 			],
 			"return_type": "void",
@@ -6143,20 +6143,20 @@
 			"build": "323"
 		},
 		"0x83B8201ED82A9A2D": {
-			"name": "_0x83B8201ED82A9A2D",
+			"name": "SET_CAM_SPLINE_NODE_EASE",
 			"jhash": "0x21D275DA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
@@ -6168,21 +6168,21 @@
 			"build": "323"
 		},
 		"0xA6385DEB180F319F": {
-			"name": "_0xA6385DEB180F319F",
+			"name": "SET_CAM_SPLINE_NODE_VELOCITY_SCALE",
 			"jhash": "0xA3BD9E94",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -6239,21 +6239,21 @@
 			"build": "323"
 		},
 		"0x7BF1A54AE67AC070": {
-			"name": "_0x7BF1A54AE67AC070",
+			"name": "SET_CAM_SPLINE_NODE_EXTRA_FLAGS",
 			"jhash": "0xC90B2DDC",
-			"comment": "",
+			"comment": ",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
