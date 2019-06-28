@@ -5608,48 +5608,48 @@
 			"build": "323"
 		},
 		"0x149916F50C34A40D": {
-			"name": "_0x149916F50C34A40D",
+			"name": "_ATTACH_CAM_TO_PED_BONE_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "boneIndex"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				}
 			],
@@ -5657,52 +5657,52 @@
 			"build": "1180"
 		},
 		"0x8DB3F12A02CAEF72": {
-			"name": "_0x8DB3F12A02CAEF72",
+			"name": "_ATTACH_CAM_TO_VEHICLE_BONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "boneIndex"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p10"
 				}
 			],
@@ -6132,14 +6132,14 @@
 		"0xB22B17DF858716A6": {
 			"name": "GET_CAM_SPLINE_NODE_INDEX",
 			"jhash": "0xF8AEB6BD",
-			"comment": "I named the beginning from Any to BOOL as this native is used in an if statement as well. ",
+			"comment": "",
 			"params": [
 				{
 					"type": "Cam",
 					"name": "cam"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x83B8201ED82A9A2D": {
@@ -16922,7 +16922,7 @@
 		"0x40AFB081F8ADD4EE": {
 			"name": "_RETURN_TWO",
 			"jhash": "0x762E5C5F",
-			"comment": "GET_*\n\nHardcoded to always return 2.",
+			"comment": "GET_L*\n\nHardcoded to always return 2.",
 			"params": [
 				{
 					"type": "int",
@@ -33060,7 +33060,7 @@
 		"0x21C235BC64831E5A": {
 			"name": "_0x21C235BC64831E5A",
 			"jhash": "0xCAECF37E",
-			"comment": "",
+			"comment": "GET_C*",
 			"params": [
 				{
 					"type": "float",
@@ -33160,7 +33160,7 @@
 					"name": "p11"
 				},
 				{
-					"type": "Any*",
+					"type": "float*",
 					"name": "p12"
 				}
 			],
@@ -33256,19 +33256,19 @@
 					"name": "p8"
 				},
 				{
-					"type": "Any*",
+					"type": "float*",
 					"name": "p9"
 				},
 				{
-					"type": "Any*",
+					"type": "float*",
 					"name": "p10"
 				},
 				{
-					"type": "Any*",
+					"type": "float*",
 					"name": "p11"
 				},
 				{
-					"type": "Any*",
+					"type": "float*",
 					"name": "p12"
 				}
 			],
@@ -84857,7 +84857,7 @@
 		"0xB0760331C7AA4155": {
 			"name": "GET_IS_TASK_ACTIVE",
 			"jhash": "0x86FDDF55",
-			"comment": "Known Tasks: pastebin.com/2gFqJ3Px",
+			"comment": "Task index enum: https://pastebin.com/K5t9T3ky",
 			"params": [
 				{
 					"type": "Ped",
@@ -84865,7 +84865,7 @@
 				},
 				{
 					"type": "int",
-					"name": "taskNumber"
+					"name": "taskIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -84895,7 +84895,7 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "veh"
+					"name": "vehicle"
 				}
 			],
 			"return_type": "int",
