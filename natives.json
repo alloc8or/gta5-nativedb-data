@@ -22777,9 +22777,9 @@
 			"build": "323"
 		},
 		"0x98C494FD5BDFBFD5": {
-			"name": "_PUSH_SCALEFORM_MOVIE_FUNCTION_FROM_HUD_COMPONENT",
+			"name": "_BEGIN_SCALEFORM_MOVIE_METHOD_ON_HUD_COMPONENT",
 			"jhash": "0x5D66CE1E",
-			"comment": "Pushes a function from the Hud component Scaleform onto the stack. Same behavior as GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION, just a hud component id instead of a Scaleform.\n\nKnown components:\n19 - MP_RANK_BAR\n20 - HUD_DIRECTOR_MODE\n\nThis native requires more research - all information can be found inside of 'hud.gfx'. Using a decompiler, the different components are located under \"scripts\\__Packages\\com\\rockstargames\\gtav\\hud\\hudComponents\" and \"scripts\\__Packages\\com\\rockstargames\\gtav\\Multiplayer\".",
+			"comment": "Pushes a function from the Hud component Scaleform onto the stack. Same behavior as GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD, just a hud component id instead of a Scaleform.\n\nKnown components:\n19 - MP_RANK_BAR\n20 - HUD_DIRECTOR_MODE\n\nThis native requires more research - all information can be found inside of 'hud.gfx'. Using a decompiler, the different components are located under \"scripts\\__Packages\\com\\rockstargames\\gtav\\hud\\hudComponents\" and \"scripts\\__Packages\\com\\rockstargames\\gtav\\Multiplayer\".",
 			"params": [
 				{
 					"type": "int",
@@ -24879,7 +24879,7 @@
 		"0x23D69E0465570028": {
 			"name": "_BEGIN_TEXT_COMMAND_OBJECTIVE",
 			"jhash": "0x0E103475",
-			"comment": "nothin doin. \n\nvoid message()\n {\n     _BEGIN_TEXT_COMMAND_OBJECTIVE(\"AHT_RTIT\");\n      _END_TEXT_COMMAND_OBJECTIVE(0);\n   }",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
