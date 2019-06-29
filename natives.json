@@ -22973,39 +22973,39 @@
 			"build": "323"
 		},
 		"0x77FE3402004CD1B0": {
-			"name": "_0x77FE3402004CD1B0",
+			"name": "_SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "string"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0xBA7148484BD90365": {
-			"name": "_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_STRING",
+			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING",
 			"jhash": "0x4DAAD55B",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "value"
+					"name": "string"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xE83A3E3557A56640": {
-			"name": "_0xE83A3E3557A56640",
+			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING",
 			"jhash": "0xCCBF0334",
-			"comment": "This method is the equivalent to PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_STRING when using it to add a new button (like \"INSTRUCTIONAL_BUTTONS\").\n\nWhen switching with a controller, the icons update and become the controller's icons.",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "button"
+					"name": "string"
 				}
 			],
 			"return_type": "void",
@@ -23014,7 +23014,7 @@
 		"0x5E657EF1099EDD65": {
 			"name": "_0x5E657EF1099EDD65",
 			"jhash": "0x91A081A1",
-			"comment": "",
+			"comment": "DOES_*",
 			"params": [
 				{
 					"type": "Any",
@@ -23025,13 +23025,13 @@
 			"build": "323"
 		},
 		"0xEC52C631A1831C03": {
-			"name": "_0xEC52C631A1831C03",
+			"name": "_SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT_STRING",
 			"jhash": "0x83A9811D",
-			"comment": "",
+			"comment": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -23040,7 +23040,7 @@
 		"0x9304881D6F6537EA": {
 			"name": "_REQUEST_HUD_SCALEFORM",
 			"jhash": "0x7AF85862",
-			"comment": "http://gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/?p=1068285912",
+			"comment": "http://gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/?p=1068285912\n\nREQUEST_SC*",
 			"params": [
 				{
 					"type": "int",
