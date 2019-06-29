@@ -22564,9 +22564,9 @@
 			"build": "323"
 		},
 		"0x1CE592FDC749D6F5": {
-			"name": "_DRAW_SCALEFORM_MOVIE_3D_NON_ADDITIVE",
+			"name": "DRAW_SCALEFORM_MOVIE_3D_SOLID",
 			"jhash": "0x899933C8",
-			"comment": "what the heck does this one do differently from the one above?",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -23249,13 +23249,13 @@
 			"build": "1604"
 		},
 		"0x0AD973CA1E077B60": {
-			"name": "_LOAD_TV_CHANNEL",
+			"name": "_IS_TV_PLAYLIST_ITEM_PLAYING",
 			"jhash": "0x4D1EB0FB",
 			"comment": "IS_*",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "tvChannel"
+					"name": "videoCliphash"
 				}
 			],
 			"return_type": "BOOL",
@@ -29442,7 +29442,7 @@
 		"0xE3B05614DCE1D014": {
 			"name": "_0xE3B05614DCE1D014",
 			"jhash": "0xD217EE7E",
-			"comment": "",
+			"comment": "GET_G*",
 			"params": [
 				{
 					"type": "Any",
@@ -29455,10 +29455,10 @@
 		"0xB99C4E4D9499DF29": {
 			"name": "_0xB99C4E4D9499DF29",
 			"jhash": "",
-			"comment": "",
+			"comment": "RESET_*",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -29466,11 +29466,11 @@
 			"build": "323"
 		},
 		"0xAF42195A42C63BBA": {
-			"name": "_0xAF42195A42C63BBA",
+			"name": "_IS_WARNING_MESSAGE_ACTIVE_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_WARNING_MESSAGE_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x7B1776B3B53F8D74": {
