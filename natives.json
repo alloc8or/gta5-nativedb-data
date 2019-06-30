@@ -54412,7 +54412,7 @@
 		"0x9B12F9A24FABEDB0": {
 			"name": "_DOOR_CONTROL",
 			"jhash": "0x4E0A260B",
-			"comment": "when you set locked to 0 the door open and to 1 the door close\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 0, 0.0, 50.0, 0);  //door open\n\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 1, 0.0, 50.0, 0);  //door close\n\np5-7 - Rot?",
+			"comment": "when you set locked to 0 the door open and to 1 the door close\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 0, 0.0, 50.0, 0);  //door open\n\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 1, 0.0, 50.0, 0);  //door close\n\np5-7 - Rot?\n\nSET_*",
 			"params": [
 				{
 					"type": "Hash",
@@ -55853,8 +55853,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
 					"type": "int",
@@ -56187,17 +56187,17 @@
 			"build": "323"
 		},
 		"0x88EAEC617CD26926": {
-			"name": "_0x88EAEC617CD26926",
+			"name": "_SET_LOCAL_PLAYER_CAN_USE_PICKUPS_WITH_THIS_MODEL",
 			"jhash": "0x3A8F1BF7",
-			"comment": "SET_LOCAL_PLAYER_*",
+			"comment": "Maximum amount of pickup models that can be disallowed is 30.\n\nSET_LOCAL_PLAYER_*",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "modelHash"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -56529,7 +56529,7 @@
 		"0xA2C1F5E92AFE49ED": {
 			"name": "_0xA2C1F5E92AFE49ED",
 			"jhash": "0xB241806C",
-			"comment": "",
+			"comment": "CLEAR_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -56837,19 +56837,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -70517,7 +70517,7 @@
 			"build": "323"
 		},
 		"0x271C9D3ACA5D6409": {
-			"name": "_0x271C9D3ACA5D6409",
+			"name": "_DOES_ROPE_BELONG_TO_THIS_SCRIPT",
 			"jhash": "",
 			"comment": "",
 			"params": [
