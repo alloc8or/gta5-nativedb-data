@@ -15048,7 +15048,7 @@
 		"0x341DE7ED1D2A1BFD": {
 			"name": "_0x341DE7ED1D2A1BFD",
 			"jhash": "0x8E2C7FD5",
-			"comment": "6,000+ calls from scripts, all with either 0 or 1 for p2, that's a boolean in my book\n\n---\n ^ The last one is the componentId\niVar8 = dlc1::get_hash_name_for_component(iParam0, 8, ped::get_ped_drawable_variation(iParam0, 8), ped::get_ped_texture_variation(iParam0, 8));\n                 if (dlc1::_0x341DE7ED1D2A1BFD(iVar8, 240476421, 8))",
+			"comment": "6,000+ calls from scripts, all with either 0 or 1 for p2, that's a boolean in my book\n\n---\n ^ The last one is the componentId\niVar8 = dlc1::get_hash_name_for_component(iParam0, 8, ped::get_ped_drawable_variation(iParam0, 8), ped::get_ped_texture_variation(iParam0, 8));\n                 if (dlc1::_0x341DE7ED1D2A1BFD(iVar8, 240476421, 8))\n\nDOES_*",
 			"params": [
 				{
 					"type": "Hash",
@@ -56168,7 +56168,7 @@
 		"0x616093EC6B139DD9": {
 			"name": "_0x616093EC6B139DD9",
 			"jhash": "0x7FADB4B9",
-			"comment": "From the scripts:\n\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 1);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 1);\n\nSET_PLAYER_P*",
+			"comment": "From the scripts:\n\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 1);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 1);\n\nSET_PLAYER_*",
 			"params": [
 				{
 					"type": "Player",
@@ -56180,7 +56180,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -68349,12 +68349,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "eventId"
 				}
 			],
 			"return_type": "BOOL",
@@ -74354,30 +74354,30 @@
 			"build": "323"
 		},
 		"0x5DC40A8869C22141": {
-			"name": "_0x5DC40A8869C22141",
-			"jhash": "",
+			"name": "SET_PLAYER_BLUETOOTH_STATE",
+			"jhash": "0x7A6B0EF8",
 			"comment": "",
 			"params": [
 				{
-					"type": "BOOL",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "ScrHandle",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "state"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x65FAEE425DE637B0": {
-			"name": "_0x65FAEE425DE637B0",
-			"jhash": "",
-			"comment": "IS_PLAYER_*",
+			"name": "IS_PLAYER_BLUETOOTH_ENABLE",
+			"jhash": "0xEA01BD4A",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
-					"name": "p0"
+					"name": "player"
 				}
 			],
 			"return_type": "BOOL",
@@ -74397,16 +74397,16 @@
 			"build": "323"
 		},
 		"0x56105E599CAB0EFA": {
-			"name": "_0x56105E599CAB0EFA",
-			"jhash": "",
-			"comment": "GET_PLAYER_*\n\nSeems to do something with network (?)\nPLAYER::_56105E599CAB0EFA(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(ped))",
+			"name": "GET_PLAYER_FAKE_WANTED_LEVEL",
+			"jhash": "0x0098D244",
+			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Player",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x55FCC0C390620314": {
@@ -84055,8 +84055,8 @@
 		},
 		"0x3E38E28A1D80DDF6": {
 			"name": "_0x3E38E28A1D80DDF6",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0x54856309",
+			"comment": "IS_*",
 			"params": [
 				{
 					"type": "Ped",
