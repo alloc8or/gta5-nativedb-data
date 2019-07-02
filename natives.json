@@ -49383,37 +49383,37 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xB2092A1EAA7FD45F": {
-			"name": "_0xB2092A1EAA7FD45F",
+			"name": "_IS_DAMAGE_TRACKER_ACTIVE_ON_PLAYER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "757"
 		},
 		"0xBEC0816FF5ACBCDA": {
-			"name": "_0xBEC0816FF5ACBCDA",
+			"name": "_ACTIVATE_DAMAGE_TRACKER_ON_PLAYER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -49826,9 +49826,9 @@
 			"build": "323"
 		},
 		"0x89023FBBF9200E9F": {
-			"name": "_0x89023FBBF9200E9F",
+			"name": "GET_NETWORK_TIME_ACCURATE",
 			"jhash": "0x98AA48E5",
-			"comment": "Something to do with time, used in context:\nNETWORK::GET_TIME_DIFFERENCE(NETWORK::_89023FBBF9200E9F(), ... )\n\nsfink: returns the same value as NETWORK::GET_NETWORK_TIME in freemode.",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -50011,13 +50011,13 @@
 			"build": "323"
 		},
 		"0xFC18DB55AE19E046": {
-			"name": "_0xFC18DB55AE19E046",
+			"name": "NETWORK_SET_IN_FREE_CAM_MODE",
 			"jhash": "0xA7E36020",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -50026,15 +50026,15 @@
 		"0x5C707A667DF8B9FA": {
 			"name": "_0x5C707A667DF8B9FA",
 			"jhash": "0x64235620",
-			"comment": "",
+			"comment": "NETWORK_SET_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -50180,7 +50180,7 @@
 					"name": "toggle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -50190,11 +50190,11 @@
 		"0x21D04D7BC538C146": {
 			"name": "_0x21D04D7BC538C146",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "BOOL",
@@ -50203,10 +50203,10 @@
 		"0x13F1FCB111B820B0": {
 			"name": "_0x13F1FCB111B820B0",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_NETWORK_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -50274,7 +50274,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -50284,14 +50284,14 @@
 		"0x7EF7649B64D7FF10": {
 			"name": "_0x7EF7649B64D7FF10",
 			"jhash": "",
-			"comment": "",
+			"comment": "IS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "944"
 		},
 		"0x77758139EC9B66C7": {
@@ -51700,11 +51700,11 @@
 		"0x1775961C2FBBCB5C": {
 			"name": "NETWORK_SET_PROPERTY_ID",
 			"jhash": "0x5A74E873",
-			"comment": "",
+			"comment": "value must be < 255",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "void",
@@ -55895,11 +55895,11 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				}
 			],
@@ -55909,23 +55909,23 @@
 		"0xD4A7A435B3710D05": {
 			"name": "_0xD4A7A435B3710D05",
 			"jhash": "",
-			"comment": "",
+			"comment": "Adds an area that seems to be related to pickup physics behavior.\nMax amount of areas is 10. Only works in multiplayer.\n\nADD_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -55934,7 +55934,7 @@
 		"0xB7C6D80FB371659A": {
 			"name": "_0xB7C6D80FB371659A",
 			"jhash": "",
-			"comment": "",
+			"comment": "Clears all areas created by 0xD4A7A435B3710D05\n\nCLEAR_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1290"
@@ -61186,8 +61186,8 @@
 			"build": "323"
 		},
 		"0x8C4F3BF23B6237DB": {
-			"name": "_0x8C4F3BF23B6237DB",
-			"jhash": "",
+			"name": "_CREATE_PARACHUTE_OBJECT",
+			"jhash": "0x19198A16",
 			"comment": "",
 			"params": [
 				{
@@ -61203,7 +61203,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Entity",
+			"return_type": "Object",
 			"build": "323"
 		},
 		"0x030983CA930B692D": {
@@ -62570,20 +62570,20 @@
 			"build": "323"
 		},
 		"0x36B77BB84687C318": {
-			"name": "_0x36B77BB84687C318",
-			"jhash": "",
-			"comment": "GET_TIME_SINCE_???",
+			"name": "_GET_TIME_OF_LAST_PED_WEAPON_DAMAGE",
+			"jhash": "0x0170C6E1",
+			"comment": "GET_TIME_*",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xDA1F1B7BE1A8766F": {
@@ -62732,38 +62732,38 @@
 			"build": "323"
 		},
 		"0x952F06BEECD775CC": {
-			"name": "_0x952F06BEECD775CC",
-			"jhash": "",
-			"comment": "",
+			"name": "SET_PED_VEHICLE_FORCED_SEAT_USAGE",
+			"jhash": "0x79CA237B",
+			"comment": "seatIndex must be <= 2",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "seatIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xE6CA85E7259CE16B": {
-			"name": "_0xE6CA85E7259CE16B",
-			"jhash": "",
+			"name": "CLEAR_ALL_PED_VEHICLE_FORCED_SEAT_USAGE",
+			"jhash": "0xCC1D8F66",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -62872,8 +62872,8 @@
 			"build": "323"
 		},
 		"0x5CCE68DBD5FE93EC": {
-			"name": "_GET_PED_AS_GROUP_LEADER",
-			"jhash": "",
+			"name": "GET_PED_AS_GROUP_LEADER",
+			"jhash": "0x52873C6A",
 			"comment": "",
 			"params": [
 				{
@@ -63390,11 +63390,11 @@
 		"0x80054D7FCC70EEC6": {
 			"name": "_0x80054D7FCC70EEC6",
 			"jhash": "",
-			"comment": "",
+			"comment": "CLEAR_PED_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -70937,7 +70937,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
