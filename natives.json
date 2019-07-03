@@ -12158,7 +12158,7 @@
 		"0xEE5D2A122E09EC42": {
 			"name": "WOULD_ENTITY_BE_OCCLUDED",
 			"jhash": "0xEA127CBC",
-			"comment": "First parameter was previously an Entity but after further research it is definitely a hash.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -14162,7 +14162,7 @@
 		"0xA53ED5520C07654A": {
 			"name": "SET_ENTITY_NO_COLLISION_ENTITY",
 			"jhash": "0x1E11BFE9",
-			"comment": "Calling this function, regardless of the \"unknown\" value, disabled collision between two entities.\n\nImportance of entity1 and 2 order is unclear.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -14174,7 +14174,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unknown"
+					"name": "thisFrameOnly"
 				}
 			],
 			"return_type": "void",
@@ -18514,7 +18514,7 @@
 		"0xEFABC7722293DA7C": {
 			"name": "_0xEFABC7722293DA7C",
 			"jhash": "",
-			"comment": "",
+			"comment": "AD*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -19035,7 +19035,7 @@
 		},
 		"0xD2936CAB8B58FCBD": {
 			"name": "_0xD2936CAB8B58FCBD",
-			"jhash": "",
+			"jhash": "0x84F05943",
 			"comment": "",
 			"params": [
 				{
@@ -19153,20 +19153,20 @@
 			"build": "323"
 		},
 		"0xB11D94BC55F41932": {
-			"name": "_0xB11D94BC55F41932",
+			"name": "_CASCADESHADOWS_SET_TYPE",
 			"jhash": "0xDE10BA1F",
-			"comment": "Has something to do with player switch.\n\nOnly possible values:\n- \"CSM_ST_BOX3x3\"\n- \"CSM_ST_BOX4x4\"",
+			"comment": "Has something to do with player switch.\n\nPossible values:\n\"CSM_ST_POINT\"\n\"CSM_ST_LINEAR\"\n\"CSM_ST_TWOTAP\"\n\"CSM_ST_BOX3x3\"\n\"CSM_ST_BOX4x4\"\n\"CSM_ST_DITHER2_LINEAR\"\n\"CSM_ST_CUBIC\"\n\"CSM_ST_DITHER4\"\n\"CSM_ST_DITHER16\"\n\"CSM_ST_SOFT16\"\n\"CSM_ST_DITHER16_RPDB\"\n\"CSM_ST_POISSON16_RPDB_GNORM\"\n\"CSM_ST_HIGHRES_BOX4x4\"\n\"CSM_ST_CLOUDS_SIMPLE\"\n\"CSM_ST_CLOUDS_LINEAR\"\n\"CSM_ST_CLOUDS_TWOTAP\"\n\"CSM_ST_CLOUDS_BOX3x3\"\n\"CSM_ST_CLOUDS_BOX4x4\"\n\"CSM_ST_CLOUDS_DITHER2_LINEAR\"\n\"CSM_ST_CLOUDS_SOFT16\"\n\"CSM_ST_CLOUDS_DITHER16_RPDB\"\n\"CSM_ST_CLOUDS_POISSON16_RPDB_GNORM\"",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "type"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x27CB772218215325": {
-			"name": "_0x27CB772218215325",
+			"name": "_CASCADESHADOWS_RESET_TYPE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -19239,20 +19239,20 @@
 			"build": "1011"
 		},
 		"0xA51C4B86B71652AE": {
-			"name": "_0xA51C4B86B71652AE",
+			"name": "GOLF_TRAIL_SET_ENABLED",
 			"jhash": "0x5D3BFFC9",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x312342E1A4874F3F": {
-			"name": "_0x312342E1A4874F3F",
+			"name": "GOLF_TRAIL_SET_PATH",
 			"jhash": "0xD9653728",
 			"comment": "p8 seems to always be false.",
 			"params": [
@@ -19297,7 +19297,7 @@
 			"build": "323"
 		},
 		"0x2485D34E50A22E84": {
-			"name": "_0x2485D34E50A22E84",
+			"name": "GOLF_TRAIL_SET_RADIUS",
 			"jhash": "0x72BA8A14",
 			"comment": "",
 			"params": [
@@ -19318,9 +19318,9 @@
 			"build": "323"
 		},
 		"0x12995F2E53FFA601": {
-			"name": "_0x12995F2E53FFA601",
+			"name": "GOLF_TRAIL_SET_COLOUR",
 			"jhash": "0x804F444C",
-			"comment": "Only used in the golf and golf_mp script",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -19375,16 +19375,16 @@
 			"build": "323"
 		},
 		"0xDBAA5EC848BA2D46": {
-			"name": "_0xDBAA5EC848BA2D46",
+			"name": "GOLF_TRAIL_SET_TESSELLATION",
 			"jhash": "0xBB1A1294",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -19394,7 +19394,7 @@
 		"0xC0416B061F2B7E5E": {
 			"name": "_0xC0416B061F2B7E5E",
 			"jhash": "0x1A1A72EF",
-			"comment": "",
+			"comment": "GOLF_TRAIL_SET_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -19407,7 +19407,7 @@
 		"0xB1BB03742917A5D6": {
 			"name": "_0xB1BB03742917A5D6",
 			"jhash": "0x3BB12B75",
-			"comment": "12 matches across 4 scripts. All 4 scripts were job creators.\n\ntype ranged from 0 - 2.\np4 was always 0.2f. Likely scale.\nassuming p5 - p8 is RGBA, the graphic is always yellow (255, 255, 0, 255).\n\nTested but noticed nothing.",
+			"comment": "12 matches across 4 scripts. All 4 scripts were job creators.\n\ntype ranged from 0 - 2.\np4 was always 0.2f. Likely scale.\nassuming p5 - p8 is RGBA, the graphic is always yellow (255, 255, 0, 255).\n\nTested but noticed nothing.\n\nGOLF_TRAIL_SET_*",
 			"params": [
 				{
 					"type": "int",
@@ -19452,7 +19452,7 @@
 		"0x9CFDD90B2B844BF7": {
 			"name": "_0x9CFDD90B2B844BF7",
 			"jhash": "0x4EA70FB4",
-			"comment": "Only appeared in Golf & Golf_mp. Parameters were all ptrs",
+			"comment": "GOLF_TRAIL_SET_*",
 			"params": [
 				{
 					"type": "float",
@@ -19479,7 +19479,7 @@
 			"build": "323"
 		},
 		"0x06F761EA47C1D3ED": {
-			"name": "_0x06F761EA47C1D3ED",
+			"name": "GOLF_TRAIL_SET_FACING",
 			"jhash": "0x0D830DC7",
 			"comment": "",
 			"params": [
@@ -23888,12 +23888,12 @@
 		},
 		"0x92F0DA1E27DB96DC": {
 			"name": "_SET_NOTIFICATION_BACKGROUND_COLOR",
-			"jhash": "",
-			"comment": "From the decompiled scripts:\nUI::_92F0DA1E27DB96DC(6);\nUI::_92F0DA1E27DB96DC(184);\nUI::_92F0DA1E27DB96DC(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: gyazo.com/68bd384455fceb0a85a8729e48216e15\n\nthis seems to set the alpha to 255 automatically, if you have a work around let me know ",
+			"jhash": "0x07CE2EA4",
+			"comment": "From the decompiled scripts:\nUI::_92F0DA1E27DB96DC(6);\nUI::_92F0DA1E27DB96DC(184);\nUI::_92F0DA1E27DB96DC(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: gyazo.com/68bd384455fceb0a85a8729e48216e15",
 			"params": [
 				{
 					"type": "int",
-					"name": "hudIndex"
+					"name": "hudColorIndex"
 				}
 			],
 			"return_type": "void",
@@ -23902,7 +23902,7 @@
 		"0x17430B918701C342": {
 			"name": "_SET_NOTIFICATION_FLASH_COLOR",
 			"jhash": "0xCF14D7F2",
-			"comment": "sets color for notification flash",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -44359,7 +44359,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -44380,7 +44380,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -89643,7 +89643,7 @@
 		"0xAB13A5565480B6D9": {
 			"name": "_0xAB13A5565480B6D9",
 			"jhash": "0x1E58A7AD",
-			"comment": "SET_*",
+			"comment": "Used only once in the scripts (fm_mission_controller) like so:\n\nTASK::_0xAB13A5565480B6D9(iLocal_3160, \"Cutting\");\n\nSET_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -89702,32 +89702,32 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "signalName"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x373EF409B82697A3": {
-			"name": "_0x373EF409B82697A3",
+			"name": "_SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "signalName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -89739,25 +89739,25 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "1493"
 		},
 		"0xB0A6CFD2C69C1088": {
-			"name": "_0xB0A6CFD2C69C1088",
+			"name": "SET_TASK_MOVE_NETWORK_SIGNAL_BOOL",
 			"jhash": "0xF3538041",
-			"comment": "Examples:\nAI::_B0A6CFD2C69C1088(PLAYER::PLAYER_PED_ID(), \"isFirstPerson\", 0);\nAI::_B0A6CFD2C69C1088(PLAYER::PLAYER_PED_ID(), \"isFirstPerson\", 1);\nAI::_B0A6CFD2C69C1088(PLAYER::PLAYER_PED_ID(), \"isBlocked\", sub_179027());",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -89765,37 +89765,20 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "signalName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x44AB0B3AFECCE242": {
-			"name": "_0x44AB0B3AFECCE242",
+			"name": "_GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT",
 			"jhash": "",
 			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				}
-			],
-			"return_type": "Any",
-			"build": "1493"
-		},
-		"0xA7FFBA498E4AAF67": {
-			"name": "_0xA7FFBA498E4AAF67",
-			"jhash": "0x1EBB6F3D",
-			"comment": "Found in scripts:\n\nif (AI::_A7FFBA498E4AAF67(l_9BC, \"Run\")) {\nif (AI::_A7FFBA498E4AAF67(l_9BC, \"Escape\")) {\n\np0 is probably Ped and this native checks if the ped is doing the AI task in p1. Just a guess though.\n\nGET_TASK_MOVE_NETWORK_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -89803,7 +89786,24 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "signalName"
+				}
+			],
+			"return_type": "float",
+			"build": "1493"
+		},
+		"0xA7FFBA498E4AAF67": {
+			"name": "GET_TASK_MOVE_NETWORK_SIGNAL_BOOL",
+			"jhash": "0x1EBB6F3D",
+			"comment": "",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "const char*",
+					"name": "signalName"
 				}
 			],
 			"return_type": "BOOL",
