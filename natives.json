@@ -9884,9 +9884,9 @@
 			"build": "323"
 		},
 		"0x83BCCE3224735F05": {
-			"name": "_0x83BCCE3224735F05",
+			"name": "DATAFILE_START_SAVE_TO_CLOUD",
 			"jhash": "0x768CBB35",
-			"comment": "Saves a JSON file? It might even be saving it to the Rockstar Cloud, but I have no way of verifying this\n\n\"shrinkletter.c4\", line ~378:\nDATAFILE::DATAFILE_CREATE();\nv_5 = DATAFILE::_GET_ROOT_OBJECT();\nDATAFILE::_OBJECT_VALUE_ADD_INTEGER(v_5, \"in\", a_2);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"st\", &a_2._f1);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"mp\", &a_2._f2);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"ms\", &a_2._f3);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"sc\", &a_2._f5);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"pr\", &a_2._f6);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"fa\", &a_2._f7);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"sm\", &a_2._f8);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"kp\", &a_2._f9);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"sv\", &a_2._fA);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"yo\", &a_2._fB);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"fi\", &a_2._fC);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"rc\", &a_2._fD);\nDATAFILE::_OBJECT_VALUE_ADD_STRING(v_5, \"co\", &a_2._fE);\nDATAFILE::_OBJECT_VALUE_ADD_INTEGER(v_5, \"su\", a_2._fF);\nDATAFILE::_83BCCE3224735F05(\"gta5/psych/index.json\"); // saves the file?",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -19155,7 +19155,7 @@
 		"0xB11D94BC55F41932": {
 			"name": "_CASCADESHADOWS_SET_TYPE",
 			"jhash": "0xDE10BA1F",
-			"comment": "Has something to do with player switch.\n\nPossible values:\n\"CSM_ST_POINT\"\n\"CSM_ST_LINEAR\"\n\"CSM_ST_TWOTAP\"\n\"CSM_ST_BOX3x3\"\n\"CSM_ST_BOX4x4\"\n\"CSM_ST_DITHER2_LINEAR\"\n\"CSM_ST_CUBIC\"\n\"CSM_ST_DITHER4\"\n\"CSM_ST_DITHER16\"\n\"CSM_ST_SOFT16\"\n\"CSM_ST_DITHER16_RPDB\"\n\"CSM_ST_POISSON16_RPDB_GNORM\"\n\"CSM_ST_HIGHRES_BOX4x4\"\n\"CSM_ST_CLOUDS_SIMPLE\"\n\"CSM_ST_CLOUDS_LINEAR\"\n\"CSM_ST_CLOUDS_TWOTAP\"\n\"CSM_ST_CLOUDS_BOX3x3\"\n\"CSM_ST_CLOUDS_BOX4x4\"\n\"CSM_ST_CLOUDS_DITHER2_LINEAR\"\n\"CSM_ST_CLOUDS_SOFT16\"\n\"CSM_ST_CLOUDS_DITHER16_RPDB\"\n\"CSM_ST_CLOUDS_POISSON16_RPDB_GNORM\"",
+			"comment": "Possible values:\n\"CSM_ST_POINT\"\n\"CSM_ST_LINEAR\"\n\"CSM_ST_TWOTAP\"\n\"CSM_ST_BOX3x3\"\n\"CSM_ST_BOX4x4\"\n\"CSM_ST_DITHER2_LINEAR\"\n\"CSM_ST_CUBIC\"\n\"CSM_ST_DITHER4\"\n\"CSM_ST_DITHER16\"\n\"CSM_ST_SOFT16\"\n\"CSM_ST_DITHER16_RPDB\"\n\"CSM_ST_POISSON16_RPDB_GNORM\"\n\"CSM_ST_HIGHRES_BOX4x4\"\n\"CSM_ST_CLOUDS_SIMPLE\"\n\"CSM_ST_CLOUDS_LINEAR\"\n\"CSM_ST_CLOUDS_TWOTAP\"\n\"CSM_ST_CLOUDS_BOX3x3\"\n\"CSM_ST_CLOUDS_BOX4x4\"\n\"CSM_ST_CLOUDS_DITHER2_LINEAR\"\n\"CSM_ST_CLOUDS_SOFT16\"\n\"CSM_ST_CLOUDS_DITHER16_RPDB\"\n\"CSM_ST_CLOUDS_POISSON16_RPDB_GNORM\"",
 			"params": [
 				{
 					"type": "const char*",
@@ -76949,7 +76949,7 @@
 		"0xECB41AC6AB754401": {
 			"name": "_0xECB41AC6AB754401",
 			"jhash": "0xED7000C8",
-			"comment": "",
+			"comment": "STAT_LOAD_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -77846,7 +77846,7 @@
 			"build": "323"
 		},
 		"0x098760C7461724CD": {
-			"name": "_0x098760C7461724CD",
+			"name": "_PLAYSTATS_START_OFFLINE_MODE",
 			"jhash": "0x896CDF8D",
 			"comment": "",
 			"params": [],
@@ -78428,9 +78428,9 @@
 			"build": "323"
 		},
 		"0xE95C8A1875A02CA4": {
-			"name": "_PLAYSTATS_WEAPON_MOD_CHANGE",
+			"name": "PLAYSTATS_WEAPON_MODE_CHANGE",
 			"jhash": "0x79716890",
-			"comment": "",
+			"comment": "This is a typo made by R*. It's supposed to be called PLAYSTATS_WEAPON_MOD_CHANGE.",
 			"params": [
 				{
 					"type": "Hash",
@@ -78594,10 +78594,10 @@
 		"0xD1032E482629049E": {
 			"name": "_0xD1032E482629049E",
 			"jhash": "",
-			"comment": "",
+			"comment": "PLAYSTATS_S*",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -78830,13 +78830,13 @@
 			"build": "463"
 		},
 		"0x203B381133817079": {
-			"name": "_0x203B381133817079",
+			"name": "_PLAYSTATS_PI_MENU_HIDE_SETTINGS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
@@ -80222,13 +80222,13 @@
 			"build": "757"
 		},
 		"0xBE509B0A3693DE8B": {
-			"name": "_0xBE509B0A3693DE8B",
+			"name": "_PLAYSTATS_SPENT_PI_CUSTOM_LOADOUT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -80499,17 +80499,17 @@
 			"build": "757"
 		},
 		"0x928DBFB892638EF3": {
-			"name": "_0x928DBFB892638EF3",
+			"name": "_PLAYSTATS_STUNT_PERFORMED_EVENT_ALLOW_TRIGGER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Allows CEventNetworkStuntPerformed to be triggered.",
 			"params": [],
 			"return_type": "void",
 			"build": "791"
 		},
 		"0x8A800DACCC0DA55D": {
-			"name": "_0x8A800DACCC0DA55D",
+			"name": "_PLAYSTATS_STUNT_PERFORMED_EVENT_DISALLOW_TRIGGER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disallows CEventNetworkStuntPerformed to be triggered.",
 			"params": [],
 			"return_type": "void",
 			"build": "791"
@@ -80607,7 +80607,7 @@
 			"build": "877"
 		},
 		"0x0A50D2604E05CB94": {
-			"name": "_0x0A50D2604E05CB94",
+			"name": "_PLAYSTATS_CHANGE_MC_EMBLEM",
 			"jhash": "",
 			"comment": "",
 			"params": [
