@@ -1669,17 +1669,17 @@
 			"build": "323"
 		},
 		"0x733ADF241531E5C2": {
-			"name": "_0x733ADF241531E5C2",
+			"name": "SET_VARIABLE_ON_UNDER_WATER_STREAM",
 			"jhash": "0x62D026BE",
-			"comment": "AUDIO::_733ADF241531E5C2(\"inTunnel\", 1.0);\nAUDIO::_733ADF241531E5C2(\"inTunnel\", 0.0);\n\nI do not know as of yet what this does, but this was found in the scripts.",
+			"comment": "AUDIO::SET_VARIABLE_ON_UNDER_WATER_STREAM(\"inTunnel\", 1.0);\nAUDIO::SET_VARIABLE_ON_UNDER_WATER_STREAM(\"inTunnel\", 0.0);",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "variableName"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -3001,24 +3001,24 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xBCC29F935ED07688": {
-			"name": "_0xBCC29F935ED07688",
+			"name": "_SET_VARIABLE_ON_CUTSCENE_AUDIO",
 			"jhash": "0xD63CF33A",
-			"comment": "Called 5 times in the scripts. All occurrences found in b617d, sorted alphabetically and identical lines removed: \n\nAUDIO::_0xBCC29F935ED07688(\"INOUT\", 0.0);\nAUDIO::_0xBCC29F935ED07688(\"INOUT\", 1.0);",
+			"comment": "SET_VARIABLE_ON_*",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "variableName"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -3643,15 +3643,15 @@
 		"0x6FDDAD856E36988A": {
 			"name": "_0x6FDDAD856E36988A",
 			"jhash": "0x934BE749",
-			"comment": "",
+			"comment": "SET_P*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -3768,21 +3768,21 @@
 			"build": "323"
 		},
 		"0x6F259F82D873B8B8": {
-			"name": "_0x6F259F82D873B8B8",
+			"name": "IS_MISSION_COMPLETE_READY_FOR_UI",
 			"jhash": "0xCBE09AEC",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xF154B8D1775B2DEC": {
 			"name": "_0xF154B8D1775B2DEC",
 			"jhash": "0xD2858D8A",
-			"comment": "",
+			"comment": "BLOCK_DEATH_JINGLE? - Fits alphabetically but didn't seem to have any effect.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -9200,7 +9200,7 @@
 		"0x7F96F23FA9B73327": {
 			"name": "_0x7F96F23FA9B73327",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Hash",
