@@ -36971,7 +36971,7 @@
 		"0x58A39BE597CE99CD": {
 			"name": "_CANCEL_ONSCREEN_KEYBOARD",
 			"jhash": "0x196444BB",
-			"comment": "CANCEL_*",
+			"comment": "DO NOT use this as it doesn't clean up the text input box properly and your script will get stuck in the UPDATE_ONSCREEN_KEYBOARD() loop.\nUse _FORCE_CLOSE_TEXT_INPUT_BOX instead.\n\nCANCEL_*",
 			"params": [],
 			"return_type": "void",
 			"build": "757"
@@ -57237,20 +57237,20 @@
 			"build": "323"
 		},
 		"0xFB6C4072E9A32E92": {
-			"name": "_0xFB6C4072E9A32E92",
+			"name": "_IS_DISABLED_CONTROL_RELEASED",
 			"jhash": "",
-			"comment": "",
+			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "control"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "757"
 		},
 		"0x91AEF906BCA88877": {
