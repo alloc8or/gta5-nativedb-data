@@ -57052,11 +57052,11 @@
 		"0x1CEA6BFDF248E5D9": {
 			"name": "IS_CONTROL_ENABLED",
 			"jhash": "0x9174AF84",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57069,11 +57069,11 @@
 		"0xF3A21BCD95725A4A": {
 			"name": "IS_CONTROL_PRESSED",
 			"jhash": "0x517A4384",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57086,11 +57086,11 @@
 		"0x648EE3E7F38877DD": {
 			"name": "IS_CONTROL_RELEASED",
 			"jhash": "0x1F91A06E",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57103,11 +57103,11 @@
 		"0x580417101DDB492F": {
 			"name": "IS_CONTROL_JUST_PRESSED",
 			"jhash": "0x4487F579",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57120,11 +57120,11 @@
 		"0x50F940259D3841E6": {
 			"name": "IS_CONTROL_JUST_RELEASED",
 			"jhash": "0x2314444B",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57137,11 +57137,11 @@
 		"0xD95E79E8686D2C27": {
 			"name": "GET_CONTROL_VALUE",
 			"jhash": "0xC526F3C6",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57154,11 +57154,11 @@
 		"0xEC3C9B8D5327B563": {
 			"name": "GET_CONTROL_NORMAL",
 			"jhash": "0x5DE226A5",
-			"comment": "Returns the value of GET_CONTROL_VALUE normalized (i.e. a real number value between -1 and 1)\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "Returns the value of GET_CONTROL_VALUE normalized (i.e. a real number value between -1 and 1)\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57184,11 +57184,11 @@
 		"0x5B84D09CEC5209C5": {
 			"name": "GET_CONTROL_UNBOUND_NORMAL",
 			"jhash": "0xC49343BB",
-			"comment": "Seems to return values between -1 and 1 for controls like gas and steering.\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "Seems to return values between -1 and 1 for controls like gas and steering.\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57201,11 +57201,11 @@
 		"0xE8A25867FBA3B05E": {
 			"name": "_SET_CONTROL_NORMAL",
 			"jhash": "",
-			"comment": "This is for simulating player input.\namount is a float value from 0 - 1\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "This is for simulating player input.\namount is a float value from 0 - 1\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57222,11 +57222,11 @@
 		"0xE2587F8CBBD87B1D": {
 			"name": "IS_DISABLED_CONTROL_PRESSED",
 			"jhash": "0x32A93544",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57237,13 +57237,13 @@
 			"build": "323"
 		},
 		"0xFB6C4072E9A32E92": {
-			"name": "_IS_DISABLED_CONTROL_RELEASED",
+			"name": "IS_DISABLED_CONTROL_RELEASED",
 			"jhash": "",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57256,11 +57256,11 @@
 		"0x91AEF906BCA88877": {
 			"name": "IS_DISABLED_CONTROL_JUST_PRESSED",
 			"jhash": "0xEE6ABD32",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57273,11 +57273,11 @@
 		"0x305C8DCD79DA8B0F": {
 			"name": "IS_DISABLED_CONTROL_JUST_RELEASED",
 			"jhash": "0xD6A679E1",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57290,11 +57290,11 @@
 		"0x11E65974A982637C": {
 			"name": "GET_DISABLED_CONTROL_NORMAL",
 			"jhash": "0x66FF4FAA",
-			"comment": "control - c# works with (int)GTA.Control.CursorY / (int)GTA.Control.CursorX and returns the mouse movement (additive).\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "control - c# works with (int)GTA.Control.CursorY / (int)GTA.Control.CursorX and returns the mouse movement (additive).\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57307,11 +57307,11 @@
 		"0x4F8A26A890FD62FB": {
 			"name": "GET_DISABLED_CONTROL_UNBOUND_NORMAL",
 			"jhash": "0xF2A65A4C",
-			"comment": "The \"disabled\" variant of _0x5B84D09CEC5209C5.\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "The \"disabled\" variant of _0x5B84D09CEC5209C5.\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57337,11 +57337,11 @@
 		"0xA571D46727E2B718": {
 			"name": "_IS_INPUT_DISABLED",
 			"jhash": "",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nSeems to return true if the input is currently disabled. \"_GET_LAST_INPUT_METHOD\" didn't seem very accurate, but I've left the original description below.\n\n--\n\nindex usually 2\n\nreturns true if the last input method was made with mouse + keyboard, false if it was made with a gamepad",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nSeems to return true if the input is currently disabled. \"_GET_LAST_INPUT_METHOD\" didn't seem very accurate, but I've left the original description below.\n\n--\n\nindex usually 2\n\nreturns true if the last input method was made with mouse + keyboard, false if it was made with a gamepad",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -57350,11 +57350,11 @@
 		"0x13337B38DB572509": {
 			"name": "_IS_INPUT_JUST_DISABLED",
 			"jhash": "",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nI may be wrong with this one, but from the looks of the scripts, it sets keyboard related stuff as soon as this returns true.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nI may be wrong with this one, but from the looks of the scripts, it sets keyboard related stuff as soon as this returns true.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -57380,11 +57380,11 @@
 		"0x23F09EADC01449D6": {
 			"name": "_0x23F09EADC01449D6",
 			"jhash": "",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nHardcoded to return false.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nHardcoded to return false.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -57393,11 +57393,11 @@
 		"0x6CD79468A1E595C6": {
 			"name": "_0x6CD79468A1E595C6",
 			"jhash": "",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -57406,11 +57406,11 @@
 		"0x0499D7B09FC9B407": {
 			"name": "GET_CONTROL_INSTRUCTIONAL_BUTTON",
 			"jhash": "0x3551727A",
-			"comment": "formerly called _GET_CONTROL_ACTION_NAME incorrectly\n\np2 appears to always be true.\np2 is unused variable in function.\n\nEG:\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 201, 1) /*INPUT_FRONTEND_ACCEPT (e.g. Enter button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 202, 1) /*INPUT_FRONTEND_CANCEL (e.g. ESC button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 51, 1) /*INPUT_CONTEXT (e.g. E button)*/\n\ngtaforums.com/topic/819070-c-draw-instructional-buttons-scaleform-movie/#entry1068197378\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "formerly called _GET_CONTROL_ACTION_NAME incorrectly\n\np2 appears to always be true.\np2 is unused variable in function.\n\nEG:\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 201, 1) /*INPUT_FRONTEND_ACCEPT (e.g. Enter button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 202, 1) /*INPUT_FRONTEND_CANCEL (e.g. ESC button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 51, 1) /*INPUT_CONTEXT (e.g. E button)*/\n\ngtaforums.com/topic/819070-c-draw-instructional-buttons-scaleform-movie/#entry1068197378\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57427,11 +57427,11 @@
 		"0x80C2FD58D720C801": {
 			"name": "_0x80C2FD58D720C801",
 			"jhash": "0x3EE71F6A",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57448,11 +57448,11 @@
 		"0x8290252FFF36ACB5": {
 			"name": "_0x8290252FFF36ACB5",
 			"jhash": "",
-			"comment": "HUD_COLOUR_CONTROLLER_CHOP = 174;\n\nUI::GET_HUD_COLOUR(174, &v_6, &v_7, &v_8, &v_9);\nCONTROLS::_8290252FFF36ACB5(0, v_6, v_7, v_8);",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57476,8 +57476,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "padIndex"
 				}
 			],
 			"return_type": "void",
@@ -57486,11 +57486,11 @@
 		"0x48B3886C1358D0D5": {
 			"name": "SET_PAD_SHAKE",
 			"jhash": "0x5D38BD2F",
-			"comment": "p0 always seems to be 0\nduration in milliseconds \nfrequency should range from about 10 (slow vibration) to 255 (very fast)\nappears to be a hash collision, though it does do what it says\n\nexample:\nSET_PAD_SHAKE(0, 100, 200);",
+			"comment": "padIndex always seems to be 0\nduration in milliseconds \nfrequency should range from about 10 (slow vibration) to 255 (very fast)\nappears to be a hash collision, though it does do what it says\n\nexample:\nSET_PAD_SHAKE(0, 100, 200);",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57539,8 +57539,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "padIndex"
 				}
 			],
 			"return_type": "void",
@@ -57648,11 +57648,11 @@
 		"0xEDE476E5EE29EDB1": {
 			"name": "SET_INPUT_EXCLUSIVE",
 			"jhash": "0x4E8E29E6",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57665,11 +57665,11 @@
 		"0xFE99B66D079CF6BC": {
 			"name": "DISABLE_CONTROL_ACTION",
 			"jhash": "0x3800C0DC",
-			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev_v3/source/scripting/Controls.cs\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,\n28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,5\n4,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,\n79,80,81,82,85,86,87,88,89,90,91,92,93,95,96,97,98,99,100,101,102,103,105,\n107,108,109,110,111,112,113,114,115,116,117,118,119,123,126,129,130,131,132,\n133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,\n153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,171,172\n,177,187,188,189,190,195,196,199,200,201,202,203,205,207,208,209,211,212,213, 217,219,220,221,225,226,230,234,235,236,237,238,239,240,241,242,243,244,257,\n261,262,263,264,265,270,271,272,273,274,278,279,280,281,282,283,284,285,286,\n287,288,289,337.\n\nExample: CONTROLS::DISABLE_CONTROL_ACTION(2, 19, true) disables the switching UI from appearing both when using a keyboard and Xbox 360 controller. Needs to be executed each frame. \n \nControl group 1 and 0 gives the same results as 2. Same results for all players. ",
+			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev_v3/source/scripting/Controls.cs\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,\n28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,5\n4,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,\n79,80,81,82,85,86,87,88,89,90,91,92,93,95,96,97,98,99,100,101,102,103,105,\n107,108,109,110,111,112,113,114,115,116,117,118,119,123,126,129,130,131,132,\n133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,\n153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,171,172\n,177,187,188,189,190,195,196,199,200,201,202,203,205,207,208,209,211,212,213, 217,219,220,221,225,226,230,234,235,236,237,238,239,240,241,242,243,244,257,\n261,262,263,264,265,270,271,272,273,274,278,279,280,281,282,283,284,285,286,\n287,288,289,337.\n\nExample: CONTROLS::DISABLE_CONTROL_ACTION(2, 19, true) disables the switching UI from appearing both when using a keyboard and Xbox 360 controller. Needs to be executed each frame. \n \nControl group 1 and 0 gives the same results as 2. Same results for all players. ",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57686,11 +57686,11 @@
 		"0x351220255D64C155": {
 			"name": "ENABLE_CONTROL_ACTION",
 			"jhash": "0xD2753551",
-			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev/source/scripting/Controls.hpp\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: \n0,1,2,3,4,5,6,8,9,10,11,14,15,16,17,19,21,22,24,25,26,30,31,32,33,34,35,36,\n37,44,46,47,59,60,65,68,69,70,71,72,73,74,75,76,79,80,81,82,86,95,98,99,100\n,101,114,140,141,143,172,173,174,175,176,177,178,179,180,181,187,188,189,19\n0,195,196,197,198,199,201,202,203,204,205,206,207,208,209,210,217,218,219,2\n20,221,225,228,229,230,231,234,235,236,237,238,239,240,241,242,245,246,257,\n261,262,263,264,286,287,288,289,337,338,339,340,341,342,343\n\nINPUTGROUP_MOVE\nINPUTGROUP_LOOK\nINPUTGROUP_WHEEL\nINPUTGROUP_CELLPHONE_NAVIGATE\nINPUTGROUP_CELLPHONE_NAVIGATE_UD\nINPUTGROUP_CELLPHONE_NAVIGATE_LR\nINPUTGROUP_FRONTEND_DPAD_ALL\nINPUTGROUP_FRONTEND_DPAD_UD\nINPUTGROUP_FRONTEND_DPAD_LR\nINPUTGROUP_FRONTEND_LSTICK_ALL\nINPUTGROUP_FRONTEND_RSTICK_ALL\nINPUTGROUP_FRONTEND_GENERIC_UD\nINPUTGROUP_FRONTEND_GENERIC_LR\nINPUTGROUP_FRONTEND_GENERIC_ALL\nINPUTGROUP_FRONTEND_BUMPERS\nINPUTGROUP_FRONTEND_TRIGGERS\nINPUTGROUP_FRONTEND_STICKS\nINPUTGROUP_SCRIPT_DPAD_ALL\nINPUTGROUP_SCRIPT_DPAD_UD\nINPUTGROUP_SCRIPT_DPAD_LR\nINPUTGROUP_SCRIPT_LSTICK_ALL\nINPUTGROUP_SCRIPT_RSTICK_ALL\nINPUTGROUP_SCRIPT_BUMPERS\nINPUTGROUP_SCRIPT_TRIGGERS\nINPUTGROUP_WEAPON_WHEEL_CYCLE\nINPUTGROUP_FLY\nINPUTGROUP_SUB\nINPUTGROUP_VEH_MOVE_ALL\nINPUTGROUP_CURSOR\nINPUTGROUP_CURSOR_SCROLL\nINPUTGROUP_SNIPER_ZOOM_SECONDARY\nINPUTGROUP_VEH_HYDRAULICS_CONTROL\n\n\nTook those in IDA Pro.Not sure in which order they go",
+			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev/source/scripting/Controls.hpp\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: \n0,1,2,3,4,5,6,8,9,10,11,14,15,16,17,19,21,22,24,25,26,30,31,32,33,34,35,36,\n37,44,46,47,59,60,65,68,69,70,71,72,73,74,75,76,79,80,81,82,86,95,98,99,100\n,101,114,140,141,143,172,173,174,175,176,177,178,179,180,181,187,188,189,19\n0,195,196,197,198,199,201,202,203,204,205,206,207,208,209,210,217,218,219,2\n20,221,225,228,229,230,231,234,235,236,237,238,239,240,241,242,245,246,257,\n261,262,263,264,286,287,288,289,337,338,339,340,341,342,343\n\nINPUTGROUP_MOVE\nINPUTGROUP_LOOK\nINPUTGROUP_WHEEL\nINPUTGROUP_CELLPHONE_NAVIGATE\nINPUTGROUP_CELLPHONE_NAVIGATE_UD\nINPUTGROUP_CELLPHONE_NAVIGATE_LR\nINPUTGROUP_FRONTEND_DPAD_ALL\nINPUTGROUP_FRONTEND_DPAD_UD\nINPUTGROUP_FRONTEND_DPAD_LR\nINPUTGROUP_FRONTEND_LSTICK_ALL\nINPUTGROUP_FRONTEND_RSTICK_ALL\nINPUTGROUP_FRONTEND_GENERIC_UD\nINPUTGROUP_FRONTEND_GENERIC_LR\nINPUTGROUP_FRONTEND_GENERIC_ALL\nINPUTGROUP_FRONTEND_BUMPERS\nINPUTGROUP_FRONTEND_TRIGGERS\nINPUTGROUP_FRONTEND_STICKS\nINPUTGROUP_SCRIPT_DPAD_ALL\nINPUTGROUP_SCRIPT_DPAD_UD\nINPUTGROUP_SCRIPT_DPAD_LR\nINPUTGROUP_SCRIPT_LSTICK_ALL\nINPUTGROUP_SCRIPT_RSTICK_ALL\nINPUTGROUP_SCRIPT_BUMPERS\nINPUTGROUP_SCRIPT_TRIGGERS\nINPUTGROUP_WEAPON_WHEEL_CYCLE\nINPUTGROUP_FLY\nINPUTGROUP_SUB\nINPUTGROUP_VEH_MOVE_ALL\nINPUTGROUP_CURSOR\nINPUTGROUP_CURSOR_SCROLL\nINPUTGROUP_SNIPER_ZOOM_SECONDARY\nINPUTGROUP_VEH_HYDRAULICS_CONTROL\n\n\nTook those in IDA Pro.Not sure in which order they go",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -57707,11 +57707,11 @@
 		"0x5F4B6931816E599B": {
 			"name": "DISABLE_ALL_CONTROL_ACTIONS",
 			"jhash": "0x16753CF4",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				}
 			],
 			"return_type": "void",
@@ -57720,11 +57720,11 @@
 		"0xA5FFE9B05F199DE7": {
 			"name": "ENABLE_ALL_CONTROL_ACTIONS",
 			"jhash": "0xFC2F119F",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				}
 			],
 			"return_type": "void",
@@ -57767,11 +57767,11 @@
 		"0x7F4724035FDCA1DD": {
 			"name": "_0x7F4724035FDCA1DD",
 			"jhash": "0x2CEDE6C5",
-			"comment": "p0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nA*",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nA*",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "padIndex"
 				}
 			],
 			"return_type": "void",
@@ -58767,7 +58767,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "ignore"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -58780,7 +58780,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -81370,7 +81370,7 @@
 			"build": "323"
 		},
 		"0x75816577FEA6DAD5": {
-			"name": "_IS_MODEL_A_PED",
+			"name": "IS_MODEL_A_PED",
 			"jhash": "",
 			"comment": "",
 			"params": [
