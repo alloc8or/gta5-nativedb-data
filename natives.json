@@ -3749,7 +3749,7 @@
 		"0xB138AAB8A70D3C69": {
 			"name": "PLAY_MISSION_COMPLETE_AUDIO",
 			"jhash": "0x3033EA1D",
-			"comment": " Called 38 times in the scripts. There are 5 different audioNames used. \n One unknown removed below. \n\n AUDIO::PLAY_MISSION_COMPLETE_AUDIO(\"DEAD\");\n AUDIO::PLAY_MISSION_COMPLETE_AUDIO(\"FRANKLIN_BIG_01\");\n AUDIO::PLAY_MISSION_COMPLETE_AUDIO(\"GENERIC_FAILED\");\n AUDIO::PLAY_MISSION_COMPLETE_AUDIO(\"TREVOR_SMALL_01\");",
+			"comment": "Called 38 times in the scripts. There are 5 different audioNames used.\n One unknown removed below.\n\nAUDIO::PLAY_MISSION_COMPLETE_AUDIO(\"DEAD\");\nAUDIO::PLAY_MISSION_COMPLETE_AUDIO(\"FRANKLIN_BIG_01\");\nAUDIO::PLAY_MISSION_COMPLETE_AUDIO(\"GENERIC_FAILED\");\nAUDIO::PLAY_MISSION_COMPLETE_AUDIO(\"TREVOR_SMALL_01\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -57182,7 +57182,7 @@
 			"build": "323"
 		},
 		"0x5B84D09CEC5209C5": {
-			"name": "_0x5B84D09CEC5209C5",
+			"name": "GET_CONTROL_UNBOUND_NORMAL",
 			"jhash": "0xC49343BB",
 			"comment": "Seems to return values between -1 and 1 for controls like gas and steering.\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
@@ -57305,7 +57305,7 @@
 			"build": "323"
 		},
 		"0x4F8A26A890FD62FB": {
-			"name": "_0x4F8A26A890FD62FB",
+			"name": "GET_DISABLED_CONTROL_UNBOUND_NORMAL",
 			"jhash": "0xF2A65A4C",
 			"comment": "The \"disabled\" variant of _0x5B84D09CEC5209C5.\n\np0: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
