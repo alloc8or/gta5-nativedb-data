@@ -41119,7 +41119,7 @@
 			"build": "1180"
 		},
 		"0x4EA3F425C7744D21": {
-			"name": "_0x4EA3F425C7744D21",
+			"name": "_NETWORK_SPENT_BUY_BASE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -57731,35 +57731,35 @@
 			"build": "323"
 		},
 		"0x3D42B92563939375": {
-			"name": "_0x3D42B92563939375",
+			"name": "_SWITCH_TO_INPUT_MAPPING_SCHEME",
 			"jhash": "0xD2C80B2E",
-			"comment": "Used in carsteal3 script with p0 = \"Carsteal4_spycar\".",
+			"comment": "Used in carsteal3 script with p0 = \"Carsteal4_spycar\".\n\nS*",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x4683149ED1DDE7A1": {
-			"name": "_0x4683149ED1DDE7A1",
+			"name": "_SWITCH_TO_INPUT_MAPPING_SCHEME_2",
 			"jhash": "0xBBFC9050",
-			"comment": "",
+			"comment": "Same as 0x3D42B92563939375\n\nS*",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x643ED62D5EA3BEBD": {
-			"name": "_0x643ED62D5EA3BEBD",
+			"name": "_RESET_INPUT_MAPPING_SCHEME",
 			"jhash": "0x42140FF9",
-			"comment": "",
+			"comment": "S*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -66446,36 +66446,36 @@
 			"build": "323"
 		},
 		"0x8A24B067D175A7BD": {
-			"name": "_0x8A24B067D175A7BD",
+			"name": "_DOES_SCENARIO_BLOCKING_AREA_EXIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "678"
 		},
 		"0x1BF094736DD62C2E": {
@@ -70934,7 +70934,7 @@
 		"0x9EBD751E5787BAF2": {
 			"name": "_0x9EBD751E5787BAF2",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -70947,10 +70947,10 @@
 		"0xAA6A6098851C396F": {
 			"name": "_0xAA6A6098851C396F",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
