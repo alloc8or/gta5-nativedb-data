@@ -79173,8 +79173,8 @@
 			"build": "323"
 		},
 		"0xF1AE5DCDBFCA2721": {
-			"name": "_0xF1AE5DCDBFCA2721",
-			"jhash": "_LEADERBOARDS2_READ_BY_PLATFORM",
+			"name": "_LEADERBOARDS2_READ_BY_PLATFORM",
+			"jhash": "",
 			"comment": "",
 			"params": [
 				{
