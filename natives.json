@@ -33745,7 +33745,7 @@
 		"0xC9BF75D28165FF77": {
 			"name": "SET_SAVE_MENU_ACTIVE",
 			"jhash": "0xF5CCF164",
-			"comment": "ignoreVehicle - bypasses vehicle check of the local player (it will not open when you are in a vehicle and this is set to false)",
+			"comment": "ignoreVehicle - bypasses vehicle check of the local player (it will not open if you are in a vehicle and this is set to false)",
 			"params": [
 				{
 					"type": "BOOL",
@@ -35583,13 +35583,13 @@
 			"build": "323"
 		},
 		"0xD79185689F8FD5DF": {
-			"name": "_0xD79185689F8FD5DF",
+			"name": "SET_STUNT_JUMPS_CAN_TRIGGER",
 			"jhash": "0x3C806A2D",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -43652,7 +43652,7 @@
 		"0xFA8904DC5F304220": {
 			"name": "NETWORK_SESSION_KICK_PLAYER",
 			"jhash": "0x1E20138A",
-			"comment": "Only works when you are host.",
+			"comment": "Only works as host.",
 			"params": [
 				{
 					"type": "Player",
@@ -50741,7 +50741,7 @@
 		"0xFB8F2A6F3DF08CBE": {
 			"name": "_0xFB8F2A6F3DF08CBE",
 			"jhash": "0x44BFB619",
-			"comment": "",
+			"comment": "Something related to navmeshes.\n\nNETWORK_CA*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -63965,7 +63965,7 @@
 		"0x9414E18B9434C2FE": {
 			"name": "SET_PED_HEAD_BLEND_DATA",
 			"jhash": "0x60746B88",
-			"comment": "The \"shape\" parameters control the shape of the ped's face. The \"skin\" parameters control the skin tone. ShapeMix and skinMix control how much the first and second IDs contribute,(typically mother and father.) ThirdMix overrides the others in favor of the third IDs. IsParent is set for \"children\" of the player character's grandparents during old-gen character creation. It has unknown effect otherwise.\n\nThe IDs start at zero and go Male Non-DLC, Female Non-DLC, Male DLC, and Female DLC.\n\n!!!Can someone add working example for this???\n\ntry this:\n       headBlendData headData;\n       _GET_PED_HEAD_BLEND_DATA(PLAYER_PED_ID(), &headData);\n\n       SET_PED_HEAD_BLEND_DATA(PLAYER_PED_ID(), headData.shapeFirst, headData.shapeSecond, headData.shapeThird, headData.skinFirst, headData.skinSecond\n          , headData.skinThird, headData.shapeMix, headData.skinMix, headData.skinThird, 0);\n\n\nFor more info please refer to this topic. \ngtaforums.com/topic/858970-all-gtao-face-ids-pedset-ped-head-blend-data-explained",
+			"comment": "The \"shape\" parameters control the shape of the ped's face. The \"skin\" parameters control the skin tone. ShapeMix and skinMix control how much the first and second IDs contribute,(typically mother and father.) ThirdMix overrides the others in favor of the third IDs. IsParent is set for \"children\" of the player character's grandparents during old-gen character creation. It has unknown effect otherwise.\n\nThe IDs start at zero and go Male Non-DLC, Female Non-DLC, Male DLC, and Female DLC.\n\n!!!Can someone add working example for this???\n\ntry this:\n       headBlendData headData;\n       GET_PED_HEAD_BLEND_DATA(PLAYER_PED_ID(), &headData);\n\n       SET_PED_HEAD_BLEND_DATA(PLAYER_PED_ID(), headData.shapeFirst, headData.shapeSecond, headData.shapeThird, headData.skinFirst, headData.skinSecond\n          , headData.skinThird, headData.shapeMix, headData.skinMix, headData.skinThird, 0);\n\n\nFor more info please refer to this topic. \ngtaforums.com/topic/858970-all-gtao-face-ids-pedset-ped-head-blend-data-explained",
 			"params": [
 				{
 					"type": "Ped",
@@ -64016,7 +64016,7 @@
 			"build": "323"
 		},
 		"0x2746BD9D88C5C5D0": {
-			"name": "_GET_PED_HEAD_BLEND_DATA",
+			"name": "GET_PED_HEAD_BLEND_DATA",
 			"jhash": "0x44E1680C",
 			"comment": "The pointer is to a padded struct that matches the arguments to SET_PED_HEAD_BLEND_DATA(...). There are 4 bytes of padding after each field.\npass this struct in the second parameter \ntypedef struct\n{\n        int shapeFirst, shapeSecond, shapeThird; \n        int skinFirst, skinSecond, skinThird; \n   float shapeMix, skinMix, thirdMix;\n} headBlendData;",
 			"params": [
@@ -64720,7 +64720,7 @@
 		},
 		"0xAFF4710E2A0A6C12": {
 			"name": "_0xAFF4710E2A0A6C12",
-			"jhash": "",
+			"jhash": "0x728D3D53",
 			"comment": "",
 			"params": [
 				{
@@ -67548,7 +67548,7 @@
 		"0x687C0B594907D2E8": {
 			"name": "_0x687C0B594907D2E8",
 			"jhash": "0x24A1284E",
-			"comment": "",
+			"comment": "CLEAR_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -67854,7 +67854,7 @@
 					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x9F7794730795E019": {
@@ -86541,7 +86541,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
 					"type": "Hash",
@@ -87851,8 +87851,8 @@
 		},
 		"0x621C6E4729388E41": {
 			"name": "_0x621C6E4729388E41",
-			"jhash": "",
-			"comment": "Used only once (am_mp_property_int)\n\nped was PLAYER_PED_ID()",
+			"jhash": "0xA0DA6B1D",
+			"comment": "Used only once (am_mp_property_int)\n\nped was PLAYER_PED_ID()\n\nRelated to CTaskAmbientClips.\n\nIS_PED_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -87863,8 +87863,8 @@
 			"build": "323"
 		},
 		"0x8FD89A6240813FD0": {
-			"name": "_0x8FD89A6240813FD0",
-			"jhash": "",
+			"name": "SET_PED_CAN_PLAY_AMBIENT_IDLES",
+			"jhash": "0xB5AD044E",
 			"comment": "Appears only in fm_mission_controller and used only 3 times.\n\nped was always PLAYER_PED_ID()\np1 was always true\np2 was always true",
 			"params": [
 				{
@@ -87968,7 +87968,7 @@
 			"comment": "In every case of this native, I've only seen the first parameter passed as 0, although I believe it's a Ped after seeing tasks around it using 0. That's because it's used in a Sequence Task.\n\nThe last 3 parameters are definitely coordinates after seeing them passed in other scripts, and even being used straight from the player's coordinates.\n---\nIt seems that - in the decompiled scripts - this native was used on a ped who was in a vehicle to throw a projectile out the window at the player. This is something any ped will naturally do if they have a throwable and they are doing driveby-combat (although not very accurately).\nIt is possible, however, that this is how SWAT throws smoke grenades at the player when in cover.\n----------------------------------------------------\nThe first comment is right it definately is the ped as if you look in script finale_heist2b.c line 59628 in Xbox Scripts atleast you will see task_throw_projectile and the first param is Local_559[2 <14>] if you look above it a little bit line 59622 give_weapon_to_ped uses the same exact param Local_559[2 <14>] and we all know the first param of that native is ped. So it guaranteed has to be ped. 0 just may mean to use your ped by default for some reason.",
 			"params": [
 				{
-					"type": "int",
+					"type": "Ped",
 					"name": "ped"
 				},
 				{
