@@ -23309,7 +23309,7 @@
 			"build": "323"
 		},
 		"0xD3A10FC7FD8D98CD": {
-			"name": "_0xD3A10FC7FD8D98CD",
+			"name": "UI3DSCENE_IS_AVAILABLE",
 			"jhash": "0xE40A0F1A",
 			"comment": "",
 			"params": [],
@@ -23317,13 +23317,13 @@
 			"build": "323"
 		},
 		"0xF1CEA8A4198D8E9A": {
-			"name": "_0xF1CEA8A4198D8E9A",
+			"name": "UI3DSCENE_PUSH_PRESET",
 			"jhash": "0x2E7D9B98",
-			"comment": "",
+			"comment": "All presets can be found in common\\data\\ui\\uiscenes.meta",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "presetName"
 				}
 			],
 			"return_type": "BOOL",
@@ -23332,11 +23332,11 @@
 		"0x98C4FE6EC34154CA": {
 			"name": "_0x98C4FE6EC34154CA",
 			"jhash": "0x9A0E3BFE",
-			"comment": "It's called after 0xD3A10FC7FD8D98CD and 0xF1CEA8A4198D8E9A\n\np0 was always \"CELEBRATION_WINNER\"",
+			"comment": "It's called after 0xD3A10FC7FD8D98CD and 0xF1CEA8A4198D8E9A\n\npresetName was always \"CELEBRATION_WINNER\"\nAll presets can be found in common\\data\\ui\\uiscenes.meta\n\nUI3DSCENE_*",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "presetName"
 				},
 				{
 					"type": "Ped",
@@ -23365,7 +23365,7 @@
 		"0x7A42B2E236E71415": {
 			"name": "_0x7A42B2E236E71415",
 			"jhash": "0x431AA036",
-			"comment": "",
+			"comment": "UI3DSCENE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -23373,7 +23373,7 @@
 		"0x108BE26959A9D9BB": {
 			"name": "_0x108BE26959A9D9BB",
 			"jhash": "0x24A7A7F6",
-			"comment": "U*",
+			"comment": "UI3DSCENE_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -29067,8 +29067,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "headDisplayId"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "const char*",
@@ -46779,15 +46779,15 @@
 		"0x9DD368BF06983221": {
 			"name": "NETWORK_DISABLE_INVINCIBLE_FLASHING",
 			"jhash": "0x8D27280E",
-			"comment": "hash collision???",
+			"comment": "",
 			"params": [
 				{
-					"type": "int",
+					"type": "Player",
 					"name": "player"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
