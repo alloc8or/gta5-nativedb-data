@@ -71354,7 +71354,7 @@
 		"0x8D32347D6D4C40A2": {
 			"name": "SET_PLAYER_CONTROL",
 			"jhash": "0xD17AFCD8",
-			"comment": "Flags used in the scripts: 0,4,16,24,32,56,60,64,128,134,256,260,384,512,640,768,896,900,952,1024,1280,2048,2560\n\nNote to people who needs this with camera mods, etc.: \nFlags(0, 4, 16, 24, 32, 56, 60, 64, 128, 134, 512, 640, 1024, 2048, 2560)\n- Disables camera rotation as well.\nFlags(256, 260, 384, 768, 896, 900, 952, 1280)\n- Allows camera rotation.",
+			"comment": "enum eSetPlayerControlFlag : uint32_t\n{\n\tSPC_AMBIENT_SCRIPT = (1 << 1),\n\tSPC_CLEAR_TASKS = (1 << 2),\n\tSPC_REMOVE_FIRES = (1 << 3),\n\tSPC_REMOVE_EXPLOSIONS = (1 << 4),\n\tSPC_REMOVE_PROJECTILES = (1 << 5),\n\tSPC_DEACTIVATE_GADGETS = (1 << 6),\n\tSPC_REENABLE_CONTROL_ON_DEATH = (1 << 7),\n\tSPC_LEAVE_CAMERA_CONTROL_ON = (1 << 8),\n\tSPC_ALLOW_PLAYER_DAMAGE = (1 << 9),\n\tSPC_DONT_STOP_OTHER_CARS_AROUND_PLAYER = (1 << 10),\n\tSPC_PREVENT_EVERYBODY_BACKOFF = (1 << 11),\n\tSPC_ALLOW_PAD_SHAKE = (1 << 12)\n};",
 			"params": [
 				{
 					"type": "Player",
@@ -71362,7 +71362,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "bHasControl"
 				},
 				{
 					"type": "int",
