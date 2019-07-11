@@ -43317,7 +43317,20 @@
 			"name": "NETWORK_BAIL",
 			"jhash": "0x87D79A04",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "int",
+					"name": "p2"
+				}
+			],
 			"return_type": "void",
 			"build": "323"
 		},
