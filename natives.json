@@ -8353,7 +8353,7 @@
 			"build": "323"
 		},
 		"0x89215EC747DF244A": {
-			"name": "_0x89215EC747DF244A",
+			"name": "GET_FOCUS_PED_ON_SCREEN",
 			"jhash": "0xFD99BE2B",
 			"comment": "",
 			"params": [
@@ -8394,7 +8394,7 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "Entity",
+			"return_type": "Ped",
 			"build": "323"
 		},
 		"0x5A43C76F7FC7BA5F": {
@@ -14976,7 +14976,7 @@
 		},
 		"0x017568A8182D98A6": {
 			"name": "_0x017568A8182D98A6",
-			"jhash": "",
+			"jhash": "0xC560D7C0",
 			"comment": "",
 			"params": [
 				{
@@ -15018,7 +15018,7 @@
 		},
 		"0xE1CA84EBF72E691D": {
 			"name": "_0xE1CA84EBF72E691D",
-			"jhash": "",
+			"jhash": "0x22DAE257",
 			"comment": "",
 			"params": [
 				{
@@ -93149,17 +93149,17 @@
 			"build": "323"
 		},
 		"0xF0F2103EFAF8CBA7": {
-			"name": "_0xF0F2103EFAF8CBA7",
+			"name": "GET_ROTATION_OF_VEHICLE_RECORDING_ID_AT_TIME",
 			"jhash": "0x4D1C15C2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				}
 			],
 			"return_type": "Vector3",
@@ -93906,7 +93906,7 @@
 			"build": "323"
 		},
 		"0x9537097412CF75FE": {
-			"name": "_IS_THIS_MODEL_A_JETSKI",
+			"name": "IS_THIS_MODEL_A_JETSKI",
 			"jhash": "",
 			"comment": "Checks if model is a boat, then checks for FLAG_IS_JETSKI.",
 			"params": [
@@ -94221,7 +94221,7 @@
 		"0xBCDC5017D3CE1E9E": {
 			"name": "_IS_VEHICLE_DAMAGED",
 			"jhash": "0xDAC523BC",
-			"comment": "Appears to return true if the vehicle has any damage, including cosmetically.",
+			"comment": "Appears to return true if the vehicle has any damage, including cosmetically.\n\nGET_*",
 			"params": [
 				{
 					"type": "Vehicle",
