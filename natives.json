@@ -7457,8 +7457,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "camName"
 				}
 			],
 			"return_type": "void",
@@ -43095,9 +43095,9 @@
 			"build": "323"
 		},
 		"0x1353F87E89946207": {
-			"name": "_0x1353F87E89946207",
+			"name": "_NETWORK_HAS_AGE_RESTRICTED_PROFILE",
 			"jhash": "",
-			"comment": "Returns some kind of banned state",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -43237,11 +43237,11 @@
 			"build": "323"
 		},
 		"0x9614B71F8ADB982B": {
-			"name": "_0x9614B71F8ADB982B",
-			"jhash": "",
+			"name": "NETWORK_GET_AGE_GROUP",
+			"jhash": "0xAB07CBBE",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x0CF6CC51AA18F0F8": {
@@ -44899,7 +44899,7 @@
 			"jhash": "0x3A3599B7",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2DCF46CB1A4F0884": {
@@ -53794,8 +53794,13 @@
 			"name": "_0xD414BE129BB81B32",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
+			"return_type": "float",
 			"build": "323",
 			"unused": true
 		},
@@ -53803,26 +53808,41 @@
 			"name": "_0x0E3A041ED6AC2B45",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
+			"return_type": "float",
 			"build": "323",
 			"unused": true
 		},
 		"0x350C23949E43686C": {
 			"name": "_0x350C23949E43686C",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "NETWORK_GET_*",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
+			"return_type": "float",
 			"build": "323",
 			"unused": true
 		},
 		"0xFF8FCF9FFC458A1C": {
-			"name": "_0xFF8FCF9FFC458A1C",
+			"name": "_NETWORK_GET_NUM_UNACKED_FOR_PLAYER",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				}
+			],
+			"return_type": "int",
 			"build": "323",
 			"unused": true
 		},
@@ -53841,9 +53861,9 @@
 			"unused": true
 		},
 		"0x52C1EADAF7B10302": {
-			"name": "_0x52C1EADAF7B10302",
+			"name": "_NETWORK_GET_OLDEST_RESEND_COUNT_FOR_PLAYER",
 			"jhash": "",
-			"comment": "Returns oldest resend count to the given player (netConnectionManager::GetOldestResendCount).\n\nNETWORK_GET_*",
+			"comment": "NETWORK_GET_*",
 			"params": [
 				{
 					"type": "Player",
@@ -53866,55 +53886,60 @@
 		"0x64D779659BC37B19": {
 			"name": "_0x64D779659BC37B19",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_GET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vector3",
 			"build": "393"
 		},
 		"0x125E6D638B8605D4": {
 			"name": "_0x125E6D638B8605D4",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_GET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vector3",
 			"build": "393"
 		},
 		"0x33DE49EDF4DDE77A": {
 			"name": "_0x33DE49EDF4DDE77A",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_GET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vector3",
 			"build": "1103"
 		},
 		"0xAA5FAFCD2C5F5E47": {
 			"name": "_0xAA5FAFCD2C5F5E47",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "NETWORK_GET_P*",
+			"params": [
+				{
+					"type": "Entity",
+					"name": "entity"
+				}
+			],
+			"return_type": "Vector3",
 			"build": "1103",
 			"unused": true
 		},
 		"0xAEDF1BC1C133D6E3": {
 			"name": "_0xAEDF1BC1C133D6E3",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [],
 			"return_type": "Any",
 			"build": "323",
@@ -53923,7 +53948,7 @@
 		"0x2555CF7DA5473794": {
 			"name": "_0x2555CF7DA5473794",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [],
 			"return_type": "Any",
 			"build": "323",
@@ -53932,7 +53957,7 @@
 		"0x6FD992C4A1C1B986": {
 			"name": "_0x6FD992C4A1C1B986",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [],
 			"return_type": "Any",
 			"build": "323",
