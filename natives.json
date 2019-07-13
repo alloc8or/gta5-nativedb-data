@@ -26879,7 +26879,7 @@
 		"0x03D7FB09E75D6B7E": {
 			"name": "SET_BLIP_COLOUR",
 			"jhash": "0xBB3C5A41",
-			"comment": "Color:\n\n0: white\n1: red\n2: green\n3: blue\n17: orange\n19: purple\n20: grey\n21: brown\n23: pink\n25: dark green\n27: dark purple\n29: dark blue\nDefault (Function not used): yellow\n\nThose are not the only ones. i.e: 17 is Trevor's orange.",
+			"comment": "https://gtaforums.com/topic/864881-all-blip-color-ids-pictured/",
 			"params": [
 				{
 					"type": "Blip",
@@ -30747,7 +30747,7 @@
 		"0xD30C50DF888D58B5": {
 			"name": "SET_PED_HAS_AI_BLIP",
 			"jhash": "0x96C4C4DD",
-			"comment": "This native turns on the AI blip on the specified ped. It also disappears automatically when the ped is too far or if the ped is dead. You don't need to control it with other natives. \n\nSee gtaforums.com/topic/884370-native-research-ai-blips for further information.",
+			"comment": "This native turns on the AI blip on the specified ped. It also disappears automatically when the ped is too far or if the ped is dead. You don't need to control it with other natives.\n\nSee gtaforums.com/topic/884370-native-research-ai-blips for further information.",
 			"params": [
 				{
 					"type": "Ped",
@@ -30762,21 +30762,21 @@
 			"build": "323"
 		},
 		"0xB13DCB4C6FAAD238": {
-			"name": "_0xB13DCB4C6FAAD238",
+			"name": "_SET_PED_HAS_AI_BLIP_WITH_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "color: see SET_BLIP_COLOUR",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "hasCone"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "color"
 				}
 			],
 			"return_type": "void",
@@ -30785,7 +30785,7 @@
 		"0x15B8ECF844EE67ED": {
 			"name": "DOES_PED_HAVE_AI_BLIP",
 			"jhash": "0x3BE1257F",
-			"comment": "Returns whether the ped's blip is controlled by the game. \nIt's the default blip you can see on enemies during freeroam in singleplayer (the one that fades out quickly). ",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -30907,23 +30907,23 @@
 			"build": "323"
 		},
 		"0xA277800A9EAE340E": {
-			"name": "_0xA277800A9EAE340E",
+			"name": "_HAS_DIRECTOR_MODE_BEEN_TRIGGERED",
 			"jhash": "",
-			"comment": "",
+			"comment": "HAS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2632482FD6B9AB87": {
-			"name": "_0x2632482FD6B9AB87",
+			"name": "_SET_DIRECTOR_MODE_CLEAR_TRIGGERED_FLAG",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x808519373FD336A3": {
-			"name": "_SET_DIRECTOR_MODE",
+			"name": "_SET_PLAYER_IS_IN_DIRECTOR_MODE",
 			"jhash": "",
 			"comment": "If toggle is true, hides special ability bar / character name in the pause menu\nIf toggle is false, shows special ability bar / character name in the pause menu\n\nSET_PLAYER_*",
 			"params": [
@@ -30938,11 +30938,11 @@
 		"0x04655F9D075D0AE5": {
 			"name": "_0x04655F9D075D0AE5",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -36616,21 +36616,21 @@
 			"build": "323"
 		},
 		"0xD10F442036302D50": {
-			"name": "_0xD10F442036302D50",
+			"name": "SET_DISPATCH_SPAWN_LOCATION",
 			"jhash": "0x6F009E33",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
