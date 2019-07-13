@@ -2694,7 +2694,7 @@
 			"build": "323"
 		},
 		"0xF1620ECB50E01DE7": {
-			"name": "_MAX_RADIO_STATION_INDEX",
+			"name": "GET_NUM_UNLOCKED_RADIO_STATIONS",
 			"jhash": "0xCC91FCF5",
 			"comment": "",
 			"params": [],
@@ -14644,7 +14644,7 @@
 		"0x278F76C3B0A8F109": {
 			"name": "_GET_NUM_DECORATIONS",
 			"jhash": "0x71D0CF3E",
-			"comment": "only documented to be continued...",
+			"comment": "GET_NUM_*",
 			"params": [
 				{
 					"type": "int",
@@ -19715,11 +19715,11 @@
 		"0xE63D7C6EECECB66B": {
 			"name": "_0xE63D7C6EECECB66B",
 			"jhash": "0xD34A6CBA",
-			"comment": "",
+			"comment": "TOGGLE_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -19802,9 +19802,9 @@
 			"build": "323"
 		},
 		"0xEB3DAC2C86001E5E": {
-			"name": "_GET_RENDERPHASES_ARE_ACTIVE",
+			"name": "GET_TOGGLE_PAUSED_RENDERPHASES_STATUS",
 			"jhash": "0xD4F5D07D",
-			"comment": "GET_T*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -35612,19 +35612,19 @@
 			"build": "323"
 		},
 		"0x996DD1E1E02F1008": {
-			"name": "_0x996DD1E1E02F1008",
+			"name": "GET_NUM_SUCCESSFUL_STUNT_JUMPS",
 			"jhash": "0x006F9BA2",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x6856EC3D35C81EA4": {
-			"name": "_0x6856EC3D35C81EA4",
-			"jhash": "",
+			"name": "GET_TOTAL_SUCCESSFUL_STUNT_JUMPS",
+			"jhash": "0x495BE324",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xE6B7B0ACD4E4B75E": {
@@ -51923,11 +51923,11 @@
 			"build": "323"
 		},
 		"0x2EAC52B4019E2782": {
-			"name": "_0x2EAC52B4019E2782",
+			"name": "IS_COMMERCE_STORE_OPEN",
 			"jhash": "0x25E2DBA9",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x9641A9FF718E9C5E": {
@@ -66130,7 +66130,7 @@
 					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x2B694AFCF64E6994": {
@@ -69788,7 +69788,7 @@
 			"build": "323"
 		},
 		"0x68772DB2B2526F9F": {
-			"name": "_0x68772DB2B2526F9F",
+			"name": "IS_ANY_HOSTILE_PED_NEAR_POINT",
 			"jhash": "0x1A464167",
 			"comment": "",
 			"params": [
@@ -69810,7 +69810,7 @@
 				},
 				{
 					"type": "float",
-					"name": "range"
+					"name": "radius"
 				}
 			],
 			"return_type": "BOOL",
