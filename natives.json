@@ -93149,17 +93149,17 @@
 			"build": "323"
 		},
 		"0x92523B76657A517D": {
-			"name": "_0x92523B76657A517D",
+			"name": "GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME",
 			"jhash": "0xF31973BB",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				}
 			],
 			"return_type": "Vector3",
