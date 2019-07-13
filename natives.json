@@ -411,13 +411,13 @@
 			"build": "323"
 		},
 		"0x42B65DEEF2EDF2A1": {
-			"name": "_SET_UPDATE_TYPE",
+			"name": "_SET_THREAD_PRIORITY",
 			"jhash": "",
-			"comment": "Can be 0, 1 or 2. Any other value will prevent the thread from being updated.\nDefault value is 1.",
+			"comment": "0 = high\n1 = normal\n2 = low",
 			"params": [
 				{
 					"type": "int",
-					"name": "type"
+					"name": "priority"
 				}
 			],
 			"return_type": "void",
@@ -25483,7 +25483,7 @@
 		"0x7669F9E39DC17063": {
 			"name": "_0x7669F9E39DC17063",
 			"jhash": "0xC380AC85",
-			"comment": "DISPLAY_*",
+			"comment": "DISPLAY_HUD_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -48526,17 +48526,17 @@
 			"build": "323"
 		},
 		"0x715135F4B82AC90D": {
-			"name": "_0x715135F4B82AC90D",
+			"name": "REMOVE_ALL_STICKY_BOMBS_FROM_ENTITY",
 			"jhash": "0xCEAE5AFC",
-			"comment": "Used in am_mp_property_ext and am_mp_property_int",
+			"comment": "entity must be a valid entity; ped can be NULL",
 			"params": [
 				{
 					"type": "Entity",
 					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -51957,7 +51957,7 @@
 			"build": "323"
 		},
 		"0x72D0706CD6CCDB58": {
-			"name": "_0x72D0706CD6CCDB58",
+			"name": "RELEASE_ALL_COMMERCE_ITEM_IMAGES",
 			"jhash": "0xCA7A0A49",
 			"comment": "",
 			"params": [],
@@ -64482,7 +64482,7 @@
 			"build": "323"
 		},
 		"0xCC9682B8951C5229": {
-			"name": "_0xCC9682B8951C5229",
+			"name": "SET_HEAD_BLEND_PALETTE_COLOR",
 			"jhash": "0x57E5B3F9",
 			"comment": "p4 seems to vary from 0 to 3.",
 			"params": [
@@ -64511,13 +64511,13 @@
 			"build": "323"
 		},
 		"0xA21C118553BBDF02": {
-			"name": "_0xA21C118553BBDF02",
+			"name": "DISABLE_HEAD_BLEND_PALETTE_COLOR",
 			"jhash": "0xC6F36292",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -69316,26 +69316,26 @@
 			"build": "323"
 		},
 		"0xF0DAEF2F545BEE25": {
-			"name": "_0xF0DAEF2F545BEE25",
+			"name": "REQUEST_PEDHEADSHOT_IMG_UPLOAD",
 			"jhash": "0x10F2C023",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5D517B27CF6ECD04": {
-			"name": "_0x5D517B27CF6ECD04",
+			"name": "RELEASE_PEDHEADSHOT_IMG_UPLOAD",
 			"jhash": "0x0DBB2FA7",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "void",
