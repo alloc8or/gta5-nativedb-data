@@ -44920,17 +44920,17 @@
 			"jhash": "0xE3570BA2",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA2E9C1AB8A92E8CD": {
 			"name": "_0xA2E9C1AB8A92E8CD",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0x8D014B23",
+			"comment": "Appears to set whether a transition should be started when the session is migrating.\n\nNETWORK_SET_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -45739,7 +45739,7 @@
 		"0xF083835B70BA9BFE": {
 			"name": "_0xF083835B70BA9BFE",
 			"jhash": "0xC47352E7",
-			"comment": "",
+			"comment": "NETWORK_RE*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -45884,7 +45884,7 @@
 		"0x0D77A82DC2D0DA59": {
 			"name": "_0x0D77A82DC2D0DA59",
 			"jhash": "0x0808D4CC",
-			"comment": "",
+			"comment": "NETWORK_SET_*",
 			"params": [
 				{
 					"type": "Any*",
@@ -46334,7 +46334,7 @@
 			"build": "323"
 		},
 		"0x64F62AFB081E260D": {
-			"name": "_0x64F62AFB081E260D",
+			"name": "NETWORK_FINISH_BROADCASTING_DATA",
 			"jhash": "0xA71A1D2A",
 			"comment": "",
 			"params": [],
@@ -46344,7 +46344,7 @@
 		"0x5D10B3795F3FC886": {
 			"name": "_0x5D10B3795F3FC886",
 			"jhash": "0x0B739F53",
-			"comment": "",
+			"comment": "NETWORK_HAS_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -47789,7 +47789,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47801,24 +47801,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "p0"
+					"type": "Any*",
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x8F5D1AD832AEB06C": {
-			"name": "_0x8F5D1AD832AEB06C",
+			"name": "_NETWORK_CAN_COMMUNICATE_WITH_GAMER_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as NETWORK_CAN_COMMUNICATE_WITH_GAMER\n\nNETWORK_CAN_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "networkHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "944"
 		},
 		"0xA150A4F065806B1F": {
@@ -47827,8 +47827,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "player"
+					"type": "Any*",
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47840,8 +47840,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "p0"
+					"type": "Any*",
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47854,7 +47854,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47867,7 +47867,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47880,7 +47880,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47893,7 +47893,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47906,7 +47906,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47919,7 +47919,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -47932,7 +47932,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "networkHandle"
 				}
 			],
 			"return_type": "BOOL",
