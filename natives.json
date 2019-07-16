@@ -82424,16 +82424,16 @@
 			"build": "323"
 		},
 		"0xD4793DFF3AF2ABCD": {
-			"name": "_0xD4793DFF3AF2ABCD",
-			"jhash": "",
+			"name": "ENABLE_SWITCH_PAUSE_BEFORE_DESCENT",
+			"jhash": "0x4062FF73",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xBD605B8E0E18B3BB": {
-			"name": "_0xBD605B8E0E18B3BB",
-			"jhash": "",
+			"name": "DISABLE_SWITCH_OUTRO_FX",
+			"jhash": "0x59CC312D",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -82466,8 +82466,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -82805,7 +82805,7 @@
 			"build": "323"
 		},
 		"0xB5A4DB34FE89B88A": {
-			"name": "_LOAD_MISSION_CREATOR_DATA",
+			"name": "INIT_CREATOR_BUDGET",
 			"jhash": "0xE243B2AF",
 			"comment": "",
 			"params": [],
@@ -82821,7 +82821,7 @@
 			"build": "323"
 		},
 		"0x0BC3144DEB678666": {
-			"name": "_0x0BC3144DEB678666",
+			"name": "ADD_MODEL_TO_CREATOR_BUDGET",
 			"jhash": "0xC0E83320",
 			"comment": "",
 			"params": [
@@ -82834,22 +82834,22 @@
 			"build": "323"
 		},
 		"0xF086AD9354FAC3A3": {
-			"name": "_0xF086AD9354FAC3A3",
+			"name": "REMOVE_MODEL_FROM_CREATOR_BUDGET",
 			"jhash": "0x1C576388",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x3D3D8B3BE5A83D35": {
-			"name": "_0x3D3D8B3BE5A83D35",
+			"name": "_GET_USED_CREATOR_MODEL_MEMORY_PERCENTAGE",
 			"jhash": "0x3E9C4CBE",
-			"comment": "GET_*",
+			"comment": "0.0 = no memory used\n1.0 = all memory used\n\nMaximum model memory (as defined in common\\data\\missioncreatordata.meta) is 100 MiB\n\nGET_*",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
@@ -91516,7 +91516,7 @@
 		"0x1B212B26DD3C04DF": {
 			"name": "_0x1B212B26DD3C04DF",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets a value that appears to affect door opening behavior when damaged.\n\nSET_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98897,7 +98897,7 @@
 		"0xF0E4BA16D1DB546C": {
 			"name": "_0xF0E4BA16D1DB546C",
 			"jhash": "0x5BD8D82D",
-			"comment": "Adds some kind of shadow to the vehicle.\n\n-1 disables the effect.",
+			"comment": "Adds some kind of shadow to the vehicle.\n\n-1 disables the effect.\n\nDISABLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98918,11 +98918,11 @@
 		"0xF87D9F2301F7D206": {
 			"name": "_0xF87D9F2301F7D206",
 			"jhash": "0x450AD03A",
-			"comment": "",
+			"comment": "ENABLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
