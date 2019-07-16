@@ -96860,7 +96860,7 @@
 		"0x48ADC8A773564670": {
 			"name": "_0x48ADC8A773564670",
 			"jhash": "0x37BC6ACB",
-			"comment": "",
+			"comment": "INIT_VISIBLE_LATCH_POPULATION?",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -96868,7 +96868,7 @@
 		"0x91D6DD290888CBAB": {
 			"name": "_0x91D6DD290888CBAB",
 			"jhash": "0x71D898EF",
-			"comment": "",
+			"comment": "HAS_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -96880,7 +96880,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -96919,7 +96919,7 @@
 		"0xCAC66558B944DA67": {
 			"name": "_0xCAC66558B944DA67",
 			"jhash": "0x0B200CE2",
-			"comment": "",
+			"comment": "SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96927,7 +96927,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -96944,14 +96944,14 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x1A78AD3D8240536F": {
-			"name": "_0x1A78AD3D8240536F",
+			"name": "SET_CONVERTIBLE_ROOF_LATCH_STATE",
 			"jhash": "0x0858678C",
 			"comment": "",
 			"params": [
@@ -96961,7 +96961,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "state"
 				}
 			],
 			"return_type": "void",
