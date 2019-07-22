@@ -82307,7 +82307,7 @@
 		"0x5F2013F8BC24EE69": {
 			"name": "_0x5F2013F8BC24EE69",
 			"jhash": "0xF0BD420D",
-			"comment": "SET_PLAYERS_*",
+			"comment": "SET_PLAYER_*",
 			"params": [
 				{
 					"type": "int",
@@ -82371,13 +82371,13 @@
 			"build": "323"
 		},
 		"0x0FDE9DBFC0A6BC65": {
-			"name": "_0x0FDE9DBFC0A6BC65",
+			"name": "SET_PLAYER_SWITCH_ESTABLISHING_SHOT",
 			"jhash": "0x279077B0",
-			"comment": "SET_PLAYERS_*",
+			"comment": "All names can be found in playerswitchestablishingshots.meta",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void",
