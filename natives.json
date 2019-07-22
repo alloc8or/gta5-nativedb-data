@@ -4634,7 +4634,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "objectName"
+					"name": "modelHash"
 				},
 				{
 					"type": "int",
@@ -4642,7 +4642,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "activationRange"
 				},
 				{
 					"type": "int",
@@ -4675,15 +4675,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "scriptName"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "activationRange"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -26209,7 +26209,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				},
 				{
 					"type": "BOOL",
@@ -26226,7 +26226,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				}
 			],
 			"return_type": "BOOL",
@@ -26238,8 +26238,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "BOOL",
@@ -26252,7 +26252,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "modelHash"
 				}
 			],
 			"return_type": "void",
@@ -26265,10 +26265,10 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x113750538FA31298": {
@@ -26278,7 +26278,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "modelHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -50323,7 +50323,7 @@
 		"0x7CD6BC4C2BBDD526": {
 			"name": "NETWORK_CREATE_SYNCHRONISED_SCENE",
 			"jhash": "0xB06FE3FE",
-			"comment": "returns netScene\nthis native is missing 2 params\nfloat p10, float p11",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -50354,11 +50354,11 @@
 					"name": "p6"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p8"
 				},
 				{
@@ -50366,11 +50366,11 @@
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p11"
 				}
 			],
@@ -59425,7 +59425,7 @@
 		"0xD49F9B0955C367DE": {
 			"name": "CREATE_PED",
 			"jhash": "0x0389EF71",
-			"comment": "p7 - last parameter does not mean ped handle is returned\nmaybe a quick view in disassembly will tell us what is actually does\n\n\n*Heading*: 0.0\n*Heading* is the Z axis spawn rotation of the ped 0->5th parameter.\n\nPed Types:\n[Player,1|Male,4|Female,5|Cop,6|Human,26|SWAT,27|Animal,28|Army,29]\nYou can also use GET_PED_TYPE",
+			"comment": "enum ePedType\n{\n\tPED_TYPE_PLAYER_0,\n\tPED_TYPE_PLAYER_1,\n\tPED_TYPE_NETWORK_PLAYER,\n\tPED_TYPE_PLAYER_2,\n\tPED_TYPE_CIVMALE,\n\tPED_TYPE_CIVFEMALE,\n\tPED_TYPE_COP,\n\tPED_TYPE_GANG_ALBANIAN,\n\tPED_TYPE_GANG_BIKER_1,\n\tPED_TYPE_COPTYPE_GANG_BIKER_2,\n\tPED_TYPE_GANG_ITALIAN,\n\tPED_TYPE_GANG_RUSSIAN,\n\tPED_TYPE_COPTYPE_GANG_RUSSIAN_2,\n\tPED_TYPE_GANG_IRISH,\n\tPED_TYPE_GANG_JAMAICAN,\n\tPED_TYPE_GANG_AFRICAN_AMERICAN,\n\tPED_TYPE_GANG_KOREAN,\n\tPED_TYPE_GANG_CHINESE_JAPANESE,\n\tPED_TYPE_GANG_PUERTO_RICAN,\n\tPED_TYPE_DEALER,\n\tPED_TYPE_MEDIC,\n\tPED_TYPE_FIREMAN,\n\tPED_TYPE_CRIMINAL,\n\tPED_TYPE_BUM,\n\tPED_TYPE_PROSTITUTE,\n\tPED_TYPE_SPECIAL,\n\tPED_TYPE_MISSION,\n\tPED_TYPE_SWAT,\n\tPED_TYPE_ANIMAL,\n\tPED_TYPE_ARMY\n};",
 			"params": [
 				{
 					"type": "int",
@@ -59767,7 +59767,7 @@
 		"0x7DD959874C1FD534": {
 			"name": "CREATE_PED_INSIDE_VEHICLE",
 			"jhash": "0x3000F092",
-			"comment": "p5 - last parameter does not mean ped handle is returned\nmaybe a quick view in disassembly will tell us what is actually does\n\n\nPed Types:\nPlayer = 1\nMale = 4 \nFemale = 5 \nCop = 6\nTaxi Driver = 25 (sfink)\nHuman = 26\nSWAT = 27 \nAnimal = 28\nArmy = 29",
+			"comment": "pedType: see CREATE_PED",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -71000,7 +71000,7 @@
 		"0x43A66C31C68491C0": {
 			"name": "GET_PLAYER_PED",
 			"jhash": "0x6E31E993",
-			"comment": "Gets the ped id of a player\n\n\n-\nPlease update and release your native hash translation table quicker, AB Team. Thanks, :).",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -71013,7 +71013,7 @@
 		"0x50FAC3A3E030A6E1": {
 			"name": "GET_PLAYER_PED_SCRIPT_INDEX",
 			"jhash": "0x6AC64990",
-			"comment": "Does the same like PLAYER::GET_PLAYER_PED\n\nwhy does it return an entity and not a ped?",
+			"comment": "Does the same like PLAYER::GET_PLAYER_PED",
 			"params": [
 				{
 					"type": "Player",
@@ -74686,18 +74686,18 @@
 		"0x66972397E0757E7A": {
 			"name": "_0x66972397E0757E7A",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does nothing (it's a nullsub).",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -76199,7 +76199,7 @@
 				},
 				{
 					"type": "int*",
-					"name": "taskHandle"
+					"name": "token"
 				}
 			],
 			"return_type": "BOOL",
@@ -76216,7 +76216,7 @@
 				},
 				{
 					"type": "int*",
-					"name": "taskHandle"
+					"name": "token"
 				}
 			],
 			"return_type": "BOOL",
@@ -76229,7 +76229,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "taskHandle"
+					"name": "token"
 				}
 			],
 			"return_type": "BOOL",
@@ -76242,33 +76242,33 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "taskHandle"
+					"name": "token"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x85535ACF97FC0969": {
-			"name": "_0x85535ACF97FC0969",
+			"name": "SC_PROFANITY_GET_STRING_PASSED",
 			"jhash": "0x09497F31",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "token"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x930DE22F07B1CCE3": {
-			"name": "_0x930DE22F07B1CCE3",
+			"name": "SC_PROFANITY_GET_STRING_STATUS",
 			"jhash": "0x4D8A6521",
-			"comment": "Unknown.\n\nSeems to return either 0, 1, or -1.",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "token"
 				}
 			],
 			"return_type": "int",
@@ -85758,7 +85758,7 @@
 		"0xBF19721FA34D32C0": {
 			"name": "TASK_PLANE_LAND",
 			"jhash": "0x5F7E23EA",
-			"comment": " Function.Call(Hash.TASK_PLANE_LAND, pilot, selectedAirplane, runwayStartPoint.X, runwayStartPoint.Y, runwayStartPoint.Z, runwayEndPoint.X, runwayEndPoint.Y, runwayEndPoint.Z); ",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -85799,7 +85799,7 @@
 		"0xDBBC7A2432524127": {
 			"name": "_0xDBBC7A2432524127",
 			"jhash": "",
-			"comment": "",
+			"comment": "CLEAR_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -85812,7 +85812,7 @@
 		"0x53DDC75BC3AC0A90": {
 			"name": "_0x53DDC75BC3AC0A90",
 			"jhash": "",
-			"comment": "",
+			"comment": "CLEAR_*",
 			"params": [
 				{
 					"type": "Vehicle",
