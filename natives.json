@@ -3310,18 +3310,18 @@
 		"0xF8AD2EED7C47E8FE": {
 			"name": "_0xF8AD2EED7C47E8FE",
 			"jhash": "",
-			"comment": "",
+			"comment": "BL*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -6950,14 +6950,14 @@
 		"0x28B022A17B068A3A": {
 			"name": "_0x28B022A17B068A3A",
 			"jhash": "",
-			"comment": "",
+			"comment": "F*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -7341,7 +7341,7 @@
 		"0x9F97DA93681F87EA": {
 			"name": "_0x9F97DA93681F87EA",
 			"jhash": "",
-			"comment": "",
+			"comment": "B*",
 			"params": [],
 			"return_type": "void",
 			"build": "1734"
@@ -7419,11 +7419,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1734"
 		},
 		"0xEE82280AB767B690": {
@@ -9126,9 +9126,9 @@
 		"0x971D7B15BCDBEF99": {
 			"name": "_0x971D7B15BCDBEF99",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_CUTSCENE_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1734"
 		},
 		"0x40C8656EDAEDD569": {
@@ -10788,9 +10788,9 @@
 		"0xC4637A6D03C24CC3": {
 			"name": "_0xC4637A6D03C24CC3",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_IS_LOADING_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1734"
 		},
 		"0x46E2B844905BC5F0": {
@@ -13776,14 +13776,14 @@
 		"0xE66377CDDADA4810": {
 			"name": "_0xE66377CDDADA4810",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_ENTITY_M*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -14415,18 +14415,18 @@
 		"0xBD8D32550E5CEBFE": {
 			"name": "_0xBD8D32550E5CEBFE",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_ENTITY_BONE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "boneIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vector3",
 			"build": "1734"
 		},
 		"0xB328DCC3A3AA401B": {
@@ -15571,10 +15571,10 @@
 		"0x8F390AC4155099BA": {
 			"name": "_0x8F390AC4155099BA",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_FIRE_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				}
 			],
@@ -17802,11 +17802,11 @@
 		"0xFCF6788FC4860CD4": {
 			"name": "_0xFCF6788FC4860CD4",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_CHECKPOINT_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "checkpoint"
 				}
 			],
 			"return_type": "void",
@@ -18363,148 +18363,148 @@
 			"build": "323"
 		},
 		"0x338D9F609FD632DB": {
-			"name": "_0x338D9F609FD632DB",
+			"name": "_SET_BINK_MOVIE_REQUESTED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1290"
 		},
 		"0x70D2CC8A542A973C": {
-			"name": "_0x70D2CC8A542A973C",
+			"name": "_PLAY_BINK_MOVIE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "binkMovie"
 				}
 			],
 			"return_type": "void",
 			"build": "1290"
 		},
 		"0x63606A61DE68898A": {
-			"name": "_0x63606A61DE68898A",
+			"name": "_STOP_BINK_MOVIE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "binkMovie"
 				}
 			],
 			"return_type": "void",
 			"build": "1290"
 		},
 		"0x04D950EEFA4EED8C": {
-			"name": "_0x04D950EEFA4EED8C",
+			"name": "_RELEASE_BINK_MOVIE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "binkMovie"
 				}
 			],
 			"return_type": "void",
 			"build": "1290"
 		},
 		"0x7118E83EEB9F7238": {
-			"name": "_0x7118E83EEB9F7238",
+			"name": "_DRAW_BINK_MOVIE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "binkMovie"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "r"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "g"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "b"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "a"
 				}
 			],
 			"return_type": "void",
 			"build": "1290"
 		},
 		"0x0CB6B3446855B57A": {
-			"name": "_0x0CB6B3446855B57A",
+			"name": "_SET_BINK_MOVIE_PROGRESS",
 			"jhash": "",
-			"comment": "",
+			"comment": "In percentage: 0.0 - 100.0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "binkMovie"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "progress"
 				}
 			],
 			"return_type": "void",
 			"build": "1290"
 		},
 		"0x8E17DDD6B9D5BF29": {
-			"name": "_0x8E17DDD6B9D5BF29",
+			"name": "_GET_BINK_MOVIE_PROGRESS",
 			"jhash": "",
-			"comment": "",
+			"comment": "In percentage: 0.0 - 100.0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "binkMovie"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1734"
 		},
 		"0xAFF33B1178172223": {
-			"name": "_0xAFF33B1178172223",
+			"name": "_SET_BINK_MOVIE_UNK",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "binkMovie"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -26865,14 +26865,14 @@
 		"0x9FCB3CBFB3EAD69A": {
 			"name": "_0x9FCB3CBFB3EAD69A",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_C*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -26882,7 +26882,7 @@
 		"0xB7B873520C84C118": {
 			"name": "_0xB7B873520C84C118",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_C*",
 			"params": [],
 			"return_type": "void",
 			"build": "1734"
@@ -27362,18 +27362,18 @@
 		"0xCD6524439909C979": {
 			"name": "_0xCD6524439909C979",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_BLIP_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -28963,13 +28963,13 @@
 			"build": "323"
 		},
 		"0x4F38DCA127DAAEA2": {
-			"name": "_0x4F38DCA127DAAEA2",
+			"name": "_SHOW_SCRIPTED_HUD_COMPONENT_THIS_FRAME",
 			"jhash": "",
-			"comment": "",
+			"comment": "SHOW_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "void",
@@ -32979,18 +32979,18 @@
 		"0xF2D49816A804D134": {
 			"name": "_0xF2D49816A804D134",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_RANDOM_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1734"
 		},
 		"0xC906A7DAB05C8D2B": {
@@ -38196,75 +38196,80 @@
 			"unused": true
 		},
 		"0x158C16F5E4CF41F8": {
-			"name": "_0x158C16F5E4CF41F8",
+			"name": "_NETWORK_CASINO_CAN_USE_GAMBLING_TYPE",
 			"jhash": "",
-			"comment": "",
+			"comment": "GTAO_CASINO_HOUSE\nGTAO_CASINO_INSIDETRACK\nGTAO_CASINO_LUCKYWHEEL\nGTAO_CASINO_BLACKJACK\nGTAO_CASINO_ROULETTE\nGTAO_CASINO_SLOTS\n\nNETWORK_C*",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "hash"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "1734"
+		},
+		"0x394DCDB9E836B7A9": {
+			"name": "_NETWORK_CASINO_CAN_PURCHASE_CHIPS_WITH_PVC",
+			"jhash": "",
+			"comment": "Same as 0x8968D4D8C6C40C11.\n\nNETWORK_C*",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "1734"
+		},
+		"0xF62F6D9528358FE4": {
+			"name": "_NETWORK_CASINO_CAN_GAMBLE",
+			"jhash": "",
+			"comment": "NETWORK_C*",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
-			"build": "1734"
-		},
-		"0x394DCDB9E836B7A9": {
-			"name": "_0x394DCDB9E836B7A9",
-			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
-			"build": "1734"
-		},
-		"0xF62F6D9528358FE4": {
-			"name": "_0xF62F6D9528358FE4",
-			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1734",
 			"unused": true
 		},
 		"0x8968D4D8C6C40C11": {
-			"name": "_0x8968D4D8C6C40C11",
+			"name": "_NETWORK_CASINO_CAN_PURCHASE_CHIPS_WITH_PVC_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as 0x394DCDB9E836B7A9.\n\nNETWORK_C*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1734"
 		},
 		"0x3BD101471C7F9EEC": {
-			"name": "_0x3BD101471C7F9EEC",
+			"name": "_NETWORK_CASINO_PURCHASE_CHIPS\n\nNETWORK_C*",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1734"
 		},
 		"0xED44897CB336F480": {
 			"name": "_0xED44897CB336F480",
 			"jhash": "",
-			"comment": "",
+			"comment": "_NETWORK_CASINO_SELL_CHIPS\n\nNETWORK_C*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1734"
 		},
 		"0xCD0F5B5D932AE473": {
@@ -38416,16 +38421,16 @@
 			"build": "323"
 		},
 		"0xDEBBF584665411D0": {
-			"name": "_0xDEBBF584665411D0",
+			"name": "_NETWORK_EARN_FROM_JOB_X2",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				}
 			],
@@ -42518,50 +42523,50 @@
 			"unused": true
 		},
 		"0xDFF49EE984E7AAE8": {
-			"name": "_0xDFF49EE984E7AAE8",
+			"name": "_NETWORK_EARN_FROM_LUCKY_WHEEL",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1734"
 		},
 		"0x5128DF14A5BB86FC": {
-			"name": "_0x5128DF14A5BB86FC",
+			"name": "_NETWORK_EARN_FROM_DAILY_OBJECTIVE_EVENT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1734"
 		},
 		"0xFBBE0570EDF39D46": {
-			"name": "_0xFBBE0570EDF39D46",
+			"name": "_NETWORK_SPENT_CASINO_MEMBERSHIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -42569,63 +42574,63 @@
 			"build": "1734"
 		},
 		"0x34A6FC4D06C4DA0F": {
-			"name": "_0x34A6FC4D06C4DA0F",
+			"name": "_NETWORK_SPENT_BUY_CASINO",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
 			"build": "1734"
 		},
 		"0x4740D62BC1B4EBEA": {
-			"name": "_0x4740D62BC1B4EBEA",
+			"name": "_NETWORK_SPENT_UPGRADE_CASINO",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
 			"build": "1734"
 		},
 		"0x88BF9B612B84D3C3": {
-			"name": "_0x88BF9B612B84D3C3",
+			"name": "_NETWORK_SPENT_CASINO_GENERIC",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
 					"type": "Any",
@@ -42648,105 +42653,120 @@
 			"build": "1734"
 		},
 		"0x0819DB99FD2FBBD8": {
-			"name": "_0x0819DB99FD2FBBD8",
-			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
-			"build": "1734",
-			"unused": true
-		},
-		"0x84FF63BD4966F33D": {
-			"name": "_0x84FF63BD4966F33D",
-			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
-			"build": "1734",
-			"unused": true
-		},
-		"0x5517F90043466049": {
-			"name": "_0x5517F90043466049",
+			"name": "_NETWORK_EARN_FROM_TIME_TRIAL_WIN",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
+				}
+			],
+			"return_type": "void",
+			"build": "1734",
+			"unused": true
+		},
+		"0x84FF63BD4966F33D": {
+			"name": "_NETWORK_EARN_FROM_COLLECTION_ITEM",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				}
+			],
+			"return_type": "void",
+			"build": "1734",
+			"unused": true
+		},
+		"0x5517F90043466049": {
+			"name": "_NETWORK_EARN_FROM_COLLECTABLES_ACTION_FIGURES",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1734"
 		},
 		"0x83AD64F53F4E9483": {
-			"name": "_0x83AD64F53F4E9483",
+			"name": "_NETWORK_EARN_FROM_COMPLETE_COLLECTION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1734"
 		},
 		"0x8BCB27A057DF7B7F": {
-			"name": "_0x8BCB27A057DF7B7F",
+			"name": "_NETWORK_EARN_FROM_SELLING_VEHICLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1734"
 		},
 		"0x566FD402B25787DE": {
-			"name": "_0x566FD402B25787DE",
+			"name": "_NETWORK_EARN_FROM_CASINO_MISSION_REWARD",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1734"
 		},
 		"0xAC95ED552157E092": {
-			"name": "_0xAC95ED552157E092",
+			"name": "_NETWORK_EARN_FROM_CASINO_STORY_MISSION_REWARD",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
 			"build": "1734"
 		},
 		"0x09E8F18641BE2575": {
-			"name": "_0x09E8F18641BE2575",
-			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
-			"build": "1734",
-			"unused": true
-		},
-		"0x973A9781A34F8DEB": {
-			"name": "_0x973A9781A34F8DEB",
+			"name": "_NETWORK_EARN_FROM_CASINO_MISSION_PARTICIPATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
+				}
+			],
+			"return_type": "void",
+			"build": "1734",
+			"unused": true
+		},
+		"0x973A9781A34F8DEB": {
+			"name": "_NETWORK_EARN_FROM_CASINO_REWARD",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
 				},
 				{
 					"type": "Any",
@@ -43638,17 +43658,17 @@
 		"0x8DB296B814EDDA07": {
 			"name": "NETWORK_IS_HOST",
 			"jhash": "0xE46AC10F",
-			"comment": "If you are host, returns true else returns false.\n\nanyone know how to use this to find correct host? is possible?",
+			"comment": "If you are host, returns true else returns false.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x39EEE6E1039A3517": {
-			"name": "_0x39EEE6E1039A3517",
+			"name": "_NETWORK_GET_HOST",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Player",
 			"build": "1734"
 		},
 		"0x4237E822315D8BA9": {
@@ -43841,9 +43861,9 @@
 		"0x64E5C4CC82847B73": {
 			"name": "_0x64E5C4CC82847B73",
 			"jhash": "",
-			"comment": "",
+			"comment": "Hardcoded to return false.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1734"
 		},
 		"0x1F7BC3539F9E0224": {
@@ -48972,11 +48992,11 @@
 		"0x8EF52ACAECC51D9C": {
 			"name": "_0x8EF52ACAECC51D9C",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_SET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -49708,11 +49728,11 @@
 		"0x6540EDC4F45DA089": {
 			"name": "_0x6540EDC4F45DA089",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_PLAYER_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -51122,47 +51142,47 @@
 		"0x45F35C0EDC33B03B": {
 			"name": "_0x45F35C0EDC33B03B",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_A*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netScene"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -52250,12 +52270,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -54382,7 +54402,7 @@
 		"0xCA59CCAE5D01E4CE": {
 			"name": "_0xCA59CCAE5D01E4CE",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_S*",
 			"params": [],
 			"return_type": "void",
 			"build": "1734"
@@ -54663,11 +54683,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1734"
 		}
 	},
@@ -54791,23 +54811,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1734"
 		},
 		"0x2FDFF4107B8C1147": {
@@ -56967,11 +56987,11 @@
 		"0xFDC07C58E8AAB715": {
 			"name": "_0xFDC07C58E8AAB715",
 			"jhash": "",
-			"comment": "",
+			"comment": "A*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				}
 			],
 			"return_type": "void",
@@ -57349,11 +57369,11 @@
 		"0x7813E8B8C4AE4799": {
 			"name": "_0x7813E8B8C4AE4799",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_PICKUP_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				}
 			],
 			"return_type": "void",
@@ -70801,15 +70821,15 @@
 		"0xFAB944D4D481ACCB": {
 			"name": "_0xFAB944D4D481ACCB",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_A*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -80312,7 +80332,7 @@
 		"0xC67E2DA1CBE759E2": {
 			"name": "_0xC67E2DA1CBE759E2",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets profile setting 939",
 			"params": [],
 			"return_type": "void",
 			"build": "1734"
@@ -82023,24 +82043,24 @@
 			"build": "1604"
 		},
 		"0x35EEC6C2BC821A71": {
-			"name": "_0x35EEC6C2BC821A71",
+			"name": "_PLAYSTATS_PASSIVE_MODE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -82048,7 +82068,7 @@
 			"build": "1734"
 		},
 		"0xCD0A8A9338681CF2": {
-			"name": "_0xCD0A8A9338681CF2",
+			"name": "_PLAYSTATS_COLLECTIBLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82097,7 +82117,7 @@
 			"build": "1734"
 		},
 		"0xFCCCAC2BD3C1F180": {
-			"name": "_0xFCCCAC2BD3C1F180",
+			"name": "_PLAYSTATS_CASINO_STORY_MISSION_ENDED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82114,7 +82134,7 @@
 			"build": "1734"
 		},
 		"0x0999F3F090EC5012": {
-			"name": "_0x0999F3F090EC5012",
+			"name": "_PLAYSTATS_CASINO_CHIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82127,7 +82147,7 @@
 			"build": "1734"
 		},
 		"0x95101C443A84E7F1": {
-			"name": "_0x95101C443A84E7F1",
+			"name": "_PLAYSTATS_CASINO_ROULETTE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82140,7 +82160,7 @@
 			"build": "1734"
 		},
 		"0x3EAE97309727E7AD": {
-			"name": "_0x3EAE97309727E7AD",
+			"name": "_PLAYSTATS_CASINO_BLACKJACK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82153,7 +82173,7 @@
 			"build": "1734"
 		},
 		"0xF740FB339D471C35": {
-			"name": "_0xF740FB339D471C35",
+			"name": "_PLAYSTATS_CASINO_THREECARDPOKER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82166,7 +82186,7 @@
 			"build": "1734"
 		},
 		"0xEF5EC67D392B830A": {
-			"name": "_0xEF5EC67D392B830A",
+			"name": "_PLAYSTATS_CASINO_SLOTMACHINE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82179,7 +82199,7 @@
 			"build": "1734"
 		},
 		"0x049F059625058A86": {
-			"name": "_0x049F059625058A86",
+			"name": "_PLAYSTATS_CASINO_INSIDETRACK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82192,7 +82212,7 @@
 			"build": "1734"
 		},
 		"0x0C432C1435F5E4FA": {
-			"name": "_0x0C432C1435F5E4FA",
+			"name": "_PLAYSTATS_CASINO_LUCKYSEVEN",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82205,7 +82225,7 @@
 			"build": "1734"
 		},
 		"0x6572ABA3DE1197FC": {
-			"name": "_0x6572ABA3DE1197FC",
+			"name": "_PLAYSTATS_CASINO_ROULETTE_L",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82218,7 +82238,7 @@
 			"build": "1734"
 		},
 		"0xD5451C7BF151EB6F": {
-			"name": "_0xD5451C7BF151EB6F",
+			"name": "_PLAYSTATS_CASINO_BLACKJACK_L",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82231,7 +82251,7 @@
 			"build": "1734"
 		},
 		"0xC9001364B4388F22": {
-			"name": "_0xC9001364B4388F22",
+			"name": "_PLAYSTATS_CASINO_THREECARDPOKER_L",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82244,7 +82264,7 @@
 			"build": "1734"
 		},
 		"0xE60054A0FAE8227F": {
-			"name": "_0xE60054A0FAE8227F",
+			"name": "_PLAYSTATS_CASINO_SLOTMACHINE_L",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82257,7 +82277,7 @@
 			"build": "1734"
 		},
 		"0x23A3CBCD50D54E47": {
-			"name": "_0x23A3CBCD50D54E47",
+			"name": "_PLAYSTATS_CASINO_INSIDETRACK_L",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82270,7 +82290,7 @@
 			"build": "1734"
 		},
 		"0x533A7D1EA58DF958": {
-			"name": "_0x533A7D1EA58DF958",
+			"name": "_PLAYSTATS_ARCADEGAME",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82303,13 +82323,13 @@
 			"build": "1734"
 		},
 		"0x1A0D4A6C336B7BC5": {
-			"name": "_0x1A0D4A6C336B7BC5",
+			"name": "_PLAYSTATS_CASINO_MISSION_ENDED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
@@ -103838,11 +103858,11 @@
 		"0x50276EF8172F5F12": {
 			"name": "_0x50276EF8172F5F12",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_PED_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
