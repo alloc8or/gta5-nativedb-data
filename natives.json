@@ -38239,9 +38239,9 @@
 			"build": "1734"
 		},
 		"0x3BD101471C7F9EEC": {
-			"name": "_NETWORK_CASINO_PURCHASE_CHIPS\n\nNETWORK_C*",
+			"name": "_NETWORK_CASINO_PURCHASE_CHIPS",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_C*",
 			"params": [
 				{
 					"type": "int",
