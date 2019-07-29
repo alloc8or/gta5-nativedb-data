@@ -82225,7 +82225,7 @@
 			"build": "1734"
 		},
 		"0x6572ABA3DE1197FC": {
-			"name": "_PLAYSTATS_CASINO_ROULETTE_L",
+			"name": "_PLAYSTATS_CASINO_ROULETTE_LIGHT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82238,7 +82238,7 @@
 			"build": "1734"
 		},
 		"0xD5451C7BF151EB6F": {
-			"name": "_PLAYSTATS_CASINO_BLACKJACK_L",
+			"name": "_PLAYSTATS_CASINO_BLACKJACK_LIGHT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82251,7 +82251,7 @@
 			"build": "1734"
 		},
 		"0xC9001364B4388F22": {
-			"name": "_PLAYSTATS_CASINO_THREECARDPOKER_L",
+			"name": "_PLAYSTATS_CASINO_THREECARDPOKER_LIGHT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82264,7 +82264,7 @@
 			"build": "1734"
 		},
 		"0xE60054A0FAE8227F": {
-			"name": "_PLAYSTATS_CASINO_SLOTMACHINE_L",
+			"name": "_PLAYSTATS_CASINO_SLOTMACHINE_LIGHT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82277,7 +82277,7 @@
 			"build": "1734"
 		},
 		"0x23A3CBCD50D54E47": {
-			"name": "_PLAYSTATS_CASINO_INSIDETRACK_L",
+			"name": "_PLAYSTATS_CASINO_INSIDETRACK_LIGHT",
 			"jhash": "",
 			"comment": "",
 			"params": [
