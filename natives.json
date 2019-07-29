@@ -32962,7 +32962,7 @@
 		"0xD53343AA4FB7DD28": {
 			"name": "GET_RANDOM_INT_IN_RANGE",
 			"jhash": "0x4051115B",
-			"comment": "Another extremely useful native.\n\nYou can use it simply like:\nif (GAMEPLAY::GET_RANDOM_INT_IN_RANGE(0, 2))\n\nand the if-statement will count it as false only if the random int is 0. That means there is a one in three chance of it being false. Put a \"!\" in front and it means there is a one in three chance of it being true.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -32977,17 +32977,17 @@
 			"build": "323"
 		},
 		"0xF2D49816A804D134": {
-			"name": "_0xF2D49816A804D134",
+			"name": "_GET_RANDOM_INT_IN_RANGE_2",
 			"jhash": "",
-			"comment": "GET_RANDOM_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "startRange"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "endRange"
 				}
 			],
 			"return_type": "int",
