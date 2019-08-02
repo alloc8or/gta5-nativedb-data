@@ -22354,19 +22354,6 @@
 			"return_type": "void",
 			"build": "323"
 		},
-		"0x67D02A194A2FC2BD": {
-			"name": "_REQUEST_SCALEFORM_MOVIE_2",
-			"jhash": "",
-			"comment": "",
-			"params": [
-				{
-					"type": "const char*",
-					"name": "scaleformName"
-				}
-			],
-			"return_type": "int",
-			"build": "372"
-		},
 		"0x11FE353CF9733E6F": {
 			"name": "REQUEST_SCALEFORM_MOVIE",
 			"jhash": "0xC67E3DCB",
@@ -22379,6 +22366,19 @@
 			],
 			"return_type": "int",
 			"build": "323"
+		},
+		"0x65E7E78842E74CDB": {
+			"name": "_REQUEST_SCALEFORM_MOVIE_2",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "scaleformName"
+				}
+			],
+			"return_type": "int",
+			"build": "372"
 		},
 		"0xC514489CFB8AF806": {
 			"name": "REQUEST_SCALEFORM_MOVIE_INSTANCE",
