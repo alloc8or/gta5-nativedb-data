@@ -42760,7 +42760,7 @@
 			"unused": true
 		},
 		"0x973A9781A34F8DEB": {
-			"name": "_NETWORK_EARN_FROM_CASINO_REWARD",
+			"name": "_NETWORK_EARN_FROM_CASINO_AWARD",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42769,8 +42769,8 @@
 					"name": "amount"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "hash"
 				}
 			],
 			"return_type": "void",
@@ -66746,7 +66746,7 @@
 		"0x397C38AA7B4A5F83": {
 			"name": "APPLY_PED_DAMAGE_DECAL",
 			"jhash": "0x8A13A41F",
-			"comment": "APPLY_PED_DAMAGE_DECAL(ped, 1, 0.5f, 0.513f, 0f, 1f, unk, 0, 0, \"blushing\");",
+			"comment": "enum eDamageZone\n{\n\tDZ_Torso = 0,\n\tDZ_Head,\n\tDZ_LeftArm,\n\tDZ_RightArm,\n\tDZ_LeftLeg,\n\tDZ_RightLeg,\n};\n\nDecal Names:\nscar\nblushing\ncs_flush_anger\ncs_flush_anger_face\nbruise\nbruise_large\nherpes\nArmorBullet\nbasic_dirt_cloth\nbasic_dirt_skin\ncs_trev1_dirt\n\nAPPLY_PED_DAMAGE_DECAL(ped, 1, 0.5f, 0.513f, 0f, 1f, unk, 0, 0, \"blushing\");",
 			"params": [
 				{
 					"type": "Ped",
@@ -66754,39 +66754,39 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "damageZone"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "xOffset"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "yOffset"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "heading"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "scale"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "alpha"
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "variation"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "fadeIn"
 				},
 				{
 					"type": "const char*",
-					"name": "p9"
+					"name": "decalName"
 				}
 			],
 			"return_type": "void",
