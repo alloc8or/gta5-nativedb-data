@@ -105009,17 +105009,17 @@
 			"build": "323"
 		},
 		"0x68F8BE6AF5CDF8A6": {
-			"name": "_0x68F8BE6AF5CDF8A6",
+			"name": "_GIVE_LOADOUT_TO_PED",
 			"jhash": "",
-			"comment": "",
+			"comment": "GIVE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "loadoutHash"
 				}
 			],
 			"return_type": "void",
