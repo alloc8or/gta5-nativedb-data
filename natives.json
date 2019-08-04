@@ -105107,117 +105107,117 @@
 			"build": "323"
 		},
 		"0x9FE5633880ECD8ED": {
-			"name": "_0x9FE5633880ECD8ED",
+			"name": "_SET_PED_WEAPON_LIVERY_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "Colors:\n0 = Gray\n1 = Dark Gray\n2 = Black\n3 = White\n4 = Blue\n5 = Cyan\n6 = Aqua\n7 = Cool Blue\n8 = Dark Blue\n9 = Royal Blue\n10 = Plum\n11 = Dark Purple\n12 = Purple\n13 = Red\n14 = Wine Red\n15 = Magenta\n16 = Pink\n17 = Salmon\n18 = Hot Pink\n19 = Rust Orange\n20 = Brown\n21 = Earth\n22 = Orange\n23 = Light Orange\n24 = Dark Yellow\n25 = Yellow\n26 = Light Brown\n27 = Lime Green\n28 = Olive\n29 = Moss\n30 = Turquoise\n31 = Dark Green",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "camoComponentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "colorIndex"
 				}
 			],
 			"return_type": "void",
 			"build": "1103"
 		},
 		"0xF0A60040BE558F2D": {
-			"name": "_0xF0A60040BE558F2D",
+			"name": "_GET_PED_WEAPON_LIVERY_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns -1 if camoComponentHash is invalid/not attached to the weapon.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "camoComponentHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1103"
 		},
 		"0x5DA825A85D0EA6E6": {
-			"name": "_0x5DA825A85D0EA6E6",
+			"name": "_SET_WEAPON_OBJECT_LIVERY_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "Colors:\n0 = Gray\n1 = Dark Gray\n2 = Black\n3 = White\n4 = Blue\n5 = Cyan\n6 = Aqua\n7 = Cool Blue\n8 = Dark Blue\n9 = Royal Blue\n10 = Plum\n11 = Dark Purple\n12 = Purple\n13 = Red\n14 = Wine Red\n15 = Magenta\n16 = Pink\n17 = Salmon\n18 = Hot Pink\n19 = Rust Orange\n20 = Brown\n21 = Earth\n22 = Orange\n23 = Light Orange\n24 = Dark Yellow\n25 = Yellow\n26 = Light Brown\n27 = Lime Green\n28 = Olive\n29 = Moss\n30 = Turquoise\n31 = Dark Green",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "camoComponentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "colorIndex"
 				}
 			],
 			"return_type": "void",
 			"build": "1103"
 		},
 		"0xB3EA4FEABF41464B": {
-			"name": "_0xB3EA4FEABF41464B",
+			"name": "_GET_WEAPON_OBJECT_LIVERY_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns -1 if camoComponentHash is invalid/not attached to the weapon object.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "camoComponentHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1103"
 		},
 		"0xA2C9AC24B4061285": {
 			"name": "_0xA2C9AC24B4061285",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_PED_WEAPON_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1103"
 		},
 		"0x977CA98939E82E4B": {
 			"name": "_0x977CA98939E82E4B",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_WEAPON_OBJECT_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "weaponObject"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
