@@ -14892,15 +14892,15 @@
 		"0x74C0E2A57EC66760": {
 			"name": "GET_SHOP_PED_COMPONENT",
 			"jhash": "0xB39677C5",
-			"comment": "",
+			"comment": "More info here: https://gist.github.com/root-cause/3b80234367b0c856d60bf5cb4b826f86",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "componentHash"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "outComponent"
 				}
 			],
 			"return_type": "void",
@@ -14926,15 +14926,15 @@
 		"0x5D5CAFF661DDF6FC": {
 			"name": "GET_SHOP_PED_PROP",
 			"jhash": "0xDB0A7A58",
-			"comment": "",
+			"comment": "More info here: https://gist.github.com/root-cause/3b80234367b0c856d60bf5cb4b826f86",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "outProp"
 				}
 			],
 			"return_type": "void",
@@ -15114,16 +15114,16 @@
 					"name": "componentId"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "nameHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "int*",
+					"name": "enumValue"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "int*",
+					"name": "componentType"
 				}
 			],
 			"return_type": "void",
@@ -103720,33 +103720,33 @@
 			"build": "323"
 		},
 		"0x6558AC7C17BFEF58": {
-			"name": "_0x6558AC7C17BFEF58",
+			"name": "_GET_WEAPON_COMPONENT_VARIANT_EXTRA_COMPONENT_COUNT",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns the amount of extra components the specified component has.\nReturns -1 if the component isn't of type CWeaponComponentVariantModel.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "372"
 		},
 		"0x4D1CB8DC40208A17": {
-			"name": "_0x4D1CB8DC40208A17",
+			"name": "_GET_WEAPON_COMPONENT_VARIANT_EXTRA_COMPONENT_MODEL",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns the model hash of the extra component at specified index.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "extraComponentIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "372"
 		},
 		"0xADF692B254977C0C": {
