@@ -26052,11 +26052,11 @@
 		"0x02CFBA0C9E9275CE": {
 			"name": "FLASH_ABILITY_BAR",
 			"jhash": "0x3648960D",
-			"comment": "If set to true ability bar will flash",
+			"comment": "",
 			"params": [
 				{
-					"type": "BOOL",
-					"name": "toggle"
+					"type": "int",
+					"name": "millisecondsToFlash"
 				}
 			],
 			"return_type": "void",
@@ -87045,15 +87045,15 @@
 					"name": "heli2"
 				},
 				{
-					"type": "Vector3",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				}
 			],
