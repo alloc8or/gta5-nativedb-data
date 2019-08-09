@@ -24207,7 +24207,7 @@
 					"name": "subject"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p6"
 				}
 			],
@@ -40463,7 +40463,7 @@
 			"build": "757"
 		},
 		"0x5182A339A3474510": {
-			"name": "_0x5182A339A3474510",
+			"name": "_NETWORK_SPENT_VIP_UTILITY_CHARGES",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41179,7 +41179,7 @@
 			"build": "944"
 		},
 		"0xC1952F3773BA18FE": {
-			"name": "_0xC1952F3773BA18FE",
+			"name": "_NETWORK_SPENT_IMPORT_EXPORT_REPAIR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41200,7 +41200,7 @@
 			"build": "944"
 		},
 		"0xCCB339CC970452DA": {
-			"name": "_0xCCB339CC970452DA",
+			"name": "_NETWORK_SPENT_PURCHASE_HANGAR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41225,7 +41225,7 @@
 			"build": "1180"
 		},
 		"0x615EB504B0788DAF": {
-			"name": "_0x615EB504B0788DAF",
+			"name": "_NETWORK_SPENT_UPGRADE_HANGAR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41250,25 +41250,51 @@
 			"build": "1180"
 		},
 		"0xB18AC2ECBB15CB6A": {
-			"name": "_0xB18AC2ECBB15CB6A",
+			"name": "_NETWORK_SPENT_HANGAR_UTILITY_CHARGES",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
 			"build": "1180",
 			"unused": true
 		},
 		"0xB1F1346FD57685D7": {
-			"name": "_0xB1F1346FD57685D7",
+			"name": "_NETWORK_SPENT_HANGAR_STAFF_CHARGES",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
 			"build": "1180",
 			"unused": true
 		},
 		"0xAC272C0AE01B4BD8": {
-			"name": "_0xAC272C0AE01B4BD8",
+			"name": "_NETWORK_SPENT_BUY_TRUCK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41293,7 +41319,7 @@
 			"build": "1103"
 		},
 		"0x365E877C61D6988B": {
-			"name": "_0x365E877C61D6988B",
+			"name": "_NETWORK_SPENT_UPGRADE_TRUCK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41318,7 +41344,7 @@
 			"build": "1103"
 		},
 		"0x12D148D26538D0F9": {
-			"name": "_0x12D148D26538D0F9",
+			"name": "_NETWORK_SPENT_BUY_BUNKER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41343,7 +41369,7 @@
 			"build": "1103"
 		},
 		"0x0C82D21A77C22D49": {
-			"name": "_0x0C82D21A77C22D49",
+			"name": "_NETWORK_SPENT_UPGRADE_BUNKER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41368,7 +41394,7 @@
 			"build": "1103"
 		},
 		"0x9251B6ABF2D0A5B4": {
-			"name": "_NETWORK_EARN_FROM_SELLING_BUNKER",
+			"name": "_NETWORK_EARN_FROM_SELL_BUNKER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41474,7 +41500,7 @@
 			"build": "1290"
 		},
 		"0x3DD3F33A5D55EA6F": {
-			"name": "_0x3DD3F33A5D55EA6F",
+			"name": "_NETWORK_SPENT_UPGRADE_BASE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41499,7 +41525,7 @@
 			"build": "1290"
 		},
 		"0x0CCE73BC7A11E885": {
-			"name": "_0x0CCE73BC7A11E885",
+			"name": "_NETWORK_SPENT_BUY_TILTROTOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41524,7 +41550,7 @@
 			"build": "1290"
 		},
 		"0x165E135D6DFA2907": {
-			"name": "_0x165E135D6DFA2907",
+			"name": "_NETWORK_SPENT_UPGRADE_TILTROTOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41549,7 +41575,7 @@
 			"build": "1290"
 		},
 		"0x5BBBD92186E1F1C5": {
-			"name": "_0x5BBBD92186E1F1C5",
+			"name": "_NETWORK_SPENT_EMPLOY_ASSASSINS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41574,7 +41600,7 @@
 			"build": "1290"
 		},
 		"0x771ADB0E7635B7BF": {
-			"name": "_0x771ADB0E7635B7BF",
+			"name": "_NETWORK_SPENT_GANGOPS_CANNON",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41599,7 +41625,7 @@
 			"build": "1290"
 		},
 		"0xDA947AE8880D5C18": {
-			"name": "_0xDA947AE8880D5C18",
+			"name": "_NETWORK_SPENT_GANGOPS_START_MISSION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41624,33 +41650,33 @@
 			"build": "1290"
 		},
 		"0x0E1E2FF3F4EC11AA": {
-			"name": "_0x0E1E2FF3F4EC11AA",
+			"name": "_NETWORK_EARN_FROM_SELL_BASE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "baseNameHash"
 				}
 			],
 			"return_type": "void",
 			"build": "1290"
 		},
 		"0x5B669CF2299A271F": {
-			"name": "_0x5B669CF2299A271F",
+			"name": "_NETWORK_EARN_FROM_TARGET_REFUND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -41658,16 +41684,16 @@
 			"build": "1290"
 		},
 		"0x2DCB19ABAB0380A8": {
-			"name": "_0x2DCB19ABAB0380A8",
+			"name": "_NETWORK_EARN_FROM_GANGOPS_WAGES",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -41675,16 +41701,16 @@
 			"build": "1290"
 		},
 		"0x15BB2A5C757EB91F": {
-			"name": "_0x15BB2A5C757EB91F",
+			"name": "_NETWORK_EARN_FROM_GANGOPS_WAGES_BONUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
