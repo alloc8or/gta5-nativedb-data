@@ -51931,7 +51931,7 @@
 			"build": "323"
 		},
 		"0x8132C0EB8B2B3293": {
-			"name": "_NETWORK_IS_CLOUD_BACKGROUND_SCRIPTS_REQUEST_ACTIVE",
+			"name": "_NETWORK_IS_CLOUD_BACKGROUND_SCRIPTS_REQUEST_PENDING",
 			"jhash": "0x29532731",
 			"comment": "",
 			"params": [],
@@ -51947,7 +51947,7 @@
 			"build": "323"
 		},
 		"0x0467C11ED88B7D28": {
-			"name": "_NETWORK_IS_TUNABLES_REQUEST_ACTIVE",
+			"name": "NETWORK_IS_TUNABLE_CLOUD_REQUEST_PENDING",
 			"jhash": "0x47978D7F",
 			"comment": "",
 			"params": [],
