@@ -42549,7 +42549,7 @@
 			"unused": true
 		},
 		"0xDFF49EE984E7AAE8": {
-			"name": "_NETWORK_EARN_FROM_LUCKY_WHEEL",
+			"name": "_NETWORK_EARN_FROM_RC_TIME_TRIAL",
 			"jhash": "",
 			"comment": "",
 			"params": [
