@@ -51583,20 +51583,20 @@
 			"build": "323"
 		},
 		"0xBBDF066252829606": {
-			"name": "_0xBBDF066252829606",
+			"name": "NETWORK_CONCEAL_PLAYER",
 			"jhash": "0x72052DB3",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -51604,46 +51604,46 @@
 			"build": "323"
 		},
 		"0x919B3C98ED8292F9": {
-			"name": "_0x919B3C98ED8292F9",
+			"name": "NETWORK_IS_PLAYER_CONCEALED",
 			"jhash": "0xB0313590",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x1632BE0AC1E62876": {
-			"name": "_0x1632BE0AC1E62876",
+			"name": "_NETWORK_CONCEAL_ENTITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "877"
 		},
 		"0x71302EC70689052A": {
-			"name": "_0x71302EC70689052A",
+			"name": "_NETWORK_IS_ENTITY_CONCEALED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "877"
 		},
 		"0xE679E3E06E363892": {
@@ -83026,7 +83026,7 @@
 			"build": "323"
 		},
 		"0xAF12610C644A35C9": {
-			"name": "_SET_MAP_CULLBOX_ACTIVE",
+			"name": "SET_MAPDATACULLBOX_ENABLED",
 			"jhash": "0x403CD434",
 			"comment": "Possible p0 values:\n\n\"prologue\"\n\"Prologue_Main\"",
 			"params": [
