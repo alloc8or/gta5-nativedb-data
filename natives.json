@@ -49940,26 +49940,26 @@
 			"build": "323"
 		},
 		"0x631DC5DFF4B110E3": {
-			"name": "_0x631DC5DFF4B110E3",
-			"jhash": "",
+			"name": "NETWORK_IS_PLAYER_FADING",
+			"jhash": "0x065C597B",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x422F32CC7E56ABAD": {
-			"name": "_0x422F32CC7E56ABAD",
-			"jhash": "",
+			"name": "NETWORK_IS_ENTITY_FADING",
+			"jhash": "0xB5087ACF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "BOOL",
@@ -51636,7 +51636,7 @@
 		"0x71302EC70689052A": {
 			"name": "_NETWORK_IS_ENTITY_CONCEALED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Note: This only works for vehicles, which appears to be a bug (since the setter _does_ work for every entity type and the name is 99% correct).",
 			"params": [
 				{
 					"type": "Entity",
@@ -91992,9 +91992,9 @@
 			"build": "323"
 		},
 		"0x90B6DA738A9A25DA": {
-			"name": "_SET_SOME_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME",
+			"name": "SET_AMBIENT_VEHICLE_RANGE_MULTIPLIER_THIS_FRAME",
 			"jhash": "0xDAE2A2BE",
-			"comment": "Judging from the effect, this is some sort of vehicle density multiplier.",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
