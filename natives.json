@@ -988,11 +988,11 @@
 			"build": "323"
 		},
 		"0xE73364DB90778FFA": {
-			"name": "_0xE73364DB90778FFA",
+			"name": "GET_IS_PRELOADED_CONVERSATION_READY",
 			"jhash": "0x336F3D35",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x16754C556D2EDE3D": {
@@ -21756,9 +21756,9 @@
 			"build": "323"
 		},
 		"0x2F09F7976C512404": {
-			"name": "_0x2F09F7976C512404",
+			"name": "GET_IS_PETROL_DECAL_IN_RANGE",
 			"jhash": "0x242C6A04",
-			"comment": "only documented. to be continued...",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -21774,7 +21774,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "radius"
 				}
 			],
 			"return_type": "BOOL",
@@ -34382,11 +34382,11 @@
 			"build": "323"
 		},
 		"0x6E04F06094C87047": {
-			"name": "_0x6E04F06094C87047",
+			"name": "GET_IS_AUTO_SAVE_OFF",
 			"jhash": "0xA8546914",
-			"comment": "",
+			"comment": "Returns true if profile setting 208 is equal to 0.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x69240733738C19A0": {
@@ -91729,19 +91729,19 @@
 		"0x9A75585FB2E54FAD": {
 			"name": "_0x9A75585FB2E54FAD",
 			"jhash": "0x935A95DA",
-			"comment": "Example gotten from chinese2.c4\n    VEHICLE::_9A75585FB2E54FAD(2004.4471435546875, 3076.806640625, 46.60689926147461, 10.0);\n\n",
+			"comment": "SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
@@ -91754,7 +91754,7 @@
 		"0x0A436B8643716D14": {
 			"name": "_0x0A436B8643716D14",
 			"jhash": "0x6C73E45A",
-			"comment": "",
+			"comment": "CLEAR_VEHICLE_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -99703,15 +99703,15 @@
 		"0x279D50DE5652D935": {
 			"name": "_0x279D50DE5652D935",
 			"jhash": "0xB3200F72",
-			"comment": "",
+			"comment": "SET_VEHICLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -101807,11 +101807,11 @@
 		"0x4419966C9936071A": {
 			"name": "_0x4419966C9936071A",
 			"jhash": "",
-			"comment": "",
+			"comment": "CLEAR_VEHICLE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
