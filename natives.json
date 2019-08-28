@@ -55604,8 +55604,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "garage"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
 					"type": "BOOL",
@@ -55625,8 +55625,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
 					"type": "Player",
@@ -55650,8 +55650,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
 					"type": "Player",
@@ -55671,8 +55671,8 @@
 			"comment": "ARE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
 					"type": "BOOL",
@@ -55695,13 +55695,13 @@
 			"build": "323"
 		},
 		"0x673ED815D6E323B7": {
-			"name": "_0x673ED815D6E323B7",
+			"name": "IS_ANY_ENTITY_ENTIRELY_INSIDE_GARAGE",
 			"jhash": "0x7B44D659",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
 					"type": "BOOL",
@@ -55724,13 +55724,13 @@
 			"build": "323"
 		},
 		"0x372EF6699146A1E4": {
-			"name": "_0x372EF6699146A1E4",
+			"name": "IS_OBJECT_ENTIRELY_INSIDE_GARAGE",
 			"jhash": "0x142C8F76",
-			"comment": "",
+			"comment": "Despite the name, it does work for any entity type.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
 					"type": "Entity",
@@ -55749,13 +55749,13 @@
 			"build": "323"
 		},
 		"0xF0EED5A6BC7B237A": {
-			"name": "_0xF0EED5A6BC7B237A",
+			"name": "IS_OBJECT_PARTIALLY_INSIDE_GARAGE",
 			"jhash": "0x95A9AB2B",
-			"comment": "IS_OBJECT_???",
+			"comment": "Despite the name, it does work for any entity type.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
 					"type": "Entity",
@@ -55770,17 +55770,17 @@
 			"build": "323"
 		},
 		"0xDA05194260CDCDF9": {
-			"name": "_0xDA05194260CDCDF9",
+			"name": "_CLEAR_GARAGE_AREA",
 			"jhash": "",
-			"comment": "",
+			"comment": "CLEAR_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "isNetwork"
 				}
 			],
 			"return_type": "void",
@@ -55789,27 +55789,27 @@
 		"0x190428512B240692": {
 			"name": "_0x190428512B240692",
 			"jhash": "0xA565E27E",
-			"comment": "",
+			"comment": "CLEAR_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "vehicles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "peds"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "objects"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "isNetwork"
 				}
 			],
 			"return_type": "void",
@@ -55835,11 +55835,11 @@
 		"0xF2E1A7133DD356A6": {
 			"name": "_0xF2E1A7133DD356A6",
 			"jhash": "0x43BB7E48",
-			"comment": "",
+			"comment": "ENABLE_*\n\nEnable distance checks for occupied check?",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "garageHash"
 				},
 				{
 					"type": "BOOL",
@@ -59161,7 +59161,7 @@
 		"0x703123E5E7D429C2": {
 			"name": "GET_VEHICLE_NODE_POSITION",
 			"jhash": "0xE38E252D",
-			"comment": "Calling this with an invalid node id, will crash the game.\nNote that IS_VEHICLE_NODE_ID_VALID simply checks if nodeId is not zero. It does not actually ensure that the id is valid.\nEg. IS_VEHICLE_NODE_ID_VALID(1) will return true, but will crash when calling GET_VEHICLE_NODE_POSITION().\n\nsfink: This native returns a pointer to a packed Vector3 struct in the RAX register, as do the following natives:\nAI::WAYPOINT_RECORDING_GET_COORD\nENTITY::GET_ENTITY_MATRIX\nFIRE::GET_CLOSEST_FIRE_POS\nGAMEPLAY::FIND_SPAWN_POINT_IN_DIRECTION\nGAMEPLAY::GET_MODEL_DIMENSIONS\nGAMEPLAY::OVERRIDE_SAVE_HOUSE\nGAMEPLAY::_0x82FDE6A57EE4EE44\nGAMEPLAY::_0x8BDC7BFC57A81E76\nGAMEPLAY::_0x8D7A43EC6A5FEA45\nGAMEPLAY::_0xA4A0065E39C9F25C\nGAMEPLAY::_0xDFB4138EEFED7B81\nMOBILE::GET_MOBILE_PHONE_POSITION\nMOBILE::GET_MOBILE_PHONE_ROTATION\nNETWORK::NETWORK_GET_RESPAWN_RESULT\nOBJECT::_0x163F8B586BC95F2A\nPATHFIND::GET_CLOSEST_MAJOR_VEHICLE_NODE\nPATHFIND::GET_CLOSEST_ROAD\nPATHFIND::GET_CLOSEST_VEHICLE_NODE\nPATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING\nPATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE\nPATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_FAVOUR_DIRECTION\nPATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING\nPATHFIND::GET_RANDOM_VEHICLE_NODE\nPATHFIND::GET_SAFE_COORD_FOR_PED\nPATHFIND::GET_VEHICLE_NODE_POSITION\nPATHFIND::_0x16F46FB18C8009E4\nVEHICLE::_0xA4822F1CF23F4810\nVEHICLE::_0xDF7E3EEB29642C38\nWATER::TEST_PROBE_AGAINST_ALL_WATER\nWATER::TEST_PROBE_AGAINST_WATER\nWEAPON::GET_PED_LAST_WEAPON_IMPACT_COORD\nWORLDPROBE::_0xFF6BE494C7987F34\nWORLDPROBE::_GET_RAYCAST_RESULT\n",
+			"comment": "Calling this with an invalid node id, will crash the game.\nNote that IS_VEHICLE_NODE_ID_VALID simply checks if nodeId is not zero. It does not actually ensure that the id is valid.\nEg. IS_VEHICLE_NODE_ID_VALID(1) will return true, but will crash when calling GET_VEHICLE_NODE_POSITION().",
 			"params": [
 				{
 					"type": "int",
@@ -59176,9 +59176,9 @@
 			"build": "323"
 		},
 		"0xA2AE5C478B96E3B6": {
-			"name": "_GET_SUPPORTS_GPS_ROUTE_FLAG",
+			"name": "GET_VEHICLE_NODE_IS_GPS_ALLOWED",
 			"jhash": "0xEE4B1219",
-			"comment": "p0 = VEHICLE_NODE_ID\n\nReturns false for nodes that aren't used for GPS routes.\nExample:\nNodes in Fort Zancudo and LSIA are false",
+			"comment": "Returns false for nodes that aren't used for GPS routes.\nExample:\nNodes in Fort Zancudo and LSIA are false",
 			"params": [
 				{
 					"type": "int",
@@ -59189,9 +59189,9 @@
 			"build": "323"
 		},
 		"0x4F5070AA58F69279": {
-			"name": "_GET_IS_SLOW_ROAD_FLAG",
+			"name": "GET_VEHICLE_NODE_IS_SWITCHED_OFF",
 			"jhash": "0x56737A3C",
-			"comment": "p0 = VEHICLE_NODE_ID\n\nReturns true when the node is Offroad. Alleys, some dirt roads, and carparks return true.\nNormal roads where plenty of Peds spawn will return false\n",
+			"comment": "Returns true when the node is Offroad. Alleys, some dirt roads, and carparks return true.\nNormal roads where plenty of Peds spawn will return false",
 			"params": [
 				{
 					"type": "int",
@@ -59864,7 +59864,7 @@
 			"build": "323"
 		},
 		"0x705A844002B39DC0": {
-			"name": "_0x705A844002B39DC0",
+			"name": "_IS_NAVMESH_REQUIRED_REGION_OWNED_BY_ANY_THREAD",
 			"jhash": "",
 			"comment": "IS_*",
 			"params": [],
@@ -68835,7 +68835,7 @@
 		"0x70A2D1137C8ED7C9": {
 			"name": "SET_PED_FLEE_ATTRIBUTES",
 			"jhash": "0xA717A875",
-			"comment": "Bool probably has something to do with vehicles, maybe if the ped can use vehicle to flee?\n\nValues used as attributes are those in sequence of powers of two, 1, 2, 4, 8, 16, 32, 64.... 65536.",
+			"comment": "bit 15 (0x8000) = force cower",
 			"params": [
 				{
 					"type": "Ped",
@@ -68843,11 +68843,11 @@
 				},
 				{
 					"type": "int",
-					"name": "attributes"
+					"name": "attributeFlags"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
