@@ -54257,32 +54257,32 @@
 			"build": "323"
 		},
 		"0x8BD6C6DEA20E82C6": {
-			"name": "_0x8BD6C6DEA20E82C6",
+			"name": "_GET_STATUS_OF_TEXTURE_DOWNLOAD",
 			"jhash": "0x03225BA3",
-			"comment": "",
+			"comment": "0 = succeeded\n1 = pending\n2 = failed\n\nGET_ST*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x60EDD13EB3AC1FF3": {
 			"name": "_0x60EDD13EB3AC1FF3",
 			"jhash": "0x4DEBC227",
-			"comment": "",
+			"comment": "Returns true if profile setting 901 is set to true and sets it to false.\n\nNETWORK_C*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x82A2B386716608F1": {
-			"name": "_0x82A2B386716608F1",
+			"name": "_NETWORK_SHOULD_SHOW_CONNECTIVITY_TROUBLESHOOTING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns true if the NAT type is Strict (3) and a certain number of connections have failed.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "393"
 		},
 		"0xEFFB25453D8600F9": {
@@ -57457,12 +57457,12 @@
 			"build": "323"
 		},
 		"0x08F96CA6C551AD51": {
-			"name": "_GET_WEAPON_HASH_FROM_PICKUP",
+			"name": "GET_WEAPON_TYPE_FROM_PICKUP_TYPE",
 			"jhash": "0xEDD01937",
-			"comment": "returns the weapon hash of pickup",
+			"comment": "",
 			"params": [
 				{
-					"type": "Pickup",
+					"type": "Hash",
 					"name": "pickupHash"
 				}
 			],
@@ -57657,7 +57657,7 @@
 			"comment": "returns pickup hash.",
 			"params": [
 				{
-					"type": "Pickup",
+					"type": "Hash",
 					"name": "pickupHash"
 				}
 			],
