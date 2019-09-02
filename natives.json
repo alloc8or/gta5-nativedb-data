@@ -14774,14 +14774,14 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "character"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "index"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "outComponent"
 				}
 			],
@@ -14794,7 +14794,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "outComponent"
 				}
 			],
@@ -14807,7 +14807,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "outProp"
 				}
 			],
@@ -29400,7 +29400,7 @@
 		"0x63BB75ABEDC1F6A0": {
 			"name": "SET_MP_GAMER_TAG_VISIBILITY",
 			"jhash": "0xD41DF479",
-			"comment": "enum MpGamerTagComponent\n{\n  GAMER_NAME = 0,\n  CREW_TAG,\n  healthArmour,\n  BIG_TEXT,\n  AUDIO_ICON,\n  MP_USING_MENU,\n  MP_PASSIVE_MODE,\n  WANTED_STARS,\n  MP_DRIVER,\n  MP_CO_DRIVER,\n  MP_TAGGED,\n  GAMER_NAME_NEARBY,\n  ARROW,\n  MP_PACKAGES,\n  INV_IF_PED_FOLLOWING,\n  RANK_TEXT,\n  MP_TYPING\n};",
+			"comment": "enum eMpGamerTagComponent\n{\n\tMP_TAG_GAMER_NAME,\n\tMP_TAG_CREW_TAG,\n\tMP_TAG_HEALTH_ARMOUR,\n\tMP_TAG_BIG_TEXT,\n\tMP_TAG_AUDIO_ICON,\n\tMP_TAG_USING_MENU,\n\tMP_TAG_PASSIVE_MODE,\n\tMP_TAG_WANTED_STARS,\n\tMP_TAG_DRIVER,\n\tMP_TAG_CO_DRIVER,\n\tMP_TAG_TAGGED,\n\tMP_TAG_GAMER_NAME_NEARBY,\n\tMP_TAG_ARROW,\n\tMP_TAG_PACKAGES,\n\tMP_TAG_INV_IF_PED_FOLLOWING,\n\tMP_TAG_RANK_TEXT,\n\tMP_TAG_TYPING,\n\tMP_TAG_BAG_LARGE,\n\tMP_TAG_ARROW,\n\tMP_TAG_GANG_CEO,\n\tMP_TAG_GANG_BIKER,\n\tMP_TAG_BIKER_ARROW,\n\tMP_TAG_MC_ROLE_PRESIDENT,\n\tMP_TAG_MC_ROLE_VICE_PRESIDENT,\n\tMP_TAG_MC_ROLE_ROAD_CAPTAIN,\n\tMP_TAG_MC_ROLE_SARGEANT,\n\tMP_TAG_MC_ROLE_ENFORCER,\n\tMP_TAG_MC_ROLE_PROSPECT,\n\tMP_TAG_TRANSMITTER,\n\tMP_TAG_BOMB\n};",
 			"params": [
 				{
 					"type": "int",
@@ -36707,7 +36707,7 @@
 		"0x5D5479D115290C3F": {
 			"name": "IS_TENNIS_MODE",
 			"jhash": "0x04A947BA",
-			"comment": "Return whether tennis mode is active or not.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -36718,21 +36718,21 @@
 			"build": "323"
 		},
 		"0xE266ED23311F24D4": {
-			"name": "_0xE266ED23311F24D4",
+			"name": "PLAY_TENNIS_SWING_ANIM",
 			"jhash": "0xC20A7D2B",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "animDict"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "animName"
 				},
 				{
 					"type": "float",
@@ -36751,13 +36751,13 @@
 			"build": "323"
 		},
 		"0x17DF68D720AA77F8": {
-			"name": "_0x17DF68D720AA77F8",
+			"name": "GET_TENNIS_SWING_ANIM_COMPLETE",
 			"jhash": "0x8501E727",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
@@ -36766,11 +36766,11 @@
 		"0x19BFED045C647C49": {
 			"name": "_0x19BFED045C647C49",
 			"jhash": "0x1A332D2D",
-			"comment": "",
+			"comment": "Related to tennis mode.\n\nGET_TENNIS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
@@ -36779,27 +36779,27 @@
 		"0xE95B0C7D5BA3B96B": {
 			"name": "_0xE95B0C7D5BA3B96B",
 			"jhash": "",
-			"comment": "",
+			"comment": "Related to tennis mode.\n\nGET_TENNIS_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x8FA9C42FC5D7C64B": {
-			"name": "_0x8FA9C42FC5D7C64B",
+			"name": "PLAY_TENNIS_DIVE_ANIM",
 			"jhash": "0x0C8865DF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -36825,11 +36825,11 @@
 		"0x54F157E0336A3822": {
 			"name": "_0x54F157E0336A3822",
 			"jhash": "0x49F977A9",
-			"comment": "From the scripts:\n\nGAMEPLAY::_54F157E0336A3822(sub_aa49(a_0), \"ForcedStopDirection\", v_E);",
+			"comment": "From the scripts:\n\nGAMEPLAY::_54F157E0336A3822(sub_aa49(a_0), \"ForcedStopDirection\", v_E);\n\nRelated to tennis mode.\n\nSET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "const char*",
@@ -56187,8 +56187,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
@@ -60801,11 +60801,11 @@
 		"0x87DDEB611B329A9C": {
 			"name": "_0x87DDEB611B329A9C",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_A*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
