@@ -2745,9 +2745,9 @@
 			"build": "323"
 		},
 		"0x031ACB6ABA18C729": {
-			"name": "_0x031ACB6ABA18C729",
+			"name": "UNLOCK_RADIO_STATION_TRACK_LIST",
 			"jhash": "0xBE998184",
-			"comment": "2 calls in the b617d scripts. This line is called 2 times:\nAUDIO::_031ACB6ABA18C729(\"RADIO_16_SILVERLAKE\", \"MIRRORPARK_LOCKED\");\n\nNote: Another name for RADIO_16_SILVERLAKE is RADIO MIRROR PARK",
+			"comment": "AUDIO::UNLOCK_RADIO_STATION_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"MIRRORPARK_LOCKED\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -2755,7 +2755,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "trackListName"
 				}
 			],
 			"return_type": "void",
@@ -21781,7 +21781,7 @@
 			"build": "323"
 		},
 		"0x8A35C742130C6080": {
-			"name": "_0x8A35C742130C6080",
+			"name": "_OVERRIDE_VEHICLE_DECAL_TEXTURE",
 			"jhash": "0x335695CF",
 			"comment": "",
 			"params": [
@@ -21804,11 +21804,11 @@
 		"0xB7ED70C49521A61D": {
 			"name": "_0xB7ED70C49521A61D",
 			"jhash": "0x7B786555",
-			"comment": "",
+			"comment": "UN*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "decalType"
 				}
 			],
 			"return_type": "void",
@@ -21832,9 +21832,9 @@
 			"build": "323"
 		},
 		"0x428BDCB9DA58DA53": {
-			"name": "_ADD_CLAN_DECAL_TO_VEHICLE",
+			"name": "ADD_VEHICLE_CREW_EMBLEM",
 			"jhash": "0x12077738",
-			"comment": "Now has 15 parameters, previous declaration:\nBOOL _0x428BDCB9DA58DA53(Any p0, Any p1, Any p2, float p3, float p4, float p5, float p6, float p7, float p8, float p9, float p10, float p11, float p12, Any p13)\n\nboneIndex is always chassis_dummy in the scripts. The x/y/z params are location relative to the chassis bone. They are usually rotations and measurements. Haven't reversed which are what yet.\n\nScale is how big the decal will be.\n\np13 is always 0.\n\nFor alpha, 200 seems to match what the game is doing, I think. I don't have access to the new scripts to see what this parameter is, but based on guessing this seems (kind of) accurate.",
+			"comment": "boneIndex is always chassis_dummy in the scripts. The x/y/z params are location relative to the chassis bone.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -21914,7 +21914,7 @@
 			"build": "372"
 		},
 		"0xD2300034310557E4": {
-			"name": "_0xD2300034310557E4",
+			"name": "REMOVE_VEHICLE_CREW_EMBLEM",
 			"jhash": "0x667046A8",
 			"comment": "",
 			"params": [
@@ -21923,7 +21923,7 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -21931,7 +21931,7 @@
 			"build": "323"
 		},
 		"0xFE26117A5841B2FF": {
-			"name": "_0xFE26117A5841B2FF",
+			"name": "GET_VEHICLE_CREW_EMBLEM_REQUEST_STATE",
 			"jhash": "0x4F4D76E8",
 			"comment": "",
 			"params": [
@@ -21940,7 +21940,7 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -21948,16 +21948,16 @@
 			"build": "323"
 		},
 		"0x060D935D3981A275": {
-			"name": "_DOES_VEHICLE_HAVE_DECAL",
+			"name": "DOES_VEHICLE_HAVE_CREW_EMBLEM",
 			"jhash": "0x6D58F73B",
-			"comment": "This function is called before ADD_CLAN_DECAL_TO_VEHICLE to see if it needs to run. IDK if it's for clan decal or not, but the 2nd parameter might be decal index? It's always passed 0. Not sure what this function really does. But it does return 0 if the clan tag is not on, and 1 if it is.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -21971,7 +21971,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -21980,11 +21980,11 @@
 		"0x02369D5C8A51FDCF": {
 			"name": "_0x02369D5C8A51FDCF",
 			"jhash": "0xFDF6D8DA",
-			"comment": "",
+			"comment": "DISABLE_S*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -23190,9 +23190,9 @@
 			"build": "323"
 		},
 		"0x9304881D6F6537EA": {
-			"name": "_REQUEST_HUD_SCALEFORM",
+			"name": "REQUEST_SCALEFORM_SCRIPT_HUD_MOVIE",
 			"jhash": "0x7AF85862",
-			"comment": "http://gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/?p=1068285912\n\nREQUEST_SC*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -23203,9 +23203,9 @@
 			"build": "323"
 		},
 		"0xDF6E5987D2B4D140": {
-			"name": "_HAS_HUD_SCALEFORM_LOADED",
+			"name": "HAS_SCALEFORM_SCRIPT_HUD_MOVIE_LOADED",
 			"jhash": "0x79B43255",
-			"comment": "Check to see if hud component Scaleform has loaded?",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -23216,13 +23216,13 @@
 			"build": "323"
 		},
 		"0xF44A5456AC3F4F97": {
-			"name": "_0xF44A5456AC3F4F97",
+			"name": "REMOVE_SCALEFORM_SCRIPT_HUD_MOVIE",
 			"jhash": "0x03D87600",
-			"comment": "Another function related to \"HUD scaleforms\"",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "hudComponent"
 				}
 			],
 			"return_type": "void",
@@ -26460,7 +26460,7 @@
 		"0x214CD562A939246A": {
 			"name": "_0x214CD562A939246A",
 			"jhash": "0x812CBE0E",
-			"comment": "example\n\nif (UI::IS_HELP_MESSAGE_BEING_DISPLAYED()&&(!UI::_214CD562A939246A())) {\n        return 0;\n}",
+			"comment": "HAS_S*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -29996,7 +29996,7 @@
 			"build": "323"
 		},
 		"0x6EF54AB721DC6242": {
-			"name": "_0x6EF54AB721DC6242",
+			"name": "_REMOVE_WARNING_MESSAGE_LIST_ITEMS",
 			"jhash": "",
 			"comment": "",
 			"params": [],
