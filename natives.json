@@ -21781,7 +21781,7 @@
 			"build": "323"
 		},
 		"0x8A35C742130C6080": {
-			"name": "_OVERRIDE_VEHICLE_DECAL_TEXTURE",
+			"name": "_OVERRIDE_DECAL_TEXTURE",
 			"jhash": "0x335695CF",
 			"comment": "",
 			"params": [
@@ -21802,7 +21802,7 @@
 			"build": "323"
 		},
 		"0xB7ED70C49521A61D": {
-			"name": "_0xB7ED70C49521A61D",
+			"name": "_UNDO_DECAL_TEXTURE_OVERRIDE",
 			"jhash": "0x7B786555",
 			"comment": "UN*",
 			"params": [
