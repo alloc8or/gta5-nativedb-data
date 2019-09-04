@@ -27590,17 +27590,17 @@
 			"build": "323"
 		},
 		"0xDCFB5D4DB8BF367E": {
-			"name": "_0xDCFB5D4DB8BF367E",
+			"name": "SHOW_CREW_INDICATOR_ON_BLIP",
 			"jhash": "0xABBE1E45",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -27884,9 +27884,9 @@
 			"build": "323"
 		},
 		"0x60E892BA4F5BDCA4": {
-			"name": "_0x60E892BA4F5BDCA4",
+			"name": "_SHOW_SIGNIN_UI",
 			"jhash": "",
-			"comment": "Something with Social Club or online.",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
