@@ -57559,29 +57559,29 @@
 			"build": "1103"
 		},
 		"0x5F048334B4A4E774": {
-			"name": "_0x5F048334B4A4E774",
+			"name": "_SET_OBJECT_LIGHT_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "r"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "g"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "b"
 				}
 			],
 			"return_type": "Any",
