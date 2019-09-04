@@ -86684,7 +86684,7 @@
 		"0xFC545A9F0626E3B6": {
 			"name": "TASK_VEHICLE_FOLLOW",
 			"jhash": "0xA8B917D7",
-			"comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle:\n0 = Rushed\n1 = Ignore Traffic Lights\n2 = Fast\n3 = Normal (Stop in Traffic)\n4 = Fast avoid traffic\n5 = Fast, stops in traffic but overtakes sometimes\n6 = Fast avoids traffic extremely",
+			"comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle:http://gtaforums.com/topic/822314-guide-driving-styles/",
 			"params": [
 				{
 					"type": "Ped",
@@ -86699,12 +86699,13 @@
 					"name": "targetEntity"
 				},
 				{
-					"type": "int",
-					"name": "drivingStyle"
-				},
-				{
 					"type": "float",
 					"name": "speed"
+					
+				},
+				{
+					"type": "int",
+					"name": "drivingStyle"
 				},
 				{
 					"type": "int",
