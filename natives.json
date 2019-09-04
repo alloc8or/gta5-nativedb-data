@@ -7636,7 +7636,7 @@
 			"build": "323"
 		},
 		"0xBCFC632DB7673BF0": {
-			"name": "_0xBCFC632DB7673BF0",
+			"name": "_SET_FIRST_PERSON_CAM_PITCH_RANGE",
 			"jhash": "0x76DAC96C",
 			"comment": "",
 			"params": [
@@ -7653,9 +7653,9 @@
 			"build": "323"
 		},
 		"0x0AF7B437918103B3": {
-			"name": "_0x0AF7B437918103B3",
+			"name": "_SET_FIRST_PERSON_CAM_NEAR_CLIP",
 			"jhash": "0x0E21069D",
-			"comment": "Appear to have something to do with the clipping at close range.",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -7666,7 +7666,7 @@
 			"build": "323"
 		},
 		"0x42156508606DE65E": {
-			"name": "_0x42156508606DE65E",
+			"name": "_SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP",
 			"jhash": "0x71E9C63E",
 			"comment": "",
 			"params": [
@@ -7759,41 +7759,41 @@
 			"build": "323"
 		},
 		"0xD0082607100D7193": {
-			"name": "_0xD0082607100D7193",
+			"name": "_GET_GAMEPLAY_CAM_NEAR_CLIP",
 			"jhash": "0x457AE195",
-			"comment": "gets some camera near clip",
+			"comment": "",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
 		},
 		"0xDFC8CBC606FDB0FC": {
-			"name": "_0xDFC8CBC606FDB0FC",
+			"name": "_GET_GAMEPLAY_CAM_FAR_CLIP",
 			"jhash": "0x46CB3A49",
-			"comment": "gets some camera far clip",
+			"comment": "",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
 		},
 		"0xA03502FC581F7D9B": {
-			"name": "_0xA03502FC581F7D9B",
+			"name": "_GET_GAMEPLAY_CAM_NEAR_DOF",
 			"jhash": "0x19297A7A",
-			"comment": "gets some camera near depth of field",
+			"comment": "",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
 		},
 		"0x9780F32BCAF72431": {
-			"name": "_0x9780F32BCAF72431",
+			"name": "_GET_GAMEPLAY_CAM_FAR_DOF",
 			"jhash": "0xF24777CA",
-			"comment": "gets some camera far depth of field",
+			"comment": "",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
 		},
 		"0x162F9D995753DC19": {
-			"name": "_0x162F9D995753DC19",
+			"name": "_GET_GAMEPLAY_CAM_FAR_CLIP_2",
 			"jhash": "0x38992E83",
-			"comment": "gets some camera far clip",
+			"comment": "",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
@@ -14768,7 +14768,7 @@
 			"build": "323"
 		},
 		"0xFF56381874F82086": {
-			"name": "_0xFF56381874F82086",
+			"name": "_GET_TATTOO_COLLECTION_DATA",
 			"jhash": "0x2E9D628C",
 			"comment": "",
 			"params": [
@@ -17991,9 +17991,9 @@
 			"build": "323"
 		},
 		"0xC6372ECD45D73BCD": {
-			"name": "_0xC6372ECD45D73BCD",
+			"name": "SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU",
 			"jhash": "0xF8FBCC25",
-			"comment": "SET_SCRIPT_GFX_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -18067,7 +18067,7 @@
 			"build": "323"
 		},
 		"0x6DD8F5AA635EB4B2": {
-			"name": "_0x6DD8F5AA635EB4B2",
+			"name": "_GET_SCRIPT_GFX_POSITION",
 			"jhash": "",
 			"comment": "GET_*",
 			"params": [
@@ -18214,7 +18214,7 @@
 			"build": "1290"
 		},
 		"0x2BC54A8188768488": {
-			"name": "_0x2BC54A8188768488",
+			"name": "_DRAW_INTERACTIVE_SPRITE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -19602,9 +19602,9 @@
 			"build": "323"
 		},
 		"0x9CFDD90B2B844BF7": {
-			"name": "_0x9CFDD90B2B844BF7",
+			"name": "GOLF_TRAIL_SET_SHADER_PARAMS",
 			"jhash": "0x4EA70FB4",
-			"comment": "GOLF_TRAIL_SET_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -21151,11 +21151,11 @@
 		"0x5F6DF3D92271E8A1": {
 			"name": "_0x5F6DF3D92271E8A1",
 			"jhash": "0x18136DE0",
-			"comment": "",
+			"comment": "DISABLE_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -22929,7 +22929,7 @@
 			"build": "323"
 		},
 		"0x98C494FD5BDFBFD5": {
-			"name": "_BEGIN_SCALEFORM_MOVIE_METHOD_ON_HUD_COMPONENT",
+			"name": "BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD",
 			"jhash": "0x5D66CE1E",
 			"comment": "Pushes a function from the Hud component Scaleform onto the stack. Same behavior as GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD, just a hud component id instead of a Scaleform.\n\nKnown components:\n19 - MP_RANK_BAR\n20 - HUD_DIRECTOR_MODE\n\nThis native requires more research - all information can be found inside of 'hud.gfx'. Using a decompiler, the different components are located under \"scripts\\__Packages\\com\\rockstargames\\gtav\\hud\\hudComponents\" and \"scripts\\__Packages\\com\\rockstargames\\gtav\\Multiplayer\".",
 			"params": [
@@ -27148,9 +27148,9 @@
 			"build": "323"
 		},
 		"0xDD2238F57B977751": {
-			"name": "_0xDD2238F57B977751",
+			"name": "DOES_BLIP_HAVE_GPS_ROUTE",
 			"jhash": "0x3E47F357",
-			"comment": "DOES_BLIP_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Blip",
@@ -27161,9 +27161,9 @@
 			"build": "323"
 		},
 		"0x54318C915D27E4CE": {
-			"name": "_0x54318C915D27E4CE",
+			"name": "SET_BLIP_HIDDEN_ON_LEGEND",
 			"jhash": "0x43996428",
-			"comment": "SET_BLIP_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Blip",
@@ -28574,9 +28574,9 @@
 			"build": "323"
 		},
 		"0x1A5CD7752DD28CD3": {
-			"name": "_SET_MINIMAP_OVERRIDE_CENTER_PED",
+			"name": "SET_MINIMAP_IN_SPECTATOR_MODE",
 			"jhash": "0xD5BFCADB",
-			"comment": "SET_MINIMAP_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -29635,9 +29635,9 @@
 			"build": "323"
 		},
 		"0x01A358D9128B7A86": {
-			"name": "_0x01A358D9128B7A86",
+			"name": "GET_CURRENT_WEBPAGE_ID",
 			"jhash": "0xAB5B7C18",
-			"comment": "GET_CURRENT_*",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -30750,7 +30750,7 @@
 			"build": "323"
 		},
 		"0x3CA6050692BC61B0": {
-			"name": "_0x3CA6050692BC61B0",
+			"name": "SET_PAUSE_MENU_PED_LIGHTING",
 			"jhash": "0x127310EB",
 			"comment": "",
 			"params": [
@@ -30763,13 +30763,13 @@
 			"build": "323"
 		},
 		"0xECF128344E9FF9F1": {
-			"name": "_0xECF128344E9FF9F1",
+			"name": "SET_PAUSE_MENU_PED_SLEEP_STATE",
 			"jhash": "0x8F45D327",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -31683,21 +31683,21 @@
 			"build": "323"
 		},
 		"0xC1F1920BAF281317": {
-			"name": "_0xC1F1920BAF281317",
+			"name": "_SET_INTERIOR_ENTITY_SET_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Interior",
+					"name": "interior"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "entitySetName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "color"
 				}
 			],
 			"return_type": "void",
@@ -35131,7 +35131,7 @@
 			"build": "323"
 		},
 		"0x34318593248C8FB2": {
-			"name": "_0x34318593248C8FB2",
+			"name": "_IS_PROJECTILE_TYPE_IN_RADIUS",
 			"jhash": "0xBE81F1E2",
 			"comment": "",
 			"params": [
@@ -35164,9 +35164,9 @@
 			"build": "323"
 		},
 		"0x8D7A43EC6A5FEA45": {
-			"name": "_0x8D7A43EC6A5FEA45",
+			"name": "_GET_IS_PROJECTILE_TYPE_IN_AREA",
 			"jhash": "0x1A40454B",
-			"comment": "",
+			"comment": "GET_C*",
 			"params": [
 				{
 					"type": "Any",
@@ -35209,9 +35209,9 @@
 			"build": "323"
 		},
 		"0xDFB4138EEFED7B81": {
-			"name": "_0xDFB4138EEFED7B81",
+			"name": "_GET_PROJECTILE_NEAR_PED_COORDS",
 			"jhash": "0x6BDE5CE4",
-			"comment": "From a quick disassembly I can say that this has something to do with weapons.\n\nAdded params according to what I could see in IDA.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -35238,9 +35238,9 @@
 			"build": "323"
 		},
 		"0x82FDE6A57EE4EE44": {
-			"name": "_0x82FDE6A57EE4EE44",
+			"name": "_GET_PROJECTILE_NEAR_PED",
 			"jhash": "0x507BC6F7",
-			"comment": "only documented to be continued...",
+			"comment": "GET_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -35267,7 +35267,7 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x1A8B5F3C01E2B477": {
@@ -44353,13 +44353,13 @@
 			"build": "323"
 		},
 		"0x49EC8030F5015F8B": {
-			"name": "_0x49EC8030F5015F8B",
+			"name": "NETWORK_SESSION_SET_MATCHMAKING_GROUP",
 			"jhash": "0x3C3E2AB6",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "matchmakingGroup"
 				}
 			],
 			"return_type": "void",
@@ -46715,7 +46715,7 @@
 		"0xE30CF56F1EFA5F43": {
 			"name": "NETWORK_GET_RANDOM_INT_RANGED",
 			"jhash": "0xF9B6426D",
-			"comment": "Same as GAMEPLAY::GET_RANDOM_INT_IN_RANGE",
+			"comment": "Same as GET_RANDOM_INT_IN_RANGE",
 			"params": [
 				{
 					"type": "int",
@@ -49055,7 +49055,7 @@
 		"0xF808475FA571D823": {
 			"name": "NETWORK_SET_FRIENDLY_FIRE_OPTION",
 			"jhash": "0x6BAF95FA",
-			"comment": "//friendly fire toggle ",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -49091,7 +49091,7 @@
 			"build": "323"
 		},
 		"0x3E200C2BCF4164EB": {
-			"name": "_0x3E200C2BCF4164EB",
+			"name": "NETWORK_SET_RICH_PRESENCE_STRING",
 			"jhash": "0x017E6777",
 			"comment": "",
 			"params": [
@@ -49100,8 +49100,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "string"
 				}
 			],
 			"return_type": "void",
@@ -49478,17 +49478,17 @@
 			"build": "323"
 		},
 		"0x5835D9CD92E83184": {
-			"name": "_0x5835D9CD92E83184",
+			"name": "NETWORK_CLAN_GET_EMBLEM_TXD_NAME",
 			"jhash": "0xBA672146",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "netHandle"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "char*",
+					"name": "txdName"
 				}
 			],
 			"return_type": "BOOL",
@@ -50257,16 +50257,16 @@
 			"build": "323"
 		},
 		"0x0A49D1CB6E34AF72": {
-			"name": "_0x0A49D1CB6E34AF72",
+			"name": "_CAN_REGISTER_MISSION_PICKUPS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "757"
 		},
 		"0xE16AA70CE9BEEDC3": {
@@ -52823,7 +52823,7 @@
 		"0x0B0CC10720653F3B": {
 			"name": "_0x0B0CC10720653F3B",
 			"jhash": "0x9262744C",
-			"comment": "Pretty sure this is a hash collision",
+			"comment": "",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -54637,13 +54637,13 @@
 			"build": "393"
 		},
 		"0x125E6D638B8605D4": {
-			"name": "_0x125E6D638B8605D4",
+			"name": "_NETWORK_GET_PLAYER_COORDS",
 			"jhash": "",
 			"comment": "NETWORK_GET_*",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "Vector3",
@@ -65042,50 +65042,50 @@
 			"build": "323"
 		},
 		"0x4852FC386E2E1BB5": {
-			"name": "_0x4852FC386E2E1BB5",
+			"name": "_GET_PED_HAIR_RGB_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_PED_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "r"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "int*",
+					"name": "g"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "int*",
+					"name": "b"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x013E5CFC38CD5387": {
-			"name": "_0x013E5CFC38CD5387",
+			"name": "_GET_PED_MAKEUP_RGB_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_PED_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "r"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "int*",
+					"name": "g"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "int*",
+					"name": "b"
 				}
 			],
 			"return_type": "void",
@@ -65608,13 +65608,13 @@
 			"build": "323"
 		},
 		"0xB50EB4CCB29704AC": {
-			"name": "_0xB50EB4CCB29704AC",
+			"name": "CLEAR_PED_SCUBA_GEAR_VARIATION",
 			"jhash": "0x080275EE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -69194,9 +69194,9 @@
 			"build": "323"
 		},
 		"0x6CD5A433374D4CFB": {
-			"name": "_CAN_PED_SEE_PED",
+			"name": "CAN_PED_SEE_HATED_PED",
 			"jhash": "0x74A0F291",
-			"comment": "CAN_PED_*\n\nReturns true if ped1 can see ped2 in their line of vision",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -75472,7 +75472,7 @@
 			"build": "323"
 		},
 		"0xEB2D525B57F42B40": {
-			"name": "_0xEB2D525B57F42B40",
+			"name": "_STOP_RECORDING_THIS_FRAME",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -82465,13 +82465,13 @@
 			"build": "323"
 		},
 		"0x8A7A40100EDFEC58": {
-			"name": "_REQUEST_INTERIOR_ROOM_BY_NAME",
+			"name": "REQUEST_MODELS_IN_ROOM",
 			"jhash": "0x939243FB",
-			"comment": "REQUEST_*\n\nSomething to do with interiors that have been loaded.\n\nSTREAMING::_8A7A40100EDFEC58(l_13BC, \"V_FIB01_cur_elev\");\nSTREAMING::_8A7A40100EDFEC58(l_13BC, \"limbo\");\nSTREAMING::_8A7A40100EDFEC58(l_13BB, \"V_Office_gnd_lifts\");\nSTREAMING::_8A7A40100EDFEC58(l_13BB, \"limbo\");\nSTREAMING::_8A7A40100EDFEC58(l_13BC, \"v_fib01_jan_elev\");\nSTREAMING::_8A7A40100EDFEC58(l_13BC, \"limbo\");",
+			"comment": "STREAMING::REQUEST_MODELS_IN_ROOM(l_13BC, \"V_FIB01_cur_elev\");\nSTREAMING::REQUEST_MODELS_IN_ROOM(l_13BC, \"limbo\");\nSTREAMING::REQUEST_MODELS_IN_ROOM(l_13BB, \"V_Office_gnd_lifts\");\nSTREAMING::REQUEST_MODELS_IN_ROOM(l_13BB, \"limbo\");\nSTREAMING::REQUEST_MODELS_IN_ROOM(l_13BC, \"v_fib01_jan_elev\");\nSTREAMING::REQUEST_MODELS_IN_ROOM(l_13BC, \"limbo\");",
 			"params": [
 				{
-					"type": "int",
-					"name": "interiorID"
+					"type": "Interior",
+					"name": "interior"
 				},
 				{
 					"type": "const char*",
@@ -83574,7 +83574,7 @@
 			"build": "323"
 		},
 		"0xD8295AF639FD9CB8": {
-			"name": "_0xD8295AF639FD9CB8",
+			"name": "_SWITCH_IN_PLAYER",
 			"jhash": "0x2349373B",
 			"comment": "",
 			"params": [
@@ -85092,7 +85092,7 @@
 		"0x88E32DB8C1A4AA4B": {
 			"name": "_0x88E32DB8C1A4AA4B",
 			"jhash": "0x55E06443",
-			"comment": "SET_PED_PATH_*\n\nCould be the move speed on the path. Needs testing.\n\nDefault is 1.0 and maximum is 10.0",
+			"comment": "SET_PED_PATH_*\n\nCould be the move speed on the path. Needs testing.\n\nDefault is 1.0 and maximum is 10.0\n\nSET_PED_PATH_CLIMB_COST_MODIFIER ?",
 			"params": [
 				{
 					"type": "Ped",
@@ -97020,46 +97020,46 @@
 			"build": "323"
 		},
 		"0xA6D3A8750DC73270": {
-			"name": "_0xA6D3A8750DC73270",
+			"name": "_SET_VEHICLE_ROOF_LIVERY",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "livery"
 				}
 			],
 			"return_type": "void",
 			"build": "505"
 		},
 		"0x60190048C0764A26": {
-			"name": "_0x60190048C0764A26",
+			"name": "_GET_VEHICLE_ROOF_LIVERY",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "505"
 		},
 		"0x5ECB40269053C0D4": {
-			"name": "_0x5ECB40269053C0D4",
+			"name": "_GET_VEHICLE_ROOF_LIVERY_COUNT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "505"
 		},
 		"0x46E571A0E20D01F1": {
@@ -97148,7 +97148,7 @@
 			"build": "323"
 		},
 		"0xE4CB7541F413D2C5": {
-			"name": "_GET_HELI_MAIN_ROTOR_HEALTH",
+			"name": "GET_HELI_MAIN_ROTOR_HEALTH",
 			"jhash": "0xF01E2AAB",
 			"comment": "Max 1000.\nAt 0 the main rotor will stall.",
 			"params": [
@@ -97161,9 +97161,9 @@
 			"build": "323"
 		},
 		"0xAE8CE82A4219AC8C": {
-			"name": "_GET_HELI_TAIL_ROTOR_HEALTH",
+			"name": "GET_HELI_TAIL_ROTOR_HEALTH",
 			"jhash": "0xA41BC13D",
-			"comment": "Max 1000.\nAt 0 the tail rotor will stall.\n",
+			"comment": "Max 1000.\nAt 0 the tail rotor will stall.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98198,7 +98198,7 @@
 			"build": "323"
 		},
 		"0x53409B5163D5B846": {
-			"name": "_0x53409B5163D5B846",
+			"name": "_GET_VEHICLE_MODEL_DOWN_FORCE",
 			"jhash": "0x37FBA7BC",
 			"comment": "GET_VEHICLE_MODEL_*\n\n9.8 * thrust if air vehicle, else 0.38 + drive force?\n\nFor a full list, see here: pastebin.com/bJQeDqNd",
 			"params": [
@@ -98211,7 +98211,7 @@
 			"build": "323"
 		},
 		"0xC6AD107DDC9054CC": {
-			"name": "_0xC6AD107DDC9054CC",
+			"name": "_GET_VEHICLE_MODEL_MAX_KNOTS",
 			"jhash": "0x95BB67EB",
 			"comment": "GET_VEHICLE_MODEL_*\n\nFunction pertains only to aviation vehicles.\n\nFor a full list, see here: pastebin.com/JwuGNp2K",
 			"params": [
@@ -98224,7 +98224,7 @@
 			"build": "323"
 		},
 		"0x5AA3F878A178C4FC": {
-			"name": "_0x5AA3F878A178C4FC",
+			"name": "_GET_VEHICLE_MODEL_MOVE_RESISTANCE",
 			"jhash": "0x87C5D271",
 			"comment": "GET_VEHICLE_MODEL_*\n\ncalled if the vehicle is a boat -- returns vecMoveResistanceX?\n\nFor a full list, see here: pastebin.com/Pyb2RhZ9",
 			"params": [
@@ -98237,7 +98237,7 @@
 			"build": "323"
 		},
 		"0x00C09F246ABEDD82": {
-			"name": "_0x00C09F246ABEDD82",
+			"name": "_GET_VEHICLE_CLASS_MAX_SPEED",
 			"jhash": "0xCE67162C",
 			"comment": "GET_VEHICLE_CLASS_MAX_*",
 			"params": [
@@ -99179,16 +99179,16 @@
 			"build": "323"
 		},
 		"0xEC69ADF931AAE0C3": {
-			"name": "_0xEC69ADF931AAE0C3",
+			"name": "_IS_VEHICLE_ENGINE_ON_FIRE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0x93A3996368C94158": {
@@ -99209,17 +99209,17 @@
 			"build": "323"
 		},
 		"0xBAA045B4E42F3C06": {
-			"name": "_0xBAA045B4E42F3C06",
+			"name": "_SET_VEHICLE_MAX_SPEED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -100132,7 +100132,7 @@
 			"build": "323"
 		},
 		"0xAD2D28A1AFDFF131": {
-			"name": "_0xAD2D28A1AFDFF131",
+			"name": "SET_PLANE_TURBULENCE_MULTIPLIER",
 			"jhash": "0xED159AE6",
 			"comment": "For planes only!\n\nvalue can be 1.0 or lower (higher values will automatically result in 1.0).",
 			"params": [
@@ -103637,9 +103637,9 @@
 			"build": "323"
 		},
 		"0xB96B00E976BE977F": {
-			"name": "_SET_CURRENT_INTENSITY",
+			"name": "SET_DEEP_OCEAN_SCALER",
 			"jhash": "0x53B694B1",
-			"comment": "Sets a value that determines how aggressive the ocean waves will be. Values of 2.0 or more make for very aggressive waves like you see during a thunderstorm.\n\nWorks only ~200 meters around the player.\n\nMost likely SET_CURRENT_*",
+			"comment": "Sets a value that determines how aggressive the ocean waves will be. Values of 2.0 or more make for very aggressive waves like you see during a thunderstorm.\n\nWorks only ~200 meters around the player.",
 			"params": [
 				{
 					"type": "float",
@@ -103650,9 +103650,9 @@
 			"build": "323"
 		},
 		"0x2B2A2CC86778B619": {
-			"name": "_GET_CURRENT_INTENSITY",
+			"name": "GET_DEEP_OCEAN_SCALER",
 			"jhash": "0xBD0A67FB",
-			"comment": "Gets the aggressiveness factor of the ocean waves.\n\nMost likely GET_CURRENT_*",
+			"comment": "Gets the aggressiveness factor of the ocean waves.",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
@@ -103671,9 +103671,9 @@
 			"build": "573"
 		},
 		"0x5E5E99285AE812DB": {
-			"name": "_RESET_CURRENT_INTENSITY",
+			"name": "RESET_DEEP_OCEAN_SCALER",
 			"jhash": "0x4AD23212",
-			"comment": "Sets the waves intensity back to original (1.0 in most cases).\n\nMost likely RESET_CURRENT_*",
+			"comment": "Sets the waves intensity back to original (1.0 in most cases).",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
