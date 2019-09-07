@@ -15995,7 +15995,7 @@
 			"return_type": "void",
 			"build": "323"
 		},
-		"0x0A25F80D5BADC013": {
+		"0x7FDFADE676AA3CB0": {
 			"name": "DRAW_DEBUG_LINE",
 			"jhash": "0xABF783AB",
 			"comment": "",
@@ -16150,7 +16150,7 @@
 			"return_type": "void",
 			"build": "323"
 		},
-		"0x6A3E157475DBFCD9": {
+		"0x083A2CA4F2E573BD": {
 			"name": "DRAW_DEBUG_BOX",
 			"jhash": "0x8524A848",
 			"comment": "",
