@@ -23005,7 +23005,7 @@
 			"build": "323"
 		},
 		"0x768FF8961BA904D6": {
-			"name": "IS_SCALEFORM_MOVIE_RETURN_VALUE_READY",
+			"name": "IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY",
 			"jhash": "0x5CD7C3C0",
 			"comment": "",
 			"params": [
@@ -86684,7 +86684,7 @@
 		"0xFC545A9F0626E3B6": {
 			"name": "TASK_VEHICLE_FOLLOW",
 			"jhash": "0xA8B917D7",
-			"comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle:http://gtaforums.com/topic/822314-guide-driving-styles/",
+			"comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle: http://gtaforums.com/topic/822314-guide-driving-styles/",
 			"params": [
 				{
 					"type": "Ped",
@@ -86700,8 +86700,7 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
-					
+					"name": "speed"				
 				},
 				{
 					"type": "int",
