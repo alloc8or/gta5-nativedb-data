@@ -103562,8 +103562,8 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "float*",
+					"name": "height"
 				}
 			],
 			"return_type": "BOOL",
