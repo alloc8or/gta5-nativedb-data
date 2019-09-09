@@ -57588,13 +57588,29 @@
 			"build": "1493"
 		},
 		"0xADF084FB8F075D06": {
-			"name": "_0xADF084FB8F075D06",
+			"name": "_SET_OBJECT_COLOUR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				},
+				{
+					"name": "red",
+					"type": "int"
+				},
+				{
+					"name": "green",
+					"type": "int"
+				},
+				{
+					"name": "blue",
+					"type": "int"
 				}
 			],
 			"return_type": "Any",
