@@ -39243,8 +39243,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "player"
+					"type": "int",
+					"name": "amount"
 				},
 				{
 					"type": "Hash",
@@ -42987,9 +42987,9 @@
 			"unused": true
 		},
 		"0xF70EFA14FE091429": {
-			"name": "_WITHDRAW_CASH_FROM_BANK",
+			"name": "WITHDRAW_VC",
 			"jhash": "0x8B755993",
-			"comment": "Does nothing and always returns 0.\n\nW*",
+			"comment": "Does nothing and always returns 0.",
 			"params": [
 				{
 					"type": "int",
@@ -43000,9 +43000,9 @@
 			"build": "323"
 		},
 		"0xE260E0BB9CD995AC": {
-			"name": "_DEPOSIT_CASH_IN_BANK",
+			"name": "DEPOSIT_VC",
 			"jhash": "0x8F266745",
-			"comment": "Does nothing and always returns false.\n\nDE*",
+			"comment": "Does nothing and always returns false.",
 			"params": [
 				{
 					"type": "int",
@@ -56290,7 +56290,7 @@
 				},
 				{
 					"type": "float",
-					"name": "rotation"
+					"name": "radius"
 				},
 				{
 					"type": "const char*",
@@ -103562,8 +103562,8 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "float*",
+					"name": "height"
 				}
 			],
 			"return_type": "BOOL",
