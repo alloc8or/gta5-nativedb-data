@@ -2660,9 +2660,9 @@
 			"build": "505"
 		},
 		"0x4E404A9361F75BB2": {
-			"name": "_0x4E404A9361F75BB2",
+			"name": "SET_CUSTOM_RADIO_TRACK_LIST",
 			"jhash": "0x128C3873",
-			"comment": "Examples:\n\nAUDIO::_4E404A9361F75BB2(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::_4E404A9361F75BB2(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::_4E404A9361F75BB2(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_TREVOR\", 1);\nAUDIO::_4E404A9361F75BB2(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_SAVE_MICHAEL_TREVOR\", 1);\nAUDIO::_4E404A9361F75BB2(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);\nAUDIO::_4E404A9361F75BB2(\"RADIO_06_COUNTRY\", \"MAGDEMO2_RADIO_DINGHY\", 1);\nAUDIO::_4E404A9361F75BB2(\"RADIO_16_SILVERLAKE\", \"SEA_RACE_RADIO_PLAYLIST\", 1);\nAUDIO::_4E404A9361F75BB2(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);",
+			"comment": "Examples:\n\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_SAVE_MICHAEL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_06_COUNTRY\", \"MAGDEMO2_RADIO_DINGHY\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"SEA_RACE_RADIO_PLAYLIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);",
 			"params": [
 				{
 					"type": "const char*",
@@ -2670,7 +2670,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "trackListName"
 				},
 				{
 					"type": "BOOL",
@@ -2681,9 +2681,9 @@
 			"build": "323"
 		},
 		"0x1654F24A88A8E3FE": {
-			"name": "_0x1654F24A88A8E3FE",
+			"name": "CLEAR_CUSTOM_RADIO_TRACK_LIST",
 			"jhash": "0x1D766976",
-			"comment": "3 calls in the b617d scripts, removed duplicate.\n\nAUDIO::_1654F24A88A8E3FE(\"RADIO_16_SILVERLAKE\");\nAUDIO::_1654F24A88A8E3FE(\"RADIO_01_CLASS_ROCK\");",
+			"comment": "3 calls in the b617d scripts, removed duplicate.\n\nAUDIO::CLEAR_CUSTOM_RADIO_TRACK_LIST(\"RADIO_16_SILVERLAKE\");\nAUDIO::CLEAR_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -2715,9 +2715,9 @@
 			"build": "323"
 		},
 		"0x774BD811F656A122": {
-			"name": "_0x774BD811F656A122",
+			"name": "SET_RADIO_STATION_MUSIC_ONLY",
 			"jhash": "0xB1FF7137",
-			"comment": "6 calls in the b617d scripts, removed identical lines:\n\nAUDIO::_774BD811F656A122(\"RADIO_01_CLASS_ROCK\", 1);\nAUDIO::_774BD811F656A122(AUDIO::GET_RADIO_STATION_NAME(10), 0);\nAUDIO::_774BD811F656A122(AUDIO::GET_RADIO_STATION_NAME(10), 1);",
+			"comment": "6 calls in the b617d scripts, removed identical lines:\n\nAUDIO::SET_RADIO_STATION_MUSIC_ONLY(\"RADIO_01_CLASS_ROCK\", 1);\nAUDIO::SET_RADIO_STATION_MUSIC_ONLY(AUDIO::GET_RADIO_STATION_NAME(10), 0);\nAUDIO::SET_RADIO_STATION_MUSIC_ONLY(AUDIO::GET_RADIO_STATION_NAME(10), 1);",
 			"params": [
 				{
 					"type": "const char*",
@@ -2725,7 +2725,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -3730,9 +3730,9 @@
 			"build": "323"
 		},
 		"0xC15907D667F7CFB2": {
-			"name": "_0xC15907D667F7CFB2",
+			"name": "ENABLE_STALL_WARNING_SOUNDS",
 			"jhash": "0x563B635D",
-			"comment": "Works for planes only.\n\nENABLE_S*",
+			"comment": "Works for planes only.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -10683,7 +10683,7 @@
 		"0x9FD90732F56403CE": {
 			"name": "DECOR_REGISTER",
 			"jhash": "0x68BD42A9",
-			"comment": "Found this in standard_global_init.c4 line 1898\n\nvoid sub_523a() {\n    DECORATOR::DECOR_REGISTER(\"Player_Vehicle\", 3);\n    DECORATOR::DECOR_REGISTER(\"PV_Slot\", 3);\n    DECORATOR::DECOR_REGISTER(\"Previous_Owner\", 3);\n    DECORATOR::DECOR_REGISTER(\"Sprayed_Vehicle_Decorator\", 2);\n    DECORATOR::DECOR_REGISTER(\"Sprayed_Vehicle_Timer_Dec\", 5);\n    DECORATOR::DECOR_REGISTER(\"Vehicle_Reward\", 3);\n    DECORATOR::DECOR_REGISTER(\"Vehicle_Reward_Teams\", 3);\n    DECORATOR::DECOR_REGISTER(\"Skill_Blocker\", 2);\n    DECORATOR::DECOR_REGISTER(\"TargetPlayerForTeam\", 3);\n    DECORATOR::DECOR_REGISTER(\"XP_Blocker\", 2);\n    DECORATOR::DECOR_REGISTER(\"CrowdControlSetUp\", 3);\n    DECORATOR::DECOR_REGISTER(\"Bought_Drugs\", 2);\n    DECORATOR::DECOR_REGISTER(\"HeroinInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"CokeInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"WeedInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"MethInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"bombdec\", 3);\n    DECORATOR::DECOR_REGISTER(\"bombdec1\", 3);\n    DECORATOR::DECOR_REGISTER(\"bombowner\", 3);\n    DECORATOR::DECOR_REGISTER(\"noPlateScan\", 2);\n    DECORATOR::DECOR_REGISTER(\"prisonBreakBoss\", 2);\n    DECORATOR::DECOR_REGISTER(\"cashondeadbody\", 3);\n    DECORATOR::DECOR_REGISTER(\"MissionType\", 3);\n    DECORATOR::DECOR_REGISTER(\"MatchId\", 3);\n    DECORATOR::DECOR_REGISTER(\"TeamId\", 3);\n    DECORATOR::DECOR_REGISTER(\"Not_Allow_As_Saved_Veh\", 3);\n    DECORATOR::DECOR_REGISTER(\"Veh_Modded_By_Player\", 3);\n    DECORATOR::DECOR_REGISTER(\"MPBitset\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_EntityID\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_ChasePedID\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team0_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team1_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team2_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team3_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"AttributeDamage\", 3);\n    DECORATOR::DECOR_REGISTER(\"GangBackup\", 3);\n    DECORATOR::DECOR_REGISTER(\"CreatedByPegasus\", 2);\n    DECORATOR::DECOR_REGISTER(\"BeforeCorona_0\", 2);\n}\n\n-----------------------------------------------------------------------\nDefines type of property for property name.\n\n1 - float,\n2 - bool,\n3 - int\n5 - time\n",
+			"comment": "Found this in standard_global_init.c4 line 1898\n\nvoid sub_523a() {\n    DECORATOR::DECOR_REGISTER(\"Player_Vehicle\", 3);\n    DECORATOR::DECOR_REGISTER(\"PV_Slot\", 3);\n    DECORATOR::DECOR_REGISTER(\"Previous_Owner\", 3);\n    DECORATOR::DECOR_REGISTER(\"Sprayed_Vehicle_Decorator\", 2);\n    DECORATOR::DECOR_REGISTER(\"Sprayed_Vehicle_Timer_Dec\", 5);\n    DECORATOR::DECOR_REGISTER(\"Vehicle_Reward\", 3);\n    DECORATOR::DECOR_REGISTER(\"Vehicle_Reward_Teams\", 3);\n    DECORATOR::DECOR_REGISTER(\"Skill_Blocker\", 2);\n    DECORATOR::DECOR_REGISTER(\"TargetPlayerForTeam\", 3);\n    DECORATOR::DECOR_REGISTER(\"XP_Blocker\", 2);\n    DECORATOR::DECOR_REGISTER(\"CrowdControlSetUp\", 3);\n    DECORATOR::DECOR_REGISTER(\"Bought_Drugs\", 2);\n    DECORATOR::DECOR_REGISTER(\"HeroinInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"CokeInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"WeedInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"MethInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"bombdec\", 3);\n    DECORATOR::DECOR_REGISTER(\"bombdec1\", 3);\n    DECORATOR::DECOR_REGISTER(\"bombowner\", 3);\n    DECORATOR::DECOR_REGISTER(\"noPlateScan\", 2);\n    DECORATOR::DECOR_REGISTER(\"prisonBreakBoss\", 2);\n    DECORATOR::DECOR_REGISTER(\"cashondeadbody\", 3);\n    DECORATOR::DECOR_REGISTER(\"MissionType\", 3);\n    DECORATOR::DECOR_REGISTER(\"MatchId\", 3);\n    DECORATOR::DECOR_REGISTER(\"TeamId\", 3);\n    DECORATOR::DECOR_REGISTER(\"Not_Allow_As_Saved_Veh\", 3);\n    DECORATOR::DECOR_REGISTER(\"Veh_Modded_By_Player\", 3);\n    DECORATOR::DECOR_REGISTER(\"MPBitset\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_EntityID\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_ChasePedID\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team0_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team1_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team2_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team3_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"AttributeDamage\", 3);\n    DECORATOR::DECOR_REGISTER(\"GangBackup\", 3);\n    DECORATOR::DECOR_REGISTER(\"CreatedByPegasus\", 2);\n    DECORATOR::DECOR_REGISTER(\"BeforeCorona_0\", 2);\n}\n\n-----------------------------------------------------------------------\nenum eDecorType\n{\n\tDECOR_TYPE_FLOAT = 1,\n\tDECOR_TYPE_BOOL,\n\tDECOR_TYPE_INT,\n\tDECOR_TYPE_UNK,\n\tDECOR_TYPE_TIME\n};",
 			"params": [
 				{
 					"type": "const char*",
@@ -10700,7 +10700,7 @@
 		"0x4F14F9F870D6FBC8": {
 			"name": "DECOR_IS_REGISTERED_AS_TYPE",
 			"jhash": "0x7CF0971D",
-			"comment": "Is property of that type.\n\n1 - float\n2 - bool\n3 - int\n5 - time\n",
+			"comment": "enum eDecorType\n{\n\tDECOR_TYPE_FLOAT = 1,\n\tDECOR_TYPE_BOOL,\n\tDECOR_TYPE_INT,\n\tDECOR_TYPE_UNK,\n\tDECOR_TYPE_TIME\n};",
 			"params": [
 				{
 					"type": "const char*",
