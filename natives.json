@@ -33443,7 +33443,7 @@
 			"build": "323"
 		},
 		"0xF2F6A2FA49278625": {
-			"name": "_0xF2F6A2FA49278625",
+			"name": "SLERP_NEAR_QUATERNION",
 			"jhash": "0x87B92190",
 			"comment": "",
 			"params": [
@@ -48792,11 +48792,11 @@
 		"0x3C5C1E2C2FF814B1": {
 			"name": "_0x3C5C1E2C2FF814B1",
 			"jhash": "0xC9DDA85B",
-			"comment": "",
+			"comment": "Sets some voice chat related value.\n\nNETWORK_SET_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -48804,12 +48804,12 @@
 		},
 		"0x9D7AFCBF21C51712": {
 			"name": "_0x9D7AFCBF21C51712",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0xE5219410",
+			"comment": "Sets some voice chat related value.\n\nNETWORK_SET_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -48818,11 +48818,11 @@
 		"0xF46A1E03E8755980": {
 			"name": "_0xF46A1E03E8755980",
 			"jhash": "0xD33AFF79",
-			"comment": "",
+			"comment": "Sets some voice chat related value.\n\nNETWORK_SET_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -48831,11 +48831,11 @@
 		"0x6A5D89D7769A40D8": {
 			"name": "_0x6A5D89D7769A40D8",
 			"jhash": "0x4FFEFE43",
-			"comment": "Called in freemode related scripts but not freemode itself.",
+			"comment": "Sets some voice chat related value.\n\nNETWORK_SET_*",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -51339,7 +51339,7 @@
 			"build": "323"
 		},
 		"0x5A6FFA2433E2F14C": {
-			"name": "_0x5A6FFA2433E2F14C",
+			"name": "NETWORK_START_RESPAWN_SEARCH_FOR_PLAYER",
 			"jhash": "0xC62E77B3",
 			"comment": "",
 			"params": [
@@ -51384,7 +51384,7 @@
 			"build": "323"
 		},
 		"0x4BA92A18502BCA61": {
-			"name": "_0x4BA92A18502BCA61",
+			"name": "NETWORK_START_RESPAWN_SEARCH_IN_ANGLED_AREA_FOR_PLAYER",
 			"jhash": "0x74D6B13C",
 			"comment": "",
 			"params": [
@@ -51454,9 +51454,9 @@
 			"build": "323"
 		},
 		"0xFB8F2A6F3DF08CBE": {
-			"name": "_0xFB8F2A6F3DF08CBE",
+			"name": "NETWORK_CANCEL_RESPAWN_SEARCH",
 			"jhash": "0x44BFB619",
-			"comment": "Something related to navmeshes.\n\nNETWORK_CA*",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -51498,7 +51498,7 @@
 		"0x17E0198B3882C2CB": {
 			"name": "_0x17E0198B3882C2CB",
 			"jhash": "0x408A9436",
-			"comment": "",
+			"comment": "NETWORK_START_R/S*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
