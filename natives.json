@@ -70522,18 +70522,18 @@
 		"0xE861D0B05C7662B8": {
 			"name": "_0xE861D0B05C7662B8",
 			"jhash": "0x2F9550C2",
-			"comment": "",
+			"comment": "SET_PED_CAN_*",
 			"params": [
 				{
-					"type": "Pickup",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Blip*",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -91979,7 +91979,7 @@
 			"build": "323"
 		},
 		"0xD4B8E3D1917BC86B": {
-			"name": "_UNK_SET_DISABLE_RANDOM_TRAINS",
+			"name": "SET_DISABLE_RANDOM_TRAINS_THIS_FRAME",
 			"jhash": "0x09462665",
 			"comment": "",
 			"params": [
@@ -99192,9 +99192,9 @@
 			"build": "505"
 		},
 		"0x93A3996368C94158": {
-			"name": "_SET_VEHICLE_ENGINE_POWER_MULTIPLIER",
+			"name": "MODIFY_VEHICLE_TOP_SPEED",
 			"jhash": "0xE943B09C",
-			"comment": "Vehicle power multiplier.\nDoes not have to be looped each frame. Can be set once.\nValues lower than 1f don't work.\n\nNote: If the value is set with GET_RANDOM_FLOAT_IN_RANGE, the vehicle will have an absurdly high ammount of power, and will become almost undrivable for the player or NPCs. The range doesn't seem to matter.\n\nAn high value like 10000000000f will visually remove the wheels that apply the power (front wheels for FWD, rear wheels for RWD), but the power multiplier will still apply, and the wheels still work.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
