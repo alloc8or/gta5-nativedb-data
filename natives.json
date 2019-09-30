@@ -24199,16 +24199,16 @@
 					"name": "iconType"
 				},
 				{
+					"type": "BOOL",
+					"name": "p4"
+				},
+				{
 					"type": "const char*",
 					"name": "sender"
 				},
 				{
 					"type": "const char*",
 					"name": "subject"
-				},
-				{
-					"type": "const char*",
-					"name": "p6"
 				}
 			],
 			"return_type": "int",
