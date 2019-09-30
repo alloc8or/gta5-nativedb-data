@@ -93807,7 +93807,7 @@
 		"0x16B5E274BDE402F8": {
 			"name": "_0x16B5E274BDE402F8",
 			"jhash": "0x12AC1A16",
-			"comment": "only documented to be continued...\n\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -93862,7 +93862,7 @@
 			"build": "323"
 		},
 		"0x374706271354CB18": {
-			"name": "_0x374706271354CB18",
+			"name": "STABILISE_ENTITY_ATTACHED_TO_HELI",
 			"jhash": "0x40C4763F",
 			"comment": "",
 			"params": [
@@ -93872,7 +93872,7 @@
 				},
 				{
 					"type": "Entity",
-					"name": "p1"
+					"name": "entity"
 				},
 				{
 					"type": "float",
@@ -93885,7 +93885,7 @@
 		"0x90532EDF0D2BDD86": {
 			"name": "DETACH_VEHICLE_FROM_TRAILER",
 			"jhash": "0xB5DBF91D",
-			"comment": "Public Sub detatchTrailer(vh1 As Vehicle)\n        Native.Function.Call(Hash.DETACH_VEHICLE_FROM_TRAILER, vh1)\n    End Sub",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -93898,7 +93898,7 @@
 		"0xE7CF3C4F9F489F0C": {
 			"name": "IS_VEHICLE_ATTACHED_TO_TRAILER",
 			"jhash": "0xE142BBCC",
-			"comment": "Public Function isVehicleAttachedToTrailer(vh As Vehicle) As Boolean\n        Return Native.Function.Call(Of Boolean)(Hash.IS_VEHICLE_ATTACHED_TO_TRAILER, vh)\n    End Function",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -93911,7 +93911,7 @@
 		"0x2A8F319B392E7B3F": {
 			"name": "_0x2A8F319B392E7B3F",
 			"jhash": "0xE74E85CE",
-			"comment": "                VEHICLE::_2A8F319B392E7B3F(vehicle, 0.5);\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
