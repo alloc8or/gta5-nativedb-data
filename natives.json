@@ -92644,7 +92644,7 @@
 			"build": "757"
 		},
 		"0x33506883545AC0DF": {
-			"name": "_0x33506883545AC0DF",
+			"name": "FORCE_SUBMARINE_SURFACE_MODE",
 			"jhash": "0x54E9EE75",
 			"comment": "",
 			"params": [
@@ -92654,16 +92654,16 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xC59872A5134879C7": {
-			"name": "_JITTER_VEHICLE",
+			"name": "SET_SUBMARINE_CRUSH_DEPTHS",
 			"jhash": "0x4A46E814",
-			"comment": "When I called this with what the script was doing, which was -190f for yaw pitch and roll, all my car did was jitter a little. I also tried 0 and 190f. I altered the p1 variable between TRUE and FALSE and didn't see a difference.\n\nThis might have something to do with the physbox of the vehicle, but I'm not sure.\n\nSET_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -92675,15 +92675,15 @@
 				},
 				{
 					"type": "float",
-					"name": "yaw"
+					"name": "depth1"
 				},
 				{
 					"type": "float",
-					"name": "pitch"
+					"name": "depth2"
 				},
 				{
 					"type": "float",
-					"name": "roll"
+					"name": "depth3"
 				}
 			],
 			"return_type": "void",
@@ -92724,7 +92724,7 @@
 			"build": "323"
 		},
 		"0x26C10ECBDA5D043B": {
-			"name": "_GET_BOAT_ANCHOR",
+			"name": "_CAN_BOAT_BE_ANCHORED",
 			"jhash": "0xE97A4F5E",
 			"comment": "",
 			"params": [
@@ -92737,22 +92737,22 @@
 			"build": "323"
 		},
 		"0x24F4121D07579880": {
-			"name": "_0x24F4121D07579880",
+			"name": "_CAN_BOAT_BE_ANCHORED_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "678"
 		},
 		"0xE3EBAAE484798530": {
-			"name": "_0xE3EBAAE484798530",
+			"name": "_SET_BOAT_FROZEN_WHEN_ANCHORED",
 			"jhash": "0x0ED84792",
-			"comment": "No observed effect.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -92760,7 +92760,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -92784,9 +92784,9 @@
 			"build": "323"
 		},
 		"0xE842A9398079BD82": {
-			"name": "_0xE842A9398079BD82",
+			"name": "_SET_BOAT_ANCHOR_BUOYANCY_COEFFICIENT",
 			"jhash": "0x66FA450C",
-			"comment": "Vehicle must be a boat.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -92794,14 +92794,14 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xB0AD1238A709B1A2": {
-			"name": "_0xB0AD1238A709B1A2",
+			"name": "_IS_BOAT_ANCHORED_AND_FROZEN",
 			"jhash": "",
 			"comment": "IS_*",
 			"params": [
@@ -92814,7 +92814,7 @@
 			"build": "573"
 		},
 		"0x8F719973E1445BA2": {
-			"name": "_0x8F719973E1445BA2",
+			"name": "_SET_BOAT_EXPLODES_ON_WRECKED_ACTION",
 			"jhash": "0x35614622",
 			"comment": "SET_BOAT_*",
 			"params": [
