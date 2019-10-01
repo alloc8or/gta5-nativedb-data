@@ -1323,7 +1323,7 @@
 		},
 		"0x9AC92EED5E4793AB": {
 			"name": "_0x9AC92EED5E4793AB",
-			"jhash": "",
+			"jhash": "0xE67446E9",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -15804,8 +15804,8 @@
 			"build": "323"
 		},
 		"0x6070104B699B2EF4": {
-			"name": "_0x6070104B699B2EF4",
-			"jhash": "",
+			"name": "IS_EXPLOSION_ACTIVE_IN_AREA",
+			"jhash": "0x37C388DB",
 			"comment": "explosionType: See ADD_EXPLOSION.",
 			"params": [
 				{
@@ -50786,13 +50786,13 @@
 			"build": "323"
 		},
 		"0x6274C4712850841E": {
-			"name": "_SET_NETWORK_OBJECT_NON_CONTACT",
+			"name": "SET_NETWORK_VEHICLE_AS_GHOST",
 			"jhash": "0xEA235081",
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "object"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
@@ -51717,8 +51717,8 @@
 			"build": "323"
 		},
 		"0x376C6375BA60293A": {
-			"name": "_NETWORK_ADD_ENTITY_ANGLED_AREA",
-			"jhash": "",
+			"name": "NETWORK_ADD_ENTITY_ANGLED_AREA",
+			"jhash": "0xCD69BEA1",
 			"comment": "",
 			"params": [
 				{
@@ -69045,25 +69045,25 @@
 			"build": "323"
 		},
 		"0xFCF37A457CB96DC0": {
-			"name": "_0xFCF37A457CB96DC0",
+			"name": "IS_PED_HEADING_TOWARDS_POSITION",
 			"jhash": "0x45037B9B",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
@@ -100518,8 +100518,8 @@
 			"build": "1103"
 		},
 		"0x6E08BF5B3722BAC9": {
-			"name": "_DOES_CARGOBOB_HAVE_PICKUP_MAGNET",
-			"jhash": "",
+			"name": "DOES_CARGOBOB_HAVE_PICKUP_MAGNET",
+			"jhash": "0x4778CA0A",
 			"comment": "Returns true only when the magnet is active, will return false if the hook is active",
 			"params": [
 				{
@@ -100531,9 +100531,9 @@
 			"build": "323"
 		},
 		"0x9A665550F8DA349B": {
-			"name": "_SET_CARGOBOB_PICKUP_MAGNET_ACTIVE",
-			"jhash": "",
-			"comment": "Won't attract or magnetize to any helicopters or planes of course, but that's common sense. ",
+			"name": "SET_CARGOBOB_PICKUP_MAGNET_ACTIVE",
+			"jhash": "0xF57066DA",
+			"comment": "Won't attract or magnetize to any helicopters or planes of course, but that's common sense.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100548,8 +100548,8 @@
 			"build": "323"
 		},
 		"0xBCBFCD9D1DAC19E2": {
-			"name": "_SET_CARGOBOB_PICKUP_MAGNET_STRENGTH",
-			"jhash": "",
+			"name": "SET_CARGOBOB_PICKUP_MAGNET_STRENGTH",
+			"jhash": "0xCC3CF97D",
 			"comment": "",
 			"params": [
 				{
