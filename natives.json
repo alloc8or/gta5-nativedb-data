@@ -54819,7 +54819,7 @@
 			"build": "323"
 		},
 		"0xD76EEEF746057FD6": {
-			"name": "_0xD76EEEF746057FD6",
+			"name": "_PLACE_OBJECT_ON_GROUND_PROPERLY_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -71705,16 +71705,16 @@
 			"build": "323"
 		},
 		"0x0C112765300C7E1E": {
-			"name": "_0x0C112765300C7E1E",
+			"name": "_GET_HAS_OBJECT_FRAG_INST",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0x5CEC1A84620E7D5B": {
