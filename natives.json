@@ -58258,7 +58258,7 @@
 			"build": "323"
 		},
 		"0x80C2FD58D720C801": {
-			"name": "_0x80C2FD58D720C801",
+			"name": "GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTON",
 			"jhash": "0x3EE71F6A",
 			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
@@ -58268,7 +58268,7 @@
 				},
 				{
 					"type": "int",
-					"name": "control"
+					"name": "controlGroup"
 				},
 				{
 					"type": "BOOL",
