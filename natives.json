@@ -23894,7 +23894,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -52926,9 +52926,9 @@
 			"build": "323"
 		},
 		"0x9BF438815F5D96EA": {
-			"name": "_0x9BF438815F5D96EA",
+			"name": "UGC_QUERY_MY_CONTENT",
 			"jhash": "0xCBA7242F",
-			"comment": "Gets some kind of data related to missions like the online player created races n stuff",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -53733,7 +53733,7 @@
 			"build": "323"
 		},
 		"0x171DF6A0C07FB3DC": {
-			"name": "_UGC_REQUEST_CLOUD_FILE",
+			"name": "UGC_REQUEST_CONTENT_DATA_FROM_INDEX",
 			"jhash": "0x84315226",
 			"comment": "",
 			"params": [
@@ -53750,7 +53750,7 @@
 			"build": "323"
 		},
 		"0x7FD2990AF016795E": {
-			"name": "_UGC_REQUEST_CLOUD_FILE_BY_CONTENT_ID",
+			"name": "UGC_REQUEST_CONTENT_DATA_FROM_PARAMS",
 			"jhash": "0x38FC2EEB",
 			"comment": "",
 			"params": [
@@ -53779,16 +53779,16 @@
 			"build": "323"
 		},
 		"0x5E0165278F6339EE": {
-			"name": "_0x5E0165278F6339EE",
+			"name": "UGC_REQUEST_CACHED_DESCRIPTION",
 			"jhash": "0x1C4F9FDB",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x2D5DC831176D0114": {
@@ -53890,28 +53890,28 @@
 			"build": "323"
 		},
 		"0x274A1519DFC1094F": {
-			"name": "_0x274A1519DFC1094F",
+			"name": "UGC_SET_BOOKMARKED",
 			"jhash": "0x980D45D7",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "contentId"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bookmarked"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "contentTypeName"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xD05D1A6C74DA3498": {
-			"name": "_0xD05D1A6C74DA3498",
+			"name": "UGC_SET_DELETED",
 			"jhash": "0x48CCC328",
 			"comment": "",
 			"params": [
@@ -54185,7 +54185,7 @@
 			"build": "323"
 		},
 		"0x308F96458B7087CC": {
-			"name": "_0x308F96458B7087CC",
+			"name": "UGC_TEXTURE_DOWNLOAD_REQUEST",
 			"jhash": "0x68C9AF69",
 			"comment": "",
 			"params": [
