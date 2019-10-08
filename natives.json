@@ -23922,7 +23922,7 @@
 			"build": "463"
 		},
 		"0x25F87B30C382FCA7": {
-			"name": "_HIDE_HUD_NOTIFICATIONS_THIS_FRAME",
+			"name": "THEFEED_HIDE_THIS_FRAME",
 			"jhash": "0x1E63088A",
 			"comment": "",
 			"params": [],
@@ -23938,7 +23938,7 @@
 			"build": "463"
 		},
 		"0xA8FDB297A8D25FBA": {
-			"name": "_0xA8FDB297A8D25FBA",
+			"name": "THEFEED_FLUSH_QUEUE",
 			"jhash": "0x5205C6F5",
 			"comment": "",
 			"params": [],
@@ -23946,7 +23946,7 @@
 			"build": "323"
 		},
 		"0xBE4390CB40B3E627": {
-			"name": "_REMOVE_NOTIFICATION",
+			"name": "THEFEED_REMOVE_ITEM",
 			"jhash": "0xECA8ACB9",
 			"comment": "Removes a notification instantly instead of waiting for it to disappear",
 			"params": [
@@ -23975,7 +23975,7 @@
 			"build": "323"
 		},
 		"0xFDB423997FA30340": {
-			"name": "_0xFDB423997FA30340",
+			"name": "THEFEED_PAUSE",
 			"jhash": "0x4D0449C6",
 			"comment": "",
 			"params": [],
@@ -23983,7 +23983,7 @@
 			"build": "323"
 		},
 		"0xE1CD1E48E025E661": {
-			"name": "_0xE1CD1E48E025E661",
+			"name": "THEFEED_RESUME",
 			"jhash": "0xD3F40140",
 			"comment": "",
 			"params": [],
@@ -23991,11 +23991,11 @@
 			"build": "323"
 		},
 		"0xA9CBFD40B3FA3010": {
-			"name": "_0xA9CBFD40B3FA3010",
+			"name": "THEFEED_IS_PAUSED",
 			"jhash": "0xC5223796",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xD4438C0564490E63": {
@@ -24015,7 +24015,7 @@
 			"build": "323"
 		},
 		"0x82352748437638CA": {
-			"name": "_GET_CURRENT_NOTIFICATION",
+			"name": "_THEFEED_GET_CURRENT_NOTIFICATION",
 			"jhash": "0x294405D4",
 			"comment": "Returns the handle for the notification currently displayed on the screen.",
 			"params": [],
@@ -24165,9 +24165,9 @@
 			"build": "323"
 		},
 		"0x202709F4C58A0424": {
-			"name": "_SET_NOTIFICATION_TEXT_ENTRY",
+			"name": "BEGIN_TEXT_COMMAND_THEFEED_POST",
 			"jhash": "0x574EE85C",
-			"comment": "Declares the entry type of a notification, for example \"STRING\".\n\nint ShowNotification(char *text)\n{\n  _SET_NOTIFICATION_TEXT_ENTRY(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   return _DRAW_NOTIFICATION(1, 1);\n}",
+			"comment": "Declares the entry type of a notification, for example \"STRING\".\n\nint ShowNotification(char *text)\n{\n\tBEGIN_TEXT_COMMAND_THEFEED_POST(\"STRING\");\n\tADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n\treturn _DRAW_NOTIFICATION(1, 1);\n}",
 			"params": [
 				{
 					"type": "const char*",
@@ -24178,17 +24178,17 @@
 			"build": "323"
 		},
 		"0x2B7E9A4EAAA93C89": {
-			"name": "_SET_NOTIFICATION_MESSAGE",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_STATS",
 			"jhash": "0xED130FA1",
 			"comment": "List of picNames: pastebin.com/XdpJVbHz",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "picName1"
+					"name": "txdName"
 				},
 				{
 					"type": "const char*",
-					"name": "picName2"
+					"name": "textureName"
 				},
 				{
 					"type": "BOOL",
@@ -24215,7 +24215,7 @@
 			"build": "323"
 		},
 		"0x1CCD9A37359072CF": {
-			"name": "_SET_NOTIFICATION_MESSAGE_2",
+			"name": "_END_TEXT_COMMAND_THEFEED_POST_MSGTXT",
 			"jhash": "0xE7E3C98B",
 			"comment": "List of picNames: pastebin.com/XdpJVbHz\n\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.",
 			"params": [
@@ -24408,7 +24408,7 @@
 			"build": "323"
 		},
 		"0x2ED7843F8F801023": {
-			"name": "_DRAW_NOTIFICATION",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_TICKER",
 			"jhash": "0x08F7AF78",
 			"comment": "",
 			"params": [
@@ -24425,7 +24425,7 @@
 			"build": "323"
 		},
 		"0x44FA03975424A0EE": {
-			"name": "_DRAW_NOTIFICATION_2",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_TICKER_FORCED",
 			"jhash": "0x57B8D0D4",
 			"comment": "",
 			"params": [
@@ -24459,7 +24459,7 @@
 			"build": "323"
 		},
 		"0xAA295B6F28BD587D": {
-			"name": "_DRAW_NOTIFICATION_AWARD",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_AWARD",
 			"jhash": "0x02DED2B8",
 			"comment": "Example:\n\nUI::_SET_NOTIFICATION_TEXT_ENTRY(\"HUNT\");\nUI::_0xAA295B6F28BD587D(\"Hunting\", \"Hunting_Gold_128\", 0, 109, \"HUD_MED_UNLKED\");",
 			"params": [
@@ -24488,9 +24488,9 @@
 			"build": "323"
 		},
 		"0x97C9E4E7024A8F2C": {
-			"name": "_DRAW_NOTIFICATION_APARTMENT_INVITE",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_CREWTAG",
 			"jhash": "0xA9CCEF66",
-			"comment": "This function and the one below it are for after you receive an invite, not sending it.\n\np0 = 1 or 0\n\nnothin doin. \nint invite(Player player)\n  {\n     int iVar2, iVar3;\n     networkHandleMgr handle;\n      NETWORK_HANDLE_FROM_PLAYER(player, &handle.netHandle, 13);\n        networkClanMgr clan;\n\n        char *playerName = GET_PLAYER_NAME(player);\n       _SET_NOTIFICATION_TEXT_ENTRY(\"STRING\");\n     _SET_NOTIFACTION_COLOR_NEXT(0);\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(playerName);\n     if (NETWORK_CLAN_PLAYER_GET_DESC(&clan, 35, &handle.netHandle))\n       {\n         iVar2 = 0;\n            if (ARE_STRINGS_EQUAL(clan.unk22, \"Leader\") && clan.unk30 == 0)\n         {\n             iVar2 = 1;\n            }\n         if (clan.unk21 > 0)\n            {\n             iVar3 = 0;\n            }\n         else\n          {\n             iVar3 = 1;\n            }\n         BOOL unused = _0x54E79E9C(&clan.clanHandle, 35);\n          return _DRAW_NOTIFICATION_APARTMENT_INVITE(iVar3, 0 /*unused*/, &clan.unk17, clan.unk30, iVar2, 0, clan.clanHandle, 0, 0, 0);\n     }\n }",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -24537,7 +24537,7 @@
 			"build": "323"
 		},
 		"0x137BC35589E34E1E": {
-			"name": "_DRAW_NOTIFICATION_CLAN_INVITE",
+			"name": "_END_TEXT_COMMAND_THEFEED_POST_CREW_INVITE",
 			"jhash": "0x88B9B909",
 			"comment": "p0 = 1 or 0\n\ncrashes my game...\nthis is for sending invites to network players - jobs/apartment/ect... \nreturn notification handle\n\nint invite(Player player)\n   {\n     networkHandleMgr netHandle;\n       networkClanMgr clan;\n      char *playerName = GET_PLAYER_NAME(player);\n       _SET_NOTIFICATION_TEXT_ENTRY(\"STRING\");\n     _SET_NOTIFACTION_COLOR_NEXT(1);\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(playerName);\n     NETWORK_HANDLE_FROM_PLAYER(player, &netHandle.netHandle, 13);\n     if (NETWORK_CLAN_PLAYER_IS_ACTIVE(&netHandle.netHandle))\n      {\n         NETWORK_CLAN_PLAYER_GET_DESC(&clan.clanHandle, 35, &netHandle.netHandle);\n         _DRAW_NOTIFICATION_CLAN_INVITE(0, _0x54E79E9C(&clan.clanHandle, 35), &clan.unk17, clan.isLeader, 0, 0, clan.clanHandle, playerName, 0, 0, 0);\n     }\n }",
 			"params": [
@@ -24590,7 +24590,7 @@
 			"build": "323"
 		},
 		"0x33EE12743CCD6343": {
-			"name": "_0x33EE12743CCD6343",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_UNLOCK",
 			"jhash": "0xE05E7052",
 			"comment": "",
 			"params": [
@@ -24611,7 +24611,7 @@
 			"build": "323"
 		},
 		"0xC8F3AAF93D0600BF": {
-			"name": "_0xC8F3AAF93D0600BF",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_UNLOCK_TU",
 			"jhash": "0x4FA43BA4",
 			"comment": "",
 			"params": [
@@ -24686,20 +24686,20 @@
 			"build": "323"
 		},
 		"0x8EFCCF6EC66D85E4": {
-			"name": "_0x8EFCCF6EC66D85E4",
-			"jhash": "",
-			"comment": "Example, only occurrence in the scripts:\nUI::_8EFCCF6EC66D85E4(&v_23, &v_13, &v_13, 1, v_34);",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_CREW_RANKUP",
+			"jhash": "0x76FB0F21",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
@@ -24711,11 +24711,11 @@
 					"name": "p4"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xB6871B0555B02996": {
-			"name": "_0xB6871B0555B02996",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_VERSUS_TU",
 			"jhash": "0x5E93FBFA",
 			"comment": "",
 			"params": [
@@ -24756,7 +24756,7 @@
 			"build": "323"
 		},
 		"0xD202B92CBF1D816F": {
-			"name": "_DRAW_NOTIFICATION_WITH_ICON",
+			"name": "_END_TEXT_COMMAND_THEFEED_POST_REPLAY_ICON",
 			"jhash": "",
 			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, image goes from 0 - 39 - Xbox you can add text to\n\nexample: \nUI::_0xD202B92CBF1D816F(1, 20, \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- imgur.com/lGBPCz3",
 			"params": [
@@ -24777,7 +24777,7 @@
 			"build": "323"
 		},
 		"0xDD6CB2CCE7C2735C": {
-			"name": "_DRAW_NOTIFICATION_WITH_BUTTON",
+			"name": "_END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT",
 			"jhash": "",
 			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, button accepts \"~INPUT_SOMETHING~\"\n\nexample:\nUI::_0xDD6CB2CCE7C2735C(1, \"~INPUT_TALK~\", \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- imgur.com/UPy0Ial\n\n\nExamples from the scripts:\nl_D1[1/*1*/]=UI::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=UI::_DD6CB2CCE7C2735C(1,\"~INPUT_SAVE_REPLAY_CLIP~\",\"\");\nl_D1[1/*1*/]=UI::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=UI::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING_SECONDARY~\",\"\");\n",
 			"params": [
