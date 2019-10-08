@@ -23888,7 +23888,7 @@
 			"build": "323"
 		},
 		"0x6F1554B0CC2089FA": {
-			"name": "_0x6F1554B0CC2089FA",
+			"name": "THEFEED_ONLY_SHOW_TOOLTIPS",
 			"jhash": "0xA7C8594B",
 			"comment": "",
 			"params": [
@@ -23914,7 +23914,7 @@
 			"build": "323"
 		},
 		"0x32888337579A5970": {
-			"name": "_0x32888337579A5970",
+			"name": "_THEFEED_DISABLE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -23959,7 +23959,7 @@
 			"build": "323"
 		},
 		"0xA13C11E1B5C06BFC": {
-			"name": "_0xA13C11E1B5C06BFC",
+			"name": "THEFEED_FORCE_RENDER_ON",
 			"jhash": "0x520FCB6D",
 			"comment": "",
 			"params": [],
@@ -23967,7 +23967,7 @@
 			"build": "323"
 		},
 		"0x583049884A2EEE3C": {
-			"name": "_0x583049884A2EEE3C",
+			"name": "THEFEED_FORCE_RENDER_OFF",
 			"jhash": "0xC8BAB2F2",
 			"comment": "",
 			"params": [],
@@ -24215,7 +24215,7 @@
 			"build": "323"
 		},
 		"0x1CCD9A37359072CF": {
-			"name": "_END_TEXT_COMMAND_THEFEED_POST_MSGTXT",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT",
 			"jhash": "0xE7E3C98B",
 			"comment": "List of picNames: pastebin.com/XdpJVbHz\n\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.",
 			"params": [
@@ -24248,7 +24248,7 @@
 			"build": "323"
 		},
 		"0xC6F580E4C94926AC": {
-			"name": "_SET_NOTIFICATION_MESSAGE_3",
+			"name": "_END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_GXT_ENTRY",
 			"jhash": "",
 			"comment": "Needs more research.\n\nOnly one type of usage in the scripts:\n\nUI::_C6F580E4C94926AC(\"CHAR_ACTING_UP\", \"CHAR_ACTING_UP\", 0, 0, \"DI_FEED_CHAR\", a_0);",
 			"params": [
@@ -24281,7 +24281,7 @@
 			"build": "323"
 		},
 		"0x1E6611149DB3DB6B": {
-			"name": "_SET_NOTIFICATION_MESSAGE_4",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU",
 			"jhash": "0x0EB382B7",
 			"comment": "NOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\nExample, only occurrence in the scripts:\nv_8 = UI::_1E6611149DB3DB6B(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 0, 0, &v_9, \"\", a_5);",
 			"params": [
@@ -24318,7 +24318,7 @@
 			"build": "323"
 		},
 		"0x5CBF7BADE20DB93E": {
-			"name": "_SET_NOTIFICATION_MESSAGE_CLAN_TAG",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG",
 			"jhash": "0x3E807FE3",
 			"comment": "List of picNames pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)",
 			"params": [
@@ -24359,7 +24359,7 @@
 			"build": "323"
 		},
 		"0x531B84E7DA981FB6": {
-			"name": "_SET_NOTIFICATION_MESSAGE_CLAN_TAG_2",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON",
 			"jhash": "0xDEB491C8",
 			"comment": "List of picNames: pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)\niconType2 is a mirror of iconType. It shows in the \"subject\" line, right under the original iconType.\n\n\nint IconNotification(char *text, char *text2, char *Subject)\n{\n    _SET_NOTIFICATION_TEXT_ENTRY(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   _SET_NOTIFICATION_MESSAGE_CLAN_TAG_2(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 1, 7, text2, Subject, 1.0f, \"__EXAMPLE\", 7);\n   return _DRAW_NOTIFICATION(1, 1);\n}",
 			"params": [
@@ -24442,7 +24442,7 @@
 			"build": "323"
 		},
 		"0x378E809BF61EC840": {
-			"name": "_DRAW_NOTIFICATION_3",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_TICKER_WITH_TOKENS",
 			"jhash": "0x02BCAF9B",
 			"comment": "",
 			"params": [
@@ -24537,7 +24537,7 @@
 			"build": "323"
 		},
 		"0x137BC35589E34E1E": {
-			"name": "_END_TEXT_COMMAND_THEFEED_POST_CREW_INVITE",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME",
 			"jhash": "0x88B9B909",
 			"comment": "p0 = 1 or 0\n\ncrashes my game...\nthis is for sending invites to network players - jobs/apartment/ect... \nreturn notification handle\n\nint invite(Player player)\n   {\n     networkHandleMgr netHandle;\n       networkClanMgr clan;\n      char *playerName = GET_PLAYER_NAME(player);\n       _SET_NOTIFICATION_TEXT_ENTRY(\"STRING\");\n     _SET_NOTIFACTION_COLOR_NEXT(1);\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(playerName);\n     NETWORK_HANDLE_FROM_PLAYER(player, &netHandle.netHandle, 13);\n     if (NETWORK_CLAN_PLAYER_IS_ACTIVE(&netHandle.netHandle))\n      {\n         NETWORK_CLAN_PLAYER_GET_DESC(&clan.clanHandle, 35, &netHandle.netHandle);\n         _DRAW_NOTIFICATION_CLAN_INVITE(0, _0x54E79E9C(&clan.clanHandle, 35), &clan.unk17, clan.isLeader, 0, 0, clan.clanHandle, playerName, 0, 0, 0);\n     }\n }",
 			"params": [
@@ -24636,7 +24636,7 @@
 			"build": "323"
 		},
 		"0x7AE0589093A2E088": {
-			"name": "_0x7AE0589093A2E088",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_UNLOCK_TU_WITH_COLOR",
 			"jhash": "0x8C90D22F",
 			"comment": "",
 			"params": [
@@ -24669,7 +24669,7 @@
 			"build": "323"
 		},
 		"0xF020C96915705B3A": {
-			"name": "_DRAW_NOTIFICATION_4",
+			"name": "END_TEXT_COMMAND_THEFEED_POST_MPTICKER",
 			"jhash": "0x8E319AB8",
 			"comment": "",
 			"params": [
@@ -49279,9 +49279,9 @@
 			"build": "323"
 		},
 		"0xF45352426FF3A4F0": {
-			"name": "_0xF45352426FF3A4F0",
+			"name": "NETWORK_CLAN_GET_UI_FORMATTED_TAG",
 			"jhash": "0xF633805A",
-			"comment": "bufferSize is 35 in the scripts.\n\nNETWORK_CLAN_*",
+			"comment": "bufferSize is 35 in the scripts.",
 			"params": [
 				{
 					"type": "int*",
@@ -49293,7 +49293,7 @@
 				},
 				{
 					"type": "char*",
-					"name": "p2"
+					"name": "formattedTag"
 				}
 			],
 			"return_type": "void",
