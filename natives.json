@@ -23999,7 +23999,7 @@
 			"build": "323"
 		},
 		"0xD4438C0564490E63": {
-			"name": "_0xD4438C0564490E63",
+			"name": "_THEFEED_ENABLE_BASELINE_OFFSET",
 			"jhash": "0x709B4BCB",
 			"comment": "",
 			"params": [],
@@ -24007,7 +24007,7 @@
 			"build": "323"
 		},
 		"0xB695E2CD0A2DA9EE": {
-			"name": "_0xB695E2CD0A2DA9EE",
+			"name": "_THEFEED_DISABLE_BASELINE_OFFSET",
 			"jhash": "0x4A4A40A4",
 			"comment": "",
 			"params": [],
@@ -24023,7 +24023,7 @@
 			"build": "323"
 		},
 		"0x56C8B608CFD49854": {
-			"name": "_0x56C8B608CFD49854",
+			"name": "_THEFEED_HIDE_GTAO_TOOLTIPS",
 			"jhash": "0xF881AB87",
 			"comment": "",
 			"params": [],
@@ -24031,7 +24031,7 @@
 			"build": "323"
 		},
 		"0xADED7F5748ACAFE6": {
-			"name": "_0xADED7F5748ACAFE6",
+			"name": "_THEFEED_SHOW_GTAO_TOOLTIPS",
 			"jhash": "0x1D6859CA",
 			"comment": "",
 			"params": [],
@@ -24039,7 +24039,7 @@
 			"build": "323"
 		},
 		"0x92F0DA1E27DB96DC": {
-			"name": "_SET_NOTIFICATION_BACKGROUND_COLOR",
+			"name": "_THEFEED_SET_NEXT_POST_BACKGROUND_COLOR",
 			"jhash": "0x07CE2EA4",
 			"comment": "From the decompiled scripts:\nUI::_92F0DA1E27DB96DC(6);\nUI::_92F0DA1E27DB96DC(184);\nUI::_92F0DA1E27DB96DC(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: gyazo.com/68bd384455fceb0a85a8729e48216e15",
 			"params": [
@@ -24052,7 +24052,7 @@
 			"build": "323"
 		},
 		"0x17430B918701C342": {
-			"name": "_SET_NOTIFICATION_FLASH_COLOR",
+			"name": "_THEFEED_SET_ANIMPOSTFX_COLOR",
 			"jhash": "0xCF14D7F2",
 			"comment": "",
 			"params": [
@@ -24077,33 +24077,33 @@
 			"build": "323"
 		},
 		"0x17AD8C9706BDD88A": {
-			"name": "_0x17AD8C9706BDD88A",
+			"name": "_THEFEED_SET_ANIMPOSTFX_COUNT",
 			"jhash": "0x24A97AF8",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "count"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x4A0C7C9BB10ABB36": {
-			"name": "_0x4A0C7C9BB10ABB36",
+			"name": "_THEFEED_SET_ANIMPOSTFX_SOUND",
 			"jhash": "0x44018EDB",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xFDD85225B2DEA55E": {
-			"name": "_0xFDD85225B2DEA55E",
+			"name": "_THEFEED_RESET_ANIMPOSTFX",
 			"jhash": "0xA4524B23",
 			"comment": "",
 			"params": [],
@@ -24111,7 +24111,7 @@
 			"build": "323"
 		},
 		"0xFDEC055AB549E328": {
-			"name": "_0xFDEC055AB549E328",
+			"name": "_THEFEED_FORCE_NEXT_POST_PERSISTENT",
 			"jhash": "0xAFA1148B",
 			"comment": "",
 			"params": [],
@@ -24119,7 +24119,7 @@
 			"build": "323"
 		},
 		"0x80FE4F3AB4E1B62A": {
-			"name": "_0x80FE4F3AB4E1B62A",
+			"name": "_THEFEED_FLUSH_PERSISTENT_POSTS",
 			"jhash": "0x3CD4307C",
 			"comment": "",
 			"params": [],
@@ -24127,7 +24127,7 @@
 			"build": "323"
 		},
 		"0xBAE4F9B97CD43B30": {
-			"name": "_0xBAE4F9B97CD43B30",
+			"name": "_THEFEED_SET_FLUSH_ANIMPOSTFX",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -24140,7 +24140,7 @@
 			"build": "323"
 		},
 		"0x317EBA71D7543F52": {
-			"name": "_0x317EBA71D7543F52",
+			"name": "_THEFEED_ADD_TXD_REF",
 			"jhash": "",
 			"comment": "From the decompiled scripts, called 61 times:\nUI::_317EBA71D7543F52(&v_13, &v_13, &v_3, &v_3);",
 			"params": [
@@ -75998,7 +75998,7 @@
 		"0x836B62713E0534CA": {
 			"name": "_0x836B62713E0534CA",
 			"jhash": "",
-			"comment": "Returns true if bit 0 in GtaThread+0x154 is set.",
+			"comment": "Returns true if bit 0 in GtaThread+0x154 is set.\n\nBG_*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
@@ -76007,15 +76007,15 @@
 		"0x760910B49D2B98EA": {
 			"name": "_0x760910B49D2B98EA",
 			"jhash": "",
-			"comment": "Sets bit 1 in GtaThread+0x154",
+			"comment": "Sets bit 1 in GtaThread+0x154\n\nBG_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
 			"unused": true
 		},
 		"0x75B18E49607874C7": {
-			"name": "_BGR_START_CONTEXT_HASH",
-			"jhash": "",
+			"name": "BG_START_CONTEXT_HASH",
+			"jhash": "0x67B23E17",
 			"comment": "Hashed version of 0x9D5A25BADB742ACD.",
 			"params": [
 				{
@@ -76028,8 +76028,8 @@
 			"unused": true
 		},
 		"0x107E5CC7CA942BC1": {
-			"name": "_BGR_END_CONTEXT_HASH",
-			"jhash": "",
+			"name": "BG_END_CONTEXT_HASH",
+			"jhash": "0x3D981EBF",
 			"comment": "Hashed version of 0xDC2BACD920D0A0DD.",
 			"params": [
 				{
@@ -76042,8 +76042,8 @@
 			"unused": true
 		},
 		"0x9D5A25BADB742ACD": {
-			"name": "_BGR_START_CONTEXT",
-			"jhash": "",
+			"name": "BG_START_CONTEXT",
+			"jhash": "0xF3F1D953",
 			"comment": "Inserts the given context into the background scripts context map.",
 			"params": [
 				{
@@ -76056,8 +76056,8 @@
 			"unused": true
 		},
 		"0xDC2BACD920D0A0DD": {
-			"name": "_BGR_END_CONTEXT",
-			"jhash": "",
+			"name": "BG_END_CONTEXT",
+			"jhash": "0x11F38FB3",
 			"comment": "Deletes the given context from the background scripts context map.",
 			"params": [
 				{
@@ -76072,7 +76072,7 @@
 		"0x0F6F1EBBC4E1D5E6": {
 			"name": "_0x0F6F1EBBC4E1D5E6",
 			"jhash": "",
-			"comment": "",
+			"comment": "BG_*",
 			"params": [
 				{
 					"type": "int",
@@ -76090,7 +76090,7 @@
 		"0x22E21FBCFC88C149": {
 			"name": "_0x22E21FBCFC88C149",
 			"jhash": "",
-			"comment": "",
+			"comment": "BG_*",
 			"params": [
 				{
 					"type": "int",
@@ -76108,7 +76108,7 @@
 		"0x829CD22E043A2577": {
 			"name": "_0x829CD22E043A2577",
 			"jhash": "",
-			"comment": "",
+			"comment": "BG_*",
 			"params": [
 				{
 					"type": "Hash",
