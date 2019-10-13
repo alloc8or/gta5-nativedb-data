@@ -92069,7 +92069,7 @@
 			"build": "323"
 		},
 		"0xD8050E0EB60CF274": {
-			"name": "_SET_DISABLE_VEHICLE_SIREN_SOUND",
+			"name": "SET_VEHICLE_HAS_MUTED_SIRENS",
 			"jhash": "0xC54156A9",
 			"comment": "if set to true, prevents vehicle sirens from having sound, leaving only the lights.",
 			"params": [
