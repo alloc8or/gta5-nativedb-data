@@ -59396,13 +59396,13 @@
 			"build": "323"
 		},
 		"0x0B919E1FB47CC4E0": {
-			"name": "_0x0B919E1FB47CC4E0",
+			"name": "SET_AMBIENT_PED_RANGE_MULTIPLIER_THIS_FRAME",
 			"jhash": "0x3C5085E4",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
@@ -97323,16 +97323,16 @@
 			"build": "323"
 		},
 		"0xE43701C36CAFF1A4": {
-			"name": "_0xE43701C36CAFF1A4",
+			"name": "_DOES_VEHICLE_HAVE_LANDING_GEAR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1180"
 		},
 		"0xCFC8BE9A5E1FE575": {
