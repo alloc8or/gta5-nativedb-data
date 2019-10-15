@@ -26615,7 +26615,7 @@
 		"0x4BA4E2553AFEDC2C": {
 			"name": "GET_BLIP_INFO_ID_ENTITY_INDEX",
 			"jhash": "0xA068C40B",
-			"comment": " ",
+			"comment": "",
 			"params": [
 				{
 					"type": "Blip",
@@ -93175,7 +93175,7 @@
 			"build": "323"
 		},
 		"0x57715966069157AD": {
-			"name": "_IS_VEHICLE_NEAR_ENTITY",
+			"name": "IS_ENTITY_ATTACHED_TO_HANDLER_FRAME",
 			"jhash": "0x7FB25568",
 			"comment": "",
 			"params": [
@@ -93252,13 +93252,13 @@
 			"build": "323"
 		},
 		"0x7C0043FDFF6436BC": {
-			"name": "_0x7C0043FDFF6436BC",
+			"name": "DETACH_CONTAINER_FROM_HANDLER_FRAME",
 			"jhash": "0x0F11D01F",
 			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "x"
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -93299,7 +93299,7 @@
 			"build": "323"
 		},
 		"0x634148744F385576": {
-			"name": "_0x634148744F385576",
+			"name": "IS_HELI_LANDING_AREA_BLOCKED",
 			"jhash": "0x6346B7CC",
 			"comment": "",
 			"params": [
@@ -93805,7 +93805,7 @@
 			"build": "323"
 		},
 		"0x16B5E274BDE402F8": {
-			"name": "_0x16B5E274BDE402F8",
+			"name": "ATTACH_VEHICLE_ON_TO_TRAILER",
 			"jhash": "0x12AC1A16",
 			"comment": "",
 			"params": [
@@ -99743,13 +99743,13 @@
 			"build": "323"
 		},
 		"0xBC3CCA5844452B06": {
-			"name": "_0xBC3CCA5844452B06",
+			"name": "SET_LIGHTS_CUTOFF_DISTANCE_TWEAK",
 			"jhash": "0x929801C6",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "distance"
 				}
 			],
 			"return_type": "void",
@@ -100205,17 +100205,17 @@
 			"build": "323"
 		},
 		"0xAF03011701811146": {
-			"name": "_0xAF03011701811146",
+			"name": "_DETACH_ENTITY_FROM_CARGOBOB",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "cargobob"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "Any",
@@ -100298,7 +100298,7 @@
 			"build": "323"
 		},
 		"0xA1DD82F3CCF9A01E": {
-			"name": "_0xA1DD82F3CCF9A01E",
+			"name": "_ATTACH_ENTITY_TO_CARGOBOB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -105315,16 +105315,16 @@
 			"build": "323"
 		},
 		"0x065D2AACAD8CF7A4": {
-			"name": "_0x065D2AACAD8CF7A4",
+			"name": "_GET_WEAPON_TIME_BETWEEN_SHOTS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1290"
 		},
 		"0x8378627201D5497D": {
