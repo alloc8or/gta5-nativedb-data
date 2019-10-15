@@ -22081,8 +22081,8 @@
 		},
 		"0xAEEDAD1420C65CC0": {
 			"name": "_SET_FORCE_PED_FOOTSTEPS_TRACKS",
-			"jhash": "",
-			"comment": "Forces footstep tracks on all surfaces.",
+			"jhash": "0xC53576CA",
+			"comment": "Forces footstep tracks on all surfaces.\n\nUSE_/USING_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -22094,8 +22094,8 @@
 		},
 		"0x4CC7F0FEA5283FE0": {
 			"name": "_SET_FORCE_VEHICLE_TRAILS",
-			"jhash": "",
-			"comment": "Forces vehicle trails on all surfaces.",
+			"jhash": "0x7158B1EA",
+			"comment": "Forces vehicle trails on all surfaces.\n\nUSE_/USING_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -22119,9 +22119,9 @@
 			"build": "791"
 		},
 		"0xD7021272EB0A451E": {
-			"name": "_PRESET_INTERIOR_AMBIENT_CACHE",
-			"jhash": "",
-			"comment": "Only one match in the scripts:\n\nGRAPHICS::_D7021272EB0A451E(\"int_carrier_hanger\");",
+			"name": "PRESET_INTERIOR_AMBIENT_CACHE",
+			"jhash": "0x137E3E24",
+			"comment": "Only one match in the scripts:\n\nGRAPHICS::PRESET_INTERIOR_AMBIENT_CACHE(\"int_carrier_hanger\");",
 			"params": [
 				{
 					"type": "const char*",
