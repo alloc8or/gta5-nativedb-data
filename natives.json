@@ -21647,9 +21647,9 @@
 			"build": "323"
 		},
 		"0x99AC7F0D8B9C893D": {
-			"name": "_0x99AC7F0D8B9C893D",
+			"name": "START_PETROL_TRAIL_DECALS",
 			"jhash": "0xE3938B0B",
-			"comment": "START_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -21660,7 +21660,7 @@
 			"build": "323"
 		},
 		"0x967278682CB6967A": {
-			"name": "_0x967278682CB6967A",
+			"name": "ADD_PETROL_TRAIL_DECAL_INFO",
 			"jhash": "0xBAEC6ADD",
 			"comment": "",
 			"params": [
@@ -21685,7 +21685,7 @@
 			"build": "323"
 		},
 		"0x0A123435A26C36CD": {
-			"name": "_0x0A123435A26C36CD",
+			"name": "END_PETROL_TRAIL_DECALS",
 			"jhash": "0xCCCA6855",
 			"comment": "",
 			"params": [],
