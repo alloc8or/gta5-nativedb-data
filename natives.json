@@ -1083,8 +1083,8 @@
 			"build": "323"
 		},
 		"0x8A694D7A68F8DC38": {
-			"name": "_0x8A694D7A68F8DC38",
-			"jhash": "",
+			"name": "INTERRUPT_CONVERSATION_AND_PAUSE",
+			"jhash": "0xDD4A3F1F",
 			"comment": "One call found in the b617d scripts:\n\nAUDIO::_8A694D7A68F8DC38(NETWORK::NET_TO_PED(l_3989._f26F[0/*1*/]), \"CONV_INTERRUPT_QUIT_IT\", \"LESTER\");",
 			"params": [
 				{
@@ -2139,13 +2139,13 @@
 			"build": "323"
 		},
 		"0xEE066C7006C49C0A": {
-			"name": "_0xEE066C7006C49C0A",
+			"name": "PLAY_ANIMAL_VOCALIZATION",
 			"jhash": "0x498849F3",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "pedHandle"
 				},
 				{
 					"type": "Any",
@@ -2160,13 +2160,13 @@
 			"build": "323"
 		},
 		"0xC265DF9FB44A9FBD": {
-			"name": "_0xC265DF9FB44A9FBD",
+			"name": "IS_ANIMAL_VOCALIZATION_PLAYING",
 			"jhash": "0x0CBAF2EF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "pedHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -2614,9 +2614,9 @@
 			"build": "323"
 		},
 		"0x109697E2FFBAC8A1": {
-			"name": "_0x109697E2FFBAC8A1",
+			"name": "DOES_PLAYER_VEH_HAVE_RADIO",
 			"jhash": "0x46B0C696",
-			"comment": "Not sure what this function does, but it's related to the audio of the local player's vehicle (Considering the surrounding natives, it's probably radio related).",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -12456,7 +12456,7 @@
 			"build": "323"
 		},
 		"0x5C48B75732C8456C": {
-			"name": "_0x5C48B75732C8456C",
+			"name": "_ATTACH_ENTITY_BONE_TO_ENTITY_BONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -12489,7 +12489,7 @@
 			"build": "791"
 		},
 		"0xFD1695C5D3B05439": {
-			"name": "_0xFD1695C5D3B05439",
+			"name": "_ATTACH_ENTITY_BONE_TO_ENTITY_BONE_PHYSICALLY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -27607,17 +27607,17 @@
 			"build": "323"
 		},
 		"0xC4278F70131BAA6D": {
-			"name": "_0xC4278F70131BAA6D",
+			"name": "_SET_BLIP_DISPLAY_ON_EDGE",
 			"jhash": "0x6AA6A1CC",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -29139,12 +29139,12 @@
 			"build": "323"
 		},
 		"0x2432784ACA090DA4": {
-			"name": "_0x2432784ACA090DA4",
+			"name": "IS_FLOATING_HELP_TEXT_ON_SCREEN",
 			"jhash": "0x45472FD5",
-			"comment": "p0 is int or bool",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -29152,33 +29152,33 @@
 			"build": "323"
 		},
 		"0x7679CC1BCEBE3D4C": {
-			"name": "_0x7679CC1BCEBE3D4C",
+			"name": "SET_FLOATING_HELP_TEXT_SCREEN_POSITION",
 			"jhash": "0x198F32D7",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x784BA7E0ECEB4178": {
-			"name": "_0x784BA7E0ECEB4178",
+			"name": "SET_FLOATING_HELP_TEXT_WORLD_POSITION",
 			"jhash": "0x93045157",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -29198,17 +29198,17 @@
 			"build": "323"
 		},
 		"0xB094BC1DB4018240": {
-			"name": "_0xB094BC1DB4018240",
+			"name": "SET_FLOATING_HELP_TEXT_TO_ENTITY",
 			"jhash": "0x18B012B7",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "float",
@@ -29223,32 +29223,32 @@
 			"build": "323"
 		},
 		"0x788E7FD431BD67F1": {
-			"name": "_0x788E7FD431BD67F1",
+			"name": "SET_FLOATING_HELP_TEXT_STYLE",
 			"jhash": "0x97852A82",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
@@ -29258,10 +29258,10 @@
 		"0x50085246ABD3FEFA": {
 			"name": "CLEAR_FLOATING_HELP",
 			"jhash": "0xB181F88F",
-			"comment": "p0 looks like int in script",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -36933,7 +36933,7 @@
 			"build": "323"
 		},
 		"0x918C7B2D2FF3928B": {
-			"name": "_0x918C7B2D2FF3928B",
+			"name": "_ADD_DISPATCH_SPAWN_BLOCKING_ANGLED_AREA",
 			"jhash": "0xF557BAF9",
 			"comment": "",
 			"params": [
@@ -36970,7 +36970,7 @@
 			"build": "323"
 		},
 		"0x2D4259F1FEB81DA9": {
-			"name": "_0x2D4259F1FEB81DA9",
+			"name": "_ADD_DISPATCH_SPAWN_BLOCKING_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -56114,13 +56114,13 @@
 			"build": "323"
 		},
 		"0x4A39DB43E47CF3AA": {
-			"name": "_0x4A39DB43E47CF3AA",
+			"name": "REMOVE_OBJECT_HIGH_DETAIL_MODEL",
 			"jhash": "0xE3261B35",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
@@ -59694,7 +59694,7 @@
 			"build": "323"
 		},
 		"0xA0F8A7517A273C05": {
-			"name": "_0xA0F8A7517A273C05",
+			"name": "_GET_POINT_OFF_ROAD_WITH_HEADING",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -59723,7 +59723,7 @@
 			"build": "463"
 		},
 		"0x16F46FB18C8009E4": {
-			"name": "_0x16F46FB18C8009E4",
+			"name": "_GET_POINT_OFF_ROAD_WITH_DIRECTION",
 			"jhash": "0xF6422F9A",
 			"comment": "",
 			"params": [
@@ -68969,17 +68969,17 @@
 			"build": "323"
 		},
 		"0x576594E8D64375E2": {
-			"name": "_0x576594E8D64375E2",
+			"name": "SET_PED_BLOCKS_PATHING_WHEN_DEAD",
 			"jhash": "0x1D87DDC1",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -70137,11 +70137,11 @@
 			"build": "323"
 		},
 		"0xEBB376779A760AA8": {
-			"name": "_0xEBB376779A760AA8",
+			"name": "IS_PEDHEADSHOT_IMG_UPLOAD_AVAILABLE",
 			"jhash": "0x810158F8",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x876928DDDFCCC9CD": {
@@ -70161,17 +70161,17 @@
 			"build": "323"
 		},
 		"0xC1F6EBF9A3D55538": {
-			"name": "_0xC1F6EBF9A3D55538",
+			"name": "SET_PED_HEATSCALE_OVERRIDE",
 			"jhash": "0xEF9142DB",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "heatScale"
 				}
 			],
 			"return_type": "void",
@@ -73804,9 +73804,9 @@
 			"build": "323"
 		},
 		"0xC9A763D8FE87436A": {
-			"name": "_0xC9A763D8FE87436A",
+			"name": "SPECIAL_ABILITY_CHARGE_ON_MISSION_FAILED",
 			"jhash": "0x4136829A",
-			"comment": "Seems to be called before SPECIAL_ABILITY_DEACTIVATE. Needs more research.\n\nSPECIAL_ABILITY_*\n\nSPECIAL_ABILITY_CHARGE_ON_MISSION_FAILED ?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -97174,7 +97174,7 @@
 			"build": "323"
 		},
 		"0xAC51915D27E4A5F7": {
-			"name": "_GET_HELI_ENGINE_HEALTH",
+			"name": "GET_HELI_TAIL_BOOM_HEALTH",
 			"jhash": "0x8A68388F",
 			"comment": "Max 1000.\nAt -100 both helicopter rotors will stall.",
 			"params": [
@@ -98133,9 +98133,9 @@
 			"build": "323"
 		},
 		"0xF417C2502FFFED43": {
-			"name": "_GET_VEHICLE_MODEL_MAX_SPEED",
+			"name": "GET_VEHICLE_MODEL_ESTIMATED_MAX_SPEED",
 			"jhash": "0x8F291C4A",
-			"comment": "Returns max speed (without mods) of the specified vehicle model in m/s.\n\nFor a full list, see here: pastebin.com/AUuHHK06\n\nGET_VEHICLE_MODEL_*",
+			"comment": "Returns max speed (without mods) of the specified vehicle model in m/s.",
 			"params": [
 				{
 					"type": "Hash",
@@ -98148,7 +98148,7 @@
 		"0xDC53FD41B4ED944C": {
 			"name": "GET_VEHICLE_MODEL_MAX_BRAKING",
 			"jhash": "0x7EF02883",
-			"comment": "Returns max braking of the specified vehicle model.\n\nFor a full list, see here: pastebin.com/3N8DVbpG",
+			"comment": "Returns max braking of the specified vehicle model.",
 			"params": [
 				{
 					"type": "Hash",
@@ -98174,7 +98174,7 @@
 		"0x539DE94D44FDFD0D": {
 			"name": "GET_VEHICLE_MODEL_MAX_TRACTION",
 			"jhash": "0x7F985597",
-			"comment": "Returns max traction of the specified vehicle model.\n\nFor a full list, see here: pastebin.com/ERnntVjK",
+			"comment": "Returns max traction of the specified vehicle model.",
 			"params": [
 				{
 					"type": "Hash",
@@ -98187,7 +98187,7 @@
 		"0x8C044C5C84505B6A": {
 			"name": "GET_VEHICLE_MODEL_ACCELERATION",
 			"jhash": "0x29CB3537",
-			"comment": "Returns the acceleration of the specified model.\n\nFor a full list, see here: pastebin.com/GaN6vT4R\n",
+			"comment": "Returns the acceleration of the specified model.",
 			"params": [
 				{
 					"type": "Hash",
@@ -98198,9 +98198,9 @@
 			"build": "323"
 		},
 		"0x53409B5163D5B846": {
-			"name": "_GET_VEHICLE_MODEL_DOWN_FORCE",
+			"name": "_GET_VEHICLE_MODEL_ESTIMATED_AGILITY",
 			"jhash": "0x37FBA7BC",
-			"comment": "GET_VEHICLE_MODEL_*\n\n9.8 * thrust if air vehicle, else 0.38 + drive force?\n\nFor a full list, see here: pastebin.com/bJQeDqNd",
+			"comment": "GET_VEHICLE_MODEL_*\n\n9.8 * thrust if air vehicle, else 0.38 + drive force?",
 			"params": [
 				{
 					"type": "Hash",
@@ -98213,7 +98213,7 @@
 		"0xC6AD107DDC9054CC": {
 			"name": "_GET_VEHICLE_MODEL_MAX_KNOTS",
 			"jhash": "0x95BB67EB",
-			"comment": "GET_VEHICLE_MODEL_*\n\nFunction pertains only to aviation vehicles.\n\nFor a full list, see here: pastebin.com/JwuGNp2K",
+			"comment": "GET_VEHICLE_MODEL_*\n\nFunction pertains only to aviation vehicles.",
 			"params": [
 				{
 					"type": "Hash",
@@ -98226,7 +98226,7 @@
 		"0x5AA3F878A178C4FC": {
 			"name": "_GET_VEHICLE_MODEL_MOVE_RESISTANCE",
 			"jhash": "0x87C5D271",
-			"comment": "GET_VEHICLE_MODEL_*\n\ncalled if the vehicle is a boat -- returns vecMoveResistanceX?\n\nFor a full list, see here: pastebin.com/Pyb2RhZ9",
+			"comment": "GET_VEHICLE_MODEL_*\n\ncalled if the vehicle is a boat -- returns vecMoveResistanceX?",
 			"params": [
 				{
 					"type": "Hash",
@@ -98237,9 +98237,9 @@
 			"build": "323"
 		},
 		"0x00C09F246ABEDD82": {
-			"name": "_GET_VEHICLE_CLASS_MAX_SPEED",
+			"name": "GET_VEHICLE_CLASS_ESTIMATED_MAX_SPEED",
 			"jhash": "0xCE67162C",
-			"comment": "GET_VEHICLE_CLASS_MAX_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -101092,7 +101092,7 @@
 			"build": "323"
 		},
 		"0x6D6AF961B72728AE": {
-			"name": "_0x6D6AF961B72728AE",
+			"name": "CLEAR_VEHICLE_ROUTE_HISTORY",
 			"jhash": "0x8DD9AA0C",
 			"comment": "",
 			"params": [
@@ -101483,7 +101483,7 @@
 			"build": "323"
 		},
 		"0xDF7E3EEB29642C38": {
-			"name": "_0xDF7E3EEB29642C38",
+			"name": "_GET_VEHICLE_SUSPENSION_BOUNDS",
 			"jhash": "",
 			"comment": "Outputs 2 Vector3's.\nScripts check if out2.x - out1.x > someshit.x\nCould be suspension related, as in max suspension height and min suspension height, considering the natives location.",
 			"params": [
