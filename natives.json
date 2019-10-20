@@ -99718,17 +99718,17 @@
 			"build": "323"
 		},
 		"0xE44A982368A4AF23": {
-			"name": "COPY_VEHICLE_DAMAGES",
+			"name": "_0xE44A982368A4AF23",
 			"jhash": "0xBAE491C7",
-			"comment": "Copy the damage like broken bumpers and broken lights from a vehicle and paste then on another vehicle.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "sourceVehicle"
+					"name": "vehicle"
 				},
 				{
 					"type": "Vehicle",
-					"name": "targetVehicle"
+					"name": "vehicle2"
 				}
 			],
 			"return_type": "void",
