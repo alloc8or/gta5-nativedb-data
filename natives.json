@@ -3912,13 +3912,13 @@
 			"build": "323"
 		},
 		"0x18EB48CFC41F2EA0": {
-			"name": "_0x18EB48CFC41F2EA0",
+			"name": "REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP",
 			"jhash": "0x308ED0EC",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "float",
@@ -15130,7 +15130,7 @@
 			"build": "323"
 		},
 		"0xE1CA84EBF72E691D": {
-			"name": "_0xE1CA84EBF72E691D",
+			"name": "GET_FORCED_PROP",
 			"jhash": "0x22DAE257",
 			"comment": "",
 			"params": [
@@ -26753,7 +26753,7 @@
 			"build": "323"
 		},
 		"0x72DD432F3CDFC0EE": {
-			"name": "_0x72DD432F3CDFC0EE",
+			"name": "TRIGGER_SONAR_BLIP",
 			"jhash": "0xBF25E7B2",
 			"comment": "",
 			"params": [
@@ -29086,9 +29086,9 @@
 			"build": "323"
 		},
 		"0xF9904D11F1ACBEC3": {
-			"name": "_GET_SCREEN_COORD_FROM_WORLD_COORD",
+			"name": "GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION",
 			"jhash": "0xFE9A39F8",
-			"comment": "World to relative screen coords\n\nthis world to screen will keep the text on screen. it will keep it in the screen pos",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -33027,9 +33027,9 @@
 			"build": "323"
 		},
 		"0x8BDC7BFC57A81E76": {
-			"name": "_GET_GROUND_Z_COORD_WITH_OFFSETS",
+			"name": "GET_GROUND_Z_AND_NORMAL_FOR_3D_COORD",
 			"jhash": "0x64D91CED",
-			"comment": "only documented to be continued...\n\nVector3 func_164(Vector3 vParam0, Vector3 vParam1)\n{\n  return vParam0.y * vParam1.z - vParam0.z * vParam1.y, vParam0.z * vParam1.x - vParam0.x * vParam1.z, vParam0.x * vParam1.y - vParam0.y * vParam1.x;\n}\nfloat func_67(vector3 vParam0, vector3 vParam1)\n{\n    return vParam0.x * vParam1.x + vParam0.y * vParam1.y + vParam0.z * vParam1.z;\n}\nfloat p3; Vector3 p4;\n_GET_GROUND_COORDS_WHILE_IN_AIR(coords0to.x, coords0to.y, coords0to.z, &p3, &p4);",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -33049,7 +33049,7 @@
 				},
 				{
 					"type": "Vector3*",
-					"name": "offsets"
+					"name": "normal"
 				}
 			],
 			"return_type": "BOOL",
