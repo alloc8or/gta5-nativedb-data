@@ -55312,7 +55312,7 @@
 			"build": "323"
 		},
 		"0x6BAB9442830C7F53": {
-			"name": "_SET_DOOR_ACCELERATION_LIMIT",
+			"name": "DOOR_SYSTEM_SET_DOOR_STATE",
 			"jhash": "0xDF83DB47",
 			"comment": "Sets the acceleration limit of a door.\nHow fast it can open, or the inverse hinge resistance.\n\nA limit of 0 seems to lock doors.\n\np2 is always 0, p3 is always 1.\n\n",
 			"params": [
@@ -55337,7 +55337,7 @@
 			"build": "323"
 		},
 		"0x160AA1B32F6139B8": {
-			"name": "_0x160AA1B32F6139B8",
+			"name": "DOOR_SYSTEM_GET_DOOR_STATE",
 			"jhash": "0xD42A41C2",
 			"comment": "",
 			"params": [
@@ -55350,7 +55350,7 @@
 			"build": "323"
 		},
 		"0x4BC2854478F3A749": {
-			"name": "_0x4BC2854478F3A749",
+			"name": "DOOR_SYSTEM_GET_DOOR_PENDING_STATE",
 			"jhash": "0xD649B7E1",
 			"comment": "",
 			"params": [
@@ -55363,7 +55363,7 @@
 			"build": "323"
 		},
 		"0x03C27E13B42A0E82": {
-			"name": "_0x03C27E13B42A0E82",
+			"name": "DOOR_SYSTEM_SET_AUTOMATIC_RATE",
 			"jhash": "0x4F44AF21",
 			"comment": "",
 			"params": [
@@ -55388,7 +55388,7 @@
 			"build": "323"
 		},
 		"0x9BA001CB45CBF627": {
-			"name": "_0x9BA001CB45CBF627",
+			"name": "DOOR_SYSTEM_SET_AUTOMATIC_DISTANCE",
 			"jhash": "0x47531446",
 			"comment": "",
 			"params": [
@@ -55413,7 +55413,7 @@
 			"build": "323"
 		},
 		"0xB6E6FBA95C7324AC": {
-			"name": "_SET_DOOR_AJAR_ANGLE",
+			"name": "DOOR_SYSTEM_SET_OPEN_RATIO",
 			"jhash": "0x34883DE3",
 			"comment": "Sets the ajar angle of a door.\nRanges from -1.0 to 1.0, and 0.0 is closed / default.\n\np2 is always 0, p3 is always 1.\n\n",
 			"params": [
@@ -55438,7 +55438,7 @@
 			"build": "323"
 		},
 		"0x65499865FCA6E5EC": {
-			"name": "_0x65499865FCA6E5EC",
+			"name": "DOOR_SYSTEM_GET_OPEN_RATIO",
 			"jhash": "0xB74C3BD7",
 			"comment": "",
 			"params": [
@@ -55451,7 +55451,7 @@
 			"build": "323"
 		},
 		"0xC485E07E4F0B7958": {
-			"name": "_0xC485E07E4F0B7958",
+			"name": "DOOR_SYSTEM_SET_SPRING_REMOVED",
 			"jhash": "0xB4A9A558",
 			"comment": "",
 			"params": [
@@ -55476,7 +55476,7 @@
 			"build": "323"
 		},
 		"0xD9B71952F78A2640": {
-			"name": "_0xD9B71952F78A2640",
+			"name": "DOOR_SYSTEM_SET_HOLD_OPEN",
 			"jhash": "0xECE58AE0",
 			"comment": "",
 			"params": [
@@ -55486,7 +55486,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -55557,7 +55557,7 @@
 			"build": "323"
 		},
 		"0xDF97CDD4FC08FD34": {
-			"name": "_0xDF97CDD4FC08FD34",
+			"name": "DOOR_SYSTEM_GET_IS_PHYSICS_LOADED",
 			"jhash": "0x17FF9393",
 			"comment": "",
 			"params": [
