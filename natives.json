@@ -56571,7 +56571,7 @@
 					"name": "modelHash"
 				}
 			],
-			"return_type": "Pickup",
+			"return_type": "Object",
 			"build": "323"
 		},
 		"0x125494B98A21AAF7": {
@@ -56604,7 +56604,7 @@
 					"name": "modelHash"
 				}
 			],
-			"return_type": "Pickup",
+			"return_type": "Object",
 			"build": "323"
 		},
 		"0x8DC39368BDD57755": {
@@ -56613,12 +56613,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Object",
+					"name": "pickupObject"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -56630,8 +56630,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Object",
+					"name": "pickupObject"
 				}
 			],
 			"return_type": "void",
@@ -56643,8 +56643,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Pickup",
-					"name": "pickup"
+					"type": "Object",
+					"name": "pickupObject"
 				},
 				{
 					"type": "BOOL",
