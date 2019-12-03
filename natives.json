@@ -16890,16 +16890,16 @@
 			"build": "1604"
 		},
 		"0x3DEC726C25A11BAC": {
-			"name": "_0x3DEC726C25A11BAC",
+			"name": "SAVE_HIGH_QUALITY_PHOTO",
 			"jhash": "0x3B15D33C",
 			"comment": "1 match in 1 script. cellphone_controller.\np0 is -1 in scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "unused"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x0C0C4E81E1AC60A0": {
