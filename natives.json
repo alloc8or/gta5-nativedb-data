@@ -16903,11 +16903,11 @@
 			"build": "323"
 		},
 		"0x0C0C4E81E1AC60A0": {
-			"name": "_0x0C0C4E81E1AC60A0",
+			"name": "GET_STATUS_OF_SAVE_HIGH_QUALITY_PHOTO",
 			"jhash": "0xEC5D0317",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x759650634F07B6B4": {
