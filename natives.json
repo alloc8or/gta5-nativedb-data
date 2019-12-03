@@ -16844,11 +16844,11 @@
 			"build": "323"
 		},
 		"0x0D6CA79EEEBD8CA3": {
-			"name": "_0x0D6CA79EEEBD8CA3",
+			"name": "GET_STATUS_OF_TAKE_HIGH_QUALITY_PHOTO",
 			"jhash": "0x65376C9B",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xD801CC02177FA3F1": {
