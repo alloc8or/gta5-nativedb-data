@@ -42452,10 +42452,6 @@
 				{
 					"type": "BOOL",
 					"name": "p2"
-				},
-				{
-					"type": "BOOL",
-					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -45567,7 +45563,20 @@
 			"name": "NETWORK_BAIL_TRANSITION",
 			"jhash": "0xB59D74CA",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "int",
+					"name": "p2"
+				}
+			],
 			"return_type": "void",
 			"build": "323"
 		},
@@ -78944,22 +78953,6 @@
 				{
 					"type": "Any",
 					"name": "p2"
-				},
-				{
-					"type": "Any",
-					"name": "p3"
-				},
-				{
-					"type": "Any",
-					"name": "p4"
-				},
-				{
-					"type": "Any",
-					"name": "p5"
-				},
-				{
-					"type": "Any",
-					"name": "p6"
 				}
 			],
 			"return_type": "void",
