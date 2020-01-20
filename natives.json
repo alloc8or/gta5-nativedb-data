@@ -46581,7 +46581,7 @@
 			"build": "323"
 		},
 		"0xE26CCFF8094D8C74": {
-			"name": "_0xE26CCFF8094D8C74",
+			"name": "REFRESH_PLAYER_LIST_STATS",
 			"jhash": "0xF49C1533",
 			"comment": "",
 			"params": [
