@@ -14379,7 +14379,7 @@
 			"build": "323"
 		},
 		"0xCE6294A232D03786": {
-			"name": "GET_ENTITY_BONE_ROTATION",
+			"name": "_GET_ENTITY_BONE_ROTATION",
 			"jhash": "",
 			"comment": "Gets the world rotation of the specified bone of the specified entity.",
 			"params": [
@@ -14396,7 +14396,7 @@
 			"build": "791"
 		},
 		"0x46F8696933A63C9B": {
-			"name": "GET_ENTITY_BONE_COORDS",
+			"name": "_GET_ENTITY_BONE_COORDS",
 			"jhash": "",
 			"comment": "Gets the position of the specified bone of the specified entity.",
 			"params": [
@@ -14413,7 +14413,7 @@
 			"build": "877"
 		},
 		"0xBD8D32550E5CEBFE": {
-			"name": "GET_ENTITY_BONE_ROTATION_LOCAL",
+			"name": "_GET_ENTITY_BONE_ROTATION_LOCAL",
 			"jhash": "",
 			"comment": "Gets the local rotation of the specified bone of the specified entity.",
 			"params": [
