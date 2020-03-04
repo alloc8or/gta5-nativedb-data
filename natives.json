@@ -17544,8 +17544,8 @@
 			"build": "573"
 		},
 		"0x799017F9E3B10112": {
-			"name": "DRAW_SPHERE",
-			"jhash": "0x4DD1CB3A",
+			"name": "_DRAW_SPHERE",
+			"jhash": "",
 			"comment": "",
 			"params": [
 				{
