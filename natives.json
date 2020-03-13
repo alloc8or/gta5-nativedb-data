@@ -15161,7 +15161,7 @@
 		"0x341DE7ED1D2A1BFD": {
 			"name": "DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG",
 			"jhash": "0x8E2C7FD5",
-			"comment": "",
+			"comment": "Restriction tags: https://gist.github.com/root-cause/c831b5f74ccc069059f5100a693022f8\ncomponentId/last parameter seems to be unused.",
 			"params": [
 				{
 					"type": "Hash",
