@@ -15027,19 +15027,19 @@
 				},
 				{
 					"type": "int",
-					"name": "componentId"
+					"name": "variantComponentIndex"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "nameHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "int*",
+					"name": "enumValue"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "int*",
+					"name": "componentType"
 				}
 			],
 			"return_type": "void",
@@ -15051,24 +15051,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "variantPropIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "nameHash"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int*",
+					"name": "enumValue"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int*",
+					"name": "anchorPoint"
 				}
 			],
 			"return_type": "void",
@@ -15077,7 +15077,7 @@
 		"0xC6B9DB42C04DD8C3": {
 			"name": "GET_SHOP_PED_APPAREL_FORCED_COMPONENT_COUNT",
 			"jhash": "0xCE70F183",
-			"comment": "Returns number of possible values of the componentId argument of GET_FORCED_COMPONENT.",
+			"comment": "Returns number of possible values of the forcedComponentIndex argument of GET_FORCED_COMPONENT.",
 			"params": [
 				{
 					"type": "Hash",
@@ -15090,14 +15090,14 @@
 		"0x017568A8182D98A6": {
 			"name": "GET_SHOP_PED_APPAREL_FORCED_PROP_COUNT",
 			"jhash": "0xC560D7C0",
-			"comment": "",
+			"comment": "Returns number of possible values of the forcedPropIndex argument of GET_FORCED_PROP.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x6C93ED8C2F74859B": {
@@ -15111,7 +15111,7 @@
 				},
 				{
 					"type": "int",
-					"name": "componentId"
+					"name": "forcedComponentIndex"
 				},
 				{
 					"type": "Hash*",
@@ -15135,24 +15135,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "componentHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "forcedPropIndex"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "Hash*",
+					"name": "nameHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "int*",
+					"name": "enumValue"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "int*",
+					"name": "anchorPoint"
 				}
 			],
 			"return_type": "void",
@@ -15169,7 +15169,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "drawableSlotHash"
+					"name": "restrictionTagHash"
 				},
 				{
 					"type": "int",
@@ -104419,9 +104419,9 @@
 			"build": "323"
 		},
 		"0x585847C5E4E11709": {
-			"name": "_GET_MAX_AMMO_2",
+			"name": "_GET_MAX_AMMO_BY_TYPE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Ammo types: https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1",
 			"params": [
 				{
 					"type": "Ped",
@@ -104429,7 +104429,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "ammoTypeHash"
 				},
 				{
 					"type": "int*",
@@ -104440,9 +104440,9 @@
 			"build": "1103"
 		},
 		"0x2472622CE1F2D45F": {
-			"name": "_ADD_PED_AMMO",
+			"name": "_ADD_AMMO_TO_PED_BY_TYPE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Ammo types: https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1",
 			"params": [
 				{
 					"type": "Ped",
@@ -104450,7 +104450,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "weaponHash"
+					"name": "ammoTypeHash"
 				},
 				{
 					"type": "int",
@@ -104463,15 +104463,15 @@
 		"0x5FD1E1F011E76D7E": {
 			"name": "SET_PED_AMMO_BY_TYPE",
 			"jhash": "0x311C52BB",
-			"comment": "",
+			"comment": "Ammo types: https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "ammoType"
+					"type": "Hash",
+					"name": "ammoTypeHash"
 				},
 				{
 					"type": "int",
@@ -104491,8 +104491,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "ammoType"
+					"type": "Hash",
+					"name": "ammoTypeHash"
 				}
 			],
 			"return_type": "int",
@@ -104531,7 +104531,7 @@
 		"0x7FEAD38B326B9F74": {
 			"name": "GET_PED_AMMO_TYPE_FROM_WEAPON",
 			"jhash": "0x09337863",
-			"comment": "",
+			"comment": "Returns the current ammo type of the specified ped's specified weapon.\nMkII magazines will change the return value, like Pistol MkII returning AMMO_PISTOL without any components and returning AMMO_PISTOL_TRACER after Tracer Rounds component is attached.\nUse 0xF489B44DD5AF4BD9 if you always want AMMO_PISTOL.",
 			"params": [
 				{
 					"type": "Ped",
@@ -104548,7 +104548,7 @@
 		"0xF489B44DD5AF4BD9": {
 			"name": "_GET_PED_AMMO_TYPE_FROM_WEAPON_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns the base/default ammo type of the specified ped's specified weapon.\nUse GET_PED_AMMO_TYPE_FROM_WEAPON if you want current ammo type (like AMMO_MG_INCENDIARY/AMMO_MG_TRACER while using MkII magazines) and use this if you want base ammo type. (AMMO_MG)",
 			"params": [
 				{
 					"type": "Ped",
