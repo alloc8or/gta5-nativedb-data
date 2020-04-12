@@ -68105,8 +68105,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
 					"type": "BOOL",
