@@ -86018,11 +86018,11 @@
 		"0x77F1BEB8863288D5": {
 			"name": "GET_SCRIPT_TASK_STATUS",
 			"jhash": "0xB2477B23",
-			"comment": "Gets the status of a script-assigned task.\ntaskHash: hash of SCRIPT_ + task name (e.g. SCRIPT_TASK_GO_STRAIGHT_TO_COORD)",
+			"comment": "Gets the status of a script-assigned task.\ntaskHash: https://alloc8or.re/gta5/doc/enums/eScriptTaskHash.txt",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "targetPed"
+					"name": "ped"
 				},
 				{
 					"type": "Hash",
