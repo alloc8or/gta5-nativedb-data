@@ -4990,7 +4990,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				}
 			],
 			"return_type": "void",
@@ -5003,7 +5003,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				}
 			],
 			"return_type": "void",
@@ -54730,7 +54730,7 @@
 		"0x509D5878EB39E842": {
 			"name": "CREATE_OBJECT",
 			"jhash": "0x2F7AA05C",
-			"comment": "p5 - last parameter does not mean object handle is returned\nmaybe a quick view in disassembly will tell us what is actually does\n\n----------\n\nprop_tt_screenstatic (0xE2E039BC) is handled different. Not sure how yet but it I know it is.\nthx fr Xenus.oida ",
+			"comment": "",
 			"params": [
 				{
 					"type": "Object",
@@ -54754,7 +54754,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				},
 				{
 					"type": "BOOL",
@@ -54767,7 +54767,7 @@
 		"0x9A294B2138ABB884": {
 			"name": "CREATE_OBJECT_NO_OFFSET",
 			"jhash": "0x58040420",
-			"comment": "p5 - does not mean object handle is returned\nmaybe a quick view in disassembly will tell us what is actually does",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -54791,7 +54791,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				},
 				{
 					"type": "BOOL",
@@ -60261,7 +60261,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				}
 			],
 			"return_type": "Ped",
@@ -60283,7 +60283,7 @@
 		"0xEF29A16337FACADB": {
 			"name": "CLONE_PED",
 			"jhash": "0x8C8A8D6E",
-			"comment": "p3 - last parameter does not mean ped handle is returned\nmaybe a quick view in disassembly will tell us what is actually does\n\n\nExample of Cloning Your Player:\nCLONE_PED(PLAYER_PED_ID(), GET_ENTITY_HEADING(PLAYER_PED_ID()), 0, 1);",
+			"comment": "Example of Cloning Your Player:\nCLONE_PED(PLAYER_PED_ID(), GET_ENTITY_HEADING(PLAYER_PED_ID()), 0, 1);",
 			"params": [
 				{
 					"type": "Ped",
@@ -60299,7 +60299,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				}
 			],
 			"return_type": "Ped",
@@ -60324,7 +60324,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				},
 				{
 					"type": "Any",
@@ -60595,7 +60595,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				}
 			],
 			"return_type": "Ped",
@@ -91395,7 +91395,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "thisScriptCheck"
+					"name": "netMissionEntity"
 				},
 				{
 					"type": "BOOL",
