@@ -19644,20 +19644,20 @@
 			"build": "323"
 		},
 		"0xA4819F5E23E2FFAD": {
-			"name": "_0xA4819F5E23E2FFAD",
+			"name": "GOLF_TRAIL_GET_MAX_HEIGHT",
 			"jhash": "0xA08B46AD",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0xA4664972A9B8F8BA": {
-			"name": "_0xA4664972A9B8F8BA",
+			"name": "GOLF_TRAIL_GET_VISUAL_CONTROL_POINT",
 			"jhash": "0xECD470F0",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
