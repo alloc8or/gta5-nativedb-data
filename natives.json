@@ -19917,7 +19917,7 @@
 			"build": "323"
 		},
 		"0xDE81239437E8C5A8": {
-			"name": "_0xDE81239437E8C5A8",
+			"name": "DISABLE_SCREENBLUR_FADE",
 			"jhash": "0xDB7AECDA",
 			"comment": "",
 			"params": [],
