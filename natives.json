@@ -4473,7 +4473,7 @@
 		"0x12561FCBB62D5B9C": {
 			"name": "SET_AUDIO_SPECIAL_EFFECT_MODE",
 			"jhash": "0x62B43677",
-			"comment": "enum audSpecialEffectMode\n{\n\tkSpecialEffectModeNormal,\n\tkSpecialEffectModeUnderwater,\n\tkSpecialEffectModeStoned,\n\tkSpecialEffectModePauseMenu,\n\tkSpecialEffectModeSlowMotion,\n\tkSpecialEffectModeDrunkStage01,\n\tkSpecialEffectModeDrunkStage02,\n\tkSpecialEffectModeDrunkStage03,\n\tNUM_AUDSPECIALEFFECTMODE\n};",
+			"comment": "https://alloc8or.re/gta5/doc/enums/audSpecialEffectMode.txt",
 			"params": [
 				{
 					"type": "int",
@@ -10683,7 +10683,7 @@
 		"0x9FD90732F56403CE": {
 			"name": "DECOR_REGISTER",
 			"jhash": "0x68BD42A9",
-			"comment": "Found this in standard_global_init.c4 line 1898\n\nvoid sub_523a() {\n    DECORATOR::DECOR_REGISTER(\"Player_Vehicle\", 3);\n    DECORATOR::DECOR_REGISTER(\"PV_Slot\", 3);\n    DECORATOR::DECOR_REGISTER(\"Previous_Owner\", 3);\n    DECORATOR::DECOR_REGISTER(\"Sprayed_Vehicle_Decorator\", 2);\n    DECORATOR::DECOR_REGISTER(\"Sprayed_Vehicle_Timer_Dec\", 5);\n    DECORATOR::DECOR_REGISTER(\"Vehicle_Reward\", 3);\n    DECORATOR::DECOR_REGISTER(\"Vehicle_Reward_Teams\", 3);\n    DECORATOR::DECOR_REGISTER(\"Skill_Blocker\", 2);\n    DECORATOR::DECOR_REGISTER(\"TargetPlayerForTeam\", 3);\n    DECORATOR::DECOR_REGISTER(\"XP_Blocker\", 2);\n    DECORATOR::DECOR_REGISTER(\"CrowdControlSetUp\", 3);\n    DECORATOR::DECOR_REGISTER(\"Bought_Drugs\", 2);\n    DECORATOR::DECOR_REGISTER(\"HeroinInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"CokeInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"WeedInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"MethInPossession\", 1);\n    DECORATOR::DECOR_REGISTER(\"bombdec\", 3);\n    DECORATOR::DECOR_REGISTER(\"bombdec1\", 3);\n    DECORATOR::DECOR_REGISTER(\"bombowner\", 3);\n    DECORATOR::DECOR_REGISTER(\"noPlateScan\", 2);\n    DECORATOR::DECOR_REGISTER(\"prisonBreakBoss\", 2);\n    DECORATOR::DECOR_REGISTER(\"cashondeadbody\", 3);\n    DECORATOR::DECOR_REGISTER(\"MissionType\", 3);\n    DECORATOR::DECOR_REGISTER(\"MatchId\", 3);\n    DECORATOR::DECOR_REGISTER(\"TeamId\", 3);\n    DECORATOR::DECOR_REGISTER(\"Not_Allow_As_Saved_Veh\", 3);\n    DECORATOR::DECOR_REGISTER(\"Veh_Modded_By_Player\", 3);\n    DECORATOR::DECOR_REGISTER(\"MPBitset\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_EntityID\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_ChasePedID\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team0_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team1_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team2_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"MC_Team3_VehDeliveredRules\", 3);\n    DECORATOR::DECOR_REGISTER(\"AttributeDamage\", 3);\n    DECORATOR::DECOR_REGISTER(\"GangBackup\", 3);\n    DECORATOR::DECOR_REGISTER(\"CreatedByPegasus\", 2);\n    DECORATOR::DECOR_REGISTER(\"BeforeCorona_0\", 2);\n}\n\n-----------------------------------------------------------------------\nenum eDecorType\n{\n\tDECOR_TYPE_FLOAT = 1,\n\tDECOR_TYPE_BOOL,\n\tDECOR_TYPE_INT,\n\tDECOR_TYPE_UNK,\n\tDECOR_TYPE_TIME\n};",
+			"comment": "https://alloc8or.re/gta5/doc/enums/eDecorType.txt",
 			"params": [
 				{
 					"type": "const char*",
@@ -10700,7 +10700,7 @@
 		"0x4F14F9F870D6FBC8": {
 			"name": "DECOR_IS_REGISTERED_AS_TYPE",
 			"jhash": "0x7CF0971D",
-			"comment": "enum eDecorType\n{\n\tDECOR_TYPE_FLOAT = 1,\n\tDECOR_TYPE_BOOL,\n\tDECOR_TYPE_INT,\n\tDECOR_TYPE_UNK,\n\tDECOR_TYPE_TIME\n};",
+			"comment": "type: see DECOR_REGISTER",
 			"params": [
 				{
 					"type": "const char*",
@@ -11654,7 +11654,7 @@
 		"0xF6F5161F4534EDFF": {
 			"name": "GET_ENTITY_POPULATION_TYPE",
 			"jhash": "0xFC30DDFF",
-			"comment": "enum ePopulationType\n{\n\tPOPTYPE_UNKNOWN = 0,\n\tPOPTYPE_RANDOM_PERMANENT,\n\tPOPTYPE_RANDOM_PARKED,\n\tPOPTYPE_RANDOM_PATROL,\n\tPOPTYPE_RANDOM_SCENARIO,\n\tPOPTYPE_RANDOM_AMBIENT,\n\tPOPTYPE_PERMANENT,\n\tPOPTYPE_MISSION,\n\tPOPTYPE_REPLAY,\n\tPOPTYPE_CACHE,\n\tPOPTYPE_TOOL\n};",
+			"comment": "https://alloc8or.re/gta5/doc/enums/ePopulationType.txt",
 			"params": [
 				{
 					"type": "Entity",
@@ -15634,7 +15634,7 @@
 		"0xE3AD2BDBAEE269AC": {
 			"name": "ADD_EXPLOSION",
 			"jhash": "0x10AF5258",
-			"comment": "BOOL isAudible = If explosion makes a sound.\nBOOL isInvisible = If the explosion is invisible or not.\n\nenum eExplosionTag\r\n{\r\n\tEXP_TAG_DONTCARE = -1,\r\n\tEXP_TAG_GRENADE,\r\n\tEXP_TAG_GRENADELAUNCHER,\r\n\tEXP_TAG_STICKYBOMB,\r\n\tEXP_TAG_MOLOTOV,\r\n\tEXP_TAG_ROCKET,\r\n\tEXP_TAG_TANKSHELL,\r\n\tEXP_TAG_HI_OCTANE,\r\n\tEXP_TAG_CAR,\r\n\tEXP_TAG_PLANE,\r\n\tEXP_TAG_PETROL_PUMP,\r\n\tEXP_TAG_BIKE,\r\n\tEXP_TAG_DIR_STEAM,\r\n\tEXP_TAG_DIR_FLAME,\r\n\tEXP_TAG_DIR_WATER_HYDRANT,\r\n\tEXP_TAG_DIR_GAS_CANISTER,\r\n\tEXP_TAG_BOAT,\r\n\tEXP_TAG_SHIP_DESTROY,\r\n\tEXP_TAG_TRUCK,\r\n\tEXP_TAG_BULLET,\r\n\tEXP_TAG_SMOKEGRENADELAUNCHER,\r\n\tEXP_TAG_SMOKEGRENADE,\r\n\tEXP_TAG_BZGAS,\r\n\tEXP_TAG_FLARE,\r\n\tEXP_TAG_GAS_CANISTER,\r\n\tEXP_TAG_EXTINGUISHER,\r\n\tEXP_TAG_PROGRAMMABLEAR,\r\n\tEXP_TAG_TRAIN,\r\n\tEXP_TAG_BARREL,\r\n\tEXP_TAG_PROPANE,\r\n\tEXP_TAG_BLIMP,\r\n\tEXP_TAG_DIR_FLAME_EXPLODE,\r\n\tEXP_TAG_TANKER,\r\n\tEXP_TAG_PLANE_ROCKET,\r\n\tEXP_TAG_VEHICLE_BULLET,\r\n\tEXP_TAG_GAS_TANK,\r\n\tEXP_TAG_BIRD_CRAP,\r\n\tEXP_TAG_RAILGUN,\r\n\tEXP_TAG_BLIMP2,\r\n\tEXP_TAG_FIREWORK,\r\n\tEXP_TAG_SNOWBALL,\r\n\tEXP_TAG_PROXMINE,\r\n\tEXP_TAG_VALKYRIE_CANNON,\r\n\tEXP_TAG_AIR_DEFENCE,\r\n\tEXP_TAG_PIPEBOMB,\r\n\tEXP_TAG_VEHICLEMINE,\r\n\tEXP_TAG_EXPLOSIVEAMMO,\r\n\tEXP_TAG_APCSHELL,\r\n\tEXP_TAG_BOMB_CLUSTER,\r\n\tEXP_TAG_BOMB_GAS,\r\n\tEXP_TAG_BOMB_INCENDIARY,\r\n\tEXP_TAG_BOMB_STANDARD,\r\n\tEXP_TAG_TORPEDO,\r\n\tEXP_TAG_TORPEDO_UNDERWATER,\r\n\tEXP_TAG_BOMBUSHKA_CANNON,\r\n\tEXP_TAG_BOMB_CLUSTER_SECONDARY,\r\n\tEXP_TAG_HUNTER_BARRAGE,\r\n\tEXP_TAG_HUNTER_CANNON,\r\n\tEXP_TAG_ROGUE_CANNON,\r\n\tEXP_TAG_MINE_UNDERWATER,\r\n\tEXP_TAG_ORBITAL_CANNON,\r\n\tEXP_TAG_BOMB_STANDARD_WIDE,\r\n\tEXP_TAG_EXPLOSIVEAMMO_SHOTGUN,\r\n\tEXP_TAG_OPPRESSOR2_CANNON,\r\n\tEXP_TAG_MORTAR_KINETIC,\r\n\tEXP_TAG_VEHICLEMINE_KINETIC,\r\n\tEXP_TAG_VEHICLEMINE_EMP,\r\n\tEXP_TAG_VEHICLEMINE_SPIKE,\r\n\tEXP_TAG_VEHICLEMINE_SLICK,\r\n\tEXP_TAG_VEHICLEMINE_TAR,\r\n\tEXP_TAG_SCRIPT_DRONE,\r\n\tEXP_TAG_RAYGUN,\r\n\tEXP_TAG_BURIEDMINE,\r\n\tEXP_TAG_SCRIPT_MISSILE\r\n};",
+			"comment": "BOOL isAudible = If explosion makes a sound.\nBOOL isInvisible = If the explosion is invisible or not.\n\nexplosionType: https://alloc8or.re/gta5/doc/enums/eExplosionTag.txt",
 			"params": [
 				{
 					"type": "float",
@@ -36289,7 +36289,7 @@
 		"0xDC0F817884CDD856": {
 			"name": "ENABLE_DISPATCH_SERVICE",
 			"jhash": "0x0B710A51",
-			"comment": "Directly from R*:\nenum eDispatchType : uint16_t\n{\n\tDT_PoliceAutomobile = 1,\n\tDT_PoliceHelicopter = 2,\n\tDT_FireDepartment = 3,\n\tDT_SwatAutomobile = 4,\n\tDT_AmbulanceDepartment = 5,\n\tDT_PoliceRiders = 6,\n\tDT_PoliceVehicleRequest = 7,\n\tDT_PoliceRoadBlock = 8,\n\tDT_PoliceAutomobileWaitPulledOver = 9,\n\tDT_PoliceAutomobileWaitCruising = 10,\n\tDT_Gangs = 11,\n\tDT_SwatHelicopter = 12,\n\tDT_PoliceBoat = 13,\n\tDT_ArmyVehicle = 14,\n\tDT_BikerBackup = 15\n};\n\nBy making toggle false it disables the dispatch.\n\ncurious if this is what they used when you toggled on and off cops in a GTA IV freemode you hosted. Sad they got rid of the option to make a private session without cops.\nAlso on x360 seems with or without neverWanted on, setting these to all false in SP of course doesn't seem to work. I would understand getting stars, but cops are still dispatched and combat you.",
+			"comment": "https://alloc8ore.re/gta5/doc/enums/DispatchType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -60229,7 +60229,7 @@
 		"0xD49F9B0955C367DE": {
 			"name": "CREATE_PED",
 			"jhash": "0x0389EF71",
-			"comment": "enum ePedType\n{\n\tPED_TYPE_PLAYER_0,\n\tPED_TYPE_PLAYER_1,\n\tPED_TYPE_NETWORK_PLAYER,\n\tPED_TYPE_PLAYER_2,\n\tPED_TYPE_CIVMALE,\n\tPED_TYPE_CIVFEMALE,\n\tPED_TYPE_COP,\n\tPED_TYPE_GANG_ALBANIAN,\n\tPED_TYPE_GANG_BIKER_1,\n\tPED_TYPE_COPTYPE_GANG_BIKER_2,\n\tPED_TYPE_GANG_ITALIAN,\n\tPED_TYPE_GANG_RUSSIAN,\n\tPED_TYPE_COPTYPE_GANG_RUSSIAN_2,\n\tPED_TYPE_GANG_IRISH,\n\tPED_TYPE_GANG_JAMAICAN,\n\tPED_TYPE_GANG_AFRICAN_AMERICAN,\n\tPED_TYPE_GANG_KOREAN,\n\tPED_TYPE_GANG_CHINESE_JAPANESE,\n\tPED_TYPE_GANG_PUERTO_RICAN,\n\tPED_TYPE_DEALER,\n\tPED_TYPE_MEDIC,\n\tPED_TYPE_FIREMAN,\n\tPED_TYPE_CRIMINAL,\n\tPED_TYPE_BUM,\n\tPED_TYPE_PROSTITUTE,\n\tPED_TYPE_SPECIAL,\n\tPED_TYPE_MISSION,\n\tPED_TYPE_SWAT,\n\tPED_TYPE_ANIMAL,\n\tPED_TYPE_ARMY\n};",
+			"comment": "https://alloc8or.re/gta5/doc/enums/ePedType.txt",
 			"params": [
 				{
 					"type": "int",
@@ -72213,7 +72213,7 @@
 		"0x8D32347D6D4C40A2": {
 			"name": "SET_PLAYER_CONTROL",
 			"jhash": "0xD17AFCD8",
-			"comment": "enum eSetPlayerControlFlag : uint32_t\n{\n\tSPC_AMBIENT_SCRIPT = (1 << 1),\n\tSPC_CLEAR_TASKS = (1 << 2),\n\tSPC_REMOVE_FIRES = (1 << 3),\n\tSPC_REMOVE_EXPLOSIONS = (1 << 4),\n\tSPC_REMOVE_PROJECTILES = (1 << 5),\n\tSPC_DEACTIVATE_GADGETS = (1 << 6),\n\tSPC_REENABLE_CONTROL_ON_DEATH = (1 << 7),\n\tSPC_LEAVE_CAMERA_CONTROL_ON = (1 << 8),\n\tSPC_ALLOW_PLAYER_DAMAGE = (1 << 9),\n\tSPC_DONT_STOP_OTHER_CARS_AROUND_PLAYER = (1 << 10),\n\tSPC_PREVENT_EVERYBODY_BACKOFF = (1 << 11),\n\tSPC_ALLOW_PAD_SHAKE = (1 << 12)\n};",
+			"comment": "https://alloc8or.re/gta5/doc/enums/eSetPlayerControlFlag.txt",
 			"params": [
 				{
 					"type": "Player",
