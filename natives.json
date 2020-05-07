@@ -84087,7 +84087,7 @@
 		"0x965791A9A488A062": {
 			"name": "TASK_OPEN_VEHICLE_DOOR",
 			"jhash": "0x8EE06BF4",
-			"comment": "",
+			"comment": "The given ped will try to open the nearest door to 'seat'.\nExample: telling the ped to open the door for the driver seat does not necessarily mean it will open the driver door, it may choose to open the passenger door instead if that one is closer.",
 			"params": [
 				{
 					"type": "Ped",
@@ -84103,7 +84103,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "seat"
 				},
 				{
 					"type": "float",
