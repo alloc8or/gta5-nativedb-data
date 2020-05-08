@@ -32058,7 +32058,7 @@
 		"0x497420E022796B3F": {
 			"name": "_LOCALIZATION_GET_SYSTEM_LANGUAGE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same return values as GET_CURRENT_LANGUAGE",
 			"params": [],
 			"return_type": "int",
 			"build": "877"
@@ -32066,7 +32066,7 @@
 		"0x2BDD44CC428A7EAE": {
 			"name": "GET_CURRENT_LANGUAGE",
 			"jhash": "0x761BE00B",
-			"comment": "american = 0\nfrench = 1 \ngerman = 2\nitalian =3\nspanish = 4\nportuguese = 5\npolish = 6\nrussian = 7\nkorean = 8\nchinese = 9\njapanese = 10\nmexican = 11",
+			"comment": "0 = american (en-US)\n1 = french (fr-FR)\n2 = german (de-DE)\n3 = italian (it-IT)\n4 = spanish (es-ES)\n5 = brazilian (pt-BR)\n6 = polish (pl-PL)\n7 = russian (ru-RU)\n8 = korean (ko-KR)\n9 = chinesetrad (zh-TW)\n10 = japanese (ja-JP)\n11 = mexican (es-MX)\n12 = chinesesimp (zh-CN)",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -32074,7 +32074,7 @@
 		"0xA8AE43AEC1A61314": {
 			"name": "_LOCALIZATION_GET_USER_LANGUAGE",
 			"jhash": "",
-			"comment": "Returns the user's defined language as ID \n\nenglish: 12\nfrench = 7\ngerman = 22\nitalian = 21\njapanese = 9\nkorean = 17\nportuguese = 16\nspanish = 10\nrussian = 25",
+			"comment": "Possible return values: 0, 1, 2\nIt's used to check the user's date format.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
