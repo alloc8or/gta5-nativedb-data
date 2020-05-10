@@ -31577,9 +31577,9 @@
 			"build": "1103"
 		},
 		"0xEEA5AC2EDA7C33E8": {
-			"name": "_ARE_COORDS_COLLIDING_WITH_EXTERIOR",
+			"name": "IS_COLLISION_MARKED_OUTSIDE",
 			"jhash": "0x7762249C",
-			"comment": "Returns true if the coords are colliding with the outdoors, and false if they collide with an interior.",
+			"comment": "Returns true if the collision at the specified coords is marked as being outside (false if there's an interior)",
 			"params": [
 				{
 					"type": "float",
