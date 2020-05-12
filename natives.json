@@ -56969,7 +56969,7 @@
 			"build": "323"
 		},
 		"0x758A5C1B3B1E1990": {
-			"name": "_0x758A5C1B3B1E1990",
+			"name": "FORCE_PICKUP_REGENERATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -57190,7 +57190,7 @@
 			"build": "323"
 		},
 		"0x1C1B69FAE509BA97": {
-			"name": "_0x1C1B69FAE509BA97",
+			"name": "SET_PICKUP_UNCOLLECTABLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -57224,7 +57224,7 @@
 			"build": "757"
 		},
 		"0x3ED2B83AB2E82799": {
-			"name": "_0x3ED2B83AB2E82799",
+			"name": "SET_PICKUP_HIDDEN_WHEN_UNCOLLECTABLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
