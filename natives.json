@@ -36289,7 +36289,7 @@
 		"0xDC0F817884CDD856": {
 			"name": "ENABLE_DISPATCH_SERVICE",
 			"jhash": "0x0B710A51",
-			"comment": "https://alloc8ore.re/gta5/doc/enums/DispatchType.txt",
+			"comment": "https://alloc8or.re/gta5/doc/enums/DispatchType.txt",
 			"params": [
 				{
 					"type": "int",
