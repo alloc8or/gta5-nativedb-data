@@ -101930,17 +101930,17 @@
 			"build": "791"
 		},
 		"0x5B91B229243351A8": {
-			"name": "_0x5B91B229243351A8",
+			"name": "_SET_VEHICLE_CONTROLS_INVERTED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "boolean",
+					"name": "state"
 				}
 			],
 			"return_type": "void",
