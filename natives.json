@@ -101939,7 +101939,7 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "boolean",
+					"type": "BOOL",
 					"name": "state"
 				}
 			],
