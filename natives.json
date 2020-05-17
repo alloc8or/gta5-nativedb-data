@@ -99405,13 +99405,13 @@
 			"build": "323"
 		},
 		"0xC1F981A6F74F0C23": {
-			"name": "GET_BOAT_BOOM_POSITION_RATIO",
+			"name": "_0xC1F981A6F74F0C23",
 			"jhash": "0x00966934",
 			"comment": "same call as VEHICLE::_0x0F3B4D4E43177236",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
