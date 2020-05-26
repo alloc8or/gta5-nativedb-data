@@ -25248,13 +25248,13 @@
 			"build": "323"
 		},
 		"0x5F68520888E69014": {
-			"name": "_ADD_TEXT_COMPONENT_SUBSTRING_UNK",
+			"name": "ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY",
 			"jhash": "0x0829A799",
-			"comment": "ADD_TEXT_COMPONENT_SUBSTRING_*\n\nADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY ?",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "string"
 				}
 			],
 			"return_type": "void",
