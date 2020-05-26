@@ -42927,7 +42927,7 @@
 		"0x13A8DE2FD77D04F3": {
 			"name": "NETWORK_GET_PVC_TRANSFER_BALANCE",
 			"jhash": "0xC670C814",
-			"comment": "Same as 0xEA560AC9EEB1E19B.",
+			"comment": "Retturns the same value as NETWORK_GET_REMAINING_TRANSFER_BALANCE.",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -42974,9 +42974,9 @@
 			"unused": true
 		},
 		"0xEA560AC9EEB1E19B": {
-			"name": "_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS_2",
+			"name": "NETWORK_GET_REMAINING_TRANSFER_BALANCE",
 			"jhash": "0xA9021211",
-			"comment": "Same as 0x13A8DE2FD77D04F3.",
+			"comment": "Returns the same value as NETWORK_GET_PVC_TRANSFER_BALANCE.",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
