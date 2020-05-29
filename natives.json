@@ -35234,13 +35234,13 @@
 					"name": "p4"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "Vector3",
 			"build": "323"
 		},
 		"0x82FDE6A57EE4EE44": {
 			"name": "_GET_PROJECTILE_NEAR_PED",
 			"jhash": "0x507BC6F7",
-			"comment": "GET_*",
+			"comment": "GET_PROJECTILE_*",
 			"params": [
 				{
 					"type": "Ped",
