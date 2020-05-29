@@ -35164,9 +35164,9 @@
 			"build": "323"
 		},
 		"0x8D7A43EC6A5FEA45": {
-			"name": "_GET_IS_PROJECTILE_TYPE_IN_AREA",
+			"name": "GET_COORDS_OF_PROJECTILE_TYPE_IN_AREA",
 			"jhash": "0x1A40454B",
-			"comment": "GET_C*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -35205,7 +35205,7 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vector3",
 			"build": "323"
 		},
 		"0xDFB4138EEFED7B81": {
