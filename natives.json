@@ -37370,7 +37370,7 @@
 			"build": "323"
 		},
 		"0x0A60017F841A54F2": {
-			"name": "_0x0A60017F841A54F2",
+			"name": "SCRIPT_RACE_INIT",
 			"jhash": "0x2D33F15A",
 			"comment": "",
 			"params": [
@@ -37395,7 +37395,7 @@
 			"build": "323"
 		},
 		"0x1FF6BF9A63E5757F": {
-			"name": "_0x1FF6BF9A63E5757F",
+			"name": "SCRIPT_RACE_SHUTDOWN",
 			"jhash": "0xDF99925C",
 			"comment": "",
 			"params": [],
@@ -37405,7 +37405,7 @@
 		"0x1BB299305C3E8C13": {
 			"name": "_0x1BB299305C3E8C13",
 			"jhash": "0xA27F4472",
-			"comment": "",
+			"comment": "SCRIPT_RACE_*",
 			"params": [
 				{
 					"type": "Any",
@@ -37428,20 +37428,20 @@
 			"build": "323"
 		},
 		"0x8EF5573A1F801A5C": {
-			"name": "_0x8EF5573A1F801A5C",
+			"name": "SCRIPT_RACE_GET_PLAYER_SPLIT_TIME",
 			"jhash": "0x07FF553F",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p2"
 				}
 			],
