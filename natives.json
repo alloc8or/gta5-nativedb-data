@@ -34787,7 +34787,7 @@
 		"0x1454F2448DE30163": {
 			"name": "SET_FAKE_WANTED_LEVEL",
 			"jhash": "0x85B1C9FA",
-			"comment": "Sets a visually fake wanted level on the user interface. Used by Rockstar's scripts to \"override\" regular wanted levels and make custom ones while the real wanted level and multipliers are ignored.\n\nMax is 5, anything above this makes it just 5. Also the mini-map gets the red & blue flashing effect. I wish I could use this to fake I had 6 stars like a few of the old GTAs'",
+			"comment": "Sets a visually fake wanted level on the user interface. Used by Rockstar's scripts to \"override\" regular wanted levels and make custom ones while the real wanted level and multipliers are still in effect.\n\nMax is 6, anything above this makes it just 6. Also the mini-map gets the red & blue flashing effect.",
 			"params": [
 				{
 					"type": "int",
