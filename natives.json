@@ -9989,7 +9989,7 @@
 			"build": "323"
 		},
 		"0x35124302A556A325": {
-			"name": "_OBJECT_VALUE_ADD_BOOLEAN",
+			"name": "DATADICT_SET_BOOL",
 			"jhash": "0x9B29D99B",
 			"comment": "",
 			"params": [
@@ -10010,7 +10010,7 @@
 			"build": "323"
 		},
 		"0xE7E035450A7948D5": {
-			"name": "_OBJECT_VALUE_ADD_INTEGER",
+			"name": "DATADICT_SET_INT",
 			"jhash": "0xEFCF554A",
 			"comment": "",
 			"params": [
@@ -10031,7 +10031,7 @@
 			"build": "323"
 		},
 		"0xC27E1CC2D795105E": {
-			"name": "_OBJECT_VALUE_ADD_FLOAT",
+			"name": "DATADICT_SET_FLOAT",
 			"jhash": "0xE972CACF",
 			"comment": "",
 			"params": [
@@ -10052,7 +10052,7 @@
 			"build": "323"
 		},
 		"0x8FF3847DADD8E30C": {
-			"name": "_OBJECT_VALUE_ADD_STRING",
+			"name": "DATADICT_SET_STRING",
 			"jhash": "0xD437615C",
 			"comment": "",
 			"params": [
@@ -10073,7 +10073,7 @@
 			"build": "323"
 		},
 		"0x4CD49B76338C7DEE": {
-			"name": "_OBJECT_VALUE_ADD_VECTOR3",
+			"name": "DATADICT_SET_VECTOR",
 			"jhash": "0x75FC6C3C",
 			"comment": "",
 			"params": [
@@ -10102,7 +10102,7 @@
 			"build": "323"
 		},
 		"0xA358F56F10732EE1": {
-			"name": "_OBJECT_VALUE_ADD_OBJECT",
+			"name": "DATADICT_CREATE_DICT",
 			"jhash": "0x96A8E05F",
 			"comment": "",
 			"params": [
@@ -10119,7 +10119,7 @@
 			"build": "323"
 		},
 		"0x5B11728527CA6E5F": {
-			"name": "_OBJECT_VALUE_ADD_ARRAY",
+			"name": "DATADICT_CREATE_ARRAY",
 			"jhash": "0x03939B8D",
 			"comment": "",
 			"params": [
@@ -10136,7 +10136,7 @@
 			"build": "323"
 		},
 		"0x1186940ED72FFEEC": {
-			"name": "_OBJECT_VALUE_GET_BOOLEAN",
+			"name": "DATADICT_GET_BOOL",
 			"jhash": "0x8876C872",
 			"comment": "",
 			"params": [
@@ -10153,7 +10153,7 @@
 			"build": "323"
 		},
 		"0x78F06F6B1FB5A80C": {
-			"name": "_OBJECT_VALUE_GET_INTEGER",
+			"name": "DATADICT_GET_INT",
 			"jhash": "0xA6C68693",
 			"comment": "",
 			"params": [
@@ -10170,7 +10170,7 @@
 			"build": "323"
 		},
 		"0x06610343E73B9727": {
-			"name": "_OBJECT_VALUE_GET_FLOAT",
+			"name": "DATADICT_GET_FLOAT",
 			"jhash": "0xA92C1AF4",
 			"comment": "",
 			"params": [
@@ -10187,7 +10187,7 @@
 			"build": "323"
 		},
 		"0x3D2FD9E763B24472": {
-			"name": "_OBJECT_VALUE_GET_STRING",
+			"name": "DATADICT_GET_STRING",
 			"jhash": "0x942160EC",
 			"comment": "",
 			"params": [
@@ -10204,7 +10204,7 @@
 			"build": "323"
 		},
 		"0x46CD3CB66E0825CC": {
-			"name": "_OBJECT_VALUE_GET_VECTOR3",
+			"name": "DATADICT_GET_VECTOR",
 			"jhash": "0xE84A127A",
 			"comment": "",
 			"params": [
@@ -10221,7 +10221,7 @@
 			"build": "323"
 		},
 		"0xB6B9DDC412FCEEE2": {
-			"name": "_OBJECT_VALUE_GET_OBJECT",
+			"name": "DATADICT_GET_DICT",
 			"jhash": "0xC9C13D8D",
 			"comment": "",
 			"params": [
@@ -10238,7 +10238,7 @@
 			"build": "323"
 		},
 		"0x7A983AA9DA2659ED": {
-			"name": "_OBJECT_VALUE_GET_ARRAY",
+			"name": "DATADICT_GET_ARRAY",
 			"jhash": "0x1F2F7D00",
 			"comment": "",
 			"params": [
@@ -10255,7 +10255,7 @@
 			"build": "323"
 		},
 		"0x031C55ED33227371": {
-			"name": "_OBJECT_VALUE_GET_TYPE",
+			"name": "DATADICT_GET_TYPE",
 			"jhash": "0x2678342A",
 			"comment": "Types:\n1 = Boolean\n2 = Integer\n3 = Float\n4 = String\n5 = Vector3\n6 = Object\n7 = Array",
 			"params": [
@@ -10272,7 +10272,7 @@
 			"build": "323"
 		},
 		"0xF8B0F5A43E928C76": {
-			"name": "_ARRAY_VALUE_ADD_BOOLEAN",
+			"name": "DATAARRAY_ADD_BOOL",
 			"jhash": "0x08174B90",
 			"comment": "",
 			"params": [
@@ -10289,7 +10289,7 @@
 			"build": "323"
 		},
 		"0xCABDB751D86FE93B": {
-			"name": "_ARRAY_VALUE_ADD_INTEGER",
+			"name": "DATAARRAY_ADD_INT",
 			"jhash": "0xF29C0B36",
 			"comment": "",
 			"params": [
@@ -10306,7 +10306,7 @@
 			"build": "323"
 		},
 		"0x57A995FD75D37F56": {
-			"name": "_ARRAY_VALUE_ADD_FLOAT",
+			"name": "DATAARRAY_ADD_FLOAT",
 			"jhash": "0xE4302123",
 			"comment": "",
 			"params": [
@@ -10323,7 +10323,7 @@
 			"build": "323"
 		},
 		"0x2F0661C155AEEEAA": {
-			"name": "_ARRAY_VALUE_ADD_STRING",
+			"name": "DATAARRAY_ADD_STRING",
 			"jhash": "0xF3C01350",
 			"comment": "",
 			"params": [
@@ -10340,7 +10340,7 @@
 			"build": "323"
 		},
 		"0x407F8D034F70F0C2": {
-			"name": "_ARRAY_VALUE_ADD_VECTOR3",
+			"name": "DATAARRAY_ADD_VECTOR",
 			"jhash": "0x16F464B6",
 			"comment": "",
 			"params": [
@@ -10365,7 +10365,7 @@
 			"build": "323"
 		},
 		"0x6889498B3E19C797": {
-			"name": "_ARRAY_VALUE_ADD_OBJECT",
+			"name": "DATAARRAY_ADD_DICT",
 			"jhash": "0xC174C71B",
 			"comment": "",
 			"params": [
@@ -10378,7 +10378,7 @@
 			"build": "323"
 		},
 		"0x50C1B2874E50C114": {
-			"name": "_ARRAY_VALUE_GET_BOOLEAN",
+			"name": "DATAARRAY_GET_BOOL",
 			"jhash": "0xA2E5F921",
 			"comment": "",
 			"params": [
@@ -10395,7 +10395,7 @@
 			"build": "323"
 		},
 		"0x3E5AE19425CD74BE": {
-			"name": "_ARRAY_VALUE_GET_INTEGER",
+			"name": "DATAARRAY_GET_INT",
 			"jhash": "0xBB120CFC",
 			"comment": "",
 			"params": [
@@ -10412,7 +10412,7 @@
 			"build": "323"
 		},
 		"0xC0C527B525D7CFB5": {
-			"name": "_ARRAY_VALUE_GET_FLOAT",
+			"name": "DATAARRAY_GET_FLOAT",
 			"jhash": "0x08AD2CC2",
 			"comment": "",
 			"params": [
@@ -10429,7 +10429,7 @@
 			"build": "323"
 		},
 		"0xD3F2FFEB8D836F52": {
-			"name": "_ARRAY_VALUE_GET_STRING",
+			"name": "DATAARRAY_GET_STRING",
 			"jhash": "0x93F985A6",
 			"comment": "",
 			"params": [
@@ -10446,7 +10446,7 @@
 			"build": "323"
 		},
 		"0x8D2064E5B64A628A": {
-			"name": "_ARRAY_VALUE_GET_VECTOR3",
+			"name": "DATAARRAY_GET_VECTOR",
 			"jhash": "0x80E3DA55",
 			"comment": "",
 			"params": [
@@ -10463,7 +10463,7 @@
 			"build": "323"
 		},
 		"0x8B5FADCC4E3A145F": {
-			"name": "_ARRAY_VALUE_GET_OBJECT",
+			"name": "DATAARRAY_GET_DICT",
 			"jhash": "0xECE81278",
 			"comment": "",
 			"params": [
@@ -10480,7 +10480,7 @@
 			"build": "323"
 		},
 		"0x065DB281590CEA2D": {
-			"name": "_ARRAY_VALUE_GET_SIZE",
+			"name": "DATAARRAY_GET_COUNT",
 			"jhash": "0xA8A21766",
 			"comment": "",
 			"params": [
@@ -16433,104 +16433,104 @@
 			"build": "323"
 		},
 		"0x29280002282F1928": {
-			"name": "_0x29280002282F1928",
+			"name": "_DRAW_SPRITE_POLY",
 			"jhash": "",
-			"comment": "DRAW_*",
+			"comment": "Used for drawling Deadline trailing lights, see deadline.ytd\n\np15 through p23 are values that appear to be related to illiumation, scaling, and rotation; more testing required.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "x3"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "y3"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "z3"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "int",
+					"name": "blue"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "int",
+					"name": "alpha"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "const char*",
+					"name": "textureDict"
 				},
 				{
-					"type": "Any",
-					"name": "p14"
+					"type": "const char*",
+					"name": "textureName"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p15"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p16"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p17"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p18"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p19"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p20"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p21"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p22"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p23"
 				}
 			],
@@ -16538,136 +16538,136 @@
 			"build": "877"
 		},
 		"0x736D7AA1B750856B": {
-			"name": "_0x736D7AA1B750856B",
+			"name": "_DRAW_SPRITE_POLY_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used for drawling Deadline trailing lights, see deadline.ytd\n\nEach vertex has its own colour that is blended/illuminated on the texture. Additionally, the R, G, and B components are floats that are int-casted internally.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "x3"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "y3"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "z3"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "red1"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "green1"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "float",
+					"name": "blue1"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "int",
+					"name": "alpha1"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "float",
+					"name": "red2"
 				},
 				{
-					"type": "Any",
-					"name": "p14"
+					"type": "float",
+					"name": "green2"
 				},
 				{
-					"type": "Any",
-					"name": "p15"
+					"type": "float",
+					"name": "blue2"
 				},
 				{
-					"type": "Any",
-					"name": "p16"
+					"type": "int",
+					"name": "alpha2"
 				},
 				{
-					"type": "Any",
-					"name": "p17"
+					"type": "float",
+					"name": "red3"
 				},
 				{
-					"type": "Any",
-					"name": "p18"
+					"type": "float",
+					"name": "green3"
 				},
 				{
-					"type": "Any",
-					"name": "p19"
+					"type": "float",
+					"name": "blue3"
 				},
 				{
-					"type": "Any",
-					"name": "p20"
+					"type": "int",
+					"name": "alpha3"
 				},
 				{
-					"type": "Any",
-					"name": "p21"
+					"type": "const char*",
+					"name": "textureDict"
 				},
 				{
-					"type": "Any",
-					"name": "p22"
+					"type": "const char*",
+					"name": "textureName"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p23"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p24"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p25"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p26"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p27"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p28"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p29"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p30"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p31"
 				}
 			],
@@ -22038,9 +22038,9 @@
 			"build": "323"
 		},
 		"0xA44FF770DFBC5DAE": {
-			"name": "_0xA44FF770DFBC5DAE",
+			"name": "_REGISTER_NOIR_SCREEN_EFFECT_THIS_FRAME",
 			"jhash": "",
-			"comment": "REGISTER_*",
+			"comment": "Used with 'NG_filmnoir_BW{01,02}' timecycles and the \"NOIR_FILTER_SOUNDS\" audioref.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -26511,15 +26511,15 @@
 			"build": "463"
 		},
 		"0x4A9923385BDB9DAD": {
-			"name": "_GET_LEVEL_BLIP_SPRITE",
+			"name": "GET_STANDARD_BLIP_ENUM_ID",
 			"jhash": "0x87871CE0",
-			"comment": "example:\n\nif (!((v_7)==UI::_4A9923385BDB9DAD())) {\n        UI::SET_BLIP_SPRITE((v_6), (v_7));\n    }\n\n\nThis function is hard-coded to always return 1.",
+			"comment": "This function is hard-coded to always return 1.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x186E5D252FA50E7D": {
-			"name": "_GET_WAYPOINT_BLIP_SPRITE",
+			"name": "GET_WAYPOINT_BLIP_ENUM_ID",
 			"jhash": "0xB9827942",
 			"comment": "",
 			"params": [],
@@ -27241,7 +27241,7 @@
 			"build": "323"
 		},
 		"0xF1A6C18B35BCADE6": {
-			"name": "_0xF1A6C18B35BCADE6",
+			"name": "SHOW_START_MISSION_INSTRUCTIONAL_BUTTON",
 			"jhash": "0xA2CAAB4F",
 			"comment": "",
 			"params": [
@@ -30083,11 +30083,11 @@
 			"build": "323"
 		},
 		"0x3F0CF9CB7E589B88": {
-			"name": "_0x3F0CF9CB7E589B88",
+			"name": "_GET_NORTH_RADAR_BLIP",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Blip",
 			"build": "463"
 		},
 		"0x82CEDC33687E1F50": {
@@ -71804,13 +71804,13 @@
 			"build": "791"
 		},
 		"0xAA6A6098851C396F": {
-			"name": "_0xAA6A6098851C396F",
+			"name": "_SET_LAUNCH_CONTROL_ENABLED",
 			"jhash": "",
-			"comment": "SET_*",
+			"comment": "Related to the lower-end of a vehicles fTractionCurve, e.g., from standing starts and acceleration from low/zero speeds.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -91722,7 +91722,7 @@
 		"0x9A75585FB2E54FAD": {
 			"name": "_0x9A75585FB2E54FAD",
 			"jhash": "0x935A95DA",
-			"comment": "SET_VEHICLE_*",
+			"comment": "Related to car generators & CPlayerSwitchMgrLong\n\nSET_VEHICLE_*\n\nSET_VEHICLE_GENERATORS_EXPECTED_GAMEPLAY_PT ?",
 			"params": [
 				{
 					"type": "float",
@@ -91738,7 +91738,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -99885,13 +99885,13 @@
 			"build": "323"
 		},
 		"0xE6C0C80B8C867537": {
-			"name": "_0xE6C0C80B8C867537",
+			"name": "SET_ENABLE_VEHICLE_SLIPSTREAMING",
 			"jhash": "0xD2B8ACBD",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -99911,9 +99911,9 @@
 			"build": "877"
 		},
 		"0x36492C2F0D134C56": {
-			"name": "_0x36492C2F0D134C56",
+			"name": "_GET_VEHICLE_CURRENT_SLIPSTREAM_DRAFT",
 			"jhash": "0xA4A75FCF",
-			"comment": "Returns a float value related to slipstream.\n\nGET_VEHICLE_*",
+			"comment": "Returns a float value between 0.0 and 3.0 related to its slipstream draft (boost/speedup).\n\nGET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99924,9 +99924,9 @@
 			"build": "323"
 		},
 		"0x48C633E94A8142A7": {
-			"name": "_0x48C633E94A8142A7",
+			"name": "_IS_VEHICLE_SLIPSTREAM_LEADER",
 			"jhash": "",
-			"comment": "IS_VEHICLE_*",
+			"comment": "Returns true if the vehicle is being slipstreamed by another vehicle",
 			"params": [
 				{
 					"type": "Vehicle",
