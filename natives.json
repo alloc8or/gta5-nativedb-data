@@ -17993,7 +17993,7 @@
 		"0xC6372ECD45D73BCD": {
 			"name": "SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU",
 			"jhash": "0xF8FBCC25",
-			"comment": "",
+			"comment": "Sets a flag defining whether or not script draw commands should continue being drawn behind the pause menu. This is usually used for TV channels and other draw commands that are used with a world render target.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -18006,7 +18006,7 @@
 		"0x61BB1D9B3A95D802": {
 			"name": "SET_SCRIPT_GFX_DRAW_ORDER",
 			"jhash": "0xADF81D24",
-			"comment": "Called before drawing stuff.\n\nExamples:\nGRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(7);\nGRAPHICS::DRAW_RECT(0.5, 0.5, 3.0, 3.0, v_4, v_5, v_6, a_0._f172, 0);\n\nGRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);\nGRAPHICS::DRAW_RECT(0.5, 0.5, 1.5, 1.5, 0, 0, 0, 255, 0);",
+			"comment": "Sets the draw order for script draw commands.\n\nExamples from decompiled scripts:\nGRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(7);\nGRAPHICS::DRAW_RECT(0.5, 0.5, 3.0, 3.0, v_4, v_5, v_6, a_0._f172, 0);\n\nGRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);\nGRAPHICS::DRAW_RECT(0.5, 0.5, 1.5, 1.5, 0, 0, 0, 255, 0);",
 			"params": [
 				{
 					"type": "int",
@@ -18019,15 +18019,15 @@
 		"0xB8A850F20A067EB6": {
 			"name": "SET_SCRIPT_GFX_ALIGN",
 			"jhash": "0x228A2598",
-			"comment": "Seems to move all the drawn text on the screen to given coordinates.\nIt also removed all the drawn sprites of my screen so not to sure what the exact function is.\n",
+			"comment": "horizontalAlign: The horizontal alignment. This can be 67 ('C'), 76 ('L'), or 82 ('R').\nverticalAlign: The vertical alignment. This can be 67 ('C'), 66 ('B'), or 84 ('T').\n\nThis function anchors script draws to a side of the safe zone. This needs to be called to make the interface independent of the player's safe zone configuration.\n\nThese values are equivalent to alignX and alignY in common:/data/ui/frontend.xml, which can be used as a baseline for default alignment.\n\nUsing any other value (including 0) will result in the safe zone not being taken into account for this draw. The canonical value for this is 'I' (73).\n\nFor example, you can use SET_SCRIPT_GFX_ALIGN(0, 84) to only scale on the Y axis (to the top), but not change the X axis.\n\nTo reset the value, use RESET_SCRIPT_GFX_ALIGN.",
 			"params": [
 				{
 					"type": "int",
-					"name": "x"
+					"name": "horizontalAlign"
 				},
 				{
 					"type": "int",
-					"name": "y"
+					"name": "verticalAlign"
 				}
 			],
 			"return_type": "void",
@@ -18036,7 +18036,7 @@
 		"0xE3A3DB414A373DAB": {
 			"name": "RESET_SCRIPT_GFX_ALIGN",
 			"jhash": "0x3FE33BD6",
-			"comment": "",
+			"comment": "This function resets the alignment set using SET_SCRIPT_GFX_ALIGN and SET_SCRIPT_GFX_ALIGN_PARAMS to the default values ('I', 'I'; 0, 0, 0, 0).\nThis should be used after having used the aforementioned functions in order to not affect any other scripts attempting to draw.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -18044,7 +18044,7 @@
 		"0xF5A2C681787E579D": {
 			"name": "SET_SCRIPT_GFX_ALIGN_PARAMS",
 			"jhash": "0x76C641E4",
-			"comment": "",
+			"comment": "Sets the draw offset/calculated size for SET_SCRIPT_GFX_ALIGN. If using any alignment other than left/top, the game expects the width/height to be configured using this native in order to get a proper starting position for the draw command.",
 			"params": [
 				{
 					"type": "float",
@@ -18056,11 +18056,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "w"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "h"
 				}
 			],
 			"return_type": "void",
@@ -18069,23 +18069,23 @@
 		"0x6DD8F5AA635EB4B2": {
 			"name": "_GET_SCRIPT_GFX_POSITION",
 			"jhash": "",
-			"comment": "GET_*",
+			"comment": "Calculates the effective X/Y fractions when applying the values set by SET_SCRIPT_GFX_ALIGN and SET_SCRIPT_GFX_ALIGN_PARAMS",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float*",
-					"name": "p2"
+					"name": "calculatedX"
 				},
 				{
 					"type": "float*",
-					"name": "p3"
+					"name": "calculatedY"
 				}
 			],
 			"return_type": "void",
