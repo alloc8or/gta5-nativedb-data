@@ -1132,7 +1132,7 @@
 		"0xC6ED9D5092438D91": {
 			"name": "REGISTER_SCRIPT_WITH_AUDIO",
 			"jhash": "0xA6203643",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "int",
@@ -1145,7 +1145,7 @@
 		"0xA8638BE228D4751A": {
 			"name": "UNREGISTER_SCRIPT_WITH_AUDIO",
 			"jhash": "0x66728EFE",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -8027,7 +8027,7 @@
 		"0xCCD078C2665D2973": {
 			"name": "_0xCCD078C2665D2973",
 			"jhash": "0xCAFEE798",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "BOOL",
@@ -18994,7 +18994,7 @@
 		"0x61F95E5BB3E0A8C6": {
 			"name": "_0x61F95E5BB3E0A8C6",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "Any",
@@ -26236,7 +26236,7 @@
 		"0x038C1F517D7FDCF8": {
 			"name": "SET_TEXT_PROPORTIONAL",
 			"jhash": "0xF49D8A08",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "BOOL",
@@ -26307,7 +26307,7 @@
 		"0x441603240D202FA6": {
 			"name": "SET_TEXT_EDGE",
 			"jhash": "0x3F1A5DAB",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "int",
@@ -28194,7 +28194,7 @@
 		"0xFD1D220394BCB824": {
 			"name": "SET_MULTIPLAYER_HUD_CASH",
 			"jhash": "0xA8DB435E",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "int",
@@ -29080,7 +29080,7 @@
 		"0xB57D8DD645CFA2CF": {
 			"name": "CLEAR_REMINDER_MESSAGE",
 			"jhash": "0x5BBCC934",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -30106,7 +30106,7 @@
 		"0x211C4EF450086857": {
 			"name": "_0x211C4EF450086857",
 			"jhash": "0x801D0D86",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -49102,15 +49102,15 @@
 		"0x3E200C2BCF4164EB": {
 			"name": "NETWORK_SET_RICH_PRESENCE_STRING",
 			"jhash": "0x017E6777",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
 					"type": "const char*",
-					"name": "string"
+					"name": "textLabel"
 				}
 			],
 			"return_type": "void",
@@ -52864,7 +52864,7 @@
 		"0x966DD84FB6A46017": {
 			"name": "_0x966DD84FB6A46017",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -54504,7 +54504,7 @@
 		"0x5C497525F803486B": {
 			"name": "_0x5C497525F803486B",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -63614,7 +63614,7 @@
 		"0xB282749D5E028163": {
 			"name": "_0xB282749D5E028163",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "Any",
@@ -68493,7 +68493,7 @@
 		"0x94D94BF1A75AED3D": {
 			"name": "SET_PED_PLAYS_HEAD_ON_HORN_ANIM_WHEN_DIES_IN_VEHICLE",
 			"jhash": "0x7C563CD2",
-			"comment": "Points to the same function as for example GET_RANDOM_VEHICLE_MODEL_IN_MEMORY and it does absolutely nothing.",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "Ped",
@@ -69439,7 +69439,7 @@
 		"0x1216E0BFA72CC703": {
 			"name": "_0x1216E0BFA72CC703",
 			"jhash": "0x7BD26837",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "Any",
@@ -79198,7 +79198,7 @@
 		"0x69DEA3E9DB727B4C": {
 			"name": "PLAYSTATS_ODDJOB_DONE",
 			"jhash": "0xFE14A8EA",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "Any",
@@ -83038,7 +83038,7 @@
 		"0x4E52E752C76E7E7A": {
 			"name": "_0x4E52E752C76E7E7A",
 			"jhash": "0xA07BAEB9",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "Any",
@@ -87613,7 +87613,7 @@
 		"0xF1B9F16E89E2C93A": {
 			"name": "SET_NEXT_DESIRED_MOVE_STATE",
 			"jhash": "0x4E937D57",
-			"comment": "Not used in the scripts.\n\nBullshit! It's used in spawn_activities",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "float",
