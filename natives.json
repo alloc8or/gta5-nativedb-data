@@ -47553,7 +47553,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "netID"
+					"name": "netId"
 				}
 			],
 			"return_type": "BOOL",
@@ -47565,8 +47565,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "int",
+					"name": "netId"
 				}
 			],
 			"return_type": "BOOL",
