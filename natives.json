@@ -94189,15 +94189,15 @@
 		"0x21543C612379DB3C": {
 			"name": "GET_VEHICLE_RECORDING_ID",
 			"jhash": "0x328D601D",
-			"comment": "",
+			"comment": "See REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "recording"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "script"
 				}
 			],
 			"return_type": "int",
@@ -94206,15 +94206,15 @@
 		"0xAF514CABE74CBF15": {
 			"name": "REQUEST_VEHICLE_RECORDING",
 			"jhash": "0x91AFEFD9",
-			"comment": "",
+			"comment": "Request the vehicle recording defined by the lowercase format string \"%s%03d.yvr\". For example, REQUEST_VEHICLE_RECORDING(1, \"FBIs1UBER\") corresponds to fbis1uber001.yvr.\nFor all vehicle recording/playback natives, \"script\" is a common prefix that usually corresponds to the script/mission the recording is used in, \"recording\" is its int suffix, and \"id\" (e.g., in native GET_TOTAL_DURATION_OF_VEHICLE_RECORDING_ID) corresponds to a unique identifier within the recording streaming module.\nNote that only 24 recordings (hardcoded in multiple places) can ever active at a given time before clobbering begins.",
 			"params": [
 				{
 					"type": "int",
-					"name": "i"
+					"name": "recording"
 				},
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "script"
 				}
 			],
 			"return_type": "void",
@@ -94223,15 +94223,15 @@
 		"0x300D614A4C785FC4": {
 			"name": "HAS_VEHICLE_RECORDING_BEEN_LOADED",
 			"jhash": "0xF52CD7F5",
-			"comment": "",
+			"comment": "See REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "recording"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "script"
 				}
 			],
 			"return_type": "BOOL",
@@ -94240,15 +94240,15 @@
 		"0xF1160ACCF98A3FC8": {
 			"name": "REMOVE_VEHICLE_RECORDING",
 			"jhash": "0xD3C05B00",
-			"comment": "",
+			"comment": "See REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "recording"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "script"
 				}
 			],
 			"return_type": "void",
@@ -94274,19 +94274,19 @@
 		"0xD242728AA6F0FBA2": {
 			"name": "GET_POSITION_OF_VEHICLE_RECORDING_AT_TIME",
 			"jhash": "0x7178558D",
-			"comment": "p1 is some kind of tolerance",
+			"comment": "This native does no interpolation between pathpoints. The same position will be returned for all times up to the next pathpoint in the recording.\n\nSee REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "recording"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "script"
 				}
 			],
 			"return_type": "Vector3",
@@ -94312,19 +94312,19 @@
 		"0x2058206FBE79A8AD": {
 			"name": "GET_ROTATION_OF_VEHICLE_RECORDING_AT_TIME",
 			"jhash": "0xD96DEC68",
-			"comment": "",
+			"comment": "This native does no interpolation between pathpoints. The same rotation will be returned for all times up to the next pathpoint in the recording.\n\nSee REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "recording"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "script"
 				}
 			],
 			"return_type": "Vector3",
@@ -94336,8 +94336,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "float",
@@ -94346,15 +94346,15 @@
 		"0x0E48D1C262390950": {
 			"name": "GET_TOTAL_DURATION_OF_VEHICLE_RECORDING",
 			"jhash": "0x5B35EEB7",
-			"comment": "",
+			"comment": "See REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "recording"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "script"
 				}
 			],
 			"return_type": "float",
@@ -94366,8 +94366,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "float",
@@ -94376,11 +94376,11 @@
 		"0x5746F3A7AB7FE544": {
 			"name": "GET_TIME_POSITION_IN_RECORDING",
 			"jhash": "0xF8C3E4A2",
-			"comment": "",
+			"comment": "Can be used with GET_TOTAL_DURATION_OF_VEHICLE_RECORDING{_ID} to compute a percentage.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "float",
@@ -94389,7 +94389,7 @@
 		"0x3F878F92B3A7A071": {
 			"name": "START_PLAYBACK_RECORDED_VEHICLE",
 			"jhash": "0xCF614CA8",
-			"comment": "",
+			"comment": "p3 is some flag related to 'trailers' (invokes CVehicle::GetTrailer).\n\nSee REQUEST_VEHICLE_RECORDING",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -94397,11 +94397,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "recording"
 				},
 				{
 					"type": "const char*",
-					"name": "playback"
+					"name": "script"
 				},
 				{
 					"type": "BOOL",
@@ -94414,40 +94414,40 @@
 		"0x7D80FD645D4DA346": {
 			"name": "START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS",
 			"jhash": "0x4E721AD2",
-			"comment": "",
+			"comment": "flags requires further research, e.g., 0x4/0x8 are related to the AI driving task and 0x20 is internally set and interacts with dynamic entity components.\n\ntime, often zero and capped at 500, is related to SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER",
 			"params": [
 				{
 					"type": "Vehicle",
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "recording"
 				},
 				{
 					"type": "const char*",
-					"name": "playback"
+					"name": "script"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "time"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "drivingStyle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x1F2E4E06DEA8992B": {
-			"name": "_0x1F2E4E06DEA8992B",
+			"name": "FORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE",
 			"jhash": "0x01B91CD0",
-			"comment": "",
+			"comment": "Often called after START_PLAYBACK_RECORDED_VEHICLE and SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE; similar in use to FORCE_ENTITY_AI_AND_ANIMATION_UPDATE.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -94572,27 +94572,27 @@
 		"0x29DE5FA52D00428C": {
 			"name": "START_PLAYBACK_RECORDED_VEHICLE_USING_AI",
 			"jhash": "0x8DE8E24E",
-			"comment": "",
+			"comment": "AI abides by the provided driving style (e.g., stopping at red lights or waiting behind traffic) while executing the specificed vehicle recording.\n\n0x1F2E4E06DEA8992B is a related native that deals with the AI physics for such recordings.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "recording"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "script"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "speed"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "drivingStyle"
 				}
 			],
 			"return_type": "void",
@@ -94601,15 +94601,15 @@
 		"0x9438F7AD68771A20": {
 			"name": "SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE",
 			"jhash": "0xCF3EFA4B",
-			"comment": "",
+			"comment": "SET_TIME_POSITION_IN_RECORDING can be emulated by: desired_time - GET_TIME_POSITION_IN_RECORDING(vehicle)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -94618,7 +94618,7 @@
 		"0xA549C3B37EA28131": {
 			"name": "SET_PLAYBACK_TO_USE_AI",
 			"jhash": "0xB536CCD7",
-			"comment": "",
+			"comment": "Identical to SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER with 0 as arguments for p1 and p3.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -94626,7 +94626,7 @@
 				},
 				{
 					"type": "int",
-					"name": "flag"
+					"name": "drivingStyle"
 				}
 			],
 			"return_type": "void",
@@ -94638,16 +94638,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "time"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "drivingStyle"
 				},
 				{
 					"type": "BOOL",
@@ -94739,11 +94739,11 @@
 		"0x063AE2B2CC273588": {
 			"name": "_0x063AE2B2CC273588",
 			"jhash": "0x2EF8435C",
-			"comment": "",
+			"comment": "A vehicle recording playback flag only used in jewelry_heist",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
