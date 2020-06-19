@@ -43638,9 +43638,9 @@
 			"build": "323"
 		},
 		"0x85443FF4C328F53B": {
-			"name": "NETWORK_HAVE_JUST_UPLOAD_LATER",
+			"name": "NETWORK_HAS_VALID_ROS_CREDENTIALS",
 			"jhash": "0x3FB40673",
-			"comment": "Returns whether the Rockstar game services are available or not",
+			"comment": "Returns whether the signed-in user has valid Rockstar Online Services (ROS) credentials.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
