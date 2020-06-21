@@ -61078,7 +61078,7 @@
 		"0x9A9112A0FE9A4713": {
 			"name": "GET_VEHICLE_PED_IS_IN",
 			"jhash": "0xAFE92319",
-			"comment": "Gets the vehicle the specified Ped is/was in depending on bool value.\n\n[False = CurrentVehicle, True = LastVehicle]",
+			"comment": "Gets the vehicle the specified Ped is in.\n\nIf the Ped is not in a vehicle and includeLastVehicle is true, the vehicle they were last in is returned.",
 			"params": [
 				{
 					"type": "Ped",
@@ -61086,7 +61086,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "lastVehicle"
+					"name": "includeLastVehicle"
 				}
 			],
 			"return_type": "Vehicle",
