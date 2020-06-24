@@ -76901,43 +76901,52 @@
 			"build": "323"
 		},
 		"0x1F1E9682483697C7": {
-			"name": "_0x1F1E9682483697C7",
+			"name": "SC_PRESENCE_ATTR_SET_INT",
 			"jhash": "0x90C74343",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "attrHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xC4C4575F62534A24": {
-			"name": "_0xC4C4575F62534A24",
-			"jhash": "",
+			"name": "SC_PRESENCE_ATTR_SET_FLOAT",
+			"jhash": "0x94BF0D35",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "attrHash"
+				},
+				{
+					"type": "float",
+					"name": "value"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
 		"0x287F1F75D2803595": {
-			"name": "_0x287F1F75D2803595",
+			"name": "SC_PRESENCE_ATTR_SET_STRING",
 			"jhash": "0x3ACE6D6B",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "attrHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "value"
 				}
 			],
 			"return_type": "BOOL",
