@@ -76553,7 +76553,7 @@
 	},
 	"SOCIALCLUB": {
 		"0x03A93FF1A2CA0864": {
-			"name": "_GET_TOTAL_SC_INBOX_IDS",
+			"name": "SC_INBOX_GET_TOTAL_NUM_MESSAGES",
 			"jhash": "0x6BE5DF29",
 			"comment": "",
 			"params": [],
