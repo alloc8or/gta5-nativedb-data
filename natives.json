@@ -44891,13 +44891,13 @@
 			"build": "323"
 		},
 		"0x7AC752103856FB20": {
-			"name": "_0x7AC752103856FB20",
+			"name": "NETWORK_SET_SCRIPT_READY_FOR_EVENTS",
 			"jhash": "0xA639DCA2",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
