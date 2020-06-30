@@ -53467,7 +53467,7 @@
 			"build": "323"
 		},
 		"0xA7BAB11E7C9C6C5A": {
-			"name": "_GET_CONTENT_CATEGORY",
+			"name": "UGC_GET_CONTENT_CATEGORY",
 			"jhash": "0x5E8A7559",
 			"comment": "",
 			"params": [
