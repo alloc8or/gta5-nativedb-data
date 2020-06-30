@@ -8297,10 +8297,10 @@
 		"0x7660C6E75D3A078E": {
 			"name": "STOP_CINEMATIC_SHOT",
 			"jhash": "0xD78358C5",
-			"comment": "Only used once in carsteal3 with p0 set to -1096069633",
+			"comment": "Only used once in carsteal3 with p0 set to -1096069633 (CAMERA_MAN_SHOT)",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
