@@ -21201,13 +21201,13 @@
 			"build": "323"
 		},
 		"0x27E32866E9A5C416": {
-			"name": "_0x27E32866E9A5C416",
-			"jhash": "",
+			"name": "SET_PARTICLE_FX_BULLET_IMPACT_SCALE",
+			"jhash": "0xC1AD5DDF",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -21215,7 +21215,7 @@
 		},
 		"0xBB90E12CAC1DAB25": {
 			"name": "_0xBB90E12CAC1DAB25",
-			"jhash": "",
+			"jhash": "0x3968E915",
 			"comment": "",
 			"params": [
 				{
@@ -21228,7 +21228,7 @@
 		},
 		"0xCA4AE345A153D573": {
 			"name": "_0xCA4AE345A153D573",
-			"jhash": "",
+			"jhash": "0x64BA4648",
 			"comment": "",
 			"params": [
 				{
@@ -21241,7 +21241,7 @@
 		},
 		"0x54E22EA2C1956A8D": {
 			"name": "_0x54E22EA2C1956A8D",
-			"jhash": "",
+			"jhash": "0x8BE3D47F",
 			"comment": "",
 			"params": [
 				{
@@ -21254,7 +21254,7 @@
 		},
 		"0x949F397A288B28B3": {
 			"name": "_0x949F397A288B28B3",
-			"jhash": "",
+			"jhash": "0xE3880F5A",
 			"comment": "",
 			"params": [
 				{
@@ -21293,7 +21293,7 @@
 		},
 		"0x9B079E5221D984D3": {
 			"name": "_0x9B079E5221D984D3",
-			"jhash": "",
+			"jhash": "0x447A9EB9",
 			"comment": "FORCE_*",
 			"params": [
 				{
