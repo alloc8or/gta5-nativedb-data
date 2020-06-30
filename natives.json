@@ -52822,11 +52822,11 @@
 			"build": "323"
 		},
 		"0xC7ABAC5DE675EE3B": {
-			"name": "_0xC7ABAC5DE675EE3B",
+			"name": "CLOUD_IS_CHECKING_AVAILABILITY",
 			"jhash": "0x32A4EB22",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x0B0CC10720653F3B": {
@@ -52834,7 +52834,7 @@
 			"jhash": "0x9262744C",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x8B0C2964BA471961": {
