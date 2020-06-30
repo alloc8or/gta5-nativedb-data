@@ -52693,16 +52693,16 @@
 			"build": "323"
 		},
 		"0x722F5D28B61C5EA8": {
-			"name": "_0x722F5D28B61C5EA8",
+			"name": "GET_COMMERCE_ITEM_TEXTURENAME",
 			"jhash": "0x44A58B0A",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "323"
 		},
 		"0x883D79C4071E18B3": {
