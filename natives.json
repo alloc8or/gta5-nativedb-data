@@ -32072,9 +32072,9 @@
 			"build": "323"
 		},
 		"0xA8AE43AEC1A61314": {
-			"name": "_LOCALIZATION_GET_USER_LANGUAGE",
+			"name": "_LOCALIZATION_GET_SYSTEM_DATE_FORMAT",
 			"jhash": "",
-			"comment": "Possible return values: 0, 1, 2\nIt's used to check the user's date format.",
+			"comment": "Possible return values: 0, 1, 2",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
