@@ -72571,9 +72571,9 @@
 			"build": "323"
 		},
 		"0xDC64D2C53493ED12": {
-			"name": "_0xDC64D2C53493ED12",
+			"name": "REPORT_POLICE_SPOTTED_PLAYER",
 			"jhash": "0xD15C4B1C",
-			"comment": "Has something to do with police.\n\nRE*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
