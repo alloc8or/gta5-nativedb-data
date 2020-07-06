@@ -85794,7 +85794,7 @@
 			"build": "323"
 		},
 		"0x6919A2F136426098": {
-			"name": "_0x6919A2F136426098",
+			"name": "TASK_WANDER_SPECIFIC",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -88565,7 +88565,7 @@
 			"build": "323"
 		},
 		"0xEAF66ACDDC794793": {
-			"name": "_0xEAF66ACDDC794793",
+			"name": "TASK_RAPPEL_DOWN_WALL",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -98068,16 +98068,16 @@
 			"build": "323"
 		},
 		"0xF7AF4F159FF99F97": {
-			"name": "_0xF7AF4F159FF99F97",
+			"name": "_GET_MAKE_NAME_FROM_VEHICLE_MODEL",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1868"
 		},
 		"0x4EC6CFBC7B2E9536": {
