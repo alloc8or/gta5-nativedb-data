@@ -2570,6 +2570,31 @@
 			"return_type": "void",
 			"build": "1493"
 		},
+		"0x55ECF4D13D9903B0": {
+			"name": "_0x55ECF4D13D9903B0",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0xBB6F1CAEC68B0BCE": {
 			"name": "SET_VEHICLE_RADIO_LOUD",
 			"jhash": "0x8D9EDD99",
@@ -3327,6 +3352,23 @@
 			],
 			"return_type": "void",
 			"build": "1734"
+		},
+		"0xAB6781A5F3101470": {
+			"name": "_0xAB6781A5F3101470",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
 		},
 		"0xA9A41C1E940FB0E8": {
 			"name": "DISABLE_PED_PAIN_AUDIO",
@@ -10990,6 +11032,27 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0x394BDE2A7BBA031E": {
+			"name": "_0x394BDE2A7BBA031E",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "Any",
+			"build": "1868"
+		},
 		"0x0267D00AF114F17A": {
 			"name": "HAS_ENTITY_CLEAR_LOS_TO_ENTITY_IN_FRONT",
 			"jhash": "0x210D87C8",
@@ -18266,6 +18329,75 @@
 			"return_type": "void",
 			"build": "877"
 		},
+		"0x95812F9B26074726": {
+			"name": "_0x95812F9B26074726",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
+				},
+				{
+					"type": "Any",
+					"name": "p11"
+				},
+				{
+					"type": "Any",
+					"name": "p12"
+				},
+				{
+					"type": "Any",
+					"name": "p13"
+				},
+				{
+					"type": "Any",
+					"name": "p14"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0x9CD43EEE12BF4DD0": {
 			"name": "ADD_ENTITY_ICON",
 			"jhash": "0xF3027D21",
@@ -18522,6 +18654,23 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0xF816F2933752322D": {
+			"name": "_0xF816F2933752322D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
 		},
 		"0x113D2C5DC57E1774": {
 			"name": "SET_TV_AUDIO_FRONTEND",
@@ -26049,6 +26198,19 @@
 			"return_type": "void",
 			"build": "1493"
 		},
+		"0x889329C80FE5963C": {
+			"name": "_0x889329C80FE5963C",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0x02CFBA0C9E9275CE": {
 			"name": "FLASH_ABILITY_BAR",
 			"jhash": "0x3648960D",
@@ -32805,6 +32967,19 @@
 			"return_type": "float",
 			"build": "323"
 		},
+		"0x7F06937B0CDCBC1A": {
+			"name": "_0x7F06937B0CDCBC1A",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0xC5868A966E5BE3AE": {
 			"name": "GET_SNOW_LEVEL",
 			"jhash": "0x1B09184F",
@@ -33563,6 +33738,67 @@
 			],
 			"return_type": "BOOL",
 			"build": "323"
+		},
+		"0x39455BF4F4F55186": {
+			"name": "_0x39455BF4F4F55186",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
+				},
+				{
+					"type": "Any",
+					"name": "p11"
+				},
+				{
+					"type": "Any",
+					"name": "p12"
+				}
+			],
+			"return_type": "Any",
+			"build": "1868"
 		},
 		"0xADCDE75E1C60F32D": {
 			"name": "IS_POSITION_OCCUPIED",
@@ -36843,6 +37079,14 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x5896F2BD5683A4E1": {
+			"name": "_0x5896F2BD5683A4E1",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0xD10F442036302D50": {
 			"name": "SET_DISPATCH_SPAWN_LOCATION",
 			"jhash": "0x6F009E33",
@@ -38435,7 +38679,8 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1734"
+			"build": "1734",
+			"unused": true
 		},
 		"0xC8407624CEF2354B": {
 			"name": "_NETWORK_EARN_FROM_PREMIUM_JOB",
@@ -41649,6 +41894,31 @@
 			"return_type": "void",
 			"build": "1290"
 		},
+		"0x487009DD91D93429": {
+			"name": "_0x487009DD91D93429",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0x0E1E2FF3F4EC11AA": {
 			"name": "_NETWORK_EARN_FROM_SELL_BASE",
 			"jhash": "",
@@ -42798,6 +43068,342 @@
 			"return_type": "void",
 			"build": "1734"
 		},
+		"0x870289A558348378": {
+			"name": "_0x870289A558348378",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x5574637681911FDA": {
+			"name": "_0x5574637681911FDA",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0xD30E8392F407C328": {
+			"name": "_0xD30E8392F407C328",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0xB5B58E24868CB09E": {
+			"name": "_0xB5B58E24868CB09E",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0xEAD3D81F2C3A1458": {
+			"name": "_0xEAD3D81F2C3A1458",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x43AA7FAC4E6D6687": {
+			"name": "_0x43AA7FAC4E6D6687",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x72E7C7B9615FA3C3": {
+			"name": "_0x72E7C7B9615FA3C3",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x4C3B75694F7E0D9C": {
+			"name": "_0x4C3B75694F7E0D9C",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0xD29334ED1A256DBF": {
+			"name": "_0xD29334ED1A256DBF",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0xA95CFB4E02390842": {
+			"name": "_0xA95CFB4E02390842",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x0DD362F14F18942A": {
+			"name": "_0x0DD362F14F18942A",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "1868",
+			"unused": true
+		},
+		"0x3EC7471E6909798A": {
+			"name": "_0x3EC7471E6909798A",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0x76EF28DA05EA395A": {
 			"name": "NETWORK_GET_VC_BANK_BALANCE",
 			"jhash": "0x16184FB5",
@@ -43684,14 +44290,6 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
-		},
-		"0x39EEE6E1039A3517": {
-			"name": "_NETWORK_GET_HOST",
-			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Player",
-			"build": "1734"
 		},
 		"0x4237E822315D8BA9": {
 			"name": "_0x4237E822315D8BA9",
@@ -46969,6 +47567,40 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0xEA8C0DDB10E2822A": {
+			"name": "_0xEA8C0DDB10E2822A",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0xD6D7478CA62B8D41": {
+			"name": "_0xD6D7478CA62B8D41",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0x64F62AFB081E260D": {
 			"name": "NETWORK_FINISH_BROADCASTING_DATA",
 			"jhash": "0xA71A1D2A",
@@ -49760,19 +50392,6 @@
 			"return_type": "void",
 			"build": "505"
 		},
-		"0x6540EDC4F45DA089": {
-			"name": "_0x6540EDC4F45DA089",
-			"jhash": "",
-			"comment": "SET_PLAYER_*",
-			"params": [
-				{
-					"type": "Player",
-					"name": "player"
-				}
-			],
-			"return_type": "void",
-			"build": "1734"
-		},
 		"0xAAA553E7DD28A457": {
 			"name": "SET_NETWORK_CUTSCENE_ENTITIES",
 			"jhash": "0xFD0F7EDD",
@@ -52315,6 +52934,23 @@
 			],
 			"return_type": "void",
 			"build": "1734"
+		},
+		"0x3FC795691834481D": {
+			"name": "_0x3FC795691834481D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
 		},
 		"0x301A42153C9AD707": {
 			"name": "NETWORK_EXPLODE_VEHICLE",
@@ -55266,6 +55902,19 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x006E4B040ED37EC3": {
+			"name": "_0x006E4B040ED37EC3",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0x6F8838D03D1DC226": {
 			"name": "ADD_DOOR_TO_SYSTEM",
 			"jhash": "0x9D2D778D",
@@ -55445,6 +56094,19 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0xE851471AEFC3374F": {
+			"name": "_0xE851471AEFC3374F",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1868"
 		},
 		"0x65499865FCA6E5EC": {
 			"name": "DOOR_SYSTEM_GET_OPEN_RATIO",
@@ -67544,6 +68206,19 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0xC30BDAEE47256C13": {
+			"name": "_0xC30BDAEE47256C13",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1868"
+		},
 		"0xE1E65CA8AC9C00ED": {
 			"name": "PLAY_FACIAL_ANIM",
 			"jhash": "0x1F6CCDDE",
@@ -70988,6 +71663,23 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0xA1AE736541B0FCA3": {
+			"name": "_0xA1AE736541B0FCA3",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0xF159A63806BB5BA8": {
 			"name": "ROPE_DRAW_SHADOW_ENABLED",
 			"jhash": "0x51523B8C",
@@ -73358,6 +74050,19 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0xDCC07526B8EC45AF": {
+			"name": "_0xDCC07526B8EC45AF",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1868"
+		},
 		"0x6BC97F4F4BB3C04B": {
 			"name": "_SET_PLAYER_INVINCIBLE_KEEP_RAGDOLL_ENABLED",
 			"jhash": "",
@@ -75348,6 +76053,40 @@
 			],
 			"return_type": "void",
 			"build": "1180"
+		},
+		"0x9097EB6D4BB9A12A": {
+			"name": "_0x9097EB6D4BB9A12A",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x9F260BFB59ADBCA3": {
+			"name": "_0x9F260BFB59ADBCA3",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
 		},
 		"0x7BAE68775557AE0B": {
 			"name": "_0x7BAE68775557AE0B",
@@ -77676,6 +78415,10 @@
 				{
 					"type": "int",
 					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
 				}
 			],
 			"return_type": "BOOL",
@@ -82350,6 +83093,23 @@
 			"return_type": "void",
 			"build": "1734"
 		},
+		"0x4FCDBD3F0A813C25": {
+			"name": "_0x4FCDBD3F0A813C25",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0x1A0D4A6C336B7BC5": {
 			"name": "_PLAYSTATS_CASINO_MISSION_ENDED",
 			"jhash": "",
@@ -82362,6 +83122,204 @@
 			],
 			"return_type": "void",
 			"build": "1734"
+		},
+		"0xDFBD93BF2943E29B": {
+			"name": "_0xDFBD93BF2943E29B",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x92FC0EEDFAC04A14": {
+			"name": "_0x92FC0EEDFAC04A14",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x0077F15613D36993": {
+			"name": "_0x0077F15613D36993",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0xF9096193DF1F99D4": {
+			"name": "_0xF9096193DF1F99D4",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x2E0259BABC27A327": {
+			"name": "_0x2E0259BABC27A327",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x53C31853EC9531FF": {
+			"name": "_0x53C31853EC9531FF",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x810B5FCC52EC7FF0": {
+			"name": "_0x810B5FCC52EC7FF0",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x5BF29846C6527C54": {
+			"name": "_0x5BF29846C6527C54",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0xC03FAB2C2F92289B": {
+			"name": "_0xC03FAB2C2F92289B",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x5CDAED54B34B0ED0": {
+			"name": "_0x5CDAED54B34B0ED0",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x4AFF7E02E485E92B": {
+			"name": "_0x4AFF7E02E485E92B",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "1868"
 		}
 	},
 	"STREAMING": {
@@ -84835,6 +85793,31 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x6919A2F136426098": {
+			"name": "_0x6919A2F136426098",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0x0F3E34E968EA374E": {
 			"name": "TASK_VEHICLE_PARK",
 			"jhash": "0x5C85FF90",
@@ -86702,7 +87685,7 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"				
+					"name": "speed"
 				},
 				{
 					"type": "int",
@@ -87580,6 +88563,72 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0xEAF66ACDDC794793": {
+			"name": "_0xEAF66ACDDC794793",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x9D252648778160DF": {
+			"name": "_0x9D252648778160DF",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1868"
 		},
 		"0xAAA34F8A7CB32098": {
 			"name": "CLEAR_PED_TASKS_IMMEDIATELY",
@@ -90749,6 +91798,71 @@
 			],
 			"return_type": "void",
 			"build": "1493"
+		},
+		"0x29682E2CCF21E9B5": {
+			"name": "_0x29682E2CCF21E9B5",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
+				},
+				{
+					"type": "Any",
+					"name": "p11"
+				},
+				{
+					"type": "Any",
+					"name": "p12"
+				},
+				{
+					"type": "Any",
+					"name": "p13"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
 		},
 		"0x921CE12C489C4C41": {
 			"name": "IS_TASK_MOVE_NETWORK_ACTIVE",
@@ -96953,6 +98067,19 @@
 			"return_type": "const char*",
 			"build": "323"
 		},
+		"0xF7AF4F159FF99F97": {
+			"name": "_0xF7AF4F159FF99F97",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "1868"
+		},
 		"0x4EC6CFBC7B2E9536": {
 			"name": "GET_VEHICLE_DEFORMATION_AT_POS",
 			"jhash": "0xABF02075",
@@ -101229,6 +102356,23 @@
 			"return_type": "void",
 			"build": "1103"
 		},
+		"0x4AD280EB48B2D8E6": {
+			"name": "_0x4AD280EB48B2D8E6",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
 		"0xB68CFAF83A02768D": {
 			"name": "_0xB68CFAF83A02768D",
 			"jhash": "",
@@ -103411,6 +104555,65 @@
 			],
 			"return_type": "void",
 			"build": "1604"
+		},
+		"0x55EAB010FAEE9380": {
+			"name": "_0x55EAB010FAEE9380",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "1868"
+		},
+		"0x74C68EF97645E79D": {
+			"name": "_0x74C68EF97645E79D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
+		},
+		"0x01894E2EDE923CA2": {
+			"name": "_0x01894E2EDE923CA2",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
 		}
 	},
 	"WATER": {
@@ -104077,6 +105280,23 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0x24C024BA8379A70A": {
+			"name": "_0x24C024BA8379A70A",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1868"
 		},
 		"0xBF0FD6E56C964FCB": {
 			"name": "GIVE_WEAPON_TO_PED",
