@@ -86993,7 +86993,7 @@
 		"0xB0760331C7AA4155": {
 			"name": "GET_IS_TASK_ACTIVE",
 			"jhash": "0x86FDDF55",
-			"comment": "Task index enum: https://pastebin.com/K5t9T3ky",
+			"comment": "Task index enum: https://alloc8or.re/gta5/doc/enums/eTaskTypeIndex.txt",
 			"params": [
 				{
 					"type": "Ped",
