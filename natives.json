@@ -52937,7 +52937,7 @@
 		},
 		"0x3FC795691834481D": {
 			"name": "_0x3FC795691834481D",
-			"jhash": "",
+			"jhash": "nullsub, doesn't do anything",
 			"comment": "",
 			"params": [
 				{
@@ -71666,14 +71666,14 @@
 		"0xA1AE736541B0FCA3": {
 			"name": "_0xA1AE736541B0FCA3",
 			"jhash": "",
-			"comment": "",
+			"comment": "ROPE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int*",
+					"name": "ropeId"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -74053,14 +74053,14 @@
 		"0xDCC07526B8EC45AF": {
 			"name": "_0xDCC07526B8EC45AF",
 			"jhash": "",
-			"comment": "",
+			"comment": "Always returns false.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1868"
 		},
 		"0x6BC97F4F4BB3C04B": {
@@ -76057,15 +76057,15 @@
 		"0x9097EB6D4BB9A12A": {
 			"name": "_0x9097EB6D4BB9A12A",
 			"jhash": "",
-			"comment": "",
+			"comment": "ADD_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -76074,15 +76074,15 @@
 		"0x9F260BFB59ADBCA3": {
 			"name": "_0x9F260BFB59ADBCA3",
 			"jhash": "",
-			"comment": "",
+			"comment": "REMOVE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -102345,12 +102345,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "togle"
 				}
 			],
 			"return_type": "void",
@@ -102362,12 +102362,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "togle"
 				}
 			],
 			"return_type": "void",
@@ -104557,59 +104557,59 @@
 			"build": "1604"
 		},
 		"0x55EAB010FAEE9380": {
-			"name": "_0x55EAB010FAEE9380",
+			"name": "_GET_TYRE_HEALTH",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wheelIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "1868"
 		},
 		"0x74C68EF97645E79D": {
-			"name": "_0x74C68EF97645E79D",
+			"name": "_SET_TYRE_HEALTH",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wheelIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "health"
 				}
 			],
 			"return_type": "void",
 			"build": "1868"
 		},
 		"0x01894E2EDE923CA2": {
-			"name": "_0x01894E2EDE923CA2",
+			"name": "_SET_TYRE_WEAR_MULTIPLIER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wheelIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
