@@ -18495,7 +18495,7 @@
 			"build": "323"
 		},
 		"0x338D9F609FD632DB": {
-			"name": "_SET_BINK_MOVIE_REQUESTED",
+			"name": "_SET_BINK_MOVIE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -18596,7 +18596,7 @@
 			"build": "1290"
 		},
 		"0x0CB6B3446855B57A": {
-			"name": "_SET_BINK_MOVIE_PROGRESS",
+			"name": "_SET_BINK_MOVIE_TIME",
 			"jhash": "",
 			"comment": "In percentage: 0.0 - 100.0",
 			"params": [
@@ -18613,7 +18613,7 @@
 			"build": "1290"
 		},
 		"0x8E17DDD6B9D5BF29": {
-			"name": "_GET_BINK_MOVIE_PROGRESS",
+			"name": "_GET_BINK_MOVIE_TIME",
 			"jhash": "",
 			"comment": "In percentage: 0.0 - 100.0",
 			"params": [
@@ -18656,16 +18656,16 @@
 			"build": "323"
 		},
 		"0xF816F2933752322D": {
-			"name": "_0xF816F2933752322D",
+			"name": "_SET_BINK_MOVIE_UNK_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "binkMovie"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -18675,7 +18675,7 @@
 		"0x113D2C5DC57E1774": {
 			"name": "SET_TV_AUDIO_FRONTEND",
 			"jhash": "0x2E0DFA35",
-			"comment": "Might be more appropriate in AUDIO?\n\nRockstar made it like this.\n\nProbably changes tvs from being a 3d audio to being \"global\" audio",
+			"comment": "Probably changes tvs from being a 3d audio to being \"global\" audio",
 			"params": [
 				{
 					"type": "BOOL",
@@ -18686,17 +18686,17 @@
 			"build": "323"
 		},
 		"0x6805D58CAA427B72": {
-			"name": "_0x6805D58CAA427B72",
+			"name": "_SET_BINK_SHOULD_SKIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "binkMovie"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "bShouldSkip"
 				}
 			],
 			"return_type": "void",
