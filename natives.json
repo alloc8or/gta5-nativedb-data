@@ -32947,13 +32947,13 @@
 			"build": "323"
 		},
 		"0x643E26EA6E024D92": {
-			"name": "_SET_RAIN_FX_INTENSITY",
+			"name": "_SET_RAIN_LEVEL",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "intensity"
+					"name": "level"
 				}
 			],
 			"return_type": "void",
