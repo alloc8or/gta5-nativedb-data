@@ -52937,8 +52937,8 @@
 		},
 		"0x3FC795691834481D": {
 			"name": "_0x3FC795691834481D",
-			"jhash": "nullsub, doesn't do anything",
-			"comment": "",
+			"jhash": "",
+			"comment": "nullsub, doesn't do anything",
 			"params": [
 				{
 					"type": "Any",
