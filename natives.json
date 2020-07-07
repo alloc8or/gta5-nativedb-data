@@ -26199,13 +26199,13 @@
 			"build": "1493"
 		},
 		"0x889329C80FE5963C": {
-			"name": "_0x889329C80FE5963C",
+			"name": "_SET_ALLOW_ABILITY_BAR_IN_MULTIPLAYER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
