@@ -32968,13 +32968,13 @@
 			"build": "323"
 		},
 		"0x7F06937B0CDCBC1A": {
-			"name": "_0x7F06937B0CDCBC1A",
+			"name": "_SET_SNOW_LEVEL",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "level"
 				}
 			],
 			"return_type": "void",
