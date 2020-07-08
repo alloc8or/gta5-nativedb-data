@@ -45115,7 +45115,7 @@
 			"build": "323"
 		},
 		"0xC19F6C8E7865A6FF": {
-			"name": "_NETWORK_SESSION_HOSTED",
+			"name": "NETWORK_SESSION_VALIDATE_JOIN",
 			"jhash": "0xF3768F90",
 			"comment": "",
 			"params": [
