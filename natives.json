@@ -45692,13 +45692,13 @@
 			"build": "323"
 		},
 		"0x5B8ED3DB018927B1": {
-			"name": "_0x5B8ED3DB018927B1",
+			"name": "NETWORK_SESSION_VOICE_SET_TIMEOUT",
 			"jhash": "0x6EFC2FD0",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "timeout"
 				}
 			],
 			"return_type": "void",
