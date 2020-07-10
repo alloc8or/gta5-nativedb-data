@@ -53429,21 +53429,21 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x3A3D5568AF297CD5": {
-			"name": "_0x3A3D5568AF297CD5",
+			"name": "CLOUD_DID_REQUEST_SUCCEED",
 			"jhash": "0x9B9AFFF1",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "BOOL",
