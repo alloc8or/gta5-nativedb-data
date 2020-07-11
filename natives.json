@@ -57559,26 +57559,26 @@
 			"build": "323"
 		},
 		"0xFC481C641EBBD27D": {
-			"name": "_0xFC481C641EBBD27D",
-			"jhash": "",
+			"name": "IS_OBJECT_A_PORTABLE_PICKUP",
+			"jhash": "0x0F0E94FF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1365"
 		},
 		"0x0378C08504160D0D": {
-			"name": "_0x0378C08504160D0D",
-			"jhash": "",
+			"name": "IS_OBJECT_A_PICKUP",
+			"jhash": "0x93D23399",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "BOOL",
