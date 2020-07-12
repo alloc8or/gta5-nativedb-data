@@ -70369,30 +70369,30 @@
 			"build": "323"
 		},
 		"0x394B9CD12435C981": {
-			"name": "_SET_SYNCHRONIZED_SCENE_OCCLUSION_PORTAL",
+			"name": "SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME",
 			"jhash": "0x2DE48DA1",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "sceneID"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x7F2F4F13AC5257EF": {
-			"name": "_0x7F2F4F13AC5257EF",
+			"name": "IS_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME",
 			"jhash": "0x72CF2514",
-			"comment": "IS_S*",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "sceneID"
 				}
 			],
 			"return_type": "BOOL",
