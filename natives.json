@@ -87027,7 +87027,7 @@
 		"0x534AEBA6E5ED4CAB": {
 			"name": "GET_ACTIVE_VEHICLE_MISSION_TYPE",
 			"jhash": "0xAFA914EF",
-			"comment": "",
+			"comment": "https://alloc8or.re/gta5/doc/enums/eVehicleMissionType.txt",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -87481,23 +87481,23 @@
 		"0x659427E0EF36BCDE": {
 			"name": "TASK_VEHICLE_MISSION",
 			"jhash": "0x20609E56",
-			"comment": "",
+			"comment": "missionType: https://alloc8or.re/gta5/doc/enums/eVehicleMissionType.txt",
 			"params": [
 				{
-					"type": "int",
-					"name": "p0"
-				},
-				{
-					"type": "int",
-					"name": "p1"
+					"type": "Ped",
+					"name": "driver"
 				},
 				{
 					"type": "Vehicle",
-					"name": "veh"
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Vehicle",
+					"name": "vehicle2"
+				},
+				{
+					"type": "int",
+					"name": "missionType"
 				},
 				{
 					"type": "float",
@@ -87526,7 +87526,7 @@
 		"0x9454528DF15D657A": {
 			"name": "TASK_VEHICLE_MISSION_PED_TARGET",
 			"jhash": "0xC81C4677",
-			"comment": "Modes:\n8= flees\n1=drives around the ped\n4=drives and stops near\n7=follows\n10=follows to the left\n11=follows to the  right\n12 = follows behind\n13=follows ahead\n14=follows, stop when near",
+			"comment": "See TASK_VEHICLE_MISSION",
 			"params": [
 				{
 					"type": "Ped",
@@ -87542,7 +87542,7 @@
 				},
 				{
 					"type": "int",
-					"name": "mode"
+					"name": "missionType"
 				},
 				{
 					"type": "float",
@@ -87571,7 +87571,7 @@
 		"0xF0AF20AA7731F8C3": {
 			"name": "TASK_VEHICLE_MISSION_COORS_TARGET",
 			"jhash": "0x6719C109",
-			"comment": "Example from fm_mission_controller.c4:\nAI::TASK_VEHICLE_MISSION_COORS_TARGET(l_65E1, l_65E2, 324.84588623046875, 325.09619140625, 104.3525, 4, 15.0, 802987, 5.0, 5.0, 0);\n",
+			"comment": "See TASK_VEHICLE_MISSION",
 			"params": [
 				{
 					"type": "Ped",
