@@ -58839,9 +58839,9 @@
 			"build": "323"
 		},
 		"0xA571D46727E2B718": {
-			"name": "_IS_INPUT_DISABLED",
+			"name": "_IS_USING_KEYBOARD",
 			"jhash": "",
-			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nSeems to return true if the input is currently disabled. \"_GET_LAST_INPUT_METHOD\" didn't seem very accurate, but I've left the original description below.\n\n--\n\nindex usually 2\n\nreturns true if the last input method was made with mouse + keyboard, false if it was made with a gamepad",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nUsed to be known as _GET_LAST_INPUT_METHOD & _IS_INPUT_DISABLED",
 			"params": [
 				{
 					"type": "int",
@@ -58852,9 +58852,9 @@
 			"build": "323"
 		},
 		"0x13337B38DB572509": {
-			"name": "_IS_INPUT_JUST_DISABLED",
+			"name": "_IS_USING_KEYBOARD_2",
 			"jhash": "",
-			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nI may be wrong with this one, but from the looks of the scripts, it sets keyboard related stuff as soon as this returns true.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nUsed to be known as _IS_INPUT_JUST_DISABLED",
 			"params": [
 				{
 					"type": "int",
@@ -58867,7 +58867,7 @@
 		"0xFC695459D4D0E219": {
 			"name": "_SET_CURSOR_LOCATION",
 			"jhash": "",
-			"comment": "Renamed to _SET_CURSOR_LOCATION (I previously named it _SET_CURSOR_POSTION) which is the correct name as far as I can tell.",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
