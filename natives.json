@@ -78584,7 +78584,7 @@
 		"0xB3271D7AB655B441": {
 			"name": "STAT_SET_INT",
 			"jhash": "0xC9CC1C5C",
-			"comment": "Add Cash example:\nfor (int i = 0; i < 3; i++)\n{\nchar statNameFull[32];\nsprintf_s(statNameFull, \"SP%d_TOTAL_CASH\", i);\nHash hash = GAMEPLAY::GET_HASH_KEY(statNameFull);\nint val;\nSTATS::STAT_GET_INT(hash, &val, -1);\nval += 1000000;\nSTATS::STAT_SET_INT(hash, val, 1);\n}",
+			"comment": "Example:\n STATS::STAT_SET_INT(MISC::GET_HASH_KEY(\"MPPLY_KILLS_PLAYERS\"), 1337, true);",
 			"params": [
 				{
 					"type": "Hash",
@@ -78605,7 +78605,7 @@
 		"0x4851997F37FE9B3C": {
 			"name": "STAT_SET_FLOAT",
 			"jhash": "0x6CEA96F2",
-			"comment": "",
+			"comment": "Example:\n STATS::STAT_SET_FLOAT(MISC::GET_HASH_KEY(\"MP0_WEAPON_ACCURACY\"), 66.6f, true);",
 			"params": [
 				{
 					"type": "Hash",
@@ -78626,7 +78626,7 @@
 		"0x4B33C4243DE0C432": {
 			"name": "STAT_SET_BOOL",
 			"jhash": "0x55D79DFB",
-			"comment": "",
+			"comment": "Example:\n STATS::STAT_SET_BOOL(MISC::GET_HASH_KEY(\"MPPLY_MELEECHLENGECOMPLETED\"), trur, true);",
 			"params": [
 				{
 					"type": "Hash",
@@ -79163,7 +79163,7 @@
 			"build": "323"
 		},
 		"0xF4D8E7AC2A27758C": {
-			"name": "_0xF4D8E7AC2A27758C",
+			"name": "_STAT_GET_PACKED_BOOL_MASK",
 			"jhash": "0xDFC25D66",
 			"comment": "Needs more research. Possibly used to calculate the \"mask\" when calling \"STAT_SET_BOOL_MASKED\"?",
 			"params": [
@@ -79176,7 +79176,7 @@
 			"build": "323"
 		},
 		"0x94F12ABF9C79E339": {
-			"name": "_0x94F12ABF9C79E339",
+			"name": "_STAT_GET_PACKED_INT_MASK",
 			"jhash": "0xCA160BCC",
 			"comment": "Needs more research. Possibly used to calculate the \"mask\" when calling \"STAT_SET_MASKED_INT\"?",
 			"params": [
