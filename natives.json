@@ -54809,24 +54809,24 @@
 			"build": "323"
 		},
 		"0x0B203B4AFDE53A4F": {
-			"name": "_0x0B203B4AFDE53A4F",
+			"name": "TITLE_TEXTURE_DOWNLOAD_REQUEST",
 			"jhash": "0x1856D008",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "FilePath"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "Name"
 				},
 				{
 					"type": "BOOL",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x308F96458B7087CC": {
