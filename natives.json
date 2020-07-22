@@ -28871,7 +28871,7 @@
 			"build": "323"
 		},
 		"0xE0130B41D3CF4574": {
-			"name": "_GET_MINIMAP_REVEAL_PERCENTAGE",
+			"name": "GET_MINIMAP_FOW_DISCOVERY_RATIO",
 			"jhash": "0xA4098ACC",
 			"comment": "",
 			"params": [],
@@ -28879,9 +28879,9 @@
 			"build": "323"
 		},
 		"0x6E31B91145873922": {
-			"name": "_GET_MINIMAP_AREA_IS_REVEALED",
+			"name": "GET_MINIMAP_FOW_COORDINATE_IS_REVEALED",
 			"jhash": "0x65B705F6",
-			"comment": "GET_MI*",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -28893,7 +28893,7 @@
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "z"
 				}
 			],
 			"return_type": "BOOL",
@@ -28913,7 +28913,7 @@
 			"build": "323"
 		},
 		"0x0923DBF87DFF735E": {
-			"name": "_0x0923DBF87DFF735E",
+			"name": "SET_MINIMAP_FOW_REVEAL_COORDINATE",
 			"jhash": "0xE010F081",
 			"comment": "",
 			"params": [
