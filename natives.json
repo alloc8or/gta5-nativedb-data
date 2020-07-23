@@ -17640,7 +17640,7 @@
 					"name": "blue"
 				},
 				{
-					"type": "int",
+					"type": "float",
 					"name": "alpha"
 				}
 			],
