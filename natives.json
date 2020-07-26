@@ -87493,7 +87493,7 @@
 				},
 				{
 					"type": "Vehicle",
-					"name": "vehicle2"
+					"name": "vehicleTarget"
 				},
 				{
 					"type": "int",
@@ -87517,7 +87517,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "DriveAgainstTraffic"
 				}
 			],
 			"return_type": "void",
@@ -87562,7 +87562,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "DriveAgainstTraffic"
 				}
 			],
 			"return_type": "void",
@@ -87615,7 +87615,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "DriveAgainstTraffic"
 				}
 			],
 			"return_type": "void",
