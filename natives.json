@@ -70052,9 +70052,9 @@
 			"build": "323"
 		},
 		"0x4E90D746056E273D": {
-			"name": "_SET_PED_REFLECTION_INTENSITY",
+			"name": "_SET_PED_EMISSIVE_INTENSITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "intensity: 0.0f - 1.0f\n\nThis native sets the emissive intensity for the given ped. It is used for different 'glow' levels on illuminated clothing.\n\nOld name: _SET_PED_REFLECTION_INTENSITY",
 			"params": [
 				{
 					"type": "Ped",
@@ -70069,9 +70069,9 @@
 			"build": "944"
 		},
 		"0x1461B28A06717D68": {
-			"name": "_GET_PED_REFLECTION_INTENSITY",
+			"name": "_GET_PED_EMISSIVE_INTENSITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Old name: _GET_PED_REFLECTION_INTENSITY",
 			"params": [
 				{
 					"type": "Ped",
