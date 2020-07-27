@@ -64127,7 +64127,7 @@
 		"0xFF059E1E4C01E63C": {
 			"name": "GET_PED_TYPE",
 			"jhash": "0xB1460D43",
-			"comment": "Ped Types: (ordered by return priority)\n\nMichael = 0\nFranklin = 1\nTrevor = 2\n\nArmy = 29\nAnimal = 28\nSWAT = 27\nLSFD = 21\nParamedic = 20\n\nCop = 6\n\nMale = 4\nFemale = 5 \n\nHuman = 26\n\nNote/Exception\nhc_gunman : 4 // Mix male and female\nhc_hacker : 4 // Mix male and female\nmp_f_misty_01 : 4 // Female character\ns_f_y_ranger_01 : 5 // Ranger\ns_m_y_ranger_01 : 4 // Ranger\ns_m_y_uscg_01 : 6 // US Coast Guard",
+			"comment": "https://alloc8or.re/gta5/doc/enums/ePedType.txt",
 			"params": [
 				{
 					"type": "Ped",
