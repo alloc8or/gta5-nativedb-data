@@ -79291,7 +79291,7 @@
 		"0xBA52FF538ED2BC71": {
 			"name": "_GET_NGSTAT_BOOL_HASH",
 			"jhash": "",
-			"comment": "Needs more research. Gets the stat name of a masked bool?\n\np4 - Usually \"_NGPSTAT_BOOL\" or \"_NGTATPSTAT_BOOL\". There may be more that I missed.",
+			"comment": "Needs more research. Gets the stat name of a masked bool?\n\nsection - values used in the decompiled scripts:\n\"_NGPSTAT_BOOL\"\n\"_NGTATPSTAT_BOOL\"\n\"_NGDLCPSTAT_BOOL\"\n\"_DLCBIKEPSTAT_BOOL\"\n\"_DLCGUNPSTAT_BOOL\"\n\"_GUNTATPSTAT_BOOL\"\n\"_DLCSMUGCHARPSTAT_BOOL\"\n\"_GANGOPSPSTAT_BOOL\"\n\"_BUSINESSBATPSTAT_BOOL\"\n\"_ARENAWARSPSTAT_BOOL\"\n\"_CASINOPSTAT_BOOL\"\n\"_CASINOHSTPSTAT_BOOL\"\n\"_HEIST3TATTOOSTAT_BOOL\"",
 			"params": [
 				{
 					"type": "int",
@@ -79320,7 +79320,7 @@
 		"0x2B4CDCA6F07FF3DA": {
 			"name": "_GET_NGSTAT_INT_HASH",
 			"jhash": "",
-			"comment": "Needs more research. Gets the stat name of a masked int?\n\np4 - Usually one of the following (there may be more that I missed):\n-----> \"_APAPSTAT_INT\"\n-----> \"_LRPSTAT_INT\"\n-----> \"_NGPSTAT_INT\"\n-----> \"_MP_APAPSTAT_INT\"\n-----> \"_MP_LRPSTAT_INT\"\n-----> \"_MP_NGPSTAT_INT\"",
+			"comment": "Needs more research. Gets the stat name of a masked int?\n\nsection - values used in the decompiled scripts:\n\"_NGPSTAT_INT\"\n\"_MP_NGPSTAT_INT\"\n\"_MP_LRPSTAT_INT\"\n\"_MP_APAPSTAT_INT\"\n\"_MP_LR2PSTAT_INT\"\n\"_MP_BIKEPSTAT_INT\"\n\"_MP_IMPEXPPSTAT_INT\"\n\"_MP_GUNRPSTAT_INT\"\n\"_NGDLCPSTAT_INT\"\n\"_MP_NGDLCPSTAT_INT\"\n\"_DLCSMUGCHARPSTAT_INT\"\n\"_GANGOPSPSTAT_INT\"\n\"_BUSINESSBATPSTAT_INT\"\n\"_ARENAWARSPSTAT_INT\"\n\"_CASINOPSTAT_INT\"\n\"_CASINOHSTPSTAT_INT\"",
 			"params": [
 				{
 					"type": "int",
