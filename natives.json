@@ -106849,7 +106849,7 @@
 			"build": "573"
 		},
 		"0xDAB963831DBFD3F4": {
-			"name": "_IS_AIR_DEFENSE_ZONE_INSIDE_SPHERE",
+			"name": "_IS_ANY_AIR_DEFENSE_ZONE_INSIDE_SPHERE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -106870,8 +106870,8 @@
 					"name": "radius"
 				},
 				{
-					"type": "int",
-					"name": "zoneId"
+					"type": "int*",
+					"name": "outZoneId"
 				}
 			],
 			"return_type": "BOOL",
