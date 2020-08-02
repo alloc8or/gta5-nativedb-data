@@ -21792,7 +21792,7 @@
 					"name": "transparency"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x99AC7F0D8B9C893D": {
