@@ -83388,7 +83388,7 @@
 		"0x963D27A58DF860AC": {
 			"name": "REQUEST_MODEL",
 			"jhash": "0xFFF1B500",
-			"comment": "Request a model to be loaded into memory\n\nLooking it the disassembly, it seems like it actually returns the model if it's already loaded.\n",
+			"comment": "Request a model to be loaded into memory.\n",
 			"params": [
 				{
 					"type": "Hash",
