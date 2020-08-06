@@ -14625,7 +14625,7 @@
 		"0x4FC9381A7AEE8968": {
 			"name": "CLEAR_DECISION_MAKER_EVENT_RESPONSE",
 			"jhash": "0x07ABD94D",
-			"comment": "",
+			"comment": "eventType: https://alloc8or.re/gta5/doc/enums/eEventType.txt",
 			"params": [
 				{
 					"type": "Hash",
@@ -14633,7 +14633,7 @@
 				},
 				{
 					"type": "int",
-					"name": "type"
+					"name": "eventType"
 				}
 			],
 			"return_type": "void",
@@ -14642,7 +14642,7 @@
 		"0xE42FCDFD0E4196F7": {
 			"name": "BLOCK_DECISION_MAKER_EVENT",
 			"jhash": "0x57506EA6",
-			"comment": "",
+			"comment": "eventType: https://alloc8or.re/gta5/doc/enums/eEventType.txt",
 			"params": [
 				{
 					"type": "Hash",
@@ -14650,7 +14650,7 @@
 				},
 				{
 					"type": "int",
-					"name": "type"
+					"name": "eventType"
 				}
 			],
 			"return_type": "void",
@@ -14659,7 +14659,7 @@
 		"0xD7CD9CF34F2C99E8": {
 			"name": "UNBLOCK_DECISION_MAKER_EVENT",
 			"jhash": "0x62A3161D",
-			"comment": "",
+			"comment": "eventType: https://alloc8or.re/gta5/doc/enums/eEventType.txt",
 			"params": [
 				{
 					"type": "Hash",
@@ -14667,7 +14667,7 @@
 				},
 				{
 					"type": "int",
-					"name": "type"
+					"name": "eventType"
 				}
 			],
 			"return_type": "void",
@@ -14676,11 +14676,11 @@
 		"0xD9F8455409B525E9": {
 			"name": "ADD_SHOCKING_EVENT_AT_POSITION",
 			"jhash": "0x0B30F779",
-			"comment": "duration is float here\n\nEvent types- camx.me/gtav/tasks/shockingevents.txt",
+			"comment": "eventType: https://alloc8or.re/gta5/doc/enums/eEventType.txt",
 			"params": [
 				{
 					"type": "int",
-					"name": "type"
+					"name": "eventType"
 				},
 				{
 					"type": "float",
@@ -14705,11 +14705,11 @@
 		"0x7FD8F3BE76F89422": {
 			"name": "ADD_SHOCKING_EVENT_FOR_ENTITY",
 			"jhash": "0xA81B5B71",
-			"comment": "duration is float here\n\nEvent types - camx.me/gtav/tasks/shockingevents.txt",
+			"comment": "eventType: https://alloc8or.re/gta5/doc/enums/eEventType.txt",
 			"params": [
 				{
 					"type": "int",
-					"name": "type"
+					"name": "eventType"
 				},
 				{
 					"type": "Entity",
@@ -14726,11 +14726,11 @@
 		"0x1374ABB7C15BAB92": {
 			"name": "IS_SHOCKING_EVENT_IN_SPHERE",
 			"jhash": "0x2F98823E",
-			"comment": "Some events that i found, not sure about them, but seems to have logic based on my tests:\n\n        '82 - dead body\n        '86 - explosion\n        '87 - fire\n        '88 - shooting, fire extinguisher in use\n        '89 - shooting\n        '93 - ped using horn\n        '95 - ped receiving melee attack\n        '102 - living ped receiving shot\n        '104 - player thrown grenade, tear gas, smoke grenade, jerry can dropping gasoline\n        '105 - melee attack against veh\n        '106 - player running\n        '108 - vehicle theft\n        '112 - melee attack\n        '113 - veh rollover ped\n        '114 - dead ped receiving shot\n        '116 - aiming at ped\n        '121 - armed\n\n\nHere is full dump of shocking event types from the exe camx.me/gtav/tasks/shockingevents.txt ",
+			"comment": "eventType: https://alloc8or.re/gta5/doc/enums/eEventType.txt",
 			"params": [
 				{
 					"type": "int",
-					"name": "type"
+					"name": "eventType"
 				},
 				{
 					"type": "float",
@@ -14797,11 +14797,11 @@
 		"0x3FD2EC8BF1F1CF30": {
 			"name": "SUPPRESS_SHOCKING_EVENT_TYPE_NEXT_FRAME",
 			"jhash": "0xA0FDCB82",
-			"comment": "",
+			"comment": "eventType: https://alloc8or.re/gta5/doc/enums/eEventType.txt",
 			"params": [
 				{
 					"type": "int",
-					"name": "type"
+					"name": "eventType"
 				}
 			],
 			"return_type": "void",
