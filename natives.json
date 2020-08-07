@@ -75581,15 +75581,15 @@
 		"0x749FADDF97DFE930": {
 			"name": "SET_PLAYER_CLOTH_PIN_FRAMES",
 			"jhash": "0xF7A0F00F",
-			"comment": "Every occurrence of p1 I found was true.1.0.335.2, 1.0.350.1/2, 1.0.372.2, 1.0.393.2, 1.0.393.4, 1.0.463.1;",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
 					"name": "player"
 				},
 				{
-					"type": "BOOL",
-					"name": "toggle"
+					"type": "int",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
