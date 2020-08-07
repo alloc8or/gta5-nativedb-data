@@ -23818,7 +23818,7 @@
 		"0x2206BF9A37B7F724": {
 			"name": "ANIMPOSTFX_PLAY",
 			"jhash": "0x1D980479",
-			"comment": "playLength - is how long to play the effect for in milliseconds. If 0, it plays the default length\nif loop is true, the effect wont stop until you call _STOP_SCREEN_EFFECT on it. (only loopable effects)\n\nExample and list of screen FX: www.pastebin.com/dafBAjs0\n",
+			"comment": "duration - is how long to play the effect for in milliseconds. If 0, it plays the default length\nif loop is true, the effect won'tt stop until you call ANIMPOSTFX_STOP on it. (only loopable effects)\n\nList of animated post FX names:\nhttps://alloc8or.re/gta5/doc/misc/animpostfx.txt",
 			"params": [
 				{
 					"type": "const char*",
@@ -23839,7 +23839,7 @@
 		"0x068E835A1D0DC0E3": {
 			"name": "ANIMPOSTFX_STOP",
 			"jhash": "0x06BB5CDA",
-			"comment": "Example and list of screen FX: www.pastebin.com/dafBAjs0",
+			"comment": "See ANIMPOSTFX_PLAY",
 			"params": [
 				{
 					"type": "const char*",
@@ -23852,7 +23852,7 @@
 		"0xE35B38A27E8E7179": {
 			"name": "_ANIMPOSTFX_GET_UNK",
 			"jhash": "",
-			"comment": "",
+			"comment": "See ANIMPOSTFX_PLAY",
 			"params": [
 				{
 					"type": "const char*",
@@ -23865,7 +23865,7 @@
 		"0x36AD3E690DA5ACEB": {
 			"name": "ANIMPOSTFX_IS_RUNNING",
 			"jhash": "0x089D5921",
-			"comment": "Returns whether the specified screen effect is active.\nSee the effects list in _START_SCREEN_EFFECT\n\nExample and list of screen FX: www.pastebin.com/dafBAjs0",
+			"comment": "Returns whether the specified effect is active.\nSee ANIMPOSTFX_PLAY",
 			"params": [
 				{
 					"type": "const char*",
@@ -23878,7 +23878,7 @@
 		"0xB4EDDC19532BFB85": {
 			"name": "ANIMPOSTFX_STOP_ALL",
 			"jhash": "0x4E6D875B",
-			"comment": "",
+			"comment": "Stops ALL currently playing effects.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -23886,7 +23886,7 @@
 		"0xD2209BE128B5418C": {
 			"name": "_ANIMPOSTFX_STOP_AND_DO_UNK",
 			"jhash": "",
-			"comment": "\"SwitchHUDFranklinOut\",\n\"SwitchHUDMichaelOut\",\n\"SwitchHUDOut\",\n\"SwitchHUDTrevorOut\",\n\"SwitchOpenFranklinOut\",\n\"SwitchOpenMichaelIn\",\n\"SwitchOpenNeutral\"\n\nStops the effect and sets a value (bool) in its data (+0x199) to false.",
+			"comment": "Stops the effect and sets a value (bool) in its data (+0x199) to false.\nSee ANIMPOSTFX_PLAY",
 			"params": [
 				{
 					"type": "const char*",
