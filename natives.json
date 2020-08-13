@@ -23924,7 +23924,7 @@
 		"0x2206BF9A37B7F724": {
 			"name": "ANIMPOSTFX_PLAY",
 			"jhash": "0x1D980479",
-			"comment": "duration - is how long to play the effect for in milliseconds. If 0, it plays the default length\nif loop is true, the effect won'tt stop until you call ANIMPOSTFX_STOP on it. (only loopable effects)\n\nList of animated post FX names:\nhttps://alloc8or.re/gta5/doc/misc/animpostfx.txt",
+			"comment": "duration - is how long to play the effect for in milliseconds. If 0, it plays the default length\nif loop is true, the effect won't stop until you call ANIMPOSTFX_STOP on it. (only loopable effects)\n\nList of animated post FX names:\nhttps://alloc8or.re/gta5/doc/misc/animpostfx.txt",
 			"params": [
 				{
 					"type": "const char*",
