@@ -6537,6 +6537,27 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x5D96CFB59DA076A0": {
+			"name": "_0x5D96CFB59DA076A0",
+			"jhash": "",
+			"comment": "p1: 0..16",
+			"params": [
+				{
+					"type": "Vehicle",
+					"name": "vehicle"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "float",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
+		},
 		"0x9A2D0FB2E7852392": {
 			"name": "PLAY_CAM_ANIM",
 			"jhash": "0xBCEFB87E",
@@ -15407,6 +15428,14 @@
 			"return_type": "int",
 			"build": "323"
 		},
+		"0x4160B65AE085B5A9": {
+			"name": "_GET_NUM_DLC_WEAPONS_2",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "int",
+			"build": "2060"
+		},
 		"0x79923CD21BECE14E": {
 			"name": "GET_DLC_WEAPON_DATA",
 			"jhash": "0xD88EC8EA",
@@ -15424,10 +15453,27 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0x310836EE7129BA33": {
+			"name": "_GET_DLC_WEAPON_DATA_2",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "dlcWeaponIndex"
+				},
+				{
+					"type": "int*",
+					"name": "outData"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2060"
+		},
 		"0x405425358A7D61FE": {
 			"name": "GET_NUM_DLC_WEAPON_COMPONENTS",
 			"jhash": "0x476B23A9",
-			"comment": "Allowed Values from 0 - DLC1::GET_NUM_DLC_WEAPONS() - 1",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -15436,6 +15482,19 @@
 			],
 			"return_type": "int",
 			"build": "323"
+		},
+		"0xAD2A7A6DFF55841B": {
+			"name": "_GET_NUM_DLC_WEAPON_COMPONENTS_2",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "dlcWeaponIndex"
+				}
+			],
+			"return_type": "int",
+			"build": "2060"
 		},
 		"0x6CF598A2957C2BF8": {
 			"name": "GET_DLC_WEAPON_COMPONENT_DATA",
@@ -15457,6 +15516,27 @@
 			],
 			"return_type": "BOOL",
 			"build": "323"
+		},
+		"0x31D5E073B6F93CDC": {
+			"name": "_GET_DLC_WEAPON_COMPONENT_DATA_2",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "dlcWeaponIndex"
+				},
+				{
+					"type": "int",
+					"name": "dlcWeapCompIndex"
+				},
+				{
+					"type": "int*",
+					"name": "ComponentDataPtr"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2060"
 		},
 		"0xD4D7B033C3AA243C": {
 			"name": "IS_CONTENT_ITEM_LOCKED",
@@ -19044,6 +19124,19 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0xE2B187C0939B3D32": {
+			"name": "_0xE2B187C0939B3D32",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
+		},
 		"0xC35A6D07C93802B2": {
 			"name": "_0xC35A6D07C93802B2",
 			"jhash": "",
@@ -21296,6 +21389,19 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0xCFD16F0DB5A3535C": {
+			"name": "_0xCFD16F0DB5A3535C",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
 		},
 		"0x5F6DF3D92271E8A1": {
 			"name": "_0x5F6DF3D92271E8A1",
@@ -27181,6 +27287,19 @@
 			"return_type": "void",
 			"build": "877"
 		},
+		"0x003E92BA477F9D7F": {
+			"name": "_0x003E92BA477F9D7F",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Blip",
+					"name": "blip"
+				}
+			],
+			"return_type": "int",
+			"build": "2060"
+		},
 		"0xD3CD6FD297AE87CC": {
 			"name": "SET_BLIP_FLASH_TIMER",
 			"jhash": "0x8D5DF611",
@@ -31320,6 +31439,14 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0x243296A510B562B6": {
+			"name": "_0x243296A510B562B6",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "2060"
 		}
 	},
 	"INTERIOR": {
@@ -32421,6 +32548,10 @@
 				{
 					"type": "const char*",
 					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -32446,6 +32577,19 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0xDFC3F01E232BE5C4": {
+			"name": "_0xDFC3F01E232BE5C4",
+			"jhash": "",
+			"comment": "nullsub, doesn't do anything.\n\nUsed only once in the scripts (ingamehud) with p0 = \"AF_GAMEMODE\"",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
 		},
 		"0xE8B9C0EC9E183F35": {
 			"name": "_HAS_RESUMED_FROM_SUSPEND",
@@ -36167,6 +36311,19 @@
 			],
 			"return_type": "BOOL",
 			"build": "323"
+		},
+		"0xFA3FFB0EEBC288A3": {
+			"name": "_0xFA3FFB0EEBC288A3",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
 		},
 		"0x9BAE5AD2508DF078": {
 			"name": "SET_INSTANCE_PRIORITY_MODE",
@@ -42958,20 +43115,6 @@
 			"build": "1734",
 			"unused": true
 		},
-		"0x84FF63BD4966F33D": {
-			"name": "_NETWORK_EARN_FROM_COLLECTION_ITEM",
-			"jhash": "",
-			"comment": "",
-			"params": [
-				{
-					"type": "int",
-					"name": "amount"
-				}
-			],
-			"return_type": "void",
-			"build": "1734",
-			"unused": true
-		},
 		"0x5517F90043466049": {
 			"name": "_NETWORK_EARN_FROM_COLLECTABLES_ACTION_FIGURES",
 			"jhash": "",
@@ -43370,8 +43513,21 @@
 			"name": "_0x0DD362F14F18942A",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
 			"build": "1868",
 			"unused": true
 		},
@@ -43403,6 +43559,76 @@
 			],
 			"return_type": "void",
 			"build": "1868"
+		},
+		"0x84FF63BD4966F33D": {
+			"name": "_NETWORK_EARN_FROM_COLLECTION_ITEM",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "1734"
+		},
+		"0x5C9B198AF5A54FA6": {
+			"name": "_0x5C9B198AF5A54FA6",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
+		},
+		"0xDE68E30D89F97132": {
+			"name": "_0xDE68E30D89F97132",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2060",
+			"unused": true
+		},
+		"0xE2E244AB823B4483": {
+			"name": "_0xE2E244AB823B4483",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2060",
+			"unused": true
 		},
 		"0x76EF28DA05EA395A": {
 			"name": "NETWORK_GET_VC_BANK_BALANCE",
@@ -43994,34 +44220,6 @@
 			],
 			"return_type": "BOOL",
 			"build": "323"
-		},
-		"0xC830417D630A50F9": {
-			"name": "_0xC830417D630A50F9",
-			"jhash": "",
-			"comment": "NET_GAMESERVER_*\n\nChecks if the transaction status is equal to 1.",
-			"params": [
-				{
-					"type": "int",
-					"name": "transactionId"
-				}
-			],
-			"return_type": "BOOL",
-			"build": "1365",
-			"unused": true
-		},
-		"0x79EDAC677CA62F81": {
-			"name": "_0x79EDAC677CA62F81",
-			"jhash": "",
-			"comment": "NET_GAMESERVER_*\n\nChecks if the transaction status is equal to 3.",
-			"params": [
-				{
-					"type": "int",
-					"name": "transactionId"
-				}
-			],
-			"return_type": "BOOL",
-			"build": "1365",
-			"unused": true
 		},
 		"0x3C5FD37B5499582E": {
 			"name": "NET_GAMESERVER_BEGIN_SERVICE",
@@ -44883,6 +45081,19 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0xB9351A07A0D458B1": {
+			"name": "_0xB9351A07A0D458B1",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2060"
+		},
 		"0xFA8904DC5F304220": {
 			"name": "NETWORK_SESSION_KICK_PLAYER",
 			"jhash": "0x1E20138A",
@@ -45585,6 +45796,14 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
+		},
+		"0x4C9034162368E206": {
+			"name": "_0x4C9034162368E206",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "2060"
 		},
 		"0x271CC6AB59EBF9A5": {
 			"name": "NETWORK_SESSION_MARK_VISIBLE",
@@ -49822,6 +50041,23 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0x17C9E241111A674D": {
+			"name": "_0x17C9E241111A674D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
 		},
 		"0x2E4C123D1C8A710E": {
 			"name": "_0x2E4C123D1C8A710E",
@@ -73142,6 +73378,40 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x49B856B1360C47C7": {
+			"name": "_0x49B856B1360C47C7",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
+		},
+		"0x823EC8E82BA45986": {
+			"name": "_0x823EC8E82BA45986",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
+		},
 		"0xBF9BD71691857E48": {
 			"name": "START_FIRING_AMNESTY",
 			"jhash": "0x5F8A22A6",
@@ -74443,6 +74713,10 @@
 				{
 					"type": "Any",
 					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -74460,6 +74734,10 @@
 				{
 					"type": "int",
 					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -74473,6 +74751,10 @@
 				{
 					"type": "Any",
 					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -74486,6 +74768,10 @@
 				{
 					"type": "Player",
 					"name": "player"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -74499,6 +74785,10 @@
 				{
 					"type": "Player",
 					"name": "player"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -74512,6 +74802,10 @@
 				{
 					"type": "Player",
 					"name": "player"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -74525,6 +74819,10 @@
 				{
 					"type": "Player",
 					"name": "player"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -74546,6 +74844,10 @@
 				{
 					"type": "BOOL",
 					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -74567,6 +74869,10 @@
 				{
 					"type": "BOOL",
 					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -74588,6 +74894,10 @@
 				{
 					"type": "BOOL",
 					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -74604,6 +74914,10 @@
 				},
 				{
 					"type": "Ped",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
 					"name": "p2"
 				}
 			],
@@ -74626,6 +74940,10 @@
 				{
 					"type": "BOOL",
 					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -74647,6 +74965,10 @@
 				{
 					"type": "BOOL",
 					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -74664,6 +74986,10 @@
 				{
 					"type": "BOOL",
 					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -74681,6 +75007,10 @@
 				{
 					"type": "BOOL",
 					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -74694,6 +75024,10 @@
 				{
 					"type": "Hash",
 					"name": "playerModel"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -74707,6 +75041,10 @@
 				{
 					"type": "Hash",
 					"name": "playerModel"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -74733,6 +75071,10 @@
 				{
 					"type": "Player",
 					"name": "player"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "BOOL",
@@ -74746,6 +75088,10 @@
 				{
 					"type": "Player",
 					"name": "player"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "BOOL",
@@ -74763,6 +75109,10 @@
 				{
 					"type": "BOOL",
 					"name": "toggle"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -74776,6 +75126,10 @@
 				{
 					"type": "Player",
 					"name": "player"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "BOOL",
@@ -74802,6 +75156,10 @@
 				{
 					"type": "Player",
 					"name": "player"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -78530,6 +78888,14 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0x6A7F19756F1A9016": {
+			"name": "_0x6A7F19756F1A9016",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "2060"
 		},
 		"0x7E6946F68A38B74F": {
 			"name": "_0x7E6946F68A38B74F",
@@ -92093,6 +92459,23 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0x0FFB3C758E8C07B9": {
+			"name": "_0x0FFB3C758E8C07B9",
+			"jhash": "",
+			"comment": "Doesn't actually return anything.",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "2060"
+		},
 		"0x349CE7B56DAFD95C": {
 			"name": "IS_MOVE_BLEND_RATIO_STILL",
 			"jhash": "0xE9DAF877",
@@ -104452,6 +104835,22 @@
 				{
 					"type": "BOOL",
 					"name": "toggle"
+				},
+				{
+					"type": "float",
+					"name": "p2"
+				},
+				{
+					"type": "float",
+					"name": "p3"
+				},
+				{
+					"type": "float",
+					"name": "p4"
+				},
+				{
+					"type": "BOOL",
+					"name": "p5"
 				}
 			],
 			"return_type": "void",
@@ -104594,6 +104993,23 @@
 			"return_type": "void",
 			"build": "1868"
 		},
+		"0x6E387895952F4F71": {
+			"name": "_GET_TYRE_WEAR_MULTIPLIER",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Vehicle",
+					"name": "vehicle"
+				},
+				{
+					"type": "int",
+					"name": "wheelIndex"
+				}
+			],
+			"return_type": "float",
+			"build": "2060"
+		},
 		"0x01894E2EDE923CA2": {
 			"name": "_SET_TYRE_WEAR_MULTIPLIER",
 			"jhash": "",
@@ -104614,6 +105030,65 @@
 			],
 			"return_type": "void",
 			"build": "1868"
+		},
+		"0x392183BB9EA57697": {
+			"name": "_0x392183BB9EA57697",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Vehicle",
+					"name": "vehicle"
+				},
+				{
+					"type": "int",
+					"name": "wheelIndex"
+				},
+				{
+					"type": "float",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
+		},
+		"0xC970D0E0FC31D768": {
+			"name": "_0xC970D0E0FC31D768",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Vehicle",
+					"name": "vehicle"
+				},
+				{
+					"type": "int",
+					"name": "wheelIndex"
+				},
+				{
+					"type": "float",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
+		},
+		"0xF8B49F5BA7F850E7": {
+			"name": "_0xF8B49F5BA7F850E7",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Vehicle",
+					"name": "vehicle"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
 		}
 	},
 	"WATER": {
@@ -105030,6 +105505,10 @@
 				{
 					"type": "Ped",
 					"name": "ped"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "Entity",
@@ -106655,6 +107134,23 @@
 			],
 			"return_type": "Any",
 			"build": "323"
+		},
+		"0x988DB6FE9B3AC000": {
+			"name": "_0x988DB6FE9B3AC000",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
 		},
 		"0x1055AC3A667F09D9": {
 			"name": "SET_WEAPON_ANIMATION_OVERRIDE",
