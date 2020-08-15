@@ -14663,7 +14663,7 @@
 		"0xE42FCDFD0E4196F7": {
 			"name": "BLOCK_DECISION_MAKER_EVENT",
 			"jhash": "0x57506EA6",
-			"comment": "eventType: https://alloc8or.re/gta5/doc/enums/eEventType.txt",
+			"comment": "eventType: https://alloc8or.re/gta5/doc/enums/eEventType.txt\n\nThis is limited to 4 blocked events at a time.",
 			"params": [
 				{
 					"type": "Hash",
