@@ -98512,10 +98512,10 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "trailers2"
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Vehicle",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x87B63E25A529D526": {
