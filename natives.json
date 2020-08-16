@@ -15423,15 +15423,15 @@
 		"0xEE47635F352DA367": {
 			"name": "GET_NUM_DLC_WEAPONS",
 			"jhash": "0x2B757E6C",
-			"comment": "Gets the total number of DLC weapons.",
+			"comment": "Returns the total number of DLC weapons.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
 		},
 		"0x4160B65AE085B5A9": {
-			"name": "_GET_NUM_DLC_WEAPONS_2",
+			"name": "_GET_NUM_DLC_WEAPONS_SP",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns the total number of DLC weapons that are available in SP (availableInSP field in shop_weapon.meta).",
 			"params": [],
 			"return_type": "int",
 			"build": "2060"
@@ -15454,9 +15454,9 @@
 			"build": "323"
 		},
 		"0x310836EE7129BA33": {
-			"name": "_GET_DLC_WEAPON_DATA_2",
+			"name": "_GET_DLC_WEAPON_DATA_SP",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as GET_DLC_WEAPON_DATA but only works for DLC weapons that are available in SP.",
 			"params": [
 				{
 					"type": "int",
@@ -15473,7 +15473,7 @@
 		"0x405425358A7D61FE": {
 			"name": "GET_NUM_DLC_WEAPON_COMPONENTS",
 			"jhash": "0x476B23A9",
-			"comment": "",
+			"comment": "Returns the total number of DLC weapon components.",
 			"params": [
 				{
 					"type": "int",
@@ -15484,9 +15484,9 @@
 			"build": "323"
 		},
 		"0xAD2A7A6DFF55841B": {
-			"name": "_GET_NUM_DLC_WEAPON_COMPONENTS_2",
+			"name": "_GET_NUM_DLC_WEAPON_COMPONENTS_SP",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns the total number of DLC weapon components that are available in SP.",
 			"params": [
 				{
 					"type": "int",
@@ -15518,9 +15518,9 @@
 			"build": "323"
 		},
 		"0x31D5E073B6F93CDC": {
-			"name": "_GET_DLC_WEAPON_COMPONENT_DATA_2",
+			"name": "_GET_DLC_WEAPON_COMPONENT_DATA_SP",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as GET_DLC_WEAPON_COMPONENT_DATA but only works for DLC components that are available in SP.",
 			"params": [
 				{
 					"type": "int",
