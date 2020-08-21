@@ -98491,14 +98491,14 @@
 		"0x60BF608F1B8CD1B6": {
 			"name": "SET_VEHICLE_LIVERY",
 			"jhash": "0x7AD87059",
-			"comment": "Note: Only seems to work on Emergency Vehicles",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
 					"name": "vehicle"
 				},
 				{
-					"type": "Hash",
+					"type": "int",
 					"name": "livery"
 				}
 			],
