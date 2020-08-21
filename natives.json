@@ -11238,7 +11238,7 @@
 			"comment": "Gets the entity's forward vector.",
 			"params": [
 				{
-					"type": "Hash",
+					"type": "Entity",
 					"name": "entity"
 				}
 			],
