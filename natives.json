@@ -27361,15 +27361,15 @@
 					"name": "blip"
 				},
 				{
-					"type": "float",
+					"type": "int",
 					"name": "r"
 				},
 				{
-					"type": "float",
+					"type": "int",
 					"name": "g"
 				},
 				{
-					"type": "float",
+					"type": "int",
 					"name": "b"
 				}
 			],
