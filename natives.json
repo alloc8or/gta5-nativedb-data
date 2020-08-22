@@ -102630,9 +102630,9 @@
 			"build": "323"
 		},
 		"0x41062318F23ED854": {
-			"name": "SET_VEHICLE_EXCLUSIVE_DRIVER",
-			"jhash": "0xAA8BD440",
-			"comment": "",
+			"name": "_0x41062318F23ED854",
+			"jhash": "0xFF62D324",
+			"comment": "Used to be incorrectly named SET_VEHICLE_EXCLUSIVE_DRIVER\n\nLikely SET_VEHICLE_ALLOW_*\n\nJenkins hash may be wrong, unsure at this time.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102647,9 +102647,9 @@
 			"build": "323"
 		},
 		"0xB5C51B5502E85E83": {
-			"name": "_SET_VEHICLE_EXCLUSIVE_DRIVER_2",
-			"jhash": "0xFF62D324",
-			"comment": "index: 0 - 1",
+			"name": "SET_VEHICLE_EXCLUSIVE_DRIVER",
+			"jhash": "0xAA8BD440",
+			"comment": "index: 0 - 1\n\Used to be incorrectly named _SET_VEHICLE_EXCLUSIVE_DRIVER_2",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102668,24 +102668,24 @@
 			"build": "323"
 		},
 		"0xB09D25E77C33EB3F": {
-			"name": "_0xB09D25E77C33EB3F",
+			"name": "_IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "outIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "463"
 		},
 		"0x500873A45724C863": {
