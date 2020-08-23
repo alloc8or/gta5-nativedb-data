@@ -102649,7 +102649,7 @@
 		"0xB5C51B5502E85E83": {
 			"name": "SET_VEHICLE_EXCLUSIVE_DRIVER",
 			"jhash": "0xAA8BD440",
-			"comment": "index: 0 - 1\n\Used to be incorrectly named _SET_VEHICLE_EXCLUSIVE_DRIVER_2",
+			"comment": "index: 0 - 1\n\nUsed to be incorrectly named _SET_VEHICLE_EXCLUSIVE_DRIVER_2",
 			"params": [
 				{
 					"type": "Vehicle",
