@@ -56479,7 +56479,7 @@
 		"0x589F80B325CC82C5": {
 			"name": "DOOR_SYSTEM_FIND_EXISTING_DOOR",
 			"jhash": "0xE9AE494F",
-			"comment": "",
+			"comment": "Search radius: 0.5",
 			"params": [
 				{
 					"type": "float",
