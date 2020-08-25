@@ -32523,6 +32523,19 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x916CA67D26FD1E37": {
+			"name": "_0x916CA67D26FD1E37",
+			"jhash": "",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2060"
+		},
 		"0xEB078CA2B5E82ADD": {
 			"name": "_0xEB078CA2B5E82ADD",
 			"jhash": "",
@@ -32548,10 +32561,6 @@
 				{
 					"type": "const char*",
 					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -32568,7 +32577,7 @@
 		"0xBA4B8D83BDC75551": {
 			"name": "_0xBA4B8D83BDC75551",
 			"jhash": "",
-			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.\n\nUsed only once in the scripts (ingamehud) with p0 = \"AF_GAMEMODE\"",
 			"params": [
 				{
 					"type": "const char*",
@@ -32577,19 +32586,6 @@
 			],
 			"return_type": "void",
 			"build": "323"
-		},
-		"0xDFC3F01E232BE5C4": {
-			"name": "_0xDFC3F01E232BE5C4",
-			"jhash": "",
-			"comment": "nullsub, doesn't do anything.\n\nUsed only once in the scripts (ingamehud) with p0 = \"AF_GAMEMODE\"",
-			"params": [
-				{
-					"type": "const char*",
-					"name": "p0"
-				}
-			],
-			"return_type": "void",
-			"build": "2060"
 		},
 		"0xE8B9C0EC9E183F35": {
 			"name": "_HAS_RESUMED_FROM_SUSPEND",
