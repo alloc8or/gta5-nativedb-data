@@ -56483,23 +56483,23 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "Hash*",
+					"name": "outDoorHash"
 				}
 			],
 			"return_type": "BOOL",
