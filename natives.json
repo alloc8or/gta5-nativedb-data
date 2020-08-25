@@ -56479,27 +56479,27 @@
 		"0x589F80B325CC82C5": {
 			"name": "DOOR_SYSTEM_FIND_EXISTING_DOOR",
 			"jhash": "0xE9AE494F",
-			"comment": "",
+			"comment": "Search radius: 0.5",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "Hash*",
+					"name": "outDoorHash"
 				}
 			],
 			"return_type": "BOOL",
