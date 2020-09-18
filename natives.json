@@ -95000,7 +95000,7 @@
 		"0xA711568EEDB43069": {
 			"name": "REMOVE_VEHICLE_WINDOW",
 			"jhash": "0xBB8104A3",
-			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window",
+			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window\n4 = Unknown\n5 = Unknown\n6 = Windscreen\n7 = Rear Windscreen",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -95047,7 +95047,7 @@
 		"0x602E548F46E24D59": {
 			"name": "ROLL_UP_WINDOW",
 			"jhash": "0x83B7E06A",
-			"comment": "0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window",
+			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -95064,7 +95064,7 @@
 		"0x9E5B5E4D2CCD2259": {
 			"name": "SMASH_VEHICLE_WINDOW",
 			"jhash": "0xDDD9A8C2",
-			"comment": "",
+			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window\n4 = Unknown\n5 = Unknown\n6 = Windscreen\n7 = Rear Windscreen",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -95081,7 +95081,7 @@
 		"0x772282EBEB95E682": {
 			"name": "FIX_VEHICLE_WINDOW",
 			"jhash": "0x6B8E990D",
-			"comment": "",
+			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window\n4 = Unknown\n5 = Unknown\n6 = Windscreen\n7 = Rear Windscreen",
 			"params": [
 				{
 					"type": "Vehicle",
