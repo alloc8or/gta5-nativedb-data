@@ -13314,7 +13314,7 @@
 		"0x9EBC85ED0FFFE51C": {
 			"name": "SET_ENTITY_COMPLETELY_DISABLE_COLLISION",
 			"jhash": "0xBD0D4831",
-			"comment": "p2 - mainly set as false in scripts",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -13322,11 +13322,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "keepPhysics"
 				}
 			],
 			"return_type": "void",
