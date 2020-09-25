@@ -59959,7 +59959,7 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x45905BE8654AE067": {
