@@ -59895,7 +59895,7 @@
 				},
 				{
 					"type": "float*",
-					"name": "heading"
+					"name": "outHeading"
 				},
 				{
 					"type": "Any*",
@@ -59943,7 +59943,7 @@
 					"name": "outPosition"
 				},
 				{
-					"type": "float",
+					"type": "float*",
 					"name": "outHeading"
 				},
 				{
@@ -59959,13 +59959,13 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x45905BE8654AE067": {
 			"name": "GET_NTH_CLOSEST_VEHICLE_NODE_FAVOUR_DIRECTION",
 			"jhash": "0x928A4DEC",
-			"comment": "See gtaforums.com/topic/843561-pathfind-node-types for node type info. 0 = paved road only, 1 = any road, 3 = water\n\np10 always equal 0x40400000\np11 always equal 0",
+			"comment": "See gtaforums.com/topic/843561-pathfind-node-types for node type info. 0 = paved road only, 1 = any road, 3 = water\n\np10 always equals 3.0\np11 always equals 0",
 			"params": [
 				{
 					"type": "float",
@@ -60008,7 +60008,7 @@
 					"name": "nodetype"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p10"
 				},
 				{
