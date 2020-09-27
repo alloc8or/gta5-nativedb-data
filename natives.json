@@ -71782,7 +71782,7 @@
 		"0xE832D760399EB220": {
 			"name": "ADD_ROPE",
 			"jhash": "0xA592EC74",
-			"comment": "Creates a rope at the specific position, that extends in the specified direction when not attached to any entities.\n__\n\nAdd_Rope(pos.x,pos.y,pos.z,0.0,0.0,0.0,20.0,4,20.0,1.0,0.0,false,false,false,5.0,false,NULL)\n\nWhen attached, Position<vector> does not matter\nWhen attached, Angle<vector> does not matter\n\nRope Type:\n4 and bellow is a thick rope\n5 and up are small metal wires\n0 crashes the game\n\nMax_length - Rope is forced to this length, generally best to keep this the same as your rope length.\n\nRigid - If max length is zero, and this is set to false the rope will become rigid (it will force a specific distance, what ever length is, between the objects).\n\nbreakable - Whether or not shooting the rope will break it.\n\nunkPtr - unknown ptr, always 0 in orig scripts\n__\n\nLengths can be calculated like so:\n\nfloat distance = abs(x1 - x2) + abs(y1 - y2) + abs(z1 - z2); // Rope length\n\n\nNOTES:\n\nRope does NOT interact with anything you attach it to, in some cases it make interact with the world AFTER it breaks (seems to occur if you set the type to -1).\n\nRope will sometimes contract and fall to the ground like you'd expect it to, but since it doesn't interact with the world the effect is just jaring.",
+			"comment": "Creates a rope at the specific position, that extends in the specified direction when not attached to any entities.\n__\n\nAdd_Rope(pos.x,pos.y,pos.z,0.0,0.0,0.0,20.0,4,20.0,1.0,0.0,false,false,false,5.0,false,NULL)\n\nWhen attached, Position<vector> does not matter\nWhen attached, Angle<vector> does not matter\n\nRope Type:\n4 and bellow is a thick rope\n5 and up are small metal wires\n0 crashes the game\n\nMax_length - Rope is forced to this length, generally best to keep this the same as your rope length.\n\nwindingSpeed - Speed the Rope is being winded, using native START_ROPE_WINDING. Set positive for winding and negative for unwinding.\n\nRigid - If max length is zero, and this is set to false the rope will become rigid (it will force a specific distance, what ever length is, between the objects).\n\nbreakable - Whether or not shooting the rope will break it.\n\nunkPtr - unknown ptr, always 0 in orig scripts\n__\n\nLengths can be calculated like so:\n\nfloat distance = abs(x1 - x2) + abs(y1 - y2) + abs(z1 - z2); // Rope length\n\n\nNOTES:\n\nRope does NOT interact with anything you attach it to, in some cases it make interact with the world AFTER it breaks (seems to occur if you set the type to -1).\n\nRope will sometimes contract and fall to the ground like you'd expect it to, but since it doesn't interact with the world the effect is just jaring.",
 			"params": [
 				{
 					"type": "float",
@@ -71826,7 +71826,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "windingSpeed"
 				},
 				{
 					"type": "BOOL",
