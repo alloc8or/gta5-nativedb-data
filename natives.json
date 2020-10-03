@@ -104834,19 +104834,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "level"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "power"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "rechargeTime"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "disableSound"
 				}
 			],
 			"return_type": "void",
