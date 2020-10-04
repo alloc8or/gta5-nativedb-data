@@ -99538,9 +99538,9 @@
 			"build": "323"
 		},
 		"0xCAC66558B944DA67": {
-			"name": "_0xCAC66558B944DA67",
+			"name": "SET_VEHICLE_USES_LARGE_REAR_RAMP",
 			"jhash": "0x0B200CE2",
-			"comment": "SET_VEHICLE_*",
+			"comment": "vehicle must be a plane",
 			"params": [
 				{
 					"type": "Vehicle",
