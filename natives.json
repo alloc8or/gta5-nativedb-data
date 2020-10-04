@@ -47081,7 +47081,7 @@
 			"build": "323"
 		},
 		"0xD39B3FFF8FFDD5BF": {
-			"name": "_0xD39B3FFF8FFDD5BF",
+			"name": "NETWORK_GET_PRESENCE_INVITE_PLAYLIST_LENGTH",
 			"jhash": "0x51B2D848",
 			"comment": "",
 			"params": [
@@ -47094,7 +47094,7 @@
 			"build": "323"
 		},
 		"0x728C4CC7920CD102": {
-			"name": "_0x728C4CC7920CD102",
+			"name": "NETWORK_GET_PRESENCE_INVITE_PLAYLIST_CURRENT",
 			"jhash": "0x4677C656",
 			"comment": "",
 			"params": [
@@ -47120,7 +47120,7 @@
 			"build": "323"
 		},
 		"0x8806CEBFABD3CE05": {
-			"name": "_0x8806CEBFABD3CE05",
+			"name": "NETWORK_GET_PRESENCE_INVITE_IS_TOURNAMENT",
 			"jhash": "0x7D593B4C",
 			"comment": "",
 			"params": [
@@ -55179,7 +55179,7 @@
 			"build": "323"
 		},
 		"0x606E4D3E3CCCF3EB": {
-			"name": "_NETWORK_GET_ROS_PRIVILEGE_10",
+			"name": "NETWORK_HAVE_ROS_SOCIAL_CLUB_PRIV",
 			"jhash": "0x424C6E27",
 			"comment": "",
 			"params": [],
@@ -55187,23 +55187,23 @@
 			"build": "323"
 		},
 		"0x8020A73847E0CA7D": {
-			"name": "_NETWORK_HAS_PLAYER_BEEN_BANNED",
+			"name": "NETWORK_HAVE_ROS_BANNED_PRIV",
 			"jhash": "0xD3BBE42F",
-			"comment": "Returns ROS privilege 7 (\"Has player been banned\").\n\nNETWORK_HAVE_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA0AD7E2AF5349F61": {
-			"name": "_NETWORK_HAVE_SOCIAL_CLUB_PRIVILEGE",
+			"name": "NETWORK_HAVE_ROS_CREATE_TICKET_PRIV",
 			"jhash": "0xBDBB5948",
-			"comment": "NETWORK_HAVE_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5F91D5D0B36AA310": {
-			"name": "_NETWORK_GET_ROS_PRIVILEGE_3",
+			"name": "NETWORK_HAVE_ROS_MULTIPLAYER_PRIV",
 			"jhash": "0x97287D68",
 			"comment": "",
 			"params": [],
@@ -55211,9 +55211,9 @@
 			"build": "323"
 		},
 		"0x422D396F80A96547": {
-			"name": "_NETWORK_GET_ROS_PRIVILEGE_4",
+			"name": "NETWORK_HAVE_ROS_LEADERBOARD_WRITE_PRIV",
 			"jhash": "0xC6EA802E",
-			"comment": "NETWORK_HAVE_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
