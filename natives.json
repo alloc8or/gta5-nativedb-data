@@ -82200,52 +82200,52 @@
 			"build": "757"
 		},
 		"0xD6781E42755531F7": {
-			"name": "_0xD6781E42755531F7",
+			"name": "_PLAYSTATS_BUY_CONTRABAND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
 			"build": "757"
 		},
 		"0xC729991A9065376E": {
-			"name": "_0xC729991A9065376E",
+			"name": "_PLAYSTATS_SELL_CONTRABAND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
 			"build": "757"
 		},
 		"0x2605663BD4F23B5D": {
-			"name": "_0x2605663BD4F23B5D",
+			"name": "_PLAYSTATS_DEFEND_CONTRABAND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
 			"build": "757"
 		},
 		"0x04D90BA8207ADA2D": {
-			"name": "_0x04D90BA8207ADA2D",
+			"name": "_PLAYSTATS_RECOVER_CONTRABAND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
