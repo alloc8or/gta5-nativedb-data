@@ -62922,7 +62922,7 @@
 			"build": "323"
 		},
 		"0x8C4F3BF23B6237DB": {
-			"name": "_CREATE_PARACHUTE_OBJECT",
+			"name": "CREATE_PARACHUTE_BAG_OBJECT",
 			"jhash": "0x19198A16",
 			"comment": "",
 			"params": [
