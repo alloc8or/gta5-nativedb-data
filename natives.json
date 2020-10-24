@@ -55601,7 +55601,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
+					"type": "Hash",
 					"name": "modelHash"
 				},
 				{
