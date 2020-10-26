@@ -51482,13 +51482,13 @@
 			"build": "323"
 		},
 		"0xAC97AF97FA68E5D5": {
-			"name": "_GET_DATE_AND_TIME_FROM_UNIX_EPOCH",
+			"name": "CONVERT_POSIX_TIME",
 			"jhash": "0xBB7CCE49",
 			"comment": "Takes the specified time and writes it to the structure specified in the second argument.\n\nstruct date_time\n{\n    int year;\n    int PADDING1;\n    int month;\n    int PADDING2;\n    int day;\n    int PADDING3;\n    int hour;\n    int PADDING4;\n    int minute;\n    int PADDING5;\n    int second;\n    int PADDING6;\n};",
 			"params": [
 				{
 					"type": "int",
-					"name": "unixEpoch"
+					"name": "posixTime"
 				},
 				{
 					"type": "Any*",
