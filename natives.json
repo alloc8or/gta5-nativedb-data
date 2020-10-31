@@ -32850,163 +32850,163 @@
 			"build": "323"
 		},
 		"0xB8F87EAD7533B176": {
-			"name": "_0xB8F87EAD7533B176",
+			"name": "WATER_OVERRIDE_SET_SHOREWAVEAMPLITUDE",
 			"jhash": "0x625181DC",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "amplitude"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xC3EAD29AB273ECE8": {
-			"name": "_0xC3EAD29AB273ECE8",
+			"name": "WATER_OVERRIDE_SET_SHOREWAVEMINAMPLITUDE",
 			"jhash": "0xBEBBFDC8",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "minAmplitude"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xA7A1127490312C36": {
-			"name": "_0xA7A1127490312C36",
+			"name": "WATER_OVERRIDE_SET_SHOREWAVEMAXAMPLITUDE",
 			"jhash": "0x6926AB03",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "maxAmplitude"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x31727907B2C43C55": {
-			"name": "_0x31727907B2C43C55",
+			"name": "WATER_OVERRIDE_SET_OCEANNOISEMINAMPLITUDE",
 			"jhash": "0xD447439D",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "minAmplitude"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x405591EC8FD9096D": {
-			"name": "_0x405591EC8FD9096D",
+			"name": "WATER_OVERRIDE_SET_OCEANWAVEAMPLITUDE",
 			"jhash": "0x584E9C59",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "amplitude"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xF751B16FB32ABC1D": {
-			"name": "_0xF751B16FB32ABC1D",
+			"name": "WATER_OVERRIDE_SET_OCEANWAVEMINAMPLITUDE",
 			"jhash": "0x5656D578",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "minAmplitude"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xB3E6360DDE733E82": {
-			"name": "_0xB3E6360DDE733E82",
+			"name": "WATER_OVERRIDE_SET_OCEANWAVEMAXAMPLITUDE",
 			"jhash": "0x0DE40C28",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "maxAmplitude"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x7C9C0B1EEB1F9072": {
-			"name": "_0x7C9C0B1EEB1F9072",
+			"name": "WATER_OVERRIDE_SET_RIPPLEBUMPINESS",
 			"jhash": "0x98C9138B",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "bumpiness"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x6216B116083A7CB4": {
-			"name": "_0x6216B116083A7CB4",
+			"name": "WATER_OVERRIDE_SET_RIPPLEMINBUMPINESS",
 			"jhash": "0xFB1A9CDE",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "minBumpiness"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x9F5E6BB6B34540DA": {
-			"name": "_0x9F5E6BB6B34540DA",
+			"name": "WATER_OVERRIDE_SET_RIPPLEMAXBUMPINESS",
 			"jhash": "0x1C0CAE89",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "maxBumpiness"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xB9854DFDE0D833D6": {
-			"name": "_0xB9854DFDE0D833D6",
+			"name": "WATER_OVERRIDE_SET_RIPPLEDISTURB",
 			"jhash": "0x4671AC2E",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "disturb"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xC54A08C85AE4D410": {
-			"name": "_0xC54A08C85AE4D410",
+			"name": "WATER_OVERRIDE_SET_STRENGTH",
 			"jhash": "0xDA02F415",
 			"comment": "This seems to edit the water wave, intensity around your current location.\n\n0.0f = Normal\n1.0f = So Calm and Smooth, a boat will stay still.\n3.0f = Really Intense.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "strength"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xA8434F1DFF41D6E7": {
-			"name": "_0xA8434F1DFF41D6E7",
+			"name": "WATER_OVERRIDE_FADE_IN",
 			"jhash": "0x5F3DDEC0",
 			"comment": "",
 			"params": [
@@ -33019,7 +33019,7 @@
 			"build": "323"
 		},
 		"0xC3C221ADDDE31A11": {
-			"name": "_0xC3C221ADDDE31A11",
+			"name": "WATER_OVERRIDE_FADE_OUT",
 			"jhash": "0x63A89684",
 			"comment": "",
 			"params": [
