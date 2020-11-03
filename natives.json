@@ -78873,9 +78873,9 @@
 			"build": "323"
 		},
 		"0xF434A10BA01C37D0": {
-			"name": "_0xF434A10BA01C37D0",
+			"name": "STAT_SET_BLOCK_SAVES",
 			"jhash": "0xCE7A2411",
-			"comment": "STAT_S*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
