@@ -22003,7 +22003,7 @@
 			"build": "323"
 		},
 		"0x4B5CFC83122DF602": {
-			"name": "_0x4B5CFC83122DF602",
+			"name": "SET_DISABLE_DECAL_RENDERING_THIS_FRAME",
 			"jhash": "0xA706E84D",
 			"comment": "",
 			"params": [],
@@ -22036,9 +22036,9 @@
 			"build": "323"
 		},
 		"0x8A35C742130C6080": {
-			"name": "_OVERRIDE_DECAL_TEXTURE",
+			"name": "PATCH_DECAL_DIFFUSE_MAP",
 			"jhash": "0x335695CF",
-			"comment": "",
+			"comment": "Old name: _OVERRIDE_DECAL_TEXTURE",
 			"params": [
 				{
 					"type": "int",
@@ -22057,9 +22057,9 @@
 			"build": "323"
 		},
 		"0xB7ED70C49521A61D": {
-			"name": "_UNDO_DECAL_TEXTURE_OVERRIDE",
+			"name": "UNPATCH_DECAL_DIFFUSE_MAP",
 			"jhash": "0x7B786555",
-			"comment": "UN*",
+			"comment": "Old name: _UNDO_DECAL_TEXTURE_OVERRIDE",
 			"params": [
 				{
 					"type": "int",
