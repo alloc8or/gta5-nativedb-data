@@ -106508,9 +106508,9 @@
 			"build": "323"
 		},
 		"0x8C0D57EA686FAD87": {
-			"name": "_PED_SKIP_NEXT_RELOADING",
+			"name": "REFILL_AMMO_INSTANTLY",
 			"jhash": "0x82EEAF0F",
-			"comment": "[23.03.2017 19:08] by ins1de :\n\n\"_IS_PED_RELOADING\" is totally a wrong name...\n\nThis native actually disables the reloading animation and script for the specified ped. Native renamed.\n\nR*",
+			"comment": "Old name: _PED_SKIP_NEXT_RELOADING",
 			"params": [
 				{
 					"type": "Ped",
