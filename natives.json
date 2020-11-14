@@ -36414,9 +36414,9 @@
 			"build": "323"
 		},
 		"0xA09F896CE912481F": {
-			"name": "_0xA09F896CE912481F",
+			"name": "GET_SIZE_OF_SAVE_DATA",
 			"jhash": "0x9EF0BC64",
-			"comment": "GET_S*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
