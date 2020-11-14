@@ -70361,17 +70361,17 @@
 			"build": "323"
 		},
 		"0x2B5AA717A181FB4C": {
-			"name": "_0x2B5AA717A181FB4C",
+			"name": "SET_PED_AO_BLOB_RENDERING",
 			"jhash": "0x98E29ED0",
-			"comment": "",
+			"comment": "https://gfycat.com/thankfulesteemedgecko",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -70380,7 +70380,7 @@
 		"0xB8B52E498014F5B0": {
 			"name": "_0xB8B52E498014F5B0",
 			"jhash": "",
-			"comment": "if (!$B8B52E498014F5B0(PLAYER::PLAYER_PED_ID())) {",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
