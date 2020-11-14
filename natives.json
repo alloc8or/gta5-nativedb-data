@@ -13726,7 +13726,7 @@
 				},
 				{
 					"type": "BOOL*",
-					"name": "p6"
+					"name": "steamProof"
 				},
 				{
 					"type": "BOOL*",
