@@ -59331,7 +59331,7 @@
 		"0xBB41AFBBBC0A0287": {
 			"name": "GET_LOCAL_PLAYER_AIM_STATE",
 			"jhash": "0x81802053",
-			"comment": "",
+			"comment": "Returns the local player's targeting mode. See PLAYER::SET_PLAYER_TARGETING_MODE.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -74417,7 +74417,7 @@
 		"0xB1906895227793F3": {
 			"name": "SET_PLAYER_TARGETING_MODE",
 			"jhash": "0x61CAE253",
-			"comment": "Sets your targeting mode.\n0 = Traditional GTA\n1 = Assisted Aiming\n2 = Free Aim",
+			"comment": "Sets your targeting mode.\n0 = Assisted Aim - Full\n1 = Assisted Aim - Partial\n2 = Free Aim - Assisted\n3 = Free Aim",
 			"params": [
 				{
 					"type": "int",
