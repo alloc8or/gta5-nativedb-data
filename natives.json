@@ -22389,7 +22389,7 @@
 		"0x2C933ABF17A1DF41": {
 			"name": "SET_TIMECYCLE_MODIFIER",
 			"jhash": "0xA81F3638",
-			"comment": "Loads the specified timecycle modifier. Modifiers are defined separately in another file (e.g. \"timecycle_mods_1.xml\")\n\nParameters:\nmodifierName - The modifier to load (e.g. \"V_FIB_IT3\", \"scanline_cam\", etc.)\n\nFor a full list, see here: pastebin.com/kVPwMemE",
+			"comment": "Loads the specified timecycle modifier. Modifiers are defined separately in another file (e.g. \"timecycle_mods_1.xml\")\n\nParameters:\nmodifierName - The modifier to load (e.g. \"V_FIB_IT3\", \"scanline_cam\", etc.)\n\nFor a full list, see here: pastebin.com/ZZDL2qLB",
 			"params": [
 				{
 					"type": "const char*",
@@ -22415,7 +22415,7 @@
 		"0x3BCF567485E1971C": {
 			"name": "SET_TRANSITION_TIMECYCLE_MODIFIER",
 			"jhash": "0xBB2BA72A",
-			"comment": "For a full list, see here: pastebin.com/kVPwMemE",
+			"comment": "For a full list, see here: pastebin.com/ZZDL2qLB",
 			"params": [
 				{
 					"type": "const char*",
