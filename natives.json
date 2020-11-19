@@ -37467,13 +37467,13 @@
 			"build": "323"
 		},
 		"0x2587A48BC88DFADF": {
-			"name": "_0x2587A48BC88DFADF",
+			"name": "SET_RIOT_MODE_ENABLED",
 			"jhash": "0xD9660339",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
