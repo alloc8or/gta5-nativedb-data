@@ -87192,7 +87192,7 @@
 					"name": "z"
 				},
 				{
-					"type": "float",
+					"type": "int",
 					"name": "duration"
 				},
 				{
