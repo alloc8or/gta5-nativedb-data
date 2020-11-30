@@ -1778,7 +1778,7 @@
 			"build": "323"
 		},
 		"0xED640017ED337E45": {
-			"name": "_PLAY_AMBIENT_SPEECH_AT_COORDS",
+			"name": "PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE",
 			"jhash": "0xA1A1402E",
 			"comment": "",
 			"params": [
@@ -1792,15 +1792,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "z"
 				},
 				{
 					"type": "const char*",
