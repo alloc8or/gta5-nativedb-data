@@ -44557,16 +44557,16 @@
 			"build": "323"
 		},
 		"0x595F028698072DD9": {
-			"name": "_0x595F028698072DD9",
+			"name": "NETWORK_CHECK_USER_CONTENT_PRIVILEGES",
 			"jhash": "0xBB54AA3D",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
