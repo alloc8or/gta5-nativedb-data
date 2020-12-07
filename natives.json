@@ -44470,11 +44470,11 @@
 			"build": "323"
 		},
 		"0xBA9775570DB788CF": {
-			"name": "_0xBA9775570DB788CF",
+			"name": "NETWORK_ARE_SOCIAL_CLUB_POLICIES_CURRENT",
 			"jhash": "0x358D1D77",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x8DB296B814EDDA07": {
