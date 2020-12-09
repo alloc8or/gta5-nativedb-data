@@ -55464,9 +55464,9 @@
 			"unused": true
 		},
 		"0x3765C3A3E8192E10": {
-			"name": "_0x3765C3A3E8192E10",
+			"name": "_NETWORK_GET_UNRELIABLE_RESEND_COUNT_FOR_PLAYER",
 			"jhash": "",
-			"comment": "NETWORK_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
