@@ -99984,8 +99984,8 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "seatIndex"
 				}
 			],
 			"return_type": "BOOL",
