@@ -1991,7 +1991,7 @@
 		"0x7CDC8C3B89F661B3": {
 			"name": "_SET_PED_VOICE_GROUP",
 			"jhash": "",
-			"comment": "From the scripts:\n\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"PAIGE_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"TALINA_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_BLACK_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"FEMALE_LOST_WHITE_PVG\"));",
+			"comment": "From the scripts:\n\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"PAIGE_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"TALINA_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"FEMALE_LOST_BLACK_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"FEMALE_LOST_WHITE_PVG\"));",
 			"params": [
 				{
 					"type": "Ped",
@@ -3268,7 +3268,7 @@
 		"0xEBAA9B64D76356FD": {
 			"name": "PLAY_STREAM_FROM_OBJECT",
 			"jhash": "0xC5266BF7",
-			"comment": "Used with AUDIO::LOAD_STREAM\n\nExample from finale_heist2b.c4:\nAI::TASK_SYNCHRONIZED_SCENE(l_4C8[2/*14*/], l_4C8[2/*14*/]._f7, l_30A, \"push_out_vault_l\", 4.0, -1.5, 5, 713, 4.0, 0);\n                    PED::SET_SYNCHRONIZED_SCENE_PHASE(l_4C8[2/*14*/]._f7, 0.0);\n                    PED::_2208438012482A1A(l_4C8[2/*14*/], 0, 0);\n                    PED::SET_PED_COMBAT_ATTRIBUTES(l_4C8[2/*14*/], 38, 1);\n                    PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(l_4C8[2/*14*/], 1);\n                    if (AUDIO::LOAD_STREAM(\"Gold_Cart_Push_Anim_01\", \"BIG_SCORE_3B_SOUNDS\")) {\n                        AUDIO::PLAY_STREAM_FROM_OBJECT(l_36F[0/*1*/]);\n                    }",
+			"comment": "Used with AUDIO::LOAD_STREAM\n\nExample from finale_heist2b.c4:\nTASK::TASK_SYNCHRONIZED_SCENE(l_4C8[2/*14*/], l_4C8[2/*14*/]._f7, l_30A, \"push_out_vault_l\", 4.0, -1.5, 5, 713, 4.0, 0);\n                    PED::SET_SYNCHRONIZED_SCENE_PHASE(l_4C8[2/*14*/]._f7, 0.0);\n                    PED::_2208438012482A1A(l_4C8[2/*14*/], 0, 0);\n                    PED::SET_PED_COMBAT_ATTRIBUTES(l_4C8[2/*14*/], 38, 1);\n                    PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(l_4C8[2/*14*/], 1);\n                    if (AUDIO::LOAD_STREAM(\"Gold_Cart_Push_Anim_01\", \"BIG_SCORE_3B_SOUNDS\")) {\n                        AUDIO::PLAY_STREAM_FROM_OBJECT(l_36F[0/*1*/]);\n                    }",
 			"params": [
 				{
 					"type": "Object",
@@ -7534,7 +7534,7 @@
 		"0xEE778F8C7E1142E2": {
 			"name": "_0xEE778F8C7E1142E2",
 			"jhash": "0xF3B148A6",
-			"comment": "interprets the result of CAM::_0x19CAFA3C87F7C2FF()\n\nexample: // checks if you're currently in first person\nif ((CAM::_EE778F8C7E1142E2(CAM::_19CAFA3C87F7C2FF()) == 4) && (!__463_$28ED382849B17AFC())) {\nUI::_FDEC055AB549E328();\nUI::_SET_NOTIFICATION_TEXT_ENTRY(\"REC_FEED_WAR\");\nl_CE[0/*1*/] = UI::_DRAW_NOTIFICATION(0, 1);\n}\n",
+			"comment": "interprets the result of CAM::_0x19CAFA3C87F7C2FF()\n\nexample: // checks if you're currently in first person\nif ((CAM::_EE778F8C7E1142E2(CAM::_19CAFA3C87F7C2FF()) == 4) && (!__463_$28ED382849B17AFC())) {\nHUD::_FDEC055AB549E328();\nHUD::_SET_NOTIFICATION_TEXT_ENTRY(\"REC_FEED_WAR\");\nl_CE[0/*1*/] = HUD::_DRAW_NOTIFICATION(0, 1);\n}\n",
 			"params": [
 				{
 					"type": "Any",
@@ -7564,7 +7564,7 @@
 		"0x19CAFA3C87F7C2FF": {
 			"name": "_0x19CAFA3C87F7C2FF",
 			"jhash": "",
-			"comment": "Seems to return the current type of view\nexample: // checks if you're currently in first person\nif ((CAM::_EE778F8C7E1142E2(CAM::_19CAFA3C87F7C2FF()) == 4) && (!__463_$28ED382849B17AFC())) {\n    UI::_FDEC055AB549E328();\n    UI::_SET_NOTIFICATION_TEXT_ENTRY(\"REC_FEED_WAR\");\n    l_CE[0/*1*/] = UI::_DRAW_NOTIFICATION(0, 1);\n}",
+			"comment": "Seems to return the current type of view\nexample: // checks if you're currently in first person\nif ((CAM::_EE778F8C7E1142E2(CAM::_19CAFA3C87F7C2FF()) == 4) && (!__463_$28ED382849B17AFC())) {\n    HUD::_FDEC055AB549E328();\n    HUD::_SET_NOTIFICATION_TEXT_ENTRY(\"REC_FEED_WAR\");\n    l_CE[0/*1*/] = HUD::_DRAW_NOTIFICATION(0, 1);\n}",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -10798,7 +10798,7 @@
 		"0x812595A0644CE1DE": {
 			"name": "IS_DLC_PRESENT",
 			"jhash": "0x1F321943",
-			"comment": "Example:\nDLC2::IS_DLC_PRESENT($\\mpbusiness2\\);\n($ = gethashkey)\n\nbruteforce these:\n0xB119F6D\n0x96F02EE6",
+			"comment": "Example:\nDLC::IS_DLC_PRESENT($\\mpbusiness2\\);\n($ = gethashkey)\n\nbruteforce these:\n0xB119F6D\n0x96F02EE6",
 			"params": [
 				{
 					"type": "Hash",
@@ -12205,7 +12205,7 @@
 		"0x1218E6886D3D8327": {
 			"name": "IS_ENTITY_STATIC",
 			"jhash": "0x928E12E9",
-			"comment": "a static ped will not react to natives like \"APPLY_FORCE_TO_ENTITY\" or \"SET_ENTITY_VELOCITY\" and oftentimes will not react to task-natives like \"AI::TASK_COMBAT_PED\". The only way I know of to make one of these peds react is to ragdoll them (or sometimes to use CLEAR_PED_TASKS_IMMEDIATELY(). Static peds include almost all far-away peds, beach-combers, peds in certain scenarios, peds crossing a crosswalk, peds walking to get back into their cars, and others. If anyone knows how to make a ped non-static without ragdolling them, please edit this with the solution.\n\nhow can I make an entity static???",
+			"comment": "a static ped will not react to natives like \"APPLY_FORCE_TO_ENTITY\" or \"SET_ENTITY_VELOCITY\" and oftentimes will not react to task-natives like \"TASK::TASK_COMBAT_PED\". The only way I know of to make one of these peds react is to ragdoll them (or sometimes to use CLEAR_PED_TASKS_IMMEDIATELY(). Static peds include almost all far-away peds, beach-combers, peds in certain scenarios, peds crossing a crosswalk, peds walking to get back into their cars, and others. If anyone knows how to make a ped non-static without ragdolling them, please edit this with the solution.\n\nhow can I make an entity static???",
 			"params": [
 				{
 					"type": "Entity",
@@ -13026,7 +13026,7 @@
 		"0xEAF4CD9EA3E7E922": {
 			"name": "HAS_ANIM_EVENT_FIRED",
 			"jhash": "0x66571CA0",
-			"comment": "if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"CreateObject\")))",
+			"comment": "if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"CreateObject\")))",
 			"params": [
 				{
 					"type": "Entity",
@@ -16997,7 +16997,7 @@
 		"0xD801CC02177FA3F1": {
 			"name": "_0xD801CC02177FA3F1",
 			"jhash": "0x9CBA682A",
-			"comment": "4 matches across 2 scripts.\n\nappcamera:\ncalled after UI::HIDE_HUD_AND_RADAR_THIS_FRAME() and before GRAPHICS::0x108F36CC();\n\ncellphone_controller:\ncalled after GRAPHICS::0xE9F2B68F(0, 0) and before GRAPHICS::0x108F36CC();",
+			"comment": "4 matches across 2 scripts.\n\nappcamera:\ncalled after HUD::HIDE_HUD_AND_RADAR_THIS_FRAME() and before GRAPHICS::0x108F36CC();\n\ncellphone_controller:\ncalled after GRAPHICS::0xE9F2B68F(0, 0) and before GRAPHICS::0x108F36CC();",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -17791,7 +17791,7 @@
 		"0x4B5B4DA5D79F1943": {
 			"name": "_SET_CHECKPOINT_SCALE",
 			"jhash": "0x80151CCF",
-			"comment": "p0 - Scale? Looks to be a normalized value (0.0 - 1.0)\n\noffroad_races.c4, line ~67407:\na_3._f7 = GRAPHICS::CREATE_CHECKPOINT(v_D, v_A, a_4, a_7, v_E, v_F, v_10, sub_62b2(v_A, 220, 255), 0);\nUI::GET_HUD_COLOUR(134, &v_E, &v_F, &v_10, &v_11);\nGRAPHICS::_SET_CHECKPOINT_ICON_RGBA(a_3._f7, v_E, v_F, v_10, sub_62b2(v_A, 70, 210));\nGRAPHICS::_4B5B4DA5D79F1943(a_3._f7, 0.95);\nGRAPHICS::SET_CHECKPOINT_CYLINDER_HEIGHT(a_3._f7, 4.0, 4.0, 100.0);\n",
+			"comment": "p0 - Scale? Looks to be a normalized value (0.0 - 1.0)\n\noffroad_races.c4, line ~67407:\na_3._f7 = GRAPHICS::CREATE_CHECKPOINT(v_D, v_A, a_4, a_7, v_E, v_F, v_10, sub_62b2(v_A, 220, 255), 0);\nHUD::GET_HUD_COLOUR(134, &v_E, &v_F, &v_10, &v_11);\nGRAPHICS::_SET_CHECKPOINT_ICON_RGBA(a_3._f7, v_E, v_F, v_10, sub_62b2(v_A, 70, 210));\nGRAPHICS::_4B5B4DA5D79F1943(a_3._f7, 0.95);\nGRAPHICS::SET_CHECKPOINT_CYLINDER_HEIGHT(a_3._f7, 4.0, 4.0, 100.0);\n",
 			"params": [
 				{
 					"type": "int",
@@ -23353,7 +23353,7 @@
 		"0x80338406F3475E55": {
 			"name": "BEGIN_TEXT_COMMAND_SCALEFORM_STRING",
 			"jhash": "0x3AC9CB55",
-			"comment": "Called prior to adding a text component to the UI. After doing so, GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING is called.\n\nExamples:\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"NUMBER\");\nUI::ADD_TEXT_COMPONENT_INTEGER(GAMEPLAY::ABSI(a_1));\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRING\");\nUI::_ADD_TEXT_COMPONENT_STRING(a_2);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRTNM2\");\nUI::_0x17299B63C7683A2B(v_3);\nUI::_0x17299B63C7683A2B(v_4);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRTNM1\");\nUI::_0x17299B63C7683A2B(v_3);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();",
+			"comment": "Called prior to adding a text component to the UI. After doing so, GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING is called.\n\nExamples:\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"NUMBER\");\nHUD::ADD_TEXT_COMPONENT_INTEGER(MISC::ABSI(a_1));\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRING\");\nHUD::_ADD_TEXT_COMPONENT_STRING(a_2);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRTNM2\");\nHUD::_0x17299B63C7683A2B(v_3);\nHUD::_0x17299B63C7683A2B(v_4);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRTNM1\");\nHUD::_0x17299B63C7683A2B(v_3);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();",
 			"params": [
 				{
 					"type": "const char*",
@@ -23541,7 +23541,7 @@
 		"0xFDDC2B4ED3C69DF0": {
 			"name": "DRAW_TV_CHANNEL",
 			"jhash": "0x8129EF89",
-			"comment": "All calls to this native are preceded by calls to GRAPHICS::_0x61BB1D9B3A95D802 and GRAPHICS::_0xC6372ECD45D73BCD, respectively.\n\n\"act_cinema.ysc\", line 1483:\nUI::SET_HUD_COMPONENT_POSITION(15, 0.0, -0.0375);\nUI::SET_TEXT_RENDER_ID(l_AE);\nGRAPHICS::_0x61BB1D9B3A95D802(4);\nGRAPHICS::_0xC6372ECD45D73BCD(1);\nif (GRAPHICS::_0x0AD973CA1E077B60(${movie_arthouse})) {\n    GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 0.7375, 1.0, 0.0, 255, 255, 255, 255);\n} else { \n    GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255);\n}\n\n\"am_mp_property_int.ysc\", line 102545:\nif (ENTITY::DOES_ENTITY_EXIST(a_2._f3)) {\n    if (UI::IS_NAMED_RENDERTARGET_LINKED(ENTITY::GET_ENTITY_MODEL(a_2._f3))) {\n        UI::SET_TEXT_RENDER_ID(a_2._f1);\n        GRAPHICS::_0x61BB1D9B3A95D802(4);\n        GRAPHICS::_0xC6372ECD45D73BCD(1);\n        GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255);\n        if (GRAPHICS::GET_TV_CHANNEL() == -1) {\n            sub_a8fa5(a_2, 1);\n        } else { \n            sub_a8fa5(a_2, 1);\n            GRAPHICS::ATTACH_TV_AUDIO_TO_ENTITY(a_2._f3);\n        }\n        UI::SET_TEXT_RENDER_ID(UI::GET_DEFAULT_SCRIPT_RENDERTARGET_RENDER_ID());\n    }\n}\n",
+			"comment": "All calls to this native are preceded by calls to GRAPHICS::_0x61BB1D9B3A95D802 and GRAPHICS::_0xC6372ECD45D73BCD, respectively.\n\n\"act_cinema.ysc\", line 1483:\nHUD::SET_HUD_COMPONENT_POSITION(15, 0.0, -0.0375);\nHUD::SET_TEXT_RENDER_ID(l_AE);\nGRAPHICS::_0x61BB1D9B3A95D802(4);\nGRAPHICS::_0xC6372ECD45D73BCD(1);\nif (GRAPHICS::_0x0AD973CA1E077B60(${movie_arthouse})) {\n    GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 0.7375, 1.0, 0.0, 255, 255, 255, 255);\n} else { \n    GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255);\n}\n\n\"am_mp_property_int.ysc\", line 102545:\nif (ENTITY::DOES_ENTITY_EXIST(a_2._f3)) {\n    if (HUD::IS_NAMED_RENDERTARGET_LINKED(ENTITY::GET_ENTITY_MODEL(a_2._f3))) {\n        HUD::SET_TEXT_RENDER_ID(a_2._f1);\n        GRAPHICS::_0x61BB1D9B3A95D802(4);\n        GRAPHICS::_0xC6372ECD45D73BCD(1);\n        GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255);\n        if (GRAPHICS::GET_TV_CHANNEL() == -1) {\n            sub_a8fa5(a_2, 1);\n        } else { \n            sub_a8fa5(a_2, 1);\n            GRAPHICS::ATTACH_TV_AUDIO_TO_ENTITY(a_2._f3);\n        }\n        HUD::SET_TEXT_RENDER_ID(HUD::GET_DEFAULT_SCRIPT_RENDERTARGET_RENDER_ID());\n    }\n}\n",
 			"params": [
 				{
 					"type": "float",
@@ -24296,7 +24296,7 @@
 		"0x92F0DA1E27DB96DC": {
 			"name": "_THEFEED_SET_NEXT_POST_BACKGROUND_COLOR",
 			"jhash": "0x07CE2EA4",
-			"comment": "From the decompiled scripts:\nUI::_92F0DA1E27DB96DC(6);\nUI::_92F0DA1E27DB96DC(184);\nUI::_92F0DA1E27DB96DC(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: gyazo.com/68bd384455fceb0a85a8729e48216e15",
+			"comment": "From the decompiled scripts:\nHUD::_92F0DA1E27DB96DC(6);\nHUD::_92F0DA1E27DB96DC(184);\nHUD::_92F0DA1E27DB96DC(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: gyazo.com/68bd384455fceb0a85a8729e48216e15",
 			"params": [
 				{
 					"type": "int",
@@ -24397,7 +24397,7 @@
 		"0x317EBA71D7543F52": {
 			"name": "_THEFEED_ADD_TXD_REF",
 			"jhash": "",
-			"comment": "From the decompiled scripts, called 61 times:\nUI::_317EBA71D7543F52(&v_13, &v_13, &v_3, &v_3);",
+			"comment": "From the decompiled scripts, called 61 times:\nHUD::_317EBA71D7543F52(&v_13, &v_13, &v_3, &v_3);",
 			"params": [
 				{
 					"type": "Any*",
@@ -24505,7 +24505,7 @@
 		"0xC6F580E4C94926AC": {
 			"name": "_END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_GXT_ENTRY",
 			"jhash": "",
-			"comment": "Needs more research.\n\nOnly one type of usage in the scripts:\n\nUI::_C6F580E4C94926AC(\"CHAR_ACTING_UP\", \"CHAR_ACTING_UP\", 0, 0, \"DI_FEED_CHAR\", a_0);",
+			"comment": "Needs more research.\n\nOnly one type of usage in the scripts:\n\nHUD::_C6F580E4C94926AC(\"CHAR_ACTING_UP\", \"CHAR_ACTING_UP\", 0, 0, \"DI_FEED_CHAR\", a_0);",
 			"params": [
 				{
 					"type": "const char*",
@@ -24538,7 +24538,7 @@
 		"0x1E6611149DB3DB6B": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU",
 			"jhash": "0x0EB382B7",
-			"comment": "NOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\nExample, only occurrence in the scripts:\nv_8 = UI::_1E6611149DB3DB6B(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 0, 0, &v_9, \"\", a_5);",
+			"comment": "NOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\nExample, only occurrence in the scripts:\nv_8 = HUD::_1E6611149DB3DB6B(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 0, 0, &v_9, \"\", a_5);",
 			"params": [
 				{
 					"type": "const char*",
@@ -24716,7 +24716,7 @@
 		"0xAA295B6F28BD587D": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_AWARD",
 			"jhash": "0x02DED2B8",
-			"comment": "Example:\n\nUI::_SET_NOTIFICATION_TEXT_ENTRY(\"HUNT\");\nUI::_0xAA295B6F28BD587D(\"Hunting\", \"Hunting_Gold_128\", 0, 109, \"HUD_MED_UNLKED\");",
+			"comment": "Example:\n\nHUD::_SET_NOTIFICATION_TEXT_ENTRY(\"HUNT\");\nHUD::_0xAA295B6F28BD587D(\"Hunting\", \"Hunting_Gold_128\", 0, 109, \"HUD_MED_UNLKED\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -25013,7 +25013,7 @@
 		"0xD202B92CBF1D816F": {
 			"name": "_END_TEXT_COMMAND_THEFEED_POST_REPLAY_ICON",
 			"jhash": "",
-			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, image goes from 0 - 39 - Xbox you can add text to\n\nexample: \nUI::_0xD202B92CBF1D816F(1, 20, \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- imgur.com/lGBPCz3",
+			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, image goes from 0 - 39 - Xbox you can add text to\n\nexample: \nHUD::_0xD202B92CBF1D816F(1, 20, \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- imgur.com/lGBPCz3",
 			"params": [
 				{
 					"type": "int",
@@ -25034,7 +25034,7 @@
 		"0xDD6CB2CCE7C2735C": {
 			"name": "_END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT",
 			"jhash": "",
-			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, button accepts \"~INPUT_SOMETHING~\"\n\nexample:\nUI::_0xDD6CB2CCE7C2735C(1, \"~INPUT_TALK~\", \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- imgur.com/UPy0Ial\n\n\nExamples from the scripts:\nl_D1[1/*1*/]=UI::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=UI::_DD6CB2CCE7C2735C(1,\"~INPUT_SAVE_REPLAY_CLIP~\",\"\");\nl_D1[1/*1*/]=UI::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=UI::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING_SECONDARY~\",\"\");\n",
+			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, button accepts \"~INPUT_SOMETHING~\"\n\nexample:\nHUD::_0xDD6CB2CCE7C2735C(1, \"~INPUT_TALK~\", \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- imgur.com/UPy0Ial\n\n\nExamples from the scripts:\nl_D1[1/*1*/]=HUD::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::_DD6CB2CCE7C2735C(1,\"~INPUT_SAVE_REPLAY_CLIP~\",\"\");\nl_D1[1/*1*/]=HUD::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING_SECONDARY~\",\"\");\n",
 			"params": [
 				{
 					"type": "int",
@@ -25119,7 +25119,7 @@
 		"0xCD015E5BB0D96A57": {
 			"name": "END_TEXT_COMMAND_DISPLAY_TEXT",
 			"jhash": "0x6F8350CE",
-			"comment": "After applying the properties to the text (See UI::SET_TEXT_), this will draw the text in the applied position. Also 0.0f < x, y < 1.0f, percentage of the axis.\n\nUsed to be known as _DRAW_TEXT",
+			"comment": "After applying the properties to the text (See HUD::SET_TEXT_), this will draw the text in the applied position. Also 0.0f < x, y < 1.0f, percentage of the axis.\n\nUsed to be known as _DRAW_TEXT",
 			"params": [
 				{
 					"type": "float",
@@ -25260,7 +25260,7 @@
 		"0xF9113A30DE5C6670": {
 			"name": "BEGIN_TEXT_COMMAND_SET_BLIP_NAME",
 			"jhash": "0xF4C211F6",
-			"comment": "example:\n\nUI::BEGIN_TEXT_COMMAND_SET_BLIP_NAME(\"STRING\");\nUI::_ADD_TEXT_COMPONENT_STRING(\"Name\");\nUI::END_TEXT_COMMAND_SET_BLIP_NAME(blip);",
+			"comment": "example:\n\nHUD::BEGIN_TEXT_COMMAND_SET_BLIP_NAME(\"STRING\");\nHUD::_ADD_TEXT_COMPONENT_STRING(\"Name\");\nHUD::END_TEXT_COMMAND_SET_BLIP_NAME(blip);",
 			"params": [
 				{
 					"type": "const char*",
@@ -25531,7 +25531,7 @@
 		"0x169BD9382084C8C0": {
 			"name": "_GET_TEXT_SUBSTRING",
 			"jhash": "0x34A396EE",
-			"comment": "Returns a substring of a specified length starting at a specified position.\n\nExample:\n// Get \"STRING\" text from \"MY_STRING\"\nsubStr = UI::_GET_TEXT_SUBSTRING(\"MY_STRING\", 3, 6);",
+			"comment": "Returns a substring of a specified length starting at a specified position.\n\nExample:\n// Get \"STRING\" text from \"MY_STRING\"\nsubStr = HUD::_GET_TEXT_SUBSTRING(\"MY_STRING\", 3, 6);",
 			"params": [
 				{
 					"type": "const char*",
@@ -25552,7 +25552,7 @@
 		"0xB2798643312205C5": {
 			"name": "_GET_TEXT_SUBSTRING_SAFE",
 			"jhash": "0x0183A66C",
-			"comment": "Returns a substring of a specified length starting at a specified position. The result is guaranteed not to exceed the specified max length.\n\nNOTE: The 'maxLength' parameter might actually be the size of the buffer that is returned. More research is needed. -CL69\n\nExample:\n// Condensed example of how Rockstar uses this function\nstrLen = UI::GET_LENGTH_OF_LITERAL_STRING(GAMEPLAY::GET_ONSCREEN_KEYBOARD_RESULT());\nsubStr = UI::_GET_TEXT_SUBSTRING_SAFE(GAMEPLAY::GET_ONSCREEN_KEYBOARD_RESULT(), 0, strLen, 63);\n\n--\n\n\"fm_race_creator.ysc\", line 85115:\n// parameters modified for clarity\nBOOL sub_8e5aa(char *text, int length) {\n    for (i = 0; i <= (length - 2); i += 1) {\n        if (!GAMEPLAY::ARE_STRINGS_EQUAL(UI::_GET_TEXT_SUBSTRING_SAFE(text, i, i + 1, 1), \" \")) {\n            return FALSE;\n        }\n    }\n    return TRUE;\n}",
+			"comment": "Returns a substring of a specified length starting at a specified position. The result is guaranteed not to exceed the specified max length.\n\nNOTE: The 'maxLength' parameter might actually be the size of the buffer that is returned. More research is needed. -CL69\n\nExample:\n// Condensed example of how Rockstar uses this function\nstrLen = HUD::GET_LENGTH_OF_LITERAL_STRING(MISC::GET_ONSCREEN_KEYBOARD_RESULT());\nsubStr = HUD::_GET_TEXT_SUBSTRING_SAFE(MISC::GET_ONSCREEN_KEYBOARD_RESULT(), 0, strLen, 63);\n\n--\n\n\"fm_race_creator.ysc\", line 85115:\n// parameters modified for clarity\nBOOL sub_8e5aa(char *text, int length) {\n    for (i = 0; i <= (length - 2); i += 1) {\n        if (!MISC::ARE_STRINGS_EQUAL(HUD::_GET_TEXT_SUBSTRING_SAFE(text, i, i + 1, 1), \" \")) {\n            return FALSE;\n        }\n    }\n    return TRUE;\n}",
 			"params": [
 				{
 					"type": "const char*",
@@ -25577,7 +25577,7 @@
 		"0xCE94AEBA5D82908A": {
 			"name": "_GET_TEXT_SUBSTRING_SLICE",
 			"jhash": "0xFA6373BB",
-			"comment": "Returns a substring that is between two specified positions. The length of the string will be calculated using (endPosition - startPosition).\n\nExample:\n// Get \"STRING\" text from \"MY_STRING\"\nsubStr = UI::_GET_TEXT_SUBSTRING_SLICE(\"MY_STRING\", 3, 9);\n// Overflows are possibly replaced with underscores (needs verification)\nsubStr = UI::_GET_TEXT_SUBSTRING_SLICE(\"MY_STRING\", 3, 10); // \"STRING_\"?",
+			"comment": "Returns a substring that is between two specified positions. The length of the string will be calculated using (endPosition - startPosition).\n\nExample:\n// Get \"STRING\" text from \"MY_STRING\"\nsubStr = HUD::_GET_TEXT_SUBSTRING_SLICE(\"MY_STRING\", 3, 9);\n// Overflows are possibly replaced with underscores (needs verification)\nsubStr = HUD::_GET_TEXT_SUBSTRING_SLICE(\"MY_STRING\", 3, 10); // \"STRING_\"?",
 			"params": [
 				{
 					"type": "const char*",
@@ -26976,7 +26976,7 @@
 		"0x5CDE92C702A8FCE7": {
 			"name": "ADD_BLIP_FOR_ENTITY",
 			"jhash": "0x30822554",
-			"comment": "Returns red ( default ) blip attached to entity.\n\nExample:\nBlip blip; //Put this outside your case or option\nblip = UI::ADD_BLIP_FOR_ENTITY(YourPedOrBodyguardName);\nUI::SET_BLIP_AS_FRIENDLY(blip, true);",
+			"comment": "Returns red ( default ) blip attached to entity.\n\nExample:\nBlip blip; //Put this outside your case or option\nblip = HUD::ADD_BLIP_FOR_ENTITY(YourPedOrBodyguardName);\nHUD::SET_BLIP_AS_FRIENDLY(blip, true);",
 			"params": [
 				{
 					"type": "Entity",
@@ -27192,7 +27192,7 @@
 		"0x45FF974EEE1C8734": {
 			"name": "SET_BLIP_ALPHA",
 			"jhash": "0xA791FCCD",
-			"comment": "Sets alpha-channel for blip color.\n\nExample:\n\nBlip blip = UI::ADD_BLIP_FOR_ENTITY(entity);\nUI::SET_BLIP_COLOUR(blip , 3);\nUI::SET_BLIP_ALPHA(blip , 64);\n",
+			"comment": "Sets alpha-channel for blip color.\n\nExample:\n\nBlip blip = HUD::ADD_BLIP_FOR_ENTITY(entity);\nHUD::SET_BLIP_COLOUR(blip , 3);\nHUD::SET_BLIP_ALPHA(blip , 64);\n",
 			"params": [
 				{
 					"type": "Blip",
@@ -27715,7 +27715,7 @@
 		"0x86A652570E5F25DD": {
 			"name": "REMOVE_BLIP",
 			"jhash": "0xD8C3C1CD",
-			"comment": "In the C++ SDK, this seems not to work-- the blip isn't removed immediately. I use it for saving cars.\n\nE.g.:\n\nPed pped = PLAYER::PLAYER_PED_ID();\nVehicle v = PED::GET_VEHICLE_PED_IS_USING(pped);\nBlip b = UI::ADD_BLIP_FOR_ENTITY(v);\n\nworks fine.\nBut later attempting to delete it with:\n\nBlip b = UI::GET_BLIP_FROM_ENTITY(v);\nif (UI::DOES_BLIP_EXIST(b)) UI::REMOVE_BLIP(&b);\n\ndoesn't work. And yes, doesn't work without the DOES_BLIP_EXIST check either. Also, if you attach multiple blips to the same thing (say, a vehicle), and that thing disappears, the blips randomly attach to other things (in my case, a vehicle).\n\nThus for me, UI::REMOVE_BLIP(&b) only works if there's one blip, (in my case) the vehicle is marked as no longer needed, you drive away from it and it eventually despawns, AND there is only one blip attached to it. I never intentionally attach multiple blips but if the user saves the car, this adds a blip. Then if they delete it, it is supposed to remove the blip, but it doesn't. Then they can immediately save it again, causing another blip to re-appear.\n-------------\n\nPassing the address of the variable instead of the value works for me.\ne.g.\nint blip = UI::ADD_BLIP_FOR_ENTITY(ped);\nUI::REMOVE_BLIP(&blip);\n\n\nRemove blip will currently crash your game, just artificially remove the blip by setting the sprite to a id that is 'invisible'.\n\n--\nIt crashes my game.",
+			"comment": "In the C++ SDK, this seems not to work-- the blip isn't removed immediately. I use it for saving cars.\n\nE.g.:\n\nPed pped = PLAYER::PLAYER_PED_ID();\nVehicle v = PED::GET_VEHICLE_PED_IS_USING(pped);\nBlip b = HUD::ADD_BLIP_FOR_ENTITY(v);\n\nworks fine.\nBut later attempting to delete it with:\n\nBlip b = HUD::GET_BLIP_FROM_ENTITY(v);\nif (HUD::DOES_BLIP_EXIST(b)) HUD::REMOVE_BLIP(&b);\n\ndoesn't work. And yes, doesn't work without the DOES_BLIP_EXIST check either. Also, if you attach multiple blips to the same thing (say, a vehicle), and that thing disappears, the blips randomly attach to other things (in my case, a vehicle).\n\nThus for me, HUD::REMOVE_BLIP(&b) only works if there's one blip, (in my case) the vehicle is marked as no longer needed, you drive away from it and it eventually despawns, AND there is only one blip attached to it. I never intentionally attach multiple blips but if the user saves the car, this adds a blip. Then if they delete it, it is supposed to remove the blip, but it doesn't. Then they can immediately save it again, causing another blip to re-appear.\n-------------\n\nPassing the address of the variable instead of the value works for me.\ne.g.\nint blip = HUD::ADD_BLIP_FOR_ENTITY(ped);\nHUD::REMOVE_BLIP(&blip);\n\n\nRemove blip will currently crash your game, just artificially remove the blip by setting the sprite to a id that is 'invisible'.\n\n--\nIt crashes my game.",
 			"params": [
 				{
 					"type": "Blip*",
@@ -27988,7 +27988,7 @@
 		"0xA7E4E2D361C2627F": {
 			"name": "SET_WAYPOINT_OFF",
 			"jhash": "0xB3496E1B",
-			"comment": "This native removes the current waypoint from the map.\n\nExample:\nC#:\nFunction.Call(Hash.SET_WAYPOINT_OFF);\n\nC++:\nUI::SET_WAYPOINT_OFF();",
+			"comment": "This native removes the current waypoint from the map.\n\nExample:\nC#:\nFunction.Call(Hash.SET_WAYPOINT_OFF);\n\nC++:\nHUD::SET_WAYPOINT_OFF();",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -28371,7 +28371,7 @@
 		"0x170F541E1CADD1DE": {
 			"name": "_0x170F541E1CADD1DE",
 			"jhash": "",
-			"comment": "Related to displaying cash on the HUD\nAlways called before UI::_SET_SINGLEPLAYER_HUD_CASH in decompiled scripts",
+			"comment": "Related to displaying cash on the HUD\nAlways called before HUD::_SET_SINGLEPLAYER_HUD_CASH in decompiled scripts",
 			"params": [
 				{
 					"type": "BOOL",
@@ -28908,7 +28908,7 @@
 		"0x817B86108EB94E51": {
 			"name": "_0x817B86108EB94E51",
 			"jhash": "0xD2161E77",
-			"comment": "UI::_817B86108EB94E51(1, &g_189F36._f10CD1[0/*16*/], &g_189F36._f10CD1[1/*16*/], &g_189F36._f10CD1[2/*16*/], &g_189F36._f10CD1[3/*16*/], &g_189F36._f10CD1[4/*16*/], &g_189F36._f10CD1[5/*16*/], &g_189F36._f10CD1[6/*16*/], &g_189F36._f10CD1[7/*16*/]);",
+			"comment": "HUD::_817B86108EB94E51(1, &g_189F36._f10CD1[0/*16*/], &g_189F36._f10CD1[1/*16*/], &g_189F36._f10CD1[2/*16*/], &g_189F36._f10CD1[3/*16*/], &g_189F36._f10CD1[4/*16*/], &g_189F36._f10CD1[5/*16*/], &g_189F36._f10CD1[6/*16*/], &g_189F36._f10CD1[7/*16*/]);",
 			"params": [
 				{
 					"type": "BOOL",
@@ -33139,7 +33139,7 @@
 		"0x02DEAAC8F8EA7FE7": {
 			"name": "_0x02DEAAC8F8EA7FE7",
 			"jhash": "",
-			"comment": "Found in the scripts:\n\nGAMEPLAY::_02DEAAC8F8EA7FE7(\"\");",
+			"comment": "Found in the scripts:\n\nMISC::_02DEAAC8F8EA7FE7(\"\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -33152,7 +33152,7 @@
 		"0x11B56FBBF7224868": {
 			"name": "PRELOAD_CLOUD_HAT",
 			"jhash": "0x8727A4C5",
-			"comment": "Found in the scripts:\n\nGAMEPLAY::_11B56FBBF7224868(\"CONTRAILS\");",
+			"comment": "Found in the scripts:\n\nMISC::_11B56FBBF7224868(\"CONTRAILS\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -33182,7 +33182,7 @@
 		"0xA74802FB8D0B7814": {
 			"name": "UNLOAD_CLOUD_HAT",
 			"jhash": "0xC9FA6E07",
-			"comment": "Called 4 times in the b617d scripts:\nGAMEPLAY::_A74802FB8D0B7814(\"CONTRAILS\", 0);",
+			"comment": "Called 4 times in the b617d scripts:\nMISC::_A74802FB8D0B7814(\"CONTRAILS\", 0);",
 			"params": [
 				{
 					"type": "const char*",
@@ -33713,7 +33713,7 @@
 		"0x933D6A9EEC1BACD0": {
 			"name": "SET_BIT",
 			"jhash": "0x4EFE7E6B",
-			"comment": "This sets bit [offset] of [address] to on.\n\nThe offsets used are different bits to be toggled on and off, typically there is only one address used in a script.\n\nExample:\nGAMEPLAY::SET_BIT(&bitAddress, 1);\n\nTo check if this bit has been enabled:\nGAMEPLAY::IS_BIT_SET(bitAddress, 1); // will return 1 afterwards\n\nPlease note, this method may assign a value to [address] when used.",
+			"comment": "This sets bit [offset] of [address] to on.\n\nThe offsets used are different bits to be toggled on and off, typically there is only one address used in a script.\n\nExample:\nMISC::SET_BIT(&bitAddress, 1);\n\nTo check if this bit has been enabled:\nMISC::IS_BIT_SET(bitAddress, 1); // will return 1 afterwards\n\nPlease note, this method may assign a value to [address] when used.",
 			"params": [
 				{
 					"type": "int*",
@@ -33730,7 +33730,7 @@
 		"0xE80492A9AC099A93": {
 			"name": "CLEAR_BIT",
 			"jhash": "0x8BC9E618",
-			"comment": "This sets bit [offset] of [address] to off.\n\nExample:\nGAMEPLAY::CLEAR_BIT(&bitAddress, 1);\n\nTo check if this bit has been enabled:\nGAMEPLAY::IS_BIT_SET(bitAddress, 1); // will return 0 afterwards",
+			"comment": "This sets bit [offset] of [address] to off.\n\nExample:\nMISC::CLEAR_BIT(&bitAddress, 1);\n\nTo check if this bit has been enabled:\nMISC::IS_BIT_SET(bitAddress, 1); // will return 0 afterwards",
 			"params": [
 				{
 					"type": "int*",
@@ -34074,7 +34074,7 @@
 		"0x957838AAF91BD12D": {
 			"name": "_CLEAR_AREA_OF_EVERYTHING",
 			"jhash": "0x20E4FFD9",
-			"comment": "GAMEPLAY::_0x957838AAF91BD12D(x, y, z, radius, false, false, false, false); seem to make all objects go away, peds, vehicles etc. All booleans set to true doesn't seem to change anything. ",
+			"comment": "MISC::_0x957838AAF91BD12D(x, y, z, radius, false, false, false, false); seem to make all objects go away, peds, vehicles etc. All booleans set to true doesn't seem to change anything. ",
 			"params": [
 				{
 					"type": "float",
@@ -35142,7 +35142,7 @@
 		"0x03E8D3D5F549087A": {
 			"name": "GET_MODEL_DIMENSIONS",
 			"jhash": "0x91ABB8E0",
-			"comment": "Gets the dimensions of a model.\n\nCalculate (maximum - minimum) to get the size, in which case, Y will be how long the model is.\n\nExample from the scripts: GAMEPLAY::GET_MODEL_DIMENSIONS(ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()), &v_1A, &v_17);",
+			"comment": "Gets the dimensions of a model.\n\nCalculate (maximum - minimum) to get the size, in which case, Y will be how long the model is.\n\nExample from the scripts: MISC::GET_MODEL_DIMENSIONS(ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()), &v_1A, &v_17);",
 			"params": [
 				{
 					"type": "Hash",
@@ -35184,7 +35184,7 @@
 		"0xA921AA820C25702F": {
 			"name": "IS_BIT_SET",
 			"jhash": "0x902E26AC",
-			"comment": "Returns bit's boolean state from [offset] of [address].\n\nExample:\nGAMEPLAY::IS_BIT_SET(bitAddress, 1);\n\nTo enable and disable bits, see:\nGAMEPLAY::SET_BIT(&bitAddress, 1);   // enable\nGAMEPLAY::CLEAR_BIT(&bitAddress, 1); // disable",
+			"comment": "Returns bit's boolean state from [offset] of [address].\n\nExample:\nMISC::IS_BIT_SET(bitAddress, 1);\n\nTo enable and disable bits, see:\nMISC::SET_BIT(&bitAddress, 1);   // enable\nMISC::CLEAR_BIT(&bitAddress, 1); // disable",
 			"params": [
 				{
 					"type": "int",
@@ -35302,7 +35302,7 @@
 		"0x1E34710ECD4AB0EB": {
 			"name": "COMPARE_STRINGS",
 			"jhash": "0xFE25A58F",
-			"comment": "Compares two strings up to a specified number of characters.\n\nParameters:\nstr1 - String to be compared.\nstr2 - String to be compared.\nmatchCase - Comparison will be case-sensitive.\nmaxLength - Maximum number of characters to compare. A value of -1 indicates an infinite length.\n\nReturns:\nA value indicating the relationship between the strings:\n<0 - The first non-matching character in 'str1' is less than the one in 'str2'. (e.g. 'A' < 'B', so result = -1)\n0 - The contents of both strings are equal.\n>0 - The first non-matching character in 'str1' is less than the one in 'str2'. (e.g. 'B' > 'A', so result = 1)\n\nExamples:\nGAMEPLAY::COMPARE_STRINGS(\"STRING\", \"string\", false, -1); // 0; equal\nGAMEPLAY::COMPARE_STRINGS(\"TESTING\", \"test\", false, 4); // 0; equal\nGAMEPLAY::COMPARE_STRINGS(\"R2D2\", \"R2xx\", false, 2); // 0; equal\nGAMEPLAY::COMPARE_STRINGS(\"foo\", \"bar\", false, -1); // 4; 'f' > 'b'\nGAMEPLAY::COMPARE_STRINGS(\"A\", \"A\", true, 1); // 0; equal\n\nWhen comparing case-sensitive strings, lower-case characters are greater than upper-case characters:\nGAMEPLAY::COMPARE_STRINGS(\"A\", \"a\", true, 1); // -1; 'A' < 'a'\nGAMEPLAY::COMPARE_STRINGS(\"a\", \"A\", true, 1); // 1; 'a' > 'A'",
+			"comment": "Compares two strings up to a specified number of characters.\n\nParameters:\nstr1 - String to be compared.\nstr2 - String to be compared.\nmatchCase - Comparison will be case-sensitive.\nmaxLength - Maximum number of characters to compare. A value of -1 indicates an infinite length.\n\nReturns:\nA value indicating the relationship between the strings:\n<0 - The first non-matching character in 'str1' is less than the one in 'str2'. (e.g. 'A' < 'B', so result = -1)\n0 - The contents of both strings are equal.\n>0 - The first non-matching character in 'str1' is less than the one in 'str2'. (e.g. 'B' > 'A', so result = 1)\n\nExamples:\nMISC::COMPARE_STRINGS(\"STRING\", \"string\", false, -1); // 0; equal\nMISC::COMPARE_STRINGS(\"TESTING\", \"test\", false, 4); // 0; equal\nMISC::COMPARE_STRINGS(\"R2D2\", \"R2xx\", false, 2); // 0; equal\nMISC::COMPARE_STRINGS(\"foo\", \"bar\", false, -1); // 4; 'f' > 'b'\nMISC::COMPARE_STRINGS(\"A\", \"A\", true, 1); // 0; equal\n\nWhen comparing case-sensitive strings, lower-case characters are greater than upper-case characters:\nMISC::COMPARE_STRINGS(\"A\", \"a\", true, 1); // -1; 'A' < 'a'\nMISC::COMPARE_STRINGS(\"a\", \"A\", true, 1); // 1; 'a' > 'A'",
 			"params": [
 				{
 					"type": "const char*",
@@ -35870,7 +35870,7 @@
 		"0x9F1935CA1F724008": {
 			"name": "IS_AUSSIE_VERSION",
 			"jhash": "0x944BA1DC",
-			"comment": "if (GAMEPLAY::IS_AUSSIE_VERSION()) {\n    sub_127a9(&l_31, 1024); // l_31 |= 1024\n    l_129 = 3;\n    sub_129d2(\"AUSSIE VERSION IS TRUE!?!?!\"); // DEBUG\n}\n\nUsed to block some of the prostitute stuff due to laws in Australia.",
+			"comment": "if (MISC::IS_AUSSIE_VERSION()) {\n    sub_127a9(&l_31, 1024); // l_31 |= 1024\n    l_129 = 3;\n    sub_129d2(\"AUSSIE VERSION IS TRUE!?!?!\"); // DEBUG\n}\n\nUsed to block some of the prostitute stuff due to laws in Australia.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -36298,7 +36298,7 @@
 		"0x557E43C447E700A8": {
 			"name": "_HAS_CHEAT_STRING_JUST_BEEN_ENTERED",
 			"jhash": "",
-			"comment": "Get inputted \"Cheat code\", for example:\n\nwhile (TRUE)\n{\n    if (GAMEPLAY::_557E43C447E700A8(${fugitive}))\n    {\n       // Do something.\n    }\n    SYSTEM::WAIT(0);\n}\n\nCalling this will also set the last saved string hash to zero.\n",
+			"comment": "Get inputted \"Cheat code\", for example:\n\nwhile (TRUE)\n{\n    if (MISC::_557E43C447E700A8(${fugitive}))\n    {\n       // Do something.\n    }\n    SYSTEM::WAIT(0);\n}\n\nCalling this will also set the last saved string hash to zero.\n",
 			"params": [
 				{
 					"type": "Hash",
@@ -36531,7 +36531,7 @@
 		"0x6F7794F28C6B2535": {
 			"name": "_REGISTER_TEXT_LABEL_TO_SAVE_2",
 			"jhash": "0xE2089749",
-			"comment": "Seems to have the same functionality as REGISTER_TEXT_LABEL_TO_SAVE?\n\nGAMEPLAY::_6F7794F28C6B2535(&a_0._f1, \"tlPlateText\");\nGAMEPLAY::_6F7794F28C6B2535(&a_0._f1C, \"tlPlateText_pending\");\nGAMEPLAY::_6F7794F28C6B2535(&a_0._f10B, \"tlCarAppPlateText\");\n\n\"tl\" prefix sounds like \"Text Label\"",
+			"comment": "Seems to have the same functionality as REGISTER_TEXT_LABEL_TO_SAVE?\n\nMISC::_6F7794F28C6B2535(&a_0._f1, \"tlPlateText\");\nMISC::_6F7794F28C6B2535(&a_0._f1C, \"tlPlateText_pending\");\nMISC::_6F7794F28C6B2535(&a_0._f10B, \"tlCarAppPlateText\");\n\n\"tl\" prefix sounds like \"Text Label\"",
 			"params": [
 				{
 					"type": "Any*",
@@ -36548,7 +36548,7 @@
 		"0x48F069265A0E4BEC": {
 			"name": "_0x48F069265A0E4BEC",
 			"jhash": "0xF91B8C33",
-			"comment": "Only found 3 times in decompiled scripts. Not a whole lot to go off of.\n\nGAMEPLAY::_48F069265A0E4BEC(a_0, \"Movie_Name_For_This_Player\");\nGAMEPLAY::_48F069265A0E4BEC(&a_0._fB, \"Ringtone_For_This_Player\");\nGAMEPLAY::_48F069265A0E4BEC(&a_0._f1EC4._f12[v_A/*6*/], &v_13); // where v_13 is \"MPATMLOGSCRS0\" thru \"MPATMLOGSCRS15\"",
+			"comment": "Only found 3 times in decompiled scripts. Not a whole lot to go off of.\n\nMISC::_48F069265A0E4BEC(a_0, \"Movie_Name_For_This_Player\");\nMISC::_48F069265A0E4BEC(&a_0._fB, \"Ringtone_For_This_Player\");\nMISC::_48F069265A0E4BEC(&a_0._f1EC4._f12[v_A/*6*/], &v_13); // where v_13 is \"MPATMLOGSCRS0\" thru \"MPATMLOGSCRS15\"",
 			"params": [
 				{
 					"type": "Any*",
@@ -36565,7 +36565,7 @@
 		"0x8269816F6CFD40F8": {
 			"name": "_0x8269816F6CFD40F8",
 			"jhash": "0x74E8FAD9",
-			"comment": "Only found 2 times in decompiled scripts. Not a whole lot to go off of.\n\nGAMEPLAY::_8269816F6CFD40F8(&a_0._f1F5A._f6[0/*8*/], \"TEMPSTAT_LABEL\"); // gets saved in a struct called \"g_SaveData_STRING_ScriptSaves\"\nGAMEPLAY::_8269816F6CFD40F8(&a_0._f4B4[v_1A/*8*/], &v_5); // where v_5 is \"Name0\" thru \"Name9\", gets saved in a struct called \"OUTFIT_Name\"",
+			"comment": "Only found 2 times in decompiled scripts. Not a whole lot to go off of.\n\nMISC::_8269816F6CFD40F8(&a_0._f1F5A._f6[0/*8*/], \"TEMPSTAT_LABEL\"); // gets saved in a struct called \"g_SaveData_STRING_ScriptSaves\"\nMISC::_8269816F6CFD40F8(&a_0._f4B4[v_1A/*8*/], &v_5); // where v_5 is \"Name0\" thru \"Name9\", gets saved in a struct called \"OUTFIT_Name\"",
 			"params": [
 				{
 					"type": "Any*",
@@ -36582,7 +36582,7 @@
 		"0xFAA457EF263E8763": {
 			"name": "_0xFAA457EF263E8763",
 			"jhash": "0x6B4335DD",
-			"comment": "Another unknown label type...\n\nGAMEPLAY::_FAA457EF263E8763(a_0, \"Thumb_label\");\nGAMEPLAY::_FAA457EF263E8763(&a_0._f10, \"Photo_label\");\nGAMEPLAY::_FAA457EF263E8763(a_0, \"GXTlabel\");\nGAMEPLAY::_FAA457EF263E8763(&a_0._f21, \"StringComp\");\nGAMEPLAY::_FAA457EF263E8763(&a_0._f43, \"SecondStringComp\");\nGAMEPLAY::_FAA457EF263E8763(&a_0._f53, \"ThirdStringComp\");\nGAMEPLAY::_FAA457EF263E8763(&a_0._f32, \"SenderStringComp\");\nGAMEPLAY::_FAA457EF263E8763(&a_0._f726[v_1A/*16*/], &v_20); // where v_20 is \"LastJobTL_0_1\" thru \"LastJobTL_2_1\", gets saved in a struct called \"LAST_JobGamer_TL\"\nGAMEPLAY::_FAA457EF263E8763(&a_0._f4B, \"PAID_PLAYER\");\nGAMEPLAY::_FAA457EF263E8763(&a_0._f5B, \"RADIO_STATION\");",
+			"comment": "Another unknown label type...\n\nMISC::_FAA457EF263E8763(a_0, \"Thumb_label\");\nMISC::_FAA457EF263E8763(&a_0._f10, \"Photo_label\");\nMISC::_FAA457EF263E8763(a_0, \"GXTlabel\");\nMISC::_FAA457EF263E8763(&a_0._f21, \"StringComp\");\nMISC::_FAA457EF263E8763(&a_0._f43, \"SecondStringComp\");\nMISC::_FAA457EF263E8763(&a_0._f53, \"ThirdStringComp\");\nMISC::_FAA457EF263E8763(&a_0._f32, \"SenderStringComp\");\nMISC::_FAA457EF263E8763(&a_0._f726[v_1A/*16*/], &v_20); // where v_20 is \"LastJobTL_0_1\" thru \"LastJobTL_2_1\", gets saved in a struct called \"LAST_JobGamer_TL\"\nMISC::_FAA457EF263E8763(&a_0._f4B, \"PAID_PLAYER\");\nMISC::_FAA457EF263E8763(&a_0._f5B, \"RADIO_STATION\");",
 			"params": [
 				{
 					"type": "Any*",
@@ -37214,7 +37214,7 @@
 		"0x54F157E0336A3822": {
 			"name": "_0x54F157E0336A3822",
 			"jhash": "0x49F977A9",
-			"comment": "From the scripts:\n\nGAMEPLAY::_54F157E0336A3822(sub_aa49(a_0), \"ForcedStopDirection\", v_E);\n\nRelated to tennis mode.\n\nSET_*",
+			"comment": "From the scripts:\n\nMISC::_54F157E0336A3822(sub_aa49(a_0), \"ForcedStopDirection\", v_E);\n\nRelated to tennis mode.\n\nSET_*",
 			"params": [
 				{
 					"type": "Ped",
@@ -37634,7 +37634,7 @@
 		"0x1EAE0A6E978894A2": {
 			"name": "_0x1EAE0A6E978894A2",
 			"jhash": "0x8F60366E",
-			"comment": "Unsure about the use of this native but here's an example:\n\nvoid sub_8709() {\n    GAMEPLAY::_1EAE0A6E978894A2(0, 1);\n    GAMEPLAY::_1EAE0A6E978894A2(1, 1);\n    GAMEPLAY::_1EAE0A6E978894A2(2, 1);\n    GAMEPLAY::_1EAE0A6E978894A2(3, 1);\n    GAMEPLAY::_1EAE0A6E978894A2(4, 1);\n    GAMEPLAY::_1EAE0A6E978894A2(5, 1);\n    GAMEPLAY::_1EAE0A6E978894A2(6, 1);\n    GAMEPLAY::_1EAE0A6E978894A2(7, 1);\n    GAMEPLAY::_1EAE0A6E978894A2(8, 1);\n}\n\nSo it appears that p0 ranges from 0 to 8.\n\nENABLE_DISPATCH_SERVICE, seems to have a similar layout.",
+			"comment": "Unsure about the use of this native but here's an example:\n\nvoid sub_8709() {\n    MISC::_1EAE0A6E978894A2(0, 1);\n    MISC::_1EAE0A6E978894A2(1, 1);\n    MISC::_1EAE0A6E978894A2(2, 1);\n    MISC::_1EAE0A6E978894A2(3, 1);\n    MISC::_1EAE0A6E978894A2(4, 1);\n    MISC::_1EAE0A6E978894A2(5, 1);\n    MISC::_1EAE0A6E978894A2(6, 1);\n    MISC::_1EAE0A6E978894A2(7, 1);\n    MISC::_1EAE0A6E978894A2(8, 1);\n}\n\nSo it appears that p0 ranges from 0 to 8.\n\nENABLE_DISPATCH_SERVICE, seems to have a similar layout.",
 			"params": [
 				{
 					"type": "int",
@@ -38228,7 +38228,7 @@
 		"0xA2CCBE62CD4C91A4": {
 			"name": "_0xA2CCBE62CD4C91A4",
 			"jhash": "0xC273BB4D",
-			"comment": "Needs more research. If the \"phone_cam12\" filter is applied, this function is called with \"TRUE\"; otherwise, \"FALSE\".\n\nExample (XBOX 360):\n\n// check current filter selection\nif (GAMEPLAY::ARE_STRINGS_EQUAL(getElem(g_2471024, &l_17, 4), \"phone_cam12\") != 0)\n{\n    MOBILE::_0xC273BB4D(0); // FALSE\n}\nelse\n{\n    MOBILE::_0xC273BB4D(1); // TRUE\n}",
+			"comment": "Needs more research. If the \"phone_cam12\" filter is applied, this function is called with \"TRUE\"; otherwise, \"FALSE\".\n\nExample (XBOX 360):\n\n// check current filter selection\nif (MISC::ARE_STRINGS_EQUAL(getElem(g_2471024, &l_17, 4), \"phone_cam12\") != 0)\n{\n    MOBILE::_0xC273BB4D(0); // FALSE\n}\nelse\n{\n    MOBILE::_0xC273BB4D(1); // TRUE\n}",
 			"params": [
 				{
 					"type": "int*",
@@ -40427,7 +40427,7 @@
 		"0x9FF28D88C766E3E8": {
 			"name": "NETWORK_SPENT_PAY_VEHICLE_INSURANCE_PREMIUM",
 			"jhash": "0x4E665BB2",
-			"comment": "According to how I understood this in the freemode script alone,\nThe first parameter is determined by a function named, func_5749 within the freemode script which has a list of all the vehicles and a set price to return which some vehicles deals with globals as well. So the first parameter is basically the set in stone insurance cost it's gonna charge you for that specific vehicle model.\n\nThe second parameter whoever put it was right, they call GET_ENTITY_MODEL with the vehicle as the paremeter.\n\nThe third parameter is the network handle as they call their little struct<13> func or atleast how the script decompiled it to look which in lamens terms just returns the network handle of the previous owner based on DECOR_GET_INT(vehicle, \"Previous_Owner\").\n\nThe fourth parameter is a bool that returns true/false depending on if your bank balance is greater then 0.\n\nThe fifth and last parameter is a bool that returns true/false depending on if you have the money for the car based on the cost returned by func_5749. In the freemode script eg,\nbool hasTheMoney = NETWORKCASH::_GET_BANK_BALANCE() < carCost.",
+			"comment": "According to how I understood this in the freemode script alone,\nThe first parameter is determined by a function named, func_5749 within the freemode script which has a list of all the vehicles and a set price to return which some vehicles deals with globals as well. So the first parameter is basically the set in stone insurance cost it's gonna charge you for that specific vehicle model.\n\nThe second parameter whoever put it was right, they call GET_ENTITY_MODEL with the vehicle as the paremeter.\n\nThe third parameter is the network handle as they call their little struct<13> func or atleast how the script decompiled it to look which in lamens terms just returns the network handle of the previous owner based on DECOR_GET_INT(vehicle, \"Previous_Owner\").\n\nThe fourth parameter is a bool that returns true/false depending on if your bank balance is greater then 0.\n\nThe fifth and last parameter is a bool that returns true/false depending on if you have the money for the car based on the cost returned by func_5749. In the freemode script eg,\nbool hasTheMoney = MONEY::_GET_BANK_BALANCE() < carCost.",
 			"params": [
 				{
 					"type": "int",
@@ -59323,7 +59323,7 @@
 		"0xE1615EC03B3BB4FD": {
 			"name": "_0xE1615EC03B3BB4FD",
 			"jhash": "",
-			"comment": "Used with IS_LOOK_INVERTED() and negates its affect.\n\n--\n\nNot sure how the person above got that description, but here's an actual example:\n\nif (CONTROLS::_GET_LAST_INPUT_METHOD(2)) {\n    if (a_5) {\n        if (CONTROLS::IS_LOOK_INVERTED()) {\n            a_3 *= -1;\n        }\n        if (CONTROLS::_E1615EC03B3BB4FD()) {\n            a_3 *= -1;\n        }\n    }\n}",
+			"comment": "Used with IS_LOOK_INVERTED() and negates its affect.\n\n--\n\nNot sure how the person above got that description, but here's an actual example:\n\nif (PAD::_GET_LAST_INPUT_METHOD(2)) {\n    if (a_5) {\n        if (PAD::IS_LOOK_INVERTED()) {\n            a_3 *= -1;\n        }\n        if (PAD::_E1615EC03B3BB4FD()) {\n            a_3 *= -1;\n        }\n    }\n}",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -59401,7 +59401,7 @@
 		"0xFE99B66D079CF6BC": {
 			"name": "DISABLE_CONTROL_ACTION",
 			"jhash": "0x3800C0DC",
-			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev_v3/source/scripting/Controls.cs\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,\n28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,5\n4,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,\n79,80,81,82,85,86,87,88,89,90,91,92,93,95,96,97,98,99,100,101,102,103,105,\n107,108,109,110,111,112,113,114,115,116,117,118,119,123,126,129,130,131,132,\n133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,\n153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,171,172\n,177,187,188,189,190,195,196,199,200,201,202,203,205,207,208,209,211,212,213, 217,219,220,221,225,226,230,234,235,236,237,238,239,240,241,242,243,244,257,\n261,262,263,264,265,270,271,272,273,274,278,279,280,281,282,283,284,285,286,\n287,288,289,337.\n\nExample: CONTROLS::DISABLE_CONTROL_ACTION(2, 19, true) disables the switching UI from appearing both when using a keyboard and Xbox 360 controller. Needs to be executed each frame. \n \nControl group 1 and 0 gives the same results as 2. Same results for all players. ",
+			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev_v3/source/scripting/Controls.cs\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,\n28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,5\n4,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,\n79,80,81,82,85,86,87,88,89,90,91,92,93,95,96,97,98,99,100,101,102,103,105,\n107,108,109,110,111,112,113,114,115,116,117,118,119,123,126,129,130,131,132,\n133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,\n153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,171,172\n,177,187,188,189,190,195,196,199,200,201,202,203,205,207,208,209,211,212,213, 217,219,220,221,225,226,230,234,235,236,237,238,239,240,241,242,243,244,257,\n261,262,263,264,265,270,271,272,273,274,278,279,280,281,282,283,284,285,286,\n287,288,289,337.\n\nExample: PAD::DISABLE_CONTROL_ACTION(2, 19, true) disables the switching UI from appearing both when using a keyboard and Xbox 360 controller. Needs to be executed each frame. \n \nControl group 1 and 0 gives the same results as 2. Same results for all players. ",
 			"params": [
 				{
 					"type": "int",
@@ -60433,7 +60433,7 @@
 		"0x2EB41072B4C1E4C0": {
 			"name": "GET_STREET_NAME_AT_COORD",
 			"jhash": "0xDEBEEFCF",
-			"comment": "Determines the name of the street which is the closest to the given coordinates.\n\nx,y,z - the coordinates of the street\nstreetName - returns a hash to the name of the street the coords are on\ncrossingRoad - if the coordinates are on an intersection, a hash to the name of the crossing road\n\nNote: the names are returned as hashes, the strings can be returned using the function UI::GET_STREET_NAME_FROM_HASH_KEY.",
+			"comment": "Determines the name of the street which is the closest to the given coordinates.\n\nx,y,z - the coordinates of the street\nstreetName - returns a hash to the name of the street the coords are on\ncrossingRoad - if the coordinates are on an intersection, a hash to the name of the crossing road\n\nNote: the names are returned as hashes, the strings can be returned using the function HUD::GET_STREET_NAME_FROM_HASH_KEY.",
 			"params": [
 				{
 					"type": "float",
@@ -65139,7 +65139,7 @@
 		"0x530071295899A8C6": {
 			"name": "SET_PED_IN_VEHICLE_CONTEXT",
 			"jhash": "0x27F25C0E",
-			"comment": "PED::SET_PED_IN_VEHICLE_CONTEXT(l_128, GAMEPLAY::GET_HASH_KEY(\"MINI_PROSTITUTE_LOW_PASSENGER\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(l_128, GAMEPLAY::GET_HASH_KEY(\"MINI_PROSTITUTE_LOW_RESTRICTED_PASSENGER\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(l_3212, GAMEPLAY::GET_HASH_KEY(\"MISS_FAMILY1_JIMMY_SIT\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(l_3212, GAMEPLAY::GET_HASH_KEY(\"MISS_FAMILY1_JIMMY_SIT_REAR\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(l_95, GAMEPLAY::GET_HASH_KEY(\"MISS_FAMILY2_JIMMY_BICYCLE\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(num3, GAMEPLAY::GET_HASH_KEY(\"MISSFBI2_MICHAEL_DRIVEBY\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"MISS_ARMENIAN3_FRANKLIN_TENSE\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"MISSFBI5_TREVOR_DRIVING\"));",
+			"comment": "PED::SET_PED_IN_VEHICLE_CONTEXT(l_128, MISC::GET_HASH_KEY(\"MINI_PROSTITUTE_LOW_PASSENGER\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(l_128, MISC::GET_HASH_KEY(\"MINI_PROSTITUTE_LOW_RESTRICTED_PASSENGER\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(l_3212, MISC::GET_HASH_KEY(\"MISS_FAMILY1_JIMMY_SIT\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(l_3212, MISC::GET_HASH_KEY(\"MISS_FAMILY1_JIMMY_SIT_REAR\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(l_95, MISC::GET_HASH_KEY(\"MISS_FAMILY2_JIMMY_BICYCLE\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(num3, MISC::GET_HASH_KEY(\"MISSFBI2_MICHAEL_DRIVEBY\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"MISS_ARMENIAN3_FRANKLIN_TENSE\"));\nPED::SET_PED_IN_VEHICLE_CONTEXT(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"MISSFBI5_TREVOR_DRIVING\"));",
 			"params": [
 				{
 					"type": "Ped",
@@ -66539,7 +66539,7 @@
 		"0x9F8AA94D6D97DBF4": {
 			"name": "SET_BLOCKING_OF_NON_TEMPORARY_EVENTS",
 			"jhash": "0xDFE34E4A",
-			"comment": "works with AI::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS to make a ped completely oblivious to all events going on around him",
+			"comment": "works with TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS to make a ped completely oblivious to all events going on around him",
 			"params": [
 				{
 					"type": "Ped",
@@ -67924,7 +67924,7 @@
 		"0x5F5D1665E352A839": {
 			"name": "ADD_PED_DECORATION_FROM_HASHES",
 			"jhash": "0x70559AC7",
-			"comment": "Applies an Item from a PedDecorationCollection to a ped. These include tattoos and shirt decals.\n\ncollection - PedDecorationCollection filename hash\noverlay - Item name hash\n\nExample:\nEntry inside \"mpbeach_overlays.xml\" -\n<Item>\n  <uvPos x=\"0.500000\" y=\"0.500000\" />\n  <scale x=\"0.600000\" y=\"0.500000\" />\n  <rotation value=\"0.000000\" />\n  <nameHash>FM_Hair_Fuzz</nameHash>\n  <txdHash>mp_hair_fuzz</txdHash>\n  <txtHash>mp_hair_fuzz</txtHash>\n  <zone>ZONE_HEAD</zone>\n  <type>TYPE_TATTOO</type>\n  <faction>FM</faction>\n  <garment>All</garment>\n  <gender>GENDER_DONTCARE</gender>\n  <award />\n  <awardLevel />\n</Item>\n\nCode:\nPED::_0x5F5D1665E352A839(PLAYER::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"mpbeach_overlays\"), GAMEPLAY::GET_HASH_KEY(\"fm_hair_fuzz\"))",
+			"comment": "Applies an Item from a PedDecorationCollection to a ped. These include tattoos and shirt decals.\n\ncollection - PedDecorationCollection filename hash\noverlay - Item name hash\n\nExample:\nEntry inside \"mpbeach_overlays.xml\" -\n<Item>\n  <uvPos x=\"0.500000\" y=\"0.500000\" />\n  <scale x=\"0.600000\" y=\"0.500000\" />\n  <rotation value=\"0.000000\" />\n  <nameHash>FM_Hair_Fuzz</nameHash>\n  <txdHash>mp_hair_fuzz</txdHash>\n  <txtHash>mp_hair_fuzz</txtHash>\n  <zone>ZONE_HEAD</zone>\n  <type>TYPE_TATTOO</type>\n  <faction>FM</faction>\n  <garment>All</garment>\n  <gender>GENDER_DONTCARE</gender>\n  <award />\n  <awardLevel />\n</Item>\n\nCode:\nPED::_0x5F5D1665E352A839(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"mpbeach_overlays\"), MISC::GET_HASH_KEY(\"fm_hair_fuzz\"))",
 			"params": [
 				{
 					"type": "Ped",
@@ -73544,7 +73544,7 @@
 		"0xB45EFF719D8427A6": {
 			"name": "_0xB45EFF719D8427A6",
 			"jhash": "0xBF6993C7",
-			"comment": "PLAYER::0xBF6993C7(rPtr((&l_122) + 71)); // Found in decompilation\n\n***\n\nIn \"am_hold_up.ysc\" used once:\n\nl_8d._f47 = GAMEPLAY::GET_RANDOM_FLOAT_IN_RANGE(18.0, 28.0);\nPLAYER::_B45EFF719D8427A6((l_8d._f47));",
+			"comment": "PLAYER::0xBF6993C7(rPtr((&l_122) + 71)); // Found in decompilation\n\n***\n\nIn \"am_hold_up.ysc\" used once:\n\nl_8d._f47 = MISC::GET_RANDOM_FLOAT_IN_RANGE(18.0, 28.0);\nPLAYER::_B45EFF719D8427A6((l_8d._f47));",
 			"params": [
 				{
 					"type": "float",
@@ -76053,7 +76053,7 @@
 		"0xBC0753C9CA14B506": {
 			"name": "_0xBC0753C9CA14B506",
 			"jhash": "0x9DF75B2A",
-			"comment": "var num3 = PLAYER::GET_PLAYER_PED(l_2171); // proof l_2171 is a player\n\nvar num17 = PLAYER::0x9DF75B2A(l_2171, 100, 0); // l_2171\n\n.ysc:\n    if (PLAYER::GET_PLAYER_WANTED_LEVEL(l_6EF) < v_4) { // l_6EF is a player\n        PLAYER::SET_PLAYER_WANTED_LEVEL(l_6EF, v_4, 0); // l_6EF\n        PLAYER::SET_PLAYER_WANTED_LEVEL_NOW(l_6EF, 0); // l_6EF\n    } else { \n        PLAYER::_4669B3ED80F24B4E(l_6EF); // l_6EF\n        UI::_BA8D65C1C65702E5(1);\n        a_0 = 1;\n    }\n\n        if (l_4B24[l_6F2/*156*/]._f8C != PLAYER::_BC0753C9CA14B506(l_6EF, 100, 0)) { // l_6EF\n            l_4B24[l_6F2/*156*/]._f8C = PLAYER::_BC0753C9CA14B506(l_6EF, 100, 0); // l_6EF\n        }\n\nBoth was taken from fm_mission_controller\n\nGET_PLAYER_*",
+			"comment": "var num3 = PLAYER::GET_PLAYER_PED(l_2171); // proof l_2171 is a player\n\nvar num17 = PLAYER::0x9DF75B2A(l_2171, 100, 0); // l_2171\n\n.ysc:\n    if (PLAYER::GET_PLAYER_WANTED_LEVEL(l_6EF) < v_4) { // l_6EF is a player\n        PLAYER::SET_PLAYER_WANTED_LEVEL(l_6EF, v_4, 0); // l_6EF\n        PLAYER::SET_PLAYER_WANTED_LEVEL_NOW(l_6EF, 0); // l_6EF\n    } else { \n        PLAYER::_4669B3ED80F24B4E(l_6EF); // l_6EF\n        HUD::_BA8D65C1C65702E5(1);\n        a_0 = 1;\n    }\n\n        if (l_4B24[l_6F2/*156*/]._f8C != PLAYER::_BC0753C9CA14B506(l_6EF, 100, 0)) { // l_6EF\n            l_4B24[l_6F2/*156*/]._f8C = PLAYER::_BC0753C9CA14B506(l_6EF, 100, 0); // l_6EF\n        }\n\nBoth was taken from fm_mission_controller\n\nGET_PLAYER_*",
 			"params": [
 				{
 					"type": "Player",
@@ -76261,7 +76261,7 @@
 		"0x2F7CEB6520288061": {
 			"name": "_0x2F7CEB6520288061",
 			"jhash": "0x2849D4B2",
-			"comment": "Used with radios:\n\nvoid sub_cf383(auto _a0) {\n    if ((a_0)==1) {\n        if (GAMEPLAY::IS_BIT_SET((g_240005._f1), 3)) {\n            PLAYER::_2F7CEB6520288061(0);\n            AUDIO::SET_AUDIO_FLAG(\"AllowRadioDuringSwitch\", 0);\n            AUDIO::SET_MOBILE_PHONE_RADIO_STATE(0);\n            AUDIO::SET_AUDIO_FLAG(\"MobileRadioInGame\", 0);\n        }\n        sub_cf3f6(1);\n    } else { \n        if (GAMEPLAY::IS_BIT_SET((g_240005._f1), 3)) {\n            PLAYER::_2F7CEB6520288061(1);\n            AUDIO::SET_AUDIO_FLAG(\"AllowRadioDuringSwitch\", 1);\n            AUDIO::SET_MOBILE_PHONE_RADIO_STATE(1);\n            AUDIO::SET_AUDIO_FLAG(\"MobileRadioInGame\", 1);\n        }\n        sub_cf3f6(0);\n    }\n}\n\nSET_PLAYER_S*",
+			"comment": "Used with radios:\n\nvoid sub_cf383(auto _a0) {\n    if ((a_0)==1) {\n        if (MISC::IS_BIT_SET((g_240005._f1), 3)) {\n            PLAYER::_2F7CEB6520288061(0);\n            AUDIO::SET_AUDIO_FLAG(\"AllowRadioDuringSwitch\", 0);\n            AUDIO::SET_MOBILE_PHONE_RADIO_STATE(0);\n            AUDIO::SET_AUDIO_FLAG(\"MobileRadioInGame\", 0);\n        }\n        sub_cf3f6(1);\n    } else { \n        if (MISC::IS_BIT_SET((g_240005._f1), 3)) {\n            PLAYER::_2F7CEB6520288061(1);\n            AUDIO::SET_AUDIO_FLAG(\"AllowRadioDuringSwitch\", 1);\n            AUDIO::SET_MOBILE_PHONE_RADIO_STATE(1);\n            AUDIO::SET_AUDIO_FLAG(\"MobileRadioInGame\", 1);\n        }\n        sub_cf3f6(0);\n    }\n}\n\nSET_PLAYER_S*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -81441,7 +81441,7 @@
 		"0x5EAD2BF6484852E4": {
 			"name": "_0x5EAD2BF6484852E4",
 			"jhash": "0x23D70C39",
-			"comment": "example from completionpercentage_controller.ysc.c4\n\nif (STATS::_5EAD2BF6484852E4()) {\n            GAMEPLAY::SET_BIT(g_17b95._f20df._ff10, 15);\n            STATS::_11FF1C80276097ED(0xe9ec4dd1, 200, 0);\n        }",
+			"comment": "example from completionpercentage_controller.ysc.c4\n\nif (STATS::_5EAD2BF6484852E4()) {\n            MISC::SET_BIT(g_17b95._f20df._ff10, 15);\n            STATS::_11FF1C80276097ED(0xe9ec4dd1, 200, 0);\n        }",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -85955,7 +85955,7 @@
 		"0x6A071245EB0D1882": {
 			"name": "TASK_GO_TO_ENTITY",
 			"jhash": "0x374827C2",
-			"comment": "The entity will move towards the target until time is over (duration) or get in target's range (distance). p5 and p6 are unknown, but you could leave p5 = 1073741824 or 100 or even 0 (didn't see any difference but on the decompiled scripts, they use 1073741824 mostly) and p6 = 0\n\nNote: I've only tested it on entity -> ped and target -> vehicle. It could work differently on other entities, didn't try it yet.\n\nExample: AI::TASK_GO_TO_ENTITY(pedHandle, vehicleHandle, 5000, 4.0, 100, 1073741824, 0)\n\nPed will run towards the vehicle for 5 seconds and stop when time is over or when he gets 4 meters(?) around the vehicle (with duration = -1, the task duration will be ignored).",
+			"comment": "The entity will move towards the target until time is over (duration) or get in target's range (distance). p5 and p6 are unknown, but you could leave p5 = 1073741824 or 100 or even 0 (didn't see any difference but on the decompiled scripts, they use 1073741824 mostly) and p6 = 0\n\nNote: I've only tested it on entity -> ped and target -> vehicle. It could work differently on other entities, didn't try it yet.\n\nExample: TASK::TASK_GO_TO_ENTITY(pedHandle, vehicleHandle, 5000, 4.0, 100, 1073741824, 0)\n\nPed will run towards the vehicle for 5 seconds and stop when time is over or when he gets 4 meters(?) around the vehicle (with duration = -1, the task duration will be ignored).",
 			"params": [
 				{
 					"type": "Entity",
@@ -86567,7 +86567,7 @@
 		"0x5BC448CB78FA3E88": {
 			"name": "TASK_GO_TO_COORD_ANY_MEANS",
 			"jhash": "0xF91DF93B",
-			"comment": "example from fm_mission_controller\n\nAI::TASK_GO_TO_COORD_ANY_MEANS(l_649, sub_f7e86(-1, 0), 1.0, 0, 0, 786603, 0xbf800000);\n ",
+			"comment": "example from fm_mission_controller\n\nTASK::TASK_GO_TO_COORD_ANY_MEANS(l_649, sub_f7e86(-1, 0), 1.0, 0, 0, 786603, 0xbf800000);\n ",
 			"params": [
 				{
 					"type": "Ped",
@@ -86791,7 +86791,7 @@
 		"0x83CDB10EA29B370B": {
 			"name": "TASK_PLAY_ANIM_ADVANCED",
 			"jhash": "0x3DDEB0E6",
-			"comment": "It's similar to the one above, except the first 6 floats let you specify the initial position and rotation of the task. (Ped gets teleported to the position). animTime is a float from 0.0 -> 1.0, lets you start an animation from given point. The rest as in AI::TASK_PLAY_ANIM. \n\nRotation information : rotX and rotY don't seem to have any effect, only rotZ works.\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "It's similar to the one above, except the first 6 floats let you specify the initial position and rotation of the task. (Ped gets teleported to the position). animTime is a float from 0.0 -> 1.0, lets you start an animation from given point. The rest as in TASK::TASK_PLAY_ANIM. \n\nRotation information : rotX and rotY don't seem to have any effect, only rotZ works.\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
 			"params": [
 				{
 					"type": "Ped",
@@ -87055,7 +87055,7 @@
 		"0x8FBB6758B3B3E9EC": {
 			"name": "TASK_PLAY_PHONE_GESTURE_ANIMATION",
 			"jhash": "0x1582162C",
-			"comment": "Example from the scripts:\nAI::TASK_PLAY_PHONE_GESTURE_ANIMATION(PLAYER::PLAYER_PED_ID(), v_3, v_2, v_4, 0.25, 0.25, 0, 0);\n\n=========================================================\n^^ No offense, but Idk how that would really help anyone.\n\nAs for the animDict & animation, they're both store in a global in all 5 scripts. So if anyone would be so kind as to read that global and comment what strings they use. Thanks.\n\nKnown boneMaskTypes'\n\"BONEMASK_HEADONLY\"\n\"BONEMASK_HEAD_NECK_AND_ARMS\"\n\"BONEMASK_HEAD_NECK_AND_L_ARM\"\n\"BONEMASK_HEAD_NECK_AND_R_ARM\"\n\np4 known args - 0.0f, 0.5f, 0.25f\np5 known args - 0.0f, 0.25f\np6 known args - 1 if a global if check is passed.\np7 known args - 1 if a global if check is passed.\n\nThe values found above, I found within the 5 scripts this is ever called in. (fmmc_launcher, fm_deathmatch_controller, fm_impromptu_dm_controller, fm_mission_controller, and freemode).\n=========================================================",
+			"comment": "Example from the scripts:\nTASK::TASK_PLAY_PHONE_GESTURE_ANIMATION(PLAYER::PLAYER_PED_ID(), v_3, v_2, v_4, 0.25, 0.25, 0, 0);\n\n=========================================================\n^^ No offense, but Idk how that would really help anyone.\n\nAs for the animDict & animation, they're both store in a global in all 5 scripts. So if anyone would be so kind as to read that global and comment what strings they use. Thanks.\n\nKnown boneMaskTypes'\n\"BONEMASK_HEADONLY\"\n\"BONEMASK_HEAD_NECK_AND_ARMS\"\n\"BONEMASK_HEAD_NECK_AND_L_ARM\"\n\"BONEMASK_HEAD_NECK_AND_R_ARM\"\n\np4 known args - 0.0f, 0.5f, 0.25f\np5 known args - 0.0f, 0.25f\np6 known args - 1 if a global if check is passed.\np7 known args - 1 if a global if check is passed.\n\nThe values found above, I found within the 5 scripts this is ever called in. (fmmc_launcher, fm_deathmatch_controller, fm_impromptu_dm_controller, fm_mission_controller, and freemode).\n=========================================================",
 			"params": [
 				{
 					"type": "Ped",
@@ -87152,7 +87152,7 @@
 		"0x69F5C3BD0F3EBD89": {
 			"name": "TASK_VEHICLE_PLAY_ANIM",
 			"jhash": "0x2B28F598",
-			"comment": "Most probably plays a specific animation on vehicle. For example getting chop out of van etc...\n\nHere's how its used - \n\nAI::TASK_VEHICLE_PLAY_ANIM(l_325, \"rcmnigel1b\", \"idle_speedo\");\n\nAI::TASK_VEHICLE_PLAY_ANIM(l_556[0/*1*/], \"missfra0_chop_drhome\", \"InCar_GetOutofBack_Speedo\");\n\nFYI : Speedo is the name of van in which chop was put in the mission.",
+			"comment": "Most probably plays a specific animation on vehicle. For example getting chop out of van etc...\n\nHere's how its used - \n\nTASK::TASK_VEHICLE_PLAY_ANIM(l_325, \"rcmnigel1b\", \"idle_speedo\");\n\nTASK::TASK_VEHICLE_PLAY_ANIM(l_556[0/*1*/], \"missfra0_chop_drhome\", \"InCar_GetOutofBack_Speedo\");\n\nFYI : Speedo is the name of van in which chop was put in the mission.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -87239,7 +87239,7 @@
 		"0x0F804F1DB19B9689": {
 			"name": "TASK_CLEAR_LOOK_AT",
 			"jhash": "0x60EB4054",
-			"comment": "Not clear what it actually does, but here's how script uses it - \n\nif (OBJECT::HAS_PICKUP_BEEN_COLLECTED(...) \n{\n if(ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))\n    {\n     AI::TASK_CLEAR_LOOK_AT(PLAYER::PLAYER_PED_ID());\n  }\n ...\n}\n\nAnother one where it doesn't \"look\" at current player - \n\nAI::TASK_PLAY_ANIM(l_3ED, \"missheist_agency2aig_2\", \"look_at_phone_a\", 1000.0, -2.0, -1, 48, v_2, 0, 0, 0);\nPED::_2208438012482A1A(l_3ED, 0, 0);\nAI::TASK_CLEAR_LOOK_AT(l_3ED);",
+			"comment": "Not clear what it actually does, but here's how script uses it - \n\nif (OBJECT::HAS_PICKUP_BEEN_COLLECTED(...) \n{\n if(ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))\n    {\n     TASK::TASK_CLEAR_LOOK_AT(PLAYER::PLAYER_PED_ID());\n  }\n ...\n}\n\nAnother one where it doesn't \"look\" at current player - \n\nTASK::TASK_PLAY_ANIM(l_3ED, \"missheist_agency2aig_2\", \"look_at_phone_a\", 1000.0, -2.0, -1, 48, v_2, 0, 0, 0);\nPED::_2208438012482A1A(l_3ED, 0, 0);\nTASK::TASK_CLEAR_LOOK_AT(l_3ED);",
 			"params": [
 				{
 					"type": "Ped",
@@ -88334,7 +88334,7 @@
 		"0xDAD029E187A2BEB4": {
 			"name": "TASK_HELI_MISSION",
 			"jhash": "0x0C143E97",
-			"comment": "Needs more research.\n\nDefault value of p13 is -1.0 or 0xBF800000.\nDefault value of p14 is 0.\n\nModified examples from \"fm_mission_controller.ysc\", line ~203551:\nAI::TASK_HELI_MISSION(ped, vehicle, 0, 0, posX, posY, posZ, 4, 1.0, -1.0, -1.0, 10, 10, 5.0, 0);\nAI::TASK_HELI_MISSION(ped, vehicle, 0, 0, posX, posY, posZ, 4, 1.0, -1.0, -1.0, 0, ?, 5.0, 4096);\n\nint mode seams to set mission type 4 = coords target, 23 = ped target.\nint 14 set to 32 = ped will land at destination.\n\nMy findings:\nmode 4 or 7 forces heli to snap to the heading set\n8 makes the heli flee from the ped.\n9 circles around ped with angle set\n10, 11 normal + imitate ped heading\n20 makes the heli land when he's near the ped. It won't resume chasing.\n21 emulates an helicopter crash\n23 makes the heli circle erratically around ped\n\nI change p2 to 'vehicleToFollow' as it seems to work like the task natives to set targets. In the heli_taxi script where as the merryweather heli takes you to your waypoint it has no need to follow a vehicle or a ped, so of course both have 0 set.",
+			"comment": "Needs more research.\n\nDefault value of p13 is -1.0 or 0xBF800000.\nDefault value of p14 is 0.\n\nModified examples from \"fm_mission_controller.ysc\", line ~203551:\nTASK::TASK_HELI_MISSION(ped, vehicle, 0, 0, posX, posY, posZ, 4, 1.0, -1.0, -1.0, 10, 10, 5.0, 0);\nTASK::TASK_HELI_MISSION(ped, vehicle, 0, 0, posX, posY, posZ, 4, 1.0, -1.0, -1.0, 0, ?, 5.0, 4096);\n\nint mode seams to set mission type 4 = coords target, 23 = ped target.\nint 14 set to 32 = ped will land at destination.\n\nMy findings:\nmode 4 or 7 forces heli to snap to the heading set\n8 makes the heli flee from the ped.\n9 circles around ped with angle set\n10, 11 normal + imitate ped heading\n20 makes the heli land when he's near the ped. It won't resume chasing.\n21 emulates an helicopter crash\n23 makes the heli circle erratically around ped\n\nI change p2 to 'vehicleToFollow' as it seems to work like the task natives to set targets. In the heli_taxi script where as the merryweather heli takes you to your waypoint it has no need to follow a vehicle or a ped, so of course both have 0 set.",
 			"params": [
 				{
 					"type": "Ped",
@@ -88538,7 +88538,7 @@
 		"0x15C86013127CE63F": {
 			"name": "TASK_BOAT_MISSION",
 			"jhash": "0x5865B031",
-			"comment": "You need to call PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS after TASK_BOAT_MISSION in order for the task to execute.\n\nWorking example\nfloat vehicleMaxSpeed = VEHICLE::_GET_VEHICLE_MAX_SPEED(ENTITY::GET_ENTITY_MODEL(pedVehicle));\nAI::TASK_BOAT_MISSION(pedDriver, pedVehicle, 0, 0, waypointCoord.x, waypointCoord.y, waypointCoord.z, 4, vehicleMaxSpeed, 786469, -1.0, 7);\nPED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(pedDriver, 1);\n\nP8 appears to be driving style flag - see gtaforums.com/topic/822314-guide-driving-styles/ for documentation",
+			"comment": "You need to call PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS after TASK_BOAT_MISSION in order for the task to execute.\n\nWorking example\nfloat vehicleMaxSpeed = VEHICLE::_GET_VEHICLE_MAX_SPEED(ENTITY::GET_ENTITY_MODEL(pedVehicle));\nTASK::TASK_BOAT_MISSION(pedDriver, pedVehicle, 0, 0, waypointCoord.x, waypointCoord.y, waypointCoord.z, 4, vehicleMaxSpeed, 786469, -1.0, 7);\nPED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(pedDriver, 1);\n\nP8 appears to be driving style flag - see gtaforums.com/topic/822314-guide-driving-styles/ for documentation",
 			"params": [
 				{
 					"type": "Ped",
@@ -88595,7 +88595,7 @@
 		"0x2F8AF0E82773A171": {
 			"name": "TASK_DRIVE_BY",
 			"jhash": "0x2B84D1C4",
-			"comment": "Example:\n\nAI::TASK_DRIVE_BY(l_467[1/*22*/], PLAYER::PLAYER_PED_ID(), 0, 0.0, 0.0, 2.0, 300.0, 100, 0, ${firing_pattern_burst_fire_driveby});\n\n\n\n\nNeeds working example. Doesn't seem to do anything.\n\nI marked p2 as targetVehicle as all these shooting related tasks seem to have that in common.\nI marked p6 as distanceToShoot as if you think of GTA's Logic with the native SET_VEHICLE_SHOOT natives, it won't shoot till it gets within a certain distance of the target.\nI marked p7 as pedAccuracy as it seems it's mostly 100 (Completely Accurate), 75, 90, etc. Although this could be the ammo count within the gun, but I highly doubt it. I will change this comment once I find out if it's ammo count or not.",
+			"comment": "Example:\n\nTASK::TASK_DRIVE_BY(l_467[1/*22*/], PLAYER::PLAYER_PED_ID(), 0, 0.0, 0.0, 2.0, 300.0, 100, 0, ${firing_pattern_burst_fire_driveby});\n\n\n\n\nNeeds working example. Doesn't seem to do anything.\n\nI marked p2 as targetVehicle as all these shooting related tasks seem to have that in common.\nI marked p6 as distanceToShoot as if you think of GTA's Logic with the native SET_VEHICLE_SHOOT natives, it won't shoot till it gets within a certain distance of the target.\nI marked p7 as pedAccuracy as it seems it's mostly 100 (Completely Accurate), 75, 90, etc. Although this could be the ammo count within the gun, but I highly doubt it. I will change this comment once I find out if it's ammo count or not.",
 			"params": [
 				{
 					"type": "Ped",
@@ -88870,7 +88870,7 @@
 		"0x08DA95E8298AE772": {
 			"name": "TASK_SHOOT_AT_ENTITY",
 			"jhash": "0xAC0631C9",
-			"comment": "//this part of the code is to determine at which entity the player is aiming, for example if you want to create a mod where you give orders to peds\nEntity aimedentity;\nPlayer player = PLAYER::PLAYER_ID();\nPLAYER::_GET_AIMED_ENTITY(player, &aimedentity);\n\n//bg is an array of peds\nAI::TASK_SHOOT_AT_ENTITY(bg[i], aimedentity, 5000, GAMEPLAY::GET_HASH_KEY(\"FIRING_PATTERN_FULL_AUTO\"));\n\nin practical usage, getting the entity the player is aiming at and then task the peds to shoot at the entity, at a button press event would be better.",
+			"comment": "//this part of the code is to determine at which entity the player is aiming, for example if you want to create a mod where you give orders to peds\nEntity aimedentity;\nPlayer player = PLAYER::PLAYER_ID();\nPLAYER::_GET_AIMED_ENTITY(player, &aimedentity);\n\n//bg is an array of peds\nTASK::TASK_SHOOT_AT_ENTITY(bg[i], aimedentity, 5000, MISC::GET_HASH_KEY(\"FIRING_PATTERN_FULL_AUTO\"));\n\nin practical usage, getting the entity the player is aiming at and then task the peds to shoot at the entity, at a button press event would be better.",
 			"params": [
 				{
 					"type": "Entity",
@@ -89076,7 +89076,7 @@
 		"0xA9DA48FAB8A76C12": {
 			"name": "TASK_GOTO_ENTITY_AIMING",
 			"jhash": "0xF1C493CF",
-			"comment": "eg\n\n AI::TASK_GOTO_ENTITY_AIMING(v_2, PLAYER::PLAYER_PED_ID(), 5.0, 25.0);\n\nped = Ped you want to perform this task.\ntarget = the Entity they should aim at.\ndistanceToStopAt = distance from the target, where the ped should stop to aim.\nStartAimingDist = distance where the ped should start to aim.",
+			"comment": "eg\n\n TASK::TASK_GOTO_ENTITY_AIMING(v_2, PLAYER::PLAYER_PED_ID(), 5.0, 25.0);\n\nped = Ped you want to perform this task.\ntarget = the Entity they should aim at.\ndistanceToStopAt = distance from the target, where the ped should stop to aim.\nStartAimingDist = distance where the ped should start to aim.",
 			"params": [
 				{
 					"type": "Ped",
@@ -89463,7 +89463,7 @@
 		"0x39246A6958EF072C": {
 			"name": "TASK_SEEK_COVER_TO_COORDS",
 			"jhash": "0xFFFE754E",
-			"comment": "from michael2:\nAI::TASK_SEEK_COVER_TO_COORDS(ped, 967.5164794921875, -2121.603515625, 30.479299545288086, 978.94677734375, -2125.84130859375, 29.4752, -1, 1);\n\n\nappears to be shorter variation\nfrom michael3:\nAI::TASK_SEEK_COVER_TO_COORDS(ped, -2231.011474609375, 263.6326599121094, 173.60195922851562, -1, 0);",
+			"comment": "from michael2:\nTASK::TASK_SEEK_COVER_TO_COORDS(ped, 967.5164794921875, -2121.603515625, 30.479299545288086, 978.94677734375, -2125.84130859375, 29.4752, -1, 1);\n\n\nappears to be shorter variation\nfrom michael3:\nTASK::TASK_SEEK_COVER_TO_COORDS(ped, -2231.011474609375, 263.6326599121094, 173.60195922851562, -1, 0);",
 			"params": [
 				{
 					"type": "Ped",
@@ -89590,7 +89590,7 @@
 		"0x1C6CD14A876FFE39": {
 			"name": "TASK_PUT_PED_DIRECTLY_INTO_MELEE",
 			"jhash": "0x79E1D27D",
-			"comment": "from armenian3.c4\n\nAI::TASK_PUT_PED_DIRECTLY_INTO_MELEE(PlayerPed, armenianPed, 0.0, -1.0, 0.0, 0);\n",
+			"comment": "from armenian3.c4\n\nTASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(PlayerPed, armenianPed, 0.0, -1.0, 0.0, 0);\n",
 			"params": [
 				{
 					"type": "Ped",
@@ -89640,7 +89640,7 @@
 		"0x4A58A47A72E3FCB4": {
 			"name": "TASK_GUARD_CURRENT_POSITION",
 			"jhash": "0x2FB099E9",
-			"comment": "From re_prisonvanbreak:\n\nAI::TASK_GUARD_CURRENT_POSITION(l_DD, 35.0, 35.0, 1);",
+			"comment": "From re_prisonvanbreak:\n\nTASK::TASK_GUARD_CURRENT_POSITION(l_DD, 35.0, 35.0, 1);",
 			"params": [
 				{
 					"type": "Ped",
@@ -89966,7 +89966,7 @@
 		"0x142A02425FF02BD9": {
 			"name": "TASK_START_SCENARIO_IN_PLACE",
 			"jhash": "0xE50D6DDE",
-			"comment": "Plays a scenario on a Ped at their current location.\n\nunkDelay - Usually 0 or -1, doesn't seem to have any effect. Might be a delay between sequences.\nplayEnterAnim - Plays the \"Enter\" anim if true, otherwise plays the \"Exit\" anim. Scenarios that don't have any \"Enter\" anims won't play if this is set to true.\n\n----\n\nFrom \"am_hold_up.ysc.c4\" at line 339:\n\nAI::TASK_START_SCENARIO_IN_PLACE(NETWORK::NET_TO_PED(l_8D._f4), sub_adf(), 0, 1);\n\nI'm unsure of what the last two parameters are, however sub_adf() randomly returns 1 of 3 scenarios, those being:\nWORLD_HUMAN_SMOKING\nWORLD_HUMAN_HANG_OUT_STREET\nWORLD_HUMAN_STAND_MOBILE\n\nThis makes sense, as these are what I commonly see when going by a liquor store.\n-------------------------\nList of scenarioNames: pastebin.com/6mrYTdQv\n(^ Thank you so fucking much for this)\n\nAlso these:\nWORLD_FISH_FLEE\nDRIVE\nWORLD_HUMAN_HIKER\nWORLD_VEHICLE_ATTRACTOR\nWORLD_VEHICLE_BICYCLE_MOUNTAIN\nWORLD_VEHICLE_BIKE_OFF_ROAD_RACE\nWORLD_VEHICLE_BIKER\nWORLD_VEHICLE_CONSTRUCTION_PASSENGERS\nWORLD_VEHICLE_CONSTRUCTION_SOLO\nWORLD_VEHICLE_DRIVE_PASSENGERS\nWORLD_VEHICLE_DRIVE_SOLO\nWORLD_VEHICLE_EMPTY\nWORLD_VEHICLE_PARK_PARALLEL\nWORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\nWORLD_VEHICLE_POLICE_BIKE\nWORLD_VEHICLE_POLICE_CAR\nWORLD_VEHICLE_POLICE_NEXT_TO_CAR\nWORLD_VEHICLE_SALTON_DIRT_BIKE\nWORLD_VEHICLE_TRUCK_LOGS",
+			"comment": "Plays a scenario on a Ped at their current location.\n\nunkDelay - Usually 0 or -1, doesn't seem to have any effect. Might be a delay between sequences.\nplayEnterAnim - Plays the \"Enter\" anim if true, otherwise plays the \"Exit\" anim. Scenarios that don't have any \"Enter\" anims won't play if this is set to true.\n\n----\n\nFrom \"am_hold_up.ysc.c4\" at line 339:\n\nTASK::TASK_START_SCENARIO_IN_PLACE(NETWORK::NET_TO_PED(l_8D._f4), sub_adf(), 0, 1);\n\nI'm unsure of what the last two parameters are, however sub_adf() randomly returns 1 of 3 scenarios, those being:\nWORLD_HUMAN_SMOKING\nWORLD_HUMAN_HANG_OUT_STREET\nWORLD_HUMAN_STAND_MOBILE\n\nThis makes sense, as these are what I commonly see when going by a liquor store.\n-------------------------\nList of scenarioNames: pastebin.com/6mrYTdQv\n(^ Thank you so fucking much for this)\n\nAlso these:\nWORLD_FISH_FLEE\nDRIVE\nWORLD_HUMAN_HIKER\nWORLD_VEHICLE_ATTRACTOR\nWORLD_VEHICLE_BICYCLE_MOUNTAIN\nWORLD_VEHICLE_BIKE_OFF_ROAD_RACE\nWORLD_VEHICLE_BIKER\nWORLD_VEHICLE_CONSTRUCTION_PASSENGERS\nWORLD_VEHICLE_CONSTRUCTION_SOLO\nWORLD_VEHICLE_DRIVE_PASSENGERS\nWORLD_VEHICLE_DRIVE_SOLO\nWORLD_VEHICLE_EMPTY\nWORLD_VEHICLE_PARK_PARALLEL\nWORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\nWORLD_VEHICLE_POLICE_BIKE\nWORLD_VEHICLE_POLICE_CAR\nWORLD_VEHICLE_POLICE_NEXT_TO_CAR\nWORLD_VEHICLE_SALTON_DIRT_BIKE\nWORLD_VEHICLE_TRUCK_LOGS",
 			"params": [
 				{
 					"type": "Ped",
@@ -89991,7 +89991,7 @@
 		"0xFA4EFC79F69D4F07": {
 			"name": "TASK_START_SCENARIO_AT_POSITION",
 			"jhash": "0xAA2C4AC2",
-			"comment": "List of scenarioNames: pastebin.com/6mrYTdQv\n\nAlso a few more listed at AI::TASK_START_SCENARIO_IN_PLACE just above.\n---------------\nThe first parameter in every scenario has always been a Ped of some sort. The second like TASK_START_SCENARIO_IN_PLACE is the name of the scenario. \n\nThe next 4 parameters were harder to decipher. After viewing \"hairdo_shop_mp.ysc.c4\", and being confused from seeing the case in other scripts, they passed the first three of the arguments as one array from a function, and it looked like it was obviously x, y, and z.\n\nI haven't seen the sixth parameter go to or over 360, making me believe that it is rotation, but I really can't confirm anything.\n\nI have no idea what the last 3 parameters are, but I'll try to find out.\n\n-going on the last 3 parameters, they appear to always be \"0, 0, 1\"\n\np6 -1 also used in scrips\n\np7 used for sitting scenarios\n\np8 teleports ped to position",
+			"comment": "List of scenarioNames: pastebin.com/6mrYTdQv\n\nAlso a few more listed at TASK::TASK_START_SCENARIO_IN_PLACE just above.\n---------------\nThe first parameter in every scenario has always been a Ped of some sort. The second like TASK_START_SCENARIO_IN_PLACE is the name of the scenario. \n\nThe next 4 parameters were harder to decipher. After viewing \"hairdo_shop_mp.ysc.c4\", and being confused from seeing the case in other scripts, they passed the first three of the arguments as one array from a function, and it looked like it was obviously x, y, and z.\n\nI haven't seen the sixth parameter go to or over 360, making me believe that it is rotation, but I really can't confirm anything.\n\nI have no idea what the last 3 parameters are, but I'll try to find out.\n\n-going on the last 3 parameters, they appear to always be \"0, 0, 1\"\n\np6 -1 also used in scrips\n\np7 used for sitting scenarios\n\np8 teleports ped to position",
 			"params": [
 				{
 					"type": "Ped",
@@ -90036,7 +90036,7 @@
 		"0x277F471BA9DB000B": {
 			"name": "TASK_USE_NEAREST_SCENARIO_TO_COORD",
 			"jhash": "0x9C50FBF0",
-			"comment": "Updated variables\n\nAn alternative to AI::TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP. Makes the ped walk to the scenario instead.",
+			"comment": "Updated variables\n\nAn alternative to TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP. Makes the ped walk to the scenario instead.",
 			"params": [
 				{
 					"type": "Ped",
@@ -90293,7 +90293,7 @@
 		"0xF9034C136C9E00D3": {
 			"name": "DOES_SCENARIO_GROUP_EXIST",
 			"jhash": "0x5F072EB9",
-			"comment": "Occurrences in the b617d scripts:\n\n\"ARMY_GUARD\",\n\"ARMY_HELI\",\n\"Cinema_Downtown\",\n\"Cinema_Morningwood\",\n\"Cinema_Textile\",\n\"City_Banks\",\n\"Countryside_Banks\",\n\"DEALERSHIP\",\n\"GRAPESEED_PLANES\",\n\"KORTZ_SECURITY\",\n\"LOST_BIKERS\",\n\"LSA_Planes\",\n\"LSA_Planes\",\n\"MP_POLICE\",\n\"Observatory_Bikers\", \n\"POLICE_POUND1\",\n\"POLICE_POUND2\",\n\"POLICE_POUND3\",\n\"POLICE_POUND4\",\n\"POLICE_POUND5\"\n\"QUARRY\",\n\"SANDY_PLANES\",\n\"SCRAP_SECURITY\",\n\"SEW_MACHINE\",\n\"SOLOMON_GATE\",\n\"Triathlon_1_Start\", \n\"Triathlon_2_Start\", \n\"Triathlon_3_Start\"\n\nSometimes used with IS_SCENARIO_GROUP_ENABLED:\nif (AI::DOES_SCENARIO_GROUP_EXIST(\"Observatory_Bikers\") && (!AI::IS_SCENARIO_GROUP_ENABLED(\"Observatory_Bikers\"))) {\nelse if (AI::IS_SCENARIO_GROUP_ENABLED(\"BLIMP\")) {\n",
+			"comment": "Occurrences in the b617d scripts:\n\n\"ARMY_GUARD\",\n\"ARMY_HELI\",\n\"Cinema_Downtown\",\n\"Cinema_Morningwood\",\n\"Cinema_Textile\",\n\"City_Banks\",\n\"Countryside_Banks\",\n\"DEALERSHIP\",\n\"GRAPESEED_PLANES\",\n\"KORTZ_SECURITY\",\n\"LOST_BIKERS\",\n\"LSA_Planes\",\n\"LSA_Planes\",\n\"MP_POLICE\",\n\"Observatory_Bikers\", \n\"POLICE_POUND1\",\n\"POLICE_POUND2\",\n\"POLICE_POUND3\",\n\"POLICE_POUND4\",\n\"POLICE_POUND5\"\n\"QUARRY\",\n\"SANDY_PLANES\",\n\"SCRAP_SECURITY\",\n\"SEW_MACHINE\",\n\"SOLOMON_GATE\",\n\"Triathlon_1_Start\", \n\"Triathlon_2_Start\", \n\"Triathlon_3_Start\"\n\nSometimes used with IS_SCENARIO_GROUP_ENABLED:\nif (TASK::DOES_SCENARIO_GROUP_EXIST(\"Observatory_Bikers\") && (!TASK::IS_SCENARIO_GROUP_ENABLED(\"Observatory_Bikers\"))) {\nelse if (TASK::IS_SCENARIO_GROUP_ENABLED(\"BLIMP\")) {\n",
 			"params": [
 				{
 					"type": "const char*",
@@ -90306,7 +90306,7 @@
 		"0x367A09DED4E05B99": {
 			"name": "IS_SCENARIO_GROUP_ENABLED",
 			"jhash": "0x90991122",
-			"comment": " Occurrences in the b617d scripts: \n\n \"ARMY_GUARD\",\n \"ARMY_HELI\",\n \"BLIMP\",\n \"Cinema_Downtown\",\n \"Cinema_Morningwood\",\n \"Cinema_Textile\",\n \"City_Banks\",\n \"Countryside_Banks\",\n \"DEALERSHIP\",\n \"KORTZ_SECURITY\",\n \"LSA_Planes\",\n \"MP_POLICE\",\n \"Observatory_Bikers\",\n \"POLICE_POUND1\",\n \"POLICE_POUND2\",\n \"POLICE_POUND3\",\n \"POLICE_POUND4\",\n \"POLICE_POUND5\",\n \"Rampage1\",\n \"SANDY_PLANES\",\n \"SCRAP_SECURITY\",\n \"SEW_MACHINE\",\n \"SOLOMON_GATE\"\n\nSometimes used with DOES_SCENARIO_GROUP_EXIST:\nif (AI::DOES_SCENARIO_GROUP_EXIST(\"Observatory_Bikers\") &&   (!AI::IS_SCENARIO_GROUP_ENABLED(\"Observatory_Bikers\"))) {\nelse if (AI::IS_SCENARIO_GROUP_ENABLED(\"BLIMP\")) {",
+			"comment": " Occurrences in the b617d scripts: \n\n \"ARMY_GUARD\",\n \"ARMY_HELI\",\n \"BLIMP\",\n \"Cinema_Downtown\",\n \"Cinema_Morningwood\",\n \"Cinema_Textile\",\n \"City_Banks\",\n \"Countryside_Banks\",\n \"DEALERSHIP\",\n \"KORTZ_SECURITY\",\n \"LSA_Planes\",\n \"MP_POLICE\",\n \"Observatory_Bikers\",\n \"POLICE_POUND1\",\n \"POLICE_POUND2\",\n \"POLICE_POUND3\",\n \"POLICE_POUND4\",\n \"POLICE_POUND5\",\n \"Rampage1\",\n \"SANDY_PLANES\",\n \"SCRAP_SECURITY\",\n \"SEW_MACHINE\",\n \"SOLOMON_GATE\"\n\nSometimes used with DOES_SCENARIO_GROUP_EXIST:\nif (TASK::DOES_SCENARIO_GROUP_EXIST(\"Observatory_Bikers\") &&   (!TASK::IS_SCENARIO_GROUP_ENABLED(\"Observatory_Bikers\"))) {\nelse if (TASK::IS_SCENARIO_GROUP_ENABLED(\"BLIMP\")) {",
 			"params": [
 				{
 					"type": "const char*",
@@ -90365,7 +90365,7 @@
 		"0x3A815DB3EA088722": {
 			"name": "IS_SCENARIO_TYPE_ENABLED",
 			"jhash": "0xAE37E969",
-			"comment": "Occurrences in the b617d scripts:\n\"PROP_HUMAN_SEAT_CHAIR\",\n\"WORLD_HUMAN_DRINKING\",\n\"WORLD_HUMAN_HANG_OUT_STREET\",\n\"WORLD_HUMAN_SMOKING\",\n\"WORLD_MOUNTAIN_LION_WANDER\",\n\"WORLD_HUMAN_DRINKING\"\n\nSometimes used together with GAMEPLAY::IS_STRING_NULL_OR_EMPTY in the scripts.\n\nscenarioType could be the same as scenarioName, used in for example AI::TASK_START_SCENARIO_AT_POSITION.\n",
+			"comment": "Occurrences in the b617d scripts:\n\"PROP_HUMAN_SEAT_CHAIR\",\n\"WORLD_HUMAN_DRINKING\",\n\"WORLD_HUMAN_HANG_OUT_STREET\",\n\"WORLD_HUMAN_SMOKING\",\n\"WORLD_MOUNTAIN_LION_WANDER\",\n\"WORLD_HUMAN_DRINKING\"\n\nSometimes used together with MISC::IS_STRING_NULL_OR_EMPTY in the scripts.\n\nscenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.\n",
 			"params": [
 				{
 					"type": "const char*",
@@ -90378,7 +90378,7 @@
 		"0xEB47EC4E34FB7EE1": {
 			"name": "SET_SCENARIO_TYPE_ENABLED",
 			"jhash": "0xDB18E5DE",
-			"comment": "seems to enable/disable specific scenario-types from happening in the game world.\n\nHere are some scenario types from the scripts:\n\"WORLD_MOUNTAIN_LION_REST\"                                             \n\"WORLD_MOUNTAIN_LION_WANDER\"                                            \n\"DRIVE\"                                                                  \n\"WORLD_VEHICLE_POLICE_BIKE\"                                             \n\"WORLD_VEHICLE_POLICE_CAR\"                                             \n\"WORLD_VEHICLE_POLICE_NEXT_TO_CAR\"                                        \n\"WORLD_VEHICLE_DRIVE_SOLO\"                                                 \n\"WORLD_VEHICLE_BIKER\"                                                      \n\"WORLD_VEHICLE_DRIVE_PASSENGERS\"                                           \n\"WORLD_VEHICLE_SALTON_DIRT_BIKE\"                                           \n\"WORLD_VEHICLE_BICYCLE_MOUNTAIN\"                                           \n\"PROP_HUMAN_SEAT_CHAIR\"                                             \n\"WORLD_VEHICLE_ATTRACTOR\"                                             \n\"WORLD_HUMAN_LEANING\"                                                 \n\"WORLD_HUMAN_HANG_OUT_STREET\"                                        \n\"WORLD_HUMAN_DRINKING\"                                                \n\"WORLD_HUMAN_SMOKING\"                                                \n\"WORLD_HUMAN_GUARD_STAND\"                                            \n\"WORLD_HUMAN_CLIPBOARD\"                                              \n\"WORLD_HUMAN_HIKER\"                                                  \n\"WORLD_VEHICLE_EMPTY\"                                                      \n\"WORLD_VEHICLE_BIKE_OFF_ROAD_RACE\"                                      \n\"WORLD_HUMAN_PAPARAZZI\"                                               \n\"WORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\"                            \n\"WORLD_VEHICLE_PARK_PARALLEL\"                                              \n\"WORLD_VEHICLE_CONSTRUCTION_SOLO\"                               \n\"WORLD_VEHICLE_CONSTRUCTION_PASSENGERS\"                                                                    \n\"WORLD_VEHICLE_TRUCK_LOGS\" \n-alphazolam\n\nscenarioType could be the same as scenarioName, used in for example AI::TASK_START_SCENARIO_AT_POSITION.",
+			"comment": "seems to enable/disable specific scenario-types from happening in the game world.\n\nHere are some scenario types from the scripts:\n\"WORLD_MOUNTAIN_LION_REST\"                                             \n\"WORLD_MOUNTAIN_LION_WANDER\"                                            \n\"DRIVE\"                                                                  \n\"WORLD_VEHICLE_POLICE_BIKE\"                                             \n\"WORLD_VEHICLE_POLICE_CAR\"                                             \n\"WORLD_VEHICLE_POLICE_NEXT_TO_CAR\"                                        \n\"WORLD_VEHICLE_DRIVE_SOLO\"                                                 \n\"WORLD_VEHICLE_BIKER\"                                                      \n\"WORLD_VEHICLE_DRIVE_PASSENGERS\"                                           \n\"WORLD_VEHICLE_SALTON_DIRT_BIKE\"                                           \n\"WORLD_VEHICLE_BICYCLE_MOUNTAIN\"                                           \n\"PROP_HUMAN_SEAT_CHAIR\"                                             \n\"WORLD_VEHICLE_ATTRACTOR\"                                             \n\"WORLD_HUMAN_LEANING\"                                                 \n\"WORLD_HUMAN_HANG_OUT_STREET\"                                        \n\"WORLD_HUMAN_DRINKING\"                                                \n\"WORLD_HUMAN_SMOKING\"                                                \n\"WORLD_HUMAN_GUARD_STAND\"                                            \n\"WORLD_HUMAN_CLIPBOARD\"                                              \n\"WORLD_HUMAN_HIKER\"                                                  \n\"WORLD_VEHICLE_EMPTY\"                                                      \n\"WORLD_VEHICLE_BIKE_OFF_ROAD_RACE\"                                      \n\"WORLD_HUMAN_PAPARAZZI\"                                               \n\"WORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\"                            \n\"WORLD_VEHICLE_PARK_PARALLEL\"                                              \n\"WORLD_VEHICLE_CONSTRUCTION_SOLO\"                               \n\"WORLD_VEHICLE_CONSTRUCTION_PASSENGERS\"                                                                    \n\"WORLD_VEHICLE_TRUCK_LOGS\" \n-alphazolam\n\nscenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.",
 			"params": [
 				{
 					"type": "const char*",
@@ -90579,7 +90579,7 @@
 		"0x62D2916F56B9CD2D": {
 			"name": "TASK_RELOAD_WEAPON",
 			"jhash": "0xCA6E91FD",
-			"comment": "The 2nd param (unused) is not implemented.\n\n-----------------------------------------------------------------------\n\nThe only occurrence I found in a R* script (\"assassin_construction.ysc.c4\"):\n\n            if (((v_3 < v_4) && (AI::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 0x6a67a5cc) != 1)) && (v_5 > v_3)) {\n                AI::TASK_RELOAD_WEAPON(PLAYER::PLAYER_PED_ID(), 1);\n            }",
+			"comment": "The 2nd param (unused) is not implemented.\n\n-----------------------------------------------------------------------\n\nThe only occurrence I found in a R* script (\"assassin_construction.ysc.c4\"):\n\n            if (((v_3 < v_4) && (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 0x6a67a5cc) != 1)) && (v_5 > v_3)) {\n                TASK::TASK_RELOAD_WEAPON(PLAYER::PLAYER_PED_ID(), 1);\n            }",
 			"params": [
 				{
 					"type": "Ped",
@@ -90676,7 +90676,7 @@
 		"0x8EDF950167586B7C": {
 			"name": "ADD_PATROL_ROUTE_NODE",
 			"jhash": "0x21B48F10",
-			"comment": "Example: \nAI::ADD_PATROL_ROUTE_NODE(2, \"WORLD_HUMAN_GUARD_STAND\", -193.4915, -2378.864990234375, 10.9719, -193.4915, -2378.864990234375, 10.9719, 3000);\n\np0 is between 0 and 4 in the scripts.\n\np1 is \"WORLD_HUMAN_GUARD_STAND\" or \"StandGuard\".\n\np2, p3 and p4 is only one parameter sometimes in the scripts. Most likely a Vector3 hence p2, p3 and p4 are coordinates. \nExamples: \nAI::ADD_PATROL_ROUTE_NODE(1, \"WORLD_HUMAN_GUARD_STAND\", l_739[7/*3*/], 0.0, 0.0, 0.0, 0);\n\nAI::ADD_PATROL_ROUTE_NODE(1, \"WORLD_HUMAN_GUARD_STAND\", l_B0[17/*44*/]._f3, l_B0[17/*44*/]._f3, 2000);\n\np5, p6 and p7 are for example set to: 1599.0406494140625, 2713.392578125, 44.4309.\n\np8 is an int, often random set to for example: GAMEPLAY::GET_RANDOM_INT_IN_RANGE(5000, 10000).",
+			"comment": "Example: \nTASK::ADD_PATROL_ROUTE_NODE(2, \"WORLD_HUMAN_GUARD_STAND\", -193.4915, -2378.864990234375, 10.9719, -193.4915, -2378.864990234375, 10.9719, 3000);\n\np0 is between 0 and 4 in the scripts.\n\np1 is \"WORLD_HUMAN_GUARD_STAND\" or \"StandGuard\".\n\np2, p3 and p4 is only one parameter sometimes in the scripts. Most likely a Vector3 hence p2, p3 and p4 are coordinates. \nExamples: \nTASK::ADD_PATROL_ROUTE_NODE(1, \"WORLD_HUMAN_GUARD_STAND\", l_739[7/*3*/], 0.0, 0.0, 0.0, 0);\n\nTASK::ADD_PATROL_ROUTE_NODE(1, \"WORLD_HUMAN_GUARD_STAND\", l_B0[17/*44*/]._f3, l_B0[17/*44*/]._f3, 2000);\n\np5, p6 and p7 are for example set to: 1599.0406494140625, 2713.392578125, 44.4309.\n\np8 is an int, often random set to for example: MISC::GET_RANDOM_INT_IN_RANGE(5000, 10000).",
 			"params": [
 				{
 					"type": "int",
@@ -90746,7 +90746,7 @@
 		"0x7767DD9D65E91319": {
 			"name": "DELETE_PATROL_ROUTE",
 			"jhash": "0x2A4E6706",
-			"comment": "From the b617d scripts:\n\nAI::DELETE_PATROL_ROUTE(\"miss_merc0\");\nAI::DELETE_PATROL_ROUTE(\"miss_merc1\");\nAI::DELETE_PATROL_ROUTE(\"miss_merc2\");\nAI::DELETE_PATROL_ROUTE(\"miss_dock\");",
+			"comment": "From the b617d scripts:\n\nTASK::DELETE_PATROL_ROUTE(\"miss_merc0\");\nTASK::DELETE_PATROL_ROUTE(\"miss_merc1\");\nTASK::DELETE_PATROL_ROUTE(\"miss_merc2\");\nTASK::DELETE_PATROL_ROUTE(\"miss_dock\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -90759,7 +90759,7 @@
 		"0xBDA5DF49D080FE4E": {
 			"name": "TASK_PATROL",
 			"jhash": "0xB92E5AF6",
-			"comment": "After looking at some scripts the second parameter seems to be an id of some kind. Here are some I found from some R* scripts:\n\n\"miss_Tower_01\" (this went from 01 - 10)\n\"miss_Ass0\" (0, 4, 6, 3)\n\"MISS_PATROL_8\"\n\nI think they're patrol routes, but I'm not sure. And I believe the 3rd parameter is a BOOL, but I can't confirm other than only seeing 0 and 1 being passed.\n\n\nAs far as I can see the patrol routes names such as \"miss_Ass0\" have been defined earlier in the scripts. This leads me to believe we can defined our own new patrol routes by following the same approach. \nFrom the scripts\n\n    AI::OPEN_PATROL_ROUTE(\"miss_Ass0\");\n    AI::ADD_PATROL_ROUTE_NODE(0, \"WORLD_HUMAN_GUARD_STAND\", l_738[0/*3*/], -139.4076690673828, -993.4732055664062, 26.2754, GAMEPLAY::GET_RANDOM_INT_IN_RANGE(5000, 10000));\n    AI::ADD_PATROL_ROUTE_NODE(1, \"WORLD_HUMAN_GUARD_STAND\", l_738[1/*3*/], -116.1391830444336, -987.4984130859375, 26.38541030883789, GAMEPLAY::GET_RANDOM_INT_IN_RANGE(5000, 10000));\n    AI::ADD_PATROL_ROUTE_NODE(2, \"WORLD_HUMAN_GUARD_STAND\", l_738[2/*3*/], -128.46847534179688, -979.0340576171875, 26.2754, GAMEPLAY::GET_RANDOM_INT_IN_RANGE(5000, 10000));\n    AI::ADD_PATROL_ROUTE_LINK(0, 1);\n    AI::ADD_PATROL_ROUTE_LINK(1, 2);\n    AI::ADD_PATROL_ROUTE_LINK(2, 0);\n    AI::CLOSE_PATROL_ROUTE();\n    AI::CREATE_PATROL_ROUTE();\n\n",
+			"comment": "After looking at some scripts the second parameter seems to be an id of some kind. Here are some I found from some R* scripts:\n\n\"miss_Tower_01\" (this went from 01 - 10)\n\"miss_Ass0\" (0, 4, 6, 3)\n\"MISS_PATROL_8\"\n\nI think they're patrol routes, but I'm not sure. And I believe the 3rd parameter is a BOOL, but I can't confirm other than only seeing 0 and 1 being passed.\n\n\nAs far as I can see the patrol routes names such as \"miss_Ass0\" have been defined earlier in the scripts. This leads me to believe we can defined our own new patrol routes by following the same approach. \nFrom the scripts\n\n    TASK::OPEN_PATROL_ROUTE(\"miss_Ass0\");\n    TASK::ADD_PATROL_ROUTE_NODE(0, \"WORLD_HUMAN_GUARD_STAND\", l_738[0/*3*/], -139.4076690673828, -993.4732055664062, 26.2754, MISC::GET_RANDOM_INT_IN_RANGE(5000, 10000));\n    TASK::ADD_PATROL_ROUTE_NODE(1, \"WORLD_HUMAN_GUARD_STAND\", l_738[1/*3*/], -116.1391830444336, -987.4984130859375, 26.38541030883789, MISC::GET_RANDOM_INT_IN_RANGE(5000, 10000));\n    TASK::ADD_PATROL_ROUTE_NODE(2, \"WORLD_HUMAN_GUARD_STAND\", l_738[2/*3*/], -128.46847534179688, -979.0340576171875, 26.2754, MISC::GET_RANDOM_INT_IN_RANGE(5000, 10000));\n    TASK::ADD_PATROL_ROUTE_LINK(0, 1);\n    TASK::ADD_PATROL_ROUTE_LINK(1, 2);\n    TASK::ADD_PATROL_ROUTE_LINK(2, 0);\n    TASK::CLOSE_PATROL_ROUTE();\n    TASK::CREATE_PATROL_ROUTE();\n\n",
 			"params": [
 				{
 					"type": "Ped",
@@ -91110,7 +91110,7 @@
 		"0xA55547801EB331FC": {
 			"name": "TASK_GO_TO_COORD_AND_AIM_AT_HATED_ENTITIES_NEAR_COORD",
 			"jhash": "0x3F91358E",
-			"comment": "The ped will walk or run towards goToLocation, aiming towards goToLocation or focusLocation (depending on the aimingFlag) and shooting if shootAtEnemies = true to any enemy in his path.\n\nIf the ped is closer than noRoadsDistance, the ped will ignore pathing/navmesh and go towards goToLocation directly. This could cause the ped to get stuck behind tall walls if the goToLocation is on the other side. To avoid this, use 0.0f and the ped will always use pathing/navmesh to reach his destination.\n\nIf the speed is set to 0.0f, the ped will just stand there while aiming, if set to 1.0f he will walk while aiming, 2.0f will run while aiming.\n\nThe ped will stop aiming when he is closer than distanceToStopAt to goToLocation.\n\nI still can't figure out what unkTrue is used for. I don't notice any difference if I set it to false but in the decompiled scripts is always true.\n\nI think that unkFlag, like the driving styles, could be a flag that \"work as a list of 32 bits converted to a decimal integer. Each bit acts as a flag, and enables or disables a function\". What leads me to this conclusion is the fact that in the decompiled scripts, unkFlag takes values like: 0, 1, 5 (101 in binary) and 4097 (4096 + 1 or 1000000000001 in binary). For now, I don't know what behavior enable or disable this possible flag so I leave it at 0.\n\nNote: After some testing, using unkFlag = 16 (0x10) enables the use of sidewalks while moving towards goToLocation.\n\nThe aimingFlag takes 2 values: 0 to aim at the focusLocation, 1 to aim at where the ped is heading (goToLocation).\n\nExample:\n\nenum AimFlag\n{\n   AimAtFocusLocation,\n   AimAtGoToLocation\n};\n\nVector3 goToLocation1 = { 996.2867f, 0, -2143.044f, 0, 28.4763f, 0 }; // remember the padding.\n\nVector3 goToLocation2 = { 990.2867f, 0, -2140.044f, 0, 28.4763f, 0 }; // remember the padding.\n\nVector3 focusLocation = { 994.3478f, 0, -2136.118f, 0, 29.2463f, 0 }; // the coord z should be a little higher, around +1.0f to avoid aiming at the ground\n\n// 1st example\nAI::TASK_GO_TO_COORD_AND_AIM_AT_HATED_ENTITIES_NEAR_COORD(pedHandle, goToLocation1.x, goToLocation1.y, goToLocation1.z, focusLocation.x, focusLocation.y, focusLocation.z, 2.0f /*run*/, true /*shoot*/, 3.0f /*stop at*/, 0.0f /*noRoadsDistance*/, true /*always true*/, 0 /*possible flag*/, AimFlag::AimAtGoToLocation, -957453492 /*FullAuto pattern*/);\n\n// 2nd example\nAI::TASK_GO_TO_COORD_AND_AIM_AT_HATED_ENTITIES_NEAR_COORD(pedHandle, goToLocation2.x, goToLocation2.y, goToLocation2.z, focusLocation.x, focusLocation.y, focusLocation.z, 1.0f /*walk*/, false /*don't shoot*/, 3.0f /*stop at*/, 0.0f /*noRoadsDistance*/, true /*always true*/, 0 /*possible flag*/, AimFlag::AimAtFocusLocation, -957453492 /*FullAuto pattern*/);\n\n\n1st example: The ped (pedhandle) will run towards goToLocation1. While running and aiming towards goToLocation1, the ped will shoot on sight to any enemy in his path, using \"FullAuto\" firing pattern. The ped will stop once he is closer than distanceToStopAt to goToLocation1.\n\n2nd example: The ped will walk towards goToLocation2. This time, while walking towards goToLocation2 and aiming at focusLocation, the ped will point his weapon on sight to any enemy in his path without shooting. The ped will stop once he is closer than distanceToStopAt to goToLocation2.",
+			"comment": "The ped will walk or run towards goToLocation, aiming towards goToLocation or focusLocation (depending on the aimingFlag) and shooting if shootAtEnemies = true to any enemy in his path.\n\nIf the ped is closer than noRoadsDistance, the ped will ignore pathing/navmesh and go towards goToLocation directly. This could cause the ped to get stuck behind tall walls if the goToLocation is on the other side. To avoid this, use 0.0f and the ped will always use pathing/navmesh to reach his destination.\n\nIf the speed is set to 0.0f, the ped will just stand there while aiming, if set to 1.0f he will walk while aiming, 2.0f will run while aiming.\n\nThe ped will stop aiming when he is closer than distanceToStopAt to goToLocation.\n\nI still can't figure out what unkTrue is used for. I don't notice any difference if I set it to false but in the decompiled scripts is always true.\n\nI think that unkFlag, like the driving styles, could be a flag that \"work as a list of 32 bits converted to a decimal integer. Each bit acts as a flag, and enables or disables a function\". What leads me to this conclusion is the fact that in the decompiled scripts, unkFlag takes values like: 0, 1, 5 (101 in binary) and 4097 (4096 + 1 or 1000000000001 in binary). For now, I don't know what behavior enable or disable this possible flag so I leave it at 0.\n\nNote: After some testing, using unkFlag = 16 (0x10) enables the use of sidewalks while moving towards goToLocation.\n\nThe aimingFlag takes 2 values: 0 to aim at the focusLocation, 1 to aim at where the ped is heading (goToLocation).\n\nExample:\n\nenum AimFlag\n{\n   AimAtFocusLocation,\n   AimAtGoToLocation\n};\n\nVector3 goToLocation1 = { 996.2867f, 0, -2143.044f, 0, 28.4763f, 0 }; // remember the padding.\n\nVector3 goToLocation2 = { 990.2867f, 0, -2140.044f, 0, 28.4763f, 0 }; // remember the padding.\n\nVector3 focusLocation = { 994.3478f, 0, -2136.118f, 0, 29.2463f, 0 }; // the coord z should be a little higher, around +1.0f to avoid aiming at the ground\n\n// 1st example\nTASK::TASK_GO_TO_COORD_AND_AIM_AT_HATED_ENTITIES_NEAR_COORD(pedHandle, goToLocation1.x, goToLocation1.y, goToLocation1.z, focusLocation.x, focusLocation.y, focusLocation.z, 2.0f /*run*/, true /*shoot*/, 3.0f /*stop at*/, 0.0f /*noRoadsDistance*/, true /*always true*/, 0 /*possible flag*/, AimFlag::AimAtGoToLocation, -957453492 /*FullAuto pattern*/);\n\n// 2nd example\nTASK::TASK_GO_TO_COORD_AND_AIM_AT_HATED_ENTITIES_NEAR_COORD(pedHandle, goToLocation2.x, goToLocation2.y, goToLocation2.z, focusLocation.x, focusLocation.y, focusLocation.z, 1.0f /*walk*/, false /*don't shoot*/, 3.0f /*stop at*/, 0.0f /*noRoadsDistance*/, true /*always true*/, 0 /*possible flag*/, AimFlag::AimAtFocusLocation, -957453492 /*FullAuto pattern*/);\n\n\n1st example: The ped (pedhandle) will run towards goToLocation1. While running and aiming towards goToLocation1, the ped will shoot on sight to any enemy in his path, using \"FullAuto\" firing pattern. The ped will stop once he is closer than distanceToStopAt to goToLocation1.\n\n2nd example: The ped will walk towards goToLocation2. This time, while walking towards goToLocation2 and aiming at focusLocation, the ped will point his weapon on sight to any enemy in his path without shooting. The ped will stop once he is closer than distanceToStopAt to goToLocation2.",
 			"params": [
 				{
 					"type": "Ped",
@@ -92323,7 +92323,7 @@
 		"0xD5BB4025AE449A4E": {
 			"name": "SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT",
 			"jhash": "0xA79BE783",
-			"comment": "p0 - PLAYER::PLAYER_PED_ID();\np1 - \"Phase\", \"Wobble\", \"x_axis\",\"y_axis\",\"introphase\",\"speed\".\np2 - From what i can see it goes up to 1f (maybe).\n\n-LcGamingHD\n\nExample: AI::_D5BB4025AE449A4E(PLAYER::PLAYER_PED_ID(), \"Phase\", 0.5);",
+			"comment": "p0 - PLAYER::PLAYER_PED_ID();\np1 - \"Phase\", \"Wobble\", \"x_axis\",\"y_axis\",\"introphase\",\"speed\".\np2 - From what i can see it goes up to 1f (maybe).\n\n-LcGamingHD\n\nExample: TASK::_D5BB4025AE449A4E(PLAYER::PLAYER_PED_ID(), \"Phase\", 0.5);",
 			"params": [
 				{
 					"type": "Ped",
@@ -92592,7 +92592,7 @@
 		"0xEEA929141F699854": {
 			"name": "TASK_SYNCHRONIZED_SCENE",
 			"jhash": "0x4F217E7B",
-			"comment": " AI::TASK_SYNCHRONIZED_SCENE(ped, scene, \"creatures@rottweiler@in_vehicle@std_car\", \"get_in\", 1000.0, -8.0, 4, 0, 0x447a0000, 0);\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": " TASK::TASK_SYNCHRONIZED_SCENE(ped, scene, \"creatures@rottweiler@in_vehicle@std_car\", \"get_in\", 1000.0, -8.0, 4, 0, 0x447a0000, 0);\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
 			"params": [
 				{
 					"type": "Ped",
@@ -92798,7 +92798,7 @@
 		"0xF3B9A78A178572B1": {
 			"name": "TASK_ARREST_PED",
 			"jhash": "0xBC0F153D",
-			"comment": "Example from \"me_amanda1.ysc.c4\":\nAI::TASK_ARREST_PED(l_19F /* This is a Ped */ , PLAYER::PLAYER_PED_ID());\n\nExample from \"armenian1.ysc.c4\":\nif (!PED::IS_PED_INJURED(l_B18[0/*1*/])) {\n    AI::TASK_ARREST_PED(l_B18[0/*1*/], PLAYER::PLAYER_PED_ID());\n}\n\nI would love to have time to experiment to see if a player Ped can arrest another Ped. Might make for a good cop mod.\n\n\nLooks like only the player can be arrested this way. Peds react and try to arrest you if you task them, but the player charater doesn't do anything if tasked to arrest another ped.",
+			"comment": "Example from \"me_amanda1.ysc.c4\":\nTASK::TASK_ARREST_PED(l_19F /* This is a Ped */ , PLAYER::PLAYER_PED_ID());\n\nExample from \"armenian1.ysc.c4\":\nif (!PED::IS_PED_INJURED(l_B18[0/*1*/])) {\n    TASK::TASK_ARREST_PED(l_B18[0/*1*/], PLAYER::PLAYER_PED_ID());\n}\n\nI would love to have time to experiment to see if a player Ped can arrest another Ped. Might make for a good cop mod.\n\n\nLooks like only the player can be arrested this way. Peds react and try to arrest you if you task them, but the player charater doesn't do anything if tasked to arrest another ped.",
 			"params": [
 				{
 					"type": "Ped",
@@ -96312,7 +96312,7 @@
 		"0x0FC2D89AC25A5814": {
 			"name": "SET_VEHICLE_MODEL_IS_SUPPRESSED",
 			"jhash": "0x42A08C9B",
-			"comment": "seems to make the vehicle stop spawning naturally in traffic. Here's an essential example:\n\nVEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(GAMEPLAY::GET_HASH_KEY(\"taco\"), true);\n\ngod I hate taco vans\n\nConfirmed to work? Needs to be looped? Can not get it to work.",
+			"comment": "seems to make the vehicle stop spawning naturally in traffic. Here's an essential example:\n\nVEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(MISC::GET_HASH_KEY(\"taco\"), true);\n\ngod I hate taco vans\n\nConfirmed to work? Needs to be looped? Can not get it to work.",
 			"params": [
 				{
 					"type": "Hash",
@@ -98436,7 +98436,7 @@
 		"0xB215AAC32D25D019": {
 			"name": "GET_DISPLAY_NAME_FROM_VEHICLE_MODEL",
 			"jhash": "0xEC86DF39",
-			"comment": "Returns model name of vehicle in all caps. Needs to be displayed through localizing text natives to get proper display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\nWhile often the case, this does not simply return the model name of the vehicle (which could be hashed to return the model hash). Variations of the same vehicle may also use the same display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\n\nReturns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nUsing UI::_GET_LABEL_TEXT, you can get the localized name.\n\nFor a full list, see here: pastebin.com/wvpyS4kS (pastebin.com/dA3TbkZw)\n\n",
+			"comment": "Returns model name of vehicle in all caps. Needs to be displayed through localizing text natives to get proper display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\nWhile often the case, this does not simply return the model name of the vehicle (which could be hashed to return the model hash). Variations of the same vehicle may also use the same display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\n\nReturns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nUsing HUD::_GET_LABEL_TEXT, you can get the localized name.\n\nFor a full list, see here: pastebin.com/wvpyS4kS (pastebin.com/dA3TbkZw)\n\n",
 			"params": [
 				{
 					"type": "Hash",
@@ -101266,7 +101266,7 @@
 		"0x74CD9A9327A282EA": {
 			"name": "SET_VEHICLE_SHOOT_AT_TARGET",
 			"jhash": "0x2343FFDF",
-			"comment": "Commands the driver of an armed vehicle (p0) to shoot its weapon at a target (p1). p3, p4 and p5 are the coordinates of the target. Example:\n\nWEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(pilot,GAMEPLAY::GET_HASH_KEY(\"VEHICLE_WEAPON_PLANE_ROCKET\"));                        VEHICLE::SET_VEHICLE_SHOOT_AT_TARGET(pilot, target, targPos.x, targPos.y, targPos.z);",
+			"comment": "Commands the driver of an armed vehicle (p0) to shoot its weapon at a target (p1). p3, p4 and p5 are the coordinates of the target. Example:\n\nWEAPON::SET_CURRENT_PED_VEHICLE_WEAPON(pilot,MISC::GET_HASH_KEY(\"VEHICLE_WEAPON_PLANE_ROCKET\"));                        VEHICLE::SET_VEHICLE_SHOOT_AT_TARGET(pilot, target, targPos.x, targPos.y, targPos.z);",
 			"params": [
 				{
 					"type": "Ped",
@@ -102325,7 +102325,7 @@
 		"0x29439776AAA00A62": {
 			"name": "GET_VEHICLE_CLASS",
 			"jhash": "0xC025338E",
-			"comment": "Returns an int\n\nVehicle Classes:\n0: Compacts\n1: Sedans\n2: SUVs\n3: Coupes\n4: Muscle\n5: Sports Classics\n6: Sports\n7: Super\n8: Motorcycles\n9: Off-road\n10: Industrial\n11: Utility\n12: Vans\n13: Cycles\n14: Boats\n15: Helicopters\n16: Planes\n17: Service\n18: Emergency\n19: Military\n20: Commercial\n21: Trains\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS(vehicle));\n\nconst char* className = UI::_GET_LABEL_TEXT(buffer);",
+			"comment": "Returns an int\n\nVehicle Classes:\n0: Compacts\n1: Sedans\n2: SUVs\n3: Coupes\n4: Muscle\n5: Sports Classics\n6: Sports\n7: Super\n8: Motorcycles\n9: Off-road\n10: Industrial\n11: Utility\n12: Vans\n13: Cycles\n14: Boats\n15: Helicopters\n16: Planes\n17: Service\n18: Emergency\n19: Military\n20: Commercial\n21: Trains\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS(vehicle));\n\nconst char* className = HUD::_GET_LABEL_TEXT(buffer);",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102338,7 +102338,7 @@
 		"0xDEDF1C8BD47C2200": {
 			"name": "GET_VEHICLE_CLASS_FROM_NAME",
 			"jhash": "0xEA469980",
-			"comment": "For a full enum, see here : pastebin.com/i2GGAjY0\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS_FROM_NAME (hash));\n\nconst char* className = UI::_GET_LABEL_TEXT(buffer);",
+			"comment": "For a full enum, see here : pastebin.com/i2GGAjY0\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS_FROM_NAME (hash));\n\nconst char* className = HUD::_GET_LABEL_TEXT(buffer);",
 			"params": [
 				{
 					"type": "Hash",
@@ -105776,7 +105776,7 @@
 		"0xBF0FD6E56C964FCB": {
 			"name": "GIVE_WEAPON_TO_PED",
 			"jhash": "0xC4D88A85",
-			"comment": "isHidden - ????\n\nAll weapon names (add to the list if something is missing), use GAMEPLAY::GET_HASH_KEY((char *)weaponNames[i]) to get get the hash:\n\nstatic LPCSTR weaponNames[] = {\n \"WEAPON_KNIFE\", \"WEAPON_NIGHTSTICK\", \"WEAPON_HAMMER\", \"WEAPON_BAT\", \"WEAPON_GOLFCLUB\",\n  \"WEAPON_CROWBAR\", \"WEAPON_PISTOL\", \"WEAPON_COMBATPISTOL\", \"WEAPON_APPISTOL\", \"WEAPON_PISTOL50\",\n \"WEAPON_MICROSMG\", \"WEAPON_SMG\", \"WEAPON_ASSAULTSMG\", \"WEAPON_ASSAULTRIFLE\",\n  \"WEAPON_CARBINERIFLE\", \"WEAPON_ADVANCEDRIFLE\", \"WEAPON_MG\", \"WEAPON_COMBATMG\", \"WEAPON_PUMPSHOTGUN\",\n    \"WEAPON_SAWNOFFSHOTGUN\", \"WEAPON_ASSAULTSHOTGUN\", \"WEAPON_BULLPUPSHOTGUN\", \"WEAPON_STUNGUN\", \"WEAPON_SNIPERRIFLE\",\n  \"WEAPON_HEAVYSNIPER\", \"WEAPON_GRENADELAUNCHER\", \"WEAPON_GRENADELAUNCHER_SMOKE\", \"WEAPON_RPG\", \"WEAPON_MINIGUN\",\n \"WEAPON_GRENADE\", \"WEAPON_STICKYBOMB\", \"WEAPON_SMOKEGRENADE\", \"WEAPON_BZGAS\", \"WEAPON_MOLOTOV\",\n \"WEAPON_FIREEXTINGUISHER\", \"WEAPON_PETROLCAN\", \"WEAPON_FLARE\", \"WEAPON_SNSPISTOL\", \"WEAPON_SPECIALCARBINE\",\n \"WEAPON_HEAVYPISTOL\", \"WEAPON_BULLPUPRIFLE\", \"WEAPON_HOMINGLAUNCHER\", \"WEAPON_PROXMINE\", \"WEAPON_SNOWBALL\",\n \"WEAPON_VINTAGEPISTOL\", \"WEAPON_DAGGER\", \"WEAPON_FIREWORK\", \"WEAPON_MUSKET\", \"WEAPON_MARKSMANRIFLE\",\n    \"WEAPON_HEAVYSHOTGUN\", \"WEAPON_GUSENBERG\", \"WEAPON_HATCHET\", \"WEAPON_RAILGUN\", \"WEAPON_COMBATPDW\",\n  \"WEAPON_KNUCKLE\", \"WEAPON_MARKSMANPISTOL\", \"WEAPON_FLASHLIGHT\", \"WEAPON_MACHETE\", \"WEAPON_MACHINEPISTOL\",\n   \"WEAPON_SWITCHBLADE\", \"WEAPON_REVOLVER\", \"WEAPON_COMPACTRIFLE\", \"WEAPON_DBSHOTGUN\", \"WEAPON_FLAREGUN\",\n  \"WEAPON_AUTOSHOTGUN\", \"WEAPON_BATTLEAXE\", \"WEAPON_COMPACTLAUNCHER\", \"WEAPON_MINISMG\", \"WEAPON_PIPEBOMB\",\n    \"WEAPON_POOLCUE\", \"WEAPON_SWEEPER\", \"WEAPON_WRENCH\"\n};\n----------------------------------------------------------------------------------------------------------------------------------------\nTranslation table:\npastebin.com/a39K8Nz8",
+			"comment": "isHidden - ????\n\nAll weapon names (add to the list if something is missing), use MISC::GET_HASH_KEY((char *)weaponNames[i]) to get get the hash:\n\nstatic LPCSTR weaponNames[] = {\n \"WEAPON_KNIFE\", \"WEAPON_NIGHTSTICK\", \"WEAPON_HAMMER\", \"WEAPON_BAT\", \"WEAPON_GOLFCLUB\",\n  \"WEAPON_CROWBAR\", \"WEAPON_PISTOL\", \"WEAPON_COMBATPISTOL\", \"WEAPON_APPISTOL\", \"WEAPON_PISTOL50\",\n \"WEAPON_MICROSMG\", \"WEAPON_SMG\", \"WEAPON_ASSAULTSMG\", \"WEAPON_ASSAULTRIFLE\",\n  \"WEAPON_CARBINERIFLE\", \"WEAPON_ADVANCEDRIFLE\", \"WEAPON_MG\", \"WEAPON_COMBATMG\", \"WEAPON_PUMPSHOTGUN\",\n    \"WEAPON_SAWNOFFSHOTGUN\", \"WEAPON_ASSAULTSHOTGUN\", \"WEAPON_BULLPUPSHOTGUN\", \"WEAPON_STUNGUN\", \"WEAPON_SNIPERRIFLE\",\n  \"WEAPON_HEAVYSNIPER\", \"WEAPON_GRENADELAUNCHER\", \"WEAPON_GRENADELAUNCHER_SMOKE\", \"WEAPON_RPG\", \"WEAPON_MINIGUN\",\n \"WEAPON_GRENADE\", \"WEAPON_STICKYBOMB\", \"WEAPON_SMOKEGRENADE\", \"WEAPON_BZGAS\", \"WEAPON_MOLOTOV\",\n \"WEAPON_FIREEXTINGUISHER\", \"WEAPON_PETROLCAN\", \"WEAPON_FLARE\", \"WEAPON_SNSPISTOL\", \"WEAPON_SPECIALCARBINE\",\n \"WEAPON_HEAVYPISTOL\", \"WEAPON_BULLPUPRIFLE\", \"WEAPON_HOMINGLAUNCHER\", \"WEAPON_PROXMINE\", \"WEAPON_SNOWBALL\",\n \"WEAPON_VINTAGEPISTOL\", \"WEAPON_DAGGER\", \"WEAPON_FIREWORK\", \"WEAPON_MUSKET\", \"WEAPON_MARKSMANRIFLE\",\n    \"WEAPON_HEAVYSHOTGUN\", \"WEAPON_GUSENBERG\", \"WEAPON_HATCHET\", \"WEAPON_RAILGUN\", \"WEAPON_COMBATPDW\",\n  \"WEAPON_KNUCKLE\", \"WEAPON_MARKSMANPISTOL\", \"WEAPON_FLASHLIGHT\", \"WEAPON_MACHETE\", \"WEAPON_MACHINEPISTOL\",\n   \"WEAPON_SWITCHBLADE\", \"WEAPON_REVOLVER\", \"WEAPON_COMPACTRIFLE\", \"WEAPON_DBSHOTGUN\", \"WEAPON_FLAREGUN\",\n  \"WEAPON_AUTOSHOTGUN\", \"WEAPON_BATTLEAXE\", \"WEAPON_COMPACTLAUNCHER\", \"WEAPON_MINISMG\", \"WEAPON_PIPEBOMB\",\n    \"WEAPON_POOLCUE\", \"WEAPON_SWEEPER\", \"WEAPON_WRENCH\"\n};\n----------------------------------------------------------------------------------------------------------------------------------------\nTranslation table:\npastebin.com/a39K8Nz8",
 			"params": [
 				{
 					"type": "Ped",
@@ -105805,7 +105805,7 @@
 		"0xB282DC6EBD803C75": {
 			"name": "GIVE_DELAYED_WEAPON_TO_PED",
 			"jhash": "0x5868D20D",
-			"comment": "Gives a weapon to PED with a delay, example:\n\nWEAPON::GIVE_DELAYED_WEAPON_TO_PED(PED::PLAYER_PED_ID(), GAMEPLAY::GET_HASH_KEY(\"WEAPON_PISTOL\"), 1000, false)\n----------------------------------------------------------------------------------------------------------------------------------------\nTranslation table:\npastebin.com/a39K8Nz8\n\n",
+			"comment": "Gives a weapon to PED with a delay, example:\n\nWEAPON::GIVE_DELAYED_WEAPON_TO_PED(PED::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"WEAPON_PISTOL\"), 1000, false)\n----------------------------------------------------------------------------------------------------------------------------------------\nTranslation table:\npastebin.com/a39K8Nz8\n\n",
 			"params": [
 				{
 					"type": "Ped",
