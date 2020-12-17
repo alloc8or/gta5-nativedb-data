@@ -28415,13 +28415,13 @@
 			"build": "323"
 		},
 		"0x6B50FC8749632EC1": {
-			"name": "_0x6B50FC8749632EC1",
+			"name": "_SET_MINIMAP_SONAR_ENABLED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
