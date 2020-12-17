@@ -86207,17 +86207,17 @@
 			"build": "323"
 		},
 		"0x9A9D1BA639675CF1": {
-			"name": "_0x9A9D1BA639675CF1",
+			"name": "_SET_ISLAND_HOPPER_ENABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Enables the specified island. For more information, see islandhopper.meta",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
