@@ -95182,29 +95182,29 @@
 			"build": "323"
 		},
 		"0x3E71D0B300B7AA79": {
-			"name": "_0x3E71D0B300B7AA79",
+			"name": "_GET_SUBMARINE_IS_BELOW_FIRST_CRUSH_DEPTH",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "submarine"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2189"
 		},
 		"0x093D6DDCA5B8FBAE": {
-			"name": "_0x093D6DDCA5B8FBAE",
+			"name": "_GET_SUBMARINE_CRUSH_DEPTH_WARNING_STATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "submarine"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "2189"
 		},
 		"0xED5EDE9E676643C9": {
