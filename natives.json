@@ -53209,13 +53209,13 @@
 			"build": "323"
 		},
 		"0x42BF1D2E723B6D7E": {
-			"name": "_0x42BF1D2E723B6D7E",
+			"name": "_NETWORK_OVERRIDE_CLOCK_MILLISECONDS_PER_GAME_MINUTE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ms"
 				}
 			],
 			"return_type": "void",
