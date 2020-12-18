@@ -85011,24 +85011,24 @@
 			"build": "323"
 		},
 		"0x7E3F55ED251B76D3": {
-			"name": "_0x7E3F55ED251B76D3",
+			"name": "_LOAD_GLOBAL_WATER_TYPE",
 			"jhash": "",
-			"comment": "",
+			"comment": "0 - default\n1 - HeistIsland",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "waterType"
 				}
 			],
 			"return_type": "void",
 			"build": "2189"
 		},
 		"0xF741BD853611592D": {
-			"name": "_0xF741BD853611592D",
+			"name": "_GET_GLOBAL_WATER_TYPE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "2189"
 		},
 		"0x717CD6E6FAEBBEDC": {
