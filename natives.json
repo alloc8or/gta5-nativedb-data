@@ -64762,24 +64762,24 @@
 			"build": "323"
 		},
 		"0xBA656A3BB01BDEA3": {
-			"name": "_0xBA656A3BB01BDEA3",
+			"name": "_GET_PED_EVENT_DATA",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "eventType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Any*",
+					"name": "outData"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2189"
 		},
 		"0x9AC577F5A12AD8A9": {
