@@ -7105,10 +7105,6 @@
 				{
 					"type": "float",
 					"name": "yaw"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
 				}
 			],
 			"return_type": "void",
