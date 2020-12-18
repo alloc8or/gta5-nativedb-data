@@ -100965,16 +100965,16 @@
 			"build": "323"
 		},
 		"0x99015ED7DBEA5113": {
-			"name": "_0x99015ED7DBEA5113",
+			"name": "_DOES_VEHICLE_HAVE_SEARCHLIGHT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2189"
 		},
 		"0x639431E895B9AA57": {
