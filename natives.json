@@ -28577,13 +28577,13 @@
 			"build": "323"
 		},
 		"0x5E1460624D194A38": {
-			"name": "_0x5E1460624D194A38",
+			"name": "_SET_TOGGLE_MINIMAP_HEIST_ISLAND",
 			"jhash": "",
-			"comment": "",
+			"comment": "Toggles the Cayo Perico map.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
