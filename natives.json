@@ -28577,7 +28577,7 @@
 			"build": "323"
 		},
 		"0x5E1460624D194A38": {
-			"name": "_SET_MINIMAP_IN_HEIST_ISLAND",
+			"name": "_SET_TOGGLE_MINIMAP_HEIST_ISLAND",
 			"jhash": "",
 			"comment": "Toggles the Cayo Perico map.",
 			"params": [
