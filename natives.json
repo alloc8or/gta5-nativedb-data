@@ -14631,16 +14631,16 @@
 			"build": "1734"
 		},
 		"0xB328DCC3A3AA401B": {
-			"name": "_0xB328DCC3A3AA401B",
+			"name": "_GET_ENTITY_BONE_COUNT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "791"
 		},
 		"0x6CE177D014502E8A": {
