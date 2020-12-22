@@ -52147,11 +52147,11 @@
 			"build": "323"
 		},
 		"0xF12E6CD06C73D69E": {
-			"name": "_0xF12E6CD06C73D69E",
+			"name": "_GET_CLOUD_TIME_AS_STRING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as GET_CLOUD_TIME_AS_INT but returns the value as a hex string (%I64X).",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "1103"
 		},
 		"0x9A73240B49945C76": {
