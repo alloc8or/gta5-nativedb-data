@@ -1366,7 +1366,7 @@
 		"0x7FF4944CC209192D": {
 			"name": "PLAY_SOUND",
 			"jhash": "0xB6E1917F",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/A8Ny8AHZ",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/A8Ny8AHZ\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
@@ -1399,7 +1399,7 @@
 		"0x67C540AA08E4A6F5": {
 			"name": "PLAY_SOUND_FRONTEND",
 			"jhash": "0x2E458F74",
-			"comment": "list: pastebin.com/DCeRiaLJ\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/0neZdsZ5",
+			"comment": "list: pastebin.com/DCeRiaLJ\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/0neZdsZ5\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
@@ -1424,7 +1424,7 @@
 		"0xCADA5A0D0702381E": {
 			"name": "PLAY_DEFERRED_SOUND_FRONTEND",
 			"jhash": "0xC70E6CFA",
-			"comment": "Only call found in the b617d scripts:\n\nAUDIO::PLAY_DEFERRED_SOUND_FRONTEND(\"BACK\", \"HUD_FREEMODE_SOUNDSET\");",
+			"comment": "Only call found in the b617d scripts:\n\nAUDIO::PLAY_DEFERRED_SOUND_FRONTEND(\"BACK\", \"HUD_FREEMODE_SOUNDSET\");\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -1441,7 +1441,7 @@
 		"0xE65F427EB70AB1ED": {
 			"name": "PLAY_SOUND_FROM_ENTITY",
 			"jhash": "0x95AE00F8",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/f2A7vTj0 \nNo changes made in b678d.\n\ngtaforums.com/topic/795622-audio-for-mods\n",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/f2A7vTj0 \nNo changes made in b678d.\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
@@ -1507,7 +1507,7 @@
 		"0x8D8686B622B88120": {
 			"name": "PLAY_SOUND_FROM_COORD",
 			"jhash": "0xCAD3E2D5",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/eeFc5DiW\n\ngtaforums.com/topic/795622-audio-for-mods",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/eeFc5DiW\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
@@ -1701,7 +1701,7 @@
 		"0x8E04FEDD28D42462": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_NATIVE",
 			"jhash": "0x5C57B85D",
-			"comment": "Plays ambient speech. See also _0x444180DB.\n\nped: The ped to play the ambient speech.\nspeechName: Name of the speech to play, eg. \"GENERIC_HI\".\nspeechParam: Can be one of the following:\nSPEECH_PARAMS_STANDARD\nSPEECH_PARAMS_ALLOW_REPEAT\nSPEECH_PARAMS_BEAT\nSPEECH_PARAMS_FORCE\nSPEECH_PARAMS_FORCE_FRONTEND\nSPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND\nSPEECH_PARAMS_FORCE_NORMAL\nSPEECH_PARAMS_FORCE_NORMAL_CLEAR\nSPEECH_PARAMS_FORCE_NORMAL_CRITICAL\nSPEECH_PARAMS_FORCE_SHOUTED\nSPEECH_PARAMS_FORCE_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_SHOUTED_CRITICAL\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY\nSPEECH_PARAMS_MEGAPHONE\nSPEECH_PARAMS_HELI\nSPEECH_PARAMS_FORCE_MEGAPHONE\nSPEECH_PARAMS_FORCE_HELI\nSPEECH_PARAMS_INTERRUPT\nSPEECH_PARAMS_INTERRUPT_SHOUTED\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL\nSPEECH_PARAMS_INTERRUPT_NO_FORCE\nSPEECH_PARAMS_INTERRUPT_FRONTEND\nSPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND\nSPEECH_PARAMS_ADD_BLIP\nSPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT\nSPEECH_PARAMS_ADD_BLIP_FORCE\nSPEECH_PARAMS_ADD_BLIP_SHOUTED\nSPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL\nSPEECH_PARAMS_SHOUTED\nSPEECH_PARAMS_SHOUTED_CLEAR\nSPEECH_PARAMS_SHOUTED_CRITICAL\n\nNote: A list of Name and Parameters can be found here pastebin.com/1GZS5dCL\n\nFull list of speeches and voices names: gist.github.com/alexguirre/0af600eb3d4c91ad4f900120a63b8992\n\nOld name: _PLAY_AMBIENT_SPEECH1",
+			"comment": "Plays ambient speech. See also _0x444180DB.\n\nped: The ped to play the ambient speech.\nspeechName: Name of the speech to play, eg. \"GENERIC_HI\".\nspeechParam: Can be one of the following:\nSPEECH_PARAMS_STANDARD\nSPEECH_PARAMS_ALLOW_REPEAT\nSPEECH_PARAMS_BEAT\nSPEECH_PARAMS_FORCE\nSPEECH_PARAMS_FORCE_FRONTEND\nSPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND\nSPEECH_PARAMS_FORCE_NORMAL\nSPEECH_PARAMS_FORCE_NORMAL_CLEAR\nSPEECH_PARAMS_FORCE_NORMAL_CRITICAL\nSPEECH_PARAMS_FORCE_SHOUTED\nSPEECH_PARAMS_FORCE_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_SHOUTED_CRITICAL\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY\nSPEECH_PARAMS_MEGAPHONE\nSPEECH_PARAMS_HELI\nSPEECH_PARAMS_FORCE_MEGAPHONE\nSPEECH_PARAMS_FORCE_HELI\nSPEECH_PARAMS_INTERRUPT\nSPEECH_PARAMS_INTERRUPT_SHOUTED\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL\nSPEECH_PARAMS_INTERRUPT_NO_FORCE\nSPEECH_PARAMS_INTERRUPT_FRONTEND\nSPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND\nSPEECH_PARAMS_ADD_BLIP\nSPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT\nSPEECH_PARAMS_ADD_BLIP_FORCE\nSPEECH_PARAMS_ADD_BLIP_SHOUTED\nSPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL\nSPEECH_PARAMS_SHOUTED\nSPEECH_PARAMS_SHOUTED_CLEAR\nSPEECH_PARAMS_SHOUTED_CRITICAL\n\nNote: A list of Name and Parameters can be found here pastebin.com/1GZS5dCL\n\nFull list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json\n\nOld name: _PLAY_AMBIENT_SPEECH1",
 			"params": [
 				{
 					"type": "Ped",
@@ -1726,7 +1726,7 @@
 		"0xC6941B4A3A8FBBB9": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE",
 			"jhash": "0x444180DB",
-			"comment": "Plays ambient speech. See also _0x5C57B85D.\n\nSee PLAY_PED_AMBIENT_SPEECH_NATIVE for parameter specifications.\n\nFull list of speeches and voices names by alexguirre: gist.github.com/alexguirre/0af600eb3d4c91ad4f900120a63b8992",
+			"comment": "Plays ambient speech. See also _0x5C57B85D.\n\nSee PLAY_PED_AMBIENT_SPEECH_NATIVE for parameter specifications.\n\nFull list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -1751,7 +1751,7 @@
 		"0x3523634255FC3318": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE",
 			"jhash": "0x8386AE28",
-			"comment": "This is the same as PLAY_PED_AMBIENT_SPEECH_NATIVE and PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE but it will allow you to play a speech file from a specific voice file. It works on players and all peds, even animals.\n\nEX (C#):\nGTA.Native.Function.Call(Hash._0x3523634255FC3318, Game.Player.Character, \"GENERIC_INSULT_HIGH\", \"s_m_y_sheriff_01_white_full_01\", \"SPEECH_PARAMS_FORCE_SHOUTED\", 0);\n\nThe first param is the ped you want to play it on, the second is the speech name, the third is the voice name, the fourth is the speech param, and the last param is usually always 0.\n\nFull list of speeches and voices names by alexguirre: gist.github.com/alexguirre/0af600eb3d4c91ad4f900120a63b8992",
+			"comment": "This is the same as PLAY_PED_AMBIENT_SPEECH_NATIVE and PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE but it will allow you to play a speech file from a specific voice file. It works on players and all peds, even animals.\n\nEX (C#):\nGTA.Native.Function.Call(Hash._0x3523634255FC3318, Game.Player.Character, \"GENERIC_INSULT_HIGH\", \"s_m_y_sheriff_01_white_full_01\", \"SPEECH_PARAMS_FORCE_SHOUTED\", 0);\n\nThe first param is the ped you want to play it on, the second is the speech name, the third is the voice name, the fourth is the speech param, and the last param is usually always 0.\n\nFull list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -1780,15 +1780,15 @@
 		"0xED640017ED337E45": {
 			"name": "PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE",
 			"jhash": "0xA1A1402E",
-			"comment": "",
+			"comment": "Full list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "speechName"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "voiceName"
 				},
 				{
 					"type": "float",
@@ -1804,7 +1804,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p5"
+					"name": "speechParam"
 				}
 			],
 			"return_type": "void",
@@ -2346,7 +2346,7 @@
 		"0xACF57305B12AF907": {
 			"name": "SET_EMITTER_RADIO_STATION",
 			"jhash": "0x87431585",
-			"comment": "",
+			"comment": "Full list of static emitters by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/staticEmitters.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -2363,7 +2363,7 @@
 		"0x399D2D3B33F1B8EB": {
 			"name": "SET_STATIC_EMITTER_ENABLED",
 			"jhash": "0x91F72E92",
-			"comment": "Example:\nAUDIO::SET_STATIC_EMITTER_ENABLED((Any*)\"LOS_SANTOS_VANILLA_UNICORN_01_STAGE\", false);    AUDIO::SET_STATIC_EMITTER_ENABLED((Any*)\"LOS_SANTOS_VANILLA_UNICORN_02_MAIN_ROOM\", false);    AUDIO::SET_STATIC_EMITTER_ENABLED((Any*)\"LOS_SANTOS_VANILLA_UNICORN_03_BACK_ROOM\", false);\n\nThis turns off surrounding sounds not connected directly to peds. \n\n",
+			"comment": "Example:\nAUDIO::SET_STATIC_EMITTER_ENABLED((Any*)\"LOS_SANTOS_VANILLA_UNICORN_01_STAGE\", false);    AUDIO::SET_STATIC_EMITTER_ENABLED((Any*)\"LOS_SANTOS_VANILLA_UNICORN_02_MAIN_ROOM\", false);    AUDIO::SET_STATIC_EMITTER_ENABLED((Any*)\"LOS_SANTOS_VANILLA_UNICORN_03_BACK_ROOM\", false);\n\nThis turns off surrounding sounds not connected directly to peds.\n\nFull list of static emitters by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/staticEmitters.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -2379,7 +2379,7 @@
 		},
 		"0x651D3228960D08AF": {
 			"name": "_LINK_STATIC_EMITTER_TO_ENTITY",
-			"jhash": "",
+			"jhash": "Full list of static emitters by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/staticEmitters.json",
 			"comment": "L* (LINK_*?)",
 			"params": [
 				{
@@ -2891,7 +2891,7 @@
 		"0xBDA07E5950085E46": {
 			"name": "SET_AMBIENT_ZONE_STATE",
 			"jhash": "0x2849CAC9",
-			"comment": "",
+			"comment": "Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -2912,7 +2912,7 @@
 		"0x218DD44AAAC964FF": {
 			"name": "CLEAR_AMBIENT_ZONE_STATE",
 			"jhash": "0xCDFF3C82",
-			"comment": "This function also has a p2, unknown. Signature AUDIO::CLEAR_AMBIENT_ZONE_STATE(const char* zoneName, bool p1, Any p2);\n\nStill needs more research. \n\nHere are the names I've found: pastebin.com/AfA0Qjyv",
+			"comment": "This function also has a p2, unknown. Signature AUDIO::CLEAR_AMBIENT_ZONE_STATE(const char* zoneName, bool p1, Any p2);\n\nStill needs more research.\n\nFull list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -2967,7 +2967,7 @@
 		"0x1D6650420CEC9D3B": {
 			"name": "SET_AMBIENT_ZONE_STATE_PERSISTENT",
 			"jhash": "0xC1FFB672",
-			"comment": " All occurrences found in b617d, sorted alphabetically and identical lines removed: pastebin.com/jYvw7N1S",
+			"comment": "Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -2988,7 +2988,7 @@
 		"0xF3638DAE8C4045E1": {
 			"name": "SET_AMBIENT_ZONE_LIST_STATE_PERSISTENT",
 			"jhash": "0x5F5A2605",
-			"comment": "All occurrences found in b617d, sorted alphabetically and identical lines removed: pastebin.com/WkXDGgQL",
+			"comment": "Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3009,7 +3009,7 @@
 		"0x01E2817A479A7F9B": {
 			"name": "IS_AMBIENT_ZONE_ENABLED",
 			"jhash": "0xBFABD872",
-			"comment": "",
+			"comment": "Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3212,7 +3212,7 @@
 		"0x1F1F957154EC51DF": {
 			"name": "LOAD_STREAM",
 			"jhash": "0x0D89599D",
-			"comment": "Example:\nAUDIO::LOAD_STREAM(\"CAR_STEAL_1_PASSBY\", \"CAR_STEAL_1_SOUNDSET\");\n\nAll found occurrences in the b678d decompiled scripts: pastebin.com/3rma6w5w\n\nStream names often ends with \"_MASTER\", \"_SMALL\" or \"_STREAM\". Also \"_IN\", \"_OUT\" and numbers.   \n\nsoundSet is often set to 0 in the scripts. These are common to end the soundSets: \"_SOUNDS\", \"_SOUNDSET\" and numbers. ",
+			"comment": "Example:\nAUDIO::LOAD_STREAM(\"CAR_STEAL_1_PASSBY\", \"CAR_STEAL_1_SOUNDSET\");\n\nAll found occurrences in the b678d decompiled scripts: pastebin.com/3rma6w5w\n\nStream names often ends with \"_MASTER\", \"_SMALL\" or \"_STREAM\". Also \"_IN\", \"_OUT\" and numbers.   \n\nsoundSet is often set to 0 in the scripts. These are common to end the soundSets: \"_SOUNDS\", \"_SOUNDSET\" and numbers.\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3229,7 +3229,7 @@
 		"0x59C16B79F53B3712": {
 			"name": "LOAD_STREAM_WITH_START_OFFSET",
 			"jhash": "0xE5B5745C",
-			"comment": "Example:\nAUDIO::LOAD_STREAM_WITH_START_OFFSET(\"STASH_TOXIN_STREAM\", 2400, \"FBI_05_SOUNDS\");\n\nOnly called a few times in the scripts. ",
+			"comment": "Example:\nAUDIO::LOAD_STREAM_WITH_START_OFFSET(\"STASH_TOXIN_STREAM\", 2400, \"FBI_05_SOUNDS\");\n\nOnly called a few times in the scripts.\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -6450,7 +6450,7 @@
 		"0x6A25241C340D3822": {
 			"name": "SHAKE_CAM",
 			"jhash": "0x1D4211B0",
-			"comment": "Possible shake types (updated b617d):\n\nDEATH_FAIL_IN_EFFECT_SHAKE\nDRUNK_SHAKE\nFAMILY5_DRUG_TRIP_SHAKE\nHAND_SHAKE\nJOLT_SHAKE\nLARGE_EXPLOSION_SHAKE\nMEDIUM_EXPLOSION_SHAKE\nSMALL_EXPLOSION_SHAKE\nROAD_VIBRATION_SHAKE\nSKY_DIVING_SHAKE\nVIBRATE_SHAKE",
+			"comment": "Possible shake types (updated b617d):\n\nDEATH_FAIL_IN_EFFECT_SHAKE\nDRUNK_SHAKE\nFAMILY5_DRUG_TRIP_SHAKE\nHAND_SHAKE\nJOLT_SHAKE\nLARGE_EXPLOSION_SHAKE\nMEDIUM_EXPLOSION_SHAKE\nSMALL_EXPLOSION_SHAKE\nROAD_VIBRATION_SHAKE\nSKY_DIVING_SHAKE\nVIBRATE_SHAKE\n\nFull list of cam shake types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/camShakeTypesCompact.json",
 			"params": [
 				{
 					"type": "Cam",
@@ -6547,7 +6547,7 @@
 		"0xF4C8CF9E353AFECA": {
 			"name": "SHAKE_SCRIPT_GLOBAL",
 			"jhash": "0x2B0F05CD",
-			"comment": "CAM::SHAKE_SCRIPT_GLOBAL(\"HAND_SHAKE\", 0.2);",
+			"comment": "CAM::SHAKE_SCRIPT_GLOBAL(\"HAND_SHAKE\", 0.2);\n\nFull list of cam shake types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/camShakeTypesCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -6564,7 +6564,7 @@
 		"0xC2EAE3FB8CDBED31": {
 			"name": "ANIMATED_SHAKE_SCRIPT_GLOBAL",
 			"jhash": "0xCB75BD9C",
-			"comment": "CAM::ANIMATED_SHAKE_SCRIPT_GLOBAL(\"SHAKE_CAM_medium\", \"medium\", \"\", 0.5f);",
+			"comment": "CAM::ANIMATED_SHAKE_SCRIPT_GLOBAL(\"SHAKE_CAM_medium\", \"medium\", \"\", 0.5f);\n\nFull list of cam shake types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/camShakeTypesCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -6631,7 +6631,7 @@
 		"0x9A2D0FB2E7852392": {
 			"name": "PLAY_CAM_ANIM",
 			"jhash": "0xBCEFB87E",
-			"comment": "Atleast one time in a script for the zRot Rockstar uses GET_ENTITY_HEADING to help fill the parameter.\n\np9 is unknown at this time.\np10 throughout all the X360 Scripts is always 2.\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "Atleast one time in a script for the zRot Rockstar uses GET_ENTITY_HEADING to help fill the parameter.\n\np9 is unknown at this time.\np10 throughout all the X360 Scripts is always 2.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Cam",
@@ -7139,7 +7139,7 @@
 		"0xFD55E49555E017CF": {
 			"name": "SHAKE_GAMEPLAY_CAM",
 			"jhash": "0xF2EFE660",
-			"comment": "Possible shake types (updated b617d):\n\nDEATH_FAIL_IN_EFFECT_SHAKE\nDRUNK_SHAKE\nFAMILY5_DRUG_TRIP_SHAKE\nHAND_SHAKE\nJOLT_SHAKE\nLARGE_EXPLOSION_SHAKE\nMEDIUM_EXPLOSION_SHAKE\nSMALL_EXPLOSION_SHAKE\nROAD_VIBRATION_SHAKE\nSKY_DIVING_SHAKE\nVIBRATE_SHAKE",
+			"comment": "Possible shake types (updated b617d):\n\nDEATH_FAIL_IN_EFFECT_SHAKE\nDRUNK_SHAKE\nFAMILY5_DRUG_TRIP_SHAKE\nHAND_SHAKE\nJOLT_SHAKE\nLARGE_EXPLOSION_SHAKE\nMEDIUM_EXPLOSION_SHAKE\nSMALL_EXPLOSION_SHAKE\nROAD_VIBRATION_SHAKE\nSKY_DIVING_SHAKE\nVIBRATE_SHAKE\n\nFull list of cam shake types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/camShakeTypesCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -8297,7 +8297,7 @@
 		"0xDCE214D9ED58F3CF": {
 			"name": "SHAKE_CINEMATIC_CAM",
 			"jhash": "0x61815F31",
-			"comment": "p0 argument found in the b617d scripts: \"DRUNK_SHAKE\" ",
+			"comment": "p0 argument found in the b617d scripts: \"DRUNK_SHAKE\"\n\nFull list of cam shake types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/camShakeTypesCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -9408,7 +9408,7 @@
 		"0x7F96F23FA9B73327": {
 			"name": "_0x7F96F23FA9B73327",
 			"jhash": "",
-			"comment": "SET_VEHICLE_*",
+			"comment": "SET_VEHICLE_*\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -9640,7 +9640,7 @@
 		"0xBA01E7B6DEEFBBC9": {
 			"name": "SET_CUTSCENE_PED_COMPONENT_VARIATION",
 			"jhash": "0x6AF994A1",
-			"comment": "",
+			"comment": "Full list of ped components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -9707,7 +9707,7 @@
 		"0x0546524ADE2E9723": {
 			"name": "SET_CUTSCENE_PED_PROP_VARIATION",
 			"jhash": "0x22E9A9DE",
-			"comment": "Thanks R*! ;)\n\nif ((l_161 == 0) || (l_161 == 2)) {\n    sub_2ea27(\"Trying to set Jimmy prop variation\");\n    CUTSCENE::_0546524ADE2E9723(\"Jimmy_Boston\", 1, 0, 0, 0);\n}",
+			"comment": "Thanks R*! ;)\n\nif ((l_161 == 0) || (l_161 == 2)) {\n    sub_2ea27(\"Trying to set Jimmy prop variation\");\n    CUTSCENE::_0546524ADE2E9723(\"Jimmy_Boston\", 1, 0, 0, 0);\n}\n\nFull list of ped components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -11067,7 +11067,7 @@
 		"0x20B711662962B472": {
 			"name": "HAS_ENTITY_ANIM_FINISHED",
 			"jhash": "0x1D9CAB92",
-			"comment": "P3 is always 3 as far as i cant tell\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "P3 is always 3 as far as i cant tell\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -11263,7 +11263,7 @@
 		"0x346D81500D088F42": {
 			"name": "GET_ENTITY_ANIM_CURRENT_TIME",
 			"jhash": "0x83943F41",
-			"comment": "Returns a float value representing animation's current playtime with respect to its total playtime. This value increasing in a range from [0 to 1] and wrap back to 0 when it reach 1.\n\nExample:\n0.000000 - mark the starting of animation.\n0.500000 - mark the midpoint of the animation.\n1.000000 - mark the end of animation.\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "Returns a float value representing animation's current playtime with respect to its total playtime. This value increasing in a range from [0 to 1] and wrap back to 0 when it reach 1.\n\nExample:\n0.000000 - mark the starting of animation.\n0.500000 - mark the midpoint of the animation.\n1.000000 - mark the end of animation.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -11284,7 +11284,7 @@
 		"0x50BD2730B191E360": {
 			"name": "GET_ENTITY_ANIM_TOTAL_TIME",
 			"jhash": "0x433A9D18",
-			"comment": "Returns a float value representing animation's total playtime in milliseconds.\n\nExample:\nGET_ENTITY_ANIM_TOTAL_TIME(PLAYER_ID(),\"amb@world_human_yoga@female@base\",\"base_b\") \nreturn 20800.000000\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "Returns a float value representing animation's total playtime in milliseconds.\n\nExample:\nGET_ENTITY_ANIM_TOTAL_TIME(PLAYER_ID(),\"amb@world_human_yoga@female@base\",\"base_b\") \nreturn 20800.000000\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -11305,7 +11305,7 @@
 		"0xFEDDF04D62B8D790": {
 			"name": "GET_ANIM_DURATION",
 			"jhash": "0x8B5E3E3D",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -12224,7 +12224,7 @@
 		"0xB6463CF6AF527071": {
 			"name": "IS_ENTITY_IN_ZONE",
 			"jhash": "0x45C82B21",
-			"comment": "",
+			"comment": "Full list of zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/zones.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -12297,7 +12297,7 @@
 		"0x1F0B79228E461EC9": {
 			"name": "IS_ENTITY_PLAYING_ANIM",
 			"jhash": "0x0D130D34",
-			"comment": "See also PED::IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM 0x6EC47A344923E1ED 0x3C30B447\n\nTaken from ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), \"creatures@shark@move\", \"attack_player\", 3)\n\np4 is always 3 in the scripts.\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "See also PED::IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM 0x6EC47A344923E1ED 0x3C30B447\n\nTaken from ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), \"creatures@shark@move\", \"attack_player\", 3)\n\np4 is always 3 in the scripts.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -12921,7 +12921,7 @@
 		"0x7FB218262B810701": {
 			"name": "PLAY_ENTITY_ANIM",
 			"jhash": "0x878753D5",
-			"comment": "delta and bitset are guessed fields. They are based on the fact that most of the calls have 0 or nil field types passed in.\n\nThe only time bitset has a value is 0x4000 and the only time delta has a value is during stealth with usually <1.0f values.\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "delta and bitset are guessed fields. They are based on the fact that most of the calls have 0 or nil field types passed in.\n\nThe only time bitset has a value is 0x4000 and the only time delta has a value is during stealth with usually <1.0f values.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -12966,7 +12966,7 @@
 		"0xC77720A12FE14A86": {
 			"name": "PLAY_SYNCHRONIZED_ENTITY_ANIM",
 			"jhash": "0x012760AA",
-			"comment": "p4 and p7 are usually 1000.0f.\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "p4 and p7 are usually 1000.0f.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -13007,7 +13007,7 @@
 		"0xB9C54555ED30FBC4": {
 			"name": "PLAY_SYNCHRONIZED_MAP_ENTITY_ANIM",
 			"jhash": "0xEB4CBA74",
-			"comment": "Animations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "float",
@@ -13097,7 +13097,7 @@
 		"0x28004F88151E03E0": {
 			"name": "STOP_ENTITY_ANIM",
 			"jhash": "0xC4769830",
-			"comment": "Animations List : www.ls-multiplayer.com/dev/index.php?section=3\n\nRAGEPluginHook list: docs.ragepluginhook.net/html/62951c37-a440-478c-b389-c471230ddfc5.htm",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nRAGEPluginHook list: docs.ragepluginhook.net/html/62951c37-a440-478c-b389-c471230ddfc5.htm",
 			"params": [
 				{
 					"type": "Entity",
@@ -13160,7 +13160,7 @@
 		"0x07F1BE2BCCAA27A7": {
 			"name": "FIND_ANIM_EVENT_PHASE",
 			"jhash": "0xC41DDA62",
-			"comment": "In the script \"player_scene_t_bbfight.c4\":\n\"if (ENTITY::FIND_ANIM_EVENT_PHASE(&l_16E, &l_19F[v_4/*16*/], v_9, &v_A, &v_B))\"\n-- &l_16E (p0) is requested as an anim dictionary earlier in the script.\n-- &l_19F[v_4/*16*/] (p1) is used in other natives in the script as the \"animation\" param.\n-- v_9 (p2) is instantiated as \"victim_fall\"; I'm guessing that's another anim\n--v_A and v_B (p3 & p4) are both set as -1.0, but v_A is used immediately after this native for: \n\"if (v_A < ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(...))\"\nBoth v_A and v_B are seemingly used to contain both Vector3's and floats, so I can't say what either really is other than that they are both output parameters. p4 looks more like a *Vector3 though\n-alphazolam\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "In the script \"player_scene_t_bbfight.c4\":\n\"if (ENTITY::FIND_ANIM_EVENT_PHASE(&l_16E, &l_19F[v_4/*16*/], v_9, &v_A, &v_B))\"\n-- &l_16E (p0) is requested as an anim dictionary earlier in the script.\n-- &l_19F[v_4/*16*/] (p1) is used in other natives in the script as the \"animation\" param.\n-- v_9 (p2) is instantiated as \"victim_fall\"; I'm guessing that's another anim\n--v_A and v_B (p3 & p4) are both set as -1.0, but v_A is used immediately after this native for: \n\"if (v_A < ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(...))\"\nBoth v_A and v_B are seemingly used to contain both Vector3's and floats, so I can't say what either really is other than that they are both output parameters. p4 looks more like a *Vector3 though\n-alphazolam\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -13189,7 +13189,7 @@
 		"0x4487C259F0F70977": {
 			"name": "SET_ENTITY_ANIM_CURRENT_TIME",
 			"jhash": "0x99D90735",
-			"comment": "Animations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -13214,7 +13214,7 @@
 		"0x28D1A16553C51776": {
 			"name": "SET_ENTITY_ANIM_SPEED",
 			"jhash": "0x3990C90A",
-			"comment": "Animations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -15409,7 +15409,7 @@
 		"0x341DE7ED1D2A1BFD": {
 			"name": "DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG",
 			"jhash": "0x8E2C7FD5",
-			"comment": "Restriction tags: https://gist.github.com/root-cause/c831b5f74ccc069059f5100a693022f8\ncomponentId/last parameter seems to be unused.",
+			"comment": "Full list of restriction tags by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedApparelRestrictionTags.json\n\ncomponentId/last parameter seems to be unused.",
 			"params": [
 				{
 					"type": "Hash",
@@ -20483,7 +20483,7 @@
 		"0x25129531F77B9ED3": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_AT_COORD",
 			"jhash": "0xDD79D679",
-			"comment": "GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD(\"scr_paleto_roof_impact\", -140.8576f, 6420.789f, 41.1391f, 0f, 0f, 267.3957f, 0x3F800000, 0, 0, 0);\n\nAxis - Invert Axis Flags\n\nlist: pastebin.com/N9unUFWY\n\n\n-------------------------------------------------------------------\nC#\n\nFunction.Call<int>(Hash.START_PARTICLE_FX_NON_LOOPED_AT_COORD, = you are calling this function.\n\nchar *effectname = This is an in-game effect name, for e.g. \"scr_fbi4_trucks_crash\" is used to give the effects when truck crashes etc\n\nfloat x, y, z pos = this one is Simple, you just have to declare, where do you want this effect to take place at, so declare the ordinates\n\nfloat xrot, yrot, zrot = Again simple? just mention the value in case if you want the effect to rotate.\n\nfloat scale = is declare the scale of the effect, this may vary as per the effects for e.g 1.0f\n\nbool xaxis, yaxis, zaxis = To bool the axis values.\n\nexample:\nFunction.Call<int>(Hash.START_PARTICLE_FX_NON_LOOPED_AT_COORD, \"scr_fbi4_trucks_crash\", GTA.Game.Player.Character.Position.X, GTA.Game.Player.Character.Position.Y, GTA.Game.Player.Character.Position.Z + 4f, 0, 0, 0, 5.5f, 0, 0, 0);",
+			"comment": "GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD(\"scr_paleto_roof_impact\", -140.8576f, 6420.789f, 41.1391f, 0f, 0f, 267.3957f, 0x3F800000, 0, 0, 0);\n\nAxis - Invert Axis Flags\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json\n\n\n-------------------------------------------------------------------\nC#\n\nFunction.Call<int>(Hash.START_PARTICLE_FX_NON_LOOPED_AT_COORD, = you are calling this function.\n\nchar *effectname = This is an in-game effect name, for e.g. \"scr_fbi4_trucks_crash\" is used to give the effects when truck crashes etc\n\nfloat x, y, z pos = this one is Simple, you just have to declare, where do you want this effect to take place at, so declare the ordinates\n\nfloat xrot, yrot, zrot = Again simple? just mention the value in case if you want the effect to rotate.\n\nfloat scale = is declare the scale of the effect, this may vary as per the effects for e.g 1.0f\n\nbool xaxis, yaxis, zaxis = To bool the axis values.\n\nexample:\nFunction.Call<int>(Hash.START_PARTICLE_FX_NON_LOOPED_AT_COORD, \"scr_fbi4_trucks_crash\", GTA.Game.Player.Character.Position.X, GTA.Game.Player.Character.Position.Y, GTA.Game.Player.Character.Position.Z + 4f, 0, 0, 0, 5.5f, 0, 0, 0);",
 			"params": [
 				{
 					"type": "const char*",
@@ -20536,7 +20536,7 @@
 		"0xF56B8137DF10135D": {
 			"name": "START_NETWORKED_PARTICLE_FX_NON_LOOPED_AT_COORD",
 			"jhash": "0x633F8C48",
-			"comment": "",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -20593,7 +20593,7 @@
 		"0x0E7E72961BA18619": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE",
 			"jhash": "0x53DAEF4E",
-			"comment": "GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE(\"scr_sh_bong_smoke\", PLAYER::PLAYER_PED_ID(), -0.025f, 0.13f, 0f, 0f, 0f, 0f, 31086, 0x3F800000, 0, 0, 0);\n\nAxis - Invert Axis Flags\n\nlist: pastebin.com/N9unUFWY",
+			"comment": "GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE(\"scr_sh_bong_smoke\", PLAYER::PLAYER_PED_ID(), -0.025f, 0.13f, 0f, 0f, 0f, 0f, 31086, 0x3F800000, 0, 0, 0);\n\nAxis - Invert Axis Flags\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -20654,7 +20654,7 @@
 		"0xA41B6A43642AC2CF": {
 			"name": "START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_PED_BONE",
 			"jhash": "0x161780C1",
-			"comment": "",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -20715,7 +20715,7 @@
 		"0x0D53A3B8DA0809D2": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_ON_ENTITY",
 			"jhash": "0x9604DAD4",
-			"comment": "Starts a particle effect on an entity for example your player.\nList: pastebin.com/N9unUFWY\n\nExample:\nC#:\nFunction.Call(Hash.REQUEST_NAMED_PTFX_ASSET, \"scr_rcbarry2\");                     Function.Call(Hash._SET_PTFX_ASSET_NEXT_CALL, \"scr_rcbarry2\");                             Function.Call(Hash.START_PARTICLE_FX_NON_LOOPED_ON_ENTITY, \"scr_clown_appears\", Game.Player.Character, 0.0, 0.0, -0.5, 0.0, 0.0, 0.0, 1.0, false, false, false);\n\nInternally this calls the same function as GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE\nhowever it uses -1 for the specified bone index, so it should be possible to start a non looped fx on an entity bone using that native\n\n-can confirm START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE does NOT work on vehicle bones.",
+			"comment": "Starts a particle effect on an entity for example your player.\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json\n\nExample:\nC#:\nFunction.Call(Hash.REQUEST_NAMED_PTFX_ASSET, \"scr_rcbarry2\");                     Function.Call(Hash._SET_PTFX_ASSET_NEXT_CALL, \"scr_rcbarry2\");                             Function.Call(Hash.START_PARTICLE_FX_NON_LOOPED_ON_ENTITY, \"scr_clown_appears\", Game.Player.Character, 0.0, 0.0, -0.5, 0.0, 0.0, 0.0, 1.0, false, false, false);\n\nInternally this calls the same function as GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE\nhowever it uses -1 for the specified bone index, so it should be possible to start a non looped fx on an entity bone using that native\n\n-can confirm START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE does NOT work on vehicle bones.",
 			"params": [
 				{
 					"type": "const char*",
@@ -20772,7 +20772,7 @@
 		"0xC95EB1DB6E92113D": {
 			"name": "START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY",
 			"jhash": "0x469A2B4A",
-			"comment": "",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -20937,7 +20937,7 @@
 		"0xE184F4F0DC5910E7": {
 			"name": "START_PARTICLE_FX_LOOPED_AT_COORD",
 			"jhash": "0xD348E3E6",
-			"comment": "GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD(\"scr_fbi_falling_debris\", 93.7743f, -749.4572f, 70.86904f, 0f, 0f, 0f, 0x3F800000, 0, 0, 0, 0)\n\n\np11 seems to be always 0",
+			"comment": "GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD(\"scr_fbi_falling_debris\", 93.7743f, -749.4572f, 70.86904f, 0f, 0f, 0f, 0x3F800000, 0, 0, 0, 0)\n\n\np11 seems to be always 0\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -20994,7 +20994,7 @@
 		"0xF28DA9F38CD1787C": {
 			"name": "START_PARTICLE_FX_LOOPED_ON_PED_BONE",
 			"jhash": "0xF8FC196F",
-			"comment": "",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -21055,7 +21055,7 @@
 		"0x1AE42C1660FD6517": {
 			"name": "START_PARTICLE_FX_LOOPED_ON_ENTITY",
 			"jhash": "0x0D06FF62",
-			"comment": "list: pastebin.com/N9unUFWY",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -21112,7 +21112,7 @@
 		"0xC6EB449E33977F0B": {
 			"name": "START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE",
 			"jhash": "0x23BF0F9B",
-			"comment": "",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -21173,7 +21173,7 @@
 		"0x6F60E89A7B64EE1D": {
 			"name": "START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY",
 			"jhash": "0x110752B2",
-			"comment": "",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -21246,7 +21246,7 @@
 		"0xDDE23F30CC5A0F03": {
 			"name": "START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE",
 			"jhash": "0xF478EFCF",
-			"comment": "",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -21761,7 +21761,7 @@
 		"0xBA3D194057C79A7B": {
 			"name": "_0xBA3D194057C79A7B",
 			"jhash": "",
-			"comment": "SET_PARTICLE_FX_*",
+			"comment": "SET_PARTICLE_FX_*\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -21800,7 +21800,7 @@
 		"0x6C38AF3693A69A91": {
 			"name": "USE_PARTICLE_FX_ASSET",
 			"jhash": "0x9C720B61",
-			"comment": " From the b678d decompiled scripts:\n\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"FM_Mission_Controler\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_apartment_mp\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_indep_fireworks\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_mp_cig_plane\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_mp_creator\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_ornate_heist\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_prison_break_heist_station\");",
+			"comment": "From the b678d decompiled scripts:\n\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"FM_Mission_Controler\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_apartment_mp\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_indep_fireworks\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_mp_cig_plane\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_mp_creator\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_ornate_heist\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_prison_break_heist_station\");\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -21813,7 +21813,7 @@
 		"0xEA1E2D93F6F75ED9": {
 			"name": "SET_PARTICLE_FX_OVERRIDE",
 			"jhash": "0xC92719A7",
-			"comment": "",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -21830,7 +21830,7 @@
 		"0x89C8553DD3274AAE": {
 			"name": "RESET_PARTICLE_FX_OVERRIDE",
 			"jhash": "0x9E8D8B72",
-			"comment": "Resets the effect of SET_PARTICLE_FX_OVERRIDE",
+			"comment": "Resets the effect of SET_PARTICLE_FX_OVERRIDE\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -22627,7 +22627,7 @@
 		"0x2C933ABF17A1DF41": {
 			"name": "SET_TIMECYCLE_MODIFIER",
 			"jhash": "0xA81F3638",
-			"comment": "Loads the specified timecycle modifier. Modifiers are defined separately in another file (e.g. \"timecycle_mods_1.xml\")\n\nParameters:\nmodifierName - The modifier to load (e.g. \"V_FIB_IT3\", \"scanline_cam\", etc.)\n\nFor a full list, see here: https://gist.github.com/Sainan/bfc6a46a72ea0bb148eec11d8d9c41d6",
+			"comment": "Loads the specified timecycle modifier. Modifiers are defined separately in another file (e.g. \"timecycle_mods_1.xml\")\n\nParameters:\nmodifierName - The modifier to load (e.g. \"V_FIB_IT3\", \"scanline_cam\", etc.)\n\nFull list of timecycle modifiers by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/timecycleModifiers.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -22653,7 +22653,7 @@
 		"0x3BCF567485E1971C": {
 			"name": "SET_TRANSITION_TIMECYCLE_MODIFIER",
 			"jhash": "0xBB2BA72A",
-			"comment": "For a full list, see here: pastebin.com/ZZDL2qLB",
+			"comment": "Full list of timecycle modifiers by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/timecycleModifiers.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -22800,7 +22800,7 @@
 		"0x5096FD9CCB49056D": {
 			"name": "_SET_EXTRA_TIMECYCLE_MODIFIER",
 			"jhash": "0x908A335E",
-			"comment": "",
+			"comment": "Full list of timecycle modifiers by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/timecycleModifiers.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -24162,7 +24162,7 @@
 		"0x2206BF9A37B7F724": {
 			"name": "ANIMPOSTFX_PLAY",
 			"jhash": "0x1D980479",
-			"comment": "duration - is how long to play the effect for in milliseconds. If 0, it plays the default length\nif loop is true, the effect won't stop until you call ANIMPOSTFX_STOP on it. (only loopable effects)\n\nList of animated post FX names:\nhttps://alloc8or.re/gta5/doc/misc/animpostfx.txt",
+			"comment": "duration - is how long to play the effect for in milliseconds. If 0, it plays the default length\nif loop is true, the effect won't stop until you call ANIMPOSTFX_STOP on it. (only loopable effects)\n\nFull list of animpostFX / screen effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animPostFxNamesCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -24183,7 +24183,7 @@
 		"0x068E835A1D0DC0E3": {
 			"name": "ANIMPOSTFX_STOP",
 			"jhash": "0x06BB5CDA",
-			"comment": "See ANIMPOSTFX_PLAY",
+			"comment": "See ANIMPOSTFX_PLAY\n\nFull list of animpostFX / screen effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animPostFxNamesCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -24195,7 +24195,7 @@
 		},
 		"0xE35B38A27E8E7179": {
 			"name": "_ANIMPOSTFX_GET_UNK",
-			"jhash": "",
+			"jhash": "Full list of animpostFX / screen effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animPostFxNamesCompact.json",
 			"comment": "See ANIMPOSTFX_PLAY",
 			"params": [
 				{
@@ -24209,7 +24209,7 @@
 		"0x36AD3E690DA5ACEB": {
 			"name": "ANIMPOSTFX_IS_RUNNING",
 			"jhash": "0x089D5921",
-			"comment": "Returns whether the specified effect is active.\nSee ANIMPOSTFX_PLAY",
+			"comment": "Returns whether the specified effect is active.\nSee ANIMPOSTFX_PLAY\n\nFull list of animpostFX / screen effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animPostFxNamesCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -24230,7 +24230,7 @@
 		"0xD2209BE128B5418C": {
 			"name": "_ANIMPOSTFX_STOP_AND_DO_UNK",
 			"jhash": "",
-			"comment": "Stops the effect and sets a value (bool) in its data (+0x199) to false.\nSee ANIMPOSTFX_PLAY",
+			"comment": "Stops the effect and sets a value (bool) in its data (+0x199) to false.\nSee ANIMPOSTFX_PLAY\n\nFull list of animpostFX / screen effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animPostFxNamesCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -32208,7 +32208,7 @@
 		"0x55E86AF2712B36A1": {
 			"name": "ACTIVATE_INTERIOR_ENTITY_SET",
 			"jhash": "0xC80A5DDF",
-			"comment": "More info: http://gtaforums.com/topic/836367-adding-props-to-interiors/",
+			"comment": "More info: http://gtaforums.com/topic/836367-adding-props-to-interiors/\n\nFull list of IPLs and interior entity sets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json",
 			"params": [
 				{
 					"type": "Interior",
@@ -32225,7 +32225,7 @@
 		"0x420BD37289EEE162": {
 			"name": "DEACTIVATE_INTERIOR_ENTITY_SET",
 			"jhash": "0xDBA768A1",
-			"comment": "",
+			"comment": "Full list of IPLs and interior entity sets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json",
 			"params": [
 				{
 					"type": "Interior",
@@ -32242,7 +32242,7 @@
 		"0x35F7DD45E8C0A16D": {
 			"name": "IS_INTERIOR_ENTITY_SET_ACTIVE",
 			"jhash": "0x39A3CC6F",
-			"comment": "",
+			"comment": "Full list of IPLs and interior entity sets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json",
 			"params": [
 				{
 					"type": "Interior",
@@ -32259,7 +32259,7 @@
 		"0xC1F1920BAF281317": {
 			"name": "_SET_INTERIOR_ENTITY_SET_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "Full list of IPLs and interior entity sets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json",
 			"params": [
 				{
 					"type": "Interior",
@@ -37480,7 +37480,7 @@
 		"0xE266ED23311F24D4": {
 			"name": "PLAY_TENNIS_SWING_ANIM",
 			"jhash": "0xC20A7D2B",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -50941,7 +50941,7 @@
 		"0x729E3401F0430686": {
 			"name": "_NETWORK_CLAN_ANIMATION",
 			"jhash": "0xBDA90BAC",
-			"comment": "Only documented...",
+			"comment": "Only documented...\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -57956,7 +57956,7 @@
 		"0xFBA08C503DD5FA58": {
 			"name": "CREATE_PICKUP",
 			"jhash": "0x5E14DF68",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1",
+			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -57997,7 +57997,7 @@
 		"0x891804727E0A98B7": {
 			"name": "CREATE_PICKUP_ROTATE",
 			"jhash": "0xF015BFE2",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nflags:\n8 (1 << 3): place on ground\n512 (1 << 9): spin around",
+			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nflags:\n8 (1 << 3): place on ground\n512 (1 << 9): spin around\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -58079,7 +58079,7 @@
 		"0x673966A0C0FD7171": {
 			"name": "CREATE_AMBIENT_PICKUP",
 			"jhash": "0x17B99CE7",
-			"comment": "Used for doing money drop\nPickup hashes: pastebin.com/8EuSv2r1",
+			"comment": "Used for doing money drop\nPickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -58141,7 +58141,7 @@
 		"0x2EAF1FDB2FB55698": {
 			"name": "CREATE_PORTABLE_PICKUP",
 			"jhash": "0x8C886BE5",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1",
+			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -58174,7 +58174,7 @@
 		"0x125494B98A21AAF7": {
 			"name": "_CREATE_PORTABLE_PICKUP_2",
 			"jhash": "0x56A02502",
-			"comment": "CREATE_*",
+			"comment": "CREATE_*\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -58376,7 +58376,7 @@
 		"0x27F9D613092159CF": {
 			"name": "REMOVE_ALL_PICKUPS_OF_TYPE",
 			"jhash": "0x40062C53",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1",
+			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -58513,7 +58513,7 @@
 		"0xF9C36251F6E48E33": {
 			"name": "DOES_PICKUP_OF_TYPE_EXIST_IN_AREA",
 			"jhash": "0xF139681B",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1",
+			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -58572,7 +58572,7 @@
 		"0x616093EC6B139DD9": {
 			"name": "_0x616093EC6B139DD9",
 			"jhash": "0x7FADB4B9",
-			"comment": "From the scripts:\n\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 1);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 1);\n\nSET_PLAYER_*",
+			"comment": "From the scripts:\n\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 1);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 1);\n\nSET_PLAYER_*\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Player",
@@ -58610,7 +58610,7 @@
 		"0xFDC07C58E8AAB715": {
 			"name": "_0xFDC07C58E8AAB715",
 			"jhash": "",
-			"comment": "A*",
+			"comment": "A*\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -59056,7 +59056,7 @@
 		"0x08F96CA6C551AD51": {
 			"name": "GET_WEAPON_TYPE_FROM_PICKUP_TYPE",
 			"jhash": "0xEDD01937",
-			"comment": "",
+			"comment": "Full list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -59268,7 +59268,7 @@
 		"0x5EAAD83F8CFB4575": {
 			"name": "_GET_PICKUP_HASH",
 			"jhash": "0x6AE36192",
-			"comment": "returns pickup hash.",
+			"comment": "returns pickup hash.\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -61847,7 +61847,7 @@
 		"0xD49F9B0955C367DE": {
 			"name": "CREATE_PED",
 			"jhash": "0x0389EF71",
-			"comment": "https://alloc8or.re/gta5/doc/enums/ePedType.txt",
+			"comment": "https://alloc8or.re/gta5/doc/enums/ePedType.txt\n\nFull list of peds by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/peds.json",
 			"params": [
 				{
 					"type": "int",
@@ -62189,7 +62189,7 @@
 		"0x7DD959874C1FD534": {
 			"name": "CREATE_PED_INSIDE_VEHICLE",
 			"jhash": "0x3000F092",
-			"comment": "pedType: see CREATE_PED",
+			"comment": "pedType: see CREATE_PED\n\nFull list of peds by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/peds.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -65717,7 +65717,7 @@
 		"0xAF8A94EDE7712BEF": {
 			"name": "SET_PED_MOVEMENT_CLIPSET",
 			"jhash": "0xA817CDEB",
-			"comment": "p2 is usually 1.0f\n\nEDIT 12/24/16: \np2 does absolutely nothing no matter what the value is. \n\nList of movement clipsets:\nThanks to elsewhat for list.\n\n \"ANIM_GROUP_MOVE_BALLISTIC\"\n \"ANIM_GROUP_MOVE_LEMAR_ALLEY\"\n \"clipset@move@trash_fast_turn\"\n \"FEMALE_FAST_RUNNER\"\n \"missfbi4prepp1_garbageman\"\n \"move_characters@franklin@fire\"\n \"move_characters@Jimmy@slow@\"\n \"move_characters@michael@fire\"\n \"move_f@flee@a\"\n \"move_f@scared\"\n \"move_f@sexy@a\"\n \"move_heist_lester\"\n \"move_injured_generic\"\n \"move_lester_CaneUp\"\n \"move_m@bag\"\n \"MOVE_M@BAIL_BOND_NOT_TAZERED\"\n \"MOVE_M@BAIL_BOND_TAZERED\"\n \"move_m@brave\"\n \"move_m@casual@d\"\n \"move_m@drunk@moderatedrunk\"\n \"MOVE_M@DRUNK@MODERATEDRUNK\"\n \"MOVE_M@DRUNK@MODERATEDRUNK_HEAD_UP\"\n \"MOVE_M@DRUNK@SLIGHTLYDRUNK\"\n \"MOVE_M@DRUNK@VERYDRUNK\"\n \"move_m@fire\"\n \"move_m@gangster@var_e\"\n \"move_m@gangster@var_f\"\n \"move_m@gangster@var_i\"\n \"move_m@JOG@\"\n \"MOVE_M@PRISON_GAURD\"\n \"MOVE_P_M_ONE\"\n \"MOVE_P_M_ONE_BRIEFCASE\"\n \"move_p_m_zero_janitor\"\n \"move_p_m_zero_slow\"\n \"move_ped_bucket\"\n \"move_ped_crouched\"\n \"move_ped_mop\"\n \"MOVE_M@FEMME@\"\n \"MOVE_F@FEMME@\"\n \"MOVE_M@GANGSTER@NG\"\n \"MOVE_F@GANGSTER@NG\"\n \"MOVE_M@POSH@\"\n \"MOVE_F@POSH@\"\n \"MOVE_M@TOUGH_GUY@\"\n \"MOVE_F@TOUGH_GUY@\"\n\n~ NotCrunchyTaco",
+			"comment": "p2 is usually 1.0f\n\nEDIT 12/24/16: \np2 does absolutely nothing no matter what the value is. \n\nList of movement clipsets:\nThanks to elsewhat for list.\n\n \"ANIM_GROUP_MOVE_BALLISTIC\"\n \"ANIM_GROUP_MOVE_LEMAR_ALLEY\"\n \"clipset@move@trash_fast_turn\"\n \"FEMALE_FAST_RUNNER\"\n \"missfbi4prepp1_garbageman\"\n \"move_characters@franklin@fire\"\n \"move_characters@Jimmy@slow@\"\n \"move_characters@michael@fire\"\n \"move_f@flee@a\"\n \"move_f@scared\"\n \"move_f@sexy@a\"\n \"move_heist_lester\"\n \"move_injured_generic\"\n \"move_lester_CaneUp\"\n \"move_m@bag\"\n \"MOVE_M@BAIL_BOND_NOT_TAZERED\"\n \"MOVE_M@BAIL_BOND_TAZERED\"\n \"move_m@brave\"\n \"move_m@casual@d\"\n \"move_m@drunk@moderatedrunk\"\n \"MOVE_M@DRUNK@MODERATEDRUNK\"\n \"MOVE_M@DRUNK@MODERATEDRUNK_HEAD_UP\"\n \"MOVE_M@DRUNK@SLIGHTLYDRUNK\"\n \"MOVE_M@DRUNK@VERYDRUNK\"\n \"move_m@fire\"\n \"move_m@gangster@var_e\"\n \"move_m@gangster@var_f\"\n \"move_m@gangster@var_i\"\n \"move_m@JOG@\"\n \"MOVE_M@PRISON_GAURD\"\n \"MOVE_P_M_ONE\"\n \"MOVE_P_M_ONE_BRIEFCASE\"\n \"move_p_m_zero_janitor\"\n \"move_p_m_zero_slow\"\n \"move_ped_bucket\"\n \"move_ped_crouched\"\n \"move_ped_mop\"\n \"MOVE_M@FEMME@\"\n \"MOVE_F@FEMME@\"\n \"MOVE_M@GANGSTER@NG\"\n \"MOVE_F@GANGSTER@NG\"\n \"MOVE_M@POSH@\"\n \"MOVE_F@POSH@\"\n \"MOVE_M@TOUGH_GUY@\"\n \"MOVE_F@TOUGH_GUY@\"\n\n~ NotCrunchyTaco\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -65755,7 +65755,7 @@
 		"0x29A28F3F8CF6D854": {
 			"name": "SET_PED_STRAFE_CLIPSET",
 			"jhash": "0x0BACF010",
-			"comment": "",
+			"comment": "Full list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -65918,7 +65918,7 @@
 		"0x6EC47A344923E1ED": {
 			"name": "IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM",
 			"jhash": "0x3C30B447",
-			"comment": "Animations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -65939,7 +65939,7 @@
 		"0x6C60394CB4F75E9A": {
 			"name": "SET_PED_ALTERNATE_WALK_ANIM",
 			"jhash": "0x895E1D67",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -65985,7 +65985,7 @@
 		"0x90A43CC281FFAB46": {
 			"name": "SET_PED_ALTERNATE_MOVEMENT_ANIM",
 			"jhash": "0xBA84FD8C",
-			"comment": "stance:\n0 = idle\n1 = walk\n2 = running\n\np5 = usually set to true\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "stance:\n0 = idle\n1 = walk\n2 = running\n\np5 = usually set to true\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -66056,7 +66056,7 @@
 		"0xBE22B26DD764C040": {
 			"name": "GET_ANIM_INITIAL_OFFSET_POSITION",
 			"jhash": "0xC59D4268",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -66105,7 +66105,7 @@
 		"0x4B805E6046EE9E47": {
 			"name": "GET_ANIM_INITIAL_OFFSET_ROTATION",
 			"jhash": "0x5F7789E6",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -66324,7 +66324,7 @@
 		"0xE825F6B6CEA7671D": {
 			"name": "IS_PED_COMPONENT_VARIATION_VALID",
 			"jhash": "0x952ABD9A",
-			"comment": "Checks if the component variation is valid, this works great for randomizing components using loops.\n\nList of component/props ID\ngtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html",
+			"comment": "Checks if the component variation is valid, this works great for randomizing components using loops.\n\nList of component/props ID\ngtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html\n\nFull list of ped components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -66349,7 +66349,7 @@
 		"0x262B14F48D29DE80": {
 			"name": "SET_PED_COMPONENT_VARIATION",
 			"jhash": "0xD4F7B05C",
-			"comment": "paletteId/palletColor -  0 to 3. \nenum PedVariationData\n{\n PED_VARIATION_FACE = 0,\n   PED_VARIATION_HEAD = 1,\n   PED_VARIATION_HAIR = 2,\n   PED_VARIATION_TORSO = 3,\n  PED_VARIATION_LEGS = 4,\n   PED_VARIATION_HANDS = 5,\n  PED_VARIATION_FEET = 6,\n   PED_VARIATION_EYES = 7,\n   PED_VARIATION_ACCESSORIES = 8,\n    PED_VARIATION_TASKS = 9,\n  PED_VARIATION_TEXTURES = 10,\n  PED_VARIATION_TORSO2 = 11\n};\nUsage: \nSET_PED_COMPONENT_VARIATION(playerPed, PED_VARIATION_FACE, GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS(playerPed, PED_VARIATION_FACE), GET_NUMBER_OF_PED_TEXTURE_VARIATIONS(playerPed, PED_VARIATION_FACE, 0), 2);\n\nList of component/props ID\ngtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html",
+			"comment": "paletteId/palletColor -  0 to 3. \nenum PedVariationData\n{\n PED_VARIATION_FACE = 0,\n   PED_VARIATION_HEAD = 1,\n   PED_VARIATION_HAIR = 2,\n   PED_VARIATION_TORSO = 3,\n  PED_VARIATION_LEGS = 4,\n   PED_VARIATION_HANDS = 5,\n  PED_VARIATION_FEET = 6,\n   PED_VARIATION_EYES = 7,\n   PED_VARIATION_ACCESSORIES = 8,\n    PED_VARIATION_TASKS = 9,\n  PED_VARIATION_TEXTURES = 10,\n  PED_VARIATION_TORSO2 = 11\n};\nUsage: \nSET_PED_COMPONENT_VARIATION(playerPed, PED_VARIATION_FACE, GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS(playerPed, PED_VARIATION_FACE), GET_NUMBER_OF_PED_TEXTURE_VARIATIONS(playerPed, PED_VARIATION_FACE, 0), 2);\n\nList of component/props ID\ngtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html\n\nFull list of ped components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -68673,7 +68673,7 @@
 		"0x5F5D1665E352A839": {
 			"name": "ADD_PED_DECORATION_FROM_HASHES",
 			"jhash": "0x70559AC7",
-			"comment": "Applies an Item from a PedDecorationCollection to a ped. These include tattoos and shirt decals.\n\ncollection - PedDecorationCollection filename hash\noverlay - Item name hash\n\nExample:\nEntry inside \"mpbeach_overlays.xml\" -\n<Item>\n  <uvPos x=\"0.500000\" y=\"0.500000\" />\n  <scale x=\"0.600000\" y=\"0.500000\" />\n  <rotation value=\"0.000000\" />\n  <nameHash>FM_Hair_Fuzz</nameHash>\n  <txdHash>mp_hair_fuzz</txdHash>\n  <txtHash>mp_hair_fuzz</txtHash>\n  <zone>ZONE_HEAD</zone>\n  <type>TYPE_TATTOO</type>\n  <faction>FM</faction>\n  <garment>All</garment>\n  <gender>GENDER_DONTCARE</gender>\n  <award />\n  <awardLevel />\n</Item>\n\nCode:\nPED::_0x5F5D1665E352A839(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"mpbeach_overlays\"), MISC::GET_HASH_KEY(\"fm_hair_fuzz\"))",
+			"comment": "Applies an Item from a PedDecorationCollection to a ped. These include tattoos and shirt decals.\n\ncollection - PedDecorationCollection filename hash\noverlay - Item name hash\n\nExample:\nEntry inside \"mpbeach_overlays.xml\" -\n<Item>\n  <uvPos x=\"0.500000\" y=\"0.500000\" />\n  <scale x=\"0.600000\" y=\"0.500000\" />\n  <rotation value=\"0.000000\" />\n  <nameHash>FM_Hair_Fuzz</nameHash>\n  <txdHash>mp_hair_fuzz</txdHash>\n  <txtHash>mp_hair_fuzz</txtHash>\n  <zone>ZONE_HEAD</zone>\n  <type>TYPE_TATTOO</type>\n  <faction>FM</faction>\n  <garment>All</garment>\n  <gender>GENDER_DONTCARE</gender>\n  <award />\n  <awardLevel />\n</Item>\n\nCode:\nPED::_0x5F5D1665E352A839(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"mpbeach_overlays\"), MISC::GET_HASH_KEY(\"fm_hair_fuzz\"))\n\nFull list of ped overlays / decorations by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedOverlayCollections.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -68694,7 +68694,7 @@
 		"0x5619BFA07CFD7833": {
 			"name": "ADD_PED_DECORATION_FROM_HASHES_IN_CORONA",
 			"jhash": "0x8CD3E487",
-			"comment": "",
+			"comment": "Full list of ped overlays / decorations by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedOverlayCollections.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -68715,7 +68715,7 @@
 		"0x9FD452BFBE7A7A8B": {
 			"name": "GET_PED_DECORATION_ZONE_FROM_HASHES",
 			"jhash": "0x3543019E",
-			"comment": "Returns the zoneID for the overlay if it is a member of collection.\nenum ePedDecorationZone\n{\n\tZONE_TORSO = 0,\n\tZONE_HEAD = 1,\n\tZONE_LEFT_ARM = 2,\n\tZONE_RIGHT_ARM = 3,\n\tZONE_LEFT_LEG = 4,\n\tZONE_RIGHT_LEG = 5,\n\tZONE_UNKNOWN = 6,\n\tZONE_NONE = 7\n};",
+			"comment": "Returns the zoneID for the overlay if it is a member of collection.\nenum ePedDecorationZone\n{\n\tZONE_TORSO = 0,\n\tZONE_HEAD = 1,\n\tZONE_LEFT_ARM = 2,\n\tZONE_RIGHT_ARM = 3,\n\tZONE_LEFT_LEG = 4,\n\tZONE_RIGHT_LEG = 5,\n\tZONE_UNKNOWN = 6,\n\tZONE_NONE = 7\n};\n\nFull list of ped overlays / decorations by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedOverlayCollections.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -68966,7 +68966,7 @@
 		"0x1BF094736DD62C2E": {
 			"name": "IS_PED_USING_SCENARIO",
 			"jhash": "0x0F65B0D4",
-			"comment": "",
+			"comment": "Full list of ped scenarios by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -69203,7 +69203,7 @@
 		"0xE1E65CA8AC9C00ED": {
 			"name": "PLAY_FACIAL_ANIM",
 			"jhash": "0x1F6CCDDE",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -69241,7 +69241,7 @@
 		"0xFFC24B988B938B38": {
 			"name": "SET_FACIAL_IDLE_ANIM_OVERRIDE",
 			"jhash": "0x9BA19C13",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -69758,7 +69758,7 @@
 		"0xE163A4BCE4DE6F11": {
 			"name": "SET_PED_MODEL_IS_SUPPRESSED",
 			"jhash": "0x7820CA43",
-			"comment": "",
+			"comment": "Full list of peds by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/peds.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -84831,7 +84831,7 @@
 		"0x2DA49C3B79856961": {
 			"name": "DOES_ANIM_DICT_EXIST",
 			"jhash": "0xCD31C872",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84844,7 +84844,7 @@
 		"0xD3BD40951412FEF6": {
 			"name": "REQUEST_ANIM_DICT",
 			"jhash": "0xDCA96950",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84857,7 +84857,7 @@
 		"0xD031A9162D01088C": {
 			"name": "HAS_ANIM_DICT_LOADED",
 			"jhash": "0x05E6763C",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84870,7 +84870,7 @@
 		"0xF66A602F829E2A06": {
 			"name": "REMOVE_ANIM_DICT",
 			"jhash": "0x0AE050B5",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84883,7 +84883,7 @@
 		"0x6EA47DAE7FAD0EED": {
 			"name": "REQUEST_ANIM_SET",
 			"jhash": "0x2988B3FC",
-			"comment": "Starts loading the specified animation set. An animation set provides movement animations for a ped. See SET_PED_MOVEMENT_CLIPSET.",
+			"comment": "Starts loading the specified animation set. An animation set provides movement animations for a ped. See SET_PED_MOVEMENT_CLIPSET.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84896,7 +84896,7 @@
 		"0xC4EA073D86FB29B0": {
 			"name": "HAS_ANIM_SET_LOADED",
 			"jhash": "0x4FFF397D",
-			"comment": "Gets whether the specified animation set has finished loading. An animation set provides movement animations for a ped. See SET_PED_MOVEMENT_CLIPSET.\n\nAnimation set and clip set are synonymous.",
+			"comment": "Gets whether the specified animation set has finished loading. An animation set provides movement animations for a ped. See SET_PED_MOVEMENT_CLIPSET.\n\nAnimation set and clip set are synonymous.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84909,7 +84909,7 @@
 		"0x16350528F93024B3": {
 			"name": "REMOVE_ANIM_SET",
 			"jhash": "0xD04A817A",
-			"comment": "Unloads the specified animation set. An animation set provides movement animations for a ped. See SET_PED_MOVEMENT_CLIPSET.\n\nAnimation set and clip set are synonymous.",
+			"comment": "Unloads the specified animation set. An animation set provides movement animations for a ped. See SET_PED_MOVEMENT_CLIPSET.\n\nAnimation set and clip set are synonymous.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84922,7 +84922,7 @@
 		"0xD2A71E1A77418A49": {
 			"name": "REQUEST_CLIP_SET",
 			"jhash": "0x546C627A",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84935,7 +84935,7 @@
 		"0x318234F4F3738AF3": {
 			"name": "HAS_CLIP_SET_LOADED",
 			"jhash": "0x230D5455",
-			"comment": "Alias for HAS_ANIM_SET_LOADED.",
+			"comment": "Alias for HAS_ANIM_SET_LOADED.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84948,7 +84948,7 @@
 		"0x01F73A131C18CD94": {
 			"name": "REMOVE_CLIP_SET",
 			"jhash": "0x1E21F7AA",
-			"comment": "Alias for REMOVE_ANIM_SET.",
+			"comment": "Alias for REMOVE_ANIM_SET.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84961,7 +84961,7 @@
 		"0x41B4893843BBDB74": {
 			"name": "REQUEST_IPL",
 			"jhash": "0x3B70D1DB",
-			"comment": "Exemple: REQUEST_IPL(\"TrevorsTrailerTrash\");\n\nIPL + Coords: http://pastebin.com/FyV5mMma",
+			"comment": "Exemple: REQUEST_IPL(\"TrevorsTrailerTrash\");\n\nFull list of IPLs and interior entity sets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -84974,7 +84974,7 @@
 		"0xEE6C5AD3ECE0A82D": {
 			"name": "REMOVE_IPL",
 			"jhash": "0xDF7CBD36",
-			"comment": "Removes an IPL from the map.\nIPL List: pastebin.com/pwkh0uRP \n\nExample:\nC#:\nFunction.Call(Hash.REMOVE_IPL, \"trevorstrailertidy\");\n\nC++:\nSTREAMING::REMOVE_IPL(\"trevorstrailertidy\");\n\niplName = Name of IPL you want to remove.",
+			"comment": "Removes an IPL from the map.\n\nFull list of IPLs and interior entity sets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json\n\nExample:\nC#:\nFunction.Call(Hash.REMOVE_IPL, \"trevorstrailertidy\");\n\nC++:\nSTREAMING::REMOVE_IPL(\"trevorstrailertidy\");\n\niplName = Name of IPL you want to remove.",
 			"params": [
 				{
 					"type": "const char*",
@@ -84987,7 +84987,7 @@
 		"0x88A741E44A2B3495": {
 			"name": "IS_IPL_ACTIVE",
 			"jhash": "0xB2C33714",
-			"comment": "",
+			"comment": "Full list of IPLs and interior entity sets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -87668,7 +87668,7 @@
 		"0xEA47FE3719165B94": {
 			"name": "TASK_PLAY_ANIM",
 			"jhash": "0x5AB552C6",
-			"comment": "Animations List : www.ls-multiplayer.com/dev/index.php?section=3\n\nfloat speed > normal speed is 8.0f\n----------------------\n\nfloat speedMultiplier > multiply the playback speed\n----------------------\n\nint duration: time in millisecond\n----------------------\n-1 _ _ _ _ _ _ _> Default (see flag)\n0 _ _ _ _ _ _ _ > Not play at all\nSmall value _ _ > Slow down animation speed\nOther _ _ _ _ _ > freeze player control until specific time (ms) has \n_ _ _ _ _ _ _ _ _ passed. (No effect if flag is set to be \n_ _ _ _ _ _ _ _ _ controllable.)\n\nint flag:\n----------------------\nenum eAnimationFlags\n{\n ANIM_FLAG_NORMAL = 0,\n   ANIM_FLAG_REPEAT = 1,\n   ANIM_FLAG_STOP_LAST_FRAME = 2,\n   ANIM_FLAG_UPPERBODY = 16,\n   ANIM_FLAG_ENABLE_PLAYER_CONTROL = 32,\n   ANIM_FLAG_CANCELABLE = 120,\n};\nOdd number : loop infinitely\nEven number : Freeze at last frame\nMultiple of 4: Freeze at last frame but controllable\n\n01 to 15 > Full body\n10 to 31 > Upper body\n32 to 47 > Full body > Controllable\n48 to 63 > Upper body > Controllable\n...\n001 to 255 > Normal\n256 to 511 > Garbled\n...\n\nplaybackRate:\n\nvalues are between 0.0 and 1.0\n\n\nlockX:  \n\n0 in most cases 1 for rcmepsilonism8 and rcmpaparazzo_3\n> 1 for mini@sprunk\n \n\nlockY:\n\n0 in most cases \n1 for missfam5_yoga, missfra1mcs_2_crew_react\n\n\nlockZ: \n\n    0 for single player \n    Can be 1 but only for MP ",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json\n\nfloat speed > normal speed is 8.0f\n----------------------\n\nfloat speedMultiplier > multiply the playback speed\n----------------------\n\nint duration: time in millisecond\n----------------------\n-1 _ _ _ _ _ _ _> Default (see flag)\n0 _ _ _ _ _ _ _ > Not play at all\nSmall value _ _ > Slow down animation speed\nOther _ _ _ _ _ > freeze player control until specific time (ms) has \n_ _ _ _ _ _ _ _ _ passed. (No effect if flag is set to be \n_ _ _ _ _ _ _ _ _ controllable.)\n\nint flag:\n----------------------\nenum eAnimationFlags\n{\n ANIM_FLAG_NORMAL = 0,\n   ANIM_FLAG_REPEAT = 1,\n   ANIM_FLAG_STOP_LAST_FRAME = 2,\n   ANIM_FLAG_UPPERBODY = 16,\n   ANIM_FLAG_ENABLE_PLAYER_CONTROL = 32,\n   ANIM_FLAG_CANCELABLE = 120,\n};\nOdd number : loop infinitely\nEven number : Freeze at last frame\nMultiple of 4: Freeze at last frame but controllable\n\n01 to 15 > Full body\n10 to 31 > Upper body\n32 to 47 > Full body > Controllable\n48 to 63 > Upper body > Controllable\n...\n001 to 255 > Normal\n256 to 511 > Garbled\n...\n\nplaybackRate:\n\nvalues are between 0.0 and 1.0\n\n\nlockX:  \n\n0 in most cases 1 for rcmepsilonism8 and rcmpaparazzo_3\n> 1 for mini@sprunk\n \n\nlockY:\n\n0 in most cases \n1 for missfam5_yoga, missfra1mcs_2_crew_react\n\n\nlockZ: \n\n    0 for single player \n    Can be 1 but only for MP ",
 			"params": [
 				{
 					"type": "Ped",
@@ -87721,7 +87721,7 @@
 		"0x83CDB10EA29B370B": {
 			"name": "TASK_PLAY_ANIM_ADVANCED",
 			"jhash": "0x3DDEB0E6",
-			"comment": "It's similar to the one above, except the first 6 floats let you specify the initial position and rotation of the task. (Ped gets teleported to the position). animTime is a float from 0.0 -> 1.0, lets you start an animation from given point. The rest as in TASK::TASK_PLAY_ANIM. \n\nRotation information : rotX and rotY don't seem to have any effect, only rotZ works.\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "It's similar to the one above, except the first 6 floats let you specify the initial position and rotation of the task. (Ped gets teleported to the position). animTime is a float from 0.0 -> 1.0, lets you start an animation from given point. The rest as in TASK::TASK_PLAY_ANIM. \n\nRotation information : rotX and rotY don't seem to have any effect, only rotZ works.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -87794,7 +87794,7 @@
 		"0x97FF36A1D40EA00A": {
 			"name": "STOP_ANIM_TASK",
 			"jhash": "0x2B520A57",
-			"comment": "",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -87985,7 +87985,7 @@
 		"0x8FBB6758B3B3E9EC": {
 			"name": "TASK_PLAY_PHONE_GESTURE_ANIMATION",
 			"jhash": "0x1582162C",
-			"comment": "Example from the scripts:\nTASK::TASK_PLAY_PHONE_GESTURE_ANIMATION(PLAYER::PLAYER_PED_ID(), v_3, v_2, v_4, 0.25, 0.25, 0, 0);\n\n=========================================================\n^^ No offense, but Idk how that would really help anyone.\n\nAs for the animDict & animation, they're both store in a global in all 5 scripts. So if anyone would be so kind as to read that global and comment what strings they use. Thanks.\n\nKnown boneMaskTypes'\n\"BONEMASK_HEADONLY\"\n\"BONEMASK_HEAD_NECK_AND_ARMS\"\n\"BONEMASK_HEAD_NECK_AND_L_ARM\"\n\"BONEMASK_HEAD_NECK_AND_R_ARM\"\n\np4 known args - 0.0f, 0.5f, 0.25f\np5 known args - 0.0f, 0.25f\np6 known args - 1 if a global if check is passed.\np7 known args - 1 if a global if check is passed.\n\nThe values found above, I found within the 5 scripts this is ever called in. (fmmc_launcher, fm_deathmatch_controller, fm_impromptu_dm_controller, fm_mission_controller, and freemode).\n=========================================================",
+			"comment": "Example from the scripts:\nTASK::TASK_PLAY_PHONE_GESTURE_ANIMATION(PLAYER::PLAYER_PED_ID(), v_3, v_2, v_4, 0.25, 0.25, 0, 0);\n\n=========================================================\n^^ No offense, but Idk how that would really help anyone.\n\nAs for the animDict & animation, they're both store in a global in all 5 scripts. So if anyone would be so kind as to read that global and comment what strings they use. Thanks.\n\nKnown boneMaskTypes'\n\"BONEMASK_HEADONLY\"\n\"BONEMASK_HEAD_NECK_AND_ARMS\"\n\"BONEMASK_HEAD_NECK_AND_L_ARM\"\n\"BONEMASK_HEAD_NECK_AND_R_ARM\"\n\np4 known args - 0.0f, 0.5f, 0.25f\np5 known args - 0.0f, 0.25f\np6 known args - 1 if a global if check is passed.\np7 known args - 1 if a global if check is passed.\n\nThe values found above, I found within the 5 scripts this is ever called in. (fmmc_launcher, fm_deathmatch_controller, fm_impromptu_dm_controller, fm_mission_controller, and freemode).\n=========================================================\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -90942,7 +90942,7 @@
 		"0x142A02425FF02BD9": {
 			"name": "TASK_START_SCENARIO_IN_PLACE",
 			"jhash": "0xE50D6DDE",
-			"comment": "Plays a scenario on a Ped at their current location.\n\nunkDelay - Usually 0 or -1, doesn't seem to have any effect. Might be a delay between sequences.\nplayEnterAnim - Plays the \"Enter\" anim if true, otherwise plays the \"Exit\" anim. Scenarios that don't have any \"Enter\" anims won't play if this is set to true.\n\n----\n\nFrom \"am_hold_up.ysc.c4\" at line 339:\n\nTASK::TASK_START_SCENARIO_IN_PLACE(NETWORK::NET_TO_PED(l_8D._f4), sub_adf(), 0, 1);\n\nI'm unsure of what the last two parameters are, however sub_adf() randomly returns 1 of 3 scenarios, those being:\nWORLD_HUMAN_SMOKING\nWORLD_HUMAN_HANG_OUT_STREET\nWORLD_HUMAN_STAND_MOBILE\n\nThis makes sense, as these are what I commonly see when going by a liquor store.\n-------------------------\nList of scenarioNames: pastebin.com/6mrYTdQv\n(^ Thank you so fucking much for this)\n\nAlso these:\nWORLD_FISH_FLEE\nDRIVE\nWORLD_HUMAN_HIKER\nWORLD_VEHICLE_ATTRACTOR\nWORLD_VEHICLE_BICYCLE_MOUNTAIN\nWORLD_VEHICLE_BIKE_OFF_ROAD_RACE\nWORLD_VEHICLE_BIKER\nWORLD_VEHICLE_CONSTRUCTION_PASSENGERS\nWORLD_VEHICLE_CONSTRUCTION_SOLO\nWORLD_VEHICLE_DRIVE_PASSENGERS\nWORLD_VEHICLE_DRIVE_SOLO\nWORLD_VEHICLE_EMPTY\nWORLD_VEHICLE_PARK_PARALLEL\nWORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\nWORLD_VEHICLE_POLICE_BIKE\nWORLD_VEHICLE_POLICE_CAR\nWORLD_VEHICLE_POLICE_NEXT_TO_CAR\nWORLD_VEHICLE_SALTON_DIRT_BIKE\nWORLD_VEHICLE_TRUCK_LOGS",
+			"comment": "Plays a scenario on a Ped at their current location.\n\nunkDelay - Usually 0 or -1, doesn't seem to have any effect. Might be a delay between sequences.\nplayEnterAnim - Plays the \"Enter\" anim if true, otherwise plays the \"Exit\" anim. Scenarios that don't have any \"Enter\" anims won't play if this is set to true.\n\n----\n\nFrom \"am_hold_up.ysc.c4\" at line 339:\n\nTASK::TASK_START_SCENARIO_IN_PLACE(NETWORK::NET_TO_PED(l_8D._f4), sub_adf(), 0, 1);\n\nI'm unsure of what the last two parameters are, however sub_adf() randomly returns 1 of 3 scenarios, those being:\nWORLD_HUMAN_SMOKING\nWORLD_HUMAN_HANG_OUT_STREET\nWORLD_HUMAN_STAND_MOBILE\n\nThis makes sense, as these are what I commonly see when going by a liquor store.\n-------------------------\nList of scenarioNames: pastebin.com/6mrYTdQv\n(^ Thank you so fucking much for this)\n\nAlso these:\nWORLD_FISH_FLEE\nDRIVE\nWORLD_HUMAN_HIKER\nWORLD_VEHICLE_ATTRACTOR\nWORLD_VEHICLE_BICYCLE_MOUNTAIN\nWORLD_VEHICLE_BIKE_OFF_ROAD_RACE\nWORLD_VEHICLE_BIKER\nWORLD_VEHICLE_CONSTRUCTION_PASSENGERS\nWORLD_VEHICLE_CONSTRUCTION_SOLO\nWORLD_VEHICLE_DRIVE_PASSENGERS\nWORLD_VEHICLE_DRIVE_SOLO\nWORLD_VEHICLE_EMPTY\nWORLD_VEHICLE_PARK_PARALLEL\nWORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\nWORLD_VEHICLE_POLICE_BIKE\nWORLD_VEHICLE_POLICE_CAR\nWORLD_VEHICLE_POLICE_NEXT_TO_CAR\nWORLD_VEHICLE_SALTON_DIRT_BIKE\nWORLD_VEHICLE_TRUCK_LOGS\n\nFull list of ped scenarios by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -90967,7 +90967,7 @@
 		"0xFA4EFC79F69D4F07": {
 			"name": "TASK_START_SCENARIO_AT_POSITION",
 			"jhash": "0xAA2C4AC2",
-			"comment": "List of scenarioNames: pastebin.com/6mrYTdQv\n\nAlso a few more listed at TASK::TASK_START_SCENARIO_IN_PLACE just above.\n---------------\nThe first parameter in every scenario has always been a Ped of some sort. The second like TASK_START_SCENARIO_IN_PLACE is the name of the scenario. \n\nThe next 4 parameters were harder to decipher. After viewing \"hairdo_shop_mp.ysc.c4\", and being confused from seeing the case in other scripts, they passed the first three of the arguments as one array from a function, and it looked like it was obviously x, y, and z.\n\nI haven't seen the sixth parameter go to or over 360, making me believe that it is rotation, but I really can't confirm anything.\n\nI have no idea what the last 3 parameters are, but I'll try to find out.\n\n-going on the last 3 parameters, they appear to always be \"0, 0, 1\"\n\np6 -1 also used in scrips\n\np7 used for sitting scenarios\n\np8 teleports ped to position",
+			"comment": "Full list of ped scenarios by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json\n\nAlso a few more listed at TASK::TASK_START_SCENARIO_IN_PLACE just above.\n---------------\nThe first parameter in every scenario has always been a Ped of some sort. The second like TASK_START_SCENARIO_IN_PLACE is the name of the scenario. \n\nThe next 4 parameters were harder to decipher. After viewing \"hairdo_shop_mp.ysc.c4\", and being confused from seeing the case in other scripts, they passed the first three of the arguments as one array from a function, and it looked like it was obviously x, y, and z.\n\nI haven't seen the sixth parameter go to or over 360, making me believe that it is rotation, but I really can't confirm anything.\n\nI have no idea what the last 3 parameters are, but I'll try to find out.\n\n-going on the last 3 parameters, they appear to always be \"0, 0, 1\"\n\np6 -1 also used in scrips\n\np7 used for sitting scenarios\n\np8 teleports ped to position",
 			"params": [
 				{
 					"type": "Ped",
@@ -91248,7 +91248,7 @@
 		"0x748040460F8DF5DC": {
 			"name": "PLAY_ANIM_ON_RUNNING_SCENARIO",
 			"jhash": "0x1984A5D1",
-			"comment": "Animations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -92286,7 +92286,7 @@
 		"0x9EEFB62EB27B5792": {
 			"name": "REQUEST_WAYPOINT_RECORDING",
 			"jhash": "0xAFABFB5D",
-			"comment": "For a full list, see here: pastebin.com/Tp0XpBMN\nFor a full list of the points, see here: goo.gl/wIH0vn\n\nMax number of loaded recordings is 32.",
+			"comment": "Full list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json\nFor a full list of the points, see here: goo.gl/wIH0vn\n\nMax number of loaded recordings is 32.",
 			"params": [
 				{
 					"type": "const char*",
@@ -92299,7 +92299,7 @@
 		"0xCB4E8BE8A0063C5D": {
 			"name": "GET_IS_WAYPOINT_RECORDING_LOADED",
 			"jhash": "0x87125F5D",
-			"comment": "For a full list, see here: pastebin.com/Tp0XpBMN",
+			"comment": "Full list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -92312,7 +92312,7 @@
 		"0xFF1B8B4AA1C25DC8": {
 			"name": "REMOVE_WAYPOINT_RECORDING",
 			"jhash": "0x624530B0",
-			"comment": "For a full list, see here: pastebin.com/Tp0XpBMN",
+			"comment": "Full list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -92325,7 +92325,7 @@
 		"0x5343532C01A07234": {
 			"name": "WAYPOINT_RECORDING_GET_NUM_POINTS",
 			"jhash": "0xF5F9B71E",
-			"comment": "For a full list, see here: pastebin.com/Tp0XpBMN\nFor a full list of the points, see here: goo.gl/wIH0vn",
+			"comment": "Full list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json\nFor a full list of the points, see here: goo.gl/wIH0vn",
 			"params": [
 				{
 					"type": "const char*",
@@ -92342,7 +92342,7 @@
 		"0x2FB897405C90B361": {
 			"name": "WAYPOINT_RECORDING_GET_COORD",
 			"jhash": "0x19266913",
-			"comment": "For a full list, see here: pastebin.com/Tp0XpBMN\nFor a full list of the points, see here: goo.gl/wIH0vn",
+			"comment": "Full list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json\nFor a full list of the points, see here: goo.gl/wIH0vn",
 			"params": [
 				{
 					"type": "const char*",
@@ -92363,7 +92363,7 @@
 		"0x005622AEBC33ACA9": {
 			"name": "WAYPOINT_RECORDING_GET_SPEED_AT_POINT",
 			"jhash": "0xC765633A",
-			"comment": "",
+			"comment": "Full list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -92380,7 +92380,7 @@
 		"0xB629A298081F876F": {
 			"name": "WAYPOINT_RECORDING_GET_CLOSEST_WAYPOINT",
 			"jhash": "0xC4CD35AF",
-			"comment": "For a full list, see here: pastebin.com/Tp0XpBMN\nFor a full list of the points, see here: goo.gl/wIH0vn",
+			"comment": "Full list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json\nFor a full list of the points, see here: goo.gl/wIH0vn",
 			"params": [
 				{
 					"type": "const char*",
@@ -92827,7 +92827,7 @@
 		"0x3123FAA6DB1CF7ED": {
 			"name": "TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING",
 			"jhash": "0x959818B6",
-			"comment": "task_vehicle_follow_waypoint_recording(Ped p0, Vehicle p1, string p2, int p3, int p4, int p5, int p6, float.x p7, float.Y p8, float.Z p9, bool p10, int p11)\n\np2 = Waypoint recording string (found in update\\update.rpf\\x64\\levels\\gta5\\waypointrec.rpf\np3 = 786468\np4 = 0\np5 = 16\np6 = -1 (angle?)\np7/8/9 = usually v3.zero\np10 = bool (repeat?)\np11 = 1073741824\n\n-khorio",
+			"comment": "task_vehicle_follow_waypoint_recording(Ped p0, Vehicle p1, string p2, int p3, int p4, int p5, int p6, float.x p7, float.Y p8, float.Z p9, bool p10, int p11)\n\np2 = Waypoint recording string (found in update\\update.rpf\\x64\\levels\\gta5\\waypointrec.rpf\np3 = 786468\np4 = 0\np5 = 16\np6 = -1 (angle?)\np7/8/9 = usually v3.zero\np10 = bool (repeat?)\np11 = 1073741824\n\n-khorio\n\nFull list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -93568,7 +93568,7 @@
 		"0xEEA929141F699854": {
 			"name": "TASK_SYNCHRONIZED_SCENE",
 			"jhash": "0x4F217E7B",
-			"comment": " TASK::TASK_SYNCHRONIZED_SCENE(ped, scene, \"creatures@rottweiler@in_vehicle@std_car\", \"get_in\", 1000.0, -8.0, 4, 0, 0x447a0000, 0);\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+			"comment": " TASK::TASK_SYNCHRONIZED_SCENE(ped, scene, \"creatures@rottweiler@in_vehicle@std_car\", \"get_in\", 1000.0, -8.0, 4, 0, 0x447a0000, 0);\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -93845,7 +93845,7 @@
 		"0xAF35D0D2583051B0": {
 			"name": "CREATE_VEHICLE",
 			"jhash": "0xDD75460A",
-			"comment": "",
+			"comment": "Full list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -94353,7 +94353,7 @@
 		"0x2AD93716F184EDA4": {
 			"name": "GET_VEHICLE_MODEL_NUMBER_OF_SEATS",
 			"jhash": "0x838F7BF7",
-			"comment": "Returns max number of passengers (including the driver) for the specified vehicle model.\n\nFor a full list, see here: pastebin.com/MdETCS1j",
+			"comment": "Returns max number of passengers (including the driver) for the specified vehicle model.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -94812,7 +94812,7 @@
 		"0xCEE4490CD57BB3C2": {
 			"name": "IS_VEHICLE_IN_GARAGE_AREA",
 			"jhash": "0xA90EC257",
-			"comment": "garageName example \"Michael - Beverly Hills\"\n\nFor a full list, see here: pastebin.com/73VfwsmS",
+			"comment": "garageName example \"Michael - Beverly Hills\"\n\nFull list of garages by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/garages.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -94829,7 +94829,7 @@
 		"0x4F1D4BE3A7F24601": {
 			"name": "SET_VEHICLE_COLOURS",
 			"jhash": "0x57F24253",
-			"comment": "colorPrimary & colorSecondary are the paint index for the vehicle.\nFor a list of valid paint indexes, view: pastebin.com/pwHci0xK\n-------------------------------------------------------------------------\nUse this to get the number of color indices: pastebin.com/RQEeqTSM\nNote: minimum color index is 0, maximum color index is (numColorIndices - 1)",
+			"comment": "colorPrimary & colorSecondary are the paint index for the vehicle.\nFor a list of valid paint indexes, view: pastebin.com/pwHci0xK\n-------------------------------------------------------------------------\nUse this to get the number of color indices: pastebin.com/RQEeqTSM\nNote: minimum color index is 0, maximum color index is (numColorIndices - 1)\n\nFull list of vehicle colors by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97365,7 +97365,7 @@
 		"0x386F6CE5BAF6091C": {
 			"name": "GET_RANDOM_VEHICLE_IN_SPHERE",
 			"jhash": "0x57216D03",
-			"comment": "Gets a random vehicle in a sphere at the specified position, of the specified radius.\n\nx: The X-component of the position of the sphere.\ny: The Y-component of the position of the sphere.\nz: The Z-component of the position of the sphere.\nradius: The radius of the sphere. Max is 9999.9004.\nmodelHash: The vehicle model to limit the selection to. Pass 0 for any model.\nflags: The bitwise flags that modifies the behaviour of this function.",
+			"comment": "Gets a random vehicle in a sphere at the specified position, of the specified radius.\n\nx: The X-component of the position of the sphere.\ny: The Y-component of the position of the sphere.\nz: The Z-component of the position of the sphere.\nradius: The radius of the sphere. Max is 9999.9004.\nmodelHash: The vehicle model to limit the selection to. Pass 0 for any model.\nflags: The bitwise flags that modifies the behaviour of this function.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "float",
@@ -97472,7 +97472,7 @@
 		"0xF73EB622C4F1689B": {
 			"name": "GET_CLOSEST_VEHICLE",
 			"jhash": "0xD7E26B2C",
-			"comment": "Example usage\nVEHICLE::GET_CLOSEST_VEHICLE(x, y, z, radius, hash, unknown leave at 70) \n\nx, y, z: Position to get closest vehicle to.\nradius: Max radius to get a vehicle.\nmodelHash: Limit to vehicles with this model. 0 for any.\nflags: The bitwise flags altering the function's behaviour.\n\nDoes not return police cars or helicopters.\n\nIt seems to return police cars for me, does not seem to return helicopters, planes or boats for some reason\n\nOnly returns non police cars and motorbikes with the flag set to 70 and modelHash to 0. ModelHash seems to always be 0 when not a modelHash in the scripts, as stated above. \n\nThese flags were found in the b617d scripts: 0,2,4,6,7,23,127,260,2146,2175,12294,16384,16386,20503,32768,67590,67711,98309,100359.\nConverted to binary, each bit probably represents a flag as explained regarding another native here: gtaforums.com/topic/822314-guide-driving-styles\n\nConversion of found flags to binary: pastebin.com/kghNFkRi\n\nAt exactly 16384 which is 0100000000000000 in binary and 4000 in hexadecimal only planes are returned. \n\nIt's probably more convenient to use worldGetAllVehicles(int *arr, int arrSize) and check the shortest distance yourself and sort if you want by checking the vehicle type with for example VEHICLE::IS_THIS_MODEL_A_BOAT\n\n-------------------------------------------------------------------------\n\nConclusion: This native is not worth trying to use. Use something like this instead: pastebin.com/xiFdXa7h",
+			"comment": "Example usage\nVEHICLE::GET_CLOSEST_VEHICLE(x, y, z, radius, hash, unknown leave at 70) \n\nx, y, z: Position to get closest vehicle to.\nradius: Max radius to get a vehicle.\nmodelHash: Limit to vehicles with this model. 0 for any.\nflags: The bitwise flags altering the function's behaviour.\n\nDoes not return police cars or helicopters.\n\nIt seems to return police cars for me, does not seem to return helicopters, planes or boats for some reason\n\nOnly returns non police cars and motorbikes with the flag set to 70 and modelHash to 0. ModelHash seems to always be 0 when not a modelHash in the scripts, as stated above. \n\nThese flags were found in the b617d scripts: 0,2,4,6,7,23,127,260,2146,2175,12294,16384,16386,20503,32768,67590,67711,98309,100359.\nConverted to binary, each bit probably represents a flag as explained regarding another native here: gtaforums.com/topic/822314-guide-driving-styles\n\nConversion of found flags to binary: pastebin.com/kghNFkRi\n\nAt exactly 16384 which is 0100000000000000 in binary and 4000 in hexadecimal only planes are returned. \n\nIt's probably more convenient to use worldGetAllVehicles(int *arr, int arrSize) and check the shortest distance yourself and sort if you want by checking the vehicle type with for example VEHICLE::IS_THIS_MODEL_A_BOAT\n\n-------------------------------------------------------------------------\n\nConclusion: This native is not worth trying to use. Use something like this instead: pastebin.com/xiFdXa7h\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "float",
@@ -99472,7 +99472,7 @@
 		"0xB215AAC32D25D019": {
 			"name": "GET_DISPLAY_NAME_FROM_VEHICLE_MODEL",
 			"jhash": "0xEC86DF39",
-			"comment": "Returns model name of vehicle in all caps. Needs to be displayed through localizing text natives to get proper display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\nWhile often the case, this does not simply return the model name of the vehicle (which could be hashed to return the model hash). Variations of the same vehicle may also use the same display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\n\nReturns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nUsing HUD::_GET_LABEL_TEXT, you can get the localized name.\n\nFor a full list, see here: pastebin.com/wvpyS4kS (pastebin.com/dA3TbkZw)\n\n",
+			"comment": "Returns model name of vehicle in all caps. Needs to be displayed through localizing text natives to get proper display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\nWhile often the case, this does not simply return the model name of the vehicle (which could be hashed to return the model hash). Variations of the same vehicle may also use the same display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\n\nReturns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nUsing HUD::_GET_LABEL_TEXT, you can get the localized name.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -99485,7 +99485,7 @@
 		"0xF7AF4F159FF99F97": {
 			"name": "_GET_MAKE_NAME_FROM_VEHICLE_MODEL",
 			"jhash": "",
-			"comment": "Returns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.",
+			"comment": "Returns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -100679,7 +100679,7 @@
 		"0xF417C2502FFFED43": {
 			"name": "GET_VEHICLE_MODEL_ESTIMATED_MAX_SPEED",
 			"jhash": "0x8F291C4A",
-			"comment": "Returns max speed (without mods) of the specified vehicle model in m/s.",
+			"comment": "Returns max speed (without mods) of the specified vehicle model in m/s.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -100692,7 +100692,7 @@
 		"0xDC53FD41B4ED944C": {
 			"name": "GET_VEHICLE_MODEL_MAX_BRAKING",
 			"jhash": "0x7EF02883",
-			"comment": "Returns max braking of the specified vehicle model.",
+			"comment": "Returns max braking of the specified vehicle model.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -100705,7 +100705,7 @@
 		"0xBFBA3BA79CFF7EBF": {
 			"name": "GET_VEHICLE_MODEL_MAX_BRAKING_MAX_MODS",
 			"jhash": "0xF3A7293F",
-			"comment": "",
+			"comment": "Full list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -100718,7 +100718,7 @@
 		"0x539DE94D44FDFD0D": {
 			"name": "GET_VEHICLE_MODEL_MAX_TRACTION",
 			"jhash": "0x7F985597",
-			"comment": "Returns max traction of the specified vehicle model.",
+			"comment": "Returns max traction of the specified vehicle model.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -100731,7 +100731,7 @@
 		"0x8C044C5C84505B6A": {
 			"name": "GET_VEHICLE_MODEL_ACCELERATION",
 			"jhash": "0x29CB3537",
-			"comment": "Returns the acceleration of the specified model.",
+			"comment": "Returns the acceleration of the specified model.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -100744,7 +100744,7 @@
 		"0x53409B5163D5B846": {
 			"name": "_GET_VEHICLE_MODEL_ESTIMATED_AGILITY",
 			"jhash": "0x37FBA7BC",
-			"comment": "GET_VEHICLE_MODEL_*\n\n9.8 * thrust if air vehicle, else 0.38 + drive force?",
+			"comment": "GET_VEHICLE_MODEL_*\n\n9.8 * thrust if air vehicle, else 0.38 + drive force?\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -100757,7 +100757,7 @@
 		"0xC6AD107DDC9054CC": {
 			"name": "_GET_VEHICLE_MODEL_MAX_KNOTS",
 			"jhash": "0x95BB67EB",
-			"comment": "GET_VEHICLE_MODEL_*\n\nFunction pertains only to aviation vehicles.",
+			"comment": "GET_VEHICLE_MODEL_*\n\nFunction pertains only to aviation vehicles.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -100770,7 +100770,7 @@
 		"0x5AA3F878A178C4FC": {
 			"name": "_GET_VEHICLE_MODEL_MOVE_RESISTANCE",
 			"jhash": "0x87C5D271",
-			"comment": "GET_VEHICLE_MODEL_*\n\ncalled if the vehicle is a boat -- returns vecMoveResistanceX?",
+			"comment": "GET_VEHICLE_MODEL_*\n\ncalled if the vehicle is a boat -- returns vecMoveResistanceX?\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -101056,7 +101056,7 @@
 		"0x1F2AA07F00B3217A": {
 			"name": "SET_VEHICLE_MOD_KIT",
 			"jhash": "0xB8132158",
-			"comment": "Set modKit to 0 if you plan to call SET_VEHICLE_MOD. That's what the game does. Most body modifications through SET_VEHICLE_MOD will not take effect until this is set to 0.",
+			"comment": "Set modKit to 0 if you plan to call SET_VEHICLE_MOD. That's what the game does. Most body modifications through SET_VEHICLE_MOD will not take effect until this is set to 0.\n\nFull list of vehicle mod kits and mods by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleModKits.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101146,7 +101146,7 @@
 		"0x43FEB945EE7F85B8": {
 			"name": "SET_VEHICLE_MOD_COLOR_1",
 			"jhash": "0xCBE9A54D",
-			"comment": "paintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome\n\ncolor: number of the color.\n\np3 seems to always be 0.",
+			"comment": "paintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome\n\ncolor: number of the color.\n\np3 seems to always be 0.\n\nFull list of vehicle colors and vehicle plates by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101171,7 +101171,7 @@
 		"0x816562BADFDEC83E": {
 			"name": "SET_VEHICLE_MOD_COLOR_2",
 			"jhash": "0xC32613C2",
-			"comment": "Changes the secondary paint type and color\npaintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome\n\ncolor: number of the color",
+			"comment": "Changes the secondary paint type and color\npaintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome\n\ncolor: number of the color\n\nFull list of vehicle colors and vehicle plates by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101450,7 +101450,7 @@
 		"0xB4C7A93837C91A1F": {
 			"name": "GET_LIVERY_NAME",
 			"jhash": "0xED80B5BE",
-			"comment": "Second Param = LiveryIndex\n\nexample \n\nint count = VEHICLE::GET_VEHICLE_LIVERY_COUNT(veh);\nfor (int i = 0; i < count; i++)  \n  {\n     const char* LiveryName = VEHICLE::GET_LIVERY_NAME(veh, i);\n  }\n\n\nthis example will work fine to fetch all names \nfor example for Sanchez we get \n\nSANC_LV1\nSANC_LV2\nSANC_LV3\nSANC_LV4\nSANC_LV5\n\n\nUse _GET_LABEL_TEXT, to get the localized livery name.",
+			"comment": "Second Param = LiveryIndex\n\nexample \n\nint count = VEHICLE::GET_VEHICLE_LIVERY_COUNT(veh);\nfor (int i = 0; i < count; i++)  \n  {\n     const char* LiveryName = VEHICLE::GET_LIVERY_NAME(veh, i);\n  }\n\n\nthis example will work fine to fetch all names \nfor example for Sanchez we get \n\nSANC_LV1\nSANC_LV2\nSANC_LV3\nSANC_LV4\nSANC_LV5\n\n\nUse _GET_LABEL_TEXT, to get the localized livery name.\n\nFull list of vehicle mod kits and mods by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleModKits.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103387,7 +103387,7 @@
 		"0xDEDF1C8BD47C2200": {
 			"name": "GET_VEHICLE_CLASS_FROM_NAME",
 			"jhash": "0xEA469980",
-			"comment": "For a full enum, see here : pastebin.com/i2GGAjY0\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS_FROM_NAME (hash));\n\nconst char* className = HUD::_GET_LABEL_TEXT(buffer);",
+			"comment": "For a full enum, see here : pastebin.com/i2GGAjY0\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS_FROM_NAME (hash));\n\nconst char* className = HUD::_GET_LABEL_TEXT(buffer);\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -108520,7 +108520,7 @@
 		"0x98CD1D2934B76CC1": {
 			"name": "GET_ZONE_FROM_NAME_ID",
 			"jhash": "0x8EC68304",
-			"comment": "'zoneName' corresponds to an entry in 'popzone.ipl'.\n\nAIRP = Los Santos International Airport\nALAMO = Alamo Sea\nALTA = Alta\nARMYB = Fort Zancudo\nBANHAMC = Banham Canyon Dr\nBANNING = Banning\nBEACH = Vespucci Beach\nBHAMCA = Banham Canyon\nBRADP = Braddock Pass\nBRADT = Braddock Tunnel\nBURTON = Burton\nCALAFB = Calafia Bridge\nCANNY = Raton Canyon\nCCREAK = Cassidy Creek\nCHAMH = Chamberlain Hills\nCHIL = Vinewood Hills\nCHU = Chumash\nCMSW = Chiliad Mountain State Wilderness\nCYPRE = Cypress Flats\nDAVIS = Davis\nDELBE = Del Perro Beach\nDELPE = Del Perro\nDELSOL = La Puerta\nDESRT = Grand Senora Desert\nDOWNT = Downtown\nDTVINE = Downtown Vinewood\nEAST_V = East Vinewood\nEBURO = El Burro Heights\nELGORL = El Gordo Lighthouse\nELYSIAN = Elysian Island\nGALFISH = Galilee\nGOLF = GWC and Golfing Society\nGRAPES = Grapeseed\nGREATC = Great Chaparral\nHARMO = Harmony\nHAWICK = Hawick\nHORS = Vinewood Racetrack\nHUMLAB = Humane Labs and Research\nJAIL = Bolingbroke Penitentiary\nKOREAT = Little Seoul\nLACT = Land Act Reservoir\nLAGO = Lago Zancudo\nLDAM = Land Act Dam\nLEGSQU = Legion Square\nLMESA = La Mesa\nLOSPUER = La Puerta\nMIRR = Mirror Park\nMORN = Morningwood\nMOVIE = Richards Majestic\nMTCHIL = Mount Chiliad\nMTGORDO = Mount Gordo\nMTJOSE = Mount Josiah\nMURRI = Murrieta Heights\nNCHU = North Chumash\nNOOSE = N.O.O.S.E\nOCEANA = Pacific Ocean\nPALCOV = Paleto Cove\nPALETO = Paleto Bay\nPALFOR = Paleto Forest\nPALHIGH = Palomino Highlands\nPALMPOW = Palmer-Taylor Power Station\nPBLUFF = Pacific Bluffs\nPBOX = Pillbox Hill\nPROCOB = Procopio Beach\nRANCHO = Rancho\nRGLEN = Richman Glen\nRICHM = Richman\nROCKF = Rockford Hills\nRTRAK = Redwood Lights Track\nSANAND = San Andreas\nSANCHIA = San Chianski Mountain Range\nSANDY = Sandy Shores\nSKID = Mission Row\nSLAB = Stab City\nSTAD = Maze Bank Arena\nSTRAW = Strawberry\nTATAMO = Tataviam Mountains\nTERMINA = Terminal\nTEXTI = Textile City\nTONGVAH = Tongva Hills\nTONGVAV = Tongva Valley\nVCANA = Vespucci Canals\nVESP = Vespucci\nVINE = Vinewood\nWINDF = Ron Alternates Wind Farm\nWVINE = West Vinewood\nZANCUDO = Zancudo River\nZP_ORT = Port of South Los Santos\nZQ_UAR = Davis Quartz\n",
+			"comment": "'zoneName' corresponds to an entry in 'popzone.ipl'.\n\nAIRP = Los Santos International Airport\nALAMO = Alamo Sea\nALTA = Alta\nARMYB = Fort Zancudo\nBANHAMC = Banham Canyon Dr\nBANNING = Banning\nBEACH = Vespucci Beach\nBHAMCA = Banham Canyon\nBRADP = Braddock Pass\nBRADT = Braddock Tunnel\nBURTON = Burton\nCALAFB = Calafia Bridge\nCANNY = Raton Canyon\nCCREAK = Cassidy Creek\nCHAMH = Chamberlain Hills\nCHIL = Vinewood Hills\nCHU = Chumash\nCMSW = Chiliad Mountain State Wilderness\nCYPRE = Cypress Flats\nDAVIS = Davis\nDELBE = Del Perro Beach\nDELPE = Del Perro\nDELSOL = La Puerta\nDESRT = Grand Senora Desert\nDOWNT = Downtown\nDTVINE = Downtown Vinewood\nEAST_V = East Vinewood\nEBURO = El Burro Heights\nELGORL = El Gordo Lighthouse\nELYSIAN = Elysian Island\nGALFISH = Galilee\nGOLF = GWC and Golfing Society\nGRAPES = Grapeseed\nGREATC = Great Chaparral\nHARMO = Harmony\nHAWICK = Hawick\nHORS = Vinewood Racetrack\nHUMLAB = Humane Labs and Research\nJAIL = Bolingbroke Penitentiary\nKOREAT = Little Seoul\nLACT = Land Act Reservoir\nLAGO = Lago Zancudo\nLDAM = Land Act Dam\nLEGSQU = Legion Square\nLMESA = La Mesa\nLOSPUER = La Puerta\nMIRR = Mirror Park\nMORN = Morningwood\nMOVIE = Richards Majestic\nMTCHIL = Mount Chiliad\nMTGORDO = Mount Gordo\nMTJOSE = Mount Josiah\nMURRI = Murrieta Heights\nNCHU = North Chumash\nNOOSE = N.O.O.S.E\nOCEANA = Pacific Ocean\nPALCOV = Paleto Cove\nPALETO = Paleto Bay\nPALFOR = Paleto Forest\nPALHIGH = Palomino Highlands\nPALMPOW = Palmer-Taylor Power Station\nPBLUFF = Pacific Bluffs\nPBOX = Pillbox Hill\nPROCOB = Procopio Beach\nRANCHO = Rancho\nRGLEN = Richman Glen\nRICHM = Richman\nROCKF = Rockford Hills\nRTRAK = Redwood Lights Track\nSANAND = San Andreas\nSANCHIA = San Chianski Mountain Range\nSANDY = Sandy Shores\nSKID = Mission Row\nSLAB = Stab City\nSTAD = Maze Bank Arena\nSTRAW = Strawberry\nTATAMO = Tataviam Mountains\nTERMINA = Terminal\nTEXTI = Textile City\nTONGVAH = Tongva Hills\nTONGVAV = Tongva Valley\nVCANA = Vespucci Canals\nVESP = Vespucci\nVINE = Vinewood\nWINDF = Ron Alternates Wind Farm\nWVINE = West Vinewood\nZANCUDO = Zancudo River\nZP_ORT = Port of South Los Santos\nZQ_UAR = Davis Quartz\n\nFull list of zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/zones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -108546,7 +108546,7 @@
 		"0xCD90657D4C30E1CA": {
 			"name": "GET_NAME_OF_ZONE",
 			"jhash": "0x7875CE91",
-			"comment": "AIRP = Los Santos International Airport\nALAMO = Alamo Sea\nALTA = Alta\nARMYB = Fort Zancudo\nBANHAMC = Banham Canyon Dr\nBANNING = Banning\nBEACH = Vespucci Beach\nBHAMCA = Banham Canyon\nBRADP = Braddock Pass\nBRADT = Braddock Tunnel\nBURTON = Burton\nCALAFB = Calafia Bridge\nCANNY = Raton Canyon\nCCREAK = Cassidy Creek\nCHAMH = Chamberlain Hills\nCHIL = Vinewood Hills\nCHU = Chumash\nCMSW = Chiliad Mountain State Wilderness\nCYPRE = Cypress Flats\nDAVIS = Davis\nDELBE = Del Perro Beach\nDELPE = Del Perro\nDELSOL = La Puerta\nDESRT = Grand Senora Desert\nDOWNT = Downtown\nDTVINE = Downtown Vinewood\nEAST_V = East Vinewood\nEBURO = El Burro Heights\nELGORL = El Gordo Lighthouse\nELYSIAN = Elysian Island\nGALFISH = Galilee\nGOLF = GWC and Golfing Society\nGRAPES = Grapeseed\nGREATC = Great Chaparral\nHARMO = Harmony\nHAWICK = Hawick\nHORS = Vinewood Racetrack\nHUMLAB = Humane Labs and Research\nJAIL = Bolingbroke Penitentiary\nKOREAT = Little Seoul\nLACT = Land Act Reservoir\nLAGO = Lago Zancudo\nLDAM = Land Act Dam\nLEGSQU = Legion Square\nLMESA = La Mesa\nLOSPUER = La Puerta\nMIRR = Mirror Park\nMORN = Morningwood\nMOVIE = Richards Majestic\nMTCHIL = Mount Chiliad\nMTGORDO = Mount Gordo\nMTJOSE = Mount Josiah\nMURRI = Murrieta Heights\nNCHU = North Chumash\nNOOSE = N.O.O.S.E\nOCEANA = Pacific Ocean\nPALCOV = Paleto Cove\nPALETO = Paleto Bay\nPALFOR = Paleto Forest\nPALHIGH = Palomino Highlands\nPALMPOW = Palmer-Taylor Power Station\nPBLUFF = Pacific Bluffs\nPBOX = Pillbox Hill\nPROCOB = Procopio Beach\nRANCHO = Rancho\nRGLEN = Richman Glen\nRICHM = Richman\nROCKF = Rockford Hills\nRTRAK = Redwood Lights Track\nSANAND = San Andreas\nSANCHIA = San Chianski Mountain Range\nSANDY = Sandy Shores\nSKID = Mission Row\nSLAB = Stab City\nSTAD = Maze Bank Arena\nSTRAW = Strawberry\nTATAMO = Tataviam Mountains\nTERMINA = Terminal\nTEXTI = Textile City\nTONGVAH = Tongva Hills\nTONGVAV = Tongva Valley\nVCANA = Vespucci Canals\nVESP = Vespucci\nVINE = Vinewood\nWINDF = Ron Alternates Wind Farm\nWVINE = West Vinewood\nZANCUDO = Zancudo River\nZP_ORT = Port of South Los Santos\nZQ_UAR = Davis Quartz\n",
+			"comment": "AIRP = Los Santos International Airport\nALAMO = Alamo Sea\nALTA = Alta\nARMYB = Fort Zancudo\nBANHAMC = Banham Canyon Dr\nBANNING = Banning\nBEACH = Vespucci Beach\nBHAMCA = Banham Canyon\nBRADP = Braddock Pass\nBRADT = Braddock Tunnel\nBURTON = Burton\nCALAFB = Calafia Bridge\nCANNY = Raton Canyon\nCCREAK = Cassidy Creek\nCHAMH = Chamberlain Hills\nCHIL = Vinewood Hills\nCHU = Chumash\nCMSW = Chiliad Mountain State Wilderness\nCYPRE = Cypress Flats\nDAVIS = Davis\nDELBE = Del Perro Beach\nDELPE = Del Perro\nDELSOL = La Puerta\nDESRT = Grand Senora Desert\nDOWNT = Downtown\nDTVINE = Downtown Vinewood\nEAST_V = East Vinewood\nEBURO = El Burro Heights\nELGORL = El Gordo Lighthouse\nELYSIAN = Elysian Island\nGALFISH = Galilee\nGOLF = GWC and Golfing Society\nGRAPES = Grapeseed\nGREATC = Great Chaparral\nHARMO = Harmony\nHAWICK = Hawick\nHORS = Vinewood Racetrack\nHUMLAB = Humane Labs and Research\nJAIL = Bolingbroke Penitentiary\nKOREAT = Little Seoul\nLACT = Land Act Reservoir\nLAGO = Lago Zancudo\nLDAM = Land Act Dam\nLEGSQU = Legion Square\nLMESA = La Mesa\nLOSPUER = La Puerta\nMIRR = Mirror Park\nMORN = Morningwood\nMOVIE = Richards Majestic\nMTCHIL = Mount Chiliad\nMTGORDO = Mount Gordo\nMTJOSE = Mount Josiah\nMURRI = Murrieta Heights\nNCHU = North Chumash\nNOOSE = N.O.O.S.E\nOCEANA = Pacific Ocean\nPALCOV = Paleto Cove\nPALETO = Paleto Bay\nPALFOR = Paleto Forest\nPALHIGH = Palomino Highlands\nPALMPOW = Palmer-Taylor Power Station\nPBLUFF = Pacific Bluffs\nPBOX = Pillbox Hill\nPROCOB = Procopio Beach\nRANCHO = Rancho\nRGLEN = Richman Glen\nRICHM = Richman\nROCKF = Rockford Hills\nRTRAK = Redwood Lights Track\nSANAND = San Andreas\nSANCHIA = San Chianski Mountain Range\nSANDY = Sandy Shores\nSKID = Mission Row\nSLAB = Stab City\nSTAD = Maze Bank Arena\nSTRAW = Strawberry\nTATAMO = Tataviam Mountains\nTERMINA = Terminal\nTEXTI = Textile City\nTONGVAH = Tongva Hills\nTONGVAV = Tongva Valley\nVCANA = Vespucci Canals\nVESP = Vespucci\nVINE = Vinewood\nWINDF = Ron Alternates Wind Farm\nWVINE = West Vinewood\nZANCUDO = Zancudo River\nZP_ORT = Port of South Los Santos\nZQ_UAR = Davis Quartz\n\nFull list of zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/zones.json",
 			"params": [
 				{
 					"type": "float",
