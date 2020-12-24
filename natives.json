@@ -2379,8 +2379,8 @@
 		},
 		"0x651D3228960D08AF": {
 			"name": "_LINK_STATIC_EMITTER_TO_ENTITY",
-			"jhash": "Full list of static emitters by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/staticEmitters.json",
-			"comment": "L* (LINK_*?)",
+			"jhash": "",
+			"comment": "L* (LINK_*?)\n\nFull list of static emitters by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/staticEmitters.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -24195,8 +24195,8 @@
 		},
 		"0xE35B38A27E8E7179": {
 			"name": "_ANIMPOSTFX_GET_UNK",
-			"jhash": "Full list of animpostFX / screen effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animPostFxNamesCompact.json",
-			"comment": "See ANIMPOSTFX_PLAY",
+			"jhash": "",
+			"comment": "See ANIMPOSTFX_PLAY\n\nFull list of animpostFX / screen effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animPostFxNamesCompact.json",
 			"params": [
 				{
 					"type": "const char*",
