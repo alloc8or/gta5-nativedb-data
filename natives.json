@@ -66884,7 +66884,7 @@
 		"0x71A5C1DBA060049E": {
 			"name": "_SET_PED_FACE_FEATURE",
 			"jhash": "",
-			"comment": "Sets the various freemode face features, e.g. nose length, chin shape. Scale ranges from -1.0 to 1.0.\n\nIndex can be 0 - 19\n\nSET_PED_M*",
+			"comment": "Sets the various freemode face features, e.g. nose length, chin shape. Scale ranges from -1.0 to 1.0.\n\nIndex can be 0 - 19\n\nSET_PED_M* \n\nHere is the list of names. It starts at 0 and runs in sequence \n\nFace_Feature \n\nNose_Width\n\nNose_Peak_Hight\n\nNose_Peak_Lenght\n\nNose_Bone_High\n\nNose_Peak_Lowering\n\nNose_Bone_Twist\n\nEyeBrown_High\n\nEyeBrown_Forward\n\nCheeks_Bone_High\n\nCheeks_Bone_Width \n\nCheeks_Width\n\nEyes_Openning \n\nLips_Thickness\n\nJaw_Bone_Width: Bone size to sides \n\nJaw_Bone_Back_Lenght: Bone size to back \n\nChimp_Bone_Lowering: Go Down\n\nChimp_Bone_Lenght: Go forward\n\nChimp_Bone_Width\n\nChimp_Hole\n\nNeck_Thikness",
 			"params": [
 				{
 					"type": "Ped",
