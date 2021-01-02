@@ -53478,15 +53478,15 @@
 		},
 		"0x924426BFFD82E915": {
 			"name": "NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS",
-			"jhash": "0x29532731",
+			"jhash": "0x98EFB921",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x8132C0EB8B2B3293": {
-			"name": "_NETWORK_IS_CLOUD_BACKGROUND_SCRIPTS_REQUEST_PENDING",
-			"jhash": "0x29532731",
+			"name": "NETWORK_IS_CLOUD_BACKGROUND_SCRIPT_REQUEST_PENDING",
+			"jhash": "0x20AB933A",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
