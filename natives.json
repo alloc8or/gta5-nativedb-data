@@ -45208,16 +45208,16 @@
 			"build": "323"
 		},
 		"0x83F28CE49FBBFFBA": {
-			"name": "_0x83F28CE49FBBFFBA",
-			"jhash": "",
+			"name": "NETWORK_CHECK_COMMUNICATION_PRIVILEGES",
+			"jhash": "0xA79E5B05",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
