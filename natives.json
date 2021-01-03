@@ -47487,8 +47487,8 @@
 		},
 		"0x3F9990BF5F22759C": {
 			"name": "_0x3F9990BF5F22759C",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0x00F26CDC",
+			"comment": "NETWORK_HAS_*",
 			"params": [
 				{
 					"type": "Any*",
