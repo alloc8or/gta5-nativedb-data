@@ -45266,11 +45266,11 @@
 			"build": "1493"
 		},
 		"0x76BF03FADBF154F5": {
-			"name": "_0x76BF03FADBF154F5",
-			"jhash": "",
+			"name": "NETWORK_HAS_SOCIAL_NETWORKING_SHARING_PRIV",
+			"jhash": "0xEB864288",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x9614B71F8ADB982B": {
