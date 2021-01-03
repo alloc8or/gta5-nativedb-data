@@ -59123,36 +59123,36 @@
 			"build": "323"
 		},
 		"0xF12E33034D887F66": {
-			"name": "_0xF12E33034D887F66",
+			"name": "_SET_TEXTURE_VARIATION_OF_CLOSEST_OBJECT_OF_TYPE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "textureVariation"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1103"
 		},
 		"0x31574B1B41268673": {
