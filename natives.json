@@ -45153,17 +45153,17 @@
 			"build": "323"
 		},
 		"0xAEEF48CDF5B6CE7C": {
-			"name": "_0xAEEF48CDF5B6CE7C",
+			"name": "NETWORK_HAVE_COMMUNICATION_PRIVILEGES",
 			"jhash": "0x2D817A5E",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "BOOL",
