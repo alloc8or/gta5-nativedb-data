@@ -12902,7 +12902,7 @@
 			"build": "323"
 		},
 		"0x3910051CCECDB00C": {
-			"name": "SET_ENTITY_CLEANUP_BY_ENGINE",
+			"name": "_SET_ENTITY_CLEANUP_BY_ENGINE",
 			"jhash": "0xD3850671",
 			"comment": "True means it can be deleted by the engine when switching lobbies/missions/etc, false means the script is expected to clean it up.",
 			"params": [
