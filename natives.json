@@ -28407,7 +28407,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "void",
+			"return_type": "Any",
 			"build": "323"
 		},
 		"0x6B50FC8749632EC1": {
@@ -79486,7 +79486,7 @@
 					"name": "statSlot"
 				}
 			],
-			"return_type": "void",
+			"return_type": "Any",
 			"build": "323"
 		},
 		"0xA651443F437B1CE6": {
@@ -100144,7 +100144,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "void",
+			"return_type": "Any",
 			"build": "323"
 		},
 		"0xF8EBCCC96ADB9FB7": {
