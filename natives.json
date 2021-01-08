@@ -28392,7 +28392,7 @@
 		"0x75A9A10948D1DEA6": {
 			"name": "SET_MINIMAP_COMPONENT",
 			"jhash": "0x419DCDC4",
-			"comment": "Please change to void.\n\np2 appears to be always -1.",
+			"comment": "p2 appears to be always -1.",
 			"params": [
 				{
 					"type": "int",
@@ -79479,7 +79479,7 @@
 		"0xEB0A72181D4AA4AD": {
 			"name": "STAT_CLEAR_SLOT_FOR_RELOAD",
 			"jhash": "0x84BDD475",
-			"comment": "Please change to \"void\"!\n---------------------------------\n\nExample:\n\nfor (v_2 = 0; v_2 <= 4; v_2 += 1) {\n    STATS::STAT_CLEAR_SLOT_FOR_RELOAD(v_2);\n}",
+			"comment": "Example:\n\nfor (v_2 = 0; v_2 <= 4; v_2 += 1) {\n    STATS::STAT_CLEAR_SLOT_FOR_RELOAD(v_2);\n}",
 			"params": [
 				{
 					"type": "int",
@@ -100129,7 +100129,7 @@
 		"0x8BA6F76BC53A1493": {
 			"name": "SET_VEHICLE_AUTOMATICALLY_ATTACHES",
 			"jhash": "0x4273A8D3",
-			"comment": "Please change to void.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102889,8 +102889,8 @@
 		},
 		"0x571FEB383F629926": {
 			"name": "_0x571FEB383F629926",
-			"jhash": "",
-			"comment": "consoel hash 0xAEB29F98",
+			"jhash": "0xAEB29F98",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
