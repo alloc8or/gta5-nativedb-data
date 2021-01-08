@@ -102995,25 +102995,25 @@
 			"build": "323"
 		},
 		"0x877C1EAEAC531023": {
-			"name": "_SET_CARGOBOB_HOOK_POSITION",
+			"name": "SET_PICKUP_ROPE_LENGTH_FOR_CARGOBOB",
 			"jhash": "0x3A8AB081",
-			"comment": "For now, I changed the last one from bool to int.\nAccording to scripts specifically 'fm_mission_controller' this last parameter is 'false/0' when its called after the create rope native above is called for the magnet and 'true/1' after the create rope native above is called for the hook.",
+			"comment": "min: 1.9f, max: 100.0f",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "cargobob"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "length1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "length2"
 				},
 				{
-					"type": "int",
-					"name": "state"
+					"type": "BOOL",
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
