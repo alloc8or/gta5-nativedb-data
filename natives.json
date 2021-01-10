@@ -96132,9 +96132,9 @@
 			"build": "323"
 		},
 		"0x6D645D59FB5F5AD3": {
-			"name": "_DETACH_VEHICLE_WINDSCREEN",
+			"name": "POP_OUT_VEHICLE_WINDSCREEN",
 			"jhash": "0xCC95C96B",
-			"comment": "Detaches the vehicle's windscreen.\nFor further information, see : gtaforums.com/topic/859570-glass/#entry1068894566",
+			"comment": "Detaches the vehicle's windscreen.\nFor further information, see : gtaforums.com/topic/859570-glass/#entry1068894566\n\nOld name: _DETACH_VEHICLE_WINDSCREEN",
 			"params": [
 				{
 					"type": "Vehicle",
