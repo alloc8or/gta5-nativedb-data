@@ -96187,7 +96187,7 @@
 			"build": "323"
 		},
 		"0xC45C27EF50F36ADC": {
-			"name": "_SET_VEHICLE_USE_PLAYER_LIGHT_SETTINGS",
+			"name": "SET_VEHICLE_USE_PLAYER_LIGHT_SETTINGS",
 			"jhash": "0x4221E435",
 			"comment": "",
 			"params": [
@@ -96197,7 +96197,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
