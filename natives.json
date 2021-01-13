@@ -55828,9 +55828,9 @@
 			"build": "323"
 		},
 		"0x8BD6C6DEA20E82C6": {
-			"name": "_GET_STATUS_OF_TEXTURE_DOWNLOAD",
+			"name": "GET_STATUS_OF_TEXTURE_DOWNLOAD",
 			"jhash": "0x03225BA3",
-			"comment": "0 = succeeded\n1 = pending\n2 = failed\n\nGET_ST*",
+			"comment": "0 = succeeded\n1 = pending\n2 = failed",
 			"params": [
 				{
 					"type": "int",
