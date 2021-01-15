@@ -4267,9 +4267,9 @@
 			"build": "323"
 		},
 		"0x0653B735BFBDFE87": {
-			"name": "_0x0653B735BFBDFE87",
+			"name": "_SET_PED_LOUD_FOOSTEP_AUDIO",
 			"jhash": "",
-			"comment": "Sets CPed+C46\nSET_PED_??",
+			"comment": "Enables/disables ped's \"loud\" footstep sound.",
 			"params": [
 				{
 					"type": "Ped",
@@ -4284,9 +4284,9 @@
 			"build": "1493"
 		},
 		"0x29DA3CA8D8B2692D": {
-			"name": "_0x29DA3CA8D8B2692D",
+			"name": "_SET_PED_QUIET_FOOTSTEP_AUDIO",
 			"jhash": "",
-			"comment": "Sets ped+c47 (def 1)\nSET_PED_??",
+			"comment": "Enables/disables ped's \"quiet\" footstep sound.",
 			"params": [
 				{
 					"type": "Ped",
@@ -20354,7 +20354,7 @@
 		"0x7B226C785A52A0A9": {
 			"name": "IS_SCREENBLUR_FADE_RUNNING",
 			"jhash": "0x926B8734",
-			"comment": "Returns is transition to blur/from blur is running.",
+			"comment": "Returns whether screen transition to blur/from blur is running.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -35258,7 +35258,7 @@
 		"0x44A0BDC559B35F6E": {
 			"name": "_0x44A0BDC559B35F6E",
 			"jhash": "0x3589452B",
-			"comment": "Show a GTA Screen who tell than before you redo a mission, the game will make a restoration point where you will cameback when the mission is over.\nReturns 1 if the message isn't currently on screen",
+			"comment": "Shows the screen which is visible before you redo a mission? The game will make a restoration point where you will cameback when the mission is over.\nReturns 1 if the message isn't currently on screen",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -37375,7 +37375,7 @@
 		"0x32C7A7E8C43A1F80": {
 			"name": "ADD_POP_MULTIPLIER_SPHERE",
 			"jhash": "0xCE4A3D20",
-			"comment": "This native is adding a zone, where you can change density settings. For example, you can add a zone on 0.0, 0.0, 0.0 with radius 900.0 and vehicleMultiplayer 0.0, and you will not see any new population vehicle spawned in a radius of 900.0 from 0.0, 0.0, 0.0. Returns the id. You can have only 15 zones at the same time. You can remove zone using REMOVE_POP_MULTIPLIER_SPHERE",
+			"comment": "This native is adding a zone, where you can change density settings. For example, you can add a zone on 0.0, 0.0, 0.0 with radius 900.0 and vehicleMultiplier 0.0, and you will not see any new population vehicle spawned in a radius of 900.0 from 0.0, 0.0, 0.0. Returns the id. You can have only 15 zones at the same time. You can remove zone using REMOVE_POP_MULTIPLIER_SPHERE",
 			"params": [
 				{
 					"type": "float",
@@ -66562,7 +66562,7 @@
 		"0x76BBA2CEE66D47E9": {
 			"name": "_GET_PED_EYE_COLOR",
 			"jhash": "",
-			"comment": "A getter for _SET_PED_EYE_COLOR]. Returns -1 if fails to get.",
+			"comment": "A getter for _SET_PED_EYE_COLOR. Returns -1 if fails to get.",
 			"params": [
 				{
 					"type": "Ped",
@@ -89200,7 +89200,7 @@
 			"build": "2189"
 		},
 		"0xDBBC7A2432524127": {
-			"name": "CLEAR_VEHICLE_TASKS",
+			"name": "_CLEAR_VEHICLE_TASKS",
 			"jhash": "",
 			"comment": "Seems to stop the engine",
 			"params": [
@@ -105369,7 +105369,7 @@
 		"0x94A68DA412C4007D": {
 			"name": "_SET_CARGOBOB_HOOK_CAN_ATTACH",
 			"jhash": "",
-			"comment": "Stops the cargobob from beeing able to attach any vehicle",
+			"comment": "Stops the cargobob from being able to attach any vehicle",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105678,7 +105678,7 @@
 		"0xC60060EB0D8AC7B1": {
 			"name": "_SET_VEHICLE_TURRET_UNK",
 			"jhash": "",
-			"comment": "set flag on turret",
+			"comment": "Toggles specific flag on turret",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105921,7 +105921,7 @@
 		"0x211E95CE9903940C": {
 			"name": "_SET_DISABLE_VEHICLE_UNK_2",
 			"jhash": "",
-			"comment": "sets some global bool",
+			"comment": "Sets some global vehicle related bool",
 			"params": [
 				{
 					"type": "BOOL",
