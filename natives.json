@@ -3456,13 +3456,13 @@
 			"build": "323"
 		},
 		"0x66C3FB05206041BA": {
-			"name": "_0x66C3FB05206041BA",
+			"name": "_TRIGGER_SIREN",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -3567,13 +3567,13 @@
 			"build": "323"
 		},
 		"0xCA4CEA6AE0000A7E": {
-			"name": "_0xCA4CEA6AE0000A7E",
+			"name": "_PRELOAD_VEHICLE_AUDIO",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "p0"
+					"type": "Hash",
+					"name": "vehicleModel"
 				}
 			],
 			"return_type": "void",
@@ -4523,7 +4523,7 @@
 		"0x12561FCBB62D5B9C": {
 			"name": "SET_AUDIO_SPECIAL_EFFECT_MODE",
 			"jhash": "0x62B43677",
-			"comment": "https://alloc8or.re/gta5/doc/enums/audSpecialEffectMode.txt",
+			"comment": "Needs to be called every frame.\nAudio mode to apply this frame: https://alloc8or.re/gta5/doc/enums/audSpecialEffectMode.txt",
 			"params": [
 				{
 					"type": "int",
@@ -7673,13 +7673,13 @@
 			"build": "1103"
 		},
 		"0x5C90CAB09951A12F": {
-			"name": "_0x5C90CAB09951A12F",
+			"name": "_SET_FOLLOW_TURRET_SEAT_CAM",
 			"jhash": "",
-			"comment": "Sets gameplay camera+63c?",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "seatIndex"
 				}
 			],
 			"return_type": "void",
@@ -8503,7 +8503,7 @@
 			"build": "372"
 		},
 		"0xF5F1E89A970B7796": {
-			"name": "_0xF5F1E89A970B7796",
+			"name": "_IS_CINEMATIC_CAM_ACTIVE",
 			"jhash": "",
 			"comment": "Tests some cinematic camera flags",
 			"params": [],
@@ -11514,11 +11514,11 @@
 				},
 				{
 					"type": "Vector3*",
-					"name": "rightVector"
+					"name": "forwardVector"
 				},
 				{
 					"type": "Vector3*",
-					"name": "forwardVector"
+					"name": "rightVector"
 				},
 				{
 					"type": "Vector3*",
@@ -12122,7 +12122,7 @@
 		"0x51210CED3DA1C78A": {
 			"name": "IS_ENTITY_IN_ANGLED_AREA",
 			"jhash": "0x883622FA",
-			"comment": "Creates a spherical cone at origin that extends to surface with the angle specified. Then returns true if the entity is inside the spherical cone\n\nAngle is measured in degrees.\nThese values are constant, most likely bogus:\np8 = 0, p9 = 1, p10 = 0\n\nThis method can also take two float<3> instead of 6 floats.",
+			"comment": "`p8` is a debug flag invoking functions in the same path as ``DRAW_MARKER``\n`p10` is some entity flag check, also used in `IS_ENTITY_AT_ENTITY`, `IS_ENTITY_IN_AREA`, and `IS_ENTITY_AT_COORD`.\nSee IS_POINT_IN_ANGLED_AREA for the definition of an angled area.",
 			"params": [
 				{
 					"type": "Entity",
@@ -12130,39 +12130,39 @@
 				},
 				{
 					"type": "float",
-					"name": "originX"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "originY"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "originZ"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "edgeX"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "edgeY"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "edgeZ"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "angle"
+					"name": "width"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "debug"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "includeZ"
 				},
 				{
 					"type": "Any",
@@ -12866,7 +12866,7 @@
 		"0x961AC54BF0613F5D": {
 			"name": "DETACH_ENTITY",
 			"jhash": "0xC8EFCB41",
-			"comment": "p1 and p2 have no effect \nmaybe a quick disassembly will tell us what they do\n\nif p2 is set to true, the both entities won't collide with the other until the distance between them is above 4 meters.\n\n\np1?",
+			"comment": "If `collision` is set to true, both entities won't collide with the other until the distance between them is above 4 meters.\nSet `dynamic` to true to keep velocity after dettaching",
 			"params": [
 				{
 					"type": "Entity",
@@ -12874,7 +12874,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "dynamic"
 				},
 				{
 					"type": "BOOL",
@@ -13681,7 +13681,7 @@
 		"0x0DC7CABAB1E9B67E": {
 			"name": "SET_ENTITY_LOAD_COLLISION_FLAG",
 			"jhash": "0xC52F295B",
-			"comment": "",
+			"comment": "Loads collision grid for an entity spawned outside of a player's loaded area. This allows peds to execute tasks rather than sit dormant because of a lack of a physics grid.\nCertainly not the main usage of this native but when set to true for a Vehicle, it will prevent the vehicle to explode if it is spawned far away from the player.",
 			"params": [
 				{
 					"type": "Entity",
@@ -16208,7 +16208,7 @@
 		"0xA079A6C51525DC4B": {
 			"name": "IS_EXPLOSION_IN_ANGLED_AREA",
 			"jhash": "0x0128FED9",
-			"comment": "explosionType: See ADD_EXPLOSION.",
+			"comment": "explosionType: See ADD_EXPLOSION, -1 for any explosion type\n",
 			"params": [
 				{
 					"type": "int",
@@ -16240,7 +16240,7 @@
 				},
 				{
 					"type": "float",
-					"name": "angle"
+					"name": "width"
 				}
 			],
 			"return_type": "BOOL",
@@ -17866,7 +17866,7 @@
 		"0x799017F9E3B10112": {
 			"name": "_DRAW_SPHERE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Draws a 3D sphere, typically seen in the GTA:O freemode event \"Penned In\".\nExample https://imgur.com/nCbtS4H",
 			"params": [
 				{
 					"type": "float",
@@ -24335,13 +24335,13 @@
 			"build": "323"
 		},
 		"0x98215325A695E78A": {
-			"name": "_0x98215325A695E78A",
+			"name": "_SET_MOUSE_CURSOR_VISIBLE_IN_MENUS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Shows/hides the frontend cursor on the pause menu or similar menus.\nClicking off and then on the game window will show it again.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -27067,16 +27067,16 @@
 			"build": "323"
 		},
 		"0xD484BF71050CA1EE": {
-			"name": "_0xD484BF71050CA1EE",
+			"name": "_GET_CLOSEST_BLIP_OF_TYPE",
 			"jhash": "",
-			"comment": "Allocates something in an \"unknown\" pool",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "blipSprite"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Blip",
 			"build": "1180"
 		},
 		"0xFA7C7F0AADF25D09": {
@@ -27919,7 +27919,7 @@
 		"0x9029B2F3DA924928": {
 			"name": "SET_BLIP_DISPLAY",
 			"jhash": "0x2B521F91",
-			"comment": "displayId = 8 : shows on radar\n\ndisplayId:\n3 = Shows on Main map but not Radar (not selectable on map)\n\ndisplayId = 2 (Shows on Main map + Radar + selectable)",
+			"comment": "Display Id behaviours:\n0 = Doesn't show up, ever, anywhere.\n1 = Doesn't show up, ever, anywhere.\n2 = Shows on both main map and minimap. (Selectable on map)\n3 = Shows on main map only. (Selectable on map)\n4 = Shows on main map only. (Selectable on map)\n5 = Shows on minimap only.\n6 = Shows on both main map and minimap. (Selectable on map)\n7 = Doesn't show up, ever, anywhere.\n8 = Shows on both main map and minimap. (Not selectable on map)\n9 = Shows on minimap only.\n10 = Shows on both main map and minimap. (Not selectable on map)\n\nAnything higher than 10 seems to be exactly the same as 10.",
 			"params": [
 				{
 					"type": "Blip",
@@ -28392,7 +28392,7 @@
 		"0x75A9A10948D1DEA6": {
 			"name": "SET_MINIMAP_COMPONENT",
 			"jhash": "0x419DCDC4",
-			"comment": "p2 appears to be always -1. If p2 is -1 then native wouldn't change the color. See https://gfycat.com/SkinnyPinkChupacabra",
+			"comment": "This native is used to colorize certain map components like the army base at the top of the map.\np2 appears to be always -1. If p2 is -1 then native wouldn't change the color. See https://gfycat.com/SkinnyPinkChupacabra",
 			"params": [
 				{
 					"type": "int",
@@ -33613,7 +33613,7 @@
 		"0xC906A7DAB05C8D2B": {
 			"name": "GET_GROUND_Z_FOR_3D_COORD",
 			"jhash": "0xA1BFD5E0",
-			"comment": "Gets the ground elevation at the specified position. Note that if the specified position is below ground level, the function will output zero!\n\nx: Position on the X-axis to get ground elevation at.\ny: Position on the Y-axis to get ground elevation at.\nz: Position on the Z-axis to get ground elevation at.\ngroundZ: The ground elevation at the specified position.\nignoreWater: Nearly always 0, very rarely 1 in the scripts: https://gfycat.com/NiftyTatteredCricket.",
+			"comment": "Gets the ground elevation at the specified position. Note that if the specified position is below ground level, the function will output zero!\n\nx: Position on the X-axis to get ground elevation at.\ny: Position on the Y-axis to get ground elevation at.\nz: Position on the Z-axis to get ground elevation at.\ngroundZ: The ground elevation at the specified position.\nignoreWater: Nearly always 0, very rarely 1 in the scripts: https://gfycat.com/NiftyTatteredCricket\n\nBear in mind this native can only calculate the elevation when the coordinates are within the client's render distance.",
 			"params": [
 				{
 					"type": "float",
@@ -34535,31 +34535,31 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "width"
 				},
 				{
 					"type": "BOOL",
@@ -35724,7 +35724,7 @@
 		"0xFEFCF11B01287125": {
 			"name": "IS_SNIPER_BULLET_IN_AREA",
 			"jhash": "0x0483715C",
-			"comment": "Determines whether there is a sniper bullet within the specified coordinates. The coordinates form a rectangle.\n\n- Nacorpio",
+			"comment": "Determines whether there is a sniper bullet within the specified coordinates. The coordinates form an axis-aligned bounding box.",
 			"params": [
 				{
 					"type": "float",
@@ -35794,7 +35794,7 @@
 		"0x2E0DC353342C4A6D": {
 			"name": "IS_PROJECTILE_TYPE_IN_AREA",
 			"jhash": "0x2B73BCF6",
-			"comment": "Determines whether there is a projectile of a specific type within the specified coordinates. The coordinates form a rectangle.\n\nNote: This native hasn't been tested yet.\n\n- Nacorpio",
+			"comment": "Determines whether there is a projectile of a specific type within the specified coordinates. The coordinates form a axis-aligned bounding box.",
 			"params": [
 				{
 					"type": "float",
@@ -35826,7 +35826,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "ownedByPlayer"
 				}
 			],
 			"return_type": "BOOL",
@@ -35835,35 +35835,35 @@
 		"0xF0BC12401061DEA0": {
 			"name": "IS_PROJECTILE_TYPE_IN_ANGLED_AREA",
 			"jhash": "0xD1AE2681",
-			"comment": "",
+			"comment": "See IS_POINT_IN_ANGLED_AREA for the definition of an angled area.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "width"
 				},
 				{
 					"type": "Any",
@@ -35871,7 +35871,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "ownedByPlayer"
 				}
 			],
 			"return_type": "BOOL",
@@ -35884,27 +35884,27 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "projectileHash"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "ownedByPlayer"
 				}
 			],
 			"return_type": "BOOL",
@@ -35916,43 +35916,43 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Hash",
+					"name": "projectileHash"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "Vector3*",
+					"name": "projectilePos"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "ownedByPlayer"
 				}
 			],
-			"return_type": "Vector3",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xDFB4138EEFED7B81": {
@@ -35978,7 +35978,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "ownedByPlayer"
 				}
 			],
 			"return_type": "Vector3",
@@ -36020,39 +36020,39 @@
 		"0x1A8B5F3C01E2B477": {
 			"name": "IS_BULLET_IN_ANGLED_AREA",
 			"jhash": "0xE2DB58F7",
-			"comment": "",
+			"comment": "For projectiles, see: IS_PROJECTILE_TYPE_IN_ANGLED_AREA\nSee IS_POINT_IN_ANGLED_AREA for the definition of an angled area.\nReturns True if a bullet, as maintained by a pool within CWeaponManager, has been fired into the defined angled area.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "width"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "ownedByPlayer"
 				}
 			],
 			"return_type": "BOOL",
@@ -36065,23 +36065,23 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "radius"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "ownedByPlayer"
 				}
 			],
 			"return_type": "BOOL",
@@ -36094,31 +36094,31 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "ownedByPlayer"
 				}
 			],
 			"return_type": "BOOL",
@@ -37703,35 +37703,35 @@
 		"0x918C7B2D2FF3928B": {
 			"name": "_ADD_DISPATCH_SPAWN_BLOCKING_ANGLED_AREA",
 			"jhash": "0xF557BAF9",
-			"comment": "",
+			"comment": "To remove, see: REMOVE_DISPATCH_SPAWN_BLOCKING_AREA\nSee IS_POINT_IN_ANGLED_AREA for the definition of an angled area.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "width"
 				}
 			],
 			"return_type": "Any",
@@ -38072,22 +38072,22 @@
 			"build": "323"
 		},
 		"0x438822C279B73B93": {
-			"name": "_0x438822C279B73B93",
+			"name": "_SET_BEAST_MODE_ACTIVE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
 			"build": "573"
 		},
 		"0xA1183BCFEE0F93D1": {
-			"name": "_0xA1183BCFEE0F93D1",
+			"name": "_SET_FORCE_PLAYER_TO_JUMP",
 			"jhash": "",
-			"comment": "causes the player to jump?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -52882,7 +52882,7 @@
 		"0x5A6FFA2433E2F14C": {
 			"name": "NETWORK_START_RESPAWN_SEARCH_FOR_PLAYER",
 			"jhash": "0xC62E77B3",
-			"comment": "",
+			"comment": "One of the first things it does is get the players ped.\nThen it calls a function that is used in some tasks and ped based functions.\np5, p6, p7 is another coordinate (or zero), often related to `GET_BLIP_COORDS, in the decompiled scripts.",
 			"params": [
 				{
 					"type": "Player",
@@ -52890,19 +52890,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				},
 				{
 					"type": "float",
@@ -52927,7 +52927,7 @@
 		"0x4BA92A18502BCA61": {
 			"name": "NETWORK_START_RESPAWN_SEARCH_IN_ANGLED_AREA_FOR_PLAYER",
 			"jhash": "0x74D6B13C",
-			"comment": "",
+			"comment": "p8, p9, p10 is another coordinate, or zero, often related to `GET_BLIP_COORDS in the decompiled scripts.",
 			"params": [
 				{
 					"type": "Player",
@@ -52935,31 +52935,31 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "width"
 				},
 				{
 					"type": "float",
@@ -53273,35 +53273,35 @@
 		"0x376C6375BA60293A": {
 			"name": "NETWORK_ADD_ENTITY_ANGLED_AREA",
 			"jhash": "0xCD69BEA1",
-			"comment": "",
+			"comment": "To remove, see: NETWORK_REMOVE_ENTITY_AREA\nSee IS_POINT_IN_ANGLED_AREA for the definition of an angled area.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "width"
 				}
 			],
 			"return_type": "Any",
@@ -56430,7 +56430,7 @@
 		"0x2FDFF4107B8C1147": {
 			"name": "SLIDE_OBJECT",
 			"jhash": "0x63BFA7A0",
-			"comment": "Returns true if the object has finished moving.\n\nIf false, moves the object towards the specified X, Y and Z coordinates with the specified X, Y and Z speed.\n\nSee also: gtag.gtagaming.com/opcode-database/opcode/034E/\n\n-- also see (fivem.net/)",
+			"comment": "Returns true if the object has finished moving.\n\nIf false, moves the object towards the specified X, Y and Z coordinates with the specified X, Y and Z speed.\n\nSee also: https://gtagmodding.com/opcode-database/opcode/034E/\nHas to be looped until it returns true.",
 			"params": [
 				{
 					"type": "Object",
@@ -57490,55 +57490,55 @@
 		"0x2A70BAE8883E4C81": {
 			"name": "IS_POINT_IN_ANGLED_AREA",
 			"jhash": "0x73BCFFDC",
-			"comment": "",
+			"comment": "An angled area is an X-Z oriented rectangle with three parameters:\n1. origin: the mid-point along a base edge of the rectangle;\n2. extent: the mid-point of opposite base edge on the other Z;\n3. width: the length of the base edge; (named derived from logging strings ``CNetworkRoadNodeWorldStateData``).\n\nThe oriented rectangle can then be derived from the direction of the two points (``norm(origin - extent)``), its orthonormal, and the width, e.g:\n1. golf_mp https://i.imgur.com/JhsQAK9.png\n2. am_taxi https://i.imgur.com/TJWCZaT.jpg",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "xPos"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "yPos"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "zPos"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "width"
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "debug"
 				},
 				{
 					"type": "BOOL",
-					"name": "p11"
+					"name": "includeZ"
 				}
 			],
 			"return_type": "BOOL",
@@ -59067,13 +59067,13 @@
 			"build": "323"
 		},
 		"0xD6429A016084F1A5": {
-			"name": "_0xD6429A016084F1A5",
+			"name": "_GET_PICKUP_HASH_FROM_WEAPON",
 			"jhash": "",
-			"comment": "returns CWeapon+0x5B4\n_GET_WEAPON_???",
+			"comment": "Returns the pickup hash for the given weapon hash",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "int",
@@ -59215,9 +59215,9 @@
 			"build": "1604"
 		},
 		"0x3B2FD68DB5F8331C": {
-			"name": "_0x3B2FD68DB5F8331C",
+			"name": "_SET_OBJECT_COLOUR",
 			"jhash": "",
-			"comment": "SET_OBJECT_*",
+			"comment": "Seems to set the colour of the prop. Haven't really tested it on other props.\nOnly appears in am_mp_nightclub.c for the nightclub dancefloor.",
 			"params": [
 				{
 					"type": "Object",
@@ -59226,6 +59226,18 @@
 				{
 					"type": "BOOL",
 					"name": "toggle"
+				},
+				{
+					"type": "int",
+					"name": "r"
+				},
+				{
+					"type": "int",
+					"name": "g"
+				},
+				{
+					"type": "int",
+					"name": "b"
 				}
 			],
 			"return_type": "void",
@@ -60270,7 +60282,7 @@
 		"0x1A5AA1208AF5DB59": {
 			"name": "SET_ROADS_IN_ANGLED_AREA",
 			"jhash": "0xBD088F4B",
-			"comment": "/* Corrected conflicting parameter names */",
+			"comment": "unknown3 is related to `SEND_SCRIPT_WORLD_STATE_EVENT > CNetworkRoadNodeWorldStateData` in networked environments.\nSee IS_POINT_IN_ANGLED_AREA for the definition of an angled area.",
 			"params": [
 				{
 					"type": "float",
@@ -60298,7 +60310,7 @@
 				},
 				{
 					"type": "float",
-					"name": "angle"
+					"name": "width"
 				},
 				{
 					"type": "BOOL",
@@ -60984,7 +60996,7 @@
 		"0x0027501B9F3B407E": {
 			"name": "SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA",
 			"jhash": "0x9DB5D209",
-			"comment": "bool p7 - always 1",
+			"comment": "See IS_POINT_IN_ANGLED_AREA for the definition of an angled area.\nbool p7 - always 1",
 			"params": [
 				{
 					"type": "float",
@@ -61012,7 +61024,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "width"
 				},
 				{
 					"type": "Any",
@@ -66545,7 +66557,7 @@
 		"0x50B56988B170AFDF": {
 			"name": "_SET_PED_EYE_COLOR",
 			"jhash": "",
-			"comment": "Used for freemode (online) characters.\n\nFor some reason, the scripts use a rounded float for the index.",
+			"comment": "Used for freemode (online) characters.\n\nFor some reason, the scripts use a rounded float for the index.\nIndexes:\n1. black\n2. very light blue/green\n3. dark blue\n4. brown\n5. darker brown\n6. light brown\n7. blue\n8. light blue\n9. pink\n10. yellow\n11. purple\n12. black\n13. dark green\n14. light brown\n15. yellow/black pattern\n16. light colored spiral pattern\n17. shiny red\n18. shiny half blue/half red\n19. half black/half light blue\n20. white/red perimter\n21. green snake\n22. red snake\n23. dark blue snake\n24. dark yellow\n25. bright yellow\n26. all black\n28. red small pupil\n29. devil blue/black\n30. white small pupil\n31. glossed over",
 			"params": [
 				{
 					"type": "Ped",
@@ -66848,13 +66860,13 @@
 			"build": "323"
 		},
 		"0x09E7ECA981D9B210": {
-			"name": "_0x09E7ECA981D9B210",
+			"name": "_IS_PED_BODY_BLEMISH_VALID",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "colorId"
 				}
 			],
 			"return_type": "BOOL",
@@ -69222,9 +69234,9 @@
 			"build": "323"
 		},
 		"0x5687C7F05B39E401": {
-			"name": "_0x5687C7F05B39E401",
+			"name": "_SET_FACIAL_CLIPSET_OVERRIDE",
 			"jhash": "",
-			"comment": "SET_PED_?? clipset??",
+			"comment": "Clipsets:\nfacials@gen_female@base\nfacials@gen_male@base\nfacials@p_m_zero@base\n\nTypically followed with [SET_FACIAL_IDLE_ANIM_OVERRIDE](#_0xFFC24B988B938B38):\nmood_drunk_1\nmood_stressed_1\nmood_happy_1\nmood_talking_1\n",
 			"params": [
 				{
 					"type": "Ped",
@@ -72497,9 +72509,9 @@
 			"build": "1493"
 		},
 		"0x637822DC2AFEEBF8": {
-			"name": "_0x637822DC2AFEEBF8",
+			"name": "_CLEAR_FACIAL_CLIPSET_OVERRIDE",
 			"jhash": "",
-			"comment": "Deletes cped+1280 ref\nREMOVE_PED_??",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -85170,7 +85182,7 @@
 		"0x8C95333CFC3340F3": {
 			"name": "SET_PED_POPULATION_BUDGET",
 			"jhash": "0xD2D026CD",
-			"comment": "",
+			"comment": "Control how many new (ambient?) peds will spawn in the game world.\nRange for p0 seems to be 0-3, where 0 is none and 3 is the normal level.",
 			"params": [
 				{
 					"type": "int",
@@ -85455,38 +85467,38 @@
 		"0x212A8D0D2BABFAC2": {
 			"name": "NEW_LOAD_SCENE_START",
 			"jhash": "0xDF9C38B6",
-			"comment": "",
+			"comment": "`radius` value is usually between `3f` and `7000f` in original 1868 scripts.\n`p7` is 0, 1, 2, 3 or 4 used in decompiled scripts, 0 is by far the most common.\nReturns True if success, used only 7 times in decompiled scripts of 1868",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "posX"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "posY"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "posZ"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "offsetX"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "offsetY"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "offsetZ"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				}
 			],
@@ -95475,7 +95487,7 @@
 		"0xBB40DD2270B65366": {
 			"name": "GET_PED_IN_VEHICLE_SEAT",
 			"jhash": "0x388FDE9A",
-			"comment": "-1 (driver) <= index < GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle)",
+			"comment": "If there is no ped in the seat, and the game considers the vehicle as ambient population, this will create a random occupant ped in the seat, which may be cleaned up by the game fairly soon if not marked as script-owned mission entity.\n\nSeat indexes:\n-1 = Driver\n0 = Front Right Passenger\n1 = Back Left Passenger\n2 = Back Right Passenger\n3 = Further Back Left Passenger (vehicles > 4 seats)\n4 = Further Back Right Passenger (vehicles > 4 seats)\netc.\n\nIf p2 is true it uses a different GetOccupant function.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -95483,10 +95495,10 @@
 				},
 				{
 					"type": "int",
-					"name": "index"
+					"name": "seatIndex"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -96612,11 +96624,11 @@
 		"0xFD813BB7DB977F20": {
 			"name": "SWITCH_TRAIN_TRACK",
 			"jhash": "0x68BFDD61",
-			"comment": "",
+			"comment": "Toggles whether ambient trains can spawn on the specified track or not\n\n`trackId` is the internal id of the train track to switch.\n`state` is whether ambient trains can spawn or not\n\ntrackIds\n0 (`trains1.dat`) Main track around SA\n1 (`trains2.dat`) Davis Quartz Quarry branch\n2 (`trains3.dat`) Second track alongside live track along Roy Lewenstein Blv.\n3 (`trains4.dat`) Metro track circuit\n4 (`trains5.dat`) Branch in Mirror Park Railyard\n5 (`trains6.dat`) Branch in Mirror Park Railyard\n6 (`trains7.dat`) LS branch to Mirror Park Railyard\n7 (`trains8.dat`) Overground part of metro track along Forum Dr.\n8 (`trains9.dat`) Branch to Mirror Park Railyard\n9 (`trains10.dat`) Yankton train\n10 (`trains11.dat`) Part of metro track near mission row\n11 (`trains12.dat`) Yankton prologue mission train",
 			"params": [
 				{
 					"type": "int",
-					"name": "intersectionId"
+					"name": "trackId"
 				},
 				{
 					"type": "BOOL",
@@ -99609,7 +99621,7 @@
 		"0x46E571A0E20D01F1": {
 			"name": "IS_VEHICLE_WINDOW_INTACT",
 			"jhash": "0xAC4EF23D",
-			"comment": "",
+			"comment": "This will return false if the window is broken, or rolled down.\nWindow indexes:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window\n\n\nThose numbers go on for vehicles that have more than 4 doors with windows.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100426,9 +100438,9 @@
 			"build": "323"
 		},
 		"0x6DEE944E1EE90CFB": {
-			"name": "_SET_VEHICLE_WHEEL_UNK",
+			"name": "_SET_VEHICLE_REDUCE_TRACTION",
 			"jhash": "",
-			"comment": "Does something with wheels. val is 0-3",
+			"comment": "val is 0-3\nOften used in conjunction with: SET_VEHICLE_REDUCE_GRIP",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101768,7 +101780,7 @@
 		"0xBAA045B4E42F3C06": {
 			"name": "_SET_VEHICLE_MAX_SPEED",
 			"jhash": "",
-			"comment": "",
+			"comment": "To reset the max speed, set the `speed` value to `0.0` or lower.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101952,17 +101964,17 @@
 			"build": "323"
 		},
 		"0xF488C566413B4232": {
-			"name": "_0xF488C566413B4232",
+			"name": "_SET_BOAT_BOOM_POSITION_RATIO",
 			"jhash": "0xA25CCB8C",
-			"comment": "",
+			"comment": "Sets the boat boom position for the `TR3` trailer.\nRatio value is between `0.0` and `1.0`, where `0.0` is 90 degrees to the left of the boat, and `1.0` is just slightly to the right/back of the boat.\nTo get the current boom position ratio, use GET_BOAT_BOOM_POSITION_RATIO",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "ratio"
 				}
 			],
 			"return_type": "void",
@@ -103322,19 +103334,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Ped",
+					"name": "owner"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1011"
 		},
 		"0xE05DD0E9707003A3": {
@@ -105225,7 +105237,7 @@
 		"0x544996C0081ABDEB": {
 			"name": "_SET_OPPRESSOR_TRANSFORM_STATE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Set state to true to extend the wings, false to retract them.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105289,7 +105301,7 @@
 		"0x75627043C6AA90AD": {
 			"name": "_DISABLE_VEHICLE_WORLD_COLLISION",
 			"jhash": "",
-			"comment": "Disables vehicle world collision",
+			"comment": "Disables collision for this vehicle (maybe it also supports other entities, not sure).\nOnly world/building/fixed world objects will have their collisions disabled, props, peds, or any other entity still collides with the vehicle.\nExample: https://streamable.com/6n45d5\nNot sure if there is a native (and if so, which one) that resets the collisions.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105471,7 +105483,7 @@
 		"0x51F30DB60626A20E": {
 			"name": "_0x51F30DB60626A20E",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used in decompiled scripts in combination with _GET_VEHICLE_SUSPENSION_BOUNDS\np7 is usually 2\np8 is usually 1",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105479,27 +105491,27 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "rotX"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "rotY"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "rotZ"
 				},
 				{
 					"type": "int",
@@ -105612,9 +105624,9 @@
 			"build": "1290"
 		},
 		"0x8DC9675797123522": {
-			"name": "_GET_NEARBY_AIR_POSITION_FOR_PED",
+			"name": "_FIND_RANDOM_POINT_IN_SPACE",
 			"jhash": "",
-			"comment": "Returns a position nearby in the air",
+			"comment": "Native is significantly more complicated than simply generating a random vector & length.\nThe 'point' is either 400.0 or 250.0 units away from the Ped's current coordinates; and paths into functions like rage::grcViewport___IsSphereVisible",
 			"params": [
 				{
 					"type": "Ped",
@@ -105625,9 +105637,9 @@
 			"build": "1290"
 		},
 		"0xB251E0B33E58B424": {
-			"name": "_0xB251E0B33E58B424",
+			"name": "_SET_DEPLOY_HELI_STUB_WINGS",
 			"jhash": "",
-			"comment": "Does something with doors 0x23a and 0x23b\n_SET_VEHICLE_DOOR_???",
+			"comment": "Only used with the \"akula\" in the decompiled native scripts.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105646,9 +105658,9 @@
 			"build": "1290"
 		},
 		"0xAEF12960FA943792": {
-			"name": "_0xAEF12960FA943792",
+			"name": "_ARE_HELI_STUB_WINGS_DEPLOYED",
 			"jhash": "",
-			"comment": "Checks for something with doors 0x23a and 0x23b\n_IS_VEHICLE_DOOR_???",
+			"comment": "Only used with the \"akula\" in the decompiled native scripts.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105714,7 +105726,7 @@
 			"build": "1365"
 		},
 		"0xE615BB7A7752C76A": {
-			"name": "_DISABLE_VEHICLE_TURRET_MOVE_THIS_FRAME",
+			"name": "_SET_DISABLE_TURRET_MOVEMENT_THIS_FRAME",
 			"jhash": "",
 			"comment": "Disables turret movement when called in a loop. You can still fire and aim. You cannot shoot backwards though.",
 			"params": [
@@ -106626,7 +106638,7 @@
 		"0x475768A975D5AD17": {
 			"name": "IS_PED_ARMED",
 			"jhash": "0x0BFC892C",
-			"comment": "p1 is anywhere from 4 to 7 in the scripts. Might be a weapon wheel group?\n\n^It's kinda like that. \n7 returns true if you are equipped with any weapon except your fists.\n6 returns true if you are equipped with any weapon except melee weapons.\n5 returns true if you are equipped with any weapon except the Explosives weapon group.\n4 returns true if you are equipped with any weapon except Explosives weapon group AND melee weapons.\n3 returns true if you are equipped with either Explosives or Melee weapons (the exact opposite of 4).\n2 returns true only if you are equipped with any weapon from the Explosives weapon group.\n1 returns true only if you are equipped with any Melee weapon.\n0 never returns true.\n\nNote: When I say \"Explosives weapon group\", it does not include the Jerry can and Fire Extinguisher.",
+			"comment": "Checks if the ped is currently equipped with a weapon matching a bit specified using a bitwise-or in typeFlags.\n\nType flag bit values:\n1 = Melee weapons\n2 = Explosive weapons\n4 = Any other weapons\n\nNot specifying any bit will lead to the native *always* returning 'false', and for example specifying '4 | 2' will check for any weapon except fists and melee weapons.\n7 returns true if you are equipped with any weapon except your fists.\n6 returns true if you are equipped with any weapon except melee weapons.\n5 returns true if you are equipped with any weapon except the Explosives weapon group.\n4 returns true if you are equipped with any weapon except Explosives weapon group AND melee weapons.\n3 returns true if you are equipped with either Explosives or Melee weapons (the exact opposite of 4).\n2 returns true only if you are equipped with any weapon from the Explosives weapon group.\n1 returns true only if you are equipped with any Melee weapon.\n0 never returns true.\n\nNote: When I say \"Explosives weapon group\", it does not include the Jerry can and Fire Extinguisher.",
 			"params": [
 				{
 					"type": "Ped",
@@ -106634,7 +106646,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "typeFlags"
 				}
 			],
 			"return_type": "BOOL",
@@ -107407,7 +107419,7 @@
 		"0xFC52E0F37E446528": {
 			"name": "REMOVE_ALL_PROJECTILES_OF_TYPE",
 			"jhash": "0xA5F89919",
-			"comment": "p1 seems always to be 0",
+			"comment": "If `explode` true, then removal is done through exploding the projectile. Basically the same as EXPLODE_PROJECTILES but without defining the owner ped.",
 			"params": [
 				{
 					"type": "Hash",
@@ -107415,7 +107427,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "explode"
 				}
 			],
 			"return_type": "void",
@@ -107660,7 +107672,7 @@
 				},
 				{
 					"type": "float",
-					"name": "heading"
+					"name": "scale"
 				},
 				{
 					"type": "Any",
@@ -108125,9 +108137,9 @@
 			"build": "323"
 		},
 		"0x4757F00BC6323CFE": {
-			"name": "_SET_WEAPON_DAMAGE_MODIFIER",
+			"name": "_SET_WEAPON_DAMAGE_MODIFIER_THIS_FRAME",
 			"jhash": "",
-			"comment": "",
+			"comment": "Changes the weapon damage output by the given multiplier value. Must be run every frame.",
 			"params": [
 				{
 					"type": "Hash",
@@ -108135,7 +108147,7 @@
 				},
 				{
 					"type": "float",
-					"name": "damageAmount"
+					"name": "damageMultiplier"
 				}
 			],
 			"return_type": "void",
