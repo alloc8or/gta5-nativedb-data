@@ -1089,7 +1089,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
 					"type": "const char*",
@@ -1206,7 +1206,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -2149,19 +2149,19 @@
 		"0xEE066C7006C49C0A": {
 			"name": "PLAY_ANIMAL_VOCALIZATION",
 			"jhash": "0x498849F3",
-			"comment": "",
+			"comment": "Plays sounds from a ped with chop model. For example it used to play bark or sniff sounds. p1 is always 3 or 4294967295 in decompiled scripts. By a quick disassembling I can assume that this arg is unused.\nThis native is works only when you call it on the ped with right model (ac_chop only ?)\nSpeech Name can be: CHOP_SNIFF_SEQ CHOP_WHINE CHOP_LICKS_MOUTH CHOP_PANT bark GROWL SNARL BARK_SEQ",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "pedHandle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "speechName"
 				}
 			],
 			"return_type": "void",
@@ -2827,14 +2827,14 @@
 		"0xC64A06D939F826F5": {
 			"name": "_0xC64A06D939F826F5",
 			"jhash": "",
-			"comment": "GET_NE*",
+			"comment": "GET_NE*\nGets values from the radio?",
 			"params": [
 				{
 					"type": "float*",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
+					"type": "float*",
 					"name": "p1"
 				},
 				{
@@ -2846,9 +2846,9 @@
 			"build": "1493"
 		},
 		"0x3E65CDE5215832C1": {
-			"name": "_0x3E65CDE5215832C1",
+			"name": "_GET_RADIO_STATION_HASH",
 			"jhash": "",
-			"comment": "GET_CURRENT_*",
+			"comment": "Seems to return hashed radio station name?",
 			"params": [
 				{
 					"type": "const char*",
@@ -3572,7 +3572,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -4269,7 +4269,7 @@
 		"0x0653B735BFBDFE87": {
 			"name": "_0x0653B735BFBDFE87",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets CPed+C46\nSET_PED_??",
 			"params": [
 				{
 					"type": "Ped",
@@ -4286,7 +4286,7 @@
 		"0x29DA3CA8D8B2692D": {
 			"name": "_0x29DA3CA8D8B2692D",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets ped+c47 (def 1)\nSET_PED_??",
 			"params": [
 				{
 					"type": "Ped",
@@ -7303,7 +7303,7 @@
 		"0xB1381B97F70C7B30": {
 			"name": "_0xB1381B97F70C7B30",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets flag on cinematic camera +3A0 |= 4",
 			"params": [],
 			"return_type": "void",
 			"build": "1180"
@@ -7652,9 +7652,9 @@
 			"build": "791"
 		},
 		"0x425A920FDB9A0DDA": {
-			"name": "_0x425A920FDB9A0DDA",
+			"name": "_SET_GAMEPLAY_CAM",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets GameplayCamera+6e0 to Hash(string)",
 			"params": [
 				{
 					"type": "const char*",
@@ -7675,10 +7675,10 @@
 		"0x5C90CAB09951A12F": {
 			"name": "_0x5C90CAB09951A12F",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets gameplay camera+63c?",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -8372,7 +8372,7 @@
 		"0xF4F2C0D4EE209E20": {
 			"name": "INVALIDATE_IDLE_CAM",
 			"jhash": "0xD75CDD75",
-			"comment": "",
+			"comment": "Resets the idle camera timer. Calling that in a loop once every few seconds is enough to disable the idle cinematic camera.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -8505,7 +8505,7 @@
 		"0xF5F1E89A970B7796": {
 			"name": "_0xF5F1E89A970B7796",
 			"jhash": "",
-			"comment": "",
+			"comment": "Tests some cinematic camera flags",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1493"
@@ -11653,7 +11653,7 @@
 		"0xAFBD61CC738D9EB9": {
 			"name": "GET_ENTITY_ROTATION",
 			"jhash": "0x8FF45B04",
-			"comment": "rotationOrder refers to the order yaw pitch roll is applied\nvalue ranges from 0 to 5. What you use for rotationOrder when getting must be the same as rotationOrder when setting the rotation. \nUnsure what value corresponds to what rotation order, more testing will be needed for that.\n------\nrotationOrder is usually 2 in scripts\n------\nENTITY::GET_ENTITY_ROTATION(Any p0, false or true);\nif false than return from -180 to 180\nif true than return from -90 to 90\n\n---\n\nAs said above, the value of p1 affects the outcome. R* uses 1 and 2 instead of 0 and 1, so I marked it as an int.\n\nWhat it returns is the yaw on the z part of the vector, which makes sense considering R* considers z as vertical. Here's a picture for those of you who don't understand pitch, yaw, and roll:\n\nwww.allstar.fiu.edu/aero/images/pic5-1.gif\n\nI don't know why it returns a Vec3, but sometimes the values x and y go negative, yet they're always zero. Just use GET_ENTITY_PITCH and GET_ENTITY_ROLL for pitch and roll.",
+			"comment": "rotationOrder is the order yaw, pitch and roll is applied. Usually 2. Returns a vector where the Z coordinate is the yaw.\n\nrotationOrder refers to the order yaw pitch roll is applied; value ranges from 0 to 5 and is usually *2* in scripts.\nWhat you use for rotationOrder when getting must be the same as rotationOrder when setting the rotation.\n\nWhat it returns is the yaw on the z part of the vector, which makes sense considering R* considers z as vertical. Here's a picture for those of you who don't understand pitch, yaw, and roll: www.allstar.fiu.edu/aero/images/pic5-1.gif\n\nRotation Orders:\n0: ZYX - Rotate around the z-axis, then the y-axis and finally the x-axis.\n1: YZX - Rotate around the y-axis, then the z-axis and finally the x-axis.\n2: ZXY - Rotate around the z-axis, then the x-axis and finally the y-axis.\n3: XZY - Rotate around the x-axis, then the z-axis and finally the y-axis.\n4: YXZ - Rotate around the y-axis, then the x-axis and finally the z-axis.\n5: XYZ - Rotate around the x-axis, then the y-axis and finally the z-axis.",
 			"params": [
 				{
 					"type": "Entity",
@@ -14194,7 +14194,7 @@
 		"0x57C5DB656185EAC4": {
 			"name": "SET_ENTITY_TRAFFICLIGHT_OVERRIDE",
 			"jhash": "0xC47F5B91",
-			"comment": "Example here: www.gtaforums.com/topic/830463-help-with-turning-lights-green-and-causing-peds-to-crash-into-each-other/#entry1068211340\n\n0 = green\n1 = red\n2 = yellow\nchanging lights may not change the behavior of vehicles",
+			"comment": "Example here: www.gtaforums.com/topic/830463-help-with-turning-lights-green-and-causing-peds-to-crash-into-each-other/#entry1068211340\n\n0 = green\n1 = red\n2 = yellow\n3 = reset changes\nchanging lights may not change the behavior of vehicles",
 			"params": [
 				{
 					"type": "Entity",
@@ -14318,7 +14318,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "model"
+					"name": "modelHash"
 				},
 				{
 					"type": "BOOL",
@@ -14351,7 +14351,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "model"
+					"name": "modelHash"
 				},
 				{
 					"type": "BOOL",
@@ -14364,30 +14364,30 @@
 		"0xD9E3006FB3CBD765": {
 			"name": "REMOVE_MODEL_HIDE",
 			"jhash": "0x993DBC10",
-			"comment": "",
+			"comment": "This native makes entities visible that are hidden by the native CREATE_MODEL_HIDE.\np5 should be false, true does nothing",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -14676,15 +14676,15 @@
 		"0x68B562E124CC0AEF": {
 			"name": "_0x68B562E124CC0AEF",
 			"jhash": "",
-			"comment": "",
+			"comment": "Puts pickup2 ptr into pickup+0x300",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Pickup",
+					"name": "pickup"
 				}
 			],
 			"return_type": "void",
@@ -14727,15 +14727,15 @@
 		"0xD7B80E7C3BEFC396": {
 			"name": "_0xD7B80E7C3BEFC396",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets 32nd bit of pickup+188\nSET_PICKUP_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -16742,7 +16742,7 @@
 		"0x29280002282F1928": {
 			"name": "_DRAW_SPRITE_POLY",
 			"jhash": "",
-			"comment": "Used for drawling Deadline trailing lights, see deadline.ytd\n\np15 through p23 are values that appear to be related to illiumation, scaling, and rotation; more testing required.",
+			"comment": "Used for drawling Deadline trailing lights, see deadline.ytd\n\np15 through p23 are values that appear to be related to illiumation, scaling, and rotation; more testing required.\nFor UVW mapping (u,v,w parameters), reference your favourite internet resource for more details.",
 			"params": [
 				{
 					"type": "float",
@@ -16806,39 +16806,39 @@
 				},
 				{
 					"type": "float",
-					"name": "p15"
+					"name": "u1"
 				},
 				{
 					"type": "float",
-					"name": "p16"
+					"name": "v1"
 				},
 				{
 					"type": "float",
-					"name": "p17"
+					"name": "w1"
 				},
 				{
 					"type": "float",
-					"name": "p18"
+					"name": "u2"
 				},
 				{
 					"type": "float",
-					"name": "p19"
+					"name": "v2"
 				},
 				{
 					"type": "float",
-					"name": "p20"
+					"name": "w2"
 				},
 				{
 					"type": "float",
-					"name": "p21"
+					"name": "u3"
 				},
 				{
 					"type": "float",
-					"name": "p22"
+					"name": "v3"
 				},
 				{
 					"type": "float",
-					"name": "p23"
+					"name": "w3"
 				}
 			],
 			"return_type": "void",
@@ -16847,7 +16847,7 @@
 		"0x736D7AA1B750856B": {
 			"name": "_DRAW_SPRITE_POLY_2",
 			"jhash": "",
-			"comment": "Used for drawling Deadline trailing lights, see deadline.ytd\n\nEach vertex has its own colour that is blended/illuminated on the texture. Additionally, the R, G, and B components are floats that are int-casted internally.",
+			"comment": "Used for drawling Deadline trailing lights, see deadline.ytd\n\nEach vertex has its own colour that is blended/illuminated on the texture. Additionally, the R, G, and B components are floats that are int-casted internally.\nFor UVW mapping (u,v,w parameters), reference your favourite internet resource for more details.",
 			"params": [
 				{
 					"type": "float",
@@ -16943,39 +16943,39 @@
 				},
 				{
 					"type": "float",
-					"name": "p23"
+					"name": "u1"
 				},
 				{
 					"type": "float",
-					"name": "p24"
+					"name": "v1"
 				},
 				{
 					"type": "float",
-					"name": "p25"
+					"name": "w1"
 				},
 				{
 					"type": "float",
-					"name": "p26"
+					"name": "u2"
 				},
 				{
 					"type": "float",
-					"name": "p27"
+					"name": "v2"
 				},
 				{
 					"type": "float",
-					"name": "p28"
+					"name": "w2"
 				},
 				{
 					"type": "float",
-					"name": "p29"
+					"name": "u3"
 				},
 				{
 					"type": "float",
-					"name": "p30"
+					"name": "v3"
 				},
 				{
 					"type": "float",
-					"name": "p31"
+					"name": "w3"
 				}
 			],
 			"return_type": "void",
@@ -17939,7 +17939,7 @@
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "diameter"
 				},
 				{
 					"type": "int",
@@ -18479,51 +18479,51 @@
 		"0x2D3B147AFAD49DE0": {
 			"name": "_0x2D3B147AFAD49DE0",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used in arcade games and Beam hack minigame in Doomsday Heist. I will most certainly dive into this to try replicate arcade games.\nx position must be between 0.0 and 1.0 (1.0 being the most right side of the screen)\ny position must be between 0.0 and 1.0 (1.0 being the most bottom side of the screen)\nwidth 0.0 - 1.0 is the reasonable amount generally\nheight 0.0 - 1.0 is the reasonable amount generally\np6 almost always 0.0\np11 seems to be unknown but almost always 0 int",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "textureDict"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "textureName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "width"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "height"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "blue"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "int",
+					"name": "alpha"
 				},
 				{
 					"type": "Any",
@@ -18883,9 +18883,9 @@
 			"build": "1734"
 		},
 		"0xAFF33B1178172223": {
-			"name": "_SET_BINK_MOVIE_UNK",
+			"name": "_SET_BINK_MOVIE_VOLUME",
 			"jhash": "",
-			"comment": "",
+			"comment": "binkMovie is 1-8. Has something to do with bink volume? (audRequestedSettings::SetVolumeCurveScale)",
 			"params": [
 				{
 					"type": "int",
@@ -19218,24 +19218,24 @@
 			"build": "323"
 		},
 		"0x95EB5E34F821BABE": {
-			"name": "_0x95EB5E34F821BABE",
+			"name": "_OVERRIDE_PED_BADGE_TEXTURE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Overriding ped badge texture to a passed texture. It's synced between players (even custom textures!), don't forget to request used dict on *all* clients to make it sync properly. Can be removed by passing empty strings.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "txd"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "txn"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "877"
 		},
 		"0xE2892E7E55D7073A": {
@@ -19302,9 +19302,9 @@
 			"build": "323"
 		},
 		"0xE2B187C0939B3D32": {
-			"name": "_0xE2B187C0939B3D32",
+			"name": "_SET_ARTIFICIAL_LIGHTS_STATE_AFFECT_VEHICLES",
 			"jhash": "",
-			"comment": "",
+			"comment": "If \"blackout\" is enabled, this native allows you to ignore \"blackout\" for vehicles.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -20023,7 +20023,7 @@
 		"0x9CFDD90B2B844BF7": {
 			"name": "GOLF_TRAIL_SET_SHADER_PARAMS",
 			"jhash": "0x4EA70FB4",
-			"comment": "",
+			"comment": "Only appeared in Golf & Golf_mp. Parameters were all ptrs",
 			"params": [
 				{
 					"type": "float",
@@ -20149,7 +20149,7 @@
 		"0x0C8FAC83902A62DF": {
 			"name": "_SEETHROUGH_SET_MAX_THICKNESS",
 			"jhash": "",
-			"comment": "min: 1.0\nmax: 10000.0",
+			"comment": "0.0 = you will not be able to see people behind the walls. 50.0 and more = you will see everyone through the walls. More value is \"better\" view. See https://gfycat.com/FirmFlippantGourami\nmin: 1.0\nmax: 10000.0",
 			"params": [
 				{
 					"type": "float",
@@ -20354,7 +20354,7 @@
 		"0x7B226C785A52A0A9": {
 			"name": "IS_SCREENBLUR_FADE_RUNNING",
 			"jhash": "0x926B8734",
-			"comment": "",
+			"comment": "Returns is transition to blur/from blur is running.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -20411,19 +20411,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "nearplaneOut"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "nearplaneIn"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "farplaneOut"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "farplaneIn"
 				}
 			],
 			"return_type": "void",
@@ -20827,64 +20827,64 @@
 			"build": "323"
 		},
 		"0x02B1F2A72E0F5325": {
-			"name": "_0x02B1F2A72E0F5325",
+			"name": "_START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY_BONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "effectName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "boneIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "scale"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "BOOL",
+					"name": "axisX"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "BOOL",
+					"name": "axisY"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "BOOL",
+					"name": "axisZ"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2189"
 		},
 		"0x26143A59EF48B262": {
@@ -22915,27 +22915,27 @@
 		"0x2FCB133CA50A49EB": {
 			"name": "_0x2FCB133CA50A49EB",
 			"jhash": "",
-			"comment": "",
+			"comment": "val is 0-0x13\nSET_???",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "val"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1290"
 		},
 		"0x86255B1FC929E33E": {
 			"name": "_0x86255B1FC929E33E",
 			"jhash": "",
-			"comment": "",
+			"comment": "val is 1-0x14. Return is related to INSTRUCTIONAL_BUTTONS, COLOUR_SWITCHER_02, etc?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "val"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1290"
 		},
 		"0x0C1C5D756FB5F337": {
@@ -26128,7 +26128,7 @@
 		"0x7669F9E39DC17063": {
 			"name": "_0x7669F9E39DC17063",
 			"jhash": "0xC380AC85",
-			"comment": "DISPLAY_HUD_*",
+			"comment": "DISPLAY_HUD_*\nEnables drawing some hud components, such as help labels, this frame, when the player is dead.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -27069,7 +27069,7 @@
 		"0xD484BF71050CA1EE": {
 			"name": "_0xD484BF71050CA1EE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Allocates something in an \"unknown\" pool",
 			"params": [
 				{
 					"type": "Any",
@@ -27879,7 +27879,7 @@
 			"build": "323"
 		},
 		"0xCD6524439909C979": {
-			"name": "_0xCD6524439909C979",
+			"name": "_SET_BLIP_SCALE_TRANSFORMATION",
 			"jhash": "",
 			"comment": "SET_BLIP_*",
 			"params": [
@@ -27889,11 +27889,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "xScale"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "yScale"
 				}
 			],
 			"return_type": "void",
@@ -27936,7 +27936,7 @@
 		"0x234CDD44D996FD9A": {
 			"name": "SET_BLIP_CATEGORY",
 			"jhash": "0xEF72F533",
-			"comment": "int index:\n\n1 = No Text on blip or Distance\n2 = Text on blip\n3 = No text, just distance\n4+ No Text on blip or distance",
+			"comment": "Index:\n1 = No distance shown in legend\n2 = Distance shown in legend\n7 = \"Other Players\" category, also shows distance in legend\n10 = \"Property\" category\n11 = \"Owned Property\" category\n\nAny other value behaves like index = 1, index wraps around after 255\nBlips with categories 7, 10 or 11 will all show under the specific categories listing in the map legend, regardless of sprite or name.\nLegend entries:\n7 = Other Players (BLIP_OTHPLYR)\n10 = Property (BLIP_PROPCAT)\n11 = Owned Property (BLIP_APARTCAT)\n\nCategory needs to be `7` in order for blip names to show on the expanded minimap when using DISPLAY_PLAYER_NAME_TAGS_ON_BLIPS.",
 			"params": [
 				{
 					"type": "Blip",
@@ -28196,15 +28196,15 @@
 		"0x25615540D894B814": {
 			"name": "SET_RADIUS_BLIP_EDGE",
 			"jhash": "0x40E25DB8",
-			"comment": "",
+			"comment": "Enabling this on a radius blip will make it outline only. See https://cdn.discordapp.com/attachments/553235301632573459/575132227935928330/unknown.png",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -28374,8 +28374,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				}
 			],
 			"return_type": "void",
@@ -28392,19 +28392,19 @@
 		"0x75A9A10948D1DEA6": {
 			"name": "SET_MINIMAP_COMPONENT",
 			"jhash": "0x419DCDC4",
-			"comment": "p2 appears to be always -1.",
+			"comment": "p2 appears to be always -1. If p2 is -1 then native wouldn't change the color. See https://gfycat.com/SkinnyPinkChupacabra",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "componentId"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "overrideColor"
 				}
 			],
 			"return_type": "Any",
@@ -28842,7 +28842,7 @@
 		"0x72C1056D678BB7D8": {
 			"name": "_HUD_WEAPON_WHEEL_SET_SLOT_HASH",
 			"jhash": "0x83B608A0",
-			"comment": "",
+			"comment": "Seems to automatically select the weapon on the corresponding slot in the weapon selection wheel",
 			"params": [
 				{
 					"type": "Hash",
@@ -30050,7 +30050,7 @@
 		"0x613ED644950626AE": {
 			"name": "SET_MP_GAMER_TAG_COLOUR",
 			"jhash": "0x7E3AA40A",
-			"comment": "Ranges from 0 to 255. 0 is grey health bar, ~50 yellow, 200 purple.",
+			"comment": "Sets a gamer tag's component colour\n\ngamerTagId is obtained using for example CREATE_FAKE_MP_GAMER_TAG\nRanges from 0 to 255. 0 is grey health bar, ~50 yellow, 200 purple.",
 			"params": [
 				{
 					"type": "int",
@@ -30058,11 +30058,11 @@
 				},
 				{
 					"type": "int",
-					"name": "flag"
+					"name": "component"
 				},
 				{
 					"type": "int",
-					"name": "color"
+					"name": "hudColorIndex"
 				}
 			],
 			"return_type": "void",
@@ -30075,11 +30075,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "headDisplayId"
+					"name": "gamerTagId"
 				},
 				{
 					"type": "int",
-					"name": "color"
+					"name": "hudColorIndex"
 				}
 			],
 			"return_type": "void",
@@ -30497,7 +30497,7 @@
 		"0x81DF9ABA6C83DFF9": {
 			"name": "_GET_WARNING_MESSAGE_TITLE_HASH",
 			"jhash": "",
-			"comment": "",
+			"comment": "Has to do with the confirmation overlay (E.g. confirm exit)",
 			"params": [],
 			"return_type": "Hash",
 			"build": "1290"
@@ -30644,13 +30644,13 @@
 			"build": "463"
 		},
 		"0x82CEDC33687E1F50": {
-			"name": "_0x82CEDC33687E1F50",
+			"name": "DISPLAY_PLAYER_NAME_TAGS_ON_BLIPS",
 			"jhash": "0x2F28F0A6",
-			"comment": "",
+			"comment": "Toggles whether or not name labels are shown on the expanded minimap next to player blips, like in GTA:O.\nDoesn't need to be called every frame.\nPreview: https://i.imgur.com/DfqKWfJ.png\n\nMake sure to call SET_BLIP_CATEGORY with index 7 for this to work on the desired blip.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -31051,11 +31051,11 @@
 			"build": "323"
 		},
 		"0x2E22FEFA0100275E": {
-			"name": "_0x2E22FEFA0100275E",
+			"name": "_GET_MENU_STATE_CHANGED_THIS_FRAME",
 			"jhash": "0x96863460",
-			"comment": "",
+			"comment": "It returns a true value for only for one tick when the menu state(?) changes",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x0CF54F20DE43879C": {
@@ -31072,38 +31072,38 @@
 			"build": "323"
 		},
 		"0x36C1451A88A09630": {
-			"name": "_0x36C1451A88A09630",
+			"name": "_GET_PAUSE_MENU_SELECTION",
 			"jhash": "0x8543AAC8",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "int*",
+					"name": "lastItemMenuId"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "selectedItemUniqueId"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x7E17BE53E1AAABAF": {
-			"name": "_0x7E17BE53E1AAABAF",
+			"name": "_GET_PAUSE_MENU_SELECTION_DATA",
 			"jhash": "0x6025AA2F",
-			"comment": "",
+			"comment": "lastItemMenuId: this is the menuID of the last selected item minus 1000 (lastItem.menuID - 1000)\nselectedItemMenuId: same as lastItemMenuId except for the currently selected menu item\nselectedItemUniqueId: this is uniqueID of the currently selected menu item\n\nwhen the pausemenu is closed:\nlastItemMenuId = -1\nselectedItemMenuId = -1\nselectedItemUniqueId = 0\n\nwhen the header gains focus:\nlastItemMenuId updates as normal or 0 if the pausemenu was just opened\nselectedItemMenuId becomes a unique id for the pausemenu page that focus was taken from (?) or 0 if the pausemenu was just opened\nselectedItemUniqueId = -1\n\nwhen focus is moved from the header to a pausemenu page:\nlastItemMenuId becomes a unique id for the pausemenu page that focus was moved to (?)\nselectedItemMenuId = -1\nselectedItemUniqueId updates as normal",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "int*",
+					"name": "lastItemMenuId"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "selectedItemMenuId"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "int*",
+					"name": "selectedItemUniqueId"
 				}
 			],
 			"return_type": "void",
@@ -31906,13 +31906,13 @@
 			"build": "323"
 		},
 		"0x85D5422B2039A70D": {
-			"name": "_0x85D5422B2039A70D",
+			"name": "_CLEAR_INTERIOR_FOR_ENTITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Immediately removes entity from an interior. Like sets entity to `limbo` room.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -31995,11 +31995,11 @@
 			"build": "323"
 		},
 		"0xE7D267EC6CA966C3": {
-			"name": "_0xE7D267EC6CA966C3",
+			"name": "_GET_INTERIOR_FROM_GAMEPLAY_CAM",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns the current interior id from gameplay camera",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1604"
 		},
 		"0xB0F7F8663821D9C3": {
@@ -33061,10 +33061,10 @@
 		"0x0CF97F497FE7D048": {
 			"name": "_0x0CF97F497FE7D048",
 			"jhash": "",
-			"comment": "",
+			"comment": "0 as param = weird black and green screen\n0.1 - 0.99 = Prevent rain effect from falling (still sound and effects on puddles) and prevent puddles from increase/decrease, seems than it prevent any weather change too\n1 and more = \"Unfreeze\" rain puddles but clear weather too\nWhen 'freezing' is enabled, it seem to also freeze value getted with GetRainLevel",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				}
 			],
@@ -33370,7 +33370,7 @@
 		"0xEB0F4468467B4528": {
 			"name": "SET_WIND_DIRECTION",
 			"jhash": "0x381AEEE9",
-			"comment": "",
+			"comment": "The wind direction in radians\n180 degrees, wind will blow from the south",
 			"params": [
 				{
 					"type": "float",
@@ -33613,7 +33613,7 @@
 		"0xC906A7DAB05C8D2B": {
 			"name": "GET_GROUND_Z_FOR_3D_COORD",
 			"jhash": "0xA1BFD5E0",
-			"comment": "Gets the ground elevation at the specified position. Note that if the specified position is below ground level, the function will output zero!\n\nx: Position on the X-axis to get ground elevation at.\ny: Position on the Y-axis to get ground elevation at.\nz: Position on the Z-axis to get ground elevation at.\ngroundZ: The ground elevation at the specified position.\nunk: Nearly always 0, very rarely 1 in the scripts.",
+			"comment": "Gets the ground elevation at the specified position. Note that if the specified position is below ground level, the function will output zero!\n\nx: Position on the X-axis to get ground elevation at.\ny: Position on the Y-axis to get ground elevation at.\nz: Position on the Z-axis to get ground elevation at.\ngroundZ: The ground elevation at the specified position.\nignoreWater: Nearly always 0, very rarely 1 in the scripts: https://gfycat.com/NiftyTatteredCricket.",
 			"params": [
 				{
 					"type": "float",
@@ -33633,7 +33633,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unk"
+					"name": "ignoreWater"
 				},
 				{
 					"type": "BOOL",
@@ -34127,59 +34127,59 @@
 		"0xF2F6A2FA49278625": {
 			"name": "SLERP_NEAR_QUATERNION",
 			"jhash": "0x87B92190",
-			"comment": "",
+			"comment": "This native always come right before SET_ENTITY_QUATERNION where its final 4 parameters are SLERP_NEAR_QUATERNION p9 to p12",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "t"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "w"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "w1"
 				},
 				{
 					"type": "float*",
-					"name": "p9"
+					"name": "outX"
 				},
 				{
 					"type": "float*",
-					"name": "p10"
+					"name": "outY"
 				},
 				{
 					"type": "float*",
-					"name": "p11"
+					"name": "outZ"
 				},
 				{
 					"type": "float*",
-					"name": "p12"
+					"name": "outW"
 				}
 			],
 			"return_type": "void",
@@ -35258,9 +35258,9 @@
 		"0x44A0BDC559B35F6E": {
 			"name": "_0x44A0BDC559B35F6E",
 			"jhash": "0x3589452B",
-			"comment": "",
+			"comment": "Show a GTA Screen who tell than before you redo a mission, the game will make a restoration point where you will cameback when the mission is over.\nReturns 1 if the message isn't currently on screen",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xEB2104E905C6F2E9": {
@@ -37375,31 +37375,31 @@
 		"0x32C7A7E8C43A1F80": {
 			"name": "ADD_POP_MULTIPLIER_SPHERE",
 			"jhash": "0xCE4A3D20",
-			"comment": "",
+			"comment": "This native is adding a zone, where you can change density settings. For example, you can add a zone on 0.0, 0.0, 0.0 with radius 900.0 and vehicleMultiplayer 0.0, and you will not see any new population vehicle spawned in a radius of 900.0 from 0.0, 0.0, 0.0. Returns the id. You can have only 15 zones at the same time. You can remove zone using REMOVE_POP_MULTIPLIER_SPHERE",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "radius"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "pedMultiplier"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "vehicleMultiplier"
 				},
 				{
 					"type": "BOOL",
@@ -37416,7 +37416,7 @@
 		"0x171BAFB3C60389F4": {
 			"name": "DOES_POP_MULTIPLIER_SPHERE_EXIST",
 			"jhash": "0xD2B7A5A0",
-			"comment": "",
+			"comment": "Removes population multiplier sphere",
 			"params": [
 				{
 					"type": "int",
@@ -37840,7 +37840,7 @@
 		"0x2587A48BC88DFADF": {
 			"name": "SET_RIOT_MODE_ENABLED",
 			"jhash": "0xD9660339",
-			"comment": "",
+			"comment": "Activates (usused?) riot mode. All NPCs are being hostile to each other (including player). Also the game will give weapons (pistols, smgs) to random NPCs.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -38087,11 +38087,11 @@
 		"0xA1183BCFEE0F93D1": {
 			"name": "_0xA1183BCFEE0F93D1",
 			"jhash": "",
-			"comment": "",
+			"comment": "causes the player to jump?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -51708,7 +51708,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -53830,15 +53830,15 @@
 		"0x890E2C5ABED7236D": {
 			"name": "_NETWORK_SET_VEHICLE_WHEELS_DESTRUCTIBLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets 8th bit of entity->netobj+1c2",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -56034,17 +56034,17 @@
 			"build": "323"
 		},
 		"0x267C78C60E806B9A": {
-			"name": "_0x267C78C60E806B9A",
+			"name": "_NETWORK_ALLOW_LOCAL_ENTITY_ATTACHMENT",
 			"jhash": "0xBB2D33D3",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -56118,7 +56118,7 @@
 		"0x0E3A041ED6AC2B45": {
 			"name": "_0x0E3A041ED6AC2B45",
 			"jhash": "",
-			"comment": "",
+			"comment": "alias 0xD414BE129BB81B32",
 			"params": [
 				{
 					"type": "Player",
@@ -56844,7 +56844,7 @@
 		"0x6F8838D03D1DC226": {
 			"name": "ADD_DOOR_TO_SYSTEM",
 			"jhash": "0x9D2D778D",
-			"comment": "",
+			"comment": "doorHash has to be unique. scriptDoor false; relies upon getNetworkGameScriptHandler. isLocal On true disables the creation CRequestDoorEvent's in DOOR_SYSTEM_SET_DOOR_STATE.\np5 only set to true in single player native scripts.\nIf scriptDoor is true, register the door on the script handler host (note: there's a hardcap on the number of script IDs that can be added to the system at a given time). If scriptDoor and isLocal are both false, the door is considered to be in a \"Persists w/o netobj\" state.\n\ndoor hashes normally look like PROP_[int]_DOOR_[int] for interior doors and PROP_BUILDING_[int]_DOOR_[int] exterior doors but you can just make up your own hash if you want\nAll doors need to be registered with ADD_DOOR_TO_SYSTEM before they can be manipulated with the door natives and the easiest way to get door models is just find the door in codewalker.\n\nExample: AddDoorToSystem(\"PROP_43_DOOR_0\", \"hei_v_ilev_fh_heistdoor2\", -1456.818, -520.5037, 69.67043, 0, 0, 0)",
 			"params": [
 				{
 					"type": "Hash",
@@ -56868,11 +56868,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "scriptDoor"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "isLocal"
 				},
 				{
 					"type": "BOOL",
@@ -57415,15 +57415,15 @@
 		"0x659F9D71F52843F8": {
 			"name": "_0x659F9D71F52843F8",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets a flag. A valid id is 0x157DC10D\nSET_FLAG_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -58570,9 +58570,9 @@
 			"build": "1011"
 		},
 		"0x616093EC6B139DD9": {
-			"name": "_0x616093EC6B139DD9",
+			"name": "_TOGGLE_USE_PICKUPS_FOR_PLAYER",
 			"jhash": "0x7FADB4B9",
-			"comment": "From the scripts:\n\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 1);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 1);\n\nSET_PLAYER_*\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "Disabling/enabling a player from getting pickups. From the scripts:\n\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 1);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 1);\n\nSET_PLAYER_*\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Player",
@@ -58895,15 +58895,15 @@
 		"0x4C134B4DF76025D0": {
 			"name": "_0x4C134B4DF76025D0",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets 10th bit of pickup+4a8\nSET_PICKUP_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -58912,15 +58912,15 @@
 		"0xAA059C615DE9DD03": {
 			"name": "_0xAA059C615DE9DD03",
 			"jhash": "",
-			"comment": "",
+			"comment": "sets pickup+4f1\nSET_PICKUP_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -59005,15 +59005,15 @@
 		"0xBFFE53AE7E67FCDC": {
 			"name": "_0xBFFE53AE7E67FCDC",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets some pickup flag?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -59022,15 +59022,15 @@
 		"0xD05A3241B9A86F19": {
 			"name": "_0xD05A3241B9A86F19",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets entity+38 to C (when false) or 0xFF3f (when true)\nSET_ENTITY_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -59069,14 +59069,14 @@
 		"0xD6429A016084F1A5": {
 			"name": "_0xD6429A016084F1A5",
 			"jhash": "",
-			"comment": "",
+			"comment": "returns CWeapon+0x5B4\n_GET_WEAPON_???",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1290"
 		},
 		"0x11D1E53A726891FE": {
@@ -59204,14 +59204,14 @@
 		"0xADF084FB8F075D06": {
 			"name": "_0xADF084FB8F075D06",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_OBJECT_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1604"
 		},
 		"0x3B2FD68DB5F8331C": {
@@ -59373,20 +59373,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
 					"type": "Any",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -59395,15 +59395,15 @@
 		"0x734E1714D077DA9A": {
 			"name": "_0x734E1714D077DA9A",
 			"jhash": "",
-			"comment": "",
+			"comment": "set 4bit of obj+430\nSET_OBJECT_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -59412,14 +59412,14 @@
 		"0x1A6CBB06E2D0D79D": {
 			"name": "_0x1A6CBB06E2D0D79D",
 			"jhash": "",
-			"comment": "",
+			"comment": "set 5bit of obj+430\nSET_OBJECT_?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -59432,15 +59432,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1604"
 		},
 		"0x3BD770D281982DB5": {
@@ -59463,15 +59463,15 @@
 		"0x1C57C94A6446492A": {
 			"name": "_0x1C57C94A6446492A",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets 6th flag of obj+430\nSET_OBJECT_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -59480,15 +59480,15 @@
 		"0xB5B7742424BD4445": {
 			"name": "_0xB5B7742424BD4445",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets 7th bit of obj+430\nSET_OBJECT_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -60360,7 +60360,7 @@
 		"0xB61C8E878A4199CA": {
 			"name": "GET_SAFE_COORD_FOR_PED",
 			"jhash": "0xB370270A",
-			"comment": "When onGround == true outPosition is a position located on the nearest pavement.\n\nWhen a safe coord could not be found the result of a function is false and outPosition == Vector3.Zero.\n\nIn the scripts these flags are used: 0, 14, 12, 16, 20, 21, 28. 0 is most commonly used, then 16. \n\n16 works for me, 0 crashed the script.",
+			"comment": "Flags are:\n1 = 1 = B02_IsFootpath\n2 = 4 = !B15_InteractionUnk\n4 = 0x20 = !B14_IsInterior\n8 = 0x40 = !B07_IsWater\n16 = 0x200 = B17_IsFlatGround\nWhen onGround == true outPosition is a position located on the nearest pavement.\n\nWhen a safe coord could not be found the result of a function is false and outPosition == Vector3.Zero.\n\nIn the scripts these flags are used: 0, 14, 12, 16, 20, 21, 28. 0 is most commonly used, then 16. \n\n16 works for me, 0 crashed the script.",
 			"params": [
 				{
 					"type": "float",
@@ -60882,13 +60882,13 @@
 			"build": "323"
 		},
 		"0xF74B1FFA4A15FBEA": {
-			"name": "_0xF74B1FFA4A15FBEA",
+			"name": "_SET_AI_GLOBAL_PATH_NODES_TYPE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Activates Cayo Perico path nodes if passed `1`. GPS navigation will start working, maybe more stuff will change, not sure. It seems if you try to unload (pass `0`) when close to the island, your game might crash.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "type"
 				}
 			],
 			"return_type": "void",
@@ -64676,23 +64676,23 @@
 		"0xAD27D957598E49E9": {
 			"name": "_0xAD27D957598E49E9",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does something with ped relationships",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "hash"
 				},
 				{
 					"type": "Any",
@@ -66560,16 +66560,16 @@
 			"build": "323"
 		},
 		"0x76BBA2CEE66D47E9": {
-			"name": "_0x76BBA2CEE66D47E9",
+			"name": "_GET_PED_EYE_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "A getter for _SET_PED_EYE_COLOR]. Returns -1 if fails to get.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1011"
 		},
 		"0x48F44967FA05CC1E": {
@@ -66853,11 +66853,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1290"
 		},
 		"0xC56FBF2F228E1DAC": {
@@ -69224,7 +69224,7 @@
 		"0x5687C7F05B39E401": {
 			"name": "_0x5687C7F05B39E401",
 			"jhash": "",
-			"comment": "",
+			"comment": "SET_PED_?? clipset??",
 			"params": [
 				{
 					"type": "Ped",
@@ -71112,7 +71112,7 @@
 		"0x2B5AA717A181FB4C": {
 			"name": "SET_PED_AO_BLOB_RENDERING",
 			"jhash": "0x98E29ED0",
-			"comment": "https://gfycat.com/thankfulesteemedgecko",
+			"comment": "Enable/disable ped shadow (ambient occlusion). https://gfycat.com/thankfulesteemedgecko",
 			"params": [
 				{
 					"type": "Ped",
@@ -71458,7 +71458,7 @@
 		"0xF60165E1D2C5370B": {
 			"name": "_0xF60165E1D2C5370B",
 			"jhash": "",
-			"comment": "",
+			"comment": "seems very related to aiming but GET_PED_CONFIG* to GET_PED_DECORATIONS* and no clue what it might be + no joaat to confirm",
 			"params": [
 				{
 					"type": "Ped",
@@ -72329,27 +72329,27 @@
 		"0xD8C3BE3EE94CAF2D": {
 			"name": "SET_POP_CONTROL_SPHERE_THIS_FRAME",
 			"jhash": "0x4BBE5E2C",
-			"comment": "",
+			"comment": "Min and max are usually 100.0 and 200.0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "min"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "max"
 				}
 			],
 			"return_type": "void",
@@ -72459,8 +72459,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -72499,11 +72499,11 @@
 		"0x637822DC2AFEEBF8": {
 			"name": "_0x637822DC2AFEEBF8",
 			"jhash": "",
-			"comment": "",
+			"comment": "Deletes cped+1280 ref\nREMOVE_PED_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -73886,7 +73886,7 @@
 		"0x8D32347D6D4C40A2": {
 			"name": "SET_PLAYER_CONTROL",
 			"jhash": "0xD17AFCD8",
-			"comment": "https://alloc8or.re/gta5/doc/enums/eSetPlayerControlFlag.txt",
+			"comment": "Flags:\nSPC_AMBIENT_SCRIPT = (1 << 1),\nSPC_CLEAR_TASKS = (1 << 2),\nSPC_REMOVE_FIRES = (1 << 3),\nSPC_REMOVE_EXPLOSIONS = (1 << 4),\nSPC_REMOVE_PROJECTILES = (1 << 5),\nSPC_DEACTIVATE_GADGETS = (1 << 6),\nSPC_REENABLE_CONTROL_ON_DEATH = (1 << 7),\nSPC_LEAVE_CAMERA_CONTROL_ON = (1 << 8),\nSPC_ALLOW_PLAYER_DAMAGE = (1 << 9),\nSPC_DONT_STOP_OTHER_CARS_AROUND_PLAYER = (1 << 10),\nSPC_PREVENT_EVERYBODY_BACKOFF = (1 << 11),\nSPC_ALLOW_PAD_SHAKE = (1 << 12)\n\nSee: https://alloc8or.re/gta5/doc/enums/eSetPlayerControlFlag.txt",
 			"params": [
 				{
 					"type": "Player",
@@ -77130,7 +77130,7 @@
 		"0x237440E46D918649": {
 			"name": "_0x237440E46D918649",
 			"jhash": "",
-			"comment": "",
+			"comment": "Unsets playerPed+330 if the current weapon has certain flags.",
 			"params": [
 				{
 					"type": "Any",
@@ -77227,7 +77227,7 @@
 		"0x7148E0F43D11F0D9": {
 			"name": "_0x7148E0F43D11F0D9",
 			"jhash": "",
-			"comment": "",
+			"comment": "Resets values set by 0x70A382ADEC069DD3\nRESET_???",
 			"params": [],
 			"return_type": "void",
 			"build": "1604"
@@ -77235,19 +77235,19 @@
 		"0x70A382ADEC069DD3": {
 			"name": "_0x70A382ADEC069DD3",
 			"jhash": "",
-			"comment": "",
+			"comment": "Puts vector at [ped+10b8]+e60. Also sets byte [ped+10b8]+e5d to 1 (might be voip related)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "coordX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "coordY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "coordZ"
 				}
 			],
 			"return_type": "void",
@@ -78154,11 +78154,11 @@
 					"name": "p9"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
+					"type": "Entity",
 					"name": "entity"
 				},
 				{
@@ -79422,14 +79422,14 @@
 		"0x8A4416C0DB05FA66": {
 			"name": "_0x8A4416C0DB05FA66",
 			"jhash": "",
-			"comment": "",
+			"comment": "Fills some 0x30 sized struct",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1290"
 		},
 		"0xEA95C0853A27888E": {
@@ -85680,39 +85680,39 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "cameraCoordX"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "cameraCoordY"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "cameraCoordZ"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "camRotationX"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "camRotationY"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "camRotationZ"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "camFov"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "camFarClip"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "rotationOrder"
 				}
 			],
 			"return_type": "void",
@@ -85756,7 +85756,7 @@
 			"build": "323"
 		},
 		"0xAD5FDF34B81BFE79": {
-			"name": "_0xAD5FDF34B81BFE79",
+			"name": "_DISABLE_SWITCH_PAUSE_BEFORE_DESCENT",
 			"jhash": "0x4B4B9A13",
 			"comment": "",
 			"params": [],
@@ -85790,7 +85790,7 @@
 		"0xAAB3200ED59016BC": {
 			"name": "_SWITCH_OUT_PLAYER",
 			"jhash": "0xFB4D062D",
-			"comment": "fucks up on mount chilliad",
+			"comment": "doesn't act normally when used on mount chilliad\nFlags is a bitflag:\n2^n - Enabled Functionality:\n0 - Skip camera rotate up\n3 - Wait for SET_PLAYER_SWITCH_ESTABLISHING_SHOT / hang at last step. You will still need to run 0x74DE2E8739086740 to exit \"properly\" and then STOP_PLAYER_SWITCH\n6 - Invert Switch Direction (false = out, true = in)\n8 - Hang above ped\n\nswitchType: 0 - 3\n0: 1 step towards ped\n1: 3 steps out from ped\n2: 1 step out from ped\n3: 1 step towards ped",
 			"params": [
 				{
 					"type": "Ped",
@@ -85802,7 +85802,7 @@
 				},
 				{
 					"type": "int",
-					"name": "unknown"
+					"name": "switchType"
 				}
 			],
 			"return_type": "void",
@@ -85870,13 +85870,13 @@
 			"build": "323"
 		},
 		"0xA76359FC80B2438E": {
-			"name": "_0xA76359FC80B2438E",
+			"name": "_SET_TEXTURE_DISTANCE_SCALING_THIS_FRAME",
 			"jhash": "0xE5612C1A",
-			"comment": "",
+			"comment": "This allows you to override \"extended distance scaling\" setting. Needs to be called each frame.\nMax scaling seems to be 200.0, normal is 1.0\nSee https://gfycat.com/DetailedHauntingIncatern",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "scaling"
 				}
 			],
 			"return_type": "void",
@@ -88332,7 +88332,7 @@
 		"0x504D54DF3F6F2247": {
 			"name": "TASK_LEAVE_ANY_VEHICLE",
 			"jhash": "0xDBDD79FA",
-			"comment": "",
+			"comment": "Flags are the same flags used in TASK_LEAVE_VEHICLE",
 			"params": [
 				{
 					"type": "Ped",
@@ -88344,7 +88344,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -89052,7 +89052,7 @@
 		"0xCC665AAC360D31E7": {
 			"name": "SET_TASK_VEHICLE_CHASE_BEHAVIOR_FLAG",
 			"jhash": "0x2A83083F",
-			"comment": "",
+			"comment": "Flag 8: Medium-aggressive boxing tactic with a bit of PIT\nFlag 1: Aggressive ramming of suspect\nFlag 2: Ram attempts\nFlag 32: Stay back from suspect, no tactical contact. Convoy-like.\nFlag 16: Ramming, seems to be slightly less aggressive than 1-2.",
 			"params": [
 				{
 					"type": "Ped",
@@ -89200,9 +89200,9 @@
 			"build": "2189"
 		},
 		"0xDBBC7A2432524127": {
-			"name": "_0xDBBC7A2432524127",
+			"name": "CLEAR_VEHICLE_TASKS",
 			"jhash": "",
-			"comment": "CLEAR_*",
+			"comment": "Seems to stop the engine",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -89231,12 +89231,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "Any",
@@ -93845,7 +93845,7 @@
 		"0xAF35D0D2583051B0": {
 			"name": "CREATE_VEHICLE",
 			"jhash": "0xDD75460A",
-			"comment": "Full list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "p7 when set to true allows you to spawn vehicles under -100 z.\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -95631,15 +95631,15 @@
 		"0x9849DE24FCF23CCC": {
 			"name": "_0x9849DE24FCF23CCC",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets 2nd bit of [veh+b90]+7af\n_SET_VEHICLE_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -95678,14 +95678,14 @@
 		"0xC69BB1D832A710EF": {
 			"name": "_0xC69BB1D832A710EF",
 			"jhash": "",
-			"comment": "",
+			"comment": "Checks for value 9C in [[veh+b90]+7c8] array\n_IS_VEHICLE_???",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1493"
 		},
 		"0x37EBBF3117BD6A25": {
@@ -95845,11 +95845,11 @@
 		"0x107A473D7A6647A9": {
 			"name": "_0x107A473D7A6647A9",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used on helicopters and blimps during the CTaskVehicleLand task. Sets a value on the task to 10f",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -96283,15 +96283,15 @@
 		"0x8821196D91FA2DE5": {
 			"name": "_0x8821196D91FA2DE5",
 			"jhash": "",
-			"comment": "",
+			"comment": "sets 7th bit veh+9f8\n_SET_VEHICLE_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -96901,7 +96901,7 @@
 		"0x2DACD605FC681475": {
 			"name": "GET_POSITION_IN_RECORDING",
 			"jhash": "0x7DCD644C",
-			"comment": "",
+			"comment": "Distance traveled in the vehicles current recording.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97173,7 +97173,7 @@
 		"0x6E63860BBB190730": {
 			"name": "SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER",
 			"jhash": "0x0C8ABAA4",
-			"comment": "",
+			"comment": "Time is Number of milliseconds before reverting, zero for indefinitely.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98398,20 +98398,20 @@
 			"build": "323"
 		},
 		"0xCA4AC3EAAE46EC7B": {
-			"name": "_0xCA4AC3EAAE46EC7B",
+			"name": "_GET_VEHICLE_DOOR_DESTROY_TYPE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns vehicle door destroy type previously set with _SET_VEHICLE_DOOR_DESTROY_TYPE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "doorIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1103"
 		},
 		"0xB8E181E559464527": {
@@ -98533,16 +98533,16 @@
 			"build": "323"
 		},
 		"0x5873C14A52D74236": {
-			"name": "_0x5873C14A52D74236",
+			"name": "_GET_VEHICLE_MODEL_MONETARY_VALUE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns `nMonetaryValue` from handling.meta for specific model.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "vehicleModel"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "463"
 		},
 		"0x28D37D4F71AC5C58": {
@@ -98999,20 +98999,20 @@
 			"build": "323"
 		},
 		"0x534E36D4DB9ECC5D": {
-			"name": "_0x534E36D4DB9ECC5D",
+			"name": "_DOES_VEHICLE_TYRE_EXIST",
 			"jhash": "",
-			"comment": "",
+			"comment": "Checks if vehicle tyre at index exists. Also returns false if tyre was removed.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "tyreIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1493"
 		},
 		"0xF39C4F538B5124C2": {
@@ -99241,17 +99241,17 @@
 			"build": "323"
 		},
 		"0x2A86A0475B6A1434": {
-			"name": "_0x2A86A0475B6A1434",
+			"name": "_SET_PLANE_ENGINE_HEALTH",
 			"jhash": "",
-			"comment": "",
+			"comment": "Works just like SET_VEHICLE_ENGINE_HEALTH, didn't saw any difference. But this native works only for planes.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "health"
 				}
 			],
 			"return_type": "void",
@@ -99485,7 +99485,7 @@
 		"0xF7AF4F159FF99F97": {
 			"name": "_GET_MAKE_NAME_FROM_VEHICLE_MODEL",
 			"jhash": "",
-			"comment": "Returns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "Will return a vehicle's manufacturer display label.\nReturns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -100319,15 +100319,15 @@
 		"0xCE2B43770B655F8F": {
 			"name": "_SET_DISABLE_VEHICLE_FLIGHT_NOZZLE_POSITION",
 			"jhash": "",
-			"comment": "",
+			"comment": "True stops vtols from switching modes. Doesn't stop the sound though.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -100426,17 +100426,17 @@
 			"build": "323"
 		},
 		"0x6DEE944E1EE90CFB": {
-			"name": "_0x6DEE944E1EE90CFB",
+			"name": "_SET_VEHICLE_WHEEL_UNK",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does something with wheels. val is 0-3",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "val"
 				}
 			],
 			"return_type": "void",
@@ -100546,10 +100546,10 @@
 		"0xA4A9A4C40E615885": {
 			"name": "_0xA4A9A4C40E615885",
 			"jhash": "",
-			"comment": "",
+			"comment": "Default:1000||This sets a value which is used when _0x51db102f4a3ba5e0(true) is called each frame.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -101819,18 +101819,18 @@
 		"0x59C3757B3B7408E8": {
 			"name": "_0x59C3757B3B7408E8",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets 7th bit of veh+93a and float at veh+c18. float is >= 0\nSET_VEHICLE_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -101969,7 +101969,7 @@
 			"build": "323"
 		},
 		"0xC1F981A6F74F0C23": {
-			"name": "_0xC1F981A6F74F0C23",
+			"name": "GET_BOAT_BOOM_POSITION_RATIO",
 			"jhash": "0x00966934",
 			"comment": "same call as VEHICLE::_0x0F3B4D4E43177236",
 			"params": [
@@ -102451,7 +102451,7 @@
 		"0xE6C0C80B8C867537": {
 			"name": "SET_ENABLE_VEHICLE_SLIPSTREAMING",
 			"jhash": "0xD2B8ACBD",
-			"comment": "",
+			"comment": "Enable/Disables global slipstream physics",
 			"params": [
 				{
 					"type": "BOOL",
@@ -102888,9 +102888,9 @@
 			"build": "944"
 		},
 		"0x571FEB383F629926": {
-			"name": "_0x571FEB383F629926",
+			"name": "_SET_CARGOBOB_HOOK_CAN_DETACH",
 			"jhash": "0xAEB29F98",
-			"comment": "",
+			"comment": "Stops cargobob from beeing able to detach the attached vehicle.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102898,7 +102898,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -103481,11 +103481,11 @@
 		"0x6A973569BA094650": {
 			"name": "_0x6A973569BA094650",
 			"jhash": "",
-			"comment": "",
+			"comment": "copy +b90 to +77c",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "Any",
@@ -103677,7 +103677,7 @@
 		"0x41062318F23ED854": {
 			"name": "_0x41062318F23ED854",
 			"jhash": "0xFF62D324",
-			"comment": "Used to be incorrectly named SET_VEHICLE_EXCLUSIVE_DRIVER\n\nLikely SET_VEHICLE_ALLOW_*\n\nJenkins hash may be wrong, unsure at this time.",
+			"comment": "Used to be incorrectly named SET_VEHICLE_EXCLUSIVE_DRIVER\n\nLikely SET_VEHICLE_ALLOW_*\n\nJenkins hash may be wrong, unsure at this time.\nToggles a flag related to SET_VEHICLE_EXCLUSIVE_DRIVER, however, doesn't enable that feature (or trigger script events related to it).",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103770,7 +103770,7 @@
 		"0x1087BC8EC540DAEB": {
 			"name": "_SET_DISABLE_VEHICLE_WINDOW_COLLISIONS",
 			"jhash": "",
-			"comment": "",
+			"comment": "R* used it to \"remove\" vehicle windows when \"nightshark\" had some mod, which adding some kind of armored windows. When enabled, you can't break vehicles glass. All your bullets wiil shoot through glass. You also will not able to break the glass with any other way (hitting and etc)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103778,7 +103778,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "togle"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -103804,15 +103804,15 @@
 		"0xB68CFAF83A02768D": {
 			"name": "_0xB68CFAF83A02768D",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets CVehicle+A99. veh is a helicopter?\n_SET_HELICOPTER_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -103821,14 +103821,14 @@
 		"0x0205F5365292D2EB": {
 			"name": "_0x0205F5365292D2EB",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets veh+ac4 (def -1f)\nSET_VEHICLE_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -103889,15 +103889,15 @@
 		"0xB93B2867F7B479D1": {
 			"name": "_0xB93B2867F7B479D1",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets CVehicle+3A0 from array based on idx\n_SET_VEHICLE_????",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "void",
@@ -104278,21 +104278,21 @@
 			"build": "463"
 		},
 		"0x84EA99C62CB3EF0C": {
-			"name": "_SET_HYDRAULIC_STATE",
+			"name": "_SET_VEHICLE_HYDRAULIC_WHEEL_VALUE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Works only on vehicles, that support hydraulic.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wheelId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -104335,23 +104335,23 @@
 		"0xC24075310A8B9CD1": {
 			"name": "_SET_HYDRAULIC_WHEEL_STATE_TRANSITION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets vehicle wheel hydraulic states transition. Known states:\n0 - reset\n1 - raise wheel (uses value arg, works just like _SET_VEHICLE_HYDRAULIC_WHEEL_VALUE)\n2 - jump using wheel",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wheelId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "state"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "value"
 				},
 				{
 					"type": "Any",
@@ -104513,7 +104513,7 @@
 		"0x5B91B229243351A8": {
 			"name": "_SET_VEHICLE_CONTROLS_INVERTED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Inverts vehicle's controls. So INPUT_VEH_ACCELERATE will be INPUT_VEH_BRAKE and vise versa (same for A/D controls)\nDoesn't work for planes/helis.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -104816,7 +104816,7 @@
 		"0x44CD1F493DB2A0A6": {
 			"name": "_SET_VEHICLE_WEAPON_CAPACITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Set vehicle's primary mounted weapon 2 ammo. For example, use it on APC.\nFor example, you can \"remove\" any vehicle weapon from any vehicle.\nammoAmount -1 = infinite ammo (default value for any spawned vehicle tho)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105223,17 +105223,17 @@
 			"build": "1103"
 		},
 		"0x544996C0081ABDEB": {
-			"name": "_0x544996C0081ABDEB",
+			"name": "_SET_OPPRESSOR_TRANSFORM_STATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -105287,13 +105287,13 @@
 			"build": "1180"
 		},
 		"0x75627043C6AA90AD": {
-			"name": "_0x75627043C6AA90AD",
+			"name": "_DISABLE_VEHICLE_WORLD_COLLISION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disables vehicle world collision",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -105302,15 +105302,15 @@
 		"0x8235F1BEAD557629": {
 			"name": "_0x8235F1BEAD557629",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets CVehicle+AA1 (causes _someVehicleFlagCheck to return false)\nSET_VEHICLE_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -105322,8 +105322,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "Any",
@@ -105367,17 +105367,17 @@
 			"build": "1290"
 		},
 		"0x94A68DA412C4007D": {
-			"name": "_0x94A68DA412C4007D",
+			"name": "_SET_CARGOBOB_HOOK_CAN_ATTACH",
 			"jhash": "",
-			"comment": "",
+			"comment": "Stops the cargobob from beeing able to attach any vehicle",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -105446,23 +105446,23 @@
 		"0x0A3F820A9A9A9AC5": {
 			"name": "_0x0A3F820A9A9A9AC5",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used on helicopters\nSET_HELICOPTER_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -105474,35 +105474,35 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
@@ -105510,21 +105510,21 @@
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1180"
 		},
 		"0x97841634EF7DF1D6": {
 			"name": "_0x97841634EF7DF1D6",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets a flag on heli and another vehicle type.\n_SET_VEHICLE_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -105567,15 +105567,15 @@
 		"0xF1211889DF15A763": {
 			"name": "_SET_VEHICLE_HOVER_TRANSFORM_ENABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "It will override the ability to transform deluxo. For oppressor it will work just like 0x2D55FE374D5FDB91",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -105584,7 +105584,7 @@
 		"0x2D55FE374D5FDB91": {
 			"name": "_SET_VEHICLE_HOVER_TRANSFORM_ACTIVE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disables \"wings\" for some flying vehicles. Works only for oppressor _2_ and deluxo.\nFor deluxo it just immediately removes vehicle's \"wings\" and you will be not able to fly up.\nFor oppressor 2 it will remove wings right after you land. And you will not able to fly up anymore too.\nBut for opressor 2 you still can fly if you somehow get back in the air.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105612,33 +105612,33 @@
 			"build": "1290"
 		},
 		"0x8DC9675797123522": {
-			"name": "_0x8DC9675797123522",
+			"name": "_GET_NEARBY_AIR_POSITION_FOR_PED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns a position nearby in the air",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vector3",
 			"build": "1290"
 		},
 		"0xB251E0B33E58B424": {
 			"name": "_0xB251E0B33E58B424",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does something with doors 0x23a and 0x23b\n_SET_VEHICLE_DOOR_???",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -105648,49 +105648,49 @@
 		"0xAEF12960FA943792": {
 			"name": "_0xAEF12960FA943792",
 			"jhash": "",
-			"comment": "",
+			"comment": "Checks for something with doors 0x23a and 0x23b\n_IS_VEHICLE_DOOR_???",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1290"
 		},
 		"0xAA653AE61924B0A0": {
 			"name": "_0xAA653AE61924B0A0",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets veh+1f86\n_SET_VEHICLE_?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "1290"
 		},
 		"0xC60060EB0D8AC7B1": {
-			"name": "_0xC60060EB0D8AC7B1",
+			"name": "_SET_VEHICLE_TURRET_UNK",
 			"jhash": "",
-			"comment": "",
+			"comment": "set flag on turret",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -105714,17 +105714,17 @@
 			"build": "1365"
 		},
 		"0xE615BB7A7752C76A": {
-			"name": "_0xE615BB7A7752C76A",
+			"name": "_DISABLE_VEHICLE_TURRET_MOVE_THIS_FRAME",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disables turret movement when called in a loop. You can still fire and aim. You cannot shoot backwards though.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "turretId"
 				}
 			],
 			"return_type": "void",
@@ -105733,11 +105733,11 @@
 		"0x887FA38787DE8C72": {
 			"name": "_0x887FA38787DE8C72",
 			"jhash": "",
-			"comment": "",
+			"comment": "sets veh+363=1\nSET_VEHICLE_??",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -105832,7 +105832,7 @@
 		"0xE8718FAF591FD224": {
 			"name": "_0xE8718FAF591FD224",
 			"jhash": "",
-			"comment": "GET_H*",
+			"comment": "Checks if float at CVehicle+0x364 is 0\n_IS_VEHICLE_??",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105921,7 +105921,7 @@
 		"0x211E95CE9903940C": {
 			"name": "_SET_DISABLE_VEHICLE_UNK_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "sets some global bool",
 			"params": [
 				{
 					"type": "BOOL",
@@ -105945,7 +105945,7 @@
 			"build": "1604"
 		},
 		"0x71AFB258CCED3A27": {
-			"name": "_GET_DOES_VEHICLE_HAVE_TOMBSTONE",
+			"name": "_GET_IS_VEHICLE_HAS_DETACHABLE_BUMPER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -105958,9 +105958,9 @@
 			"build": "1604"
 		},
 		"0xAE71FB656C600587": {
-			"name": "_HIDE_VEHICLE_TOMBSTONE",
+			"name": "_SET_VEHICLE_DETACHABLE_BUMPER_DISABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disables detachable bumber from domnator4, dominator5, dominator6, see https://gfycat.com/SecondUnluckyGosling",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106825,7 +106825,7 @@
 		"0xBF0FD6E56C964FCB": {
 			"name": "GIVE_WEAPON_TO_PED",
 			"jhash": "0xC4D88A85",
-			"comment": "isHidden - ????\n\nAll weapon names (add to the list if something is missing), use MISC::GET_HASH_KEY((char *)weaponNames[i]) to get get the hash:\n\nstatic LPCSTR weaponNames[] = {\n \"WEAPON_KNIFE\", \"WEAPON_NIGHTSTICK\", \"WEAPON_HAMMER\", \"WEAPON_BAT\", \"WEAPON_GOLFCLUB\",\n  \"WEAPON_CROWBAR\", \"WEAPON_PISTOL\", \"WEAPON_COMBATPISTOL\", \"WEAPON_APPISTOL\", \"WEAPON_PISTOL50\",\n \"WEAPON_MICROSMG\", \"WEAPON_SMG\", \"WEAPON_ASSAULTSMG\", \"WEAPON_ASSAULTRIFLE\",\n  \"WEAPON_CARBINERIFLE\", \"WEAPON_ADVANCEDRIFLE\", \"WEAPON_MG\", \"WEAPON_COMBATMG\", \"WEAPON_PUMPSHOTGUN\",\n    \"WEAPON_SAWNOFFSHOTGUN\", \"WEAPON_ASSAULTSHOTGUN\", \"WEAPON_BULLPUPSHOTGUN\", \"WEAPON_STUNGUN\", \"WEAPON_SNIPERRIFLE\",\n  \"WEAPON_HEAVYSNIPER\", \"WEAPON_GRENADELAUNCHER\", \"WEAPON_GRENADELAUNCHER_SMOKE\", \"WEAPON_RPG\", \"WEAPON_MINIGUN\",\n \"WEAPON_GRENADE\", \"WEAPON_STICKYBOMB\", \"WEAPON_SMOKEGRENADE\", \"WEAPON_BZGAS\", \"WEAPON_MOLOTOV\",\n \"WEAPON_FIREEXTINGUISHER\", \"WEAPON_PETROLCAN\", \"WEAPON_FLARE\", \"WEAPON_SNSPISTOL\", \"WEAPON_SPECIALCARBINE\",\n \"WEAPON_HEAVYPISTOL\", \"WEAPON_BULLPUPRIFLE\", \"WEAPON_HOMINGLAUNCHER\", \"WEAPON_PROXMINE\", \"WEAPON_SNOWBALL\",\n \"WEAPON_VINTAGEPISTOL\", \"WEAPON_DAGGER\", \"WEAPON_FIREWORK\", \"WEAPON_MUSKET\", \"WEAPON_MARKSMANRIFLE\",\n    \"WEAPON_HEAVYSHOTGUN\", \"WEAPON_GUSENBERG\", \"WEAPON_HATCHET\", \"WEAPON_RAILGUN\", \"WEAPON_COMBATPDW\",\n  \"WEAPON_KNUCKLE\", \"WEAPON_MARKSMANPISTOL\", \"WEAPON_FLASHLIGHT\", \"WEAPON_MACHETE\", \"WEAPON_MACHINEPISTOL\",\n   \"WEAPON_SWITCHBLADE\", \"WEAPON_REVOLVER\", \"WEAPON_COMPACTRIFLE\", \"WEAPON_DBSHOTGUN\", \"WEAPON_FLAREGUN\",\n  \"WEAPON_AUTOSHOTGUN\", \"WEAPON_BATTLEAXE\", \"WEAPON_COMPACTLAUNCHER\", \"WEAPON_MINISMG\", \"WEAPON_PIPEBOMB\",\n    \"WEAPON_POOLCUE\", \"WEAPON_SWEEPER\", \"WEAPON_WRENCH\"\n};\n----------------------------------------------------------------------------------------------------------------------------------------\nTranslation table:\npastebin.com/a39K8Nz8",
+			"comment": "isHidden - ????\nReturns the given weapon handle (you can use it to set clip in weapon etc.)\nAll weapon names (add to the list if something is missing), use MISC::GET_HASH_KEY((char *)weaponNames[i]) to get get the hash:\n\nstatic LPCSTR weaponNames[] = {\n \"WEAPON_KNIFE\", \"WEAPON_NIGHTSTICK\", \"WEAPON_HAMMER\", \"WEAPON_BAT\", \"WEAPON_GOLFCLUB\",\n  \"WEAPON_CROWBAR\", \"WEAPON_PISTOL\", \"WEAPON_COMBATPISTOL\", \"WEAPON_APPISTOL\", \"WEAPON_PISTOL50\",\n \"WEAPON_MICROSMG\", \"WEAPON_SMG\", \"WEAPON_ASSAULTSMG\", \"WEAPON_ASSAULTRIFLE\",\n  \"WEAPON_CARBINERIFLE\", \"WEAPON_ADVANCEDRIFLE\", \"WEAPON_MG\", \"WEAPON_COMBATMG\", \"WEAPON_PUMPSHOTGUN\",\n    \"WEAPON_SAWNOFFSHOTGUN\", \"WEAPON_ASSAULTSHOTGUN\", \"WEAPON_BULLPUPSHOTGUN\", \"WEAPON_STUNGUN\", \"WEAPON_SNIPERRIFLE\",\n  \"WEAPON_HEAVYSNIPER\", \"WEAPON_GRENADELAUNCHER\", \"WEAPON_GRENADELAUNCHER_SMOKE\", \"WEAPON_RPG\", \"WEAPON_MINIGUN\",\n \"WEAPON_GRENADE\", \"WEAPON_STICKYBOMB\", \"WEAPON_SMOKEGRENADE\", \"WEAPON_BZGAS\", \"WEAPON_MOLOTOV\",\n \"WEAPON_FIREEXTINGUISHER\", \"WEAPON_PETROLCAN\", \"WEAPON_FLARE\", \"WEAPON_SNSPISTOL\", \"WEAPON_SPECIALCARBINE\",\n \"WEAPON_HEAVYPISTOL\", \"WEAPON_BULLPUPRIFLE\", \"WEAPON_HOMINGLAUNCHER\", \"WEAPON_PROXMINE\", \"WEAPON_SNOWBALL\",\n \"WEAPON_VINTAGEPISTOL\", \"WEAPON_DAGGER\", \"WEAPON_FIREWORK\", \"WEAPON_MUSKET\", \"WEAPON_MARKSMANRIFLE\",\n    \"WEAPON_HEAVYSHOTGUN\", \"WEAPON_GUSENBERG\", \"WEAPON_HATCHET\", \"WEAPON_RAILGUN\", \"WEAPON_COMBATPDW\",\n  \"WEAPON_KNUCKLE\", \"WEAPON_MARKSMANPISTOL\", \"WEAPON_FLASHLIGHT\", \"WEAPON_MACHETE\", \"WEAPON_MACHINEPISTOL\",\n   \"WEAPON_SWITCHBLADE\", \"WEAPON_REVOLVER\", \"WEAPON_COMPACTRIFLE\", \"WEAPON_DBSHOTGUN\", \"WEAPON_FLAREGUN\",\n  \"WEAPON_AUTOSHOTGUN\", \"WEAPON_BATTLEAXE\", \"WEAPON_COMPACTLAUNCHER\", \"WEAPON_MINISMG\", \"WEAPON_PIPEBOMB\",\n    \"WEAPON_POOLCUE\", \"WEAPON_SWEEPER\", \"WEAPON_WRENCH\"\n};\n----------------------------------------------------------------------------------------------------------------------------------------\nTranslation table:\npastebin.com/a39K8Nz8",
 			"params": [
 				{
 					"type": "Ped",
@@ -106848,7 +106848,7 @@
 					"name": "equipNow"
 				}
 			],
-			"return_type": "void",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xB282DC6EBD803C75": {
@@ -107174,7 +107174,7 @@
 		"0x585847C5E4E11709": {
 			"name": "_GET_MAX_AMMO_BY_TYPE",
 			"jhash": "",
-			"comment": "Ammo types: https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1",
+			"comment": "Returns the max ammo for an ammo type. Ammo types: https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1",
 			"params": [
 				{
 					"type": "Ped",
@@ -108181,9 +108181,9 @@
 			"build": "323"
 		},
 		"0x988DB6FE9B3AC000": {
-			"name": "_0x988DB6FE9B3AC000",
+			"name": "_SET_FLASH_LIGHT_ENABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Enables/disables flashlight on ped's weapon.",
 			"params": [
 				{
 					"type": "Ped",
@@ -108191,7 +108191,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -108459,7 +108459,7 @@
 		"0xB4771B9AAF4E68E4": {
 			"name": "_SET_CAN_PED_EQUIP_WEAPON",
 			"jhash": "",
-			"comment": "For the player ped this will also gray out the weapon in the weapon wheel.",
+			"comment": "Disables selecting the given weapon. Ped isn't forced to put the gun away. However you can't reselect the weapon if you holster then unholster. Weapon is also grayed out on the weapon wheel.",
 			"params": [
 				{
 					"type": "Ped",
@@ -108480,7 +108480,7 @@
 		"0xEFF296097FF1E509": {
 			"name": "_SET_CAN_PED_EQUIP_ALL_WEAPONS",
 			"jhash": "",
-			"comment": "Does the same as 0xB4771B9AAF4E68E4 except for all weapons.",
+			"comment": "Disable all weapons. Does the same as 0xB4771B9AAF4E68E4 except for all weapons.",
 			"params": [
 				{
 					"type": "Ped",
