@@ -3098,7 +3098,7 @@
 		"0x3CDC1E622CCE0356": {
 			"name": "OVERRIDE_VEH_HORN",
 			"jhash": "0x2ACAB783",
-			"comment": "vehicle - the vehicle whose horn should be overwritten\nmute - p1 seems to be an option for muting the horn\np2 - maybe a horn id, since the function AUDIO::GET_VEHICLE_DEFAULT_HORN(veh) exists?",
+			"comment": "Overrides the vehicle's horn hash.\nWhen changing this hash on a vehicle, `_GET_VEHICLE_HORN_HASH`(#_0xACB5DCCA1EC76840) will **not** return the 'overwritten' hash. It will still always return the default horn hash (same as `GET_VEHICLE_DEFAULT_HORN`)\n\nvehicle - the vehicle whose horn should be overwritten\nmute - p1 seems to be an option for muting the horn\np2 - maybe a horn id, since the function AUDIO::GET_VEHICLE_DEFAULT_HORN(veh) exists?",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3106,11 +3106,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "mute"
+					"name": "override"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "hornHash"
 				}
 			],
 			"return_type": "void",
@@ -5792,7 +5792,7 @@
 		"0x8DB3F12A02CAEF72": {
 			"name": "_ATTACH_CAM_TO_VEHICLE_BONE",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native works with vehicles only. Bone indexes are usually given by this native GET_ENTITY_BONE_INDEX_BY_NAME.",
 			"params": [
 				{
 					"type": "Cam",
@@ -5808,35 +5808,35 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "relativeRotation"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "rotX"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "rotY"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "rotZ"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "offsetX"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "offsetY"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "offsetZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "fixedDirection"
 				}
 			],
 			"return_type": "void",
@@ -11335,7 +11335,7 @@
 		"0x3FEF770D40960D5A": {
 			"name": "GET_ENTITY_COORDS",
 			"jhash": "0x1647F1CB",
-			"comment": "`entity` = The entity to get the coordinates from.\n`alive` = Unused by the game, potentially used by debug builds of GTA in order to assert whether or not an entity was alive.",
+			"comment": "Gets the current coordinates for a specified entity.\n`entity` = The entity to get the coordinates from.\n`alive` = Unused by the game, potentially used by debug builds of GTA in order to assert whether or not an entity was alive.",
 			"params": [
 				{
 					"type": "Entity",
@@ -11855,7 +11855,7 @@
 		"0xF6F5161F4534EDFF": {
 			"name": "GET_ENTITY_POPULATION_TYPE",
 			"jhash": "0xFC30DDFF",
-			"comment": "https://alloc8or.re/gta5/doc/enums/ePopulationType.txt",
+			"comment": "A population type, from the following enum: https://alloc8or.re/gta5/doc/enums/ePopulationType.txt",
 			"params": [
 				{
 					"type": "Entity",
@@ -14971,15 +14971,15 @@
 		"0xFF56381874F82086": {
 			"name": "_GET_TATTOO_COLLECTION_DATA",
 			"jhash": "0x2E9D628C",
-			"comment": "",
+			"comment": "Character types:\n0 = Michael, \n1 = Franklin, \n2 = Trevor, \n3 = MPMale, \n4 = MPFemale\n\n\nenum TattooZoneData\n{  \n    ZONE_TORSO = 0,  \n    ZONE_HEAD = 1,  \n    ZONE_LEFT_ARM = 2,  \n    ZONE_RIGHT_ARM = 3,  \n    ZONE_LEFT_LEG = 4,  \n    ZONE_RIGHT_LEG = 5,  \n    ZONE_UNKNOWN = 6,\n    ZONE_NONE = 7,  \n};\nstruct outComponent\n{\n    // these vars are suffixed with 4 bytes of padding each.\n    uint unk;\n    int unk2;\n    uint tattooCollectionHash;\n    uint tattooNameHash;\n    int unk3;\n    TattooZoneData zoneId;\n    uint unk4;\n    uint unk5;\n    // maybe more, not sure exactly, decompiled scripts are very vague around this part.\n}",
 			"params": [
 				{
 					"type": "int",
-					"name": "character"
+					"name": "characterType"
 				},
 				{
 					"type": "int",
-					"name": "index"
+					"name": "decorationIndex"
 				},
 				{
 					"type": "Any*",
@@ -18536,51 +18536,51 @@
 		"0x2BC54A8188768488": {
 			"name": "_DRAW_INTERACTIVE_SPRITE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Similar to _DRAW_SPRITE, but seems to be some kind of \"interactive\" sprite, at least used by render targets.\nThese seem to be the only dicts ever requested by this native:\n\nprop_screen_biker_laptop\nProp_Screen_GR_Disruption\nProp_Screen_TaleOfUs\nprop_screen_nightclub\nProp_Screen_IE_Adhawk\nprop_screen_sm_free_trade_shipping\nprop_screen_hacker_truck\nMPDesktop\nProp_Screen_Nightclub\nAnd a few others\n",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "textureDict"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "textureName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "screenX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "screenY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "width"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "height"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "blue"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "int",
+					"name": "alpha"
 				}
 			],
 			"return_type": "void",
@@ -22813,7 +22813,7 @@
 		"0x92CCC17A7A2285DA": {
 			"name": "_CLEAR_EXTRA_TIMECYCLE_MODIFIER",
 			"jhash": "0x6776720A",
-			"comment": "",
+			"comment": "Clears the secondary timecycle modifier usually set with `SetExtraTimecycleModifier`",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -22821,7 +22821,7 @@
 		"0xBB0527EC6341496D": {
 			"name": "_GET_EXTRA_TIMECYCLE_MODIFIER_INDEX",
 			"jhash": "",
-			"comment": "",
+			"comment": "See _0xFDF3D97C674AFB66 for use, works the same just for the secondary timecycle modifier.\nReturns an integer representing the Timecycle modifier",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -22829,7 +22829,7 @@
 		"0x2C328AF17210F009": {
 			"name": "_SET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
 			"jhash": "",
-			"comment": "ENABLE_*",
+			"comment": "ENABLE_*\nThe same as _0x82E7FFCD5B2326B3 but for the secondary tiemcycle modifier.",
 			"params": [
 				{
 					"type": "float",
@@ -22842,7 +22842,7 @@
 		"0x2BF72AD5B41AA739": {
 			"name": "_RESET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
 			"jhash": "",
-			"comment": "",
+			"comment": "Resets the extra timecycle modifier strength normally set with 0x2C328AF17210F009",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -23458,7 +23458,7 @@
 		"0xAB58C27C2E6123C6": {
 			"name": "BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND",
 			"jhash": "0xF6015178",
-			"comment": "",
+			"comment": "Starts frontend (pause menu) scaleform movie methods.\nThis can be used when you want to make custom frontend menus, and customize things like images or text in the menus etc.\nUse `BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER` for header scaleform functions.",
 			"params": [
 				{
 					"type": "const char*",
@@ -23471,7 +23471,7 @@
 		"0xB9449845F73F5E9C": {
 			"name": "BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER",
 			"jhash": "0x5E219B67",
-			"comment": "",
+			"comment": "Starts frontend (pause menu) scaleform movie methods for header options.\nUse `BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND` to customize the content inside the frontend menus.",
 			"params": [
 				{
 					"type": "const char*",
@@ -23620,7 +23620,7 @@
 		"0x77FE3402004CD1B0": {
 			"name": "_SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING_2",
 			"jhash": "",
-			"comment": "Same as SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING",
+			"comment": "Same as SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING\nBoth _0xBA7148484BD90365 / _0x77FE3402004CD1B0 works, but _0x77FE3402004CD1B0 is usually used for \"name\" (organisation, players..).",
 			"params": [
 				{
 					"type": "const char*",
@@ -24031,7 +24031,7 @@
 		"0xA356990E161C9E65": {
 			"name": "TERRAINGRID_ACTIVATE",
 			"jhash": "0xA1CB6C94",
-			"comment": "This native enables/disables the gold putting grid display (https://i.imgur.com/TC6cku6.png).",
+			"comment": "This native enables/disables the gold putting grid display (https://i.imgur.com/TC6cku6.png).\nThis requires these two natives to be called as well to configure the grid: `0x1c4fc5752bcd8e48` and `0x5ce62918f8d703c7`.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -24044,7 +24044,7 @@
 		"0x1C4FC5752BCD8E48": {
 			"name": "TERRAINGRID_SET_PARAMS",
 			"jhash": "0x3B637AA7",
-			"comment": "",
+			"comment": "This native is used along with these two natives: `0xa356990e161c9e65` and `0x5ce62918f8d703c7`.\nThis native configures the location, size, rotation, normal height, and the difference ratio between min, normal and max.\n\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png",
 			"params": [
 				{
 					"type": "float",
@@ -24105,7 +24105,7 @@
 		"0x5CE62918F8D703C7": {
 			"name": "TERRAINGRID_SET_COLOURS",
 			"jhash": "0xDF552973",
-			"comment": "",
+			"comment": "This native is used along with these two natives: `0xa356990e161c9e65` and `0x1c4fc5752bcd8e48`.\nThis native sets the colors for the golf putting grid. the 'min...' values are for the lower areas that the grid covers, the 'max...' values are for the higher areas that the grid covers, all remaining values are for the 'normal' ground height.\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png",
 			"params": [
 				{
 					"type": "int",
@@ -24407,9 +24407,9 @@
 			"build": "323"
 		},
 		"0x32888337579A5970": {
-			"name": "_THEFEED_DISABLE",
+			"name": "_THEFEED_DISABLE_LOADING_SCREEN_TIPS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Stops loading screen tips shown by invoking either `0x488043841BBE156F` or `0x15CFA549788D35EF`",
 			"params": [],
 			"return_type": "void",
 			"build": "463"
@@ -24417,15 +24417,15 @@
 		"0x25F87B30C382FCA7": {
 			"name": "THEFEED_HIDE_THIS_FRAME",
 			"jhash": "0x1E63088A",
-			"comment": "",
+			"comment": "Once called each frame hides all above radar notifications.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x15CFA549788D35EF": {
-			"name": "_0x15CFA549788D35EF",
+			"name": "_THEFEED_DISPLAY_LOADING_SCREEN_TIPS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Displays loading screen tips, requires `0x56C8B608CFD49854` to be called beforehand.",
 			"params": [],
 			"return_type": "void",
 			"build": "463"
@@ -24518,7 +24518,7 @@
 		"0x56C8B608CFD49854": {
 			"name": "THEFEED_COMMENT_TELEPORT_POOL_ON",
 			"jhash": "0xF881AB87",
-			"comment": "",
+			"comment": "Enables loading screen tips to be be shown (`_0x15CFA549788D35EF` and `_0x488043841BBE156F`), blocks other kinds of notifications from being displayed (at least from current script). Call `0xADED7F5748ACAFE6` to display those again.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -24526,7 +24526,7 @@
 		"0xADED7F5748ACAFE6": {
 			"name": "THEFEED_COMMENT_TELEPORT_POOL_OFF",
 			"jhash": "0x1D6859CA",
-			"comment": "",
+			"comment": "Displays \"normal\" notifications again after calling `_0x56C8B608CFD49854` (those that were drawn before calling this native too), though those will have a weird offset and stay on screen forever (tested with notifications created from same script).",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -24572,7 +24572,7 @@
 		"0x17AD8C9706BDD88A": {
 			"name": "_THEFEED_SET_ANIMPOSTFX_COUNT",
 			"jhash": "0x24A97AF8",
-			"comment": "",
+			"comment": "Related to notification color flashing, setting p0 to 0 invalidates a `_SET_NOTIFICATION_FLASH_COLOR` call for the target notification.",
 			"params": [
 				{
 					"type": "int",
@@ -24954,27 +24954,27 @@
 		"0xAA295B6F28BD587D": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_AWARD",
 			"jhash": "0x02DED2B8",
-			"comment": "Example:\n\nHUD::_SET_NOTIFICATION_TEXT_ENTRY(\"HUNT\");\nHUD::_0xAA295B6F28BD587D(\"Hunting\", \"Hunting_Gold_128\", 0, 109, \"HUD_MED_UNLKED\");",
+			"comment": "Shows an \"award\" notification above the minimap, example: https://i.imgur.com/e2DNaKX.png\nExample:\n\nHUD::_SET_NOTIFICATION_TEXT_ENTRY(\"HUNT\");\nHUD::_0xAA295B6F28BD587D(\"Hunting\", \"Hunting_Gold_128\", 0, 109, \"HUD_MED_UNLKED\");",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "textureDict"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "textureName"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "rpBonus"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "colorOverlay"
 				},
 				{
 					"type": "const char*",
-					"name": "p4"
+					"name": "titleLabel"
 				}
 			],
 			"return_type": "int",
@@ -25498,11 +25498,11 @@
 		"0xF9113A30DE5C6670": {
 			"name": "BEGIN_TEXT_COMMAND_SET_BLIP_NAME",
 			"jhash": "0xF4C211F6",
-			"comment": "example:\n\nHUD::BEGIN_TEXT_COMMAND_SET_BLIP_NAME(\"STRING\");\nHUD::_ADD_TEXT_COMPONENT_STRING(\"Name\");\nHUD::END_TEXT_COMMAND_SET_BLIP_NAME(blip);",
+			"comment": "Starts a text command to change the name of a blip displayed in the pause menu.\nThis should be paired with `END_TEXT_COMMAND_SET_BLIP_NAME`, once adding all required text components.\nExample:\n\nHUD::BEGIN_TEXT_COMMAND_SET_BLIP_NAME(\"STRING\");\nHUD::_ADD_TEXT_COMPONENT_STRING(\"Name\");\nHUD::END_TEXT_COMMAND_SET_BLIP_NAME(blip);",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "gxtentry"
+					"name": "textLabel"
 				}
 			],
 			"return_type": "void",
@@ -25511,7 +25511,7 @@
 		"0xBC38B49BCB83BC9B": {
 			"name": "END_TEXT_COMMAND_SET_BLIP_NAME",
 			"jhash": "0xE8E59820",
-			"comment": "",
+			"comment": "Finalizes a text command started with [`BEGIN_TEXT_COMMAND_SET_BLIP_NAME`](#_0xF9113A30DE5C6670), setting the name of the specified blip.",
 			"params": [
 				{
 					"type": "Blip",
@@ -27185,7 +27185,7 @@
 		"0xCE5D0E5E315DB238": {
 			"name": "_ADD_BLIP_FOR_AREA",
 			"jhash": "",
-			"comment": "",
+			"comment": "Adds a rectangular blip for the specified coordinates/area.\n\nIt is recommended to use SET_BLIP_ROTATION and SET_BLIP_COLOUR to make the blip not rotate along with the camera.\n\nBy default, the blip will show as a _regular_ blip with the specified color/sprite if it is outside of the minimap view.\n\nExample image:\nminimap https://w.wew.wtf/pdcjig.png\nbig map https://w.wew.wtf/zgcjcm.png\n\n(Native name is _likely_ to actually be ADD_BLIP_FOR_AREA, but due to the usual reasons this can't be confirmed)",
 			"params": [
 				{
 					"type": "float",
@@ -27201,11 +27201,11 @@
 				},
 				{
 					"type": "float",
-					"name": "scaleX"
+					"name": "width"
 				},
 				{
 					"type": "float",
-					"name": "scaleY"
+					"name": "height"
 				}
 			],
 			"return_type": "Blip",
@@ -27341,7 +27341,7 @@
 		"0xDF735600A4696DAF": {
 			"name": "SET_BLIP_SPRITE",
 			"jhash": "0x8DBBB0B9",
-			"comment": "Takes a blip object and adds a sprite to it on the map.\n\nYou may have your own list, but since dev-c didn't show it I was bored and started looking through scripts and functions to get a presumable almost positive list of a majority of blip IDs\nh t t p://pastebin.com/Bpj9Sfft\n\nBlips Images + IDs:\ngtaxscripting.blogspot.com/2016/05/gta-v-blips-id-and-image.html",
+			"comment": "Sets the displayed sprite for a specific blip..\n\nYou may have your own list, but since dev-c didn't show it I was bored and started looking through scripts and functions to get a presumable almost positive list of a majority of blip IDs\nh t t p://pastebin.com/Bpj9Sfft\n\nBlips Images + IDs:\ngtaxscripting.blogspot.com/2016/05/gta-v-blips-id-and-image.html",
 			"params": [
 				{
 					"type": "Blip",
@@ -27481,7 +27481,7 @@
 		"0x2C173AE2BDB9385E": {
 			"name": "_0x2C173AE2BDB9385E",
 			"jhash": "",
-			"comment": "GET_BLIP_*",
+			"comment": "GET_BLIP_*\n\nSeems to always return 0 from what I can tell. I've tried a lot of different blip related natives and it always seems to return 0. Decompiled scripts always pass a blip handle as p0.",
 			"params": [
 				{
 					"type": "Blip",
@@ -27511,7 +27511,7 @@
 		"0xA8B6AFDAC320AC87": {
 			"name": "_SET_BLIP_SQUARED_ROTATION",
 			"jhash": "",
-			"comment": "Does not require whole whole number/integer rotations.",
+			"comment": "Does not require whole number/integer rotations.",
 			"params": [
 				{
 					"type": "Blip",
@@ -27847,7 +27847,7 @@
 		"0xBE8BE4FE60E27B72": {
 			"name": "SET_BLIP_AS_SHORT_RANGE",
 			"jhash": "0x5C67725E",
-			"comment": "",
+			"comment": "Sets whether or not the specified blip should only be displayed when nearby, or on the minimap.",
 			"params": [
 				{
 					"type": "Blip",
@@ -27936,7 +27936,7 @@
 		"0x234CDD44D996FD9A": {
 			"name": "SET_BLIP_CATEGORY",
 			"jhash": "0xEF72F533",
-			"comment": "Index:\n1 = No distance shown in legend\n2 = Distance shown in legend\n7 = \"Other Players\" category, also shows distance in legend\n10 = \"Property\" category\n11 = \"Owned Property\" category\n\nAny other value behaves like index = 1, index wraps around after 255\nBlips with categories 7, 10 or 11 will all show under the specific categories listing in the map legend, regardless of sprite or name.\nLegend entries:\n7 = Other Players (BLIP_OTHPLYR)\n10 = Property (BLIP_PROPCAT)\n11 = Owned Property (BLIP_APARTCAT)\n\nCategory needs to be `7` in order for blip names to show on the expanded minimap when using DISPLAY_PLAYER_NAME_TAGS_ON_BLIPS.",
+			"comment": "Example: https://i.imgur.com/skY6vAJ.png\n\nIndex:\n1 = No distance shown in legend\n2 = Distance shown in legend\n7 = \"Other Players\" category, also shows distance in legend\n10 = \"Property\" category\n11 = \"Owned Property\" category\n\nAny other value behaves like index = 1, index wraps around after 255\nBlips with categories 7, 10 or 11 will all show under the specific categories listing in the map legend, regardless of sprite or name.\nLegend entries:\n7 = Other Players (BLIP_OTHPLYR)\n10 = Property (BLIP_PROPCAT)\n11 = Owned Property (BLIP_APARTCAT)\n\nCategory needs to be `7` in order for blip names to show on the expanded minimap when using DISPLAY_PLAYER_NAME_TAGS_ON_BLIPS.",
 			"params": [
 				{
 					"type": "Blip",
@@ -28094,7 +28094,7 @@
 		"0x23C3EB807312F01A": {
 			"name": "SHOW_FRIEND_INDICATOR_ON_BLIP",
 			"jhash": "0x4C8F02B4",
-			"comment": "Highlights a blip by a half cyan circle.",
+			"comment": "Highlights a blip by a half cyan circle on the right side of the blip. https://i.imgur.com/FrV9M4e.png\n.Indicating that that player is a friend (in GTA:O). This color can not be changed.\nTo toggle the left side (crew member indicator) of the half circle around the blip, use: `SHOW_CREW_INDICATOR_ON_BLIP`",
 			"params": [
 				{
 					"type": "Blip",
@@ -28111,7 +28111,7 @@
 		"0xDCFB5D4DB8BF367E": {
 			"name": "SHOW_CREW_INDICATOR_ON_BLIP",
 			"jhash": "0xABBE1E45",
-			"comment": "",
+			"comment": "Enables or disables the blue half circle https://i.imgur.com/iZes9Ec.png around the specified blip on the left side of the blip. This is used to indicate that the player is in your crew in GTA:O. Color is changeable by using `SET_BLIP_SECONDARY_COLOUR`.",
 			"params": [
 				{
 					"type": "Blip",
@@ -28816,9 +28816,9 @@
 			"build": "323"
 		},
 		"0x488043841BBE156F": {
-			"name": "_0x488043841BBE156F",
+			"name": "_HUD_DISPLAY_LOADING_SCREEN_TIPS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Displays loading screen tips, requires `_0x56C8B608CFD49854` to be called beforehand.",
 			"params": [],
 			"return_type": "void",
 			"build": "1011"
@@ -29327,7 +29327,7 @@
 		"0x71BDB63DBAF8DA59": {
 			"name": "SET_MINIMAP_GOLF_COURSE",
 			"jhash": "0x5133A750",
-			"comment": "",
+			"comment": "Not much is known so far on what it does _exactly_.\nAll I know for sure is that it draws the specified hole ID on the pause menu map as well as on the mini-map/radar. This native also seems to change some other things related to the pause menu map's behaviour, for example: you can no longer set waypoints, the pause menu map starts up in a 'zoomed in' state. This native does not need to be executed every tick.\nYou need to center the minimap manually as well as change/lock it's zoom and angle in order for it to appear correctly on the minimap.\nYou'll also need to use the `GOLF` scaleform in order to get the correct minmap border to show up.\nUse `0x35edd5b2e3ff01c0` to reset the map when you no longer want to display any golf holes (you still need to unlock zoom, position and angle of the radar manually after calling this).",
 			"params": [
 				{
 					"type": "int",
@@ -29641,7 +29641,7 @@
 		"0xF9904D11F1ACBEC3": {
 			"name": "GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION",
 			"jhash": "0xFE9A39F8",
-			"comment": "World to relative screen coords, this world to screen will keep the text on screen.",
+			"comment": "World to relative screen coords, this world to screen will keep the text on screen. Was named _GET_SCREEN_COORD_FROM_WORLD_COORD, but this conflicts with 0x34E82F05DF2974F5. As that hash actually matches GET_SCREEN_COORD_FROM_WORLD_COORD that one supercedes and this one was renamed to _GET_2D_COORD_FROM_3D_COORD",
 			"params": [
 				{
 					"type": "float",
@@ -30272,7 +30272,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "showBg"
+					"name": "showBackground"
 				},
 				{
 					"type": "Any",
@@ -30285,23 +30285,23 @@
 		"0xDC38CC1E35B6A5D7": {
 			"name": "SET_WARNING_MESSAGE_WITH_HEADER",
 			"jhash": "0x2DB9EAB5",
-			"comment": "You can only use text entries. No custom text.\n\n[24/03/2017] by ins1de :\n\nC# Example :\nFunction.Call(Hash._SET_WARNING_MESSAGE_2, \"HUD_QUIT\", \"HUD_CGIGNORE\", 2, \"HUD_CGINVITE\", 0, -1, 0, 0, 1);\n\n@unknown, you can recreate this easily with scaleforms",
+			"comment": "Shows a warning message on screen with a header.\nNote: You can only use text entries. No custom text. You can recreate this easily with scaleforms.\nExample: https://i.imgur.com/ITJt8bJ.png",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "titleMsg"
+					"name": "entryHeader"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "entryLine1"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "instructionalKey"
 				},
 				{
 					"type": "const char*",
-					"name": "promptMsg"
+					"name": "entryLine2"
 				},
 				{
 					"type": "BOOL",
@@ -30313,7 +30313,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p6"
+					"name": "showBackground"
 				},
 				{
 					"type": "Any*",
@@ -30321,7 +30321,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "showBg"
+					"name": "p8"
 				},
 				{
 					"type": "Any",
@@ -30505,7 +30505,7 @@
 		"0x0C5A80A9E096D529": {
 			"name": "_SET_WARNING_MESSAGE_LIST_ROW",
 			"jhash": "",
-			"comment": "Param names copied from the corresponding scaleform function \"SET_LIST_ROW\"",
+			"comment": "Some sort of list displayed in a warning message. Yet unknown how to prevent repeating.\nParam names copied from the corresponding scaleform function "SET_LIST_ROW".\nExample: https://i.imgur.com/arKvOYx.png",
 			"params": [
 				{
 					"type": "int",
@@ -30750,7 +30750,7 @@
 		"0xCC3FDDED67BCFC63": {
 			"name": "_ALLOW_PAUSE_MENU_WHEN_DEAD_THIS_FRAME",
 			"jhash": "0x630CD8EE",
-			"comment": "",
+			"comment": "Allows opening the pause menu this frame, when the player is dead.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -30858,7 +30858,7 @@
 		"0xDD564BDD0472C936": {
 			"name": "PAUSE_MENU_ACTIVATE_CONTEXT",
 			"jhash": "0x9FE8FD5E",
-			"comment": "",
+			"comment": "Activates the specified frontend menu context.\npausemenu.xml defines some specific menu options using 'context'. Context is basically a 'condition'. \nThe `*ALL*` part of the context means that whatever is being defined, will be active when any or all of those conditions after `*ALL*` are met.\nThe `*NONE*` part of the context section means that whatever is being defined, will NOT be active if any or all of the conditions after `*NONE*` are met.\nThis basically allows you to hide certain menu sections, or things like instructional buttons.",
 			"params": [
 				{
 					"type": "Hash",
@@ -31005,7 +31005,7 @@
 		"0xEC9264727EEC0F28": {
 			"name": "_0xEC9264727EEC0F28",
 			"jhash": "0xC06B763D",
-			"comment": "",
+			"comment": "Disables frontend (works in custom frontends, not sure about regular pause menu) navigation keys on keyboard. Not sure about controller. Does not disable mouse controls. No need to call this every tick.\n\nTo enable the keys again, use `0x14621BB1DF14E2B2`.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -31013,7 +31013,7 @@
 		"0x14621BB1DF14E2B2": {
 			"name": "_0x14621BB1DF14E2B2",
 			"jhash": "0xB9392CE7",
-			"comment": "",
+			"comment": "Enables frontend (works in custom frontends, not sure about regular pause menu) navigation keys on keyboard if they were disabled using the native below.\nTo disable the keys, use `0xEC9264727EEC0F28`",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -31305,11 +31305,11 @@
 		"0x3CA6050692BC61B0": {
 			"name": "SET_PAUSE_MENU_PED_LIGHTING",
 			"jhash": "0x127310EB",
-			"comment": "",
+			"comment": "Toggles the light state for the pause menu ped in frontend menus.\n\nThis is used by R* in combination with `SET_PAUSE_MENU_PED_SLEEP_STATE` to toggle the "offline" or "online" state in the "friends" tab of the pause menu in GTA Online.\n\n\nExample:\nLights On: https://vespura.com/hi/i/2019-04-01_16-09_540ee_1015.png\nLights Off: https://vespura.com/hi/i/2019-04-01_16-10_8b5e7_1016.png",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -31318,7 +31318,7 @@
 		"0xECF128344E9FF9F1": {
 			"name": "SET_PAUSE_MENU_PED_SLEEP_STATE",
 			"jhash": "0x8F45D327",
-			"comment": "",
+			"comment": "Toggles the pause menu ped sleep state for frontend menus.\n\nExample: https://vespura.com/hi/i/2019-04-01_15-51_8ed38_1014.gif\n\n`state` 0 will make the ped slowly fall asleep, 1 will slowly wake the ped up.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -31355,7 +31355,7 @@
 		"0x75D3691713C3B05A": {
 			"name": "OPEN_SOCIAL_CLUB_MENU",
 			"jhash": "0x57218529",
-			"comment": "",
+			"comment": "Uses the `SOCIAL_CLUB2` scaleform.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -33389,13 +33389,13 @@
 			"build": "323"
 		},
 		"0x643E26EA6E024D92": {
-			"name": "_SET_RAIN_LEVEL",
+			"name": "_SET_RAIN_FX_INTENSITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "With an `intensity` higher than `0.5f`, only the creation of puddles gets faster, rain and rain sound won't increase after that.\nWith an `intensity` of `0.0f` rain and rain sounds are disabled and there won't be any new puddles.\nTo use the rain intensity of the current weather, call this native with `-1f` as `intensity`.",
 			"params": [
 				{
 					"type": "float",
-					"name": "level"
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
@@ -33777,7 +33777,7 @@
 		"0xF1B760881820C952": {
 			"name": "GET_DISTANCE_BETWEEN_COORDS",
 			"jhash": "0xF698765E",
-			"comment": "If useZ is false, only the 2D plane (X-Y) will be considered for calculating the distance.\n\nConsider using this faster native instead: SYSTEM::VDIST - DVIST always takes in consideration the 3D coordinates.",
+			"comment": "Returns the distance between two three-dimensional points, optionally ignoring the Z values.\nIf useZ is false, only the 2D plane (X-Y) will be considered for calculating the distance.\n\nConsider using this faster native instead: SYSTEM::VDIST - DVIST always takes in consideration the 3D coordinates.",
 			"params": [
 				{
 					"type": "float",
@@ -35635,7 +35635,7 @@
 		"0xD3D15555431AB793": {
 			"name": "SHOULD_USE_METRIC_MEASUREMENTS",
 			"jhash": "0xBAF17315",
-			"comment": "Returns whether the game's measurement system is set to metric (profile setting 227).",
+			"comment": "Returns true if the game is using the metric measurement system (profile setting 227), false if imperial is used.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -36338,78 +36338,78 @@
 		"0x1A992DA297A4630C": {
 			"name": "ADD_STUNT_JUMP",
 			"jhash": "0xB630E5FF",
-			"comment": "",
+			"comment": "See description of `ADD_STUNT_JUMP_ANGLED` for detailed info. The only difference really is this one does not have the radius (or angle, not sure) floats parameters for entry and landing zones.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "x3"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "y3"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "z3"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "x4"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "y4"
 				},
 				{
 					"type": "float",
-					"name": "p11"
+					"name": "z4"
 				},
 				{
 					"type": "float",
-					"name": "p12"
+					"name": "camX"
 				},
 				{
 					"type": "float",
-					"name": "p13"
+					"name": "camY"
 				},
 				{
 					"type": "float",
-					"name": "p14"
+					"name": "camZ"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p15"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p16"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p17"
 				}
 			],
@@ -36419,86 +36419,86 @@
 		"0xBBE5D803A5360CBF": {
 			"name": "ADD_STUNT_JUMP_ANGLED",
 			"jhash": "0xB9B7E777",
-			"comment": "",
+			"comment": "Creates a new stunt jump.\n\nThe radius1 and radius2 might actually not be a radius at all, but that's what it seems to me testing them in-game. But they may be 'angle' floats instead, considering this native is named ADD_STUNT_JUMP_**ANGLED**.\n\nInfo about the specific 'parameter sections':\n\n\n**x1, y1, z1, x2, y2, z2 and radius1:**\n\nFirst coordinates are for the jump entry area, and the radius that will be checked around that area. So if you're not exactly within the coordinates, but you are within the outter radius limit then it will still register as entering the stunt jump. Note as mentioned above, the radius is just a guess, I'm not really sure about it's exact purpose.\n\n\n**x3, y3, z3, x4, y4, z4 and radius2:**\n\nNext part is the landing area, again starting with the left bottom (nearest to the stunt jump entry zone) coordinate, and the second one being the top right furthest away part of the landing area. Followed by another (most likely) radius float, this is usually slightly larger than the entry zone 'radius' float value, just because you have quite a lot of places where you can land (I'm guessing).\n\n\n**camX, camY and camZ:**\n\nThe final coordinate in this native is the Camera position. Rotation and zoom/FOV is managed by the game itself, you just need to provide the camera location.\n\n\n**unk1, unk2 and unk3:**\n\nNot sure what these are for, but they're always `150, 0, 0` in decompiled scripts.\n\nVisualized example in-game: https://d.fivem.dev/2019-03-15_18-24_c7802_846.png\n\nHere is a list of almost all of the stunt jumps from GTA V (taken from decompiled scripts): https://pastebin.com/EW1jBPkY",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "radius1"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "x3"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "y3"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "z3"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "x4"
 				},
 				{
 					"type": "float",
-					"name": "p11"
+					"name": "y4"
 				},
 				{
 					"type": "float",
-					"name": "p12"
+					"name": "z4"
 				},
 				{
 					"type": "float",
-					"name": "p13"
+					"name": "radius2"
 				},
 				{
 					"type": "float",
-					"name": "p14"
+					"name": "camX"
 				},
 				{
 					"type": "float",
-					"name": "p15"
+					"name": "camY"
 				},
 				{
 					"type": "float",
-					"name": "p16"
+					"name": "camZ"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p17"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p18"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p19"
 				}
 			],
@@ -46666,22 +46666,22 @@
 		"0xA60BB5CE242BB254": {
 			"name": "NETWORK_HOST_TRANSITION",
 			"jhash": "0x146764FB",
-			"comment": "",
+			"comment": "p0: Unknown int\np1: Unknown int\np2: Unknown int\np3: Unknown int\np4: Unknown always 0 in decompiled scripts\np5: BOOL purpose unknown, both 0 and 1 are used in decompiled scripts.\np6: BOOL purpose unknown, both 0 and 1 are used in decompiled scripts.\np7: Unknown int, it's an int according to decompiled scripts, however the value is always 0 or 1.\np8: Unknown int, it's an int according to decompiled scripts, however the value is always 0 or 1.\np9: Unknown int, sometimes 0, but also 32768 or 16384 appear in decompiled scripst, maybe a flag of some sort?\n\nFrom what I can tell it looks like it does the following:\nCreates/hosts a new transition to another online session, using this in FiveM will result in other players being disconencted from the server/preventing them from joining. This is most likely because I entered the wrong session parameters since they're pretty much all unknown right now.\nYou also need to use `NetworkJoinTransition(Player player)` and `NetworkLaunchTransition()`.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
@@ -46689,15 +46689,15 @@
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
@@ -46705,11 +46705,11 @@
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p9"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x71FB0EBCD4915D56": {
@@ -49078,7 +49078,7 @@
 		"0x7242F8B741CE1086": {
 			"name": "_0x7242F8B741CE1086",
 			"jhash": "",
-			"comment": "NETWORK_IS_*",
+			"comment": "Probably a bool, returns true if the specified network id is controlled by someone else.\nFf you have control over the entity corresponding to the netId then this will return false (0);\nReturns probably a bool, returns 1 if you don't have control over the netId entity.",
 			"params": [
 				{
 					"type": "int",
@@ -49622,14 +49622,14 @@
 		"0x37D5F739FD494675": {
 			"name": "_0x37D5F739FD494675",
 			"jhash": "",
-			"comment": "",
+			"comment": "I've had this return the player's ped handle sometimes, but also other random entities.\nWhatever p0 is, it's at least not synced to other players.\nAt least not all the time, some p0 values actually output the same entity, (different handle of course, but same entity).\nBut another p0 value may return an entity for player x, but not for player y (it'll just return -1 even if the entity exists on both clients).\n\nReturns an entity handle or -1, value changes based on p0's value.",
 			"params": [
 				{
 					"type": "Any",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "505"
 		},
 		"0x7E58745504313A2E": {
@@ -50533,7 +50533,7 @@
 		"0x9ECA15ADFE141431": {
 			"name": "_SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disconnects you from the session, and starts loading single player, however you still remain connected to the server (only if you're the host, if you're not then you also (most likely) get disconnected from the server) and other players will not be able to join until you exit the game.\n\nIf you're already in SP then it'll re-load singleplayer.\n\nYou might need to DoScreenFadeIn and ShutdownLoadingScreen otherwise you probably won't end up loading into SP at all.\n\nSomewhat related note: opening the pause menu after loading into this 'singleplayer' mode crashes the game.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "505"
@@ -52157,7 +52157,7 @@
 		"0x9A73240B49945C76": {
 			"name": "GET_CLOUD_TIME_AS_INT",
 			"jhash": "0xF2FDF2E0",
-			"comment": "",
+			"comment": "Returns POSIX timestamp, an int representing the cloud time.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -56202,7 +56202,7 @@
 		"0x125E6D638B8605D4": {
 			"name": "_NETWORK_GET_PLAYER_COORDS",
 			"jhash": "",
-			"comment": "NETWORK_GET_*",
+			"comment": "Returns the coordinates of another player.\nDoes not work if you enter your own player id as p0 (will return `(0.0, 0.0, 0.0)` in that case).",
 			"params": [
 				{
 					"type": "Player",
@@ -59520,7 +59520,7 @@
 		"0xF3A21BCD95725A4A": {
 			"name": "IS_CONTROL_PRESSED",
 			"jhash": "0x517A4384",
-			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "Returns whether a control is currently pressed.\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
@@ -59537,7 +59537,7 @@
 		"0x648EE3E7F38877DD": {
 			"name": "IS_CONTROL_RELEASED",
 			"jhash": "0x1F91A06E",
-			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "Returns whether a control is currently _not_ pressed.\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
@@ -59554,7 +59554,7 @@
 		"0x580417101DDB492F": {
 			"name": "IS_CONTROL_JUST_PRESSED",
 			"jhash": "0x4487F579",
-			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "Returns whether a control was newly pressed since the last check.\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
@@ -59571,7 +59571,7 @@
 		"0x50F940259D3841E6": {
 			"name": "IS_CONTROL_JUST_RELEASED",
 			"jhash": "0x2314444B",
-			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "Returns whether a control was newly released since the last check.\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
@@ -61410,7 +61410,7 @@
 		"0xD3A6A0EF48823A8C": {
 			"name": "GET_NEXT_GPS_DISABLED_ZONE_INDEX",
 			"jhash": "0xBE92551F",
-			"comment": "",
+			"comment": "Gets the next zone that has been disabled using SET_GPS_DISABLED_ZONE_AT_INDEX.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -61418,7 +61418,7 @@
 		"0xD0BC1C6FB18EE154": {
 			"name": "SET_GPS_DISABLED_ZONE_AT_INDEX",
 			"jhash": "0x98BDB311",
-			"comment": "",
+			"comment": "Disables the GPS route displayed on the minimap while within a certain zone (area). When in a disabled zone and creating a waypoint, the GPS route is not shown on the minimap until you are outside of the zone. When disabled, the direct distance is shown on minimap opposed to distance to travel. Seems to only work before setting a waypoint.\nYou can clear the disabled zone with CLEAR_GPS_DISABLED_ZONE_AT_INDEX.\n\n**Setting a waypoint at the same coordinate:**\nDisabled Zone: https://i.imgur.com/P9VUuxM.png\nEnabled Zone (normal): https://i.imgur.com/BPi24aw.png",
 			"params": [
 				{
 					"type": "float",
@@ -61455,7 +61455,7 @@
 		"0x2801D0012266DF07": {
 			"name": "CLEAR_GPS_DISABLED_ZONE_AT_INDEX",
 			"jhash": "0x59090745",
-			"comment": "",
+			"comment": "Clears a disabled GPS route area from a certain index previously set using `SET_GPS_DISABLED_ZONE_AT_INDEX`.",
 			"params": [
 				{
 					"type": "int",
@@ -62700,7 +62700,7 @@
 		"0x9A9112A0FE9A4713": {
 			"name": "GET_VEHICLE_PED_IS_IN",
 			"jhash": "0xAFE92319",
-			"comment": "Gets the vehicle the specified Ped is in.\n\nIf the Ped is not in a vehicle and includeLastVehicle is true, the vehicle they were last in is returned.",
+			"comment": "Gets the vehicle the specified Ped is in. Returns 0 if the ped is/was not in a vehicle.\nIf the Ped is not in a vehicle and includeLastVehicle is true, the vehicle they were last in is returned.",
 			"params": [
 				{
 					"type": "Ped",
@@ -65619,7 +65619,7 @@
 		"0xC52E0F855C58FC2E": {
 			"name": "SET_ENABLE_BOUND_ANKLES",
 			"jhash": "0x9208D689",
-			"comment": "",
+			"comment": "Used with SET_ENABLE_HANDCUFFS] in decompiled scripts. From my observations, I have noticed that while being ragdolled you are not able to get up but you can still run. Your legs can also bend.",
 			"params": [
 				{
 					"type": "Ped",
@@ -66700,23 +66700,23 @@
 		"0x4852FC386E2E1BB5": {
 			"name": "_GET_PED_HAIR_RGB_COLOR",
 			"jhash": "",
-			"comment": "GET_PED_*",
+			"comment": "Input: Haircolor index, value between 0 and 63 (inclusive).\nOutput: RGB values for the haircolor specified in the input.\n\nThis is used with the hair color swatches scaleform.\nUse `_0x013E5CFC38CD5387` to get the makeup colors.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "hairColorIndex"
 				},
 				{
 					"type": "int*",
-					"name": "r"
+					"name": "outR"
 				},
 				{
 					"type": "int*",
-					"name": "g"
+					"name": "outG"
 				},
 				{
 					"type": "int*",
-					"name": "b"
+					"name": "outB"
 				}
 			],
 			"return_type": "void",
@@ -66725,23 +66725,23 @@
 		"0x013E5CFC38CD5387": {
 			"name": "_GET_PED_MAKEUP_RGB_COLOR",
 			"jhash": "",
-			"comment": "GET_PED_*",
+			"comment": "Input: Makeup color index, value between 0 and 63 (inclusive).\nOutput: RGB values for the makeup color specified in the input.\n\nThis is used with the makeup color swatches scaleform.\nUse `_0x4852FC386E2E1BB5` to get the hair colors.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "makeupColorIndex"
 				},
 				{
 					"type": "int*",
-					"name": "r"
+					"name": "outR"
 				},
 				{
 					"type": "int*",
-					"name": "g"
+					"name": "outG"
 				},
 				{
 					"type": "int*",
-					"name": "b"
+					"name": "outB"
 				}
 			],
 			"return_type": "void",
@@ -67266,7 +67266,7 @@
 		"0xB50EB4CCB29704AC": {
 			"name": "CLEAR_PED_SCUBA_GEAR_VARIATION",
 			"jhash": "0x080275EE",
-			"comment": "",
+			"comment": "Removes the scubagear (for mp male: component id: 8, drawableId: 123, textureId: any) from peds. Does not play the 'remove scuba gear' animation, but instantly removes it.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71056,7 +71056,7 @@
 		"0x1461B28A06717D68": {
 			"name": "_GET_PED_EMISSIVE_INTENSITY",
 			"jhash": "",
-			"comment": "Old name: _GET_PED_REFLECTION_INTENSITY",
+			"comment": "Old name: _GET_PED_REFLECTION_INTENSITY\nUse 0x4E90D746056E273D to set the illuminated clothing glow intensity for a specific ped.\nReturns a float between 0.0 and 1.0 representing the current illuminated clothing glow intensity.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71717,7 +71717,7 @@
 		"0x953563CE563143AF": {
 			"name": "REGISTER_PEDHEADSHOT_TRANSPARENT",
 			"jhash": "0x4DD03628",
-			"comment": "",
+			"comment": "Similar to REGISTER_PEDHEADSHOT but creates a transparent background instead of black. Example: https://i.imgur.com/iHz8ztn.png",
 			"params": [
 				{
 					"type": "Ped",
@@ -73498,7 +73498,7 @@
 		"0x43A66C31C68491C0": {
 			"name": "GET_PLAYER_PED",
 			"jhash": "0x6E31E993",
-			"comment": "",
+			"comment": "Gets the ped for a specified player index.",
 			"params": [
 				{
 					"type": "Player",
@@ -73524,7 +73524,7 @@
 		"0x00A1CADD00108836": {
 			"name": "SET_PLAYER_MODEL",
 			"jhash": "0x774A4C54",
-			"comment": "Make sure to request the model first and wait until it has loaded.",
+			"comment": "Set the model for a specific Player. Be aware that this will destroy the current Ped for the Player and create a new one, any reference to the old ped should be reset\nMake sure to request the model first and wait until it has loaded.",
 			"params": [
 				{
 					"type": "Player",
@@ -77329,7 +77329,7 @@
 		"0xEB2D525B57F42B40": {
 			"name": "_STOP_RECORDING_THIS_FRAME",
 			"jhash": "",
-			"comment": "",
+			"comment": "This disable the recording feature and has to be called every frame.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -85992,7 +85992,7 @@
 		"0x3D245789CE12982C": {
 			"name": "PREFETCH_SRL",
 			"jhash": "0x37BE2FBB",
-			"comment": "",
+			"comment": "This native is used to attribute the SRL that BeginSrl is going to load. This is usually used for 'in-game' cinematics (not cutscenes but camera stuff) instead of SetFocusArea because it loads a specific area of the map which is pretty useful when the camera moves from distant areas.\nFor instance, GTA:O opening cutscene.\nhttps://pastebin.com/2EeKVeLA : a list of SRL found in srllist.meta\nhttps://pastebin.com/zd9XYUWY here is the content of a SRL file opened with codewalker.",
 			"params": [
 				{
 					"type": "const char*",
@@ -86005,7 +86005,7 @@
 		"0xD0263801A4C5B0BB": {
 			"name": "IS_SRL_LOADED",
 			"jhash": "0x670FA2A6",
-			"comment": "",
+			"comment": "Returns true when the srl from BeginSrl is loaded.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -86021,7 +86021,7 @@
 		"0x0A41540E63C9EE17": {
 			"name": "END_SRL",
 			"jhash": "0x1977C56A",
-			"comment": "",
+			"comment": "Clear the current srl and stop rendering the area selected by PrefetchSrl and started with BeginSrl.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -87688,11 +87688,11 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "blendInSpeed"
 				},
 				{
 					"type": "float",
-					"name": "speedMultiplier"
+					"name": "blendOutSpeed"
 				},
 				{
 					"type": "int",
@@ -98225,7 +98225,7 @@
 		"0x33E8CD3322E2FE31": {
 			"name": "SET_VEHICLE_COLOUR_COMBINATION",
 			"jhash": "0xA557AEAD",
-			"comment": "",
+			"comment": "Sets the selected vehicle's colors to their default value (specific variant specified using the colorCombination parameter).\nRange of possible values for colorCombination is currently unknown, I couldn't find where these values are stored either (Disquse's guess was vehicles.meta but I haven't seen it in there.)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98255,7 +98255,7 @@
 		"0xE41033B25D003A07": {
 			"name": "_SET_VEHICLE_XENON_LIGHTS_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "`color`: is the paint index for the vehicle.\nPaint index goes from 0 to 12.\nBe aware that it only works on xenon lights. Example: https://i.imgur.com/yV3cpG9.png",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98272,7 +98272,7 @@
 		"0x3DFF319A831E0CDB": {
 			"name": "_GET_VEHICLE_XENON_LIGHTS_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns the headlight color index from the vehicle. Value between 0, 12.\nUse _SET_VEHICLE_HEADLIGHTS_COLOUR to set the headlights color for the vehicle.\nMust enable xenon headlights before it'll take affect.\n\nReturns an int, value between 0-12 or 255 if no color is set.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99103,7 +99103,7 @@
 		"0xBE4C854FFDB6EEBE": {
 			"name": "_TRANSFORM_VEHICLE_TO_SUBMARINE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Transforms the `stormberg` to it's \"water vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99120,7 +99120,7 @@
 		"0x2A69FFD1B42BFF9E": {
 			"name": "_TRANSFORM_SUBMARINE_TO_VEHICLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Transforms the `stormberg` to it's \"road vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99570,7 +99570,7 @@
 		"0xA6D3A8750DC73270": {
 			"name": "_SET_VEHICLE_ROOF_LIVERY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used to set the tornado custom (convertible) rooftop livery.\n\nLivery value that works for tornado custom is between 0 and 9 from what i can tell. Maybe 0-8 even.\n\nMight work on other custom vehicles but im not sure what those might be, only confirmed it working with the tornado custom.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99587,7 +99587,7 @@
 		"0x60190048C0764A26": {
 			"name": "_GET_VEHICLE_ROOF_LIVERY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns index of the current vehicle's rooftop livery. A getter for _SET_VEHICLE_ROOF_LIVERY.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99600,7 +99600,7 @@
 		"0x5ECB40269053C0D4": {
 			"name": "_GET_VEHICLE_ROOF_LIVERY_COUNT",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns a number of available rooftop liveries, or -1 if vehicle has no rooftop liveries available.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99903,7 +99903,7 @@
 		"0x9B0F3DCA3DB0F4CD": {
 			"name": "GET_LANDING_GEAR_STATE",
 			"jhash": "0xA6F02670",
-			"comment": "landing gear states:\n\n0: Deployed\n1: Closing\n2: Opening\n3: Retracted",
+			"comment": "Landing gear states:\n\n0: Deployed\n1: Closing (Retracting)\n2:(Landing gear state 2 is never used.)\n3: Opening (Deploying)\n4: Retracted\n\nReturns the current state of the vehicles landing gear.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100924,7 +100924,7 @@
 		"0xD0917A423314BBA8": {
 			"name": "_ARE_BOMB_BAY_DOORS_OPEN",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns true when the bomb bay doors of this plane are open. False if they're closed.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101742,7 +101742,7 @@
 		"0xEC69ADF931AAE0C3": {
 			"name": "_IS_VEHICLE_ENGINE_ON_FIRE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Only ever used once in decompiled scripts: **am_pi_menu**:\nReturns true if the engine is on fire, or if the vehicle engine health is < 0 and it **has been** on fire.\n\nIt sometimes doesn't return true when the vehicle engine has been on fire, and has since been fixed. I'm not really sure what the exact conditions are.\n\nThis usually returns true even if there are no visible flames yet (engine health > 0). However if you monitor engine health you'll see that it starts decreasing as soon as this returns true.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102695,7 +102695,7 @@
 		"0xAD2D28A1AFDFF131": {
 			"name": "SET_PLANE_TURBULENCE_MULTIPLIER",
 			"jhash": "0xED159AE6",
-			"comment": "For planes only!\n\nvalue can be 1.0 or lower (higher values will automatically result in 1.0).",
+			"comment": "This native sets the turbulence multiplier. It only works for planes.\n0.0 = no turbulence at all.\n1.0 = heavy turbulence.\nWorks by just calling it once, does not need to be called every tick.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102703,7 +102703,7 @@
 				},
 				{
 					"type": "float",
-					"name": "value"
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
@@ -104241,7 +104241,7 @@
 		"0x50634E348C8D44EF": {
 			"name": "GET_VEHICLE_HAS_KERS",
 			"jhash": "0x0761E635",
-			"comment": "",
+			"comment": "Returns true if the vehicle has a kers boost (for instance the lectro or the vindicator)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105390,7 +105390,7 @@
 		"0xF4B2ED59DEB5D774": {
 			"name": "_SET_VEHICLE_BOMB_COUNT",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets the amount of bombs that this vehicle has. As far as I know, this does _not_ impact vehicle weapons or the ammo of those weapons in any way, it is just a way to keep track of the amount of bombs in a specific plane. ",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105407,7 +105407,7 @@
 		"0xEA12BD130D7569A1": {
 			"name": "_GET_VEHICLE_BOMB_COUNT",
 			"jhash": "",
-			"comment": "",
+			"comment": "Gets the amount of bombs that this vehicle has. As far as I know, this does _not_ impact vehicle weapons or the ammo of those weapons in any way, it is just a way to keep track of the amount of bombs in a specific plane. ",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105420,7 +105420,7 @@
 		"0x9BDA23BF666F0855": {
 			"name": "_SET_VEHICLE_COUNTERMEASURE_COUNT",
 			"jhash": "",
-			"comment": "",
+			"comment": "Similar to 0xF4B2ED59DEB5D774, this sets the amount of countermeasures that are present on this vehicle.\nUse 0xF846AA63DF56B804 to get the current amount.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105437,7 +105437,7 @@
 		"0xF846AA63DF56B804": {
 			"name": "_GET_VEHICLE_COUNTERMEASURE_COUNT",
 			"jhash": "",
-			"comment": "",
+			"comment": "Similar to `0xEA12BD130D7569A1`, this gets the amount of countermeasures that are present on this vehicle.\nUse 0x9BDA23BF666F0855 to set the current amount.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105554,7 +105554,7 @@
 		"0x438B3D7CA026FE91": {
 			"name": "_SET_VEHICLE_HOVER_TRANSFORM_PERCENTAGE",
 			"jhash": "",
-			"comment": "",
+			"comment": "According to decompiled scripts this should work with the `deluxo` and `oppressor2` vehicles.\nI've only seen this work for `deluxo` though, can't figure out what it's supposed to do on `oppressor2`.\n\nFor the deluxo:\n- Set `state` to `0.0`: Fully transform to a 'road' vehicle (non-hover mode).\n- Set `state` to `1.0`: Fully transform to a 'flying' vehicle (hover mode).\n\nIf you set it to something like 0.5, then something [weird happens](https://streamable.com/p6wmr), you end up in some 50% hover mode, 50% not hover mode.\n\nThis doesn't need to be called every tick, just once and the vehicle will transform to that state at the usual transform speed. It'll just stop transforming when it reaches the state you provided.\n\nOnce this native is used then players will just be able to hit the vehicle transform key to toggle the transformation cycle; it won't block users from using the key.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108037,7 +108037,7 @@
 		"0x3133B907D8B32053": {
 			"name": "GET_WEAPON_DAMAGE",
 			"jhash": "0xE81649C0",
-			"comment": "",
+			"comment": "This native does not return damages of weapons from the melee and explosive group.",
 			"params": [
 				{
 					"type": "Hash",
@@ -108260,19 +108260,19 @@
 		"0x91EF34584710BE99": {
 			"name": "_CREATE_AIR_DEFENSE_SPHERE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Both coordinates are from objects in the decompiled scripts. Native related to 0xECDC202B25E5CF48 p1 value. The only weapon hash used in the decompiled scripts is weapon_air_defence_gun. These two natives are used by the yacht script, decompiled scripts suggest it and the weapon hash used (valkyrie's rockets) are also used by yachts.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
