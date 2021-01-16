@@ -2771,7 +2771,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "fadeTime"
 				}
 			],
 			"return_type": "void",
@@ -4366,7 +4366,7 @@
 		"0x552369F549563AD5": {
 			"name": "DISTANT_COP_CAR_SIRENS",
 			"jhash": "0x13EB5861",
-			"comment": "if value is set to true, and ambient siren sound will be played.\n\n-------------------------------------------------------------------------\n\nAppears to enable/disable an audio flag.",
+			"comment": "If value is set to true, and ambient siren sound will be played.\nAppears to enable/disable an audio flag.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -5560,15 +5560,15 @@
 		"0x47B595D60664CFFA": {
 			"name": "_SET_CAM_DOF_FOCAL_LENGTH_MULTIPLIER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Native name labeled within its code",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "camera"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
@@ -7065,16 +7065,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "roll"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "pitch"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "yaw"
 				}
 			],
 			"return_type": "void",
@@ -7536,7 +7536,7 @@
 		"0x9DFE13ECDC1EC196": {
 			"name": "_0x9DFE13ECDC1EC196",
 			"jhash": "0x92302899",
-			"comment": "SET_FOLLOW_*",
+			"comment": "SET_FOLLOW_*\nSET_TIME_IDLE_DROP?",
 			"params": [
 				{
 					"type": "BOOL",
@@ -7732,7 +7732,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "zoomFactor"
 				}
 			],
 			"return_type": "void",
@@ -7863,12 +7863,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "rotationOrder"
 				}
 			],
 			"return_type": "Vector3",
@@ -7877,7 +7877,7 @@
 		"0x80EC114669DAEFF4": {
 			"name": "GET_FINAL_RENDERED_CAM_FOV",
 			"jhash": "0x721B763B",
-			"comment": "gets some camera fov",
+			"comment": "Gets some camera fov",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
@@ -7888,8 +7888,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "float",
@@ -8215,7 +8215,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "zOffset"
 				}
 			],
 			"return_type": "void",
@@ -8228,7 +8228,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "roll"
 				}
 			],
 			"return_type": "void",
@@ -8241,7 +8241,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "xOffset"
 				}
 			],
 			"return_type": "void",
@@ -8254,7 +8254,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "yOffset"
 				}
 			],
 			"return_type": "void",
@@ -8263,11 +8263,11 @@
 		"0xE3433EADAAF7EE40": {
 			"name": "_SET_GAMEPLAY_HINT_ANIM_CLOSEUP",
 			"jhash": "0x2F0CE859",
-			"comment": "SET_GAMEPLAY_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -8362,9 +8362,9 @@
 			"build": "323"
 		},
 		"0x9E4CFFF989258472": {
-			"name": "_0x9E4CFFF989258472",
+			"name": "_INVALIDATE_VEHICLE_IDLE_CAM",
 			"jhash": "0x65DDE8AF",
-			"comment": "",
+			"comment": "Resets the vehicle idle camera timer. Calling this in a loop will disable the idle camera.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -8650,8 +8650,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "vehicleModel"
 				}
 			],
 			"return_type": "void",
@@ -9734,9 +9734,9 @@
 			"build": "323"
 		},
 		"0x708BDD8CD795B043": {
-			"name": "_0x708BDD8CD795B043",
+			"name": "HAS_CUTSCENE_CUT_THIS_FRAME",
 			"jhash": "0x4315A7C5",
-			"comment": "HAS_CUTSCENE_*\n\nPossibly HAS_CUTSCENE_CUT_THIS_FRAME, needs more research.",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -12480,7 +12480,7 @@
 		"0x18FF00FC7EFF559E": {
 			"name": "APPLY_FORCE_TO_ENTITY_CENTER_OF_MASS",
 			"jhash": "0x28924E98",
-			"comment": "p6/relative - makes the xyz force not relative to world coords, but to something else\np7/highForce - setting false will make the force really low",
+			"comment": "Applies a force to the specified entity.\n\n**List of force types (p1)**:\npublic enum ForceType\n{\n    MinForce = 0,\n    MaxForceRot = 1,\n    MinForce2 = 2,\n    MaxForceRot2 = 3,\n    ForceNoRot = 4,\n    ForceRotPlusForce = 5\n}\nResearch/documentation on the gtaforums can be found here https://gtaforums.com/topic/885669-precisely-define-object-physics/) and here https://gtaforums.com/topic/887362-apply-forces-and-momentums-to-entityobject/.\n\np6/relative - makes the xyz force not relative to world coords, but to something else\np7/highForce - setting false will make the force really low",
 			"params": [
 				{
 					"type": "Entity",
@@ -14459,7 +14459,7 @@
 		"0xA53ED5520C07654A": {
 			"name": "SET_ENTITY_NO_COLLISION_ENTITY",
 			"jhash": "0x1E11BFE9",
-			"comment": "",
+			"comment": "Calling this function disables collision between two entities.\nThe importance of the order for entity1 and entity2 is unclear.\nThe third parameter, `thisFrame`, decides whether the collision is to be disabled until it is turned back on, or if it's just this frame.",
 			"params": [
 				{
 					"type": "Entity",
@@ -14580,7 +14580,7 @@
 			"build": "323"
 		},
 		"0xCE6294A232D03786": {
-			"name": "_GET_ENTITY_BONE_ROTATION",
+			"name": "_GET_WORLD_ROTATION_OF_ENTITY_BONE",
 			"jhash": "",
 			"comment": "Gets the world rotation of the specified bone of the specified entity.",
 			"params": [
@@ -14597,9 +14597,9 @@
 			"build": "791"
 		},
 		"0x46F8696933A63C9B": {
-			"name": "_GET_ENTITY_BONE_COORDS",
+			"name": "_GET_WORLD_POSITION_OF_ENTITY_BONE_2",
 			"jhash": "",
-			"comment": "Gets the position of the specified bone of the specified entity.",
+			"comment": "Gets the world rotation of the specified bone of the specified entity.\nThis native is used in casinoroulette.c but I don't know yet what is the difference with _GET_WORLD_ROTATION_OF_ENTITY_BONE",
 			"params": [
 				{
 					"type": "Entity",
@@ -15254,7 +15254,7 @@
 		"0xD40AAC51E8E4C663": {
 			"name": "_GET_SHOP_PED_APPAREL_VARIANT_PROP_COUNT",
 			"jhash": "",
-			"comment": "",
+			"comment": "`propHash`: Ped helmet prop hash?\nThis native returns 1 when the player helmet has a visor (there is another prop index for the same helmet with closed/opened visor variant) that can be toggled. 0 if there's no alternative version with a visor for this helmet prop.",
 			"params": [
 				{
 					"type": "Hash",
@@ -17756,107 +17756,107 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "type"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "dirX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "dirY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "dirZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "scaleX"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "float",
+					"name": "scaleY"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "float",
+					"name": "scaleZ"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "int",
+					"name": "red"
 				},
 				{
-					"type": "Any",
-					"name": "p14"
+					"type": "int",
+					"name": "green"
 				},
 				{
-					"type": "Any",
-					"name": "p15"
+					"type": "int",
+					"name": "blue"
 				},
 				{
-					"type": "Any",
-					"name": "p16"
+					"type": "int",
+					"name": "alpha"
 				},
 				{
-					"type": "Any",
-					"name": "p17"
+					"type": "BOOL",
+					"name": "bobUpAndDown"
 				},
 				{
-					"type": "Any",
-					"name": "p18"
+					"type": "BOOL",
+					"name": "faceCamera"
 				},
 				{
 					"type": "Any",
 					"name": "p19"
 				},
 				{
-					"type": "Any",
-					"name": "p20"
+					"type": "BOOL",
+					"name": "rotate"
 				},
 				{
-					"type": "Any",
-					"name": "p21"
+					"type": "const char*",
+					"name": "textureDict"
 				},
 				{
-					"type": "Any",
-					"name": "p22"
+					"type": "const char*",
+					"name": "textureName"
 				},
 				{
-					"type": "Any",
-					"name": "p23"
+					"type": "BOOL",
+					"name": "drawOnEnts"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p24"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p25"
 				}
 			],
@@ -18225,7 +18225,7 @@
 		"0xDFA2EF8E04127DD5": {
 			"name": "REQUEST_STREAMED_TEXTURE_DICT",
 			"jhash": "0x4C9B035F",
-			"comment": "last param isnt a toggle",
+			"comment": "This function can requests texture dictonaries from following RPFs:\nscaleform_generic.rpf\nscaleform_minigames.rpf\nscaleform_minimap.rpf\nscaleform_web.rpf\n\nlast param isnt a toggle",
 			"params": [
 				{
 					"type": "const char*",
@@ -19554,34 +19554,34 @@
 		"0x6D955F6A9E0295B1": {
 			"name": "_GRASS_LOD_SHRINK_SCRIPT_AREAS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Wraps 0xAAE9BE70EC7C69AB with FLT_MAX as p7, Jenkins: 0x73E96210?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				}
 			],
@@ -21683,7 +21683,7 @@
 		"0x9DCE1F0F78260875": {
 			"name": "ENABLE_ALIEN_BLOOD_VFX",
 			"jhash": "0xCE8B8748",
-			"comment": "",
+			"comment": "Creates a motion-blur sort of effect, this native does not seem to work, however by using the `START_SCREEN_EFFECT` native with `DrugsMichaelAliensFight` as the effect parameter, you should be able to get the effect.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -22863,7 +22863,7 @@
 		"0x65E7E78842E74CDB": {
 			"name": "_REQUEST_SCALEFORM_MOVIE_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "Another REQUEST_SCALEFORM_MOVIE equivalent.",
 			"params": [
 				{
 					"type": "const char*",
@@ -23012,17 +23012,17 @@
 			"build": "573"
 		},
 		"0xE6A9F00D4240B519": {
-			"name": "_0xE6A9F00D4240B519",
+			"name": "_SET_SCALEFORM_FIT_RENDERTARGET",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native is used in some casino scripts to fit the scaleform in the rendertarget.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scaleformHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -23500,11 +23500,11 @@
 		"0x768FF8961BA904D6": {
 			"name": "IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY",
 			"jhash": "0x5CD7C3C0",
-			"comment": "",
+			"comment": "methodReturn: The return value of this native: `EndScaleformMovieMethodReturn`\nReturns true if the return value of a scaleform function is ready to be collected (using `GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING` or `GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT`).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "returnValueData"
+					"type": "int",
+					"name": "methodReturn"
 				}
 			],
 			"return_type": "BOOL",
@@ -23513,11 +23513,11 @@
 		"0x2DE7EFA66B906036": {
 			"name": "GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT",
 			"jhash": "0x2CFB0E6D",
-			"comment": "",
+			"comment": "methodReturn: The return value of this native: `EndScaleformMovieMethodReturn`\nUsed to get a return value from a scaleform function. Returns an int in the same way `GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING` returns a string.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "returnValueData"
+					"type": "int",
+					"name": "methodReturn"
 				}
 			],
 			"return_type": "int",
@@ -23526,11 +23526,11 @@
 		"0xD80A80346A45D761": {
 			"name": "_GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_BOOL",
 			"jhash": "",
-			"comment": "",
+			"comment": "methodReturn: The return value of this native: `EndScaleformMovieMethodReturn`",
 			"params": [
 				{
-					"type": "Any",
-					"name": "returnValueData"
+					"type": "int",
+					"name": "methodReturn"
 				}
 			],
 			"return_type": "BOOL",
@@ -23539,11 +23539,11 @@
 		"0xE1E258829A885245": {
 			"name": "GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING",
 			"jhash": "0x516862EB",
-			"comment": "",
+			"comment": "methodReturn: The return value of this native: `EndScaleformMovieMethodReturn`\nUsed to get a return value from a scaleform function. Returns a string in the same way GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT returns an int.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "returnValueData"
+					"type": "int",
+					"name": "methodReturn"
 				}
 			],
 			"return_type": "const char*",
@@ -24031,7 +24031,7 @@
 		"0xA356990E161C9E65": {
 			"name": "TERRAINGRID_ACTIVATE",
 			"jhash": "0xA1CB6C94",
-			"comment": "",
+			"comment": "This native enables/disables the gold putting grid display (https://i.imgur.com/TC6cku6.png).",
 			"params": [
 				{
 					"type": "BOOL",
@@ -24462,7 +24462,7 @@
 		"0x583049884A2EEE3C": {
 			"name": "THEFEED_FORCE_RENDER_OFF",
 			"jhash": "0xC8BAB2F2",
-			"comment": "",
+			"comment": "Enables loading screen tips to be be shown (`_0x15CFA549788D35EF` and `_0x488043841BBE156F`), blocks other kinds of notifications from being displayed (at least from current script). Call `0xADED7F5748ACAFE6` to display those again.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -24510,7 +24510,7 @@
 		"0x82352748437638CA": {
 			"name": "THEFEED_GET_FIRST_VISIBLE_DELETE_REMAINING",
 			"jhash": "0x294405D4",
-			"comment": "Returns the handle for the notification currently displayed on the screen.",
+			"comment": "Returns the handle for the notification currently displayed on the screen. Name may be a hash collision, but describes the function accurately.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -24606,7 +24606,7 @@
 		"0xFDEC055AB549E328": {
 			"name": "THEFEED_FREEZE_NEXT_POST",
 			"jhash": "0xAFA1148B",
-			"comment": "",
+			"comment": "Requires manual management of game stream handles (i.e., 0xBE4390CB40B3E627).",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -24673,35 +24673,35 @@
 		"0x2B7E9A4EAAA93C89": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_STATS",
 			"jhash": "0xED130FA1",
-			"comment": "List of picNames: pastebin.com/XdpJVbHz",
+			"comment": "List of picture names: https://pastebin.com/XdpJVbHz\nExample result: https://i.imgur.com/SdEZ22m.png",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "txdName"
-				},
-				{
-					"type": "const char*",
-					"name": "textureName"
-				},
-				{
-					"type": "BOOL",
-					"name": "flash"
+					"name": "statTitle"
 				},
 				{
 					"type": "int",
-					"name": "iconType"
+					"name": "iconEnum"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "stepVal"
+				},
+				{
+					"type": "int",
+					"name": "barValue"
+				},
+				{
+					"type": "BOOL",
+					"name": "isImportant"
 				},
 				{
 					"type": "const char*",
-					"name": "sender"
+					"name": "pictureTextureDict"
 				},
 				{
 					"type": "const char*",
-					"name": "subject"
+					"name": "pictureTextureName"
 				}
 			],
 			"return_type": "int",
@@ -24710,15 +24710,15 @@
 		"0x1CCD9A37359072CF": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT",
 			"jhash": "0xE7E3C98B",
-			"comment": "List of picNames: pastebin.com/XdpJVbHz\n\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: pastebin.com/XdpJVbHz\n\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "picName1"
+					"name": "txdName"
 				},
 				{
 					"type": "const char*",
-					"name": "picName2"
+					"name": "textureName"
 				},
 				{
 					"type": "BOOL",
@@ -24743,15 +24743,15 @@
 		"0xC6F580E4C94926AC": {
 			"name": "_END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_GXT_ENTRY",
 			"jhash": "",
-			"comment": "Needs more research.\n\nOnly one type of usage in the scripts:\n\nHUD::_C6F580E4C94926AC(\"CHAR_ACTING_UP\", \"CHAR_ACTING_UP\", 0, 0, \"DI_FEED_CHAR\", a_0);",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nNeeds more research.\n\nOnly one type of usage in the scripts:\n\nHUD::_C6F580E4C94926AC(\"CHAR_ACTING_UP\", \"CHAR_ACTING_UP\", 0, 0, \"DI_FEED_CHAR\", a_0);",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "picName1"
+					"name": "txdName"
 				},
 				{
 					"type": "const char*",
-					"name": "picName2"
+					"name": "textureName"
 				},
 				{
 					"type": "BOOL",
@@ -24776,15 +24776,15 @@
 		"0x1E6611149DB3DB6B": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU",
 			"jhash": "0x0EB382B7",
-			"comment": "NOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\nExample, only occurrence in the scripts:\nv_8 = HUD::_1E6611149DB3DB6B(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 0, 0, &v_9, \"\", a_5);",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nNOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\nExample, only occurrence in the scripts:\nv_8 = HUD::_1E6611149DB3DB6B(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 0, 0, &v_9, \"\", a_5);",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "picName1"
+					"name": "txdName"
 				},
 				{
 					"type": "const char*",
-					"name": "picName2"
+					"name": "textureName"
 				},
 				{
 					"type": "BOOL",
@@ -24813,15 +24813,15 @@
 		"0x5CBF7BADE20DB93E": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG",
 			"jhash": "0x3E807FE3",
-			"comment": "List of picNames pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "picName1"
+					"name": "txdName"
 				},
 				{
 					"type": "const char*",
-					"name": "picName2"
+					"name": "textureName"
 				},
 				{
 					"type": "BOOL",
@@ -24854,15 +24854,15 @@
 		"0x531B84E7DA981FB6": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON",
 			"jhash": "0xDEB491C8",
-			"comment": "List of picNames: pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)\niconType2 is a mirror of iconType. It shows in the \"subject\" line, right under the original iconType.\n\n\nint IconNotification(char *text, char *text2, char *Subject)\n{\n    _SET_NOTIFICATION_TEXT_ENTRY(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   _SET_NOTIFICATION_MESSAGE_CLAN_TAG_2(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 1, 7, text2, Subject, 1.0f, \"__EXAMPLE\", 7);\n   return _DRAW_NOTIFICATION(1, 1);\n}",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)\niconType2 is a mirror of iconType. It shows in the \"subject\" line, right under the original iconType.\n\n\nint IconNotification(char *text, char *text2, char *Subject)\n{\n    _SET_NOTIFICATION_TEXT_ENTRY(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   _SET_NOTIFICATION_MESSAGE_CLAN_TAG_2(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 1, 7, text2, Subject, 1.0f, \"__EXAMPLE\", 7);\n   return _DRAW_NOTIFICATION(1, 1);\n}",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "picName1"
+					"name": "txdName"
 				},
 				{
 					"type": "const char*",
-					"name": "picName2"
+					"name": "textureName"
 				},
 				{
 					"type": "BOOL",
@@ -26126,9 +26126,9 @@
 			"build": "323"
 		},
 		"0x7669F9E39DC17063": {
-			"name": "_0x7669F9E39DC17063",
+			"name": "_DISPLAY_HUD_WHEN_DEAD_THIS_FRAME",
 			"jhash": "0xC380AC85",
-			"comment": "DISPLAY_HUD_*\nEnables drawing some hud components, such as help labels, this frame, when the player is dead.",
+			"comment": "Enables drawing some hud components, such as help labels, this frame, when the player is dead.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -26993,23 +26993,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "style"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "hudColor"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "alpha"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				}
 			],
@@ -27511,15 +27511,15 @@
 		"0xA8B6AFDAC320AC87": {
 			"name": "_SET_BLIP_SQUARED_ROTATION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Does not require whole whole number/integer rotations.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "heading"
 				}
 			],
 			"return_type": "void",
@@ -28128,7 +28128,7 @@
 		"0xC4278F70131BAA6D": {
 			"name": "_SET_BLIP_DISPLAY_INDICATOR_ON_BLIP",
 			"jhash": "0x6AA6A1CC",
-			"comment": "",
+			"comment": "Must be toggled before being queued for animation",
 			"params": [
 				{
 					"type": "Blip",
@@ -28826,7 +28826,7 @@
 		"0x0AFC4AF510774B47": {
 			"name": "_HUD_WEAPON_WHEEL_IGNORE_SELECTION",
 			"jhash": "0xB26FED2B",
-			"comment": "calling this each frame, it stops the player from receiving a weapon via the weapon wheel.",
+			"comment": "Calling this each frame, stops the player from receiving a weapon via the weapon wheel.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -28834,7 +28834,7 @@
 		"0xA48931185F0536FE": {
 			"name": "_HUD_WEAPON_WHEEL_GET_SELECTED_HASH",
 			"jhash": "0x22E9F555",
-			"comment": "",
+			"comment": "Returns the weapon hash to the selected/highlighted weapon in the wheel",
 			"params": [],
 			"return_type": "Hash",
 			"build": "323"
@@ -28842,7 +28842,7 @@
 		"0x72C1056D678BB7D8": {
 			"name": "HUD_SET_WEAPON_WHEEL_TOP_SLOT",
 			"jhash": "0x83B608A0",
-			"comment": "Seems to automatically select the weapon on the corresponding slot in the weapon selection wheel",
+			"comment": "Set the active slotIndex in the wheel weapon to the slot associated with the provided Weapon hash",
 			"params": [
 				{
 					"type": "Hash",
@@ -28855,11 +28855,11 @@
 		"0xA13E93403F26C812": {
 			"name": "_HUD_WEAPON_WHEEL_GET_SLOT_HASH",
 			"jhash": "",
-			"comment": "",
+			"comment": "Return the weapon hash active in a specific weapon wheel slotList",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "weaponTypeIndex"
 				}
 			],
 			"return_type": "Any",
@@ -28868,11 +28868,11 @@
 		"0x14C9FDCC41F81F63": {
 			"name": "_HUD_WEAPON_WHEEL_IGNORE_CONTROL_INPUT",
 			"jhash": "0xE70D1F43",
-			"comment": "",
+			"comment": "Sets a global that disables many weapon input tasks (shooting, aiming, etc.). Does not work with vehicle weapons, only used in selector.ysc",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -28927,7 +28927,7 @@
 		"0xDB34E8D56FC13B08": {
 			"name": "START_GPS_CUSTOM_ROUTE",
 			"jhash": "0x7F93799B",
-			"comment": "",
+			"comment": "Starts a new GPS custom-route, allowing you to plot lines on the map.\nLines are drawn directly between points.\nThe GPS custom route works like the GPS multi route, except it does not follow roads.\nExample result: https://i.imgur.com/BDm5pzt.png\nhudColor: The HUD color of the GPS path.\ndisplayOnFoot: Draws the path regardless if the player is in a vehicle or not.\nfollowPlayer: Draw the path partially between the previous and next point based on the players position between them. When false, the GPS appears to not disappear after the last leg is completed.",
 			"params": [
 				{
 					"type": "int",
@@ -28935,11 +28935,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "displayOnFoot"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "followPlayer"
 				}
 			],
 			"return_type": "void",
@@ -28969,19 +28969,19 @@
 		"0x900086F371220B6F": {
 			"name": "SET_GPS_CUSTOM_ROUTE_RENDER",
 			"jhash": "0xDA0AF00E",
-			"comment": "",
+			"comment": "radarThickness: The width of the GPS route on the radar\nmapThickness: The width of the GPS route on the map",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "radarThickness"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "mapThickness"
 				}
 			],
 			"return_type": "void",
@@ -28998,7 +28998,7 @@
 		"0x3D3D15AF7BCAAF83": {
 			"name": "START_GPS_MULTI_ROUTE",
 			"jhash": "0xC3DCBEDB",
-			"comment": "",
+			"comment": "Starts a new GPS multi-route, allowing you to create custom GPS paths.\nGPS functions like the waypoint, except it can contain multiple points it's forced to go through.\nOnce the player has passed a point, the GPS will no longer force its path through it.\n\nWorks independently from the player-placed waypoint and blip routes.\nExample result: https://i.imgur.com/ZZHQatX.png\nhudColor: The HUD color of the GPS path.\nrouteFromPlayer: Makes the GPS draw a path from the player to the next point, rather than the original path from the previous point.\ndisplayOnFoot: Draws the GPS path regardless if the player is in a vehicle or not.",
 			"params": [
 				{
 					"type": "int",
@@ -29006,11 +29006,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "routeFromPlayer"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "displayOnFoot"
 				}
 			],
 			"return_type": "void",
@@ -29106,8 +29106,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "hudColorIndex"
 				}
 			],
 			"return_type": "void",
@@ -29418,16 +29418,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "health"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "capacity"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "wasAdded"
 				}
 			],
 			"return_type": "void",
@@ -29439,8 +29439,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "maximumValue"
 				}
 			],
 			"return_type": "void",
@@ -29452,8 +29452,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "maximumValue"
 				}
 			],
 			"return_type": "void",
@@ -29544,7 +29544,7 @@
 		"0x6806C51AD12B83B8": {
 			"name": "HIDE_HUD_COMPONENT_THIS_FRAME",
 			"jhash": "0xDB2D0762",
-			"comment": "",
+			"comment": "This function hides various HUD (Heads-up Display) components.\nListed below are the integers and the corresponding HUD component.\n- 1 : WANTED_STARS\n- 2 : WEAPON_ICON\n- 3 : CASH\n- 4 : MP_CASH\n- 5 : MP_MESSAGE\n- 6 : VEHICLE_NAME\n- 7 : AREA_NAME\n- 8 : VEHICLE_CLASS\n- 9 : STREET_NAME\n- 10 : HELP_TEXT\n- 11 : FLOATING_HELP_TEXT_1\n- 12 : FLOATING_HELP_TEXT_2\n- 13 : CASH_CHANGE\n- 14 : RETICLE\n- 15 : SUBTITLE_TEXT\n- 16 : RADIO_STATIONS\n- 17 : SAVING_GAME\n- 18 : GAME_STREAM\n- 19 : WEAPON_WHEEL\n- 20 : WEAPON_WHEEL_STATS\n- 21 : HUD_COMPONENTS\n- 22 : HUD_WEAPONS\n\nThese integers also work for the `SHOW_HUD_COMPONENT_THIS_FRAME` native, but instead shows the HUD Component.",
 			"params": [
 				{
 					"type": "int",
@@ -29557,7 +29557,7 @@
 		"0x0B4DF1FA60C0E664": {
 			"name": "SHOW_HUD_COMPONENT_THIS_FRAME",
 			"jhash": "0x95E1546E",
-			"comment": "",
+			"comment": "This function hides various HUD (Heads-up Display) components.\nListed below are the integers and the corresponding HUD component.\n- 1 : WANTED_STARS\n- 2 : WEAPON_ICON\n- 3 : CASH\n- 4 : MP_CASH\n- 5 : MP_MESSAGE\n- 6 : VEHICLE_NAME\n- 7 : AREA_NAME\n- 8 : VEHICLE_CLASS\n- 9 : STREET_NAME\n- 10 : HELP_TEXT\n- 11 : FLOATING_HELP_TEXT_1\n- 12 : FLOATING_HELP_TEXT_2\n- 13 : CASH_CHANGE\n- 14 : RETICLE\n- 15 : SUBTITLE_TEXT\n- 16 : RADIO_STATIONS\n- 17 : SAVING_GAME\n- 18 : GAME_STREAM\n- 19 : WEAPON_WHEEL\n- 20 : WEAPON_WHEEL_STATS\n- 21 : HUD_COMPONENTS\n- 22 : HUD_WEAPONS\n\nThese integers also work for the `HIDE_HUD_COMPONENT_THIS_FRAME` native, but instead hides the HUD Component.",
 			"params": [
 				{
 					"type": "int",
@@ -29641,7 +29641,7 @@
 		"0xF9904D11F1ACBEC3": {
 			"name": "GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION",
 			"jhash": "0xFE9A39F8",
-			"comment": "",
+			"comment": "World to relative screen coords, this world to screen will keep the text on screen.",
 			"params": [
 				{
 					"type": "float",
@@ -29698,7 +29698,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "hudIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -29711,7 +29711,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "hudIndex"
 				},
 				{
 					"type": "float",
@@ -29732,7 +29732,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "hudIndex"
 				},
 				{
 					"type": "float",
@@ -29757,7 +29757,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "hudIndex"
 				},
 				{
 					"type": "Entity",
@@ -29765,11 +29765,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "offsetX"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "offsetY"
 				}
 			],
 			"return_type": "void",
@@ -29782,7 +29782,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "hudIndex"
 				},
 				{
 					"type": "int",
@@ -29815,7 +29815,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "hudIndex"
 				},
 				{
 					"type": "BOOL",
@@ -29828,7 +29828,7 @@
 		"0x6DD05E9D83EFA4C9": {
 			"name": "CREATE_MP_GAMER_TAG_WITH_CREW_COLOR",
 			"jhash": "0xC969F2D0",
-			"comment": "",
+			"comment": "clanFlag: takes a number 0-5",
 			"params": [
 				{
 					"type": "Player",
@@ -29851,8 +29851,8 @@
 					"name": "clanTag"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "clanFlag"
 				},
 				{
 					"type": "int",
@@ -29881,7 +29881,7 @@
 		"0xBFEFE3321A3F5015": {
 			"name": "CREATE_FAKE_MP_GAMER_TAG",
 			"jhash": "0xF5CD2AA4",
-			"comment": "",
+			"comment": "clanFlag: takes a number 0-5",
 			"params": [
 				{
 					"type": "Ped",
@@ -29904,8 +29904,8 @@
 					"name": "clanTag"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "clanFlag"
 				}
 			],
 			"return_type": "int",
@@ -29976,9 +29976,9 @@
 			"build": "323"
 		},
 		"0xEE76FF7E6A0166B0": {
-			"name": "_0xEE76FF7E6A0166B0",
+			"name": "_SET_MP_GAMER_TAG",
 			"jhash": "0x767DED29",
-			"comment": "SET_A*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -29986,7 +29986,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -30003,7 +30003,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -30015,12 +30015,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -30032,16 +30032,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "gamerTagId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "maximumValue"
 				}
 			],
 			"return_type": "void",
@@ -30438,17 +30438,17 @@
 			"build": "1493"
 		},
 		"0x15803FEC3B9A872B": {
-			"name": "_SET_WARNING_MESSAGE_4",
+			"name": "_DRAW_FRONTEND_ALERT",
 			"jhash": "",
-			"comment": "",
+			"comment": "labelTitle: Label of the alert's title.\nlabelMsg: Label of the alert's message.\np2: This is an enum, check the description for a list.\np3: This is an enum, check the description for a list.\nlabelMsg2: Label of another message line\np5: usually 0\np6: usually -1\np7: usually 0\np8: unknown label\np9: unknown label\nbackground: Set to anything other than 0 or false (even any string) and it will draw a background. Setting it to 0 or false will draw no background.\nerrorCode: Error code, shown at the bottom left if set to value other than 0.\n\ninstructionalKey enum list:\nButtons = {\n      Empty = 0,\n      Select = 1, -- (RETURN)\n      Ok = 2, -- (RETURN)\n      Yes = 4, -- (RETURN)\n      Back = 8, -- (ESC)\n      Cancel = 16, -- (ESC)\n      No = 32, -- (ESC)\n      RetrySpace = 64, -- (SPACE)\n      Restart = 128, -- (SPACE)\n      Skip = 256, -- (SPACE)\n      Quit = 512, -- (ESC)\n      Adjust = 1024, -- (ARROWS)\n      SpaceKey = 2048, -- (SPACE)\n      Share = 4096, -- (SPACE)\n      SignIn = 8192, -- (SPACE)\n      Continue = 16384, -- (RETURN)\n      AdjustLeftRight = 32768, -- (SCROLL L/R)\n      AdjustUpDown = 65536, -- (SCROLL U/D)\n      Overwrite = 131072, -- (SPACE)\n      SocialClubSignup = 262144, -- (RETURN)\n      Confirm = 524288, -- (RETURN)\n      Queue = 1048576, -- (RETURN)\n      RetryReturn = 2097152, -- (RETURN)\n      BackEsc = 4194304, -- (ESC)\n      SocialClub = 8388608, -- (RETURN)\n      Spectate = 16777216, -- (SPACE)\n      OkEsc = 33554432, -- (ESC)\n      CancelTransfer = 67108864, -- (ESC)\n      LoadingSpinner = 134217728,\n      NoReturnToGTA = 268435456, -- (ESC)\n      CancelEsc = 536870912, -- (ESC)\n}\n\nAlt = {\n      Empty = 0,\n      No = 1, -- (SPACE)\n      Host = 2, -- (ESC)\n      SearchForJob = 4, -- (RETURN)\n      ReturnKey = 8, -- (TURN)\n      Freemode = 16, -- (ESC)\n}\n\nExample: https://i.imgur.com/TvmNF4k.png",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "labelTitle"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "labelMessage"
 				},
 				{
 					"type": "int",
@@ -30460,7 +30460,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p4"
+					"name": "labelMessage2"
 				},
 				{
 					"type": "BOOL",
@@ -30484,11 +30484,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "background"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "int",
+					"name": "errorCode"
 				}
 			],
 			"return_type": "void",
@@ -30588,11 +30588,11 @@
 		"0x1EAE6DD17B7A5EFA": {
 			"name": "_RACE_GALLERY_NEXT_BLIP_SPRITE",
 			"jhash": "0x13E7A5A9",
-			"comment": "",
+			"comment": "Sets the sprite of the next BLIP_GALLERY blip, values used in the native scripts: 143 (ObjectiveBlue), 144 (ObjectiveGreen), 145 (ObjectiveRed), 146 (ObjectiveYellow).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "spriteId"
 				}
 			],
 			"return_type": "void",
@@ -30601,19 +30601,19 @@
 		"0x551DF99658DB6EE8": {
 			"name": "_RACE_GALLERY_ADD_BLIP",
 			"jhash": "0x786CA0A2",
-			"comment": "",
+			"comment": "Add a BLIP_GALLERY at the specific coordinate. Used in fm_maintain_transition_players to display race track points.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				}
 			],
 			"return_type": "Any",
@@ -31429,8 +31429,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "gxtEntryHash"
 				}
 			],
 			"return_type": "void",
@@ -31471,12 +31471,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "hudColor"
 				}
 			],
 			"return_type": "void",
@@ -32309,8 +32309,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "mapObjectHash"
 				}
 			],
 			"return_type": "void",
@@ -33467,7 +33467,7 @@
 		"0xFC4842A34657BFCB": {
 			"name": "LOAD_CLOUD_HAT",
 			"jhash": "0xED88FC61",
-			"comment": "",
+			"comment": "The following cloudhats are useable:\naltostratus\nCirrus\ncirrocumulus\nClear 01\nCloudy 01\nContrails\nHorizon\nhorizonband1\nhorizonband2\nhorizonband3\nhorsey\nNimbus\nPuffs\nRAIN\nSnowy 01\nStormy 01\nstratoscumulus\nStripey\nshower\nWispy\n",
 			"params": [
 				{
 					"type": "const char*",
@@ -33678,31 +33678,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float*",
+					"name": "groundZ"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0xC843060B5765DCE7": {
@@ -34310,7 +34310,7 @@
 		"0xADCDE75E1C60F32D": {
 			"name": "IS_POSITION_OCCUPIED",
 			"jhash": "0x452E8D9E",
-			"comment": "",
+			"comment": "`range`: The range, seems to not be very accurate during testing.\n`p4`: Unknown, when set to true it seems to always return true no matter what I try.\n`checkVehicle`: Check for any vehicles in that area.\n`checkPeds`: Check for any peds in that area.\n`ignoreEntity`: This entity will be ignored if it's in the area. Set to 0 if you don't want to exclude any entities.\nThe BOOL parameters that are documented have not been confirmed. They are just documented from what I've found during testing. They may not work as expected in all cases.\n\nReturns true if there is anything in that location matching the provided parameters.",
 			"params": [
 				{
 					"type": "float",
@@ -34334,11 +34334,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "checkVehicles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "checkPeds"
 				},
 				{
 					"type": "BOOL",
@@ -34349,8 +34349,8 @@
 					"name": "p8"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "Entity",
+					"name": "ignoreEntity"
 				},
 				{
 					"type": "BOOL",
@@ -36698,8 +36698,8 @@
 			"comment": "Formerly known as _LOWER_MAP_PROP_DENSITY and wrongly due to idiots as _ENABLE_MP_DLC_MAPS.\nSets the maximum prop density and changes a loading screen flag from 'loading story mode' to 'loading GTA Online'. Does not touch DLC map data at all.\n\nIn fact, I doubt this changes the flag whatsoever, that's the OTHER native idiots use together with this that does so, this one only causes a loading screen to show as it reloads map data.",
 			"params": [
 				{
-					"type": "int",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -37744,19 +37744,19 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y2"
 				}
 			],
 			"return_type": "Any",
@@ -37811,19 +37811,19 @@
 		"0xB8721407EE9C3FF6": {
 			"name": "_ADD_TACTICAL_ANALYSIS_POINT",
 			"jhash": "0x24A4E0B2",
-			"comment": "",
+			"comment": "Add a point related to CTacticalAnalysis",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -38291,7 +38291,7 @@
 		"0xE574A662ACAEFBB1": {
 			"name": "_RESTART_GAME",
 			"jhash": "",
-			"comment": "",
+			"comment": "Shows `Disconnecting from GTA Online` HUD and then quits the game. Better name `_QUIT_GAME`?",
 			"params": [],
 			"return_type": "void",
 			"build": "372"
@@ -45068,9 +45068,9 @@
 			"build": "323"
 		},
 		"0x85443FF4C328F53B": {
-			"name": "NETWORK_HAS_VALID_ROS_CREDENTIALS",
+			"name": "NETWORK_HAVE_JUST_UPLOAD_LATER",
 			"jhash": "0x3FB40673",
-			"comment": "Returns whether the signed-in user has valid Rockstar Online Services (ROS) credentials.",
+			"comment": "Returns whether the Rockstar game services are available or not",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -45145,7 +45145,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -48688,15 +48688,15 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "p0"
+					"name": "player1"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "script"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Player",
+					"name": "player2"
 				}
 			],
 			"return_type": "BOOL",
@@ -50394,7 +50394,7 @@
 		"0x0FF2862B61A58AF9": {
 			"name": "NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS_ALL",
 			"jhash": "0x1BCD3DDF",
-			"comment": "",
+			"comment": "p0 is always false in scripts.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -51705,11 +51705,11 @@
 		"0x797F9C5E661D920E": {
 			"name": "_RESERVE_NETWORK_LOCAL_OBJECTS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Internal logging string: SCRIPT_RESERVING_LOCAL_OBJECTS",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -51718,11 +51718,11 @@
 		"0x2C8DF5D129595281": {
 			"name": "_RESERVE_NETWORK_LOCAL_PEDS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Internal logging string: SCRIPT_RESERVING_LOCAL_PEDS",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -51731,11 +51731,11 @@
 		"0x42613035157E4208": {
 			"name": "_RESERVE_NETWORK_LOCAL_VEHICLES",
 			"jhash": "",
-			"comment": "",
+			"comment": "Internal logging string: SCRIPT_RESERVING_LOCAL_VEHICLES",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -52231,9 +52231,9 @@
 			"build": "323"
 		},
 		"0x5C707A667DF8B9FA": {
-			"name": "_0x5C707A667DF8B9FA",
+			"name": "NETWORK_SET_CHOICE_MIGRATE_OPTIONS",
 			"jhash": "0x64235620",
-			"comment": "NETWORK_SET_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -52545,15 +52545,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "rotationOrder"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "useOcclusionPortal"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "looped"
 				},
 				{
 					"type": "float",
@@ -52561,7 +52561,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "animTime"
 				},
 				{
 					"type": "float",
@@ -52709,43 +52709,35 @@
 		"0x45F35C0EDC33B03B": {
 			"name": "_0x45F35C0EDC33B03B",
 			"jhash": "",
-			"comment": "NETWORK_A*",
+			"comment": "NETWORK_A*\nSimilar structure as NetworkAddEntityToSynchronisedScene but it includes this time a hash.\nIn casino_slots it is used one time in a synced scene involving a ped and the slot machine?",
 			"params": [
 				{
-					"type": "int",
-					"name": "netScene"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Hash",
 					"name": "modelHash"
 				},
 				{
-					"type": "float",
-					"name": "x"
-				},
-				{
-					"type": "float",
-					"name": "y"
-				},
-				{
-					"type": "float",
-					"name": "z"
-				},
-				{
-					"type": "float",
-					"name": "p5"
+					"type": "int",
+					"name": "netScene"
 				},
 				{
 					"type": "const char*",
-					"name": "p6"
+					"name": "animDict"
+				},
+				{
+					"type": "const char*",
+					"name": "animName"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "speed"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "speedMulitiplier"
 				},
 				{
 					"type": "int",
@@ -53039,7 +53031,7 @@
 		"0x17E0198B3882C2CB": {
 			"name": "NETWORK_START_SOLO_TUTORIAL_SESSION",
 			"jhash": "0x408A9436",
-			"comment": "",
+			"comment": "NETWORK_START_R/S*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -53396,8 +53388,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "areaHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -53422,8 +53414,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "areaHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -53830,7 +53822,7 @@
 		"0x890E2C5ABED7236D": {
 			"name": "_NETWORK_SET_VEHICLE_WHEELS_DESTRUCTIBLE",
 			"jhash": "",
-			"comment": "Sets 8th bit of entity->netobj+1c2",
+			"comment": "Allow vehicle wheels to be destructible even when the Vehicle entity is invincible.",
 			"params": [
 				{
 					"type": "Entity",
@@ -53947,8 +53939,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "float",
@@ -54356,7 +54348,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "id"
+					"name": "handle"
 				}
 			],
 			"return_type": "BOOL",
@@ -54369,7 +54361,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "id"
+					"name": "handle"
 				}
 			],
 			"return_type": "BOOL",
@@ -55936,11 +55928,11 @@
 				},
 				{
 					"type": "int*",
-					"name": "type"
+					"name": "banType"
 				},
 				{
 					"type": "Any*",
-					"name": "endData"
+					"name": "timeData"
 				}
 			],
 			"return_type": "BOOL",
@@ -56600,19 +56592,19 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "radius"
 				},
 				{
 					"type": "Hash",
@@ -56682,18 +56674,6 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Object",
-					"name": "object"
-				},
-				{
-					"type": "float",
-					"name": "radius"
-				},
-				{
-					"type": "Hash",
-					"name": "modelHash"
-				},
-				{
 					"type": "float",
 					"name": "x"
 				},
@@ -56706,12 +56686,24 @@
 					"name": "z"
 				},
 				{
+					"type": "float",
+					"name": "radius"
+				},
+				{
+					"type": "Hash",
+					"name": "modelHash"
+				},
+				{
 					"type": "Vector3*",
-					"name": "p6"
+					"name": "outPosition"
+				},
+				{
+					"type": "Vector3*",
+					"name": "outRotation"
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "rotationOrder"
 				}
 			],
 			"return_type": "Any",
@@ -57547,7 +57539,7 @@
 		"0x4D89D607CB3DD1D2": {
 			"name": "_SET_OBJECT_CAN_CLIMB_ON",
 			"jhash": "0x19B17769",
-			"comment": "",
+			"comment": "Overrides the climbing/blocking flags of the object, used in the native scripts mostly for \"prop_dock_bouy_*\"",
 			"params": [
 				{
 					"type": "Object",
@@ -57854,15 +57846,15 @@
 		"0xBCE595371A5FBAAF": {
 			"name": "_SET_CREATE_WEAPON_OBJECT_LIGHT_SOURCE",
 			"jhash": "0x3A68AA46",
-			"comment": "",
+			"comment": "Requires a component_at_*_flsh to be attached to the weapon object",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -57900,7 +57892,7 @@
 		"0x5C29F698D404C5E1": {
 			"name": "SET_STATE_OF_RAYFIRE_MAP_OBJECT",
 			"jhash": "0x21F51560",
-			"comment": "",
+			"comment": "Defines the state of a destructible object.\nUse the GET_RAYFIRE_MAP_OBJECT native to find an object's handle with its name / coords.\nState 2 == object just spawned\nState 4 == Beginning of the animation\nState 6 == Start animation\nState 9 == End of the animation",
 			"params": [
 				{
 					"type": "Object",
@@ -57917,7 +57909,7 @@
 		"0x899BA936634A322E": {
 			"name": "GET_STATE_OF_RAYFIRE_MAP_OBJECT",
 			"jhash": "0xF1B8817A",
-			"comment": "",
+			"comment": "Get a destructible object's state.\nSubstract 1 to get the real state.\nSee SET_STATE_OF_RAYFIRE_MAP_OBJECT to see the different states\nFor example, if the object just spawned (state 2), the native will return 3.",
 			"params": [
 				{
 					"type": "Object",
@@ -57930,7 +57922,7 @@
 		"0x52AF537A0C5B8AAD": {
 			"name": "DOES_RAYFIRE_MAP_OBJECT_EXIST",
 			"jhash": "0xE08C834D",
-			"comment": "",
+			"comment": "Returns true if a destructible object with this handle exists, false otherwise.  ",
 			"params": [
 				{
 					"type": "Object",
@@ -57943,7 +57935,7 @@
 		"0x260EE4FDBDF4DB01": {
 			"name": "GET_RAYFIRE_MAP_OBJECT_ANIM_PHASE",
 			"jhash": "0x020497DE",
-			"comment": "",
+			"comment": "`object`: The des-object handle to get the animation progress from.\nReturn value is a float between 0.0 and 1.0, 0.0 is the beginning of the animation, 1.0 is the end. Value resets to 0.0 instantly after reaching 1.0.",
 			"params": [
 				{
 					"type": "Object",
@@ -59249,8 +59241,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
 					"type": "Any",
@@ -59266,12 +59258,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "duration"
 				}
 			],
 			"return_type": "void",
@@ -59361,18 +59353,18 @@
 		"0x911024442F4898F0": {
 			"name": "_SET_ENABLE_ARENA_PROP_PHYSICS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Activate the physics to: \"xs_prop_arena_{flipper,wall,bollard,turntable,pit}\"",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -59393,12 +59385,12 @@
 					"name": "toggle"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -59907,11 +59899,11 @@
 		"0x8290252FFF36ACB5": {
 			"name": "_SET_CONTROL_GROUP_COLOR",
 			"jhash": "",
-			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "inputGroup: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "padIndex"
+					"name": "inputGroup"
 				},
 				{
 					"type": "int",
@@ -60881,9 +60873,9 @@
 			"build": "323"
 		},
 		"0x228E5C6AD4D74BFD": {
-			"name": "_0x228E5C6AD4D74BFD",
+			"name": "_SET_ALL_PATHS_CACHE_BOUNDINGSTRUCT",
 			"jhash": "0xD6A3B458",
-			"comment": "SET_ALL_PATHS_CACHE_BOUNDINGSTRUCT ?",
+			"comment": "Toggles a global boolean, name is probably a hash collision but describes its functionality.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -60932,25 +60924,25 @@
 			"build": "323"
 		},
 		"0x07FB139B592FA687": {
-			"name": "_0x07FB139B592FA687",
+			"name": "_REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT",
 			"jhash": "0x2CDA5012",
-			"comment": "",
+			"comment": "Used internally for long range tasks",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y2"
 				}
 			],
 			"return_type": "BOOL",
@@ -61248,7 +61240,7 @@
 		"0x1FC289A0C3FF470F": {
 			"name": "_SET_IGNORE_SECONDARY_ROUTE_NODES",
 			"jhash": "0x90DF7A4C",
-			"comment": "",
+			"comment": "See: SET_BLIP_ROUTE",
 			"params": [
 				{
 					"type": "BOOL",
@@ -61296,7 +61288,7 @@
 			"jhash": "0x4B770634",
 			"comment": "",
 			"params": [],
-			"return_type": "int",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0xF3162836C28F9DA5": {
@@ -61338,27 +61330,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Vector3*",
+					"name": "outPosition"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "463"
 		},
 		"0x16F46FB18C8009E4": {
@@ -61367,27 +61359,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Vector3*",
+					"name": "outPosition"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x125BF4ABFC536B09": {
@@ -61740,15 +61732,15 @@
 		"0x29C24BFBED8AB8FB": {
 			"name": "_GET_HEIGHTMAP_TOP_Z_FOR_POSITION",
 			"jhash": "0x3FE8C5A0",
-			"comment": "",
+			"comment": "Returns CGameWorldHeightMap's maximum Z value at specified point (grid node).",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				}
 			],
 			"return_type": "float",
@@ -61757,23 +61749,23 @@
 		"0x8ABE8608576D9CE3": {
 			"name": "_GET_HEIGHTMAP_TOP_Z_FOR_AREA",
 			"jhash": "0x3ED21C90",
-			"comment": "",
+			"comment": "Returns CGameWorldHeightMap's maximum Z among all grid nodes that intersect with the specified rectangle.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y2"
 				}
 			],
 			"return_type": "float",
@@ -61782,15 +61774,15 @@
 		"0x336511A34F2E5185": {
 			"name": "_GET_HEIGHTMAP_BOTTOM_Z_FOR_POSITION",
 			"jhash": "0xA07C5B7D",
-			"comment": "",
+			"comment": "Returns CGameWorldHeightMap's minimum Z value at specified point (grid node).",
 			"params": [
 				{
 					"type": "float",
-					"name": "left"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "right"
+					"name": "y"
 				}
 			],
 			"return_type": "float",
@@ -61799,23 +61791,23 @@
 		"0x3599D741C9AC6310": {
 			"name": "_GET_HEIGHTMAP_BOTTOM_Z_FOR_AREA",
 			"jhash": "0x76751DD4",
-			"comment": "",
+			"comment": "Returns CGameWorldHeightMap's minimum Z among all grid nodes that intersect with the specified rectangle.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y2"
 				}
 			],
 			"return_type": "float",
@@ -61938,7 +61930,7 @@
 		"0x668FD40BCBA5DE48": {
 			"name": "_CLONE_PED_EX",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used one time in fmmc_launcher.c instead of CLONE_PED because ?",
 			"params": [
 				{
 					"type": "Ped",
@@ -64601,11 +64593,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "groupHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0xEBA5AD3A0EAF7121": {
@@ -66761,8 +66753,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "colorId"
 				}
 			],
 			"return_type": "BOOL",
@@ -66787,8 +66779,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "colorId"
 				}
 			],
 			"return_type": "BOOL",
@@ -66800,8 +66792,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "colorId"
 				}
 			],
 			"return_type": "BOOL",
@@ -66943,7 +66935,7 @@
 		"0xCC9682B8951C5229": {
 			"name": "SET_HEAD_BLEND_PALETTE_COLOR",
 			"jhash": "0x57E5B3F9",
-			"comment": "p4 seems to vary from 0 to 3.",
+			"comment": "p4 seems to vary from 0 to 3.\nPreview: https://gfycat.com/MaleRareAmazonparrot",
 			"params": [
 				{
 					"type": "Ped",
@@ -66963,7 +66955,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "id"
 				}
 			],
 			"return_type": "void",
@@ -67251,21 +67243,21 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x36C6984C3ED0C911": {
-			"name": "_0x36C6984C3ED0C911",
+			"name": "_SET_PED_SCUBA_GEAR_VARIATION",
 			"jhash": "",
-			"comment": "when player character is used plays remove scuba gear animation",
+			"comment": "This native sets a scuba mask for freemode models and an oxygen bottle for player_* models. It works on freemode and player_* models.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -69837,7 +69829,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -71525,7 +71517,7 @@
 		"0x085BF80FA50A39D1": {
 			"name": "SET_PED_MOVE_RATE_OVERRIDE",
 			"jhash": "0x900008C6",
-			"comment": "Min: 0.00\nMax: 10.00\n\nCan be used in combo with fast run cheat.\n\nWhen value is set to 10.00:\nSprinting without fast run cheat: 66 m/s\nSprinting with fast run cheat: 77 m/s\n\nDoes not need to be looped!\n\nNote: According to IDA for the Xbox360 xex, when they check bgt they seem to have the min to 0.0f, but the max set to 1.15f not 10.0f.",
+			"comment": "Min: 0.00\nMax: 10.00\n\nCan be used in combo with fast run cheat.\n\nWhen value is set to 10.00:\nSprinting without fast run cheat: 66 m/s\nSprinting with fast run cheat: 77 m/s\n\nNeeds to be looped!\n\nNote: According to IDA for the Xbox360 xex, when they check bgt they seem to have the min to 0.0f, but the max set to 1.15f not 10.0f.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71860,8 +71852,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -75972,7 +75964,7 @@
 		"0xAD15F075A4DA0FDE": {
 			"name": "START_PLAYER_TELEPORT",
 			"jhash": "0xC552E06C",
-			"comment": "",
+			"comment": "`findCollisionLand`: This teleports the player to land when set to true and will not consider the Z coordinate parameter provided by you. It will automatically put the Z coordinate so that you don't fall from sky.",
 			"params": [
 				{
 					"type": "Player",
@@ -76000,7 +75992,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "findCollisionLand"
 				},
 				{
 					"type": "BOOL",
@@ -76055,7 +76047,7 @@
 		"0x5DB660B38DD98A31": {
 			"name": "SET_PLAYER_HEALTH_RECHARGE_MULTIPLIER",
 			"jhash": "0x45514731",
-			"comment": "",
+			"comment": "`regenRate`: The recharge multiplier, a value between 0.0 and 1.0.\nUse 1.0 to reset it back to normal",
 			"params": [
 				{
 					"type": "Player",
@@ -87379,9 +87371,9 @@
 			"build": "323"
 		},
 		"0x88E32DB8C1A4AA4B": {
-			"name": "_0x88E32DB8C1A4AA4B",
+			"name": "SET_PED_PATH_CLIMB_COST_MODIFIER",
 			"jhash": "0x55E06443",
-			"comment": "SET_PED_PATH_*\n\nCould be the move speed on the path. Needs testing.\n\nDefault is 1.0 and maximum is 10.0\n\nSET_PED_PATH_CLIMB_COST_MODIFIER ?",
+			"comment": "Could be the move speed on the path. Needs testing.\n\nDefault is 1.0 and maximum is 10.0",
 			"params": [
 				{
 					"type": "Ped",
@@ -87389,7 +87381,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "modifier"
 				}
 			],
 			"return_type": "void",
@@ -92627,8 +92619,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
 					"type": "BOOL",
@@ -94425,7 +94417,7 @@
 		"0x245A6883D966D537": {
 			"name": "SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME",
 			"jhash": "0xF4187E51",
-			"comment": "",
+			"comment": "Use this native inside a looped function.\nValues:\n- `0.0` = no vehicles on streets\n- `1.0` = normal vehicles on streets",
 			"params": [
 				{
 					"type": "float",
@@ -96112,7 +96104,7 @@
 		"0x9E5B5E4D2CCD2259": {
 			"name": "SMASH_VEHICLE_WINDOW",
 			"jhash": "0xDDD9A8C2",
-			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window\n4 = Unknown\n5 = Unknown\n6 = Windscreen\n7 = Rear Windscreen",
+			"comment": "`index` = 0 to 13\n0 = front right window\n1 = front left window\n2 = rear right window\n3 = rear left window\n4 = unsure\n5 = unsure\n6 = windowscreen\n7 = rear windowscreen\n8 = unsure\n9 = unsure\n10 = unsure\n11 = unsure\n12 = unsure\n13 = unsure",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98399,7 +98391,7 @@
 		"0x25BC98A59C2EA962": {
 			"name": "GET_VEHICLE_DOOR_LOCK_STATUS",
 			"jhash": "0x0D72CEF2",
-			"comment": "2 seems to disable getting vehicle in modshop",
+			"comment": "enum VehicleLockStatus = {\n    None = 0,\n    Unlocked = 1,\n    Locked = 2,\n    LockedForPlayer = 3,\n    StickPlayerInside = 4, -- Doesn't allow players to exit the vehicle with the exit vehicle key.\n    CanBeBrokenInto = 7, -- Can be broken into the car. If the glass is broken, the value will be set to 1\n    CanBeBrokenIntoPersist = 8, -- Can be broken into persist\n    CannotBeTriedToEnter = 10, -- Cannot be tried to enter (Nothing happens when you press the vehicle enter key).\n}",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100162,7 +100154,7 @@
 		"0xF8EBCCC96ADB9FB7": {
 			"name": "SET_VEHICLE_BULLDOZER_ARM_POSITION",
 			"jhash": "0xED23C8A3",
-			"comment": "",
+			"comment": "Sets the arm position of a bulldozer. Position must be a value between 0.0 and 1.0. Ignored when `p2` is set to false, instead incrementing arm position by 0.1 (or 10%).",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102577,9 +102569,9 @@
 			"build": "323"
 		},
 		"0xF0E4BA16D1DB546C": {
-			"name": "_0xF0E4BA16D1DB546C",
+			"name": "_SET_VEHICLE_SHADOW_EFFECT",
 			"jhash": "0x5BD8D82D",
-			"comment": "Adds some kind of shadow to the vehicle.\n\n-1 disables the effect.\n\nDISABLE_*",
+			"comment": "Adds some kind of shadow to the vehicle.\n\n-1 disables the effect.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102598,9 +102590,9 @@
 			"build": "323"
 		},
 		"0xF87D9F2301F7D206": {
-			"name": "_0xF87D9F2301F7D206",
+			"name": "_REMOVE_VEHICLE_SHADOW_EFFECT",
 			"jhash": "0x450AD03A",
-			"comment": "ENABLE_*",
+			"comment": "Remove the weird shadow applied by 0xF0E4BA16D1DB546C.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -104794,7 +104786,7 @@
 		"0xF06A16CA55D138D8": {
 			"name": "_SET_USE_HIGHER_VEHICLE_JUMP_FORCE",
 			"jhash": "",
-			"comment": "Allows vehicles with the FLAG_JUMPING_CAR flag to jump higher.",
+			"comment": "Allows vehicles with the FLAG_JUMPING_CAR flag to jump higher (i.e. Ruiner 2000).",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107009,7 +107001,7 @@
 		"0x0E98F88A24C5F4B8": {
 			"name": "CLEAR_PED_LAST_WEAPON_DAMAGE",
 			"jhash": "0x52C68832",
-			"comment": "",
+			"comment": "Does NOT seem to work with HasPedBeenDamagedByWeapon. Use CLEAR_ENTITY_LAST_WEAPON_DAMAGE and HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON instead.",
 			"params": [
 				{
 					"type": "Ped",
@@ -107584,7 +107576,7 @@
 		"0x20AE33F3AC9C0033": {
 			"name": "MAKE_PED_RELOAD",
 			"jhash": "0x515292C2",
-			"comment": "",
+			"comment": "Forces a ped to reload only if they are able to; if they have a full magazine, they will not reload.",
 			"params": [
 				{
 					"type": "Ped",
