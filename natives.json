@@ -1813,11 +1813,11 @@
 		"0x13AD665062541A7E": {
 			"name": "OVERRIDE_TREVOR_RAGE",
 			"jhash": "0x05B9B5CF",
-			"comment": "Sets audio flag \"TrevorRageIsOverriden\"",
+			"comment": "This native enables the audio flag \"TrevorRageIsOverridden\" and sets the voice effect to `voiceEffect`",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "voiceEffect"
 				}
 			],
 			"return_type": "void",
@@ -7045,15 +7045,15 @@
 		"0x6D0858B8EDFD2B7D": {
 			"name": "SET_GAMEPLAY_CAM_RELATIVE_PITCH",
 			"jhash": "0x6381B963",
-			"comment": "Sets the camera pitch.\n\nParameters:\nx = pitches the camera on the x axis.\nValue2 = always seems to be hex 0x3F800000 (1.000000 float).",
+			"comment": "This native sets the camera's pitch (rotation on the x-axis).",
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "angle"
 				},
 				{
 					"type": "float",
-					"name": "Value2"
+					"name": "scalingFactor"
 				}
 			],
 			"return_type": "void",
@@ -8016,39 +8016,39 @@
 		"0xA2297E18F3E71C2E": {
 			"name": "SET_GAMEPLAY_VEHICLE_HINT",
 			"jhash": "0x2C9A11D8",
-			"comment": "",
+			"comment": "Focuses the camera on the specified vehicle.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "offsetX"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "offsetY"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "offsetZ"
 				},
 				{
 					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "time"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "easeInTime"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "easeOutTime"
 				}
 			],
 			"return_type": "void",
@@ -11011,7 +11011,7 @@
 		"0x7239B21A38F536BA": {
 			"name": "DOES_ENTITY_EXIST",
 			"jhash": "0x3AC90869",
-			"comment": "Checks if the Entity exists",
+			"comment": "Checks whether an entity exists in the game world.",
 			"params": [
 				{
 					"type": "Entity",
@@ -11335,7 +11335,7 @@
 		"0x3FEF770D40960D5A": {
 			"name": "GET_ENTITY_COORDS",
 			"jhash": "0x1647F1CB",
-			"comment": "p1 = !IS_ENTITY_DEAD\n",
+			"comment": "`entity` = The entity to get the coordinates from.\n`alive` = Unused by the game, potentially used by debug builds of GTA in order to assert whether or not an entity was alive.",
 			"params": [
 				{
 					"type": "Entity",
@@ -12023,7 +12023,7 @@
 		"0xB346476EF1A64897": {
 			"name": "IS_ENTITY_ATTACHED",
 			"jhash": "0xEC1479D5",
-			"comment": "",
+			"comment": "Whether the entity is attached to any other entity.",
 			"params": [
 				{
 					"type": "Entity",
@@ -12887,7 +12887,7 @@
 		"0x428CA6DBD1094446": {
 			"name": "FREEZE_ENTITY_POSITION",
 			"jhash": "0x65C16D57",
-			"comment": "",
+			"comment": "Freezes or unfreezes an entity preventing its coordinates to change by the player if set to `true`. You can still change the entity position using SET_ENTITY_COORDS.",
 			"params": [
 				{
 					"type": "Entity",
@@ -13588,7 +13588,7 @@
 		"0x8E2530AA8ADA980E": {
 			"name": "SET_ENTITY_HEADING",
 			"jhash": "0xE0FF064D",
-			"comment": "",
+			"comment": "Set the heading of an entity in degrees also known as \"Yaw\".",
 			"params": [
 				{
 					"type": "Entity",
@@ -13605,7 +13605,7 @@
 		"0x6B76DC1F3AE6E6A3": {
 			"name": "SET_ENTITY_HEALTH",
 			"jhash": "0xFBCD1831",
-			"comment": "health >= 0",
+			"comment": "health >= 0\nmale ped ~= 100 - 200\nfemale ped ~= 0 - 100",
 			"params": [
 				{
 					"type": "Entity",
@@ -20890,7 +20890,7 @@
 		"0x26143A59EF48B262": {
 			"name": "SET_PARTICLE_FX_NON_LOOPED_COLOUR",
 			"jhash": "0x7B689E20",
-			"comment": "only works on some fx's",
+			"comment": "only works on some fx's, not networked",
 			"params": [
 				{
 					"type": "float",
@@ -23824,7 +23824,7 @@
 		"0xF7B38B8305F1FE8B": {
 			"name": "SET_TV_CHANNEL_PLAYLIST",
 			"jhash": "0xB262DE67",
-			"comment": "",
+			"comment": "Loads specified video sequence into the TV Channel\nTV_Channel ranges from 0-2\nVideoSequence can be any of the following:\n"PL_STD_CNT" CNT Standard Channel\n"PL_STD_WZL" Weazel Standard Channel\n"PL_LO_CNT"\n"PL_LO_WZL"\n"PL_SP_WORKOUT"\n"PL_SP_INV" - Jay Norris Assassination Mission Fail\n"PL_SP_INV_EXP" - Jay Norris Assassination Mission Success\n"PL_LO_RS" - Righteous Slaughter Ad\n"PL_LO_RS_CUTSCENE" - Righteous Slaughter Cut-scene\n"PL_SP_PLSH1_INTRO"\n"PL_LES1_FAME_OR_SHAME"\n"PL_STD_WZL_FOS_EP2"\n"PL_MP_WEAZEL" - Weazel Logo on loop\n"PL_MP_CCTV" - Generic CCTV loop\n\nRestart:\n0=video sequence continues as normal\n1=sequence restarts from beginning every time that channel is selected\n\n\nThe above playlists work as intended, and are commonly used, but there are many more playlists, as seen in `tvplaylists.xml`. A pastebin below outlines all playlists, they will be surronded by the name tag I.E. (<Name>PL_STD_CNT</Name> = PL_STD_CNT).\nhttps://pastebin.com/zUzGB6h7",
 			"params": [
 				{
 					"type": "int",
@@ -27881,7 +27881,7 @@
 		"0xCD6524439909C979": {
 			"name": "_SET_BLIP_SCALE_TRANSFORMATION",
 			"jhash": "",
-			"comment": "SET_BLIP_*",
+			"comment": "See https://imgur.com/a/lLkEsMN",
 			"params": [
 				{
 					"type": "Blip",
@@ -30675,7 +30675,7 @@
 		"0xEF01D36B9C9D0C7B": {
 			"name": "ACTIVATE_FRONTEND_MENU",
 			"jhash": "0x01D83872",
-			"comment": "Does stuff like this:\ngyazo.com/7fcb78ea3520e3dbc5b2c0c0f3712617\n\nExample:\nint GetHash = GET_HASH_KEY(\"fe_menu_version_corona_lobby\");\nACTIVATE_FRONTEND_MENU(GetHash, 0, -1);\n\nBOOL p1 is a toggle to define the game in pause.\nint p2 is unknown but -1 always works, not sure why though.\n\n[30/03/2017] ins1de :\n\nthe int p2 is actually a component variable. When the pause menu is visible, it opens the tab related to it.\n\nExample : Function.Call(Hash.ACTIVATE_FRONTEND_MENU,-1171018317, 0, 42);\nResult : Opens the \"Online\" tab without pausing the menu, with -1 it opens the map.",
+			"comment": "Does stuff like this:\ngyazo.com/7fcb78ea3520e3dbc5b2c0c0f3712617\n\nExample:\nint GetHash = GET_HASH_KEY(\"fe_menu_version_corona_lobby\");\nACTIVATE_FRONTEND_MENU(GetHash, 0, -1);\n\nBOOL p1 is a toggle to define the game in pause.\nint p2 is unknown but -1 always works, not sure why though.\n\n[30/03/2017] ins1de :\n\nthe int p2 is actually a component variable. When the pause menu is visible, it opens the tab related to it.\n\nExample : Function.Call(Hash.ACTIVATE_FRONTEND_MENU,-1171018317, 0, 42);\nResult : Opens the \"Online\" tab without pausing the menu, with -1 it opens the map.Below is a list of all known Frontend Menu Hashes.\n- FE_MENU_VERSION_SP_PAUSE\n- FE_MENU_VERSION_MP_PAUSE\n- FE_MENU_VERSION_CREATOR_PAUSE\n- FE_MENU_VERSION_CUTSCENE_PAUSE\n- FE_MENU_VERSION_SAVEGAME\n- FE_MENU_VERSION_PRE_LOBBY\n- FE_MENU_VERSION_LOBBY\n- FE_MENU_VERSION_MP_CHARACTER_SELECT\n- FE_MENU_VERSION_MP_CHARACTER_CREATION\n- FE_MENU_VERSION_EMPTY\n- FE_MENU_VERSION_EMPTY_NO_BACKGROUND\n- FE_MENU_VERSION_TEXT_SELECTION\n- FE_MENU_VERSION_CORONA\n- FE_MENU_VERSION_CORONA_LOBBY\n- FE_MENU_VERSION_CORONA_JOINED_PLAYERS\n- FE_MENU_VERSION_CORONA_INVITE_PLAYERS\n- FE_MENU_VERSION_CORONA_INVITE_FRIENDS\n- FE_MENU_VERSION_CORONA_INVITE_CREWS\n- FE_MENU_VERSION_CORONA_INVITE_MATCHED_PLAYERS\n- FE_MENU_VERSION_CORONA_INVITE_LAST_JOB_PLAYERS\n- FE_MENU_VERSION_CORONA_RACE\n- FE_MENU_VERSION_CORONA_BETTING\n- FE_MENU_VERSION_JOINING_SCREEN\n- FE_MENU_VERSION_LANDING_MENU\n- FE_MENU_VERSION_LANDING_KEYMAPPING_MENU",
 			"params": [
 				{
 					"type": "Hash",
@@ -51526,7 +51526,7 @@
 		"0xE135A9FF3F5D05D8": {
 			"name": "SET_ENTITY_LOCALLY_INVISIBLE",
 			"jhash": "0x51ADCC5F",
-			"comment": "",
+			"comment": "Makes the provided entity visible for yourself for the current frame.",
 			"params": [
 				{
 					"type": "Entity",
@@ -52035,7 +52035,7 @@
 		"0x89023FBBF9200E9F": {
 			"name": "GET_NETWORK_TIME_ACCURATE",
 			"jhash": "0x98AA48E5",
-			"comment": "",
+			"comment": "Returns the same value as GET_NETWORK_TIME in freemode, but as opposed to `GET_NETWORK_TIME` it always gets the most recent time, instead of once per tick.\nCould be used for benchmarking since it can return times in ticks.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -53190,19 +53190,19 @@
 		"0xE679E3E06E363892": {
 			"name": "NETWORK_OVERRIDE_CLOCK_TIME",
 			"jhash": "0xC077BCD6",
-			"comment": "Works in Singleplayer too.",
+			"comment": "Works in Singleplayer too.\nActually has a 4th param (BOOL) that sets byte_14273C46C (in b944) to whatever was passed to p3.\nPassing wrong data (e.g. hours above 23) will cause the game to crash.",
 			"params": [
 				{
 					"type": "int",
-					"name": "Hours"
+					"name": "hours"
 				},
 				{
 					"type": "int",
-					"name": "Minutes"
+					"name": "minutes"
 				},
 				{
 					"type": "int",
-					"name": "Seconds"
+					"name": "seconds"
 				}
 			],
 			"return_type": "void",
@@ -56790,11 +56790,11 @@
 		"0x9B12F9A24FABEDB0": {
 			"name": "_DOOR_CONTROL",
 			"jhash": "0x4E0A260B",
-			"comment": "when you set locked to 0 the door open and to 1 the door close\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 0, 0.0, 50.0, 0);  //door open\n\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 1, 0.0, 50.0, 0);  //door close\n\np5-7 - Rot?\n\nSET_*",
+			"comment": "Hardcoded not to work in multiplayer environments.\nWhen you set locked to 0 the door open and to 1 the door close\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 0, 0.0, 50.0, 0);  //door open\n\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 1, 0.0, 50.0, 0);  //door close",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "doorHash"
+					"name": "modelHash"
 				},
 				{
 					"type": "float",
@@ -56868,15 +56868,15 @@
 				},
 				{
 					"type": "BOOL",
+					"name": "p5"
+				},
+				{
+					"type": "BOOL",
 					"name": "scriptDoor"
 				},
 				{
 					"type": "BOOL",
 					"name": "isLocal"
-				},
-				{
-					"type": "BOOL",
-					"name": "p7"
 				}
 			],
 			"return_type": "void",
@@ -56885,7 +56885,7 @@
 		"0x464D8E1427156FE4": {
 			"name": "REMOVE_DOOR_FROM_SYSTEM",
 			"jhash": "0x00253286",
-			"comment": "",
+			"comment": "CDoor and CDoorSystemData still internally allocated (and their associations between doorHash, modelHash, and coordinates).\nOnly its NetObj removed and flag ``*(v2 + 192) |= 8u`` (1604 retail) toggled.",
 			"params": [
 				{
 					"type": "Hash",
@@ -56898,7 +56898,7 @@
 		"0x6BAB9442830C7F53": {
 			"name": "DOOR_SYSTEM_SET_DOOR_STATE",
 			"jhash": "0xDF83DB47",
-			"comment": "Sets the acceleration limit of a door.\nHow fast it can open, or the inverse hinge resistance.\n\nA limit of 0 seems to lock doors.\n\np2 is always 0, p3 is always 1.\n\n",
+			"comment": "Lockstates not applied and CNetObjDoor's not created until DOOR_SYSTEM_GET_IS_PHYSICS_LOADED returns true.\n`requestDoor` on true, and when door system is configured to, i.e., \"persists w/o netobj\", generate a CRequestDoorEvent.\n`forceUpdate` on true, forces an update on the door system (same path as netObjDoor_applyDoorStuff)\nDoor lock states:\n0: UNLOCKED\n1: LOCKED\n2: DOORSTATE_FORCE_LOCKED_UNTIL_OUT_OF_AREA\n3: DOORSTATE_FORCE_UNLOCKED_THIS_FRAME\n4: DOORSTATE_FORCE_LOCKED_THIS_FRAME\n5: DOORSTATE_FORCE_OPEN_THIS_FRAME\n6: DOORSTATE_FORCE_CLOSED_THIS_FRAME",
 			"params": [
 				{
 					"type": "Hash",
@@ -56906,15 +56906,15 @@
 				},
 				{
 					"type": "int",
-					"name": "limit"
+					"name": "state"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "requestDoor"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -56949,7 +56949,7 @@
 		"0x03C27E13B42A0E82": {
 			"name": "DOOR_SYSTEM_SET_AUTOMATIC_RATE",
 			"jhash": "0x4F44AF21",
-			"comment": "",
+			"comment": "Includes networking check: ownership vs. or the door itself **isn't** networked.\n`forceUpdate` on true invokes DOOR_SYSTEM_SET_DOOR_STATE otherwise requestDoor is unused.",
 			"params": [
 				{
 					"type": "Hash",
@@ -56957,15 +56957,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "rate"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "requestDoor"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -56974,7 +56974,7 @@
 		"0x9BA001CB45CBF627": {
 			"name": "DOOR_SYSTEM_SET_AUTOMATIC_DISTANCE",
 			"jhash": "0x47531446",
-			"comment": "",
+			"comment": "`forceUpdate` on true invokes DOOR_SYSTEM_SET_DOOR_STATE otherwise requestDoor is unused.",
 			"params": [
 				{
 					"type": "Hash",
@@ -56982,15 +56982,15 @@
 				},
 				{
 					"type": "float",
-					"name": "heading"
+					"name": "distance"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "requestDoor"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -56999,7 +56999,7 @@
 		"0xB6E6FBA95C7324AC": {
 			"name": "DOOR_SYSTEM_SET_OPEN_RATIO",
 			"jhash": "0x34883DE3",
-			"comment": "Sets the ajar angle of a door.\nRanges from -1.0 to 1.0, and 0.0 is closed / default.\n\np2 is always 0, p3 is always 1.\n\n",
+			"comment": "Sets the ajar angle of a door.\nRanges from -1.0 to 1.0, and 0.0 is closed / default.\n`forceUpdate` on true invokes DOOR_SYSTEM_SET_DOOR_STATE otherwise requestDoor is unused.",
 			"params": [
 				{
 					"type": "Hash",
@@ -57011,11 +57011,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "requestDoor"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -57050,7 +57050,7 @@
 		"0xC485E07E4F0B7958": {
 			"name": "DOOR_SYSTEM_SET_SPRING_REMOVED",
 			"jhash": "0xB4A9A558",
-			"comment": "",
+			"comment": "Includes networking check: ownership vs. or the door itself **isn't** networked.\n`forceUpdate` on true invokes DOOR_SYSTEM_SET_DOOR_STATE otherwise requestDoor is unused.",
 			"params": [
 				{
 					"type": "Hash",
@@ -57058,15 +57058,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "removed"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "requestDoor"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -57075,7 +57075,7 @@
 		"0xD9B71952F78A2640": {
 			"name": "DOOR_SYSTEM_SET_HOLD_OPEN",
 			"jhash": "0xECE58AE0",
-			"comment": "",
+			"comment": "Includes networking check: ownership vs. or the door itself **isn't** networked.",
 			"params": [
 				{
 					"type": "Hash",
@@ -57092,7 +57092,7 @@
 		"0xA85A21582451E951": {
 			"name": "_0xA85A21582451E951",
 			"jhash": "0xF736227C",
-			"comment": "",
+			"comment": "Some property related to gates. Native name between ``DOOR_SYSTEM_SET_AUTOMATIC_RATE`` and ``DOOR_SYSTEM_SET_DOOR_STATE``.",
 			"params": [
 				{
 					"type": "Hash",
@@ -57148,7 +57148,7 @@
 		"0x701FDA1E82076BA4": {
 			"name": "_0x701FDA1E82076BA4",
 			"jhash": "0xF592AD10",
-			"comment": "",
+			"comment": "Clears the fields sets by 0xC7F29CA00F46350E (1604 retail: 0x1424A7A10, 0x1424A7A11) and iterates over the global CDoor's bucket-list.\nRelated to its \"Pre-networked state\"?",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -60241,7 +60241,7 @@
 		"0xBF1A602B5BA52FEE": {
 			"name": "SET_ROADS_IN_AREA",
 			"jhash": "0xEBC7B918",
-			"comment": "",
+			"comment": "When nodeEnabled is set to false, all nodes in the area get disabled.\n`GET_VEHICLE_NODE_IS_SWITCHED_OFF` returns true afterwards.\nIf it's true, `GET_VEHICLE_NODE_IS_SWITCHED_OFF` returns false.",
 			"params": [
 				{
 					"type": "float",
@@ -60269,7 +60269,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unknown1"
+					"name": "nodeEnabled"
 				},
 				{
 					"type": "BOOL",
@@ -61824,7 +61824,7 @@
 		"0xADD95C7005C4A197": {
 			"name": "CALCULATE_TRAVEL_DISTANCE_BETWEEN_POINTS",
 			"jhash": "0xB114489B",
-			"comment": "Calculates the travel distance between a set of points.\n\nDoesn't seem to correlate with distance on gps sometimes.",
+			"comment": "Calculates the travel distance between a set of points.\n\nDoesn't seem to correlate with distance on gps sometimes.\nThis function returns the value 100000.0 over long distances, seems to be a failure mode result, potentially occurring when not all path nodes are loaded into pathfind.",
 			"params": [
 				{
 					"type": "float",
@@ -62975,7 +62975,7 @@
 		"0xEBD76F2359F190AC": {
 			"name": "SET_PED_SUFFERS_CRITICAL_HITS",
 			"jhash": "0x6F6FC7E6",
-			"comment": "ped cannot be headshot if this is set to false",
+			"comment": "Ped no longer takes critical damage modifiers if set to FALSE.\nExample: Headshotting a player no longer one shots them. Instead they will take the same damage as a torso shot.",
 			"params": [
 				{
 					"type": "Ped",
@@ -67592,7 +67592,7 @@
 		"0xAE99FB955581844A": {
 			"name": "SET_PED_TO_RAGDOLL",
 			"jhash": "0x83CB5052",
-			"comment": "time1- Time Ped is in ragdoll mode(ms)\n\ntime2- Unknown time, in milliseconds\n\nragdollType-\n0 : Normal ragdoll\n1 : Falls with stiff legs/body\n2 : Narrow leg stumble(may not fall)\n3 : Wide leg stumble(may not fall)\n\np4, p5, p6- No idea. In R*'s scripts they are usually either \"true, true, false\" or \"false, false, false\".\n\n\n\n\nEDIT 3/11/16: unclear what 'mircoseconds' mean-- a microsecond is 1000x a ms, so time2 must be 1000x time1?  more testing needed.  -sob\n\nEdit Mar 21, 2017: removed part about time2 being the microseconds version of time1. this just isn't correct. time2 is in milliseconds, and time1 and time2 don't seem to be connected in any way.",
+			"comment": "p4/p5: Unusued in TU27\nRagdoll Types:\n**0**: CTaskNMRelax\n**1**: CTaskNMScriptControl: Hardcoded not to work in networked environments.\n**Else**: CTaskNMBalance\ntime1- Time(ms) Ped is in ragdoll mode; only applies to ragdoll types 0 and not 1.\n\ntime2- Unknown time, in milliseconds\n\nragdollType-\n0 : Normal ragdoll\n1 : Falls with stiff legs/body\n2 : Narrow leg stumble(may not fall)\n3 : Wide leg stumble(may not fall)\n\np4, p5, p6- No idea. In R*'s scripts they are usually either \"true, true, false\" or \"false, false, false\".\n\n\n\n\nEDIT 3/11/16: unclear what 'mircoseconds' mean-- a microsecond is 1000x a ms, so time2 must be 1000x time1?  more testing needed.  -sob\n\nEdit Mar 21, 2017: removed part about time2 being the microseconds version of time1. this just isn't correct. time2 is in milliseconds, and time1 and time2 don't seem to be connected in any way.",
 			"params": [
 				{
 					"type": "Ped",
@@ -69631,7 +69631,7 @@
 		"0xC1E8A365BF3B29F2": {
 			"name": "SET_PED_RESET_FLAG",
 			"jhash": "0xCFF6FF66",
-			"comment": "PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 240, 1);",
+			"comment": "PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 240, 1);\nKnown values:\nPRF_PreventGoingIntoStillInVehicleState = 236 *(fanatic2.c)*",
 			"params": [
 				{
 					"type": "Ped",
@@ -87733,7 +87733,7 @@
 		"0x83CDB10EA29B370B": {
 			"name": "TASK_PLAY_ANIM_ADVANCED",
 			"jhash": "0x3DDEB0E6",
-			"comment": "It's similar to the one above, except the first 6 floats let you specify the initial position and rotation of the task. (Ped gets teleported to the position). animTime is a float from 0.0 -> 1.0, lets you start an animation from given point. The rest as in TASK::TASK_PLAY_ANIM. \n\nRotation information : rotX and rotY don't seem to have any effect, only rotZ works.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
+			"comment": "It's similar to TASK_PLAY_ANIM, except the first 6 floats let you specify the initial position and rotation of the task. (Ped gets teleported to the position).\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -87773,11 +87773,11 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "animEnterSpeed"
 				},
 				{
 					"type": "float",
-					"name": "speedMultiplier"
+					"name": "animExitSpeed"
 				},
 				{
 					"type": "int",
@@ -91630,7 +91630,7 @@
 		"0xDEB6D52126E7D640": {
 			"name": "IS_PED_IN_WRITHE",
 			"jhash": "0x09E61921",
-			"comment": "returns true is the ped is on the ground whining like a little female dog from a gunshot wound",
+			"comment": "This native checks if a ped is on the ground, in pain from a (gunshot) wound.\nReturns `true` if the ped is in writhe, `false` otherwise.",
 			"params": [
 				{
 					"type": "Ped",
@@ -96095,7 +96095,7 @@
 		"0x602E548F46E24D59": {
 			"name": "ROLL_UP_WINDOW",
 			"jhash": "0x83B7E06A",
-			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window",
+			"comment": "Window indexes:\n0 = Front Left Window\n1 = Front Right Window\n2 = Back Left Window\n3 = Back Right Window",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96129,7 +96129,7 @@
 		"0x772282EBEB95E682": {
 			"name": "FIX_VEHICLE_WINDOW",
 			"jhash": "0x6B8E990D",
-			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window\n4 = Unknown\n5 = Unknown\n6 = Windscreen\n7 = Rear Windscreen",
+			"comment": "`index` = 0 to 13\n0 = front right window\n1 = front left window\n2 = rear right window\n3 = rear left window\n4 = unsure\n5 = unsure\n6 = windowscreen\n7 = rear windowscreen\n8 = unsure\n9 = unsure\n10 = unsure\n11 = unsure\n12 = unsure\n13 = unsure\n\nAdditional information: FIX_VEHICLE_WINDOW (0x140D0BB88) references an array of bone vehicle indices (0x141D4B3E0) { 2Ah, 2Bh, 2Ch, 2Dh, 2Eh, 2Fh, 28h, 29h } that correspond to: window_lf, window_rf, window_lr, window_rr, window_lm, window_rm, windscreen, windscreen_r. This array is used by most vehwindow natives.\n\nAlso, this function is coded to not work on vehicles of type: CBike, Bmx, CBoat, CTrain, and CSubmarine.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96350,7 +96350,7 @@
 		"0x16B5E274BDE402F8": {
 			"name": "ATTACH_VEHICLE_ON_TO_TRAILER",
 			"jhash": "0x12AC1A16",
-			"comment": "",
+			"comment": "This is the proper way of attaching vehicles to the car carrier, it's what Rockstar uses. Video Demo: https://www.youtube.com/watch?v=2lVEIzf7bgo",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96362,43 +96362,43 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "offsetX"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "offsetY"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "offsetZ"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "coordsX"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "coordsY"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "coordsZ"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "rotationX"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "rotationY"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "rotationZ"
 				},
 				{
 					"type": "float",
-					"name": "p11"
+					"name": "disableCollisions"
 				}
 			],
 			"return_type": "void",
@@ -97945,7 +97945,7 @@
 		"0x2497C4717C8B881E": {
 			"name": "SET_VEHICLE_ENGINE_ON",
 			"jhash": "0x7FBC86F1",
-			"comment": "Starts or stops the engine on the specified vehicle.\n\nvehicle: The vehicle to start or stop the engine on.\nvalue: true to turn the vehicle on; false to turn it off.\ninstantly: if true, the vehicle will be set to the state immediately; otherwise, the current driver will physically turn on or off the engine.\n\n--------------------------------------\nfrom what I've tested when I do this to a helicopter the propellers turn off after the engine has started. so is there any way to keep the heli propellers on?\n--------------------------------------\nAnd what's with BOOL otherwise, what does it do???",
+			"comment": "Starts or stops the engine on the specified vehicle.\n\nvehicle: The vehicle to start or stop the engine on.\nvalue: true to turn the vehicle on; false to turn it off.\ninstantly: if true, the vehicle will be set to the state immediately; otherwise, the current driver will physically turn on or off the engine.\ndisableAutoStart: If true, the system will prevent the engine from starting when the player got into it.\n\nfrom what I've tested when I do this to a helicopter the propellers turn off after the engine has started. so is there any way to keep the heli propellers on?",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97961,7 +97961,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "noAutoTurnOn"
+					"name": "disableAutoStart"
 				}
 			],
 			"return_type": "void",
@@ -99171,7 +99171,7 @@
 		"0xA1DD317EA8FD4F29": {
 			"name": "SET_VEHICLE_DAMAGE",
 			"jhash": "0x21B458B2",
-			"comment": "Apply damage to vehicle at a location. Location is relative to vehicle model (not world).\n\nRadius of effect damage applied in a sphere at impact location",
+			"comment": "Apply damage to vehicle at a location. Location is relative to vehicle model (not world).\n\nRadius of effect damage applied in a sphere at impact location\nWhen `focusOnModel` set to `true`, the damage sphere will travel towards the vehicle from the given point, thus guaranteeing an impact",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99199,7 +99199,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "focusOnModel"
 				}
 			],
 			"return_type": "void",
