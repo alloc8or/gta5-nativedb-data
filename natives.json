@@ -37416,7 +37416,7 @@
 		"0x171BAFB3C60389F4": {
 			"name": "DOES_POP_MULTIPLIER_SPHERE_EXIST",
 			"jhash": "0xD2B7A5A0",
-			"comment": "Removes population multiplier sphere",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -37429,7 +37429,7 @@
 		"0xE6869BECDD8F2403": {
 			"name": "REMOVE_POP_MULTIPLIER_SPHERE",
 			"jhash": "0x92E7E4EB",
-			"comment": "",
+			"comment": "Removes population multiplier sphere",
 			"params": [
 				{
 					"type": "int",
