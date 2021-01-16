@@ -28840,7 +28840,7 @@
 			"build": "323"
 		},
 		"0x72C1056D678BB7D8": {
-			"name": "_HUD_WEAPON_WHEEL_SET_SLOT_HASH",
+			"name": "HUD_SET_WEAPON_WHEEL_TOP_SLOT",
 			"jhash": "0x83B608A0",
 			"comment": "Seems to automatically select the weapon on the corresponding slot in the weapon selection wheel",
 			"params": [
@@ -85744,7 +85744,7 @@
 			"build": "323"
 		},
 		"0x43D1680C6D19A8E9": {
-			"name": "_0x43D1680C6D19A8E9",
+			"name": "ALLOW_PLAYER_SWITCH_PAN",
 			"jhash": "0x55CB21F9",
 			"comment": "",
 			"params": [],
@@ -85752,7 +85752,7 @@
 			"build": "323"
 		},
 		"0x74DE2E8739086740": {
-			"name": "_0x74DE2E8739086740",
+			"name": "ALLOW_PLAYER_SWITCH_OUTRO",
 			"jhash": "0x1084F2F4",
 			"comment": "",
 			"params": [],
@@ -85760,7 +85760,7 @@
 			"build": "323"
 		},
 		"0x8E2A065ABDAE6994": {
-			"name": "_0x8E2A065ABDAE6994",
+			"name": "ALLOW_PLAYER_SWITCH_ASCENT",
 			"jhash": "0x5B1E995D",
 			"comment": "",
 			"params": [],
@@ -85768,7 +85768,7 @@
 			"build": "323"
 		},
 		"0xAD5FDF34B81BFE79": {
-			"name": "_DISABLE_SWITCH_PAUSE_BEFORE_DESCENT",
+			"name": "ALLOW_PLAYER_SWITCH_DESCENT",
 			"jhash": "0x4B4B9A13",
 			"comment": "",
 			"params": [],
@@ -85874,7 +85874,7 @@
 			"build": "323"
 		},
 		"0x0C15B0E443B2349D": {
-			"name": "_0x0C15B0E443B2349D",
+			"name": "GET_LODSCALE",
 			"jhash": "0x7154B6FD",
 			"comment": "",
 			"params": [],
@@ -85882,7 +85882,7 @@
 			"build": "323"
 		},
 		"0xA76359FC80B2438E": {
-			"name": "_SET_TEXTURE_DISTANCE_SCALING_THIS_FRAME",
+			"name": "OVERRIDE_LODSCALE_THIS_FRAME",
 			"jhash": "0xE5612C1A",
 			"comment": "This allows you to override \"extended distance scaling\" setting. Needs to be called each frame.\nMax scaling seems to be 200.0, normal is 1.0\nSee https://gfycat.com/DetailedHauntingIncatern",
 			"params": [
