@@ -1399,7 +1399,7 @@
 		"0x67C540AA08E4A6F5": {
 			"name": "PLAY_SOUND_FRONTEND",
 			"jhash": "0x2E458F74",
-			"comment": "list: pastebin.com/DCeRiaLJ\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/0neZdsZ5\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
+			"comment": "List: https://pastebin.com/DCeRiaLJ\n\nAll occurrences as of Cayo Perico Heist DLC (b2189), sorted alphabetically and identical lines removed: https://git.io/JtLxM\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
