@@ -8209,7 +8209,7 @@
 			"build": "323"
 		},
 		"0xF8BDBF3D573049A1": {
-			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETZ",
+			"name": "SET_GAMEPLAY_HINT_FOLLOW_DISTANCE_SCALAR",
 			"jhash": "0x72E8CD3A",
 			"comment": "",
 			"params": [
@@ -8222,7 +8222,7 @@
 			"build": "323"
 		},
 		"0xD1F8363DFAD03848": {
-			"name": "_SET_GAMEPLAY_HINT_ANGLE",
+			"name": "SET_GAMEPLAY_HINT_BASE_ORBIT_PITCH_OFFSET",
 			"jhash": "0x79472AE3",
 			"comment": "",
 			"params": [
@@ -8237,7 +8237,7 @@
 		"0x5D7B620DAE436138": {
 			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETX",
 			"jhash": "0xFC7464A0",
-			"comment": "",
+			"comment": "Likely field of camHintHelperMetadata",
 			"params": [
 				{
 					"type": "float",
@@ -8250,7 +8250,7 @@
 		"0xC92717EF615B6704": {
 			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETY",
 			"jhash": "0x3554AA0E",
-			"comment": "",
+			"comment": "Likely field of camHintHelperMetadata",
 			"params": [
 				{
 					"type": "float",
@@ -8263,7 +8263,7 @@
 		"0xE3433EADAAF7EE40": {
 			"name": "_SET_GAMEPLAY_HINT_ANIM_CLOSEUP",
 			"jhash": "0x2F0CE859",
-			"comment": "",
+			"comment": "Likely field of camHintHelperMetadata",
 			"params": [
 				{
 					"type": "BOOL",
