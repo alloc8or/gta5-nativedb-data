@@ -8209,26 +8209,26 @@
 			"build": "323"
 		},
 		"0xF8BDBF3D573049A1": {
-			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETZ",
+			"name": "SET_GAMEPLAY_HINT_FOLLOW_DISTANCE_SCALAR",
 			"jhash": "0x72E8CD3A",
-			"comment": "",
+			"comment": "Old name: _SET_GAMEPLAY_HINT_ANIM_OFFSETZ",
 			"params": [
 				{
 					"type": "float",
-					"name": "zOffset"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xD1F8363DFAD03848": {
-			"name": "_SET_GAMEPLAY_HINT_ANGLE",
+			"name": "SET_GAMEPLAY_HINT_BASE_ORBIT_PITCH_OFFSET",
 			"jhash": "0x79472AE3",
-			"comment": "",
+			"comment": "Old name: _SET_GAMEPLAY_HINT_ANGLE",
 			"params": [
 				{
 					"type": "float",
-					"name": "roll"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
