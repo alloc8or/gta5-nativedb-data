@@ -31051,9 +31051,9 @@
 			"build": "323"
 		},
 		"0x2E22FEFA0100275E": {
-			"name": "_HAS_MENU_STATE_CHANGED_THIS_FRAME",
+			"name": "_0x2E22FEFA0100275E",
 			"jhash": "0x96863460",
-			"comment": "Returns true when the menu state(?) changed this frame.",
+			"comment": "Returns true when the menu state(?) changed this frame.\nHAS_*? _GET_MENU_STATE_CHANGED_THIS_FRAME?",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -36699,7 +36699,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "toggle"
+					"name": "p0"
 				}
 			],
 			"return_type": "void",
@@ -38291,7 +38291,7 @@
 		"0xE574A662ACAEFBB1": {
 			"name": "_RESTART_GAME",
 			"jhash": "",
-			"comment": "This is FiveM / GTA:Online related. Shows `Disconnecting from GTA Online` HUD and then quits the game. Better name `_QUIT_GAME`?",
+			"comment": "In singleplayer it does exactly what the name implies. In FiveM / GTA:Online it shows `Disconnecting from GTA Online` HUD and then quits the game.",
 			"params": [],
 			"return_type": "void",
 			"build": "372"
@@ -50533,7 +50533,7 @@
 		"0x9ECA15ADFE141431": {
 			"name": "_SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE",
 			"jhash": "",
-			"comment": "This is FiveM / GTA:Online related. Disconnects you from the session, and starts loading single player, however you still remain connected to the server (only if you're the host, if you're not then you also (most likely) get disconnected from the server) and other players will not be able to join until you exit the game.\n\nIf you're already in SP then it'll re-load singleplayer.\n\nYou might need to DoScreenFadeIn and ShutdownLoadingScreen otherwise you probably won't end up loading into SP at all.\n\nSomewhat related note: opening the pause menu after loading into this 'singleplayer' mode crashes the game.",
+			"comment": "In singleplayer this will re-load your game.\n\nIn FiveM / GTA:Online this disconnects you from the session, and starts loading single player, however you still remain connected to the server (only if you're the host, if you're not then you also (most likely) get disconnected from the server) and other players will not be able to join until you exit the game.\n\nYou might need to DoScreenFadeIn and ShutdownLoadingScreen otherwise you probably won't end up loading into SP at all.\n\nSomewhat related note: opening the pause menu after loading into this 'singleplayer' mode crashes the game.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "505"
@@ -87369,7 +87369,7 @@
 		"0x88E32DB8C1A4AA4B": {
 			"name": "SET_PED_PATH_CLIMB_COST_MODIFIER",
 			"jhash": "0x55E06443",
-			"comment": "Could be the move speed on the path. Needs testing.\n\nDefault modifier is 1.0, minimum is 0.0 and maximum is 10.0.",
+			"comment": "Default modifier is 1.0, minimum is 0.0 and maximum is 10.0.",
 			"params": [
 				{
 					"type": "Ped",
