@@ -64930,7 +64930,7 @@
 		"0xCE2F5FC3AF7E8C1E": {
 			"name": "SET_GROUP_FORMATION",
 			"jhash": "0x08FAC739",
-			"comment": "0: Default\n1: Circle Around Leader\n2: Alternative Circle Around Leader\n3: Line, with Leader at center",
+			"comment": "Formation types:\n0: Freedom to move (Default)\n1: Circle Around Leader\n2: Alternative Circle Around Leader\n3: Line, with Leader at center\n4: Arrow Formation\n5: \"V\" Formation\n6: Line Follow Formation\n7: Single Formation\n8: Pairwise\n",
 			"params": [
 				{
 					"type": "int",
