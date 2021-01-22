@@ -12122,7 +12122,7 @@
 		"0x51210CED3DA1C78A": {
 			"name": "IS_ENTITY_IN_ANGLED_AREA",
 			"jhash": "0x883622FA",
-			"comment": "`p8` is a debug flag invoking functions in the same path as ``DRAW_MARKER``\n`p10` is some entity flag check, also used in `IS_ENTITY_AT_ENTITY`, `IS_ENTITY_IN_AREA`, and `IS_ENTITY_AT_COORD`.\nSee IS_POINT_IN_ANGLED_AREA for the definition of an angled area.",
+			"comment": "`p8` is a debug flag invoking functions in the same path as `DRAW_MARKER`\n`p10` is some entity flag check, also used in `IS_ENTITY_AT_ENTITY`, `IS_ENTITY_IN_AREA`, and `IS_ENTITY_AT_COORD`.\nSee IS_POINT_IN_ANGLED_AREA for the definition of an angled area.",
 			"params": [
 				{
 					"type": "Entity",
@@ -56885,7 +56885,7 @@
 		"0x464D8E1427156FE4": {
 			"name": "REMOVE_DOOR_FROM_SYSTEM",
 			"jhash": "0x00253286",
-			"comment": "CDoor and CDoorSystemData still internally allocated (and their associations between doorHash, modelHash, and coordinates).\nOnly its NetObj removed and flag ``*(v2 + 192) |= 8u`` (1604 retail) toggled.",
+			"comment": "CDoor and CDoorSystemData still internally allocated (and their associations between doorHash, modelHash, and coordinates).\nOnly its NetObj removed and flag `*(v2 + 192) |= 8u` (1604 retail) toggled.",
 			"params": [
 				{
 					"type": "Hash",
@@ -57092,7 +57092,7 @@
 		"0xA85A21582451E951": {
 			"name": "_0xA85A21582451E951",
 			"jhash": "0xF736227C",
-			"comment": "Some property related to gates. Native name between ``DOOR_SYSTEM_SET_AUTOMATIC_RATE`` and ``DOOR_SYSTEM_SET_DOOR_STATE``.",
+			"comment": "Some property related to gates. Native name between `DOOR_SYSTEM_SET_AUTOMATIC_RATE` and `DOOR_SYSTEM_SET_DOOR_STATE`.",
 			"params": [
 				{
 					"type": "Hash",
@@ -57490,7 +57490,7 @@
 		"0x2A70BAE8883E4C81": {
 			"name": "IS_POINT_IN_ANGLED_AREA",
 			"jhash": "0x73BCFFDC",
-			"comment": "An angled area is an X-Z oriented rectangle with three parameters:\n1. origin: the mid-point along a base edge of the rectangle;\n2. extent: the mid-point of opposite base edge on the other Z;\n3. width: the length of the base edge; (named derived from logging strings ``CNetworkRoadNodeWorldStateData``).\n\nThe oriented rectangle can then be derived from the direction of the two points (``norm(origin - extent)``), its orthonormal, and the width, e.g:\n1. golf_mp https://i.imgur.com/JhsQAK9.png\n2. am_taxi https://i.imgur.com/TJWCZaT.jpg",
+			"comment": "An angled area is an X-Z oriented rectangle with three parameters:\n1. origin: the mid-point along a base edge of the rectangle;\n2. extent: the mid-point of opposite base edge on the other Z;\n3. width: the length of the base edge; (named derived from logging strings `CNetworkRoadNodeWorldStateData`).\n\nThe oriented rectangle can then be derived from the direction of the two points (`norm(origin - extent)`), its orthonormal, and the width, e.g:\n1. golf_mp https://i.imgur.com/JhsQAK9.png\n2. am_taxi https://i.imgur.com/TJWCZaT.jpg",
 			"params": [
 				{
 					"type": "float",
