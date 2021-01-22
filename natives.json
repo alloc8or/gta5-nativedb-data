@@ -3552,7 +3552,7 @@
 		"0x4F0C413926060B38": {
 			"name": "_FORCE_VEHICLE_ENGINE_AUDIO",
 			"jhash": "0x33B0B007",
-			"comment": "This native sets the audio of the specified vehicle to the audioName (p1).\n\nUse the audioNameHash found in vehicles.meta\n\nExample:\n_SET_VEHICLE_AUDIO(veh, \"ADDER\");\nThe selected vehicle will now have the audio of the Adder.\n\nFORCE_VEHICLE_???",
+			"comment": "This native sets the audio of the specified vehicle to the audioName (p1).\n\nUse the audioNameHash found in vehicles.meta\n\nExample:\n_SET_VEHICLE_AUDIO(veh, \"ADDER\");\nThe selected vehicle will now have the audio of the Adder.\n\nFORCE_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -14727,7 +14727,7 @@
 		"0xD7B80E7C3BEFC396": {
 			"name": "_0xD7B80E7C3BEFC396",
 			"jhash": "",
-			"comment": "Sets 32nd bit of pickup+188\nSET_PICKUP_??",
+			"comment": "Sets some bit of pickup\nSET_PICKUP_*",
 			"params": [
 				{
 					"type": "Pickup",
@@ -22915,7 +22915,7 @@
 		"0x2FCB133CA50A49EB": {
 			"name": "_0x2FCB133CA50A49EB",
 			"jhash": "",
-			"comment": "val is 1-20 (0 will return false)\nSET_???",
+			"comment": "val is 1-20 (0 will return false)\nSET_*",
 			"params": [
 				{
 					"type": "int",
@@ -23922,7 +23922,7 @@
 		"0xD1C55B110E4DF534": {
 			"name": "_0xD1C55B110E4DF534",
 			"jhash": "0xD99EC000",
-			"comment": "SET_TV_???",
+			"comment": "SET_TV_*",
 			"params": [
 				{
 					"type": "Any",
@@ -31392,7 +31392,7 @@
 		"0x1185A8087587322C": {
 			"name": "_0x1185A8087587322C",
 			"jhash": "",
-			"comment": "SET_TEXT_??? - Used in golf and golf_mp",
+			"comment": "SET_TEXT_*\nUsed in golf and golf_mp",
 			"params": [
 				{
 					"type": "BOOL",
@@ -57415,7 +57415,7 @@
 		"0x659F9D71F52843F8": {
 			"name": "_0x659F9D71F52843F8",
 			"jhash": "",
-			"comment": "Sets a flag. A valid id is 0x157DC10D\nSET_FLAG_??",
+			"comment": "Sets a flag. A valid id is 0x157DC10D\nSET_FLAG_*",
 			"params": [
 				{
 					"type": "int",
@@ -59022,7 +59022,7 @@
 		"0xD05A3241B9A86F19": {
 			"name": "_0xD05A3241B9A86F19",
 			"jhash": "",
-			"comment": "Sets entity+38 to C (when false) or 0xFF3f (when true)\nSET_ENTITY_??",
+			"comment": "Sets some entity value to C (when false) or 0xFF3f (when true)\nSET_ENTITY_*",
 			"params": [
 				{
 					"type": "Entity",
@@ -59204,7 +59204,7 @@
 		"0xADF084FB8F075D06": {
 			"name": "_0xADF084FB8F075D06",
 			"jhash": "",
-			"comment": "GET_OBJECT_??",
+			"comment": "GET_OBJECT_*",
 			"params": [
 				{
 					"type": "Object",
@@ -60193,7 +60193,7 @@
 		"0x4683149ED1DDE7A1": {
 			"name": "_SWITCH_TO_INPUT_MAPPING_SCHEME_2",
 			"jhash": "0xBBFC9050",
-			"comment": "Same as 0x3D42B92563939375\n\nS*",
+			"comment": "Same as _SWITCH_TO_INPUT_MAPPING_SCHEME\n\nS*",
 			"params": [
 				{
 					"type": "const char*",
@@ -78291,7 +78291,7 @@
 		"0xFF6BE494C7987F34": {
 			"name": "_START_SHAPE_TEST_SURROUNDING_COORDS",
 			"jhash": "",
-			"comment": "Actual name starts with START_SHAPE_TEST_??? and it returns a ShapeTest handle that can be used with GET_SHAPE_TEST_RESULT.\n\nIn its only usage in game scripts its called with flag set to 511, entity to player_ped_id and flag2 set to 7",
+			"comment": "Actual name starts with START_SHAPE_TEST_* and it returns a ShapeTest handle that can be used with GET_SHAPE_TEST_RESULT.\n\nIn its only usage in game scripts its called with flag set to 511, entity to player_ped_id and flag2 set to 7",
 			"params": [
 				{
 					"type": "Vector3*",
@@ -105446,7 +105446,7 @@
 		"0x0A3F820A9A9A9AC5": {
 			"name": "_0x0A3F820A9A9A9AC5",
 			"jhash": "",
-			"comment": "Used on helicopters\nSET_HELICOPTER_??",
+			"comment": "Used on helicopters\nSET_HELICOPTER_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105516,7 +105516,7 @@
 		"0x97841634EF7DF1D6": {
 			"name": "_0x97841634EF7DF1D6",
 			"jhash": "",
-			"comment": "Sets a flag on heli and another vehicle type.\n_SET_VEHICLE_??",
+			"comment": "Sets a flag on heli and another vehicle type.\n_SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105661,7 +105661,7 @@
 		"0xAA653AE61924B0A0": {
 			"name": "_0xAA653AE61924B0A0",
 			"jhash": "",
-			"comment": "Sets some vehicle value\n_SET_VEHICLE_?",
+			"comment": "Sets some vehicle value\n_SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105733,7 +105733,7 @@
 		"0x887FA38787DE8C72": {
 			"name": "_0x887FA38787DE8C72",
 			"jhash": "",
-			"comment": "Sets some vehicle value to 1\nSET_VEHICLE_??",
+			"comment": "Sets some vehicle value to 1\nSET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
