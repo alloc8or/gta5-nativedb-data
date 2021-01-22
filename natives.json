@@ -2846,9 +2846,9 @@
 			"build": "1493"
 		},
 		"0x3E65CDE5215832C1": {
-			"name": "_GET_RADIO_STATION_HASH",
+			"name": "_GET_CURRENT_RADIO_STATION_HASH",
 			"jhash": "",
-			"comment": "Seems to return hashed radio station name?",
+			"comment": "GET_CURRENT_*\nSeems to return hashed radio station name?",
 			"params": [
 				{
 					"type": "const char*",
@@ -3098,7 +3098,7 @@
 		"0x3CDC1E622CCE0356": {
 			"name": "OVERRIDE_VEH_HORN",
 			"jhash": "0x2ACAB783",
-			"comment": "Overrides the vehicle's horn hash.\nWhen changing this hash on a vehicle, `_GET_VEHICLE_HORN_HASH`(#_0xACB5DCCA1EC76840) will **not** return the 'overwritten' hash. It will still always return the default horn hash (same as `GET_VEHICLE_DEFAULT_HORN`)\n\nvehicle - the vehicle whose horn should be overwritten\nmute - p1 seems to be an option for muting the horn\np2 - maybe a horn id, since the function AUDIO::GET_VEHICLE_DEFAULT_HORN(veh) exists?",
+			"comment": "Overrides the vehicle's horn hash.\nWhen changing this hash on a vehicle, it will not return the 'overwritten' hash. It will still always return the default horn hash (same as GET_VEHICLE_DEFAULT_HORN)\n\nvehicle - the vehicle whose horn should be overwritten\nmute - p1 seems to be an option for muting the horn\np2 - maybe a horn id, since the function AUDIO::GET_VEHICLE_DEFAULT_HORN(veh) exists?",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -7303,7 +7303,7 @@
 		"0xB1381B97F70C7B30": {
 			"name": "_0xB1381B97F70C7B30",
 			"jhash": "",
-			"comment": "Sets flag on cinematic camera +3A0 |= 4",
+			"comment": "Sets some flag on cinematic camera",
 			"params": [],
 			"return_type": "void",
 			"build": "1180"
@@ -7536,7 +7536,7 @@
 		"0x9DFE13ECDC1EC196": {
 			"name": "_0x9DFE13ECDC1EC196",
 			"jhash": "0x92302899",
-			"comment": "SET_FOLLOW_*\nSET_TIME_IDLE_DROP?",
+			"comment": "SET_FOLLOW_*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -7652,9 +7652,9 @@
 			"build": "791"
 		},
 		"0x425A920FDB9A0DDA": {
-			"name": "_SET_GAMEPLAY_CAM",
+			"name": "_SET_GAMEPLAY_CAM_HASH",
 			"jhash": "",
-			"comment": "Sets GameplayCamera+6e0 to Hash(string)",
+			"comment": "Sets gameplay camera to hash",
 			"params": [
 				{
 					"type": "const char*",
@@ -9734,9 +9734,9 @@
 			"build": "323"
 		},
 		"0x708BDD8CD795B043": {
-			"name": "HAS_CUTSCENE_CUT_THIS_FRAME",
+			"name": "_HAS_CUTSCENE_CUT_THIS_FRAME",
 			"jhash": "0x4315A7C5",
-			"comment": "",
+			"comment": "HAS_CUTSCENE_*\nPossibly HAS_CUTSCENE_CUT_THIS_FRAME, needs more research.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -11001,7 +11001,7 @@
 		"0x0888C3502DBBEEF5": {
 			"name": "ON_ENTER_MP",
 			"jhash": "0xC65586A9",
-			"comment": "This loads the GTA:O dlc map parts (high end garages, apartments).\nWorks in singleplayer.\nIn order to use GTA:O heist IPL's you have to call this native with the following params: _9BAE5AD2508DF078(1);",
+			"comment": "This loads the GTA:O dlc map parts (high end garages, apartments).\nWorks in singleplayer.\nIn order to use GTA:O heist IPL's you have to call this native with the following params: SET_INSTANCE_PRIORITY_MODE(1);",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -14580,7 +14580,7 @@
 			"build": "323"
 		},
 		"0xCE6294A232D03786": {
-			"name": "_GET_WORLD_ROTATION_OF_ENTITY_BONE",
+			"name": "_GET_ENTITY_BONE_ROTATION",
 			"jhash": "",
 			"comment": "Gets the world rotation of the specified bone of the specified entity.",
 			"params": [
@@ -14597,9 +14597,9 @@
 			"build": "791"
 		},
 		"0x46F8696933A63C9B": {
-			"name": "_GET_WORLD_POSITION_OF_ENTITY_BONE_2",
+			"name": "_GET_ENTITY_BONE_POSITION_2",
 			"jhash": "",
-			"comment": "Gets the world rotation of the specified bone of the specified entity.\nThis native is used in casinoroulette.c but I don't know yet what is the difference with _GET_WORLD_ROTATION_OF_ENTITY_BONE",
+			"comment": "Gets the world rotation of the specified bone of the specified entity.\nThis native is used in casinoroulette.c but I don't know yet what is the difference with _GET_ENTITY_BONE_ROTATION",
 			"params": [
 				{
 					"type": "Entity",
@@ -14676,7 +14676,7 @@
 		"0x68B562E124CC0AEF": {
 			"name": "_0x68B562E124CC0AEF",
 			"jhash": "",
-			"comment": "Puts pickup2 ptr into pickup+0x300",
+			"comment": "Puts pickup2 ptr somewhere in pickup?",
 			"params": [
 				{
 					"type": "Pickup",
@@ -14684,7 +14684,7 @@
 				},
 				{
 					"type": "Pickup",
-					"name": "pickup"
+					"name": "pickup2"
 				}
 			],
 			"return_type": "void",
@@ -18885,7 +18885,7 @@
 		"0xAFF33B1178172223": {
 			"name": "_SET_BINK_MOVIE_VOLUME",
 			"jhash": "",
-			"comment": "binkMovie is 1-8. Has something to do with bink volume? (audRequestedSettings::SetVolumeCurveScale)",
+			"comment": "binkMovie: Is return value from _SET_BINK_MOVIE. Has something to do with bink volume? (audRequestedSettings::SetVolumeCurveScale)",
 			"params": [
 				{
 					"type": "int",
@@ -19302,7 +19302,7 @@
 			"build": "323"
 		},
 		"0xE2B187C0939B3D32": {
-			"name": "_SET_ARTIFICIAL_LIGHTS_STATE_AFFECT_VEHICLES",
+			"name": "_SET_ARTIFICIAL_LIGHTS_STATE_AFFECTS_VEHICLES",
 			"jhash": "",
 			"comment": "If \"blackout\" is enabled, this native allows you to ignore \"blackout\" for vehicles.",
 			"params": [
@@ -22813,7 +22813,7 @@
 		"0x92CCC17A7A2285DA": {
 			"name": "_CLEAR_EXTRA_TIMECYCLE_MODIFIER",
 			"jhash": "0x6776720A",
-			"comment": "Clears the secondary timecycle modifier usually set with `SetExtraTimecycleModifier`",
+			"comment": "Clears the secondary timecycle modifier usually set with _SET_EXTRA_TIMECYCLE_MODIFIER",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -22829,7 +22829,7 @@
 		"0x2C328AF17210F009": {
 			"name": "_SET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
 			"jhash": "",
-			"comment": "ENABLE_*\nThe same as _0x82E7FFCD5B2326B3 but for the secondary tiemcycle modifier.",
+			"comment": "ENABLE_*\nThe same as SET_TIMECYCLE_MODIFIER_STRENGTH but for the secondary timecycle modifier.",
 			"params": [
 				{
 					"type": "float",
@@ -22915,7 +22915,7 @@
 		"0x2FCB133CA50A49EB": {
 			"name": "_0x2FCB133CA50A49EB",
 			"jhash": "",
-			"comment": "val is 0-0x13\nSET_???",
+			"comment": "val is 1-20 (0 will return false)\nSET_???",
 			"params": [
 				{
 					"type": "int",
@@ -22928,7 +22928,7 @@
 		"0x86255B1FC929E33E": {
 			"name": "_0x86255B1FC929E33E",
 			"jhash": "",
-			"comment": "val is 1-0x14. Return is related to INSTRUCTIONAL_BUTTONS, COLOUR_SWITCHER_02, etc?",
+			"comment": "val is 1-20. Return is related to INSTRUCTIONAL_BUTTONS, COLOUR_SWITCHER_02, etc?",
 			"params": [
 				{
 					"type": "int",
@@ -23500,7 +23500,7 @@
 		"0x768FF8961BA904D6": {
 			"name": "IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY",
 			"jhash": "0x5CD7C3C0",
-			"comment": "methodReturn: The return value of this native: `EndScaleformMovieMethodReturn`\nReturns true if the return value of a scaleform function is ready to be collected (using `GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING` or `GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT`).",
+			"comment": "methodReturn: The return value of this native: END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE\nReturns true if the return value of a scaleform function is ready to be collected (using GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING or GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT).",
 			"params": [
 				{
 					"type": "int",
@@ -23513,7 +23513,7 @@
 		"0x2DE7EFA66B906036": {
 			"name": "GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT",
 			"jhash": "0x2CFB0E6D",
-			"comment": "methodReturn: The return value of this native: `EndScaleformMovieMethodReturn`\nUsed to get a return value from a scaleform function. Returns an int in the same way `GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING` returns a string.",
+			"comment": "methodReturn: The return value of this native: END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE\nUsed to get a return value from a scaleform function. Returns an int in the same way GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING returns a string.",
 			"params": [
 				{
 					"type": "int",
@@ -23526,7 +23526,7 @@
 		"0xD80A80346A45D761": {
 			"name": "_GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_BOOL",
 			"jhash": "",
-			"comment": "methodReturn: The return value of this native: `EndScaleformMovieMethodReturn`",
+			"comment": "methodReturn: The return value of this native: END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE",
 			"params": [
 				{
 					"type": "int",
@@ -23539,7 +23539,7 @@
 		"0xE1E258829A885245": {
 			"name": "GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING",
 			"jhash": "0x516862EB",
-			"comment": "methodReturn: The return value of this native: `EndScaleformMovieMethodReturn`\nUsed to get a return value from a scaleform function. Returns a string in the same way GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT returns an int.",
+			"comment": "methodReturn: The return value of this native: END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE\nUsed to get a return value from a scaleform function. Returns a string in the same way GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT returns an int.",
 			"params": [
 				{
 					"type": "int",
@@ -23620,7 +23620,7 @@
 		"0x77FE3402004CD1B0": {
 			"name": "_SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING_2",
 			"jhash": "",
-			"comment": "Same as SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING\nBoth _0xBA7148484BD90365 / _0x77FE3402004CD1B0 works, but _0x77FE3402004CD1B0 is usually used for \"name\" (organisation, players..).",
+			"comment": "Same as SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING\nBoth SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING / _SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING_2 works, but _SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING_2 is usually used for \"name\" (organisation, players..).",
 			"params": [
 				{
 					"type": "const char*",
@@ -25511,7 +25511,7 @@
 		"0xBC38B49BCB83BC9B": {
 			"name": "END_TEXT_COMMAND_SET_BLIP_NAME",
 			"jhash": "0xE8E59820",
-			"comment": "Finalizes a text command started with [`BEGIN_TEXT_COMMAND_SET_BLIP_NAME`](#_0xF9113A30DE5C6670), setting the name of the specified blip.",
+			"comment": "Finalizes a text command started with BEGIN_TEXT_COMMAND_SET_BLIP_NAME, setting the name of the specified blip.",
 			"params": [
 				{
 					"type": "Blip",
@@ -28855,14 +28855,14 @@
 		"0xA13E93403F26C812": {
 			"name": "_HUD_WEAPON_WHEEL_GET_SLOT_HASH",
 			"jhash": "",
-			"comment": "Return the weapon hash active in a specific weapon wheel slotList",
+			"comment": "Returns the weapon hash active in a specific weapon wheel slotList",
 			"params": [
 				{
 					"type": "int",
 					"name": "weaponTypeIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "323"
 		},
 		"0x14C9FDCC41F81F63": {
@@ -29976,7 +29976,7 @@
 			"build": "323"
 		},
 		"0xEE76FF7E6A0166B0": {
-			"name": "_SET_MP_GAMER_TAG",
+			"name": "_SET_MP_GAMER_TAG_ENABLED",
 			"jhash": "0x767DED29",
 			"comment": "",
 			"params": [
@@ -30438,7 +30438,7 @@
 			"build": "1493"
 		},
 		"0x15803FEC3B9A872B": {
-			"name": "_DRAW_FRONTEND_ALERT",
+			"name": "_SET_WARNING_MESSAGE_WITH_ALERT",
 			"jhash": "",
 			"comment": "labelTitle: Label of the alert's title.\nlabelMsg: Label of the alert's message.\np2: This is an enum, check the description for a list.\np3: This is an enum, check the description for a list.\nlabelMsg2: Label of another message line\np5: usually 0\np6: usually -1\np7: usually 0\np8: unknown label\np9: unknown label\nbackground: Set to anything other than 0 or false (even any string) and it will draw a background. Setting it to 0 or false will draw no background.\nerrorCode: Error code, shown at the bottom left if set to value other than 0.\n\ninstructionalKey enum list:\nButtons = {\n      Empty = 0,\n      Select = 1, -- (RETURN)\n      Ok = 2, -- (RETURN)\n      Yes = 4, -- (RETURN)\n      Back = 8, -- (ESC)\n      Cancel = 16, -- (ESC)\n      No = 32, -- (ESC)\n      RetrySpace = 64, -- (SPACE)\n      Restart = 128, -- (SPACE)\n      Skip = 256, -- (SPACE)\n      Quit = 512, -- (ESC)\n      Adjust = 1024, -- (ARROWS)\n      SpaceKey = 2048, -- (SPACE)\n      Share = 4096, -- (SPACE)\n      SignIn = 8192, -- (SPACE)\n      Continue = 16384, -- (RETURN)\n      AdjustLeftRight = 32768, -- (SCROLL L/R)\n      AdjustUpDown = 65536, -- (SCROLL U/D)\n      Overwrite = 131072, -- (SPACE)\n      SocialClubSignup = 262144, -- (RETURN)\n      Confirm = 524288, -- (RETURN)\n      Queue = 1048576, -- (RETURN)\n      RetryReturn = 2097152, -- (RETURN)\n      BackEsc = 4194304, -- (ESC)\n      SocialClub = 8388608, -- (RETURN)\n      Spectate = 16777216, -- (SPACE)\n      OkEsc = 33554432, -- (ESC)\n      CancelTransfer = 67108864, -- (ESC)\n      LoadingSpinner = 134217728,\n      NoReturnToGTA = 268435456, -- (ESC)\n      CancelEsc = 536870912, -- (ESC)\n}\n\nAlt = {\n      Empty = 0,\n      No = 1, -- (SPACE)\n      Host = 2, -- (ESC)\n      SearchForJob = 4, -- (RETURN)\n      ReturnKey = 8, -- (TURN)\n      Freemode = 16, -- (ESC)\n}\n\nExample: https://i.imgur.com/TvmNF4k.png",
 			"params": [
@@ -31051,9 +31051,9 @@
 			"build": "323"
 		},
 		"0x2E22FEFA0100275E": {
-			"name": "_GET_MENU_STATE_CHANGED_THIS_FRAME",
+			"name": "_HAS_MENU_STATE_CHANGED_THIS_FRAME",
 			"jhash": "0x96863460",
-			"comment": "It returns a true value for only for one tick when the menu state(?) changes",
+			"comment": "Returns true when the menu state(?) changed this frame.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -31439,7 +31439,7 @@
 		"0xB118AF58B5F332A1": {
 			"name": "_IS_MULTIPLAYER_CHAT_ACTIVE",
 			"jhash": "",
-			"comment": "Returns whether or not the text chat (MULTIPLAYER_CHAT Scaleform component) is active.\n\n-- NTAuthority (http://fivem.net)",
+			"comment": "Returns whether or not the text chat (MULTIPLAYER_CHAT Scaleform component) is active.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -31999,7 +31999,7 @@
 			"jhash": "",
 			"comment": "Returns the current interior id from gameplay camera",
 			"params": [],
-			"return_type": "int",
+			"return_type": "Interior",
 			"build": "1604"
 		},
 		"0xB0F7F8663821D9C3": {
@@ -33389,7 +33389,7 @@
 			"build": "323"
 		},
 		"0x643E26EA6E024D92": {
-			"name": "_SET_RAIN_FX_INTENSITY",
+			"name": "_SET_RAIN_LEVEL",
 			"jhash": "",
 			"comment": "With an `intensity` higher than `0.5f`, only the creation of puddles gets faster, rain and rain sound won't increase after that.\nWith an `intensity` of `0.0f` rain and rain sounds are disabled and there won't be any new puddles.\nTo use the rain intensity of the current weather, call this native with `-1f` as `intensity`.",
 			"params": [
@@ -36698,7 +36698,7 @@
 			"comment": "Formerly known as _LOWER_MAP_PROP_DENSITY and wrongly due to idiots as _ENABLE_MP_DLC_MAPS.\nSets the maximum prop density and changes a loading screen flag from 'loading story mode' to 'loading GTA Online'. Does not touch DLC map data at all.\n\nIn fact, I doubt this changes the flag whatsoever, that's the OTHER native idiots use together with this that does so, this one only causes a loading screen to show as it reloads map data.",
 			"params": [
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "toggle"
 				}
 			],
@@ -36708,7 +36708,7 @@
 		"0xC5F0A8EBD3F361CE": {
 			"name": "SET_INSTANCE_PRIORITY_HINT",
 			"jhash": "0xE202879D",
-			"comment": "Sets an unknown flag used by CScene in determining which entities from CMapData scene nodes to draw, similar to 9BAE5AD2508DF078.\n\nDocumented by NTAuthority (http://fivem.net/).",
+			"comment": "Sets an unknown flag used by CScene in determining which entities from CMapData scene nodes to draw, similar to SET_INSTANCE_PRIORITY_MODE.",
 			"params": [
 				{
 					"type": "int",
@@ -37811,7 +37811,7 @@
 		"0xB8721407EE9C3FF6": {
 			"name": "_ADD_TACTICAL_ANALYSIS_POINT",
 			"jhash": "0x24A4E0B2",
-			"comment": "Add a point related to CTacticalAnalysis",
+			"comment": "Adds a point related to CTacticalAnalysis",
 			"params": [
 				{
 					"type": "float",
@@ -38291,7 +38291,7 @@
 		"0xE574A662ACAEFBB1": {
 			"name": "_RESTART_GAME",
 			"jhash": "",
-			"comment": "Shows `Disconnecting from GTA Online` HUD and then quits the game. Better name `_QUIT_GAME`?",
+			"comment": "This is FiveM / GTA:Online related. Shows `Disconnecting from GTA Online` HUD and then quits the game. Better name `_QUIT_GAME`?",
 			"params": [],
 			"return_type": "void",
 			"build": "372"
@@ -45068,9 +45068,9 @@
 			"build": "323"
 		},
 		"0x85443FF4C328F53B": {
-			"name": "NETWORK_HAVE_JUST_UPLOAD_LATER",
+			"name": "NETWORK_HAS_VALID_ROS_CREDENTIALS",
 			"jhash": "0x3FB40673",
-			"comment": "Returns whether the Rockstar game services are available or not",
+			"comment": "Returns whether the signed-in user has valid Rockstar Online Services (ROS) credentials.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -49078,7 +49078,7 @@
 		"0x7242F8B741CE1086": {
 			"name": "_0x7242F8B741CE1086",
 			"jhash": "",
-			"comment": "Probably a bool, returns true if the specified network id is controlled by someone else.\nFf you have control over the entity corresponding to the netId then this will return false (0);\nReturns probably a bool, returns 1 if you don't have control over the netId entity.",
+			"comment": "NETWORK_IS_*\nProbably a bool, returns true if the specified network id is controlled by someone else.\nFf you have control over the entity corresponding to the netId then this will return false (0);\nReturns probably a bool, returns 1 if you don't have control over the netId entity.",
 			"params": [
 				{
 					"type": "int",
@@ -50517,7 +50517,7 @@
 		"0x5FCF4D7069B09026": {
 			"name": "_NETWORK_IS_TEXT_CHAT_ACTIVE",
 			"jhash": "",
-			"comment": "Same as _IS_TEXT_CHAT_ACTIVE, except it does not check if the text chat HUD component is initialized, and therefore may crash.\n\n-(http://fivem.net)",
+			"comment": "Same as _IS_TEXT_CHAT_ACTIVE, except it does not check if the text chat HUD component is initialized, and therefore may crash.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -50533,7 +50533,7 @@
 		"0x9ECA15ADFE141431": {
 			"name": "_SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE",
 			"jhash": "",
-			"comment": "Disconnects you from the session, and starts loading single player, however you still remain connected to the server (only if you're the host, if you're not then you also (most likely) get disconnected from the server) and other players will not be able to join until you exit the game.\n\nIf you're already in SP then it'll re-load singleplayer.\n\nYou might need to DoScreenFadeIn and ShutdownLoadingScreen otherwise you probably won't end up loading into SP at all.\n\nSomewhat related note: opening the pause menu after loading into this 'singleplayer' mode crashes the game.",
+			"comment": "This is FiveM / GTA:Online related. Disconnects you from the session, and starts loading single player, however you still remain connected to the server (only if you're the host, if you're not then you also (most likely) get disconnected from the server) and other players will not be able to join until you exit the game.\n\nIf you're already in SP then it'll re-load singleplayer.\n\nYou might need to DoScreenFadeIn and ShutdownLoadingScreen otherwise you probably won't end up loading into SP at all.\n\nSomewhat related note: opening the pause menu after loading into this 'singleplayer' mode crashes the game.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "505"
@@ -51705,7 +51705,7 @@
 		"0x797F9C5E661D920E": {
 			"name": "_RESERVE_NETWORK_LOCAL_OBJECTS",
 			"jhash": "",
-			"comment": "Internal logging string: SCRIPT_RESERVING_LOCAL_OBJECTS",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -51718,7 +51718,7 @@
 		"0x2C8DF5D129595281": {
 			"name": "_RESERVE_NETWORK_LOCAL_PEDS",
 			"jhash": "",
-			"comment": "Internal logging string: SCRIPT_RESERVING_LOCAL_PEDS",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -51731,7 +51731,7 @@
 		"0x42613035157E4208": {
 			"name": "_RESERVE_NETWORK_LOCAL_VEHICLES",
 			"jhash": "",
-			"comment": "Internal logging string: SCRIPT_RESERVING_LOCAL_VEHICLES",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -52709,35 +52709,43 @@
 		"0x45F35C0EDC33B03B": {
 			"name": "_0x45F35C0EDC33B03B",
 			"jhash": "",
-			"comment": "NETWORK_A*\nSimilar structure as NetworkAddEntityToSynchronisedScene but it includes this time a hash.\nIn casino_slots it is used one time in a synced scene involving a ped and the slot machine?",
+			"comment": "NETWORK_A*\nSimilar structure as NETWORK_ADD_ENTITY_TO_SYNCHRONISED_SCENE but it includes this time a hash.\nIn casino_slots it is used one time in a synced scene involving a ped and the slot machine?",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "int",
+					"name": "netScene"
 				},
 				{
 					"type": "Hash",
 					"name": "modelHash"
 				},
 				{
-					"type": "int",
-					"name": "netScene"
-				},
-				{
-					"type": "const char*",
-					"name": "animDict"
-				},
-				{
-					"type": "const char*",
-					"name": "animName"
+					"type": "float",
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "speedMulitiplier"
+					"name": "z"
+				},
+				{
+					"type": "float",
+					"name": "p5"
+				},
+				{
+					"type": "const char*",
+					"name": "p6"
+				},
+				{
+					"type": "float",
+					"name": "p7"
+				},
+				{
+					"type": "float",
+					"name": "p8"
 				},
 				{
 					"type": "int",
@@ -53031,7 +53039,7 @@
 		"0x17E0198B3882C2CB": {
 			"name": "NETWORK_START_SOLO_TUTORIAL_SESSION",
 			"jhash": "0x408A9436",
-			"comment": "NETWORK_START_R/S*",
+			"comment": "*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -53182,7 +53190,7 @@
 		"0xE679E3E06E363892": {
 			"name": "NETWORK_OVERRIDE_CLOCK_TIME",
 			"jhash": "0xC077BCD6",
-			"comment": "Works in Singleplayer too.\nActually has a 4th param (BOOL) that sets byte_14273C46C (in b944) to whatever was passed to p3.\nPassing wrong data (e.g. hours above 23) will cause the game to crash.",
+			"comment": "Works in Singleplayer too.\nPassing wrong data (e.g. hours above 23) will cause the game to crash.",
 			"params": [
 				{
 					"type": "int",
@@ -53822,7 +53830,7 @@
 		"0x890E2C5ABED7236D": {
 			"name": "_NETWORK_SET_VEHICLE_WHEELS_DESTRUCTIBLE",
 			"jhash": "",
-			"comment": "Allow vehicle wheels to be destructible even when the Vehicle entity is invincible.",
+			"comment": "Allows vehicle wheels to be destructible even when the vehicle entity is invincible.",
 			"params": [
 				{
 					"type": "Entity",
@@ -58887,7 +58895,7 @@
 		"0x4C134B4DF76025D0": {
 			"name": "_0x4C134B4DF76025D0",
 			"jhash": "",
-			"comment": "Sets 10th bit of pickup+4a8\nSET_PICKUP_??",
+			"comment": "Sets some bit of pickup\nSET_PICKUP_*",
 			"params": [
 				{
 					"type": "Pickup",
@@ -58904,7 +58912,7 @@
 		"0xAA059C615DE9DD03": {
 			"name": "_0xAA059C615DE9DD03",
 			"jhash": "",
-			"comment": "sets pickup+4f1\nSET_PICKUP_??",
+			"comment": "Sets some value of pickup\nSET_PICKUP_*",
 			"params": [
 				{
 					"type": "Pickup",
@@ -58997,7 +59005,7 @@
 		"0xBFFE53AE7E67FCDC": {
 			"name": "_0xBFFE53AE7E67FCDC",
 			"jhash": "",
-			"comment": "Sets some pickup flag?",
+			"comment": "Sets some pickup flag?\nSET_PICKUP_*",
 			"params": [
 				{
 					"type": "Pickup",
@@ -59068,7 +59076,7 @@
 					"name": "weaponHash"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Hash",
 			"build": "1290"
 		},
 		"0x11D1E53A726891FE": {
@@ -59207,9 +59215,9 @@
 			"build": "1604"
 		},
 		"0x3B2FD68DB5F8331C": {
-			"name": "_SET_OBJECT_COLOUR",
+			"name": "_0x3B2FD68DB5F8331C",
 			"jhash": "",
-			"comment": "Seems to set the colour of the prop. Haven't really tested it on other props.\nOnly appears in am_mp_nightclub.c for the nightclub dancefloor.",
+			"comment": "SET_OBJECT_*",
 			"params": [
 				{
 					"type": "Object",
@@ -59218,18 +59226,6 @@
 				{
 					"type": "BOOL",
 					"name": "toggle"
-				},
-				{
-					"type": "int",
-					"name": "r"
-				},
-				{
-					"type": "int",
-					"name": "g"
-				},
-				{
-					"type": "int",
-					"name": "b"
 				}
 			],
 			"return_type": "void",
@@ -59399,7 +59395,7 @@
 		"0x734E1714D077DA9A": {
 			"name": "_0x734E1714D077DA9A",
 			"jhash": "",
-			"comment": "set 4bit of obj+430\nSET_OBJECT_??",
+			"comment": "Sets some bit of object\nSET_OBJECT_*",
 			"params": [
 				{
 					"type": "Object",
@@ -59416,7 +59412,7 @@
 		"0x1A6CBB06E2D0D79D": {
 			"name": "_0x1A6CBB06E2D0D79D",
 			"jhash": "",
-			"comment": "set 5bit of obj+430\nSET_OBJECT_?",
+			"comment": "Sets some bit of object\nSET_OBJECT_*",
 			"params": [
 				{
 					"type": "Object",
@@ -59467,7 +59463,7 @@
 		"0x1C57C94A6446492A": {
 			"name": "_0x1C57C94A6446492A",
 			"jhash": "",
-			"comment": "Sets 6th flag of obj+430\nSET_OBJECT_??",
+			"comment": "Sets some flag of object\nSET_OBJECT_*",
 			"params": [
 				{
 					"type": "Object",
@@ -59484,7 +59480,7 @@
 		"0xB5B7742424BD4445": {
 			"name": "_0xB5B7742424BD4445",
 			"jhash": "",
-			"comment": "Sets 7th bit of obj+430\nSET_OBJECT_??",
+			"comment": "Sets some bit of object\nSET_OBJECT_*",
 			"params": [
 				{
 					"type": "Object",
@@ -59899,11 +59895,11 @@
 		"0x8290252FFF36ACB5": {
 			"name": "_SET_CONTROL_GROUP_COLOR",
 			"jhash": "",
-			"comment": "inputGroup: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
+			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
 				{
 					"type": "int",
-					"name": "inputGroup"
+					"name": "padIndex"
 				},
 				{
 					"type": "int",
@@ -61288,7 +61284,7 @@
 			"jhash": "0x4B770634",
 			"comment": "",
 			"params": [],
-			"return_type": "float",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xF3162836C28F9DA5": {
@@ -65619,7 +65615,7 @@
 		"0xC52E0F855C58FC2E": {
 			"name": "SET_ENABLE_BOUND_ANKLES",
 			"jhash": "0x9208D689",
-			"comment": "Used with SET_ENABLE_HANDCUFFS] in decompiled scripts. From my observations, I have noticed that while being ragdolled you are not able to get up but you can still run. Your legs can also bend.",
+			"comment": "Used with SET_ENABLE_HANDCUFFS in decompiled scripts. From my observations, I have noticed that while being ragdolled you are not able to get up but you can still run. Your legs can also bend.",
 			"params": [
 				{
 					"type": "Ped",
@@ -67584,7 +67580,7 @@
 		"0xAE99FB955581844A": {
 			"name": "SET_PED_TO_RAGDOLL",
 			"jhash": "0x83CB5052",
-			"comment": "p4/p5: Unusued in TU27\nRagdoll Types:\n**0**: CTaskNMRelax\n**1**: CTaskNMScriptControl: Hardcoded not to work in networked environments.\n**Else**: CTaskNMBalance\ntime1- Time(ms) Ped is in ragdoll mode; only applies to ragdoll types 0 and not 1.\n\ntime2- Unknown time, in milliseconds\n\nragdollType-\n0 : Normal ragdoll\n1 : Falls with stiff legs/body\n2 : Narrow leg stumble(may not fall)\n3 : Wide leg stumble(may not fall)\n\np4, p5, p6- No idea. In R*'s scripts they are usually either \"true, true, false\" or \"false, false, false\".\n\n\n\n\nEDIT 3/11/16: unclear what 'mircoseconds' mean-- a microsecond is 1000x a ms, so time2 must be 1000x time1?  more testing needed.  -sob\n\nEdit Mar 21, 2017: removed part about time2 being the microseconds version of time1. this just isn't correct. time2 is in milliseconds, and time1 and time2 don't seem to be connected in any way.",
+			"comment": "p4/p5: Unused in TU27\nRagdoll Types:\n**0**: CTaskNMRelax\n**1**: CTaskNMScriptControl: Hardcoded not to work in networked environments.\n**Else**: CTaskNMBalance\ntime1- Time(ms) Ped is in ragdoll mode; only applies to ragdoll types 0 and not 1.\n\ntime2- Unknown time, in milliseconds\n\nragdollType-\n0 : Normal ragdoll\n1 : Falls with stiff legs/body\n2 : Narrow leg stumble(may not fall)\n3 : Wide leg stumble(may not fall)\n\np4, p5, p6- No idea. In R*'s scripts they are usually either \"true, true, false\" or \"false, false, false\".\n\n\n\n\nEDIT 3/11/16: unclear what 'mircoseconds' mean-- a microsecond is 1000x a ms, so time2 must be 1000x time1?  more testing needed.  -sob\n\nEdit Mar 21, 2017: removed part about time2 being the microseconds version of time1. this just isn't correct. time2 is in milliseconds, and time1 and time2 don't seem to be connected in any way.",
 			"params": [
 				{
 					"type": "Ped",
@@ -69228,7 +69224,7 @@
 		"0x5687C7F05B39E401": {
 			"name": "_SET_FACIAL_CLIPSET_OVERRIDE",
 			"jhash": "",
-			"comment": "Clipsets:\nfacials@gen_female@base\nfacials@gen_male@base\nfacials@p_m_zero@base\n\nTypically followed with [SET_FACIAL_IDLE_ANIM_OVERRIDE](#_0xFFC24B988B938B38):\nmood_drunk_1\nmood_stressed_1\nmood_happy_1\nmood_talking_1\n",
+			"comment": "Clipsets:\nfacials@gen_female@base\nfacials@gen_male@base\nfacials@p_m_zero@base\n\nTypically followed with SET_FACIAL_IDLE_ANIM_OVERRIDE:\nmood_drunk_1\nmood_stressed_1\nmood_happy_1\nmood_talking_1\n",
 			"params": [
 				{
 					"type": "Ped",
@@ -77231,7 +77227,7 @@
 		"0x7148E0F43D11F0D9": {
 			"name": "_0x7148E0F43D11F0D9",
 			"jhash": "",
-			"comment": "Resets values set by 0x70A382ADEC069DD3\nRESET_???",
+			"comment": "Resets values set by 0x70A382ADEC069DD3\n_RESET_VOIP_*",
 			"params": [],
 			"return_type": "void",
 			"build": "1604"
@@ -77239,7 +77235,7 @@
 		"0x70A382ADEC069DD3": {
 			"name": "_0x70A382ADEC069DD3",
 			"jhash": "",
-			"comment": "Puts vector at [ped+10b8]+e60. Also sets byte [ped+10b8]+e5d to 1 (might be voip related)",
+			"comment": "Might be voip related\n_SET_VOIP_*",
 			"params": [
 				{
 					"type": "float",
@@ -85992,7 +85988,7 @@
 		"0x3D245789CE12982C": {
 			"name": "PREFETCH_SRL",
 			"jhash": "0x37BE2FBB",
-			"comment": "This native is used to attribute the SRL that BeginSrl is going to load. This is usually used for 'in-game' cinematics (not cutscenes but camera stuff) instead of SetFocusArea because it loads a specific area of the map which is pretty useful when the camera moves from distant areas.\nFor instance, GTA:O opening cutscene.\nhttps://pastebin.com/2EeKVeLA : a list of SRL found in srllist.meta\nhttps://pastebin.com/zd9XYUWY here is the content of a SRL file opened with codewalker.",
+			"comment": "This native is used to attribute the SRL that BEGIN_SRL is going to load. This is usually used for 'in-game' cinematics (not cutscenes but camera stuff) instead of SET_FOCUS_POS_AND_VEL because it loads a specific area of the map which is pretty useful when the camera moves from distant areas.\nFor instance, GTA:O opening cutscene.\nhttps://pastebin.com/2EeKVeLA : a list of SRL found in srllist.meta\nhttps://pastebin.com/zd9XYUWY here is the content of a SRL file opened with codewalker.",
 			"params": [
 				{
 					"type": "const char*",
@@ -86005,7 +86001,7 @@
 		"0xD0263801A4C5B0BB": {
 			"name": "IS_SRL_LOADED",
 			"jhash": "0x670FA2A6",
-			"comment": "Returns true when the srl from BeginSrl is loaded.",
+			"comment": "Returns true when the srl from BEGIN_SRL is loaded.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -86021,7 +86017,7 @@
 		"0x0A41540E63C9EE17": {
 			"name": "END_SRL",
 			"jhash": "0x1977C56A",
-			"comment": "Clear the current srl and stop rendering the area selected by PrefetchSrl and started with BeginSrl.",
+			"comment": "Clear the current srl and stop rendering the area selected by PREFETCH_SRL and started with BEGIN_SRL.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -87373,7 +87369,7 @@
 		"0x88E32DB8C1A4AA4B": {
 			"name": "SET_PED_PATH_CLIMB_COST_MODIFIER",
 			"jhash": "0x55E06443",
-			"comment": "Could be the move speed on the path. Needs testing.\n\nDefault is 1.0 and maximum is 10.0",
+			"comment": "Could be the move speed on the path. Needs testing.\n\nDefault modifier is 1.0, minimum is 0.0 and maximum is 10.0.",
 			"params": [
 				{
 					"type": "Ped",
@@ -87454,28 +87450,28 @@
 		"0xC6F5C0BCDC74D62D": {
 			"name": "GET_NAVMESH_ROUTE_DISTANCE_REMAINING",
 			"jhash": "0xD9281778",
-			"comment": "",
+			"comment": "Looks like the last parameter returns true if the path has been calculated, while the first returns the remaining distance to the end of the path.\nReturn value of native is the same as GET_NAVMESH_ROUTE_RESULT\nLooks like the native returns an int for the path's state:\n1 - ???\n2 - ???\n3 - Finished Generating ",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "float*",
+					"name": "distanceRemaining"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "bool*",
+					"name": "isPathReady"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x632E831F382A0FA8": {
 			"name": "GET_NAVMESH_ROUTE_RESULT",
 			"jhash": "0x96491602",
-			"comment": "",
+			"comment": "See GET_NAVMESH_ROUTE_DISTANCE_REMAINING for more details.",
 			"params": [
 				{
 					"type": "Ped",
@@ -87889,7 +87885,7 @@
 		"0xEE08C992D238C5D1": {
 			"name": "STOP_ANIM_PLAYBACK",
 			"jhash": "0xE5F16398",
-			"comment": "",
+			"comment": "Looks like p1 may be a flag, still need to do some research, though.",
 			"params": [
 				{
 					"type": "Ped",
@@ -88094,11 +88090,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "animation_set"
+					"name": "animationSet"
 				},
 				{
 					"type": "const char*",
-					"name": "animation_name"
+					"name": "animationName"
 				}
 			],
 			"return_type": "void",
@@ -95635,7 +95631,7 @@
 		"0x9849DE24FCF23CCC": {
 			"name": "_0x9849DE24FCF23CCC",
 			"jhash": "",
-			"comment": "Sets 2nd bit of [veh+b90]+7af\n_SET_VEHICLE_??",
+			"comment": "Sets some bit of vehicle.\n_SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -95682,7 +95678,7 @@
 		"0xC69BB1D832A710EF": {
 			"name": "_0xC69BB1D832A710EF",
 			"jhash": "",
-			"comment": "Checks for value 9C in [[veh+b90]+7c8] array\n_IS_VEHICLE_???",
+			"comment": "Checks for value in vehicle\n_IS_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96287,7 +96283,7 @@
 		"0x8821196D91FA2DE5": {
 			"name": "_0x8821196D91FA2DE5",
 			"jhash": "",
-			"comment": "sets 7th bit veh+9f8\n_SET_VEHICLE_??",
+			"comment": "Sets some bit of vehicle\n_SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97177,7 +97173,7 @@
 		"0x6E63860BBB190730": {
 			"name": "SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER",
 			"jhash": "0x0C8ABAA4",
-			"comment": "Time is Number of milliseconds before reverting, zero for indefinitely.",
+			"comment": "Time is number of milliseconds before reverting, zero for indefinitely.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99103,7 +99099,7 @@
 		"0xBE4C854FFDB6EEBE": {
 			"name": "_TRANSFORM_VEHICLE_TO_SUBMARINE",
 			"jhash": "",
-			"comment": "Transforms the `stormberg` to it's \"water vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
+			"comment": "Transforms the `stormberg` to its \"water vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99120,7 +99116,7 @@
 		"0x2A69FFD1B42BFF9E": {
 			"name": "_TRANSFORM_SUBMARINE_TO_VEHICLE",
 			"jhash": "",
-			"comment": "Transforms the `stormberg` to it's \"road vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
+			"comment": "Transforms the `stormberg` to its \"road vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99150,7 +99146,7 @@
 		"0x2959F696AE390A99": {
 			"name": "IS_VEHICLE_STOPPED_AT_TRAFFIC_LIGHTS",
 			"jhash": "0x69200FA4",
-			"comment": "is this for red lights only?  more testing required.",
+			"comment": "Is this for red lights only?  more testing required.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101789,7 +101785,7 @@
 		"0x1CF38D529D7441D9": {
 			"name": "_0x1CF38D529D7441D9",
 			"jhash": "0xDF594D8D",
-			"comment": "",
+			"comment": "Has something to do with trains. Always precedes SET_MISSION_TRAIN_AS_NO_LONGER_NEEDED.\nMay be true that it can be used with trains not sure, but not specifically for trains. Go find Xbox360 decompiled scripts and search for 'func_1333' in freemode.c it isn't used just for trains. Thanks for the info tho.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101823,7 +101819,7 @@
 		"0x59C3757B3B7408E8": {
 			"name": "_0x59C3757B3B7408E8",
 			"jhash": "",
-			"comment": "Sets 7th bit of veh+93a and float at veh+c18. float is >= 0\nSET_VEHICLE_??",
+			"comment": "Sets some bit and float of vehicle. float is >= 0\nSET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101973,9 +101969,9 @@
 			"build": "323"
 		},
 		"0xC1F981A6F74F0C23": {
-			"name": "GET_BOAT_BOOM_POSITION_RATIO",
+			"name": "_GET_BOAT_BOOM_POSITION_RATIO_2",
 			"jhash": "0x00966934",
-			"comment": "same call as VEHICLE::_0x0F3B4D4E43177236",
+			"comment": "Same call as VEHICLE::_0x0F3B4D4E43177236",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101990,13 +101986,13 @@
 			"build": "323"
 		},
 		"0x0F3B4D4E43177236": {
-			"name": "_0x0F3B4D4E43177236",
+			"name": "_GET_BOAT_BOOM_POSITION_RATIO_3",
 			"jhash": "0x113DF5FD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
@@ -102571,7 +102567,7 @@
 		"0xF0E4BA16D1DB546C": {
 			"name": "_SET_VEHICLE_SHADOW_EFFECT",
 			"jhash": "0x5BD8D82D",
-			"comment": "Adds some kind of shadow to the vehicle.\n\n-1 disables the effect.",
+			"comment": "Adds some kind of shadow to the vehicle.\n\n-1 disables the effect.\nDISABLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102592,7 +102588,7 @@
 		"0xF87D9F2301F7D206": {
 			"name": "_REMOVE_VEHICLE_SHADOW_EFFECT",
 			"jhash": "0x450AD03A",
-			"comment": "Remove the weird shadow applied by 0xF0E4BA16D1DB546C.",
+			"comment": "Remove the weird shadow applied by _SET_VEHICLE_SHADOW_EFFECT.\nENABLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103485,7 +103481,7 @@
 		"0x6A973569BA094650": {
 			"name": "_0x6A973569BA094650",
 			"jhash": "",
-			"comment": "copy +b90 to +77c",
+			"comment": "Seems to copy some values in vehicle",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103808,7 +103804,7 @@
 		"0xB68CFAF83A02768D": {
 			"name": "_0xB68CFAF83A02768D",
 			"jhash": "",
-			"comment": "Sets CVehicle+A99. veh is a helicopter?\n_SET_HELICOPTER_??",
+			"comment": "Sets value for vehicle. Vehicle is a helicopter?\n_SET_HELICOPTER_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103825,7 +103821,7 @@
 		"0x0205F5365292D2EB": {
 			"name": "_0x0205F5365292D2EB",
 			"jhash": "",
-			"comment": "Sets veh+ac4 (def -1f)\nSET_VEHICLE_??",
+			"comment": "Sets some float for vehicle (def -1f)\nSET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103893,7 +103889,7 @@
 		"0xB93B2867F7B479D1": {
 			"name": "_0xB93B2867F7B479D1",
 			"jhash": "",
-			"comment": "Sets CVehicle+3A0 from array based on idx\n_SET_VEHICLE_????",
+			"comment": "Sets some value for vehicle from array based on index\n_SET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -104282,9 +104278,9 @@
 			"build": "463"
 		},
 		"0x84EA99C62CB3EF0C": {
-			"name": "_SET_VEHICLE_HYDRAULIC_WHEEL_VALUE",
+			"name": "_SET_HYDRAULIC_WHEEL_VALUE",
 			"jhash": "",
-			"comment": "Works only on vehicles, that support hydraulic.",
+			"comment": "Works only on vehicles that support hydraulic.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105306,7 +105302,7 @@
 		"0x8235F1BEAD557629": {
 			"name": "_0x8235F1BEAD557629",
 			"jhash": "",
-			"comment": "Sets CVehicle+AA1 (causes _someVehicleFlagCheck to return false)\nSET_VEHICLE_??",
+			"comment": "Sets some value for vehicle\nSET_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105665,7 +105661,7 @@
 		"0xAA653AE61924B0A0": {
 			"name": "_0xAA653AE61924B0A0",
 			"jhash": "",
-			"comment": "Sets veh+1f86\n_SET_VEHICLE_?",
+			"comment": "Sets some vehicle value\n_SET_VEHICLE_?",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105737,7 +105733,7 @@
 		"0x887FA38787DE8C72": {
 			"name": "_0x887FA38787DE8C72",
 			"jhash": "",
-			"comment": "sets veh+363=1\nSET_VEHICLE_??",
+			"comment": "Sets some vehicle value to 1\nSET_VEHICLE_??",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105836,7 +105832,7 @@
 		"0xE8718FAF591FD224": {
 			"name": "_0xE8718FAF591FD224",
 			"jhash": "",
-			"comment": "Checks if float at CVehicle+0x364 is 0\n_IS_VEHICLE_??",
+			"comment": "GET_H*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105949,7 +105945,7 @@
 			"build": "1604"
 		},
 		"0x71AFB258CCED3A27": {
-			"name": "_GET_IS_VEHICLE_HAS_DETACHABLE_BUMPER",
+			"name": "_GET_DOES_VEHICLE_HAVE_TOMBSTONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -105962,7 +105958,7 @@
 			"build": "1604"
 		},
 		"0xAE71FB656C600587": {
-			"name": "_SET_VEHICLE_DETACHABLE_BUMPER_DISABLED",
+			"name": "_HIDE_VEHICLE_TOMBSTONE",
 			"jhash": "",
 			"comment": "Disables detachable bumber from domnator4, dominator5, dominator6, see https://gfycat.com/SecondUnluckyGosling",
 			"params": [
@@ -106852,7 +106848,7 @@
 					"name": "equipNow"
 				}
 			],
-			"return_type": "int",
+			"return_type": "void",
 			"build": "323"
 		},
 		"0xB282DC6EBD803C75": {
@@ -107001,7 +106997,7 @@
 		"0x0E98F88A24C5F4B8": {
 			"name": "CLEAR_PED_LAST_WEAPON_DAMAGE",
 			"jhash": "0x52C68832",
-			"comment": "Does NOT seem to work with HasPedBeenDamagedByWeapon. Use CLEAR_ENTITY_LAST_WEAPON_DAMAGE and HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON instead.",
+			"comment": "Does NOT seem to work with HAS_PED_BEEN_DAMAGED_BY_WEAPON. Use CLEAR_ENTITY_LAST_WEAPON_DAMAGE and HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON instead.",
 			"params": [
 				{
 					"type": "Ped",
@@ -107014,7 +107010,7 @@
 		"0x131D401334815E94": {
 			"name": "HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON",
 			"jhash": "0x6DAABB39",
-			"comment": "It determines what weapons caused damage:\n\nIf youu want to define only a specific weapon, second parameter=weapon hash code, third parameter=0\nIf you want to define any melee weapon, second parameter=0, third parameter=1.\nIf you want to identify any weapon (firearms, melee, rockets, etc.), second parameter=0, third parameter=2.",
+			"comment": "It determines what weapons caused damage:\n\nIf you want to define only a specific weapon, second parameter=weapon hash code, third parameter=0\nIf you want to define any melee weapon, second parameter=0, third parameter=1.\nIf you want to identify any weapon (firearms, melee, rockets, etc.), second parameter=0, third parameter=2.",
 			"params": [
 				{
 					"type": "Entity",
