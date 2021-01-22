@@ -71052,7 +71052,7 @@
 		"0x1461B28A06717D68": {
 			"name": "_GET_PED_EMISSIVE_INTENSITY",
 			"jhash": "",
-			"comment": "Old name: _GET_PED_REFLECTION_INTENSITY\nUse 0x4E90D746056E273D to set the illuminated clothing glow intensity for a specific ped.\nReturns a float between 0.0 and 1.0 representing the current illuminated clothing glow intensity.",
+			"comment": "Old name: _GET_PED_REFLECTION_INTENSITY\nUse _SET_PED_EMISSIVE_INTENSITY to set the illuminated clothing glow intensity for a specific ped.\nReturns a float between 0.0 and 1.0 representing the current illuminated clothing glow intensity.",
 			"params": [
 				{
 					"type": "Ped",
@@ -77867,7 +77867,7 @@
 		"0x75B18E49607874C7": {
 			"name": "BG_START_CONTEXT_HASH",
 			"jhash": "0x67B23E17",
-			"comment": "Hashed version of 0x9D5A25BADB742ACD.",
+			"comment": "Hashed version of BG_START_CONTEXT.",
 			"params": [
 				{
 					"type": "Hash",
@@ -77881,7 +77881,7 @@
 		"0x107E5CC7CA942BC1": {
 			"name": "BG_END_CONTEXT_HASH",
 			"jhash": "0x3D981EBF",
-			"comment": "Hashed version of 0xDC2BACD920D0A0DD.",
+			"comment": "Hashed version of BG_END_CONTEXT.",
 			"params": [
 				{
 					"type": "Hash",
@@ -78045,7 +78045,7 @@
 		"0x377906D8A31E5586": {
 			"name": "_START_SHAPE_TEST_RAY",
 			"jhash": "0x8251485D",
-			"comment": "Not sure how or why this differs from 0x7EE9F5D83DD4F90E, but it does.\n\nThis function casts a ray from Point1 to Point2 and returns it's ray handle.  A simple ray cast will 'shoot' a line from point A to point B, and return whether or not the ray reached it's destination or if it hit anything and if it did hit anything, will return the handle of what it hit (entity handle) and coordinates of where the ray reached.\n\nYou can use _GET_RAYCAST_RESULT to get the result of the raycast\n\nEntity is an entity to ignore, such as the player.\n\nFlags are intersection bit flags.  They tell the ray what to care about and what not to care about when casting. Passing -1 will intersect with everything, presumably.\n\nFlags:\n1: Intersect with map\n2: Intersect with vehicles (used to be mission entities?) (includes train)\n4: Intersect with peds? (same as 8)\n8: Intersect with peds? (same as 4)\n16: Intersect with objects\n32: Unknown\n64: Unknown\n128: Unknown\n256: Intersect with vegetation (plants, coral. trees not included)\n\nNOTE: Raycasts that intersect with mission_entites (flag = 2) has limited range and will not register for far away entites. The range seems to be about 30 metres. ",
+			"comment": "Not sure how or why this differs from START_SHAPE_TEST_LOS_PROBE, but it does.\n\nThis function casts a ray from Point1 to Point2 and returns it's ray handle.  A simple ray cast will 'shoot' a line from point A to point B, and return whether or not the ray reached it's destination or if it hit anything and if it did hit anything, will return the handle of what it hit (entity handle) and coordinates of where the ray reached.\n\nYou can use _GET_RAYCAST_RESULT to get the result of the raycast\n\nEntity is an entity to ignore, such as the player.\n\nFlags are intersection bit flags.  They tell the ray what to care about and what not to care about when casting. Passing -1 will intersect with everything, presumably.\n\nFlags:\n1: Intersect with map\n2: Intersect with vehicles (used to be mission entities?) (includes train)\n4: Intersect with peds? (same as 8)\n8: Intersect with peds? (same as 4)\n16: Intersect with objects\n32: Unknown\n64: Unknown\n128: Unknown\n256: Intersect with vegetation (plants, coral. trees not included)\n\nNOTE: Raycasts that intersect with mission_entites (flag = 2) has limited range and will not register for far away entites. The range seems to be about 30 metres. ",
 			"params": [
 				{
 					"type": "float",
@@ -105416,7 +105416,7 @@
 		"0x9BDA23BF666F0855": {
 			"name": "_SET_VEHICLE_COUNTERMEASURE_COUNT",
 			"jhash": "",
-			"comment": "Similar to 0xF4B2ED59DEB5D774, this sets the amount of countermeasures that are present on this vehicle.\nUse 0xF846AA63DF56B804 to get the current amount.",
+			"comment": "Similar to _SET_VEHICLE_BOMB_COUNT, this sets the amount of countermeasures that are present on this vehicle.\nUse _GET_VEHICLE_COUNTERMEASURE_COUNT to get the current amount.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105433,7 +105433,7 @@
 		"0xF846AA63DF56B804": {
 			"name": "_GET_VEHICLE_COUNTERMEASURE_COUNT",
 			"jhash": "",
-			"comment": "Similar to `0xEA12BD130D7569A1`, this gets the amount of countermeasures that are present on this vehicle.\nUse 0x9BDA23BF666F0855 to set the current amount.",
+			"comment": "Similar to _GET_VEHICLE_BOMB_COUNT, this gets the amount of countermeasures that are present on this vehicle.\nUse _SET_VEHICLE_COUNTERMEASURE_COUNT to set the current amount.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105567,7 +105567,7 @@
 		"0xF1211889DF15A763": {
 			"name": "_SET_VEHICLE_HOVER_TRANSFORM_ENABLED",
 			"jhash": "",
-			"comment": "It will override the ability to transform deluxo. For oppressor it will work just like 0x2D55FE374D5FDB91",
+			"comment": "It will override the ability to transform deluxo. For oppressor it will work just like _SET_VEHICLE_HOVER_TRANSFORM_ACTIVE",
 			"params": [
 				{
 					"type": "Vehicle",
