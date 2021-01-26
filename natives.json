@@ -15121,7 +15121,7 @@
 					"name": "componentHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "2189"
 		},
 		"0x74C0E2A57EC66760": {
