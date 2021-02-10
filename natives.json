@@ -14956,9 +14956,9 @@
 	},
 	"FILES": {
 		"0x278F76C3B0A8F109": {
-			"name": "_GET_NUM_DECORATIONS",
+			"name": "GET_NUM_TATTOO_SHOP_DLC_ITEMS",
 			"jhash": "0x71D0CF3E",
-			"comment": "GET_NUM_*",
+			"comment": "Character types:\n0 = Michael, \n1 = Franklin, \n2 = Trevor, \n3 = MPMale, \n4 = MPFemale",
 			"params": [
 				{
 					"type": "int",
@@ -14969,7 +14969,7 @@
 			"build": "323"
 		},
 		"0xFF56381874F82086": {
-			"name": "_GET_TATTOO_COLLECTION_DATA",
+			"name": "GET_TATTOO_SHOP_DLC_ITEM_DATA",
 			"jhash": "0x2E9D628C",
 			"comment": "Character types:\n0 = Michael, \n1 = Franklin, \n2 = Trevor, \n3 = MPMale, \n4 = MPFemale\n\n\nenum TattooZoneData\n{  \n    ZONE_TORSO = 0,  \n    ZONE_HEAD = 1,  \n    ZONE_LEFT_ARM = 2,  \n    ZONE_RIGHT_ARM = 3,  \n    ZONE_LEFT_LEG = 4,  \n    ZONE_RIGHT_LEG = 5,  \n    ZONE_UNKNOWN = 6,\n    ZONE_NONE = 7,  \n};\nstruct outComponent\n{\n    // these vars are suffixed with 4 bytes of padding each.\n    uint unk;\n    int unk2;\n    uint tattooCollectionHash;\n    uint tattooNameHash;\n    int unk3;\n    TattooZoneData zoneId;\n    uint unk4;\n    uint unk5;\n    // maybe more, not sure exactly, decompiled scripts are very vague around this part.\n}",
 			"params": [
@@ -15037,7 +15037,7 @@
 			"build": "323"
 		},
 		"0x50F457823CE6EB5F": {
-			"name": "_0x50F457823CE6EB5F",
+			"name": "SETUP_SHOP_PED_APPAREL_QUERY",
 			"jhash": "0xC937FF3D",
 			"comment": "",
 			"params": [
@@ -15062,7 +15062,7 @@
 			"build": "323"
 		},
 		"0x9BDF59818B1E38C1": {
-			"name": "_GET_NUM_PROPS_FROM_OUTFIT",
+			"name": "SETUP_SHOP_PED_APPAREL_QUERY_TU",
 			"jhash": "0x594E862C",
 			"comment": "character is 0 for Michael, 1 for Franklin, 2 for Trevor, 3 for freemode male, and 4 for freemode female.\n\ncomponentId is between 0 and 11 and corresponds to the usual component slots.\n\np1 could be the outfit number; unsure.\n\np2 is usually -1; unknown function.\n\np3 appears to be for selecting between clothes and props; false is used with components/clothes, true is used with props.\n\np4 is usually -1; unknown function.\n\ncomponentId is -1 when p3 is true in decompiled scripts.",
 			"params": [
@@ -15428,7 +15428,7 @@
 			"build": "323"
 		},
 		"0xF3FBE2D50A6A8C28": {
-			"name": "_GET_NUM_SHOP_PED_OUTFITS",
+			"name": "SETUP_SHOP_PED_OUTFIT_QUERY",
 			"jhash": "0x1ECD23E7",
 			"comment": "characters\n\n0: Michael\n1: Franklin\n2: Trevor\n3: MPMale\n4: MPFemale",
 			"params": [
