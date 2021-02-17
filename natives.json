@@ -88548,7 +88548,7 @@
 		"0x46A6CC01E0826106": {
 			"name": "TASK_SHOOT_AT_COORD",
 			"jhash": "0x601C22E3",
-			"comment": "",
+			"comment": "Firing Pattern Hash Information: https://pastebin.com/Px036isB",
 			"params": [
 				{
 					"type": "Ped",
@@ -89846,7 +89846,7 @@
 		"0x08DA95E8298AE772": {
 			"name": "TASK_SHOOT_AT_ENTITY",
 			"jhash": "0xAC0631C9",
-			"comment": "//this part of the code is to determine at which entity the player is aiming, for example if you want to create a mod where you give orders to peds\nEntity aimedentity;\nPlayer player = PLAYER::PLAYER_ID();\nPLAYER::_GET_AIMED_ENTITY(player, &aimedentity);\n\n//bg is an array of peds\nTASK::TASK_SHOOT_AT_ENTITY(bg[i], aimedentity, 5000, MISC::GET_HASH_KEY(\"FIRING_PATTERN_FULL_AUTO\"));\n\nin practical usage, getting the entity the player is aiming at and then task the peds to shoot at the entity, at a button press event would be better.",
+			"comment": "//this part of the code is to determine at which entity the player is aiming, for example if you want to create a mod where you give orders to peds\nEntity aimedentity;\nPlayer player = PLAYER::PLAYER_ID();\nPLAYER::_GET_AIMED_ENTITY(player, &aimedentity);\n\n//bg is an array of peds\nTASK::TASK_SHOOT_AT_ENTITY(bg[i], aimedentity, 5000, MISC::GET_HASH_KEY(\"FIRING_PATTERN_FULL_AUTO\"));\n\nin practical usage, getting the entity the player is aiming at and then task the peds to shoot at the entity, at a button press event would be better.\n\nFiring Pattern Hash Information: https://pastebin.com/Px036isB",
 			"params": [
 				{
 					"type": "Entity",
