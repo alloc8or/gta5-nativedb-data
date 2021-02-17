@@ -8378,7 +8378,7 @@
 			"build": "323"
 		},
 		"0xCA9D2AA3E326D720": {
-			"name": "_0xCA9D2AA3E326D720",
+			"name": "IS_CINEMATIC_IDLE_CAM_RENDERING",
 			"jhash": "0x96A07066",
 			"comment": "",
 			"params": [],
@@ -17057,7 +17057,7 @@
 			"build": "877"
 		},
 		"0x1DD2139A9A20DCE8": {
-			"name": "_0x1DD2139A9A20DCE8",
+			"name": "BEGIN_TAKE_MISSION_CREATOR_PHOTO",
 			"jhash": "0xBA9AD458",
 			"comment": "",
 			"params": [],
@@ -17065,7 +17065,7 @@
 			"build": "323"
 		},
 		"0x90A78ECAA4E78453": {
-			"name": "_0x90A78ECAA4E78453",
+			"name": "GET_STATUS_OF_TAKE_MISSION_CREATOR_PHOTO",
 			"jhash": "0xADBBA287",
 			"comment": "",
 			"params": [],
@@ -17073,7 +17073,7 @@
 			"build": "323"
 		},
 		"0x0A46AF8A78DC5E0A": {
-			"name": "_0x0A46AF8A78DC5E0A",
+			"name": "FREE_MEMORY_FOR_MISSION_CREATOR_PHOTO",
 			"jhash": "0x9E553002",
 			"comment": "",
 			"params": [],
@@ -17081,9 +17081,9 @@
 			"build": "323"
 		},
 		"0x4862437A486F91B0": {
-			"name": "_0x4862437A486F91B0",
+			"name": "LOAD_MISSION_CREATOR_PHOTO",
 			"jhash": "0x56C1E488",
-			"comment": "LOAD_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
@@ -17106,7 +17106,7 @@
 			"build": "323"
 		},
 		"0x1670F8D05056F257": {
-			"name": "_0x1670F8D05056F257",
+			"name": "GET_STATUS_OF_LOAD_MISSION_CREATOR_PHOTO",
 			"jhash": "0x226B08EA",
 			"comment": "",
 			"params": [
@@ -17159,9 +17159,9 @@
 			"build": "323"
 		},
 		"0xD801CC02177FA3F1": {
-			"name": "_0xD801CC02177FA3F1",
+			"name": "FREE_MEMORY_FOR_HIGH_QUALITY_PHOTO",
 			"jhash": "0x9CBA682A",
-			"comment": "4 matches across 2 scripts.\n\nappcamera:\ncalled after HUD::HIDE_HUD_AND_RADAR_THIS_FRAME() and before GRAPHICS::0x108F36CC();\n\ncellphone_controller:\ncalled after GRAPHICS::0xE9F2B68F(0, 0) and before GRAPHICS::0x108F36CC();",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -66916,7 +66916,7 @@
 			"build": "323"
 		},
 		"0x4668D80430D6C299": {
-			"name": "_0x4668D80430D6C299",
+			"name": "FINALIZE_HEAD_BLEND",
 			"jhash": "0x894314A4",
 			"comment": "",
 			"params": [
@@ -101266,9 +101266,9 @@
 			"build": "323"
 		},
 		"0x9A83F5F9963775EF": {
-			"name": "_IS_VEHICLE_MOD_LOAD_DONE",
+			"name": "HAVE_VEHICLE_MODS_STREAMED_IN",
 			"jhash": "0x112D637A",
-			"comment": "Returns whether or not the vehicle has a CVehicleStreamRequestGfx that's trying to load mods.\n\nTrue if it isn't loading mods, false if it is.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107269,7 +107269,7 @@
 			"build": "323"
 		},
 		"0xE620FD3512A04F18": {
-			"name": "_0xE620FD3512A04F18",
+			"name": "SET_PICKUP_AMMO_AMOUNT_SCALER",
 			"jhash": "0xD6460EA2",
 			"comment": "",
 			"params": [
