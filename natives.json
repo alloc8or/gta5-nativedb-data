@@ -87461,7 +87461,7 @@
 					"name": "distanceRemaining"
 				},
 				{
-					"type": "bool*",
+					"type": "BOOL*",
 					"name": "isPathReady"
 				}
 			],
