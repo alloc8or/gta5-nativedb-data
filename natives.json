@@ -4873,9 +4873,9 @@
 			"build": "323"
 		},
 		"0xC819F3CBB62BF692": {
-			"name": "_RENDER_FIRST_PERSON_CAM",
+			"name": "STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP",
 			"jhash": "0xD3C08183",
-			"comment": "This native makes the gameplay camera zoom into first person/third person with a special effect.\n\nFor example, if you were first person in a mission and after the cutscene ends, the camera would then zoom into the first person camera view.\n\nif (CAM::GET_FOLLOW_PED_CAM_VIEW_MODE() != 4)\n           CAM::_C819F3CBB62BF692(1, 0, 3, 0)\n\nThis makes the camera zoom in to first person.\n\n--------------------------------------------\n1st Param Options: 0 or 1 (Changes quit often, toggle?)\n2nd Param Options: 0, 0f, 1f, 3.8f, 10f, 20f (Mostly 0) \n3rd Param Options: 3, 2, 1 (Mostly 3);\nNote for the 2nd param 10f (offroad_race.c) and 3rd param 20f (range_modern.c) are the only times those 2 high floats are called.\nNote for the 3rd param 2 is only ever set in (franklin0.c), but it also sets it as 3. (0, 0, 3) ||(0, 0f, 2) || (0, 0, 3)",
+			"comment": "This native makes the gameplay camera zoom into first person/third person with a special effect.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -8445,7 +8445,7 @@
 			"build": "323"
 		},
 		"0xA41BCD7213805AAC": {
-			"name": "_0xA41BCD7213805AAC",
+			"name": "FORCE_CINEMATIC_RENDERING_THIS_UPDATE",
 			"jhash": "0xFBB85E02",
 			"comment": "",
 			"params": [
@@ -17319,7 +17319,7 @@
 			"build": "323"
 		},
 		"0xF5BED327CEA362B1": {
-			"name": "_0xF5BED327CEA362B1",
+			"name": "GET_STATUS_OF_SORTED_LIST_OPERATION",
 			"jhash": "0x596B900D",
 			"comment": "3 matches across 3 scripts. First 2 were 0, 3rd was 1. Possibly a bool.\nappcamera, appmedia, and cellphone_controller.",
 			"params": [
@@ -19597,7 +19597,7 @@
 			"build": "323"
 		},
 		"0x03FC694AE06C5A20": {
-			"name": "_0x03FC694AE06C5A20",
+			"name": "CASCADE_SHADOWS_INIT_SESSION",
 			"jhash": "0x48F16186",
 			"comment": "",
 			"params": [],
@@ -19605,7 +19605,7 @@
 			"build": "323"
 		},
 		"0xD2936CAB8B58FCBD": {
-			"name": "_0xD2936CAB8B58FCBD",
+			"name": "CASCADE_SHADOWS_SET_CASCADE_BOUNDS",
 			"jhash": "0x84F05943",
 			"comment": "",
 			"params": [
@@ -19646,7 +19646,7 @@
 			"build": "323"
 		},
 		"0x5F0F3F56635809EF": {
-			"name": "_0x5F0F3F56635809EF",
+			"name": "CASCADE_SHADOWS_SET_CASCADE_BOUNDS_SCALE",
 			"jhash": "0x13D4ABC0",
 			"comment": "",
 			"params": [
@@ -19659,7 +19659,7 @@
 			"build": "323"
 		},
 		"0x5E9DAF5A20F15908": {
-			"name": "_0x5E9DAF5A20F15908",
+			"name": "CASCADE_SHADOWS_SET_ENTITY_TRACKER_SCALE",
 			"jhash": "0xD2157428",
 			"comment": "",
 			"params": [
@@ -19698,7 +19698,7 @@
 			"build": "1011"
 		},
 		"0x80ECBC0C856D3B0B": {
-			"name": "_SET_FAR_SHADOWS_SUPPRESSED",
+			"name": "CASCADE_SHADOWS_ENABLE_ENTITY_TRACKER",
 			"jhash": "0xFE903D0F",
 			"comment": "When this is set to ON, shadows only draw as you get nearer.\n\nWhen OFF, they draw from a further distance.",
 			"params": [
@@ -19724,7 +19724,7 @@
 			"build": "323"
 		},
 		"0xB11D94BC55F41932": {
-			"name": "_CASCADESHADOWS_SET_TYPE",
+			"name": "CASCADE_SHADOWS_SET_SHADOW_SAMPLE_TYPE",
 			"jhash": "0xDE10BA1F",
 			"comment": "Possible values:\n\"CSM_ST_POINT\"\n\"CSM_ST_LINEAR\"\n\"CSM_ST_TWOTAP\"\n\"CSM_ST_BOX3x3\"\n\"CSM_ST_BOX4x4\"\n\"CSM_ST_DITHER2_LINEAR\"\n\"CSM_ST_CUBIC\"\n\"CSM_ST_DITHER4\"\n\"CSM_ST_DITHER16\"\n\"CSM_ST_SOFT16\"\n\"CSM_ST_DITHER16_RPDB\"\n\"CSM_ST_POISSON16_RPDB_GNORM\"\n\"CSM_ST_HIGHRES_BOX4x4\"\n\"CSM_ST_CLOUDS_SIMPLE\"\n\"CSM_ST_CLOUDS_LINEAR\"\n\"CSM_ST_CLOUDS_TWOTAP\"\n\"CSM_ST_CLOUDS_BOX3x3\"\n\"CSM_ST_CLOUDS_BOX4x4\"\n\"CSM_ST_CLOUDS_DITHER2_LINEAR\"\n\"CSM_ST_CLOUDS_SOFT16\"\n\"CSM_ST_CLOUDS_DITHER16_RPDB\"\n\"CSM_ST_CLOUDS_POISSON16_RPDB_GNORM\"",
 			"params": [
@@ -19745,7 +19745,7 @@
 			"build": "323"
 		},
 		"0x6DDBF9DFFC4AC080": {
-			"name": "_0x6DDBF9DFFC4AC080",
+			"name": "CASCADE_SHADOWS_SET_AIRCRAFT_MODE",
 			"jhash": "0x9F470BE3",
 			"comment": "",
 			"params": [
@@ -19758,7 +19758,7 @@
 			"build": "323"
 		},
 		"0xD39D13C9FEBF0511": {
-			"name": "_0xD39D13C9FEBF0511",
+			"name": "CASCADE_SHADOWS_SET_DYNAMIC_DEPTH_MODE",
 			"jhash": "0x4A124267",
 			"comment": "",
 			"params": [
@@ -19771,7 +19771,7 @@
 			"build": "323"
 		},
 		"0x02AC28F3A01FA04A": {
-			"name": "_0x02AC28F3A01FA04A",
+			"name": "CASCADE_SHADOWS_SET_DYNAMIC_DEPTH_VALUE",
 			"jhash": "0xB19B2764",
 			"comment": "",
 			"params": [
@@ -34439,7 +34439,7 @@
 			"build": "323"
 		},
 		"0x957838AAF91BD12D": {
-			"name": "_CLEAR_AREA_OF_EVERYTHING",
+			"name": "CLEAR_AREA_LEAVE_VEHICLE_HEALTH",
 			"jhash": "0x20E4FFD9",
 			"comment": "MISC::_0x957838AAF91BD12D(x, y, z, radius, false, false, false, false); seem to make all objects go away, peds, vehicles etc. All booleans set to true doesn't seem to change anything. ",
 			"params": [
@@ -37973,7 +37973,7 @@
 			"build": "757"
 		},
 		"0x3ED1438C1F5C6612": {
-			"name": "_0x3ED1438C1F5C6612",
+			"name": "NEXT_ONSCREEN_KEYBOARD_RESULT_WILL_DISPLAY_USING_THESE_FONTS",
 			"jhash": "0x3301EA47",
 			"comment": "p0 was always 2 in R* scripts.\nCalled before calling DISPLAY_ONSCREEN_KEYBOARD if the input needs to be saved.",
 			"params": [
@@ -48933,9 +48933,9 @@
 			"build": "323"
 		},
 		"0xB07D3185E11657A5": {
-			"name": "_0xB07D3185E11657A5",
+			"name": "NETWORK_HAS_ENTITY_BEEN_REGISTERED_WITH_THIS_THREAD",
 			"jhash": "0xEDA68956",
-			"comment": "NETWORK_HAS_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -54904,7 +54904,7 @@
 			"build": "323"
 		},
 		"0x941E5306BCD7C2C7": {
-			"name": "_0x941E5306BCD7C2C7",
+			"name": "UGC_DID_GET_SUCCEED",
 			"jhash": "0x3970B0DA",
 			"comment": "",
 			"params": [],
@@ -55605,7 +55605,7 @@
 			"build": "323"
 		},
 		"0xF98DDE0A8ED09323": {
-			"name": "_0xF98DDE0A8ED09323",
+			"name": "UGC_SET_QUERY_DATA_FROM_OFFLINE",
 			"jhash": "0x213C6D36",
 			"comment": "",
 			"params": [
@@ -58252,7 +58252,7 @@
 			"build": "463"
 		},
 		"0x0BF3B3BD47D79C08": {
-			"name": "_0x0BF3B3BD47D79C08",
+			"name": "SET_MAX_NUM_PORTABLE_PICKUPS_CARRIED_BY_PLAYER",
 			"jhash": "0x7EFBA039",
 			"comment": "",
 			"params": [
@@ -58642,7 +58642,7 @@
 			"build": "323"
 		},
 		"0x92AEFB5F6E294023": {
-			"name": "_0x92AEFB5F6E294023",
+			"name": "PREVENT_COLLECTION_OF_PORTABLE_PICKUP",
 			"jhash": "0xCBB5F9B6",
 			"comment": "",
 			"params": [
@@ -60895,7 +60895,7 @@
 			"build": "2189"
 		},
 		"0xF7B79A50B905A30D": {
-			"name": "_ARE_PATH_NODES_LOADED_IN_AREA",
+			"name": "ARE_NODES_LOADED_FOR_AREA",
 			"jhash": "0x86E80A17",
 			"comment": "ARE_*",
 			"params": [
@@ -69086,39 +69086,39 @@
 			"build": "323"
 		},
 		"0xA3A9299C4F2ADB98": {
-			"name": "_0xA3A9299C4F2ADB98",
+			"name": "SET_PED_SHOULD_PLAY_NORMAL_SCENARIO_EXIT",
 			"jhash": "0x033F43FA",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xF1C03A5352243A30": {
-			"name": "_0xF1C03A5352243A30",
+			"name": "SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT",
 			"jhash": "0x4C684C81",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xEEED8FAFEC331A70": {
-			"name": "_0xEEED8FAFEC331A70",
+			"name": "SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
 			"jhash": "0x7B4C3E6F",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -70689,9 +70689,9 @@
 			"build": "323"
 		},
 		"0x2208438012482A1A": {
-			"name": "_0x2208438012482A1A",
+			"name": "FORCE_PED_AI_AND_ANIMATION_UPDATE",
 			"jhash": "0x187B9070",
-			"comment": "Function.Call(Hash._0x2208438012482A1A, ped, 0, 0);\n\nThis makes the ped have faster animations\n\nFORCE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -71600,9 +71600,9 @@
 			"build": "323"
 		},
 		"0x7350823473013C02": {
-			"name": "_HAS_STREAMED_PED_ASSETS_LOADED",
+			"name": "HAVE_ALL_STREAMING_REQUESTS_COMPLETED",
 			"jhash": "0xF9FB4B71",
-			"comment": "HAS_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -71856,7 +71856,7 @@
 			"build": "323"
 		},
 		"0x2DF9038C90AD5264": {
-			"name": "_0x2DF9038C90AD5264",
+			"name": "SPAWNPOINTS_START_SEARCH",
 			"jhash": "0x909A1D76",
 			"comment": "",
 			"params": [
@@ -71946,7 +71946,7 @@
 			"build": "323"
 		},
 		"0xFEE4A5459472A9F8": {
-			"name": "_0xFEE4A5459472A9F8",
+			"name": "SPAWNPOINTS_CANCEL_SEARCH",
 			"jhash": "0x492C9E46",
 			"comment": "",
 			"params": [],
@@ -71986,25 +71986,25 @@
 			"build": "323"
 		},
 		"0x280C7E3AC7F56E90": {
-			"name": "_0x280C7E3AC7F56E90",
+			"name": "SPAWNPOINTS_GET_SEARCH_RESULT",
 			"jhash": "0x36A4AC65",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "randomInt"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "float*",
+					"name": "x"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "float*",
+					"name": "y"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "float*",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -78000,7 +78000,7 @@
 		"0x7EE9F5D83DD4F90E": {
 			"name": "START_SHAPE_TEST_LOS_PROBE",
 			"jhash": "0xEFAF4BA6",
-			"comment": "Returns a ray (?) going from x1, y1, z1 to x2, y2, z2.\nentity = 0 most of the time.\np8 = 7 most of the time.\n\nResult of this function is passed to WORLDPROBE::_GET_RAYCAST_RESULT as a first argument.",
+			"comment": "Asynchronously starts a line-of-sight (raycast) world probe shape test.\n\nUse the handle with 0x3D87450E15D98694 or 0x65287525D951F6BE until it returns 0 or 2.\n\np8 is a bit mask with bits 1, 2 and/or 4, relating to collider types; 4 should usually be used.",
 			"params": [
 				{
 					"type": "float",
@@ -78043,9 +78043,9 @@
 			"build": "323"
 		},
 		"0x377906D8A31E5586": {
-			"name": "_START_SHAPE_TEST_RAY",
+			"name": "START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE",
 			"jhash": "0x8251485D",
-			"comment": "Not sure how or why this differs from 0x7EE9F5D83DD4F90E, but it does.\n\nThis function casts a ray from Point1 to Point2 and returns it's ray handle.  A simple ray cast will 'shoot' a line from point A to point B, and return whether or not the ray reached it's destination or if it hit anything and if it did hit anything, will return the handle of what it hit (entity handle) and coordinates of where the ray reached.\n\nYou can use _GET_RAYCAST_RESULT to get the result of the raycast\n\nEntity is an entity to ignore, such as the player.\n\nFlags are intersection bit flags.  They tell the ray what to care about and what not to care about when casting. Passing -1 will intersect with everything, presumably.\n\nFlags:\n1: Intersect with map\n2: Intersect with vehicles (used to be mission entities?) (includes train)\n4: Intersect with peds? (same as 8)\n8: Intersect with peds? (same as 4)\n16: Intersect with objects\n32: Unknown\n64: Unknown\n128: Unknown\n256: Intersect with vegetation (plants, coral. trees not included)\n\nNOTE: Raycasts that intersect with mission_entites (flag = 2) has limited range and will not register for far away entites. The range seems to be about 30 metres. ",
+			"comment": "Does the same as 0x7EE9F5D83DD4F90E, except blocking until the shape test completes.",
 			"params": [
 				{
 					"type": "float",
@@ -78320,11 +78320,11 @@
 		"0x3D87450E15D98694": {
 			"name": "GET_SHAPE_TEST_RESULT",
 			"jhash": "0xF3C2875A",
-			"comment": "Parameters:\nrayHandle - Ray Handle from a casted ray, as returned by CAST_RAY_POINT_TO_POINT\nhit - Where to store whether or not it hit anything. False is when the ray reached its destination.\nendCoords - Where to store the world-coords of where the ray was stopped (by hitting its desired max range or by colliding with an entity/the map)\nsurfaceNormal - Where to store the surface-normal coords (NOT relative to the game world) of where the entity was hit by the ray\nentityHit - Where to store the handle of the entity hit by the ray\n\nReturns:\nResult? Some type of enum.\n\nNOTE: To get the offset-coords of where the ray hit relative to the entity that it hit (which is NOT the same as surfaceNormal), you can use these two natives:\nVector3 offset = ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(entityHit, endCoords.x, endCoords.y, endCoords.z);\nVector3 entitySpotCoords = ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(entityHit, offset.x, offset.y, offset.z);\n\nUse ENTITY::GET_ENTITY_TYPE(entityHit) to quickly distinguish what type of entity you hit (ped/vehicle/object - 1/2/3)",
+			"comment": "Returns the result of a shape test: 0 if the handle is invalid, 1 if the shape test is still pending, or 2 if the shape test has completed, and the handle should be invalidated.\n\nWhen used with an asynchronous shape test, this native should be looped until returning 0 or 2, after which the handle is invalidated.",
 			"params": [
 				{
 					"type": "int",
-					"name": "rayHandle"
+					"name": "shapeTestHandle"
 				},
 				{
 					"type": "BOOL*",
@@ -78349,11 +78349,11 @@
 		"0x65287525D951F6BE": {
 			"name": "GET_SHAPE_TEST_RESULT_INCLUDING_MATERIAL",
 			"jhash": "0x4301E10C",
-			"comment": "",
+			"comment": "Returns the result of a shape test, also returning the material of any touched surface.\n\nWhen used with an asynchronous shape test, this native should be looped until returning 0 or 2, after which the handle is invalidated.\n\nUnless the return value is 2, the other return values are undefined.",
 			"params": [
 				{
 					"type": "int",
-					"name": "rayHandle"
+					"name": "shapeTestHandle"
 				},
 				{
 					"type": "BOOL*",
@@ -78380,9 +78380,9 @@
 			"build": "323"
 		},
 		"0x2B3334BCA57CD799": {
-			"name": "_SHAPE_TEST_RESULT_ENTITY",
+			"name": "RELEASE_SCRIPT_GUID_FROM_ENTITY",
 			"jhash": "0xEC2AAF06",
-			"comment": "",
+			"comment": "Invalidates the entity handle passed by removing the fwScriptGuid from the entity. This should be used when receiving an ambient entity from shape testing natives, but can also be used for other natives returning an 'irrelevant' entity handle.",
 			"params": [
 				{
 					"type": "Entity",
@@ -97820,7 +97820,7 @@
 			"build": "323"
 		},
 		"0x1AA8A837D2169D94": {
-			"name": "_SET_VEHICLE_LIGHTS_CAN_BE_VISIBLY_DAMAGED",
+			"name": "SET_VEHICLE_HAS_UNBREAKABLE_LIGHTS",
 			"jhash": "0x009AB49E",
 			"comment": "",
 			"params": [
