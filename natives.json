@@ -411,7 +411,7 @@
 			"build": "323"
 		},
 		"0x42B65DEEF2EDF2A1": {
-			"name": "_SET_THREAD_PRIORITY",
+			"name": "SET_THREAD_PRIORITY",
 			"jhash": "",
 			"comment": "0 = high\n1 = normal\n2 = low",
 			"params": [
@@ -59893,7 +59893,7 @@
 			"build": "323"
 		},
 		"0x8290252FFF36ACB5": {
-			"name": "_SET_CONTROL_GROUP_COLOR",
+			"name": "SET_CONTROL_LIGHT_EFFECT_COLOR",
 			"jhash": "",
 			"comment": "padIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.",
 			"params": [
