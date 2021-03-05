@@ -7188,13 +7188,13 @@
 			"build": "323"
 		},
 		"0x8BBACBF51DA047A8": {
-			"name": "_0x8BBACBF51DA047A8",
+			"name": "_SET_GAMEPLAY_CAM_PED_THIS_FRAME",
 			"jhash": "0x7D3007A2",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
