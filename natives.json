@@ -5040,7 +5040,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostCam"
 				}
 			],
 			"return_type": "void",
@@ -5053,7 +5053,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostCam"
 				}
 			],
 			"return_type": "void",
@@ -56316,7 +56316,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostObj"
 				},
 				{
 					"type": "BOOL",
@@ -56353,7 +56353,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostObj"
 				},
 				{
 					"type": "BOOL",
@@ -61879,7 +61879,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostPed"
 				}
 			],
 			"return_type": "Ped",
@@ -61917,7 +61917,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostPed"
 				}
 			],
 			"return_type": "Ped",
@@ -61942,7 +61942,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostPed"
 				},
 				{
 					"type": "Any",
@@ -62213,7 +62213,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostPed"
 				}
 			],
 			"return_type": "Ped",
@@ -93873,7 +93873,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "netMissionEntity"
+					"name": "bScriptHostVeh"
 				},
 				{
 					"type": "BOOL",
