@@ -75999,7 +75999,7 @@
 			"build": "323"
 		},
 		"0xE23D5873C2394C61": {
-			"name": "_HAS_PLAYER_TELEPORT_FINISHED",
+			"name": "UPDATE_PLAYER_TELEPORT",
 			"jhash": "",
 			"comment": "",
 			"params": [
