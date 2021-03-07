@@ -91390,9 +91390,9 @@
 			"build": "323"
 		},
 		"0x621C6E4729388E41": {
-			"name": "_0x621C6E4729388E41",
+			"name": "IS_PED_PLAYING_BASE_CLIP_IN_SCENARIO",
 			"jhash": "0xA0DA6B1D",
-			"comment": "Used only once (am_mp_property_int)\n\nped was PLAYER_PED_ID()\n\nRelated to CTaskAmbientClips.\n\nIS_PED_*",
+			"comment": "Used only once (am_mp_property_int)\n\nped was PLAYER_PED_ID()\n\nRelated to CTaskAmbientClips.",
 			"params": [
 				{
 					"type": "Ped",
