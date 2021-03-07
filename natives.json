@@ -49444,7 +49444,7 @@
 			"build": "323"
 		},
 		"0x58CC181719256197": {
-			"name": "_0x58CC181719256197",
+			"name": "NETWORK_GET_DISPLAYNAMES_FROM_HANDLES",
 			"jhash": "",
 			"comment": "MulleDK19: This function is hard-coded to always return 0.",
 			"params": [
@@ -49461,7 +49461,7 @@
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x57DBA049E110F217": {
