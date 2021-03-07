@@ -17265,7 +17265,7 @@
 			"build": "323"
 		},
 		"0x1072F115DAB0717E": {
-			"name": "_0x1072F115DAB0717E",
+			"name": "DRAW_LOW_QUALITY_PHOTO_TO_PHONE",
 			"jhash": "0xE9F2B68F",
 			"comment": "",
 			"params": [
