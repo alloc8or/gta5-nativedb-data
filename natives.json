@@ -106515,7 +106515,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "equipNow"
+					"name": "bForceInHand"
 				}
 			],
 			"return_type": "void",
@@ -106825,7 +106825,7 @@
 		"0xBF0FD6E56C964FCB": {
 			"name": "GIVE_WEAPON_TO_PED",
 			"jhash": "0xC4D88A85",
-			"comment": "isHidden - ????\nReturns the given weapon handle (you can use it to set clip in weapon etc.)\nAll weapon names (add to the list if something is missing), use MISC::GET_HASH_KEY((char *)weaponNames[i]) to get get the hash:\n\nstatic LPCSTR weaponNames[] = {\n \"WEAPON_KNIFE\", \"WEAPON_NIGHTSTICK\", \"WEAPON_HAMMER\", \"WEAPON_BAT\", \"WEAPON_GOLFCLUB\",\n  \"WEAPON_CROWBAR\", \"WEAPON_PISTOL\", \"WEAPON_COMBATPISTOL\", \"WEAPON_APPISTOL\", \"WEAPON_PISTOL50\",\n \"WEAPON_MICROSMG\", \"WEAPON_SMG\", \"WEAPON_ASSAULTSMG\", \"WEAPON_ASSAULTRIFLE\",\n  \"WEAPON_CARBINERIFLE\", \"WEAPON_ADVANCEDRIFLE\", \"WEAPON_MG\", \"WEAPON_COMBATMG\", \"WEAPON_PUMPSHOTGUN\",\n    \"WEAPON_SAWNOFFSHOTGUN\", \"WEAPON_ASSAULTSHOTGUN\", \"WEAPON_BULLPUPSHOTGUN\", \"WEAPON_STUNGUN\", \"WEAPON_SNIPERRIFLE\",\n  \"WEAPON_HEAVYSNIPER\", \"WEAPON_GRENADELAUNCHER\", \"WEAPON_GRENADELAUNCHER_SMOKE\", \"WEAPON_RPG\", \"WEAPON_MINIGUN\",\n \"WEAPON_GRENADE\", \"WEAPON_STICKYBOMB\", \"WEAPON_SMOKEGRENADE\", \"WEAPON_BZGAS\", \"WEAPON_MOLOTOV\",\n \"WEAPON_FIREEXTINGUISHER\", \"WEAPON_PETROLCAN\", \"WEAPON_FLARE\", \"WEAPON_SNSPISTOL\", \"WEAPON_SPECIALCARBINE\",\n \"WEAPON_HEAVYPISTOL\", \"WEAPON_BULLPUPRIFLE\", \"WEAPON_HOMINGLAUNCHER\", \"WEAPON_PROXMINE\", \"WEAPON_SNOWBALL\",\n \"WEAPON_VINTAGEPISTOL\", \"WEAPON_DAGGER\", \"WEAPON_FIREWORK\", \"WEAPON_MUSKET\", \"WEAPON_MARKSMANRIFLE\",\n    \"WEAPON_HEAVYSHOTGUN\", \"WEAPON_GUSENBERG\", \"WEAPON_HATCHET\", \"WEAPON_RAILGUN\", \"WEAPON_COMBATPDW\",\n  \"WEAPON_KNUCKLE\", \"WEAPON_MARKSMANPISTOL\", \"WEAPON_FLASHLIGHT\", \"WEAPON_MACHETE\", \"WEAPON_MACHINEPISTOL\",\n   \"WEAPON_SWITCHBLADE\", \"WEAPON_REVOLVER\", \"WEAPON_COMPACTRIFLE\", \"WEAPON_DBSHOTGUN\", \"WEAPON_FLAREGUN\",\n  \"WEAPON_AUTOSHOTGUN\", \"WEAPON_BATTLEAXE\", \"WEAPON_COMPACTLAUNCHER\", \"WEAPON_MINISMG\", \"WEAPON_PIPEBOMB\",\n    \"WEAPON_POOLCUE\", \"WEAPON_SWEEPER\", \"WEAPON_WRENCH\"\n};\n----------------------------------------------------------------------------------------------------------------------------------------\nTranslation table:\npastebin.com/a39K8Nz8",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -106845,7 +106845,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "equipNow"
+					"name": "bForceInHand"
 				}
 			],
 			"return_type": "void",
@@ -106854,7 +106854,7 @@
 		"0xB282DC6EBD803C75": {
 			"name": "GIVE_DELAYED_WEAPON_TO_PED",
 			"jhash": "0x5868D20D",
-			"comment": "Gives a weapon to PED with a delay, example:\n\nWEAPON::GIVE_DELAYED_WEAPON_TO_PED(PED::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"WEAPON_PISTOL\"), 1000, false)\n----------------------------------------------------------------------------------------------------------------------------------------\nTranslation table:\npastebin.com/a39K8Nz8\n\n",
+			"comment": "Gives a weapon to PED with a delay, example:\n\nWEAPON::GIVE_DELAYED_WEAPON_TO_PED(PED::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"WEAPON_PISTOL\"), 1000, false)",
 			"params": [
 				{
 					"type": "Ped",
@@ -106870,7 +106870,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "equipNow"
+					"name": "bForceInHand"
 				}
 			],
 			"return_type": "void",
