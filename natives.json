@@ -65274,7 +65274,7 @@
 		"0x7A6535691B477C48": {
 			"name": "SET_PED_CAN_BE_KNOCKED_OFF_VEHICLE",
 			"jhash": "0x8A251612",
-			"comment": "0 = can (bike)\n1 = can't (bike)\n2 = unk \n3 = unk",
+			"comment": "state: https://alloc8or.re/gta5/doc/enums/eKnockOffVehicle.txt",
 			"params": [
 				{
 					"type": "Ped",
