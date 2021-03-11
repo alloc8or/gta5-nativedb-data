@@ -18197,7 +18197,7 @@
 			"build": "323"
 		},
 		"0x22A249A53034450A": {
-			"name": "_0x22A249A53034450A",
+			"name": "DONT_RENDER_IN_GAME_UI",
 			"jhash": "0x932FDB81",
 			"comment": "",
 			"params": [
@@ -18210,9 +18210,9 @@
 			"build": "323"
 		},
 		"0xDC459CFA0CCE245B": {
-			"name": "_0xDC459CFA0CCE245B",
+			"name": "FORCE_RENDER_IN_GAME_UI",
 			"jhash": "0x7E946E87",
-			"comment": "FORCE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -31035,7 +31035,7 @@
 			"build": "323"
 		},
 		"0x4E3CD0EF8A489541": {
-			"name": "_0x4E3CD0EF8A489541",
+			"name": "IS_NAVIGATING_MENU_CONTENT",
 			"jhash": "0xDA7951A2",
 			"comment": "",
 			"params": [],
