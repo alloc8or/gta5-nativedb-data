@@ -101129,11 +101129,11 @@
 		"0xA551BE18C11A476D": {
 			"name": "GET_NUM_MOD_COLORS",
 			"jhash": "0x73722CD9",
-			"comment": "",
+			"comment": "paintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "paintType"
 				},
 				{
 					"type": "BOOL",
@@ -101162,7 +101162,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "pearlescentColor"
 				}
 			],
 			"return_type": "void",
@@ -101208,7 +101208,7 @@
 				},
 				{
 					"type": "int*",
-					"name": "p3"
+					"name": "pearlescentColor"
 				}
 			],
 			"return_type": "void",
