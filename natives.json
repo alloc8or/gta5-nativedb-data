@@ -39547,7 +39547,7 @@
 			"build": "323"
 		},
 		"0x9D4FDBB035229669": {
-			"name": "_0x9D4FDBB035229669",
+			"name": "_NETWORK_EARN_JOB_BONUS_HEIST_AWARD",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39568,7 +39568,7 @@
 			"build": "1290"
 		},
 		"0x11B0A20C493F7E36": {
-			"name": "_0x11B0A20C493F7E36",
+			"name": "_NETWORK_EARN_JOB_BONUS_FIRST_TIME_BONUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39589,7 +39589,7 @@
 			"build": "1290"
 		},
 		"0xCDA1C62BE2777802": {
-			"name": "_0xCDA1C62BE2777802",
+			"name": "_NETWORK_EARN_GOON",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39610,7 +39610,7 @@
 			"build": "573"
 		},
 		"0x08B0CA7A6AB3AC32": {
-			"name": "_0x08B0CA7A6AB3AC32",
+			"name": "_NETWORK_EARN_BOSS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39631,7 +39631,7 @@
 			"build": "573"
 		},
 		"0x0CB1BE0633C024A8": {
-			"name": "_0x0CB1BE0633C024A8",
+			"name": "_NETWORK_EARN_BOSS_AGENCY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39691,7 +39691,7 @@
 			"build": "757"
 		},
 		"0x84C0116D012E8FC2": {
-			"name": "_0x84C0116D012E8FC2",
+			"name": "_NETWORK_EARN_FROM_DESTROYING_CONTRABAND",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39838,7 +39838,7 @@
 			"build": "1180"
 		},
 		"0xF6B170F9A02E9E87": {
-			"name": "_0xF6B170F9A02E9E87",
+			"name": "_NETWORK_EARN_BOUNTY_HUNTER_REWARD",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39851,7 +39851,7 @@
 			"build": "1493"
 		},
 		"0x42FCE14F50F27291": {
-			"name": "_0x42FCE14F50F27291",
+			"name": "_NETWORK_EARN_FROM_BUSINESS_BATTLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39864,7 +39864,7 @@
 			"build": "1493"
 		},
 		"0xA75EAC69F59E96E7": {
-			"name": "_0xA75EAC69F59E96E7",
+			"name": "_NETWORK_EARN_FROM_CLUB_MANAGEMENT_PARTICIPATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39877,7 +39877,7 @@
 			"build": "1493"
 		},
 		"0xC5156361F26E2212": {
-			"name": "_0xC5156361F26E2212",
+			"name": "_NETWORK_EARN_FROM_FMBB_PHONECALL_MISSION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39890,7 +39890,7 @@
 			"build": "1493"
 		},
 		"0x0B39CF0D53F1C883": {
-			"name": "_0x0B39CF0D53F1C883",
+			"name": "_NETWORK_EARN_FROM_BUSINESS_HUB_SELL",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39911,7 +39911,7 @@
 			"build": "1493"
 		},
 		"0x1FDA0AA679C9919B": {
-			"name": "_0x1FDA0AA679C9919B",
+			"name": "_NETWORK_EARN_FROM_FMBB_BOSS_WORK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -39924,7 +39924,7 @@
 			"build": "1493"
 		},
 		"0xFFFBA1B1F7C0B6F4": {
-			"name": "_0xFFFBA1B1F7C0B6F4",
+			"name": "_NETWORK_EARN_FMBB_WAGE_BONUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41349,7 +41349,7 @@
 			"build": "757"
 		},
 		"0xB49ECA122467D05F": {
-			"name": "_0xB49ECA122467D05F",
+			"name": "_NETWORK_SPENT_PA_SERVICE_DANCER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41395,7 +41395,7 @@
 			"build": "757"
 		},
 		"0x0FE8E1FCD2B86B33": {
-			"name": "_0x0FE8E1FCD2B86B33",
+			"name": "_NETWORK_SPENT_PA_SERVICE_HELI_PICKUP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41595,7 +41595,7 @@
 			"build": "944"
 		},
 		"0x05F04155A226FBBF": {
-			"name": "_0x05F04155A226FBBF",
+			"name": "_NETWORK_SPENT_ORDER_WAREHOUSE_VEHICLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41620,7 +41620,7 @@
 			"build": "757"
 		},
 		"0xE8B0B270B6E7C76E": {
-			"name": "_0xE8B0B270B6E7C76E",
+			"name": "_NETWORK_SPENT_ORDER_BODYGUARD_VEHICLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41645,7 +41645,7 @@
 			"build": "757"
 		},
 		"0x5BCDE0F640C773D2": {
-			"name": "_0x5BCDE0F640C773D2",
+			"name": "_NETWORK_SPENT_JUKEBOX",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41795,7 +41795,7 @@
 			"build": "877"
 		},
 		"0xD7CCCBA28C4ECAF0": {
-			"name": "_0xD7CCCBA28C4ECAF0",
+			"name": "_NETWORK_SPENT_BA_SERVICE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41824,7 +41824,7 @@
 			"build": "877"
 		},
 		"0x0035BB914316F1E3": {
-			"name": "_0x0035BB914316F1E3",
+			"name": "_NETWORK_SPENT_BUSINESS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41870,7 +41870,7 @@
 			"build": "944"
 		},
 		"0xA75CCF58A60A5FD1": {
-			"name": "_0xA75CCF58A60A5FD1",
+			"name": "_NETWORK_SPENT_VEHICLE_EXPORT_MODS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43650,7 +43650,7 @@
 			"build": "1868"
 		},
 		"0xD30E8392F407C328": {
-			"name": "_0xD30E8392F407C328",
+			"name": "_NETWORK_SPENT_CASINO_HEIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43732,7 +43732,7 @@
 			"build": "1868"
 		},
 		"0xEAD3D81F2C3A1458": {
-			"name": "_0xEAD3D81F2C3A1458",
+			"name": "_NETWORK_SPENT_ARCADE_GAME",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43761,7 +43761,7 @@
 			"build": "1868"
 		},
 		"0x43AA7FAC4E6D6687": {
-			"name": "_0x43AA7FAC4E6D6687",
+			"name": "_NETWORK_SPENT_ARCADE_GENERIC",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43790,7 +43790,7 @@
 			"build": "1868"
 		},
 		"0x72E7C7B9615FA3C3": {
-			"name": "_0x72E7C7B9615FA3C3",
+			"name": "_NETWORK_EARN_CASINO_HEIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43920,7 +43920,7 @@
 			"unused": true
 		},
 		"0x3EC7471E6909798A": {
-			"name": "_0x3EC7471E6909798A",
+			"name": "_NETWORK_EARN_CASINO_HEIST_BONUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43966,7 +43966,7 @@
 			"build": "1734"
 		},
 		"0x5C9B198AF5A54FA6": {
-			"name": "_0x5C9B198AF5A54FA6",
+			"name": "_NETWORK_EARN_COLLECTABLE_COMPLETED_COLLECTION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44019,7 +44019,7 @@
 			"unused": true
 		},
 		"0x54ABA22FA6371249": {
-			"name": "_0x54ABA22FA6371249",
+			"name": "_NETWORK_SPENT_BEACH_PARTY_GENERIC",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44032,7 +44032,7 @@
 			"build": "2189"
 		},
 		"0x6C8BC1488527AAAB": {
-			"name": "_0x6C8BC1488527AAAB",
+			"name": "_NETWORK_SPENT_SUBMARINE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44065,7 +44065,7 @@
 			"build": "2189"
 		},
 		"0xC991C255AA6D90B2": {
-			"name": "_0xC991C255AA6D90B2",
+			"name": "_NETWORK_SPENT_CASINO_CLUB_GENERIC",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44160,7 +44160,7 @@
 			"build": "2189"
 		},
 		"0xE86689E5F82DE429": {
-			"name": "_0xE86689E5F82DE429",
+			"name": "_NETWORK_SPENT_ISLAND_HEIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44185,7 +44185,7 @@
 			"build": "2189"
 		},
 		"0xD21D111C46BA9F15": {
-			"name": "_0xD21D111C46BA9F15",
+			"name": "_NETWORK_EARN_ISLAND_HEIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
