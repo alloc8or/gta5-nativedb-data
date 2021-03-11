@@ -39505,7 +39505,7 @@
 			"build": "323"
 		},
 		"0xD20D79671A598594": {
-			"name": "_0xD20D79671A598594",
+			"name": "_NETWORK_EARN_FROM_JOB_BONUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41161,7 +41161,7 @@
 			"build": "573"
 		},
 		"0xDBC966A01C02BCA7": {
-			"name": "_0xDBC966A01C02BCA7",
+			"name": "_NETWORK_SPENT_PAY_BOSS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41203,7 +41203,7 @@
 			"build": "573"
 		},
 		"0xFC4EE00A7B3BFB76": {
-			"name": "_0xFC4EE00A7B3BFB76",
+			"name": "_NETWORK_SPENT_RENAME_ORGANIZATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
