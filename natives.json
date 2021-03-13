@@ -71897,7 +71897,7 @@
 			"build": "323"
 		},
 		"0xB2AFF10216DEFA2F": {
-			"name": "_0xB2AFF10216DEFA2F",
+			"name": "SPAWNPOINTS_START_SEARCH_IN_ANGLED_AREA",
 			"jhash": "0x4AAD0ECB",
 			"comment": "",
 			"params": [
@@ -71954,35 +71954,35 @@
 			"build": "323"
 		},
 		"0x3C67506996001F5E": {
-			"name": "_0x3C67506996001F5E",
+			"name": "SPAWNPOINTS_IS_SEARCH_ACTIVE",
 			"jhash": "0x814A28F4",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA586FBEB32A53DBB": {
-			"name": "_0xA586FBEB32A53DBB",
+			"name": "SPAWNPOINTS_IS_SEARCH_COMPLETE",
 			"jhash": "0x0B60D2BA",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xF445DE8DA80A1792": {
-			"name": "_0xF445DE8DA80A1792",
+			"name": "SPAWNPOINTS_IS_SEARCH_FAILED",
 			"jhash": "0x6B83ABDF",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA635C11B8C44AFC2": {
-			"name": "_0xA635C11B8C44AFC2",
+			"name": "SPAWNPOINTS_GET_NUM_SEARCH_RESULTS",
 			"jhash": "0xF46B4DC8",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x280C7E3AC7F56E90": {
@@ -72011,7 +72011,7 @@
 			"build": "323"
 		},
 		"0xB782F8238512BAD5": {
-			"name": "_0xB782F8238512BAD5",
+			"name": "SPAWNPOINTS_GET_SEARCH_RESULT_FLAGS",
 			"jhash": "0xBA699DDF",
 			"comment": "",
 			"params": [
