@@ -89277,7 +89277,7 @@
 		"0xC22B40579A498CA4": {
 			"name": "TASK_SUBMARINE_GOTO_AND_STOP",
 			"jhash": "",
-			"comment": "Used in am_vehicle_spawn.ysc and am_mp_submarine.ysc.\n\np0 is always 0, p5 is always 1\n\np1 is the vehicle handle of the submarine. Submarine must have a driver, but the ped handle is not passed to the native.",
+			"comment": "Used in am_vehicle_spawn.ysc and am_mp_submarine.ysc.\n\np0 is always 0, p5 is always 1\n\np1 is the vehicle handle of the submarine. Submarine must have a driver, but the ped handle is not passed to the native.\n\nSpeed can be set by calling SET_DRIVE_TASK_CRUISE_SPEED after",
 			"params": [
 				{
 					"type": "Any",
