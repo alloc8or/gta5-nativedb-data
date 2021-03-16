@@ -3644,9 +3644,9 @@
 			"build": "323"
 		},
 		"0x01BB4D577D38BD9E": {
-			"name": "_0x01BB4D577D38BD9E",
+			"name": "SET_VEHICLE_AUDIO_BODY_DAMAGE_FACTOR",
 			"jhash": "0xE81FAC68",
-			"comment": "SET_VEHICLE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -18986,7 +18986,7 @@
 			"build": "323"
 		},
 		"0x9B6E70C5CEEF4EEB": {
-			"name": "_0x9B6E70C5CEEF4EEB",
+			"name": "QUERY_MOVIE_MESH_SET_STATE",
 			"jhash": "0x9D5D9B38",
 			"comment": "",
 			"params": [
@@ -30895,7 +30895,7 @@
 			"build": "323"
 		},
 		"0x2A25ADC48F87841F": {
-			"name": "_0x2A25ADC48F87841F",
+			"name": "PAUSE_MENU_IS_CONTEXT_MENU_ACTIVE",
 			"jhash": "0x016D7AF9",
 			"comment": "",
 			"params": [],
@@ -30961,7 +30961,7 @@
 			"build": "323"
 		},
 		"0xC78E239AC5B2DDB9": {
-			"name": "_0xC78E239AC5B2DDB9",
+			"name": "PAUSE_MENU_SET_BUSY_SPINNER",
 			"jhash": "0x6C67131A",
 			"comment": "",
 			"params": [
@@ -31003,7 +31003,7 @@
 			"build": "323"
 		},
 		"0xEC9264727EEC0F28": {
-			"name": "_0xEC9264727EEC0F28",
+			"name": "TAKE_CONTROL_OF_FRONTEND",
 			"jhash": "0xC06B763D",
 			"comment": "Disables frontend (works in custom frontends, not sure about regular pause menu) navigation keys on keyboard. Not sure about controller. Does not disable mouse controls. No need to call this every tick.\n\nTo enable the keys again, use `0x14621BB1DF14E2B2`.",
 			"params": [],
@@ -31011,7 +31011,7 @@
 			"build": "323"
 		},
 		"0x14621BB1DF14E2B2": {
-			"name": "_0x14621BB1DF14E2B2",
+			"name": "RELEASE_CONTROL_OF_FRONTEND",
 			"jhash": "0xB9392CE7",
 			"comment": "Enables frontend (works in custom frontends, not sure about regular pause menu) navigation keys on keyboard if they were disabled using the native below.\nTo disable the keys, use `0xEC9264727EEC0F28`",
 			"params": [],
@@ -31131,7 +31131,7 @@
 			"build": "323"
 		},
 		"0xEF4CED81CEBEDC6D": {
-			"name": "_0xEF4CED81CEBEDC6D",
+			"name": "GET_MENU_PED_INT_STAT",
 			"jhash": "0x4370999E",
 			"comment": "",
 			"params": [
@@ -31169,7 +31169,7 @@
 			"build": "323"
 		},
 		"0x90A6526CF0381030": {
-			"name": "_0x90A6526CF0381030",
+			"name": "GET_MENU_PED_MASKED_INT_STAT",
 			"jhash": "0xD6CC4766",
 			"comment": "",
 			"params": [
@@ -31223,7 +31223,7 @@
 			"build": "323"
 		},
 		"0x5FBD7095FE7AE57F": {
-			"name": "_0x5FBD7095FE7AE57F",
+			"name": "GET_MENU_PED_FLOAT_STAT",
 			"jhash": "0x51972B04",
 			"comment": "",
 			"params": [
@@ -31261,7 +31261,7 @@
 			"build": "323"
 		},
 		"0x052991E59076E4E4": {
-			"name": "_0x052991E59076E4E4",
+			"name": "GET_MENU_PED_BOOL_STAT",
 			"jhash": "0xD43BB56D",
 			"comment": "p0 was always 0xAE2602A3.",
 			"params": [
@@ -80350,7 +80350,7 @@
 			"build": "323"
 		},
 		"0xC4BB08EE7907471E": {
-			"name": "_GET_PACKED_TITLE_UPDATE_BOOL_STAT_KEY",
+			"name": "GET_PACKED_TU_BOOL_STAT_KEY",
 			"jhash": "0x3F8E893B",
 			"comment": "",
 			"params": [
@@ -80375,7 +80375,7 @@
 			"build": "323"
 		},
 		"0xD16C2AD6B8E32854": {
-			"name": "_GET_PACKED_TITLE_UPDATE_INT_STAT_KEY",
+			"name": "GET_PACKED_TU_INT_STAT_KEY",
 			"jhash": "0xFB93C5A2",
 			"comment": "",
 			"params": [
@@ -80570,13 +80570,13 @@
 		"0x098760C7461724CD": {
 			"name": "_PLAYSTATS_START_OFFLINE_MODE",
 			"jhash": "0x896CDF8D",
-			"comment": "",
+			"comment": "PLAYSTATS_START_INVITE_DESPAWNING?",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xA071E0ED98F91286": {
-			"name": "_0xA071E0ED98F91286",
+			"name": "PLAYSTATS_ACTIVITY_DONE",
 			"jhash": "0x1A66945F",
 			"comment": "",
 			"params": [
@@ -80593,7 +80593,7 @@
 			"build": "323"
 		},
 		"0xC5BE134EC7BA96A0": {
-			"name": "_0xC5BE134EC7BA96A0",
+			"name": "PLAYSTATS_LEAVE_JOB_CHAIN",
 			"jhash": "0xC960E161",
 			"comment": "",
 			"params": [
@@ -80851,7 +80851,7 @@
 			"build": "323"
 		},
 		"0x1CAE5D2E3F9A07F0": {
-			"name": "_PLAYSTATS_CRATE_DROP",
+			"name": "PLAYSTATS_CRATE_DROP_MISSION_DONE",
 			"jhash": "0x6602CED6",
 			"comment": "",
 			"params": [
@@ -80892,7 +80892,7 @@
 			"build": "323"
 		},
 		"0xAFC7E5E075A96F46": {
-			"name": "_PLAYSTATS_CRATE_CREATED",
+			"name": "_PLAYSTATS_CRATE_CREATED_MISSION_DONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -80913,7 +80913,7 @@
 			"build": "323"
 		},
 		"0xCB00196B31C39EB1": {
-			"name": "_PLAYSTATS_HOLD_UP",
+			"name": "PLAYSTATS_HOLD_UP_MISSION_DONE",
 			"jhash": "0x759E0EC9",
 			"comment": "",
 			"params": [
@@ -80938,7 +80938,7 @@
 			"build": "323"
 		},
 		"0x2B69F5074C894811": {
-			"name": "_PLAYSTATS_IMP_EXP",
+			"name": "PLAYSTATS_IMPORT_EXPORT_MISSION_DONE",
 			"jhash": "0x62073DF7",
 			"comment": "",
 			"params": [
@@ -80963,7 +80963,7 @@
 			"build": "323"
 		},
 		"0xADDD1C754E2E2914": {
-			"name": "_PLAYSTATS_RACE_TO_POINT",
+			"name": "PLAYSTATS_RACE_TO_POINT_MISSION_DONE",
 			"jhash": "0x06CE3692",
 			"comment": "",
 			"params": [
@@ -82204,7 +82204,7 @@
 			"build": "323"
 		},
 		"0xB475F27C6A994D65": {
-			"name": "_0xB475F27C6A994D65",
+			"name": "SET_PROFILE_SETTING_PROLOGUE_COMPLETE",
 			"jhash": "0xC7DE5C30",
 			"comment": "",
 			"params": [],
@@ -82310,7 +82310,7 @@
 			"build": "323"
 		},
 		"0x047CBED6F6F8B63C": {
-			"name": "_0x047CBED6F6F8B63C",
+			"name": "STAT_SET_CHEAT_IS_ACTIVE",
 			"jhash": "0xA063CABD",
 			"comment": "",
 			"params": [],
