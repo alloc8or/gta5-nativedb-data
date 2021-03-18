@@ -69908,9 +69908,9 @@
 			"build": "323"
 		},
 		"0x14590DDBEDB1EC85": {
-			"name": "_0x14590DDBEDB1EC85",
+			"name": "IS_PED_TAKING_OFF_HELMET",
 			"jhash": "0xA1008E0E",
-			"comment": "IS_PED_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -70044,9 +70044,9 @@
 			"build": "323"
 		},
 		"0x687C0B594907D2E8": {
-			"name": "_0x687C0B594907D2E8",
+			"name": "CLEAR_PED_STORED_HAT_PROP",
 			"jhash": "0x24A1284E",
-			"comment": "CLEAR_PED_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -70057,26 +70057,26 @@
 			"build": "323"
 		},
 		"0x451294E859ECC018": {
-			"name": "_0x451294E859ECC018",
+			"name": "GET_PED_HELMET_STORED_HAT_PROP_INDEX",
 			"jhash": "0x8A3A3116",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
 			"build": "323"
 		},
 		"0x9D728C1E12BF5518": {
-			"name": "_0x9D728C1E12BF5518",
+			"name": "GET_PED_HELMET_STORED_HAT_TEX_INDEX",
 			"jhash": "0x74EB662D",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "Any",
