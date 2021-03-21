@@ -94519,7 +94519,7 @@
 			"build": "323"
 		},
 		"0xBE70724027F85BCD": {
-			"name": "_SET_VEHICLE_DOOR_DESTROY_TYPE",
+			"name": "SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED",
 			"jhash": "0xD61D182D",
 			"comment": "destroyType is 1 for opens on damage, 2 for breaks on damage.",
 			"params": [
