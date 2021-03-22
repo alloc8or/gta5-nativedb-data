@@ -52395,9 +52395,9 @@
 			"build": "323"
 		},
 		"0x21D04D7BC538C146": {
-			"name": "_0x21D04D7BC538C146",
+			"name": "_IS_ENTITY_GHOSTED_TO_LOCAL_PLAYER",
 			"jhash": "",
-			"comment": "IS_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
