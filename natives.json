@@ -77761,7 +77761,7 @@
 		"0x2902843FCD2B2D79": {
 			"name": "GET_EVENT_DATA",
 			"jhash": "0x4280F92F",
-			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork) \n p2 is called sEventDetails acording to tty script from RDR \n So this is likely the name for V too\n Field at offset 0 is called eEventType",
 			"params": [
 				{
 					"type": "int",
@@ -77773,7 +77773,7 @@
 				},
 				{
 					"type": "int*",
-					"name": "argStruct"
+					"name": "sEventDetails"
 				},
 				{
 					"type": "int",
@@ -77786,7 +77786,7 @@
 		"0x5AE99C571D5BBE5D": {
 			"name": "TRIGGER_SCRIPT_EVENT",
 			"jhash": "0x54763B35",
-			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork) \n a1 is probably called sEventDetails since acording to tty script from RDR a2 of GET_EVENT_DATA is called that\n So this is likely the name for this func too, \n Field at offset 0 is called eEventType",
 			"params": [
 				{
 					"type": "int",
@@ -77794,7 +77794,7 @@
 				},
 				{
 					"type": "int*",
-					"name": "args"
+					"name": "sEventDetails"
 				},
 				{
 					"type": "int",
@@ -77973,7 +77973,7 @@
 		"0xA40CC53DF8E50837": {
 			"name": "_TRIGGER_SCRIPT_EVENT_2",
 			"jhash": "",
-			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)",
+			"comment": "eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)\n a1 is probably called sEventDetails since acording to tty script from RDR a2 of GET_EVENT_DATA is called that\n So this is likely the name for this func too, \n Field at offset 0 is called eEventType",
 			"params": [
 				{
 					"type": "int",
@@ -77981,7 +77981,7 @@
 				},
 				{
 					"type": "int*",
-					"name": "args"
+					"name": "sEventDetails"
 				},
 				{
 					"type": "int",
