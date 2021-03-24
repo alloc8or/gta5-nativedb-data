@@ -56287,6 +56287,31 @@
 			"return_type": "int",
 			"build": "1734"
 		}
+		"0xDA7DE67F5FE5EE13": {
+			"name": "_0xDA7DE67F5FE5EE13",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "BOOL",
+					"name": "p3"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2245"
+		}
 	},
 	"OBJECT": {
 		"0x509D5878EB39E842": {
