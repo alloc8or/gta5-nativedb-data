@@ -56294,7 +56294,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "scriptHash"
 				},
 				{
 					"type": "int",
