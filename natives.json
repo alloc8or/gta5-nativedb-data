@@ -48652,6 +48652,31 @@
 			"return_type": "Any",
 			"build": "1604"
 		},
+		"0xDA7DE67F5FE5EE13": {
+			"name": "NETWORK_IS_SCRIPT_ACTIVE_BY_HASH",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "scriptHash"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "int",
+					"name": "p3"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2245"
+		},
 		"0x3658E8CD94FC121A": {
 			"name": "NETWORK_GET_NUM_SCRIPT_PARTICIPANTS",
 			"jhash": "0x8F7D9F46",
@@ -56286,31 +56311,6 @@
 			],
 			"return_type": "int",
 			"build": "1734"
-		}
-		"0xDA7DE67F5FE5EE13": {
-			"name": "NETWORK_IS_SCRIPT_ACTIVE_BY_HASH",
-			"jhash": "",
-			"comment": "",
-			"params": [
-				{
-					"type": "Hash",
-					"name": "scriptHash"
-				},
-				{
-					"type": "int",
-					"name": "p1"
-				},
-				{
-					"type": "BOOL",
-					"name": "p2"
-				},
-				{
-					"type": "int",
-					"name": "p3"
-				}
-			],
-			"return_type": "BOOL",
-			"build": "2245"
 		}
 	},
 	"OBJECT": {
