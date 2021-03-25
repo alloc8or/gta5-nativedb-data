@@ -48639,6 +48639,31 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0xDA7DE67F5FE5EE13": {
+			"name": "NETWORK_IS_SCRIPT_ACTIVE_BY_HASH",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "scriptHash"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "int",
+					"name": "p3"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2245"
+		},
 		"0x560B423D73015E77": {
 			"name": "_0x560B423D73015E77",
 			"jhash": "",
