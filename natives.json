@@ -56288,12 +56288,12 @@
 			"build": "1734"
 		}
 		"0xDA7DE67F5FE5EE13": {
-			"name": "_0xDA7DE67F5FE5EE13",
+			"name": "NETWORK_IS_SCRIPT_ACTIVE_BY_HASH",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
@@ -56305,7 +56305,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "BOOL",
+					"type": "int",
 					"name": "p3"
 				}
 			],
