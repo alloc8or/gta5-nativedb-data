@@ -55976,16 +55976,16 @@
 			"build": "323"
 		},
 		"0xDEB2B99A1AF1A2A6": {
-			"name": "_0xDEB2B99A1AF1A2A6",
+			"name": "NETWORK_START_USER_CONTENT_PERMISSIONS_CHECK",
 			"jhash": "",
-			"comment": "",
+			"comment": "Always returns -1. Seems to be XB1 specific.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "netHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x9465E683B12D3F6B": {
