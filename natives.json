@@ -2006,7 +2006,7 @@
 			"build": "323"
 		},
 		"0xA5342D390CDA41D6": {
-			"name": "_0xA5342D390CDA41D6",
+			"name": "_SET_PED_AUDIO_GENDER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -4267,7 +4267,7 @@
 			"build": "323"
 		},
 		"0x0653B735BFBDFE87": {
-			"name": "_SET_PED_LOUD_FOOSTEP_AUDIO",
+			"name": "_SET_PED_AUDIO_FOOTSTEP_LOUD",
 			"jhash": "",
 			"comment": "Enables/disables ped's \"loud\" footstep sound.",
 			"params": [
@@ -4284,7 +4284,7 @@
 			"build": "1493"
 		},
 		"0x29DA3CA8D8B2692D": {
-			"name": "_SET_PED_QUIET_FOOTSTEP_AUDIO",
+			"name": "_SET_PED_AUDIO_FOOTSTEP_QUIET",
 			"jhash": "",
 			"comment": "Enables/disables ped's \"quiet\" footstep sound.",
 			"params": [
@@ -7188,7 +7188,7 @@
 			"build": "323"
 		},
 		"0x8BBACBF51DA047A8": {
-			"name": "_SET_GAMEPLAY_CAM_PED_THIS_FRAME",
+			"name": "SET_GAMEPLAY_CAM_FOLLOW_PED_THIS_UPDATE",
 			"jhash": "0x7D3007A2",
 			"comment": "",
 			"params": [
@@ -7267,7 +7267,7 @@
 			"build": "323"
 		},
 		"0x49482F9FCD825AAA": {
-			"name": "_0x49482F9FCD825AAA",
+			"name": "DISABLE_CAM_COLLISION_FOR_OBJECT",
 			"jhash": "0xC4736ED3",
 			"comment": "",
 			"params": [
@@ -7443,7 +7443,7 @@
 			"build": "323"
 		},
 		"0xE9EA16D6E54CDCA4": {
-			"name": "_0xE9EA16D6E54CDCA4",
+			"name": "SET_IN_VEHICLE_CAM_STATE_THIS_UPDATE",
 			"jhash": "0x4B22C5CB",
 			"comment": "",
 			"params": [
@@ -7790,7 +7790,7 @@
 			"build": "323"
 		},
 		"0x0AF7B437918103B3": {
-			"name": "_SET_FIRST_PERSON_CAM_NEAR_CLIP",
+			"name": "SET_FIRST_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE",
 			"jhash": "0x0E21069D",
 			"comment": "",
 			"params": [
@@ -7803,7 +7803,7 @@
 			"build": "323"
 		},
 		"0x42156508606DE65E": {
-			"name": "_SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP",
+			"name": "SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE",
 			"jhash": "0x71E9C63E",
 			"comment": "",
 			"params": [
@@ -9617,7 +9617,7 @@
 			"build": "323"
 		},
 		"0x41FAA8FB2ECE8720": {
-			"name": "_0x41FAA8FB2ECE8720",
+			"name": "SET_CUTSCENE_CAN_BE_SKIPPED",
 			"jhash": "0x28D54A7F",
 			"comment": "",
 			"params": [
@@ -14546,7 +14546,7 @@
 			"build": "323"
 		},
 		"0x2C2E3DC128F44309": {
-			"name": "_0x2C2E3DC128F44309",
+			"name": "_SET_ENTITY_DECALS_DISABLED",
 			"jhash": "",
 			"comment": "SET_ENTITY_*",
 			"params": [
@@ -18054,7 +18054,7 @@
 			"build": "323"
 		},
 		"0xB9EA40907C680580": {
-			"name": "_SET_CHECKPOINT_ICON_RGBA",
+			"name": "SET_CHECKPOINT_RGBA2",
 			"jhash": "0xA5456DBB",
 			"comment": "Sets the checkpoint icon color.",
 			"params": [
@@ -22785,9 +22785,9 @@
 			"build": "323"
 		},
 		"0x15E33297C3E8DC60": {
-			"name": "_0x15E33297C3E8DC60",
+			"name": "REMOVE_TCMODIFIER_OVERRIDE",
 			"jhash": "0x805BAB08",
-			"comment": "CLEAR_A*",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -46032,7 +46032,7 @@
 			"build": "463"
 		},
 		"0xE532D6811B3A4D2A": {
-			"name": "_0xE532D6811B3A4D2A",
+			"name": "NETWORK_FIND_GAMERS_IN_CREW",
 			"jhash": "0x7771AB83",
 			"comment": "",
 			"params": [
@@ -47520,7 +47520,7 @@
 			"build": "323"
 		},
 		"0xC3C7A6AFDB244624": {
-			"name": "_NETWORK_SEND_PRESENCE_INVITE",
+			"name": "NETWORK_SEND_INVITE_VIA_PRESENCE",
 			"jhash": "0x8B99B72B",
 			"comment": "",
 			"params": [
@@ -48455,9 +48455,9 @@
 			"build": "323"
 		},
 		"0x5D10B3795F3FC886": {
-			"name": "_0x5D10B3795F3FC886",
+			"name": "NETWORK_HAS_RECEIVED_HOST_BROADCAST_DATA",
 			"jhash": "0x0B739F53",
-			"comment": "NETWORK_HAS_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -56021,9 +56021,9 @@
 			"build": "323"
 		},
 		"0xC505036A35AFD01B": {
-			"name": "_0xC505036A35AFD01B",
+			"name": "NETWORK_DISABLE_LEAVE_REMOTE_PED_BEHIND",
 			"jhash": "0xA100CC97",
-			"comment": "NETWORK_D*\n\nProbably NETWORK_DISABLE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -57545,7 +57545,7 @@
 			"build": "323"
 		},
 		"0x4D89D607CB3DD1D2": {
-			"name": "_SET_OBJECT_CAN_CLIMB_ON",
+			"name": "SET_OBJECT_ALLOW_LOW_LOD_BUOYANCY",
 			"jhash": "0x19B17769",
 			"comment": "Overrides the climbing/blocking flags of the object, used in the native scripts mostly for \"prop_dock_bouy_*\"",
 			"params": [
@@ -57724,7 +57724,7 @@
 			"build": "323"
 		},
 		"0xE7E4C198B0185900": {
-			"name": "_0xE7E4C198B0185900",
+			"name": "BREAK_OBJECT_FRAGMENT_CHILD",
 			"jhash": "0x1E82C2AE",
 			"comment": "",
 			"params": [
@@ -62824,9 +62824,9 @@
 			"build": "323"
 		},
 		"0x4759CC730F947C81": {
-			"name": "_0x4759CC730F947C81",
+			"name": "INSTANTLY_FILL_PED_POPULATION",
 			"jhash": "0x8C555ADD",
-			"comment": "Something regarding ped population.",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -62920,7 +62920,7 @@
 		"0xFF4803BC019852D9": {
 			"name": "_0xFF4803BC019852D9",
 			"jhash": "0xD41C9AED",
-			"comment": "",
+			"comment": "Related to Peds dropping pickup_health_snack; p0 is a value between [0.0, 1.0] that corresponds to drop rate",
 			"params": [
 				{
 					"type": "float",
@@ -62935,7 +62935,7 @@
 			"build": "323"
 		},
 		"0x6B0E6172C9A4D902": {
-			"name": "_0x6B0E6172C9A4D902",
+			"name": "SET_AMBIENT_PEDS_DROP_MONEY",
 			"jhash": "0x30B98369",
 			"comment": "",
 			"params": [
@@ -72420,9 +72420,9 @@
 			"build": "323"
 		},
 		"0x3795688A307E1EB6": {
-			"name": "_0x3795688A307E1EB6",
+			"name": "_IS_PED_SWAPPING_WEAPON",
 			"jhash": "",
-			"comment": "IS_PED_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -74594,17 +74594,17 @@
 			"build": "323"
 		},
 		"0xA0D3E4F7AAFB7E78": {
-			"name": "_0xA0D3E4F7AAFB7E78",
+			"name": "_SET_PLAYER_UNDERWATER_TIME_REMAINING",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "time"
 				}
 			],
 			"return_type": "Any",
@@ -95663,13 +95663,13 @@
 			"build": "2189"
 		},
 		"0x7C06330BFDDA182E": {
-			"name": "_0x7C06330BFDDA182E",
+			"name": "_STOP_BRING_VEHICLE_TO_HALT",
 			"jhash": "",
-			"comment": "",
+			"comment": "Stops CTaskBringVehicleToHalt",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -100240,17 +100240,17 @@
 			"build": "944"
 		},
 		"0x1093408B4B9D1146": {
-			"name": "_0x1093408B4B9D1146",
+			"name": "SET_VEHICLE_TURRET_SPEED_THIS_FRAME",
 			"jhash": "0xF30C566F",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -100262,8 +100262,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -100515,15 +100515,15 @@
 			"build": "757"
 		},
 		"0x48ADC8A773564670": {
-			"name": "_0x48ADC8A773564670",
+			"name": "INSTANTLY_FILL_VEHICLE_POPULATION",
 			"jhash": "0x37BC6ACB",
-			"comment": "INIT_VISIBLE_LATCH_POPULATION?",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x91D6DD290888CBAB": {
-			"name": "_0x91D6DD290888CBAB",
+			"name": "_HAS_FILLED_VEHICLE_POPULATION",
 			"jhash": "0x71D898EF",
 			"comment": "HAS_*",
 			"params": [],
@@ -103997,7 +103997,7 @@
 			"build": "573"
 		},
 		"0xB088E9A47AE6EDD5": {
-			"name": "_0xB088E9A47AE6EDD5",
+			"name": "_SET_DISABLE_SUPERDUMMY_MODE",
 			"jhash": "",
 			"comment": "",
 			"params": [
