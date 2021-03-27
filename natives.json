@@ -7254,7 +7254,7 @@
 			"build": "323"
 		},
 		"0x2AED6301F67007D5": {
-			"name": "_0x2AED6301F67007D5",
+			"name": "_DISABLE_CAM_COLLISION_FOR_ENTITY",
 			"jhash": "0x2701A9AD",
 			"comment": "",
 			"params": [
