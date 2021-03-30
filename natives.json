@@ -95479,7 +95479,7 @@
 		"0x22AC59A870E6A669": {
 			"name": "IS_VEHICLE_SEAT_FREE",
 			"jhash": "0xDAF42B02",
-			"comment": "Has an additional BOOL parameter since version [???].\n\nCheck if a vehicle seat is free.\n-1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.",
+			"comment": "Check if a vehicle seat is free.\n\nseatIndex  = -1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.\nisTaskRunning = on true the function returns already false while a task on the target seat is running (TASK_ENTER_VEHICLE/TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT) - on false only when a ped is finally sitting in the seat.", 
 			"params": [
 				{
 					"type": "Vehicle",
@@ -95491,7 +95491,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "isTaskRunning"
 				}
 			],
 			"return_type": "BOOL",
@@ -101003,9 +101003,9 @@
 			"build": "2189"
 		},
 		"0x639431E895B9AA57": {
-			"name": "_0x639431E895B9AA57",
+			"name": "_IS_VEHICLE_SEAT_ACCESSIBLE",
 			"jhash": "0xAB0E79EB",
-			"comment": "",
+			"comment": "Check if a vehicle seat is accessible. If you park your vehicle near a wall and the ped cannot enter/exit this side, the return value toggles from true (not blocked) to false (blocked).\n\nseatIndex  = -1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.\nside = only relevant for bikes/motorcycles to check if the left (false)/right (true) side is blocked.\nonEnter = check if you can enter (true) or exit (false) a vehicle.",
 			"params": [
 				{
 					"type": "Ped",
@@ -101016,16 +101016,16 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "int",
+					"name": "seatIndex"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "side"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "onEnter"
 				}
 			],
 			"return_type": "BOOL",
