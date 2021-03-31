@@ -58990,7 +58990,7 @@
 			"build": "323"
 		},
 		"0x3430676B11CDF21D": {
-			"name": "_HIGHLIGHT_PLACEMENT_COORDS",
+			"name": "RENDER_FAKE_PICKUP_GLOW",
 			"jhash": "0x63B02FAD",
 			"comment": "draws circular marker at pos\n-1 = none\n0 = red\n1 = green\n2 = blue\n3 = green larger\n4 = nothing\n5 = green small",
 			"params": [
