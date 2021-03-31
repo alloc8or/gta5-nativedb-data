@@ -39504,27 +39504,6 @@
 			"return_type": "void",
 			"build": "323"
 		},
-		"0xD20D79671A598594": {
-			"name": "_NETWORK_EARN_FROM_JOB_BONUS",
-			"jhash": "",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
-				}
-			],
-			"return_type": "void",
-			"build": "1290"
-		},
 		"0x6816FB4416760775": {
 			"name": "NETWORK_EARN_FROM_JOB_BONUS",
 			"jhash": "0xBEE23713",
@@ -39545,6 +39524,27 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0xFA009A62990671D4": {
+			"name": "_NETWORK_EARN_FROM_CRIMINAL_MASTERMIND_BONUS",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "1290"
 		},
 		"0x9D4FDBB035229669": {
 			"name": "_NETWORK_EARN_JOB_BONUS_HEIST_AWARD",
