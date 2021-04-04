@@ -52403,8 +52403,8 @@
 			"build": "944"
 		},
 		"0x5FFE9B4144F9712F": {
-			"name": "USE_PLAYER_COLOUR_INSTEAD_OF_TEAM_COLOUR",
-			"jhash": "0x4DD46DAE",
+			"name": "_SET_LOCAL_PLAYER_AS_GHOST",
+			"jhash": "",
 			"comment": "",
 			"params": [
 				{
@@ -52527,13 +52527,13 @@
 			"build": "944"
 		},
 		"0x77758139EC9B66C7": {
-			"name": "_0x77758139EC9B66C7",
-			"jhash": "",
+			"name": "USE_PLAYER_COLOUR_INSTEAD_OF_TEAM_COLOUR",
+			"jhash": "0x4DD46DAE",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
