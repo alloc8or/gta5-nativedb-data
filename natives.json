@@ -58294,7 +58294,7 @@
 			"build": "323"
 		},
 		"0x78857FC65CADB909": {
-			"name": "_0x78857FC65CADB909",
+			"name": "SET_LOCAL_PLAYER_CAN_COLLECT_PORTABLE_PICKUPS",
 			"jhash": "0xA3CDF152",
 			"comment": "",
 			"params": [
