@@ -101913,7 +101913,7 @@
 			"build": "323"
 		},
 		"0x291E373D483E7EE7": {
-			"name": "_IS_ANY_PASSENGER_RAPPELING_FROM_VEHICLE",
+			"name": "IS_ANY_PED_RAPPELLING_FROM_HELI",
 			"jhash": "0xD656E7E5",
 			"comment": "",
 			"params": [
