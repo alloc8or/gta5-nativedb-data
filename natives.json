@@ -52446,16 +52446,16 @@
 			"build": "877"
 		},
 		"0xA7C511FA1C5BDA38": {
-			"name": "_0xA7C511FA1C5BDA38",
+			"name": "_SET_RELATIONSHIP_TO_PLAYER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Enables ghosting between specific players",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -52463,37 +52463,37 @@
 			"build": "463"
 		},
 		"0x658500AE6D723A7E": {
-			"name": "_0x658500AE6D723A7E",
+			"name": "_SET_GHOSTED_ENTITY_ALPHA",
 			"jhash": "",
-			"comment": "",
+			"comment": "Must be a value between 1 and 254",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "alpha"
 				}
 			],
 			"return_type": "void",
 			"build": "791"
 		},
 		"0x17330EBF2F2124A8": {
-			"name": "_0x17330EBF2F2124A8",
+			"name": "_RESET_GHOSTED_ENTITY_ALPHA",
 			"jhash": "",
-			"comment": "",
+			"comment": "Resets the entity ghost alpha to the default value (128)",
 			"params": [],
 			"return_type": "void",
 			"build": "791"
 		},
 		"0x4BA166079D658ED4": {
-			"name": "_0x4BA166079D658ED4",
+			"name": "_NETWORK_SET_ENTITY_GHOSTED_WITH_OWNER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -64682,16 +64682,16 @@
 			"build": "323"
 		},
 		"0x5615E0C5EB2BC6E2": {
-			"name": "_0x5615E0C5EB2BC6E2",
+			"name": "_SET_RELATIONSHIP_GROUP_DONT_AFFECT_WANTED_LEVEL",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "group"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
