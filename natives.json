@@ -17298,9 +17298,9 @@
 			"build": "323"
 		},
 		"0x473151EBC762C6DA": {
-			"name": "_GET_CURRENT_NUMBER_OF_PHOTOS",
+			"name": "GET_CURRENT_NUMBER_OF_CLOUD_PHOTOS",
 			"jhash": "0x21DBF0C9",
-			"comment": "GET_CURRENT_*",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -100871,9 +100871,9 @@
 			"build": "323"
 		},
 		"0x2CE544C68FB812A0": {
-			"name": "_ADD_SPEED_ZONE_FOR_COORD",
+			"name": "ADD_ROAD_NODE_SPEED_ZONE",
 			"jhash": "0xD6685803",
-			"comment": "ADD_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -100904,9 +100904,9 @@
 			"build": "323"
 		},
 		"0x1033371FC8E842A7": {
-			"name": "_REMOVE_SPEED_ZONE",
+			"name": "REMOVE_ROAD_NODE_SPEED_ZONE",
 			"jhash": "0x0C0332A6",
-			"comment": "REMOVE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
