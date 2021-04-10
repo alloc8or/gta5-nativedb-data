@@ -106045,7 +106045,7 @@
 		"0x74C68EF97645E79D": {
 			"name": "_SET_TYRE_HEALTH",
 			"jhash": "",
-			"comment": "_GET_TYRE_WEAR_MULTIPLIER must be active, otherwise values set to <1000.0f will default to 350.0f\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
+			"comment": "_SET_TYRE_WEAR_MULTIPLIER must be active, otherwise values set to <1000.0f will default to 350.0f\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
