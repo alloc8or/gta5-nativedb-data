@@ -106025,27 +106025,6 @@
 			"return_type": "void",
 			"build": "1604"
 		},
-		"0x5163D070808A608B": {
-			"name": "_SET_TYRE_WEAR",
-			"jhash": "",
-			"comment": "Needs to be run for tire wear to work. downforceMultiplier affects the downforce and how fast the tires will wear out, higher values essentially make the vehicle slower on straights and its tires will wear down quicker when cornering. Value must be >0f.\nDefault value in Rockstar's Open Wheel Race JSON's (\"owrtws\", \"owrtwm\", \"owrtwh\") is 1.0\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
-			"params": [
-				{
-					"type": "Vehicle",
-					"name": "vehicle"
-				},
-				{
-					"type": "int",
-					"name": "wheelIndex"
-				},
-				{
-					"type": "float",
-					"name": "downforceMultiplier"
-				}
-			],
-			"return_type": "void",
-			"build": "1868"
-		},
 		"0x55EAB010FAEE9380": {
 			"name": "_GET_TYRE_HEALTH",
 			"jhash": "",
@@ -106066,7 +106045,7 @@
 		"0x74C68EF97645E79D": {
 			"name": "_SET_TYRE_HEALTH",
 			"jhash": "",
-			"comment": "_SET_TYRE_WEAR must be active, otherwise values set to <1000.0f will default to 350.0f\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
+			"comment": "_GET_TYRE_WEAR_MULTIPLIER must be active, otherwise values set to <1000.0f will default to 350.0f\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106085,9 +106064,9 @@
 			"build": "1868"
 		},
 		"0x6E387895952F4F71": {
-			"name": "_GET_TYRE_DOWNFORCE_MULTIPLIER",
+			"name": "_GET_TYRE_WEAR_MULTIPLIER",
 			"jhash": "",
-			"comment": "Returns the downforceMultiplier value from _SET_TYRE_WEAR\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
+			"comment": "Returns the multiplier value from _SET_TYRE_WEAR_MULTIPLIER\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106104,7 +106083,7 @@
 		"0x01894E2EDE923CA2": {
 			"name": "_SET_TYRE_WEAR_MULTIPLIER",
 			"jhash": "",
-			"comment": "Controls how fast the tires wear out.\n\nDefault values from Rockstar's Open Wheel Race JSON's:\n\"owrtss\" (Soft): 2.2\n\"owrtsm\" (Medium): 1.7\n\"owrtsh\" (Hard): 1.2\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
+			"comment": "Needs to be run for tire wear to work. Multiplier affects the downforce and how fast the tires will wear out, higher values essentially make the vehicle slower on straights and its tires will wear down quicker when cornering. Value must be >0f.\nDefault value in Rockstar's Open Wheel Race JSON's (\"owrtws\", \"owrtwm\", \"owrtwh\") is 1.0\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106123,9 +106102,9 @@
 			"build": "1868"
 		},
 		"0x392183BB9EA57697": {
-			"name": "_SET_TYRE_WEAR_MULTIPLIER_2",
+			"name": "_SET_TYRE_SOFTNESS_MULTIPLIER",
 			"jhash": "",
-			"comment": "Unused, appears to be identical to _SET_TYRE_WEAR_MULTIPLIER.\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
+			"comment": "Controls how fast the tires wear out.\n\nDefault values from Rockstar's Open Wheel Race JSON's:\n\"owrtss\" (Soft): 2.2\n\"owrtsm\" (Medium): 1.7\n\"owrtsh\" (Hard): 1.2\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
