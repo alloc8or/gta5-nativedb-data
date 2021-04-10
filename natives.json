@@ -3928,13 +3928,13 @@
 			"build": "323"
 		},
 		"0xA5F377B175A699C5": {
-			"name": "_0xA5F377B175A699C5",
+			"name": "SET_AUDIO_SCRIPT_CLEANUP_TIME",
 			"jhash": "0xE812925D",
-			"comment": "SET_AUDIO_S*\nSET_AUDIO_SCRIPT_CLEANUP_TIME ?",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -93981,9 +93981,9 @@
 			"build": "323"
 		},
 		"0xE6B0E8CFC3633BF0": {
-			"name": "_GET_VEHICLE_WEAPON_LOCKON_STATE",
+			"name": "GET_VEHICLE_HOMING_LOCKON_STATE",
 			"jhash": "0xFBDE9FD8",
-			"comment": "Returns a value depending on the lock-on state of vehicle weapons.\n0: not locked on\n1: locking on\n2: locked on\n\nGET_VEHICLE_*",
+			"comment": "Returns a value depending on the lock-on state of vehicle weapons.\n0: not locked on\n1: locking on\n2: locked on",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -95701,7 +95701,7 @@
 			"build": "1103"
 		},
 		"0xC69BB1D832A710EF": {
-			"name": "_IS_VEHICLE_HALTED",
+			"name": "_IS_VEHICLE_BEING_HALTED",
 			"jhash": "",
 			"comment": "Returns true if vehicle is halted by BRING_VEHICLE_TO_HALT\n_IS_VEHICLE_*",
 			"params": [
