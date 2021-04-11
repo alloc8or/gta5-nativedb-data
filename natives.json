@@ -3928,13 +3928,13 @@
 			"build": "323"
 		},
 		"0xA5F377B175A699C5": {
-			"name": "_0xA5F377B175A699C5",
+			"name": "SET_AUDIO_SCRIPT_CLEANUP_TIME",
 			"jhash": "0xE812925D",
-			"comment": "SET_AUDIO_S*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -93981,9 +93981,9 @@
 			"build": "323"
 		},
 		"0xE6B0E8CFC3633BF0": {
-			"name": "_0xE6B0E8CFC3633BF0",
+			"name": "GET_VEHICLE_HOMING_LOCKON_STATE",
 			"jhash": "0xFBDE9FD8",
-			"comment": "GET_VEHICLE_*",
+			"comment": "Returns a value depending on the lock-on state of vehicle weapons.\n0: not locked on\n1: locking on\n2: locked on",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -95642,8 +95642,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "Any",
@@ -95701,9 +95701,9 @@
 			"build": "1103"
 		},
 		"0xC69BB1D832A710EF": {
-			"name": "_0xC69BB1D832A710EF",
+			"name": "_IS_VEHICLE_BEING_HALTED",
 			"jhash": "",
-			"comment": "Checks for value in vehicle\n_IS_VEHICLE_*",
+			"comment": "Returns true if vehicle is halted by BRING_VEHICLE_TO_HALT\n_IS_VEHICLE_*",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -96027,19 +96027,19 @@
 		"0x3B458DDB57038F08": {
 			"name": "_0x3B458DDB57038F08",
 			"jhash": "",
-			"comment": "",
+			"comment": "Usually used alongside other vehicle door natives.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "doorIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -105652,7 +105652,7 @@
 		"0xB251E0B33E58B424": {
 			"name": "_SET_DEPLOY_HELI_STUB_WINGS",
 			"jhash": "",
-			"comment": "Only used with the \"akula\" in the decompiled native scripts.",
+			"comment": "Only used with the \"akula\" and \"annihilator2\" in the decompiled native scripts.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105660,7 +105660,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "deploy"
 				},
 				{
 					"type": "BOOL",
@@ -105673,7 +105673,7 @@
 		"0xAEF12960FA943792": {
 			"name": "_ARE_HELI_STUB_WINGS_DEPLOYED",
 			"jhash": "",
-			"comment": "Only used with the \"akula\" in the decompiled native scripts.",
+			"comment": "Only used with the \"akula\" and \"annihilator2\" in the decompiled native scripts.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106028,7 +106028,7 @@
 		"0x55EAB010FAEE9380": {
 			"name": "_GET_TYRE_HEALTH",
 			"jhash": "",
-			"comment": "",
+			"comment": "Usable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106045,7 +106045,7 @@
 		"0x74C68EF97645E79D": {
 			"name": "_SET_TYRE_HEALTH",
 			"jhash": "",
-			"comment": "",
+			"comment": "_SET_TYRE_WEAR_MULTIPLIER must be active, otherwise values set to <1000.0f will default to 350.0f\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106066,7 +106066,7 @@
 		"0x6E387895952F4F71": {
 			"name": "_GET_TYRE_WEAR_MULTIPLIER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns the multiplier value from _SET_TYRE_WEAR_MULTIPLIER\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106083,7 +106083,7 @@
 		"0x01894E2EDE923CA2": {
 			"name": "_SET_TYRE_WEAR_MULTIPLIER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Needs to be run for tire wear to work. Multiplier affects the downforce and how fast the tires will wear out, higher values essentially make the vehicle slower on straights and its tires will wear down quicker when cornering. Value must be >0f.\nDefault value in Rockstar's Open Wheel Race JSON's (\"owrtws\", \"owrtwm\", \"owrtwh\") is 1.0\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106102,9 +106102,9 @@
 			"build": "1868"
 		},
 		"0x392183BB9EA57697": {
-			"name": "_0x392183BB9EA57697",
+			"name": "_SET_TYRE_SOFTNESS_MULTIPLIER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Controls how fast the tires wear out.\n\nDefault values from Rockstar's Open Wheel Race JSON's:\n\"owrtss\" (Soft): 2.2\n\"owrtsm\" (Medium): 1.7\n\"owrtsh\" (Hard): 1.2\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106116,16 +106116,16 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
 			"build": "2060"
 		},
 		"0xC970D0E0FC31D768": {
-			"name": "_0xC970D0E0FC31D768",
+			"name": "_SET_TYRE_TRACTION_LOSS_MULTIPLIER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Controls how much traction the wheel loses.\n\nDefault values from Rockstar's Open Wheel Race JSON's:\n\"owrtds\" (Soft): 0.05\n\"owrtdm\" (Medium): 0.45\n\"owrtdh\" (Hard): 0.8\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106137,7 +106137,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
