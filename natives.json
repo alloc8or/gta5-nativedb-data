@@ -30204,26 +30204,26 @@
 			"build": "323"
 		},
 		"0xE3B05614DCE1D014": {
-			"name": "_0xE3B05614DCE1D014",
+			"name": "GET_GLOBAL_ACTIONSCRIPT_FLAG",
 			"jhash": "0xD217EE7E",
-			"comment": "GET_G*",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				}
-			],
-			"return_type": "Any",
-			"build": "323"
-		},
-		"0xB99C4E4D9499DF29": {
-			"name": "_0xB99C4E4D9499DF29",
-			"jhash": "",
-			"comment": "RESET_*",
+			"comment": "Returns the ActionScript flagValue.\nActionScript flags are global flags that scaleforms use\nFlags found during testing\n0: Returns 1 if the web_browser keyboard is open, otherwise 0\n1: Returns 1 if the player has clicked back twice on the opening page, otherwise 0 (web_browser)\n2: Returns how many links the player has clicked in the web_browser scaleform, returns 0 when the browser gets closed\n9: Returns the current selection on the mobile phone scaleform\n\nThere are 20 flags in total.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "flagIndex"
+				}
+			],
+			"return_type": "int",
+			"build": "323"
+		},
+		"0xB99C4E4D9499DF29": {
+			"name": "RESET_GLOBAL_ACTIONSCRIPT_FLAG",
+			"jhash": "0x4C4C10CF",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "flagIndex"
 				}
 			],
 			"return_type": "void",
