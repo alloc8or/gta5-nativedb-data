@@ -13491,7 +13491,7 @@
 			"build": "323"
 		},
 		"0x621873ECE1178967": {
-			"name": "_SET_ENTITY_COORDS_2",
+			"name": "SET_ENTITY_COORDS_WITHOUT_PLANTS_RESET",
 			"jhash": "0x749B282E",
 			"comment": "",
 			"params": [
@@ -13513,15 +13513,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "xAxis"
+					"name": "alive"
 				},
 				{
 					"type": "BOOL",
-					"name": "yAxis"
+					"name": "deadFlag"
 				},
 				{
 					"type": "BOOL",
-					"name": "zAxis"
+					"name": "ragdollFlag"
 				},
 				{
 					"type": "BOOL",
