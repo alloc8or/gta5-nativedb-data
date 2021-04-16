@@ -71481,7 +71481,7 @@
 			"build": "323"
 		},
 		"0xF60165E1D2C5370B": {
-			"name": "_GET_PED_MOVEMENT_SPEED",
+			"name": "_GET_PED_CURRENT_MOVEMENT_SPEED",
 			"jhash": "",
 			"comment": "",
 			"params": [
