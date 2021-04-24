@@ -48144,13 +48144,13 @@
 			"build": "323"
 		},
 		"0xF1B84178F8674195": {
-			"name": "_0xF1B84178F8674195",
+			"name": "NETWORK_SEED_RANDOM_NUMBER_GENERATOR",
 			"jhash": "0x41702C8A",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "seed"
 				}
 			],
 			"return_type": "void",
