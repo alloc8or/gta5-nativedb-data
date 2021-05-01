@@ -56113,9 +56113,9 @@
 			"build": "323"
 		},
 		"0x16D3D49902F697BB": {
-			"name": "_0x16D3D49902F697BB",
+			"name": "_NETWORK_IS_CONNECTION_ENDPOINT_RELAY_SERVER",
 			"jhash": "",
-			"comment": "NETWORK_IS_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -56127,7 +56127,7 @@
 			"unused": true
 		},
 		"0xD414BE129BB81B32": {
-			"name": "_0xD414BE129BB81B32",
+			"name": "_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -56141,9 +56141,9 @@
 			"unused": true
 		},
 		"0x0E3A041ED6AC2B45": {
-			"name": "_0x0E3A041ED6AC2B45",
+			"name": "_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER_2",
 			"jhash": "",
-			"comment": "alias 0xD414BE129BB81B32",
+			"comment": "Same as _NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER (0xD414BE129BB81B32)",
 			"params": [
 				{
 					"type": "Player",
