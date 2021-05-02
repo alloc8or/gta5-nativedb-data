@@ -89335,7 +89335,7 @@
 		"0xDAD029E187A2BEB4": {
 			"name": "TASK_HELI_MISSION",
 			"jhash": "0x0C143E97",
-			"comment": "Needs more research.\n\nDefault value of p13 is -1.0 or 0xBF800000.\nDefault value of p14 is 0.\n\nModified examples from \"fm_mission_controller.ysc\", line ~203551:\nTASK::TASK_HELI_MISSION(ped, vehicle, 0, 0, posX, posY, posZ, 4, 1.0, -1.0, -1.0, 10, 10, 5.0, 0);\nTASK::TASK_HELI_MISSION(ped, vehicle, 0, 0, posX, posY, posZ, 4, 1.0, -1.0, -1.0, 0, ?, 5.0, 4096);\n\nint mode seams to set mission type 4 = coords target, 23 = ped target.\nint 14 set to 32 = ped will land at destination.\n\nMy findings:\nmode 4 or 7 forces heli to snap to the heading set\n8 makes the heli flee from the ped.\n9 circles around ped with angle set\n10, 11 normal + imitate ped heading\n20 makes the heli land when he's near the ped. It won't resume chasing.\n21 emulates an helicopter crash\n23 makes the heli circle erratically around ped\n\nI change p2 to 'vehicleToFollow' as it seems to work like the task natives to set targets. In the heli_taxi script where as the merryweather heli takes you to your waypoint it has no need to follow a vehicle or a ped, so of course both have 0 set.",
+			"comment": "Must have targetVehicle, targetPed, OR destination X/Y/Z set\nWill follow targeted vehicle/ped, or fly to destination\nSet whichever is not being used to 0\n\n\nMission mode type:\n - 4, 7: Forces heli to snap to the heading if set, flies to destination or tracks specified entity (mode 4 only works for coordinates, 7 works for coordinates OR ped/vehicle)\n - 6: Attacks the target ped/vehicle with mounted weapons. If radius is set, will maintain that distance from target.\n - 8: Makes the heli flee from the ped/vehicle/coordinate\n - 9: Circles around target ped/vehicle, snaps to angle if set. Behavior flag (last parameter) of 2048 switches from counter-clockwise to clockwise circling. Does not work with coordinate destination.\n - 10, 11: Follows ped/vehicle target and imitates target heading. Only works with ped/vehicle target, not coord target\n - 19: Heli lands at specified coordinate, ignores heading (lands facing whatever direction it is facing when the task is started)\n - 20: Makes the heli land when near target ped. It won't resume chasing.\n - 21: Emulates a helicopter crash\n - 23: makes the heli circle erratically around ped\n\n\nHeli will fly at maxSpeed (up to actual maximum speed defined by the model's handling config)\nYou can use SET_DRIVE_TASK_CRUISE_SPEED to modulate the speed based on distance to the target without having to re-invoke the task native. Setting to 8.0 when close to the destination results in a much smoother approach.\n\nIf minHeight and maxHeight are set, heli will fly between those specified elevations, relative to ground level and any obstructions/buildings below. You can specify -1 for either if you only want to specify one. Usually it is easiest to leave maxHeight at -1, and specify a reasonable minHeight to ensure clearance over any obstacles. Note this MUST be passed as an INT, not a FLOAT. \n\nRadius affects how closely the heli will follow tracked ped/vehicle, and when circling (mission type 9) sets the radius (in meters) that it will circle the target from\n\nHeading is -1.0 for default behavior, which will point the nose of the helicopter towards the destination. Set a heading and the heli will lock to that direction when near its destination/target, but may still turn towards the destination when flying at higher speed from a further distance.\n\nBehavior Flags is a bitwise value that modifies the AI behavior. Not clear what all flags do, but here are some guesses/notes:\n   1: Forces heading to face E\n   2: Unknown\n   4: Tight circles around coordinate destination\n   8: Unknown\n  16: Circles around coordinate destination facing towards destination\n  32: Flys to normally, then lands at coordinate destination and stays on the ground (using mission type 4)\n  64: Ignores obstacles when flying, will follow at specified minHeight above ground level but will not avoid buildings, vehicles, etc.\n 128: Unknown\n 256: Unknown\n 512: Unknown\n1024: Unknown \n2048: Reverses direction of circling (mission type 9) to clockwise\n4096: Hugs closer to the ground, maintains minHeight from ground generally, but barely clears buildings and dips down more between buildings instead of taking a more efficient/safe route\n8192: Unknown\n\nUnk3 is a float value, you may see -1082130432 for this value in decompiled native scripts, this is the equivalent to -1.0f. Seems to affect acceleration/aggressiveness, but not sure exactly how it works. Higher value seems to result in lower acceleration/less aggressive flying. Almost always -1.0 in native scripts, occasionally 20.0 or 50.0. Setting to 400.0 seems to work well for making the pilot not overshoot the destination when using coordinate destination.\n\nNotes updated by PNWParksFan, May 2021\n",
 			"params": [
 				{
 					"type": "Ped",
@@ -89375,7 +89375,7 @@
 				},
 				{
 					"type": "float",
-					"name": "landingRadius"
+					"name": "radius"
 				},
 				{
 					"type": "float",
@@ -89383,19 +89383,19 @@
 				},
 				{
 					"type": "int",
-					"name": "unk1"
+					"name": "maxHeight"
 				},
 				{
 					"type": "int",
-					"name": "unk2"
+					"name": "minHeight"
 				},
 				{
-					"type": "Hash",
+					"type": "float",
 					"name": "unk3"
 				},
 				{
 					"type": "int",
-					"name": "landingFlags"
+					"name": "behaviorFlags"
 				}
 			],
 			"return_type": "void",
