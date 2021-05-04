@@ -65742,7 +65742,7 @@
 		"0xAF8A94EDE7712BEF": {
 			"name": "SET_PED_MOVEMENT_CLIPSET",
 			"jhash": "0xA817CDEB",
-			"comment": "p2 is usually 1.0f\n\nEDIT 12/24/16: \np2 does absolutely nothing no matter what the value is. \n\nList of movement clipsets:\nThanks to elsewhat for list.\n\n \"ANIM_GROUP_MOVE_BALLISTIC\"\n \"ANIM_GROUP_MOVE_LEMAR_ALLEY\"\n \"clipset@move@trash_fast_turn\"\n \"FEMALE_FAST_RUNNER\"\n \"missfbi4prepp1_garbageman\"\n \"move_characters@franklin@fire\"\n \"move_characters@Jimmy@slow@\"\n \"move_characters@michael@fire\"\n \"move_f@flee@a\"\n \"move_f@scared\"\n \"move_f@sexy@a\"\n \"move_heist_lester\"\n \"move_injured_generic\"\n \"move_lester_CaneUp\"\n \"move_m@bag\"\n \"MOVE_M@BAIL_BOND_NOT_TAZERED\"\n \"MOVE_M@BAIL_BOND_TAZERED\"\n \"move_m@brave\"\n \"move_m@casual@d\"\n \"move_m@drunk@moderatedrunk\"\n \"MOVE_M@DRUNK@MODERATEDRUNK\"\n \"MOVE_M@DRUNK@MODERATEDRUNK_HEAD_UP\"\n \"MOVE_M@DRUNK@SLIGHTLYDRUNK\"\n \"MOVE_M@DRUNK@VERYDRUNK\"\n \"move_m@fire\"\n \"move_m@gangster@var_e\"\n \"move_m@gangster@var_f\"\n \"move_m@gangster@var_i\"\n \"move_m@JOG@\"\n \"MOVE_M@PRISON_GAURD\"\n \"MOVE_P_M_ONE\"\n \"MOVE_P_M_ONE_BRIEFCASE\"\n \"move_p_m_zero_janitor\"\n \"move_p_m_zero_slow\"\n \"move_ped_bucket\"\n \"move_ped_crouched\"\n \"move_ped_mop\"\n \"MOVE_M@FEMME@\"\n \"MOVE_F@FEMME@\"\n \"MOVE_M@GANGSTER@NG\"\n \"MOVE_F@GANGSTER@NG\"\n \"MOVE_M@POSH@\"\n \"MOVE_F@POSH@\"\n \"MOVE_M@TOUGH_GUY@\"\n \"MOVE_F@TOUGH_GUY@\"\n\n~ NotCrunchyTaco\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
+			"comment": "transitionSpeed is the time in seconds it takes to transition from one movement clipset to another.\transitionSpeed is usually 1.0f\n\nList of movement clipsets:\nThanks to elsewhat for list.\n\n \"ANIM_GROUP_MOVE_BALLISTIC\"\n \"ANIM_GROUP_MOVE_LEMAR_ALLEY\"\n \"clipset@move@trash_fast_turn\"\n \"FEMALE_FAST_RUNNER\"\n \"missfbi4prepp1_garbageman\"\n \"move_characters@franklin@fire\"\n \"move_characters@Jimmy@slow@\"\n \"move_characters@michael@fire\"\n \"move_f@flee@a\"\n \"move_f@scared\"\n \"move_f@sexy@a\"\n \"move_heist_lester\"\n \"move_injured_generic\"\n \"move_lester_CaneUp\"\n \"move_m@bag\"\n \"MOVE_M@BAIL_BOND_NOT_TAZERED\"\n \"MOVE_M@BAIL_BOND_TAZERED\"\n \"move_m@brave\"\n \"move_m@casual@d\"\n \"move_m@drunk@moderatedrunk\"\n \"MOVE_M@DRUNK@MODERATEDRUNK\"\n \"MOVE_M@DRUNK@MODERATEDRUNK_HEAD_UP\"\n \"MOVE_M@DRUNK@SLIGHTLYDRUNK\"\n \"MOVE_M@DRUNK@VERYDRUNK\"\n \"move_m@fire\"\n \"move_m@gangster@var_e\"\n \"move_m@gangster@var_f\"\n \"move_m@gangster@var_i\"\n \"move_m@JOG@\"\n \"MOVE_M@PRISON_GAURD\"\n \"MOVE_P_M_ONE\"\n \"MOVE_P_M_ONE_BRIEFCASE\"\n \"move_p_m_zero_janitor\"\n \"move_p_m_zero_slow\"\n \"move_ped_bucket\"\n \"move_ped_crouched\"\n \"move_ped_mop\"\n \"MOVE_M@FEMME@\"\n \"MOVE_F@FEMME@\"\n \"MOVE_M@GANGSTER@NG\"\n \"MOVE_F@GANGSTER@NG\"\n \"MOVE_M@POSH@\"\n \"MOVE_F@POSH@\"\n \"MOVE_M@TOUGH_GUY@\"\n \"MOVE_F@TOUGH_GUY@\"\n\n~ NotCrunchyTaco\n\nFull list of movement clipsets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -65754,7 +65754,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "transitionSpeed"
 				}
 			],
 			"return_type": "void",
