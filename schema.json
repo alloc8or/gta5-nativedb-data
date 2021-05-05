@@ -1,0 +1,37 @@
+{
+	"type": "object",
+	"patternProperties": {
+		"^[A-Z_]+[0-9]*$": {
+			"type": "object",
+			"patternProperties": {
+				"^0x[0-9A-F]{16}$": {
+					"type": "object",
+					"properties": {
+						"name": { "type": "string" },
+						"jhash": { "type": "string" },
+						"comment": { "type": "string" },
+						"params": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"type": { "type": "string" },
+									"name": { "type": "string" }
+								},
+								"required": ["type", "name"],
+								"additionalProperties": false
+							}
+						},
+						"return_type": { "type": "string" },
+						"build": { "type": "string" },
+						"unused": { "type": "boolean" }
+					},
+					"required": ["name", "jhash", "comment", "params", "return_type", "build"],
+					"additionalProperties": false
+				}
+			},
+			"additionalProperties": false
+		}
+	},
+	"additionalProperties": false
+}
