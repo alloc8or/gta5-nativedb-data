@@ -99756,17 +99756,17 @@
 			"build": "323"
 		},
 		"0x4056EA1105F5ABD7": {
-			"name": "_0x4056EA1105F5ABD7",
+			"name": "_SET_HELI_MAIN_ROTOR_HEALTH",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "health"
 				}
 			],
 			"return_type": "void",
@@ -102650,20 +102650,20 @@
 			"build": "323"
 		},
 		"0x4C815EB175086F84": {
-			"name": "_0x4C815EB175086F84",
+			"name": "_SET_PLANE_PROPELLERS_HEALTH",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "plane"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "health"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1103"
 		},
 		"0x0CDDA42F9E360CA6": {
@@ -104185,28 +104185,28 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "maxEngineHealth"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "maxPetrolTankHealth"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "maxBodyHealth"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "maxMainRotorHealth"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "maxTailRotorHealth"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "maxUnkHealth"
 				}
 			],
 			"return_type": "float",
