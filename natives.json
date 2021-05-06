@@ -85941,13 +85941,13 @@
 			"build": "323"
 		},
 		"0x40AEFD1A244741F2": {
-			"name": "_0x40AEFD1A244741F2",
+			"name": "SET_RENDER_HD_ONLY",
 			"jhash": "0x9FA4AF99",
 			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
