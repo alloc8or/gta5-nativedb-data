@@ -57409,9 +57409,9 @@
 			"build": "678"
 		},
 		"0x190428512B240692": {
-			"name": "_0x190428512B240692",
+			"name": "CLEAR_OBJECTS_INSIDE_GARAGE",
 			"jhash": "0xA565E27E",
-			"comment": "CLEAR_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
