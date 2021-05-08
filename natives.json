@@ -85470,9 +85470,9 @@
 			"build": "323"
 		},
 		"0xBC9823AB80A3DCAC": {
-			"name": "_0xBC9823AB80A3DCAC",
+			"name": "IS_STREAMVOL_ACTIVE",
 			"jhash": "0x56253356",
-			"comment": "Likely STREAMVOL_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
