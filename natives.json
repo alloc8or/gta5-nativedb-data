@@ -85316,9 +85316,9 @@
 			"build": "323"
 		},
 		"0x219C7B8D53E429FD": {
-			"name": "FORMAT_FOCUS_HEADING",
+			"name": "STREAMVOL_CREATE_SPHERE",
 			"jhash": "0x10B6AB36",
-			"comment": "",
+			"comment": "Always returns zero.",
 			"params": [
 				{
 					"type": "float",
@@ -85349,9 +85349,9 @@
 			"build": "323"
 		},
 		"0x1F3F018BC3AFA77C": {
-			"name": "_0x1F3F018BC3AFA77C",
+			"name": "STREAMVOL_CREATE_FRUSTUM",
 			"jhash": "0x72344191",
-			"comment": "",
+			"comment": "Always returns zero.",
 			"params": [
 				{
 					"type": "float",
@@ -85394,9 +85394,9 @@
 			"build": "323"
 		},
 		"0x0AD9710CEE2F590F": {
-			"name": "_0x0AD9710CEE2F590F",
+			"name": "STREAMVOL_CREATE_LINE",
 			"jhash": "0xC0157255",
-			"comment": "",
+			"comment": "Always returns zero.",
 			"params": [
 				{
 					"type": "float",
@@ -85431,50 +85431,50 @@
 			"build": "323"
 		},
 		"0x1EE7D8DF4425F053": {
-			"name": "_0x1EE7D8DF4425F053",
+			"name": "STREAMVOL_DELETE",
 			"jhash": "0xE80F8ABE",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "unused"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x7D41E9D2D17C5B2D": {
-			"name": "_0x7D41E9D2D17C5B2D",
+			"name": "STREAMVOL_HAS_LOADED",
 			"jhash": "0x1B3521F4",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "unused"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x07C313F94746702C": {
-			"name": "_0x07C313F94746702C",
+			"name": "STREAMVOL_IS_VALID",
 			"jhash": "0x42CFE9C0",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any",
-					"name": "p0"
+					"name": "unused"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xBC9823AB80A3DCAC": {
 			"name": "_0xBC9823AB80A3DCAC",
 			"jhash": "0x56253356",
-			"comment": "",
+			"comment": "Likely STREAMVOL_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x212A8D0D2BABFAC2": {
