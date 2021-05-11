@@ -7606,16 +7606,16 @@
 			"build": "323"
 		},
 		"0xEE778F8C7E1142E2": {
-			"name": "_0xEE778F8C7E1142E2",
+			"name": "GET_CAM_VIEW_MODE_FOR_CONTEXT",
 			"jhash": "0xF3B148A6",
-			"comment": "interprets the result of CAM::_0x19CAFA3C87F7C2FF()\n\nexample: // checks if you're currently in first person\nif ((CAM::_EE778F8C7E1142E2(CAM::_19CAFA3C87F7C2FF()) == 4) && (!__463_$28ED382849B17AFC())) {\nHUD::_FDEC055AB549E328();\nHUD::_SET_NOTIFICATION_TEXT_ENTRY(\"REC_FEED_WAR\");\nl_CE[0/*1*/] = HUD::_DRAW_NOTIFICATION(0, 1);\n}\n",
+			"comment": "context: see _GET_CAM_ACTIVE_VIEW_MODE_CONTEXT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "context"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x2A2173E46DAECD12": {
@@ -7636,11 +7636,11 @@
 			"build": "323"
 		},
 		"0x19CAFA3C87F7C2FF": {
-			"name": "_0x19CAFA3C87F7C2FF",
+			"name": "_GET_CAM_ACTIVE_VIEW_MODE_CONTEXT",
 			"jhash": "",
-			"comment": "Seems to return the current type of view\nexample: // checks if you're currently in first person\nif ((CAM::_EE778F8C7E1142E2(CAM::_19CAFA3C87F7C2FF()) == 4) && (!__463_$28ED382849B17AFC())) {\n    HUD::_FDEC055AB549E328();\n    HUD::_SET_NOTIFICATION_TEXT_ENTRY(\"REC_FEED_WAR\");\n    l_CE[0/*1*/] = HUD::_DRAW_NOTIFICATION(0, 1);\n}",
+			"comment": "enum Context\n{\n\tON_FOOT,\n\tIN_VEHICLE,\n\tON_BIKE,\n\tIN_BOAT,\n\tIN_AIRCRAFT,\n\tIN_SUBMARINE,\n\tIN_HELI,\n\tIN_TURRET\n};",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x6493CF69859B116A": {
@@ -35248,15 +35248,15 @@
 			"build": "323"
 		},
 		"0x72DE52178C291CB5": {
-			"name": "_0x72DE52178C291CB5",
+			"name": "QUEUE_MISSION_REPEAT_LOAD",
 			"jhash": "0xF62B3C48",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x44A0BDC559B35F6E": {
-			"name": "_0x44A0BDC559B35F6E",
+			"name": "QUEUE_MISSION_REPEAT_SAVE",
 			"jhash": "0x3589452B",
 			"comment": "Shows the screen which is visible before you redo a mission? The game will make a restoration point where you will cameback when the mission is over.\nReturns 1 if the message isn't currently on screen",
 			"params": [],
@@ -35272,11 +35272,11 @@
 			"build": "323"
 		},
 		"0x2B5E102E4A42F2BF": {
-			"name": "_0x2B5E102E4A42F2BF",
+			"name": "GET_STATUS_OF_MISSION_REPEAT_SAVE",
 			"jhash": "0x144AAF22",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x8A75CE2956274ADD": {
@@ -46078,11 +46078,11 @@
 			"build": "323"
 		},
 		"0xF9B83B77929D8863": {
-			"name": "_0xF9B83B77929D8863",
+			"name": "NETWORK_DID_FIND_GAMERS_SUCCEED",
 			"jhash": "0xBEDC4503",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xA1B043EE79A916FB": {
@@ -46119,7 +46119,7 @@
 			"build": "323"
 		},
 		"0x85A0EF54A500882C": {
-			"name": "_NETWORK_GET_GAMER_STATUS",
+			"name": "NETWORK_QUEUE_GAMER_FOR_STATUS",
 			"jhash": "0x42BD0780",
 			"comment": "",
 			"params": [
@@ -46132,27 +46132,27 @@
 			"build": "323"
 		},
 		"0x2CC848A861D01493": {
-			"name": "_0x2CC848A861D01493",
+			"name": "NETWORK_GET_GAMER_STATUS_FROM_QUEUE",
 			"jhash": "0xBEB98840",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x94A8394D150B013A": {
-			"name": "_0x94A8394D150B013A",
+			"name": "NETWORK_IS_GETTING_GAMER_STATUS",
 			"jhash": "0x08029970",
-			"comment": "NETWORK_IS_*",
+			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5AE17C6B0134B7F1": {
-			"name": "_0x5AE17C6B0134B7F1",
+			"name": "NETWORK_DID_GET_GAMER_STATUS_SUCCEED",
 			"jhash": "0xC871E745",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x02A8BEC6FD9AF660": {
