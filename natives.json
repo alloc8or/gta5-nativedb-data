@@ -7619,17 +7619,17 @@
 			"build": "323"
 		},
 		"0x2A2173E46DAECD12": {
-			"name": "_0x2A2173E46DAECD12",
+			"name": "SET_CAM_VIEW_MODE_FOR_CONTEXT",
 			"jhash": "0x1DEBCB45",
-			"comment": "",
+			"comment": "context: see _GET_CAM_ACTIVE_VIEW_MODE_CONTEXT",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "context"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "viewMode"
 				}
 			],
 			"return_type": "void",
