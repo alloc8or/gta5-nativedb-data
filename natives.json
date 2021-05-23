@@ -49452,9 +49452,9 @@
 			"build": "323"
 		},
 		"0xD66C9E72B3CC4982": {
-			"name": "_0xD66C9E72B3CC4982",
+			"name": "NETWORK_DISPLAYNAMES_FROM_HANDLES_START",
 			"jhash": "",
-			"comment": "",
+			"comment": "Hardcoded to return -1.",
 			"params": [
 				{
 					"type": "Any*",
