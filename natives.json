@@ -45046,9 +45046,9 @@
 		"0x74FB3E29E6D10FA9": {
 			"name": "_0x74FB3E29E6D10FA9",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 0.",
+			"comment": "Hardcoded to return zero.\n\n==== PS4 specific info ====\n\nReturns some sort of unavailable reason:\n-1 = REASON_INVALID\n 0 = REASON_OTHER\n 1 = REASON_SYSTEM_UPDATE\n 2 = REASON_GAME_UPDATE\n 3 = REASON_SIGNED_OUT\n 4 = REASON_AGE\n 5 = REASON_CONNECTION\n\n=================================",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x7808619F31FF22DB": {
