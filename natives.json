@@ -69086,7 +69086,7 @@
 			"build": "323"
 		},
 		"0xEC6935EBE0847B90": {
-			"name": "_0xEC6935EBE0847B90",
+			"name": "_SET_PED_SHOULD_PLAY_DIRECTED_SCENARIO_EXIT",
 			"jhash": "0x761F8F48",
 			"comment": "",
 			"params": [
