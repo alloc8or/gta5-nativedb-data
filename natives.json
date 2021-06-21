@@ -48307,11 +48307,11 @@
 		"0x1CA59E306ECB80A5": {
 			"name": "NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT",
 			"jhash": "0x470810ED",
-			"comment": "p1 is always 0",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "lobbySize"
+					"name": "maxNumMissionParticipants"
 				},
 				{
 					"type": "BOOL",
@@ -48319,7 +48319,7 @@
 				},
 				{
 					"type": "int",
-					"name": "playerId"
+					"name": "instanceId"
 				}
 			],
 			"return_type": "void",
