@@ -78441,13 +78441,13 @@
 			"build": "323"
 		},
 		"0x93028F1DB42BFD08": {
-			"name": "_IS_SC_INBOX_VALID",
+			"name": "SC_INBOX_GET_MESSAGE_IS_READ_AT_INDEX",
 			"jhash": "0xD1ED1D48",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "msgIndex"
 				}
 			],
 			"return_type": "BOOL",
