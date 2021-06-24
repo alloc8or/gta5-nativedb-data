@@ -78428,13 +78428,13 @@
 			"build": "323"
 		},
 		"0xBB8EA16ECBC976C4": {
-			"name": "_SC_INBOX_MESSAGE_INIT",
+			"name": "SC_INBOX_GET_MESSAGE_TYPE_AT_INDEX",
 			"jhash": "0x5ECF955D",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "msgIndex"
 				}
 			],
 			"return_type": "Hash",
