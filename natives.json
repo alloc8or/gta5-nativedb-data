@@ -61926,16 +61926,12 @@
 		"0xEF29A16337FACADB": {
 			"name": "CLONE_PED",
 			"jhash": "0x8C8A8D6E",
-			"comment": "Example of Cloning Your Player:\nCLONE_PED(PLAYER_PED_ID(), GET_ENTITY_HEADING(PLAYER_PED_ID()), 0, 1);",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
-				},
-				{
-					"type": "float",
-					"name": "heading"
-				},
+				},			
 				{
 					"type": "BOOL",
 					"name": "isNetwork"
@@ -61943,6 +61939,10 @@
 				{
 					"type": "BOOL",
 					"name": "bScriptHostPed"
+				},
+				{
+					"type": "BOOL",
+					"name": "copyHeadBlendFlag"
 				}
 			],
 			"return_type": "Ped",
@@ -61951,16 +61951,12 @@
 		"0x668FD40BCBA5DE48": {
 			"name": "_CLONE_PED_EX",
 			"jhash": "",
-			"comment": "Used one time in fmmc_launcher.c instead of CLONE_PED because ?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
-				},
-				{
-					"type": "float",
-					"name": "heading"
-				},
+				},			
 				{
 					"type": "BOOL",
 					"name": "isNetwork"
@@ -61970,7 +61966,11 @@
 					"name": "bScriptHostPed"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
+					"name": "copyHeadBlendFlag"
+				},
+				{
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -62008,7 +62008,7 @@
 					"name": "targetPed"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
