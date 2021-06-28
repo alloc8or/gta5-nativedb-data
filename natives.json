@@ -79177,7 +79177,7 @@
 			"jhash": "0xC96456BA",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x4ED9C8D6DA297639": {
@@ -79185,7 +79185,7 @@
 			"jhash": "0xC5E08B66",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323",
 			"unused": true
 		},
@@ -79193,8 +79193,17 @@
 			"name": "_0x710BCDA8071EDED1",
 			"jhash": "0x04EE74A3",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				},
+				{
+					"type": "int*",
+					"name": "p1"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79202,8 +79211,17 @@
 			"name": "_0x50A8A36201DBF83E",
 			"jhash": "0x8DA93C3D",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				},
+				{
+					"type": "float*",
+					"name": "p1"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79211,8 +79229,17 @@
 			"name": "_0x9DE5D2F723575ED0",
 			"jhash": "0x37DD48B5",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				},
+				{
+					"type": "char*",
+					"name": "p1"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79220,8 +79247,13 @@
 			"name": "_0xC2C97EA97711D1AE",
 			"jhash": "0xF929F61D",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "char*",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79229,8 +79261,13 @@
 			"name": "_0x450819D8CF90C416",
 			"jhash": "0x0572EB5E",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79240,19 +79277,32 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xE75A4A2E5E316D86": {
 			"name": "_0xE75A4A2E5E316D86",
 			"jhash": "0x28C57FA0",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				},
+				{
+					"type": "int*",
+					"name": "p1"
+				},
+				{
+					"type": "const char*",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79260,8 +79310,21 @@
 			"name": "_0x2570E26BE63964E3",
 			"jhash": "0x59394583",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				},
+				{
+					"type": "float*",
+					"name": "p1"
+				},
+				{
+					"type": "const char*",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79269,8 +79332,21 @@
 			"name": "_0x1D12A56FC95BE92E",
 			"jhash": "0x92452C0E",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "p0"
+				},
+				{
+					"type": "char*",
+					"name": "p1"
+				},
+				{
+					"type": "const char*",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79278,8 +79354,17 @@
 			"name": "_0x33DF47CC0642061B",
 			"jhash": "0xBBA8D34D",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "char*",
+					"name": "p0"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79287,8 +79372,13 @@
 			"name": "_0xA468E0BE12B12C70",
 			"jhash": "0xB21288FA",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79306,7 +79396,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p2"
 				}
 			],
@@ -79317,8 +79407,21 @@
 			"name": "_0xC5A35C73B68F3C49",
 			"jhash": "0x7E24BD6E",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				},
+				{
+					"type": "float*",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -79336,7 +79439,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "char*",
 					"name": "p2"
 				}
 			],
@@ -79349,11 +79452,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
+					"type": "char*",
 					"name": "p1"
 				}
 			],
