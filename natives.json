@@ -61931,7 +61931,7 @@
 				{
 					"type": "Ped",
 					"name": "ped"
-				},			
+				},
 				{
 					"type": "BOOL",
 					"name": "isNetwork"
@@ -61956,7 +61956,7 @@
 				{
 					"type": "Ped",
 					"name": "ped"
-				},			
+				},
 				{
 					"type": "BOOL",
 					"name": "isNetwork"
@@ -68342,7 +68342,7 @@
 		"0x83F7E01C7B769A26": {
 			"name": "APPLY_PED_BLOOD",
 			"jhash": "0x376CE3C0",
-			"comment": "Found one occurence in re_crashrescue.c4\n\nPED::APPLY_PED_BLOOD(l_4B, 3, 0.0, 0.0, 0.0, \"wound_sheet\");\n\n- winject\n\n",
+			"comment": "woundType Information: https://pastebin.com/PUJpryZv",
 			"params": [
 				{
 					"type": "Ped",
@@ -95582,7 +95582,7 @@
 		"0x22AC59A870E6A669": {
 			"name": "IS_VEHICLE_SEAT_FREE",
 			"jhash": "0xDAF42B02",
-			"comment": "Check if a vehicle seat is free.\n\nseatIndex  = -1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.\nisTaskRunning = on true the function returns already false while a task on the target seat is running (TASK_ENTER_VEHICLE/TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT) - on false only when a ped is finally sitting in the seat.", 
+			"comment": "Check if a vehicle seat is free.\n\nseatIndex  = -1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.\nisTaskRunning = on true the function returns already false while a task on the target seat is running (TASK_ENTER_VEHICLE/TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT) - on false only when a ped is finally sitting in the seat.",
 			"params": [
 				{
 					"type": "Vehicle",
