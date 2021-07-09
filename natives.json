@@ -35970,18 +35970,18 @@
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "distance"
 				},
 				{
-					"type": "Entity*",
-					"name": "entity"
+					"type": "Vector3*",
+					"name": "outCoords"
 				},
 				{
 					"type": "BOOL",
-					"name": "ownedByPlayer"
+					"name": "p4"
 				}
 			],
-			"return_type": "Vector3",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x82FDE6A57EE4EE44": {
@@ -35995,19 +35995,19 @@
 				},
 				{
 					"type": "Hash",
-					"name": "weaponhash"
+					"name": "weaponHash"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "distance"
 				},
 				{
-					"type": "float",
-					"name": "p3"
+					"type": "Vector3*",
+					"name": "outCoords"
 				},
 				{
-					"type": "float",
-					"name": "p4"
+					"type": "Object*",
+					"name": "outProjectile"
 				},
 				{
 					"type": "BOOL",
