@@ -19737,7 +19737,7 @@
 			"build": "323"
 		},
 		"0x27CB772218215325": {
-			"name": "_CASCADE_SHADOWS_CLEAR_SHADOW_SAMPLE_TYPE",
+			"name": "CASCADE_SHADOWS_CLEAR_SHADOW_SAMPLE_TYPE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
