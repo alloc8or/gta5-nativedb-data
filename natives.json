@@ -10209,7 +10209,12 @@
 			"name": "DATAFILE_CREATE",
 			"jhash": "0x95F8A221",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
 			"return_type": "void",
 			"build": "323"
 		},
@@ -10217,7 +10222,12 @@
 			"name": "DATAFILE_DELETE",
 			"jhash": "0xDEF31B0A",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
 			"return_type": "void",
 			"build": "323"
 		},
@@ -10225,7 +10235,12 @@
 			"name": "DATAFILE_STORE_MISSION_HEADER",
 			"jhash": "0x4E03F632",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
 			"return_type": "void",
 			"build": "323"
 		},
@@ -10240,8 +10255,12 @@
 		"0x906B778CA1DC72B6": {
 			"name": "DATAFILE_GET_FILE_DICT",
 			"jhash": "0x86DDF9C2",
-			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
 			"return_type": "const char*",
 			"build": "323"
 		},
@@ -78264,7 +78283,12 @@
 			"name": "_ACTIVATE_ROCKSTAR_EDITOR",
 			"jhash": "",
 			"comment": "Please note that you will need to call DO_SCREEN_FADE_IN after exiting the Rockstar Editor when you call this.",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				}
+			],
 			"return_type": "void",
 			"build": "323"
 		}
@@ -81882,30 +81906,6 @@
 				{
 					"type": "Any",
 					"name": "p3"
-				},
-				{
-					"type": "Any",
-					"name": "p4"
-				},
-				{
-					"type": "Any",
-					"name": "p5"
-				},
-				{
-					"type": "Any",
-					"name": "p6"
-				},
-				{
-					"type": "Any",
-					"name": "p7"
-				},
-				{
-					"type": "Any",
-					"name": "p8"
-				},
-				{
-					"type": "Any",
-					"name": "p9"
 				}
 			],
 			"return_type": "void",
