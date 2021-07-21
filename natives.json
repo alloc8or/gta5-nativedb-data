@@ -2855,7 +2855,7 @@
 			"build": "1493"
 		},
 		"0x4CAFEBFA21EC188D": {
-			"name": "_SET_RADIO_STATION_VISIBLE",
+			"name": "_SET_RADIO_STATION_IS_VISIBLE",
 			"jhash": "",
 			"comment": "Doesn't have an effect in Story Mode.",
 			"params": [
