@@ -2855,17 +2855,17 @@
 			"build": "1493"
 		},
 		"0x4CAFEBFA21EC188D": {
-			"name": "_0x4CAFEBFA21EC188D",
+			"name": "_SET_RADIO_STATION_IS_VISIBLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Doesn't have an effect in Story Mode.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "radioStation"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
