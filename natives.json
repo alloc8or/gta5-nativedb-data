@@ -2857,7 +2857,7 @@
 		"0x4CAFEBFA21EC188D": {
 			"name": "_SET_RADIO_STATION_VISIBLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Doesn't have an effect in Story Mode.",
 			"params": [
 				{
 					"type": "const char*",
