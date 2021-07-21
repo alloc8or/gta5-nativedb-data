@@ -49259,11 +49259,11 @@
 			"build": "323"
 		},
 		"0x638A3A81733086DB": {
-			"name": "_0x638A3A81733086DB",
+			"name": "NETWORK_GET_INSTANCE_ID_OF_THIS_SCRIPT",
 			"jhash": "0xDB8B5D71",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x257ED0FADF750BCF": {
