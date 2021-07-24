@@ -77679,46 +77679,46 @@
 			"build": "323"
 		},
 		"0x0764486AEDE748DB": {
-			"name": "_0x0764486AEDE748DB",
+			"name": "_SET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
 			"return_type": "void",
 			"build": "2372"
 		},
 		"0xC219887CA3E65C41": {
-			"name": "_0xC219887CA3E65C41",
+			"name": "_GET_PLAYER_PARACHUTE_MODEL_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "2372"
 		},
 		"0x37FAAA68DCA9D08D": {
-			"name": "_0x37FAAA68DCA9D08D",
+			"name": "_GET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "2372"
 		},
 		"0x8753997EB5F6EE3F": {
@@ -77735,13 +77735,13 @@
 			"build": "323"
 		},
 		"0x290D248E25815AE8": {
-			"name": "_0x290D248E25815AE8",
+			"name": "_CLEAR_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -97732,13 +97732,13 @@
 			"build": "323"
 		},
 		"0xDA5E12F728DB30CA": {
-			"name": "_0xDA5E12F728DB30CA",
+			"name": "_SET_RANDOM_BOATS_IN_MP",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -98566,7 +98566,7 @@
 			"build": "323"
 		},
 		"0xAD464F2E18836BFC": {
-			"name": "_IS_VEHICLE_A_MISSION_TRAIN",
+			"name": "_IS_MISSION_TRAIN",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -107212,9 +107212,9 @@
 			"build": "2060"
 		},
 		"0x3A375167F5782A65": {
-			"name": "_SET_LOWERED_STANCE_ENABLED",
+			"name": "_SET_REDUCE_DRIFT_VEHICLE_SUSPENSION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Lowers the vehicle's stance. Only works for vehicles that support this feature.",
 			"params": [
 				{
 					"type": "Vehicle",
