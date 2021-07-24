@@ -107229,33 +107229,33 @@
 			"build": "2372"
 		},
 		"0x5AC79C98C5C17F05": {
-			"name": "_0x5AC79C98C5C17F05",
+			"name": "_SET_DRIFT_TYRES_ENABLED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "2372"
 		},
 		"0x2F5A72430E78C8D3": {
-			"name": "_0x2F5A72430E78C8D3",
+			"name": "_GET_DRIFT_TYRES_ENABLED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2372"
 		},
 		"0xEC0C1D4922AF9754": {
