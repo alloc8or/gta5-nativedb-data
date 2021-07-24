@@ -2808,17 +2808,17 @@
 			"build": "323"
 		},
 		"0xFF5E5EA2DCEEACF3": {
-			"name": "_0xFF5E5EA2DCEEACF3",
+			"name": "_LOCK_RADIO_STATION_TRACK_LIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "radioStation"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "trackListName"
 				}
 			],
 			"return_type": "void",
@@ -27729,7 +27729,7 @@
 			"build": "877"
 		},
 		"0x003E92BA477F9D7F": {
-			"name": "_0x003E92BA477F9D7F",
+			"name": "_GET_BLIP_ROTATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -29296,13 +29296,13 @@
 			"build": "323"
 		},
 		"0x7B21E0BB01E8224A": {
-			"name": "_0x7B21E0BB01E8224A",
+			"name": "_SET_MAIN_PLAYER_BLIP_COLOUR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "color"
 				}
 			],
 			"return_type": "void",
@@ -98566,16 +98566,16 @@
 			"build": "323"
 		},
 		"0xAD464F2E18836BFC": {
-			"name": "_0xAD464F2E18836BFC",
+			"name": "_IS_VEHICLE_A_MISSION_TRAIN",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2372"
 		},
 		"0x5B76B14AE875C795": {
@@ -105358,20 +105358,20 @@
 			"build": "505"
 		},
 		"0x0BB5CBDDD0F25AE3": {
-			"name": "_0x0BB5CBDDD0F25AE3",
+			"name": "_GET_HYDRAULIC_WHEEL_VALUE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wheelId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "2372"
 		},
 		"0x1201E8A3290A3B98": {
@@ -107212,17 +107212,17 @@
 			"build": "2060"
 		},
 		"0x3A375167F5782A65": {
-			"name": "_0x3A375167F5782A65",
+			"name": "_SET_LOWERED_STANCE_ENABLED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -109282,17 +109282,17 @@
 			"build": "505"
 		},
 		"0x4AE5AC8B852D642C": {
-			"name": "_0x4AE5AC8B852D642C",
+			"name": "_SET_WEAPON_EXPLOSION_RADIUS_MULTIPLIER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
