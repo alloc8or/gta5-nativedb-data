@@ -2808,17 +2808,17 @@
 			"build": "323"
 		},
 		"0xFF5E5EA2DCEEACF3": {
-			"name": "_0xFF5E5EA2DCEEACF3",
+			"name": "_LOCK_RADIO_STATION_TRACK_LIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "radioStation"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "trackListName"
 				}
 			],
 			"return_type": "void",
