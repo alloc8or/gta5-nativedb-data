@@ -2290,7 +2290,7 @@
 		"0xC69EDA28699D5107": {
 			"name": "SET_RADIO_TO_STATION_NAME",
 			"jhash": "0x7B36E35E",
-			"comment": "For a full list, see here: pastebin.com/Kj9t38KF",
+			"comment": "List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: https://git.io/J8a3k\nAn older list including hidden radio stations: https://pastebin.com/Kj9t38KF",
 			"params": [
 				{
 					"type": "const char*",
@@ -2303,7 +2303,7 @@
 		"0x1B9C0099CB942AC6": {
 			"name": "SET_VEH_RADIO_STATION",
 			"jhash": "0xE391F55F",
-			"comment": "For a full list, see here: pastebin.com/Kj9t38KF",
+			"comment": "List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: https://git.io/J8a3k\nAn older list including hidden radio stations: https://pastebin.com/Kj9t38KF",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -2808,17 +2808,17 @@
 			"build": "323"
 		},
 		"0xFF5E5EA2DCEEACF3": {
-			"name": "_0xFF5E5EA2DCEEACF3",
+			"name": "_LOCK_RADIO_STATION_TRACK_LIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "radioStation"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "trackListName"
 				}
 			],
 			"return_type": "void",
@@ -27729,7 +27729,7 @@
 			"build": "877"
 		},
 		"0x003E92BA477F9D7F": {
-			"name": "_0x003E92BA477F9D7F",
+			"name": "_GET_BLIP_ROTATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -29296,13 +29296,13 @@
 			"build": "323"
 		},
 		"0x7B21E0BB01E8224A": {
-			"name": "_0x7B21E0BB01E8224A",
+			"name": "_SET_MAIN_PLAYER_BLIP_COLOUR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "color"
 				}
 			],
 			"return_type": "void",
@@ -77679,46 +77679,46 @@
 			"build": "323"
 		},
 		"0x0764486AEDE748DB": {
-			"name": "_0x0764486AEDE748DB",
+			"name": "_SET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "model"
 				}
 			],
 			"return_type": "void",
 			"build": "2372"
 		},
 		"0xC219887CA3E65C41": {
-			"name": "_0xC219887CA3E65C41",
+			"name": "_GET_PLAYER_PARACHUTE_MODEL_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "2372"
 		},
 		"0x37FAAA68DCA9D08D": {
-			"name": "_0x37FAAA68DCA9D08D",
+			"name": "_GET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "2372"
 		},
 		"0x8753997EB5F6EE3F": {
@@ -77735,13 +77735,13 @@
 			"build": "323"
 		},
 		"0x290D248E25815AE8": {
-			"name": "_0x290D248E25815AE8",
+			"name": "_CLEAR_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -97732,13 +97732,13 @@
 			"build": "323"
 		},
 		"0xDA5E12F728DB30CA": {
-			"name": "_0xDA5E12F728DB30CA",
+			"name": "_SET_RANDOM_BOATS_IN_MP",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -98566,16 +98566,16 @@
 			"build": "323"
 		},
 		"0xAD464F2E18836BFC": {
-			"name": "_0xAD464F2E18836BFC",
+			"name": "_IS_MISSION_TRAIN",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2372"
 		},
 		"0x5B76B14AE875C795": {
@@ -105358,20 +105358,20 @@
 			"build": "505"
 		},
 		"0x0BB5CBDDD0F25AE3": {
-			"name": "_0x0BB5CBDDD0F25AE3",
+			"name": "_GET_HYDRAULIC_WHEEL_VALUE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wheelId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "2372"
 		},
 		"0x1201E8A3290A3B98": {
@@ -107212,17 +107212,17 @@
 			"build": "2060"
 		},
 		"0x3A375167F5782A65": {
-			"name": "_0x3A375167F5782A65",
+			"name": "_SET_REDUCE_DRIFT_VEHICLE_SUSPENSION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Lowers the vehicle's stance. Only works for vehicles that support this feature.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -109282,17 +109282,17 @@
 			"build": "505"
 		},
 		"0x4AE5AC8B852D642C": {
-			"name": "_0x4AE5AC8B852D642C",
+			"name": "_SET_WEAPON_EXPLOSION_RADIUS_MULTIPLIER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "weaponHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
