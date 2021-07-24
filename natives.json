@@ -2290,7 +2290,7 @@
 		"0xC69EDA28699D5107": {
 			"name": "SET_RADIO_TO_STATION_NAME",
 			"jhash": "0x7B36E35E",
-			"comment": "For a full list, see here: pastebin.com/Kj9t38KF",
+			"comment": "List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: https://git.io/J8a3k\nAn older list including hidden radio stations: https://pastebin.com/Kj9t38KF",
 			"params": [
 				{
 					"type": "const char*",
@@ -2303,7 +2303,7 @@
 		"0x1B9C0099CB942AC6": {
 			"name": "SET_VEH_RADIO_STATION",
 			"jhash": "0xE391F55F",
-			"comment": "For a full list, see here: pastebin.com/Kj9t38KF",
+			"comment": "List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: https://git.io/J8a3k\nAn older list including hidden radio stations: https://pastebin.com/Kj9t38KF",
 			"params": [
 				{
 					"type": "Vehicle",
