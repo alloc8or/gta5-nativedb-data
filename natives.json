@@ -54036,9 +54036,9 @@
 			"build": "323"
 		},
 		"0x2B1813ABA29016C5": {
-			"name": "_NETWORK_SET_NETWORK_ID_DYNAMIC",
+			"name": "NETWORK_USE_HIGH_PRECISION_BLENDING",
 			"jhash": "0x155465EE",
-			"comment": "",
+			"comment": "Old name: _NETWORK_SET_NETWORK_ID_DYNAMIC",
 			"params": [
 				{
 					"type": "int",
