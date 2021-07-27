@@ -58072,9 +58072,9 @@
 			"unused": true
 		},
 		"0x350C23949E43686C": {
-			"name": "_0x350C23949E43686C",
+			"name": "_NETWORK_GET_AVERAGE_PACKET_LOSS_FOR_PLAYER",
 			"jhash": "",
-			"comment": "NETWORK_GET_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
