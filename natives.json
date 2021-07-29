@@ -57702,7 +57702,7 @@
 					"name": "p5"
 				}
 			],
-			"return_type": "Any*",
+			"return_type": "Any",
 			"build": "323"
 		},
 		"0x487EB90B98E9FB19": {
