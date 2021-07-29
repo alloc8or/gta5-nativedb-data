@@ -54878,11 +54878,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x17E0198B3882C2CB": {
@@ -56442,7 +56442,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p3"
 				},
 				{
@@ -56542,7 +56542,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
@@ -56567,7 +56567,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
@@ -56592,7 +56592,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
@@ -56621,7 +56621,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p3"
 				},
 				{
@@ -56650,7 +56650,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p3"
 				},
 				{
@@ -56877,7 +56877,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -57412,7 +57412,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				}
 			],
@@ -57678,23 +57678,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p4"
 				},
 				{
@@ -70530,7 +70530,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -70542,7 +70542,7 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p4"
 				}
 			],
@@ -70559,7 +70559,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -70579,7 +70579,7 @@
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
@@ -70587,7 +70587,7 @@
 					"name": "p7"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p8"
 				}
 			],
@@ -74222,11 +74222,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p1"
 				}
 			],
@@ -80945,7 +80945,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -81438,11 +81438,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
@@ -81459,7 +81459,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -81467,7 +81467,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p2"
 				}
 			],
@@ -81506,7 +81506,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -81523,11 +81523,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x5C4EBFFA98BDB41C": {
@@ -81536,11 +81536,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xFF8F3A92B75ED67A": {
