@@ -2258,7 +2258,7 @@
 		"0xB28ECA15046CA8B9": {
 			"name": "GET_RADIO_STATION_NAME",
 			"jhash": "0x3DF493BC",
-			"comment": "Returns String with radio station name.",
+			"comment": "Converts radio station index to string. Use HUD::_GET_LABEL_TEXT to get the user-readable text.",
 			"params": [
 				{
 					"type": "int",
