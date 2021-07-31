@@ -2783,8 +2783,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "station"
+					"type": "Hash",
+					"name": "stationNameHash"
 				}
 			],
 			"return_type": "int",
