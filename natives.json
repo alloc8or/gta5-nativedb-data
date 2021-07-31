@@ -31952,7 +31952,7 @@
 			"jhash": "0x016D7AF9",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xDE03620F8703A9DF": {
@@ -31960,7 +31960,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x359AF31A4B52F5ED": {
@@ -31968,7 +31968,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x13C4B962653A5280": {
@@ -31976,7 +31976,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xC8E1071177A23BE5": {
@@ -32026,7 +32026,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -32079,7 +32079,7 @@
 			"jhash": "0x92DAFA78",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x593FEAE1F73392D4": {
@@ -32087,7 +32087,7 @@
 			"jhash": "0x22CA9F2A",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4E3CD0EF8A489541": {
@@ -32095,7 +32095,7 @@
 			"jhash": "0xDA7951A2",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xF284AC67940C6812": {
@@ -32103,7 +32103,7 @@
 			"jhash": "0x7D95AFFF",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2E22FEFA0100275E": {
@@ -32233,7 +32233,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
@@ -32245,7 +32245,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -77685,14 +77685,14 @@
 		"0x821FDC827D6F4090": {
 			"name": "_SPECIAL_ABILITY_ACTIVATE",
 			"jhash": "",
-			"comment": "",
+			"comment": "p1 is always 0 in the scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -77723,14 +77723,14 @@
 		"0x17F7471EACA78290": {
 			"name": "_SPECIAL_ABILITY_DEPLETE",
 			"jhash": "",
-			"comment": "",
+			"comment": "p1 is always 0 in the scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -78331,11 +78331,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -78488,8 +78488,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -78505,11 +78505,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -91852,7 +91852,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				}
 			],
@@ -92140,12 +92140,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "pilot"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "aircraft"
 				},
 				{
 					"type": "Any",
