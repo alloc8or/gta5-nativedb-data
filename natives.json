@@ -108073,7 +108073,7 @@
 			]
 		},
 		"0xA74AD2439468C883": {
-			"name": "_SET_VEHICLE_PARACHUTE_TEXTURE_VARIATIION",
+			"name": "_SET_VEHICLE_PARACHUTE_TEXTURE_VARIATION",
 			"jhash": "",
 			"comment": "colorIndex = 0 - 7",
 			"params": [
