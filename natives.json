@@ -2339,13 +2339,13 @@
 			"build": "323"
 		},
 		"0x3E45765F3FBB582F": {
-			"name": "_0x3E45765F3FBB582F",
+			"name": "_SET_VEH_HAS_RADIO_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -2926,21 +2926,21 @@
 			"build": "1493"
 		},
 		"0x4E0AF9114608257C": {
-			"name": "_0x4E0AF9114608257C",
+			"name": "_FORCE_RADIO_TRACK_LIST_POSITION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "radioStation"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "trackListName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "milliseconds"
 				}
 			],
 			"return_type": "void",
@@ -3566,17 +3566,17 @@
 			"build": "323"
 		},
 		"0xF584CF8529B51434": {
-			"name": "_0xF584CF8529B51434",
+			"name": "_SET_SIREN_KEEP_ON",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -3761,7 +3761,7 @@
 			"build": "2372"
 		},
 		"0x5DB8010EE71FDEF2": {
-			"name": "_0x5DB8010EE71FDEF2",
+			"name": "IS_VEHICLE_AUDIBLY_DAMAGED",
 			"jhash": "0x6E660D3F",
 			"comment": "",
 			"params": [
@@ -6225,11 +6225,11 @@
 			"build": "323"
 		},
 		"0x77C3CEC46BE286F6": {
-			"name": "_0x77C3CEC46BE286F6",
+			"name": "_GET_DEBUG_CAMERA",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Cam",
 			"build": "2372"
 		},
 		"0x8609C75EC438FB3B": {
@@ -14428,25 +14428,25 @@
 			"build": "323"
 		},
 		"0x8339643499D1222E": {
-			"name": "_0x8339643499D1222E",
+			"name": "_SET_ENTITY_ANGULAR_VELOCITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -29423,7 +29423,7 @@
 			"build": "323"
 		},
 		"0x504DFE62A1692296": {
-			"name": "_0x504DFE62A1692296",
+			"name": "_SET_INTERIOR_ZOOM_LEVEL_INCREASED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -29436,13 +29436,13 @@
 			"build": "1493"
 		},
 		"0x7EC8ABA5E74B3D7A": {
-			"name": "_0x7EC8ABA5E74B3D7A",
+			"name": "_SET_INTERIOR_ZOOM_LEVEL_DECREASED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -45343,7 +45343,7 @@
 			"build": "2189"
 		},
 		"0x89049A84065CE68E": {
-			"name": "_0x89049A84065CE68E",
+			"name": "_NETWORK_SPENT_UPGRADE_SUB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45465,7 +45465,7 @@
 			"build": "2189"
 		},
 		"0xB40F96D6D252839B": {
-			"name": "_0xB40F96D6D252839B",
+			"name": "_NETWORK_SPENT_AUTOSHOP_PROPERTY_UTILITY_FEE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45490,7 +45490,7 @@
 			"build": "2372"
 		},
 		"0x1464E17207CD36E2": {
-			"name": "_0x1464E17207CD36E2",
+			"name": "_NETWORK_SPENT_CARCLUB_MEMBERSHIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45519,7 +45519,7 @@
 			"build": "2372"
 		},
 		"0x925227803A0EAA1B": {
-			"name": "_0x925227803A0EAA1B",
+			"name": "_NETWORK_SPENT_CARCLUB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45545,7 +45545,7 @@
 			"unused": true
 		},
 		"0x9BEA350D7C48061B": {
-			"name": "_0x9BEA350D7C48061B",
+			"name": "_NETWORK_SPENT_AUTOSHOP_MODIFICATIONS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45574,7 +45574,7 @@
 			"build": "2372"
 		},
 		"0xD1E46824E6FB92B5": {
-			"name": "_0xD1E46824E6FB92B5",
+			"name": "_NETWORK_SPENT_CARCLUB_TAKEOVER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45599,7 +45599,7 @@
 			"build": "2372"
 		},
 		"0xEEB7E5D1FEB20869": {
-			"name": "_0xEEB7E5D1FEB20869",
+			"name": "_NETWORK_SPENT_BUY_AUTOSHOP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45624,7 +45624,7 @@
 			"build": "2372"
 		},
 		"0xDD829AA198FDC46C": {
-			"name": "_0xDD829AA198FDC46C",
+			"name": "_NETWORK_SPENT_UPGRADE_AUTOSHOP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45649,7 +45649,7 @@
 			"build": "2372"
 		},
 		"0x36A7FD5A7194B03E": {
-			"name": "_0x36A7FD5A7194B03E",
+			"name": "_NETWORK_EARN_FROM_AUTOSHOP_BUSINESS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45666,7 +45666,7 @@
 			"build": "2372"
 		},
 		"0xC66D1CF99ED7FE25": {
-			"name": "_0xC66D1CF99ED7FE25",
+			"name": "_NETWORK_EARN_FROM_AUTOSHOP_INCOME",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45680,7 +45680,7 @@
 			"unused": true
 		},
 		"0xBC6227792A188E2E": {
-			"name": "_0xBC6227792A188E2E",
+			"name": "_NETWORK_EARN_FROM_CARCLUB_MEMBERSHIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45693,7 +45693,7 @@
 			"build": "2372"
 		},
 		"0x533073E8A596008C": {
-			"name": "_0x533073E8A596008C",
+			"name": "_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45710,7 +45710,7 @@
 			"build": "2372"
 		},
 		"0xFE65AFE7308E32B2": {
-			"name": "_0xFE65AFE7308E32B2",
+			"name": "_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP_BONUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45723,7 +45723,7 @@
 			"build": "2372"
 		},
 		"0xB846F547D3792DF6": {
-			"name": "_0xB846F547D3792DF6",
+			"name": "_NETWORK_EARN_FROM_TUNER_AWARD",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45744,7 +45744,7 @@
 			"build": "2372"
 		},
 		"0xBCB266247193AC61": {
-			"name": "_0xBCB266247193AC61",
+			"name": "_NETWORK_EARN_FROM_TUNER_FINALE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45773,7 +45773,7 @@
 			"build": "2372"
 		},
 		"0xC10322A8D3E061EE": {
-			"name": "_0xC10322A8D3E061EE",
+			"name": "_NETWORK_EARN_FROM_UPGRADE_AUTOSHOP_LOCATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45790,7 +45790,7 @@
 			"build": "2372"
 		},
 		"0x93AA4165CB67E925": {
-			"name": "_0x93AA4165CB67E925",
+			"name": "_NETWORK_SPENT_IM_ABILITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45815,7 +45815,7 @@
 			"build": "2372"
 		},
 		"0xB9F7A469460E7A4A": {
-			"name": "_0xB9F7A469460E7A4A",
+			"name": "_NETWORK_SPENT_FROM_BANK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -50431,11 +50431,11 @@
 			"build": "323"
 		},
 		"0x257ED0FADF750BCF": {
-			"name": "_0x257ED0FADF750BCF",
+			"name": "_NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "2372"
 		},
 		"0x1AD5B71586B94820": {
@@ -50680,13 +50680,13 @@
 			"build": "323"
 		},
 		"0xF0BC9BCD24A511D5": {
-			"name": "_0xF0BC9BCD24A511D5",
+			"name": "_NETWORK_PED_FORCE_GAME_STATE_UPDATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -50849,9 +50849,9 @@
 			"build": "323"
 		},
 		"0x7242F8B741CE1086": {
-			"name": "_0x7242F8B741CE1086",
+			"name": "_NETWORK_IS_NETWORK_ID_A_CLONE",
 			"jhash": "",
-			"comment": "NETWORK_IS_*\nProbably a bool, returns true if the specified network id is controlled by someone else.\nFf you have control over the entity corresponding to the netId then this will return false (0);\nReturns probably a bool, returns 1 if you don't have control over the netId entity.",
+			"comment": "Returns true if the specified network id is controlled by someone else.",
 			"params": [
 				{
 					"type": "int",
@@ -54187,34 +54187,34 @@
 			]
 		},
 		"0xA2A707979FE754DC": {
-			"name": "_0xA2A707979FE754DC",
+			"name": "_SET_NETWORK_VEHICLE_POSITION_UPDATE_MULTIPLIER",
 			"jhash": "",
-			"comment": "",
+			"comment": "rage::netBlenderLinInterp::GetPositionMaxForUpdateLevel",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
 			"build": "877"
 		},
 		"0x838DA0936A24ED4D": {
-			"name": "_0x838DA0936A24ED4D",
+			"name": "_SET_NETWORK_ENABLE_VEHICLE_POSITION_CORRECTION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Enables a periodic ShapeTest within the NetBlender and invokes rage::netBlenderLinInterp::GoStraightToTarget (or some functional wrapper).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -55815,7 +55815,7 @@
 			"build": "463"
 		},
 		"0xCD71A4ECAB22709E": {
-			"name": "_0xCD71A4ECAB22709E",
+			"name": "NETWORK_USE_LOGARITHMIC_BLENDING_THIS_FRAME",
 			"jhash": "0xBC54371B",
 			"comment": "",
 			"params": [
@@ -58163,9 +58163,9 @@
 			"build": "393"
 		},
 		"0x33DE49EDF4DDE77A": {
-			"name": "_0x33DE49EDF4DDE77A",
+			"name": "_NETWORK_GET_LAST_VELOCITY_RECEIVED",
 			"jhash": "",
-			"comment": "NETWORK_GET_*",
+			"comment": "Used by NetBlender",
 			"params": [
 				{
 					"type": "Entity",
@@ -58230,7 +58230,7 @@
 			"build": "1734"
 		},
 		"0xC1447451DDB512F0": {
-			"name": "_0xC1447451DDB512F0",
+			"name": "_NETWORK_UGC_NAV",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -60108,48 +60108,48 @@
 			"build": "323"
 		},
 		"0x9C93764223E29C50": {
-			"name": "_0x9C93764223E29C50",
+			"name": "_CREATE_NON_NETWORKED_AMBIENT_PICKUP",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Pickup",
 			"build": "2372"
 		},
 		"0x1E3F1B1B891A2AAA": {
@@ -60203,9 +60203,9 @@
 			"build": "323"
 		},
 		"0x125494B98A21AAF7": {
-			"name": "_CREATE_PORTABLE_PICKUP_2",
+			"name": "CREATE_NON_NETWORKED_PORTABLE_PICKUP",
 			"jhash": "0x56A02502",
-			"comment": "CREATE_*\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "Full list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -60233,7 +60233,10 @@
 				}
 			],
 			"return_type": "Object",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CREATE_PORTABLE_PICKUP_2"
+			]
 		},
 		"0x8DC39368BDD57755": {
 			"name": "ATTACH_PORTABLE_PICKUP_TO_PED",
@@ -66296,20 +66299,20 @@
 			"build": "323"
 		},
 		"0x32C27A11307B01CC": {
-			"name": "_0x32C27A11307B01CC",
+			"name": "_GET_PED_TASK_COMBAT_TARGET",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "2372"
 		},
 		"0xEAD42DE3610D0721": {
@@ -76342,29 +76345,29 @@
 			"build": "323"
 		},
 		"0xA72200F51875FEA4": {
-			"name": "_0xA72200F51875FEA4",
+			"name": "_GET_WANTED_LEVEL_PAROLE_DURATION",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "2372"
 		},
 		"0x49B856B1360C47C7": {
-			"name": "_0x49B856B1360C47C7",
+			"name": "_SET_WANTED_LEVEL_HIDDEN_EVASION_TIME",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wantedLevel"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "lossTime"
 				}
 			],
 			"return_type": "void",
@@ -82778,7 +82781,7 @@
 		"0xC01D2470F22CDE5A": {
 			"name": "_0xC01D2470F22CDE5A",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [],
 			"return_type": "void",
 			"build": "2372"
@@ -87084,7 +87087,7 @@
 			"build": "2189"
 		},
 		"0x1A67DFBF1F5C3835": {
-			"name": "_0x1A67DFBF1F5C3835",
+			"name": "_PLAYSTATS_ROBBERY_PREP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87097,7 +87100,7 @@
 			"build": "2372"
 		},
 		"0xBBA55BE9AAAABF44": {
-			"name": "_0xBBA55BE9AAAABF44",
+			"name": "_PLAYSTATS_ROBBERY_FINALE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87110,7 +87113,7 @@
 			"build": "2372"
 		},
 		"0xFA5B74BAB8A7EF99": {
-			"name": "_0xFA5B74BAB8A7EF99",
+			"name": "_PLAYSTATS_EXTRA_EVENT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87123,7 +87126,7 @@
 			"build": "2372"
 		},
 		"0xFF14D6FEEC507BBE": {
-			"name": "_0xFF14D6FEEC507BBE",
+			"name": "_PLAYSTATS_CARCLUB_POINTS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87136,7 +87139,7 @@
 			"build": "2372"
 		},
 		"0x1187CB58D7F3BED7": {
-			"name": "_0x1187CB58D7F3BED7",
+			"name": "_PLAYSTATS_CARCLUB_CHALLENGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87161,7 +87164,7 @@
 			"build": "2372"
 		},
 		"0x69C922B677621428": {
-			"name": "_0x69C922B677621428",
+			"name": "_PLAYSTATS_CARCLUB_PRIZE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -90562,16 +90565,16 @@
 			"build": "323"
 		},
 		"0xDDF3CB5A0A4C0B49": {
-			"name": "_0xDDF3CB5A0A4C0B49",
+			"name": "_SET_ANIM_PLAYBACK_TIME",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
@@ -90579,7 +90582,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -109256,17 +109259,17 @@
 			"build": "2372"
 		},
 		"0xEC0C1D4922AF9754": {
-			"name": "_0xEC0C1D4922AF9754",
+			"name": "_NETWORK_USE_HIGH_PRECISION_VEHICLE_BLENDING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Implemented only for trains.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
