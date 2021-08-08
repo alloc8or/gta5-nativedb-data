@@ -108055,7 +108055,7 @@
 		"0x4D610C6B56031351": {
 			"name": "_SET_VEHICLE_PARACHUTE_MODEL",
 			"jhash": "",
-			"comment": "Parachute models:\n- sr_prop_specraces_para_s_01\n- imp_prop_impexp_para_s (SecuroServ; Default)",
+			"comment": "Parachute models:\n- sr_prop_specraces_para_s_01\n- imp_prop_impexp_para_s (SecuroServ; Default)\nPlus, many more props can be used as vehicle parachutes, like umbrellas (prop_beach_parasol_03), and unlike SET_PLAYER_PARACHUTE_MODEL_OVERRIDE, you won't get stuck mid-air when using an umbrella.",
 			"params": [
 				{
 					"type": "Vehicle",
