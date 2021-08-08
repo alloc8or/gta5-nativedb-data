@@ -68342,7 +68342,7 @@
 		"0x83F7E01C7B769A26": {
 			"name": "APPLY_PED_BLOOD",
 			"jhash": "0x376CE3C0",
-			"comment": "woundType Information: https://pastebin.com/PUJpryZv",
+			"comment": "woundTypes:\n- soak_splat\n- wound_sheet\n- BulletSmall\n- BulletLarge\n- ShotgunSmall\n- ShotgunSmallMonolithic\n- ShotgunLarge\n- ShotgunLargeMonolithic\n- NonFatalHeadshot\n- stab\n- BasicSlash\n- Scripted_Ped_Splash_Back\n- BackSplash",
 			"params": [
 				{
 					"type": "Ped",
