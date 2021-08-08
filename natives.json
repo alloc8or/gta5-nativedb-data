@@ -70493,7 +70493,7 @@
 		"0x83F7E01C7B769A26": {
 			"name": "APPLY_PED_BLOOD",
 			"jhash": "0x376CE3C0",
-			"comment": "Found one occurence in re_crashrescue.c4\n\nPED::APPLY_PED_BLOOD(l_4B, 3, 0.0, 0.0, 0.0, \"wound_sheet\");\n\n- winject\n\n",
+			"comment": "woundTypes:\n- soak_splat\n- wound_sheet\n- BulletSmall\n- BulletLarge\n- ShotgunSmall\n- ShotgunSmallMonolithic\n- ShotgunLarge\n- ShotgunLargeMonolithic\n- NonFatalHeadshot\n- stab\n- BasicSlash\n- Scripted_Ped_Splash_Back\n- BackSplash",
 			"params": [
 				{
 					"type": "Ped",
