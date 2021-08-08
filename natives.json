@@ -108055,7 +108055,7 @@
 		"0x4D610C6B56031351": {
 			"name": "_SET_VEHICLE_PARACHUTE_MODEL",
 			"jhash": "",
-			"comment": "Parachute models:\n- 230075693: Generic Parachute\n- 1298918533: SecuroServ",
+			"comment": "Parachute models:\n- 230075693: Generic Parachute\n- 1298918533: SecuroServ (Default)",
 			"params": [
 				{
 					"type": "Vehicle",
