@@ -31363,7 +31363,7 @@
 		"0x701919482C74B5AB": {
 			"name": "SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS",
 			"jhash": "0x749929D3",
-			"comment": "You can only use text entries. No custom text.",
+			"comment": "You can use this native for custom input, without having to use any scaleform-related natives.\nThe entryHeader must be a valid ladel.\nFor Single lines use JL_INVITE_N as entryLine1, JL_INVITE_ND for multiple.\nNotes:\n- additionalIntInfo: replaces first occurrence of ~1~ in provided label with an integer\n- additionalTextInfoLine1: replaces first occurrence of ~a~ in provided label, with your custom text\n- additionalTextInfoLine2: replaces second occurrence of ~a~ in provided label, with your custom text\n- showBackground: shows black background of the warning screen\n- errorCode: shows an error code at the bottom left if nonzero\nExample of usage:\nSET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS("ALERT", "JL_INVITE_ND", 66, "", true, -1, -1, "Testing line 1", "Testing line 2", true, 0);\nScreenshot:\nhttps://imgur.com/a/IYA7vJ8",
 			"params": [
 				{
 					"type": "const char*",
@@ -31374,7 +31374,7 @@
 					"name": "entryLine1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "instructionalKey"
 				},
 				{
@@ -31391,23 +31391,23 @@
 				},
 				{
 					"type": "Any",
-					"name": "p6"
+					"name": "additionalIntInfo"
 				},
 				{
-					"type": "Any*",
-					"name": "p7"
+					"type": "const char*",
+					"name": "additionalTextInfoLine1"
 				},
 				{
-					"type": "Any*",
-					"name": "p8"
+					"type": "const char*",
+					"name": "additionalTextInfoLine2"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "showBackground"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "int",
+					"name": "errorCode"
 				}
 			],
 			"return_type": "void",
