@@ -70,7 +70,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_NEW_STREAMED_SCRIPT"
+			]
 		},
 		"0xC4BB298BD441BE78": {
 			"name": "START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS",
@@ -95,7 +98,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_NEW_STREAMED_SCRIPT_WITH_ARGS"
+			]
 		},
 		"0x83666F9FB8FEBD4B": {
 			"name": "TIMERA",
@@ -1701,7 +1707,7 @@
 		"0x8E04FEDD28D42462": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_NATIVE",
 			"jhash": "0x5C57B85D",
-			"comment": "Plays ambient speech. See also _0x444180DB.\n\nped: The ped to play the ambient speech.\nspeechName: Name of the speech to play, eg. \"GENERIC_HI\".\nspeechParam: Can be one of the following:\nSPEECH_PARAMS_STANDARD\nSPEECH_PARAMS_ALLOW_REPEAT\nSPEECH_PARAMS_BEAT\nSPEECH_PARAMS_FORCE\nSPEECH_PARAMS_FORCE_FRONTEND\nSPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND\nSPEECH_PARAMS_FORCE_NORMAL\nSPEECH_PARAMS_FORCE_NORMAL_CLEAR\nSPEECH_PARAMS_FORCE_NORMAL_CRITICAL\nSPEECH_PARAMS_FORCE_SHOUTED\nSPEECH_PARAMS_FORCE_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_SHOUTED_CRITICAL\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY\nSPEECH_PARAMS_MEGAPHONE\nSPEECH_PARAMS_HELI\nSPEECH_PARAMS_FORCE_MEGAPHONE\nSPEECH_PARAMS_FORCE_HELI\nSPEECH_PARAMS_INTERRUPT\nSPEECH_PARAMS_INTERRUPT_SHOUTED\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL\nSPEECH_PARAMS_INTERRUPT_NO_FORCE\nSPEECH_PARAMS_INTERRUPT_FRONTEND\nSPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND\nSPEECH_PARAMS_ADD_BLIP\nSPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT\nSPEECH_PARAMS_ADD_BLIP_FORCE\nSPEECH_PARAMS_ADD_BLIP_SHOUTED\nSPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL\nSPEECH_PARAMS_SHOUTED\nSPEECH_PARAMS_SHOUTED_CLEAR\nSPEECH_PARAMS_SHOUTED_CRITICAL\n\nNote: A list of Name and Parameters can be found here pastebin.com/1GZS5dCL\n\nFull list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json\n\nOld name: _PLAY_AMBIENT_SPEECH1",
+			"comment": "Plays ambient speech. See also _0x444180DB.\n\nped: The ped to play the ambient speech.\nspeechName: Name of the speech to play, eg. \"GENERIC_HI\".\nspeechParam: Can be one of the following:\nSPEECH_PARAMS_STANDARD\nSPEECH_PARAMS_ALLOW_REPEAT\nSPEECH_PARAMS_BEAT\nSPEECH_PARAMS_FORCE\nSPEECH_PARAMS_FORCE_FRONTEND\nSPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND\nSPEECH_PARAMS_FORCE_NORMAL\nSPEECH_PARAMS_FORCE_NORMAL_CLEAR\nSPEECH_PARAMS_FORCE_NORMAL_CRITICAL\nSPEECH_PARAMS_FORCE_SHOUTED\nSPEECH_PARAMS_FORCE_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_SHOUTED_CRITICAL\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY\nSPEECH_PARAMS_MEGAPHONE\nSPEECH_PARAMS_HELI\nSPEECH_PARAMS_FORCE_MEGAPHONE\nSPEECH_PARAMS_FORCE_HELI\nSPEECH_PARAMS_INTERRUPT\nSPEECH_PARAMS_INTERRUPT_SHOUTED\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL\nSPEECH_PARAMS_INTERRUPT_NO_FORCE\nSPEECH_PARAMS_INTERRUPT_FRONTEND\nSPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND\nSPEECH_PARAMS_ADD_BLIP\nSPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT\nSPEECH_PARAMS_ADD_BLIP_FORCE\nSPEECH_PARAMS_ADD_BLIP_SHOUTED\nSPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL\nSPEECH_PARAMS_SHOUTED\nSPEECH_PARAMS_SHOUTED_CLEAR\nSPEECH_PARAMS_SHOUTED_CRITICAL\n\nNote: A list of Name and Parameters can be found here pastebin.com/1GZS5dCL\n\nFull list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -1721,7 +1727,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAY_AMBIENT_SPEECH1"
+			]
 		},
 		"0xC6941B4A3A8FBBB9": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE",
@@ -1746,7 +1755,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAY_AMBIENT_SPEECH2"
+			]
 		},
 		"0x3523634255FC3318": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE",
@@ -1775,7 +1787,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAY_AMBIENT_SPEECH_WITH_VOICE"
+			]
 		},
 		"0xED640017ED337E45": {
 			"name": "PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE",
@@ -1808,7 +1823,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAY_AMBIENT_SPEECH_AT_COORDS"
+			]
 		},
 		"0x13AD665062541A7E": {
 			"name": "OVERRIDE_TREVOR_RAGE",
@@ -2033,7 +2051,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PED_MUTE"
+			]
 		},
 		"0xB8BEC0CA6F0EDB0F": {
 			"name": "STOP_CURRENT_PLAYING_AMBIENT_SPEECH",
@@ -2237,7 +2258,7 @@
 		"0xB28ECA15046CA8B9": {
 			"name": "GET_RADIO_STATION_NAME",
 			"jhash": "0x3DF493BC",
-			"comment": "Returns String with radio station name.",
+			"comment": "Converts radio station index to string. Use HUD::_GET_LABEL_TEXT to get the user-readable text.",
 			"params": [
 				{
 					"type": "int",
@@ -2318,13 +2339,13 @@
 			"build": "323"
 		},
 		"0x3E45765F3FBB582F": {
-			"name": "_0x3E45765F3FBB582F",
+			"name": "_SET_VEH_HAS_RADIO_OVERRIDE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -2457,7 +2478,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"GET_NUMBER_OF_PASSENGER_VOICE_VARIATIONS"
+			]
 		},
 		"0x50B196FC9ED6545B": {
 			"name": "GET_AUDIBLE_MUSIC_TRACK_TEXT_ID",
@@ -2673,7 +2697,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PLAYER_VEHICLE_RADIO_ENABLED"
+			]
 		},
 		"0x3B988190C0AA6C0B": {
 			"name": "SET_VEHICLE_RADIO_ENABLED",
@@ -2745,7 +2772,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_MAX_RADIO_STATION_INDEX"
+			]
 		},
 		"0x8D67489793FF428B": {
 			"name": "FIND_RADIO_STATION_INDEX",
@@ -2753,8 +2783,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "station"
+					"type": "Hash",
+					"name": "stationNameHash"
 				}
 			],
 			"return_type": "int",
@@ -2852,7 +2882,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1493"
+			"build": "1493",
+			"old_names": [
+				"_SET_RADIO_STATION_DISABLED"
+			]
 		},
 		"0x4CAFEBFA21EC188D": {
 			"name": "_SET_RADIO_STATION_IS_VISIBLE",
@@ -2893,21 +2926,21 @@
 			"build": "1493"
 		},
 		"0x4E0AF9114608257C": {
-			"name": "_0x4E0AF9114608257C",
+			"name": "_FORCE_RADIO_TRACK_LIST_POSITION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "radioStation"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "trackListName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "milliseconds"
 				}
 			],
 			"return_type": "void",
@@ -3123,7 +3156,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"GET_PLAYER_HEADSET_SOUND_ALTERNATE"
+			]
 		},
 		"0xDFEBD56D9BD1EB16": {
 			"name": "PLAY_POLICE_REPORT",
@@ -3148,7 +3184,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISABLE_POLICE_REPORTS"
+			]
 		},
 		"0x1B9025BDA76822B6": {
 			"name": "BLIP_SIREN",
@@ -3381,7 +3420,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SPECIAL_FRONTEND_EQUAL"
+			]
 		},
 		"0xA4718A1419D18151": {
 			"name": "STOP_STREAM",
@@ -3524,17 +3566,17 @@
 			"build": "323"
 		},
 		"0xF584CF8529B51434": {
-			"name": "_0xF584CF8529B51434",
+			"name": "_SET_SIREN_KEEP_ON",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -3649,7 +3691,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_AUDIO"
+			]
 		},
 		"0xCA4CEA6AE0000A7E": {
 			"name": "_PRELOAD_VEHICLE_AUDIO",
@@ -3716,7 +3761,7 @@
 			"build": "2372"
 		},
 		"0x5DB8010EE71FDEF2": {
-			"name": "_0x5DB8010EE71FDEF2",
+			"name": "IS_VEHICLE_AUDIBLY_DAMAGED",
 			"jhash": "0x6E660D3F",
 			"comment": "",
 			"params": [
@@ -4061,7 +4106,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DYNAMIC_MIXER_RELATED_FN"
+			]
 		},
 		"0x18EB48CFC41F2EA0": {
 			"name": "REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP",
@@ -4353,7 +4401,10 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_HORN_HASH"
+			]
 		},
 		"0xF54BB7B61036F335": {
 			"name": "RESET_PED_AUDIO_FLAGS",
@@ -4476,7 +4527,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_FORCE_AMBIENT_SIREN"
+			]
 		},
 		"0x43FA0DFC5DF87815": {
 			"name": "_0x43FA0DFC5DF87815",
@@ -4997,7 +5051,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RENDER_FIRST_PERSON_CAM"
+			]
 		},
 		"0xC3981DCE61D9E13F": {
 			"name": "CREATE_CAM",
@@ -6168,11 +6225,11 @@
 			"build": "323"
 		},
 		"0x77C3CEC46BE286F6": {
-			"name": "_0x77C3CEC46BE286F6",
+			"name": "_GET_DEBUG_CAMERA",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Cam",
 			"build": "2372"
 		},
 		"0x8609C75EC438FB3B": {
@@ -6932,7 +6989,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CAMERA_RANGE"
+			]
 		},
 		"0xC91C6C55199308CA": {
 			"name": "SET_FLY_CAM_COORD_AND_CONSTRAIN",
@@ -7474,7 +7534,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_FOLLOW_PED_CAM_CUTSCENE_CHAT"
+			]
 		},
 		"0x271401846BD26E92": {
 			"name": "_0x271401846BD26E92",
@@ -7658,7 +7721,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_TIME_IDLE_DROP"
+			]
 		},
 		"0x79C0E43EB9B944E2": {
 			"name": "_0x79C0E43EB9B944E2",
@@ -7833,7 +7899,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GAMEPLAY_CAM_ZOOM"
+			]
 		},
 		"0x70894BD0915C5BCA": {
 			"name": "SET_FIRST_PERSON_AIM_CAM_ZOOM_FACTOR",
@@ -7910,7 +7979,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_FIRST_PERSON_CAM_NEAR_CLIP"
+			]
 		},
 		"0x42156508606DE65E": {
 			"name": "SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE",
@@ -7923,7 +7995,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP"
+			]
 		},
 		"0x4008EDF7D6E48175": {
 			"name": "_0x4008EDF7D6E48175",
@@ -7952,7 +8027,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "Vector3",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GAMEPLAY_CAM_COORDS"
+			]
 		},
 		"0x5B4E4C817FCC2DFB": {
 			"name": "GET_FINAL_RENDERED_CAM_ROT",
@@ -7965,7 +8043,10 @@
 				}
 			],
 			"return_type": "Vector3",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GAMEPLAY_CAM_ROT_2"
+			]
 		},
 		"0x26903D9CD1175F2C": {
 			"name": "GET_FINAL_RENDERED_IN_WHEN_FRIENDLY_ROT",
@@ -8011,7 +8092,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GAMEPLAY_CAM_NEAR_CLIP"
+			]
 		},
 		"0xDFC8CBC606FDB0FC": {
 			"name": "GET_FINAL_RENDERED_CAM_FAR_CLIP",
@@ -8019,7 +8103,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GAMEPLAY_CAM_FAR_CLIP"
+			]
 		},
 		"0xA03502FC581F7D9B": {
 			"name": "GET_FINAL_RENDERED_CAM_NEAR_DOF",
@@ -8027,7 +8114,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GAMEPLAY_CAM_NEAR_DOF"
+			]
 		},
 		"0x9780F32BCAF72431": {
 			"name": "GET_FINAL_RENDERED_CAM_FAR_DOF",
@@ -8035,7 +8125,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GAMEPLAY_CAM_FAR_DOF"
+			]
 		},
 		"0x162F9D995753DC19": {
 			"name": "GET_FINAL_RENDERED_CAM_MOTION_BLUR_STRENGTH",
@@ -8043,7 +8136,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GAMEPLAY_CAM_FAR_CLIP_2"
+			]
 		},
 		"0xD51ADCD2D8BC0FB3": {
 			"name": "SET_GAMEPLAY_COORD_HINT",
@@ -8321,7 +8417,7 @@
 		"0xF8BDBF3D573049A1": {
 			"name": "SET_GAMEPLAY_HINT_FOLLOW_DISTANCE_SCALAR",
 			"jhash": "0x72E8CD3A",
-			"comment": "Old name: _SET_GAMEPLAY_HINT_ANIM_OFFSETZ",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -8329,12 +8425,15 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_GAMEPLAY_HINT_ANIM_OFFSETZ"
+			]
 		},
 		"0xD1F8363DFAD03848": {
 			"name": "SET_GAMEPLAY_HINT_BASE_ORBIT_PITCH_OFFSET",
 			"jhash": "0x79472AE3",
-			"comment": "Old name: _SET_GAMEPLAY_HINT_ANGLE",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -8342,7 +8441,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_GAMEPLAY_HINT_ANGLE"
+			]
 		},
 		"0x5D7B620DAE436138": {
 			"name": "_SET_GAMEPLAY_HINT_ANIM_OFFSETX",
@@ -8381,7 +8483,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"GET_IS_MULTIPLAYER_BRIEF"
+			]
 		},
 		"0x51669F7D1FB53D9F": {
 			"name": "SET_CINEMATIC_BUTTON_ACTIVE",
@@ -9018,7 +9123,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_LOCAL_TIME",
+				"_GET_UTC_TIME"
+			]
 		},
 		"0x50C7A99057A69748": {
 			"name": "GET_LOCAL_TIME",
@@ -9091,7 +9200,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REQUEST_CUTSCENE_EX"
+			]
 		},
 		"0x440AF51A3462B86F": {
 			"name": "REMOVE_CUTSCENE",
@@ -10203,7 +10315,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_LOAD_UGC_FILE"
+			]
 		},
 		"0xD27058A1CA2B13EE": {
 			"name": "DATAFILE_CREATE",
@@ -10365,7 +10480,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_ADD_BOOLEAN"
+			]
 		},
 		"0xE7E035450A7948D5": {
 			"name": "DATADICT_SET_INT",
@@ -10386,7 +10504,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_ADD_INTEGER"
+			]
 		},
 		"0xC27E1CC2D795105E": {
 			"name": "DATADICT_SET_FLOAT",
@@ -10407,7 +10528,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_ADD_FLOAT"
+			]
 		},
 		"0x8FF3847DADD8E30C": {
 			"name": "DATADICT_SET_STRING",
@@ -10428,7 +10552,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_ADD_STRING"
+			]
 		},
 		"0x4CD49B76338C7DEE": {
 			"name": "DATADICT_SET_VECTOR",
@@ -10457,7 +10584,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_ADD_VECTOR3"
+			]
 		},
 		"0xA358F56F10732EE1": {
 			"name": "DATADICT_CREATE_DICT",
@@ -10474,7 +10604,10 @@
 				}
 			],
 			"return_type": "Any*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_ADD_OBJECT"
+			]
 		},
 		"0x5B11728527CA6E5F": {
 			"name": "DATADICT_CREATE_ARRAY",
@@ -10491,7 +10624,10 @@
 				}
 			],
 			"return_type": "Any*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_ADD_ARRAY"
+			]
 		},
 		"0x1186940ED72FFEEC": {
 			"name": "DATADICT_GET_BOOL",
@@ -10508,7 +10644,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_GET_BOOLEAN"
+			]
 		},
 		"0x78F06F6B1FB5A80C": {
 			"name": "DATADICT_GET_INT",
@@ -10525,7 +10664,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_GET_INTEGER"
+			]
 		},
 		"0x06610343E73B9727": {
 			"name": "DATADICT_GET_FLOAT",
@@ -10542,7 +10684,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_GET_FLOAT"
+			]
 		},
 		"0x3D2FD9E763B24472": {
 			"name": "DATADICT_GET_STRING",
@@ -10559,7 +10704,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_GET_STRING"
+			]
 		},
 		"0x46CD3CB66E0825CC": {
 			"name": "DATADICT_GET_VECTOR",
@@ -10576,7 +10724,10 @@
 				}
 			],
 			"return_type": "Vector3",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_GET_VECTOR3"
+			]
 		},
 		"0xB6B9DDC412FCEEE2": {
 			"name": "DATADICT_GET_DICT",
@@ -10593,7 +10744,10 @@
 				}
 			],
 			"return_type": "Any*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_GET_OBJECT"
+			]
 		},
 		"0x7A983AA9DA2659ED": {
 			"name": "DATADICT_GET_ARRAY",
@@ -10610,7 +10764,10 @@
 				}
 			],
 			"return_type": "Any*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_GET_ARRAY"
+			]
 		},
 		"0x031C55ED33227371": {
 			"name": "DATADICT_GET_TYPE",
@@ -10627,7 +10784,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OBJECT_VALUE_GET_TYPE"
+			]
 		},
 		"0xF8B0F5A43E928C76": {
 			"name": "DATAARRAY_ADD_BOOL",
@@ -10644,7 +10804,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_ADD_BOOLEAN"
+			]
 		},
 		"0xCABDB751D86FE93B": {
 			"name": "DATAARRAY_ADD_INT",
@@ -10661,7 +10824,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_ADD_INTEGER"
+			]
 		},
 		"0x57A995FD75D37F56": {
 			"name": "DATAARRAY_ADD_FLOAT",
@@ -10678,7 +10844,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_ADD_FLOAT"
+			]
 		},
 		"0x2F0661C155AEEEAA": {
 			"name": "DATAARRAY_ADD_STRING",
@@ -10695,7 +10864,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_ADD_STRING"
+			]
 		},
 		"0x407F8D034F70F0C2": {
 			"name": "DATAARRAY_ADD_VECTOR",
@@ -10720,7 +10892,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_ADD_VECTOR3"
+			]
 		},
 		"0x6889498B3E19C797": {
 			"name": "DATAARRAY_ADD_DICT",
@@ -10733,7 +10908,10 @@
 				}
 			],
 			"return_type": "Any*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_ADD_OBJECT"
+			]
 		},
 		"0x50C1B2874E50C114": {
 			"name": "DATAARRAY_GET_BOOL",
@@ -10750,7 +10928,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_GET_BOOLEAN"
+			]
 		},
 		"0x3E5AE19425CD74BE": {
 			"name": "DATAARRAY_GET_INT",
@@ -10767,7 +10948,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_GET_INTEGER"
+			]
 		},
 		"0xC0C527B525D7CFB5": {
 			"name": "DATAARRAY_GET_FLOAT",
@@ -10784,7 +10968,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_GET_FLOAT"
+			]
 		},
 		"0xD3F2FFEB8D836F52": {
 			"name": "DATAARRAY_GET_STRING",
@@ -10801,7 +10988,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_GET_STRING"
+			]
 		},
 		"0x8D2064E5B64A628A": {
 			"name": "DATAARRAY_GET_VECTOR",
@@ -10818,7 +11008,10 @@
 				}
 			],
 			"return_type": "Vector3",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_GET_VECTOR3"
+			]
 		},
 		"0x8B5FADCC4E3A145F": {
 			"name": "DATAARRAY_GET_DICT",
@@ -10835,7 +11028,10 @@
 				}
 			],
 			"return_type": "Any*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_GET_OBJECT"
+			]
 		},
 		"0x065DB281590CEA2D": {
 			"name": "DATAARRAY_GET_COUNT",
@@ -10848,7 +11044,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_GET_SIZE"
+			]
 		},
 		"0x3A0014ADB172A3C5": {
 			"name": "DATAARRAY_GET_TYPE",
@@ -10865,7 +11064,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARRAY_VALUE_GET_TYPE"
+			]
 		}
 	},
 	"DECORATOR": {
@@ -10930,7 +11132,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DECOR_SET_FLOAT"
+			]
 		},
 		"0x0CE3AA5E1CA19E10": {
 			"name": "DECOR_SET_INT",
@@ -10985,7 +11190,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DECOR_GET_FLOAT"
+			]
 		},
 		"0xA06C969B02A97298": {
 			"name": "DECOR_GET_INT",
@@ -11166,7 +11374,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NULLIFY"
+			]
 		},
 		"0xD7C10C4A637992C9": {
 			"name": "ON_ENTER_SP",
@@ -11174,7 +11385,10 @@
 			"comment": "Unloads GROUP_MAP (GTAO/MP) DLC data and loads GROUP_MAP_SP DLC. Neither are loaded by default, 0888C3502DBBEEF5 is a cognate to this function and loads MP DLC (and unloads SP DLC by extension).\n\nThe original (and wrong) definition is below:\n\nThis unload the GTA:O DLC map parts (like high end garages/apartments).\nWorks in singleplayer.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_LOAD_SP_DLC_MAPS"
+			]
 		},
 		"0x0888C3502DBBEEF5": {
 			"name": "ON_ENTER_MP",
@@ -11182,7 +11396,10 @@
 			"comment": "This loads the GTA:O dlc map parts (high end garages, apartments).\nWorks in singleplayer.\nIn order to use GTA:O heist IPL's you have to call this native with the following params: SET_INSTANCE_PRIORITY_MODE(1);",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_LOAD_MP_DLC_MAPS"
+			]
 		}
 	},
 	"ENTITY": {
@@ -11495,7 +11712,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_ANIM_DURATION"
+			]
 		},
 		"0x48C2BED9180FE123": {
 			"name": "GET_ENTITY_ATTACHED_TO",
@@ -13094,7 +13314,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_ENTITY_REGISTER",
+				"_SET_ENTITY_SOMETHING"
+			]
 		},
 		"0x7FB218262B810701": {
 			"name": "PLAY_ENTITY_ANIM",
@@ -13604,7 +13828,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_ENTITY_COLLISON_DISABLED"
+			]
 		},
 		"0x9EBC85ED0FFFE51C": {
 			"name": "SET_ENTITY_COMPLETELY_DISABLE_COLLISION",
@@ -13625,7 +13852,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_ENTITY_COLLISION_2"
+			]
 		},
 		"0x06843DA7060A026B": {
 			"name": "SET_ENTITY_COORDS",
@@ -13707,7 +13937,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_ENTITY_COORDS_2"
+			]
 		},
 		"0x239A3351AC1DA385": {
 			"name": "SET_ENTITY_COORDS_NO_OFFSET",
@@ -14195,25 +14428,25 @@
 			"build": "323"
 		},
 		"0x8339643499D1222E": {
-			"name": "_0x8339643499D1222E",
+			"name": "_SET_ENTITY_ANGULAR_VELOCITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -14797,7 +15030,10 @@
 				}
 			],
 			"return_type": "Vector3",
-			"build": "791"
+			"build": "791",
+			"old_names": [
+				"_GET_WORLD_ROTATION_OF_ENTITY_BONE"
+			]
 		},
 		"0x46F8696933A63C9B": {
 			"name": "_GET_ENTITY_BONE_POSITION_2",
@@ -14814,7 +15050,10 @@
 				}
 			],
 			"return_type": "Vector3",
-			"build": "877"
+			"build": "877",
+			"old_names": [
+				"_GET_WORLD_POSITION_OF_ENTITY_BONE_2"
+			]
 		},
 		"0xBD8D32550E5CEBFE": {
 			"name": "_GET_ENTITY_BONE_ROTATION_LOCAL",
@@ -15169,7 +15408,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NUM_DECORATIONS"
+			]
 		},
 		"0xFF56381874F82086": {
 			"name": "GET_TATTOO_SHOP_DLC_ITEM_DATA",
@@ -15190,7 +15432,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TATTOO_COLLECTION_DATA"
+			]
 		},
 		"0x10144267DD22866C": {
 			"name": "_0x10144267DD22866C",
@@ -15295,7 +15540,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NUM_PROPS_FROM_OUTFIT"
+			]
 		},
 		"0x249E310B2D920699": {
 			"name": "GET_SHOP_PED_QUERY_COMPONENT",
@@ -15536,7 +15784,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NUM_FORCED_COMPONENTS"
+			]
 		},
 		"0x017568A8182D98A6": {
 			"name": "GET_SHOP_PED_APPAREL_FORCED_PROP_COUNT",
@@ -15734,7 +15985,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PROP_FROM_OUTFIT"
+			]
 		},
 		"0xA7A866D21CD2329B": {
 			"name": "GET_NUM_DLC_VEHICLES",
@@ -15916,7 +16170,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_OUTFIT_EMPTY",
+				"_IS_DLC_DATA_EMPTY"
+			]
 		},
 		"0x0564B9FF9631B82C": {
 			"name": "IS_DLC_VEHICLE_MOD",
@@ -16274,7 +16532,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_SPECFX_EXPLOSION"
+			]
 		},
 		"0x2E2EBA0EE7CED0E0": {
 			"name": "IS_EXPLOSION_IN_AREA",
@@ -16488,7 +16749,10 @@
 				}
 			],
 			"return_type": "Entity",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PED_INSIDE_EXPLOSION_AREA"
+			]
 		}
 	},
 	"GRAPHICS": {
@@ -17498,7 +17762,10 @@
 			"comment": "This function is hard-coded to always return 96.",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_MAXIMUM_NUMBER_OF_PHOTOS_2"
+			]
 		},
 		"0x473151EBC762C6DA": {
 			"name": "GET_CURRENT_NUMBER_OF_CLOUD_PHOTOS",
@@ -17506,7 +17773,11 @@
 			"comment": "",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NUMBER_OF_PHOTOS",
+				"_GET_CURRENT_NUMBER_OF_PHOTOS"
+			]
 		},
 		"0x2A893980E96B659A": {
 			"name": "_0x2A893980E96B659A",
@@ -17624,7 +17895,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_LIGHT_WITH_RANGE_WITH_SHADOW"
+			]
 		},
 		"0xF2A1B2771A01DBD4": {
 			"name": "DRAW_LIGHT_WITH_RANGE",
@@ -17825,7 +18099,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ENTITY_DESCRIPTION_TEXT"
+			]
 		},
 		"0x9641588DAB93B4B5": {
 			"name": "_0x9641588DAB93B4B5",
@@ -18283,7 +18560,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CHECKPOINT_ICON_RGBA"
+			]
 		},
 		"0xF51D36185993515D": {
 			"name": "_0xF51D36185993515D",
@@ -18537,7 +18817,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_2D_LAYER",
+				"_SET_UI_LAYER"
+			]
 		},
 		"0xB8A850F20A067EB6": {
 			"name": "SET_SCRIPT_GFX_ALIGN",
@@ -18554,7 +18838,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_SCREEN_DRAW_POSITION",
+				"_SCREEN_DRAW_POSITION_BEGIN"
+			]
 		},
 		"0xE3A3DB414A373DAB": {
 			"name": "RESET_SCRIPT_GFX_ALIGN",
@@ -18562,7 +18850,10 @@
 			"comment": "This function resets the alignment set using SET_SCRIPT_GFX_ALIGN and SET_SCRIPT_GFX_ALIGN_PARAMS to the default values ('I', 'I'; 0, 0, 0, 0).\nThis should be used after having used the aforementioned functions in order to not affect any other scripts attempting to draw.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SCREEN_DRAW_POSITION_END"
+			]
 		},
 		"0xF5A2C681787E579D": {
 			"name": "SET_SCRIPT_GFX_ALIGN_PARAMS",
@@ -18587,7 +18878,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SCREEN_DRAW_POSITION_RATIO"
+			]
 		},
 		"0x6DD8F5AA635EB4B2": {
 			"name": "_GET_SCRIPT_GFX_POSITION",
@@ -18965,7 +19259,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_SET_BINK_MOVIE_REQUESTED"
+			]
 		},
 		"0x70D2CC8A542A973C": {
 			"name": "_PLAY_BINK_MOVIE",
@@ -19070,7 +19367,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_SET_BINK_MOVIE_PROGRESS"
+			]
 		},
 		"0x8E17DDD6B9D5BF29": {
 			"name": "_GET_BINK_MOVIE_TIME",
@@ -19100,7 +19400,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_SET_BINK_MOVIE_UNK"
+			]
 		},
 		"0x845BAD77CC770633": {
 			"name": "ATTACH_TV_AUDIO_TO_ENTITY",
@@ -19233,7 +19536,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_SCREEN_ACTIVE_RESOLUTION"
+			]
 		},
 		"0xF1307EF624A80D87": {
 			"name": "_GET_ASPECT_RATIO",
@@ -19246,7 +19552,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_SCREEN_ASPECT_RATIO"
+			]
 		},
 		"0xB2EBE8CBC58B90E9": {
 			"name": "_0xB2EBE8CBC58B90E9",
@@ -19307,7 +19616,11 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_NIGHTVISION_INACTIVE",
+				"_IS_NIGHTVISION_ACTIVE"
+			]
 		},
 		"0xEF398BEEE4EF45F9": {
 			"name": "_0xEF398BEEE4EF45F9",
@@ -19401,7 +19714,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_WORLD3D_TO_SCREEN2D"
+			]
 		},
 		"0x35736EE65BD00C11": {
 			"name": "GET_TEXTURE_RESOLUTION",
@@ -19502,7 +19818,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_BLACKOUT"
+			]
 		},
 		"0xE2B187C0939B3D32": {
 			"name": "_SET_ARTIFICIAL_LIGHTS_STATE_AFFECTS_VEHICLES",
@@ -19911,7 +20230,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_FAR_SHADOWS_SUPPRESSED"
+			]
 		},
 		"0x25FC3E33A31AD0C9": {
 			"name": "_0x25FC3E33A31AD0C9",
@@ -19937,7 +20259,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CASCADESHADOWS_SET_TYPE"
+			]
 		},
 		"0x27CB772218215325": {
 			"name": "CASCADE_SHADOWS_CLEAR_SHADOW_SAMPLE_TYPE",
@@ -19945,7 +20270,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CASCADESHADOWS_RESET_TYPE"
+			]
 		},
 		"0x6DDBF9DFFC4AC080": {
 			"name": "CASCADE_SHADOWS_SET_AIRCRAFT_MODE",
@@ -20305,7 +20633,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_SEETHROUGH_ACTIVE"
+			]
 		},
 		"0x70A64C0234EF522C": {
 			"name": "SEETHROUGH_RESET",
@@ -20523,7 +20854,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_TRANSITION_TO_BLURRED"
+			]
 		},
 		"0xEFACC8AEF94430D5": {
 			"name": "TRIGGER_SCREENBLUR_FADE_OUT",
@@ -20536,7 +20870,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_TRANSITION_FROM_BLURRED"
+			]
 		},
 		"0xDE81239437E8C5A8": {
 			"name": "DISABLE_SCREENBLUR_FADE",
@@ -20544,7 +20881,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"PAUSED_SCREENBLUR_LOADED"
+			]
 		},
 		"0x5CCABFFCA31DDE33": {
 			"name": "GET_SCREENBLUR_FADE_CURRENT_TIME",
@@ -20552,7 +20892,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"IS_PARTICLE_FX_DELAYED_BLINK"
+			]
 		},
 		"0x7B226C785A52A0A9": {
 			"name": "IS_SCREENBLUR_FADE_RUNNING",
@@ -20573,7 +20916,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ENABLE_GAMEPLAY_CAM",
+				"_SET_FROZEN_RENDERING_DISABLED"
+			]
 		},
 		"0xEB3DAC2C86001E5E": {
 			"name": "GET_TOGGLE_PAUSED_RENDERPHASES_STATUS",
@@ -20630,7 +20977,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_HIDOF_ENV_BLUR_PARAMS"
+			]
 		},
 		"0xB569F41F3E7E83A4": {
 			"name": "_0xB569F41F3E7E83A4",
@@ -20791,7 +21141,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_PARTICLE_FX_NON_LOOPED_AT_COORD_2"
+			]
 		},
 		"0x0E7E72961BA18619": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE",
@@ -20913,7 +21266,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE_2"
+			]
 		},
 		"0x0D53A3B8DA0809D2": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_ON_ENTITY",
@@ -21027,7 +21383,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_PARTICLE_FX_NON_LOOPED_ON_ENTITY_2"
+			]
 		},
 		"0x02B1F2A72E0F5325": {
 			"name": "_START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY_BONE",
@@ -21444,7 +21803,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_PARTICLE_FX_LOOPED_ON_ENTITY_2"
+			]
 		},
 		"0xDDE23F30CC5A0F03": {
 			"name": "START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE",
@@ -21521,7 +21883,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE_2"
+			]
 		},
 		"0x8F75998877616996": {
 			"name": "STOP_PARTICLE_FX_LOOPED",
@@ -21765,7 +22130,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PARTICLE_FX_LOOPED_RANGE"
+			]
 		},
 		"0xEEC4047028426510": {
 			"name": "SET_PARTICLE_FX_CAM_INSIDE_VEHICLE",
@@ -21855,7 +22223,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_PARTICLE_FX_BLOOD_SCALE"
+			]
 		},
 		"0x2B40A97646381508": {
 			"name": "_0x2B40A97646381508",
@@ -21881,7 +22252,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_CAMERA_ENDTIME"
+			]
 		},
 		"0x9DCE1F0F78260875": {
 			"name": "ENABLE_ALIEN_BLOOD_VFX",
@@ -22011,7 +22385,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PTFX_ASSET_NEXT_CALL",
+				"_USE_PARTICLE_FX_ASSET_NEXT_CALL"
+			]
 		},
 		"0xEA1E2D93F6F75ED9": {
 			"name": "SET_PARTICLE_FX_OVERRIDE",
@@ -22028,7 +22406,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PTFX_ASSET_OLD_2_NEW",
+				"_SET_PARTICLE_FX_ASSET_OLD_TO_NEW"
+			]
 		},
 		"0x89C8553DD3274AAE": {
 			"name": "RESET_PARTICLE_FX_OVERRIDE",
@@ -22041,7 +22423,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RESET_PARTICLE_FX_ASSET_OLD_TO_NEW"
+			]
 		},
 		"0xA46B73FAA3460AE1": {
 			"name": "_0xA46B73FAA3460AE1",
@@ -22479,7 +22864,7 @@
 		"0x8A35C742130C6080": {
 			"name": "PATCH_DECAL_DIFFUSE_MAP",
 			"jhash": "0x335695CF",
-			"comment": "Old name: _OVERRIDE_DECAL_TEXTURE",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -22495,12 +22880,16 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_DECAL_TO_MARKER",
+				"_OVERRIDE_DECAL_TEXTURE"
+			]
 		},
 		"0xB7ED70C49521A61D": {
 			"name": "UNPATCH_DECAL_DIFFUSE_MAP",
 			"jhash": "0x7B786555",
-			"comment": "Old name: _UNDO_DECAL_TEXTURE_OVERRIDE",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -22508,7 +22897,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_UNDO_DECAL_TEXTURE_OVERRIDE"
+			]
 		},
 		"0x84C8D7C2D30D3280": {
 			"name": "MOVE_VEHICLE_DECALS",
@@ -22594,7 +22986,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_CLAN_DECAL_TO_VEHICLE"
+			]
 		},
 		"0x82ACC484FFA3B05F": {
 			"name": "_0x82ACC484FFA3B05F",
@@ -22658,7 +23053,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_VEHICLE_GOT_DECAL",
+				"_DOES_VEHICLE_HAVE_DECAL"
+			]
 		},
 		"0x0E4299C549F0D1F1": {
 			"name": "_0x0E4299C549F0D1F1",
@@ -22825,7 +23224,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PRESET_INTERIOR_AMBIENT_CACHE"
+			]
 		},
 		"0x2C933ABF17A1DF41": {
 			"name": "SET_TIMECYCLE_MODIFIER",
@@ -23100,7 +23502,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REQUEST_SCALEFORM_MOVIE3"
+			]
 		},
 		"0x85F01B8D5B90570E": {
 			"name": "HAS_SCALEFORM_MOVIE_LOADED",
@@ -23152,7 +23557,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_NAMED_SCALEFORM_MOVIE_LOADED"
+			]
 		},
 		"0x8217150E1217EBFD": {
 			"name": "HAS_SCALEFORM_CONTAINER_MOVIE_LOADED_INTO_PARENT",
@@ -23474,7 +23882,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_SCALEFORM_MOVIE_3D_NON_ADDITIVE"
+			]
 		},
 		"0xFBD96D87AC96D533": {
 			"name": "CALL_SCALEFORM_MOVIE_METHOD",
@@ -23491,7 +23902,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CALL_SCALEFORM_MOVIE_FUNCTION_VOID"
+			]
 		},
 		"0xD0837058AE2E4BEE": {
 			"name": "CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER",
@@ -23528,7 +23942,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CALL_SCALEFORM_MOVIE_FUNCTION_FLOAT_PARAMS"
+			]
 		},
 		"0x51BC1ED3CC44E8F7": {
 			"name": "CALL_SCALEFORM_MOVIE_METHOD_WITH_STRING",
@@ -23565,7 +23982,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CALL_SCALEFORM_MOVIE_FUNCTION_STRING_PARAMS"
+			]
 		},
 		"0xEF662D8D57E290B1": {
 			"name": "CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER_AND_STRING",
@@ -23622,7 +24042,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CALL_SCALEFORM_MOVIE_FUNCTION_MIXED_PARAMS"
+			]
 		},
 		"0x98C494FD5BDFBFD5": {
 			"name": "BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD",
@@ -23639,7 +24062,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PUSH_SCALEFORM_MOVIE_FUNCTION_FROM_HUD_COMPONENT",
+				"_BEGIN_SCALEFORM_MOVIE_METHOD_HUD_COMPONENT"
+			]
 		},
 		"0xF6E48914C7A8694E": {
 			"name": "BEGIN_SCALEFORM_MOVIE_METHOD",
@@ -23656,7 +24083,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PUSH_SCALEFORM_MOVIE_FUNCTION"
+			]
 		},
 		"0xAB58C27C2E6123C6": {
 			"name": "BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND",
@@ -23669,7 +24099,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PUSH_SCALEFORM_MOVIE_FUNCTION_N",
+				"_BEGIN_SCALEFORM_MOVIE_METHOD_N"
+			]
 		},
 		"0xB9449845F73F5E9C": {
 			"name": "BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER",
@@ -23682,7 +24116,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_BEGIN_SCALEFORM_MOVIE_METHOD_V"
+			]
 		},
 		"0xC6796A8FFA375E53": {
 			"name": "END_SCALEFORM_MOVIE_METHOD",
@@ -23690,7 +24127,10 @@
 			"comment": "Pops and calls the Scaleform function on the stack",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_POP_SCALEFORM_MOVIE_FUNCTION_VOID"
+			]
 		},
 		"0xC50AA39A577AF886": {
 			"name": "END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE",
@@ -23698,7 +24138,11 @@
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_POP_SCALEFORM_MOVIE_FUNCTION",
+				"_END_SCALEFORM_MOVIE_METHOD_RETURN"
+			]
 		},
 		"0x768FF8961BA904D6": {
 			"name": "IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY",
@@ -23711,7 +24155,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_SCALEFORM_MOVIE_FUNCTION_RETURN_BOOL"
+			]
 		},
 		"0x2DE7EFA66B906036": {
 			"name": "GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT",
@@ -23724,7 +24171,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_SCALEFORM_MOVIE_FUNCTION_RETURN_INT"
+			]
 		},
 		"0xD80A80346A45D761": {
 			"name": "_GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_BOOL",
@@ -23750,7 +24200,11 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SITTING_TV",
+				"_GET_SCALEFORM_MOVIE_FUNCTION_RETURN_STRING"
+			]
 		},
 		"0xC3D0841A0CC546A6": {
 			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT",
@@ -23763,7 +24217,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT",
+				"_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_INT"
+			]
 		},
 		"0xD69736AAE04DB51A": {
 			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT",
@@ -23776,7 +24234,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_FLOAT",
+				"_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_FLOAT"
+			]
 		},
 		"0xC58424BA936EB458": {
 			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL",
@@ -23789,7 +24251,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_BOOL",
+				"_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_BOOL"
+			]
 		},
 		"0x80338406F3475E55": {
 			"name": "BEGIN_TEXT_COMMAND_SCALEFORM_STRING",
@@ -23802,7 +24268,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_BEGIN_TEXT_COMPONENT"
+			]
 		},
 		"0x362E2D3FE93A9959": {
 			"name": "END_TEXT_COMMAND_SCALEFORM_STRING",
@@ -23810,7 +24279,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_END_TEXT_COMPONENT"
+			]
 		},
 		"0xAE4E8157D9ECF087": {
 			"name": "_END_TEXT_COMMAND_SCALEFORM_STRING_2",
@@ -23831,7 +24303,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "573"
+			"build": "573",
+			"old_names": [
+				"_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING_2"
+			]
 		},
 		"0xBA7148484BD90365": {
 			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING",
@@ -23844,7 +24319,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_STRING",
+				"_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING"
+			]
 		},
 		"0xE83A3E3557A56640": {
 			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING",
@@ -23857,7 +24336,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_BUTTON_NAME"
+			]
 		},
 		"0x5E657EF1099EDD65": {
 			"name": "_0x5E657EF1099EDD65",
@@ -23883,7 +24365,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT_STRING"
+			]
 		},
 		"0x9304881D6F6537EA": {
 			"name": "REQUEST_SCALEFORM_SCRIPT_HUD_MOVIE",
@@ -23896,7 +24381,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REQUEST_HUD_SCALEFORM"
+			]
 		},
 		"0xDF6E5987D2B4D140": {
 			"name": "HAS_SCALEFORM_SCRIPT_HUD_MOVIE_LOADED",
@@ -23909,7 +24397,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_HUD_SCALEFORM_LOADED"
+			]
 		},
 		"0xF44A5456AC3F4F97": {
 			"name": "REMOVE_SCALEFORM_SCRIPT_HUD_MOVIE",
@@ -24043,7 +24534,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_LOAD_TV_CHANNEL_SEQUENCE"
+			]
 		},
 		"0x2201C576FACAEBE8": {
 			"name": "SET_TV_CHANNEL_PLAYLIST_AT_HOUR",
@@ -24107,7 +24601,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_LOAD_TV_CHANNEL"
+			]
 		},
 		"0x74C180030FDE4B69": {
 			"name": "ENABLE_MOVIE_KEYFRAME_WAIT",
@@ -24381,7 +24878,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_SCREEN_EFFECT"
+			]
 		},
 		"0x068E835A1D0DC0E3": {
 			"name": "ANIMPOSTFX_STOP",
@@ -24394,7 +24894,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_STOP_SCREEN_EFFECT"
+			]
 		},
 		"0xE35B38A27E8E7179": {
 			"name": "_ANIMPOSTFX_GET_UNK",
@@ -24420,7 +24923,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_SCREEN_EFFECT_IS_ACTIVE"
+			]
 		},
 		"0xB4EDDC19532BFB85": {
 			"name": "ANIMPOSTFX_STOP_ALL",
@@ -24428,7 +24934,10 @@
 			"comment": "Stops ALL currently playing effects.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_STOP_ALL_SCREEN_EFFECTS"
+			]
 		},
 		"0xD2209BE128B5418C": {
 			"name": "_ANIMPOSTFX_STOP_AND_DO_UNK",
@@ -24456,7 +24965,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_LOADING_PROMPT_TEXT_ENTRY",
+				"_BEGIN_TEXT_COMMAND_BUSY_STRING"
+			]
 		},
 		"0xBD12F8228410D9B4": {
 			"name": "END_TEXT_COMMAND_BUSYSPINNER_ON",
@@ -24469,7 +24982,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SHOW_LOADING_PROMPT",
+				"_END_TEXT_COMMAND_BUSY_STRING"
+			]
 		},
 		"0x10D373323E5B9C0D": {
 			"name": "BUSYSPINNER_OFF",
@@ -24477,7 +24994,10 @@
 			"comment": "Removes the loading prompt at the bottom right of the screen.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REMOVE_LOADING_PROMPT"
+			]
 		},
 		"0xC65AB383CD91DF98": {
 			"name": "PRELOAD_BUSYSPINNER",
@@ -24493,7 +25013,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_LOADING_PROMPT_BEING_DISPLAYED"
+			]
 		},
 		"0xB2A592B04648A9CB": {
 			"name": "BUSYSPINNER_IS_DISPLAYING",
@@ -24522,7 +25045,10 @@
 			"comment": "Shows the cursor on screen for one frame.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SHOW_CURSOR_THIS_FRAME"
+			]
 		},
 		"0x8DB8CFFD58B62552": {
 			"name": "_SET_MOUSE_CURSOR_SPRITE",
@@ -24535,7 +25061,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CURSOR_SPRITE"
+			]
 		},
 		"0x98215325A695E78A": {
 			"name": "_SET_MOUSE_CURSOR_VISIBLE_IN_MENUS",
@@ -24607,7 +25136,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CLEAR_NOTIFICATIONS_POS"
+			]
 		},
 		"0x32888337579A5970": {
 			"name": "_THEFEED_DISABLE_LOADING_SCREEN_TIPS",
@@ -24615,7 +25147,10 @@
 			"comment": "Stops loading screen tips shown by invoking either `0x488043841BBE156F` or `0x15CFA549788D35EF`",
 			"params": [],
 			"return_type": "void",
-			"build": "463"
+			"build": "463",
+			"old_names": [
+				"_THEFEED_DISABLE"
+			]
 		},
 		"0x25F87B30C382FCA7": {
 			"name": "THEFEED_HIDE_THIS_FRAME",
@@ -24623,7 +25158,10 @@
 			"comment": "Once called each frame hides all above radar notifications.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HIDE_HUD_NOTIFICATIONS_THIS_FRAME"
+			]
 		},
 		"0x15CFA549788D35EF": {
 			"name": "_THEFEED_DISPLAY_LOADING_SCREEN_TIPS",
@@ -24631,7 +25169,10 @@
 			"comment": "Displays loading screen tips, requires `0x56C8B608CFD49854` to be called beforehand.",
 			"params": [],
 			"return_type": "void",
-			"build": "463"
+			"build": "463",
+			"old_names": [
+				"_THEFEED_ENABLE"
+			]
 		},
 		"0xA8FDB297A8D25FBA": {
 			"name": "THEFEED_FLUSH_QUEUE",
@@ -24652,7 +25193,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REMOVE_NOTIFICATION"
+			]
 		},
 		"0xA13C11E1B5C06BFC": {
 			"name": "THEFEED_FORCE_RENDER_ON",
@@ -24668,7 +25212,10 @@
 			"comment": "Enables loading screen tips to be be shown (`_0x15CFA549788D35EF` and `_0x488043841BBE156F`), blocks other kinds of notifications from being displayed (at least from current script). Call `0xADED7F5748ACAFE6` to display those again.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_THEFEED_HIDE_GTAO_TOOLTIPS"
+			]
 		},
 		"0xFDB423997FA30340": {
 			"name": "THEFEED_PAUSE",
@@ -24700,7 +25247,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_THEFEED_ENABLE_BASELINE_OFFSET"
+			]
 		},
 		"0xB695E2CD0A2DA9EE": {
 			"name": "THEFEED_SPS_EXTEND_WIDESCREEN_OFF",
@@ -24708,7 +25258,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_THEFEED_DISABLE_BASELINE_OFFSET"
+			]
 		},
 		"0x82352748437638CA": {
 			"name": "THEFEED_GET_FIRST_VISIBLE_DELETE_REMAINING",
@@ -24716,7 +25269,11 @@
 			"comment": "Returns the handle for the notification currently displayed on the screen. Name may be a hash collision, but describes the function accurately.",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_CURRENT_NOTIFICATION",
+				"_THEFEED_GET_CURRENT_NOTIFICATION"
+			]
 		},
 		"0x56C8B608CFD49854": {
 			"name": "THEFEED_COMMENT_TELEPORT_POOL_ON",
@@ -24732,7 +25289,10 @@
 			"comment": "Displays \"normal\" notifications again after calling `_0x56C8B608CFD49854` (those that were drawn before calling this native too), though those will have a weird offset and stay on screen forever (tested with notifications created from same script).",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_THEFEED_SHOW_GTAO_TOOLTIPS"
+			]
 		},
 		"0x92F0DA1E27DB96DC": {
 			"name": "_THEFEED_SET_NEXT_POST_BACKGROUND_COLOR",
@@ -24745,7 +25305,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_BACKGROUND_COLOR",
+				"_THEFEED_NEXT_POST_BACKGROUND_COLOR"
+			]
 		},
 		"0x17430B918701C342": {
 			"name": "_THEFEED_SET_ANIMPOSTFX_COLOR",
@@ -24770,7 +25334,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_FLASH_COLOR"
+			]
 		},
 		"0x17AD8C9706BDD88A": {
 			"name": "_THEFEED_SET_ANIMPOSTFX_COUNT",
@@ -24804,7 +25371,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_THEFEED_CLEAR_ANIMPOSTFX"
+			]
 		},
 		"0xFDEC055AB549E328": {
 			"name": "THEFEED_FREEZE_NEXT_POST",
@@ -24812,7 +25382,10 @@
 			"comment": "Requires manual management of game stream handles (i.e., 0xBE4390CB40B3E627).",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_THEFEED_SET_NEXT_POST_PERSISTENT"
+			]
 		},
 		"0x80FE4F3AB4E1B62A": {
 			"name": "THEFEED_CLEAR_FROZEN_POST",
@@ -24820,7 +25393,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_THEFEED_FLUSH_PERSISTENT"
+			]
 		},
 		"0xBAE4F9B97CD43B30": {
 			"name": "_THEFEED_SET_FLUSH_ANIMPOSTFX",
@@ -24871,7 +25447,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_TEXT_ENTRY"
+			]
 		},
 		"0x2B7E9A4EAAA93C89": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_STATS",
@@ -24908,7 +25487,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_MESSAGE_2"
+			]
 		},
 		"0x1CCD9A37359072CF": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT",
@@ -24941,7 +25523,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_MESSAGE"
+			]
 		},
 		"0xC6F580E4C94926AC": {
 			"name": "_END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_GXT_ENTRY",
@@ -24974,7 +25559,11 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_MESSAGE_3",
+				"_END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_ENTRY"
+			]
 		},
 		"0x1E6611149DB3DB6B": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU",
@@ -25011,7 +25600,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_MESSAGE_4"
+			]
 		},
 		"0x5CBF7BADE20DB93E": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG",
@@ -25052,7 +25644,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_MESSAGE_CLAN_TAG"
+			]
 		},
 		"0x531B84E7DA981FB6": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON",
@@ -25101,7 +25696,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_MESSAGE_CLAN_TAG_2"
+			]
 		},
 		"0x2ED7843F8F801023": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_TICKER",
@@ -25118,7 +25716,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_NOTIFICATION"
+			]
 		},
 		"0x44FA03975424A0EE": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_TICKER_FORCED",
@@ -25135,7 +25736,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_NOTIFICATION_2"
+			]
 		},
 		"0x378E809BF61EC840": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_TICKER_WITH_TOKENS",
@@ -25152,7 +25756,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_NOTIFICATION_3"
+			]
 		},
 		"0xAA295B6F28BD587D": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_AWARD",
@@ -25181,7 +25788,11 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_NOTIFICATION_ICON",
+				"_DRAW_NOTIFICATION_AWARD"
+			]
 		},
 		"0x97C9E4E7024A8F2C": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_CREWTAG",
@@ -25230,7 +25841,11 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NOTIFICATION_SEND_APARTMENT_INVITE",
+				"_DRAW_NOTIFICATION_APARTMENT_INVITE"
+			]
 		},
 		"0x137BC35589E34E1E": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME",
@@ -25283,7 +25898,11 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NOTIFICATION_SEND_CLAN_INVITE",
+				"_DRAW_NOTIFICATION_CLAN_INVITE"
+			]
 		},
 		"0x33EE12743CCD6343": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_UNLOCK",
@@ -25379,7 +25998,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_NOTIFICATION_4"
+			]
 		},
 		"0x8EFCCF6EC66D85E4": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_CREW_RANKUP",
@@ -25470,7 +26092,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_NOTIFICATION_WITH_ICON"
+			]
 		},
 		"0xDD6CB2CCE7C2735C": {
 			"name": "_END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT",
@@ -25491,7 +26116,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_NOTIFICATION_WITH_BUTTON"
+			]
 		},
 		"0xB87A37EEB7FAA67D": {
 			"name": "BEGIN_TEXT_COMMAND_PRINT",
@@ -25504,7 +26132,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TEXT_ENTRY_2"
+			]
 		},
 		"0x9D77056A530643F6": {
 			"name": "END_TEXT_COMMAND_PRINT",
@@ -25521,7 +26152,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_SUBTITLE_TIMED"
+			]
 		},
 		"0x853648FD1063A213": {
 			"name": "BEGIN_TEXT_COMMAND_IS_MESSAGE_DISPLAYED",
@@ -25555,7 +26189,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TEXT_ENTRY"
+			]
 		},
 		"0xCD015E5BB0D96A57": {
 			"name": "END_TEXT_COMMAND_DISPLAY_TEXT",
@@ -25576,7 +26213,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_TEXT"
+			]
 		},
 		"0x54CE8AC98E120CAB": {
 			"name": "_BEGIN_TEXT_COMMAND_GET_WIDTH",
@@ -25589,7 +26229,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TEXT_ENTRY_FOR_WIDTH",
+				"_BEGIN_TEXT_COMMAND_WIDTH"
+			]
 		},
 		"0x85F061DA64ED2F67": {
 			"name": "_END_TEXT_COMMAND_GET_WIDTH",
@@ -25602,7 +26246,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TEXT_SCREEN_WIDTH"
+			]
 		},
 		"0x521FB041D93DD0E4": {
 			"name": "_BEGIN_TEXT_COMMAND_LINE_COUNT",
@@ -25615,7 +26262,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TEXT_GXT_ENTRY"
+			]
 		},
 		"0x9040DFB09BE75706": {
 			"name": "_END_TEXT_COMMAND_LINE_COUNT",
@@ -25632,7 +26282,11 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TEXT_SCREEN_LINE_COUNT",
+				"_END_TEXT_COMMAND_GET_LINE_COUNT"
+			]
 		},
 		"0x8509B634FBE7DA11": {
 			"name": "BEGIN_TEXT_COMMAND_DISPLAY_HELP",
@@ -25645,7 +26299,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TEXT_COMPONENT_FORMAT"
+			]
 		},
 		"0x238FFE5C7B0498A6": {
 			"name": "END_TEXT_COMMAND_DISPLAY_HELP",
@@ -25670,7 +26327,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISPLAY_HELP_TEXT_FROM_STRING_LABEL"
+			]
 		},
 		"0x0A24DA3A41B718F5": {
 			"name": "BEGIN_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED",
@@ -25782,7 +26442,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_BEGIN_TEXT_COMMAND_TIMER"
+			]
 		},
 		"0xA86911979638106F": {
 			"name": "END_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT",
@@ -25795,7 +26458,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_END_TEXT_COMMAND_TIMER"
+			]
 		},
 		"0x03B504CF259931BC": {
 			"name": "ADD_TEXT_COMPONENT_INTEGER",
@@ -25838,7 +26504,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_TEXT_COMPONENT_ITEM_STRING"
+			]
 		},
 		"0x17299B63C7683A2B": {
 			"name": "ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY",
@@ -25877,7 +26546,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_TEXT_COMPONENT_STRING"
+			]
 		},
 		"0x1115F16B8AB9E8BF": {
 			"name": "ADD_TEXT_COMPONENT_SUBSTRING_TIME",
@@ -25928,7 +26600,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_TEXT_COMPONENT_APP_TITLE"
+			]
 		},
 		"0x94CF4AC034C9C986": {
 			"name": "ADD_TEXT_COMPONENT_SUBSTRING_WEBSITE",
@@ -25941,7 +26616,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_TEXT_COMPONENT_STRING2"
+			]
 		},
 		"0x5F68520888E69014": {
 			"name": "ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY",
@@ -25954,7 +26632,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_TEXT_COMPONENT_STRING3",
+				"_ADD_TEXT_COMPONENT_SCALEFORM"
+			]
 		},
 		"0x39BBF623FC803EAC": {
 			"name": "SET_COLOUR_OF_NEXT_TEXT_COMPONENT",
@@ -25967,7 +26649,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NOTIFICATION_COLOR_NEXT"
+			]
 		},
 		"0x169BD9382084C8C0": {
 			"name": "_GET_TEXT_SUBSTRING",
@@ -26139,7 +26824,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REQUEST_ADDITIONAL_TEXT_2"
+			]
 		},
 		"0x02245FE4BED318B8": {
 			"name": "HAS_ADDITIONAL_TEXT_LOADED",
@@ -26276,7 +26964,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_LENGTH_OF_STRING"
+			]
 		},
 		"0xD0EF8A959B8A4CB9": {
 			"name": "GET_STREET_NAME_FROM_HASH_KEY",
@@ -26400,7 +27091,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_RADAR_ENABLED"
+			]
 		},
 		"0x0C698D8F099174C7": {
 			"name": "_0x0C698D8F099174C7",
@@ -26554,7 +27248,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"RESPONDING_AS_TEMP"
+			]
 		},
 		"0x096EF57A0C999BBA": {
 			"name": "SET_RADAR_ZOOM",
@@ -26597,7 +27294,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_RADAR_ZOOM_LEVEL_THIS_FRAME"
+			]
 		},
 		"0xD2049635DEB9C375": {
 			"name": "_0xD2049635DEB9C375",
@@ -26701,7 +27401,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_HUD_COLOURS_SWITCH"
+			]
 		},
 		"0xF314CF4F0211894E": {
 			"name": "REPLACE_HUD_COLOUR_WITH_RGBA",
@@ -26730,7 +27433,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_HUD_COLOUR"
+			]
 		},
 		"0x1DFEDD15019315A9": {
 			"name": "_SET_ABILITY_BAR_VISIBILITY_IN_MULTIPLAYER",
@@ -26817,7 +27523,7 @@
 		"0xDB88A37483346780": {
 			"name": "GET_RENDERED_CHARACTER_HEIGHT",
 			"jhash": "0x3330175B",
-			"comment": "This gets the height of the FONT and not the total text. You need to get the number of lines your text uses, and get the height of a newline (I'm using a smaller value) to get the total text height.\n\nOld name: _GET_TEXT_SCALE_HEIGHT",
+			"comment": "This gets the height of the FONT and not the total text. You need to get the number of lines your text uses, and get the height of a newline (I'm using a smaller value) to get the total text height.",
 			"params": [
 				{
 					"type": "float",
@@ -26829,7 +27535,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TEXT_SCALE_HEIGHT"
+			]
 		},
 		"0x07C837F9A01C34C9": {
 			"name": "SET_TEXT_SCALE",
@@ -27225,7 +27934,10 @@
 			"comment": "This function is hard-coded to always return 1.",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_LEVEL_BLIP_SPRITE"
+			]
 		},
 		"0x186E5D252FA50E7D": {
 			"name": "GET_WAYPOINT_BLIP_ENUM_ID",
@@ -27233,7 +27945,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_BLIP_INFO_ID_ITERATOR"
+			]
 		},
 		"0x9A3FF3DE163034E8": {
 			"name": "GET_NUMBER_OF_ACTIVE_BLIPS",
@@ -27952,7 +28667,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "Blip",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"DISABLE_BLIP_NAME_FOR_VAR"
+			]
 		},
 		"0x4167EFE0527D706E": {
 			"name": "IS_HOVERING_OVER_MISSION_CREATOR_BLIP",
@@ -28258,7 +28976,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_BLIP_CHECKED"
+			]
 		},
 		"0x5FBCA48327B914DF": {
 			"name": "SHOW_HEADING_INDICATOR_ON_BLIP",
@@ -28292,7 +29013,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_BLIP_FRIENDLY"
+			]
 		},
 		"0x23C3EB807312F01A": {
 			"name": "SHOW_FRIEND_INDICATOR_ON_BLIP",
@@ -28309,7 +29033,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_BLIP_FRIEND"
+			]
 		},
 		"0xDCFB5D4DB8BF367E": {
 			"name": "SHOW_CREW_INDICATOR_ON_BLIP",
@@ -28326,7 +29053,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_BLIP_CREW"
+			]
 		},
 		"0xC4278F70131BAA6D": {
 			"name": "_SET_BLIP_DISPLAY_INDICATOR_ON_BLIP",
@@ -28693,7 +29423,7 @@
 			"build": "323"
 		},
 		"0x504DFE62A1692296": {
-			"name": "_0x504DFE62A1692296",
+			"name": "_SET_INTERIOR_ZOOM_LEVEL_INCREASED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -28706,13 +29436,13 @@
 			"build": "1493"
 		},
 		"0x7EC8ABA5E74B3D7A": {
-			"name": "_0x7EC8ABA5E74B3D7A",
+			"name": "_SET_INTERIOR_ZOOM_LEVEL_DECREASED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -28778,7 +29508,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISABLE_RADAR_THIS_FRAME"
+			]
 		},
 		"0x20FE7FDFEEAD38C0": {
 			"name": "HIDE_MINIMAP_INTERIOR_MAP_THIS_FRAME",
@@ -28807,7 +29540,10 @@
 			"comment": "When calling this, the current frame will have the players \"arrow icon\" be focused on the dead center of the radar.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CENTER_PLAYER_ON_RADAR_THIS_FRAME"
+			]
 		},
 		"0x55F5A5F07134DE60": {
 			"name": "_0x55F5A5F07134DE60",
@@ -28884,7 +29620,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_SINGLEPLAYER_HUD_CASH"
+			]
 		},
 		"0xA5E78BA2B1331C55": {
 			"name": "DISPLAY_AMMO_THIS_FRAME",
@@ -29029,7 +29768,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SHOW_WEAPON_WHEEL"
+			]
 		},
 		"0x488043841BBE156F": {
 			"name": "_HUD_DISPLAY_LOADING_SCREEN_TIPS",
@@ -29045,7 +29787,10 @@
 			"comment": "Calling this each frame, stops the player from receiving a weapon via the weapon wheel.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_BLOCK_WEAPON_WHEEL_THIS_FRAME"
+			]
 		},
 		"0xA48931185F0536FE": {
 			"name": "_HUD_WEAPON_WHEEL_GET_SELECTED_HASH",
@@ -29066,7 +29811,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HUD_WEAPON_WHEEL_SET_SLOT_HASH"
+			]
 		},
 		"0xA13E93403F26C812": {
 			"name": "_HUD_WEAPON_WHEEL_GET_SLOT_HASH",
@@ -29357,7 +30105,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"KEY_HUD_COLOUR"
+			]
 		},
 		"0x5F28ECF5FC84772F": {
 			"name": "SET_MISSION_NAME",
@@ -29462,7 +30213,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_DRAW_MAP_VISIBLE",
+				"_SET_NORTH_YANKTON_MAP"
+			]
 		},
 		"0xF8DEE0A5600CBB93": {
 			"name": "SET_MINIMAP_HIDE_FOW",
@@ -29475,7 +30230,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_MINIMAP_REVEALED"
+			]
 		},
 		"0xE0130B41D3CF4574": {
 			"name": "GET_MINIMAP_FOW_DISCOVERY_RATIO",
@@ -29483,7 +30241,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_MINIMAP_REVEAL_PERCENTAGE"
+			]
 		},
 		"0x6E31B91145873922": {
 			"name": "GET_MINIMAP_FOW_COORDINATE_IS_REVEALED",
@@ -29504,7 +30265,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_MINIMAP_AREA_REVEALED"
+			]
 		},
 		"0x62E849B7EB28E770": {
 			"name": "_0x62E849B7EB28E770",
@@ -29626,7 +30390,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_MINIMAP_ATTITUDE_INDICATOR_LEVEL"
+			]
 		},
 		"0x3F5CC444DCAAA8F2": {
 			"name": "SET_HEALTH_HUD_DISPLAY_VALUES",
@@ -29690,7 +30457,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_RADAR_BIGMAP_ENABLED"
+			]
 		},
 		"0xBC4C9EA5391ECC0D": {
 			"name": "IS_HUD_COMPONENT_ACTIVE",
@@ -29881,7 +30651,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_2D_COORD_FROM_3D_COORD"
+			]
 		},
 		"0x523A590C1A3CC0D3": {
 			"name": "OPEN_REPORTUGC_MENU",
@@ -29889,7 +30662,10 @@
 			"comment": "Shows a menu for reporting UGC content.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISPLAY_JOB_REPORT"
+			]
 		},
 		"0xEE4C0E6DBC6F2C6F": {
 			"name": "FORCE_CLOSE_REPORTUGC_MENU",
@@ -30084,7 +30860,12 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CREATE_MP_GAMER_TAG_COLOR",
+				"_SET_MP_GAMER_TAG_COLOR",
+				"_CREATE_MP_GAMER_TAG_FOR_NET_PLAYER"
+			]
 		},
 		"0x6E0EB3EB47C8D7AA": {
 			"name": "IS_MP_GAMER_TAG_MOVIE_ACTIVE",
@@ -30092,7 +30873,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_MP_GAMER_TAG"
+			]
 		},
 		"0xBFEFE3321A3F5015": {
 			"name": "CREATE_FAKE_MP_GAMER_TAG",
@@ -30125,7 +30909,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CREATE_MP_GAMER_TAG"
+			]
 		},
 		"0x31698AA80E0223F8": {
 			"name": "REMOVE_MP_GAMER_TAG",
@@ -30164,7 +30951,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"ADD_TREVOR_RANDOM_MODIFIER"
+			]
 		},
 		"0x63BB75ABEDC1F6A0": {
 			"name": "SET_MP_GAMER_TAG_VISIBILITY",
@@ -30206,7 +30996,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_MP_GAMER_TAG_",
+				"_SET_MP_GAMER_TAG"
+			]
 		},
 		"0xA67F9C46D612B6F1": {
 			"name": "_SET_MP_GAMER_TAG_ICONS",
@@ -30299,7 +31093,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_MP_GAMER_TAG_HEALTH_BAR_COLOR"
+			]
 		},
 		"0xD48FE545CD46F857": {
 			"name": "SET_MP_GAMER_TAG_ALPHA",
@@ -30354,7 +31151,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "877"
+			"build": "877",
+			"old_names": [
+				"_SET_MP_GAMER_TAG_UNK"
+			]
 		},
 		"0xDEA2B8283BAA3944": {
 			"name": "SET_MP_GAMER_TAG_NAME",
@@ -30384,7 +31184,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_MP_GAMER_TAG_2",
+				"_HAS_MP_GAMER_TAG_CREW_FLAGS_SET"
+			]
 		},
 		"0x7B7723747CCB55B6": {
 			"name": "SET_MP_GAMER_TAG_BIG_TEXT",
@@ -30401,7 +31205,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_MP_GAMER_TAG_CHATTING"
+			]
 		},
 		"0x01A358D9128B7A86": {
 			"name": "GET_CURRENT_WEBPAGE_ID",
@@ -30409,7 +31216,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_ACTIVE_WEBSITE_ID"
+			]
 		},
 		"0x97D47996FC48CBAD": {
 			"name": "GET_CURRENT_WEBSITE_ID",
@@ -30545,7 +31355,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_WARNING_MESSAGE_2"
+			]
 		},
 		"0x701919482C74B5AB": {
 			"name": "SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS",
@@ -30598,7 +31411,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_WARNING_MESSAGE_3"
+			]
 		},
 		"0x38B55259C2E078ED": {
 			"name": "_SET_WARNING_MESSAGE_WITH_HEADER_UNK",
@@ -30708,7 +31524,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "573"
+			"build": "573",
+			"old_names": [
+				"_DRAW_FRONTEND_ALERT"
+			]
 		},
 		"0x81DF9ABA6C83DFF9": {
 			"name": "_GET_WARNING_MESSAGE_TITLE_HASH",
@@ -30778,7 +31597,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"IS_MEDICAL_DISABLED"
+			]
 		},
 		"0x7792424AA0EAC32E": {
 			"name": "CLEAR_DYNAMIC_PAUSE_MENU_ERROR_MESSAGE",
@@ -30799,7 +31621,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_MAP_FULL_SCREEN"
+			]
 		},
 		"0x1EAE6DD17B7A5EFA": {
 			"name": "_RACE_GALLERY_NEXT_BLIP_SPRITE",
@@ -30932,7 +31757,10 @@
 			"comment": "if (HUD::GET_CURRENT_FRONTEND_MENU_VERSION() == joaat(\"fe_menu_version_empty_no_background\"))",
 			"params": [],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_CURRENT_FRONTEND_MENU"
+			]
 		},
 		"0xDF47FC56C71569CF": {
 			"name": "SET_PAUSE_MENU_ACTIVE",
@@ -31014,7 +31842,10 @@
 			"comment": "GET_PAUSE_MENU_*",
 			"params": [],
 			"return_type": "Vector3",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"'0x5BFF36D6ED83E0AE'"
+			]
 		},
 		"0x1C491717107431C7": {
 			"name": "IS_PAUSE_MENU_RESTARTING",
@@ -31082,7 +31913,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_FRONTEND_MENU_CONTEXT"
+			]
 		},
 		"0x444D8CF241EC25C5": {
 			"name": "PAUSE_MENU_DEACTIVATE_CONTEXT",
@@ -31095,7 +31929,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"OBJECT_DECAL_TOGGLE"
+			]
 		},
 		"0x84698AB38D0C6636": {
 			"name": "PAUSE_MENU_IS_CONTEXT_ACTIVE",
@@ -31115,7 +31952,7 @@
 			"jhash": "0x016D7AF9",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xDE03620F8703A9DF": {
@@ -31123,7 +31960,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x359AF31A4B52F5ED": {
@@ -31131,7 +31968,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x13C4B962653A5280": {
@@ -31139,7 +31976,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xC8E1071177A23BE5": {
@@ -31174,7 +32011,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"ENABLE_DEATHBLOOD_SEETHROUGH"
+			]
 		},
 		"0xC78E239AC5B2DDB9": {
 			"name": "PAUSE_MENU_SET_BUSY_SPINNER",
@@ -31186,7 +32026,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -31239,7 +32079,7 @@
 			"jhash": "0x92DAFA78",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x593FEAE1F73392D4": {
@@ -31247,7 +32087,7 @@
 			"jhash": "0x22CA9F2A",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4E3CD0EF8A489541": {
@@ -31255,7 +32095,7 @@
 			"jhash": "0xDA7951A2",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xF284AC67940C6812": {
@@ -31263,7 +32103,7 @@
 			"jhash": "0x7D95AFFF",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2E22FEFA0100275E": {
@@ -31361,7 +32201,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_USERIDS_UIHIDDEN"
+			]
 		},
 		"0xCA6B2F7CE32AB653": {
 			"name": "_0xCA6B2F7CE32AB653",
@@ -31390,7 +32233,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
@@ -31402,7 +32245,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -31550,7 +32393,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SHOW_SOCIAL_CLUB_LEGAL_SCREEN"
+			]
 		},
 		"0xF13FE2A80C05C561": {
 			"name": "_0xF13FE2A80C05C561",
@@ -31658,7 +32504,10 @@
 			"comment": "Returns whether or not the text chat (MULTIPLAYER_CHAT Scaleform component) is active.",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_TEXT_CHAT_ACTIVE"
+			]
 		},
 		"0x1AC8F4AD40E22127": {
 			"name": "_CLOSE_MULTIPLAYER_CHAT",
@@ -31666,7 +32515,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ABORT_TEXT_CHAT"
+			]
 		},
 		"0x7C226D5346D4D10A": {
 			"name": "_0x7C226D5346D4D10A",
@@ -31722,7 +32574,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_IS_IN_TOURNAMENT"
+			]
 		},
 		"0xD30C50DF888D58B5": {
 			"name": "SET_PED_HAS_AI_BLIP",
@@ -31739,7 +32594,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PED_ENEMY_AI_BLIP",
+				"_SET_PED_AI_BLIP"
+			]
 		},
 		"0xB13DCB4C6FAAD238": {
 			"name": "_SET_PED_HAS_AI_BLIP_WITH_COLOR",
@@ -31790,7 +32649,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_AI_BLIP_TYPE"
+			]
 		},
 		"0x3EED80DFF7325CAA": {
 			"name": "SET_PED_AI_BLIP_HAS_CONE",
@@ -31807,7 +32669,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"HIDE_SPECIAL_ABILITY_LOCKON_OPERATION"
+			]
 		},
 		"0x0C4BBF625CA98C4E": {
 			"name": "SET_PED_AI_BLIP_FORCED_ON",
@@ -31824,7 +32689,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_AI_BLIP_ALWAYS_SHOWN"
+			]
 		},
 		"0x97C65887D4B37FA9": {
 			"name": "SET_PED_AI_BLIP_NOTICE_RANGE",
@@ -31841,7 +32709,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_AI_BLIP_MAX_DISTANCE"
+			]
 		},
 		"0xFCFACD0DB9D7A57D": {
 			"name": "_SET_PED_AI_BLIP_SPRITE",
@@ -31913,7 +32784,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_DIRECTOR_MODE"
+			]
 		},
 		"0x04655F9D075D0AE5": {
 			"name": "_0x04655F9D075D0AE5",
@@ -32200,7 +33074,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_ROOM_KEY_FROM_GAMEPLAY_CAM"
+			]
 		},
 		"0x23B59D8912F94246": {
 			"name": "CLEAR_ROOM_FOR_GAME_VIEWPORT",
@@ -32267,7 +33144,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_LOAD_INTERIOR"
+			]
 		},
 		"0x261CCE7EED010641": {
 			"name": "UNPIN_INTERIOR",
@@ -32356,7 +33236,10 @@
 				}
 			],
 			"return_type": "Interior",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_UNK_GET_INTERIOR_AT_COORDS"
+			]
 		},
 		"0x483ACA1176CA93F1": {
 			"name": "_0x483ACA1176CA93F1",
@@ -32385,7 +33268,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARE_COORDS_COLLIDING_WITH_EXTERIOR"
+			]
 		},
 		"0xEC4CF9FCB29A4424": {
 			"name": "GET_INTERIOR_FROM_COLLISION",
@@ -32436,7 +33322,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ENABLE_INTERIOR_PROP"
+			]
 		},
 		"0x420BD37289EEE162": {
 			"name": "DEACTIVATE_INTERIOR_ENTITY_SET",
@@ -32453,7 +33342,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISABLE_INTERIOR_PROP"
+			]
 		},
 		"0x35F7DD45E8C0A16D": {
 			"name": "IS_INTERIOR_ENTITY_SET_ACTIVE",
@@ -32470,7 +33362,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_INTERIOR_PROP_ENABLED"
+			]
 		},
 		"0xC1F1920BAF281317": {
 			"name": "_SET_INTERIOR_ENTITY_SET_COLOR",
@@ -32491,7 +33386,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "877"
+			"build": "877",
+			"old_names": [
+				"_SET_INTERIOR_PROP_COLOR"
+			]
 		},
 		"0x41F37C3427C75AE0": {
 			"name": "REFRESH_INTERIOR",
@@ -32517,7 +33415,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HIDE_MAP_OBJECT_THIS_FRAME"
+			]
 		},
 		"0x50C375537449F369": {
 			"name": "_ENABLE_SCRIPT_CULL_MODEL_THIS_FRAME",
@@ -32765,7 +33666,10 @@
 			"comment": "MulleDK19: This function is hard-coded to always return 0.",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RETURN_ZERO"
+			]
 		},
 		"0xEF7D17BC6C85264C": {
 			"name": "_LOADINGSCREEN_GET_LOAD_FREEMODE",
@@ -32786,7 +33690,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_BROADCAST_FINSHED_LOS_SOUND"
+			]
 		},
 		"0x8AA464D4E0F6ACCD": {
 			"name": "_LOADINGSCREEN_GET_LOAD_FREEMODE_WITH_EVENT_NAME",
@@ -32807,7 +33714,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_IN_LOADING_SCREEN"
+			]
 		},
 		"0xC6DC823253FBB366": {
 			"name": "_LOADINGSCREEN_IS_LOADING_FREEMODE",
@@ -32815,7 +33725,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_UI_LOADING_MULTIPLAYER"
+			]
 		},
 		"0xC7E7181C09F33B69": {
 			"name": "_LOADINGSCREEN_SET_IS_LOADING_FREEMODE",
@@ -32859,7 +33772,11 @@
 			"comment": "0 = american (en-US)\n1 = french (fr-FR)\n2 = german (de-DE)\n3 = italian (it-IT)\n4 = spanish (es-ES)\n5 = brazilian (pt-BR)\n6 = polish (pl-PL)\n7 = russian (ru-RU)\n8 = korean (ko-KR)\n9 = chinesetrad (zh-TW)\n10 = japanese (ja-JP)\n11 = mexican (es-MX)\n12 = chinesesimp (zh-CN)",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_UI_LANGUAGE_ID",
+				"_GET_CURRENT_LANGUAGE_ID"
+			]
 		},
 		"0xA8AE43AEC1A61314": {
 			"name": "_LOCALIZATION_GET_SYSTEM_DATE_FORMAT",
@@ -32867,7 +33784,10 @@
 			"comment": "Possible return values: 0, 1, 2",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_USER_LANGUAGE_ID"
+			]
 		}
 	},
 	"MISC": {
@@ -32890,7 +33810,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_FREE_STACK_SLOTS_COUNT"
+			]
 		},
 		"0x444D98F98C11F3EC": {
 			"name": "SET_RANDOM_SEED",
@@ -33166,7 +34089,10 @@
 			"comment": "Returns current weather name hash",
 			"params": [],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PREV_WEATHER_TYPE"
+			]
 		},
 		"0x711327CD09C8F162": {
 			"name": "GET_NEXT_WEATHER_TYPE_HASH_NAME",
@@ -33174,7 +34100,10 @@
 			"comment": "Returns weather name hash",
 			"params": [],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NEXT_WEATHER_TYPE"
+			]
 		},
 		"0x44F28F86433B10A9": {
 			"name": "IS_PREV_WEATHER_TYPE",
@@ -33256,7 +34185,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_WEATHER_TYPE_OVER_TIME"
+			]
 		},
 		"0x8B05F884CF7E8020": {
 			"name": "SET_RANDOM_WEATHER_TYPE",
@@ -33615,7 +34547,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_RAIN_FX_INTENSITY"
+			]
 		},
 		"0x96695E368AD855F3": {
 			"name": "GET_RAIN_LEVEL",
@@ -33652,7 +34587,10 @@
 			"comment": "creates single lightning+thunder at random position",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CREATE_LIGHTNING_THUNDER"
+			]
 		},
 		"0x02DEAAC8F8EA7FE7": {
 			"name": "_0x02DEAAC8F8EA7FE7",
@@ -33695,7 +34633,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CLOUD_HAT_TRANSITION"
+			]
 		},
 		"0xA74802FB8D0B7814": {
 			"name": "UNLOAD_CLOUD_HAT",
@@ -33886,7 +34827,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GROUND_Z_COORD_WITH_OFFSETS"
+			]
 		},
 		"0x9E82F0F362881B29": {
 			"name": "_GET_GROUND_Z_FOR_3D_COORD_2",
@@ -34693,7 +35637,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CLEAR_AREA_OF_EVERYTHING"
+			]
 		},
 		"0x01C7B9B38428AEB6": {
 			"name": "CLEAR_AREA_OF_VEHICLES",
@@ -35120,7 +36067,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CUSTOM_RESPAWN_POSITION"
+			]
 		},
 		"0xA2716D40842EAF79": {
 			"name": "_CLEAR_RESTART_CUSTOM_POSITION",
@@ -35128,7 +36078,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NEXT_RESPAWN_TO_CUSTOM"
+			]
 		},
 		"0x2C2B3493FBF51C71": {
 			"name": "PAUSE_DEATH_ARREST_RESTART",
@@ -35141,7 +36094,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISABLE_AUTOMATIC_RESPAWN"
+			]
 		},
 		"0x21FFB63D8C615361": {
 			"name": "IGNORE_NEXT_RESTART",
@@ -35631,7 +36587,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SHOOT_SINGLE_BULLET_BETWEEN_COORDS_PRESET_PARAMS"
+			]
 		},
 		"0xBFE5756E7407064A": {
 			"name": "SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW",
@@ -35724,7 +36683,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SHOOT_SINGLE_BULLET_BETWEEN_COORDS_WITH_EXTRA_PARAMS"
+			]
 		},
 		"0x03E8D3D5F549087A": {
 			"name": "GET_MODEL_DIMENSIONS",
@@ -35854,7 +36816,10 @@
 			"comment": "Returns true if the game is using the metric measurement system (profile setting 227), false if imperial is used.",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_GAME_USING_METRIC_MEASUREMENT_SYSTEM"
+			]
 		},
 		"0xC488FF2356EA7791": {
 			"name": "GET_PROFILE_SETTING",
@@ -36124,7 +37089,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PROJECTILE_TYPE_IN_RADIUS"
+			]
 		},
 		"0x8D7A43EC6A5FEA45": {
 			"name": "GET_COORDS_OF_PROJECTILE_TYPE_IN_AREA",
@@ -36169,7 +37137,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_IS_PROJECTILE_TYPE_IN_AREA"
+			]
 		},
 		"0xDFB4138EEFED7B81": {
 			"name": "GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE",
@@ -36198,7 +37169,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PROJECTILE_NEAR_PED_COORDS"
+			]
 		},
 		"0x82FDE6A57EE4EE44": {
 			"name": "_GET_PROJECTILE_NEAR_PED",
@@ -36919,7 +37893,12 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ENABLE_MP_DLC_MAPS",
+				"_USE_FREEMODE_MAP_BEHAVIOR",
+				"_LOWER_MAP_PROP_DENSITY"
+			]
 		},
 		"0xC5F0A8EBD3F361CE": {
 			"name": "SET_INSTANCE_PRIORITY_HINT",
@@ -36932,7 +37911,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_UNK_MAP_FLAG"
+			]
 		},
 		"0x7EA2B6AF97ECA6ED": {
 			"name": "IS_FRONTEND_FADING",
@@ -37202,7 +38184,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_SAVE_STRUCT"
+			]
 		},
 		"0xEB1774DF12BB9F12": {
 			"name": "STOP_SAVE_STRUCT",
@@ -37231,7 +38216,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_SAVE_ARRAY"
+			]
 		},
 		"0x04456F95153C6BE4": {
 			"name": "STOP_SAVE_ARRAY",
@@ -37307,7 +38295,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NUMBER_OF_DISPATCHED_UNITS_FOR_PLAYER"
+			]
 		},
 		"0x3F892CAF67444AE7": {
 			"name": "CREATE_INCIDENT",
@@ -38121,7 +39112,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISPLAY_ONSCREEN_KEYBOARD_2"
+			]
 		},
 		"0x00DC833F2568DBF6": {
 			"name": "DISPLAY_ONSCREEN_KEYBOARD",
@@ -38351,7 +39345,10 @@
 			"comment": "Sets the localplayer playerinfo state back to playing (State 0)\n\nStates are:\n-1: \"Invalid\"\n0: \"Playing\"\n1: \"Died\"\n2: \"Arrested\"\n3: \"Failed Mission\"\n4: \"Left Game\"\n5: \"Respawn\"\n6: \"In MP Cutscene\"",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RESET_LOCALPLAYER_STATE"
+			]
 		},
 		"0x0A60017F841A54F2": {
 			"name": "SCRIPT_RACE_INIT",
@@ -38563,7 +39560,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SHOW_PED_IN_PAUSE_MENU"
+			]
 		},
 		"0x9689123E3F213AA5": {
 			"name": "GET_IS_PLAYER_IN_ANIMAL_FORM",
@@ -38767,7 +39767,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_MOVE_FINGER"
+			]
 		},
 		"0x44E44169EF70138E": {
 			"name": "_CELL_CAM_SET_LEAN",
@@ -38780,7 +39783,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PHONE_LEAN"
+			]
 		},
 		"0xFDE8F069C542D126": {
 			"name": "CELL_CAM_ACTIVATE",
@@ -38810,7 +39816,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISABLE_PHONE_THIS_FRAME"
+			]
 		},
 		"0xA2CCBE62CD4C91A4": {
 			"name": "_0xA2CCBE62CD4C91A4",
@@ -39440,7 +40449,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"NETWORK_EARN_FROM_MISSION_H"
+			]
 		},
 		"0x2B171E6B2F64D8DF": {
 			"name": "NETWORK_EARN_FROM_CHALLENGE_WIN",
@@ -39683,7 +40695,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_EARN_FROM_DAILY_OBJECTIVE"
+			]
 		},
 		"0xFB6DB092FBAE29E6": {
 			"name": "NETWORK_EARN_FROM_AMBIENT_JOB",
@@ -39704,7 +40719,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_EARN_FROM_AMBIENT_JOB"
+			]
 		},
 		"0x6816FB4416760775": {
 			"name": "NETWORK_EARN_FROM_JOB_BONUS",
@@ -39725,7 +40743,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_EARN_FROM_JOB_BONUS"
+			]
 		},
 		"0xFA009A62990671D4": {
 			"name": "_NETWORK_EARN_FROM_CRIMINAL_MASTERMIND_BONUS",
@@ -41232,7 +42253,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SPENT_REQUEST_HEIST"
+			]
 		},
 		"0x8A7B3952DD64D2B5": {
 			"name": "NETWORK_BUY_FAIRGROUND_RIDE",
@@ -44319,7 +45343,7 @@
 			"build": "2189"
 		},
 		"0x89049A84065CE68E": {
-			"name": "_0x89049A84065CE68E",
+			"name": "_NETWORK_SPENT_UPGRADE_SUB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44441,7 +45465,7 @@
 			"build": "2189"
 		},
 		"0xB40F96D6D252839B": {
-			"name": "_0xB40F96D6D252839B",
+			"name": "_NETWORK_SPENT_AUTOSHOP_PROPERTY_UTILITY_FEE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44466,7 +45490,7 @@
 			"build": "2372"
 		},
 		"0x1464E17207CD36E2": {
-			"name": "_0x1464E17207CD36E2",
+			"name": "_NETWORK_SPENT_CARCLUB_MEMBERSHIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44495,7 +45519,7 @@
 			"build": "2372"
 		},
 		"0x925227803A0EAA1B": {
-			"name": "_0x925227803A0EAA1B",
+			"name": "_NETWORK_SPENT_CARCLUB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44521,7 +45545,7 @@
 			"unused": true
 		},
 		"0x9BEA350D7C48061B": {
-			"name": "_0x9BEA350D7C48061B",
+			"name": "_NETWORK_SPENT_AUTOSHOP_MODIFICATIONS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44550,7 +45574,7 @@
 			"build": "2372"
 		},
 		"0xD1E46824E6FB92B5": {
-			"name": "_0xD1E46824E6FB92B5",
+			"name": "_NETWORK_SPENT_CARCLUB_TAKEOVER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44575,7 +45599,7 @@
 			"build": "2372"
 		},
 		"0xEEB7E5D1FEB20869": {
-			"name": "_0xEEB7E5D1FEB20869",
+			"name": "_NETWORK_SPENT_BUY_AUTOSHOP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44600,7 +45624,7 @@
 			"build": "2372"
 		},
 		"0xDD829AA198FDC46C": {
-			"name": "_0xDD829AA198FDC46C",
+			"name": "_NETWORK_SPENT_UPGRADE_AUTOSHOP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44625,7 +45649,7 @@
 			"build": "2372"
 		},
 		"0x36A7FD5A7194B03E": {
-			"name": "_0x36A7FD5A7194B03E",
+			"name": "_NETWORK_EARN_FROM_AUTOSHOP_BUSINESS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44642,7 +45666,7 @@
 			"build": "2372"
 		},
 		"0xC66D1CF99ED7FE25": {
-			"name": "_0xC66D1CF99ED7FE25",
+			"name": "_NETWORK_EARN_FROM_AUTOSHOP_INCOME",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44656,7 +45680,7 @@
 			"unused": true
 		},
 		"0xBC6227792A188E2E": {
-			"name": "_0xBC6227792A188E2E",
+			"name": "_NETWORK_EARN_FROM_CARCLUB_MEMBERSHIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44669,7 +45693,7 @@
 			"build": "2372"
 		},
 		"0x533073E8A596008C": {
-			"name": "_0x533073E8A596008C",
+			"name": "_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44686,7 +45710,7 @@
 			"build": "2372"
 		},
 		"0xFE65AFE7308E32B2": {
-			"name": "_0xFE65AFE7308E32B2",
+			"name": "_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP_BONUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44699,7 +45723,7 @@
 			"build": "2372"
 		},
 		"0xB846F547D3792DF6": {
-			"name": "_0xB846F547D3792DF6",
+			"name": "_NETWORK_EARN_FROM_TUNER_AWARD",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44720,7 +45744,7 @@
 			"build": "2372"
 		},
 		"0xBCB266247193AC61": {
-			"name": "_0xBCB266247193AC61",
+			"name": "_NETWORK_EARN_FROM_TUNER_FINALE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44749,7 +45773,7 @@
 			"build": "2372"
 		},
 		"0xC10322A8D3E061EE": {
-			"name": "_0xC10322A8D3E061EE",
+			"name": "_NETWORK_EARN_FROM_UPGRADE_AUTOSHOP_LOCATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44766,7 +45790,7 @@
 			"build": "2372"
 		},
 		"0x93AA4165CB67E925": {
-			"name": "_0x93AA4165CB67E925",
+			"name": "_NETWORK_SPENT_IM_ABILITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44791,7 +45815,7 @@
 			"build": "2372"
 		},
 		"0xB9F7A469460E7A4A": {
-			"name": "_0xB9F7A469460E7A4A",
+			"name": "_NETWORK_SPENT_FROM_BANK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44882,7 +45906,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_BANK_BALANCE_STRING"
+			]
 		},
 		"0x700AF71AE615E6DD": {
 			"name": "NETWORK_GET_STRING_BANK_WALLET_BALANCE",
@@ -44949,7 +45976,10 @@
 			"params": [],
 			"return_type": "int",
 			"build": "323",
-			"unused": true
+			"unused": true,
+			"old_names": [
+				"_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS"
+			]
 		},
 		"0x08E8EEADFD0DC4A0": {
 			"name": "_0x08E8EEADFD0DC4A0",
@@ -44998,7 +46028,10 @@
 			"params": [],
 			"return_type": "int",
 			"build": "323",
-			"unused": true
+			"unused": true,
+			"old_names": [
+				"_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS_2"
+			]
 		},
 		"0xF70EFA14FE091429": {
 			"name": "WITHDRAW_VC",
@@ -45073,7 +46106,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_IS_ITEM_UNLOCKED",
+				"_NETWORK_SHOP_DOES_ITEM_EXIST"
+			]
 		},
 		"0x247F0F73A182EA0B": {
 			"name": "_NET_GAMESERVER_CATALOG_ITEM_EXISTS_HASH",
@@ -45086,7 +46123,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_IS_ITEM_UNLOCKED_HASH",
+				"_NETWORK_SHOP_DOES_ITEM_EXIST_HASH"
+			]
 		},
 		"0xC27009422FCCA88D": {
 			"name": "NET_GAMESERVER_GET_PRICE",
@@ -45107,7 +46148,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_GET_PRICE"
+			]
 		},
 		"0x3C4487461E9B0DCB": {
 			"name": "_NET_GAMESERVER_CATALOG_IS_READY",
@@ -45186,7 +46230,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_START_SESSION"
+			]
 		},
 		"0x72EB7BA9B69BF6AB": {
 			"name": "_0x72EB7BA9B69BF6AB",
@@ -45233,7 +46280,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_GET_TRANSACTIONS_ENABLED_FOR_CHARACTER"
+			]
 		},
 		"0x74A0FD0688F1EE45": {
 			"name": "_0x74A0FD0688F1EE45",
@@ -45259,7 +46309,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_SESSION_APPLY_RECEIVED_DATA"
+			]
 		},
 		"0x810E8431C0614BF9": {
 			"name": "NET_GAMESERVER_IS_SESSION_REFRESH_PENDING",
@@ -45267,7 +46320,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_GET_TRANSACTIONS_DISABLED"
+			]
 		},
 		"0x35A1B3E1D1315CFA": {
 			"name": "_NET_GAMESERVER_GET_BALANCE",
@@ -45334,7 +46390,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_BASKET_START"
+			]
 		},
 		"0xFA336E7F40C0A0D0": {
 			"name": "_NET_GAMESERVER_BASKET_DELETE",
@@ -45350,7 +46409,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_BASKET_END"
+			]
 		},
 		"0xF30980718C8ED876": {
 			"name": "NET_GAMESERVER_BASKET_ADD_ITEM",
@@ -45367,7 +46429,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_BASKET_ADD_ITEM"
+			]
 		},
 		"0x27F76CC6C55AD30E": {
 			"name": "NET_GAMESERVER_BASKET_IS_FULL",
@@ -45375,7 +46440,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_BASKET_IS_FULL"
+			]
 		},
 		"0xE1A0450ED46A7812": {
 			"name": "NET_GAMESERVER_BASKET_APPLY_SERVER_DATA",
@@ -45392,7 +46460,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_BASKET_APPLY_SERVER_DATA"
+			]
 		},
 		"0x39BE7CEA8D9CC8E6": {
 			"name": "NET_GAMESERVER_CHECKOUT_START",
@@ -45405,7 +46476,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_CHECKOUT_START"
+			]
 		},
 		"0x3C5FD37B5499582E": {
 			"name": "NET_GAMESERVER_BEGIN_SERVICE",
@@ -45438,7 +46512,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_BEGIN_SERVICE"
+			]
 		},
 		"0xE2A99A9B524BEFFF": {
 			"name": "NET_GAMESERVER_END_SERVICE",
@@ -45451,7 +46528,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_END_SERVICE",
+				"_NETWORK_SHOP_TERMINATE_SERVICE"
+			]
 		},
 		"0x51F1A8E48C3D2F6D": {
 			"name": "_NET_GAMESERVER_DELETE_CHARACTER_SLOT",
@@ -45488,7 +46569,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_DELETE_SET_TELEMETRY_NONCE_SEED"
+			]
 		},
 		"0xD47A2C1BA117471D": {
 			"name": "_NET_GAMESERVER_TRANSFER_BANK_TO_WALLET",
@@ -45505,7 +46589,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_TRANSFER_BANK_TO_WALLET"
+			]
 		},
 		"0xC2F7FE5309181C7D": {
 			"name": "_NET_GAMESERVER_TRANSFER_WALLET_TO_BANK",
@@ -45522,7 +46609,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_TRANSFER_WALLET_TO_BANK"
+			]
 		},
 		"0x23789E777D14CE44": {
 			"name": "_NET_GAMESERVER_TRANSFER_CASH_GET_STATUS",
@@ -45546,7 +46636,10 @@
 			"comment": "Used to be NETWORK_SHOP_CASH_TRANSFER_SET_TELEMETRY_NONCE_SEED",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_CASH_TRANSFER_SET_TELEMETRY_NONCE_SEED"
+			]
 		},
 		"0x9507D4271988E1AE": {
 			"name": "NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED",
@@ -45559,7 +46652,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SHOP_SET_TELEMETRY_NONCE_SEED"
+			]
 		}
 	},
 	"NETWORK": {
@@ -45569,7 +46665,10 @@
 			"comment": "Online version is defined here: update\\update.rpf\\common\\data\\version.txt\n\nExample:\n\n[ONLINE_VERSION_NUMBER]\n1.33\n\n_GET_ONLINE_VERSION() will return \"1.33\"",
 			"params": [],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_GAME_VERSION"
+			]
 		},
 		"0x054354A99211EB96": {
 			"name": "NETWORK_IS_SIGNED_IN",
@@ -45633,7 +46732,11 @@
 			"comment": "Returns whether the signed-in user has valid Rockstar Online Services (ROS) credentials.",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_ARE_ROS_AVAILABLE",
+				"NETWORK_HAVE_JUST_UPLOAD_LATER"
+			]
 		},
 		"0x8D11E61A4ABF49CC": {
 			"name": "_0x8D11E61A4ABF49CC",
@@ -46304,7 +47407,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SESSION_ARE_PLAYERS_VOTING_TO_KICK",
+				"_NETWORK_SESSION_IS_PLAYER_VOTED_TO_KICK"
+			]
 		},
 		"0x041C7F2A6C9894E6": {
 			"name": "_0x041C7F2A6C9894E6",
@@ -46354,7 +47461,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SCTV_SLOTS"
+			]
 		},
 		"0x8B6A4DD0AF9CE215": {
 			"name": "NETWORK_SESSION_SET_MATCHMAKING_GROUP_MAX",
@@ -46371,7 +47481,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SESSION_SET_MAX_PLAYERS"
+			]
 		},
 		"0x56CE820830EF040B": {
 			"name": "NETWORK_SESSION_GET_MATCHMAKING_GROUP_FREE",
@@ -46384,7 +47497,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SESSION_GET_UNK"
+			]
 		},
 		"0xCAE55F48D3D7875C": {
 			"name": "_0xCAE55F48D3D7875C",
@@ -46522,7 +47638,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SESSION_HOSTED"
+			]
 		},
 		"0x236406F60CF216D6": {
 			"name": "NETWORK_ADD_FOLLOWERS",
@@ -46568,7 +47687,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_SERVER_TIME"
+			]
 		},
 		"0x600F8CB31C7AAB6E": {
 			"name": "_0x600F8CB31C7AAB6E",
@@ -46602,7 +47724,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"NETWORK_X_AFFECTS_GAMERS"
+			]
 		},
 		"0xF7B2CFDE5C9F700D": {
 			"name": "NETWORK_FIND_MATCHED_GAMERS",
@@ -46689,7 +47814,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_GAMER_STATUS"
+			]
 		},
 		"0x2CC848A861D01493": {
 			"name": "NETWORK_GET_GAMER_STATUS_FROM_QUEUE",
@@ -46746,7 +47874,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"NETWORK_IS_PLAYER_ANIMATION_DRAWING_SYNCHRONIZED"
+			]
 		},
 		"0x2FBF47B1B36D36F9": {
 			"name": "NETWORK_SESSION_CANCEL_INVITE",
@@ -46862,7 +47993,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_BLOCK_INVITES_2"
+			]
 		},
 		"0xF814FEC6A19FD6E0": {
 			"name": "_0xF814FEC6A19FD6E0",
@@ -47077,7 +48211,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_VOICE_CONNECT_TO_PLAYER"
+			]
 		},
 		"0x7F8413B7FC2AA6B9": {
 			"name": "NETWORK_SESSION_VOICE_RESPOND_TO_REQUEST",
@@ -47094,7 +48231,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"NETWORK_SET_KEEP_FOCUSPOINT"
+			]
 		},
 		"0x5B8ED3DB018927B1": {
 			"name": "NETWORK_SESSION_VOICE_SET_TIMEOUT",
@@ -48102,7 +49242,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SEND_PRESENCE_INVITE"
+			]
 		},
 		"0xC116FF9B4D488291": {
 			"name": "_NETWORK_SEND_PRESENCE_TRANSITION_INVITE",
@@ -48594,7 +49737,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"USING_NETWORK_WEAPONTYPE"
+			]
 		},
 		"0x796A87B3B68D1F3D": {
 			"name": "NETWORK_SET_CURRENT_DATA_MANAGER_HANDLE",
@@ -48607,7 +49753,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_CHECK_DATA_MANAGER_FOR_HANDLE"
+			]
 		},
 		"0x2FC5650B0271CB57": {
 			"name": "NETWORK_IS_IN_PLATFORM_PARTY",
@@ -48739,7 +49888,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_RANDOM_INT_IN_RANGE"
+			]
 		},
 		"0x655B91F1495A9090": {
 			"name": "NETWORK_PLAYER_IS_CHEATER",
@@ -48755,7 +49907,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_PLAYER_IS_UNK"
+			]
 		},
 		"0x19D8DA0E5A68045A": {
 			"name": "NETWORK_PLAYER_IS_BADSPORT",
@@ -48784,7 +49939,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_IS_PLAYER_IN_SCRIPT"
+			]
 		},
 		"0xA12D3A5A3753CC23": {
 			"name": "_0xA12D3A5A3753CC23",
@@ -48904,7 +50062,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SET_THIS_SCRIPT_MARKED"
+			]
 		},
 		"0x2910669969E9535E": {
 			"name": "NETWORK_GET_THIS_SCRIPT_IS_NETWORK_SCRIPT",
@@ -48920,7 +50081,10 @@
 			"comment": "Seems to always return 0, but it's used in quite a few loops.\n\nfor (num3 = 0; num3 < NETWORK::0xCCD8C02D(); num3++)\n    {\n        if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::0x98F3B274(num3)) != 0)\n        {\n            var num5 = NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::0x98F3B274(num3));",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_NUM_PARTICIPANTS_HOST"
+			]
 		},
 		"0x18D0456E86604654": {
 			"name": "NETWORK_GET_NUM_PARTICIPANTS",
@@ -49267,11 +50431,11 @@
 			"build": "323"
 		},
 		"0x257ED0FADF750BCF": {
-			"name": "_0x257ED0FADF750BCF",
+			"name": "_NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "Hash",
 			"build": "2372"
 		},
 		"0x1AD5B71586B94820": {
@@ -49418,7 +50582,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_DESROYER_OF_ENTITY"
+			]
 		},
 		"0x42B2DAA6B596F5F8": {
 			"name": "NETWORK_GET_ENTITY_KILLER_OF_PLAYER",
@@ -49513,13 +50680,13 @@
 			"build": "323"
 		},
 		"0xF0BC9BCD24A511D5": {
-			"name": "_0xF0BC9BCD24A511D5",
+			"name": "_NETWORK_PED_FORCE_GAME_STATE_UPDATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -49682,9 +50849,9 @@
 			"build": "323"
 		},
 		"0x7242F8B741CE1086": {
-			"name": "_0x7242F8B741CE1086",
+			"name": "_NETWORK_IS_NETWORK_ID_A_CLONE",
 			"jhash": "",
-			"comment": "NETWORK_IS_*\nProbably a bool, returns true if the specified network id is controlled by someone else.\nFf you have control over the entity corresponding to the netId then this will return false (0);\nReturns probably a bool, returns 1 if you don't have control over the netId entity.",
+			"comment": "Returns true if the specified network id is controlled by someone else.",
 			"params": [
 				{
 					"type": "int",
@@ -49770,7 +50937,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_HAS_CONTROL_OF_PAVEMENT_STATS"
+			]
 		},
 		"0xB4C94523F023419C": {
 			"name": "VEH_TO_NET",
@@ -49954,7 +51124,10 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_HASH_FROM_PLAYER_HANDLE"
+			]
 		},
 		"0x58575AC3CF2CA8EC": {
 			"name": "NETWORK_HASH_FROM_GAMER_HANDLE",
@@ -49967,7 +51140,10 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_HASH_FROM_GAMER_HANDLE"
+			]
 		},
 		"0xD45CB817D7E177D2": {
 			"name": "NETWORK_HANDLE_FROM_FRIEND",
@@ -50184,7 +51360,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_PLAYER_GET_USER_ID"
+			]
 		},
 		"0x544ABDDA3B409B6D": {
 			"name": "NETWORK_PLAYER_IS_ROCKSTAR_DEV",
@@ -50210,7 +51389,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_PLAYER_SOMETHING"
+			]
 		},
 		"0x815F18AD865F057F": {
 			"name": "_NETWORK_GET_ENTITY_NET_SCRIPT_ID",
@@ -50291,7 +51473,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_FRIEND_NAME"
+			]
 		},
 		"0x425A44533437B64D": {
 			"name": "NETWORK_IS_FRIEND_ONLINE",
@@ -50317,7 +51502,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_IS_FRIEND_ONLINE_2"
+			]
 		},
 		"0x2EA9A3BEDF3F17B8": {
 			"name": "NETWORK_IS_FRIEND_IN_SAME_TITLE",
@@ -50965,7 +52153,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_OVERRIDE_SEND_RESTRICTIONS"
+			]
 		},
 		"0x57B192B4D4AD23D5": {
 			"name": "NETWORK_OVERRIDE_SEND_RESTRICTIONS_ALL",
@@ -50978,7 +52169,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_CHAT_MUTE"
+			]
 		},
 		"0xDDF73E2B1FEC5AB4": {
 			"name": "NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS",
@@ -51050,7 +52244,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"IS_NETWORK_VEHICLE_BEEN_DAMAGED_BY_ANY_OBJECT"
+			]
 		},
 		"0xF03755696450470C": {
 			"name": "NETWORK_CLEAR_VOICE_PROXIMITY_OVERRIDE",
@@ -51197,7 +52394,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SET_RICH_PRESENCE_2"
+			]
 		},
 		"0x5ED0356A0CE3A34F": {
 			"name": "NETWORK_GET_TIMEOUT_TIME",
@@ -51334,7 +52534,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_PLAYER_IS_IN_CLAN"
+			]
 		},
 		"0xB124B57F571D8F18": {
 			"name": "NETWORK_CLAN_PLAYER_IS_ACTIVE",
@@ -51414,7 +52617,11 @@
 			"comment": "",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NUM_MEMBERSHIP_DESC",
+				"_NETWORK_CLAN_GET_NUM_MEMBERSHIP_DESC"
+			]
 		},
 		"0x48DE78AF2C8885B8": {
 			"name": "NETWORK_CLAN_GET_MEMBERSHIP_DESC",
@@ -51601,7 +52808,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_PLAYER_CREW_EMBLEM_TXD_NAME"
+			]
 		},
 		"0x13518FF1C6B28938": {
 			"name": "NETWORK_CLAN_REQUEST_EMBLEM",
@@ -51765,7 +52975,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NETWORK_ID_SYNC_TO_PLAYER"
+			]
 		},
 		"0x9D724B400A7E8FFC": {
 			"name": "_0x9D724B400A7E8FFC",
@@ -51833,7 +53046,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SET_ENTITY_VISIBLE_TO_NETWORK"
+			]
 		},
 		"0xA6928482543022B4": {
 			"name": "SET_NETWORK_ID_VISIBLE_IN_CUTSCENE",
@@ -51935,7 +53151,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_CAN_NETWORK_ID_BE_SEEN"
+			]
 		},
 		"0xD1065D68947E7B6E": {
 			"name": "SET_LOCAL_PLAYER_VISIBLE_IN_CUTSCENE",
@@ -52686,7 +53905,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SUBTRACT_B_FROM_A_AND_CHECK_IF_NEGATIVE"
+			]
 		},
 		"0xDE350F8651E4346C": {
 			"name": "IS_TIME_MORE_THAN",
@@ -52703,7 +53925,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SUBTRACT_A_FROM_B_AND_CHECK_IF_NEGATIVE"
+			]
 		},
 		"0xF5BC95857BD6D512": {
 			"name": "IS_TIME_EQUAL_TO",
@@ -52720,7 +53945,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARE_INTEGERS_EQUAL"
+			]
 		},
 		"0xA2C6FC031D46FFF0": {
 			"name": "GET_TIME_DIFFERENCE",
@@ -52750,7 +53978,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_FORMAT_TIME"
+			]
 		},
 		"0xF12E6CD06C73D69E": {
 			"name": "_GET_CLOUD_TIME_AS_STRING",
@@ -52783,7 +54014,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_DATE_AND_TIME_FROM_UNIX_EPOCH"
+			]
 		},
 		"0x423DE3854BB50894": {
 			"name": "NETWORK_SET_IN_SPECTATOR_MODE",
@@ -52947,37 +54181,40 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_NETWORK_OBJECT_NON_CONTACT"
+			]
 		},
 		"0xA2A707979FE754DC": {
-			"name": "_0xA2A707979FE754DC",
+			"name": "_SET_NETWORK_VEHICLE_POSITION_UPDATE_MULTIPLIER",
 			"jhash": "",
-			"comment": "",
+			"comment": "rage::netBlenderLinInterp::GetPositionMaxForUpdateLevel",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "multiplier"
 				}
 			],
 			"return_type": "void",
 			"build": "877"
 		},
 		"0x838DA0936A24ED4D": {
-			"name": "_0x838DA0936A24ED4D",
+			"name": "_SET_NETWORK_ENABLE_VEHICLE_POSITION_CORRECTION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Enables a periodic ShapeTest within the NetBlender and invokes rage::netBlenderLinInterp::GoStraightToTarget (or some functional wrapper).",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -53011,7 +54248,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_ENTITY_A_GHOST"
+			]
 		},
 		"0x13F1FCB111B820B0": {
 			"name": "_0x13F1FCB111B820B0",
@@ -53440,7 +54680,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_UNLINK_NETWORKED_SYNCHRONISED_SCENE"
+			]
 		},
 		"0xC9B43A33D09CADA7": {
 			"name": "_0xC9B43A33D09CADA7",
@@ -53635,11 +54878,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x17E0198B3882C2CB": {
@@ -53911,7 +55154,10 @@
 				}
 			],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_ADD_ENTITY_ANGLED_AREA"
+			]
 		},
 		"0x25B99872D588A101": {
 			"name": "NETWORK_ADD_ENTITY_DISPLAYED_BOUNDARIES",
@@ -54038,7 +55284,7 @@
 		"0x2B1813ABA29016C5": {
 			"name": "NETWORK_USE_HIGH_PRECISION_BLENDING",
 			"jhash": "0x155465EE",
-			"comment": "Old name: _NETWORK_SET_NETWORK_ID_DYNAMIC",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -54050,7 +55296,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SET_NETWORK_ID_DYNAMIC"
+			]
 		},
 		"0xA6FCECCF4721D679": {
 			"name": "_0xA6FCECCF4721D679",
@@ -54088,7 +55337,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS"
+			]
 		},
 		"0x8132C0EB8B2B3293": {
 			"name": "NETWORK_IS_CLOUD_BACKGROUND_SCRIPT_REQUEST_PENDING",
@@ -54096,7 +55348,11 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_BG_SCRIPT_BEEN_DOWNLOADED",
+				"_NETWORK_IS_CLOUD_BACKGROUND_SCRIPTS_REQUEST_PENDING"
+			]
 		},
 		"0x42FB3B532D526E6C": {
 			"name": "NETWORK_REQUEST_CLOUD_TUNABLES",
@@ -54112,7 +55368,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_TUNABLES_BEEN_DOWNLOADED"
+			]
 		},
 		"0x10BD227A753B0D84": {
 			"name": "NETWORK_GET_TUNABLE_CLOUD_CRC",
@@ -54120,7 +55379,10 @@
 			"comment": "Actually returns the version (TUNABLE_VERSION)",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_TUNABLES_VERSION"
+			]
 		},
 		"0x85E5F8B9B898B20A": {
 			"name": "NETWORK_DOES_TUNABLE_EXIST",
@@ -54213,7 +55475,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_DOES_TUNABLE_EXIST_HASH"
+			]
 		},
 		"0xFAFC23AEE23868DB": {
 			"name": "_NETWORK_ALLOCATE_TUNABLES_REGISTRATION_DATA_MAP",
@@ -54242,7 +55507,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_ACCESS_TUNABLE_INT_HASH"
+			]
 		},
 		"0x3A8B55FDA4C8DDEF": {
 			"name": "_NETWORK_REGISTER_TUNABLE_INT_HASH",
@@ -54284,7 +55552,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_ACCESS_TUNABLE_FLOAT_HASH"
+			]
 		},
 		"0x1950DAE9848A4739": {
 			"name": "_NETWORK_REGISTER_TUNABLE_FLOAT_HASH",
@@ -54322,7 +55593,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_ACCESS_TUNABLE_BOOL_HASH"
+			]
 		},
 		"0x697F508861875B42": {
 			"name": "_NETWORK_REGISTER_TUNABLE_BOOL_HASH",
@@ -54364,7 +55638,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_ACCESS_TUNABLE_BOOL_HASH_FAIL_VAL"
+			]
 		},
 		"0x187382F8A3E0A6C3": {
 			"name": "NETWORK_GET_CONTENT_MODIFIER_LIST_ID",
@@ -54377,7 +55654,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TUNABLES_CONTENT_MODIFIER_ID"
+			]
 		},
 		"0x7DB53B37A2F211A0": {
 			"name": "_0x7DB53B37A2F211A0",
@@ -54535,7 +55815,7 @@
 			"build": "463"
 		},
 		"0xCD71A4ECAB22709E": {
-			"name": "_0xCD71A4ECAB22709E",
+			"name": "NETWORK_USE_LOGARITHMIC_BLENDING_THIS_FRAME",
 			"jhash": "0xBC54371B",
 			"comment": "",
 			"params": [
@@ -54689,7 +55969,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_COPY_PED_BLEND_DATA"
+			]
 		},
 		"0xF2EAC213D5EA0623": {
 			"name": "GET_NUM_COMMERCE_ITEMS",
@@ -54987,7 +56270,10 @@
 			"comment": "Downloads prod.cloud.rockstargames.com/titles/gta5/[platform]/check.json",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DOWNLOAD_CHECK"
+			]
 		},
 		"0xC7ABAC5DE675EE3B": {
 			"name": "CLOUD_IS_CHECKING_AVAILABILITY",
@@ -55003,7 +56289,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"NETWORK_ENABLE_MOTION_DRUGGED"
+			]
 		},
 		"0x8B0C2964BA471961": {
 			"name": "_0x8B0C2964BA471961",
@@ -55153,7 +56442,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p3"
 				},
 				{
@@ -55253,7 +56542,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
@@ -55278,7 +56567,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
@@ -55303,7 +56592,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
@@ -55332,7 +56621,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p3"
 				},
 				{
@@ -55361,7 +56650,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p3"
 				},
 				{
@@ -55576,7 +56865,11 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_CONTENT_USER_ID",
+				"GET_PLAYER_ADVANCED_MODIFIER_PRIVILEGES"
+			]
 		},
 		"0x584770794D758C18": {
 			"name": "_0x584770794D758C18",
@@ -55584,7 +56877,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -55645,7 +56938,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_CONTENT_CATEGORY"
+			]
 		},
 		"0x55AA95F481D694D2": {
 			"name": "UGC_GET_CONTENT_ID",
@@ -55658,7 +56954,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_CONTENT_ID"
+			]
 		},
 		"0xC0173D6BFF4E0348": {
 			"name": "UGC_GET_ROOT_CONTENT_ID",
@@ -55671,7 +56970,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_ROOT_CONTENT_ID"
+			]
 		},
 		"0xBF09786A7FCAB582": {
 			"name": "UGC_GET_CONTENT_NAME",
@@ -55697,7 +56999,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_CONTENT_DESCRIPTION_HASH"
+			]
 		},
 		"0xBAF6BABF9E7CCC13": {
 			"name": "UGC_GET_CONTENT_PATH",
@@ -55714,7 +57019,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_UGC_GET_CLOUD_PATH"
+			]
 		},
 		"0xCFD115B373C0DF63": {
 			"name": "UGC_GET_CONTENT_UPDATED_DATE",
@@ -55748,7 +57056,10 @@
 				}
 			],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_CONTENT_FILE_VERSION"
+			]
 		},
 		"0x1D610EB0FEA716D9": {
 			"name": "_0x1D610EB0FEA716D9",
@@ -56101,7 +57412,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				}
 			],
@@ -56367,23 +57678,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p4"
 				},
 				{
@@ -56444,7 +57755,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_STATUS_OF_TEXTURE_DOWNLOAD"
+			]
 		},
 		"0x60EDD13EB3AC1FF3": {
 			"name": "_0x60EDD13EB3AC1FF3",
@@ -56484,7 +57798,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_ROS_PRIVILEGE_10"
+			]
 		},
 		"0x8020A73847E0CA7D": {
 			"name": "NETWORK_HAVE_ROS_BANNED_PRIV",
@@ -56492,7 +57809,11 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_ROCKSTAR_BANNED",
+				"_NETWORK_HAS_PLAYER_BEEN_BANNED"
+			]
 		},
 		"0xA0AD7E2AF5349F61": {
 			"name": "NETWORK_HAVE_ROS_CREATE_TICKET_PRIV",
@@ -56500,7 +57821,11 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_SOCIALCLUB_BANNED",
+				"_NETWORK_HAVE_SOCIAL_CLUB_PRIVILEGE"
+			]
 		},
 		"0x5F91D5D0B36AA310": {
 			"name": "NETWORK_HAVE_ROS_MULTIPLAYER_PRIV",
@@ -56508,7 +57833,12 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PLAYER_BANNED",
+				"_CAN_PLAY_ONLINE",
+				"_NETWORK_GET_ROS_PRIVILEGE_3"
+			]
 		},
 		"0x422D396F80A96547": {
 			"name": "NETWORK_HAVE_ROS_LEADERBOARD_WRITE_PRIV",
@@ -56516,7 +57846,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_ROS_PRIVILEGE_4"
+			]
 		},
 		"0xA699957E60D80214": {
 			"name": "NETWORK_HAS_ROS_PRIVILEGE",
@@ -56550,7 +57883,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_BAN_DATA"
+			]
 		},
 		"0x593570C289A77688": {
 			"name": "_NETWORK_GET_ROS_PRIVILEGE_24",
@@ -56736,9 +58072,9 @@
 			"unused": true
 		},
 		"0x350C23949E43686C": {
-			"name": "_0x350C23949E43686C",
+			"name": "_NETWORK_GET_AVERAGE_PACKET_LOSS_FOR_PLAYER",
 			"jhash": "",
-			"comment": "NETWORK_GET_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -56827,9 +58163,9 @@
 			"build": "393"
 		},
 		"0x33DE49EDF4DDE77A": {
-			"name": "_0x33DE49EDF4DDE77A",
+			"name": "_NETWORK_GET_LAST_VELOCITY_RECEIVED",
 			"jhash": "",
-			"comment": "NETWORK_GET_*",
+			"comment": "Used by NetBlender",
 			"params": [
 				{
 					"type": "Entity",
@@ -56894,7 +58230,7 @@
 			"build": "1734"
 		},
 		"0xC1447451DDB512F0": {
-			"name": "_0xC1447451DDB512F0",
+			"name": "_NETWORK_UGC_NAV",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -57541,7 +58877,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_DOOR_ACCELERATION_LIMIT"
+			]
 		},
 		"0x160AA1B32F6139B8": {
 			"name": "DOOR_SYSTEM_GET_DOOR_STATE",
@@ -57642,7 +58981,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_DOOR_AJAR_ANGLE"
+			]
 		},
 		"0xE851471AEFC3374F": {
 			"name": "_0xE851471AEFC3374F",
@@ -57740,7 +59082,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DOES_DOOR_EXIST"
+			]
 		},
 		"0xC531EE8A1145A149": {
 			"name": "IS_DOOR_CLOSED",
@@ -58182,7 +59527,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_OBJECT_CAN_CLIMB_ON"
+			]
 		},
 		"0xF6DF6E90DE7DF90F": {
 			"name": "SET_OBJECT_PHYSICS_PARAMS",
@@ -58518,7 +59866,10 @@
 				}
 			],
 			"return_type": "Object",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_DES_OBJECT"
+			]
 		},
 		"0x5C29F698D404C5E1": {
 			"name": "SET_STATE_OF_RAYFIRE_MAP_OBJECT",
@@ -58535,7 +59886,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_DES_OBJECT_STATE"
+			]
 		},
 		"0x899BA936634A322E": {
 			"name": "GET_STATE_OF_RAYFIRE_MAP_OBJECT",
@@ -58548,7 +59902,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_DES_OBJECT_STATE"
+			]
 		},
 		"0x52AF537A0C5B8AAD": {
 			"name": "DOES_RAYFIRE_MAP_OBJECT_EXIST",
@@ -58561,7 +59918,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DOES_DES_OBJECT_EXIST"
+			]
 		},
 		"0x260EE4FDBDF4DB01": {
 			"name": "GET_RAYFIRE_MAP_OBJECT_ANIM_PHASE",
@@ -58574,7 +59934,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_DES_OBJECT_ANIM_PROGRESS"
+			]
 		},
 		"0xFBA08C503DD5FA58": {
 			"name": "CREATE_PICKUP",
@@ -58745,48 +60108,48 @@
 			"build": "323"
 		},
 		"0x9C93764223E29C50": {
-			"name": "_0x9C93764223E29C50",
+			"name": "_CREATE_NON_NETWORKED_AMBIENT_PICKUP",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Pickup",
 			"build": "2372"
 		},
 		"0x1E3F1B1B891A2AAA": {
@@ -58840,9 +60203,9 @@
 			"build": "323"
 		},
 		"0x125494B98A21AAF7": {
-			"name": "_CREATE_PORTABLE_PICKUP_2",
+			"name": "CREATE_NON_NETWORKED_PORTABLE_PICKUP",
 			"jhash": "0x56A02502",
-			"comment": "CREATE_*\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "Full list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -58870,7 +60233,10 @@
 				}
 			],
 			"return_type": "Object",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CREATE_PORTABLE_PICKUP_2"
+			]
 		},
 		"0x8DC39368BDD57755": {
 			"name": "ATTACH_PORTABLE_PICKUP_TO_PED",
@@ -59205,7 +60571,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PICKUP_WITHIN_RADIUS"
+			]
 		},
 		"0x78015C9B4B3ECC9D": {
 			"name": "SET_PICKUP_REGENERATION_TIME",
@@ -59689,7 +61058,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HIGHLIGHT_PLACEMENT_COORDS"
+			]
 		},
 		"0x7813E8B8C4AE4799": {
 			"name": "_0x7813E8B8C4AE4799",
@@ -59766,7 +61138,10 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_WEAPON_HASH_FROM_PICKUP"
+			]
 		},
 		"0xD6429A016084F1A5": {
 			"name": "_GET_PICKUP_HASH_FROM_WEAPON",
@@ -59822,7 +61197,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_OBJECT_TEXTURE_VARIANT"
+			]
 		},
 		"0xF12E33034D887F66": {
 			"name": "_SET_TEXTURE_VARIATION_OF_CLOSEST_OBJECT_OF_TYPE",
@@ -59931,7 +61309,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "757"
+			"build": "757",
+			"old_names": [
+				"_SET_OBJECT_COLOUR"
+			]
 		},
 		"0x96EE0EBA0163DF80": {
 			"name": "_SET_OBJECT_STUNT_PROP_SPEEDUP",
@@ -60494,7 +61875,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_LAST_INPUT_METHOD",
+				"_IS_INPUT_DISABLED"
+			]
 		},
 		"0x13337B38DB572509": {
 			"name": "_IS_USING_KEYBOARD_2",
@@ -60507,7 +61892,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_INPUT_JUST_DISABLED"
+			]
 		},
 		"0xFC695459D4D0E219": {
 			"name": "_SET_CURSOR_LOCATION",
@@ -60617,7 +62005,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CONTROL_GROUP_COLOR"
+			]
 		},
 		"0xCB0360EFEFB2580D": {
 			"name": "_0xCB0360EFEFB2580D",
@@ -61502,7 +62893,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_SUPPORTS_GPS_ROUTE_FLAG"
+			]
 		},
 		"0x4F5070AA58F69279": {
 			"name": "GET_VEHICLE_NODE_IS_SWITCHED_OFF",
@@ -61515,7 +62909,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_IS_SLOW_ROAD_FLAG"
+			]
 		},
 		"0x132F52BBA570FE92": {
 			"name": "GET_CLOSEST_ROAD",
@@ -61619,7 +63016,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARE_PATH_NODES_LOADED_IN_AREA"
+			]
 		},
 		"0x07FB139B592FA687": {
 			"name": "_REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT",
@@ -62161,7 +63561,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CLEAR_GPS_DISABLED_ZONE_AT_INDEX"
+			]
 		},
 		"0x387EAD7EE42F6685": {
 			"name": "ADD_NAVMESH_REQUIRED_REGION",
@@ -62652,7 +64055,10 @@
 				}
 			],
 			"return_type": "Ped",
-			"build": "463"
+			"build": "463",
+			"old_names": [
+				"_CLONE_PED_2"
+			]
 		},
 		"0xE952D6431689AD9A": {
 			"name": "CLONE_PED_TO_TARGET",
@@ -62669,7 +64075,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ASSIGN_PLAYER_TO_PED"
+			]
 		},
 		"0x148B08C2D2ACB884": {
 			"name": "_CLONE_PED_TO_TARGET_EX",
@@ -64112,7 +65521,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_TIME_EXCLUSIVE_DISPLAY_TEXTURE"
+			]
 		},
 		"0x0BD04E29640C9C12": {
 			"name": "IS_PED_IN_ANY_POLICE_VEHICLE",
@@ -64366,7 +65778,10 @@
 				}
 			],
 			"return_type": "Object",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CREATE_PARACHUTE_OBJECT"
+			]
 		},
 		"0x030983CA930B692D": {
 			"name": "SET_PED_DUCKING",
@@ -64884,20 +66299,20 @@
 			"build": "323"
 		},
 		"0x32C27A11307B01CC": {
-			"name": "_0x32C27A11307B01CC",
+			"name": "_GET_PED_TASK_COMBAT_TARGET",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "2372"
 		},
 		"0xEAD42DE3610D0721": {
@@ -65053,7 +66468,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PED_STANDING_IN_COVER"
+			]
 		},
 		"0x9F65DBC537E59AD5": {
 			"name": "IS_PED_GOING_INTO_COVER",
@@ -65126,7 +66544,10 @@
 				}
 			],
 			"return_type": "Entity",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PED_KILLER"
+			]
 		},
 		"0x16FFE42AB2D2DC59": {
 			"name": "GET_PED_CAUSE_OF_DEATH",
@@ -65152,7 +66573,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PED_TIME_OF_DEATH"
+			]
 		},
 		"0x5407B7288D0478B7": {
 			"name": "_0x5407B7288D0478B7",
@@ -65725,7 +67149,10 @@
 				}
 			],
 			"return_type": "Vehicle",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_EXCLUSIVE_PHONE_RELATIONSHIPS"
+			]
 		},
 		"0x9FF447B6B6AD960A": {
 			"name": "SET_PED_GRAVITY",
@@ -66086,7 +67513,10 @@
 				}
 			],
 			"return_type": "Ped",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PED_AS_GROUP_LEADER"
+			]
 		},
 		"0x971D38760FBC02EF": {
 			"name": "SET_PED_KEEP_TASK",
@@ -67234,7 +68664,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PED_HEAD_BLEND_DATA"
+			]
 		},
 		"0x723538F61C647C5A": {
 			"name": "UPDATE_PED_HEAD_BLEND_DATA",
@@ -67344,7 +68777,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NUM_HEAD_OVERLAY_VALUES"
+			]
 		},
 		"0x497BF74A7B9CB952": {
 			"name": "_SET_PED_HEAD_OVERLAY_COLOR",
@@ -67435,7 +68871,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_HAIR_RGB_COLOR"
+			]
 		},
 		"0x013E5CFC38CD5387": {
 			"name": "_GET_PED_MAKEUP_RGB_COLOR",
@@ -67460,7 +68899,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_MAKEUP_RGB_COLOR"
+			]
 		},
 		"0xED6D8E27A43B8CDE": {
 			"name": "_IS_PED_HAIR_COLOR_VALID_2",
@@ -67700,7 +69142,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_FIRST_PARENT_ID_FOR_PED_TYPE"
+			]
 		},
 		"0x5EF37013A6539C9D": {
 			"name": "_GET_NUM_PARENT_PEDS_OF_TYPE",
@@ -67789,7 +69234,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PED_PROP_VALID"
+			]
 		},
 		"0x784002A632822099": {
 			"name": "HAS_PED_PRELOAD_PROP_DATA_FINISHED",
@@ -67989,7 +69437,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REMOVE_PED_SCUBA_GEAR_NOW"
+			]
 		},
 		"0xFEC9A3B1820F3331": {
 			"name": "_0xFEC9A3B1820F3331",
@@ -68538,7 +69989,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PED_RAGDOLL_BLOCKING_FLAGS"
+			]
 		},
 		"0xD86D101FCFD00A4B": {
 			"name": "CLEAR_RAGDOLL_BLOCKING_FLAGS",
@@ -68555,7 +70009,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RESET_PED_RAGDOLL_BLOCKING_FLAGS"
+			]
 		},
 		"0xC7F76DF27A5045A1": {
 			"name": "SET_PED_ANGLED_DEFENSIVE_AREA",
@@ -69036,7 +70493,7 @@
 		"0x83F7E01C7B769A26": {
 			"name": "APPLY_PED_BLOOD",
 			"jhash": "0x376CE3C0",
-			"comment": "Found one occurence in re_crashrescue.c4\n\nPED::APPLY_PED_BLOOD(l_4B, 3, 0.0, 0.0, 0.0, \"wound_sheet\");\n\n- winject\n\n",
+			"comment": "woundTypes:\n- soak_splat\n- wound_sheet\n- BulletSmall\n- BulletLarge\n- ShotgunSmall\n- ShotgunSmallMonolithic\n- ShotgunLarge\n- ShotgunLargeMonolithic\n- NonFatalHeadshot\n- stab\n- BasicSlash\n- Scripted_Ped_Splash_Back\n- BackSplash",
 			"params": [
 				{
 					"type": "Ped",
@@ -69076,7 +70533,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -69088,7 +70545,7 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p4"
 				}
 			],
@@ -69105,7 +70562,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -69125,7 +70582,7 @@
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
@@ -69133,7 +70590,7 @@
 					"name": "p7"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p8"
 				}
 			],
@@ -69408,7 +70865,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_APPLY_PED_OVERLAY",
+				"_SET_PED_DECORATION"
+			]
 		},
 		"0x5619BFA07CFD7833": {
 			"name": "ADD_PED_DECORATION_FROM_HASHES_IN_CORONA",
@@ -69429,7 +70890,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PED_FACIAL_DECORATION"
+			]
 		},
 		"0x9FD452BFBE7A7A8B": {
 			"name": "GET_PED_DECORATION_ZONE_FROM_HASHES",
@@ -69446,7 +70910,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TATTOO_ZONE"
+			]
 		},
 		"0x0E5173C163976E38": {
 			"name": "CLEAR_PED_DECORATIONS",
@@ -69472,7 +70939,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CLEAR_PED_FACIAL_DECORATIONS"
+			]
 		},
 		"0x11B499C1E0FF8559": {
 			"name": "WAS_PED_SKELETON_UPDATED",
@@ -71485,7 +72955,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"GET_PED_FLOOD_INVINCIBILITY"
+			]
 		},
 		"0xCD018C591F94CB43": {
 			"name": "_0xCD018C591F94CB43",
@@ -71592,7 +73065,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CAN_PED_SEE_PED"
+			]
 		},
 		"0x9C6A6C19B6C0C496": {
 			"name": "_0x9C6A6C19B6C0C496",
@@ -71754,7 +73230,7 @@
 		"0x4E90D746056E273D": {
 			"name": "_SET_PED_EMISSIVE_INTENSITY",
 			"jhash": "",
-			"comment": "intensity: 0.0f - 1.0f\n\nThis native sets the emissive intensity for the given ped. It is used for different 'glow' levels on illuminated clothing.\n\nOld name: _SET_PED_REFLECTION_INTENSITY",
+			"comment": "intensity: 0.0f - 1.0f\n\nThis native sets the emissive intensity for the given ped. It is used for different 'glow' levels on illuminated clothing.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71766,12 +73242,16 @@
 				}
 			],
 			"return_type": "void",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_SET_PED_REFLECTION_INTENSITY",
+				"_SET_PED_ILLUMINATED_CLOTHING_GLOW_INTENSITY"
+			]
 		},
 		"0x1461B28A06717D68": {
 			"name": "_GET_PED_EMISSIVE_INTENSITY",
 			"jhash": "",
-			"comment": "Old name: _GET_PED_REFLECTION_INTENSITY\nUse 0x4E90D746056E273D to set the illuminated clothing glow intensity for a specific ped.\nReturns a float between 0.0 and 1.0 representing the current illuminated clothing glow intensity.",
+			"comment": "Use 0x4E90D746056E273D to set the illuminated clothing glow intensity for a specific ped.\nReturns a float between 0.0 and 1.0 representing the current illuminated clothing glow intensity.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71779,7 +73259,11 @@
 				}
 			],
 			"return_type": "float",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_GET_PED_REFLECTION_INTENSITY",
+				"_GET_PED_ILLUMINATED_CLOTHING_GLOW_INTENSITY"
+			]
 		},
 		"0x81AA517FBBA05D39": {
 			"name": "_IS_PED_SHADER_EFFECT_VALID",
@@ -72083,7 +73567,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_SYNCHRONIZED_SCENE_OCCLUSION_PORTAL"
+			]
 		},
 		"0x7F2F4F13AC5257EF": {
 			"name": "IS_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME",
@@ -72329,7 +73816,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_STREAMED_PED_ASSETS_LOADED"
+			]
 		},
 		"0x00E73468D085F745": {
 			"name": "IS_PED_USING_ACTION_MODE",
@@ -72735,11 +74225,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p1"
 				}
 			],
@@ -73894,7 +75384,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_ROPE_LENGTH"
+			]
 		},
 		"0xD009F759A723DB1B": {
 			"name": "ROPE_FORCE_LENGTH",
@@ -74116,7 +75609,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "505"
+			"build": "505",
+			"old_names": [
+				"_DOES_ENTITY_HAVE_FRAG_INST"
+			]
 		},
 		"0x5CEC1A84620E7D5B": {
 			"name": "SET_DISABLE_BREAKING",
@@ -74754,7 +76250,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_HUD_ANIM_STOP_LEVEL"
+			]
 		},
 		"0xC3376F42B1FACCC6": {
 			"name": "_0xC3376F42B1FACCC6",
@@ -74767,7 +76266,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_AREAS_GENERATOR_ORIENTATION"
+			]
 		},
 		"0xFAC75988A7D078D3": {
 			"name": "_0xFAC75988A7D078D3",
@@ -74843,29 +76345,29 @@
 			"build": "323"
 		},
 		"0xA72200F51875FEA4": {
-			"name": "_0xA72200F51875FEA4",
+			"name": "_GET_WANTED_LEVEL_PAROLE_DURATION",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "2372"
 		},
 		"0x49B856B1360C47C7": {
-			"name": "_0x49B856B1360C47C7",
+			"name": "_SET_WANTED_LEVEL_HIDDEN_EVASION_TIME",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "wantedLevel"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "lossTime"
 				}
 			],
 			"return_type": "void",
@@ -75697,7 +77199,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_ACHIEVEMENT_PROGRESSION"
+			]
 		},
 		"0x1C186837D0619335": {
 			"name": "_GET_ACHIEVEMENT_PROGRESS",
@@ -75710,7 +77215,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_ACHIEVEMENT_PROGRESSION"
+			]
 		},
 		"0x867365E111A3B6EB": {
 			"name": "HAS_ACHIEVEMENT_BEEN_PASSED",
@@ -76180,14 +77688,14 @@
 		"0x821FDC827D6F4090": {
 			"name": "_SPECIAL_ABILITY_ACTIVATE",
 			"jhash": "",
-			"comment": "",
+			"comment": "p1 is always 0 in the scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -76218,14 +77726,14 @@
 		"0x17F7471EACA78290": {
 			"name": "_SPECIAL_ABILITY_DEPLETE",
 			"jhash": "",
-			"comment": "",
+			"comment": "p1 is always 0 in the scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -76444,7 +77952,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"RESET_SPECIAL_ABILITY_CONTROLS_CINEMATIC"
+			]
 		},
 		"0x3DACA8DDC6FD4980": {
 			"name": "SPECIAL_ABILITY_FILL_METER",
@@ -76736,7 +78247,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_PLAYER_TELEPORT_FINISHED"
+			]
 		},
 		"0xC449EDED9D73009C": {
 			"name": "STOP_PLAYER_TELEPORT",
@@ -76820,11 +78334,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -76977,8 +78491,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -76994,11 +78508,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -77566,7 +79080,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_EXPAND_WORLD_LIMITS"
+			]
 		},
 		"0xDA1DF03D5A315F4E": {
 			"name": "RESET_WORLD_BOUNDARY_FOR_PLAYER",
@@ -78169,7 +79686,10 @@
 			"comment": "Stops recording and saves the recorded clip.",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_STOP_RECORDING"
+			]
 		},
 		"0x88BB3507ED41A240": {
 			"name": "_STOP_RECORDING_AND_DISCARD_CLIP",
@@ -78384,7 +79904,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REQUEST_STREAMED_SCRIPT"
+			]
 		},
 		"0xC5BC038960E9DB27": {
 			"name": "SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED",
@@ -78397,7 +79920,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_STREAMED_SCRIPT_AS_NO_LONGER_NEEDED"
+			]
 		},
 		"0x5F0F0C783EB16C04": {
 			"name": "HAS_SCRIPT_WITH_NAME_HASH_LOADED",
@@ -78410,7 +79936,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_STREAMED_SCRIPT_LOADED"
+			]
 		},
 		"0xF86AA3C56BA31381": {
 			"name": "DOES_SCRIPT_WITH_NAME_HASH_EXIST",
@@ -78423,7 +79952,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DOES_SCRIPT_WITH_NAME_HASH_EXIST"
+			]
 		},
 		"0xC8B189ED9138BCD4": {
 			"name": "TERMINATE_THREAD",
@@ -78462,7 +79994,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_THREAD_NAME"
+			]
 		},
 		"0xDADFADA5A20143A8": {
 			"name": "SCRIPT_THREAD_ITERATOR_RESET",
@@ -78470,7 +80005,10 @@
 			"comment": "Starts a new iteration of the current threads.\nCall this first, then SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID (0x30B4FA1C82DD4B9F)",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_BEGIN_ENUMERATING_THREADS"
+			]
 		},
 		"0x30B4FA1C82DD4B9F": {
 			"name": "SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID",
@@ -78478,7 +80016,10 @@
 			"comment": "If the function returns 0, the end of the iteration has been reached.",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_ID_OF_NEXT_THREAD_IN_ENUMERATION"
+			]
 		},
 		"0xC30338E8088E2E21": {
 			"name": "GET_ID_OF_THIS_THREAD",
@@ -78507,7 +80048,11 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NUMBER_OF_INSTANCES_OF_STREAMED_SCRIPT",
+				"_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH"
+			]
 		},
 		"0x442E0A7EDE4A738A": {
 			"name": "GET_THIS_SCRIPT_NAME",
@@ -78523,7 +80068,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_THIS_SCRIPT_HASH"
+			]
 		},
 		"0x5F92A689A06620AA": {
 			"name": "GET_NUMBER_OF_EVENTS",
@@ -78650,7 +80198,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NO_LOADING_SCREEN"
+			]
 		},
 		"0xB1577667C3708F9B": {
 			"name": "_0xB1577667C3708F9B",
@@ -78899,7 +80450,11 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CAST_RAY_POINT_TO_POINT",
+				"_START_SHAPE_TEST_RAY"
+			]
 		},
 		"0x052837721A854EC7": {
 			"name": "START_SHAPE_TEST_BOUNDING_BOX",
@@ -79051,7 +80606,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CAST_3D_RAY_POINT_TO_POINT"
+			]
 		},
 		"0xE6AC6C45FBE83004": {
 			"name": "START_SHAPE_TEST_SWEPT_SPHERE",
@@ -79100,7 +80658,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_START_SHAPE_TEST_CAPSULE_2"
+			]
 		},
 		"0xFF6BE494C7987F34": {
 			"name": "_START_SHAPE_TEST_SURROUNDING_COORDS",
@@ -79158,7 +80719,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_RAYCAST_RESULT"
+			]
 		},
 		"0x65287525D951F6BE": {
 			"name": "GET_SHAPE_TEST_RESULT_INCLUDING_MATERIAL",
@@ -79191,7 +80755,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_SHAPE_TEST_RESULT_EX"
+			]
 		},
 		"0x2B3334BCA57CD799": {
 			"name": "RELEASE_SCRIPT_GUID_FROM_ENTITY",
@@ -79204,7 +80771,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SHAPE_TEST_RESULT_ENTITY"
+			]
 		}
 	},
 	"SOCIALCLUB": {
@@ -79214,7 +80784,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TOTAL_SC_INBOX_IDS"
+			]
 		},
 		"0xBB8EA16ECBC976C4": {
 			"name": "SC_INBOX_GET_MESSAGE_TYPE_AT_INDEX",
@@ -79325,7 +80898,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SC_INBOX_MESSAGE_PUSH"
+			]
 		},
 		"0xF3E31D16CBDCB304": {
 			"name": "_SC_INBOX_MESSAGE_GET_STRING",
@@ -79372,7 +80948,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -79689,7 +81265,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SC_START_CHECK_STRING_TASK"
+			]
 		},
 		"0xEB2BF817463DFA28": {
 			"name": "_SC_PROFANITY_CHECK_UGC_STRING",
@@ -79719,7 +81298,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SC_HAS_CHECK_STRING_TASK_COMPLETED"
+			]
 		},
 		"0x82E4A58BABC15AE7": {
 			"name": "SC_PROFANITY_GET_CHECK_IS_PENDING",
@@ -79732,7 +81314,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SC_GET_CHECK_STRING_STATUS"
+			]
 		},
 		"0x85535ACF97FC0969": {
 			"name": "SC_PROFANITY_GET_STRING_PASSED",
@@ -79856,11 +81441,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
@@ -79877,7 +81462,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -79885,7 +81470,7 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "int*",
 					"name": "p2"
 				}
 			],
@@ -79924,7 +81509,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -79941,11 +81526,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x5C4EBFFA98BDB41C": {
@@ -79954,11 +81539,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xFF8F3A92B75ED67A": {
@@ -81188,12 +82773,15 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_STAT_SET_PROFILE_SETTING"
+			]
 		},
 		"0xC01D2470F22CDE5A": {
 			"name": "_0xC01D2470F22CDE5A",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [],
 			"return_type": "void",
 			"build": "2372"
@@ -81247,7 +82835,10 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PSTAT_BOOL_HASH"
+			]
 		},
 		"0x61E111E323419E07": {
 			"name": "GET_PACKED_INT_STAT_KEY",
@@ -81272,7 +82863,10 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PSTAT_INT_HASH"
+			]
 		},
 		"0xC4BB08EE7907471E": {
 			"name": "GET_PACKED_TU_BOOL_STAT_KEY",
@@ -81297,7 +82891,11 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TUPSTAT_BOOL_HASH",
+				"_GET_PACKED_TITLE_UPDATE_BOOL_STAT_KEY"
+			]
 		},
 		"0xD16C2AD6B8E32854": {
 			"name": "GET_PACKED_TU_INT_STAT_KEY",
@@ -81322,7 +82920,11 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TUPSTAT_INT_HASH",
+				"_GET_PACKED_TITLE_UPDATE_INT_STAT_KEY"
+			]
 		},
 		"0xBA52FF538ED2BC71": {
 			"name": "_GET_NGSTAT_BOOL_HASH",
@@ -81814,7 +83416,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAYSTATS_CRATE_DROP"
+			]
 		},
 		"0xAFC7E5E075A96F46": {
 			"name": "_PLAYSTATS_CRATE_CREATED_MISSION_DONE",
@@ -81835,7 +83440,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAYSTATS_AMBIENT_MISSION_CRATE_CREATED",
+				"_PLAYSTATS_CRATE_CREATED"
+			]
 		},
 		"0xCB00196B31C39EB1": {
 			"name": "PLAYSTATS_HOLD_UP_MISSION_DONE",
@@ -81860,7 +83469,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAYSTATS_HOLD_UP"
+			]
 		},
 		"0x2B69F5074C894811": {
 			"name": "PLAYSTATS_IMPORT_EXPORT_MISSION_DONE",
@@ -81885,7 +83497,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAYSTATS_IMP_EXP"
+			]
 		},
 		"0xADDD1C754E2E2914": {
 			"name": "PLAYSTATS_RACE_TO_POINT_MISSION_DONE",
@@ -81910,7 +83525,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAYSTATS_RACE_TO_POINT"
+			]
 		},
 		"0x79AB33F0FBFAC40C": {
 			"name": "PLAYSTATS_ACQUIRED_HIDDEN_PACKAGE",
@@ -85469,7 +87087,7 @@
 			"build": "2189"
 		},
 		"0x1A67DFBF1F5C3835": {
-			"name": "_0x1A67DFBF1F5C3835",
+			"name": "_PLAYSTATS_ROBBERY_PREP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85482,7 +87100,7 @@
 			"build": "2372"
 		},
 		"0xBBA55BE9AAAABF44": {
-			"name": "_0xBBA55BE9AAAABF44",
+			"name": "_PLAYSTATS_ROBBERY_FINALE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85495,7 +87113,7 @@
 			"build": "2372"
 		},
 		"0xFA5B74BAB8A7EF99": {
-			"name": "_0xFA5B74BAB8A7EF99",
+			"name": "_PLAYSTATS_EXTRA_EVENT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85508,7 +87126,7 @@
 			"build": "2372"
 		},
 		"0xFF14D6FEEC507BBE": {
-			"name": "_0xFF14D6FEEC507BBE",
+			"name": "_PLAYSTATS_CARCLUB_POINTS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85521,7 +87139,7 @@
 			"build": "2372"
 		},
 		"0x1187CB58D7F3BED7": {
-			"name": "_0x1187CB58D7F3BED7",
+			"name": "_PLAYSTATS_CARCLUB_CHALLENGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85546,7 +87164,7 @@
 			"build": "2372"
 		},
 		"0x69C922B677621428": {
-			"name": "_0x69C922B677621428",
+			"name": "_PLAYSTATS_CARCLUB_PRIZE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85680,7 +87298,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REQUEST_INTERIOR_ROOM_BY_NAME"
+			]
 		},
 		"0xE532F5D78798DAAB": {
 			"name": "SET_MODEL_AS_NO_LONGER_NEEDED",
@@ -86139,7 +87760,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REMOVE_NAMED_PTFX_ASSET"
+			]
 		},
 		"0xCB9E1EB3BE2AF4E9": {
 			"name": "SET_VEHICLE_POPULATION_BUDGET",
@@ -86206,7 +87830,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_FOCUS_AREA"
+			]
 		},
 		"0x198F77705FA0931D": {
 			"name": "SET_FOCUS_ENTITY",
@@ -86308,7 +87935,10 @@
 				}
 			],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"FORMAT_FOCUS_HEADING"
+			]
 		},
 		"0x1F3F018BC3AFA77C": {
 			"name": "STREAMVOL_CREATE_FRUSTUM",
@@ -86822,7 +88452,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_PLAYER_INVERTED_UP"
+			]
 		},
 		"0x5B48A06DD0E792A5": {
 			"name": "GET_PLAYER_SWITCH_INTERP_OUT_CURRENT_TIME",
@@ -86838,7 +88471,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"DESTROY_PLAYER_IN_PAUSE_MENU"
+			]
 		},
 		"0x1E9057A74FD73E23": {
 			"name": "_0x1E9057A74FD73E23",
@@ -87145,7 +88781,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_LOAD_MISSION_CREATOR_DATA"
+			]
 		},
 		"0xCCE26000E9A6FAD7": {
 			"name": "SHUTDOWN_CREATOR_BUDGET",
@@ -87432,7 +89071,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_TASK_GET_OFF_BOAT"
+			]
 		},
 		"0x601736CFE536B0A0": {
 			"name": "TASK_SKY_DIVE",
@@ -88385,7 +90027,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_PED_PATHS_WIDTH_PLANT"
+			]
 		},
 		"0x38FE1EC73743793C": {
 			"name": "SET_PED_PATH_PREFER_TO_AVOID_WATER",
@@ -88920,16 +90565,16 @@
 			"build": "323"
 		},
 		"0xDDF3CB5A0A4C0B49": {
-			"name": "_0xDDF3CB5A0A4C0B49",
+			"name": "_SET_ANIM_PLAYBACK_TIME",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
@@ -88937,7 +90582,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -89050,7 +90695,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_TASK_STOP_PHONE_GESTURE_ANIMATION"
+			]
 		},
 		"0xB8EBB1E9D3588C10": {
 			"name": "IS_PLAYING_PHONE_GESTURE_ANIM",
@@ -90001,7 +91649,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_TASK_VEHICLE_FOLLOW"
+			]
 		},
 		"0x3C08A8E30363B353": {
 			"name": "TASK_VEHICLE_CHASE",
@@ -90204,7 +91855,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				}
 			],
@@ -90492,12 +92143,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "pilot"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "aircraft"
 				},
 				{
 					"type": "Any",
@@ -94049,7 +95700,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_TASK_MOVE_NETWORK"
+			]
 		},
 		"0xD5B35BEA41919ACB": {
 			"name": "TASK_MOVE_NETWORK_ADVANCED_BY_NAME",
@@ -94110,7 +95764,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_TASK_MOVE_NETWORK_ADVANCED"
+			]
 		},
 		"0x3D45B0B355C5E0C9": {
 			"name": "_TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS",
@@ -94147,7 +95804,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1493"
+			"build": "1493",
+			"old_names": [
+				"_TASK_MOVE_NETWORK_SCRIPTED"
+			]
 		},
 		"0x29682E2CCF21E9B5": {
 			"name": "_0x29682E2CCF21E9B5",
@@ -94327,7 +95987,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TASK_PROPERTY_FLOAT"
+			]
 		},
 		"0x373EF409B82697A3": {
 			"name": "_SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_2",
@@ -94390,7 +96053,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TASK_PROPERTY_BOOL"
+			]
 		},
 		"0x44AB0B3AFECCE242": {
 			"name": "_GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT",
@@ -95282,7 +96948,10 @@
 				}
 			],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_ALL_VEHICLES_SPAWN"
+			]
 		},
 		"0xB497F06B288DCFDF": {
 			"name": "IS_VEHICLE_STUCK_ON_ROOF",
@@ -95373,7 +97042,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_MODEL_MAX_NUMBER_OF_PASSENGERS"
+			]
 		},
 		"0xF7F203E31F96F6A1": {
 			"name": "IS_SEAT_WARP_ONLY",
@@ -95472,7 +97144,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_SOMETHING_MULTIPLIER_THIS_FRAME"
+			]
 		},
 		"0x90B6DA738A9A25DA": {
 			"name": "SET_AMBIENT_VEHICLE_RANGE_MULTIPLIER_THIS_FRAME",
@@ -95485,7 +97160,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_SOME_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME"
+			]
 		},
 		"0x26324F33423F3CC3": {
 			"name": "SET_FAR_DRAW_VEHICLES",
@@ -95549,7 +97227,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_PED_TARGETTABLE_VEHICLE_DESTROY",
+				"_SET_VEHICLE_DOOR_DESTROY_TYPE"
+			]
 		},
 		"0xD8050E0EB60CF274": {
 			"name": "SET_VEHICLE_HAS_MUTED_SIRENS",
@@ -95566,7 +97248,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"DISABLE_VEHICLE_IMPACT_EXPLOSION_ACTIVATION",
+				"_SET_DISABLE_VEHICLE_SIREN_SOUND"
+			]
 		},
 		"0x517AAF684BB50CD1": {
 			"name": "SET_VEHICLE_DOORS_LOCKED_FOR_PLAYER",
@@ -95789,7 +97475,10 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REQUEST_VEHICLE_PHONE_EXPLOSION"
+			]
 		},
 		"0x598803E85E8448D9": {
 			"name": "SET_TAXI_LIGHTS",
@@ -95891,7 +97580,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"STEER_UNLOCK_BIAS"
+			]
 		},
 		"0x7141766F91D15BEA": {
 			"name": "SET_VEHICLE_CUSTOM_PRIMARY_COLOUR",
@@ -96060,7 +97752,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_PAINT_FADE"
+			]
 		},
 		"0xA82819CAC9C4C403": {
 			"name": "GET_VEHICLE_ENVEFF_SCALE",
@@ -96073,7 +97768,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_PAINT_FADE"
+			]
 		},
 		"0x52BBA29D5EC69356": {
 			"name": "SET_CAN_RESPRAY_VEHICLE",
@@ -96187,7 +97885,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_JITTER_VEHICLE"
+			]
 		},
 		"0x3E71D0B300B7AA79": {
 			"name": "_GET_SUBMARINE_IS_BELOW_FIRST_CRUSH_DEPTH",
@@ -96260,7 +97961,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_BOAT_ANCHOR",
+				"_CAN_BOAT_BE_ANCHORED"
+			]
 		},
 		"0x24F4121D07579880": {
 			"name": "_CAN_ANCHOR_BOAT_HERE_2",
@@ -96273,7 +97978,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "678"
+			"build": "678",
+			"old_names": [
+				"_CAN_BOAT_BE_ANCHORED_2"
+			]
 		},
 		"0xE3EBAAE484798530": {
 			"name": "_SET_BOAT_FROZEN_WHEN_ANCHORED",
@@ -96324,7 +98032,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_BOAT_ANCHOR_BUOYANCY_COEFFICIENT"
+			]
 		},
 		"0xB0AD1238A709B1A2": {
 			"name": "_IS_BOAT_ANCHORED_AND_FROZEN",
@@ -96354,7 +98065,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_BOAT_EXPLODES_ON_WRECKED_ACTION"
+			]
 		},
 		"0xBD32E46AA95C1DD2": {
 			"name": "_SET_BOAT_IS_SINKING",
@@ -96367,7 +98081,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "757"
+			"build": "757",
+			"old_names": [
+				"_SET_BOAT_SINKING"
+			]
 		},
 		"0xF4924635A19EB37D": {
 			"name": "SET_VEHICLE_SIREN",
@@ -96410,7 +98127,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_VEHICLE_SIREN_SOUND_ON"
+			]
 		},
 		"0x3E8C8727991A8A0B": {
 			"name": "SET_VEHICLE_STRONG",
@@ -96621,7 +98341,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_HALT"
+			]
 		},
 		"0xDCE97BDF8A0EABC8": {
 			"name": "_0xDCE97BDF8A0EABC8",
@@ -96732,7 +98455,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_PED_ENABLED_BIKE_RINGTONE",
+				"_IS_VEHICLE_NEAR_ENTITY"
+			]
 		},
 		"0x62CA17B74C435651": {
 			"name": "IS_ANY_ENTITY_ATTACHED_TO_HANDLER_FRAME",
@@ -96758,7 +98485,10 @@
 				}
 			],
 			"return_type": "Vehicle",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_ATTACHED_TO_ENTITY"
+			]
 		},
 		"0x89D630CF5EA96D23": {
 			"name": "_IS_HANDLER_FRAME_ABOVE_CONTAINER",
@@ -97146,7 +98876,7 @@
 		"0x6D645D59FB5F5AD3": {
 			"name": "POP_OUT_VEHICLE_WINDSCREEN",
 			"jhash": "0xCC95C96B",
-			"comment": "Detaches the vehicle's windscreen.\nFor further information, see : gtaforums.com/topic/859570-glass/#entry1068894566\n\nOld name: _DETACH_VEHICLE_WINDSCREEN",
+			"comment": "Detaches the vehicle's windscreen.\nFor further information, see : gtaforums.com/topic/859570-glass/#entry1068894566",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97154,7 +98884,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DETACH_VEHICLE_WINDSCREEN"
+			]
 		},
 		"0xE38CB9D7D39FDBCC": {
 			"name": "_EJECT_JB700_ROOF",
@@ -97213,7 +98946,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_USE_PLAYER_LIGHT_SETTINGS"
+			]
 		},
 		"0x1FD09E7390A74D54": {
 			"name": "_SET_VEHICLE_LIGHTS_MODE",
@@ -98657,7 +100393,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_THIS_MODEL_A_SUBMERSIBLE",
+				"_IS_THIS_MODEL_AN_EMERGENCY_BOAT"
+			]
 		},
 		"0xA0948AB42D7BA0DE": {
 			"name": "IS_THIS_MODEL_A_PLANE",
@@ -98893,7 +100633,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_LIGHTS_CAN_BE_VISIBLY_DAMAGED"
+			]
 		},
 		"0x2311DD7159F00582": {
 			"name": "_0x2311DD7159F00582",
@@ -99134,7 +100877,10 @@
 				}
 			],
 			"return_type": "Ped",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PED_USING_VEHICLE_DOOR"
+			]
 		},
 		"0x93D9BD300D7789E5": {
 			"name": "SET_VEHICLE_DOOR_SHUT",
@@ -99322,7 +101068,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1604"
+			"build": "1604",
+			"old_names": [
+				"_SET_VEHICLE_HEADLIGHTS_COLOUR",
+				"_SET_VEHICLE_XENON_LIGHTS_COLOUR"
+			]
 		},
 		"0x3DFF319A831E0CDB": {
 			"name": "_GET_VEHICLE_XENON_LIGHTS_COLOR",
@@ -99335,7 +101085,11 @@
 				}
 			],
 			"return_type": "int",
-			"build": "1604"
+			"build": "1604",
+			"old_names": [
+				"_GET_VEHICLE_HEADLIGHTS_COLOUR",
+				"_GET_VEHICLE_XENON_LIGHTS_COLOUR"
+			]
 		},
 		"0x31B927BBC44156CD": {
 			"name": "SET_VEHICLE_IS_CONSIDERED_BY_PLAYER",
@@ -99509,7 +101263,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_DOOR_BREAKABLE"
+			]
 		},
 		"0x27B926779DEB502D": {
 			"name": "IS_VEHICLE_BUMPER_BOUNCING",
@@ -99708,7 +101465,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "505"
+			"build": "505",
+			"old_names": [
+				"_SET_VEHICLE_INTERIOR_COLOUR"
+			]
 		},
 		"0x7D1464D472D32136": {
 			"name": "_GET_VEHICLE_INTERIOR_COLOR",
@@ -99725,7 +101485,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "505"
+			"build": "505",
+			"old_names": [
+				"_GET_VEHICLE_INTERIOR_COLOUR"
+			]
 		},
 		"0x6089CDF6A57F326C": {
 			"name": "_SET_VEHICLE_DASHBOARD_COLOR",
@@ -99742,7 +101505,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "505"
+			"build": "505",
+			"old_names": [
+				"_SET_VEHICLE_DASHBOARD_COLOUR"
+			]
 		},
 		"0xB7635E80A5C31BFF": {
 			"name": "_GET_VEHICLE_DASHBOARD_COLOR",
@@ -99759,7 +101525,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "505"
+			"build": "505",
+			"old_names": [
+				"_GET_VEHICLE_DASHBOARD_COLOUR"
+			]
 		},
 		"0x0F87E938BDF29D66": {
 			"name": "STOP_ALL_GARAGE_ACTIVITY",
@@ -100170,7 +101939,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1365"
+			"build": "1365",
+			"old_names": [
+				"_TRANSFORM_STORMBERG_TO_WATER_VEHICLE"
+			]
 		},
 		"0x2A69FFD1B42BFF9E": {
 			"name": "_TRANSFORM_SUBMARINE_TO_VEHICLE",
@@ -100187,7 +101959,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_TRANSFORM_STORMBERG_TO_ROAD_VEHICLE"
+			]
 		},
 		"0xA77DC70BD689A1E5": {
 			"name": "_GET_IS_SUBMARINE_VEHICLE_TRANSFORMED",
@@ -100693,7 +102468,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARE_ALL_VEHICLE_WINDOWS_INTACT"
+			]
 		},
 		"0x2D34FC3BC4ADB780": {
 			"name": "ARE_ANY_VEHICLE_SEATS_FREE",
@@ -100706,7 +102484,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_ANY_VEHICLE_SEAT_EMPTY"
+			]
 		},
 		"0x21D2E5662C1F6FED": {
 			"name": "RESET_VEHICLE_WHEELS",
@@ -100761,7 +102542,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_HELI_MAIN_ROTOR_HEALTH"
+			]
 		},
 		"0xAE8CE82A4219AC8C": {
 			"name": "GET_HELI_TAIL_ROTOR_HEALTH",
@@ -100774,7 +102558,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_HELI_TAIL_ROTOR_HEALTH"
+			]
 		},
 		"0xAC51915D27E4A5F7": {
 			"name": "GET_HELI_TAIL_BOOM_HEALTH",
@@ -100787,7 +102574,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_HELI_ENGINE_HEALTH"
+			]
 		},
 		"0x4056EA1105F5ABD7": {
 			"name": "_SET_HELI_MAIN_ROTOR_HEALTH",
@@ -100838,7 +102628,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"WAS_COUNTER_ACTIVATED"
+			]
 		},
 		"0xBFDF984E2C22B94F": {
 			"name": "SET_VEHICLE_NAME_DEBUG",
@@ -100936,7 +102729,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1180"
+			"build": "1180",
+			"old_names": [
+				"_GET_VEHICLE_HAS_LANDING_GEAR"
+			]
 		},
 		"0xCFC8BE9A5E1FE575": {
 			"name": "CONTROL_LANDING_GEAR",
@@ -100953,7 +102749,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_LANDING_GEAR"
+			]
 		},
 		"0x9B0F3DCA3DB0F4CD": {
 			"name": "GET_LANDING_GEAR_STATE",
@@ -100966,7 +102765,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_LANDING_GEAR"
+			]
 		},
 		"0x61E1DD6125A3EEE6": {
 			"name": "IS_ANY_VEHICLE_NEAR_POINT",
@@ -101090,7 +102892,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TOW_TRUCK_CRANE_RAISED",
+				"_SET_TOW_TRUCK_CRANE_HEIGHT"
+			]
 		},
 		"0x29A16F8D621C4508": {
 			"name": "ATTACH_VEHICLE_TO_TOW_TRUCK",
@@ -101343,7 +103149,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_DESIRED_VERTICAL_FLIGHT_PHASE",
+				"_SET_PLANE_VTOL_DESIRED_DIRECTION"
+			]
 		},
 		"0x9AA47FFF660CB932": {
 			"name": "SET_VEHICLE_FLIGHT_NOZZLE_POSITION_IMMEDIATE",
@@ -101360,7 +103170,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VERTICAL_FLIGHT_PHASE",
+				"_SET_PLANE_VTOL_DIRECTION"
+			]
 		},
 		"0xDA62027C8BDB326E": {
 			"name": "_GET_VEHICLE_FLIGHT_NOZZLE_POSITION",
@@ -101373,7 +103187,12 @@
 				}
 			],
 			"return_type": "float",
-			"build": "1180"
+			"build": "1180",
+			"old_names": [
+				"_GET_PLANE_HOVER_MODE_PERCENTAGE",
+				"_GET_VEHICLE_HOVER_MODE_PERCENTAGE",
+				"_GET_PLANE_VTOL_DIRECTION"
+			]
 		},
 		"0xCE2B43770B655F8F": {
 			"name": "_SET_DISABLE_VEHICLE_FLIGHT_NOZZLE_POSITION",
@@ -101390,7 +103209,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_SET_PLANE_VTOL_ANIMATION_DISABLED"
+			]
 		},
 		"0xA4822F1CF23F4810": {
 			"name": "_0xA4822F1CF23F4810",
@@ -101694,7 +103516,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_MAX_SPEED"
+			]
 		},
 		"0xAD7E85FC227197C4": {
 			"name": "GET_VEHICLE_MAX_BRAKING",
@@ -101746,7 +103571,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_MODEL_MAX_SPEED"
+			]
 		},
 		"0xDC53FD41B4ED944C": {
 			"name": "GET_VEHICLE_MODEL_MAX_BRAKING",
@@ -101772,7 +103600,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_MODEL_HAND_BRAKE"
+			]
 		},
 		"0x539DE94D44FDFD0D": {
 			"name": "GET_VEHICLE_MODEL_MAX_TRACTION",
@@ -101811,7 +103642,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_MODEL_DOWN_FORCE"
+			]
 		},
 		"0xC6AD107DDC9054CC": {
 			"name": "_GET_VEHICLE_MODEL_MAX_KNOTS",
@@ -101850,7 +103684,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_CLASS_MAX_SPEED"
+			]
 		},
 		"0xDBC86D85C5059461": {
 			"name": "GET_VEHICLE_CLASS_MAX_TRACTION",
@@ -101935,7 +103772,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_SPEED_ZONE_FOR_COORD"
+			]
 		},
 		"0x1033371FC8E842A7": {
 			"name": "REMOVE_ROAD_NODE_SPEED_ZONE",
@@ -101948,7 +103788,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REMOVE_SPEED_ZONE"
+			]
 		},
 		"0x87E7F24270732CB1": {
 			"name": "OPEN_BOMB_BAY_DOORS",
@@ -101961,7 +103804,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_OPEN_VEHICLE_BOMB_BAY"
+			]
 		},
 		"0x3556041742A0DC74": {
 			"name": "CLOSE_BOMB_BAY_DOORS",
@@ -101987,7 +103833,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1180"
+			"build": "1180",
+			"old_names": [
+				"_GET_ARE_BOMB_BAY_DOORS_OPEN"
+			]
 		},
 		"0xC0F97FCE55094987": {
 			"name": "IS_VEHICLE_SEARCHLIGHT_ON",
@@ -102335,7 +104184,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_VEHICLE_MOD_LOAD_DONE"
+			]
 		},
 		"0x6AF0636DDEDCB6DD": {
 			"name": "SET_VEHICLE_MOD",
@@ -102563,7 +104415,10 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_MOD_DATA"
+			]
 		},
 		"0x758F49C24925568A": {
 			"name": "PRELOAD_VEHICLE_MOD",
@@ -102779,7 +104634,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_HEADLIGHT_L_BROKEN"
+			]
 		},
 		"0xA7ECB73355EB2F20": {
 			"name": "GET_IS_RIGHT_VEHICLE_HEADLIGHT_DAMAGED",
@@ -102792,7 +104650,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_HEADLIGHT_R_BROKEN"
+			]
 		},
 		"0xEC69ADF931AAE0C3": {
 			"name": "_IS_VEHICLE_ENGINE_ON_FIRE",
@@ -102822,7 +104683,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_ENGINE_POWER_MULTIPLIER"
+			]
 		},
 		"0xBAA045B4E42F3C06": {
 			"name": "_SET_VEHICLE_MAX_SPEED",
@@ -102931,7 +104795,10 @@
 				}
 			],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_VEHICLE_COMBAT_AVOIDANCE_AREA"
+			]
 		},
 		"0xE30524E1871F481D": {
 			"name": "REMOVE_VEHICLE_COMBAT_AVOIDANCE_AREA",
@@ -102957,7 +104824,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ANY_PASSENGERS_RAPPELING",
+				"_IS_ANY_PASSENGER_RAPPELING_FROM_VEHICLE"
+			]
 		},
 		"0xB59E4BD37AE292DB": {
 			"name": "SET_VEHICLE_CHEAT_POWER_INCREASE",
@@ -102974,7 +104845,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_ENGINE_TORQUE_MULTIPLIER"
+			]
 		},
 		"0x0AD9E8F87FF7C16F": {
 			"name": "_0x0AD9E8F87FF7C16F",
@@ -103106,7 +104980,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_VEHICLE_ENGINE_ON"
+			]
 		},
 		"0x1D97D1E3A70A649F": {
 			"name": "SET_VEHICLE_USE_ALTERNATE_HANDLING",
@@ -103144,7 +105021,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_BIKE_LEAN_ANGLE"
+			]
 		},
 		"0xAB04325045427AAE": {
 			"name": "_0xAB04325045427AAE",
@@ -103237,7 +105117,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PLANE_MIN_HEIGHT_ABOVE_GROUND",
+				"_SET_PLANE_MIN_HEIGHT_ABOVE_TERRAIN"
+			]
 		},
 		"0x93AE6A61BE015BF1": {
 			"name": "SET_VEHICLE_LOD_MULTIPLIER",
@@ -103415,7 +105299,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_OWNER"
+			]
 		},
 		"0x97CE68CB032583F0": {
 			"name": "SET_FORCE_HD_VEHICLE",
@@ -103604,7 +105491,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_VEHICLE_SHOP_RESPRAY_ALLOWED"
+			]
 		},
 		"0x983765856F2564F9": {
 			"name": "SET_VEHICLE_ENGINE_CAN_DEGRADE",
@@ -103668,7 +105558,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_VEHICLE_HAS_LANDING_GEAR"
+			]
 		},
 		"0x755D6D5267CBBD7E": {
 			"name": "ARE_PLANE_PROPELLERS_INTACT",
@@ -103681,7 +105574,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ARE_PROPELLERS_UNDAMAGED"
+			]
 		},
 		"0x4C815EB175086F84": {
 			"name": "_SET_PLANE_PROPELLERS_HEALTH",
@@ -103775,7 +105671,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"ADD_A_MARKER_OVER_VEHICLE",
+				"_ARE_VEHICLE_WINGS_INTACT"
+			]
 		},
 		"0xB264C4D2F2B0A78B": {
 			"name": "_0xB264C4D2F2B0A78B",
@@ -104021,7 +105921,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_CARGOBOB_HOOK_ACTIVE"
+			]
 		},
 		"0x7BEB0C7A235F6F3B": {
 			"name": "CREATE_PICK_UP_ROPE_FOR_CARGOBOB",
@@ -104038,7 +105941,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ENABLE_CARGOBOB_HOOK"
+			]
 		},
 		"0x9768CF648F54C804": {
 			"name": "REMOVE_PICK_UP_ROPE_FOR_CARGOBOB",
@@ -104051,7 +105957,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RETRACT_CARGOBOB_HOOK"
+			]
 		},
 		"0x877C1EAEAC531023": {
 			"name": "SET_PICKUP_ROPE_LENGTH_FOR_CARGOBOB",
@@ -104076,7 +105985,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CARGOBOB_HOOK_POSITION"
+			]
 		},
 		"0xC0ED6438E6D39BA8": {
 			"name": "_0xC0ED6438E6D39BA8",
@@ -104144,7 +106056,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_CARGOBOB_MAGNET_ACTIVE",
+				"_DOES_CARGOBOB_HAVE_PICKUP_MAGNET"
+			]
 		},
 		"0x9A665550F8DA349B": {
 			"name": "SET_CARGOBOB_PICKUP_MAGNET_ACTIVE",
@@ -104161,7 +106077,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CARGOBOB_MAGNET_GRAB_VEHICLE",
+				"_SET_CARGOBOB_PICKUP_MAGNET_ACTIVE"
+			]
 		},
 		"0xBCBFCD9D1DAC19E2": {
 			"name": "SET_CARGOBOB_PICKUP_MAGNET_STRENGTH",
@@ -104178,7 +106098,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CARGOBOB_PICKUP_MAGNET_STRENGTH"
+			]
 		},
 		"0xA17BAD153B51547E": {
 			"name": "SET_CARGOBOB_PICKUP_MAGNET_EFFECT_RADIUS",
@@ -104428,7 +106351,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_CLOSE_DOOR_DEFERED_ACTION"
+			]
 		},
 		"0x29439776AAA00A62": {
 			"name": "GET_VEHICLE_CLASS",
@@ -104518,7 +106444,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_CREATES_MONEY_PICKUPS_WHEN_EXPLODED"
+			]
 		},
 		"0xB8FBC8B1330CA9B4": {
 			"name": "_SET_VEHICLE_JET_ENGINE_ON",
@@ -104654,7 +106583,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_VEHICLE_MAX_STR_TRAP"
+			]
 		},
 		"0xF78F94D60248C737": {
 			"name": "_0xF78F94D60248C737",
@@ -104676,7 +106608,7 @@
 		"0xA46413066687A328": {
 			"name": "SET_VEHICLE_CEILING_HEIGHT",
 			"jhash": "0x98A10A86",
-			"comment": "Previously named GET_VEHICLE_DEFORMATION_GET_TREE (hash collision)\n\nfrom Decrypted Scripts I found\nVEHICLE::SET_VEHICLE_CEILING_HEIGHT(l_BD9[2/*2*/], 420.0);",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -104688,7 +106620,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"GET_VEHICLE_DEFORMATION_GET_TREE"
+			]
 		},
 		"0x5E569EC46EC21CAE": {
 			"name": "_0x5E569EC46EC21CAE",
@@ -104918,7 +106853,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISPLAY_DISTANT_VEHICLES"
+			]
 		},
 		"0x8E0A582209A62695": {
 			"name": "_SET_VEHICLE_NEON_LIGHTS_COLOUR",
@@ -105291,7 +107229,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_HUD_SPECIAL_ABILITY_BAR_ACTIVE"
+			]
 		},
 		"0x50634E348C8D44EF": {
 			"name": "GET_VEHICLE_HAS_KERS",
@@ -105304,7 +107245,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "372"
+			"build": "372",
+			"old_names": [
+				"_HAS_VEHICLE_KERS_BOOST"
+			]
 		},
 		"0xE16142B94664DEFD": {
 			"name": "_0xE16142B94664DEFD",
@@ -105355,7 +107299,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "505"
+			"build": "505",
+			"old_names": [
+				"_SET_HYDRAULIC_STATE"
+			]
 		},
 		"0x0BB5CBDDD0F25AE3": {
 			"name": "_GET_HYDRAULIC_WHEEL_VALUE",
@@ -105728,7 +107675,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_DOES_VEHICLE_HAVE_DOOR"
+			]
 		},
 		"0xE00F2AB100B76E89": {
 			"name": "_SET_VEHICLE_ROCKET_BOOST_REFILL_TIME",
@@ -105758,7 +107708,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_HAS_VEHICLE_ROCKET_BOOST",
+				"_DOES_VEHICLE_HAVE_ROCKET_BOOST"
+			]
 		},
 		"0x3D34E80EED4AE3BE": {
 			"name": "_IS_VEHICLE_ROCKET_BOOST_ACTIVE",
@@ -105801,7 +107755,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_GET_HAS_LOWERABLE_WHEELS",
+				"_DOES_VEHICLE_HAVE_RETRACTABLE_WHEELS"
+			]
 		},
 		"0x1DA0DA9CB3F0C8BF": {
 			"name": "_GET_IS_WHEELS_LOWERED_STATE_ACTIVE",
@@ -105827,7 +107785,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_RAISE_LOWERABLE_WHEELS"
+			]
 		},
 		"0x5335BE58C083E74E": {
 			"name": "_LOWER_RETRACTABLE_WHEELS",
@@ -105853,7 +107814,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_HAS_VEHICLE_JUMPING_ABILITY",
+				"_DOES_VEHICLE_HAVE_JUMPING_ABILITY"
+			]
 		},
 		"0xF06A16CA55D138D8": {
 			"name": "_SET_USE_HIGHER_VEHICLE_JUMP_FORCE",
@@ -105938,7 +107903,11 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_HAS_VEHICLE_PARACHUTE",
+				"_DOES_VEHICLE_HAVE_PARACHUTE"
+			]
 		},
 		"0xA916396DF4154EE3": {
 			"name": "_GET_VEHICLE_CAN_ACTIVATE_PARACHUTE",
@@ -105951,7 +107920,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_CAN_VEHICLE_PARACHUTE_BE_ACTIVATED"
+			]
 		},
 		"0x0BFFB028B3DD0A97": {
 			"name": "_SET_VEHICLE_PARACHUTE_ACTIVE",
@@ -105998,7 +107970,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "944"
+			"build": "944",
+			"old_names": [
+				"_SET_RAMP_VEHICLE_RECEIVES_RAMP_DAMAGE"
+			]
 		},
 		"0x1BBAC99C0BC53656": {
 			"name": "_SET_VEHICLE_RAMP_SIDEWAYS_LAUNCH_MOTION",
@@ -106080,7 +108055,7 @@
 		"0x4D610C6B56031351": {
 			"name": "_SET_VEHICLE_PARACHUTE_MODEL",
 			"jhash": "",
-			"comment": "parachuteModel = 230075693",
+			"comment": "Parachute models:\n- sr_prop_specraces_para_s_01\n- imp_prop_impexp_para_s (SecuroServ; Default)\nPlus, many more props can be used as vehicle parachutes, like umbrellas (prop_beach_parasol_03), and unlike SET_PLAYER_PARACHUTE_MODEL_OVERRIDE, you won't get stuck mid-air when using an umbrella.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106092,12 +108067,15 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1011"
+			"build": "1011",
+			"old_names": [
+				"_VEHICLE_SET_CUSTOM_PARACHUTE_MODEL"
+			]
 		},
 		"0xA74AD2439468C883": {
-			"name": "_SET_VEHICLE_PARACHUTE_TEXTURE_VARIATIION",
+			"name": "_SET_VEHICLE_PARACHUTE_TEXTURE_VARIATION",
 			"jhash": "",
-			"comment": "colorIndex = 0 - 7",
+			"comment": "Variations available for the generic parachute (sr_prop_specraces_para_s_01):\n- 0: Rainbow\n- 1: Red\n- 2: White, blue, yellow\n- 3: Black, red, white\n- 4: Red, white, blue\n- 5: Blue\n- 6: Black\n- 7: Black, yellow",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106109,7 +108087,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1011"
+			"build": "1011",
+			"old_names": [
+				"_VEHICLE_SET_CUSTOM_PARACHUTE_TEXTURE"
+			]
 		},
 		"0x0419B167EE128F33": {
 			"name": "_0x0419B167EE128F33",
@@ -106474,7 +108455,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1180"
+			"build": "1180",
+			"old_names": [
+				"_SET_VEHICLE_BOMBS",
+				"_SET_AIRCRAFT_BOMB_COUNT"
+			]
 		},
 		"0xEA12BD130D7569A1": {
 			"name": "_GET_VEHICLE_BOMB_COUNT",
@@ -106487,7 +108472,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "1180"
+			"build": "1180",
+			"old_names": [
+				"_GET_AIRCRAFT_BOMB_COUNT"
+			]
 		},
 		"0x9BDA23BF666F0855": {
 			"name": "_SET_VEHICLE_COUNTERMEASURE_COUNT",
@@ -106504,7 +108492,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1180"
+			"build": "1180",
+			"old_names": [
+				"_SET_AIRCRAFT_COUNTERMEASURE_COUNT"
+			]
 		},
 		"0xF846AA63DF56B804": {
 			"name": "_GET_VEHICLE_COUNTERMEASURE_COUNT",
@@ -106517,7 +108508,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "1180"
+			"build": "1180",
+			"old_names": [
+				"_GET_AIRCRAFT_COUNTERMEASURE_COUNT"
+			]
 		},
 		"0x0A3F820A9A9A9AC5": {
 			"name": "_0x0A3F820A9A9A9AC5",
@@ -106638,7 +108632,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_SET_VEHICLE_TRANSFORM_STATE"
+			]
 		},
 		"0xF1211889DF15A763": {
 			"name": "_SET_VEHICLE_HOVER_TRANSFORM_ENABLED",
@@ -106804,7 +108801,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1365"
+			"build": "1365",
+			"old_names": [
+				"_SET_DISABLE_TURRET_MOVEMENT"
+			]
 		},
 		"0x887FA38787DE8C72": {
 			"name": "_0x887FA38787DE8C72",
@@ -107259,17 +109259,17 @@
 			"build": "2372"
 		},
 		"0xEC0C1D4922AF9754": {
-			"name": "_0xEC0C1D4922AF9754",
+			"name": "_NETWORK_USE_HIGH_PRECISION_VEHICLE_BLENDING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Implemented only for trains.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -107512,7 +109512,11 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_WAVES_INTENSITY",
+				"_SET_CURRENT_INTENSITY"
+			]
 		},
 		"0x2B2A2CC86778B619": {
 			"name": "GET_DEEP_OCEAN_SCALER",
@@ -107520,7 +109524,11 @@
 			"comment": "Gets the aggressiveness factor of the ocean waves.",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_WAVES_INTENSITY",
+				"_GET_CURRENT_INTENSITY"
+			]
 		},
 		"0x547237AA71AB44DE": {
 			"name": "_0x547237AA71AB44DE",
@@ -107541,7 +109549,11 @@
 			"comment": "Sets the waves intensity back to original (1.0 in most cases).",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RESET_WAVES_INTENSITY",
+				"_RESET_CURRENT_INTENSITY"
+			]
 		}
 	},
 	"WEAPON": {
@@ -108330,7 +110342,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1103"
+			"build": "1103",
+			"old_names": [
+				"_GET_MAX_AMMO_2"
+			]
 		},
 		"0x2472622CE1F2D45F": {
 			"name": "_ADD_AMMO_TO_PED_BY_TYPE",
@@ -108351,7 +110366,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1103"
+			"build": "1103",
+			"old_names": [
+				"_ADD_PED_AMMO"
+			]
 		},
 		"0x5FD1E1F011E76D7E": {
 			"name": "SET_PED_AMMO_BY_TYPE",
@@ -108436,7 +110454,10 @@
 				}
 			],
 			"return_type": "Hash",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PED_AMMO_TYPE"
+			]
 		},
 		"0xF489B44DD5AF4BD9": {
 			"name": "_GET_PED_AMMO_TYPE_FROM_WEAPON_2",
@@ -108572,7 +110593,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_LOCKON_RANGE_OF_CURRENT_PED_WEAPON"
+			]
 		},
 		"0x814C9D19DFD69679": {
 			"name": "GET_MAX_RANGE_OF_CURRENT_PED_WEAPON",
@@ -108699,7 +110723,7 @@
 		"0x8C0D57EA686FAD87": {
 			"name": "REFILL_AMMO_INSTANTLY",
 			"jhash": "0x82EEAF0F",
-			"comment": "Old name: _PED_SKIP_NEXT_RELOADING",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -108707,7 +110731,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PED_SKIP_NEXT_RELOADING"
+			]
 		},
 		"0x20AE33F3AC9C0033": {
 			"name": "MAKE_PED_RELOAD",
@@ -109185,7 +111212,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_WEAPON_DAMAGE"
+			]
 		},
 		"0x583BE370B1EC6EB4": {
 			"name": "GET_WEAPON_CLIP_SIZE",
@@ -109279,7 +111309,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "505"
+			"build": "505",
+			"old_names": [
+				"_SET_WEAPON_DAMAGE_MODIFIER"
+			]
 		},
 		"0x4AE5AC8B852D642C": {
 			"name": "_SET_WEAPON_EXPLOSION_RADIUS_MULTIPLIER",
@@ -109339,7 +111372,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_WEAPON_SMOKEGRENADE_ASSIGNED"
+			]
 		},
 		"0xCEA66DAD478CD39B": {
 			"name": "SET_FLASH_LIGHT_FADE_DISTANCE",
@@ -109590,7 +111626,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1103"
+			"build": "1103",
+			"old_names": [
+				"_IS_AIR_DEFENSE_ZONE_INSIDE_SPHERE"
+			]
 		},
 		"0x44F1012B69313374": {
 			"name": "_FIRE_AIR_DEFENSE_WEAPON",
@@ -109649,7 +111688,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1103"
+			"build": "1103",
+			"old_names": [
+				"_SET_CAN_PED_SELECT_WEAPON"
+			]
 		},
 		"0xEFF296097FF1E509": {
 			"name": "_SET_CAN_PED_EQUIP_ALL_WEAPONS",

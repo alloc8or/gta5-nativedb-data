@@ -24,7 +24,13 @@
 						},
 						"return_type": { "type": "string" },
 						"build": { "type": "string" },
-						"unused": { "type": "boolean" }
+						"unused": { "type": "boolean" },
+						"old_names": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
 					},
 					"required": ["name", "jhash", "comment", "params", "return_type", "build"],
 					"additionalProperties": false
