@@ -109466,23 +109466,23 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "xLow"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "yLow"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "xHigh"
 				},
 				{
 					"type": "float",
-					"name": "radius"
+					"name": "yHigh"
 				},
 				{
 					"type": "float",
-					"name": "unk"
+					"name": "height"
 				}
 			],
 			"return_type": "int",
