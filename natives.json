@@ -14428,7 +14428,7 @@
 			"build": "323"
 		},
 		"0x8339643499D1222E": {
-			"name": "_SET_ENTITY_ANGULAR_VELOCITY",
+			"name": "SET_ENTITY_ROTATION_VELOCITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
