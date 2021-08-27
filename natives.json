@@ -34134,7 +34134,7 @@
 		"0x704983DF373B198F": {
 			"name": "SET_WEATHER_TYPE_PERSIST",
 			"jhash": "0xC6C04C75",
-			"comment": "The following weatherTypes are used in the scripts:\n\"CLEAR\"\n\"EXTRASUNNY\"\n\"CLOUDS\"\n\"OVERCAST\"\n\"RAIN\"\n\"CLEARING\"\n\"THUNDER\"\n\"SMOG\"\n\"FOGGY\"\n\"XMAS\"\n\"SNOW\"\n\"SNOWLIGHT\"\n\"BLIZZARD\"\n\"BLIZZARD\"\"HALLOWEEN\"\n\"NEUTRAL\"",
+			"comment": "The following weatherTypes are used in the scripts:\n\"CLEAR\"\n\"EXTRASUNNY\"\n\"CLOUDS\"\n\"OVERCAST\"\n\"RAIN\"\n\"CLEARING\"\n\"THUNDER\"\n\"SMOG\"\n\"FOGGY\"\n\"XMAS\"\n\"SNOW\"\n\"SNOWLIGHT\"\n\"BLIZZARD\"\n\"HALLOWEEN\"\n\"NEUTRAL\"",
 			"params": [
 				{
 					"type": "const char*",
@@ -34147,7 +34147,7 @@
 		"0xED712CA327900C8A": {
 			"name": "SET_WEATHER_TYPE_NOW_PERSIST",
 			"jhash": "0xC869FE97",
-			"comment": "The following weatherTypes are used in the scripts:\n\"CLEAR\"\n\"EXTRASUNNY\"\n\"CLOUDS\"\n\"OVERCAST\"\n\"RAIN\"\n\"CLEARING\"\n\"THUNDER\"\n\"SMOG\"\n\"FOGGY\"\n\"XMAS\"\n\"SNOW\"\n\"SNOWLIGHT\"\n\"BLIZZARD\"\n\"BLIZZARD\"\"HALLOWEEN\"\n\"NEUTRAL\"",
+			"comment": "The following weatherTypes are used in the scripts:\n\"CLEAR\"\n\"EXTRASUNNY\"\n\"CLOUDS\"\n\"OVERCAST\"\n\"RAIN\"\n\"CLEARING\"\n\"THUNDER\"\n\"SMOG\"\n\"FOGGY\"\n\"XMAS\"\n\"SNOW\"\n\"SNOWLIGHT\"\n\"BLIZZARD\"\n\"HALLOWEEN\"\n\"NEUTRAL\"",
 			"params": [
 				{
 					"type": "const char*",
@@ -34160,7 +34160,7 @@
 		"0x29B487C359E19889": {
 			"name": "SET_WEATHER_TYPE_NOW",
 			"jhash": "0x361E9EAC",
-			"comment": "The following weatherTypes are used in the scripts:\n\"CLEAR\"\n\"EXTRASUNNY\"\n\"CLOUDS\"\n\"OVERCAST\"\n\"RAIN\"\n\"CLEARING\"\n\"THUNDER\"\n\"SMOG\"\n\"FOGGY\"\n\"XMAS\"\n\"SNOW\"\n\"SNOWLIGHT\"\n\"BLIZZARD\"\n\"BLIZZARD\"\"HALLOWEEN\"\n\"NEUTRAL\"",
+			"comment": "The following weatherTypes are used in the scripts:\n\"CLEAR\"\n\"EXTRASUNNY\"\n\"CLOUDS\"\n\"OVERCAST\"\n\"RAIN\"\n\"CLEARING\"\n\"THUNDER\"\n\"SMOG\"\n\"FOGGY\"\n\"XMAS\"\n\"SNOW\"\n\"SNOWLIGHT\"\n\"BLIZZARD\"\n\"HALLOWEEN\"\n\"NEUTRAL\"",
 			"params": [
 				{
 					"type": "const char*",
