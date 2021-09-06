@@ -54670,19 +54670,20 @@
 			"build": "323"
 		},
 		"0x02C40BF885C567B6": {
-			"name": "_NETWORK_CONVERT_SYNCHRONISED_SCENE_TO_SYNCHRONIZED_SCENE",
+			"name": "NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID",
 			"jhash": "0x16AED87B",
-			"comment": "netScene to scene",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "netScene"
+					"name": "netId"
 				}
 			],
 			"return_type": "int",
 			"build": "323",
 			"old_names": [
-				"_NETWORK_UNLINK_NETWORKED_SYNCHRONISED_SCENE"
+				"_NETWORK_UNLINK_NETWORKED_SYNCHRONISED_SCENE",
+				"_NETWORK_CONVERT_SYNCHRONISED_SCENE_TO_SYNCHRONIZED_SCENE"
 			]
 		},
 		"0xC9B43A33D09CADA7": {
