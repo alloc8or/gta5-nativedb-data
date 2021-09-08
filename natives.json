@@ -47503,13 +47503,13 @@
 			]
 		},
 		"0xCAE55F48D3D7875C": {
-			"name": "_0xCAE55F48D3D7875C",
+			"name": "NETWORK_SESSION_ADD_ACTIVE_MATCHMAKING_GROUP",
 			"jhash": "0x5BE529F7",
-			"comment": "NETWORK_SESSION_*\n\np0 must be <= 4",
+			"comment": "groupId range: [0, 4]",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "groupId"
 				}
 			],
 			"return_type": "void",
