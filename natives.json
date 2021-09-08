@@ -69149,7 +69149,7 @@
 			]
 		},
 		"0x5EF37013A6539C9D": {
-			"name": "_GET_NUM_PARENT_PEDS_OF_TYPE",
+			"name": "GET_PED_HEAD_BLEND_NUM_HEADS",
 			"jhash": "0x095D3BD8",
 			"comment": "Type equals 0 for male non-dlc, 1 for female non-dlc, 2 for male dlc, and 3 for female dlc.",
 			"params": [
@@ -69159,7 +69159,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_NUM_PARENT_PEDS_OF_TYPE"
+			]
 		},
 		"0x39D55A620FCB6A3A": {
 			"name": "SET_PED_PRELOAD_VARIATION_DATA",
