@@ -52667,12 +52667,15 @@
 			"build": "323"
 		},
 		"0xB3F64A6A91432477": {
-			"name": "_NETWORK_IS_CLAN_MEMBERSHIP_FINISHED_DOWNLOADING",
+			"name": "NETWORK_CLAN_ANY_DOWNLOAD_MEMBERSHIP_PENDING",
 			"jhash": "0x83ED8E08",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_IS_CLAN_MEMBERSHIP_FINISHED_DOWNLOADING"
+			]
 		},
 		"0xBB6E6FEE99D866B2": {
 			"name": "NETWORK_CLAN_REMOTE_MEMBERSHIPS_ARE_IN_CACHE",
