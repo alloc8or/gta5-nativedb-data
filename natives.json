@@ -35348,31 +35348,31 @@
 		"0xA61B4DF533DCB56E": {
 			"name": "IS_AREA_OCCUPIED",
 			"jhash": "0xC013972F",
-			"comment": "",
+			"comment": "Similar to IS_POSITION_OCCUPIED, but checks within a box defined by two coordinates forming the upper and lower corners of the box. Returns true if any entity in the box matches the specified parameters. Coorindates function the same way as IS_ENTITY_IN_AREA.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "BOOL",
@@ -35380,11 +35380,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "checkVehicles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "checkPeds"
 				},
 				{
 					"type": "BOOL",
@@ -35395,8 +35395,8 @@
 					"name": "p10"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "Entity",
+					"name": "ignoreEntity"
 				},
 				{
 					"type": "BOOL",
