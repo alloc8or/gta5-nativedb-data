@@ -59200,7 +59200,7 @@
 		"0x5F048334B4A4E774": {
 			"name": "_SET_OBJECT_LIGHT_COLOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "If forceColor is set to true, the color specified by r/g/b will override any light sources on the object.\nIf forceColor is set to false, any light sources on the object will be reset to their original color, and the r/g/b arguments will be ignored.\n\nAs of May 2021, on RPH the hash for this function is actually 0x3b2fd68db5f8331c. Not sure of behavior on other hooks.\n\nInfo updated by PNWParksFan, May 2021",
 			"params": [
 				{
 					"type": "Object",
@@ -59208,7 +59208,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "forceColor"
 				},
 				{
 					"type": "int",
@@ -59223,7 +59223,7 @@
 					"name": "b"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "1493"
 		},
 		"0xADF084FB8F075D06": {
