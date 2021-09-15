@@ -74401,9 +74401,9 @@
 			"build": "323"
 		},
 		"0xE861D0B05C7662B8": {
-			"name": "_0xE861D0B05C7662B8",
+			"name": "SET_PED_CAN_LOSE_PROPS_ON_DAMAGE",
 			"jhash": "0x2F9550C2",
-			"comment": "SET_PED_CAN_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -74411,7 +74411,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
 					"type": "int",
