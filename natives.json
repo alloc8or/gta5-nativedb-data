@@ -105208,9 +105208,9 @@
 			"build": "323"
 		},
 		"0x279D50DE5652D935": {
-			"name": "_0x279D50DE5652D935",
+			"name": "SET_VEHICLE_GENERATES_ENGINE_SHOCKING_EVENTS",
 			"jhash": "0xB3200F72",
-			"comment": "SET_VEHICLE_*",
+			"comment": "Allows creation of CEventShockingPlaneFlyby, CEventShockingHelicopterOverhead, and other(?) Shocking events",
 			"params": [
 				{
 					"type": "Vehicle",
