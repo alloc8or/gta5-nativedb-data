@@ -54903,15 +54903,15 @@
 		"0xFB680D403909DC70": {
 			"name": "_0xFB680D403909DC70",
 			"jhash": "0xFFB2ADA1",
-			"comment": "",
+			"comment": "teamId must be < 3, instanceId must be < 64\n\nNETWORK_A*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "teamId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "instanceId"
 				}
 			],
 			"return_type": "void",
