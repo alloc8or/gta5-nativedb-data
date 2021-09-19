@@ -54605,7 +54605,7 @@
 			"build": "1734"
 		},
 		"0xCF8BD3B0BD6D42D7": {
-			"name": "_NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA",
+			"name": "NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA",
 			"jhash": "0xBFFE8B5C",
 			"comment": "",
 			"params": [
@@ -54623,7 +54623,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA"
+			]
 		},
 		"0x478DCBD2A98B705A": {
 			"name": "NETWORK_ATTACH_SYNCHRONISED_SCENE_TO_ENTITY",
