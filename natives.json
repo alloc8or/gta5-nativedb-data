@@ -25850,7 +25850,7 @@
 		"0x137BC35589E34E1E": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME",
 			"jhash": "0x88B9B909",
-			"comment": "p0 = 1 or 0\n\ncrashes my game...\nthis is for sending invites to network players - jobs/apartment/ect... \nreturn notification handle\n\nint invite(Player player)\n   {\n     networkHandleMgr netHandle;\n       networkClanMgr clan;\n      char *playerName = GET_PLAYER_NAME(player);\n       _SET_NOTIFICATION_TEXT_ENTRY(\"STRING\");\n     _SET_NOTIFACTION_COLOR_NEXT(1);\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(playerName);\n     NETWORK_HANDLE_FROM_PLAYER(player, &netHandle.netHandle, 13);\n     if (NETWORK_CLAN_PLAYER_IS_ACTIVE(&netHandle.netHandle))\n      {\n         NETWORK_CLAN_PLAYER_GET_DESC(&clan.clanHandle, 35, &netHandle.netHandle);\n         _DRAW_NOTIFICATION_CLAN_INVITE(0, _0x54E79E9C(&clan.clanHandle, 35), &clan.unk17, clan.isLeader, 0, 0, clan.clanHandle, playerName, 0, 0, 0);\n     }\n }",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -40049,8 +40049,8 @@
 					"name": "amount"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -40066,8 +40066,8 @@
 					"name": "value"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -40485,8 +40485,8 @@
 					"name": "amount"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "Any*",
@@ -42032,8 +42032,8 @@
 					"name": "vehicleModel"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "BOOL",
@@ -47933,8 +47933,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -48283,8 +48283,8 @@
 					"name": "message"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -48356,8 +48356,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -48666,8 +48666,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -48892,8 +48892,8 @@
 			"comment": "the first arg seems to be the network player handle (&handle) and the second var is pretty much always \"\" and the third seems to be a number between 0 and ~10 and the 4th is is something like 0 to 5 and I guess the 5th is a bool cuz it is always 0 or 1\n\ndoes this send an invite to a player?",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "const char*",
@@ -48942,8 +48942,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -48955,8 +48955,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -49225,8 +49225,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "Any*",
@@ -49571,7 +49571,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -49686,8 +49686,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "Any",
@@ -49805,8 +49805,8 @@
 			"comment": "This would be nice to see if someone is in party chat, but 2 sad notes.\n1) It only becomes true if said person is speaking in that party at the time.\n2) It will never, become true unless you are in that party with said person.",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -49990,8 +49990,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "int",
@@ -51036,15 +51036,15 @@
 		"0xE86051786B66CD8E": {
 			"name": "NETWORK_GET_LOCAL_HANDLE",
 			"jhash": "0x08023B16",
-			"comment": "Retrieves the local player's NetworkHandle* and stores it in the given buffer.\n\n* Currently unknown struct",
+			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "int",
-					"name": "bufferSize"
+					"name": "gamerHandleSize"
 				}
 			],
 			"return_type": "void",
@@ -51053,19 +51053,19 @@
 		"0xDCD51DD8F87AEC5C": {
 			"name": "NETWORK_HANDLE_FROM_USER_ID",
 			"jhash": "0x74C2C1B7",
-			"comment": "Returns a NetworkHandle* from the specified user ID and stores it in a given buffer.\n\n* Currently unknown struct",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
 					"name": "userId"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "int",
-					"name": "bufferSize"
+					"name": "gamerHandleSize"
 				}
 			],
 			"return_type": "void",
@@ -51074,19 +51074,19 @@
 		"0xA0FD21BED61E5C4C": {
 			"name": "NETWORK_HANDLE_FROM_MEMBER_ID",
 			"jhash": "0x9BFC9FE2",
-			"comment": "Returns a NetworkHandle* from the specified member ID and stores it in a given buffer.\n\n* Currently unknown struct",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
 					"name": "memberId"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "int",
-					"name": "bufferSize"
+					"name": "gamerHandleSize"
 				}
 			],
 			"return_type": "void",
@@ -51095,19 +51095,19 @@
 		"0x388EB2B86C73B6B3": {
 			"name": "NETWORK_HANDLE_FROM_PLAYER",
 			"jhash": "0xD3498917",
-			"comment": "Returns a handle to networkHandle* from the specified player handle and stores it in a given buffer.\n\n* Currently unknown struct\n\nExample:\nstd::vector<UINT64> GetPlayerNetworkHandle(Player player) {\n    const int size = 13;\n    uint64_t *buffer = std::make_unique<uint64_t[]>(size).get();\n    NETWORK::NETWORK_HANDLE_FROM_PLAYER(player, reinterpret_cast<int *>(buffer), 13);\n    for (int i = 0; i < size; i++) {\n        Log::Msg(\"networkhandle[%i]: %llx\", i, buffer[i]);\n    }\n    std::vector<UINT64> result(buffer, buffer + sizeof(buffer));\n    return result;\n}",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
 					"name": "player"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "int",
-					"name": "bufferSize"
+					"name": "gamerHandleSize"
 				}
 			],
 			"return_type": "void",
@@ -51135,8 +51135,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "Hash",
@@ -51155,12 +51155,12 @@
 					"name": "friendIndex"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "int",
-					"name": "bufferSize"
+					"name": "gamerHandleSize"
 				}
 			],
 			"return_type": "void",
@@ -51172,8 +51172,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51201,8 +51201,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "const char*",
@@ -51252,12 +51252,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "netHandle1"
+					"type": "Any*",
+					"name": "gamerHandle1"
 				},
 				{
-					"type": "int*",
-					"name": "netHandle2"
+					"type": "Any*",
+					"name": "gamerHandle2"
 				}
 			],
 			"return_type": "BOOL",
@@ -51269,12 +51269,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "int",
-					"name": "bufferSize"
+					"name": "gamerHandleSize"
 				}
 			],
 			"return_type": "BOOL",
@@ -51286,8 +51286,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "Player",
@@ -51299,8 +51299,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "const char*",
@@ -51312,8 +51312,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51322,11 +51322,11 @@
 		"0x859ED1CEA343FCA8": {
 			"name": "NETWORK_SHOW_PROFILE_UI",
 			"jhash": "0xF00A20B0",
-			"comment": "Example:\n\nint playerHandle; \nNETWORK_HANDLE_FROM_PLAYER(selectedPlayer, &playerHandle, 13);\nNETWORK_SHOW_PROFILE_UI(&playerHandle);",
+			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -51497,8 +51497,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51539,8 +51539,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51573,8 +51573,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "const char*",
@@ -51696,7 +51696,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51709,7 +51709,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51722,7 +51722,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51735,7 +51735,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51748,7 +51748,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51761,7 +51761,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51774,7 +51774,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51787,7 +51787,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51800,7 +51800,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51813,7 +51813,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51826,7 +51826,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -51839,7 +51839,7 @@
 			"params": [
 				{
 					"type": "Any*",
-					"name": "networkHandle"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -52545,8 +52545,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -52558,7 +52558,7 @@
 			"comment": "bufferSize is 35 in the scripts.\n\nbufferSize is the elementCount of p0(desc), sizeof(p0) == 280 == p1*8 == 35 * 8, p2(netHandle) is obtained from NETWORK::NETWORK_HANDLE_FROM_PLAYER.  And no, I can't explain why 35 * sizeof(int) == 280 and not 140, but I'll get back to you on that.\n\nthe answer is: because p0 an int64_t* / int64_t[35].  and FYI p2 is an int64_t[13]\n\npastebin.com/cSZniHak",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "clanDesc"
 				},
 				{
@@ -52566,8 +52566,8 @@
 					"name": "bufferSize"
 				},
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -52646,8 +52646,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -52723,14 +52723,14 @@
 		"0xC8BC2011F67B3411": {
 			"name": "NETWORK_CLAN_GET_MEMBERSHIP",
 			"jhash": "0xCDC4A590",
-			"comment": "BOOL DEBUG_MEMBRESHIP(int Param)\n    {\n     int membership;\n       networkHandleMgr handle;\n      NETWORK_HANDLE_FROM_PLAYER(iSelectedPlayer, &handle.netHandle, 13);\n\n     if (!_NETWORK_IS_CLAN_MEMBERSHIP_FINISHED_DOWNLOADING())\n      {\n         if (NETWORK_CLAN_REMOTE_MEMBERSHIPS_ARE_IN_CACHE(&Param))\n         {\n             if (NETWORK_CLAN_GET_MEMBERSHIP_COUNT(&Param) > 0)\n             {\n                 if (NETWORK_CLAN_GET_MEMBERSHIP_VALID(&Param, 0))\n                 {\n                     if (NETWORK_CLAN_GET_MEMBERSHIP(&Param, &membership, -1))\n                     {\n                         _0xF633805A(&membership, 35, &handle.netHandle);\n                      }\n                 }\n             }\n         }\n     }\n     else\n      {\n         NETWORK_CLAN_DOWNLOAD_MEMBERSHIP(&handle.netHandle);\n      }\n }",
+			"comment": "",
 			"params": [
 				{
 					"type": "int*",
 					"name": "p0"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "clanMembership"
 				},
 				{
@@ -57639,16 +57639,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "PlayerHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				},
 				{
 					"type": "const char*",
-					"name": "FilePath"
+					"name": "filePath"
 				},
 				{
 					"type": "const char*",
-					"name": "Name"
+					"name": "name"
 				},
 				{
 					"type": "BOOL",
@@ -57665,11 +57665,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "FilePath"
+					"name": "filePath"
 				},
 				{
 					"type": "const char*",
-					"name": "Name"
+					"name": "name"
 				},
 				{
 					"type": "BOOL",
@@ -80932,8 +80932,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -81072,8 +81072,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
-					"name": "networkHandle"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
