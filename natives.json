@@ -24342,12 +24342,12 @@
 			]
 		},
 		"0x5E657EF1099EDD65": {
-			"name": "_0x5E657EF1099EDD65",
+			"name": "DOES_LATEST_BRIEF_STRING_EXIST",
 			"jhash": "0x91A081A1",
-			"comment": "DOES_*",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
