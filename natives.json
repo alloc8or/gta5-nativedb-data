@@ -3895,7 +3895,7 @@
 		"0x3A539D52857EA82D": {
 			"name": "PLAY_VEHICLE_DOOR_OPEN_SOUND",
 			"jhash": "0x84930330",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3903,7 +3903,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "void",
@@ -3912,7 +3912,7 @@
 		"0x62A456AA4769EF34": {
 			"name": "PLAY_VEHICLE_DOOR_CLOSE_SOUND",
 			"jhash": "0xBA2CF407",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3920,7 +3920,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "void",
@@ -97221,7 +97221,7 @@
 		"0xBE70724027F85BCD": {
 			"name": "SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED",
 			"jhash": "0xD61D182D",
-			"comment": "destroyType is 1 for opens on damage, 2 for breaks on damage.",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -97229,11 +97229,11 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "int",
-					"name": "destroyType"
+					"name": "doorLockStatus"
 				}
 			],
 			"return_type": "void",
@@ -98729,7 +98729,7 @@
 		"0x7C65DAC73C35C862": {
 			"name": "SET_VEHICLE_DOOR_OPEN",
 			"jhash": "0xBB75D38B",
-			"comment": "doorIndex:\n0 = Front Left Door\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Back\n7 = Back2",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98737,7 +98737,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -98754,7 +98754,7 @@
 		"0x3B458DDB57038F08": {
 			"name": "_0x3B458DDB57038F08",
 			"jhash": "",
-			"comment": "Usually used alongside other vehicle door natives.",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT\n\nUsually used alongside other vehicle door natives.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -98762,7 +98762,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -100728,7 +100728,7 @@
 		"0x3E933CFF7B111C22": {
 			"name": "IS_VEHICLE_DOOR_FULLY_OPEN",
 			"jhash": "0xC2385B6F",
-			"comment": "doorIndex:\n0 = Front Left Door\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Trunk2",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100736,7 +100736,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "BOOL",
@@ -100804,7 +100804,7 @@
 		"0xF2BFA0430F0A0FCB": {
 			"name": "SET_VEHICLE_DOOR_CONTROL",
 			"jhash": "0x572DD360",
-			"comment": "doorIndex:\n0 = Front Left Door (driver door)\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Trunk2\n\np2:\nmostly use 0 and 1, very rare using 3 and 5\n\np3:\nIt seems it is an angle\n\nExample in VB: \n    Public Shared Sub Set_Vehicle_Door_Angle(Vehicle As Vehicle, Door As VehicleDoor, Angle As Single)\n        Native.Function.Call(Hash.SET_VEHICLE_DOOR_CONTROL, Vehicle.Handle, Door, 1, Angle)\n    End Sub\n\nI'm Not MentaL\n\nsfink: p2 is speed, 5 is fast, 1 is slow 3 is medium",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100812,7 +100812,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "int",
@@ -100829,7 +100829,7 @@
 		"0xA5A9653A8D2CAF48": {
 			"name": "SET_VEHICLE_DOOR_LATCHED",
 			"jhash": "0x4EB7BBFC",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100837,7 +100837,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -100858,7 +100858,7 @@
 		"0xFE3F9C29F7B32BD5": {
 			"name": "GET_VEHICLE_DOOR_ANGLE_RATIO",
 			"jhash": "0x0E399C26",
-			"comment": "example in vb:\n    Public Shared Function Get_Vehicle_Door_Angle(Vehicle As Vehicle, Door As VehicleDoor) As Single\n        Return Native.Function.Call(Of Single)(Hash.GET_VEHICLE_DOOR_ANGLE_RATIO, Vehicle.Handle, Door)\n    End Function\n\nI'm Not MentaL",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100866,7 +100866,7 @@
 				},
 				{
 					"type": "int",
-					"name": "door"
+					"name": "doorId"
 				}
 			],
 			"return_type": "float",
@@ -100875,7 +100875,7 @@
 		"0x218297BF0CFD853B": {
 			"name": "GET_PED_USING_VEHICLE_DOOR",
 			"jhash": "0x0630101F",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100883,7 +100883,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doord"
 				}
 			],
 			"return_type": "Ped",
@@ -100895,7 +100895,7 @@
 		"0x93D9BD300D7789E5": {
 			"name": "SET_VEHICLE_DOOR_SHUT",
 			"jhash": "0x142606BD",
-			"comment": "doorIndex:\n0 = Front Left Door\n1 = Front Right Door\n2 = Back Left Door\n3 = Back Right Door\n4 = Hood\n5 = Trunk\n6 = Trunk2",
+			"comment": "enum eDoorId\n{\n\tVEH_EXT_DOOR_INVALID_ID = -1,\n\tVEH_EXT_DOOR_DSIDE_F,\n\tVEH_EXT_DOOR_DSIDE_R,\n\tVEH_EXT_DOOR_PSIDE_F,\n\tVEH_EXT_DOOR_PSIDE_R,\n\tVEH_EXT_BONNET,\n\tVEH_EXT_BOOT\n};",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100903,7 +100903,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -100916,7 +100916,7 @@
 		"0xD4D4F6A4AB575A33": {
 			"name": "SET_VEHICLE_DOOR_BROKEN",
 			"jhash": "0x8147FEA7",
-			"comment": "doorIndex:\n0 = Front Right Door\n1 = Front Left Door\n2 = Back Right Door\n3 = Back Left Door\n4 = Hood\n5 = Trunk\n\nChanged last paramater from CreateDoorObject To NoDoorOnTheFloor because when on false, the door object is created,and not created when on true...the former parameter name was counter intuitive...(by Calderon)\n\nCalderon is a moron.",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100924,7 +100924,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -101231,7 +101231,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "int",
@@ -101257,7 +101257,7 @@
 		"0x2FA133A4A9D37ED8": {
 			"name": "_SET_VEHICLE_DOOR_CAN_BREAK",
 			"jhash": "0x065B92B3",
-			"comment": "Keeps Vehicle Doors/Hood/Trunk from breaking off",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101265,7 +101265,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				},
 				{
 					"type": "BOOL",
@@ -103927,7 +103927,7 @@
 		"0xC0572928C0ABFDA3": {
 			"name": "_GET_ENTRY_POSITION_OF_DOOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103935,7 +103935,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "Vector3",
@@ -107673,7 +107673,7 @@
 		"0x645F4B6E8499F632": {
 			"name": "_GET_IS_DOOR_VALID",
 			"jhash": "",
-			"comment": "",
+			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107681,7 +107681,7 @@
 				},
 				{
 					"type": "int",
-					"name": "doorIndex"
+					"name": "doorId"
 				}
 			],
 			"return_type": "BOOL",
