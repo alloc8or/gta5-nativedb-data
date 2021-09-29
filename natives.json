@@ -104403,7 +104403,7 @@
 					"name": "modIndex"
 				}
 			],
-			"return_type": "float",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4593CF82AA179706": {
