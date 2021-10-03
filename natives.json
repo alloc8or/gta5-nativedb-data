@@ -77184,11 +77184,11 @@
 		"0xBEC7076D64130195": {
 			"name": "GIVE_ACHIEVEMENT_TO_PLAYER",
 			"jhash": "0x822BC992",
-			"comment": "Achievements from 0-57\n\n\nmore achievements came with update 1.29 (freemode events update), I'd say that they now go to 60, but I'll need to check.",
+			"comment": "1 - Welcome to Los Santos\n2 - A Friendship Resurrected\n3 - A Fair Day's Pay\n4 - The Moment of Truth\n5 - To Live or Die in Los Santos\n6 - Diamond Hard\n7 - Subversive\n8 - Blitzed\n9 - Small Town, Big Job\n10 - The Government Gimps\n11 - The Big One!\n12 - Solid Gold, Baby!\n13 - Career Criminal\n14 - San Andreas Sightseer\n15 - All's Fare in Love and War\n16 - TP Industries Arms Race\n17 - Multi-Disciplined\n18 - From Beyond the Stars\n19 - A Mystery, Solved\n20 - Waste Management\n21 - Red Mist\n22 - Show Off\n23 - Kifflom!\n24 - Three Man Army\n25 - Out of Your Depth\n26 - Altruist Acolyte\n27 - A Lot of Cheddar\n28 - Trading Pure Alpha\n29 - Pimp My Sidearm\n30 - Wanted: Alive Or Alive\n31 - Los Santos Customs\n32 - Close Shave\n33 - Off the Plane\n34 - Three-Bit Gangster\n35 - Making Moves\n36 - Above the Law\n37 - Numero Uno\n38 - The Midnight Club\n39 - Unnatural Selection\n40 - Backseat Driver\n41 - Run Like The Wind\n42 - Clean Sweep\n43 - Decorated\n44 - Stick Up Kid\n45 - Enjoy Your Stay\n46 - Crew Cut\n47 - Full Refund\n48 - Dialling Digits\n49 - American Dream\n50 - A New Perspective\n51 - Be Prepared\n52 - In the Name of Science\n53 - Dead Presidents\n54 - Parole Day\n55 - Shot Caller\n56 - Four Way\n57 - Live a Little\n58 - Can't Touch This\n59 - Mastermind\n60 - Vinewood Visionary\n61 - Majestic\n62 - Humans of Los Santos\n63 - First Time Director\n64 - Animal Lover\n65 - Ensemble Piece\n66 - Cult Movie\n67 - Location Scout\n68 - Method Actor\n69 - Cryptozoologist\n70 - Getting Started\n71 - The Data Breaches\n72 - The Bogdan Problem\n73 - The Doomsday Scenario\n74 - A World Worth Saving\n75 - Orbital Obliteration\n76 - Elitist\n77 - Masterminds",
 			"params": [
 				{
 					"type": "int",
-					"name": "achievement"
+					"name": "achievementId"
 				}
 			],
 			"return_type": "BOOL",
@@ -77201,7 +77201,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "achievement"
+					"name": "achievementId"
 				},
 				{
 					"type": "int",
@@ -77221,7 +77221,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "achievement"
+					"name": "achievementId"
 				}
 			],
 			"return_type": "int",
@@ -77233,11 +77233,11 @@
 		"0x867365E111A3B6EB": {
 			"name": "HAS_ACHIEVEMENT_BEEN_PASSED",
 			"jhash": "0x136A5BE9",
-			"comment": "",
+			"comment": "See GIVE_ACHIEVEMENT_TO_PLAYER",
 			"params": [
 				{
 					"type": "int",
-					"name": "achievement"
+					"name": "achievementId"
 				}
 			],
 			"return_type": "BOOL",
@@ -81980,7 +81980,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "achievement"
+					"name": "achievementId"
 				}
 			],
 			"return_type": "BOOL",
