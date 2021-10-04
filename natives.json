@@ -72480,7 +72480,7 @@
 		"0x4D9CA1009AFBD057": {
 			"name": "SET_PED_COMBAT_MOVEMENT",
 			"jhash": "0x12E62F9E",
-			"comment": "0 - Stationary (Will just stand in place)\n1 - Defensive (Will try to find cover and very likely to blind fire)\n2 - Offensive (Will attempt to charge at enemy but take cover as well)\n3 - Suicidal Offensive (Will try to flank enemy in a suicidal attack)",
+			"comment": "enum eCombatMovement // 0x4F456B61\n{\n\tCM_Stationary,\n\tCM_Defensive,\n\tCM_WillAdvance,\n\tCM_WillRetreat\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -72497,7 +72497,7 @@
 		"0xDEA92412FCAEB3F5": {
 			"name": "GET_PED_COMBAT_MOVEMENT",
 			"jhash": "0xF3E7730E",
-			"comment": "",
+			"comment": "See SET_PED_COMBAT_MOVEMENT",
 			"params": [
 				{
 					"type": "Ped",
@@ -72510,7 +72510,7 @@
 		"0xC7622C0D36B2FDA8": {
 			"name": "SET_PED_COMBAT_ABILITY",
 			"jhash": "0x6C23D329",
-			"comment": "100 would equal attack\nless then 50ish would mean run away\n\nOnly the values 0, 1 and 2 occur in the decompiled scripts. Most likely refers directly to the values also described in combatbehaviour.meta:\n0: CA_Poor\n1: CA_Average\n2: CA_Professional\n\nTested this and got the same results as the first explanation here. Could not find any difference between 0, 1 and 2. ",
+			"comment": "enum eCombatAbility // 0xE793438C\n{\n\tCA_Poor,\n\tCA_Average,\n\tCA_Professional,\n\tCA_NumTypes\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -72518,7 +72518,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "abilityLevel"
 				}
 			],
 			"return_type": "void",
@@ -72527,7 +72527,7 @@
 		"0x3C606747B23E497B": {
 			"name": "SET_PED_COMBAT_RANGE",
 			"jhash": "0x8818A959",
-			"comment": "Only the values 0, 1 and 2 occur in the decompiled scripts. Most likely refers directly to the values also described as AttackRange in combatbehaviour.meta:\n0: CR_Near\n1: CR_Medium\n2: CR_Far",
+			"comment": "enum eCombatRange // 0xB69160F5\n{\n\tCR_Near,\n\tCR_Medium,\n\tCR_Far,\n\tCR_VeryFar,\n\tCR_NumRanges\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -72535,7 +72535,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "combatRange"
 				}
 			],
 			"return_type": "void",
@@ -72544,7 +72544,7 @@
 		"0xF9D9F7F2DB8E2FA0": {
 			"name": "GET_PED_COMBAT_RANGE",
 			"jhash": "0x9B9B7163",
-			"comment": "",
+			"comment": "See SET_PED_COMBAT_RANGE",
 			"params": [
 				{
 					"type": "Ped",
@@ -72557,7 +72557,7 @@
 		"0x9F7794730795E019": {
 			"name": "SET_PED_COMBAT_ATTRIBUTES",
 			"jhash": "0x81D64248",
-			"comment": "These combat attributes seem to be the same as the BehaviourFlags from combatbehaviour.meta.\nSo far, these are the equivalents found:\nenum CombatAttributes\n{\n BF_CanUseCover = 0,\n   BF_CanUseVehicles = 1,\n    BF_CanDoDrivebys = 2,\n BF_CanLeaveVehicle = 3,\n   BF_CanFightArmedPedsWhenNotArmed = 5,\n BF_CanTauntInVehicle = 20,\n    BF_AlwaysFight = 46,\n  BF_IgnoreTrafficWhenDriving = 52,\n        BF_FreezeMovement = 292,\n        BF_PlayerCanUseFiringWeapons = 1424\n};\n\n8 = ?\n9 = ?\n13 = ?\n14 ?\n\nResearch thread: gtaforums.com/topic/833391-researchguide-combat-behaviour-flags/",
+			"comment": "enum eCombatAttributes // 0x0E8E7201\n{\n\tBF_CanUseCover = 0,\n\tBF_CanUseVehicles = 1,\n\tBF_CanDoDrivebys = 2,\n\tBF_CanLeaveVehicle = 3,\n\tBF_CanUseDynamicStrafeDecisions = 4,\n\tBF_AlwaysFight = 5,\n\tBF_0x66BB9FCC = 6,\n\tBF_0x6837DA41 = 7,\n\tBF_0xB4A13A5A = 8,\n\tBF_0xEE326AAD = 9,\n\tBF_0x7DF2CCFA = 10,\n\tBF_0x0036D422 = 11,\n\tBF_BlindFireWhenInCover = 12,\n\tBF_Aggressive = 13,\n\tBF_CanInvestigate = 14,\n\tBF_HasRadio = 15,\n\tBF_0x6BDE28D1 = 16,\n\tBF_AlwaysFlee = 17,\n\tBF_0x7852797D = 18,\n\tBF_0x33497B95 = 19,\n\tBF_CanTauntInVehicle = 20,\n\tBF_CanChaseTargetOnFoot = 21,\n\tBF_WillDragInjuredPedsToSafety = 22,\n\tBF_0xCD7168B8 = 23,\n\tBF_UseProximityFiringRate = 24,\n\tBF_0x48F914F8 = 25,\n\tBF_0x2EA543D0 = 26,\n\tBF_PerfectAccuracy = 27,\n\tBF_CanUseFrustratedAdvance = 28,\n\tBF_0x3D131AC1 = 29,\n\tBF_0x3AD95F27 = 30,\n\tBF_MaintainMinDistanceToTarget = 31,\n\tBF_0xEAD68AD2 = 32,\n\tBF_0xA206C2E0 = 33,\n\tBF_CanUsePeekingVariations = 34,\n\tBF_0xA5715184 = 35,\n\tBF_0xD5265533 = 36,\n\tBF_0x2B84C2BF = 37,\n\tBF_DisableBulletReactions = 38,\n\tBF_CanBust = 39,\n\tBF_0xAA525726 = 40,\n\tBF_CanCommandeerVehicles = 41,\n\tBF_CanFlank = 42,\n\tBF_SwitchToAdvanceIfCantFindCover = 43,\n\tBF_SwitchToDefensiveIfInCover = 44,\n\tBF_0xEB4786A0 = 45,\n\tBF_CanFightArmedPedsWhenNotArmed = 46,\n\tBF_0xA08E9402 = 47,\n\tBF_0x952EAD7D = 48,\n\tBF_UseEnemyAccuracyScaling = 49,\n\tBF_CanCharge = 50,\n\tBF_0xDA8C2BD3 = 51,\n\tBF_0x6562F017 = 52,\n\tBF_0xA2C3D53B = 53,\n\tBF_AlwaysEquipBestWeapon = 54,\n\tBF_CanSeeUnderwaterPeds = 55,\n\tBF_0xF619486B = 56,\n\tBF_0x61EB63A3 = 57,\n\tBF_DisableFleeFromCombat = 58,\n\tBF_0x8976D12B = 59,\n\tBF_CanThrowSmokeGrenade = 60,\n\tBF_NonMissionPedsFleeFromThisPedUnlessArmed = 61,\n\tBF_0x5452A10C = 62,\n\tBF_FleesFromInvincibleOpponents = 63,\n\tBF_DisableBlockFromPursueDuringVehicleChase = 64,\n\tBF_DisableSpinOutDuringVehicleChase = 65,\n\tBF_DisableCruiseInFrontDuringBlockDuringVehicleChase = 66,\n\tBF_0x0B404731 = 67,\n\tBF_DisableReactToBuddyShot = 68,\n\tBF_0x7FFD6AEB = 69,\n\tBF_0x51F4AEF8 = 70,\n\tBF_PermitChargeBeyondDefensiveArea = 71,\n\tBF_0x63E0A8E2 = 72,\n\tBF_0xDF974436 = 73,\n\tBF_0x556C080B = 74,\n\tBF_0xA4D50035 = 75,\n\tBF_SetDisableShoutTargetPositionOnCombatStart = 76,\n\tBF_DisableRespondedToThreatBroadcast = 77,\n\tBF_0xCBB01765 = 78,\n\tBF_0x4F862ED4 = 79,\n\tBF_0xEF9C7C40 = 80,\n\tBF_0xE51B494F = 81,\n\tBF_0x054D0199 = 82,\n\tBF_0xD36BCE94 = 83,\n\tBF_0xFB11F690 = 84,\n\tBF_0xD208A9AD = 85,\n\tBF_AllowDogFighting = 86,\n\tBF_0x07A6E531 = 87,\n\tBF_0x34F9317B = 88,\n\tBF_0x4240F5A9 = 89,\n\tBF_0xEE129DBD = 90,\n\tBF_0x053AEAD9 = 91\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -72565,7 +72565,7 @@
 				},
 				{
 					"type": "int",
-					"name": "attributeIndex"
+					"name": "attributeId"
 				},
 				{
 					"type": "BOOL",
@@ -72578,7 +72578,7 @@
 		"0x0703B9079823DA4A": {
 			"name": "SET_PED_TARGET_LOSS_RESPONSE",
 			"jhash": "0xCFA613FF",
-			"comment": "Only 1 and 2 appear in the scripts. combatbehaviour.meta seems to only have TLR_SearchForTarget for all peds, but we don't know if that's 1 or 2.",
+			"comment": "enum eTargetLossResponseType\n{\n\tTLR_ExitTask,\n\tTLR_NeverLoseTarget,\n\tTLR_SearchForTarget\n};",
 			"params": [
 				{
 					"type": "Ped",
