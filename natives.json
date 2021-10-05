@@ -58452,9 +58452,9 @@
 			"build": "323"
 		},
 		"0x77F33F2CCF64B3AA": {
-			"name": "_SET_OBJECT_SOMETHING",
+			"name": "SET_OBJECT_FORCE_VEHICLES_TO_AVOID",
 			"jhash": "0x483C5C88",
-			"comment": "",
+			"comment": "Overrides a flag on the object which determines if the object should be avoided by a vehicle in task CTaskVehicleGoToPointWithAvoidanceAutomobile.",
 			"params": [
 				{
 					"type": "Object",
@@ -58462,11 +58462,14 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_OBJECT_SOMETHING"
+			]
 		},
 		"0xE143FA2249364369": {
 			"name": "GET_CLOSEST_OBJECT_OF_TYPE",
