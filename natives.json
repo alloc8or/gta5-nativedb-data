@@ -68508,7 +68508,7 @@
 		"0x262B14F48D29DE80": {
 			"name": "SET_PED_COMPONENT_VARIATION",
 			"jhash": "0xD4F7B05C",
-			"comment": "paletteId/palletColor -  0 to 3. \nenum PedVariationData\n{\n PED_VARIATION_FACE = 0,\n   PED_VARIATION_HEAD = 1,\n   PED_VARIATION_HAIR = 2,\n   PED_VARIATION_TORSO = 3,\n  PED_VARIATION_LEGS = 4,\n   PED_VARIATION_HANDS = 5,\n  PED_VARIATION_FEET = 6,\n   PED_VARIATION_EYES = 7,\n   PED_VARIATION_ACCESSORIES = 8,\n    PED_VARIATION_TASKS = 9,\n  PED_VARIATION_TEXTURES = 10,\n  PED_VARIATION_TORSO2 = 11\n};\nUsage: \nSET_PED_COMPONENT_VARIATION(playerPed, PED_VARIATION_FACE, GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS(playerPed, PED_VARIATION_FACE), GET_NUMBER_OF_PED_TEXTURE_VARIATIONS(playerPed, PED_VARIATION_FACE, 0), 2);\n\nList of component/props ID\ngtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html\n\nFull list of ped components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json",
+			"comment": "paletteId: 0 to 3.\n\ncomponentId:\nenum ePedVarComp\n{\n\tPV_COMP_INVALID = -1,\n\tPV_COMP_HEAD,\n\tPV_COMP_BERD,\n\tPV_COMP_HAIR,\n\tPV_COMP_UPPR,\n\tPV_COMP_LOWR,\n\tPV_COMP_HAND,\n\tPV_COMP_FEET,\n\tPV_COMP_TEEF,\n\tPV_COMP_ACCS,\n\tPV_COMP_TASK,\n\tPV_COMP_DECL,\n\tPV_COMP_JBIB,\n\tPV_COMP_MAX\n};\n\nExamples: https://gtaxscripting.blogspot.com/2016/04/gta-v-peds-component-and-props.html\n\nFull list of ped components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json",
 			"params": [
 				{
 					"type": "Ped",
