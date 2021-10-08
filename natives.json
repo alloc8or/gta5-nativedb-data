@@ -70911,7 +70911,7 @@
 		"0x9FD452BFBE7A7A8B": {
 			"name": "GET_PED_DECORATION_ZONE_FROM_HASHES",
 			"jhash": "0x3543019E",
-			"comment": "Returns the zoneID for the overlay if it is a member of collection.\nenum ePedDecorationZone\n{\n\tZONE_TORSO = 0,\n\tZONE_HEAD = 1,\n\tZONE_LEFT_ARM = 2,\n\tZONE_RIGHT_ARM = 3,\n\tZONE_LEFT_LEG = 4,\n\tZONE_RIGHT_LEG = 5,\n\tZONE_UNKNOWN = 6,\n\tZONE_NONE = 7\n};\n\nFull list of ped overlays / decorations by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedOverlayCollections.json",
+			"comment": "Returns the zoneID for the overlay if it is a member of collection.\nenum ePedDecorationZone\n{\n\tZONE_TORSO = 0,\n\tZONE_HEAD = 1,\n\tZONE_LEFT_ARM = 2,\n\tZONE_RIGHT_ARM = 3,\n\tZONE_LEFT_LEG = 4,\n\tZONE_RIGHT_LEG = 5,\n\tZONE_MEDALS = 6,\n\tZONE_INVALID = 7\n};\n\nFull list of ped overlays / decorations by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedOverlayCollections.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -73648,7 +73648,7 @@
 		"0xF28965D04F570DCA": {
 			"name": "FORCE_PED_MOTION_STATE",
 			"jhash": "0x164DDEFF",
-			"comment": "Some motionstate hashes are\n\n0xec17e58 (standing idle), 0xbac0f10b (nothing?), 0x3f67c6af (aiming with pistol 2-h), 0x422d7a25 (stealth), 0xbd8817db, 0x916e828c\n\nand those for the strings\n\n\"motionstate_idle\", \"motionstate_walk\", \"motionstate_run\", \"motionstate_actionmode_idle\", and \"motionstate_actionmode_walk\".\n\nRegarding p2, p3 and p4: Most common is 0, 0, 0); followed by 0, 1, 0); and 1, 1, 0); in the scripts. p4 is very rarely something other than 0.\n\n [31/03/2017] ins1de :\n\n        enum MotionState\n        {\n            StopRunning = -530524,\n            StopWalking = -668482597,\n            Idle = 247561816, // 1, 1, 0\n            Idl2 = -1871534317,\n            SkyDive =-1161760501, // 0, 1, 0\n            Stealth = 1110276645,\n            Sprint = -1115154469,\n            Swim = -1855028596,\n            Unknown1 = 1063765679,\n            Unknown2 = -633298724,\n        }",
+			"comment": "Regarding p2, p3 and p4: Most common is 0, 0, 0); followed by 0, 1, 0); and 1, 1, 0); in R* scripts. p4 is very rarely something other than 0.\n\nenum eMotionState // 0x92A659FE\n{\n\tMotionState_None = 0xEE717723,\n\tMotionState_Idle = 0x9072A713,\n\tMotionState_Walk = 0xD827C3DB,\n\tMotionState_Run = 0xFFF7E7A4,\n\tMotionState_Sprint = 0xBD8817DB,\n\tMotionState_Crouch_Idle = 0x43FB099E,\n\tMotionState_Crouch_Walk = 0x08C31A98,\n\tMotionState_Crouch_Run = 0x3593CF09,\n\tMotionState_DoNothing = 0x0EC17E58,\n\tMotionState_AnimatedVelocity = 0x551AAC43,\n\tMotionState_InVehicle = 0x94D9D58D,\n\tMotionState_Aiming = 0x3F67C6AF,\n\tMotionState_Diving_Idle = 0x4848CDED,\n\tMotionState_Diving_Swim = 0x916E828C,\n\tMotionState_Swimming_TreadWater = 0xD1BF11C7,\n\tMotionState_Dead = 0x0DBB071C,\n\tMotionState_Stealth_Idle = 0x422D7A25,\n\tMotionState_Stealth_Walk = 0x042AB6A2,\n\tMotionState_Stealth_Run = 0xFB0B79E1,\n\tMotionState_Parachuting = 0xBAC0F10B,\n\tMotionState_ActionMode_Idle = 0xDA40A0DC,\n\tMotionState_ActionMode_Walk = 0xD2905EA7,\n\tMotionState_ActionMode_Run = 0x31BADE14,\n\tMotionState_Jetpack = 0x535E6A5E\n};",
 			"params": [
 				{
 					"type": "Ped",
