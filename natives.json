@@ -3265,7 +3265,7 @@
 		"0x58BB377BEC7CD5F4": {
 			"name": "_0x58BB377BEC7CD5F4",
 			"jhash": "0x8CE63FA1",
-			"comment": "",
+			"comment": "SET_VEHICLE_CONVERSATIONS_PERSIST?",
 			"params": [
 				{
 					"type": "BOOL",
@@ -3710,9 +3710,9 @@
 			"build": "1180"
 		},
 		"0xF1F8157B8C3F171C": {
-			"name": "_0xF1F8157B8C3F171C",
+			"name": "SET_VEHICLE_STARTUP_REV_SOUND",
 			"jhash": "0x1C0C5E4C",
-			"comment": "2 calls found in the b617d scripts:\n\nAUDIO::_F1F8157B8C3F171C(l_A42, \"Franklin_Bike_Rev\", \"BIG_SCORE_3A_SOUNDS\");\nAUDIO::_F1F8157B8C3F171C(l_166, \"Trevor_Revs_Off\", \"PALETO_SCORE_SETUP_SOUNDS\");",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3731,13 +3731,13 @@
 			"build": "323"
 		},
 		"0xD2DCCD8E16E20997": {
-			"name": "_0xD2DCCD8E16E20997",
+			"name": "_RESET_VEHICLE_STARTUP_REV_SOUND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -3808,9 +3808,9 @@
 			"build": "323"
 		},
 		"0x1C073274E065C6D2": {
-			"name": "_0x1C073274E065C6D2",
+			"name": "ENABLE_VEHICLE_FANBELT_DAMAGE",
 			"jhash": "0x9365E042",
-			"comment": "ENABLE_VEHICLE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -4297,9 +4297,9 @@
 			"build": "323"
 		},
 		"0x062D5EAD4DA2FA6A": {
-			"name": "_0x062D5EAD4DA2FA6A",
+			"name": "FORCE_PED_PANIC_WALLA",
 			"jhash": "0xD87AF337",
-			"comment": "FORCE_*",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4722,23 +4722,23 @@
 		"0xE4E6DD5566D28C82": {
 			"name": "_0xE4E6DD5566D28C82",
 			"jhash": "0x7262B5BA",
-			"comment": "STOP_S*",
+			"comment": "STOP_S[MOKE_GRENADE_EXPLOSION_SOUNDS]?",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x3A48AB4445D499BE": {
-			"name": "_0x3A48AB4445D499BE",
+			"name": "GET_MUSIC_VOL_SLIDER",
 			"jhash": "0x93A44A1F",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x4ADA3F19BE4A6047": {
-			"name": "_SET_PED_TALK",
+			"name": "REQUEST_TENNIS_BANKS",
 			"jhash": "0x13777A0B",
-			"comment": "Speech related.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -4749,7 +4749,7 @@
 			"build": "323"
 		},
 		"0x0150B6FF25A9E2E5": {
-			"name": "_0x0150B6FF25A9E2E5",
+			"name": "UNREQUEST_TENNIS_BANKS",
 			"jhash": "0x1134F68B",
 			"comment": "",
 			"params": [],
@@ -20818,9 +20818,9 @@
 			"build": "1011"
 		},
 		"0xE63D7C6EECECB66B": {
-			"name": "_0xE63D7C6EECECB66B",
+			"name": "TOGGLE_PLAYER_DAMAGE_OVERLAY",
 			"jhash": "0xD34A6CBA",
-			"comment": "TOGGLE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -29110,9 +29110,9 @@
 			"build": "1103"
 		},
 		"0x2B6D467DAB714E8D": {
-			"name": "_SET_BLIP_SHRINK",
+			"name": "SET_BLIP_AS_MINIMAL_ON_EDGE",
 			"jhash": "0xC575F0BC",
-			"comment": "Makes a blip go small when off the minimap.\n\nSET_BLIP_AS_*",
+			"comment": "Makes a blip go small when off the minimap.",
 			"params": [
 				{
 					"type": "Blip",
@@ -33496,7 +33496,7 @@
 		"0x9E6542F0CE8E70A3": {
 			"name": "_0x9E6542F0CE8E70A3",
 			"jhash": "0x5EF9C5C2",
-			"comment": "DISABLE_*",
+			"comment": "DISABLE_[METRO_SYSTEM]?",
 			"params": [
 				{
 					"type": "BOOL",
@@ -36313,17 +36313,17 @@
 			"build": "323"
 		},
 		"0x2107A3773771186D": {
-			"name": "_0x2107A3773771186D",
+			"name": "HAS_CODE_REQUESTED_AUTOSAVE",
 			"jhash": "0x78350773",
-			"comment": "HAS_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x06462A961E94B67C": {
-			"name": "_0x06462A961E94B67C",
+			"name": "CLEAR_CODE_REQUESTED_AUTOSAVE",
 			"jhash": "0x5A45B11A",
-			"comment": "CLEAR_*",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -36367,7 +36367,7 @@
 			"build": "323"
 		},
 		"0xD642319C54AADEB6": {
-			"name": "_0xD642319C54AADEB6",
+			"name": "HAVE_REPLAY_STATS_BEEN_STORED",
 			"jhash": "0xC58250F1",
 			"comment": "",
 			"params": [],
@@ -36375,7 +36375,7 @@
 			"build": "323"
 		},
 		"0x5B1F2E327B6B6FE1": {
-			"name": "_0x5B1F2E327B6B6FE1",
+			"name": "GET_REPLAY_STAT_MISSION_ID",
 			"jhash": "0x50C39926",
 			"comment": "",
 			"params": [],
@@ -48041,7 +48041,7 @@
 			"build": "323"
 		},
 		"0x140E6A44870A11CE": {
-			"name": "_0x140E6A44870A11CE",
+			"name": "NETWORK_CLEAR_OFFLINE_INVITE_PENDING",
 			"jhash": "0x50507BED",
 			"comment": "",
 			"params": [],
@@ -52408,7 +52408,7 @@
 			"build": "323"
 		},
 		"0x9769F811D1785B03": {
-			"name": "_NETWORK_RESPAWN_COORDS",
+			"name": "NETWORK_LEAVE_PED_BEHIND_BEFORE_WARP",
 			"jhash": "0xBE6A30C3",
 			"comment": "p4 and p5 are always 0 in scripts",
 			"params": [
@@ -52441,7 +52441,7 @@
 			"build": "323"
 		},
 		"0xBF22E0F32968E967": {
-			"name": "_0xBF22E0F32968E967",
+			"name": "NETWORK_LEAVE_PED_BEHIND_BEFORE_CUTSCENE",
 			"jhash": "0x22E03AD0",
 			"comment": "",
 			"params": [
@@ -56367,7 +56367,7 @@
 			"build": "323"
 		},
 		"0x24E4E51FC16305F9": {
-			"name": "_0x24E4E51FC16305F9",
+			"name": "UGC_DID_CREATE_SUCCEED",
 			"jhash": "0x742075FE",
 			"comment": "",
 			"params": [],
@@ -62097,13 +62097,13 @@
 			"build": "323"
 		},
 		"0xF239400E16C23E08": {
-			"name": "_0xF239400E16C23E08",
+			"name": "SET_PAD_SHAKE_SUPPRESSED_ID",
 			"jhash": "0x7D65EB6E",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "padIndex"
 				},
 				{
 					"type": "Any",
@@ -69975,9 +69975,9 @@
 			"build": "323"
 		},
 		"0xA3F3564A5B3646C0": {
-			"name": "_0xA3F3564A5B3646C0",
+			"name": "IS_MOBILE_PHONE_TO_PED_EAR",
 			"jhash": "0x97353375",
-			"comment": "Only called once in the scripts:\n\nif (sub_1abd() && (!PED::_A3F3564A5B3646C0(l_8C))) {\n    if (sub_52e3(\"RESNA_CELLR\", 0)) {\n        PED::SET_PED_CAN_PLAY_GESTURE_ANIMS(l_8C, 1);\n        PED::SET_PED_CAN_PLAY_AMBIENT_ANIMS(l_8C, 1);\n        PED::SET_PED_CAN_PLAY_VISEME_ANIMS(l_8C, 1, 0);\n        l_184 += 1;\n    }\n}\n\nChecks something related to the mobile phone task.\n\nIS_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
