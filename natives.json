@@ -51335,7 +51335,7 @@
 		"0x7718D2E2060837D2": {
 			"name": "NETWORK_PLAYER_GET_NAME",
 			"jhash": "0xCE48F260",
-			"comment": "Returns the name of a given player. Returns \"**Invalid**\" if CPlayerInfo of the given player cannot be retrieved or the player doesn't exist.",
+			"comment": "Returns the name of a given player. Returns \"**Invalid**\" if rlGamerInfo of the given player cannot be retrieved or the player doesn't exist.",
 			"params": [
 				{
 					"type": "Player",
@@ -51348,7 +51348,7 @@
 		"0x4927FC39CD0869A0": {
 			"name": "NETWORK_PLAYER_GET_USERID",
 			"jhash": "0x4EC0D983",
-			"comment": "Takes a 24 char buffer. Returns the buffer or \"**Invalid**\" if CPlayerInfo of the given player cannot be retrieved or the player doesn't exist.",
+			"comment": "Returns a string of the player's Rockstar Id. \nTakes a 24 char buffer. Returns the buffer or \"**Invalid**\" if rlGamerInfo of the given player cannot be retrieved or the player doesn't exist.",
 			"params": [
 				{
 					"type": "Player",
@@ -51368,7 +51368,7 @@
 		"0x544ABDDA3B409B6D": {
 			"name": "NETWORK_PLAYER_IS_ROCKSTAR_DEV",
 			"jhash": "0xF6659045",
-			"comment": "Checks if a specific value (BYTE) in CPlayerInfo is nonzero.\nReturns always false in Singleplayer.\n\nNo longer used for dev checks since first mods were released on PS3 & 360.\nR* now checks with the is_dlc_present native for the dlc hash 2532323046,\nif that is present it will unlock dev stuff.",
+			"comment": "Checks if a specific value (BYTE) in CNetGamePlayer is nonzero.\nReturns always false in Singleplayer.\n\nNo longer used for dev checks since first mods were released on PS3 & 360.\nR* now checks with the IS_DLC_PRESENT native for the dlc hash 2532323046,\nif that is present it will unlock dev stuff.",
 			"params": [
 				{
 					"type": "Player",
