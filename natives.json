@@ -2352,7 +2352,7 @@
 			"build": "2372"
 		},
 		"0x0BE4BE946463F917": {
-			"name": "_0x0BE4BE946463F917",
+			"name": "_IS_VEHICLE_RADIO_ENABLED",
 			"jhash": "",
 			"comment": "IS_VEHICLE_*",
 			"params": [
