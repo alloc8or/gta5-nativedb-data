@@ -82398,7 +82398,7 @@
 		"0x8CDDF1E452BABE11": {
 			"name": "STAT_SET_USER_ID",
 			"jhash": "0xDBE78ED7",
-			"comment": "",
+			"comment": "'<string>MP0_ARCHENEMY_NAME' and '<userid>MPx_ARCHENEMY' are used together. If the account name and userid do not match, the statistics related to the R star website show Unknown\n\n<string>'MP0_BIGGEST_VICTIM_NAME' is the same as '<userid>MP0_BIGGEST_VICTIM'.\n\nAccount userid can be checked from other websites .",
 			"params": [
 				{
 					"type": "Hash",
@@ -82436,7 +82436,7 @@
 		"0x767FBC2AC802EF3D": {
 			"name": "STAT_GET_INT",
 			"jhash": "0x1C6FE43E",
-			"comment": "p2 appears to always be -1\n",
+			"comment": "Save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82447,8 +82447,8 @@
 					"name": "outValue"
 				},
 				{
-					"type": "int",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "save"
 				}
 			],
 			"return_type": "BOOL",
@@ -82457,7 +82457,7 @@
 		"0xD7AE6C9C9C6AC54C": {
 			"name": "STAT_GET_FLOAT",
 			"jhash": "0xFCBDA612",
-			"comment": "",
+			"comment": "Save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82468,8 +82468,8 @@
 					"name": "outValue"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "save"
 				}
 			],
 			"return_type": "BOOL",
@@ -82478,7 +82478,7 @@
 		"0x11B5E6D2AE73F48E": {
 			"name": "STAT_GET_BOOL",
 			"jhash": "0x28A3DD2B",
-			"comment": "",
+			"comment": "Save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82489,8 +82489,8 @@
 					"name": "outValue"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "save"
 				}
 			],
 			"return_type": "BOOL",
@@ -82499,7 +82499,7 @@
 		"0x8B0FACEFC36C824B": {
 			"name": "STAT_GET_DATE",
 			"jhash": "0xD762D16C",
-			"comment": "Similar to SSTAT_SET_DATE.\nSave type can int/BOOL/bool£¬value to use -1/TURE/ture.",
+			"comment": "Similar to STAT_SET_DATE.\nSave type can int/BOOL/bool£¬value to use -1/TURE/ture.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82524,7 +82524,7 @@
 		"0xE50384ACC2C3DB74": {
 			"name": "STAT_GET_STRING",
 			"jhash": "0x10CE4BDE",
-			"comment": "Save type can int/BOOL/bool£¬value to use -1/TURE/ture.",
+			"comment": "Save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82599,11 +82599,11 @@
 		"0x2365C388E393BBE2": {
 			"name": "STAT_GET_USER_ID",
 			"jhash": "0xE2E8B6BA",
-			"comment": "Needs more research. Seems to return \"STAT_UNKNOWN\" if no such user id exists.",
+			"comment": "Get <userid>MPx_ARCHENEMY and <userid>MPx_BIGGEST_VICTIM data to match MPx_ARCHENEMY_NAME and MPx_BIGGEST_VICTIM_NAME .",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "statHash"
 				}
 			],
 			"return_type": "const char*",
