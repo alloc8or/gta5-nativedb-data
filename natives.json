@@ -82301,7 +82301,7 @@
 					"name": "statName"
 				},
 				{
-					"type": "Any*",
+					"type": "int64_t*",
 					"name": "value"
 				},
 				{
@@ -82499,23 +82499,23 @@
 		"0x8B0FACEFC36C824B": {
 			"name": "STAT_GET_DATE",
 			"jhash": "0xD762D16C",
-			"comment": "",
+			"comment": "Similar to SSTAT_SET_DATE.\nSave type can int/BOOL/bool£¬value to use -1/TURE/ture.",
 			"params": [
 				{
 					"type": "Hash",
 					"name": "statHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int64_t*",
+					"name": "outValue"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "numFields"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "save"
 				}
 			],
 			"return_type": "BOOL",
@@ -82524,15 +82524,15 @@
 		"0xE50384ACC2C3DB74": {
 			"name": "STAT_GET_STRING",
 			"jhash": "0x10CE4BDE",
-			"comment": "p1 is always -1 in the script files",
+			"comment": "Save type can int/BOOL/bool£¬value to use -1/TURE/ture.",
 			"params": [
 				{
 					"type": "Hash",
 					"name": "statHash"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "save"
 				}
 			],
 			"return_type": "const char*",
