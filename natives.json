@@ -2026,7 +2026,7 @@
 		"0xA5342D390CDA41D6": {
 			"name": "_SET_PED_AUDIO_GENDER",
 			"jhash": "",
-			"comment": "",
+			"comment": "BOOL p1: 0 = Female; 1 = Male",
 			"params": [
 				{
 					"type": "Ped",
@@ -2928,7 +2928,7 @@
 		"0x4E0AF9114608257C": {
 			"name": "_FORCE_RADIO_TRACK_LIST_POSITION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Changes start time of a tracklist (milliseconds)\nR* uses a random int: MISC::GET_RANDOM_INT_IN_RANGE(0, 13) * 60000)",
 			"params": [
 				{
 					"type": "const char*",
@@ -3793,7 +3793,7 @@
 		"0x01BB4D577D38BD9E": {
 			"name": "SET_VEHICLE_AUDIO_BODY_DAMAGE_FACTOR",
 			"jhash": "0xE81FAC68",
-			"comment": "",
+			"comment": "intensity: 0.0f - 1.0f, only used once with 1.0f in R* Scripts (nigel2)\nMakes an engine rattling noise when you decelerate, you need to be going faster to hear lower values",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3801,7 +3801,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
@@ -4974,7 +4974,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "action"
+					"name": "scriptName"
 				}
 			],
 			"return_type": "void",
@@ -4987,7 +4987,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "action"
+					"name": "scriptName"
 				}
 			],
 			"return_type": "void",
@@ -6271,11 +6271,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p8"
+					"name": "smoothingStyle"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "rotationOrder"
 				}
 			],
 			"return_type": "void",
@@ -6453,7 +6453,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "easingFunction"
 				},
 				{
 					"type": "int",
@@ -7360,7 +7360,7 @@
 		"0x8BBACBF51DA047A8": {
 			"name": "SET_GAMEPLAY_CAM_FOLLOW_PED_THIS_UPDATE",
 			"jhash": "0x7D3007A2",
-			"comment": "",
+			"comment": "Forces gameplay cam to specified ped as if you were the ped or spectating it",
 			"params": [
 				{
 					"type": "Ped",
@@ -7618,7 +7618,7 @@
 		"0xE9EA16D6E54CDCA4": {
 			"name": "SET_IN_VEHICLE_CAM_STATE_THIS_UPDATE",
 			"jhash": "0x4B22C5CB",
-			"comment": "",
+			"comment": "Forces gameplay cam to specified vehicle as if you were in it",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -8204,16 +8204,16 @@
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "duration"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "blendOutDuration"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "blendInDuration"
 				}
 			],
 			"return_type": "void",
@@ -9807,7 +9807,7 @@
 		"0x2F137B508DE238F2": {
 			"name": "_0x2F137B508DE238F2",
 			"jhash": "0x8338DA1D",
-			"comment": "",
+			"comment": "Stops current cutscene with a fade transition\np0: always true in R* Scripts\nYou will need to manually fade the screen back in",
 			"params": [
 				{
 					"type": "BOOL",
@@ -14549,11 +14549,11 @@
 		"0x490861B88F4FD846": {
 			"name": "_0x490861B88F4FD846",
 			"jhash": "",
-			"comment": "",
+			"comment": "Similar to RESET_ENTITY_ALPHA",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -18634,8 +18634,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "checkpoint"
 				}
 			],
 			"return_type": "void",
@@ -18647,20 +18647,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "checkpoint"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				}
 			],
 			"return_type": "void",
@@ -27204,8 +27204,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "disabled"
 				}
 			],
 			"return_type": "void",
@@ -27240,7 +27240,7 @@
 		"0xBD12C5EEE184C337": {
 			"name": "SET_RADAR_ZOOM_PRECISE",
 			"jhash": "0xDCA3F423",
-			"comment": "",
+			"comment": "zoom ranges from 0 to 90f in R* Scripts",
 			"params": [
 				{
 					"type": "float",
@@ -27256,7 +27256,7 @@
 		"0x096EF57A0C999BBA": {
 			"name": "SET_RADAR_ZOOM",
 			"jhash": "0x2A50D1A6",
-			"comment": "zoomLevel ranges from 0 to 200 ",
+			"comment": "zoomLevel ranges from 0 to 1400 in R* Scripts",
 			"params": [
 				{
 					"type": "int",
@@ -31266,7 +31266,7 @@
 		"0x7B1776B3B53F8D74": {
 			"name": "SET_WARNING_MESSAGE",
 			"jhash": "0xBE699BDE",
-			"comment": "You can only use text entries. No custom text.\n\nExample: SET_WARNING_MESSAGE(\"t20\", 3, \"adder\", false, -1, 0, 0, true);",
+			"comment": "You can only use text entries. No custom text.\n\nExample: SET_WARNING_MESSAGE(\"t20\", 3, \"adder\", false, -1, 0, 0, true);\nerrorCode: shows an error code at the bottom left if nonzero",
 			"params": [
 				{
 					"type": "const char*",
@@ -31301,8 +31301,8 @@
 					"name": "showBackground"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "errorCode"
 				}
 			],
 			"return_type": "void",
@@ -32027,11 +32027,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "position"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "spinnerIndex"
 				}
 			],
 			"return_type": "void",
@@ -32172,15 +32172,15 @@
 			"params": [
 				{
 					"type": "int*",
-					"name": "p0"
+					"name": "r"
 				},
 				{
 					"type": "int*",
-					"name": "p1"
+					"name": "g"
 				},
 				{
 					"type": "int*",
-					"name": "p2"
+					"name": "b"
 				}
 			],
 			"return_type": "BOOL",
@@ -34277,14 +34277,14 @@
 		"0x1178E104409FE58C": {
 			"name": "_0x1178E104409FE58C",
 			"jhash": "",
-			"comment": "",
+			"comment": "Identical to SET_OVERRIDE_WEATHER but has an additional BOOL param that sets some weather var to 0 if true",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "weatherType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
