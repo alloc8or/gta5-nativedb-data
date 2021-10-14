@@ -82369,19 +82369,19 @@
 		"0x7BBB1B54583ED410": {
 			"name": "STAT_SET_MASKED_INT",
 			"jhash": "0x2CBAA739",
-			"comment": "",
+			"comment": "statName obtained used '_GET_NGSTAT_INT_HASH','GET_PACKED_TU_INT_STAT_KEY'or 'GET_PACKED_INT_STAT_KEY'/n/n mask obtained used'_STAT_GET_PACKED_INT_MASK'./n/n p3 is always 8./n/nSave type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
 					"name": "statName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "mask"
 				},
 				{
 					"type": "int",
@@ -82570,27 +82570,27 @@
 		"0x655185A06D9EEAAB": {
 			"name": "STAT_GET_MASKED_INT",
 			"jhash": "0xE9D9B70F",
-			"comment": "",
+			"comment": "similar to 'STAT_SET_MASKED_INT'",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "statHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "outValue"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "mask"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "save"
 				}
 			],
 			"return_type": "BOOL",
@@ -83000,7 +83000,7 @@
 		"0x10FE3F1B79F9B071": {
 			"name": "STAT_GET_BOOL_MASKED",
 			"jhash": "0x6ACE1B7D",
-			"comment": "p2 - Default value? Seems to be -1 most of the time.",
+			"comment": "statName and mask and STAT_SET_BOOL_MASKED comments are the same.\n\n save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -83012,7 +83012,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "save"
 				}
 			],
 			"return_type": "BOOL",
@@ -83021,7 +83021,8 @@
 		"0x5BC62EC1937B9E5B": {
 			"name": "STAT_SET_BOOL_MASKED",
 			"jhash": "0x7842C4D6",
-			"comment": "",
+			"comment": "statName obtained used '_GET_NGSTAT_BOOL_HASH' 'GET_PACKED_TU_BOOL_STAT_KEY' or 'GET_PACKED_BOOL_STAT_KEY'.\n\n mask obtained used'_STAT_GET_PACKED_BOOL_MASK'\n\n Save type can 'int''BOOL''bool'.value to use '-1''TURE''ture'.",
+
 			"params": [
 				{
 					"type": "Hash",
