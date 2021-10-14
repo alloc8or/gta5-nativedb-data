@@ -82369,7 +82369,7 @@
 		"0x7BBB1B54583ED410": {
 			"name": "STAT_SET_MASKED_INT",
 			"jhash": "0x2CBAA739",
-			"comment": "statName obtained used '_GET_NGSTAT_INT_HASH','GET_PACKED_TU_INT_STAT_KEY'or 'GET_PACKED_INT_STAT_KEY'/n/n mask obtained used'_STAT_GET_PACKED_INT_MASK'./n/n p3 is always 8./n/nSave type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
+			"comment": "statName obtained used '_GET_NGSTAT_INT_HASH','GET_PACKED_TU_INT_STAT_KEY'or 'GET_PACKED_INT_STAT_KEY'\n\n mask obtained used'_STAT_GET_PACKED_INT_MASK'.\n\n p3 is always 8.\n\n Save type can 'int''BOOL''bool',value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82436,7 +82436,7 @@
 		"0x767FBC2AC802EF3D": {
 			"name": "STAT_GET_INT",
 			"jhash": "0x1C6FE43E",
-			"comment": "Save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
+			"comment": "Save type can 'int''BOOL''bool'.value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82457,7 +82457,7 @@
 		"0xD7AE6C9C9C6AC54C": {
 			"name": "STAT_GET_FLOAT",
 			"jhash": "0xFCBDA612",
-			"comment": "Save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
+			"comment": "Save type can 'int''BOOL''bool'.value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82478,7 +82478,7 @@
 		"0x11B5E6D2AE73F48E": {
 			"name": "STAT_GET_BOOL",
 			"jhash": "0x28A3DD2B",
-			"comment": "Save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
+			"comment": "Save type can 'int''BOOL''bool'.value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82499,7 +82499,7 @@
 		"0x8B0FACEFC36C824B": {
 			"name": "STAT_GET_DATE",
 			"jhash": "0xD762D16C",
-			"comment": "Similar to STAT_SET_DATE.\nSave type can int/BOOL/bool£¬value to use -1/TURE/ture.",
+			"comment": "Similar to STAT_SET_DATE.\n Save type can 'int''BOOL''bool'.value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -82524,7 +82524,7 @@
 		"0xE50384ACC2C3DB74": {
 			"name": "STAT_GET_STRING",
 			"jhash": "0x10CE4BDE",
-			"comment": "Save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
+			"comment": "Save type can 'int''BOOL''bool'.value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
@@ -83000,7 +83000,7 @@
 		"0x10FE3F1B79F9B071": {
 			"name": "STAT_GET_BOOL_MASKED",
 			"jhash": "0x6ACE1B7D",
-			"comment": "statName and mask and STAT_SET_BOOL_MASKED comments are the same.\n\n save type can 'int''BOOL''bool'£¬value to use '-1''TURE''ture'.",
+			"comment": "statName and mask and STAT_SET_BOOL_MASKED comments are the same.\n\n Save type can 'int''BOOL''bool'.value to use '-1''TURE''ture'.",
 			"params": [
 				{
 					"type": "Hash",
