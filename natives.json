@@ -4746,7 +4746,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PED_TALK"
+			]
 		},
 		"0x0150B6FF25A9E2E5": {
 			"name": "UNREQUEST_TENNIS_BANKS",
@@ -29124,7 +29127,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_BLIP_SHRINK"
+			]
 		},
 		"0x25615540D894B814": {
 			"name": "SET_RADIUS_BLIP_EDGE",
@@ -52438,7 +52444,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_RESPAWN_COORDS"
+			]
 		},
 		"0xBF22E0F32968E967": {
 			"name": "NETWORK_LEAVE_PED_BEHIND_BEFORE_CUTSCENE",
