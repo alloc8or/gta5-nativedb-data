@@ -2026,7 +2026,7 @@
 		"0xA5342D390CDA41D6": {
 			"name": "_SET_PED_AUDIO_GENDER",
 			"jhash": "",
-			"comment": "",
+			"comment": "BOOL p1: 0 = Female; 1 = Male",
 			"params": [
 				{
 					"type": "Ped",
@@ -2928,7 +2928,7 @@
 		"0x4E0AF9114608257C": {
 			"name": "_FORCE_RADIO_TRACK_LIST_POSITION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Changes start time of a tracklist (milliseconds)\nR* uses a random int: MISC::GET_RANDOM_INT_IN_RANGE(0, 13) * 60000)",
 			"params": [
 				{
 					"type": "const char*",
@@ -3793,7 +3793,7 @@
 		"0x01BB4D577D38BD9E": {
 			"name": "SET_VEHICLE_AUDIO_BODY_DAMAGE_FACTOR",
 			"jhash": "0xE81FAC68",
-			"comment": "",
+			"comment": "intensity: 0.0f - 1.0f, only used once with 1.0f in R* Scripts (nigel2)\nMakes an engine rattling noise when you decelerate, you need to be going faster to hear lower values",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3801,7 +3801,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
@@ -4746,7 +4746,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PED_TALK"
+			]
 		},
 		"0x0150B6FF25A9E2E5": {
 			"name": "UNREQUEST_TENNIS_BANKS",
@@ -4974,7 +4977,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "action"
+					"name": "scriptName"
 				}
 			],
 			"return_type": "void",
@@ -4987,7 +4990,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "action"
+					"name": "scriptName"
 				}
 			],
 			"return_type": "void",
@@ -6271,11 +6274,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p8"
+					"name": "smoothingStyle"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "rotationOrder"
 				}
 			],
 			"return_type": "void",
@@ -6453,7 +6456,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "easingFunction"
 				},
 				{
 					"type": "int",
@@ -7360,7 +7363,7 @@
 		"0x8BBACBF51DA047A8": {
 			"name": "SET_GAMEPLAY_CAM_FOLLOW_PED_THIS_UPDATE",
 			"jhash": "0x7D3007A2",
-			"comment": "",
+			"comment": "Forces gameplay cam to specified ped as if you were the ped or spectating it",
 			"params": [
 				{
 					"type": "Ped",
@@ -7618,7 +7621,7 @@
 		"0xE9EA16D6E54CDCA4": {
 			"name": "SET_IN_VEHICLE_CAM_STATE_THIS_UPDATE",
 			"jhash": "0x4B22C5CB",
-			"comment": "",
+			"comment": "Forces gameplay cam to specified vehicle as if you were in it",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -8204,16 +8207,16 @@
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "duration"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "blendOutDuration"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "blendInDuration"
 				}
 			],
 			"return_type": "void",
@@ -9807,7 +9810,7 @@
 		"0x2F137B508DE238F2": {
 			"name": "_0x2F137B508DE238F2",
 			"jhash": "0x8338DA1D",
-			"comment": "",
+			"comment": "Stops current cutscene with a fade transition\np0: always true in R* Scripts\nYou will need to manually fade the screen back in",
 			"params": [
 				{
 					"type": "BOOL",
@@ -14549,11 +14552,11 @@
 		"0x490861B88F4FD846": {
 			"name": "_0x490861B88F4FD846",
 			"jhash": "",
-			"comment": "",
+			"comment": "Similar to RESET_ENTITY_ALPHA",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -18634,8 +18637,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "checkpoint"
 				}
 			],
 			"return_type": "void",
@@ -18647,20 +18650,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "checkpoint"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				}
 			],
 			"return_type": "void",
@@ -27204,8 +27207,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "disabled"
 				}
 			],
 			"return_type": "void",
@@ -27240,7 +27243,7 @@
 		"0xBD12C5EEE184C337": {
 			"name": "SET_RADAR_ZOOM_PRECISE",
 			"jhash": "0xDCA3F423",
-			"comment": "",
+			"comment": "zoom ranges from 0 to 90f in R* Scripts",
 			"params": [
 				{
 					"type": "float",
@@ -27256,7 +27259,7 @@
 		"0x096EF57A0C999BBA": {
 			"name": "SET_RADAR_ZOOM",
 			"jhash": "0x2A50D1A6",
-			"comment": "zoomLevel ranges from 0 to 200 ",
+			"comment": "zoomLevel ranges from 0 to 1400 in R* Scripts",
 			"params": [
 				{
 					"type": "int",
@@ -29124,7 +29127,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_BLIP_SHRINK"
+			]
 		},
 		"0x25615540D894B814": {
 			"name": "SET_RADIUS_BLIP_EDGE",
@@ -31266,7 +31272,7 @@
 		"0x7B1776B3B53F8D74": {
 			"name": "SET_WARNING_MESSAGE",
 			"jhash": "0xBE699BDE",
-			"comment": "You can only use text entries. No custom text.\n\nExample: SET_WARNING_MESSAGE(\"t20\", 3, \"adder\", false, -1, 0, 0, true);",
+			"comment": "You can only use text entries. No custom text.\n\nExample: SET_WARNING_MESSAGE(\"t20\", 3, \"adder\", false, -1, 0, 0, true);\nerrorCode: shows an error code at the bottom left if nonzero",
 			"params": [
 				{
 					"type": "const char*",
@@ -31301,8 +31307,8 @@
 					"name": "showBackground"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "errorCode"
 				}
 			],
 			"return_type": "void",
@@ -32027,11 +32033,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "position"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "spinnerIndex"
 				}
 			],
 			"return_type": "void",
@@ -32172,15 +32178,15 @@
 			"params": [
 				{
 					"type": "int*",
-					"name": "p0"
+					"name": "r"
 				},
 				{
 					"type": "int*",
-					"name": "p1"
+					"name": "g"
 				},
 				{
 					"type": "int*",
-					"name": "p2"
+					"name": "b"
 				}
 			],
 			"return_type": "BOOL",
@@ -34277,14 +34283,14 @@
 		"0x1178E104409FE58C": {
 			"name": "_0x1178E104409FE58C",
 			"jhash": "",
-			"comment": "",
+			"comment": "Identical to SET_OVERRIDE_WEATHER but has an additional BOOL param that sets some weather var to 0 if true",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "weatherType"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -52438,7 +52444,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_RESPAWN_COORDS"
+			]
 		},
 		"0xBF22E0F32968E967": {
 			"name": "NETWORK_LEAVE_PED_BEHIND_BEFORE_CUTSCENE",
@@ -62215,7 +62224,7 @@
 		"0xFE99B66D079CF6BC": {
 			"name": "DISABLE_CONTROL_ACTION",
 			"jhash": "0x3800C0DC",
-			"comment": "control values and meaning: github.com/crosire/scripthookvdotnet/blob/dev_v3/source/scripting/Controls.cs\n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,\n28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,5\n4,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,\n79,80,81,82,85,86,87,88,89,90,91,92,93,95,96,97,98,99,100,101,102,103,105,\n107,108,109,110,111,112,113,114,115,116,117,118,119,123,126,129,130,131,132,\n133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,\n153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,171,172\n,177,187,188,189,190,195,196,199,200,201,202,203,205,207,208,209,211,212,213, 217,219,220,221,225,226,230,234,235,236,237,238,239,240,241,242,243,244,257,\n261,262,263,264,265,270,271,272,273,274,278,279,280,281,282,283,284,285,286,\n287,288,289,337.\n\nExample: PAD::DISABLE_CONTROL_ACTION(2, 19, true) disables the switching UI from appearing both when using a keyboard and Xbox 360 controller. Needs to be executed each frame. \n \nControl group 1 and 0 gives the same results as 2. Same results for all players. ",
+			"comment": "control values and meaning: https://pastebin.com/JEkxhZ7R \n\npadIndex: 0 (PLAYER_CONTROL), 1 (unk) and 2 (unk) used in the scripts.\n\nControl values from the decompiled scripts: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,\n28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,53,5\n4,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,\n79,80,81,82,85,86,87,88,89,90,91,92,93,95,96,97,98,99,100,101,102,103,105,\n107,108,109,110,111,112,113,114,115,116,117,118,119,123,126,129,130,131,132,\n133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,\n153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,171,172\n,177,187,188,189,190,195,196,199,200,201,202,203,205,207,208,209,211,212,213, 217,219,220,221,225,226,230,234,235,236,237,238,239,240,241,242,243,244,257,\n261,262,263,264,265,270,271,272,273,274,278,279,280,281,282,283,284,285,286,\n287,288,289,337.\n\nExample: PAD::DISABLE_CONTROL_ACTION(2, 19, true) disables the switching UI from appearing both when using a keyboard and Xbox 360 controller. Needs to be executed each frame. \n \nControl group 1 and 0 gives the same results as 2. Same results for all players. ",
 			"params": [
 				{
 					"type": "int",
