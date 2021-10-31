@@ -34213,13 +34213,13 @@
 			"build": "323"
 		},
 		"0x0CF97F497FE7D048": {
-			"name": "_0x0CF97F497FE7D048",
+			"name": "_CLEAR_WEATHER_TYPE_OVERTIME_PERSIST",
 			"jhash": "",
-			"comment": "0 as param = weird black and green screen\n0.1 - 0.99 = Prevent rain effect from falling (still sound and effects on puddles) and prevent puddles from increase/decrease, seems than it prevent any weather change too\n1 and more = \"Unfreeze\" rain puddles but clear weather too\nWhen 'freezing' is enabled, it seem to also freeze value getted with GetRainLevel",
+			"comment": "",
 			"params": [
 				{
-					"type": "float",
-					"name": "p0"
+					"type": "int",
+					"name": "milliseconds"
 				}
 			],
 			"return_type": "void",
