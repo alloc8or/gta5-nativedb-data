@@ -50399,16 +50399,16 @@
 			"build": "2245"
 		},
 		"0x560B423D73015E77": {
-			"name": "_0x560B423D73015E77",
+			"name": "_NETWORK_IS_THREAD_ACTIVE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1604"
 		},
 		"0x3658E8CD94FC121A": {
