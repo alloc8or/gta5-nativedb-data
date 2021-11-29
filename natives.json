@@ -2457,7 +2457,7 @@
 		"0xB165AB7C248B2DC1": {
 			"name": "UNLOCK_MISSION_NEWS_STORY",
 			"jhash": "0xCCD9ABE4",
-			"comment": "I see this as a native that would of been used back in GTA III when you finally unlocked the bridge to the next island and such.",
+			"comment": "\"news\" that play on the radio after you've done something in story mode(?)",
 			"params": [
 				{
 					"type": "int",
