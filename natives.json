@@ -3596,7 +3596,7 @@
 			"build": "1290"
 		},
 		"0x9C11908013EA4715": {
-			"name": "_SOUND_VEHICLE_HORN_THIS_FRAME",
+			"name": "SET_HORN_PERMANENTLY_ON",
 			"jhash": "0xDE8BA3CD",
 			"comment": "SET_*",
 			"params": [
@@ -3606,7 +3606,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SOUND_VEHICLE_HORN_THIS_FRAME"
+			]
 		},
 		"0x76D683C108594D0E": {
 			"name": "SET_HORN_ENABLED",
@@ -3643,9 +3646,9 @@
 			"build": "323"
 		},
 		"0x9D3AF56E94C9AE98": {
-			"name": "_0x9D3AF56E94C9AE98",
+			"name": "SET_HORN_PERMANENTLY_ON_TIME",
 			"jhash": "0x2F0A16D1",
-			"comment": "SET_H*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3653,7 +3656,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -16714,7 +16717,7 @@
 			"build": "323"
 		},
 		"0x14BA4BA137AF6CEC": {
-			"name": "_GET_ENTITY_INSIDE_EXPLOSION_AREA",
+			"name": "GET_OWNER_OF_EXPLOSION_IN_ANGLED_AREA",
 			"jhash": "0xAEC0D176",
 			"comment": "Returns a handle to the first entity within the a circle spawned inside the 2 points from a radius.\n\nexplosionType: See ADD_EXPLOSION.",
 			"params": [
@@ -16754,7 +16757,8 @@
 			"return_type": "Entity",
 			"build": "323",
 			"old_names": [
-				"_GET_PED_INSIDE_EXPLOSION_AREA"
+				"_GET_PED_INSIDE_EXPLOSION_AREA",
+				"_GET_ENTITY_INSIDE_EXPLOSION_AREA"
 			]
 		}
 	},
@@ -57577,7 +57581,7 @@
 			"build": "323"
 		},
 		"0x098AB65B9ED9A9EC": {
-			"name": "_FACEBOOK_SET_HEIST_COMPLETE",
+			"name": "FACEBOOK_POST_COMPLETED_HEIST",
 			"jhash": "0x30B51753",
 			"comment": "",
 			"params": [
@@ -57595,18 +57599,24 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_FACEBOOK_SET_HEIST_COMPLETE"
+			]
 		},
 		"0xDC48473142545431": {
-			"name": "_FACEBOOK_SET_CREATE_CHARACTER_COMPLETE",
+			"name": "FACEBOOK_POST_CREATE_CHARACTER",
 			"jhash": "0x02DAD93F",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_FACEBOOK_SET_CREATE_CHARACTER_COMPLETE"
+			]
 		},
 		"0x0AE1F1653B554AB9": {
-			"name": "_FACEBOOK_SET_MILESTONE_COMPLETE",
+			"name": "FACEBOOK_POST_COMPLETED_MILESTONE",
 			"jhash": "0x2D947814",
 			"comment": "",
 			"params": [
@@ -57616,7 +57626,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_FACEBOOK_SET_MILESTONE_COMPLETE"
+			]
 		},
 		"0x62B9FEC9A11F10EF": {
 			"name": "_FACEBOOK_IS_SENDING_DATA",
@@ -75358,7 +75371,7 @@
 			"build": "323"
 		},
 		"0xB1B6216CA2E7B55E": {
-			"name": "_0xB1B6216CA2E7B55E",
+			"name": "ROPE_CHANGE_SCRIPT_OWNER",
 			"jhash": "0x7C6F7668",
 			"comment": "",
 			"params": [
