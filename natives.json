@@ -31621,7 +31621,7 @@
 			"build": "323"
 		},
 		"0x5354C5BA2EA868A4": {
-			"name": "_RACE_GALLERY_FULLSCREEN",
+			"name": "CUSTOM_MINIMAP_SET_ACTIVE",
 			"jhash": "0xE4FD20D8",
 			"comment": "If toggle is true, the map is shown in full screen\nIf toggle is false, the map is shown in normal mode",
 			"params": [
@@ -31633,11 +31633,12 @@
 			"return_type": "void",
 			"build": "323",
 			"old_names": [
-				"_SET_MAP_FULL_SCREEN"
+				"_SET_MAP_FULL_SCREEN",
+				"_RACE_GALLERY_FULLSCREEN"
 			]
 		},
 		"0x1EAE6DD17B7A5EFA": {
-			"name": "_RACE_GALLERY_NEXT_BLIP_SPRITE",
+			"name": "CUSTOM_MINIMAP_SET_BLIP_OBJECT",
 			"jhash": "0x13E7A5A9",
 			"comment": "Sets the sprite of the next BLIP_GALLERY blip, values used in the native scripts: 143 (ObjectiveBlue), 144 (ObjectiveGreen), 145 (ObjectiveRed), 146 (ObjectiveYellow).",
 			"params": [
@@ -31647,10 +31648,13 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RACE_GALLERY_NEXT_BLIP_SPRITE"
+			]
 		},
 		"0x551DF99658DB6EE8": {
-			"name": "_RACE_GALLERY_ADD_BLIP",
+			"name": "CUSTOM_MINIMAP_CREATE_BLIP",
 			"jhash": "0x786CA0A2",
 			"comment": "Add a BLIP_GALLERY at the specific coordinate. Used in fm_maintain_transition_players to display race track points.",
 			"params": [
@@ -31668,15 +31672,21 @@
 				}
 			],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RACE_GALLERY_ADD_BLIP"
+			]
 		},
 		"0x2708FC083123F9FF": {
-			"name": "_CLEAR_RACE_GALLERY_BLIPS",
+			"name": "CUSTOM_MINIMAP_CLEAR_BLIPS",
 			"jhash": "0xCBEC9369",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CLEAR_RACE_GALLERY_BLIPS"
+			]
 		},
 		"0x1121BFA1A1A522A8": {
 			"name": "FORCE_SONAR_BLIPS_THIS_FRAME",
@@ -39206,7 +39216,7 @@
 			"build": "323"
 		},
 		"0xA6A12939F16D85BE": {
-			"name": "_REMOVE_STEALTH_KILL",
+			"name": "ACTION_MANAGER_ENABLE_ACTION",
 			"jhash": "0x42B484ED",
 			"comment": "Appears to remove stealth kill action from memory",
 			"params": [
@@ -39216,11 +39226,14 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REMOVE_STEALTH_KILL"
+			]
 		},
 		"0x1EAE0A6E978894A2": {
 			"name": "_0x1EAE0A6E978894A2",
@@ -50574,27 +50587,28 @@
 			"build": "463"
 		},
 		"0x4CACA84440FA26F6": {
-			"name": "_NETWORK_GET_DESTROYER_OF_ENTITY",
+			"name": "NETWORK_GET_ASSISTED_DAMAGE_OF_ENTITY",
 			"jhash": "0x28A45454",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Hash*",
-					"name": "weaponHash"
+					"type": "int*",
+					"name": "p2"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323",
 			"old_names": [
-				"_NETWORK_GET_DESROYER_OF_ENTITY"
+				"_NETWORK_GET_DESROYER_OF_ENTITY",
+				"_NETWORK_GET_DESTROYER_OF_ENTITY"
 			]
 		},
 		"0x42B2DAA6B596F5F8": {
@@ -52268,26 +52282,26 @@
 			"build": "323"
 		},
 		"0x5E3AA4CA2B6FB0EE": {
-			"name": "_0x5E3AA4CA2B6FB0EE",
+			"name": "NETWORK_ENABLE_VOICE_BANDWIDTH_RESTRICTION",
 			"jhash": "0x7BBEA8CF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xCA575C391FEA25CC": {
-			"name": "_0xCA575C391FEA25CC",
+			"name": "NETWORK_DISABLE_VOICE_BANDWIDTH_RESTRICTION",
 			"jhash": "0xE797A4B6",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -82679,7 +82693,7 @@
 			"build": "323"
 		},
 		"0x5A556B229A169402": {
-			"name": "_0x5A556B229A169402",
+			"name": "STAT_COMMUNITY_START_SYNCH",
 			"jhash": "0x46F21343",
 			"comment": "",
 			"params": [],
@@ -82687,7 +82701,7 @@
 			"build": "323"
 		},
 		"0xB1D2BB1E1631F5B1": {
-			"name": "_0xB1D2BB1E1631F5B1",
+			"name": "STAT_COMMUNITY_SYNCH_IS_PENDING",
 			"jhash": "0x02F283CE",
 			"comment": "",
 			"params": [],
@@ -82695,7 +82709,7 @@
 			"build": "323"
 		},
 		"0xBED9F5693F34ED17": {
-			"name": "_0xBED9F5693F34ED17",
+			"name": "STAT_COMMUNITY_GET_HISTORY",
 			"jhash": "0xC4110917",
 			"comment": "",
 			"params": [
