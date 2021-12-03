@@ -50587,27 +50587,28 @@
 			"build": "463"
 		},
 		"0x4CACA84440FA26F6": {
-			"name": "_NETWORK_GET_DESTROYER_OF_ENTITY",
+			"name": "NETWORK_GET_ASSISTED_DAMAGE_OF_ENTITY",
 			"jhash": "0x28A45454",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Hash*",
-					"name": "weaponHash"
+					"type": "int*",
+					"name": "p2"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323",
 			"old_names": [
-				"_NETWORK_GET_DESROYER_OF_ENTITY"
+				"_NETWORK_GET_DESROYER_OF_ENTITY",
+				"_NETWORK_GET_DESTROYER_OF_ENTITY"
 			]
 		},
 		"0x42B2DAA6B596F5F8": {
@@ -52281,26 +52282,26 @@
 			"build": "323"
 		},
 		"0x5E3AA4CA2B6FB0EE": {
-			"name": "_0x5E3AA4CA2B6FB0EE",
+			"name": "NETWORK_ENABLE_VOICE_BANDWIDTH_RESTRICTION",
 			"jhash": "0x7BBEA8CF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xCA575C391FEA25CC": {
-			"name": "_0xCA575C391FEA25CC",
+			"name": "NETWORK_DISABLE_VOICE_BANDWIDTH_RESTRICTION",
 			"jhash": "0xE797A4B6",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -82692,7 +82693,7 @@
 			"build": "323"
 		},
 		"0x5A556B229A169402": {
-			"name": "_0x5A556B229A169402",
+			"name": "STAT_COMMUNITY_START_SYNCH",
 			"jhash": "0x46F21343",
 			"comment": "",
 			"params": [],
@@ -82700,7 +82701,7 @@
 			"build": "323"
 		},
 		"0xB1D2BB1E1631F5B1": {
-			"name": "_0xB1D2BB1E1631F5B1",
+			"name": "STAT_COMMUNITY_SYNCH_IS_PENDING",
 			"jhash": "0x02F283CE",
 			"comment": "",
 			"params": [],
@@ -82708,7 +82709,7 @@
 			"build": "323"
 		},
 		"0xBED9F5693F34ED17": {
-			"name": "_0xBED9F5693F34ED17",
+			"name": "STAT_COMMUNITY_GET_HISTORY",
 			"jhash": "0xC4110917",
 			"comment": "",
 			"params": [
