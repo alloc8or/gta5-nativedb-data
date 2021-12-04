@@ -109509,9 +109509,9 @@
 			"build": "323"
 		},
 		"0xFDBF4CDBC07E1706": {
-			"name": "_ADD_CURRENT_RISE",
-			"jhash": "0x45268B6F",
-			"comment": "Most likely ADD_CURRENT_*",
+			"name": "ADD_EXTRA_CALMING_QUAD",
+			"jhash": "0xA9419B6D",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -109535,12 +109535,15 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_CURRENT_RISE"
+			]
 		},
 		"0xB1252E3E59A82AAF": {
-			"name": "_REMOVE_CURRENT_RISE",
-			"jhash": "0x7DBCEF6F",
-			"comment": "p0 is the handle returned from _0xFDBF4CDBC07E1706\n\nMost likely REMOVE_CURRENT_*",
+			"name": "REMOVE_EXTRA_CALMING_QUAD",
+			"jhash": "0x45268B6F",
+			"comment": "p0 is the handle returned from _0xFDBF4CDBC07E1706",
 			"params": [
 				{
 					"type": "int",
@@ -109548,7 +109551,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REMOVE_CURRENT_RISE"
+			]
 		},
 		"0xB96B00E976BE977F": {
 			"name": "SET_DEEP_OCEAN_SCALER",
