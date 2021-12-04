@@ -2457,7 +2457,7 @@
 		"0xB165AB7C248B2DC1": {
 			"name": "UNLOCK_MISSION_NEWS_STORY",
 			"jhash": "0xCCD9ABE4",
-			"comment": "I see this as a native that would of been used back in GTA III when you finally unlocked the bridge to the next island and such.",
+			"comment": "\"news\" that play on the radio after you've done something in story mode(?)",
 			"params": [
 				{
 					"type": "int",
@@ -3596,7 +3596,7 @@
 			"build": "1290"
 		},
 		"0x9C11908013EA4715": {
-			"name": "_SOUND_VEHICLE_HORN_THIS_FRAME",
+			"name": "SET_HORN_PERMANENTLY_ON",
 			"jhash": "0xDE8BA3CD",
 			"comment": "SET_*",
 			"params": [
@@ -3606,7 +3606,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SOUND_VEHICLE_HORN_THIS_FRAME"
+			]
 		},
 		"0x76D683C108594D0E": {
 			"name": "SET_HORN_ENABLED",
@@ -3643,9 +3646,9 @@
 			"build": "323"
 		},
 		"0x9D3AF56E94C9AE98": {
-			"name": "_0x9D3AF56E94C9AE98",
+			"name": "SET_HORN_PERMANENTLY_ON_TIME",
 			"jhash": "0x2F0A16D1",
-			"comment": "SET_H*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3653,7 +3656,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -16714,7 +16717,7 @@
 			"build": "323"
 		},
 		"0x14BA4BA137AF6CEC": {
-			"name": "_GET_ENTITY_INSIDE_EXPLOSION_AREA",
+			"name": "GET_OWNER_OF_EXPLOSION_IN_ANGLED_AREA",
 			"jhash": "0xAEC0D176",
 			"comment": "Returns a handle to the first entity within the a circle spawned inside the 2 points from a radius.\n\nexplosionType: See ADD_EXPLOSION.",
 			"params": [
@@ -16754,7 +16757,8 @@
 			"return_type": "Entity",
 			"build": "323",
 			"old_names": [
-				"_GET_PED_INSIDE_EXPLOSION_AREA"
+				"_GET_PED_INSIDE_EXPLOSION_AREA",
+				"_GET_ENTITY_INSIDE_EXPLOSION_AREA"
 			]
 		}
 	},
@@ -31617,7 +31621,7 @@
 			"build": "323"
 		},
 		"0x5354C5BA2EA868A4": {
-			"name": "_RACE_GALLERY_FULLSCREEN",
+			"name": "CUSTOM_MINIMAP_SET_ACTIVE",
 			"jhash": "0xE4FD20D8",
 			"comment": "If toggle is true, the map is shown in full screen\nIf toggle is false, the map is shown in normal mode",
 			"params": [
@@ -31629,11 +31633,12 @@
 			"return_type": "void",
 			"build": "323",
 			"old_names": [
-				"_SET_MAP_FULL_SCREEN"
+				"_SET_MAP_FULL_SCREEN",
+				"_RACE_GALLERY_FULLSCREEN"
 			]
 		},
 		"0x1EAE6DD17B7A5EFA": {
-			"name": "_RACE_GALLERY_NEXT_BLIP_SPRITE",
+			"name": "CUSTOM_MINIMAP_SET_BLIP_OBJECT",
 			"jhash": "0x13E7A5A9",
 			"comment": "Sets the sprite of the next BLIP_GALLERY blip, values used in the native scripts: 143 (ObjectiveBlue), 144 (ObjectiveGreen), 145 (ObjectiveRed), 146 (ObjectiveYellow).",
 			"params": [
@@ -31643,10 +31648,13 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RACE_GALLERY_NEXT_BLIP_SPRITE"
+			]
 		},
 		"0x551DF99658DB6EE8": {
-			"name": "_RACE_GALLERY_ADD_BLIP",
+			"name": "CUSTOM_MINIMAP_CREATE_BLIP",
 			"jhash": "0x786CA0A2",
 			"comment": "Add a BLIP_GALLERY at the specific coordinate. Used in fm_maintain_transition_players to display race track points.",
 			"params": [
@@ -31664,15 +31672,21 @@
 				}
 			],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RACE_GALLERY_ADD_BLIP"
+			]
 		},
 		"0x2708FC083123F9FF": {
-			"name": "_CLEAR_RACE_GALLERY_BLIPS",
+			"name": "CUSTOM_MINIMAP_CLEAR_BLIPS",
 			"jhash": "0xCBEC9369",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CLEAR_RACE_GALLERY_BLIPS"
+			]
 		},
 		"0x1121BFA1A1A522A8": {
 			"name": "FORCE_SONAR_BLIPS_THIS_FRAME",
@@ -39202,7 +39216,7 @@
 			"build": "323"
 		},
 		"0xA6A12939F16D85BE": {
-			"name": "_REMOVE_STEALTH_KILL",
+			"name": "ACTION_MANAGER_ENABLE_ACTION",
 			"jhash": "0x42B484ED",
 			"comment": "Appears to remove stealth kill action from memory",
 			"params": [
@@ -39212,11 +39226,14 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_REMOVE_STEALTH_KILL"
+			]
 		},
 		"0x1EAE0A6E978894A2": {
 			"name": "_0x1EAE0A6E978894A2",
@@ -50395,16 +50412,16 @@
 			"build": "2245"
 		},
 		"0x560B423D73015E77": {
-			"name": "_0x560B423D73015E77",
+			"name": "_NETWORK_IS_THREAD_ACTIVE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "threadId"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1604"
 		},
 		"0x3658E8CD94FC121A": {
@@ -50570,27 +50587,28 @@
 			"build": "463"
 		},
 		"0x4CACA84440FA26F6": {
-			"name": "_NETWORK_GET_DESTROYER_OF_ENTITY",
+			"name": "NETWORK_GET_ASSISTED_DAMAGE_OF_ENTITY",
 			"jhash": "0x28A45454",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Hash*",
-					"name": "weaponHash"
+					"type": "int*",
+					"name": "p2"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323",
 			"old_names": [
-				"_NETWORK_GET_DESROYER_OF_ENTITY"
+				"_NETWORK_GET_DESROYER_OF_ENTITY",
+				"_NETWORK_GET_DESTROYER_OF_ENTITY"
 			]
 		},
 		"0x42B2DAA6B596F5F8": {
@@ -52264,26 +52282,26 @@
 			"build": "323"
 		},
 		"0x5E3AA4CA2B6FB0EE": {
-			"name": "_0x5E3AA4CA2B6FB0EE",
+			"name": "NETWORK_ENABLE_VOICE_BANDWIDTH_RESTRICTION",
 			"jhash": "0x7BBEA8CF",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xCA575C391FEA25CC": {
-			"name": "_0xCA575C391FEA25CC",
+			"name": "NETWORK_DISABLE_VOICE_BANDWIDTH_RESTRICTION",
 			"jhash": "0xE797A4B6",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -57577,7 +57595,7 @@
 			"build": "323"
 		},
 		"0x098AB65B9ED9A9EC": {
-			"name": "_FACEBOOK_SET_HEIST_COMPLETE",
+			"name": "FACEBOOK_POST_COMPLETED_HEIST",
 			"jhash": "0x30B51753",
 			"comment": "",
 			"params": [
@@ -57595,18 +57613,24 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_FACEBOOK_SET_HEIST_COMPLETE"
+			]
 		},
 		"0xDC48473142545431": {
-			"name": "_FACEBOOK_SET_CREATE_CHARACTER_COMPLETE",
+			"name": "FACEBOOK_POST_CREATE_CHARACTER",
 			"jhash": "0x02DAD93F",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_FACEBOOK_SET_CREATE_CHARACTER_COMPLETE"
+			]
 		},
 		"0x0AE1F1653B554AB9": {
-			"name": "_FACEBOOK_SET_MILESTONE_COMPLETE",
+			"name": "FACEBOOK_POST_COMPLETED_MILESTONE",
 			"jhash": "0x2D947814",
 			"comment": "",
 			"params": [
@@ -57616,7 +57640,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_FACEBOOK_SET_MILESTONE_COMPLETE"
+			]
 		},
 		"0x62B9FEC9A11F10EF": {
 			"name": "_FACEBOOK_IS_SENDING_DATA",
@@ -75358,7 +75385,7 @@
 			"build": "323"
 		},
 		"0xB1B6216CA2E7B55E": {
-			"name": "_0xB1B6216CA2E7B55E",
+			"name": "ROPE_CHANGE_SCRIPT_OWNER",
 			"jhash": "0x7C6F7668",
 			"comment": "",
 			"params": [
@@ -80838,13 +80865,13 @@
 			"build": "323"
 		},
 		"0x2C015348CF19CA1D": {
-			"name": "_SC_INBOX_MESSAGE_POP",
+			"name": "SC_INBOX_SET_MESSAGE_AS_READ_AT_INDEX",
 			"jhash": "0x19EE0CCB",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "msgIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -82666,7 +82693,7 @@
 			"build": "323"
 		},
 		"0x5A556B229A169402": {
-			"name": "_0x5A556B229A169402",
+			"name": "STAT_COMMUNITY_START_SYNCH",
 			"jhash": "0x46F21343",
 			"comment": "",
 			"params": [],
@@ -82674,7 +82701,7 @@
 			"build": "323"
 		},
 		"0xB1D2BB1E1631F5B1": {
-			"name": "_0xB1D2BB1E1631F5B1",
+			"name": "STAT_COMMUNITY_SYNCH_IS_PENDING",
 			"jhash": "0x02F283CE",
 			"comment": "",
 			"params": [],
@@ -82682,7 +82709,7 @@
 			"build": "323"
 		},
 		"0xBED9F5693F34ED17": {
-			"name": "_0xBED9F5693F34ED17",
+			"name": "STAT_COMMUNITY_GET_HISTORY",
 			"jhash": "0xC4110917",
 			"comment": "",
 			"params": [
