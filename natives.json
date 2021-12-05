@@ -91220,7 +91220,7 @@
 		"0x6671F3EEC681BDA1": {
 			"name": "TASK_AIM_GUN_AT_COORD",
 			"jhash": "0xFBF44AD3",
-			"comment": "\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
