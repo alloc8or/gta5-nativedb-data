@@ -4140,9 +4140,9 @@
 			"build": "323"
 		},
 		"0x2DD39BF3E2F9C47F": {
-			"name": "_0x2DD39BF3E2F9C47F",
+			"name": "_AUDIO_IS_SCRIPTED_MUSIC_PLAYING_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "This is an alias of AUDIO_IS_SCRIPTED_MUSIC_PLAYING.",
 			"params": [],
 			"return_type": "Any",
 			"build": "463"
@@ -28404,9 +28404,9 @@
 			"build": "323"
 		},
 		"0x2C173AE2BDB9385E": {
-			"name": "_0x2C173AE2BDB9385E",
+			"name": "_GET_BLIP_FADE_STATUS",
 			"jhash": "",
-			"comment": "GET_BLIP_*\n\nSeems to always return 0 from what I can tell. I've tried a lot of different blip related natives and it always seems to return 0. Decompiled scripts always pass a blip handle as p0.",
+			"comment": "Returns -1, 0, +1, depending on if the blip is fading out, doing nothing, or fading in respectively.",
 			"params": [
 				{
 					"type": "Blip",
@@ -50515,17 +50515,17 @@
 			"build": "323"
 		},
 		"0x2DA41ED6E1FCD7A5": {
-			"name": "_0x2DA41ED6E1FCD7A5",
+			"name": "_NETWORK_GET_PLAYER_KILLER_OF_PLAYER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash*",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "Any",
@@ -50549,41 +50549,41 @@
 			"build": "323"
 		},
 		"0xC434133D9BA52777": {
-			"name": "_0xC434133D9BA52777",
+			"name": "_NETWORK_GET_DESTROYER_OF_ENTITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash*",
+					"name": "weaponHash"
 				}
 			],
 			"return_type": "Any",
 			"build": "463"
 		},
 		"0x83660B734994124D": {
-			"name": "_0x83660B734994124D",
+			"name": "_NETWORK_GET_ASSISTED_DAMAGE_OF_DEAD_ENTITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_GET_ASSISTED_DAMAGE_OF_ENTITY that ensures the entity is dead (IS_ENTITY_DEAD)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "463"
 		},
 		"0x4CACA84440FA26F6": {
@@ -53846,17 +53846,17 @@
 			"build": "323"
 		},
 		"0xBA7F0B77D80A4EB7": {
-			"name": "_0xBA7F0B77D80A4EB7",
+			"name": "_NETWORK_SET_OBJECT_INTEREST_RANGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "range"
 				}
 			],
 			"return_type": "void",
@@ -55290,13 +55290,13 @@
 			"build": "323"
 		},
 		"0x4DF7CFFF471A7FB1": {
-			"name": "_0x4DF7CFFF471A7FB1",
+			"name": "NETWORK_ENTITY_AREA_HAVE_ALL_REPLIED",
 			"jhash": "0xCB1CD6D3",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "areaHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -55816,33 +55816,33 @@
 					"name": "isInvisible"
 				},
 				{
-					"type": "BOOL",
-					"name": "p3"
+					"type": "int",
+					"name": "netId"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x2A5E0621DD815A9A": {
-			"name": "_0x2A5E0621DD815A9A",
+			"name": "_NETWORK_EXPLODE_HELI",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "isAudible"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "isInvisible"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "netId"
 				}
 			],
 			"return_type": "void",
@@ -59033,13 +59033,13 @@
 			]
 		},
 		"0xE851471AEFC3374F": {
-			"name": "_0xE851471AEFC3374F",
+			"name": "_DOOR_SYSTEM_GET_AUTOMATIC_DISTANCE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "doorHash"
 				}
 			],
 			"return_type": "Any",
@@ -63877,7 +63877,7 @@
 			"build": "323"
 		},
 		"0x29C24BFBED8AB8FB": {
-			"name": "_GET_HEIGHTMAP_TOP_Z_FOR_POSITION",
+			"name": "GET_APPROX_HEIGHT_FOR_POINT",
 			"jhash": "0x3FE8C5A0",
 			"comment": "Returns CGameWorldHeightMap's maximum Z value at specified point (grid node).",
 			"params": [
@@ -63891,10 +63891,13 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_HEIGHTMAP_TOP_Z_FOR_POSITION"
+			]
 		},
 		"0x8ABE8608576D9CE3": {
-			"name": "_GET_HEIGHTMAP_TOP_Z_FOR_AREA",
+			"name": "GET_APPROX_HEIGHT_FOR_AREA",
 			"jhash": "0x3ED21C90",
 			"comment": "Returns CGameWorldHeightMap's maximum Z among all grid nodes that intersect with the specified rectangle.",
 			"params": [
@@ -63916,10 +63919,13 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_HEIGHTMAP_TOP_Z_FOR_AREA"
+			]
 		},
 		"0x336511A34F2E5185": {
-			"name": "_GET_HEIGHTMAP_BOTTOM_Z_FOR_POSITION",
+			"name": "GET_APPROX_FLOOR_FOR_POINT",
 			"jhash": "0xA07C5B7D",
 			"comment": "Returns CGameWorldHeightMap's minimum Z value at specified point (grid node).",
 			"params": [
@@ -63933,10 +63939,13 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_HEIGHTMAP_BOTTOM_Z_FOR_POSITION"
+			]
 		},
 		"0x3599D741C9AC6310": {
-			"name": "_GET_HEIGHTMAP_BOTTOM_Z_FOR_AREA",
+			"name": "GET_APPROX_FLOOR_FOR_AREA",
 			"jhash": "0x76751DD4",
 			"comment": "Returns CGameWorldHeightMap's minimum Z among all grid nodes that intersect with the specified rectangle.",
 			"params": [
@@ -63958,7 +63967,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_HEIGHTMAP_BOTTOM_Z_FOR_AREA"
+			]
 		},
 		"0xADD95C7005C4A197": {
 			"name": "CALCULATE_TRAVEL_DISTANCE_BETWEEN_POINTS",
@@ -73429,7 +73441,7 @@
 			"build": "323"
 		},
 		"0x62EC273D00187DCA": {
-			"name": "_CREATE_SYNCHRONIZED_SCENE_2",
+			"name": "CREATE_SYNCHRONIZED_SCENE_AT_MAP_OBJECT",
 			"jhash": "0xF3876894",
 			"comment": "",
 			"params": [
@@ -73455,7 +73467,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CREATE_SYNCHRONIZED_SCENE_2"
+			]
 		},
 		"0x25D39B935A038A26": {
 			"name": "IS_SYNCHRONIZED_SCENE_RUNNING",
@@ -74627,17 +74642,17 @@
 			"build": "323"
 		},
 		"0x711794453CFD692B": {
-			"name": "_0x711794453CFD692B",
+			"name": "_SET_DISABLE_PED_FALL_DAMAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -75711,9 +75726,9 @@
 			"build": "323"
 		},
 		"0x15F944730C832252": {
-			"name": "_SET_ENTITY_PROOF_UNK",
+			"name": "_0x15F944730C832252",
 			"jhash": "",
-			"comment": "",
+			"comment": "PED_RAGDOLL_BUMP Proof?",
 			"params": [
 				{
 					"type": "Entity",
@@ -75725,7 +75740,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "463"
+			"build": "463",
+			"old_names": [
+				"_SET_ENTITY_PROOF_UNK"
+			]
 		},
 		"0x9EBD751E5787BAF2": {
 			"name": "_0x9EBD751E5787BAF2",
@@ -83935,7 +83953,7 @@
 			"build": "1180"
 		},
 		"0x6A60E43998228229": {
-			"name": "_0x6A60E43998228229",
+			"name": "_PLAYSTATS_FREEMODE_CHALLENGES",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -83948,7 +83966,7 @@
 			"build": "463"
 		},
 		"0xBFAFDB5FAAA5C5AB": {
-			"name": "_0xBFAFDB5FAAA5C5AB",
+			"name": "_PLAYSTATS_FREEMODE_VEHICLE_TARGET",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -83961,7 +83979,7 @@
 			"build": "463"
 		},
 		"0x8C9D11605E59D955": {
-			"name": "_0x8C9D11605E59D955",
+			"name": "_PLAYSTATS_FREEMODE_URBAN_WARFARE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -83974,7 +83992,7 @@
 			"build": "463"
 		},
 		"0x3DE3AA516FB126A4": {
-			"name": "_0x3DE3AA516FB126A4",
+			"name": "_PLAYSTATS_FREEMODE_CHECKPOINT_COLLECTION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -83987,7 +84005,7 @@
 			"build": "463"
 		},
 		"0xBAA2F0490E146BE8": {
-			"name": "_0xBAA2F0490E146BE8",
+			"name": "_PLAYSTATS_FREEMODE_ATOB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -84000,7 +84018,7 @@
 			"build": "463"
 		},
 		"0x1A7CE7CD3E653485": {
-			"name": "_0x1A7CE7CD3E653485",
+			"name": "_PLAYSTATS_FREEMODE_PENNED_IN",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -84013,7 +84031,7 @@
 			"build": "463"
 		},
 		"0x419615486BBF1956": {
-			"name": "_0x419615486BBF1956",
+			"name": "_PLAYSTATS_FREEMODE_PASS_THE_PARCEL",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -84026,7 +84044,7 @@
 			"build": "463"
 		},
 		"0x84DFC579C2FC214C": {
-			"name": "_0x84DFC579C2FC214C",
+			"name": "_PLAYSTATS_FREEMODE_HOT_PROPERTY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -84039,7 +84057,7 @@
 			"build": "463"
 		},
 		"0x0A9C7F36E5D7B683": {
-			"name": "_0x0A9C7F36E5D7B683",
+			"name": "_PLAYSTATS_FREEMODE_DEADDROP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -84052,7 +84070,7 @@
 			"build": "463"
 		},
 		"0x164C5FF663790845": {
-			"name": "_0x164C5FF663790845",
+			"name": "_PLAYSTATS_FREEMODE_KING_OF_THE_CASTLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -84065,7 +84083,7 @@
 			"build": "463"
 		},
 		"0xEDBF6C9B0D2C65C8": {
-			"name": "_0xEDBF6C9B0D2C65C8",
+			"name": "_PLAYSTATS_FREEMODE_CRIMINAL_DAMAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -84078,7 +84096,7 @@
 			"build": "463"
 		},
 		"0x6551B1F7F6CD46EA": {
-			"name": "_0x6551B1F7F6CD46EA",
+			"name": "_PLAYSTATS_FREEMODE_COMPETITIVE_URBAN_WARFARE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -84091,7 +84109,7 @@
 			"build": "463"
 		},
 		"0x2CD90358F67D0AA8": {
-			"name": "_0x2CD90358F67D0AA8",
+			"name": "_PLAYSTATS_FREEMODE_HUNT_BEAST",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85049,7 +85067,7 @@
 			"build": "323"
 		},
 		"0x98E2BC1CA26287C3": {
-			"name": "_0x98E2BC1CA26287C3",
+			"name": "_STAT_MANAGER_SET_MUTABLE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -85057,166 +85075,166 @@
 			"build": "323"
 		},
 		"0x629526ABA383BCAA": {
-			"name": "_0x629526ABA383BCAA",
+			"name": "_STAT_MANAGER_SET_IMMUTABLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Prevents updates to CStatsMgr (e.g., STAT_SET_* natives)",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xBE3DB208333D9844": {
-			"name": "_0xBE3DB208333D9844",
+			"name": "_STAT_MANAGER_IS_MUTABLE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "463"
 		},
 		"0x33D72899E24C3365": {
-			"name": "_0x33D72899E24C3365",
+			"name": "_STAT_TRACKING_ENABLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "enum StatTrackingType\n{\n\tLongestWheelie = 1,\n\tLongestStoppie = 2,\n\tNoCrashes = 3,\n\tHighestSpeed = 4,\n\t_MostFlips = 5,\n\t_LongestSpin = 6,\n\t_HighestJumpReached = 7,\n\tLongestJump = 8,\n\t_NearMissesNoCrash = 9,\n\tLongestFallSurvived = 10,\n\tLowestParachute = 11,\n\tReverseDriving = 12,\n\tLongestFreefall = 13,\n\tVehiclesStolen = 14,\n\t_SomeCFireEventCount = 15,\n\t_Unk16 = 16,\n\t_LowFlyingTime = 17,\n\tLowFlying = 18,\n\t_InvertedFlyingTime = 19,\n\tInvertedFlying = 20,\n\t_PlaneSpinCount = 21,\n\tMeleeKills = 22, // Players\n\t_LongestSniperKill = 23,\n\tSniperSkills = 24, // Players\n\tDrivebyKills = 25, // Players\n\tHeadshotKills = 26, // Players\n\tLongestBail = 27,\n\t_TotalRammedByCar = 28,\n\tNearMissesPrecise = 29,\n\t_FreefallTime = 30,\n\tUnk31 = 31,\n}\n\nenum StatTrackingValueType\n{\n\tTotal,\n\tMax,\n\tMin\n}",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "statType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "valueType"
 				}
 			],
 			"return_type": "Any",
 			"build": "463"
 		},
 		"0xA761D4AC6115623D": {
-			"name": "_0xA761D4AC6115623D",
+			"name": "_STAT_TRACKING_CLEAR_PROGRESS",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "463"
 		},
 		"0xF11F01D98113536A": {
-			"name": "_0xF11F01D98113536A",
+			"name": "_STAT_GET_PROGRESS_OF_TRACKED_STAT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float*",
+					"name": "value"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "463"
 		},
 		"0x8B9CDBD6C566C38C": {
-			"name": "_0x8B9CDBD6C566C38C",
+			"name": "_STAT_IS_TRACKING_ENABLED",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "944"
 		},
 		"0xE8853FBCE7D8D0D6": {
-			"name": "_0xE8853FBCE7D8D0D6",
+			"name": "_STAT_GET_CHALLENGE_NEAR_MISSES",
 			"jhash": "",
-			"comment": "",
+			"comment": "Perform the most near misses with other vehicles in a land vehicle without crashing",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "463"
 		},
 		"0xA943FD1722E11EFD": {
-			"name": "_0xA943FD1722E11EFD",
+			"name": "_STAT_GET_CHALLENGE_LONGEST_WHEELIE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Perform the longest wheelie on a motorcycle",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "463"
 		},
 		"0x84A810B375E69C0E": {
-			"name": "_0x84A810B375E69C0E",
+			"name": "_STAT_GET_CHALLENGE_LONGEST_STOPPIE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Perform the longest stoppie on a motorcycle",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "463"
 		},
 		"0x9EC8858184CD253A": {
-			"name": "_0x9EC8858184CD253A",
+			"name": "_STAT_GET_CHALLENGE_LONGEST_JUMP",
 			"jhash": "",
-			"comment": "",
+			"comment": "Perform the longest jump in a land vehicle",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "463"
 		},
 		"0xBA9749CC94C1FD85": {
-			"name": "_0xBA9749CC94C1FD85",
+			"name": "_STAT_GET_CHALLENGE_NO_CRASHES",
 			"jhash": "",
-			"comment": "",
+			"comment": "Drive the furthest distance in a land vehicle without crashing",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "463"
 		},
 		"0x55A8BECAF28A4EB7": {
-			"name": "_0x55A8BECAF28A4EB7",
+			"name": "_STAT_GET_CHALLENGE_HIGHEST_SPEED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Achieve the highest speed in a land vehicle",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "463"
 		},
 		"0x32CAC93C9DE73D32": {
-			"name": "_0x32CAC93C9DE73D32",
+			"name": "_STAT_GET_CHALLENGE_REVERSE_DRIVING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Reverse the longest distance without crashing",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "463"
 		},
 		"0xAFF47709F1D5DCCE": {
-			"name": "_0xAFF47709F1D5DCCE",
+			"name": "_STAT_GET_CHALLENGE_LONGEST_FREEFALL",
 			"jhash": "",
-			"comment": "",
+			"comment": "Fall the longest distance with a parachute before opening it",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "463"
 		},
 		"0x6E0A5253375C4584": {
-			"name": "_0x6E0A5253375C4584",
+			"name": "_STAT_GET_CHALLENGE_LOW_FLYING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Fly low to the ground for the longest distance",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "463"
 		},
 		"0x1A8EA222F9C67DBB": {
-			"name": "_0x1A8EA222F9C67DBB",
+			"name": "_STAT_GET_HEIGHT_ABOVE_GROUND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "463"
 		},
 		"0xF9F2922717B819EC": {
-			"name": "_0xF9F2922717B819EC",
+			"name": "_STAT_IS_ABOVE_DEEP_WATER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Or non-flyable area",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0x0B8B7F74BF061C6D": {
-			"name": "_0x0B8B7F74BF061C6D",
+			"name": "_STAT_GET_LONGEST_BAIL",
 			"jhash": "",
-			"comment": "",
+			"comment": "Travel the furthest distance when bailing from a vehicle",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "463"
 		},
 		"0xB3DA2606774A8E2D": {
@@ -85275,7 +85293,7 @@
 			"build": "573"
 		},
 		"0x8D8ADB562F09A245": {
-			"name": "_0x8D8ADB562F09A245",
+			"name": "_PLAYSTATS_BW_BOSS_ON_BOSS_DEATH_MATCH",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85288,7 +85306,7 @@
 			"build": "573"
 		},
 		"0xD1A1EE3B4FA8E760": {
-			"name": "_0xD1A1EE3B4FA8E760",
+			"name": "_PLAYSTATS_BW_YACHT_ATTACK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85301,7 +85319,7 @@
 			"build": "573"
 		},
 		"0x88087EE1F28024AE": {
-			"name": "_0x88087EE1F28024AE",
+			"name": "_PLAYSTATS_BW_HUNT_THE_BOSS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85314,7 +85332,7 @@
 			"build": "573"
 		},
 		"0xFCC228E07217FCAC": {
-			"name": "_0xFCC228E07217FCAC",
+			"name": "_PLAYSTATS_BW_SIGHTSEER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85327,7 +85345,7 @@
 			"build": "573"
 		},
 		"0x678F86D8FC040BDB": {
-			"name": "_0x678F86D8FC040BDB",
+			"name": "_PLAYSTATS_BW_ASSAULT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85340,7 +85358,7 @@
 			"build": "573"
 		},
 		"0xA6F54BB2FFCA35EA": {
-			"name": "_0xA6F54BB2FFCA35EA",
+			"name": "_PLAYSTATS_BW_BELLY_OF_THE_BEAST",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85353,7 +85371,7 @@
 			"build": "573"
 		},
 		"0x5FF2C33B13A02A11": {
-			"name": "_0x5FF2C33B13A02A11",
+			"name": "_PLAYSTATS_BW_HEADHUNTER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85366,7 +85384,7 @@
 			"build": "757"
 		},
 		"0x282B6739644F4347": {
-			"name": "_0x282B6739644F4347",
+			"name": "_PLAYSTATS_BW_FRAGILE_GOOODS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85379,7 +85397,7 @@
 			"build": "757"
 		},
 		"0xF06A6F41CB445443": {
-			"name": "_0xF06A6F41CB445443",
+			"name": "_PLAYSTATS_BW_AIR_FREIGHT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85392,7 +85410,7 @@
 			"build": "757"
 		},
 		"0x7B18DA61F6BAE9D5": {
-			"name": "_0x7B18DA61F6BAE9D5",
+			"name": "_PLAYSTATS_BC_CAR_JACKING",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85405,7 +85423,7 @@
 			"build": "573"
 		},
 		"0x06EAF70AE066441E": {
-			"name": "_0x06EAF70AE066441E",
+			"name": "_PLAYSTATS_BC_SMASH_AND_GRAB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85418,7 +85436,7 @@
 			"build": "573"
 		},
 		"0x14EDA9EE27BD1626": {
-			"name": "_0x14EDA9EE27BD1626",
+			"name": "_PLAYSTATS_BC_PROTECTION_RACKET",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85431,7 +85449,7 @@
 			"build": "573"
 		},
 		"0x930F504203F561C9": {
-			"name": "_0x930F504203F561C9",
+			"name": "_PLAYSTATS_BC_MOST_WANTED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85444,7 +85462,7 @@
 			"build": "573"
 		},
 		"0xE3261D791EB44ACB": {
-			"name": "_0xE3261D791EB44ACB",
+			"name": "_PLAYSTATS_BC_FINDERS_KEEPERS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85457,7 +85475,7 @@
 			"build": "573"
 		},
 		"0x73001E34F85137F8": {
-			"name": "_0x73001E34F85137F8",
+			"name": "_PLAYSTATS_BC_POINT_TO_POINT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85470,7 +85488,7 @@
 			"build": "573"
 		},
 		"0x53CAE13E9B426993": {
-			"name": "_0x53CAE13E9B426993",
+			"name": "_PLAYSTATS_BC_CASHING",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85483,7 +85501,7 @@
 			"build": "757"
 		},
 		"0x7D36291161859389": {
-			"name": "_0x7D36291161859389",
+			"name": "_PLAYSTATS_BC_SALVAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85561,7 +85579,7 @@
 			"build": "757"
 		},
 		"0x60EEDC12AF66E846": {
-			"name": "_0x60EEDC12AF66E846",
+			"name": "_PLAYSTATS_HIT_CONTRABAND_DESTROY_LIMIT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85574,7 +85592,7 @@
 			"build": "757"
 		},
 		"0x3EBEAC6C3F81F6BD": {
-			"name": "_0x3EBEAC6C3F81F6BD",
+			"name": "_PLAYSTATS_BECOME_BOSS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85587,7 +85605,7 @@
 			"build": "573"
 		},
 		"0x96E6D5150DBF1C09": {
-			"name": "_0x96E6D5150DBF1C09",
+			"name": "_PLAYSTATS_BECOME_GOON",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85608,7 +85626,7 @@
 			"build": "573"
 		},
 		"0xA3C53804BDB68ED2": {
-			"name": "_0xA3C53804BDB68ED2",
+			"name": "_PLAYSTATS_END_BEING_BOSS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85625,7 +85643,7 @@
 			"build": "573"
 		},
 		"0x6BCCF9948492FD85": {
-			"name": "_0x6BCCF9948492FD85",
+			"name": "_PLAYSTATS_END_BEING_GOON",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85692,7 +85710,7 @@
 			"build": "573"
 		},
 		"0xD1C9B92BDD3F151D": {
-			"name": "_0xD1C9B92BDD3F151D",
+			"name": "_PLAYSTATS_CHANGE_UNIFORM",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85713,7 +85731,7 @@
 			"build": "573"
 		},
 		"0x44919CC079BB60BF": {
-			"name": "_0x44919CC079BB60BF",
+			"name": "_PLAYSTATS_CHANGE_GOON_LOOKING_FOR_WORK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85726,7 +85744,7 @@
 			"build": "573"
 		},
 		"0x7033EEFD9B28088E": {
-			"name": "_0x7033EEFD9B28088E",
+			"name": "_PLAYSTATS_GHOSTING_TO_PLAYER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85739,7 +85757,7 @@
 			"build": "678"
 		},
 		"0xAA525DFF66BB82F5": {
-			"name": "_0xAA525DFF66BB82F5",
+			"name": "_PLAYSTATS_VIP_POACH",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85760,7 +85778,7 @@
 			"build": "757"
 		},
 		"0x015B03EE1C43E6EC": {
-			"name": "_0x015B03EE1C43E6EC",
+			"name": "_PLAYSTATS_PUNISH_BODYGUARD",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85789,7 +85807,7 @@
 			"build": "791"
 		},
 		"0xBF371CD2B64212FD": {
-			"name": "_0xBF371CD2B64212FD",
+			"name": "_PLAYSTATS_MISSION_ENDED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85802,7 +85820,7 @@
 			"build": "877"
 		},
 		"0x7D8BA05688AD64C7": {
-			"name": "_0x7D8BA05688AD64C7",
+			"name": "_PLAYSTATS_IMPEXP_MISSION_ENDED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85815,7 +85833,7 @@
 			"build": "944"
 		},
 		"0x0B565B0AAE56A0E8": {
-			"name": "_0x0B565B0AAE56A0E8",
+			"name": "_PLAYSTATS_CHANGE_MC_ROLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85852,7 +85870,7 @@
 			"build": "877"
 		},
 		"0x28ECB8AC2F607DB2": {
-			"name": "_0x28ECB8AC2F607DB2",
+			"name": "_PLAYSTATS_CHANGE_MC_OUTFIT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85910,7 +85928,7 @@
 			"build": "877"
 		},
 		"0xCC25A4553DFBF9EA": {
-			"name": "_0xCC25A4553DFBF9EA",
+			"name": "_PLAYSTATS_MC_REQUEST_BIKE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85939,7 +85957,7 @@
 			"build": "877"
 		},
 		"0xF534D94DFA2EAD26": {
-			"name": "_0xF534D94DFA2EAD26",
+			"name": "_PLAYSTATS_KILLED_RIVAL_MC_MEMBER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -85968,7 +85986,7 @@
 			"build": "877"
 		},
 		"0xD558BEC0BBA7E8D2": {
-			"name": "_0xD558BEC0BBA7E8D2",
+			"name": "_PLAYSTATS_ABANDONING_MC",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86030,7 +86048,7 @@
 			"build": "877"
 		},
 		"0x03C2EEBB04B3FB72": {
-			"name": "_0x03C2EEBB04B3FB72",
+			"name": "_PLAYSTATS_MC_FORMATION_ENDS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86067,7 +86085,7 @@
 			"build": "877"
 		},
 		"0x8989CBD7B4E82534": {
-			"name": "_0x8989CBD7B4E82534",
+			"name": "_PLAYSTATS_MC_CLUBHOUSE_ACTIVITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86104,7 +86122,7 @@
 			"build": "877"
 		},
 		"0x27AA1C973CACFE63": {
-			"name": "_0x27AA1C973CACFE63",
+			"name": "_PLAYSTATS_RIVAL_BEHAVIOUR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86229,7 +86247,7 @@
 			"build": "1103"
 		},
 		"0xDAF80797FC534BEC": {
-			"name": "_0xDAF80797FC534BEC",
+			"name": "_PLAYSTATS_GUNRUN_RND",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86242,7 +86260,7 @@
 			"build": "1103"
 		},
 		"0x316DB59CD14C1774": {
-			"name": "_0x316DB59CD14C1774",
+			"name": "_PLAYSTATS_BUSINESS_BATTLE_ENDED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86255,7 +86273,7 @@
 			"build": "1493"
 		},
 		"0x2D7A9B577E72385E": {
-			"name": "_0x2D7A9B577E72385E",
+			"name": "_PLAYSTATS_WAREHOUSE_MISSION_ENDED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86268,7 +86286,7 @@
 			"build": "1493"
 		},
 		"0x830C3A44EB3F2CF9": {
-			"name": "_0x830C3A44EB3F2CF9",
+			"name": "_PLAYSTATS_NIGHTCLUB_MISSION_ENDED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86281,7 +86299,7 @@
 			"build": "1493"
 		},
 		"0xB26F670685631727": {
-			"name": "_0xB26F670685631727",
+			"name": "_PLAYSTATS_DJ_USAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86298,7 +86316,7 @@
 			"build": "1493"
 		},
 		"0xC14BD9F5337219B2": {
-			"name": "_0xC14BD9F5337219B2",
+			"name": "_PLAYSTATS_MINIGAME_USAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86773,7 +86791,7 @@
 			"build": "1734"
 		},
 		"0x4FCDBD3F0A813C25": {
-			"name": "_0x4FCDBD3F0A813C25",
+			"name": "_PLAYSTATS_ARCADE_LOVEMATCH",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86803,7 +86821,7 @@
 			"build": "1734"
 		},
 		"0xDFBD93BF2943E29B": {
-			"name": "_0xDFBD93BF2943E29B",
+			"name": "_PLAYSTATS_HEIST3_DRONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86816,7 +86834,7 @@
 			"build": "1868"
 		},
 		"0x92FC0EEDFAC04A14": {
-			"name": "_0x92FC0EEDFAC04A14",
+			"name": "_PLAYSTATS_HEIST3_HACK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86849,7 +86867,7 @@
 			"build": "1868"
 		},
 		"0x0077F15613D36993": {
-			"name": "_0x0077F15613D36993",
+			"name": "_PLAYSTATS_NPC_PHONE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86874,7 +86892,7 @@
 			"build": "1868"
 		},
 		"0xF9096193DF1F99D4": {
-			"name": "_0xF9096193DF1F99D4",
+			"name": "_PLAYSTATS_ARCADE_CABINET",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86887,7 +86905,7 @@
 			"build": "1868"
 		},
 		"0x2E0259BABC27A327": {
-			"name": "_0x2E0259BABC27A327",
+			"name": "_PLAYSTATS_HEIST3_FINALE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86900,7 +86918,7 @@
 			"build": "1868"
 		},
 		"0x53C31853EC9531FF": {
-			"name": "_0x53C31853EC9531FF",
+			"name": "_PLAYSTATS_HEIST3_PREP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86913,7 +86931,7 @@
 			"build": "1868"
 		},
 		"0x810B5FCC52EC7FF0": {
-			"name": "_0x810B5FCC52EC7FF0",
+			"name": "_PLAYSTATS_MASTER_CONTROL",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86938,7 +86956,7 @@
 			"build": "1868"
 		},
 		"0x5BF29846C6527C54": {
-			"name": "_0x5BF29846C6527C54",
+			"name": "_PLAYSTATS_QUIT_MODE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86967,7 +86985,7 @@
 			"build": "1868"
 		},
 		"0xC03FAB2C2F92289B": {
-			"name": "_0xC03FAB2C2F92289B",
+			"name": "_PLAYSTATS_MISSION_VOTE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -86980,7 +86998,7 @@
 			"build": "1868"
 		},
 		"0x5CDAED54B34B0ED0": {
-			"name": "_0x5CDAED54B34B0ED0",
+			"name": "_PLAYSTATS_NJVS_VOTE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87001,7 +87019,7 @@
 			"build": "1868"
 		},
 		"0xDFCDB14317A9B361": {
-			"name": "_0xDFCDB14317A9B361",
+			"name": "_PLAYSTATS_HEIST4_PREP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87014,7 +87032,7 @@
 			"build": "2189"
 		},
 		"0xC1E963C58664B556": {
-			"name": "_0xC1E963C58664B556",
+			"name": "_PLAYSTATS_HEIST4_FINALE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87027,7 +87045,7 @@
 			"build": "2189"
 		},
 		"0x2FA3173480008493": {
-			"name": "_0x2FA3173480008493",
+			"name": "_PLAYSTATS_HEIST4_HACK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87056,7 +87074,7 @@
 			"build": "2189"
 		},
 		"0xD4367D310F079DB0": {
-			"name": "_0xD4367D310F079DB0",
+			"name": "_PLAYSTATS_SUB_WEAP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87081,7 +87099,7 @@
 			"build": "2189"
 		},
 		"0x4DC416F246A41FC8": {
-			"name": "_0x4DC416F246A41FC8",
+			"name": "_PLAYSTATS_FAST_TRVL",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87110,7 +87128,7 @@
 			"build": "2189"
 		},
 		"0x2818FF6638CB09DE": {
-			"name": "_0x2818FF6638CB09DE",
+			"name": "_PLAYSTATS_HUB_ENTRY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87123,7 +87141,7 @@
 			"build": "2189"
 		},
 		"0xD6CA58B3B53A0F22": {
-			"name": "_0xD6CA58B3B53A0F22",
+			"name": "_PLAYSTATS_DJ_MISSION_ENDED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -104656,9 +104674,9 @@
 			"build": "323"
 		},
 		"0x5EE5632F47AE9695": {
-			"name": "_0x5EE5632F47AE9695",
+			"name": "_OVERRIDE_OVERHEAT_HEALTH",
 			"jhash": "",
-			"comment": "Sets some health value. Looks like it's used for helis.",
+			"comment": "Used for helis.",
 			"params": [
 				{
 					"type": "Vehicle",
