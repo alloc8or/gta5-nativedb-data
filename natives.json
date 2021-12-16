@@ -27541,13 +27541,13 @@
 			"build": "323"
 		},
 		"0x2ACCB195F3CCD9DE": {
-			"name": "_0x2ACCB195F3CCD9DE",
+			"name": "_SET_CURRENT_CHARACTER_HUD_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "hudColorId"
 				}
 			],
 			"return_type": "void",
@@ -28720,20 +28720,20 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xC772A904CDE1186F": {
-			"name": "_0xC772A904CDE1186F",
+			"name": "_SHOW_CONTACT_INSTRUCTIONAL_BUTTON",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -46088,11 +46088,28 @@
 			"build": "2545"
 		},
 		"0x61A2DF64ED2D396E": {
-			"name": "_0x61A2DF64ED2D396E",
+			"name": "_NETWORK_SPENT_SUV_FAST_TRAVEL",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "2545",
 			"unused": true
 		},
@@ -50534,27 +50551,37 @@
 		"0x7F562DBC212E81F9": {
 			"name": "_0x7F562DBC212E81F9",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "NETWORK_ADD_*",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "modelHash"
+				}
+			],
+			"return_type": "void",
 			"build": "2545",
 			"unused": true
 		},
 		"0x791EDB5803B2F468": {
 			"name": "_0x791EDB5803B2F468",
 			"jhash": "",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "NETWORK_REMOVE_*",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "modelHash"
+				}
+			],
+			"return_type": "void",
 			"build": "2545",
 			"unused": true
 		},
 		"0x03B2F03A53D85E41": {
 			"name": "_0x03B2F03A53D85E41",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_CLEAR_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "2545",
 			"unused": true
 		},
@@ -83596,76 +83623,76 @@
 			"build": "323"
 		},
 		"0xDA7EBFC49AE3F1B0": {
-			"name": "_0xDA7EBFC49AE3F1B0",
+			"name": "_GET_PACKED_STAT_BOOL",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "characterSlot"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2545"
 		},
 		"0x0BC900A6FE73770C": {
-			"name": "_0x0BC900A6FE73770C",
+			"name": "_GET_PACKED_STAT_INT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "characterSlot"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "2545"
 		},
 		"0xDB8A58AEAA67CD07": {
-			"name": "_0xDB8A58AEAA67CD07",
+			"name": "_SET_PACKED_STAT_BOOL",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "characterSlot"
 				}
 			],
 			"return_type": "void",
 			"build": "2545"
 		},
 		"0x1581503AE529CD2E": {
-			"name": "_0x1581503AE529CD2E",
+			"name": "_SET_PACKED_STAT_INT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "characterSlot"
 				}
 			],
 			"return_type": "void",
