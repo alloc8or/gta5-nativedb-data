@@ -27964,9 +27964,9 @@
 		"0x4A9923385BDB9DAD": {
 			"name": "GET_STANDARD_BLIP_ENUM_ID",
 			"jhash": "0x87871CE0",
-			"comment": "This function is hard-coded to always return 1.",
+			"comment": "",
 			"params": [],
-			"return_type": "BOOL",
+			"return_type": "int",
 			"build": "323",
 			"old_names": [
 				"_GET_LEVEL_BLIP_SPRITE"
