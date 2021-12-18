@@ -34543,7 +34543,7 @@
 		"0xAC3A74E8384A9919": {
 			"name": "SET_WIND",
 			"jhash": "0xC6294698",
-			"comment": "Sets the the raw wind speed value.",
+			"comment": "Sets the the normalized wind speed value. The wind speed clamps always at 12.0, SET_WIND sets the wind in a percentage, 0.0 is 0 and 1.0 is 12.0. Setting this value to a negative number resumes the random wind speed changes provided by the game.",
 			"params": [
 				{
 					"type": "float",
@@ -34556,7 +34556,7 @@
 		"0xEE09ECEDBABE47FC": {
 			"name": "SET_WIND_SPEED",
 			"jhash": "0x45705F94",
-			"comment": "Using this native will clamp the wind speed value to a range of 0.0- 12.0. Using SET_WIND sets the same value but without the restriction.",
+			"comment": "Using this native will set the absolute wind speed value. The wind speed clamps to a range of 0.0- 12.0. Setting this value to a negative number resumes the random wind speed changes provided by the game.",
 			"params": [
 				{
 					"type": "float",
@@ -34577,7 +34577,7 @@
 		"0xEB0F4468467B4528": {
 			"name": "SET_WIND_DIRECTION",
 			"jhash": "0x381AEEE9",
-			"comment": "The wind direction in radians\n180 degrees, wind will blow from the south",
+			"comment": "The wind direction in radians\n180 degrees (PI), wind will blow from the south. Setting this value to a negative number resumes the random wind direction changes provided by the game.",
 			"params": [
 				{
 					"type": "float",
