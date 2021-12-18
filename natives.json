@@ -77104,9 +77104,9 @@
 			"build": "323"
 		},
 		"0x9A987297ED8BD838": {
-			"name": "_SWITCH_CRIME_TYPE",
+			"name": "SUPPRESS_CRIME_THIS_FRAME",
 			"jhash": "0x59B5C2A2",
-			"comment": "This was previously named as \"RESERVE_ENTITY_EXPLODES_ON_HIGH_EXPLOSION_COMBO\"\nwhich is obviously incorrect.\n\nSeems to only appear in scripts used in Singleplayer. p1 ranges from 2 - 46.\n\n\nI assume this switches the crime type",
+			"comment": "crimeType: see REPORT_CRIME",
 			"params": [
 				{
 					"type": "Player",
@@ -77114,11 +77114,14 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "crimeType"
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SWITCH_CRIME_TYPE"
+			]
 		},
 		"0xBC9490CA15AEA8FB": {
 			"name": "_0xBC9490CA15AEA8FB",
