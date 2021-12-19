@@ -45888,7 +45888,7 @@
 			"build": "2372"
 		},
 		"0x93AA4165CB67E925": {
-			"name": "_NETWORK_SPENT_IM_ABILITY",
+			"name": "_NETWORK_SPENT_INTERACTION_MENU_ABILITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45938,7 +45938,7 @@
 			"build": "2372"
 		},
 		"0xEA8CD3C9B3C35884": {
-			"name": "_0xEA8CD3C9B3C35884",
+			"name": "_NETWORK_SPENT_BUY_AGENCY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45963,7 +45963,7 @@
 			"build": "2545"
 		},
 		"0x6CCA64840589A3B6": {
-			"name": "_0x6CCA64840589A3B6",
+			"name": "_NETWORK_SPENT_UPGRADE_AGENCY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45988,7 +45988,7 @@
 			"build": "2545"
 		},
 		"0x1B2120405080125C": {
-			"name": "_0x1B2120405080125C",
+			"name": "_NETWORK_SPENT_AGENCY_CONCIERGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46013,7 +46013,7 @@
 			"build": "2545"
 		},
 		"0xBF8793B91EA094A7": {
-			"name": "_0xBF8793B91EA094A7",
+			"name": "_NETWORK_SPENT_HIDDEN_CONTACT_SERVICE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46038,7 +46038,7 @@
 			"build": "2545"
 		},
 		"0xD9DF467CBE4398C8": {
-			"name": "_0xD9DF467CBE4398C8",
+			"name": "_NETWORK_SPENT_SOURCE_BIKE_CONTACT_SERVICE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46063,7 +46063,7 @@
 			"build": "2545"
 		},
 		"0xD86581F9E7CDA383": {
-			"name": "_0xD86581F9E7CDA383",
+			"name": "_NETWORK_SPENT_COMPANY_SUV_CONTACT_SERVICE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46114,7 +46114,7 @@
 			"unused": true
 		},
 		"0xEBD482B82ACB8BAD": {
-			"name": "_0xEBD482B82ACB8BAD",
+			"name": "_NETWORK_SPENT_SUPPLY_CONTACT_SERVICE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46139,7 +46139,7 @@
 			"build": "2545"
 		},
 		"0x663B4B9D11742A12": {
-			"name": "_0x663B4B9D11742A12",
+			"name": "_NETWORK_EARN_FROM_AGENCY_INCOME",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46152,7 +46152,7 @@
 			"build": "2545"
 		},
 		"0x146D4EB6D22A403F": {
-			"name": "_0x146D4EB6D22A403F",
+			"name": "_NETWORK_EARN_FROM_AWARD_SECURITY_CONTRACT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46169,7 +46169,7 @@
 			"build": "2545"
 		},
 		"0x38482AD49CB905C7": {
-			"name": "_0x38482AD49CB905C7",
+			"name": "_NETWORK_EARN_FROM_AGENCY_SECURITY_CONTRACT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46186,7 +46186,7 @@
 			"build": "2545"
 		},
 		"0x7397A115030F1BE3": {
-			"name": "_0x7397A115030F1BE3",
+			"name": "_NETWORK_EARN_FROM_AWARD_PHONE_HIT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46203,7 +46203,7 @@
 			"build": "2545"
 		},
 		"0xE29F3D5FA63B1B82": {
-			"name": "_0xE29F3D5FA63B1B82",
+			"name": "_NETWORK_EARN_FROM_AGENCY_PHONE_HIT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46224,7 +46224,7 @@
 			"build": "2545"
 		},
 		"0x88D6C327D6C57C45": {
-			"name": "_0x88D6C327D6C57C45",
+			"name": "_NETWORK_EARN_FROM_AWARD_AGENCY_STORY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46241,7 +46241,7 @@
 			"build": "2545"
 		},
 		"0x6283E5DE4C4460C6": {
-			"name": "_0x6283E5DE4C4460C6",
+			"name": "_NETWORK_EARN_FROM_AGENCY_STORY_PREP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46258,7 +46258,7 @@
 			"build": "2545"
 		},
 		"0xBA154373C5FE51E8": {
-			"name": "_0xBA154373C5FE51E8",
+			"name": "_NETWORK_EARN_FROM_AGENCY_STORY_FINALE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46275,7 +46275,7 @@
 			"build": "2545"
 		},
 		"0xF4A8E57460BF2037": {
-			"name": "_0xF4A8E57460BF2037",
+			"name": "_NETWORK_EARN_FROM_AGENCY_SHORT_TRIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46292,7 +46292,7 @@
 			"build": "2545"
 		},
 		"0x5B4DBDED84D6A420": {
-			"name": "_0x5B4DBDED84D6A420",
+			"name": "_NETWORK_EARN_FROM_AWARD_SHORT_TRIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46309,7 +46309,7 @@
 			"build": "2545"
 		},
 		"0x235D41210B3A1A5E": {
-			"name": "_0x235D41210B3A1A5E",
+			"name": "_NETWORK_EARN_RIVAL_DELIVERY_SECURITY_CONTRACT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46326,7 +46326,7 @@
 			"build": "2545"
 		},
 		"0xD07C7C3F1995108C": {
-			"name": "_0xD07C7C3F1995108C",
+			"name": "_NETWORK_EARN_FROM_UPGRADE_AGENCY_LOCATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46368,7 +46368,7 @@
 			"build": "323"
 		},
 		"0x92D1CFDA1227FF1C": {
-			"name": "_0x92D1CFDA1227FF1C",
+			"name": "_NETWORK_SPENT_BUSINESS_EXPENSES",
 			"jhash": "",
 			"comment": "",
 			"params": [
