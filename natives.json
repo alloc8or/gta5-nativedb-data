@@ -46343,8 +46343,8 @@
 			"build": "2545"
 		},
 		"0xAFE08B35EC0C9EAE": {
-			"name": "NETWORK_PAY_UTILITY_BILL",
-			"jhash": "0x451A2644",
+			"name": "_NETWORK_SPENT_AGGREGATED_UTILITY_BILLS",
+			"jhash": "",
 			"comment": "",
 			"params": [
 				{
@@ -46360,8 +46360,8 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Any*",
+					"name": "data"
 				}
 			],
 			"return_type": "void",
