@@ -95221,24 +95221,24 @@
 			"build": "323"
 		},
 		"0x52F734CEBE20DFBA": {
-			"name": "_0x52F734CEBE20DFBA",
+			"name": "_GET_PATROL_TASK_STATUS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2545"
 		},
 		"0xBDA5DF49D080FE4E": {
