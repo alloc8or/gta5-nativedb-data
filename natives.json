@@ -50549,9 +50549,9 @@
 			"build": "323"
 		},
 		"0x7F562DBC212E81F9": {
-			"name": "_0x7F562DBC212E81F9",
+			"name": "_NETWORK_ADD_INVALID_MODEL",
 			"jhash": "",
-			"comment": "NETWORK_ADD_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -50563,9 +50563,9 @@
 			"unused": true
 		},
 		"0x791EDB5803B2F468": {
-			"name": "_0x791EDB5803B2F468",
+			"name": "_NETWORK_REMOVE_INVALID_MODEL",
 			"jhash": "",
-			"comment": "NETWORK_REMOVE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -50577,9 +50577,9 @@
 			"unused": true
 		},
 		"0x03B2F03A53D85E41": {
-			"name": "_0x03B2F03A53D85E41",
+			"name": "_NETWORK_CLEAR_INVALID_MODELS",
 			"jhash": "",
-			"comment": "NETWORK_CLEAR_*",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "2545",
