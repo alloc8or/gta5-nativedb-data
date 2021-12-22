@@ -46473,7 +46473,7 @@
 			"unused": true
 		},
 		"0xED5AB8860415BABA": {
-			"name": "_NETWORK_GET_VC_WALLET_BALANCE_IS_NOT_LESS_THAN",
+			"name": "NETWORK_GET_CAN_SPEND_FROM_WALLET",
 			"jhash": "0x0EA2188C",
 			"comment": "Returns true if wallet balance >= amount.",
 			"params": [
@@ -46488,10 +46488,13 @@
 			],
 			"return_type": "BOOL",
 			"build": "323",
-			"unused": true
+			"unused": true,
+			"old_names": [
+				"_NETWORK_GET_VC_WALLET_BALANCE_IS_NOT_LESS_THAN"
+			]
 		},
 		"0xA31FD6A0865B6D14": {
-			"name": "_NETWORK_GET_VC_BANK_BALANCE_IS_NOT_LESS_THAN",
+			"name": "NETWORK_GET_CAN_SPEND_FROM_BANK",
 			"jhash": "0xABED6020",
 			"comment": "Returns true if bank balance >= amount.",
 			"params": [
@@ -46502,10 +46505,13 @@
 			],
 			"return_type": "BOOL",
 			"build": "323",
-			"unused": true
+			"unused": true,
+			"old_names": [
+				"_NETWORK_GET_VC_BANK_BALANCE_IS_NOT_LESS_THAN"
+			]
 		},
 		"0xDC18531D7019A535": {
-			"name": "_NETWORK_GET_VC_BANK_WALLET_BALANCE_IS_NOT_LESS_THAN",
+			"name": "NETWORK_GET_CAN_SPEND_FROM_BANK_AND_WALLET",
 			"jhash": "0xCA23FD25",
 			"comment": "Returns true if bank balance + wallet balance >= amount.",
 			"params": [
@@ -46519,7 +46525,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_GET_VC_BANK_WALLET_BALANCE_IS_NOT_LESS_THAN"
+			]
 		},
 		"0x13A8DE2FD77D04F3": {
 			"name": "NETWORK_GET_PVC_TRANSFER_BALANCE",
@@ -46534,7 +46543,7 @@
 			]
 		},
 		"0x08E8EEADFD0DC4A0": {
-			"name": "_0x08E8EEADFD0DC4A0",
+			"name": "NETWORK_GET_CAN_TRANSFER_CASH",
 			"jhash": "0x03461981",
 			"comment": "Returns false if amount > wallet balance or daily transfer limit has been hit.",
 			"params": [
@@ -48447,7 +48456,7 @@
 			"build": "323"
 		},
 		"0xC42DD763159F3461": {
-			"name": "_0xC42DD763159F3461",
+			"name": "NETWORK_HAS_CONFIRMED_INVITE",
 			"jhash": "0xFBBAC350",
 			"comment": "",
 			"params": [],
@@ -49664,7 +49673,7 @@
 			"build": "323"
 		},
 		"0x973D76AA760A6CB6": {
-			"name": "_0x973D76AA760A6CB6",
+			"name": "NETWORK_TRANSITION_BLOCK_JOIN_REQUESTS",
 			"jhash": "0x0532DDD2",
 			"comment": "",
 			"params": [
@@ -49750,7 +49759,7 @@
 			"build": "323"
 		},
 		"0x4A9FDE3A5A6D0437": {
-			"name": "_0x4A9FDE3A5A6D0437",
+			"name": "NETWORK_SET_PRESENCE_SESSION_INVITES_BLOCKED",
 			"jhash": "0x18F03AFD",
 			"comment": "Does nothing. It's just a nullsub.",
 			"params": [
@@ -49841,7 +49850,7 @@
 			"build": "323"
 		},
 		"0x742B58F723233ED9": {
-			"name": "_0x742B58F723233ED9",
+			"name": "NETWORK_GET_PRESENCE_INVITE_INDEX_BY_ID",
 			"jhash": "0x5E832444",
 			"comment": "",
 			"params": [
@@ -52237,7 +52246,7 @@
 			"build": "372"
 		},
 		"0xB309EBEA797E001F": {
-			"name": "_0xB309EBEA797E001F",
+			"name": "NETWORK_SET_SCRIPT_AUTOMUTED",
 			"jhash": "0x5C0AB2A9",
 			"comment": "",
 			"params": [
@@ -52250,7 +52259,7 @@
 			"build": "323"
 		},
 		"0x26F07DD83A5F7F98": {
-			"name": "_0x26F07DD83A5F7F98",
+			"name": "NETWORK_HAS_AUTOMUTE_OVERRIDE",
 			"jhash": "0x9A176B6E",
 			"comment": "",
 			"params": [],
@@ -52667,9 +52676,9 @@
 			"build": "323"
 		},
 		"0x3C5C1E2C2FF814B1": {
-			"name": "_0x3C5C1E2C2FF814B1",
+			"name": "NETWORK_SET_OVERRIDE_TUTORIAL_SESSION_CHAT",
 			"jhash": "0xC9DDA85B",
-			"comment": "Sets some voice chat related value.\n\nNETWORK_SET_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -52682,7 +52691,7 @@
 		"0x9D7AFCBF21C51712": {
 			"name": "_0x9D7AFCBF21C51712",
 			"jhash": "0xE5219410",
-			"comment": "Sets some voice chat related value.\n\nNETWORK_SET_*",
+			"comment": "Sets some voice chat related value.\n\nNETWORK_SET_[PROXIMITY_AFFECTS_TEAM]?",
 			"params": [
 				{
 					"type": "BOOL",
@@ -56541,7 +56550,7 @@
 			"build": "323"
 		},
 		"0x367EF5E2F439B4C6": {
-			"name": "_0x367EF5E2F439B4C6",
+			"name": "NETWORK_SET_PLAYER_MENTAL_STATE",
 			"jhash": "0x53C9563C",
 			"comment": "",
 			"params": [
@@ -56977,11 +56986,11 @@
 			"build": "323"
 		},
 		"0x9FEDF86898F100E9": {
-			"name": "_0x9FEDF86898F100E9",
+			"name": "UGC_IS_CREATING",
 			"jhash": "0x798D6C27",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5E24341A7F92A74B": {
@@ -57137,7 +57146,7 @@
 			"build": "323"
 		},
 		"0x6D4CB481FAC835E8": {
-			"name": "_UGC_QUERY_RECENTLY_CREATED_CONTENT",
+			"name": "UGC_QUERY_MOST_RECENTLY_CREATED_CONTENT",
 			"jhash": "0x40CF0783",
 			"comment": "",
 			"params": [
@@ -57159,7 +57168,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_UGC_QUERY_RECENTLY_CREATED_CONTENT"
+			]
 		},
 		"0xD5A4B59980401588": {
 			"name": "UGC_GET_BOOKMARKED_CONTENT",
@@ -57333,7 +57345,7 @@
 			"build": "323"
 		},
 		"0xA7862BC5ED1DFD7E": {
-			"name": "_0xA7862BC5ED1DFD7E",
+			"name": "UGC_GET_MOST_RECENTLY_CREATED_CONTENT",
 			"jhash": "0x37F5BD93",
 			"comment": "",
 			"params": [
@@ -57358,7 +57370,7 @@
 			"build": "323"
 		},
 		"0x97A770BEEF227E2B": {
-			"name": "_0x97A770BEEF227E2B",
+			"name": "UGC_GET_MOST_RECENTLY_PLAYED_CONTENT",
 			"jhash": "0x1CFB3F51",
 			"comment": "",
 			"params": [
@@ -57383,7 +57395,7 @@
 			"build": "323"
 		},
 		"0x5324A0E3E4CE3570": {
-			"name": "_0x5324A0E3E4CE3570",
+			"name": "UGC_GET_TOP_RATED_CONTENT",
 			"jhash": "0x87D1E6BD",
 			"comment": "",
 			"params": [
@@ -57913,7 +57925,7 @@
 			"build": "323"
 		},
 		"0x2D5DC831176D0114": {
-			"name": "_0x2D5DC831176D0114",
+			"name": "UGC_IS_DESCRIPTION_REQUEST_IN_PROGRESS",
 			"jhash": "0xA69AE16C",
 			"comment": "",
 			"params": [
@@ -57926,7 +57938,7 @@
 			"build": "323"
 		},
 		"0xEBFA8D50ADDC54C4": {
-			"name": "_0xEBFA8D50ADDC54C4",
+			"name": "UGC_HAS_DESCRIPTION_REQUEST_FINISHED",
 			"jhash": "0xF50BC67A",
 			"comment": "",
 			"params": [
@@ -57939,7 +57951,7 @@
 			"build": "323"
 		},
 		"0x162C23CA83ED0A62": {
-			"name": "_0x162C23CA83ED0A62",
+			"name": "UGC_DID_DESCRIPTION_REQUEST_SUCCEED",
 			"jhash": "0xB3BBD241",
 			"comment": "",
 			"params": [
@@ -57969,7 +57981,7 @@
 			"build": "323"
 		},
 		"0x5A34CD9C3C5BEC44": {
-			"name": "_0x5A34CD9C3C5BEC44",
+			"name": "UGC_RELEASE_CACHED_DESCRIPTION",
 			"jhash": "0x346B506C",
 			"comment": "",
 			"params": [
@@ -58053,11 +58065,11 @@
 			"build": "323"
 		},
 		"0x45E816772E93A9DB": {
-			"name": "_0x45E816772E93A9DB",
+			"name": "UGC_IS_MODIFYING",
 			"jhash": "0x8E664EFD",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x299EF3C576773506": {
@@ -58069,11 +58081,11 @@
 			"build": "323"
 		},
 		"0x793FF272D5B365F4": {
-			"name": "_0x793FF272D5B365F4",
+			"name": "UGC_DID_MODIFY_SUCCEED",
 			"jhash": "0xF0211AC1",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5A0A3D1A186A5508": {
@@ -58110,7 +58122,7 @@
 			"build": "323"
 		},
 		"0x63B406D7884BFA95": {
-			"name": "_0x63B406D7884BFA95",
+			"name": "UGC_HAS_QUERY_CREATORS_FINISHED",
 			"jhash": "0xF79FFF3C",
 			"comment": "",
 			"params": [],
@@ -58118,7 +58130,7 @@
 			"build": "323"
 		},
 		"0x4D02279C83BE69FE": {
-			"name": "_0x4D02279C83BE69FE",
+			"name": "UGC_DID_QUERY_CREATORS_SUCCEED",
 			"jhash": "0xA7F3F82B",
 			"comment": "",
 			"params": [],
@@ -58168,7 +58180,7 @@
 			"build": "323"
 		},
 		"0xFD75DABC0957BF33": {
-			"name": "_0xFD75DABC0957BF33",
+			"name": "UGC_SET_USING_OFFLINE_CONTENT",
 			"jhash": "0x511E6F50",
 			"comment": "",
 			"params": [
