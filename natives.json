@@ -109700,7 +109700,7 @@
 			"build": "1365"
 		},
 		"0x498218259FB7C72D": {
-			"name": "_SET_UNK_FLOAT_0x104_FOR_SUBMARINE_VEHICLE_TASK",
+			"name": "_SET_UNK_FLOAT_FOR_SUBMARINE_VEHICLE_TASK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -109717,7 +109717,7 @@
 			"build": "1365"
 		},
 		"0x41B9FB92EDED32A6": {
-			"name": "_SET_UNK_BOOL_0x102_FOR_SUBMARINE_VEHICLE_TASK",
+			"name": "_SET_UNK_BOOL_FOR_SUBMARINE_VEHICLE_TASK",
 			"jhash": "",
 			"comment": "",
 			"params": [

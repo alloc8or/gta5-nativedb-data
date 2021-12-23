@@ -1,7 +1,7 @@
 {
 	"type": "object",
 	"patternProperties": {
-		"^[A-Z_]+[A-Z0-9_]*$": {
+		"^([A-Z_]+[A-Z0-9_]*|_0x[0-9A-F]{16})$": {
 			"type": "object",
 			"patternProperties": {
 				"^0x[0-9A-F]{16}$": {
@@ -10,7 +10,7 @@
 						"name": { "$ref": "#/$defs/native_name" },
 						"jhash": {
 							"type": "string",
-							"pattern": "(^$|^0x[0-9A-F]{8}$)"
+							"pattern": "^($|0x[0-9A-F]{8})$"
 						},
 						"comment": { "type": "string" },
 						"params": {
@@ -49,7 +49,7 @@
 	"$defs": {
 		"native_name": {
 			"type": "string",
-			"pattern": "^[A-Z_]+[A-Z0-9_]*$"
+			"pattern": "^([A-Z_]+[A-Z0-9_]*|_0x[0-9A-F]{16})$"
 		},
 		"type_name": {
 			"type": "string",
