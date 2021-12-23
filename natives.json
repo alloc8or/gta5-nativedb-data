@@ -31901,10 +31901,7 @@
 			"comment": "GET_PAUSE_MENU_*",
 			"params": [],
 			"return_type": "Vector3",
-			"build": "323",
-			"old_names": [
-				"'0x5BFF36D6ED83E0AE'"
-			]
+			"build": "323"
 		},
 		"0x1C491717107431C7": {
 			"name": "IS_PAUSE_MENU_RESTARTING",
