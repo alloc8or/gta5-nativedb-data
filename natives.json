@@ -29274,7 +29274,7 @@
 		"0x13127EC3665E8EE1": {
 			"name": "SET_BLIP_SHOW_CONE",
 			"jhash": "0xFF545AD8",
-			"comment": "",
+			"comment": "As of b2189, the third parameter sets the color of the cone (before b2189 it was ignored). Note that it uses HUD colors, not blip colors.",
 			"params": [
 				{
 					"type": "Blip",
@@ -29285,8 +29285,8 @@
 					"name": "toggle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "hudColorIndex"
 				}
 			],
 			"return_type": "void",
@@ -97866,19 +97866,19 @@
 		"0x24CB2137731FFE89": {
 			"name": "GET_VEHICLE_NUMBER_OF_PASSENGERS",
 			"jhash": "0x1EF20849",
-			"comment": "Gets the number of passengers, NOT including the driver. Use IS_VEHICLE_SEAT_FREE(Vehicle, -1) to also check for the driver",
+			"comment": "Gets the number of passengers.\n\nThis native was modified in b2545 to take two additional parameters, allowing you to include the driver or exclude dead passengers.\n\nTo keep it working like before b2545, set includeDriver to false and includeDeadOccupants to true.",
 			"params": [
 				{
 					"type": "Vehicle",
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "includeDriver"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "includeDeadOccupants"
 				}
 			],
 			"return_type": "int",
