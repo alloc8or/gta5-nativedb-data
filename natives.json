@@ -32057,7 +32057,7 @@
 			"build": "323"
 		},
 		"0x4895BDEA16E7C080": {
-			"name": "_0x4895BDEA16E7C080",
+			"name": "PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS",
 			"jhash": "0x15B24768",
 			"comment": "",
 			"params": [
@@ -32094,7 +32094,7 @@
 			"build": "323"
 		},
 		"0xF06EBB91A81E09E3": {
-			"name": "_0xF06EBB91A81E09E3",
+			"name": "PAUSE_MENU_SET_WARN_ON_TAB_CHANGE",
 			"jhash": "0x11D09737",
 			"comment": "",
 			"params": [
@@ -62942,9 +62942,9 @@
 			"build": "323"
 		},
 		"0x3D42B92563939375": {
-			"name": "_SWITCH_TO_INPUT_MAPPING_SCHEME",
+			"name": "INIT_PC_SCRIPTED_CONTROLS",
 			"jhash": "0xD2C80B2E",
-			"comment": "Used in carsteal3 script with p0 = \"Carsteal4_spycar\".\n\nS*",
+			"comment": "Used in carsteal3 script with p0 = \"Carsteal4_spycar\".",
 			"params": [
 				{
 					"type": "const char*",
@@ -62952,12 +62952,15 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SWITCH_TO_INPUT_MAPPING_SCHEME"
+			]
 		},
 		"0x4683149ED1DDE7A1": {
-			"name": "_SWITCH_TO_INPUT_MAPPING_SCHEME_2",
+			"name": "SWITCH_PC_SCRIPTED_CONTROLS",
 			"jhash": "0xBBFC9050",
-			"comment": "Same as 0x3D42B92563939375\n\nS*",
+			"comment": "Same as INIT_PC_SCRIPTED_CONTROLS",
 			"params": [
 				{
 					"type": "const char*",
@@ -62965,15 +62968,21 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SWITCH_TO_INPUT_MAPPING_SCHEME_2"
+			]
 		},
 		"0x643ED62D5EA3BEBD": {
-			"name": "_RESET_INPUT_MAPPING_SCHEME",
+			"name": "SHUTDOWN_PC_SCRIPTED_CONTROLS",
 			"jhash": "0x42140FF9",
-			"comment": "S*",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RESET_INPUT_MAPPING_SCHEME"
+			]
 		},
 		"0x7F4724035FDCA1DD": {
 			"name": "_0x7F4724035FDCA1DD",
