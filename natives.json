@@ -2293,17 +2293,17 @@
 			"build": "323"
 		},
 		"0xFF266D1D0EB1195D": {
-			"name": "_0xFF266D1D0EB1195D",
+			"name": "SET_RADIO_RETUNE_UP",
 			"jhash": "0x53DB6994",
-			"comment": "Tune Forward... ?\n\nSET_RADIO_*",
+			"comment": "Tune Forward...",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xDD6BCF9E94425DF9": {
-			"name": "_0xDD6BCF9E94425DF9",
+			"name": "SET_RADIO_RETUNE_DOWN",
 			"jhash": "0xD70ECC80",
-			"comment": "Tune Backwards... ?\n\nSET_RADIO_*",
+			"comment": "Tune Backwards...",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -99403,7 +99403,7 @@
 		"0x8AA9180DE2FEDD45": {
 			"name": "_0x8AA9180DE2FEDD45",
 			"jhash": "0xAE040377",
-			"comment": "",
+			"comment": "SET_VEHICLE_D[ISABLE_HEIGHT_MAP_AVOIDANCE]?",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102428,7 +102428,7 @@
 			"build": "323"
 		},
 		"0x206BC5DC9D1AC70A": {
-			"name": "_SET_VEHICLE_CAN_ENGINE_OPERATE_ON_FIRE",
+			"name": "SET_VEHICLE_CAN_ENGINE_MISSFIRE",
 			"jhash": "0x8EACBD13",
 			"comment": "",
 			"params": [
@@ -102442,7 +102442,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_CAN_ENGINE_OPERATE_ON_FIRE"
+			]
 		},
 		"0x51BB2D88D31A914B": {
 			"name": "SET_VEHICLE_CAN_LEAK_OIL",
@@ -104267,12 +104270,15 @@
 			"build": "323"
 		},
 		"0x91D6DD290888CBAB": {
-			"name": "_HAS_FILLED_VEHICLE_POPULATION",
+			"name": "HAS_INSTANT_FILL_VEHICLE_POPULATION_FINISHED",
 			"jhash": "0x71D898EF",
-			"comment": "HAS_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_HAS_FILLED_VEHICLE_POPULATION"
+			]
 		},
 		"0x51DB102F4A3BA5E0": {
 			"name": "_0x51DB102F4A3BA5E0",
@@ -104511,9 +104517,9 @@
 			]
 		},
 		"0xC6AD107DDC9054CC": {
-			"name": "_GET_VEHICLE_MODEL_MAX_KNOTS",
+			"name": "GET_FLYING_VEHICLE_MODEL_AGILITY",
 			"jhash": "0x95BB67EB",
-			"comment": "GET_VEHICLE_MODEL_*\n\nFunction pertains only to aviation vehicles.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "Full list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -104521,12 +104527,15 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_MODEL_MAX_KNOTS"
+			]
 		},
 		"0x5AA3F878A178C4FC": {
-			"name": "_GET_VEHICLE_MODEL_MOVE_RESISTANCE",
+			"name": "GET_BOAT_VEHICLE_MODEL_AGILITY",
 			"jhash": "0x87C5D271",
-			"comment": "GET_VEHICLE_MODEL_*\n\ncalled if the vehicle is a boat -- returns vecMoveResistanceX?\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "Full list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -104534,7 +104543,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_MODEL_MOVE_RESISTANCE"
+			]
 		},
 		"0x00C09F246ABEDD82": {
 			"name": "GET_VEHICLE_CLASS_ESTIMATED_MAX_SPEED",
@@ -106185,7 +106197,7 @@
 			"build": "323"
 		},
 		"0x182F266C2D9E2BEB": {
-			"name": "_0x182F266C2D9E2BEB",
+			"name": "SET_VEHICLE_CUSTOM_PATH_NODE_STREAMING_RADIUS",
 			"jhash": "0x7D0DE7EA",
 			"comment": "",
 			"params": [
