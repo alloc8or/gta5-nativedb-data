@@ -12275,7 +12275,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
+					"type": "ScrHandle",
 					"name": "handle"
 				}
 			],
@@ -33591,7 +33591,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Vehicle",
+			"return_type": "ScrHandle",
 			"build": "323"
 		},
 		"0xDE18220B1C183EDA": {
@@ -33600,8 +33600,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "itemset"
 				}
 			],
 			"return_type": "void",
@@ -33613,8 +33613,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "itemset"
 				}
 			],
 			"return_type": "BOOL",
@@ -33626,12 +33626,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ScrHandle",
+					"name": "itemset"
 				}
 			],
 			"return_type": "BOOL",
@@ -33643,12 +33643,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ScrHandle",
+					"name": "itemset"
 				}
 			],
 			"return_type": "void",
@@ -33661,10 +33661,10 @@
 			"params": [
 				{
 					"type": "ScrHandle",
-					"name": "x"
+					"name": "itemset"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x7A197E2521EE2BAB": {
@@ -33673,15 +33673,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ScrHandle",
+					"name": "itemset"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "ScrHandle",
 			"build": "323"
 		},
 		"0x2D0FC594D1E9C107": {
@@ -33690,12 +33690,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "item"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "ScrHandle",
+					"name": "itemset"
 				}
 			],
 			"return_type": "BOOL",
@@ -33707,8 +33707,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "itemset"
 				}
 			],
 			"return_type": "void",
