@@ -26055,42 +26055,42 @@
 		"0xB6871B0555B02996": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_VERSUS_TU",
 			"jhash": "0x5E93FBFA",
-			"comment": "",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: pastebin.com/XdpJVbHz\nHUD colors and their values: pastebin.com/d9aHPbXN\n\nShows a deathmatch score above the minimap, example: https://i.imgur.com/YmoMklG.png",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "txdName1"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "texureName1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "count1"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "const char*",
+					"name": "txdName2"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "const char*",
+					"name": "texureName2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "count2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "hudColor1"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "hudColor2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xD202B92CBF1D816F": {
