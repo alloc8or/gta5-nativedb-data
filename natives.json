@@ -24764,7 +24764,7 @@
 		"0x1C4FC5752BCD8E48": {
 			"name": "TERRAINGRID_SET_PARAMS",
 			"jhash": "0x3B637AA7",
-			"comment": "This native is used along with these two natives: `0xa356990e161c9e65` and `0x5ce62918f8d703c7`.\nThis native configures the location, size, rotation, normal height, and the difference ratio between min, normal and max.\n\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png",
+			"comment": "This native is used along with these two natives: `0xa356990e161c9e65` and `0x5ce62918f8d703c7`.\nThis native configures the location, size, rotation, normal height, and the difference ratio between min, normal and max.\n\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png\n\nThis native renders a box at the given position, with a special shader that renders a grid on world geometry behind it. This box does not have backface culling.\nThe forward args here are a direction vector, something similar to what's returned by GET_ENTITY_FORWARD_VECTOR.\nnormalHeight and heightDiff are used for positioning the color gradient of the grid, colors specified via TERRAINGRID_SET_COLOURS.\n\nExample with box superimposed on the image to demonstrate: https://i.imgur.com/wdqskxd.jpg",
 			"params": [
 				{
 					"type": "float",
@@ -24780,31 +24780,31 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "forwardX"
 				},
 				{
 					"type": "float",
-					"name": "rotation"
+					"name": "forwardY"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "forwardZ"
 				},
 				{
 					"type": "float",
-					"name": "width"
+					"name": "sizeX"
 				},
 				{
 					"type": "float",
-					"name": "height"
+					"name": "sizeY"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "sizeZ"
 				},
 				{
 					"type": "float",
-					"name": "scale"
+					"name": "gridScale"
 				},
 				{
 					"type": "float",
