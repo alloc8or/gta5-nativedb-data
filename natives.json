@@ -2658,7 +2658,7 @@
 			"build": "323"
 		},
 		"0x032A116663A4D5AC": {
-			"name": "_IS_VEHICLE_RADIO_LOUD",
+			"name": "CAN_VEHICLE_RECEIVE_CB_RADIO",
 			"jhash": "0xCBA99F4A",
 			"comment": "",
 			"params": [
@@ -2668,7 +2668,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_VEHICLE_RADIO_LOUD"
+			]
 		},
 		"0x1098355A16064BB3": {
 			"name": "SET_MOBILE_RADIO_ENABLED_DURING_GAMEPLAY",
@@ -30177,7 +30180,7 @@
 			"build": "323"
 		},
 		"0xE45087D85F468BC2": {
-			"name": "_SET_MISSION_NAME_2",
+			"name": "SET_MISSION_NAME_FOR_UGC_MISSION",
 			"jhash": "0x8D9A1734",
 			"comment": "",
 			"params": [
@@ -30191,7 +30194,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_MISSION_NAME_2"
+			]
 		},
 		"0x817B86108EB94E51": {
 			"name": "_0x817B86108EB94E51",
@@ -37239,9 +37245,9 @@
 			]
 		},
 		"0x82FDE6A57EE4EE44": {
-			"name": "_GET_PROJECTILE_NEAR_PED",
+			"name": "GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE",
 			"jhash": "0x507BC6F7",
-			"comment": "GET_PROJECTILE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -37269,7 +37275,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PROJECTILE_NEAR_PED"
+			]
 		},
 		"0x1A8B5F3C01E2B477": {
 			"name": "IS_BULLET_IN_ANGLED_AREA",
@@ -39096,9 +39105,9 @@
 			"build": "323"
 		},
 		"0xB8721407EE9C3FF6": {
-			"name": "_ADD_TACTICAL_ANALYSIS_POINT",
+			"name": "ADD_TACTICAL_NAV_MESH_POINT",
 			"jhash": "0x24A4E0B2",
-			"comment": "Adds a point related to CTacticalAnalysis",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -39114,15 +39123,21 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_TACTICAL_ANALYSIS_POINT"
+			]
 		},
 		"0xB3CD58CCA6CDA852": {
-			"name": "_CLEAR_TACTICAL_ANALYSIS_POINTS",
+			"name": "CLEAR_TACTICAL_NAV_MESH_POINTS",
 			"jhash": "0x66C3C59C",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CLEAR_TACTICAL_ANALYSIS_POINTS"
+			]
 		},
 		"0x2587A48BC88DFADF": {
 			"name": "SET_RIOT_MODE_ENABLED",
@@ -81657,7 +81672,7 @@
 			]
 		},
 		"0xF3E31D16CBDCB304": {
-			"name": "_SC_INBOX_MESSAGE_GET_STRING",
+			"name": "SC_INBOX_MESSAGE_GET_RAW_TYPE_AT_INDEX",
 			"jhash": "0x2C959AF9",
 			"comment": "",
 			"params": [
@@ -81667,7 +81682,10 @@
 				}
 			],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SC_INBOX_MESSAGE_GET_STRING"
+			]
 		},
 		"0xDA024BDBD600F44A": {
 			"name": "_SC_INBOX_MESSAGE_PUSH_GAMER_TO_EVENT_RECIP_LIST",
@@ -107334,9 +107352,9 @@
 			]
 		},
 		"0xB8FBC8B1330CA9B4": {
-			"name": "_SET_VEHICLE_JET_ENGINE_ON",
+			"name": "SET_VEHICLE_KEEP_ENGINE_ON_WHEN_ABANDONED",
 			"jhash": "0x51E0064F",
-			"comment": "VEHICLE::SET_VEHICLE_ENGINE_ON is not enough to start jet engines when not inside the vehicle. But with this native set to true it works: youtu.be/OK0ps2fDpxs \ni.imgur.com/7XA14pX.png\nCertain planes got jet engines.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107348,7 +107366,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_VEHICLE_JET_ENGINE_ON"
+			]
 		},
 		"0x6A973569BA094650": {
 			"name": "_0x6A973569BA094650",
