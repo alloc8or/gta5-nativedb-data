@@ -26063,7 +26063,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "texureName1"
+					"name": "textureName1"
 				},
 				{
 					"type": "int",
@@ -26075,7 +26075,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "texureName2"
+					"name": "textureName2"
 				},
 				{
 					"type": "int",
