@@ -4969,9 +4969,9 @@
 			"build": "323"
 		},
 		"0x4D953DF78EBF8158": {
-			"name": "_0x4D953DF78EBF8158",
+			"name": "_PREPARE_SCRIPT_BRAIN",
 			"jhash": "0xF3A3AB08",
-			"comment": "Something like flush_all_scripts \n\nMost of time comes after NETWORK_END_TUTORIAL_SESSION() or before TERMINATE_THIS_THREAD()",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -17721,16 +17721,16 @@
 			"build": "323"
 		},
 		"0xCB82A0BF0E3E3265": {
-			"name": "_0xCB82A0BF0E3E3265",
+			"name": "_GET_STATUS_OF_DRAW_LOW_QUALITY_PHOTO",
 			"jhash": "0xCFCDC518",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x6A12D88881435DCA": {
@@ -23296,13 +23296,13 @@
 			"build": "323"
 		},
 		"0x1CBA05AE7BD7EE05": {
-			"name": "_0x1CBA05AE7BD7EE05",
+			"name": "_SET_TRANSITION_TIMECYCLE_MODIFIER_STOP_WITH_BLEND",
 			"jhash": "0x56345F6B",
-			"comment": "SET_TRA*",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "strength"
 				}
 			],
 			"return_type": "void",
@@ -23455,7 +23455,7 @@
 			"build": "323"
 		},
 		"0x2C328AF17210F009": {
-			"name": "_SET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
+			"name": "_ENABLE_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
 			"jhash": "",
 			"comment": "ENABLE_*\nThe same as SET_TIMECYCLE_MODIFIER_STRENGTH but for the secondary timecycle modifier.",
 			"params": [
@@ -23465,7 +23465,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH"
+			]
 		},
 		"0x2BF72AD5B41AA739": {
 			"name": "_RESET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH",
@@ -62790,12 +62793,12 @@
 			"build": "323"
 		},
 		"0xA0CEFCEA390AAB9B": {
-			"name": "_0xA0CEFCEA390AAB9B",
+			"name": "_CLEAR_SUPPRESSED_PAD_RUMBLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -71918,17 +71921,17 @@
 			"build": "323"
 		},
 		"0x9A77DFD295E29B09": {
-			"name": "_0x9A77DFD295E29B09",
+			"name": "_SET_PED_SCARED_WHEN_USING_SCENARIO",
 			"jhash": "0xC08FE5F6",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -73718,9 +73721,9 @@
 			"build": "323"
 		},
 		"0x511F1A683387C7E2": {
-			"name": "_0x511F1A683387C7E2",
+			"name": "_GET_TRACKED_PED_VISIBILITY",
 			"jhash": "0x5B1B70AA",
-			"comment": "GET_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
