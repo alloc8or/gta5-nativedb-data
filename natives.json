@@ -2117,9 +2117,9 @@
 			"build": "2189"
 		},
 		"0x49B99BF3FDA89A7A": {
-			"name": "_CAN_PED_SPEAK",
+			"name": "DOES_CONTEXT_EXIST_FOR_THIS_PED",
 			"jhash": "0x8BD5F11E",
-			"comment": "Checks if the ped can play the speech or has the speech file, last parameter is usually 0\n\nDOES_C*",
+			"comment": "Checks if the ped can play the speech or has the speech file, last parameter is usually false.",
 			"params": [
 				{
 					"type": "Ped",
@@ -2135,7 +2135,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CAN_PED_SPEAK"
+			]
 		},
 		"0x049E937F18F4020C": {
 			"name": "IS_PED_IN_CURRENT_CONVERSATION",
