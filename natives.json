@@ -49370,7 +49370,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
+					"type": "Any",
 					"name": "p1"
 				},
 				{
