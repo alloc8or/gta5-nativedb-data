@@ -27202,7 +27202,7 @@
 			"build": "323"
 		},
 		"0x2790F4B17D098E26": {
-			"name": "_0x2790F4B17D098E26",
+			"name": "_SET_FORCE_BLIP_ROUTES_ON_FOOT",
 			"jhash": "",
 			"comment": "SET_F*",
 			"params": [
@@ -27215,13 +27215,13 @@
 			"build": "573"
 		},
 		"0x6CDD58146A436083": {
-			"name": "_0x6CDD58146A436083",
+			"name": "_SET_USE_WAYPOINT_AS_DESTINATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -73724,7 +73724,7 @@
 			"build": "323"
 		},
 		"0x511F1A683387C7E2": {
-			"name": "_GET_TRACKED_PED_VISIBILITY",
+			"name": "GET_TRACKED_PED_PIXELCOUNT",
 			"jhash": "0x5B1B70AA",
 			"comment": "",
 			"params": [
@@ -73734,7 +73734,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_TRACKED_PED_VISIBILITY"
+			]
 		},
 		"0x4C5E1F087CD10BB7": {
 			"name": "IS_PED_TRACKED",
@@ -85132,7 +85135,7 @@
 			"build": "323"
 		},
 		"0xA0F93D5465B3094D": {
-			"name": "_0xA0F93D5465B3094D",
+			"name": "LEADERBOARDS2_READ_BY_HELP_PURPLE_START",
 			"jhash": "0xC977D6E2",
 			"comment": "",
 			"params": [
@@ -85145,7 +85148,7 @@
 			"build": "323"
 		},
 		"0x71B008056E5692D6": {
-			"name": "_0x71B008056E5692D6",
+			"name": "LEADERBOARDS2_READ_BY_HELP_PURPLE_END",
 			"jhash": "0xF2DB6A82",
 			"comment": "",
 			"params": [],
@@ -85153,7 +85156,7 @@
 			"build": "323"
 		},
 		"0x34770B9CE0E03B91": {
-			"name": "_0x34770B9CE0E03B91",
+			"name": "LEADERBOARDS2_READ_BY_HELP_PURPLE_INFO",
 			"jhash": "0x766A74FE",
 			"comment": "",
 			"params": [
@@ -85170,7 +85173,7 @@
 			"build": "323"
 		},
 		"0x88578F6EC36B4A3A": {
-			"name": "_0x88578F6EC36B4A3A",
+			"name": "LEADERBOARDS2_READ_BY_HELP_PURPLE_INT",
 			"jhash": "0x6B90E730",
 			"comment": "",
 			"params": [
@@ -85187,7 +85190,7 @@
 			"build": "323"
 		},
 		"0x38491439B6BA7F7D": {
-			"name": "_0x38491439B6BA7F7D",
+			"name": "LEADERBOARDS2_READ_BY_HELP_PURPLE_FLOAT",
 			"jhash": "0x509A286F",
 			"comment": "",
 			"params": [
@@ -89079,9 +89082,9 @@
 			"build": "323"
 		},
 		"0x5F2013F8BC24EE69": {
-			"name": "_0x5F2013F8BC24EE69",
+			"name": "SET_PLAYER_SHORT_SWITCH_STYLE",
 			"jhash": "0xF0BD420D",
-			"comment": "SET_PLAYER_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -99788,7 +99791,7 @@
 		"0xE38CB9D7D39FDBCC": {
 			"name": "_EJECT_JB700_ROOF",
 			"jhash": "0xFDA7B6CA",
-			"comment": "",
+			"comment": "POPOUT_TEMP_ACTION_IN_DIRECTION?",
 			"params": [
 				{
 					"type": "Vehicle",
