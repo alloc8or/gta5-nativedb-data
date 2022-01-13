@@ -101538,7 +101538,7 @@
 			]
 		},
 		"0x2311DD7159F00582": {
-			"name": "_0x2311DD7159F00582",
+			"name": "SET_VEHICLE_RESPECTS_LOCKS_WHEN_HAS_DRIVER",
 			"jhash": "0x758C5E2E",
 			"comment": "",
 			"params": [
@@ -101602,9 +101602,9 @@
 			"build": "323"
 		},
 		"0xBCDC5017D3CE1E9E": {
-			"name": "_IS_VEHICLE_DAMAGED",
+			"name": "GET_DOES_VEHICLE_HAVE_DAMAGE_DECALS",
 			"jhash": "0xDAC523BC",
-			"comment": "Appears to return true if the vehicle has any damage, including cosmetically.\n\nGET_*",
+			"comment": "Appears to return true if the vehicle has any damage, including cosmetically.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -101612,7 +101612,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_VEHICLE_DAMAGED"
+			]
 		},
 		"0x3E933CFF7B111C22": {
 			"name": "IS_VEHICLE_DOOR_FULLY_OPEN",
