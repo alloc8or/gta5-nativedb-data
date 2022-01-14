@@ -8685,7 +8685,7 @@
 			"build": "323"
 		},
 		"0xDC9DA9E8789F5246": {
-			"name": "_0xDC9DA9E8789F5246",
+			"name": "SET_CINEMATIC_NEWS_CHANNEL_ACTIVE_THIS_UPDATE",
 			"jhash": "0x4938C82F",
 			"comment": "",
 			"params": [],
@@ -66574,36 +66574,36 @@
 			"build": "323"
 		},
 		"0x2F074C904D85129E": {
-			"name": "_0x2F074C904D85129E",
+			"name": "_SET_PED_PERCEPTION_OVERRIDE_THIS_FRAME",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "seeingRange"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "seeingRangePeripheral"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "hearingRange"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "visualFieldMinAzimuthAngle"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "visualFieldMaxAzimuthAngle"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "fieldOfGazeMaxAngle"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				}
 			],
@@ -66611,9 +66611,9 @@
 			"build": "393"
 		},
 		"0xEC4B4B3B9908052A": {
-			"name": "_0xEC4B4B3B9908052A",
+			"name": "SET_PED_INJURED_ON_GROUND_BEHAVIOUR",
 			"jhash": "0xF30658D2",
-			"comment": "SET_PED_*\n\nHas most likely to do with some shooting attributes as it sets the float which is in the same range as shootRate.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -66628,13 +66628,13 @@
 			"build": "323"
 		},
 		"0x733C87D4CE22BEA2": {
-			"name": "_0x733C87D4CE22BEA2",
+			"name": "DISABLE_PED_INJURED_ON_GROUND_BEHAVIOUR",
 			"jhash": "0x43709044",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -78059,9 +78059,9 @@
 			"build": "463"
 		},
 		"0xCAC57395B151135F": {
-			"name": "_0xCAC57395B151135F",
+			"name": "SET_PLAYER_CAN_COLLECT_DROPPED_MONEY",
 			"jhash": "0x00563E0D",
-			"comment": "Found in \"director_mode\", \"fm_bj_race_controler\", \"fm_deathmatch_controler\", \"fm_impromptu_dm_controler\", \"fm_race_controler\", \"gb_deathmatch\".",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
