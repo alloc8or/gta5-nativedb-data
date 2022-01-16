@@ -38544,31 +38544,15 @@
 		"0x6874E2190B0C1972": {
 			"name": "FIND_SPAWN_POINT_IN_DIRECTION",
 			"jhash": "0x71AEFD77",
-			"comment": "Finds a position ahead of the player by predicting the players next actions.\nThe positions match path finding node positions.\nWhen roads diverge, the position may rapidly change between two or more positions. This is due to the engine not being certain of which path the player will take.\n\n=======================================================\nI may sort this with alter research, but if someone\nalready knows please tell what the difference in \nX2, Y2, Z2 is. I doubt it's rotation. Is it like \ncheckpoints where X1, Y1, Z1 is your/a position and\nX2, Y2, Z2 is a given position ahead of that position?\n=======================================================",
+			"comment": "Finds a position ahead of the player by predicting the players next actions.\nThe positions match path finding node positions.\nWhen roads diverge, the position may rapidly change between two or more positions. This is due to the engine not being certain of which path the player will take.",
 			"params": [
 				{
-					"type": "float",
-					"name": "x1"
+					"type": "Vector3",
+					"name": "position"
 				},
 				{
-					"type": "float",
-					"name": "y1"
-				},
-				{
-					"type": "float",
-					"name": "z1"
-				},
-				{
-					"type": "float",
-					"name": "x2"
-				},
-				{
-					"type": "float",
-					"name": "y2"
-				},
-				{
-					"type": "float",
-					"name": "z2"
+					"type": "Vector3",
+					"name": "forwardVector"
 				},
 				{
 					"type": "float",
