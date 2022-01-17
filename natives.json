@@ -38547,12 +38547,28 @@
 			"comment": "Finds a position ahead of the player by predicting the players next actions.\nThe positions match path finding node positions.\nWhen roads diverge, the position may rapidly change between two or more positions. This is due to the engine not being certain of which path the player will take.",
 			"params": [
 				{
-					"type": "Vector3",
-					"name": "position"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Vector3",
-					"name": "forwardVector"
+					"type": "float",
+					"name": "posY"
+				},
+				{
+					"type": "float",
+					"name": "posZ"
+				},
+				{
+					"type": "float",
+					"name": "fwdVecX"
+				},
+				{
+					"type": "float",
+					"name": "fwdVecY"
+				},
+				{
+					"type": "float",
+					"name": "fwdVecZ"
 				},
 				{
 					"type": "float",
