@@ -18020,7 +18020,7 @@
 			"build": "323"
 		},
 		"0x5BCA583A583194DB": {
-			"name": "_DRAW_SPOT_LIGHT_WITH_SHADOW",
+			"name": "DRAW_SHADOWED_SPOT_LIGHT",
 			"jhash": "0x32BF9598",
 			"comment": "",
 			"params": [
@@ -18086,7 +18086,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DRAW_SPOT_LIGHT_WITH_SHADOW"
+			]
 		},
 		"0xC9B18B4619F48F7B": {
 			"name": "FADE_UP_PED_LIGHT",
@@ -39003,7 +39006,7 @@
 			"build": "323"
 		},
 		"0x918C7B2D2FF3928B": {
-			"name": "_ADD_DISPATCH_SPAWN_BLOCKING_ANGLED_AREA",
+			"name": "ADD_DISPATCH_SPAWN_ANGLED_BLOCKING_AREA",
 			"jhash": "0xF557BAF9",
 			"comment": "To remove, see: REMOVE_DISPATCH_SPAWN_BLOCKING_AREA\nSee IS_POINT_IN_ANGLED_AREA for the definition of an angled area.",
 			"params": [
@@ -39037,7 +39040,10 @@
 				}
 			],
 			"return_type": "Any",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ADD_DISPATCH_SPAWN_BLOCKING_ANGLED_AREA"
+			]
 		},
 		"0x2D4259F1FEB81DA9": {
 			"name": "_ADD_DISPATCH_SPAWN_BLOCKING_AREA",
@@ -61707,7 +61713,7 @@
 			"build": "323"
 		},
 		"0xA2C1F5E92AFE49ED": {
-			"name": "_0xA2C1F5E92AFE49ED",
+			"name": "CLEAR_ALL_PICKUP_REWARD_TYPE_SUPPRESSION",
 			"jhash": "0xB241806C",
 			"comment": "CLEAR_*",
 			"params": [],
@@ -61715,7 +61721,7 @@
 			"build": "323"
 		},
 		"0x762DB2D380B48D04": {
-			"name": "_0x762DB2D380B48D04",
+			"name": "CLEAR_PICKUP_REWARD_TYPE_SUPPRESSION",
 			"jhash": "0xD1BAAFB7",
 			"comment": "",
 			"params": [
