@@ -104806,7 +104806,7 @@
 			"build": "2189"
 		},
 		"0x639431E895B9AA57": {
-			"name": "_IS_VEHICLE_SEAT_ACCESSIBLE",
+			"name": "IS_ENTRY_POINT_FOR_SEAT_CLEAR",
 			"jhash": "0xAB0E79EB",
 			"comment": "Check if a vehicle seat is accessible. If you park your vehicle near a wall and the ped cannot enter/exit this side, the return value toggles from true (not blocked) to false (blocked).\n\nseatIndex  = -1 being the driver seat.\nUse GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(vehicle) - 1 for last seat index.\nside = only relevant for bikes/motorcycles to check if the left (false)/right (true) side is blocked.\nonEnter = check if you can enter (true) or exit (false) a vehicle.",
 			"params": [
@@ -104832,7 +104832,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_VEHICLE_SEAT_ACCESSIBLE"
+			]
 		},
 		"0xC0572928C0ABFDA3": {
 			"name": "_GET_ENTRY_POSITION_OF_DOOR",
