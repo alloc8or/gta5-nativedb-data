@@ -77105,13 +77105,13 @@
 			"build": "2060"
 		},
 		"0x823EC8E82BA45986": {
-			"name": "_0x823EC8E82BA45986",
+			"name": "_RESET_WANTED_LEVEL_HIDDEN_EVASION_TIME",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
