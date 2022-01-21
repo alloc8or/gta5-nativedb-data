@@ -34727,12 +34727,15 @@
 			"build": "323"
 		},
 		"0x957E790EA1727B64": {
-			"name": "_CLEAR_CLOUD_HAT",
+			"name": "UNLOAD_ALL_CLOUD_HATS",
 			"jhash": "0x2D7787BC",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_CLEAR_CLOUD_HAT"
+			]
 		},
 		"0xF36199225D6D8C86": {
 			"name": "_SET_CLOUD_HAT_OPACITY",
@@ -106584,9 +106587,9 @@
 			"build": "323"
 		},
 		"0x5991A01434CE9677": {
-			"name": "_ARE_PLANE_WINGS_INTACT",
+			"name": "ARE_WINGS_OF_PLANE_INTACT",
 			"jhash": "0xAF8CB3DF",
-			"comment": "ADD_A_MARKER_OVER_VEHICLE was a hash collision!!!\n\nCan be used for planes only!",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106597,7 +106600,8 @@
 			"build": "323",
 			"old_names": [
 				"ADD_A_MARKER_OVER_VEHICLE",
-				"_ARE_VEHICLE_WINGS_INTACT"
+				"_ARE_VEHICLE_WINGS_INTACT",
+				"_ARE_PLANE_WINGS_INTACT"
 			]
 		},
 		"0xB264C4D2F2B0A78B": {
@@ -107515,7 +107519,7 @@
 			]
 		},
 		"0xF78F94D60248C737": {
-			"name": "_0xF78F94D60248C737",
+			"name": "ARE_PLANE_CONTROL_PANELS_INTACT",
 			"jhash": "0x3B51B348",
 			"comment": "",
 			"params": [
