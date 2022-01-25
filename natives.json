@@ -89642,12 +89642,15 @@
 			"build": "323"
 		},
 		"0x3D3D8B3BE5A83D35": {
-			"name": "_GET_USED_CREATOR_MODEL_MEMORY_PERCENTAGE",
+			"name": "GET_USED_CREATOR_BUDGET",
 			"jhash": "0x3E9C4CBE",
 			"comment": "0.0 = no memory used\n1.0 = all memory used\n\nMaximum model memory (as defined in common\\data\\missioncreatordata.meta) is 100 MiB\n\nGET_*",
 			"params": [],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_USED_CREATOR_MODEL_MEMORY_PERCENTAGE"
+			]
 		},
 		"0x9A9D1BA639675CF1": {
 			"name": "_SET_ISLAND_HOPPER_ENABLED",
