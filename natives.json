@@ -85365,7 +85365,7 @@
 			"build": "323"
 		},
 		"0x11FF1C80276097ED": {
-			"name": "_UPDATE_STAT_INT",
+			"name": "PRESENCE_EVENT_UPDATESTAT_INT",
 			"jhash": "0x4AC39C6C",
 			"comment": "",
 			"params": [
@@ -85383,10 +85383,13 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_UPDATE_STAT_INT"
+			]
 		},
 		"0x30A6614C1F7799B8": {
-			"name": "_UPDATE_STAT_FLOAT",
+			"name": "PRESENCE_EVENT_UPDATESTAT_FLOAT",
 			"jhash": "0x3E69E7C3",
 			"comment": "",
 			"params": [
@@ -85404,28 +85407,31 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_UPDATE_STAT_FLOAT"
+			]
 		},
 		"0x6483C25849031C4F": {
-			"name": "_0x6483C25849031C4F",
+			"name": "PRESENCE_EVENT_UPDATESTAT_INT_WITH_STRING",
 			"jhash": "0x2FFD2FA5",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "statHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "value"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "const char*",
+					"name": "string"
 				}
 			],
 			"return_type": "void",
