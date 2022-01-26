@@ -48061,7 +48061,7 @@
 		"0x8B6A4DD0AF9CE215": {
 			"name": "NETWORK_SESSION_SET_MATCHMAKING_GROUP_MAX",
 			"jhash": "0x5F29A7E0",
-			"comment": "playerTypes:\n0 = regular joiner\n4 = spectator\n8 = unknown",
+			"comment": "playerType is an unsigned int from 0 to 4\n0 = regular joiner\n4 = spectator",
 			"params": [
 				{
 					"type": "int",
