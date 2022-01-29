@@ -62850,11 +62850,11 @@
 			"build": "323"
 		},
 		"0x25AAA32BDC98F2A3": {
-			"name": "_0x25AAA32BDC98F2A3",
+			"name": "_GET_IS_USING_ALTERNATE_HANDBRAKE",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1365"
 		},
 		"0x0F70731BACCFBB96": {
