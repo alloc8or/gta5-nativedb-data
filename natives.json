@@ -6169,9 +6169,9 @@
 			"build": "323"
 		},
 		"0x661B5C8654ADD825": {
-			"name": "_0x661B5C8654ADD825",
+			"name": "_SET_RADAR_ROT_TO_CAMERA_ROT",
 			"jhash": "0xE1A0B2F1",
-			"comment": "SET_CAM_*",
+			"comment": "Rotates the radar to match the camera's Z rotation",
 			"params": [
 				{
 					"type": "Cam",
@@ -6179,24 +6179,24 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xA2767257A320FC82": {
-			"name": "_0xA2767257A320FC82",
+			"name": "_SET_CAM_SMOOTH_SHADOWS",
 			"jhash": "",
-			"comment": "",
+			"comment": "When set to true shadows appear more smooth but less detailed.\nSet to false by default.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -109629,16 +109629,16 @@
 			"build": "1290"
 		},
 		"0x3A9128352EAC9E85": {
-			"name": "_0x3A9128352EAC9E85",
+			"name": "_ARE_CHERNOBOG_STABILIZERS_DEPLOYED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Checks if Chernobog's stabilizers are deployed or not.\nThese are the metal supports that allow it to fire.\nThis native only applies to the Chernobog.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1290"
 		},
 		"0x8DC9675797123522": {
