@@ -6169,7 +6169,7 @@
 			"build": "323"
 		},
 		"0x661B5C8654ADD825": {
-			"name": "_SET_RADAR_ROT_TO_CAMERA_ROT",
+			"name": "_SET_CAM_CONTROLS_RADAR_ROTATION",
 			"jhash": "0xE1A0B2F1",
 			"comment": "Rotates the radar to match the camera's Z rotation",
 			"params": [
