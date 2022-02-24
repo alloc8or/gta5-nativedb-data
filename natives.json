@@ -1159,7 +1159,7 @@
 		"0x7345BDD95E62E0F2": {
 			"name": "REQUEST_MISSION_AUDIO_BANK",
 			"jhash": "0x916E37CA",
-			"comment": " All occurrences and usages found in b617d: pastebin.com/NzZZ2Tmm\n ",
+			"comment": "All occurrences and usages found in b617d: pastebin.com/NzZZ2Tmm\nFull list of mission audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/missionAudioBankNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -1180,7 +1180,7 @@
 		"0xFE02FFBED8CA9D99": {
 			"name": "REQUEST_AMBIENT_AUDIO_BANK",
 			"jhash": "0x23C88BC7",
-			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: pastebin.com/XZ1tmGEz",
+			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: pastebin.com/XZ1tmGEz\nFull list of ambient audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientAudioBankNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -1201,7 +1201,7 @@
 		"0x2F844A8B08D76685": {
 			"name": "REQUEST_SCRIPT_AUDIO_BANK",
 			"jhash": "0x21322887",
-			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: pastebin.com/AkmDAVn6",
+			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: pastebin.com/AkmDAVn6\nFull list of script audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -1301,7 +1301,7 @@
 		"0x77ED170667F50170": {
 			"name": "RELEASE_NAMED_SCRIPT_AUDIO_BANK",
 			"jhash": "0x16707ABC",
-			"comment": "",
+			"comment": "Full list of script audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3137,7 +3137,7 @@
 		"0x3B4BF5F0859204D9": {
 			"name": "SET_CUTSCENE_AUDIO_OVERRIDE",
 			"jhash": "0xCE1332B7",
-			"comment": "All occurrences found in b617d, sorted alphabetically and identical lines removed: \n\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_AK\");\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_CUSTOM\");\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_TOOTHLESS\");",
+			"comment": "All occurrences found in b617d, sorted alphabetically and identical lines removed: \n\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_AK\");\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_CUSTOM\");\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_TOOTHLESS\");\nFull list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3170,7 +3170,7 @@
 		"0xDFEBD56D9BD1EB16": {
 			"name": "PLAY_POLICE_REPORT",
 			"jhash": "0x3F277B62",
-			"comment": "Plays the given police radio message.\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/GBnsQ5hr",
+			"comment": "Plays the given police radio message.\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/GBnsQ5hr\nFull list of police report names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/policeReportNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4018,7 +4018,7 @@
 		"0x013A80FC08F6E4F2": {
 			"name": "START_AUDIO_SCENE",
 			"jhash": "0xE48D757B",
-			"comment": "Used to prepare a scene where the surrounding sound is muted or a bit changed. This does not play any sound.\n\nList of all usable scene names found in b617d. Sorted alphabetically and identical names removed: pastebin.com/MtM9N9CC",
+			"comment": "Used to prepare a scene where the surrounding sound is muted or a bit changed. This does not play any sound.\n\nList of all usable scene names found in b617d. Sorted alphabetically and identical names removed: pastebin.com/MtM9N9CC\nFull list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4031,7 +4031,7 @@
 		"0xDFE8422B3B94E688": {
 			"name": "STOP_AUDIO_SCENE",
 			"jhash": "0xA08D8C58",
-			"comment": "",
+			"comment": "Full list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4052,7 +4052,7 @@
 		"0xB65B60556E2A9225": {
 			"name": "IS_AUDIO_SCENE_ACTIVE",
 			"jhash": "0xACBED05C",
-			"comment": "",
+			"comment": "Full list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4065,7 +4065,7 @@
 		"0xEF21A9EF089A2668": {
 			"name": "SET_AUDIO_SCENE_VARIABLE",
 			"jhash": "0x19BB3CE8",
-			"comment": "",
+			"comment": "Full list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4156,7 +4156,7 @@
 		"0x1E5185B72EF5158A": {
 			"name": "PREPARE_MUSIC_EVENT",
 			"jhash": "0x534A5C1C",
-			"comment": "All music event names found in the b617d scripts: pastebin.com/GnYt0R3P",
+			"comment": "All music event names found in the b617d scripts: pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4169,7 +4169,7 @@
 		"0x5B17A90291133DA5": {
 			"name": "CANCEL_MUSIC_EVENT",
 			"jhash": "0x89FF942D",
-			"comment": "All music event names found in the b617d scripts: pastebin.com/GnYt0R3P",
+			"comment": "All music event names found in the b617d scripts: pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4182,7 +4182,7 @@
 		"0x706D57B0F50DA710": {
 			"name": "TRIGGER_MUSIC_EVENT",
 			"jhash": "0xB6094948",
-			"comment": "List of all usable event names found in b617d used with this native. Sorted alphabetically and identical names removed: pastebin.com/RzDFmB1W\n\nAll music event names found in the b617d scripts: pastebin.com/GnYt0R3P",
+			"comment": "List of all usable event names found in b617d used with this native. Sorted alphabetically and identical names removed: pastebin.com/RzDFmB1W\n\nAll music event names found in the b617d scripts: pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4316,7 +4316,7 @@
 		"0x9D74AE343DB65533": {
 			"name": "PREPARE_ALARM",
 			"jhash": "0x084932E8",
-			"comment": "Example:\n\nbool prepareAlarm = AUDIO::PREPARE_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\");",
+			"comment": "Example:\n\nbool prepareAlarm = AUDIO::PREPARE_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\");\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4329,7 +4329,7 @@
 		"0x0355EF116C4C97B2": {
 			"name": "START_ALARM",
 			"jhash": "0x703F524B",
-			"comment": "Example:\n\nThis will start the alarm at Fort Zancudo.\n\nAUDIO::START_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n\nFirst parameter (char) is the name of the alarm.\nSecond parameter (bool) is unknown, it does not seem to make a difference if this one is 0 or 1.\n\n----------\n\nIt DOES make a difference but it has to do with the duration or something I dunno yet\n\n----------\n\n Found in the b617d scripts:\n\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS\", 0);\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS_UPPER\", 1);\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS_UPPER_B\", 0);\n AUDIO::START_ALARM(\"BIG_SCORE_HEIST_VAULT_ALARMS\", a_0);\n AUDIO::START_ALARM(\"FBI_01_MORGUE_ALARMS\", 1);\n AUDIO::START_ALARM(\"FIB_05_BIOTECH_LAB_ALARMS\", 0);\n AUDIO::START_ALARM(\"JEWEL_STORE_HEIST_ALARMS\", 0);\n AUDIO::START_ALARM(\"PALETO_BAY_SCORE_ALARM\", 1);\n AUDIO::START_ALARM(\"PALETO_BAY_SCORE_CHICKEN_FACTORY_ALARM\", 0);\n AUDIO::START_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n AUDIO::START_ALARM(\"PORT_OF_LS_HEIST_SHIP_ALARMS\", 0);\n AUDIO::START_ALARM(\"PRISON_ALARMS\", 0);\n AUDIO::START_ALARM(\"PROLOGUE_VAULT_ALARMS\", 0);",
+			"comment": "Example:\n\nThis will start the alarm at Fort Zancudo.\n\nAUDIO::START_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n\nFirst parameter (char) is the name of the alarm.\nSecond parameter (bool) is unknown, it does not seem to make a difference if this one is 0 or 1.\n\n----------\n\nIt DOES make a difference but it has to do with the duration or something I dunno yet\n\n----------\n\n Found in the b617d scripts:\n\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS\", 0);\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS_UPPER\", 1);\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS_UPPER_B\", 0);\n AUDIO::START_ALARM(\"BIG_SCORE_HEIST_VAULT_ALARMS\", a_0);\n AUDIO::START_ALARM(\"FBI_01_MORGUE_ALARMS\", 1);\n AUDIO::START_ALARM(\"FIB_05_BIOTECH_LAB_ALARMS\", 0);\n AUDIO::START_ALARM(\"JEWEL_STORE_HEIST_ALARMS\", 0);\n AUDIO::START_ALARM(\"PALETO_BAY_SCORE_ALARM\", 1);\n AUDIO::START_ALARM(\"PALETO_BAY_SCORE_CHICKEN_FACTORY_ALARM\", 0);\n AUDIO::START_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n AUDIO::START_ALARM(\"PORT_OF_LS_HEIST_SHIP_ALARMS\", 0);\n AUDIO::START_ALARM(\"PRISON_ALARMS\", 0);\n AUDIO::START_ALARM(\"PROLOGUE_VAULT_ALARMS\", 0);\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4346,7 +4346,7 @@
 		"0xA1CADDCD98415A41": {
 			"name": "STOP_ALARM",
 			"jhash": "0xF987BE8C",
-			"comment": "Example:\n\nThis will stop the alarm at Fort Zancudo.\n\nAUDIO::STOP_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n\nFirst parameter (char) is the name of the alarm.\nSecond parameter (bool) has to be true (1) to have any effect.",
+			"comment": "Example:\n\nThis will stop the alarm at Fort Zancudo.\n\nAUDIO::STOP_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n\nFirst parameter (char) is the name of the alarm.\nSecond parameter (bool) has to be true (1) to have any effect.\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4376,7 +4376,7 @@
 		"0x226435CB96CCFC8C": {
 			"name": "IS_ALARM_PLAYING",
 			"jhash": "0x9D8E1D23",
-			"comment": "Example:\n\nbool playing = AUDIO::IS_ALARM_PLAYING(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\");",
+			"comment": "Example:\n\nbool playing = AUDIO::IS_ALARM_PLAYING(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\");\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -9179,7 +9179,7 @@
 		"0x7A86743F475D9E09": {
 			"name": "REQUEST_CUTSCENE",
 			"jhash": "0xB5977853",
-			"comment": "flags: Usually 8",
+			"comment": "flags: Usually 8\nFull list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -9196,7 +9196,7 @@
 		"0xC23DE0E91C30B58C": {
 			"name": "REQUEST_CUTSCENE_WITH_PLAYBACK_LIST",
 			"jhash": "0xD98F656A",
-			"comment": "flags: Usually 8\n\nplaybackFlags: Which scenes should be played.\nExample: 0x105 (bit 0, 2 and 8 set) will enable scene 1, 3 and 9.",
+			"comment": "flags: Usually 8\n\nplaybackFlags: Which scenes should be played.\nExample: 0x105 (bit 0, 2 and 8 set) will enable scene 1, 3 and 9.\nFull list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -9236,7 +9236,7 @@
 		"0x228D3D94F8A11C3C": {
 			"name": "HAS_THIS_CUTSCENE_LOADED",
 			"jhash": "0x3C5619F2",
-			"comment": "",
+			"comment": "Full list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -9304,7 +9304,7 @@
 		"0x06A3524161C502BA": {
 			"name": "REQUEST_CUT_FILE",
 			"jhash": "0x0D732CD6",
-			"comment": "Simply loads the cutscene and doesn't do extra stuff that REQUEST_CUTSCENE does.",
+			"comment": "Simply loads the cutscene and doesn't do extra stuff that REQUEST_CUTSCENE does.\nFull list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -9317,7 +9317,7 @@
 		"0xA1C996C2A744262E": {
 			"name": "HAS_CUT_FILE_LOADED",
 			"jhash": "0x56D5B144",
-			"comment": "Simply checks if the cutscene has loaded and doesn't check via CutSceneManager as opposed to HAS_[THIS]_CUTSCENE_LOADED.",
+			"comment": "Simply checks if the cutscene has loaded and doesn't check via CutSceneManager as opposed to HAS_[THIS]_CUTSCENE_LOADED.\nFull list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -9330,7 +9330,7 @@
 		"0xD00D76A7DFC9D852": {
 			"name": "REMOVE_CUT_FILE",
 			"jhash": "0xB70D7C6D",
-			"comment": "Simply unloads the cutscene and doesn't do extra stuff that REMOVE_CUTSCENE does.",
+			"comment": "Simply unloads the cutscene and doesn't do extra stuff that REMOVE_CUTSCENE does.\nFull list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -9343,7 +9343,7 @@
 		"0x0ABC54DE641DC0FC": {
 			"name": "_GET_CUT_FILE_NUM_SECTIONS",
 			"jhash": "",
-			"comment": "Jenkins hash probably is 0xFD8B1AC2",
+			"comment": "Jenkins hash probably is 0xFD8B1AC2\nFull list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -21407,7 +21407,7 @@
 		"0x02B1F2A72E0F5325": {
 			"name": "_START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY_BONE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Full list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -58932,7 +58932,7 @@
 		"0x509D5878EB39E842": {
 			"name": "CREATE_OBJECT",
 			"jhash": "0x2F7AA05C",
-			"comment": "",
+			"comment": "List of object models that can be created without any additional effort like making sure ytyp is loaded etc: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ObjectList.ini",
 			"params": [
 				{
 					"type": "Hash",
@@ -58969,7 +58969,7 @@
 		"0x9A294B2138ABB884": {
 			"name": "CREATE_OBJECT_NO_OFFSET",
 			"jhash": "0x58040420",
-			"comment": "",
+			"comment": "List of object models that can be created without any additional effort like making sure ytyp is loaded etc: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ObjectList.ini",
 			"params": [
 				{
 					"type": "Hash",
@@ -71374,7 +71374,7 @@
 		"0x46DF918788CB093F": {
 			"name": "APPLY_PED_DAMAGE_PACK",
 			"jhash": "0x208D0CB8",
-			"comment": "Damage Packs:\n\n\"SCR_TrevorTreeBang\"\n\"HOSPITAL_0\"\n\"HOSPITAL_1\"\n\"HOSPITAL_2\"\n\"HOSPITAL_3\"\n\"HOSPITAL_4\"\n\"HOSPITAL_5\"\n\"HOSPITAL_6\"\n\"HOSPITAL_7\"\n\"HOSPITAL_8\"\n\"HOSPITAL_9\"\n\"SCR_Dumpster\"\n\"BigHitByVehicle\"\n\"SCR_Finale_Michael_Face\"\n\"SCR_Franklin_finb\"\n\"SCR_Finale_Michael\"\n\"SCR_Franklin_finb2\"\n\"Explosion_Med\"\n\"SCR_Torture\"\n\"SCR_TracySplash\"\n\"Skin_Melee_0\"\n\nAdditional damage packs:\n\ngist.github.com/alexguirre/f3f47f75ddcf617f416f3c8a55ae2227",
+			"comment": "Damage Packs:\n\n\"SCR_TrevorTreeBang\"\n\"HOSPITAL_0\"\n\"HOSPITAL_1\"\n\"HOSPITAL_2\"\n\"HOSPITAL_3\"\n\"HOSPITAL_4\"\n\"HOSPITAL_5\"\n\"HOSPITAL_6\"\n\"HOSPITAL_7\"\n\"HOSPITAL_8\"\n\"HOSPITAL_9\"\n\"SCR_Dumpster\"\n\"BigHitByVehicle\"\n\"SCR_Finale_Michael_Face\"\n\"SCR_Franklin_finb\"\n\"SCR_Finale_Michael\"\n\"SCR_Franklin_finb2\"\n\"Explosion_Med\"\n\"SCR_Torture\"\n\"SCR_TracySplash\"\n\"Skin_Melee_0\"\n\nAdditional damage packs:\n\ngist.github.com/alexguirre/f3f47f75ddcf617f416f3c8a55ae2227\nFull list of ped damage packs by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedDamagePacks.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -94820,7 +94820,7 @@
 		"0xF9034C136C9E00D3": {
 			"name": "DOES_SCENARIO_GROUP_EXIST",
 			"jhash": "0x5F072EB9",
-			"comment": "Occurrences in the b617d scripts:\n\n\"ARMY_GUARD\",\n\"ARMY_HELI\",\n\"Cinema_Downtown\",\n\"Cinema_Morningwood\",\n\"Cinema_Textile\",\n\"City_Banks\",\n\"Countryside_Banks\",\n\"DEALERSHIP\",\n\"GRAPESEED_PLANES\",\n\"KORTZ_SECURITY\",\n\"LOST_BIKERS\",\n\"LSA_Planes\",\n\"LSA_Planes\",\n\"MP_POLICE\",\n\"Observatory_Bikers\", \n\"POLICE_POUND1\",\n\"POLICE_POUND2\",\n\"POLICE_POUND3\",\n\"POLICE_POUND4\",\n\"POLICE_POUND5\"\n\"QUARRY\",\n\"SANDY_PLANES\",\n\"SCRAP_SECURITY\",\n\"SEW_MACHINE\",\n\"SOLOMON_GATE\",\n\"Triathlon_1_Start\", \n\"Triathlon_2_Start\", \n\"Triathlon_3_Start\"\n\nSometimes used with IS_SCENARIO_GROUP_ENABLED:\nif (TASK::DOES_SCENARIO_GROUP_EXIST(\"Observatory_Bikers\") && (!TASK::IS_SCENARIO_GROUP_ENABLED(\"Observatory_Bikers\"))) {\nelse if (TASK::IS_SCENARIO_GROUP_ENABLED(\"BLIMP\")) {\n",
+			"comment": "Full list of scenario groups used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json\nOccurrences in the b617d scripts:\n\n\"ARMY_GUARD\",\n\"ARMY_HELI\",\n\"Cinema_Downtown\",\n\"Cinema_Morningwood\",\n\"Cinema_Textile\",\n\"City_Banks\",\n\"Countryside_Banks\",\n\"DEALERSHIP\",\n\"GRAPESEED_PLANES\",\n\"KORTZ_SECURITY\",\n\"LOST_BIKERS\",\n\"LSA_Planes\",\n\"LSA_Planes\",\n\"MP_POLICE\",\n\"Observatory_Bikers\", \n\"POLICE_POUND1\",\n\"POLICE_POUND2\",\n\"POLICE_POUND3\",\n\"POLICE_POUND4\",\n\"POLICE_POUND5\"\n\"QUARRY\",\n\"SANDY_PLANES\",\n\"SCRAP_SECURITY\",\n\"SEW_MACHINE\",\n\"SOLOMON_GATE\",\n\"Triathlon_1_Start\", \n\"Triathlon_2_Start\", \n\"Triathlon_3_Start\"\n\nSometimes used with IS_SCENARIO_GROUP_ENABLED:\nif (TASK::DOES_SCENARIO_GROUP_EXIST(\"Observatory_Bikers\") && (!TASK::IS_SCENARIO_GROUP_ENABLED(\"Observatory_Bikers\"))) {\nelse if (TASK::IS_SCENARIO_GROUP_ENABLED(\"BLIMP\")) {\n",
 			"params": [
 				{
 					"type": "const char*",
@@ -94833,7 +94833,7 @@
 		"0x367A09DED4E05B99": {
 			"name": "IS_SCENARIO_GROUP_ENABLED",
 			"jhash": "0x90991122",
-			"comment": " Occurrences in the b617d scripts: \n\n \"ARMY_GUARD\",\n \"ARMY_HELI\",\n \"BLIMP\",\n \"Cinema_Downtown\",\n \"Cinema_Morningwood\",\n \"Cinema_Textile\",\n \"City_Banks\",\n \"Countryside_Banks\",\n \"DEALERSHIP\",\n \"KORTZ_SECURITY\",\n \"LSA_Planes\",\n \"MP_POLICE\",\n \"Observatory_Bikers\",\n \"POLICE_POUND1\",\n \"POLICE_POUND2\",\n \"POLICE_POUND3\",\n \"POLICE_POUND4\",\n \"POLICE_POUND5\",\n \"Rampage1\",\n \"SANDY_PLANES\",\n \"SCRAP_SECURITY\",\n \"SEW_MACHINE\",\n \"SOLOMON_GATE\"\n\nSometimes used with DOES_SCENARIO_GROUP_EXIST:\nif (TASK::DOES_SCENARIO_GROUP_EXIST(\"Observatory_Bikers\") &&   (!TASK::IS_SCENARIO_GROUP_ENABLED(\"Observatory_Bikers\"))) {\nelse if (TASK::IS_SCENARIO_GROUP_ENABLED(\"BLIMP\")) {",
+			"comment": "Full list of scenario groups used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json\nOccurrences in the b617d scripts: \n\n \"ARMY_GUARD\",\n \"ARMY_HELI\",\n \"BLIMP\",\n \"Cinema_Downtown\",\n \"Cinema_Morningwood\",\n \"Cinema_Textile\",\n \"City_Banks\",\n \"Countryside_Banks\",\n \"DEALERSHIP\",\n \"KORTZ_SECURITY\",\n \"LSA_Planes\",\n \"MP_POLICE\",\n \"Observatory_Bikers\",\n \"POLICE_POUND1\",\n \"POLICE_POUND2\",\n \"POLICE_POUND3\",\n \"POLICE_POUND4\",\n \"POLICE_POUND5\",\n \"Rampage1\",\n \"SANDY_PLANES\",\n \"SCRAP_SECURITY\",\n \"SEW_MACHINE\",\n \"SOLOMON_GATE\"\n\nSometimes used with DOES_SCENARIO_GROUP_EXIST:\nif (TASK::DOES_SCENARIO_GROUP_EXIST(\"Observatory_Bikers\") &&   (!TASK::IS_SCENARIO_GROUP_ENABLED(\"Observatory_Bikers\"))) {\nelse if (TASK::IS_SCENARIO_GROUP_ENABLED(\"BLIMP\")) {",
 			"params": [
 				{
 					"type": "const char*",
@@ -94846,7 +94846,7 @@
 		"0x02C8E5B49848664E": {
 			"name": "SET_SCENARIO_GROUP_ENABLED",
 			"jhash": "0x116997B1",
-			"comment": "Occurrences in the b617d scripts: pastebin.com/Tvg2PRHU",
+			"comment": "Full list of scenario groups used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json\nOccurrences in the b617d scripts: pastebin.com/Tvg2PRHU",
 			"params": [
 				{
 					"type": "const char*",
@@ -94871,7 +94871,7 @@
 		"0x535E97E1F7FC0C6A": {
 			"name": "SET_EXCLUSIVE_SCENARIO_GROUP",
 			"jhash": "0x59DB8F26",
-			"comment": "Groups found in the scripts used with this native:\n\n\"AMMUNATION\",\n\"QUARRY\",\n\"Triathlon_1\",\n\"Triathlon_2\",\n\"Triathlon_3\"",
+			"comment": "Full list of scenario groups used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json\nGroups found in the scripts used with this native:\n\n\"AMMUNATION\",\n\"QUARRY\",\n\"Triathlon_1\",\n\"Triathlon_2\",\n\"Triathlon_3\"",
 			"params": [
 				{
 					"type": "const char*",
@@ -94892,7 +94892,7 @@
 		"0x3A815DB3EA088722": {
 			"name": "IS_SCENARIO_TYPE_ENABLED",
 			"jhash": "0xAE37E969",
-			"comment": "Occurrences in the b617d scripts:\n\"PROP_HUMAN_SEAT_CHAIR\",\n\"WORLD_HUMAN_DRINKING\",\n\"WORLD_HUMAN_HANG_OUT_STREET\",\n\"WORLD_HUMAN_SMOKING\",\n\"WORLD_MOUNTAIN_LION_WANDER\",\n\"WORLD_HUMAN_DRINKING\"\n\nSometimes used together with MISC::IS_STRING_NULL_OR_EMPTY in the scripts.\n\nscenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.\n",
+			"comment": "Full list of scenario types used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json\nOccurrences in the b617d scripts:\n\"PROP_HUMAN_SEAT_CHAIR\",\n\"WORLD_HUMAN_DRINKING\",\n\"WORLD_HUMAN_HANG_OUT_STREET\",\n\"WORLD_HUMAN_SMOKING\",\n\"WORLD_MOUNTAIN_LION_WANDER\",\n\"WORLD_HUMAN_DRINKING\"\n\nSometimes used together with MISC::IS_STRING_NULL_OR_EMPTY in the scripts.\n\nscenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.\n",
 			"params": [
 				{
 					"type": "const char*",
@@ -94905,7 +94905,7 @@
 		"0xEB47EC4E34FB7EE1": {
 			"name": "SET_SCENARIO_TYPE_ENABLED",
 			"jhash": "0xDB18E5DE",
-			"comment": "seems to enable/disable specific scenario-types from happening in the game world.\n\nHere are some scenario types from the scripts:\n\"WORLD_MOUNTAIN_LION_REST\"                                             \n\"WORLD_MOUNTAIN_LION_WANDER\"                                            \n\"DRIVE\"                                                                  \n\"WORLD_VEHICLE_POLICE_BIKE\"                                             \n\"WORLD_VEHICLE_POLICE_CAR\"                                             \n\"WORLD_VEHICLE_POLICE_NEXT_TO_CAR\"                                        \n\"WORLD_VEHICLE_DRIVE_SOLO\"                                                 \n\"WORLD_VEHICLE_BIKER\"                                                      \n\"WORLD_VEHICLE_DRIVE_PASSENGERS\"                                           \n\"WORLD_VEHICLE_SALTON_DIRT_BIKE\"                                           \n\"WORLD_VEHICLE_BICYCLE_MOUNTAIN\"                                           \n\"PROP_HUMAN_SEAT_CHAIR\"                                             \n\"WORLD_VEHICLE_ATTRACTOR\"                                             \n\"WORLD_HUMAN_LEANING\"                                                 \n\"WORLD_HUMAN_HANG_OUT_STREET\"                                        \n\"WORLD_HUMAN_DRINKING\"                                                \n\"WORLD_HUMAN_SMOKING\"                                                \n\"WORLD_HUMAN_GUARD_STAND\"                                            \n\"WORLD_HUMAN_CLIPBOARD\"                                              \n\"WORLD_HUMAN_HIKER\"                                                  \n\"WORLD_VEHICLE_EMPTY\"                                                      \n\"WORLD_VEHICLE_BIKE_OFF_ROAD_RACE\"                                      \n\"WORLD_HUMAN_PAPARAZZI\"                                               \n\"WORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\"                            \n\"WORLD_VEHICLE_PARK_PARALLEL\"                                              \n\"WORLD_VEHICLE_CONSTRUCTION_SOLO\"                               \n\"WORLD_VEHICLE_CONSTRUCTION_PASSENGERS\"                                                                    \n\"WORLD_VEHICLE_TRUCK_LOGS\" \n-alphazolam\n\nscenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.",
+			"comment": "Full list of scenario types used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json\nseems to enable/disable specific scenario-types from happening in the game world.\n\nHere are some scenario types from the scripts:\n\"WORLD_MOUNTAIN_LION_REST\"                                             \n\"WORLD_MOUNTAIN_LION_WANDER\"                                            \n\"DRIVE\"                                                                  \n\"WORLD_VEHICLE_POLICE_BIKE\"                                             \n\"WORLD_VEHICLE_POLICE_CAR\"                                             \n\"WORLD_VEHICLE_POLICE_NEXT_TO_CAR\"                                        \n\"WORLD_VEHICLE_DRIVE_SOLO\"                                                 \n\"WORLD_VEHICLE_BIKER\"                                                      \n\"WORLD_VEHICLE_DRIVE_PASSENGERS\"                                           \n\"WORLD_VEHICLE_SALTON_DIRT_BIKE\"                                           \n\"WORLD_VEHICLE_BICYCLE_MOUNTAIN\"                                           \n\"PROP_HUMAN_SEAT_CHAIR\"                                             \n\"WORLD_VEHICLE_ATTRACTOR\"                                             \n\"WORLD_HUMAN_LEANING\"                                                 \n\"WORLD_HUMAN_HANG_OUT_STREET\"                                        \n\"WORLD_HUMAN_DRINKING\"                                                \n\"WORLD_HUMAN_SMOKING\"                                                \n\"WORLD_HUMAN_GUARD_STAND\"                                            \n\"WORLD_HUMAN_CLIPBOARD\"                                              \n\"WORLD_HUMAN_HIKER\"                                                  \n\"WORLD_VEHICLE_EMPTY\"                                                      \n\"WORLD_VEHICLE_BIKE_OFF_ROAD_RACE\"                                      \n\"WORLD_HUMAN_PAPARAZZI\"                                               \n\"WORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\"                            \n\"WORLD_VEHICLE_PARK_PARALLEL\"                                              \n\"WORLD_VEHICLE_CONSTRUCTION_SOLO\"                               \n\"WORLD_VEHICLE_CONSTRUCTION_PASSENGERS\"                                                                    \n\"WORLD_VEHICLE_TRUCK_LOGS\" \n-alphazolam\n\nscenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.",
 			"params": [
 				{
 					"type": "const char*",
@@ -100285,7 +100285,7 @@
 		"0xFD813BB7DB977F20": {
 			"name": "SWITCH_TRAIN_TRACK",
 			"jhash": "0x68BFDD61",
-			"comment": "Toggles whether ambient trains can spawn on the specified track or not\n\n`trackId` is the internal id of the train track to switch.\n`state` is whether ambient trains can spawn or not\n\ntrackIds\n0 (`trains1.dat`) Main track around SA\n1 (`trains2.dat`) Davis Quartz Quarry branch\n2 (`trains3.dat`) Second track alongside live track along Roy Lewenstein Blv.\n3 (`trains4.dat`) Metro track circuit\n4 (`trains5.dat`) Branch in Mirror Park Railyard\n5 (`trains6.dat`) Branch in Mirror Park Railyard\n6 (`trains7.dat`) LS branch to Mirror Park Railyard\n7 (`trains8.dat`) Overground part of metro track along Forum Dr.\n8 (`trains9.dat`) Branch to Mirror Park Railyard\n9 (`trains10.dat`) Yankton train\n10 (`trains11.dat`) Part of metro track near mission row\n11 (`trains12.dat`) Yankton prologue mission train",
+			"comment": "Toggles whether ambient trains can spawn on the specified track or not\n\n`trackId` is the internal id of the train track to switch.\n`state` is whether ambient trains can spawn or not\n\ntrackIds\n0 (`trains1.dat`) Main track around SA\n1 (`trains2.dat`) Davis Quartz Quarry branch\n2 (`trains3.dat`) Second track alongside live track along Roy Lewenstein Blv.\n3 (`trains4.dat`) Metro track circuit\n4 (`trains5.dat`) Branch in Mirror Park Railyard\n5 (`trains6.dat`) Branch in Mirror Park Railyard\n6 (`trains7.dat`) LS branch to Mirror Park Railyard\n7 (`trains8.dat`) Overground part of metro track along Forum Dr.\n8 (`trains9.dat`) Branch to Mirror Park Railyard\n9 (`trains10.dat`) Yankton train\n10 (`trains11.dat`) Part of metro track near mission row\n11 (`trains12.dat`) Yankton prologue mission train\nFull list of all train tracks + track nodes by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/traintracks.json",
 			"params": [
 				{
 					"type": "int",
@@ -100302,7 +100302,7 @@
 		"0x21973BBF8D17EDFA": {
 			"name": "SET_TRAIN_TRACK_SPAWN_FREQUENCY",
 			"jhash": "0xD5774FB7",
-			"comment": "Only called once inside main_persitant with the parameters p0 = 0, p1 = 120000\n\ntrackIndex: 0 - 26",
+			"comment": "Only called once inside main_persitant with the parameters p0 = 0, p1 = 120000\n\ntrackIndex: 0 - 26\nFull list of all train tracks + track nodes by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/traintracks.json",
 			"params": [
 				{
 					"type": "int",
@@ -101047,7 +101047,7 @@
 		"0x0FC2D89AC25A5814": {
 			"name": "SET_VEHICLE_MODEL_IS_SUPPRESSED",
 			"jhash": "0x42A08C9B",
-			"comment": "seems to make the vehicle stop spawning naturally in traffic. Here's an essential example:\n\nVEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(MISC::GET_HASH_KEY(\"taco\"), true);\n\ngod I hate taco vans\n\nConfirmed to work? Needs to be looped? Can not get it to work.",
+			"comment": "seems to make the vehicle stop spawning naturally in traffic. Here's an essential example:\n\nVEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(MISC::GET_HASH_KEY(\"taco\"), true);\n\ngod I hate taco vans\n\nConfirmed to work? Needs to be looped? Can not get it to work.\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -101976,7 +101976,7 @@
 		"0xE41033B25D003A07": {
 			"name": "_SET_VEHICLE_XENON_LIGHTS_COLOR",
 			"jhash": "",
-			"comment": "`color`: is the paint index for the vehicle.\nPaint index goes from 0 to 12.\nBe aware that it only works on xenon lights. Example: https://i.imgur.com/yV3cpG9.png",
+			"comment": "`color`: is the paint index for the vehicle.\nPaint index goes from 0 to 12.\nBe aware that it only works on xenon lights. Example: https://i.imgur.com/yV3cpG9.png\nFull list of all vehicle xenon lights by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102271,7 +102271,7 @@
 		"0x5873C14A52D74236": {
 			"name": "_GET_VEHICLE_MODEL_MONETARY_VALUE",
 			"jhash": "",
-			"comment": "Returns `nMonetaryValue` from handling.meta for specific model.",
+			"comment": "Returns `nMonetaryValue` from handling.meta for specific model.\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -102284,7 +102284,7 @@
 		"0x28D37D4F71AC5C58": {
 			"name": "GET_VEHICLE_LAYOUT_HASH",
 			"jhash": "0xE0B35187",
-			"comment": "",
+			"comment": "Full list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105456,7 +105456,7 @@
 		"0x57C51E6BAD752696": {
 			"name": "SET_VEHICLE_WINDOW_TINT",
 			"jhash": "0x497C8787",
-			"comment": "enum WindowTints\n{\n WINDOWTINT_NONE,\n  WINDOWTINT_PURE_BLACK,\n    WINDOWTINT_DARKSMOKE,\n WINDOWTINT_LIGHTSMOKE,\n    WINDOWTINT_STOCK,\n WINDOWTINT_LIMO,\n  WINDOWTINT_GREEN\n};",
+			"comment": "enum WindowTints\n{\n WINDOWTINT_NONE,\n  WINDOWTINT_PURE_BLACK,\n    WINDOWTINT_DARKSMOKE,\n WINDOWTINT_LIGHTSMOKE,\n    WINDOWTINT_STOCK,\n WINDOWTINT_LIMO,\n  WINDOWTINT_GREEN\n};\nFull list of all vehicle window tints by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107213,7 +107213,7 @@
 		"0xF4FC6A6F67D8D856": {
 			"name": "DISABLE_VEHICLE_WEAPON",
 			"jhash": "0xA688B7D1",
-			"comment": "how does this work?",
+			"comment": "how does this work?\nFull list of weapons by DurtyFree (Search for VEHICLE_*): https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "BOOL",
@@ -107238,7 +107238,7 @@
 		"0x563B65A643ED072E": {
 			"name": "_IS_VEHICLE_WEAPON_DISABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree (Search for VEHICLE_*): https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -110618,7 +110618,7 @@
 		"0xADF692B254977C0C": {
 			"name": "SET_CURRENT_PED_WEAPON",
 			"jhash": "0xB8278882",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -110694,7 +110694,7 @@
 		"0x75C55983C2C39DAA": {
 			"name": "SET_CURRENT_PED_VEHICLE_WEAPON",
 			"jhash": "0x8E6F2AF1",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree (Search for VEHICLE_*): https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -110758,7 +110758,7 @@
 		"0x937C71165CF334B3": {
 			"name": "IS_WEAPON_VALID",
 			"jhash": "0x38CA2954",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -110771,7 +110771,7 @@
 		"0x8DECB02F88F428BC": {
 			"name": "HAS_PED_GOT_WEAPON",
 			"jhash": "0x43D2FA82",
-			"comment": "p2 should be FALSE, otherwise it seems to always return FALSE\n\nBool does not check if the weapon is current equipped, unfortunately.",
+			"comment": "p2 should be FALSE, otherwise it seems to always return FALSE\n\nBool does not check if the weapon is current equipped, unfortunately.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -110822,7 +110822,7 @@
 		"0x015A522136D7F951": {
 			"name": "GET_AMMO_IN_PED_WEAPON",
 			"jhash": "0x0C755733",
-			"comment": "WEAPON::GET_AMMO_IN_PED_WEAPON(PLAYER::PLAYER_PED_ID(), a_0)\n\nFrom decompiled scripts\nReturns total ammo in weapon\n\nGTALua Example :\nnatives.WEAPON.GET_AMMO_IN_PED_WEAPON(plyPed, WeaponHash)",
+			"comment": "WEAPON::GET_AMMO_IN_PED_WEAPON(PLAYER::PLAYER_PED_ID(), a_0)\n\nFrom decompiled scripts\nReturns total ammo in weapon\n\nGTALua Example :\nnatives.WEAPON.GET_AMMO_IN_PED_WEAPON(plyPed, WeaponHash)\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -110839,7 +110839,7 @@
 		"0x78F0424C34306220": {
 			"name": "ADD_AMMO_TO_PED",
 			"jhash": "0x7F0580C7",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -110860,7 +110860,7 @@
 		"0x14E56BC5B5DB6A19": {
 			"name": "SET_PED_AMMO",
 			"jhash": "0xBF90DF1A",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -110885,7 +110885,7 @@
 		"0x3EDCB0505123623B": {
 			"name": "SET_PED_INFINITE_AMMO",
 			"jhash": "0x9CB8D278",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -110940,7 +110940,7 @@
 		"0xBF0FD6E56C964FCB": {
 			"name": "GIVE_WEAPON_TO_PED",
 			"jhash": "0xC4D88A85",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -110969,7 +110969,7 @@
 		"0xB282DC6EBD803C75": {
 			"name": "GIVE_DELAYED_WEAPON_TO_PED",
 			"jhash": "0x5868D20D",
-			"comment": "Gives a weapon to PED with a delay, example:\n\nWEAPON::GIVE_DELAYED_WEAPON_TO_PED(PED::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"WEAPON_PISTOL\"), 1000, false)",
+			"comment": "Gives a weapon to PED with a delay, example:\n\nWEAPON::GIVE_DELAYED_WEAPON_TO_PED(PED::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"WEAPON_PISTOL\"), 1000, false)\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111011,7 +111011,7 @@
 		"0x4899CB088EDF59B8": {
 			"name": "REMOVE_WEAPON_FROM_PED",
 			"jhash": "0x9C37F220",
-			"comment": "This native removes a specified weapon from your selected ped.\nWeapon Hashes: pastebin.com/0wwDZgkF\n\nExample:\nC#:\nFunction.Call(Hash.REMOVE_WEAPON_FROM_PED, Game.Player.Character, 0x99B507EA);\n\nC++:\nWEAPON::REMOVE_WEAPON_FROM_PED(PLAYER::PLAYER_PED_ID(), 0x99B507EA);\n\nThe code above removes the knife from the player.",
+			"comment": "This native removes a specified weapon from your selected ped.\nWeapon Hashes: pastebin.com/0wwDZgkF\n\nExample:\nC#:\nFunction.Call(Hash.REMOVE_WEAPON_FROM_PED, Game.Player.Character, 0x99B507EA);\n\nC++:\nWEAPON::REMOVE_WEAPON_FROM_PED(PLAYER::PLAYER_PED_ID(), 0x99B507EA);\n\nThe code above removes the knife from the player.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111091,7 +111091,7 @@
 		"0x2D343D2219CD027A": {
 			"name": "HAS_PED_BEEN_DAMAGED_BY_WEAPON",
 			"jhash": "0xCDFBBCC6",
-			"comment": "It determines what weapons caused damage:\n\nIf you want to define only a specific weapon, second parameter=weapon hash code, third parameter=0\nIf you want to define any melee weapon, second parameter=0, third parameter=1.\nIf you want to identify any weapon (firearms, melee, rockets, etc.), second parameter=0, third parameter=2.",
+			"comment": "It determines what weapons caused damage:\n\nIf you want to define only a specific weapon, second parameter=weapon hash code, third parameter=0\nIf you want to define any melee weapon, second parameter=0, third parameter=1.\nIf you want to identify any weapon (firearms, melee, rockets, etc.), second parameter=0, third parameter=2.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111125,7 +111125,7 @@
 		"0x131D401334815E94": {
 			"name": "HAS_ENTITY_BEEN_DAMAGED_BY_WEAPON",
 			"jhash": "0x6DAABB39",
-			"comment": "It determines what weapons caused damage:\n\nIf you want to define only a specific weapon, second parameter=weapon hash code, third parameter=0\nIf you want to define any melee weapon, second parameter=0, third parameter=1.\nIf you want to identify any weapon (firearms, melee, rockets, etc.), second parameter=0, third parameter=2.",
+			"comment": "It determines what weapons caused damage:\n\nIf you want to define only a specific weapon, second parameter=weapon hash code, third parameter=0\nIf you want to define any melee weapon, second parameter=0, third parameter=1.\nIf you want to identify any weapon (firearms, melee, rockets, etc.), second parameter=0, third parameter=2.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -111172,7 +111172,7 @@
 		"0x208A1888007FC0E6": {
 			"name": "SET_PED_DROPS_INVENTORY_WEAPON",
 			"jhash": "0x81FFB874",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111205,7 +111205,7 @@
 		"0xA38DCFFCEA8962FA": {
 			"name": "GET_MAX_AMMO_IN_CLIP",
 			"jhash": "0x6961E2A4",
-			"comment": "p2 is mostly 1 in the scripts.",
+			"comment": "p2 is mostly 1 in the scripts.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111226,7 +111226,7 @@
 		"0x2E1202248937775C": {
 			"name": "GET_AMMO_IN_CLIP",
 			"jhash": "0x73C100C3",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111247,7 +111247,7 @@
 		"0xDCD2A934D65CB497": {
 			"name": "SET_AMMO_IN_CLIP",
 			"jhash": "0xA54B0B10",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111268,7 +111268,7 @@
 		"0xDC16122C7A20C933": {
 			"name": "GET_MAX_AMMO",
 			"jhash": "0x0B294796",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111405,7 +111405,7 @@
 		"0x7FEAD38B326B9F74": {
 			"name": "GET_PED_AMMO_TYPE_FROM_WEAPON",
 			"jhash": "0x09337863",
-			"comment": "Returns the current ammo type of the specified ped's specified weapon.\nMkII magazines will change the return value, like Pistol MkII returning AMMO_PISTOL without any components and returning AMMO_PISTOL_TRACER after Tracer Rounds component is attached.\nUse 0xF489B44DD5AF4BD9 if you always want AMMO_PISTOL.",
+			"comment": "Returns the current ammo type of the specified ped's specified weapon.\nMkII magazines will change the return value, like Pistol MkII returning AMMO_PISTOL without any components and returning AMMO_PISTOL_TRACER after Tracer Rounds component is attached.\nUse 0xF489B44DD5AF4BD9 if you always want AMMO_PISTOL.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111425,7 +111425,7 @@
 		"0xF489B44DD5AF4BD9": {
 			"name": "_GET_PED_AMMO_TYPE_FROM_WEAPON_2",
 			"jhash": "",
-			"comment": "Returns the base/default ammo type of the specified ped's specified weapon.\nUse GET_PED_AMMO_TYPE_FROM_WEAPON if you want current ammo type (like AMMO_MG_INCENDIARY/AMMO_MG_TRACER while using MkII magazines) and use this if you want base ammo type. (AMMO_MG)",
+			"comment": "Returns the base/default ammo type of the specified ped's specified weapon.\nUse GET_PED_AMMO_TYPE_FROM_WEAPON if you want current ammo type (like AMMO_MG_INCENDIARY/AMMO_MG_TRACER while using MkII magazines) and use this if you want base ammo type. (AMMO_MG)\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111497,7 +111497,7 @@
 		"0x0A6DB4965674D243": {
 			"name": "GET_SELECTED_PED_WEAPON",
 			"jhash": "0xD240123E",
-			"comment": "Returns the hash of the weapon. \n\n            var num7 = WEAPON::GET_SELECTED_PED_WEAPON(num4);\n            sub_27D3(num7);\n            switch (num7)\n            {\n                case 0x24B17070:\n\nAlso see WEAPON::GET_CURRENT_PED_WEAPON. Difference?\n\n-------------------------------------------------------------------------\n\nThe difference is that GET_SELECTED_PED_WEAPON simply returns the ped's current weapon hash but GET_CURRENT_PED_WEAPON also checks the weapon object and returns true if the hash of the weapon object equals the weapon hash",
+			"comment": "Returns the hash of the weapon. \n\n            var num7 = WEAPON::GET_SELECTED_PED_WEAPON(num4);\n            sub_27D3(num7);\n            switch (num7)\n            {\n                case 0x24B17070:\n\nAlso see WEAPON::GET_CURRENT_PED_WEAPON. Difference?\n\n-------------------------------------------------------------------------\n\nThe difference is that GET_SELECTED_PED_WEAPON simply returns the ped's current weapon hash but GET_CURRENT_PED_WEAPON also checks the weapon object and returns true if the hash of the weapon object equals the weapon hash\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111602,7 +111602,7 @@
 		"0xD966D51AA5B28BB9": {
 			"name": "GIVE_WEAPON_COMPONENT_TO_PED",
 			"jhash": "0x3E1E286D",
-			"comment": "",
+			"comment": "Full list of weapons & components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111623,7 +111623,7 @@
 		"0x1E8BE90C74FB4C09": {
 			"name": "REMOVE_WEAPON_COMPONENT_FROM_PED",
 			"jhash": "0x412AA00D",
-			"comment": "",
+			"comment": "Full list of weapons & components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111644,7 +111644,7 @@
 		"0xC593212475FAE340": {
 			"name": "HAS_PED_GOT_WEAPON_COMPONENT",
 			"jhash": "0xDC0FC145",
-			"comment": "",
+			"comment": "Full list of weapons & components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111665,7 +111665,7 @@
 		"0x0D78DE0572D3969E": {
 			"name": "IS_PED_WEAPON_COMPONENT_ACTIVE",
 			"jhash": "0x7565FB19",
-			"comment": "",
+			"comment": "Full list of weapons & components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111879,7 +111879,7 @@
 		"0x5CEE3DF569CECAB0": {
 			"name": "DOES_WEAPON_TAKE_WEAPON_COMPONENT",
 			"jhash": "0xB1817BAA",
-			"comment": "",
+			"comment": "Full list of weapons & components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -111930,7 +111930,7 @@
 		"0x50969B9B89ED5738": {
 			"name": "SET_PED_WEAPON_TINT_INDEX",
 			"jhash": "0xEB2A7B23",
-			"comment": "tintIndex can be the following:\n\n0 - Normal\n1 - Green\n2 - Gold\n3 - Pink\n4 - Army\n5 - LSPD\n6 - Orange\n7 - Platinum",
+			"comment": "tintIndex can be the following:\n\n0 - Normal\n1 - Green\n2 - Gold\n3 - Pink\n4 - Army\n5 - LSPD\n6 - Orange\n7 - Platinum\nFull list of weapons, components & tint indexes by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111951,7 +111951,7 @@
 		"0x2B9EEDC07BD06B9F": {
 			"name": "GET_PED_WEAPON_TINT_INDEX",
 			"jhash": "0x3F9C90A7",
-			"comment": "",
+			"comment": "Full list of weapons, components & tint indexes by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -111968,7 +111968,7 @@
 		"0xF827589017D4E4A9": {
 			"name": "SET_WEAPON_OBJECT_TINT_INDEX",
 			"jhash": "0x44ACC1DA",
-			"comment": "",
+			"comment": "Full list of weapons, components & tint indexes by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Object",
@@ -111998,7 +111998,7 @@
 		"0x5DCF6C5CAB2E9BF7": {
 			"name": "GET_WEAPON_TINT_COUNT",
 			"jhash": "0x99E4EAAB",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -112011,7 +112011,7 @@
 		"0x9FE5633880ECD8ED": {
 			"name": "_SET_PED_WEAPON_LIVERY_COLOR",
 			"jhash": "",
-			"comment": "Colors:\n0 = Gray\n1 = Dark Gray\n2 = Black\n3 = White\n4 = Blue\n5 = Cyan\n6 = Aqua\n7 = Cool Blue\n8 = Dark Blue\n9 = Royal Blue\n10 = Plum\n11 = Dark Purple\n12 = Purple\n13 = Red\n14 = Wine Red\n15 = Magenta\n16 = Pink\n17 = Salmon\n18 = Hot Pink\n19 = Rust Orange\n20 = Brown\n21 = Earth\n22 = Orange\n23 = Light Orange\n24 = Dark Yellow\n25 = Yellow\n26 = Light Brown\n27 = Lime Green\n28 = Olive\n29 = Moss\n30 = Turquoise\n31 = Dark Green",
+			"comment": "Colors:\n0 = Gray\n1 = Dark Gray\n2 = Black\n3 = White\n4 = Blue\n5 = Cyan\n6 = Aqua\n7 = Cool Blue\n8 = Dark Blue\n9 = Royal Blue\n10 = Plum\n11 = Dark Purple\n12 = Purple\n13 = Red\n14 = Wine Red\n15 = Magenta\n16 = Pink\n17 = Salmon\n18 = Hot Pink\n19 = Rust Orange\n20 = Brown\n21 = Earth\n22 = Orange\n23 = Light Orange\n24 = Dark Yellow\n25 = Yellow\n26 = Light Brown\n27 = Lime Green\n28 = Olive\n29 = Moss\n30 = Turquoise\n31 = Dark Green\nFull list of weapons, components, tint indexes & weapon liveries by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -112036,7 +112036,7 @@
 		"0xF0A60040BE558F2D": {
 			"name": "_GET_PED_WEAPON_LIVERY_COLOR",
 			"jhash": "",
-			"comment": "Returns -1 if camoComponentHash is invalid/not attached to the weapon.",
+			"comment": "Returns -1 if camoComponentHash is invalid/not attached to the weapon.\nFull list of weapons, components, tint indexes & weapon liveries by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -112057,7 +112057,7 @@
 		"0x5DA825A85D0EA6E6": {
 			"name": "_SET_WEAPON_OBJECT_LIVERY_COLOR",
 			"jhash": "",
-			"comment": "Colors:\n0 = Gray\n1 = Dark Gray\n2 = Black\n3 = White\n4 = Blue\n5 = Cyan\n6 = Aqua\n7 = Cool Blue\n8 = Dark Blue\n9 = Royal Blue\n10 = Plum\n11 = Dark Purple\n12 = Purple\n13 = Red\n14 = Wine Red\n15 = Magenta\n16 = Pink\n17 = Salmon\n18 = Hot Pink\n19 = Rust Orange\n20 = Brown\n21 = Earth\n22 = Orange\n23 = Light Orange\n24 = Dark Yellow\n25 = Yellow\n26 = Light Brown\n27 = Lime Green\n28 = Olive\n29 = Moss\n30 = Turquoise\n31 = Dark Green",
+			"comment": "Colors:\n0 = Gray\n1 = Dark Gray\n2 = Black\n3 = White\n4 = Blue\n5 = Cyan\n6 = Aqua\n7 = Cool Blue\n8 = Dark Blue\n9 = Royal Blue\n10 = Plum\n11 = Dark Purple\n12 = Purple\n13 = Red\n14 = Wine Red\n15 = Magenta\n16 = Pink\n17 = Salmon\n18 = Hot Pink\n19 = Rust Orange\n20 = Brown\n21 = Earth\n22 = Orange\n23 = Light Orange\n24 = Dark Yellow\n25 = Yellow\n26 = Light Brown\n27 = Lime Green\n28 = Olive\n29 = Moss\n30 = Turquoise\n31 = Dark Green\nFull list of weapons, components, tint indexes & weapon liveries by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Object",
@@ -112078,7 +112078,7 @@
 		"0xB3EA4FEABF41464B": {
 			"name": "_GET_WEAPON_OBJECT_LIVERY_COLOR",
 			"jhash": "",
-			"comment": "Returns -1 if camoComponentHash is invalid/not attached to the weapon object.",
+			"comment": "Returns -1 if camoComponentHash is invalid/not attached to the weapon object.\nFull list of weapons, components, tint indexes & weapon liveries by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Object",
@@ -112129,7 +112129,7 @@
 		"0xD92C739EE34C9EBA": {
 			"name": "GET_WEAPON_HUD_STATS",
 			"jhash": "0xA9AD3D98",
-			"comment": "struct WeaponHudStatsData\n{\n    BYTE hudDamage; // 0x0000\n    char _0x0001[0x7]; // 0x0001\n    BYTE hudSpeed; // 0x0008\n    char _0x0009[0x7]; // 0x0009\n    BYTE hudCapacity; // 0x0010\n    char _0x0011[0x7]; // 0x0011\n    BYTE hudAccuracy; // 0x0018\n    char _0x0019[0x7]; // 0x0019\n    BYTE hudRange; // 0x0020\n};\n\nUsage:\n\nWeaponHudStatsData data;\nif (GET_WEAPON_HUD_STATS(weaponHash, (int *)&data))\n{\n    // BYTE damagePercentage = data.hudDamage and so on\n}",
+			"comment": "struct WeaponHudStatsData\n{\n    BYTE hudDamage; // 0x0000\n    char _0x0001[0x7]; // 0x0001\n    BYTE hudSpeed; // 0x0008\n    char _0x0009[0x7]; // 0x0009\n    BYTE hudCapacity; // 0x0010\n    char _0x0011[0x7]; // 0x0011\n    BYTE hudAccuracy; // 0x0018\n    char _0x0019[0x7]; // 0x0019\n    BYTE hudRange; // 0x0020\n};\n\nUsage:\n\nWeaponHudStatsData data;\nif (GET_WEAPON_HUD_STATS(weaponHash, (int *)&data))\n{\n    // BYTE damagePercentage = data.hudDamage and so on\n}\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -112163,7 +112163,7 @@
 		"0x3133B907D8B32053": {
 			"name": "GET_WEAPON_DAMAGE",
 			"jhash": "0xE81649C0",
-			"comment": "This native does not return damages of weapons from the melee and explosive group.",
+			"comment": "This native does not return damages of weapons from the melee and explosive group.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -112183,7 +112183,7 @@
 		"0x583BE370B1EC6EB4": {
 			"name": "GET_WEAPON_CLIP_SIZE",
 			"jhash": "0x8D515E66",
-			"comment": "// Returns the size of the default weapon component clip.\n\nUse it like this:\n\nchar cClipSize[32];\nHash cur;\nif (WEAPON::GET_CURRENT_PED_WEAPON(playerPed, &cur, 1))\n{\n    if (WEAPON::IS_WEAPON_VALID(cur))\n    {\n        int iClipSize = WEAPON::GET_WEAPON_CLIP_SIZE(cur);\n        sprintf_s(cClipSize, \"ClipSize: %.d\", iClipSize);\n        vDrawString(cClipSize, 0.5f, 0.5f);\n    }\n}\n",
+			"comment": "// Returns the size of the default weapon component clip.\n\nUse it like this:\n\nchar cClipSize[32];\nHash cur;\nif (WEAPON::GET_CURRENT_PED_WEAPON(playerPed, &cur, 1))\n{\n    if (WEAPON::IS_WEAPON_VALID(cur))\n    {\n        int iClipSize = WEAPON::GET_WEAPON_CLIP_SIZE(cur);\n        sprintf_s(cClipSize, \"ClipSize: %.d\", iClipSize);\n        vDrawString(cClipSize, 0.5f, 0.5f);\n    }\n}\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -112196,7 +112196,7 @@
 		"0x065D2AACAD8CF7A4": {
 			"name": "_GET_WEAPON_TIME_BETWEEN_SHOTS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -112260,7 +112260,7 @@
 		"0x4757F00BC6323CFE": {
 			"name": "_SET_WEAPON_DAMAGE_MODIFIER_THIS_FRAME",
 			"jhash": "",
-			"comment": "Changes the weapon damage output by the given multiplier value. Must be run every frame.",
+			"comment": "Changes the weapon damage output by the given multiplier value. Must be run every frame.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -112390,7 +112390,7 @@
 		"0x3BE0BB12D25FB305": {
 			"name": "GET_WEAPON_DAMAGE_TYPE",
 			"jhash": "0x013AFC13",
-			"comment": "0=unknown (or incorrect weaponHash)\n1= no damage (flare,snowball, petrolcan)\n2=melee\n3=bullet\n4=force ragdoll fall\n5=explosive (RPG, Railgun, grenade)\n6=fire(molotov)\n8=fall(WEAPON_HELI_CRASH)\n10=electric\n11=barbed wire\n12=extinguisher\n13=gas\n14=water cannon(WEAPON_HIT_BY_WATER_CANNON)",
+			"comment": "0=unknown (or incorrect weaponHash)\n1= no damage (flare,snowball, petrolcan)\n2=melee\n3=bullet\n4=force ragdoll fall\n5=explosive (RPG, Railgun, grenade)\n6=fire(molotov)\n8=fall(WEAPON_HELI_CRASH)\n10=electric\n11=barbed wire\n12=extinguisher\n13=gas\n14=water cannon(WEAPON_HIT_BY_WATER_CANNON)\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -112416,7 +112416,7 @@
 		"0xBC7BE5ABC0879F74": {
 			"name": "CAN_USE_WEAPON_ON_PARACHUTE",
 			"jhash": "0x135E7AD4",
-			"comment": "this returns if you can use the weapon while using a parachute",
+			"comment": "this returns if you can use the weapon while using a parachute\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -112470,7 +112470,7 @@
 		"0x9DA58CDBF6BDBC08": {
 			"name": "_CREATE_AIR_DEFENSE_AREA",
 			"jhash": "",
-			"comment": "",
+			"comment": "Full list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "float",
@@ -112635,7 +112635,7 @@
 		"0xB4771B9AAF4E68E4": {
 			"name": "_SET_CAN_PED_EQUIP_WEAPON",
 			"jhash": "",
-			"comment": "Disables selecting the given weapon. Ped isn't forced to put the gun away. However you can't reselect the weapon if you holster then unholster. Weapon is also grayed out on the weapon wheel.",
+			"comment": "Disables selecting the given weapon. Ped isn't forced to put the gun away. However you can't reselect the weapon if you holster then unholster. Weapon is also grayed out on the weapon wheel.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
