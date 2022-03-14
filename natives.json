@@ -90014,7 +90014,7 @@
 		"0x09693B0312F91649": {
 			"name": "TASK_RAPPEL_FROM_HELI",
 			"jhash": "0x2C7ADB93",
-			"comment": "Only appears twice in the scripts.\n\nTASK::TASK_RAPPEL_FROM_HELI(PLAYER::PLAYER_PED_ID(), 0x41200000);\nTASK::TASK_RAPPEL_FROM_HELI(a_0, 0x41200000);",
+			"comment": "minHeightAboveGround: the minimum height above ground the heli must be at before the ped can start rappelling\n\nOnly appears twice in the scripts.\n\nTASK::TASK_RAPPEL_FROM_HELI(PLAYER::PLAYER_PED_ID(), 10.0f);\nTASK::TASK_RAPPEL_FROM_HELI(a_0, 10.0f);",
 			"params": [
 				{
 					"type": "Ped",
@@ -90022,7 +90022,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "minHeightAboveGround"
 				}
 			],
 			"return_type": "void",
