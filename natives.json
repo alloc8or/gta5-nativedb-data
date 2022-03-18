@@ -23844,8 +23844,8 @@
 					"name": "scaleZ"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "int",
+					"name": "rotationOrder"
 				}
 			],
 			"return_type": "void",
@@ -23909,8 +23909,8 @@
 					"name": "scaleZ"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "int",
+					"name": "rotationOrder"
 				}
 			],
 			"return_type": "void",
