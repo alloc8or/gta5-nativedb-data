@@ -87206,34 +87206,34 @@
 		"0xCD0A8A9338681CF2": {
 			"name": "_PLAYSTATS_COLLECTIBLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "p6 most likely is chips amount havent tested\n p0 some sort of id? maybe collectible id (not hash) ",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "propHash"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "character"
 				},
 				{
 					"type": "Any",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "moneyAmount"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "xpAmount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
