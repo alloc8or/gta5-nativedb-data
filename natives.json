@@ -50732,8 +50732,8 @@
 					"name": "numVars"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "debugName"
 				}
 			],
 			"return_type": "void",
@@ -50753,8 +50753,8 @@
 					"name": "numVars"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "debugName"
 				}
 			],
 			"return_type": "void",
