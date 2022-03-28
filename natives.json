@@ -51102,7 +51102,7 @@
 		"0x741A3D8380319A81": {
 			"name": "NETWORK_REQUEST_TO_BE_HOST_OF_THIS_SCRIPT",
 			"jhash": "0x331D9A27",
-			"comment": "Has something to do with a host request.",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
