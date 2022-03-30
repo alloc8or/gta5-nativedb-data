@@ -81113,33 +81113,33 @@
 	},
 	"SECURITY": {
 		"0x40EB1EFD921822BC": {
-			"name": "_PROTECT_MEMORY_REGION",
+			"name": "_REGISTER_PROTECTED_VARIABLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "address"
+					"name": "variable"
 				}
 			],
 			"return_type": "void",
 			"build": "2545"
 		},
 		"0x340A36A700E99699": {
-			"name": "_UNPROTECT_MEMORY_REGION",
+			"name": "_UNREGISTER_PROTECTED_VARIABLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "address"
+					"name": "variable"
 				}
 			],
 			"return_type": "void",
 			"build": "2545"
 		},
 		"0x8E580AB902917360": {
-			"name": "_CHECK_PROTECTED_REGIONS_FOR_TAMPERING_NOW",
+			"name": "_FORCE_CHECK_PROTECTED_VARIABLES_NOW",
 			"jhash": "",
 			"comment": "",
 			"params": [],
