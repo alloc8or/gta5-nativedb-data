@@ -81115,7 +81115,7 @@
 		"0x40EB1EFD921822BC": {
 			"name": "_REGISTER_PROTECTED_VARIABLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Registers a protected variable that will be checked for modifications by the anticheat",
 			"params": [
 				{
 					"type": "Any*",
