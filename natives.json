@@ -9107,7 +9107,7 @@
 		"0x8117E09A19EEF4D3": {
 			"name": "GET_UTC_TIME",
 			"jhash": "0xC589CD7D",
-			"comment": "Gets current UTC time ",
+			"comment": "Gets current UTC time",
 			"params": [
 				{
 					"type": "int*",
@@ -16033,7 +16033,7 @@
 					"name": "dlcVehicleIndex"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "outData"
 				}
 			],
@@ -16079,7 +16079,7 @@
 					"name": "dlcWeaponIndex"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "outData"
 				}
 			],
@@ -16096,7 +16096,7 @@
 					"name": "dlcWeaponIndex"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "outData"
 				}
 			],
@@ -16143,7 +16143,7 @@
 					"name": "dlcWeapCompIndex"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "ComponentDataPtr"
 				}
 			],
@@ -16164,7 +16164,7 @@
 					"name": "dlcWeapCompIndex"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "ComponentDataPtr"
 				}
 			],
@@ -39940,7 +39940,7 @@
 			"comment": "Needs more research. If the \"phone_cam12\" filter is applied, this function is called with \"TRUE\"; otherwise, \"FALSE\".\n\nExample (XBOX 360):\n\n// check current filter selection\nif (MISC::ARE_STRINGS_EQUAL(getElem(g_2471024, &l_17, 4), \"phone_cam12\") != 0)\n{\n    MOBILE::_0xC273BB4D(0); // FALSE\n}\nelse\n{\n    MOBILE::_0xC273BB4D(1); // TRUE\n}",
 			"params": [
 				{
-					"type": "int*",
+					"type": "BOOL",
 					"name": "toggle"
 				}
 			],
@@ -53215,7 +53215,7 @@
 			"comment": "bufferSize is 35 in the scripts.",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "clanDesc"
 				},
 				{
@@ -53232,7 +53232,7 @@
 			"comment": "bufferSize is 35 in the scripts.",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "clanDesc"
 				},
 				{
@@ -53265,7 +53265,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "memberDesc"
 				},
 				{
@@ -74508,7 +74508,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "sizeAndVehs"
 				}
 			],
@@ -74525,7 +74525,7 @@
 					"name": "ped"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "sizeAndPeds"
 				},
 				{
@@ -109106,7 +109106,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "vehsStruct"
 				}
 			],
@@ -112153,7 +112153,7 @@
 					"name": "componentHash"
 				},
 				{
-					"type": "int*",
+					"type": "Any*",
 					"name": "outData"
 				}
 			],
