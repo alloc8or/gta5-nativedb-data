@@ -81113,33 +81113,33 @@
 	},
 	"SECURITY": {
 		"0x40EB1EFD921822BC": {
-			"name": "_0x40EB1EFD921822BC",
+			"name": "_REGISTER_PROTECTED_VARIABLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Registers a protected variable that will be checked for modifications by the anticheat",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "variable"
 				}
 			],
 			"return_type": "void",
 			"build": "2545"
 		},
 		"0x340A36A700E99699": {
-			"name": "_0x340A36A700E99699",
+			"name": "_UNREGISTER_PROTECTED_VARIABLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "variable"
 				}
 			],
 			"return_type": "void",
 			"build": "2545"
 		},
 		"0x8E580AB902917360": {
-			"name": "_0x8E580AB902917360",
+			"name": "_FORCE_CHECK_PROTECTED_VARIABLES_NOW",
 			"jhash": "",
 			"comment": "",
 			"params": [],
