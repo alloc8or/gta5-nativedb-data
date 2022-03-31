@@ -32622,9 +32622,9 @@
 			"build": "678"
 		},
 		"0x1DB21A44B09E8BA3": {
-			"name": "_DISABLE_TEXT_CHAT",
+			"name": "_MULTIPLAYER_CHAT_SET_DISABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Hides the chat history, closes the input box and makes it unable to be opened unless called again with FALSE.",
 			"params": [
 				{
 					"type": "BOOL",
