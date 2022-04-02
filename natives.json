@@ -32622,17 +32622,20 @@
 			"build": "678"
 		},
 		"0x1DB21A44B09E8BA3": {
-			"name": "_SET_TEXT_CHAT_UNK",
+			"name": "_MULTIPLAYER_CHAT_SET_DISABLED",
 			"jhash": "",
-			"comment": "Sets an unknown boolean value in the text chat.",
+			"comment": "Hides the chat history, closes the input box and makes it unable to be opened unless called again with FALSE.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TEXT_CHAT_UNK"
+			]
 		},
 		"0xCEF214315D276FD1": {
 			"name": "FLAG_PLAYER_CONTEXT_IN_TOURNAMENT",
