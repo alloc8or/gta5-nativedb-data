@@ -63681,9 +63681,9 @@
 			"build": "323"
 		},
 		"0x228E5C6AD4D74BFD": {
-			"name": "_SET_ALL_PATHS_CACHE_BOUNDINGSTRUCT",
+			"name": "SET_ALL_PATHS_CACHE_BOUNDINGSTRUCT",
 			"jhash": "0xD6A3B458",
-			"comment": "Toggles a global boolean, name is probably a hash collision but describes its functionality.",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -63735,7 +63735,7 @@
 			]
 		},
 		"0x07FB139B592FA687": {
-			"name": "_REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT",
+			"name": "REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT",
 			"jhash": "0x2CDA5012",
 			"comment": "Used internally for long range tasks",
 			"params": [
@@ -63762,7 +63762,7 @@
 		"0x1EE7063B80FFC77C": {
 			"name": "SET_ROADS_BACK_TO_ORIGINAL",
 			"jhash": "0x86AC4A85",
-			"comment": "missing a last parameter int p6 ",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
