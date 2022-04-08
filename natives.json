@@ -87702,7 +87702,7 @@
 			"build": "1868"
 		},
 		"0x46A70777BE6CEAB9": {
-			"name": "_0x46A70777BE6CEAB9",
+			"name": "_PLAYSTATS_FREEMODE_MISSION_END",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87968,7 +87968,7 @@
 			"build": "2372"
 		},
 		"0x70F52471E758EBAE": {
-			"name": "_0x70F52471E758EBAE",
+			"name": "_PLAYSTATS_AWARDS_NAV",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87985,7 +87985,7 @@
 			"build": "2545"
 		},
 		"0xFEA3F7E83C0610FA": {
-			"name": "_0xFEA3F7E83C0610FA",
+			"name": "_PLAYSTATS_INST_MISSION_END",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -87998,7 +87998,7 @@
 			"build": "2545"
 		},
 		"0x5A46ACE5C4661132": {
-			"name": "_0x5A46ACE5C4661132",
+			"name": "_PLAYSTATS_HUB_EXIT",
 			"jhash": "",
 			"comment": "",
 			"params": [
