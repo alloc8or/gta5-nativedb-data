@@ -36680,7 +36680,7 @@
 		"0xBFE5756E7407064A": {
 			"name": "SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW",
 			"jhash": "0xCCDC33CC",
-			"comment": "entity - entity to ignore",
+			"comment": "entity - entity to ignore\ntargetEntity - entity to home in on, if the weapon hash provided supports homing",
 			"params": [
 				{
 					"type": "float",
@@ -36747,8 +36747,8 @@
 					"name": "p15"
 				},
 				{
-					"type": "BOOL",
-					"name": "p16"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
 					"type": "BOOL",
