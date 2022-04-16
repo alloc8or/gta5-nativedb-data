@@ -3148,9 +3148,9 @@
 			"build": "323"
 		},
 		"0xBCC29F935ED07688": {
-			"name": "_SET_VARIABLE_ON_CUTSCENE_AUDIO",
+			"name": "SET_VARIABLE_ON_SYNCH_SCENE_AUDIO",
 			"jhash": "0xD63CF33A",
-			"comment": "SET_VARIABLE_ON_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -3164,7 +3164,8 @@
 			"return_type": "void",
 			"build": "323",
 			"old_names": [
-				"GET_PLAYER_HEADSET_SOUND_ALTERNATE"
+				"GET_PLAYER_HEADSET_SOUND_ALTERNATE",
+				"_SET_VARIABLE_ON_CUTSCENE_AUDIO"
 			]
 		},
 		"0xDFEBD56D9BD1EB16": {
@@ -4644,7 +4645,7 @@
 			"build": "323"
 		},
 		"0xC8EDE9BDBCCBA6D4": {
-			"name": "_0xC8EDE9BDBCCBA6D4",
+			"name": "INIT_SYNCH_SCENE_AUDIO_WITH_POSITION",
 			"jhash": "0x55A21772",
 			"comment": "",
 			"params": [
@@ -4654,24 +4655,24 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x950A154B8DAB6185": {
-			"name": "_SET_SYNCHRONIZED_AUDIO_EVENT_POSITION_THIS_FRAME",
+			"name": "INIT_SYNCH_SCENE_AUDIO_WITH_ENTITY",
 			"jhash": "0xA17F9AB0",
-			"comment": "Sets the position of the audio event to the entity's position for one frame(?)\n\nif (l_8C3 == 0) {\n    sub_27fd1(0, -1, 1);\n    if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(l_87D)) {\n        AUDIO::STOP_SYNCHRONIZED_AUDIO_EVENT(l_87D);\n    }\n    if (sub_7dd(l_A00)) {\n        AUDIO::_950A154B8DAB6185(\"PAP2_IG1_POPPYSEX\", l_A00);\n    }\n    sub_91c(\"TK************ SETTING SYNCH SCENE AUDIO POSITION THIS FRAME ************TK\");\n    l_8C3 = 1;\n}\n\n--\n\nFound in the b617d scripts, duplicates removed: \n\nAUDIO::_950A154B8DAB6185(\"CAR_5_IG_6\", l_7FE[1/*1*/]);\nAUDIO::_950A154B8DAB6185(\"EX03_TRAIN_BIKE_LAND\",   PLAYER::PLAYER_PED_ID());\nAUDIO::_950A154B8DAB6185(\"FBI_2_MCS_1_LeadIn\", l_40[2/*1*/]);\nAUDIO::_950A154B8DAB6185(\"FIN_C2_MCS_1\", l_24C[0/*1*/]);\nAUDIO::_950A154B8DAB6185(\"MNT_DNC\", l_5F);\nAUDIO::_950A154B8DAB6185(\"PAP2_IG1_POPPYSEX\", l_A00);",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -4683,7 +4684,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_SYNCHRONIZED_AUDIO_EVENT_POSITION_THIS_FRAME"
+			]
 		},
 		"0x12561FCBB62D5B9C": {
 			"name": "SET_AUDIO_SPECIAL_EFFECT_MODE",
@@ -6169,7 +6173,7 @@
 			"build": "323"
 		},
 		"0x661B5C8654ADD825": {
-			"name": "_SET_CAM_CONTROLS_RADAR_ROTATION",
+			"name": "SET_CAM_CONTROLS_MINI_MAP_HEADING",
 			"jhash": "0xE1A0B2F1",
 			"comment": "Rotates the radar to match the camera's Z rotation",
 			"params": [
@@ -6183,7 +6187,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CAM_CONTROLS_RADAR_ROTATION"
+			]
 		},
 		"0xA2767257A320FC82": {
 			"name": "_SET_CAM_SMOOTH_SHADOWS",
@@ -23302,7 +23309,7 @@
 			"build": "323"
 		},
 		"0x1CBA05AE7BD7EE05": {
-			"name": "_SET_TRANSITION_TIMECYCLE_MODIFIER_STOP_WITH_BLEND",
+			"name": "SET_TRANSITION_OUT_OF_TIMECYCLE_MODIFIER",
 			"jhash": "0x56345F6B",
 			"comment": "",
 			"params": [
@@ -23312,7 +23319,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_TRANSITION_TIMECYCLE_MODIFIER_STOP_WITH_BLEND"
+			]
 		},
 		"0x0F07E7745A236711": {
 			"name": "CLEAR_TIMECYCLE_MODIFIER",
@@ -31940,20 +31950,20 @@
 			"build": "323"
 		},
 		"0x77F16B447824DA6C": {
-			"name": "_0x77F16B447824DA6C",
+			"name": "PAUSE_MENUCEPTION_GO_DEEPER",
 			"jhash": "0x0A89336C",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "page"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xCDCA26E80FAECB8F": {
-			"name": "_0xCDCA26E80FAECB8F",
+			"name": "PAUSE_MENUCEPTION_THE_KICK",
 			"jhash": "0xC84BE309",
 			"comment": "",
 			"params": [],
@@ -36680,7 +36690,7 @@
 		"0xBFE5756E7407064A": {
 			"name": "SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW",
 			"jhash": "0xCCDC33CC",
-			"comment": "entity - entity to ignore",
+			"comment": "entity - entity to ignore\ntargetEntity - entity to home in on, if the weapon hash provided supports homing",
 			"params": [
 				{
 					"type": "float",
@@ -36747,8 +36757,8 @@
 					"name": "p15"
 				},
 				{
-					"type": "BOOL",
-					"name": "p16"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
 					"type": "BOOL",
@@ -53623,17 +53633,17 @@
 			]
 		},
 		"0x9D724B400A7E8FFC": {
-			"name": "_0x9D724B400A7E8FFC",
+			"name": "_SET_NETWORK_ID_CAN_BE_REASSIGNED",
 			"jhash": "",
-			"comment": "",
+			"comment": "\"No Reassign\" in CPhysicalScriptGameStateDataNode",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -53657,17 +53667,17 @@
 			"build": "323"
 		},
 		"0x0379DAF89BA09AA5": {
-			"name": "_0x0379DAF89BA09AA5",
+			"name": "_NETWORK_SET_OBJECT_FORCE_STATIC_BLEND",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -53715,20 +53725,20 @@
 			"build": "323"
 		},
 		"0x32EBD154CB6B8B99": {
-			"name": "_0x32EBD154CB6B8B99",
+			"name": "_SET_NETWORK_ID_VISIBLE_IN_CUTSCENE_NO_COLLISION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -75346,17 +75356,17 @@
 			"build": "323"
 		},
 		"0x288DF530C92DAD6F": {
-			"name": "_0x288DF530C92DAD6F",
+			"name": "_SET_PED_STEER_BIAS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "value"
 				}
 			],
 			"return_type": "void",
@@ -94424,7 +94434,7 @@
 			"build": "323"
 		},
 		"0xFA83CA6776038F64": {
-			"name": "_0xFA83CA6776038F64",
+			"name": "_REMOVE_COVER_BLOCKING_AREAS_AT_COORD",
 			"jhash": "",
 			"comment": "REMOVE_*",
 			"params": [
@@ -94445,7 +94455,7 @@
 			"build": "1493"
 		},
 		"0x1F351CF1C6475734": {
-			"name": "_0x1F351CF1C6475734",
+			"name": "_REMOVE_SPECIFIC_COVER_BLOCKING_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
