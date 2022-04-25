@@ -51055,7 +51055,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "char*",
+					"type": "const char*",
 					"name": "scriptName"
 				},
 				{
