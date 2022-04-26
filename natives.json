@@ -1167,7 +1167,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isNetwork"
 				},
 				{
 					"type": "Any",
@@ -1188,7 +1188,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isNetwork"
 				},
 				{
 					"type": "Any",
@@ -1209,7 +1209,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isNetwork"
 				},
 				{
 					"type": "int",
@@ -1722,8 +1722,8 @@
 					"name": "speechParam"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "isNetwork"
 				}
 			],
 			"return_type": "void",
@@ -1750,8 +1750,8 @@
 					"name": "speechParam"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "isNetwork"
 				}
 			],
 			"return_type": "void",
@@ -1783,7 +1783,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "isNetwork"
 				}
 			],
 			"return_type": "void",
@@ -39458,9 +39458,9 @@
 			"build": "323"
 		},
 		"0xE3D969D2785FFB5E": {
-			"name": "_0xE3D969D2785FFB5E",
+			"name": "_SET_PREVENT_PLAYER_ARREST_THIS_FRAME",
 			"jhash": "",
-			"comment": "sets something to 1",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -82148,7 +82148,7 @@
 			"build": "323"
 		},
 		"0xF6BAAAF762E1BF40": {
-			"name": "_0xF6BAAAF762E1BF40",
+			"name": "_SC_GET_LICENCE_PLATE_INFO",
 			"jhash": "0x7AA36406",
 			"comment": "",
 			"params": [
@@ -82238,7 +82238,7 @@
 			"build": "323"
 		},
 		"0xD0EE05FE193646EA": {
-			"name": "_0xD0EE05FE193646EA",
+			"name": "_SC_CHANGE_NO_INSERT_LICENCE_PLATE_INFO",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82259,7 +82259,7 @@
 			"build": "323"
 		},
 		"0x1989C6E6F67E76A8": {
-			"name": "_0x1989C6E6F67E76A8",
+			"name": "_SC_ADD_LICENSE_PLATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -82289,7 +82289,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x8147FFF6A718E1AD": {
@@ -82939,7 +82939,7 @@
 			"build": "323"
 		},
 		"0x6A7F19756F1A9016": {
-			"name": "_0x6A7F19756F1A9016",
+			"name": "_STAT_GET_BLOCK_SAVES",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -82989,11 +82989,11 @@
 			"build": "323"
 		},
 		"0xC0E0D686DDFC6EAE": {
-			"name": "_0xC0E0D686DDFC6EAE",
+			"name": "_STAT_SYNC_PROFILE_STATS",
 			"jhash": "0x099FCC86",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xB3271D7AB655B441": {
@@ -107618,7 +107618,7 @@
 					"name": "decorator"
 				}
 			],
-			"return_type": "BOOL",
+			"return_type": "Vehicle",
 			"build": "323"
 		},
 		"0x41062318F23ED854": {
