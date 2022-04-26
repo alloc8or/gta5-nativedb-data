@@ -35162,98 +35162,98 @@
 			"build": "323"
 		},
 		"0x7F8F6405F4777AF6": {
-			"name": "_0x7F8F6405F4777AF6",
+			"name": "_GET_PROGRESS_ALONG_LINE_BETWEEN_COORDS",
 			"jhash": "0x89459F0A",
-			"comment": "",
+			"comment": "returns a float between 0.0 and 1.0, clamp: sets whether the product should be clamped between the given coordinates",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "x3"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "y3"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "z3"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "clamp"
 				}
 			],
 			"return_type": "float",
 			"build": "323"
 		},
 		"0x21C235BC64831E5A": {
-			"name": "_0x21C235BC64831E5A",
+			"name": "GET_CLOSEST_POINT_ON_LINE",
 			"jhash": "0xCAECF37E",
-			"comment": "GET_C*",
+			"comment": "clamp: sets whether the product should be clamped between the given coordinates",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "x3"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "y3"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "z3"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "clamp"
 				}
 			],
 			"return_type": "Vector3",
