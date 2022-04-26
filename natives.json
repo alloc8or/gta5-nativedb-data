@@ -18469,9 +18469,9 @@
 			"build": "323"
 		},
 		"0x4B5B4DA5D79F1943": {
-			"name": "_SET_CHECKPOINT_SCALE",
+			"name": "SET_CHECKPOINT_INSIDE_CYLINDER_HEIGHT_SCALE",
 			"jhash": "0x80151CCF",
-			"comment": "p0 - Scale? Looks to be a normalized value (0.0 - 1.0)\n\noffroad_races.c4, line ~67407:\na_3._f7 = GRAPHICS::CREATE_CHECKPOINT(v_D, v_A, a_4, a_7, v_E, v_F, v_10, sub_62b2(v_A, 220, 255), 0);\nHUD::GET_HUD_COLOUR(134, &v_E, &v_F, &v_10, &v_11);\nGRAPHICS::_SET_CHECKPOINT_ICON_RGBA(a_3._f7, v_E, v_F, v_10, sub_62b2(v_A, 70, 210));\nGRAPHICS::_4B5B4DA5D79F1943(a_3._f7, 0.95);\nGRAPHICS::SET_CHECKPOINT_CYLINDER_HEIGHT(a_3._f7, 4.0, 4.0, 100.0);\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -18483,7 +18483,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CHECKPOINT_SCALE"
+			]
 		},
 		"0x44621483FF966526": {
 			"name": "_SET_CHECKPOINT_ICON_SCALE",
@@ -61516,13 +61519,13 @@
 			"build": "2372"
 		},
 		"0xDB41D07A45A6D4B7": {
-			"name": "_0xDB41D07A45A6D4B7",
+			"name": "GET_DEFAULT_AMMO_FOR_WEAPON_PICKUP",
 			"jhash": "0x000E92DC",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				}
 			],
 			"return_type": "Any",
@@ -69640,7 +69643,7 @@
 			]
 		},
 		"0xED6D8E27A43B8CDE": {
-			"name": "_IS_PED_HAIR_COLOR_VALID_2",
+			"name": "_IS_PED_HAIR_VALID_CREATOR_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -69650,23 +69653,26 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PED_HAIR_COLOR_VALID_2"
+			]
 		},
 		"0xEA9960D07DADCF10": {
-			"name": "_0xEA9960D07DADCF10",
+			"name": "_GET_DEFAULT_SECONDARY_HAIR_CREATOR_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "colorId"
 				}
 			],
 			"return_type": "int",
 			"build": "323"
 		},
 		"0x3E802F11FBE27674": {
-			"name": "_IS_PED_LIPSTICK_COLOR_VALID_2",
+			"name": "_IS_PED_LIPSTICK_VALID_CREATOR_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -69676,10 +69682,13 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PED_LIPSTICK_COLOR_VALID_2"
+			]
 		},
 		"0xF41B5D290C99A3D6": {
-			"name": "_IS_PED_BLUSH_COLOR_VALID_2",
+			"name": "_IS_PED_BLUSH_VALID_CREATOR_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -69689,10 +69698,13 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PED_BLUSH_COLOR_VALID_2"
+			]
 		},
 		"0xE0D36E5D9E99CC21": {
-			"name": "_IS_PED_HAIR_COLOR_VALID",
+			"name": "_IS_PED_HAIR_VALID_BARBER_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -69702,23 +69714,26 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PED_HAIR_COLOR_VALID"
+			]
 		},
 		"0xAAA6A3698A69E048": {
-			"name": "_0xAAA6A3698A69E048",
+			"name": "_GET_DEFAULT_SECONDARY_HAIR_BARBER_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "colorID"
 				}
 			],
 			"return_type": "Any",
 			"build": "323"
 		},
 		"0x0525A2C2562F3CD4": {
-			"name": "_IS_PED_LIPSTICK_COLOR_VALID",
+			"name": "_IS_PED_LIPSTICK_VALID_BARBER_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -69728,10 +69743,13 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PED_LIPSTICK_COLOR_VALID"
+			]
 		},
 		"0x604E810189EE3A59": {
-			"name": "_IS_PED_BLUSH_COLOR_VALID",
+			"name": "_IS_PED_BLUSH_VALID_BARBER_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -69741,10 +69759,13 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_PED_BLUSH_COLOR_VALID"
+			]
 		},
 		"0x09E7ECA981D9B210": {
-			"name": "_IS_PED_BODY_BLEMISH_VALID",
+			"name": "_IS_PED_BLUSH_FACEPAINT_VALID_BARBER_COLOR",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -69754,10 +69775,13 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_IS_PED_BODY_BLEMISH_VALID"
+			]
 		},
 		"0xC56FBF2F228E1DAC": {
-			"name": "_0xC56FBF2F228E1DAC",
+			"name": "_GET_TINT_OF_HAIR_COMPONENT_VARIATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -69766,21 +69790,21 @@
 					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "drawableId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "textureId"
 				}
 			],
 			"return_type": "Any",
 			"build": "323"
 		},
 		"0x71A5C1DBA060049E": {
-			"name": "_SET_PED_FACE_FEATURE",
+			"name": "_SET_PED_MICRO_MORPH_VALUE",
 			"jhash": "",
-			"comment": "Sets the various freemode face features, e.g. nose length, chin shape. Scale ranges from -1.0 to 1.0.\n\nIndex can be 0 - 19\n\nSET_PED_M* \n\nHere is the list of names. It starts at 0 and runs in sequence \n\nFace_Feature \n\nNose_Width\n\nNose_Peak_Hight\n\nNose_Peak_Lenght\n\nNose_Bone_High\n\nNose_Peak_Lowering\n\nNose_Bone_Twist\n\nEyeBrown_High\n\nEyeBrown_Forward\n\nCheeks_Bone_High\n\nCheeks_Bone_Width \n\nCheeks_Width\n\nEyes_Openning \n\nLips_Thickness\n\nJaw_Bone_Width: Bone size to sides \n\nJaw_Bone_Back_Lenght: Bone size to back \n\nChimp_Bone_Lowering: Go Down\n\nChimp_Bone_Lenght: Go forward\n\nChimp_Bone_Width\n\nChimp_Hole\n\nNeck_Thikness",
+			"comment": "Sets the various freemode face features, e.g. nose length, chin shape. Scale ranges from -1.0 to 1.0.\n\n\n\n0 - Nose Width (Thin/Wide)\n\n1 - Nose Peak (Up/Down)\n\n2 - Nose Length (Long/Short)\n\n3 - Nose Bone Curveness (Crooked/Curved)\n\n4 - Nose Tip (Up/Down)\n\n5 - Nose Bone Twist (Left/Right)\n\n6 - Eyebrow (Up/Down)\n\n7 - Eyebrow (In/Out)\n\n8 - Cheek Bones (Up/Down)\n\n9 - Cheek Sideways Bone Size (In/Out)\n\n10 - Cheek Bones Width (Puffed/Gaunt)\n\n11 - Eye Opening (Both) (Wide/Squinted)\n\n12 - Lip Thickness (Both) (Fat/Thin)\n\n13 - Jaw Bone Width (Narrow/Wide)\n\n14 - Jaw Bone Shape (Round/Square)\n\n15 - Chin Bone (Up/Down)\n\n16 - Chin Bone Length (In/Out or Backward/Forward)\n\n17 - Chin Bone Shape (Pointed/Square)\n\n18 - Chin Hole (Chin Bum)\n\n19 - Neck Thickness (Thin/Thick)",
 			"params": [
 				{
 					"type": "Ped",
@@ -69796,7 +69820,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_PED_FACE_FEATURE"
+			]
 		},
 		"0x654CD0A825161131": {
 			"name": "HAS_PED_HEAD_BLEND_FINISHED",
