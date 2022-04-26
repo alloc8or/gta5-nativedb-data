@@ -15900,6 +15900,48 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0x7796B21B76221BC5": {
+			"name": "_0x7796B21B76221BC5",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "Hash",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2612"
+		},
+		"0xD726BAB4554DA580": {
+			"name": "_0xD726BAB4554DA580",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				},
+				{
+					"type": "Hash",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2612"
+		},
 		"0xF3FBE2D50A6A8C28": {
 			"name": "SETUP_SHOP_PED_OUTFIT_QUERY",
 			"jhash": "0x1ECD23E7",
@@ -18994,6 +19036,10 @@
 				{
 					"type": "BOOL",
 					"name": "p11"
+				},
+				{
+					"type": "Any",
+					"name": "p12"
 				}
 			],
 			"return_type": "void",
@@ -19051,6 +19097,10 @@
 				{
 					"type": "Any",
 					"name": "p11"
+				},
+				{
+					"type": "Any",
+					"name": "p12"
 				}
 			],
 			"return_type": "void",
@@ -19104,6 +19154,10 @@
 				{
 					"type": "int",
 					"name": "alpha"
+				},
+				{
+					"type": "Any",
+					"name": "p11"
 				}
 			],
 			"return_type": "void",
@@ -19173,6 +19227,10 @@
 				{
 					"type": "int",
 					"name": "alpha"
+				},
+				{
+					"type": "Any",
+					"name": "p15"
 				}
 			],
 			"return_type": "void",
@@ -36828,23 +36886,6 @@
 			"return_type": "int",
 			"build": "323"
 		},
-		"0xA921AA820C25702F": {
-			"name": "IS_BIT_SET",
-			"jhash": "0x902E26AC",
-			"comment": "Returns bit's boolean state from [offset] of [address].\n\nExample:\nMISC::IS_BIT_SET(bitAddress, 1);\n\nTo enable and disable bits, see:\nMISC::SET_BIT(&bitAddress, 1);   // enable\nMISC::CLEAR_BIT(&bitAddress, 1); // disable",
-			"params": [
-				{
-					"type": "int",
-					"name": "address"
-				},
-				{
-					"type": "int",
-					"name": "offset"
-				}
-			],
-			"return_type": "BOOL",
-			"build": "323"
-		},
 		"0xF14878FC50BEC6EE": {
 			"name": "USING_MISSION_CREATOR",
 			"jhash": "0x20AB0B6B",
@@ -37552,6 +37593,38 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "2545"
+		},
+		"0x138679CA01E21F53": {
+			"name": "_0x138679CA01E21F53",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "2612"
+		},
+		"0xC545AB1CF97ABB34": {
+			"name": "_0xC545AB1CF97ABB34",
+			"jhash": "",
+			"comment": "Xbox Series (Scarlett) version...",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "2612"
+		},
+		"0xF911E695C1EB8518": {
+			"name": "_0xF911E695C1EB8518",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "2612"
+		},
+		"0x807ABE1AB65C24D2": {
+			"name": "_0x807ABE1AB65C24D2",
+			"jhash": "",
+			"comment": "PS5 (Prospero) version...",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "2612"
 		},
 		"0xF22B6C47C6EAB066": {
 			"name": "IS_STRING_NULL",
@@ -39341,6 +39414,14 @@
 				"_REMOVE_STEALTH_KILL"
 			]
 		},
+		"0x3F60413F5DF65748": {
+			"name": "_0x3F60413F5DF65748",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "int",
+			"build": "2612"
+		},
 		"0x1EAE0A6E978894A2": {
 			"name": "_0x1EAE0A6E978894A2",
 			"jhash": "0x8F60366E",
@@ -39738,6 +39819,36 @@
 			"params": [],
 			"return_type": "void",
 			"build": "1103"
+		},
+		"0x4B82FA6F2D624634": {
+			"name": "_0x4B82FA6F2D624634",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2612"
+		},
+		"0xECF041186C5A94DC": {
+			"name": "_0xECF041186C5A94DC",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "int",
+			"build": "2612"
 		}
 	},
 	"MOBILE": {
@@ -47382,6 +47493,14 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0x8251FB94DC4FDFC8": {
+			"name": "_0x8251FB94DC4FDFC8",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Player",
+			"build": "2612"
+		},
 		"0x4237E822315D8BA9": {
 			"name": "_0x4237E822315D8BA9",
 			"jhash": "",
@@ -47585,6 +47704,14 @@
 			"return_type": "void",
 			"build": "1180"
 		},
+		"0xDE9225854F37BF72": {
+			"name": "_0xDE9225854F37BF72",
+			"jhash": "",
+			"comment": "Hardcoded to return true.",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "2612"
+		},
 		"0x5EA784D197556507": {
 			"name": "_NETWORK_HAVE_ONLINE_PRIVILEGE_2",
 			"jhash": "",
@@ -47608,6 +47735,14 @@
 			"params": [],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0x7788DFE15016A182": {
+			"name": "_0x7788DFE15016A182",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "2612"
 		},
 		"0x53C10C8BD774F2C9": {
 			"name": "_0x53C10C8BD774F2C9",
@@ -48592,6 +48727,19 @@
 			"old_names": [
 				"_NETWORK_BLOCK_INVITES_2"
 			]
+		},
+		"0x68980414688F7F9D": {
+			"name": "_0x68980414688F7F9D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2612"
 		},
 		"0xF814FEC6A19FD6E0": {
 			"name": "_0xF814FEC6A19FD6E0",
@@ -49800,6 +49948,14 @@
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
+		},
+		"0x236905C700FDB54D": {
+			"name": "_0x236905C700FDB54D",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "2612"
 		},
 		"0x4A9FDE3A5A6D0437": {
 			"name": "NETWORK_SET_PRESENCE_SESSION_INVITES_BLOCKED",
@@ -52493,6 +52649,32 @@
 			],
 			"return_type": "BOOL",
 			"build": "323"
+		},
+		"0x021ABCBD98EC4320": {
+			"name": "_0x021ABCBD98EC4320",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2612"
+		},
+		"0x421E34C55F125964": {
+			"name": "_0x421E34C55F125964",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "p0"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2612"
 		},
 		"0x031E11F3D447647E": {
 			"name": "NETWORK_IS_PLAYER_TALKING",
@@ -80597,15 +80779,56 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2372"
+		},
+		"0x85F41F9225D08C72": {
+			"name": "_0x85F41F9225D08C72",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "BOOL",
+			"build": "2612"
+		},
+		"0xC8CB5999919EA2CA": {
+			"name": "_0xC8CB5999919EA2CA",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "int",
+			"build": "2612"
+		},
+		"0x77A16200E18E0C55": {
+			"name": "_0x77A16200E18E0C55",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "int",
+			"build": "2612"
+		},
+		"0xFCE2747EEF1D05FC": {
+			"name": "_0xFCE2747EEF1D05FC",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "Any*",
+					"name": "p1"
+				}
+			],
+			"return_type": "BOOL",
+			"build": "2612"
 		},
 		"0xE5E9746A66359F9D": {
 			"name": "_0xE5E9746A66359F9D",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2372"
 		},
 		"0x690B76BD2763E068": {
@@ -80613,21 +80836,8 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "2372"
-		},
-		"0x18A958B38123ED15": {
-			"name": "_0x18A958B38123ED15",
-			"jhash": "",
-			"comment": "",
-			"params": [
-				{
-					"type": "Any",
-					"name": "p0"
-				}
-			],
-			"return_type": "Any",
-			"build": "2545"
 		}
 	},
 	"SCRIPT": {
