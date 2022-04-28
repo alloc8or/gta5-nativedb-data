@@ -91515,7 +91515,7 @@
 		"0x97FF36A1D40EA00A": {
 			"name": "STOP_ANIM_TASK",
 			"jhash": "0x2B520A57",
-			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
+			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json \nLast argument seems to be the animation flag used when playing the anim via e.g. TASK_PLAY_ANIM.",
 			"params": [
 				{
 					"type": "Ped",
@@ -91531,7 +91531,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "animTaskFlag"
 				}
 			],
 			"return_type": "void",
