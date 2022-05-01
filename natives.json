@@ -61441,9 +61441,9 @@
 			"return_type": "Object",
 			"build": "323"
 		},
-		"0x0378C08504160D0D": {
-			"name": "IS_OBJECT_A_PORTABLE_PICKUP",
-			"jhash": "0x0F0E94FF",
+		"0xFC481C641EBBD27D": {
+			"name": "IS_OBJECT_A_PICKUP",
+			"jhash": "0x93D23399",
 			"comment": "",
 			"params": [
 				{
@@ -61454,9 +61454,9 @@
 			"return_type": "BOOL",
 			"build": "1365"
 		},
-		"0xFC481C641EBBD27D": {
-			"name": "IS_OBJECT_A_PICKUP",
-			"jhash": "0x93D23399",
+		"0x0378C08504160D0D": {
+			"name": "IS_OBJECT_A_PORTABLE_PICKUP",
+			"jhash": "0x0F0E94FF",
 			"comment": "",
 			"params": [
 				{
