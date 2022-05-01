@@ -8729,20 +8729,23 @@
 			"build": "323"
 		},
 		"0xD7360051C885628B": {
-			"name": "_0xD7360051C885628B",
-			"jhash": "",
+			"name": "IS_BONNET_CINEMATIC_CAM_RENDERING",
+			"jhash": "0x1DD55F13",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "372"
 		},
 		"0xF5F1E89A970B7796": {
-			"name": "_IS_CINEMATIC_CAM_ACTIVE",
-			"jhash": "",
+			"name": "IS_CINEMATIC_CAM_INPUT_ACTIVE",
+			"jhash": "0x1A900C84",
 			"comment": "Tests some cinematic camera flags",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "1493"
+			"build": "1493",
+			"old_names": [
+				"_IS_CINEMATIC_CAM_ACTIVE"
+			]
 		},
 		"0x7B8A361C1813FBEF": {
 			"name": "_0x7B8A361C1813FBEF",
@@ -13748,8 +13751,8 @@
 			"build": "323"
 		},
 		"0xD95CC5D2AB15A09F": {
-			"name": "_GET_ENTITY_CAN_BE_DAMAGED",
-			"jhash": "",
+			"name": "GET_ENTITY_CAN_BE_DAMAGED",
+			"jhash": "0xE4938B5D",
 			"comment": "",
 			"params": [
 				{
@@ -13758,7 +13761,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "757"
+			"build": "757",
+			"old_names": [
+				"_GET_ENTITY_CAN_BE_DAMAGED"
+			]
 		},
 		"0xE22D8FDE858B8119": {
 			"name": "SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP",
@@ -20847,8 +20853,8 @@
 			"build": "323"
 		},
 		"0x1086127B3A63505E": {
-			"name": "_SEETHROUGH_SET_COLOR_NEAR",
-			"jhash": "",
+			"name": "SEETHROUGH_SET_COLOR_NEAR",
+			"jhash": "0x5B2A67A8",
 			"comment": "",
 			"params": [
 				{
@@ -20865,7 +20871,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "573"
+			"build": "573",
+			"old_names": [
+				"_SEETHROUGH_SET_COLOR_NEAR"
+			]
 		},
 		"0xB3C641F3630BF6DA": {
 			"name": "_0xB3C641F3630BF6DA",
@@ -24390,7 +24399,7 @@
 		"0xAE4E8157D9ECF087": {
 			"name": "_END_TEXT_COMMAND_SCALEFORM_STRING_2",
 			"jhash": "0x2E80DB52",
-			"comment": "Same as END_TEXT_COMMAND_SCALEFORM_STRING but does not perform HTML conversion for text tokens.",
+			"comment": "Same as END_TEXT_COMMAND_SCALEFORM_STRING but does not perform HTML conversion for text tokens.\n\nEND_TEXT_COMMAND_VIA_SPECIAL_MODIFIABLE_STRING?",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -29191,7 +29200,7 @@
 			]
 		},
 		"0xC4278F70131BAA6D": {
-			"name": "_SET_BLIP_DISPLAY_INDICATOR_ON_BLIP",
+			"name": "SET_BLIP_EXTENDED_HEIGHT_THRESHOLD",
 			"jhash": "0x6AA6A1CC",
 			"comment": "Must be toggled before being queued for animation",
 			"params": [
@@ -29205,7 +29214,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_BLIP_DISPLAY_INDICATOR_ON_BLIP"
+			]
 		},
 		"0x4B5B620C9B59ED34": {
 			"name": "_0x4B5B620C9B59ED34",
@@ -29728,20 +29740,20 @@
 			"build": "323"
 		},
 		"0x170F541E1CADD1DE": {
-			"name": "_0x170F541E1CADD1DE",
+			"name": "USE_FAKE_MP_CASH",
 			"jhash": "0x6253B9D7",
 			"comment": "Related to displaying cash on the HUD\nAlways called before HUD::_SET_SINGLEPLAYER_HUD_CASH in decompiled scripts",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x0772DF77852C2E30": {
-			"name": "_SET_PLAYER_CASH_CHANGE",
+			"name": "CHANGE_FAKE_MP_CASH",
 			"jhash": "0xE319F90B",
 			"comment": "Displays cash change notifications on HUD.",
 			"params": [
@@ -32974,9 +32986,9 @@
 			"build": "1493"
 		},
 		"0x252BDC06B73FA6EA": {
-			"name": "_GET_INTERIOR_INFO",
-			"jhash": "",
-			"comment": "GET_INTERIOR_*",
+			"name": "GET_INTERIOR_LOCATION_AND_NAMEHASH",
+			"jhash": "0x75885CB3",
+			"comment": "",
 			"params": [
 				{
 					"type": "Interior",
@@ -32992,7 +33004,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_GET_INTERIOR_INFO"
+			]
 		},
 		"0xE4A84ABF135EF91A": {
 			"name": "GET_INTERIOR_GROUP_ID",
@@ -33236,12 +33251,15 @@
 			"build": "323"
 		},
 		"0xE7D267EC6CA966C3": {
-			"name": "_GET_INTERIOR_FROM_GAMEPLAY_CAM",
-			"jhash": "",
+			"name": "GET_INTERIOR_FROM_PRIMARY_VIEW",
+			"jhash": "0xA83C3D15",
 			"comment": "Returns the current interior id from gameplay camera",
 			"params": [],
 			"return_type": "Interior",
-			"build": "1604"
+			"build": "1604",
+			"old_names": [
+				"_GET_INTERIOR_FROM_GAMEPLAY_CAM"
+			]
 		},
 		"0xB0F7F8663821D9C3": {
 			"name": "GET_INTERIOR_AT_COORDS",
@@ -39521,9 +39539,9 @@
 			"build": "1180"
 		},
 		"0x6FDDF453C0C756EC": {
-			"name": "_0x6FDDF453C0C756EC",
+			"name": "HAS_GAME_INSTALLED_THIS_SESSION",
 			"jhash": "0xC3C10FCC",
-			"comment": "HAS_*\n\nProbably something like \"has game been started for the first time\".",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -49058,8 +49076,8 @@
 			"build": "323"
 		},
 		"0x0E4F77F7B9D74D84": {
-			"name": "_0x0E4F77F7B9D74D84",
-			"jhash": "",
+			"name": "NETWORK_SET_ACTIVITY_PLAYER_MAX",
+			"jhash": "0x04CB2AB4",
 			"comment": "",
 			"params": [
 				{
@@ -49274,15 +49292,15 @@
 			"build": "323"
 		},
 		"0x1888694923EF4591": {
-			"name": "_0x1888694923EF4591",
-			"jhash": "",
+			"name": "NETWORK_CLEAR_GROUP_ACTIVITY",
+			"jhash": "0x157D44D3",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "393"
 		},
 		"0xB13E88E655E5A3BC": {
-			"name": "_0xB13E88E655E5A3BC",
+			"name": "NETWORK_RETAIN_ACTIVITY_GROUP",
 			"jhash": "0x36A5F2DA",
 			"comment": "",
 			"params": [],
@@ -49932,9 +49950,9 @@
 			"build": "323"
 		},
 		"0x3F9990BF5F22759C": {
-			"name": "_0x3F9990BF5F22759C",
+			"name": "NETWORK_HAS_TRANSITION_INVITE_BEEN_ACKED",
 			"jhash": "0x00F26CDC",
-			"comment": "NETWORK_HAS_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
@@ -50319,9 +50337,9 @@
 			"build": "323"
 		},
 		"0x71DC455F5CD1C2B1": {
-			"name": "_0x71DC455F5CD1C2B1",
-			"jhash": "",
-			"comment": "NETWORK_HAS_*",
+			"name": "NETWORK_HAS_INVITE_BEEN_ACKED",
+			"jhash": "0xF6F9D1B9",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
@@ -50372,7 +50390,7 @@
 		},
 		"0x66F010A4B031A331": {
 			"name": "NETWORK_SET_INVITE_ON_CALL_FOR_INVITE_MENU",
-			"jhash": "",
+			"jhash": "0x11378777",
 			"comment": "",
 			"params": [
 				{
@@ -50385,7 +50403,7 @@
 		},
 		"0x44B37CDCAE765AAE": {
 			"name": "NETWORK_CHECK_DATA_MANAGER_SUCCEEDED_FOR_HANDLE",
-			"jhash": "",
+			"jhash": "0x13301529",
 			"comment": "",
 			"params": [
 				{
@@ -54692,7 +54710,7 @@
 		"0xC6FCEE21C6FCEE21": {
 			"name": "_0xC6FCEE21C6FCEE21",
 			"jhash": "",
-			"comment": "",
+			"comment": "A value between 1.0 and 5.0\n\n_NETWORK_SET_TASK_CUTSCENE_PROXIMITY_SCALE?",
 			"params": [
 				{
 					"type": "Any",
@@ -55473,10 +55491,7 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323",
-			"old_names": [
-				"_NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA"
-			]
+			"build": "323"
 		},
 		"0x478DCBD2A98B705A": {
 			"name": "NETWORK_ATTACH_SYNCHRONISED_SCENE_TO_ENTITY",
@@ -55543,17 +55558,20 @@
 			]
 		},
 		"0xC9B43A33D09CADA7": {
-			"name": "_0xC9B43A33D09CADA7",
-			"jhash": "",
+			"name": "NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA",
+			"jhash": "0xC3AA2EC7",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netScene"
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA"
+			]
 		},
 		"0x144DA052257AE7D8": {
 			"name": "_0x144DA052257AE7D8",
@@ -56660,8 +56678,8 @@
 			"build": "323"
 		},
 		"0x2A5E0621DD815A9A": {
-			"name": "_NETWORK_EXPLODE_HELI",
-			"jhash": "",
+			"name": "NETWORK_EXPLODE_HELI",
+			"jhash": "0x955B31BF",
 			"comment": "",
 			"params": [
 				{
@@ -64337,7 +64355,7 @@
 			"build": "323"
 		},
 		"0xA0F8A7517A273C05": {
-			"name": "_GET_ROAD_SIDE_POINT_WITH_HEADING",
+			"name": "GET_ROAD_BOUNDARY_USING_HEADING",
 			"jhash": "0x5E440AC7",
 			"comment": "",
 			"params": [
@@ -64363,7 +64381,10 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "463"
+			"build": "463",
+			"old_names": [
+				"_GET_ROAD_SIDE_POINT_WITH_HEADING"
+			]
 		},
 		"0x16F46FB18C8009E4": {
 			"name": "_GET_POINT_ON_ROAD_SIDE",
@@ -73678,9 +73699,9 @@
 			"build": "323"
 		},
 		"0x2016C603D6B8987C": {
-			"name": "_0x2016C603D6B8987C",
+			"name": "SET_PED_STEERS_AROUND_DEAD_BODIES",
 			"jhash": "0xA6F2C057",
-			"comment": "SET_PED_STE*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -74579,7 +74600,7 @@
 			"build": "323"
 		},
 		"0xCD9CC7E200A52A6F": {
-			"name": "_DISPOSE_SYNCHRONIZED_SCENE",
+			"name": "TAKE_OWNERSHIP_OF_SYNCHRONIZED_SCENE",
 			"jhash": "0xBF7F9035",
 			"comment": "",
 			"params": [
@@ -74589,7 +74610,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_DISPOSE_SYNCHRONIZED_SCENE"
+			]
 		},
 		"0xF28965D04F570DCA": {
 			"name": "FORCE_PED_MOTION_STATE",
@@ -82247,8 +82271,8 @@
 			"build": "323"
 		},
 		"0xC85A7127E7AD02AA": {
-			"name": "_0xC85A7127E7AD02AA",
-			"jhash": "",
+			"name": "SC_GAMERDATA_GET_INT",
+			"jhash": "0xF8BDA989",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -82256,8 +82280,8 @@
 			"unused": true
 		},
 		"0xA770C8EEC6FB2AC5": {
-			"name": "_0xA770C8EEC6FB2AC5",
-			"jhash": "",
+			"name": "SC_GAMERDATA_GET_FLOAT",
+			"jhash": "0x515AF67C",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -82265,9 +82289,9 @@
 			"unused": true
 		},
 		"0x8416FE4E4629D7D7": {
-			"name": "_SC_GET_IS_PROFILE_ATTRIBUTE_SET",
+			"name": "SC_GAMERDATA_GET_BOOL",
 			"jhash": "0xDF45B2A7",
-			"comment": "sfink: from scripts:\nfunc_720(socialclub::_0x8416FE4E4629D7D7(\"bIgnoreCheaterOverride\"));\nfunc_719(socialclub::_0x8416FE4E4629D7D7(\"bIgnoreBadSportOverride\"));\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -82275,11 +82299,14 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SC_GET_IS_PROFILE_ATTRIBUTE_SET"
+			]
 		},
 		"0x7FFCBFEE44ECFABF": {
-			"name": "_0x7FFCBFEE44ECFABF",
-			"jhash": "",
+			"name": "SC_GAMERDATA_GET_STRING",
+			"jhash": "0x2AE35169",
 			"comment": "",
 			"params": [],
 			"return_type": "Any",
@@ -82391,7 +82418,7 @@
 			"build": "323"
 		},
 		"0xF6BAAAF762E1BF40": {
-			"name": "_0xF6BAAAF762E1BF40",
+			"name": "SC_LICENSEPLATE_CHECK_STRING",
 			"jhash": "0x7AA36406",
 			"comment": "",
 			"params": [
@@ -82408,7 +82435,7 @@
 			"build": "323"
 		},
 		"0xF22CA0FD74B80E7A": {
-			"name": "_0xF22CA0FD74B80E7A",
+			"name": "SC_LICENSEPLATE_GET_CHECK_IS_VALID",
 			"jhash": "0xF379DCE4",
 			"comment": "",
 			"params": [
@@ -82421,7 +82448,7 @@
 			"build": "323"
 		},
 		"0x9237E334F6E43156": {
-			"name": "_0x9237E334F6E43156",
+			"name": "SC_LICENSEPLATE_GET_CHECK_IS_PENDING",
 			"jhash": "0x65D84665",
 			"comment": "",
 			"params": [
@@ -82434,158 +82461,158 @@
 			"build": "323"
 		},
 		"0x700569DBA175A77C": {
-			"name": "_0x700569DBA175A77C",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_GET_COUNT",
+			"jhash": "0x159FE39C",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "token"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x1D4446A62D35B0D0": {
-			"name": "_0x1D4446A62D35B0D0",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_GET_PLATE",
+			"jhash": "0x4CE9BAA7",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "token"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "plateIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "323"
 		},
 		"0x2E89990DDFF670C3": {
-			"name": "_0x2E89990DDFF670C3",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_GET_PLATE_DATA",
+			"jhash": "0x05303FC8",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "token"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "plateIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "const char*",
 			"build": "323"
 		},
 		"0xD0EE05FE193646EA": {
-			"name": "_0xD0EE05FE193646EA",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_SET_PLATE_DATA",
+			"jhash": "0x9F98FA5C",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "oldPlateText"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "newPlateText"
 				},
 				{
 					"type": "Any*",
-					"name": "p2"
+					"name": "plateData"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x1989C6E6F67E76A8": {
-			"name": "_0x1989C6E6F67E76A8",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_ADD",
+			"jhash": "0xEEDE7FAB",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "plateText"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "plateData"
 				},
 				{
 					"type": "int*",
-					"name": "p2"
+					"name": "token"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x07C61676E5BB52CD": {
-			"name": "_0x07C61676E5BB52CD",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_GET_ADD_IS_PENDING",
+			"jhash": "0xE190E45A",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "token"
 				}
 			],
 			"return_type": "Any",
 			"build": "323"
 		},
 		"0x8147FFF6A718E1AD": {
-			"name": "_0x8147FFF6A718E1AD",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_GET_ADD_STATUS",
+			"jhash": "0x930B3AE5",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "token"
 				}
 			],
 			"return_type": "Any",
 			"build": "323"
 		},
 		"0x0F73393BAC7E6730": {
-			"name": "_0x0F73393BAC7E6730",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_ISVALID",
+			"jhash": "0x5298F472",
 			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "plateText"
 				},
 				{
 					"type": "int*",
-					"name": "p1"
+					"name": "token"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xD302E99EDF0449CF": {
-			"name": "_0xD302E99EDF0449CF",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_GET_ISVALID_IS_PENDING",
+			"jhash": "0x86DAE6D6",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "token"
 				}
 			],
 			"return_type": "int",
 			"build": "323"
 		},
 		"0x5C4EBFFA98BDB41C": {
-			"name": "_0x5C4EBFFA98BDB41C",
-			"jhash": "",
+			"name": "SC_LICENSEPLATE_GET_ISVALID_STATUS",
+			"jhash": "0x9AA2BA3F",
 			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "token"
 				}
 			],
 			"return_type": "int",
@@ -84424,7 +84451,7 @@
 			"build": "323",
 			"old_names": [
 				"_PLAYSTATS_AMBIENT_MISSION_CRATE_CREATED",
-				"_PLAYSTATS_CRATE_CREATED"
+				"_PLAYSTATS_CRATE_CREATED_MISSION_DONE"
 			]
 		},
 		"0xCB00196B31C39EB1": {
@@ -91655,7 +91682,7 @@
 		},
 		"0xDDF3CB5A0A4C0B49": {
 			"name": "SET_ANIM_PHASE",
-			"jhash": "",
+			"jhash": "0xB621E7E4",
 			"comment": "",
 			"params": [
 				{
@@ -94047,25 +94074,25 @@
 			"build": "323"
 		},
 		"0x28B7B9BFDAF274AA": {
-			"name": "_0x28B7B9BFDAF274AA",
+			"name": "_ADD_SCRIPTED_BLOCKING_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -102531,9 +102558,9 @@
 			"build": "323"
 		},
 		"0x5873C14A52D74236": {
-			"name": "_GET_VEHICLE_MODEL_MONETARY_VALUE",
-			"jhash": "",
-			"comment": "Returns `nMonetaryValue` from handling.meta for specific model.\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"name": "GET_VEHICLE_MODEL_VALUE",
+			"jhash": "0x58FEFC3D",
+			"comment": "Returns `nMonetaryValue` from handling.meta for specific model.",
 			"params": [
 				{
 					"type": "Hash",
@@ -102541,7 +102568,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "463"
+			"build": "463",
+			"old_names": [
+				"_GET_VEHICLE_MODEL_MONETARY_VALUE"
+			]
 		},
 		"0x28D37D4F71AC5C58": {
 			"name": "GET_VEHICLE_LAYOUT_HASH",
@@ -103418,8 +103448,8 @@
 			"build": "323"
 		},
 		"0x4E74E62E0A97E901": {
-			"name": "_0x4E74E62E0A97E901",
-			"jhash": "",
+			"name": "SET_POLICE_FOCUS_WILL_TRACK_VEHICLE",
+			"jhash": "0x5690F6C3",
 			"comment": "",
 			"params": [
 				{
@@ -103428,7 +103458,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -104367,8 +104397,8 @@
 			]
 		},
 		"0xDA62027C8BDB326E": {
-			"name": "_GET_VEHICLE_FLIGHT_NOZZLE_POSITION",
-			"jhash": "",
+			"name": "GET_VEHICLE_FLIGHT_NOZZLE_POSITION",
+			"jhash": "0xAD40AD55",
 			"comment": "",
 			"params": [
 				{
@@ -104381,7 +104411,8 @@
 			"old_names": [
 				"_GET_PLANE_HOVER_MODE_PERCENTAGE",
 				"_GET_VEHICLE_HOVER_MODE_PERCENTAGE",
-				"_GET_PLANE_VTOL_DIRECTION"
+				"_GET_PLANE_VTOL_DIRECTION",
+				"_GET_VEHICLE_FLIGHT_NOZZLE_POSITION"
 			]
 		},
 		"0xCE2B43770B655F8F": {
@@ -107051,7 +107082,7 @@
 			"build": "944"
 		},
 		"0x571FEB383F629926": {
-			"name": "_SET_CARGOBOB_HOOK_CAN_DETACH",
+			"name": "SET_CARGOBOB_FORCE_DONT_DETACH_VEHICLE",
 			"jhash": "0x49949FDA",
 			"comment": "Stops cargobob from being able to detach the attached vehicle.",
 			"params": [
@@ -107065,7 +107096,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_SET_CARGOBOB_HOOK_CAN_DETACH"
+			]
 		},
 		"0x1F34B0626C594380": {
 			"name": "_0x1F34B0626C594380",
@@ -108395,7 +108429,7 @@
 			]
 		},
 		"0xD4C4642CB7F50B5D": {
-			"name": "_0xD4C4642CB7F50B5D",
+			"name": "GET_VEHICLE_IS_MERCENARY",
 			"jhash": "0x575504DE",
 			"comment": "",
 			"params": [
@@ -108461,7 +108495,7 @@
 			]
 		},
 		"0xE16142B94664DEFD": {
-			"name": "_0xE16142B94664DEFD",
+			"name": "SET_PLANE_RESIST_TO_EXPLOSION",
 			"jhash": "0xFBBA699A",
 			"comment": "",
 			"params": [
@@ -108471,23 +108505,23 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x8074CC1886802912": {
-			"name": "_0x8074CC1886802912",
+			"name": "_SET_HELI_RESIST_TO_EXPLOSION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
