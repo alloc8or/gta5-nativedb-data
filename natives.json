@@ -54605,7 +54605,7 @@
 			"build": "323"
 		},
 		"0xE42D626EEC94E5D9": {
-			"name": "_0xE42D626EEC94E5D9",
+			"name": "_GET_RESERVATIONS_FOR_SLOT_WORLD_POSITION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -81242,7 +81242,7 @@
 			"build": "323"
 		},
 		"0x836B62713E0534CA": {
-			"name": "_0x836B62713E0534CA",
+			"name": "_BG_EXITED_BECAUSE_BACKGROUND_THREAD_STOPPED",
 			"jhash": "0x22B9F132",
 			"comment": "Returns true if bit 0 in GtaThread+0x154 is set.\n\nBG_*",
 			"params": [],
