@@ -4273,7 +4273,7 @@
 			"build": "323"
 		},
 		"0x149AEE66F0CB3A99": {
-			"name": "_0x149AEE66F0CB3A99",
+			"name": "SET_PED_WALLA_DENSITY",
 			"jhash": "0xE64F97A0",
 			"comment": "",
 			"params": [
@@ -4290,8 +4290,8 @@
 			"build": "323"
 		},
 		"0x8BF907833BE275DE": {
-			"name": "_0x8BF907833BE275DE",
-			"jhash": "",
+			"name": "SET_PED_INTERIOR_WALLA_DENSITY",
+			"jhash": "0x2CD26D69",
 			"comment": "",
 			"params": [
 				{
