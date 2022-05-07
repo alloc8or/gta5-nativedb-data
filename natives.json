@@ -25515,29 +25515,32 @@
 			"build": "323"
 		},
 		"0x317EBA71D7543F52": {
-			"name": "_THEFEED_ADD_TXD_REF",
-			"jhash": "",
-			"comment": "From the decompiled scripts, called 61 times:\nHUD::_317EBA71D7543F52(&v_13, &v_13, &v_3, &v_3);",
+			"name": "THEFEED_UPDATE_ITEM_TEXTURE",
+			"jhash": "0x6A3F747D",
+			"comment": "Used in the native scripts to reference \"GET_PEDHEADSHOT_TXD_STRING\" and \"CHAR_DEFAULT\".",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "txdString1"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "txnString1"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "txdString2"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "const char*",
+					"name": "txnString2"
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_THEFEED_ADD_TXD_REF"
+			]
 		},
 		"0x202709F4C58A0424": {
 			"name": "BEGIN_TEXT_COMMAND_THEFEED_POST",
@@ -29223,12 +29226,12 @@
 		},
 		"0x2C9F302398E13141": {
 			"name": "_0x2C9F302398E13141",
-			"jhash": "",
+			"jhash": "0xCA95C487",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
 					"type": "Any",
@@ -29679,7 +29682,7 @@
 		},
 		"0x55F5A5F07134DE60": {
 			"name": "_0x55F5A5F07134DE60",
-			"jhash": "",
+			"jhash": "0x7A569F78",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -29726,7 +29729,7 @@
 		},
 		"0x170F541E1CADD1DE": {
 			"name": "_0x170F541E1CADD1DE",
-			"jhash": "",
+			"jhash": "0x6253B9D7",
 			"comment": "Related to displaying cash on the HUD\nAlways called before HUD::_SET_SINGLEPLAYER_HUD_CASH in decompiled scripts",
 			"params": [
 				{
@@ -29739,7 +29742,7 @@
 		},
 		"0x0772DF77852C2E30": {
 			"name": "_SET_PLAYER_CASH_CHANGE",
-			"jhash": "",
+			"jhash": "0xE319F90B",
 			"comment": "Displays cash change notifications on HUD.",
 			"params": [
 				{
@@ -35162,98 +35165,98 @@
 			"build": "323"
 		},
 		"0x7F8F6405F4777AF6": {
-			"name": "_0x7F8F6405F4777AF6",
+			"name": "_GET_PROGRESS_ALONG_LINE_BETWEEN_COORDS",
 			"jhash": "0x89459F0A",
-			"comment": "",
+			"comment": "returns a float between 0.0 and 1.0, clamp: sets whether the product should be clamped between the given coordinates",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "x3"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "y3"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "z3"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "clamp"
 				}
 			],
 			"return_type": "float",
 			"build": "323"
 		},
 		"0x21C235BC64831E5A": {
-			"name": "_0x21C235BC64831E5A",
+			"name": "GET_CLOSEST_POINT_ON_LINE",
 			"jhash": "0xCAECF37E",
-			"comment": "GET_C*",
+			"comment": "clamp: sets whether the product should be clamped between the given coordinates",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "x3"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "y3"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "z3"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "clamp"
 				}
 			],
 			"return_type": "Vector3",
@@ -51211,15 +51214,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "scriptName"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -61168,8 +61171,8 @@
 			"build": "2545"
 		},
 		"0x867458251D47CCB2": {
-			"name": "_HIDE_PICKUP",
-			"jhash": "",
+			"name": "HIDE_PORTABLE_PICKUP_WHEN_DETACHED",
+			"jhash": "0x1F63B042",
 			"comment": "",
 			"params": [
 				{
@@ -61182,7 +61185,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "463"
+			"build": "463",
+			"old_names": [
+				"_HIDE_PICKUP"
+			]
 		},
 		"0x0BF3B3BD47D79C08": {
 			"name": "SET_MAX_NUM_PORTABLE_PICKUPS_CARRIED_BY_PLAYER",
@@ -61417,7 +61423,7 @@
 			"return_type": "Object",
 			"build": "323"
 		},
-		"0xFC481C641EBBD27D": {
+		"0x0378C08504160D0D": {
 			"name": "IS_OBJECT_A_PORTABLE_PICKUP",
 			"jhash": "0x0F0E94FF",
 			"comment": "",
@@ -61430,7 +61436,7 @@
 			"return_type": "BOOL",
 			"build": "1365"
 		},
-		"0x0378C08504160D0D": {
+		"0xFC481C641EBBD27D": {
 			"name": "IS_OBJECT_A_PICKUP",
 			"jhash": "0x93D23399",
 			"comment": "",
@@ -62751,7 +62757,7 @@
 			"build": "323"
 		},
 		"0xD7D22F5592AED8BA": {
-			"name": "_0xD7D22F5592AED8BA",
+			"name": "_GET_MS_SINCE_LAST_INPUT",
 			"jhash": "0x0E8EF929",
 			"comment": "",
 			"params": [
@@ -64298,28 +64304,28 @@
 			"build": "323"
 		},
 		"0xF3162836C28F9DA5": {
-			"name": "_0xF3162836C28F9DA5",
-			"jhash": "",
-			"comment": "",
+			"name": "GET_GPS_WAYPOINT_ROUTE_END",
+			"jhash": "0x40BB1149",
+			"comment": "p3 can be 0, 1 or 2.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vector3*",
+					"name": "result"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "505"
 		},
 		"0x869DAACBBE9FA006": {
@@ -64332,7 +64338,7 @@
 		},
 		"0xA0F8A7517A273C05": {
 			"name": "_GET_ROAD_SIDE_POINT_WITH_HEADING",
-			"jhash": "",
+			"jhash": "0x5E440AC7",
 			"comment": "",
 			"params": [
 				{
@@ -64590,36 +64596,36 @@
 			"build": "323"
 		},
 		"0x01708E8DD3FF8C65": {
-			"name": "_0x01708E8DD3FF8C65",
-			"jhash": "",
+			"name": "GET_NUM_NAVMESHES_EXISTING_IN_AREA",
+			"jhash": "0x76AFFBB5",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xFCD5C8E06E502F5A": {
@@ -81213,7 +81219,7 @@
 		},
 		"0x836B62713E0534CA": {
 			"name": "_0x836B62713E0534CA",
-			"jhash": "",
+			"jhash": "0x22B9F132",
 			"comment": "Returns true if bit 0 in GtaThread+0x154 is set.\n\nBG_*",
 			"params": [],
 			"return_type": "BOOL",
@@ -81222,7 +81228,7 @@
 		},
 		"0x760910B49D2B98EA": {
 			"name": "_0x760910B49D2B98EA",
-			"jhash": "",
+			"jhash": "0x5C95B670",
 			"comment": "Sets bit 1 in GtaThread+0x154\n\nBG_*",
 			"params": [],
 			"return_type": "void",
@@ -84397,8 +84403,8 @@
 			]
 		},
 		"0xAFC7E5E075A96F46": {
-			"name": "_PLAYSTATS_CRATE_CREATED_MISSION_DONE",
-			"jhash": "",
+			"name": "PLAYSTATS_CRATE_CREATED",
+			"jhash": "0xD003E648",
 			"comment": "",
 			"params": [
 				{
@@ -84687,8 +84693,8 @@
 			"build": "323"
 		},
 		"0xF5BB8DAC426A52C0": {
-			"name": "_0xF5BB8DAC426A52C0",
-			"jhash": "",
+			"name": "PLAYSTATS_JOB_BEND",
+			"jhash": "0x40520E70",
 			"comment": "",
 			"params": [
 				{
@@ -84781,7 +84787,7 @@
 		"0x5DA3A8DE8CB6226F": {
 			"name": "PLAYSTATS_IDLE_KICK",
 			"jhash": "0x9E2B9522",
-			"comment": "longest time being ilde?",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -84792,21 +84798,21 @@
 			"build": "323"
 		},
 		"0xD1032E482629049E": {
-			"name": "_0xD1032E482629049E",
-			"jhash": "",
-			"comment": "PLAYSTATS_S*",
+			"name": "PLAYSTATS_SET_JOIN_TYPE",
+			"jhash": "0x1AC97138",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "joinType"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xF4FF020A08BC8863": {
-			"name": "_PLAYSTATS_HEIST_SAVE_CHEAT",
-			"jhash": "",
+			"name": "PLAYSTATS_HEIST_SAVE_CHEAT",
+			"jhash": "0xB731DF54",
 			"comment": "",
 			"params": [
 				{
@@ -84819,7 +84825,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_PLAYSTATS_HEIST_SAVE_CHEAT"
+			]
 		},
 		"0x46326E13DA4E0546": {
 			"name": "_PLAYSTATS_DIRECTOR_MODE",
@@ -91645,7 +91654,7 @@
 			"build": "323"
 		},
 		"0xDDF3CB5A0A4C0B49": {
-			"name": "_SET_ANIM_PLAYBACK_TIME",
+			"name": "SET_ANIM_PHASE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -91667,7 +91676,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "2372"
+			"build": "2372",
+			"old_names": [
+				"_SET_ANIM_PLAYBACK_TIME"
+			]
 		},
 		"0x032D49C5E359C847": {
 			"name": "SET_ANIM_RATE",
@@ -103098,8 +103110,8 @@
 			"build": "323"
 		},
 		"0xBE4C854FFDB6EEBE": {
-			"name": "_TRANSFORM_VEHICLE_TO_SUBMARINE",
-			"jhash": "",
+			"name": "TRANSFORM_TO_SUBMARINE",
+			"jhash": "0xCAFE5FE0",
 			"comment": "Transforms the `stormberg` to its \"water vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
 			"params": [
 				{
@@ -103114,12 +103126,13 @@
 			"return_type": "void",
 			"build": "1365",
 			"old_names": [
-				"_TRANSFORM_STORMBERG_TO_WATER_VEHICLE"
+				"_TRANSFORM_STORMBERG_TO_WATER_VEHICLE",
+				"_TRANSFORM_VEHICLE_TO_SUBMARINE"
 			]
 		},
 		"0x2A69FFD1B42BFF9E": {
-			"name": "_TRANSFORM_SUBMARINE_TO_VEHICLE",
-			"jhash": "",
+			"name": "TRANSFORM_TO_CAR",
+			"jhash": "0xD8B90941",
 			"comment": "Transforms the `stormberg` to its \"road vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
 			"params": [
 				{
@@ -103134,12 +103147,13 @@
 			"return_type": "void",
 			"build": "1290",
 			"old_names": [
-				"_TRANSFORM_STORMBERG_TO_ROAD_VEHICLE"
+				"_TRANSFORM_STORMBERG_TO_ROAD_VEHICLE",
+				"_TRANSFORM_SUBMARINE_TO_VEHICLE"
 			]
 		},
 		"0xA77DC70BD689A1E5": {
-			"name": "_GET_IS_SUBMARINE_VEHICLE_TRANSFORMED",
-			"jhash": "",
+			"name": "IS_VEHICLE_IN_SUBMARINE_MODE",
+			"jhash": "0xE2FF06DB",
 			"comment": "",
 			"params": [
 				{
@@ -103148,12 +103162,15 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_GET_IS_SUBMARINE_VEHICLE_TRANSFORMED"
+			]
 		},
 		"0x2959F696AE390A99": {
 			"name": "IS_VEHICLE_STOPPED_AT_TRAFFIC_LIGHTS",
 			"jhash": "0x69200FA4",
-			"comment": "Is this for red lights only?  more testing required.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107001,8 +107018,8 @@
 			"build": "323"
 		},
 		"0xA1DD82F3CCF9A01E": {
-			"name": "_ATTACH_ENTITY_TO_CARGOBOB",
-			"jhash": "",
+			"name": "ATTACH_ENTITY_TO_CARGOBOB",
+			"jhash": "0xAEB29F98",
 			"comment": "",
 			"params": [
 				{
@@ -107035,8 +107052,8 @@
 		},
 		"0x571FEB383F629926": {
 			"name": "_SET_CARGOBOB_HOOK_CAN_DETACH",
-			"jhash": "0xAEB29F98",
-			"comment": "Stops cargobob from beeing able to detach the attached vehicle.",
+			"jhash": "0x49949FDA",
+			"comment": "Stops cargobob from being able to detach the attached vehicle.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107086,7 +107103,7 @@
 		},
 		"0xCBDB9B923CACC92D": {
 			"name": "_GET_CARGOBOB_HOOK_POSITION",
-			"jhash": "",
+			"jhash": "0xE6633DCF",
 			"comment": "Gets the position of the cargobob hook, in world coords.",
 			"params": [
 				{
@@ -108338,8 +108355,8 @@
 			"build": "323"
 		},
 		"0xB8EF61207C2393A9": {
-			"name": "_GET_VEHICLE_BODY_HEALTH_2",
-			"jhash": "",
+			"name": "GET_VEHICLE_HEALTH_PERCENTAGE",
+			"jhash": "0x196BA503",
 			"comment": "0 min 100 max\nstarts at 100\nSeams to have health zones\nFront of vehicle when damaged goes from 100-50 and stops at 50.\nRear can be damaged from 100-0\nOnly tested with two cars.\n\nany idea how this differs from the first one?\n\n--\nMay return the vehicle health on a scale of 0.0 - 100.0 (needs to be confirmed)\n\nexample:\n\nv_F = ENTITY::GET_ENTITY_MODEL(v_3);\nif (((v_F == ${tanker}) || (v_F == ${armytanker})) || (v_F == ${tanker2})) {\n    if (VEHICLE::_GET_VEHICLE_BODY_HEALTH_2(v_3) <= 1.0) {\n        NETWORK::NETWORK_EXPLODE_VEHICLE(v_3, 1, 1, -1);\n    }\n}",
 			"params": [
 				{
@@ -108372,12 +108389,15 @@
 				}
 			],
 			"return_type": "float",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_VEHICLE_BODY_HEALTH_2"
+			]
 		},
 		"0xD4C4642CB7F50B5D": {
 			"name": "_0xD4C4642CB7F50B5D",
-			"jhash": "",
-			"comment": "Only used like this:\n\nif (VEHICLE::_D4C4642CB7F50B5D(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(v_3))) {\n\tsub_157e9c(g_40001._f1868, 0);\n}",
+			"jhash": "0x575504DE",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108389,7 +108409,7 @@
 		},
 		"0xC361AA040D6637A8": {
 			"name": "_0xC361AA040D6637A8",
-			"jhash": "",
+			"jhash": "0x819CD954",
 			"comment": "",
 			"params": [
 				{
@@ -108442,7 +108462,7 @@
 		},
 		"0xE16142B94664DEFD": {
 			"name": "_0xE16142B94664DEFD",
-			"jhash": "",
+			"jhash": "0xFBBA699A",
 			"comment": "",
 			"params": [
 				{
