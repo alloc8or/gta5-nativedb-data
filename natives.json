@@ -13324,7 +13324,7 @@
 		"0x3910051CCECDB00C": {
 			"name": "_SET_ENTITY_CLEANUP_BY_ENGINE",
 			"jhash": "0xD3850671",
-			"comment": "True means it can be deleted by the engine when switching lobbies/missions/etc, false means the script is expected to clean it up.",
+			"comment": "True means it can be deleted by the engine when switching lobbies/missions/etc, false means the script is expected to clean it up.\n\n\"Allow Freeze If No Collision\"",
 			"params": [
 				{
 					"type": "Entity",
@@ -33142,7 +33142,7 @@
 			"build": "323"
 		},
 		"0x82EBB79E258FA2B7": {
-			"name": "_0x82EBB79E258FA2B7",
+			"name": "RETAIN_ENTITY_IN_INTERIOR",
 			"jhash": "0xE645E162",
 			"comment": "",
 			"params": [
@@ -53982,7 +53982,7 @@
 			"build": "323"
 		},
 		"0x3FA36981311FA4FF": {
-			"name": "_0x3FA36981311FA4FF",
+			"name": "SET_NETWORK_ID_PASS_CONTROL_IN_TUTORIAL",
 			"jhash": "0x00AE4E17",
 			"comment": "",
 			"params": [
