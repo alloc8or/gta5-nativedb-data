@@ -93687,47 +93687,47 @@
 		"0xEAF66ACDDC794793": {
 			"name": "TASK_RAPPEL_DOWN_WALL",
 			"jhash": "",
-			"comment": "",
+			"comment": "Attaches a ped to a rope and allows player control to rappel down a wall. Disables all collisions while on the rope.\np10: Usually 1 in the scripts, clipSet: Clipset to use for the task, minZ: Minimum Z that the player can descend to, ropeHandle: Rope to attach this task to created with ADD_ROPE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "minZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "ropeHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "const char*",
+					"name": "clipSet"
 				},
 				{
 					"type": "Any",
