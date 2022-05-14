@@ -51137,7 +51137,7 @@
 		"0x1D6A14F1F9A736FC": {
 			"name": "NETWORK_GET_HOST_OF_SCRIPT",
 			"jhash": "0x9C95D0BB",
-			"comment": "scriptName examples:\n\"freemode\", \"AM_CR_SecurityVan\", ...\n\nMost of the time, these values are used:\np1 = -1\np2 = 0",
+			"comment": "scriptName examples:\n\"freemode\", \"AM_CR_SecurityVan\", ...\n\nMost of the time, these values are used:\ninstance_id = -1\nposition_hash = 0",
 			"params": [
 				{
 					"type": "const char*",
@@ -51145,11 +51145,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "instance_id"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "position_hash"
 				}
 			],
 			"return_type": "Player",
@@ -51173,16 +51173,16 @@
 					"name": "scriptName"
 				},
 				{
-					"type": "Player",
-					"name": "player"
+					"type": "int",
+					"name": "instance_id"
 				},
 				{
 					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "position_hash"
 				}
 			],
 			"return_type": "BOOL",
@@ -51237,11 +51237,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "instance_id"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "int",
+					"name": "position_hash"
 				}
 			],
 			"return_type": "int",
@@ -51270,15 +51270,15 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player1"
+					"name": "player"
 				},
 				{
 					"type": "const char*",
 					"name": "script"
 				},
 				{
-					"type": "Player",
-					"name": "player2"
+					"type": "int",
+					"name": "instance_id"
 				}
 			],
 			"return_type": "BOOL",
@@ -51287,7 +51287,7 @@
 		"0x2302C0264EA58D31": {
 			"name": "_0x2302C0264EA58D31",
 			"jhash": "0x8DCFE77D",
-			"comment": "",
+			"comment": "Sets a flag on scriptHandlerNetComponent of the calling script.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
