@@ -48524,7 +48524,7 @@
 		"0xA1B043EE79A916FB": {
 			"name": "NETWORK_GET_NUM_FOUND_GAMERS",
 			"jhash": "0xF4B80C7E",
-			"comment": "NETWORK_SESSION_[S-V]",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
