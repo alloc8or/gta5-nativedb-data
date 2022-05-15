@@ -51285,9 +51285,9 @@
 			"build": "323"
 		},
 		"0x2302C0264EA58D31": {
-			"name": "_0x2302C0264EA58D31",
+			"name": "NETWORK_PREVENT_SCRIPT_HOST_MIGRATION",
 			"jhash": "0x8DCFE77D",
-			"comment": "Sets a flag on scriptHandlerNetComponent of the calling script.",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
