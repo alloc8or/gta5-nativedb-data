@@ -20117,7 +20117,7 @@
 		"0x5DEBD9C4DC995692": {
 			"name": "_0x5DEBD9C4DC995692",
 			"jhash": "",
-			"comment": "",
+			"comment": "ENABLE_[M-S]",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -22274,7 +22274,7 @@
 		"0x2A251AA48B2B46DB": {
 			"name": "_0x2A251AA48B2B46DB",
 			"jhash": "",
-			"comment": "",
+			"comment": "CLEAR_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -31868,7 +31868,7 @@
 		"0xBF4F34A85CA2970C": {
 			"name": "_0xBF4F34A85CA2970C",
 			"jhash": "0x317775DF",
-			"comment": "",
+			"comment": "DRAW_[B-L]",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
