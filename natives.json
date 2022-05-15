@@ -31866,9 +31866,9 @@
 			"build": "323"
 		},
 		"0xBF4F34A85CA2970C": {
-			"name": "_0xBF4F34A85CA2970C",
+			"name": "DRAW_HUD_OVER_FADE_THIS_FRAME",
 			"jhash": "0x317775DF",
-			"comment": "DRAW_[B-L]",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -48692,9 +48692,9 @@
 			"build": "323"
 		},
 		"0xD313DE83394AF134": {
-			"name": "_NETWORK_SESSION_IS_INVITE_PENDING",
+			"name": "NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE",
 			"jhash": "0x3EA9D44C",
-			"comment": "Seems to be true while \"Getting GTA Online session details\" shows up.\n\nNETWORK_SESSION_IS_*",
+			"comment": "Seems to be true while \"Getting GTA Online session details\" shows up.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -50020,9 +50020,9 @@
 			]
 		},
 		"0xC116FF9B4D488291": {
-			"name": "_NETWORK_SEND_TRANSITION_GAMER_INVITE",
+			"name": "NETWORK_SEND_TRANSITION_INVITE_VIA_PRESENCE",
 			"jhash": "0x877C0E1C",
-			"comment": "Contains the string \"NETWORK_SEND_PRESENCE_TRANSITION_INVITE\" but it does not fit alphabetically. 0x1171A97A3D3981B6 also contains the same string.\n\nNETWORK_SE*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
@@ -50612,9 +50612,9 @@
 			"build": "573"
 		},
 		"0xFA2888E3833C8E96": {
-			"name": "_0xFA2888E3833C8E96",
+			"name": "NETWORK_SEND_QUEUED_JOIN_REQUEST",
 			"jhash": "0x7F70C15A",
-			"comment": "NETWORK_SEND_[I-T]",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
