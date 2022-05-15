@@ -48282,7 +48282,7 @@
 		"0xF49ABC20D8552257": {
 			"name": "_0xF49ABC20D8552257",
 			"jhash": "0x454C7B67",
-			"comment": "",
+			"comment": "NETWORK_SESSION_[S-V]",
 			"params": [
 				{
 					"type": "Any",
