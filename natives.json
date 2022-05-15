@@ -53141,7 +53141,7 @@
 		"0xADB57E5B663CCA8B": {
 			"name": "_0xADB57E5B663CCA8B",
 			"jhash": "0x92268BB5",
-			"comment": "",
+			"comment": "NETWORK_GET_M[A-U]",
 			"params": [
 				{
 					"type": "Player",
