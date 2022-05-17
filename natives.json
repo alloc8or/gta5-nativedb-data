@@ -62778,7 +62778,7 @@
 			"build": "323"
 		},
 		"0xD7D22F5592AED8BA": {
-			"name": "_GET_MS_SINCE_LAST_INPUT",
+			"name": "GET_CONTROL_HOW_LONG_AGO",
 			"jhash": "0x0E8EF929",
 			"comment": "",
 			"params": [
@@ -62788,7 +62788,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_MS_SINCE_LAST_INPUT"
+			]
 		},
 		"0xA571D46727E2B718": {
 			"name": "_IS_USING_KEYBOARD",
