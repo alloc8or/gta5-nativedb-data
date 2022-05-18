@@ -12103,7 +12103,7 @@
 		"0xA6E9C38DB51D7748": {
 			"name": "GET_ENTITY_SCRIPT",
 			"jhash": "0xB7F70784",
-			"comment": "Returns the name of the script that owns/created the entity. Second parameter is unused, can just be a nullptr.",
+			"comment": "Returns the name of the script that owns/created the entity or nullptr. Second parameter is unused, can just be a nullptr.",
 			"params": [
 				{
 					"type": "Entity",
