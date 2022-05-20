@@ -13324,7 +13324,7 @@
 		"0x3910051CCECDB00C": {
 			"name": "_SET_ENTITY_CLEANUP_BY_ENGINE",
 			"jhash": "0xD3850671",
-			"comment": "True means it can be deleted by the engine when switching lobbies/missions/etc, false means the script is expected to clean it up.",
+			"comment": "True means it can be deleted by the engine when switching lobbies/missions/etc, false means the script is expected to clean it up.\n\n\"Allow Freeze If No Collision\"",
 			"params": [
 				{
 					"type": "Entity",
@@ -20117,7 +20117,7 @@
 		"0x5DEBD9C4DC995692": {
 			"name": "_0x5DEBD9C4DC995692",
 			"jhash": "",
-			"comment": "",
+			"comment": "ENABLE_[M-S]",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -22274,7 +22274,7 @@
 		"0x2A251AA48B2B46DB": {
 			"name": "_0x2A251AA48B2B46DB",
 			"jhash": "",
-			"comment": "",
+			"comment": "CLEAR_*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -31866,7 +31866,7 @@
 			"build": "323"
 		},
 		"0xBF4F34A85CA2970C": {
-			"name": "_0xBF4F34A85CA2970C",
+			"name": "DRAW_HUD_OVER_FADE_THIS_FRAME",
 			"jhash": "0x317775DF",
 			"comment": "",
 			"params": [],
@@ -33142,7 +33142,7 @@
 			"build": "323"
 		},
 		"0x82EBB79E258FA2B7": {
-			"name": "_0x82EBB79E258FA2B7",
+			"name": "RETAIN_ENTITY_IN_INTERIOR",
 			"jhash": "0xE645E162",
 			"comment": "",
 			"params": [
@@ -46908,7 +46908,7 @@
 		"0x85F6C9ABA1DE2BCF": {
 			"name": "_NET_GAMESERVER_GET_CATALOG_CRC",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_GET_[A-C]",
 			"params": [],
 			"return_type": "Hash",
 			"build": "323"
@@ -47579,7 +47579,7 @@
 		"0x78321BEA235FD8CD": {
 			"name": "_0x78321BEA235FD8CD",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_CHECK_[D-U]",
 			"params": [
 				{
 					"type": "Any",
@@ -48282,7 +48282,7 @@
 		"0xF49ABC20D8552257": {
 			"name": "_0xF49ABC20D8552257",
 			"jhash": "0x454C7B67",
-			"comment": "",
+			"comment": "NETWORK_SESSION_[S-V]",
 			"params": [
 				{
 					"type": "Any",
@@ -48295,7 +48295,7 @@
 		"0x4811BBAC21C5FCD5": {
 			"name": "_0x4811BBAC21C5FCD5",
 			"jhash": "0xE5961511",
-			"comment": "",
+			"comment": "NETWORK_SESSION_[S-V]",
 			"params": [
 				{
 					"type": "Any",
@@ -48308,7 +48308,7 @@
 		"0x5539C3EBF104A53A": {
 			"name": "_0x5539C3EBF104A53A",
 			"jhash": "0xAE396263",
-			"comment": "",
+			"comment": "NETWORK_SESSION_[S-V]",
 			"params": [
 				{
 					"type": "BOOL",
@@ -48321,7 +48321,7 @@
 		"0x702BC4D605522539": {
 			"name": "_0x702BC4D605522539",
 			"jhash": "0x913FD7D6",
-			"comment": "",
+			"comment": "NETWORK_SESSION_[M-S]",
 			"params": [
 				{
 					"type": "Any",
@@ -48373,7 +48373,7 @@
 		"0x1153FA02A659051C": {
 			"name": "_0x1153FA02A659051C",
 			"jhash": "0x57F9BC83",
-			"comment": "",
+			"comment": "NETWORK_SESSION_[S-V]",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -48446,7 +48446,7 @@
 		"0x600F8CB31C7AAB6E": {
 			"name": "_0x600F8CB31C7AAB6E",
 			"jhash": "0x959E43A3",
-			"comment": "",
+			"comment": "NETWORK_SESSION_[M-S]",
 			"params": [
 				{
 					"type": "Any",
@@ -48692,9 +48692,9 @@
 			"build": "323"
 		},
 		"0xD313DE83394AF134": {
-			"name": "_0xD313DE83394AF134",
+			"name": "NETWORK_SESSION_IS_AWAITING_INVITE_RESPONSE",
 			"jhash": "0x3EA9D44C",
-			"comment": "NETWORK_SESSION_IS_*",
+			"comment": "Seems to be true while \"Getting GTA Online session details\" shows up.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -49024,7 +49024,7 @@
 		"0xB5D3453C98456528": {
 			"name": "_0xB5D3453C98456528",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_SESSION_IS_VOICE_SESSION_[A-B]",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -49456,7 +49456,7 @@
 		"0xA2E9C1AB8A92E8CD": {
 			"name": "_0xA2E9C1AB8A92E8CD",
 			"jhash": "0x8D014B23",
-			"comment": "Appears to set whether a transition should be started when the session is migrating.\n\nNETWORK_SET_*",
+			"comment": "Appears to set whether a transition should be started when the session is migrating.\n\nNETWORK_SET_[C-E]",
 			"params": [
 				{
 					"type": "BOOL",
@@ -50001,7 +50001,7 @@
 					"name": "gamerHandle"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
@@ -50020,16 +50020,16 @@
 			]
 		},
 		"0xC116FF9B4D488291": {
-			"name": "_NETWORK_SEND_PRESENCE_TRANSITION_INVITE",
+			"name": "NETWORK_SEND_TRANSITION_INVITE_VIA_PRESENCE",
 			"jhash": "0x877C0E1C",
-			"comment": "String \"NETWORK_SEND_PRESENCE_TRANSITION_INVITE\" is contained in the function in ida so this one is correct.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "gamerHandle"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
@@ -50042,19 +50042,22 @@
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_SEND_PRESENCE_TRANSITION_INVITE"
+			]
 		},
 		"0x1171A97A3D3981B6": {
-			"name": "_0x1171A97A3D3981B6",
+			"name": "_NETWORK_SEND_PRESENCE_TRANSITION_INVITE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Contains the string \"NETWORK_SEND_PRESENCE_TRANSITION_INVITE\" but so does 0xC116FF9B4D488291; seems to fit alphabetically here, tho.",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "gamerHandle"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
@@ -50438,7 +50441,7 @@
 		"0x0D77A82DC2D0DA59": {
 			"name": "_0x0D77A82DC2D0DA59",
 			"jhash": "0x0808D4CC",
-			"comment": "NETWORK_SET_*",
+			"comment": "NETWORK_SET_[G-I]",
 			"params": [
 				{
 					"type": "Any*",
@@ -50587,9 +50590,9 @@
 		"0x2BF66D2E7414F686": {
 			"name": "_0x2BF66D2E7414F686",
 			"jhash": "0x9156EFC0",
-			"comment": "",
+			"comment": "NETWORK_CAN_[P-S]",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x14922ED3E38761F0": {
@@ -50609,7 +50612,7 @@
 			"build": "573"
 		},
 		"0xFA2888E3833C8E96": {
-			"name": "_0xFA2888E3833C8E96",
+			"name": "NETWORK_SEND_QUEUED_JOIN_REQUEST",
 			"jhash": "0x7F70C15A",
 			"comment": "",
 			"params": [],
@@ -51137,7 +51140,7 @@
 		"0x1D6A14F1F9A736FC": {
 			"name": "NETWORK_GET_HOST_OF_SCRIPT",
 			"jhash": "0x9C95D0BB",
-			"comment": "scriptName examples:\n\"freemode\", \"AM_CR_SecurityVan\", ...\n\nMost of the time, these values are used:\np1 = -1\np2 = 0",
+			"comment": "scriptName examples:\n\"freemode\", \"AM_CR_SecurityVan\", ...\n\nMost of the time, these values are used:\ninstance_id = -1\nposition_hash = 0",
 			"params": [
 				{
 					"type": "const char*",
@@ -51145,11 +51148,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "instance_id"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "position_hash"
 				}
 			],
 			"return_type": "Player",
@@ -51173,16 +51176,16 @@
 					"name": "scriptName"
 				},
 				{
-					"type": "Player",
-					"name": "player"
+					"type": "int",
+					"name": "instance_id"
 				},
 				{
 					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "position_hash"
 				}
 			],
 			"return_type": "BOOL",
@@ -51237,11 +51240,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "instance_id"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "int",
+					"name": "position_hash"
 				}
 			],
 			"return_type": "int",
@@ -51270,22 +51273,22 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player1"
+					"name": "player"
 				},
 				{
 					"type": "const char*",
 					"name": "script"
 				},
 				{
-					"type": "Player",
-					"name": "player2"
+					"type": "int",
+					"name": "instance_id"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2302C0264EA58D31": {
-			"name": "_0x2302C0264EA58D31",
+			"name": "NETWORK_PREVENT_SCRIPT_HOST_MIGRATION",
 			"jhash": "0x8DCFE77D",
 			"comment": "",
 			"params": [],
@@ -52497,7 +52500,7 @@
 		"0x7D395EA61622E116": {
 			"name": "_0x7D395EA61622E116",
 			"jhash": "0x5C05B7E1",
-			"comment": "",
+			"comment": "NETWORK_SET_[L-M]",
 			"params": [
 				{
 					"type": "BOOL",
@@ -52963,7 +52966,7 @@
 		"0x6A5D89D7769A40D8": {
 			"name": "_0x6A5D89D7769A40D8",
 			"jhash": "0x4FFEFE43",
-			"comment": "Sets some voice chat related value.\n\nNETWORK_SET_*",
+			"comment": "Sets some voice chat related value.\n\nNETWORK_SET_[G-I]",
 			"params": [
 				{
 					"type": "BOOL",
@@ -53138,7 +53141,7 @@
 		"0xADB57E5B663CCA8B": {
 			"name": "_0xADB57E5B663CCA8B",
 			"jhash": "0x92268BB5",
-			"comment": "",
+			"comment": "NETWORK_GET_M[A-U]",
 			"params": [
 				{
 					"type": "Player",
@@ -53629,7 +53632,7 @@
 		"0x2B51EDBEFC301339": {
 			"name": "_0x2B51EDBEFC301339",
 			"jhash": "0x8E952B12",
-			"comment": "",
+			"comment": "NETWORK_CLAN_[A-D]",
 			"params": [
 				{
 					"type": "int",
@@ -53646,9 +53649,9 @@
 		"0xC32EA7A2F6CA7557": {
 			"name": "_0xC32EA7A2F6CA7557",
 			"jhash": "0x966C90FD",
-			"comment": "",
+			"comment": "NETWORK_CLAN_IS_*",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x5835D9CD92E83184": {
@@ -53982,7 +53985,7 @@
 			"build": "323"
 		},
 		"0x3FA36981311FA4FF": {
-			"name": "_0x3FA36981311FA4FF",
+			"name": "SET_NETWORK_ID_PASS_CONTROL_IN_TUTORIAL",
 			"jhash": "0x00AE4E17",
 			"comment": "",
 			"params": [
@@ -55589,7 +55592,7 @@
 		"0xFB1F9381E80FA13F": {
 			"name": "_0xFB1F9381E80FA13F",
 			"jhash": "0x0679CE71",
-			"comment": "p0 is always 0. p1 is pointing to a global.",
+			"comment": "p0 is always 0. p1 is pointing to a global.\n\nNETWORK_FIND_[G-M]",
 			"params": [
 				{
 					"type": "int",
@@ -56550,7 +56553,7 @@
 		"0x7DB53B37A2F211A0": {
 			"name": "_0x7DB53B37A2F211A0",
 			"jhash": "0x053BB329",
-			"comment": "",
+			"comment": "NETWORK_GET_[A-C]",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -56574,7 +56577,7 @@
 		"0x2E0BF682CC778D49": {
 			"name": "_0x2E0BF682CC778D49",
 			"jhash": "0xBFAA349B",
-			"comment": "",
+			"comment": "NETWORK_HAS_[A-C]",
 			"params": [
 				{
 					"type": "Any",
@@ -56587,7 +56590,7 @@
 		"0x0EDE326D47CD0F3E": {
 			"name": "_0x0EDE326D47CD0F3E",
 			"jhash": "0xBEB7281A",
-			"comment": "",
+			"comment": "NETWORK_SET_C[H-U]",
 			"params": [
 				{
 					"type": "Ped",
@@ -56811,7 +56814,7 @@
 		"0x94538037EE44F5CF": {
 			"name": "_0x94538037EE44F5CF",
 			"jhash": "0x6B97075B",
-			"comment": "",
+			"comment": "NETWORK_SET_[L-M]",
 			"params": [
 				{
 					"type": "BOOL",
@@ -58663,7 +58666,7 @@
 		"0x60EDD13EB3AC1FF3": {
 			"name": "_0x60EDD13EB3AC1FF3",
 			"jhash": "0x4DEBC227",
-			"comment": "Returns true if profile setting 901 is set to true and sets it to false.\n\nNETWORK_C*",
+			"comment": "Returns true if profile setting 901 is set to true and sets it to false.\n\nNETWORK_CHECK_[D-U]",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -58857,7 +58860,7 @@
 		"0xB7C7F6AD6424304B": {
 			"name": "_NETWORK_UPDATE_PLAYER_SCARS",
 			"jhash": "0x371BBA08",
-			"comment": "",
+			"comment": "NETWORK_F[I-O]",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -58924,7 +58927,7 @@
 		"0x45A83257ED02D9BC": {
 			"name": "_0x45A83257ED02D9BC",
 			"jhash": "",
-			"comment": "",
+			"comment": "NETWORK_[Q-R]",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -62775,7 +62778,7 @@
 			"build": "323"
 		},
 		"0xD7D22F5592AED8BA": {
-			"name": "_GET_MS_SINCE_LAST_INPUT",
+			"name": "GET_CONTROL_HOW_LONG_AGO",
 			"jhash": "0x0E8EF929",
 			"comment": "",
 			"params": [
@@ -62785,7 +62788,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_MS_SINCE_LAST_INPUT"
+			]
 		},
 		"0xA571D46727E2B718": {
 			"name": "_IS_USING_KEYBOARD",
@@ -92527,7 +92533,7 @@
 		"0xC429DCEEB339E129": {
 			"name": "TASK_VEHICLE_TEMP_ACTION",
 			"jhash": "0x0679DFB8",
-			"comment": "'1 - brake\n'3 - brake + reverse\n'4 - turn left 90 + braking\n'5 - turn right 90 + braking\n'6 - brake strong (handbrake?) until time ends\n'7 - turn left + accelerate\n'7 - turn right + accelerate\n'9 - weak acceleration\n'10 - turn left + restore wheel pos to center in the end\n'11 - turn right + restore wheel pos to center in the end\n'13 - turn left + go reverse\n'14 - turn left + go reverse\n'16 - crash the game after like 2 seconds :)\n'17 - keep actual state, game crashed after few tries\n'18 - game crash\n'19 - strong brake + turn left/right\n'20 - weak brake + turn left then turn right\n'21 - weak brake + turn right then turn left\n'22 - brake + reverse\n'23 - accelerate fast\n'24 - brake\n'25 - brake turning left then when almost stopping it turns left more\n'26 - brake turning right then when almost stopping it turns right more\n'27 - brake until car stop or until time ends\n'28 - brake + strong reverse acceleration\n'30 - performs a burnout (brake until stop + brake and accelerate)\n'31 - accelerate + handbrake\n'32 - accelerate very strong\n\nSeems to be this:\nWorks on NPCs, but overrides their current task. If inside a task sequence (and not being the last task), \"time\" will work, otherwise the task will be performed forever until tasked with something else",
+			"comment": "'1 - brake\n'3 - brake + reverse\n'4 - turn left 90 + braking\n'5 - turn right 90 + braking\n'6 - brake strong (handbrake?) until time ends\n'7 - turn left + accelerate\n'8 - turn right + accelerate\n'9 - weak acceleration\n'10 - turn left + restore wheel pos to center in the end\n'11 - turn right + restore wheel pos to center in the end\n'13 - turn left + go reverse\n'14 - turn left + go reverse\n'16 - crash the game after like 2 seconds :)\n'17 - keep actual state, game crashed after few tries\n'18 - game crash\n'19 - strong brake + turn left/right\n'20 - weak brake + turn left then turn right\n'21 - weak brake + turn right then turn left\n'22 - brake + reverse\n'23 - accelerate fast\n'24 - brake\n'25 - brake turning left then when almost stopping it turns left more\n'26 - brake turning right then when almost stopping it turns right more\n'27 - brake until car stop or until time ends\n'28 - brake + strong reverse acceleration\n'30 - performs a burnout (brake until stop + brake and accelerate)\n'31 - accelerate + handbrake\n'32 - accelerate very strong\n\nSeems to be this:\nWorks on NPCs, but overrides their current task. If inside a task sequence (and not being the last task), \"time\" will work, otherwise the task will be performed forever until tasked with something else",
 			"params": [
 				{
 					"type": "Ped",
@@ -93687,47 +93693,47 @@
 		"0xEAF66ACDDC794793": {
 			"name": "TASK_RAPPEL_DOWN_WALL",
 			"jhash": "",
-			"comment": "",
+			"comment": "Attaches a ped to a rope and allows player control to rappel down a wall. Disables all collisions while on the rope.\np10: Usually 1 in the scripts, clipSet: Clipset to use for the task, minZ: Minimum Z that the player can descend to, ropeHandle: Rope to attach this task to created with ADD_ROPE",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "minZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "ropeHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "const char*",
+					"name": "clipSet"
 				},
 				{
 					"type": "Any",
