@@ -85748,7 +85748,7 @@
 			"build": "323"
 		},
 		"0xC67E2DA1CBE759E2": {
-			"name": "_0xC67E2DA1CBE759E2",
+			"name": "_SET_PROFILE_SETTING_CHOP_UNLOCKED",
 			"jhash": "",
 			"comment": "Sets profile setting 939",
 			"params": [],
