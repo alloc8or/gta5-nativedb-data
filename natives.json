@@ -15907,7 +15907,7 @@
 			"build": "323"
 		},
 		"0x7796B21B76221BC5": {
-			"name": "_0x7796B21B76221BC5",
+			"name": "_DOES_CUSTOMIZATION_COMPONENT_HAVE_RESTRICTION_TAG",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -15917,18 +15917,18 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "componentId"
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "restrictionTagHash"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "2612"
 		},
 		"0xD726BAB4554DA580": {
-			"name": "_0xD726BAB4554DA580",
+			"name": "_DOES_CUSTOMIZATION_PROP_HAVE_RESTRICTION_TAG",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -15938,11 +15938,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "componentId"
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "restrictionTagHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -39438,7 +39438,7 @@
 		"0x3F60413F5DF65748": {
 			"name": "_0x3F60413F5DF65748",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_GAME_TIMER() / 1000",
 			"params": [],
 			"return_type": "int",
 			"build": "2612"
@@ -39842,30 +39842,30 @@
 			"build": "1103"
 		},
 		"0x4B82FA6F2D624634": {
-			"name": "_0x4B82FA6F2D624634",
+			"name": "_SET_CONTENT_MAP_INDEX",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "contentId"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "index"
 				}
 			],
 			"return_type": "void",
 			"build": "2612"
 		},
 		"0xECF041186C5A94DC": {
-			"name": "_0xECF041186C5A94DC",
+			"name": "_GET_CONTENT_MAP_INDEX",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "contentId"
 				}
 			],
 			"return_type": "int",
@@ -47515,7 +47515,7 @@
 			"build": "323"
 		},
 		"0x8251FB94DC4FDFC8": {
-			"name": "_0x8251FB94DC4FDFC8",
+			"name": "_NETWORK_GET_HOST",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -48371,9 +48371,9 @@
 			"build": "573"
 		},
 		"0x1153FA02A659051C": {
-			"name": "_0x1153FA02A659051C",
+			"name": "NETWORK_SESSION_SET_SCRIPT_VALIDATE_JOIN",
 			"jhash": "0x57F9BC83",
-			"comment": "NETWORK_SESSION_[S-V]",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -56588,9 +56588,9 @@
 			"build": "323"
 		},
 		"0x0EDE326D47CD0F3E": {
-			"name": "_0x0EDE326D47CD0F3E",
+			"name": "NETWORK_SET_ATTRIBUTE_DAMAGE_TO_PLAYER",
 			"jhash": "0xBEB7281A",
-			"comment": "NETWORK_SET_C[H-U]",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
