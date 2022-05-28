@@ -13684,7 +13684,7 @@
 		"0xB736A491E64A32CF": {
 			"name": "SET_ENTITY_AS_NO_LONGER_NEEDED",
 			"jhash": "0xADF2267C",
-			"comment": "Marks the specified entity (ped, vehicle or object) as no longer needed if its population type is set to mission one.\nIf the entity is ped, it will also clear their tasks immediately just like when CLEAR_PED_TASKS_IMMEDIATELY is called.\nEntities marked as no longer needed, will be deleted as the engine sees fit.\nUse this you just want to just let the game delete the ped:\nvoid MarkPedAsAmbientPed(Ped ped) {\n  auto addr = getScriptHandleBaseAddress(ped);\n\n  if (!addr) {\n    return;\n  }\n\n  //the game uses only lower 4 bits as entity population type \n  BYTE origValue = *(BYTE *)(addr + 0xDA);\n  *(BYTE *)(addr + 0xDA) = ((origValue & 0xF0) | ePopulationType::POPTYPE_RANDOM_AMBIENT);\n}",
+			"comment": "Marks the specified entity (ped, vehicle or object) as no longer needed if its population type is set to the mission type.\nIf the entity is ped, it will also clear their tasks immediately just like when CLEAR_PED_TASKS_IMMEDIATELY is called.\nEntities marked as no longer needed, will be deleted as the engine sees fit.\nUse this if you just want to just let the game delete the ped:\nvoid MarkPedAsAmbientPed(Ped ped) {\n  auto addr = getScriptHandleBaseAddress(ped);\n\n  if (!addr) {\n    return;\n  }\n\n  //the game uses only lower 4 bits as entity population type \n  BYTE origValue = *(BYTE *)(addr + 0xDA);\n  *(BYTE *)(addr + 0xDA) = ((origValue & 0xF0) | ePopulationType::POPTYPE_RANDOM_AMBIENT);\n}",
 			"params": [
 				{
 					"type": "Entity*",
