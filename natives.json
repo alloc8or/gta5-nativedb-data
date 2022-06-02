@@ -69605,7 +69605,7 @@
 		"0x2746BD9D88C5C5D0": {
 			"name": "GET_PED_HEAD_BLEND_DATA",
 			"jhash": "0x44E1680C",
-			"comment": "The pointer is to a padded struct that matches the arguments to SET_PED_HEAD_BLEND_DATA(...). There are 4 bytes of padding after each field.\npass this struct in the second parameter \ntypedef struct\n{\n        int shapeFirst, shapeSecond, shapeThird; \n        int skinFirst, skinSecond, skinThird; \n   float shapeMix, skinMix, thirdMix;\n} headBlendData;",
+			"comment": "The pointer is to a padded struct that matches the arguments to SET_PED_HEAD_BLEND_DATA(...). There are 4 bytes of padding after each field.\npass this struct in the second parameter \nstruct headBlendData\n{\n    int shapeFirst;\n    int padding1;\n    int shapeSecond;\n    int padding2;\n    int shapeThird;\n    int padding3;\n    int skinFirst;\n    int padding4;\n    int skinSecond;\n    int padding5;\n    int skinThird;\n    int padding6;\n    float shapeMix;\n    int padding7;\n    float skinMix;\n    int padding8;\n    float thirdMix;\n    int padding9;\n    bool isParent;\n};",
 			"params": [
 				{
 					"type": "Ped",
