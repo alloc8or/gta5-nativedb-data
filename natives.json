@@ -54949,7 +54949,7 @@
 			"build": "323"
 		},
 		"0x5C707A667DF8B9FA": {
-			"name": "NETWORK_SET_CHOICE_MIGRATE_OPTIONS",
+			"name": "_0x5C707A667DF8B9FA",
 			"jhash": "0x64235620",
 			"comment": "",
 			"params": [
@@ -54963,7 +54963,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"NETWORK_SET_CHOICE_MIGRATE_OPTIONS"
+			]
 		},
 		"0x048746E388762E11": {
 			"name": "NETWORK_IS_IN_SPECTATOR_MODE",
@@ -56592,9 +56595,9 @@
 			"build": "323"
 		},
 		"0x0EDE326D47CD0F3E": {
-			"name": "NETWORK_SET_ATTRIBUTE_DAMAGE_TO_PLAYER",
+			"name": "NETWORK_SET_ANTAGONISTIC_TO_PLAYER",
 			"jhash": "0xBEB7281A",
-			"comment": "",
+			"comment": "Name might be a collision, NETWORK_SET_ATTRIBUTE_DAMAGE_TO_PLAYER also fits.",
 			"params": [
 				{
 					"type": "Ped",
