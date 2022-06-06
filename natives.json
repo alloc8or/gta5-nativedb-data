@@ -4482,7 +4482,7 @@
 		},
 		"0xBF4DC1784BE94DFA": {
 			"name": "_0xBF4DC1784BE94DFA",
-			"jhash": "",
+			"jhash": "0xD99E275B",
 			"comment": "Something like UPDATE_PED_*",
 			"params": [
 				{
