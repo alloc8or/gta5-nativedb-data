@@ -32256,7 +32256,7 @@
 			"build": "323"
 		},
 		"0xF284AC67940C6812": {
-			"name": "_0xF284AC67940C6812",
+			"name": "HAS_MENU_TRIGGER_EVENT_OCCURRED",
 			"jhash": "0x7D95AFFF",
 			"comment": "",
 			"params": [],
@@ -32264,9 +32264,9 @@
 			"build": "323"
 		},
 		"0x2E22FEFA0100275E": {
-			"name": "_0x2E22FEFA0100275E",
+			"name": "HAS_MENU_LAYOUT_CHANGED_EVENT_OCCURRED",
 			"jhash": "0x96863460",
-			"comment": "Returns true when the menu state(?) changed this frame.\nHAS_*? _GET_MENU_STATE_CHANGED_THIS_FRAME?",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -32285,7 +32285,7 @@
 			"build": "323"
 		},
 		"0x36C1451A88A09630": {
-			"name": "_GET_PAUSE_MENU_SELECTION",
+			"name": "GET_MENU_TRIGGER_EVENT_DETAILS",
 			"jhash": "0x8543AAC8",
 			"comment": "",
 			"params": [
@@ -32299,10 +32299,13 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PAUSE_MENU_SELECTION"
+			]
 		},
 		"0x7E17BE53E1AAABAF": {
-			"name": "_GET_PAUSE_MENU_SELECTION_DATA",
+			"name": "GET_MENU_LAYOUT_CHANGED_EVENT_DETAILS",
 			"jhash": "0x6025AA2F",
 			"comment": "lastItemMenuId: this is the menuID of the last selected item minus 1000 (lastItem.menuID - 1000)\nselectedItemMenuId: same as lastItemMenuId except for the currently selected menu item\nselectedItemUniqueId: this is uniqueID of the currently selected menu item\n\nwhen the pausemenu is closed:\nlastItemMenuId = -1\nselectedItemMenuId = -1\nselectedItemUniqueId = 0\n\nwhen the header gains focus:\nlastItemMenuId updates as normal or 0 if the pausemenu was just opened\nselectedItemMenuId becomes a unique id for the pausemenu page that focus was taken from (?) or 0 if the pausemenu was just opened\nselectedItemUniqueId = -1\n\nwhen focus is moved from the header to a pausemenu page:\nlastItemMenuId becomes a unique id for the pausemenu page that focus was moved to (?)\nselectedItemMenuId = -1\nselectedItemUniqueId updates as normal",
 			"params": [
@@ -32320,7 +32323,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PAUSE_MENU_SELECTION_DATA"
+			]
 		},
 		"0xA238192F33110615": {
 			"name": "_0xA238192F33110615",
