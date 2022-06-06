@@ -54949,7 +54949,7 @@
 			"build": "323"
 		},
 		"0x5C707A667DF8B9FA": {
-			"name": "NETWORK_SET_CHOICE_MIGRATE_OPTIONS",
+			"name": "NETWORK_SET_ANTAGONISTIC_TO_PLAYER",
 			"jhash": "0x64235620",
 			"comment": "",
 			"params": [
@@ -54963,7 +54963,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"NETWORK_SET_CHOICE_MIGRATE_OPTIONS"
+			]
 		},
 		"0x048746E388762E11": {
 			"name": "NETWORK_IS_IN_SPECTATOR_MODE",
