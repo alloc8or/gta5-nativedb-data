@@ -9829,7 +9829,7 @@
 		"0x2F137B508DE238F2": {
 			"name": "_0x2F137B508DE238F2",
 			"jhash": "0x8338DA1D",
-			"comment": "Stops current cutscene with a fade transition\np0: always true in R* Scripts\nYou will need to manually fade the screen back in",
+			"comment": "Stops current cutscene with a fade transition\np0: always true in R* Scripts\nYou will need to manually fade the screen back in\nSET_CUTSCENE_INPUTS_PARTIALLY_FADE?",
 			"params": [
 				{
 					"type": "BOOL",
@@ -30436,7 +30436,7 @@
 		"0x0923DBF87DFF735E": {
 			"name": "SET_MINIMAP_FOW_REVEAL_COORDINATE",
 			"jhash": "0xE010F081",
-			"comment": "",
+			"comment": "Up to eight coordinates may be revealed per frame",
 			"params": [
 				{
 					"type": "float",
@@ -38942,9 +38942,9 @@
 			"build": "323"
 		},
 		"0x19BFED045C647C49": {
-			"name": "_0x19BFED045C647C49",
+			"name": "GET_TENNIS_SWING_ANIM_CAN_BE_INTERRUPTED",
 			"jhash": "0x1A332D2D",
-			"comment": "Related to tennis mode.\n\nGET_TENNIS_*",
+			"comment": "Related to tennis mode.",
 			"params": [
 				{
 					"type": "Ped",
@@ -39001,9 +39001,9 @@
 			"build": "323"
 		},
 		"0x54F157E0336A3822": {
-			"name": "_0x54F157E0336A3822",
+			"name": "SET_TENNIS_MOVE_NETWORK_SIGNAL_FLOAT",
 			"jhash": "0x49F977A9",
-			"comment": "From the scripts:\n\nMISC::_54F157E0336A3822(sub_aa49(a_0), \"ForcedStopDirection\", v_E);\n\nRelated to tennis mode.\n\nSET_*",
+			"comment": "From the scripts:\n\nMISC::_54F157E0336A3822(sub_aa49(a_0), \"ForcedStopDirection\", v_E);\n\nRelated to tennis mode.",
 			"params": [
 				{
 					"type": "Ped",
@@ -40279,13 +40279,16 @@
 			"build": "791"
 		},
 		"0xFB2456B2040A6A67": {
-			"name": "_NETWORK_GET_IS_HIGH_EARNER",
+			"name": "NETWORK_GET_PLAYER_IS_HIGH_EARNER",
 			"jhash": "0x63F093A6",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
-			"unused": true
+			"unused": true,
+			"old_names": [
+				"_NETWORK_GET_IS_HIGH_EARNER"
+			]
 		},
 		"0xA921DED15FDF28F5": {
 			"name": "NETWORK_CLEAR_CHARACTER_WALLET",
@@ -45355,7 +45358,7 @@
 			"build": "1868"
 		},
 		"0xD29334ED1A256DBF": {
-			"name": "_0xD29334ED1A256DBF",
+			"name": "_NETWORK_EARN_FROM_ARCADE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -50696,7 +50699,7 @@
 			"build": "323"
 		},
 		"0x46FB3ED415C7641C": {
-			"name": "_TRIGGER_SCRIPT_CRC_CHECK_ON_PLAYER",
+			"name": "TRIGGER_PLAYER_CRC_HACKER_CHECK",
 			"jhash": "0xF9A51B92",
 			"comment": "p1 = 6",
 			"params": [
@@ -50716,7 +50719,8 @@
 			"return_type": "BOOL",
 			"build": "323",
 			"old_names": [
-				"_NETWORK_IS_PLAYER_IN_SCRIPT"
+				"_NETWORK_IS_PLAYER_IN_SCRIPT",
+				"_TRIGGER_SCRIPT_CRC_CHECK_ON_PLAYER"
 			]
 		},
 		"0xA12D3A5A3753CC23": {
@@ -67532,42 +67536,42 @@
 			]
 		},
 		"0x5407B7288D0478B7": {
-			"name": "_0x5407B7288D0478B7",
+			"name": "COUNT_PEDS_IN_COMBAT_WITH_TARGET",
 			"jhash": "0xEF0B78E6",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "int",
 			"build": "323"
 		},
 		"0x336B3D200AB007CB": {
-			"name": "_0x336B3D200AB007CB",
+			"name": "COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS",
 			"jhash": "0xFB18CB19",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				}
 			],
 			"return_type": "Any",
@@ -73401,7 +73405,7 @@
 			"build": "323"
 		},
 		"0x1A330D297AAC6BC1": {
-			"name": "_0x1A330D297AAC6BC1",
+			"name": "SET_LADDER_CLIMB_INPUT_STATE",
 			"jhash": "0x77BB7CB8",
 			"comment": "Only appears in lamar1 script.",
 			"params": [
@@ -82153,7 +82157,7 @@
 			"build": "323"
 		},
 		"0x116FB94DC4B79F17": {
-			"name": "_0x116FB94DC4B79F17",
+			"name": "SC_EMAIL_SEND_EMAIL",
 			"jhash": "0xAF3C081B",
 			"comment": "",
 			"params": [
@@ -82192,20 +82196,26 @@
 			"build": "323"
 		},
 		"0xBC1CC91205EC8D6E": {
-			"name": "_IS_ROCKSTAR_MESSAGE_READY_FOR_SCRIPT",
+			"name": "SC_HAS_NEW_ROCKSTAR_MSG",
 			"jhash": "0x6C5738AB",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_ROCKSTAR_MESSAGE_READY_FOR_SCRIPT"
+			]
 		},
 		"0xDF649C4E9AFDD788": {
-			"name": "_ROCKSTAR_MESSAGE_GET_STRING",
+			"name": "SC_GET_NEW_ROCKSTAR_MSG",
 			"jhash": "0x468668F0",
 			"comment": "",
 			"params": [],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ROCKSTAR_MESSAGE_GET_STRING"
+			]
 		},
 		"0x1F1E9682483697C7": {
 			"name": "SC_PRESENCE_ATTR_SET_INT",
@@ -84109,9 +84119,9 @@
 			"build": "323"
 		},
 		"0x098760C7461724CD": {
-			"name": "_PLAYSTATS_START_OFFLINE_MODE",
+			"name": "PLAYSTATS_STARTED_SESSION_IN_OFFLINEMODE",
 			"jhash": "0x896CDF8D",
-			"comment": "PLAYSTATS_START_INVITE_DESPAWNING?",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
