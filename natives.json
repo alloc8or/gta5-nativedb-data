@@ -89698,7 +89698,7 @@
 			"build": "323"
 		},
 		"0x95A7DABDDBB78AE7": {
-			"name": "_0x95A7DABDDBB78AE7",
+			"name": "IPL_GROUP_SWAP_START",
 			"jhash": "0x9EF0A9CF",
 			"comment": "",
 			"params": [
@@ -89715,7 +89715,7 @@
 			"build": "323"
 		},
 		"0x63EB2B972A218CAC": {
-			"name": "_0x63EB2B972A218CAC",
+			"name": "IPL_GROUP_SWAP_CANCEL",
 			"jhash": "0xF2CDD6A8",
 			"comment": "",
 			"params": [],
@@ -89723,7 +89723,7 @@
 			"build": "323"
 		},
 		"0xFB199266061F820A": {
-			"name": "_0xFB199266061F820A",
+			"name": "IPL_GROUP_SWAP_IS_READY",
 			"jhash": "0x17B0A1CD",
 			"comment": "",
 			"params": [],
@@ -89731,7 +89731,7 @@
 			"build": "323"
 		},
 		"0xF4A0DADB70F57FA6": {
-			"name": "_0xF4A0DADB70F57FA6",
+			"name": "IPL_GROUP_SWAP_FINISH",
 			"jhash": "0x3DA7AA5D",
 			"comment": "",
 			"params": [],
@@ -89739,7 +89739,7 @@
 			"build": "323"
 		},
 		"0x5068F488DDB54DD8": {
-			"name": "_0x5068F488DDB54DD8",
+			"name": "IPL_GROUP_SWAP_IS_ACTIVE",
 			"jhash": "0xDAB4BAC0",
 			"comment": "",
 			"params": [],
