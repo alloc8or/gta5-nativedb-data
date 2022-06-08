@@ -829,11 +829,11 @@
 		"0xB6AE90EDDE95C762": {
 			"name": "SET_MICROPHONE_POSITION",
 			"jhash": "0xAD7BB191",
-			"comment": "If this is the correct name, what microphone? I know your TV isn't going to reach out and adjust your headset so..",
+			"comment": "This native controls where the game plays audio from. By default the microphone is positioned on the player.\nWhen p0 is true the game will play audio from the 3 positions inputted.\nIt is recommended to all 3 positions to the same value as mixing different positions doesn't seem to work well.\nThe scripts mostly use it with only one position such as in fbi3.c: \nAUDIO::SET_MICROPHONE_POSITION(true, ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true));",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				},
 				{
 					"type": "float",
@@ -1070,19 +1070,19 @@
 		"0xA018A12E5C5C2FA6": {
 			"name": "INTERRUPT_CONVERSATION",
 			"jhash": "0xF3A67AF3",
-			"comment": "",
+			"comment": "Example from carsteal3.c: AUDIO::INTERRUPT_CONVERSATION(PLAYER::PLAYER_PED_ID(), \"CST4_CFAA\", \"FRANKLIN\");\nVoicelines can be found in GTAV\\x64\\audio\\sfx in files starting with \"SS_\" which seems to mean scripted speech.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "voiceline"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "speaker"
 				}
 			],
 			"return_type": "void",
@@ -1103,7 +1103,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "speaker"
 				}
 			],
 			"return_type": "void",
@@ -6303,7 +6303,7 @@
 		"0x0A9F2A468B328E74": {
 			"name": "ADD_CAM_SPLINE_NODE_USING_CAMERA_FRAME",
 			"jhash": "0x30510511",
-			"comment": "",
+			"comment": "p0 is the spline camera to which the node is being added.\np1 is the camera used to create the node.\np3 is always 3 in scripts. It might be smoothing style or rotation order.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6315,7 +6315,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "length"
 				},
 				{
 					"type": "int",
@@ -6328,7 +6328,7 @@
 		"0x0FB82563989CF4FB": {
 			"name": "ADD_CAM_SPLINE_NODE_USING_CAMERA",
 			"jhash": "0xBA6C085B",
-			"comment": "",
+			"comment": "p0 is the spline camera to which the node is being added.\np1 is the camera used to create the node.\np3 is always 3 in scripts. It might be smoothing style or rotation order.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6340,7 +6340,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "length"
 				},
 				{
 					"type": "int",
@@ -6353,7 +6353,7 @@
 		"0x609278246A29CA34": {
 			"name": "ADD_CAM_SPLINE_NODE_USING_GAMEPLAY_FRAME",
 			"jhash": "0xB4737F03",
-			"comment": "",
+			"comment": "p2 is always 2 in scripts. It might be smoothing style or rotation order.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6361,7 +6361,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "length"
 				},
 				{
 					"type": "int",
@@ -6584,8 +6584,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				}
 			],
 			"return_type": "BOOL",
@@ -64128,31 +64128,31 @@
 		"0xE04B48F2CC926253": {
 			"name": "SET_PED_PATHS_BACK_TO_ORIGINAL",
 			"jhash": "0x3F1ABDA4",
-			"comment": "",
+			"comment": "p6 is always 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
 					"type": "Any",
@@ -64560,35 +64560,35 @@
 		"0x4C8872D8CDBE1B8B": {
 			"name": "DISABLE_NAVMESH_IN_AREA",
 			"jhash": "0x6E37F132",
-			"comment": "",
+			"comment": "Set toggle true to disable navmesh.\nSet toggle false to enable navmesh.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -68064,15 +68064,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -73682,7 +73682,7 @@
 		"0x70A2D1137C8ED7C9": {
 			"name": "SET_PED_FLEE_ATTRIBUTES",
 			"jhash": "0xA717A875",
-			"comment": "bit 15 (0x8000) = force cower",
+			"comment": "bit 1 (0x2) = use vehicle\nbit 15 (0x8000) = force cower",
 			"params": [
 				{
 					"type": "Ped",
@@ -95696,7 +95696,7 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped2"
+					"name": "target"
 				}
 			],
 			"return_type": "void",
