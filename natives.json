@@ -829,11 +829,11 @@
 		"0xB6AE90EDDE95C762": {
 			"name": "SET_MICROPHONE_POSITION",
 			"jhash": "0xAD7BB191",
-			"comment": "If this is the correct name, what microphone? I know your TV isn't going to reach out and adjust your headset so..",
+			"comment": "This native controls where the game plays audio from. By default the microphone is positioned on the player.\nWhen p0 is true the game will play audio from the 3 positions inputted.\nIt is recommended to all 3 positions to the same value as mixing different positions doesn't seem to work well.\nThe scripts mostly use it with only one position such as in fbi3.c: \nAUDIO::SET_MICROPHONE_POSITION(true, ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true));",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				},
 				{
 					"type": "float",
@@ -1070,19 +1070,19 @@
 		"0xA018A12E5C5C2FA6": {
 			"name": "INTERRUPT_CONVERSATION",
 			"jhash": "0xF3A67AF3",
-			"comment": "",
+			"comment": "Example from carsteal3.c: AUDIO::INTERRUPT_CONVERSATION(PLAYER::PLAYER_PED_ID(), \"CST4_CFAA\", \"FRANKLIN\");\nVoicelines can be found in GTAV\\x64\\audio\\sfx in files starting with \"SS_\" which seems to mean scripted speech.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "voiceline"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "speaker"
 				}
 			],
 			"return_type": "void",
@@ -1103,7 +1103,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "speaker"
 				}
 			],
 			"return_type": "void",
@@ -4482,7 +4482,7 @@
 		},
 		"0xBF4DC1784BE94DFA": {
 			"name": "_0xBF4DC1784BE94DFA",
-			"jhash": "",
+			"jhash": "0xD99E275B",
 			"comment": "Something like UPDATE_PED_*",
 			"params": [
 				{
@@ -6303,7 +6303,7 @@
 		"0x0A9F2A468B328E74": {
 			"name": "ADD_CAM_SPLINE_NODE_USING_CAMERA_FRAME",
 			"jhash": "0x30510511",
-			"comment": "",
+			"comment": "p0 is the spline camera to which the node is being added.\np1 is the camera used to create the node.\np3 is always 3 in scripts. It might be smoothing style or rotation order.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6315,7 +6315,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "length"
 				},
 				{
 					"type": "int",
@@ -6328,7 +6328,7 @@
 		"0x0FB82563989CF4FB": {
 			"name": "ADD_CAM_SPLINE_NODE_USING_CAMERA",
 			"jhash": "0xBA6C085B",
-			"comment": "",
+			"comment": "p0 is the spline camera to which the node is being added.\np1 is the camera used to create the node.\np3 is always 3 in scripts. It might be smoothing style or rotation order.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6340,7 +6340,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "length"
 				},
 				{
 					"type": "int",
@@ -6353,7 +6353,7 @@
 		"0x609278246A29CA34": {
 			"name": "ADD_CAM_SPLINE_NODE_USING_GAMEPLAY_FRAME",
 			"jhash": "0xB4737F03",
-			"comment": "",
+			"comment": "p2 is always 2 in scripts. It might be smoothing style or rotation order.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6361,7 +6361,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "length"
 				},
 				{
 					"type": "int",
@@ -6584,8 +6584,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				}
 			],
 			"return_type": "BOOL",
@@ -9829,7 +9829,7 @@
 		"0x2F137B508DE238F2": {
 			"name": "_0x2F137B508DE238F2",
 			"jhash": "0x8338DA1D",
-			"comment": "Stops current cutscene with a fade transition\np0: always true in R* Scripts\nYou will need to manually fade the screen back in",
+			"comment": "Stops current cutscene with a fade transition\np0: always true in R* Scripts\nYou will need to manually fade the screen back in\nSET_CUTSCENE_INPUTS_PARTIALLY_FADE?",
 			"params": [
 				{
 					"type": "BOOL",
@@ -12103,7 +12103,7 @@
 		"0xA6E9C38DB51D7748": {
 			"name": "GET_ENTITY_SCRIPT",
 			"jhash": "0xB7F70784",
-			"comment": "All ambient entities in-world seem to have the same value for the second argument (Any *script), depending on when the scripthook was activated/re-activated. I've seen numbers from ~5 to almost 70 when the value was translated with to_string. The function return value seems to always be 0.",
+			"comment": "Returns the name of the script that owns/created the entity or nullptr. Second parameter is unused, can just be a nullptr.",
 			"params": [
 				{
 					"type": "Entity",
@@ -13684,7 +13684,7 @@
 		"0xB736A491E64A32CF": {
 			"name": "SET_ENTITY_AS_NO_LONGER_NEEDED",
 			"jhash": "0xADF2267C",
-			"comment": "Marks the specified entity (ped, vehicle or object) as no longer needed.\nEntities marked as no longer needed, will be deleted as the engine sees fit.",
+			"comment": "Marks the specified entity (ped, vehicle or object) as no longer needed if its population type is set to the mission type.\nIf the entity is ped, it will also clear their tasks immediately just like when CLEAR_PED_TASKS_IMMEDIATELY is called.\nEntities marked as no longer needed, will be deleted as the engine sees fit.\nUse this if you just want to just let the game delete the ped:\nvoid MarkPedAsAmbientPed(Ped ped) {\n  auto addr = getScriptHandleBaseAddress(ped);\n\n  if (!addr) {\n    return;\n  }\n\n  //the game uses only lower 4 bits as entity population type \n  BYTE origValue = *(BYTE *)(addr + 0xDA);\n  *(BYTE *)(addr + 0xDA) = ((origValue & 0xF0) | ePopulationType::POPTYPE_RANDOM_AMBIENT);\n}",
 			"params": [
 				{
 					"type": "Entity*",
@@ -15907,7 +15907,7 @@
 			"build": "323"
 		},
 		"0x7796B21B76221BC5": {
-			"name": "_0x7796B21B76221BC5",
+			"name": "_DOES_CUSTOMIZATION_COMPONENT_HAVE_RESTRICTION_TAG",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -15917,18 +15917,18 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "componentId"
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "restrictionTagHash"
 				}
 			],
 			"return_type": "BOOL",
 			"build": "2612"
 		},
 		"0xD726BAB4554DA580": {
-			"name": "_0xD726BAB4554DA580",
+			"name": "_DOES_CUSTOMIZATION_PROP_HAVE_RESTRICTION_TAG",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -15938,11 +15938,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "componentId"
 				},
 				{
 					"type": "Hash",
-					"name": "p2"
+					"name": "restrictionTagHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -25192,11 +25192,11 @@
 			"build": "323"
 		},
 		"0x3D9ACB1EB139E702": {
-			"name": "_0x3D9ACB1EB139E702",
+			"name": "_IS_MOUSE_CURSOR_ABOVE_INSTRUCTIONAL_BUTTONS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns TRUE if mouse is hovering above instructional buttons. Works with all buttons gfx, such as popup_warning, pause_menu_instructional_buttons, instructional_buttons, etc. Note: You have to call TOGGLE_MOUSE_BUTTONS on the scaleform if you want this native to work.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x632B2940C67F4EA9": {
@@ -30436,7 +30436,7 @@
 		"0x0923DBF87DFF735E": {
 			"name": "SET_MINIMAP_FOW_REVEAL_COORDINATE",
 			"jhash": "0xE010F081",
-			"comment": "",
+			"comment": "Up to eight coordinates may be revealed per frame",
 			"params": [
 				{
 					"type": "float",
@@ -32256,7 +32256,7 @@
 			"build": "323"
 		},
 		"0xF284AC67940C6812": {
-			"name": "_0xF284AC67940C6812",
+			"name": "HAS_MENU_TRIGGER_EVENT_OCCURRED",
 			"jhash": "0x7D95AFFF",
 			"comment": "",
 			"params": [],
@@ -32264,9 +32264,9 @@
 			"build": "323"
 		},
 		"0x2E22FEFA0100275E": {
-			"name": "_0x2E22FEFA0100275E",
+			"name": "HAS_MENU_LAYOUT_CHANGED_EVENT_OCCURRED",
 			"jhash": "0x96863460",
-			"comment": "Returns true when the menu state(?) changed this frame.\nHAS_*? _GET_MENU_STATE_CHANGED_THIS_FRAME?",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -32285,7 +32285,7 @@
 			"build": "323"
 		},
 		"0x36C1451A88A09630": {
-			"name": "_GET_PAUSE_MENU_SELECTION",
+			"name": "GET_MENU_TRIGGER_EVENT_DETAILS",
 			"jhash": "0x8543AAC8",
 			"comment": "",
 			"params": [
@@ -32299,10 +32299,13 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PAUSE_MENU_SELECTION"
+			]
 		},
 		"0x7E17BE53E1AAABAF": {
-			"name": "_GET_PAUSE_MENU_SELECTION_DATA",
+			"name": "GET_MENU_LAYOUT_CHANGED_EVENT_DETAILS",
 			"jhash": "0x6025AA2F",
 			"comment": "lastItemMenuId: this is the menuID of the last selected item minus 1000 (lastItem.menuID - 1000)\nselectedItemMenuId: same as lastItemMenuId except for the currently selected menu item\nselectedItemUniqueId: this is uniqueID of the currently selected menu item\n\nwhen the pausemenu is closed:\nlastItemMenuId = -1\nselectedItemMenuId = -1\nselectedItemUniqueId = 0\n\nwhen the header gains focus:\nlastItemMenuId updates as normal or 0 if the pausemenu was just opened\nselectedItemMenuId becomes a unique id for the pausemenu page that focus was taken from (?) or 0 if the pausemenu was just opened\nselectedItemUniqueId = -1\n\nwhen focus is moved from the header to a pausemenu page:\nlastItemMenuId becomes a unique id for the pausemenu page that focus was moved to (?)\nselectedItemMenuId = -1\nselectedItemUniqueId updates as normal",
 			"params": [
@@ -32320,7 +32323,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_GET_PAUSE_MENU_SELECTION_DATA"
+			]
 		},
 		"0xA238192F33110615": {
 			"name": "_0xA238192F33110615",
@@ -38942,9 +38948,9 @@
 			"build": "323"
 		},
 		"0x19BFED045C647C49": {
-			"name": "_0x19BFED045C647C49",
+			"name": "GET_TENNIS_SWING_ANIM_CAN_BE_INTERRUPTED",
 			"jhash": "0x1A332D2D",
-			"comment": "Related to tennis mode.\n\nGET_TENNIS_*",
+			"comment": "Related to tennis mode.",
 			"params": [
 				{
 					"type": "Ped",
@@ -39001,9 +39007,9 @@
 			"build": "323"
 		},
 		"0x54F157E0336A3822": {
-			"name": "_0x54F157E0336A3822",
+			"name": "SET_TENNIS_MOVE_NETWORK_SIGNAL_FLOAT",
 			"jhash": "0x49F977A9",
-			"comment": "From the scripts:\n\nMISC::_54F157E0336A3822(sub_aa49(a_0), \"ForcedStopDirection\", v_E);\n\nRelated to tennis mode.\n\nSET_*",
+			"comment": "From the scripts:\n\nMISC::_54F157E0336A3822(sub_aa49(a_0), \"ForcedStopDirection\", v_E);\n\nRelated to tennis mode.",
 			"params": [
 				{
 					"type": "Ped",
@@ -39438,7 +39444,7 @@
 		"0x3F60413F5DF65748": {
 			"name": "_0x3F60413F5DF65748",
 			"jhash": "",
-			"comment": "",
+			"comment": "GET_GAME_TIMER() / 1000",
 			"params": [],
 			"return_type": "int",
 			"build": "2612"
@@ -39842,30 +39848,30 @@
 			"build": "1103"
 		},
 		"0x4B82FA6F2D624634": {
-			"name": "_0x4B82FA6F2D624634",
+			"name": "_SET_CONTENT_MAP_INDEX",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "contentId"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "index"
 				}
 			],
 			"return_type": "void",
 			"build": "2612"
 		},
 		"0xECF041186C5A94DC": {
-			"name": "_0xECF041186C5A94DC",
+			"name": "_GET_CONTENT_MAP_INDEX",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "contentId"
 				}
 			],
 			"return_type": "int",
@@ -40279,13 +40285,16 @@
 			"build": "791"
 		},
 		"0xFB2456B2040A6A67": {
-			"name": "_NETWORK_GET_IS_HIGH_EARNER",
+			"name": "NETWORK_GET_PLAYER_IS_HIGH_EARNER",
 			"jhash": "0x63F093A6",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
-			"unused": true
+			"unused": true,
+			"old_names": [
+				"_NETWORK_GET_IS_HIGH_EARNER"
+			]
 		},
 		"0xA921DED15FDF28F5": {
 			"name": "NETWORK_CLEAR_CHARACTER_WALLET",
@@ -45355,7 +45364,7 @@
 			"build": "1868"
 		},
 		"0xD29334ED1A256DBF": {
-			"name": "_0xD29334ED1A256DBF",
+			"name": "_NETWORK_EARN_FROM_ARCADE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -47515,7 +47524,7 @@
 			"build": "323"
 		},
 		"0x8251FB94DC4FDFC8": {
-			"name": "_0x8251FB94DC4FDFC8",
+			"name": "_NETWORK_GET_HOST",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -48371,9 +48380,9 @@
 			"build": "573"
 		},
 		"0x1153FA02A659051C": {
-			"name": "_0x1153FA02A659051C",
+			"name": "NETWORK_SESSION_SET_SCRIPT_VALIDATE_JOIN",
 			"jhash": "0x57F9BC83",
-			"comment": "NETWORK_SESSION_[S-V]",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -50696,7 +50705,7 @@
 			"build": "323"
 		},
 		"0x46FB3ED415C7641C": {
-			"name": "_TRIGGER_SCRIPT_CRC_CHECK_ON_PLAYER",
+			"name": "TRIGGER_PLAYER_CRC_HACKER_CHECK",
 			"jhash": "0xF9A51B92",
 			"comment": "p1 = 6",
 			"params": [
@@ -50716,7 +50725,8 @@
 			"return_type": "BOOL",
 			"build": "323",
 			"old_names": [
-				"_NETWORK_IS_PLAYER_IN_SCRIPT"
+				"_NETWORK_IS_PLAYER_IN_SCRIPT",
+				"_TRIGGER_SCRIPT_CRC_CHECK_ON_PLAYER"
 			]
 		},
 		"0xA12D3A5A3753CC23": {
@@ -54945,7 +54955,7 @@
 			"build": "323"
 		},
 		"0x5C707A667DF8B9FA": {
-			"name": "NETWORK_SET_CHOICE_MIGRATE_OPTIONS",
+			"name": "NETWORK_SET_ANTAGONISTIC_TO_PLAYER",
 			"jhash": "0x64235620",
 			"comment": "",
 			"params": [
@@ -54959,7 +54969,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"NETWORK_SET_CHOICE_MIGRATE_OPTIONS"
+			]
 		},
 		"0x048746E388762E11": {
 			"name": "NETWORK_IS_IN_SPECTATOR_MODE",
@@ -56588,9 +56601,9 @@
 			"build": "323"
 		},
 		"0x0EDE326D47CD0F3E": {
-			"name": "_0x0EDE326D47CD0F3E",
+			"name": "NETWORK_SET_ATTRIBUTE_DAMAGE_TO_PLAYER",
 			"jhash": "0xBEB7281A",
-			"comment": "NETWORK_SET_C[H-U]",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -64115,31 +64128,31 @@
 		"0xE04B48F2CC926253": {
 			"name": "SET_PED_PATHS_BACK_TO_ORIGINAL",
 			"jhash": "0x3F1ABDA4",
-			"comment": "",
+			"comment": "p6 is always 0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
 					"type": "Any",
@@ -64547,35 +64560,35 @@
 		"0x4C8872D8CDBE1B8B": {
 			"name": "DISABLE_NAVMESH_IN_AREA",
 			"jhash": "0x6E37F132",
-			"comment": "",
+			"comment": "Set toggle true to disable navmesh.\nSet toggle false to enable navmesh.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -67532,42 +67545,42 @@
 			]
 		},
 		"0x5407B7288D0478B7": {
-			"name": "_0x5407B7288D0478B7",
+			"name": "COUNT_PEDS_IN_COMBAT_WITH_TARGET",
 			"jhash": "0xEF0B78E6",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "int",
 			"build": "323"
 		},
 		"0x336B3D200AB007CB": {
-			"name": "_0x336B3D200AB007CB",
+			"name": "COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS",
 			"jhash": "0xFB18CB19",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				}
 			],
 			"return_type": "Any",
@@ -68051,15 +68064,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -69605,7 +69618,7 @@
 		"0x2746BD9D88C5C5D0": {
 			"name": "GET_PED_HEAD_BLEND_DATA",
 			"jhash": "0x44E1680C",
-			"comment": "The pointer is to a padded struct that matches the arguments to SET_PED_HEAD_BLEND_DATA(...). There are 4 bytes of padding after each field.\npass this struct in the second parameter \ntypedef struct\n{\n        int shapeFirst, shapeSecond, shapeThird; \n        int skinFirst, skinSecond, skinThird; \n   float shapeMix, skinMix, thirdMix;\n} headBlendData;",
+			"comment": "The pointer is to a padded struct that matches the arguments to SET_PED_HEAD_BLEND_DATA(...). There are 4 bytes of padding after each field.\npass this struct in the second parameter \nstruct headBlendData\n{\n    int shapeFirst;\n    int padding1;\n    int shapeSecond;\n    int padding2;\n    int shapeThird;\n    int padding3;\n    int skinFirst;\n    int padding4;\n    int skinSecond;\n    int padding5;\n    int skinThird;\n    int padding6;\n    float shapeMix;\n    int padding7;\n    float skinMix;\n    int padding8;\n    float thirdMix;\n    int padding9;\n    bool isParent;\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -73401,7 +73414,7 @@
 			"build": "323"
 		},
 		"0x1A330D297AAC6BC1": {
-			"name": "_0x1A330D297AAC6BC1",
+			"name": "SET_LADDER_CLIMB_INPUT_STATE",
 			"jhash": "0x77BB7CB8",
 			"comment": "Only appears in lamar1 script.",
 			"params": [
@@ -73669,7 +73682,7 @@
 		"0x70A2D1137C8ED7C9": {
 			"name": "SET_PED_FLEE_ATTRIBUTES",
 			"jhash": "0xA717A875",
-			"comment": "bit 15 (0x8000) = force cower",
+			"comment": "bit 1 (0x2) = use vehicle\nbit 15 (0x8000) = force cower",
 			"params": [
 				{
 					"type": "Ped",
@@ -82153,7 +82166,7 @@
 			"build": "323"
 		},
 		"0x116FB94DC4B79F17": {
-			"name": "_0x116FB94DC4B79F17",
+			"name": "SC_EMAIL_SEND_EMAIL",
 			"jhash": "0xAF3C081B",
 			"comment": "",
 			"params": [
@@ -82192,20 +82205,26 @@
 			"build": "323"
 		},
 		"0xBC1CC91205EC8D6E": {
-			"name": "_IS_ROCKSTAR_MESSAGE_READY_FOR_SCRIPT",
+			"name": "SC_HAS_NEW_ROCKSTAR_MSG",
 			"jhash": "0x6C5738AB",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_IS_ROCKSTAR_MESSAGE_READY_FOR_SCRIPT"
+			]
 		},
 		"0xDF649C4E9AFDD788": {
-			"name": "_ROCKSTAR_MESSAGE_GET_STRING",
+			"name": "SC_GET_NEW_ROCKSTAR_MSG",
 			"jhash": "0x468668F0",
 			"comment": "",
 			"params": [],
 			"return_type": "const char*",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_ROCKSTAR_MESSAGE_GET_STRING"
+			]
 		},
 		"0x1F1E9682483697C7": {
 			"name": "SC_PRESENCE_ATTR_SET_INT",
@@ -84109,9 +84128,9 @@
 			"build": "323"
 		},
 		"0x098760C7461724CD": {
-			"name": "_PLAYSTATS_START_OFFLINE_MODE",
+			"name": "PLAYSTATS_STARTED_SESSION_IN_OFFLINEMODE",
 			"jhash": "0x896CDF8D",
-			"comment": "PLAYSTATS_START_INVITE_DESPAWNING?",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -89679,7 +89698,7 @@
 			"build": "323"
 		},
 		"0x95A7DABDDBB78AE7": {
-			"name": "_0x95A7DABDDBB78AE7",
+			"name": "IPL_GROUP_SWAP_START",
 			"jhash": "0x9EF0A9CF",
 			"comment": "",
 			"params": [
@@ -89696,7 +89715,7 @@
 			"build": "323"
 		},
 		"0x63EB2B972A218CAC": {
-			"name": "_0x63EB2B972A218CAC",
+			"name": "IPL_GROUP_SWAP_CANCEL",
 			"jhash": "0xF2CDD6A8",
 			"comment": "",
 			"params": [],
@@ -89704,7 +89723,7 @@
 			"build": "323"
 		},
 		"0xFB199266061F820A": {
-			"name": "_0xFB199266061F820A",
+			"name": "IPL_GROUP_SWAP_IS_READY",
 			"jhash": "0x17B0A1CD",
 			"comment": "",
 			"params": [],
@@ -89712,7 +89731,7 @@
 			"build": "323"
 		},
 		"0xF4A0DADB70F57FA6": {
-			"name": "_0xF4A0DADB70F57FA6",
+			"name": "IPL_GROUP_SWAP_FINISH",
 			"jhash": "0x3DA7AA5D",
 			"comment": "",
 			"params": [],
@@ -89720,7 +89739,7 @@
 			"build": "323"
 		},
 		"0x5068F488DDB54DD8": {
-			"name": "_0x5068F488DDB54DD8",
+			"name": "IPL_GROUP_SWAP_IS_ACTIVE",
 			"jhash": "0xDAB4BAC0",
 			"comment": "",
 			"params": [],
@@ -95677,7 +95696,7 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped2"
+					"name": "target"
 				}
 			],
 			"return_type": "void",
