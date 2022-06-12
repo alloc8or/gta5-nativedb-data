@@ -2953,9 +2953,9 @@
 			"build": "2372"
 		},
 		"0x3E65CDE5215832C1": {
-			"name": "_GET_CURRENT_RADIO_STATION_HASH",
+			"name": "_GET_CURRENT_RADIO_TRACK_PLAYBACK_TIME",
 			"jhash": "",
-			"comment": "GET_CURRENT_*\nSeems to return hashed radio station name?",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -2966,9 +2966,9 @@
 			"build": "1493"
 		},
 		"0x34D66BC058019CE0": {
-			"name": "_0x34D66BC058019CE0",
+			"name": "_GET_CURRENT_RADIO_TRACK_NAME",
 			"jhash": "",
-			"comment": "GET_CURRENT_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -25139,9 +25139,9 @@
 			"build": "323"
 		},
 		"0x9245E81072704B8A": {
-			"name": "_0x9245E81072704B8A",
+			"name": "_DISABLE_PAUSE_MENU_BUSYSPINNER",
 			"jhash": "",
-			"comment": "DISABLE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -40073,9 +40073,9 @@
 			"build": "323"
 		},
 		"0x015C49A93E3E086E": {
-			"name": "_CELL_CAM_DISABLE_THIS_FRAME",
+			"name": "CELL_CAM_ACTIVATE_SELFIE_MODE",
 			"jhash": "0x4479B304",
-			"comment": "Disables the phone up-button, oddly enough. \ni.e.: When the phone is out, and this method is called with false as it's parameter, the phone will not be able to scroll up. However, when you use the down arrow key, it's functionality still, works on the phone. \n\nWhen the phone is not out, and this method is called with false as it's parameter, you will not be able to bring up the phone. Although the up arrow key still works for whatever functionality it's used for, just not for the phone.\n\nThis can be used for creating menu's when trying to disable the phone from being used. \n\nYou do not have to call the function again with false as a parameter, as soon as the function stops being called, the phone will again be usable.",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -40085,13 +40085,14 @@
 			"return_type": "void",
 			"build": "323",
 			"old_names": [
-				"_DISABLE_PHONE_THIS_FRAME"
+				"_DISABLE_PHONE_THIS_FRAME",
+				"_CELL_CAM_DISABLE_THIS_FRAME"
 			]
 		},
 		"0xA2CCBE62CD4C91A4": {
-			"name": "_0xA2CCBE62CD4C91A4",
+			"name": "CELL_CAM_ACTIVATE_SHALLOW_DOF_MODE",
 			"jhash": "0xC273BB4D",
-			"comment": "Needs more research. If the \"phone_cam12\" filter is applied, this function is called with \"TRUE\"; otherwise, \"FALSE\".\n\nExample (XBOX 360):\n\n// check current filter selection\nif (MISC::ARE_STRINGS_EQUAL(getElem(g_2471024, &l_17, 4), \"phone_cam12\") != 0)\n{\n    MOBILE::_0xC273BB4D(0); // FALSE\n}\nelse\n{\n    MOBILE::_0xC273BB4D(1); // TRUE\n}",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -41197,7 +41198,7 @@
 			"build": "757"
 		},
 		"0x6B7E4FB50D5F3D65": {
-			"name": "_0x6B7E4FB50D5F3D65",
+			"name": "_NETWORK_EARN_FROM_SMUGGLER_WORK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41226,7 +41227,7 @@
 			"build": "1180"
 		},
 		"0x31BA138F6304FB9F": {
-			"name": "_0x31BA138F6304FB9F",
+			"name": "_NETWORK_EARN_FROM_HANGAR_TRADE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -41243,7 +41244,7 @@
 			"build": "1180"
 		},
 		"0x55A1E095DB052FA5": {
-			"name": "_0x55A1E095DB052FA5",
+			"name": "_NETWORK_EARN_FROM_PURCHASE_CLUBHOUSE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42455,7 +42456,7 @@
 			"build": "323"
 		},
 		"0xCD4D66B43B1DD28D": {
-			"name": "_0xCD4D66B43B1DD28D",
+			"name": "_NETWORK_SPENT_ON_MOVE_SUBMARINE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42665,7 +42666,7 @@
 			"unused": true
 		},
 		"0x08A1B82B91900682": {
-			"name": "_NETWORK_SPENT_PAY_GOON",
+			"name": "_NETWORK_SPENT_GOON_PAY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42683,10 +42684,13 @@
 				}
 			],
 			"return_type": "void",
-			"build": "573"
+			"build": "573",
+			"old_names": [
+				"_NETWORK_SPENT_PAY_GOON"
+			]
 		},
 		"0xDBC966A01C02BCA7": {
-			"name": "_NETWORK_SPENT_PAY_BOSS",
+			"name": "_NETWORK_SPENT_BOSS_PAY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42704,7 +42708,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "573"
+			"build": "573",
+			"old_names": [
+				"_NETWORK_SPENT_PAY_BOSS"
+			]
 		},
 		"0xE7DF4E0545DFB56E": {
 			"name": "_NETWORK_SPENT_MOVE_YACHT",
@@ -42778,7 +42785,7 @@
 			"build": "757"
 		},
 		"0x112209CE0290C03A": {
-			"name": "_0x112209CE0290C03A",
+			"name": "_NETWORK_SPENT_PA_SERVICE_HELI",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42803,7 +42810,7 @@
 			"build": "757"
 		},
 		"0xED5FD7AF10F5E262": {
-			"name": "_0xED5FD7AF10F5E262",
+			"name": "_NETWORK_SPENT_PA_SERVICE_VEHICLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42828,7 +42835,7 @@
 			"build": "757"
 		},
 		"0x0D30EB83668E63C5": {
-			"name": "_0x0D30EB83668E63C5",
+			"name": "_NETWORK_SPENT_PA_SERVICE_SNACK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42878,7 +42885,7 @@
 			"build": "757"
 		},
 		"0xE23ADC6FCB1F29AE": {
-			"name": "_0xE23ADC6FCB1F29AE",
+			"name": "_NETWORK_SPENT_PA_SERVICE_IMPOUND",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42924,7 +42931,7 @@
 			"build": "757"
 		},
 		"0x69EF772B192614C1": {
-			"name": "_0x69EF772B192614C1",
+			"name": "_NETWORK_SPENT_PURCHASE_OFFICE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42949,7 +42956,7 @@
 			"build": "757"
 		},
 		"0x8E243837643D9583": {
-			"name": "_0x8E243837643D9583",
+			"name": "_NETWORK_SPENT_UPGRADE_OFFICE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42974,7 +42981,7 @@
 			"build": "757"
 		},
 		"0xBD0EFB25CCA8F97A": {
-			"name": "_0xBD0EFB25CCA8F97A",
+			"name": "_NETWORK_SPENT_PURCHASE_WAREHOUSE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -42999,7 +43006,7 @@
 			"build": "757"
 		},
 		"0xA95F667A755725DA": {
-			"name": "_0xA95F667A755725DA",
+			"name": "_NETWORK_SPENT_UPGRADE_WAREHOUSE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43024,7 +43031,7 @@
 			"build": "757"
 		},
 		"0x33981D6804E62F49": {
-			"name": "_NETWORK_SPENT_PURCHASE_WAREHOUSE",
+			"name": "_NETWORK_SPENT_PURCHASE_IMPORTEXPORT_WAREHOUSE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43049,7 +43056,7 @@
 			"build": "944"
 		},
 		"0x4128464231E3CA0B": {
-			"name": "_0x4128464231E3CA0B",
+			"name": "_NETWORK_SPENT_UPGRADE_IMPORTEXPORT_WAREHOUSE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43174,7 +43181,7 @@
 			"build": "877"
 		},
 		"0x998E18CEB44487FC": {
-			"name": "_0x998E18CEB44487FC",
+			"name": "_NETWORK_SPENT_PURCHASE_CLUBHOUSE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43199,7 +43206,7 @@
 			"build": "877"
 		},
 		"0xFA07759E6FDDD7CF": {
-			"name": "_0xFA07759E6FDDD7CF",
+			"name": "_NETWORK_SPENT_UPGRADE_CLUBHOUSE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43249,7 +43256,7 @@
 			"build": "877"
 		},
 		"0x675D19C6067CAE08": {
-			"name": "_0x675D19C6067CAE08",
+			"name": "_NETWORK_SPENT_UPGRADE_BUSINESS_PROPERTY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43353,7 +43360,7 @@
 			"build": "877"
 		},
 		"0x5F456788B05FAEAC": {
-			"name": "_0x5F456788B05FAEAC",
+			"name": "_NETWORK_SPENT_CHANGE_APPEARANCE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43423,7 +43430,7 @@
 			"build": "944"
 		},
 		"0xB4C2EC463672474E": {
-			"name": "_0xB4C2EC463672474E",
+			"name": "_NETWORK_SPENT_PURCHASE_OFFICE_GARAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -43448,7 +43455,7 @@
 			"build": "944"
 		},
 		"0x2AFC2D19B50797F2": {
-			"name": "_0x2AFC2D19B50797F2",
+			"name": "_NETWORK_SPENT_UPGRADE_OFFICE_GARAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44226,7 +44233,7 @@
 			"build": "1290"
 		},
 		"0x2A7CEC72C3443BCC": {
-			"name": "_0x2A7CEC72C3443BCC",
+			"name": "_NETWORK_SPENT_GANGOPS_REPAIR_COST",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44247,7 +44254,7 @@
 			"build": "1290"
 		},
 		"0xE0F82D68C7039158": {
-			"name": "_0xE0F82D68C7039158",
+			"name": "_NETWORK_EARN_FROM_NIGHTCLUB_INCOME",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44260,7 +44267,7 @@
 			"build": "1493"
 		},
 		"0xB4DEAE67F35E2ACD": {
-			"name": "_0xB4DEAE67F35E2ACD",
+			"name": "_NETWORK_EARN_FROM_NIGHTCLUB_DANCING",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44286,7 +44293,7 @@
 			"build": "1604"
 		},
 		"0x2A93C46AAB1EACC9": {
-			"name": "_0x2A93C46AAB1EACC9",
+			"name": "_NETWORK_SPENT_PURCHASE_HACKER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44311,7 +44318,7 @@
 			"build": "1493"
 		},
 		"0x226C284C830D0CA8": {
-			"name": "_0x226C284C830D0CA8",
+			"name": "_NETWORK_SPENT_UPGRADE_HACKER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44362,7 +44369,7 @@
 			"unused": true
 		},
 		"0xED76D195E6E3BF7F": {
-			"name": "_0xED76D195E6E3BF7F",
+			"name": "_NETWORK_SPENT_PURCHASE_NIGHTCLUB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44387,7 +44394,7 @@
 			"build": "1493"
 		},
 		"0x1DC9B749E7AE282B": {
-			"name": "_0x1DC9B749E7AE282B",
+			"name": "_NETWORK_SPENT_UPGRADE_NIGHTCLUB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44412,7 +44419,7 @@
 			"build": "1493"
 		},
 		"0xC6E74CF8C884C880": {
-			"name": "_0xC6E74CF8C884C880",
+			"name": "_NETWORK_EARN_FROM_NIGHTCLUB_LOCATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -44449,7 +44456,7 @@
 			"build": "1493"
 		},
 		"0x65482BFD0923C8A1": {
-			"name": "_0x65482BFD0923C8A1",
+			"name": "_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45116,7 +45123,7 @@
 			"build": "1734"
 		},
 		"0x870289A558348378": {
-			"name": "_0x870289A558348378",
+			"name": "_NETWORK_SPENT_BUY_ARCADE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45141,7 +45148,7 @@
 			"build": "1868"
 		},
 		"0x5574637681911FDA": {
-			"name": "_0x5574637681911FDA",
+			"name": "_NETWORK_SPENT_UPGRADE_ARCADE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45219,7 +45226,7 @@
 			"build": "1868"
 		},
 		"0xB5B58E24868CB09E": {
-			"name": "_0xB5B58E24868CB09E",
+			"name": "_NETWORK_SPENT_ARCADE_MGMT_CABINET",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45248,7 +45255,7 @@
 			"build": "1868"
 		},
 		"0xEAD3D81F2C3A1458": {
-			"name": "_NETWORK_SPENT_ARCADE_GAME",
+			"name": "_NETWORK_SPENT_PLAY_ARCADE_CABINET",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45274,7 +45281,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1868"
+			"build": "1868",
+			"old_names": [
+				"_NETWORK_SPENT_ARCADE_GAME"
+			]
 		},
 		"0x43AA7FAC4E6D6687": {
 			"name": "_NETWORK_SPENT_ARCADE_GENERIC",
@@ -45343,7 +45353,7 @@
 			"build": "1868"
 		},
 		"0x4C3B75694F7E0D9C": {
-			"name": "_0x4C3B75694F7E0D9C",
+			"name": "_NETWORK_EARN_FROM_UPGRADE_ARCADE_LOCATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45364,7 +45374,7 @@
 			"build": "1868"
 		},
 		"0xD29334ED1A256DBF": {
-			"name": "_NETWORK_EARN_FROM_ARCADE",
+			"name": "_NETWORK_EARN_FROM_ARCADE_AWARD",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45390,10 +45400,13 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1868"
+			"build": "1868",
+			"old_names": [
+				"_NETWORK_EARN_FROM_ARCADE"
+			]
 		},
 		"0xA95CFB4E02390842": {
-			"name": "_0xA95CFB4E02390842",
+			"name": "_NETWORK_EARN_FROM_ARCADE_COLLECTABLES",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45414,7 +45427,7 @@
 			"build": "1868"
 		},
 		"0x0DD362F14F18942A": {
-			"name": "_0x0DD362F14F18942A",
+			"name": "_NETWORK_EARN_FROM_ARCADE_KILLS_CHALLENGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45499,7 +45512,7 @@
 			"build": "2060"
 		},
 		"0xDE68E30D89F97132": {
-			"name": "_0xDE68E30D89F97132",
+			"name": "_NETWORK_EARN_FROM_YACHT_MISSION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45517,7 +45530,7 @@
 			"unused": true
 		},
 		"0xE2E244AB823B4483": {
-			"name": "_0xE2E244AB823B4483",
+			"name": "_NETWORK_EARN_FROM_YACHT_MISSION_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45626,7 +45639,7 @@
 			"build": "2189"
 		},
 		"0x90CD7C6871FBF1B4": {
-			"name": "_0x90CD7C6871FBF1B4",
+			"name": "_NETWORK_SPENT_BUY_SUB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45734,7 +45747,7 @@
 			"build": "2189"
 		},
 		"0xA51338E0DCCD4065": {
-			"name": "_0xA51338E0DCCD4065",
+			"name": "_NETWORK_EARN_FROM_BEACH_PARTY_LOST_FOUND",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -45756,7 +45769,7 @@
 			"unused": true
 		},
 		"0xE2BB399D90942091": {
-			"name": "_0xE2BB399D90942091",
+			"name": "_NETWORK_EARN_FROM_ISLAND_HEIST_DJMISSION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48453,9 +48466,9 @@
 			]
 		},
 		"0x600F8CB31C7AAB6E": {
-			"name": "_0x600F8CB31C7AAB6E",
+			"name": "NETWORK_SESSION_SET_GAMEMODE",
 			"jhash": "0x959E43A3",
-			"comment": "NETWORK_SESSION_[M-S]",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -48672,12 +48685,15 @@
 			"build": "323"
 		},
 		"0x62A0296C1BB1CEB3": {
-			"name": "_NETWORK_ACCEPT_INVITE",
+			"name": "NETWORK_REQUEST_INVITE_CONFIRMED_EVENT",
 			"jhash": "0x0907A6BF",
-			"comment": "NETWORK_RE*\n\nTriggers a CEventNetworkInviteConfirmed event",
+			"comment": "Triggers a CEventNetworkInviteConfirmed event",
 			"params": [],
 			"return_type": "BOOL",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_NETWORK_ACCEPT_INVITE"
+			]
 		},
 		"0x23DFB504655D0CE4": {
 			"name": "NETWORK_SESSION_WAS_INVITED",
@@ -49768,9 +49784,9 @@
 			"build": "323"
 		},
 		"0xC571D0E77D8BBC29": {
-			"name": "_0xC571D0E77D8BBC29",
+			"name": "NETWORK_IS_TRANSITION_LEAVE_POSTPONED",
 			"jhash": "0x4F4BB300",
-			"comment": "NETWORK_IS_TRANSITION_*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -50629,8 +50645,8 @@
 			"build": "323"
 		},
 		"0x25D990F8E0E3F13C": {
-			"name": "_0x25D990F8E0E3F13C",
-			"jhash": "",
+			"name": "NETWORK_REMOVE_ALL_QUEUED_JOIN_REQUESTS",
+			"jhash": "0x4FD83F5B",
 			"comment": "",
 			"params": [],
 			"return_type": "void",
@@ -58256,7 +58272,7 @@
 			"build": "323"
 		},
 		"0x68103E2247887242": {
-			"name": "_0x68103E2247887242",
+			"name": "UGC_RELEASE_ALL_CACHED_DESCRIPTIONS",
 			"jhash": "0x0095DB71",
 			"comment": "",
 			"params": [],
@@ -72642,7 +72658,7 @@
 			"build": "323"
 		},
 		"0x6647C5F6F5792496": {
-			"name": "_0x6647C5F6F5792496",
+			"name": "SET_PED_CAN_TORSO_VEHICLE_IK",
 			"jhash": "0x0FDA62DE",
 			"comment": "",
 			"params": [
@@ -108150,9 +108166,9 @@
 			"build": "323"
 		},
 		"0xB93B2867F7B479D1": {
-			"name": "_0xB93B2867F7B479D1",
+			"name": "_SET_VEHICLE_NEON_LIGHTS_COLOUR_INDEX",
 			"jhash": "",
-			"comment": "Sets some value for vehicle from array based on index\n_SET_VEHICLE_*",
+			"comment": "Index references CVehicleModelColor",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109229,16 +109245,16 @@
 			"build": "944"
 		},
 		"0x3DE51E9C80B116CF": {
-			"name": "_0x3DE51E9C80B116CF",
+			"name": "_IS_VEHICLE_PARACHUTE_ACTIVE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1011"
 		},
 		"0x28D034A93FE31BF5": {
