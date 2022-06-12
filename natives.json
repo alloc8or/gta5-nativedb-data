@@ -39836,7 +39836,7 @@
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "323"
 		},
 		"0x693478ACBD7F18E7": {
@@ -59133,7 +59133,7 @@
 			"unused": true
 		},
 		"0xDB663CC9FF3407A9": {
-			"name": "_0xDB663CC9FF3407A9",
+			"name": "_NETWORK_GET_PLAYER_ACCOUNT_ID",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -65017,7 +65017,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "copyDecals"
 				}
 			],
 			"return_type": "Ped",
@@ -65061,7 +65061,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "copyDecals"
 				}
 			],
 			"return_type": "void",
@@ -99438,7 +99438,7 @@
 		"0xBB40DD2270B65366": {
 			"name": "GET_PED_IN_VEHICLE_SEAT",
 			"jhash": "0x388FDE9A",
-			"comment": "If there is no ped in the seat, and the game considers the vehicle as ambient population, this will create a random occupant ped in the seat, which may be cleaned up by the game fairly soon if not marked as script-owned mission entity.\n\nSeat indexes:\n-1 = Driver\n0 = Front Right Passenger\n1 = Back Left Passenger\n2 = Back Right Passenger\n3 = Further Back Left Passenger (vehicles > 4 seats)\n4 = Further Back Right Passenger (vehicles > 4 seats)\netc.\n\nIf p2 is true it uses a different GetOccupant function.",
+			"comment": "If there is no ped in the seat, and the game considers the vehicle as ambient population, this will create a random occupant ped in the seat, which may be cleaned up by the game fairly soon if not marked as script-owned mission entity.\n\nSeat indexes:\n-1 = Driver\n0 = Front Right Passenger\n1 = Back Left Passenger\n2 = Back Right Passenger\n3 = Further Back Left Passenger (vehicles > 4 seats)\n4 = Further Back Right Passenger (vehicles > 4 seats)\netc.\n\nisTaskRunning = on true the function returns the ped that is performing a task on the target seat (TASK_ENTER_VEHICLE/TASK_SHUFFLE_TO_NEXT_VEHICLE_SEAT) - on false only when a ped is finally sitting in the seat.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -99450,7 +99450,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "isTaskRunning"
 				}
 			],
 			"return_type": "Ped",
