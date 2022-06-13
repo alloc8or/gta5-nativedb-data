@@ -34194,7 +34194,7 @@
 		"0x65D2EBB47E1CEC21": {
 			"name": "_0x65D2EBB47E1CEC21",
 			"jhash": "",
-			"comment": "Sets GtaThread+0x14A\n\nSET_S*",
+			"comment": "Sets GtaThread+0x14A, related to streaming?\n\nSET_S*",
 			"params": [
 				{
 					"type": "BOOL",
@@ -34220,11 +34220,11 @@
 		"0x8D74E26F54B4E5C3": {
 			"name": "_0x8D74E26F54B4E5C3",
 			"jhash": "0xE77199F7",
-			"comment": "I*",
+			"comment": "Related to UGC reports\n\nI*",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "contentId"
 				}
 			],
 			"return_type": "void",
@@ -39553,9 +39553,9 @@
 			"build": "323"
 		},
 		"0xFB00CA71DA386228": {
-			"name": "_0xFB00CA71DA386228",
+			"name": "_SET_PROFILE_SETTING_JOHN_MARSTON_UNLOCKED",
 			"jhash": "0x054EC103",
-			"comment": "",
+			"comment": "SET_T*",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -111268,15 +111268,15 @@
 		"0x24C024BA8379A70A": {
 			"name": "_0x24C024BA8379A70A",
 			"jhash": "",
-			"comment": "",
+			"comment": "Most likely SET_PED_STUNGUN_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
