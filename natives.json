@@ -85619,7 +85619,7 @@
 			"build": "323"
 		},
 		"0x8EC74CEB042E7CFF": {
-			"name": "_0x8EC74CEB042E7CFF",
+			"name": "LEADERBOARDS_CLEAR_CACHE_DATA_ID",
 			"jhash": "0x88AE9667",
 			"comment": "",
 			"params": [
@@ -106319,9 +106319,9 @@
 			"build": "323"
 		},
 		"0xCFD778E7904C255E": {
-			"name": "_0xCFD778E7904C255E",
+			"name": "LOCK_DOORS_WHEN_NO_LONGER_NEEDED",
 			"jhash": "0x3FBE904F",
-			"comment": "what does this do?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
