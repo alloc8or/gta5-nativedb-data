@@ -94694,7 +94694,7 @@
 			"build": "323"
 		},
 		"0x45C597097DD7CB81": {
-			"name": "ADD_COVER_BLOCKING_IN_ANGLED_AREA",
+			"name": "ADD_COVER_BLOCKING_AREA",
 			"jhash": "0x3536946F",
 			"comment": "",
 			"params": [
@@ -94740,10 +94740,7 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323",
-			"old_names": [
-				"ADD_COVER_BLOCKING_AREA"
-			]
+			"build": "323"
 		},
 		"0xDB6708C0B46F56D8": {
 			"name": "REMOVE_ALL_COVER_BLOCKING_AREAS",
@@ -94775,7 +94772,7 @@
 			"build": "1493"
 		},
 		"0x1F351CF1C6475734": {
-			"name": "_REMOVE_COVER_BLOCKING_IN_ANGLED_AREA",
+			"name": "_REMOVE_SPECIFIC_COVER_BLOCKING_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -94821,10 +94818,7 @@
 				}
 			],
 			"return_type": "void",
-			"build": "505",
-			"old_names": [
-				"_REMOVE_SPECIFIC_COVER_BLOCKING_AREA"
-			]
+			"build": "505"
 		},
 		"0x142A02425FF02BD9": {
 			"name": "TASK_START_SCENARIO_IN_PLACE",
