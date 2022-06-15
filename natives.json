@@ -829,7 +829,7 @@
 		"0xB6AE90EDDE95C762": {
 			"name": "SET_MICROPHONE_POSITION",
 			"jhash": "0xAD7BB191",
-			"comment": "This native controls where the game plays audio from. By default the microphone is positioned on the player.\nWhen p0 is true the game will play audio from the 3 positions inputted.\nIt is recommended to all 3 positions to the same value as mixing different positions doesn't seem to work well.\nThe scripts mostly use it with only one position such as in fbi3.c: \nAUDIO::SET_MICROPHONE_POSITION(true, ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true));",
+			"comment": "This native controls where the game plays audio from. By default the microphone is positioned on the player.\nWhen p0 is true the game will play audio from the 3 positions inputted.\nIt is recommended to set all 3 positions to the same value as mixing different positions doesn't seem to work well.\nThe scripts mostly use it with only one position such as in fbi3.c: \nAUDIO::SET_MICROPHONE_POSITION(true, ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true));",
 			"params": [
 				{
 					"type": "BOOL",
@@ -8204,7 +8204,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
 					"type": "float",
@@ -8285,36 +8285,36 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "xOffset"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "yOffset"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "zOffset"
 				},
 				{
 					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "time"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "easeInTime"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "easeOutTime"
 				}
 			],
 			"return_type": "void",
@@ -8323,7 +8323,7 @@
 		"0x189E955A8313E298": {
 			"name": "SET_GAMEPLAY_ENTITY_HINT",
 			"jhash": "0x66C32306",
-			"comment": "p6 & p7 - possibly length or time",
+			"comment": "p8 could be some sort of flag. Scripts use:\n-244429742\n0\n1726668277\n1844968929",
 			"params": [
 				{
 					"type": "Entity",
@@ -8347,18 +8347,18 @@
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "time"
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "easeInTime"
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "easeOutTime"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -75130,31 +75130,31 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "width"
 				},
 				{
 					"type": "int",
@@ -94179,7 +94179,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "time"
 				},
 				{
 					"type": "Any",
@@ -94250,27 +94250,27 @@
 		"0xD43D95C7A869447F": {
 			"name": "TASK_SEEK_COVER_TO_COVER_POINT",
 			"jhash": "0x3D026B29",
-			"comment": "",
+			"comment": "p5 is always -1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "float",
-					"name": "p2"
+					"type": "ScrHandle",
+					"name": "coverpoint"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
 				},
 				{
 					"type": "Any",
@@ -94388,8 +94388,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -94404,11 +94404,11 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
@@ -94418,27 +94418,27 @@
 		"0x79B258E397854D29": {
 			"name": "TASK_EXIT_COVER",
 			"jhash": "0xC829FAC9",
-			"comment": "",
+			"comment": "p1 is 1, 2, or 3 in scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -94501,7 +94501,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
 					"type": "float",
@@ -94525,20 +94525,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
@@ -94563,7 +94563,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
 					"type": "float",
@@ -94665,12 +94665,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -94694,33 +94694,33 @@
 			"build": "323"
 		},
 		"0x45C597097DD7CB81": {
-			"name": "ADD_COVER_BLOCKING_AREA",
+			"name": "ADD_COVER_BLOCKING_IN_ANGLED_AREA",
 			"jhash": "0x3536946F",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "playerX"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "playerY"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "playerZ"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "radiusX"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "radiusY"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "radiusZ"
+					"name": "z2"
 				},
 				{
 					"type": "BOOL",
@@ -94740,7 +94740,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"ADD_COVER_BLOCKING_AREA"
+			]
 		},
 		"0xDB6708C0B46F56D8": {
 			"name": "REMOVE_ALL_COVER_BLOCKING_AREAS",
@@ -94772,53 +94775,56 @@
 			"build": "1493"
 		},
 		"0x1F351CF1C6475734": {
-			"name": "_REMOVE_SPECIFIC_COVER_BLOCKING_AREA",
+			"name": "_REMOVE_COVER_BLOCKING_IN_ANGLED_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				}
 			],
 			"return_type": "void",
-			"build": "505"
+			"build": "505",
+			"old_names": [
+				"_REMOVE_SPECIFIC_COVER_BLOCKING_AREA"
+			]
 		},
 		"0x142A02425FF02BD9": {
 			"name": "TASK_START_SCENARIO_IN_PLACE",
@@ -94959,23 +94965,23 @@
 		"0x9FDA1B3D7E7028B3": {
 			"name": "TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD",
 			"jhash": "0xE32FFB22",
-			"comment": "",
+			"comment": "p5 is always 0 in scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
@@ -94992,27 +94998,27 @@
 		"0x97A28E63F0BA5631": {
 			"name": "TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD_WARP",
 			"jhash": "0xBAB4C0AE",
-			"comment": "",
+			"comment": "p5 is always -1 or 0 in scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				},
 				{
 					"type": "Any",
@@ -95058,19 +95064,19 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "const char*",
+					"name": "scenarioName"
 				},
 				{
 					"type": "float",
@@ -95091,15 +95097,15 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
@@ -95905,7 +95911,7 @@
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "flags"
 				},
 				{
