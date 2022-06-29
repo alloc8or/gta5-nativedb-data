@@ -15143,15 +15143,15 @@
 		"0x68B562E124CC0AEF": {
 			"name": "_0x68B562E124CC0AEF",
 			"jhash": "",
-			"comment": "p0 and p1 are clearly vehicles, not pickups.\n\nExample from fm_mission_controller.c\n\nbVar5 = PED::GET_VEHICLE_PED_IS_IN(bLocal_3269, false);\nbVar6 = NETWORK::NET_TO_VEH(Local_22865.f_834.f_81[Global_4718592.f_139442[iVar0]]);\nENTITY::_0x68B562E124CC0AEF(bVar6, bVar5);",
+			"comment": "",
 			"params": [
 				{
-					"type": "Vehicle",
-					"name": "vehicle1"
+					"type": "Entity",
+					"name": "entity1"
 				},
 				{
-					"type": "Vehicle",
-					"name": "vehicle2"
+					"type": "Entity",
+					"name": "entity2"
 				}
 			],
 			"return_type": "void",
@@ -15194,11 +15194,11 @@
 		"0xD7B80E7C3BEFC396": {
 			"name": "_0xD7B80E7C3BEFC396",
 			"jhash": "",
-			"comment": "p0 is clearly a vehicle, not a pickup.\n\nExample from fm_content_island_dj.c:\n\nVEHICLE::SET_VEHICLE_DOOR_OPEN(iParam1, 3, true, false);\nENTITY::_0xD7B80E7C3BEFC396(iParam1, true);",
+			"comment": "",
 			"params": [
 				{
-					"type": "Vehicle",
-					"name": "vehicle"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "BOOL",
@@ -60994,7 +60994,7 @@
 					"name": "pickupHash"
 				},
 				{
-					"type": "Pickup*",
+					"type": "Pickup",
 					"name": "pickup"
 				}
 			],
@@ -61682,7 +61682,7 @@
 				},
 				{
 					"type": "float",
-					"name": "float"
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -61955,7 +61955,7 @@
 		"0xF92099527DB8E2A7": {
 			"name": "SUPPRESS_PICKUP_REWARD_TYPE",
 			"jhash": "0xA7E936FD",
-			"comment": "reward types:\n\n128: unk\n2047: money",
+			"comment": "enum ePickupRewardType\n{\n    PICKUP_REWARD_TYPE_AMMO = (1 << 0),\n    PICKUP_REWARD_TYPE_BULLET_MP = (1 << 1),\n    PICKUP_REWARD_TYPE_MISSILE_MP = (1 << 2),\n    PICKUP_REWARD_TYPE_GRENADE_LAUNCHER_MP = (1 << 3),\n    PICKUP_REWARD_TYPE_ARMOUR = (1 << 4),\n    PICKUP_REWARD_TYPE_HEALTH = (1 << 5),\n    PICKUP_REWARD_TYPE_HEALTH_VARIABLE = PICKUP_REWARD_TYPE_HEALTH,\n    PICKUP_REWARD_TYPE_MONEY_FIXED = (1 << 6),\n    PICKUP_REWARD_TYPE_MONEY_VARIABLE = PICKUP_REWARD_TYPE_MONEY_FIXED,\n    PICKUP_REWARD_TYPE_WEAPON = (1 << 7),\n    PICKUP_REWARD_TYPE_STAT = (1 << 8),\n    PICKUP_REWARD_TYPE_STAT_VARIABLE = PICKUP_REWARD_TYPE_STAT,\n    PICKUP_REWARD_TYPE_VEHICLE_FIX = (1 << 9),\n    PICKUP_REWARD_TYPE_FIREWORK_MP = (1 << 10),\n};",
 			"params": [
 				{
 					"type": "int",
