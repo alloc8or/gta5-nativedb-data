@@ -13790,15 +13790,15 @@
 		"0x352E2B5CF420BF3B": {
 			"name": "_0x352E2B5CF420BF3B",
 			"jhash": "",
-			"comment": "",
+			"comment": "Hardcoded not to work in singleplayer",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -14052,8 +14052,8 @@
 					"name": "health"
 				},
 				{
-					"type": "int",
-					"name": "p2"
+					"type": "Entity",
+					"name": "killer"
 				}
 			],
 			"return_type": "void",
@@ -39569,9 +39569,9 @@
 			"build": "323"
 		},
 		"0xE3D969D2785FFB5E": {
-			"name": "_0xE3D969D2785FFB5E",
+			"name": "_SET_PREVENT_PLAYER_ARREST_THIS_FRAME",
 			"jhash": "",
-			"comment": "sets something to 1",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -60322,11 +60322,11 @@
 		"0x659F9D71F52843F8": {
 			"name": "_0x659F9D71F52843F8",
 			"jhash": "",
-			"comment": "Sets a flag. A valid id is 0x157DC10D\nSET_FLAG_??",
+			"comment": "SET_FLAG_??",
 			"params": [
 				{
-					"type": "int",
-					"name": "id"
+					"type": "Hash",
+					"name": "garageHash"
 				},
 				{
 					"type": "BOOL",
@@ -72391,11 +72391,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1868"
 		},
 		"0xE1E65CA8AC9C00ED": {
@@ -75613,17 +75613,17 @@
 			"build": "463"
 		},
 		"0x83A169EABCDB10A2": {
-			"name": "_0x83A169EABCDB10A2",
+			"name": "_SET_PED_RESET_FLAG_PREFERS_REAR_SEATS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -75737,9 +75737,9 @@
 			"build": "1493"
 		},
 		"0xFAB944D4D481ACCB": {
-			"name": "_0xFAB944D4D481ACCB",
+			"name": "_SET_ALLOW_STUNT_JUMPS",
 			"jhash": "",
-			"comment": "SET_A*",
+			"comment": "Will crash the game if not used on a player ped",
 			"params": [
 				{
 					"type": "Ped",
@@ -97351,7 +97351,7 @@
 		"0x0FFB3C758E8C07B9": {
 			"name": "_0x0FFB3C758E8C07B9",
 			"jhash": "",
-			"comment": "Doesn't actually return anything.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -97362,7 +97362,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "2060"
 		},
 		"0x349CE7B56DAFD95C": {
