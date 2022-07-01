@@ -829,7 +829,7 @@
 		"0xB6AE90EDDE95C762": {
 			"name": "SET_MICROPHONE_POSITION",
 			"jhash": "0xAD7BB191",
-			"comment": "This native controls where the game plays audio from. By default the microphone is positioned on the player.\nWhen p0 is true the game will play audio from the 3 positions inputted.\nIt is recommended to all 3 positions to the same value as mixing different positions doesn't seem to work well.\nThe scripts mostly use it with only one position such as in fbi3.c: \nAUDIO::SET_MICROPHONE_POSITION(true, ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true));",
+			"comment": "This native controls where the game plays audio from. By default the microphone is positioned on the player.\nWhen p0 is true the game will play audio from the 3 positions inputted.\nIt is recommended to set all 3 positions to the same value as mixing different positions doesn't seem to work well.\nThe scripts mostly use it with only one position such as in fbi3.c: \nAUDIO::SET_MICROPHONE_POSITION(true, ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true), ENTITY::GET_ENTITY_COORDS(iLocal_3091, true));",
 			"params": [
 				{
 					"type": "BOOL",
@@ -8204,7 +8204,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
 					"type": "float",
@@ -8285,36 +8285,36 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "xOffset"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "yOffset"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "zOffset"
 				},
 				{
 					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "time"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "easeInTime"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "easeOutTime"
 				}
 			],
 			"return_type": "void",
@@ -8323,7 +8323,7 @@
 		"0x189E955A8313E298": {
 			"name": "SET_GAMEPLAY_ENTITY_HINT",
 			"jhash": "0x66C32306",
-			"comment": "p6 & p7 - possibly length or time",
+			"comment": "p8 could be some sort of flag. Scripts use:\n-244429742\n0\n1726668277\n1844968929",
 			"params": [
 				{
 					"type": "Entity",
@@ -8347,18 +8347,18 @@
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "time"
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "easeInTime"
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "easeOutTime"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -9669,27 +9669,27 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				}
 			],
 			"return_type": "void",
@@ -15129,12 +15129,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity2"
 				}
 			],
 			"return_type": "void",
@@ -15143,15 +15143,15 @@
 		"0x68B562E124CC0AEF": {
 			"name": "_0x68B562E124CC0AEF",
 			"jhash": "",
-			"comment": "Puts pickup2 ptr somewhere in pickup?",
+			"comment": "",
 			"params": [
 				{
-					"type": "Pickup",
-					"name": "pickup"
+					"type": "Entity",
+					"name": "entity1"
 				},
 				{
-					"type": "Pickup",
-					"name": "pickup2"
+					"type": "Entity",
+					"name": "entity2"
 				}
 			],
 			"return_type": "void",
@@ -15160,11 +15160,11 @@
 		"0x36F32DE87082343E": {
 			"name": "_0x36F32DE87082343E",
 			"jhash": "",
-			"comment": "",
+			"comment": "p1 is always set to 1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Any",
@@ -15175,9 +15175,9 @@
 			"build": "1011"
 		},
 		"0x1F922734E259BD26": {
-			"name": "_GET_ENTITY_PICKUP",
+			"name": "_GET_ENTITY_ATTACHED_TO_WITH_HASH",
 			"jhash": "",
-			"comment": "GET_ENTITY_*\n\nSeems to return the handle of the entity's portable pickup.",
+			"comment": "Gets the handle of an entity with a specific model hash attached to another entity, such as an object attached to a ped.\n This native does not appear to have anything to do with pickups as in scripts it is used with objects.\n\nExample from fm_mission_controller_2020.c:\n\niVar8 = ENTITY::_0x1F922734E259BD26(bParam0->f_9, joaat(\"p_cs_clipboard\"));",
 			"params": [
 				{
 					"type": "Entity",
@@ -15194,11 +15194,11 @@
 		"0xD7B80E7C3BEFC396": {
 			"name": "_0xD7B80E7C3BEFC396",
 			"jhash": "",
-			"comment": "Sets 32nd bit of pickup+188\nSET_PICKUP_??",
+			"comment": "",
 			"params": [
 				{
-					"type": "Pickup",
-					"name": "pickup"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "BOOL",
@@ -60990,12 +60990,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "pickupHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Pickup",
+					"name": "pickup"
 				}
 			],
 			"return_type": "void",
@@ -61213,8 +61213,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
 			"return_type": "void",
@@ -61251,7 +61251,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "number"
 				}
 			],
 			"return_type": "void",
@@ -61264,7 +61264,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61660,12 +61660,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61674,14 +61674,14 @@
 		"0x0596843B34B95CE5": {
 			"name": "_0x0596843B34B95CE5",
 			"jhash": "",
-			"comment": "",
+			"comment": "p1 is always 0.51. This native is called before SET_PICKUP_REGENERATION_TIME in all occurances.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -61691,11 +61691,11 @@
 		"0xA08FE5E49BDC39DD": {
 			"name": "_0xA08FE5E49BDC39DD",
 			"jhash": "0x276A7807",
-			"comment": "",
+			"comment": "p1 is always -0.2 in scripts and p2 is always true in scripts.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
 					"type": "float",
@@ -61715,8 +61715,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				}
 			],
 			"return_type": "void",
@@ -61728,12 +61728,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61745,12 +61745,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61766,7 +61766,7 @@
 					"name": "pickupHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x318516E02DE3ECE2": {
@@ -61809,12 +61809,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61826,12 +61826,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61843,12 +61843,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61860,12 +61860,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61874,10 +61874,10 @@
 		"0x8CFF648FBD7330F1": {
 			"name": "_0x8CFF648FBD7330F1",
 			"jhash": "",
-			"comment": "",
+			"comment": "p0 is either 0 or 50 in scripts.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -61890,12 +61890,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61907,12 +61907,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Pickup",
+					"name": "pickup"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -61955,7 +61955,7 @@
 		"0xF92099527DB8E2A7": {
 			"name": "SUPPRESS_PICKUP_REWARD_TYPE",
 			"jhash": "0xA7E936FD",
-			"comment": "",
+			"comment": "enum ePickupRewardType\n{\n    PICKUP_REWARD_TYPE_AMMO = (1 << 0),\n    PICKUP_REWARD_TYPE_BULLET_MP = (1 << 1),\n    PICKUP_REWARD_TYPE_MISSILE_MP = (1 << 2),\n    PICKUP_REWARD_TYPE_GRENADE_LAUNCHER_MP = (1 << 3),\n    PICKUP_REWARD_TYPE_ARMOUR = (1 << 4),\n    PICKUP_REWARD_TYPE_HEALTH = (1 << 5),\n    PICKUP_REWARD_TYPE_HEALTH_VARIABLE = PICKUP_REWARD_TYPE_HEALTH,\n    PICKUP_REWARD_TYPE_MONEY_FIXED = (1 << 6),\n    PICKUP_REWARD_TYPE_MONEY_VARIABLE = PICKUP_REWARD_TYPE_MONEY_FIXED,\n    PICKUP_REWARD_TYPE_WEAPON = (1 << 7),\n    PICKUP_REWARD_TYPE_STAT = (1 << 8),\n    PICKUP_REWARD_TYPE_STAT_VARIABLE = PICKUP_REWARD_TYPE_STAT,\n    PICKUP_REWARD_TYPE_VEHICLE_FIX = (1 << 9),\n    PICKUP_REWARD_TYPE_FIREWORK_MP = (1 << 10),\n};",
 			"params": [
 				{
 					"type": "int",
@@ -61983,8 +61983,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "rewardType"
 				}
 			],
 			"return_type": "void",
@@ -75130,31 +75130,31 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "width"
 				},
 				{
 					"type": "int",
@@ -75613,7 +75613,7 @@
 			"build": "463"
 		},
 		"0x83A169EABCDB10A2": {
-			"name": "_SET_PED_RESET_FLAG_PREFERS_REAR_SEATS",
+			"name": "_SET_PED_RESET_FLAG_PREFER_REAR_SEATS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -77039,11 +77039,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "372"
 		},
 		"0xDB172424876553F4": {
@@ -77464,7 +77464,7 @@
 		"0xBC9490CA15AEA8FB": {
 			"name": "_0xBC9490CA15AEA8FB",
 			"jhash": "0x6B34A160",
-			"comment": "Seems to only appear in scripts used in Singleplayer.\n\nAlways used like this in scripts\nPLAYER::_BC9490CA15AEA8FB(PLAYER::PLAYER_ID());",
+			"comment": "This native is used in both singleplayer and multiplayer scripts.\n\nAlways used like this in scripts\nPLAYER::_BC9490CA15AEA8FB(PLAYER::PLAYER_ID());",
 			"params": [
 				{
 					"type": "Player",
@@ -77493,8 +77493,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -89616,7 +89616,7 @@
 			"jhash": "0xC7A3D279",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0x5B74EA8CFD5E3E7E": {
@@ -93025,7 +93025,7 @@
 		"0xDBBC7A2432524127": {
 			"name": "_CLEAR_VEHICLE_TASKS",
 			"jhash": "",
-			"comment": "Seems to stop the engine",
+			"comment": "This native is very useful when switching the player to a ped inside a vehicle that has a task assigned prior to the player switch.\nIt is necessary to clear the ped’s tasks AND call this native with the vehicle the player is switching into in order to allow the player to control the vehicle after the player switches.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -94179,7 +94179,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "time"
 				},
 				{
 					"type": "Any",
@@ -94250,27 +94250,27 @@
 		"0xD43D95C7A869447F": {
 			"name": "TASK_SEEK_COVER_TO_COVER_POINT",
 			"jhash": "0x3D026B29",
-			"comment": "",
+			"comment": "p5 is always -1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "float",
-					"name": "p2"
+					"type": "ScrHandle",
+					"name": "coverpoint"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
 				},
 				{
 					"type": "Any",
@@ -94287,7 +94287,7 @@
 		"0x39246A6958EF072C": {
 			"name": "TASK_SEEK_COVER_TO_COORDS",
 			"jhash": "0xFFFE754E",
-			"comment": "from michael2:\nTASK::TASK_SEEK_COVER_TO_COORDS(ped, 967.5164794921875, -2121.603515625, 30.479299545288086, 978.94677734375, -2125.84130859375, 29.4752, -1, 1);\n\n\nappears to be shorter variation\nfrom michael3:\nTASK::TASK_SEEK_COVER_TO_COORDS(ped, -2231.011474609375, 263.6326599121094, 173.60195922851562, -1, 0);",
+			"comment": "p8 causes the ped to take the shortest route to the cover position. It may have something to do with navmesh or pathfinding mechanics.\n\nfrom michael2:\nTASK::TASK_SEEK_COVER_TO_COORDS(ped, 967.5164794921875, -2121.603515625, 30.479299545288086, 978.94677734375, -2125.84130859375, 29.4752, -1, 1);\n\n\nappears to be shorter variation\nfrom michael3:\nTASK::TASK_SEEK_COVER_TO_COORDS(ped, -2231.011474609375, 263.6326599121094, 173.60195922851562, -1, 0);",
 			"params": [
 				{
 					"type": "Ped",
@@ -94318,12 +94318,12 @@
 					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "timeout"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "shortRoute"
 				}
 			],
 			"return_type": "void",
@@ -94351,7 +94351,7 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "timeout"
 				},
 				{
@@ -94388,8 +94388,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Any",
@@ -94404,11 +94404,11 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
@@ -94418,27 +94418,27 @@
 		"0x79B258E397854D29": {
 			"name": "TASK_EXIT_COVER",
 			"jhash": "0xC829FAC9",
-			"comment": "",
+			"comment": "p1 is 1, 2, or 3 in scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -94501,7 +94501,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
 					"type": "float",
@@ -94525,20 +94525,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
@@ -94563,7 +94563,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
 					"type": "float",
@@ -94665,12 +94665,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -94700,27 +94700,27 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "playerX"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "playerY"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "playerZ"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "radiusX"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "radiusY"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "radiusZ"
+					"name": "z2"
 				},
 				{
 					"type": "BOOL",
@@ -94777,43 +94777,43 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p9"
 				}
 			],
@@ -94959,23 +94959,23 @@
 		"0x9FDA1B3D7E7028B3": {
 			"name": "TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD",
 			"jhash": "0xE32FFB22",
-			"comment": "",
+			"comment": "p5 is always 0 in scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
@@ -94992,27 +94992,27 @@
 		"0x97A28E63F0BA5631": {
 			"name": "TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD_WARP",
 			"jhash": "0xBAB4C0AE",
-			"comment": "",
+			"comment": "p5 is always -1 or 0 in scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				},
 				{
 					"type": "Any",
@@ -95058,23 +95058,23 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "const char*",
+					"name": "scenarioName"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				},
 				{
 					"type": "BOOL",
@@ -95091,15 +95091,15 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
@@ -95905,7 +95905,7 @@
 					"name": "p11"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "flags"
 				},
 				{
@@ -98055,7 +98055,7 @@
 		"0xC12321827687FE4D": {
 			"name": "SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA",
 			"jhash": "0xB4E0E69A",
-			"comment": "",
+			"comment": "When p6 is true, vehicle generators are active.\np7 seems to always be true in story mode scripts, but it's sometimes false in online scripts.",
 			"params": [
 				{
 					"type": "float",
@@ -98083,7 +98083,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "toggle"
 				},
 				{
 					"type": "BOOL",
