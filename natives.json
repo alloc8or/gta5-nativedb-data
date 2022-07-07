@@ -5920,45 +5920,45 @@
 			"build": "1180"
 		},
 		"0x202A5ED9CE01D6E7": {
-			"name": "_0x202A5ED9CE01D6E7",
+			"name": "_ATTACH_CAM_TO_ENTITY_WITH_FIXED_DIRECTION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Example from am_mp_drone script: \n\nCAM::_0x202A5ED9CE01D6E7(Local_190.f_169, NETWORK::NET_TO_OBJ(Local_190.f_159), 0f, 0f, 180f, Var0, 1);",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "xRot"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "yRot"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "zRot"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "xOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "yOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "zOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "isRelative"
 				}
 			],
 			"return_type": "void",
@@ -67599,7 +67599,7 @@
 					"name": "radius"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xADB3F206518799E8": {
