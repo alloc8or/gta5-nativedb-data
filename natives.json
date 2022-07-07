@@ -47997,7 +47997,7 @@
 		"0x94BC51E9449D917F": {
 			"name": "NETWORK_SESSION_CREW_MATCHMAKING",
 			"jhash": "0xD7624E6B",
-			"comment": "",
+			"comment": "p4 seems to be unused in 1.60/build 2628",
 			"params": [
 				{
 					"type": "int",
