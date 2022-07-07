@@ -48492,8 +48492,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "crewId"
 				}
 			],
 			"return_type": "BOOL",
@@ -48505,23 +48505,23 @@
 		"0xF7B2CFDE5C9F700D": {
 			"name": "NETWORK_FIND_MATCHED_GAMERS",
 			"jhash": "0xA13045D4",
-			"comment": "",
+			"comment": "Uses attributes to find players with similar stats. Attributes are as follows:\n\n0 = Races\n1 = Parachuting\n2 = Horde\n3 = Darts\n4 = Arm Wrestling\n5 = Tennis\n6 = Golf\n7 = Shooting Range\n8 = Deathmatch\n9 = MPPLY_MCMWIN/MPPLY_CRMISSION",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "attribute"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "fallbackLimit"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "lowerLimit"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "upperLimit"
 				}
 			],
 			"return_type": "BOOL",
