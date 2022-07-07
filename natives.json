@@ -48505,7 +48505,7 @@
 		"0xF7B2CFDE5C9F700D": {
 			"name": "NETWORK_FIND_MATCHED_GAMERS",
 			"jhash": "0xA13045D4",
-			"comment": "Uses attributes to find players with similar stats. Attributes are as follows:\n\n0 = Races\n1 = Parachuting\n2 = Horde\n3 = Darts\n4 = Arm Wrestling\n5 = Tennis\n6 = Golf\n7 = Shooting Range\n8 = Deathmatch\n9 = MPPLY_MCMWIN/MPPLY_CRMISSION",
+			"comment": "Uses attributes to find players with similar stats. Upper/Lower limit must be above zero or the fallback limit +/-0.1 is used.\nThere can be up to 15 attributes, they are as follows:\n\n0 = Races\n1 = Parachuting\n2 = Horde\n3 = Darts\n4 = Arm Wrestling\n5 = Tennis\n6 = Golf\n7 = Shooting Range\n8 = Deathmatch\n9 = MPPLY_MCMWIN/MPPLY_CRMISSION",
 			"params": [
 				{
 					"type": "int",
