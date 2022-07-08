@@ -1973,15 +1973,18 @@
 			"build": "463"
 		},
 		"0x40CF0D12D142A9E8": {
-			"name": "_SET_PED_SCREAM",
+			"name": "_RESET_PED_VOICE_GROUP",
 			"jhash": "",
-			"comment": "Assigns some ambient voice to the ped.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
 					"name": "ped"
 				}
 			],
+			"old_names": [
+				"_SET_PED_SCREAM"
+			]
 			"return_type": "void",
 			"build": "323"
 		},
@@ -1995,12 +1998,12 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "variation"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "voiceGroupHash"
 				}
 			],
 			"return_type": "void",
