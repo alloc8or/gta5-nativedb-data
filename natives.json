@@ -5923,45 +5923,45 @@
 			"build": "1180"
 		},
 		"0x202A5ED9CE01D6E7": {
-			"name": "_0x202A5ED9CE01D6E7",
+			"name": "_ATTACH_CAM_TO_ENTITY_WITH_FIXED_DIRECTION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Example from am_mp_drone script: \n\nCAM::_0x202A5ED9CE01D6E7(Local_190.f_169, NETWORK::NET_TO_OBJ(Local_190.f_159), 0f, 0f, 180f, Var0, 1);",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "xRot"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "yRot"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "zRot"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "xOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "yOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "zOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "BOOL",
+					"name": "isRelative"
 				}
 			],
 			"return_type": "void",
@@ -48000,11 +48000,11 @@
 		"0x94BC51E9449D917F": {
 			"name": "NETWORK_SESSION_CREW_MATCHMAKING",
 			"jhash": "0xD7624E6B",
-			"comment": "",
+			"comment": "p4 seems to be unused in 1.60/build 2628",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "crewId"
 				},
 				{
 					"type": "int",
@@ -48495,8 +48495,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "crewId"
 				}
 			],
 			"return_type": "BOOL",
@@ -48508,23 +48508,23 @@
 		"0xF7B2CFDE5C9F700D": {
 			"name": "NETWORK_FIND_MATCHED_GAMERS",
 			"jhash": "0xA13045D4",
-			"comment": "",
+			"comment": "Uses attributes to find players with similar stats. Upper/Lower limit must be above zero or the fallback limit +/-0.1 is used.\nThere can be up to 15 attributes, they are as follows:\n\n0 = Races\n1 = Parachuting\n2 = Horde\n3 = Darts\n4 = Arm Wrestling\n5 = Tennis\n6 = Golf\n7 = Shooting Range\n8 = Deathmatch\n9 = MPPLY_MCMWIN/MPPLY_CRMISSION",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "attribute"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "fallbackLimit"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "lowerLimit"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "upperLimit"
 				}
 			],
 			"return_type": "BOOL",
@@ -67602,7 +67602,7 @@
 					"name": "radius"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "323"
 		},
 		"0xADB3F206518799E8": {
