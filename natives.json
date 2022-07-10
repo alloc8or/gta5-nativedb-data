@@ -112735,7 +112735,7 @@
 		"0x3BE0BB12D25FB305": {
 			"name": "GET_WEAPON_DAMAGE_TYPE",
 			"jhash": "0x013AFC13",
-			"comment": "0=unknown (or incorrect weaponHash)\n1= no damage (flare,snowball, petrolcan)\n2=melee\n3=bullet\n4=force ragdoll fall\n5=explosive (RPG, Railgun, grenade)\n6=fire(molotov)\n8=fall(WEAPON_HELI_CRASH)\n10=electric\n11=barbed wire\n12=extinguisher\n13=gas\n14=water cannon(WEAPON_HIT_BY_WATER_CANNON)\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
+			"comment": "enum class eDamageType\n{\n\tUNKNOWN = 0,\n\tNONE = 1,\n\tMELEE = 2,\n\tBULLET = 3,\n\tBULLET_RUBBER = 4,\n\tEXPLOSIVE = 5,\n\tFIRE = 6,\n\tCOLLISION = 7,\n\tFALL = 8,\n\tDROWN = 9,\n\tELECTRIC = 10,\n\tBARBED_WIRE = 11,\n\tFIRE_EXTINGUISHER = 12,\n\tSMOKE = 13,\n\tWATER_CANNON = 14,\n\tTRANQUILIZER = 15,\n};\n\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Hash",
