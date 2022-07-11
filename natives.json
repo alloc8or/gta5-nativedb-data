@@ -29802,13 +29802,13 @@
 			"build": "323"
 		},
 		"0xE67C6DFD386EA5E7": {
-			"name": "_0xE67C6DFD386EA5E7",
+			"name": "_ALLOW_ADDITIONAL_INFO_FOR_MULTIPLAYER_HUD_CASH",
 			"jhash": "0x5476B9FD",
-			"comment": "",
+			"comment": "Controls whether to display 'Cash'/'Bank' next to the money balance HUD in Multiplayer (https://i.imgur.com/MiYUtNl.png) \nReal name is somewhere between ADD_TO* and ALLOW_MISSION* alphabetically.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "allow"
 				}
 			],
 			"return_type": "void",
