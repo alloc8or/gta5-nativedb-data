@@ -1,35 +1,41 @@
 {
 	"type": "object",
 	"patternProperties": {
-		"^[A-Z_]+[0-9]*$": {
+		"^([A-Z_]+[A-Z0-9_]*|_0x[0-9A-F]{16})$": {
 			"type": "object",
 			"patternProperties": {
 				"^0x[0-9A-F]{16}$": {
 					"type": "object",
 					"properties": {
-						"name": { "type": "string" },
-						"jhash": { "type": "string" },
+						"name": { "$ref": "#/$defs/native_name" },
+						"jhash": {
+							"type": "string",
+							"pattern": "^($|0x[0-9A-F]{8})$"
+						},
 						"comment": { "type": "string" },
 						"params": {
 							"type": "array",
 							"items": {
 								"type": "object",
 								"properties": {
-									"type": { "type": "string" },
-									"name": { "type": "string" }
+									"type": { "$ref": "#/$defs/param_type" },
+									"name": {
+										"type": "string",
+										"pattern": "^[A-Za-z_]+[A-Za-z0-9_]*$"
+									}
 								},
 								"required": ["type", "name"],
 								"additionalProperties": false
 							}
 						},
-						"return_type": { "type": "string" },
+						"return_type": { "$ref": "#/$defs/return_type" },
 						"build": { "type": "string" },
 						"unused": { "type": "boolean" },
 						"old_names": {
 							"type": "array",
-							"items": {
-								"type": "string"
-							}
+							"minItems": 1,
+							"uniqueItems": true,
+							"items": { "$ref": "#/$defs/native_name" }
 						}
 					},
 					"required": ["name", "jhash", "comment", "params", "return_type", "build"],
@@ -39,5 +45,39 @@
 			"additionalProperties": false
 		}
 	},
-	"additionalProperties": false
+	"additionalProperties": false,
+	"$defs": {
+		"native_name": {
+			"type": "string",
+			"pattern": "^([A-Z_]+[A-Z0-9_]*|_0x[0-9A-F]{16})$"
+		},
+		"param_type": {
+			"type": "string",
+			"enum": [
+				"int", "int*",
+				"float", "float*",
+				"BOOL", "BOOL*",
+				"char*", "const char*",
+				"Any", "Any*",
+				"Blip", "Blip*",
+				"Cam", "Cam*",
+				"Entity", "Entity*",
+				"FireId", "FireId*",
+				"Hash", "Hash*",
+				"Interior", "Interior*",
+				"ItemSet", "ItemSet*",
+				"Object", "Object*",
+				"Ped", "Ped*",
+				"Pickup", "Pickup*",
+				"Player", "Player*",
+				"ScrHandle", "ScrHandle*",
+				"Vector3*",
+				"Vehicle", "Vehicle*"
+			]
+		},
+		"return_type": {
+			"type": "string",
+			"enum": ["void", "int", "float", "BOOL", "const char*", "Any", "Any*", "Blip", "Cam", "Entity", "FireId", "Hash", "Interior", "ItemSet", "Object", "Ped", "Pickup", "Player", "ScrHandle", "Vector3", "Vehicle"]
+		}
+	}
 }
