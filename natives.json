@@ -36450,25 +36450,25 @@
 			"build": "323"
 		},
 		"0xA4A0065E39C9F25C": {
-			"name": "_0xA4A0065E39C9F25C",
+			"name": "_GET_SAVE_SIMPLE_VARIABLES",
 			"jhash": "0xC4D71AB4",
-			"comment": "GET_SAVE_*\n\nGET_SAVE_UNLESS_CUSTOM_DOT ?",
+			"comment": "Returns bClosestSaveHouseDataIsValid\n\nGET_SAVE_*",
 			"params": [
 				{
 					"type": "Vector3*",
-					"name": "p0"
+					"name": "vCoordsOfClosestSaveHouse"
 				},
 				{
 					"type": "float*",
-					"name": "p1"
+					"name": "fHeadingOfClosestSaveHouse"
 				},
 				{
 					"type": "BOOL*",
-					"name": "fadeInAfterLoad"
+					"name": "bFadeInAfterLoad"
 				},
 				{
 					"type": "BOOL*",
-					"name": "p3"
+					"name": "bPlayerShouldSnapToGroundOnSpawn"
 				}
 			],
 			"return_type": "BOOL",
@@ -39831,6 +39831,7 @@
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub).",
 			"params": [],
+			"_0xA4A0065E39C9F25C": null,
 			"return_type": "void",
 			"build": "323"
 		},
