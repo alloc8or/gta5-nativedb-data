@@ -36076,7 +36076,7 @@
 			"build": "323"
 		},
 		"0x397BAA01068BAA96": {
-			"name": "_0x397BAA01068BAA96",
+			"name": "GET_STATUS_OF_MANUAL_SAVE",
 			"jhash": "0x39771F21",
 			"comment": "",
 			"params": [],
