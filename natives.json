@@ -1984,7 +1984,7 @@
 			],
 			"old_names": [
 				"_SET_PED_SCREAM"
-			]
+			],
 			"return_type": "void",
 			"build": "323"
 		},
@@ -39835,9 +39835,9 @@
 			"build": "323"
 		},
 		"0xD10282B6E3751BA0": {
-			"name": "_GET_POPULATION_DENSITY",
+			"name": "_GET_CITY_DENSITY_MULTIPLIER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns the value of the \"Population Density\" slider in graphics settings",
 			"params": [],
 			"return_type": "float",
 			"build": "323"
