@@ -75616,7 +75616,7 @@
 			"build": "463"
 		},
 		"0x83A169EABCDB10A2": {
-			"name": "_SET_PED_RESET_FLAG_PREFER_REAR_SEATS",
+			"name": "_SET_PED_MOBILE_PHONE_THEME",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -75626,7 +75626,7 @@
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "theme"
 				}
 			],
 			"return_type": "void",
@@ -79716,7 +79716,7 @@
 			"return_type": "void",
 			"build": "323"
 		},
-		"0xEF56DBABD3CD4887": {
+		"0xEF56DBABD3CD4887": {SET_PLAYER_RESET_FLAG_PREFER_REAR_SEATS
 			"name": "GET_PLAYER_PARACHUTE_SMOKE_TRAIL_COLOR",
 			"jhash": "0xF66E5CDD",
 			"comment": "",
@@ -79742,9 +79742,9 @@
 			"build": "323"
 		},
 		"0x11D5F725F0E780E0": {
-			"name": "SET_PLAYER_RESET_FLAG_PREFER_REAR_SEATS",
+			"name": "_SET_PLAYER_MOBILE_PHONE_THEME",
 			"jhash": "0x725C6174",
-			"comment": "example:\n\nflags: 0-6\n\nPLAYER::SET_PLAYER_RESET_FLAG_PREFER_REAR_SEATS(PLAYER::PLAYER_ID(), 6);\n\nwouldnt the flag be the seatIndex?",
+			"comment": "Changes the color of the player's mobile phone",
 			"params": [
 				{
 					"type": "Player",
@@ -79752,11 +79752,14 @@
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "theme"
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"SET_PLAYER_RESET_FLAG_PREFER_REAR_SEATS"
+			]
 		},
 		"0xDB89EF50FF25FCE9": {
 			"name": "SET_PLAYER_NOISE_MULTIPLIER",
