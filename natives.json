@@ -79716,7 +79716,7 @@
 			"return_type": "void",
 			"build": "323"
 		},
-		"0xEF56DBABD3CD4887": {SET_PLAYER_RESET_FLAG_PREFER_REAR_SEATS
+		"0xEF56DBABD3CD4887": {
 			"name": "GET_PLAYER_PARACHUTE_SMOKE_TRAIL_COLOR",
 			"jhash": "0xF66E5CDD",
 			"comment": "",
