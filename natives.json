@@ -48362,8 +48362,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "BOOL",
-					"name": "p0"
+					"type": "int",
+					"name": "id"
 				}
 			],
 			"return_type": "void",
@@ -48958,11 +48958,11 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "publicSlots"
 				},
 				{
-					"type": "BOOL",
-					"name": "p1"
+					"type": "int",
+					"name": "privateSlots"
 				}
 			],
 			"return_type": "void",
@@ -49901,12 +49901,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "publicSlots"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "privateSlots"
 				}
 			],
 			"return_type": "void",
