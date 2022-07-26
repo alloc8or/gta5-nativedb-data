@@ -2023,6 +2023,23 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x0BABC1345ABBFB16": {
+			"name": "_0x0BABC1345ABBFB16",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
 		"0xA5342D390CDA41D6": {
 			"name": "_SET_PED_AUDIO_GENDER",
 			"jhash": "",
@@ -2909,6 +2926,19 @@
 			],
 			"return_type": "void",
 			"build": "2372"
+		},
+		"0x2B1784DB08AFEA79": {
+			"name": "_0x2B1784DB08AFEA79",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2699"
 		},
 		"0xC64A06D939F826F5": {
 			"name": "_0xC64A06D939F826F5",
@@ -5367,6 +5397,19 @@
 			"return_type": "float",
 			"build": "323"
 		},
+		"0xC2612D223D915A1C": {
+			"name": "_0xC2612D223D915A1C",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2699"
+		},
 		"0x255F8DAFD540D397": {
 			"name": "GET_CAM_FAR_DOF",
 			"jhash": "0x98C5CCE9",
@@ -5379,6 +5422,19 @@
 			],
 			"return_type": "float",
 			"build": "323"
+		},
+		"0x06D153C0B99B6128": {
+			"name": "_0x06D153C0B99B6128",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2699"
 		},
 		"0xBFD8727AEA3CCEBA": {
 			"name": "SET_CAM_PARAMS",
@@ -5680,6 +5736,14 @@
 			"params": [],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0x731A880555DA3647": {
+			"name": "_0x731A880555DA3647",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "2699"
 		},
 		"0xF55E4046F6F831DC": {
 			"name": "_0xF55E4046F6F831DC",
@@ -7247,6 +7311,14 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0x7295C203DD659DFE": {
+			"name": "_0x7295C203DD659DFE",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "2699"
 		},
 		"0x48608C3464F58AB4": {
 			"name": "_SET_GAMEPLAY_CAM_RELATIVE_ROTATION",
@@ -11481,6 +11553,32 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0x764EB96874EFFDC1": {
+			"name": "_0x764EB96874EFFDC1",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2699"
+		},
+		"0x2158E81A6AF65EA9": {
+			"name": "_0x2158E81A6AF65EA9",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2699"
+		},
 		"0x20B711662962B472": {
 			"name": "HAS_ENTITY_ANIM_FINISHED",
 			"jhash": "0x1D9CAB92",
@@ -13071,6 +13169,10 @@
 				{
 					"type": "BOOL",
 					"name": "fixedRot"
+				},
+				{
+					"type": "Any",
+					"name": "p15"
 				}
 			],
 			"return_type": "void",
@@ -21576,6 +21678,27 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x1E2E01C00837D26E": {
+			"name": "_0x1E2E01C00837D26E",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
 		"0x8CDE909A0370BB3A": {
 			"name": "_0x8CDE909A0370BB3A",
 			"jhash": "",
@@ -22832,6 +22955,39 @@
 			],
 			"return_type": "int",
 			"build": "323"
+		},
+		"0x126D7F89FE859A5E": {
+			"name": "_0x126D7F89FE859A5E",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				}
+			],
+			"return_type": "Any",
+			"build": "2699"
 		},
 		"0x99AC7F0D8B9C893D": {
 			"name": "START_PETROL_TRAIL_DECALS",
@@ -29121,6 +29277,23 @@
 			"old_names": [
 				"_SET_BLIP_CHECKED"
 			]
+		},
+		"0xCAC2031EBF79B1A8": {
+			"name": "_0xCAC2031EBF79B1A8",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
 		},
 		"0x5FBCA48327B914DF": {
 			"name": "SHOW_HEADING_INDICATOR_ON_BLIP",
@@ -41365,6 +41538,10 @@
 				{
 					"type": "Any",
 					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -42526,6 +42703,39 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0x948705F6F9C50824": {
+			"name": "_0x948705F6F9C50824",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
 		},
 		"0x8204DA7934DF3155": {
 			"name": "NETWORK_SPENT_REQUEST_JOB",
@@ -45969,6 +46179,10 @@
 				{
 					"type": "Any",
 					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -46134,6 +46348,19 @@
 			"return_type": "void",
 			"build": "2372"
 		},
+		"0x7E2F4E8F44CAF4E0": {
+			"name": "_0x7E2F4E8F44CAF4E0",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
 		"0xEA8CD3C9B3C35884": {
 			"name": "_NETWORK_SPENT_BUY_AGENCY",
 			"jhash": "",
@@ -46204,6 +46431,10 @@
 				{
 					"type": "Any",
 					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
 				}
 			],
 			"return_type": "void",
@@ -46334,6 +46565,85 @@
 			],
 			"return_type": "void",
 			"build": "2545"
+		},
+		"0x923AEA8E78F8DF0B": {
+			"name": "_0x923AEA8E78F8DF0B",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
+		"0x02D24A35A9CC3503": {
+			"name": "_0x02D24A35A9CC3503",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
+		"0x2CEB0E0BC2A77C05": {
+			"name": "_0x2CEB0E0BC2A77C05",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
 		},
 		"0x663B4B9D11742A12": {
 			"name": "_NETWORK_EARN_FROM_AGENCY_INCOME",
@@ -46588,6 +46898,86 @@
 			],
 			"return_type": "void",
 			"build": "2545"
+		},
+		"0x45087AE480B233AC": {
+			"name": "_0x45087AE480B233AC",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
+		"0x2C5809EB9DF57257": {
+			"name": "_0x2C5809EB9DF57257",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
+		"0x71BEC32FA466E105": {
+			"name": "_0x71BEC32FA466E105",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
+		"0x59498BC8B1C8B15C": {
+			"name": "_0x59498BC8B1C8B15C",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
 		},
 		"0x76EF28DA05EA395A": {
 			"name": "NETWORK_GET_VC_BANK_BALANCE",
@@ -49491,6 +49881,14 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x023782EFC70585EE": {
+			"name": "_0x023782EFC70585EE",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "2699"
+		},
 		"0xEAA572036990CD1B": {
 			"name": "NETWORK_BAIL_TRANSITION",
 			"jhash": "0xB59D74CA",
@@ -51459,6 +51857,45 @@
 			"return_type": "Entity",
 			"build": "323"
 		},
+		"0x2C863ACDCD12B3DB": {
+			"name": "_0x2C863ACDCD12B3DB",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
+		"0xAA6D5451DC3448B6": {
+			"name": "_0xAA6D5451DC3448B6",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
+		"0x8C70252FC40F320B": {
+			"name": "_0x8C70252FC40F320B",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
 		"0xEA23C49EAA83ACFB": {
 			"name": "NETWORK_RESURRECT_LOCAL_PLAYER",
 			"jhash": "0xF1F9D4B4",
@@ -51491,6 +51928,14 @@
 				{
 					"type": "Any",
 					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
 				}
 			],
 			"return_type": "void",
@@ -52569,6 +53014,19 @@
 			],
 			"return_type": "BOOL",
 			"build": "323"
+		},
+		"0x559EBF901A8C68E0": {
+			"name": "_0x559EBF901A8C68E0",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2699"
 		},
 		"0x8F5D1AD832AEB06C": {
 			"name": "_NETWORK_CAN_COMMUNICATE_WITH_GAMER_2",
@@ -54009,6 +54467,14 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0x66D6A5E9C511214A": {
+			"name": "_0x66D6A5E9C511214A",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "2699"
 		},
 		"0x3FA36981311FA4FF": {
 			"name": "SET_NETWORK_ID_PASS_CONTROL_IN_TUTORIAL",
@@ -66259,6 +66725,19 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x65671A4FB8218930": {
+			"name": "_0x65671A4FB8218930",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2699"
+		},
 		"0xD718A22995E2B4BC": {
 			"name": "SET_PED_DIES_IN_SINKING_VEHICLE",
 			"jhash": "0x8D4D9ABB",
@@ -68258,6 +68737,19 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0xB3352E018D6F89DF": {
+			"name": "_0xB3352E018D6F89DF",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
 		},
 		"0xF5F6378C4F3419D3": {
 			"name": "SET_PED_MAX_HEALTH",
@@ -85869,6 +86361,23 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x79D310A861697CC9": {
+			"name": "_0x79D310A861697CC9",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
+		},
 		"0x428EAF89E24F6C36": {
 			"name": "_0x428EAF89E24F6C36",
 			"jhash": "0xEE292B91",
@@ -87574,6 +88083,10 @@
 				{
 					"type": "Any",
 					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
 				}
 			],
 			"return_type": "void",
@@ -88333,6 +88846,19 @@
 			],
 			"return_type": "void",
 			"build": "2545"
+		},
+		"0x887DAD63CF5B7908": {
+			"name": "_0x887DAD63CF5B7908",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
 		}
 	},
 	"STREAMING": {
@@ -93025,7 +93551,7 @@
 		"0xDBBC7A2432524127": {
 			"name": "_CLEAR_VEHICLE_TASKS",
 			"jhash": "",
-			"comment": "This native is very useful when switching the player to a ped inside a vehicle that has a task assigned prior to the player switch.\nIt is necessary to clear the ped’s tasks AND call this native with the vehicle the player is switching into in order to allow the player to control the vehicle after the player switches.",
+			"comment": "This native is very useful when switching the player to a ped inside a vehicle that has a task assigned prior to the player switch.\nIt is necessary to clear the ped's tasks AND call this native with the vehicle the player is switching into in order to allow the player to control the vehicle after the player switches.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105464,6 +105990,27 @@
 				"_IS_VEHICLE_MOD_LOAD_DONE"
 			]
 		},
+		"0x00834EAC4A96E010": {
+			"name": "_0x00834EAC4A96E010",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "Any",
+			"build": "2699"
+		},
 		"0x6AF0636DDEDCB6DD": {
 			"name": "SET_VEHICLE_MOD",
 			"jhash": "0xB52E5ED5",
@@ -110576,6 +111123,23 @@
 			],
 			"return_type": "void",
 			"build": "2372"
+		},
+		"0xEF9D388F8D377F44": {
+			"name": "_0xEF9D388F8D377F44",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2699"
 		}
 	},
 	"WATER": {
