@@ -54471,7 +54471,7 @@
 		"0x66D6A5E9C511214A": {
 			"name": "_0x66D6A5E9C511214A",
 			"jhash": "",
-			"comment": "Related to network cutscene entities\n_ARE_ALL_* - _ARE_ENTITIES*",
+			"comment": "Related to network cutscene entities. Getter for SET_NETWORK_CUTSCENE_ENTITIES.\n_ARE_ALL_* - _ARE_ENTITIES*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "2699"
@@ -88848,9 +88848,9 @@
 			"build": "2545"
 		},
 		"0x887DAD63CF5B7908": {
-			"name": "_0x887DAD63CF5B7908",
+			"name": "_PLAYSTATS_INVENTORY",
 			"jhash": "",
-			"comment": "_PLAYSTATS_I(NVENTORY)* - _PLAYSTATS_J*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
