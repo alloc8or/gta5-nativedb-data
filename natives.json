@@ -2034,7 +2034,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "voiceGroupHash"
 				}
 			],
 			"return_type": "void",
@@ -2934,7 +2934,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "radioStation"
 				}
 			],
 			"return_type": "BOOL",
@@ -51870,7 +51870,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "missionId"
 				}
 			],
 			"return_type": "void",
@@ -51879,11 +51879,11 @@
 		"0xAA6D5451DC3448B6": {
 			"name": "_NETWORK_SET_CURRENT_SPAWN_SETTING",
 			"jhash": "",
-			"comment": "",
+			"comment": "mpSettingSpawn:\n\nenum eMpSettingSpawn\n{\n\tMP_SETTING_SPAWN_NULL,\n\tMP_SETTING_SPAWN_PROPERTY,\n\tMP_SETTING_SPAWN_LAST_POSITION,\n\tMP_SETTING_SPAWN_GARAGE,\n\tMP_SETTING_SPAWN_RANDOM,\n\tMP_SETTING_SPAWN_PRIVATE_YACHT,\n\tMP_SETTING_SPAWN_OFFICE,\n\tMP_SETTING_SPAWN_CLUBHOUSE,\n\tMP_SETTING_SPAWN_IE_WAREHOUSE,\n\tMP_SETTING_SPAWN_BUNKER,\n\tMP_SETTING_SPAWN_HANGAR,\n\tMP_SETTING_SPAWN_DEFUNCT_BASE,\n\tMP_SETTING_SPAWN_NIGHTCLUB,\n\tMP_SETTING_SPAWN_ARENA_GARAGE,\n\tMP_SETTING_SPAWN_CASINO_APARTMENT,\n\tMP_SETTING_SPAWN_ARCADE,\n\tMP_SETTING_SPAWN_SUBMARINE,\n\tMP_SETTING_SPAWN_CAR_MEET,\n\tMP_SETTING_SPAWN_AUTO_SHOP,\n\tMP_SETTING_SPAWN_FIXER_HQ,\n\tMP_SETTING_SPAWN_MAX,\n};",
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "mpSettingSpawn"
 				}
 			],
 			"return_type": "void",
@@ -51896,7 +51896,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -68751,7 +68751,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
