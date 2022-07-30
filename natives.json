@@ -2024,9 +2024,9 @@
 			"build": "323"
 		},
 		"0x0BABC1345ABBFB16": {
-			"name": "_0x0BABC1345ABBFB16",
+			"name": "_SET_PED_VOICE_GROUP_RACE",
 			"jhash": "",
-			"comment": "_SET_PED_VOICE_*",
+			"comment": "Dat151RelType == 29",
 			"params": [
 				{
 					"type": "Ped",
@@ -2928,9 +2928,9 @@
 			"build": "2372"
 		},
 		"0x2B1784DB08AFEA79": {
-			"name": "_0x2B1784DB08AFEA79",
+			"name": "_IS_RADIO_STATION_VISIBLE",
 			"jhash": "",
-			"comment": "_IS_RADIO_R*",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -5738,9 +5738,9 @@
 			"build": "323"
 		},
 		"0x731A880555DA3647": {
-			"name": "_0x731A880555DA3647",
+			"name": "_SET_USE_HI_DOF_IN_CUTSCENE",
 			"jhash": "",
-			"comment": "Only used in R* Script fm_mission_controller_2020\n_SET_USE*",
+			"comment": "Only used in R* Script fm_mission_controller_2020",
 			"params": [],
 			"return_type": "void",
 			"build": "2699"
@@ -7315,7 +7315,7 @@
 		"0x7295C203DD659DFE": {
 			"name": "_0x7295C203DD659DFE",
 			"jhash": "",
-			"comment": "_RESET_*",
+			"comment": "_RESET_*\n\n_RESET_GAMEPLAY_CAM_RELATIVE_ORBIT_HOLD_TIME?",
 			"params": [],
 			"return_type": "void",
 			"build": "2699"
@@ -11554,9 +11554,9 @@
 			"build": "323"
 		},
 		"0x764EB96874EFFDC1": {
-			"name": "_0x764EB96874EFFDC1",
+			"name": "_DOES_ENTITY_HAVE_SKELETON_DATA",
 			"jhash": "",
-			"comment": "_DOES_ENTITY_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -11567,9 +11567,9 @@
 			"build": "2699"
 		},
 		"0x2158E81A6AF65EA9": {
-			"name": "_0x2158E81A6AF65EA9",
+			"name": "_DOES_ENTITY_HAVE_ANIM_DIRECTOR",
 			"jhash": "",
-			"comment": "_DOES_ENTITY_E* - _DOES_ENTITY_HAVE*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Entity",
@@ -21679,9 +21679,9 @@
 			"build": "323"
 		},
 		"0x1E2E01C00837D26E": {
-			"name": "_0x1E2E01C00837D26E",
+			"name": "_SET_PARTICLE_FX_NON_LOOPED_EMITTER_SCALE",
 			"jhash": "",
-			"comment": "_SET_PARTICLE_FX_NON_LOOPED_*(SCALE?) - _SET_PARTICLE_FX_OVERRIDE*",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -22957,7 +22957,7 @@
 			"build": "323"
 		},
 		"0x126D7F89FE859A5E": {
-			"name": "_ADD_PETROL_DECAL_2",
+			"name": "_ADD_OIL_DECAL",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -22987,7 +22987,10 @@
 				}
 			],
 			"return_type": "int",
-			"build": "2699"
+			"build": "2699",
+			"old_names": [
+				"_ADD_PETROL_DECAL_2"
+			]
 		},
 		"0x99AC7F0D8B9C893D": {
 			"name": "START_PETROL_TRAIL_DECALS",
@@ -29279,7 +29282,7 @@
 			]
 		},
 		"0xCAC2031EBF79B1A8": {
-			"name": "_SHOW_TICK_ON_BLIP_2",
+			"name": "_SHOW_HAS_COMPLETED_INDICATOR_ON_BLIP",
 			"jhash": "",
 			"comment": "Adds a orange checkmark on top of a given blip handle: https://imgur.com/a/aw5OTMF\n_SHOW_FRIEND_INDICATOR_ON_BLIP* - _SHOW_HEADING_INDICATOR_ON_BLIP*",
 			"params": [
@@ -29293,7 +29296,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "2699"
+			"build": "2699",
+			"old_names": [
+				"_SHOW_TICK_ON_BLIP_2"
+			]
 		},
 		"0x5FBCA48327B914DF": {
 			"name": "SHOW_HEADING_INDICATOR_ON_BLIP",
@@ -42705,7 +42711,7 @@
 			"build": "323"
 		},
 		"0x948705F6F9C50824": {
-			"name": "_0x948705F6F9C50824",
+			"name": "_NETWORK_SPENT_CARGO_SOURCING",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46349,7 +46355,7 @@
 			"build": "2372"
 		},
 		"0x7E2F4E8F44CAF4E0": {
-			"name": "_0x7E2F4E8F44CAF4E0",
+			"name": "_NETWORK_SPENT_SALES_DISPLAY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46567,7 +46573,7 @@
 			"build": "2545"
 		},
 		"0x923AEA8E78F8DF0B": {
-			"name": "_0x923AEA8E78F8DF0B",
+			"name": "_NETWORK_SPENT_BIKE_SHOP_MODIFY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46592,7 +46598,7 @@
 			"build": "2699"
 		},
 		"0x02D24A35A9CC3503": {
-			"name": "_0x02D24A35A9CC3503",
+			"name": "_NETWORK_SPENT_VEHICLE_REQUESTED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46621,7 +46627,7 @@
 			"build": "2699"
 		},
 		"0x2CEB0E0BC2A77C05": {
-			"name": "_0x2CEB0E0BC2A77C05",
+			"name": "_NETWORK_SPENT_GUNRUNNING_CONTACT_SERVICE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46900,7 +46906,7 @@
 			"build": "2545"
 		},
 		"0x45087AE480B233AC": {
-			"name": "_0x45087AE480B233AC",
+			"name": "_NETWORK_EARN_FROM_SIGHTSEEING",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46925,7 +46931,7 @@
 			"build": "2699"
 		},
 		"0x2C5809EB9DF57257": {
-			"name": "_0x2C5809EB9DF57257",
+			"name": "_NETWORK_EARN_FROM_BIKE_SHOP_BUSINESS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46942,7 +46948,7 @@
 			"build": "2699"
 		},
 		"0x71BEC32FA466E105": {
-			"name": "_0x71BEC32FA466E105",
+			"name": "_NETWORK_EARN_FROM_BIKER_INCOME",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -46955,7 +46961,7 @@
 			"build": "2699"
 		},
 		"0x59498BC8B1C8B15C": {
-			"name": "_0x59498BC8B1C8B15C",
+			"name": "_NETWORK_EARN_FROM_BUSINESS_HUB_SOURCE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -49882,9 +49888,9 @@
 			"build": "323"
 		},
 		"0x023782EFC70585EE": {
-			"name": "_0x023782EFC70585EE",
+			"name": "_NETWORK_BAIL_TRANSITION_QUICKMATCH",
 			"jhash": "",
-			"comment": "_CLOUD_* - _NETWORK_C*",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "2699"
@@ -51858,9 +51864,9 @@
 			"build": "323"
 		},
 		"0x2C863ACDCD12B3DB": {
-			"name": "_0x2C863ACDCD12B3DB",
+			"name": "_NETWORK_SET_CURRENT_MISSION_ID",
 			"jhash": "",
-			"comment": "_NETWORK_SET_CURRENT_* - _NETWORK_SET_ENTITY*",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -51871,9 +51877,9 @@
 			"build": "2699"
 		},
 		"0xAA6D5451DC3448B6": {
-			"name": "_0xAA6D5451DC3448B6",
+			"name": "_NETWORK_SET_CURRENT_SPAWN_SETTING",
 			"jhash": "",
-			"comment": "_NETWORK_SET_CURRENT_* - _NETWORK_SET_ENTITY*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -51884,9 +51890,9 @@
 			"build": "2699"
 		},
 		"0x8C70252FC40F320B": {
-			"name": "_0x8C70252FC40F320B",
+			"name": "_NETWORK_SET_VEHICLE_TEST_DRIVE",
 			"jhash": "",
-			"comment": "_NETWORK_SET_TRANSITION_* - _NETWORK_SET_VOICE_ACTIVE*",
+			"comment": "Used by MetricVEHICLE_DIST_DRIVEN",
 			"params": [
 				{
 					"type": "BOOL",
@@ -53018,7 +53024,7 @@
 		"0x559EBF901A8C68E0": {
 			"name": "_0x559EBF901A8C68E0",
 			"jhash": "",
-			"comment": "_NETWORK_CAN_VIEW_* - _NETWORK_CAN_SESSION*",
+			"comment": "_NETWORK_CAN_VIEW_* - _NETWORK_CAN_SESSION*\n\nNETWORK_CAN_PLAY_GAMER_USER_CONTENT?",
 			"params": [
 				{
 					"type": "Any*",
@@ -54469,9 +54475,9 @@
 			"build": "323"
 		},
 		"0x66D6A5E9C511214A": {
-			"name": "_0x66D6A5E9C511214A",
+			"name": "_NETWORK_ARE_CUTSCENE_ENTITIES",
 			"jhash": "",
-			"comment": "Related to network cutscene entities. Getter for SET_NETWORK_CUTSCENE_ENTITIES.\n_ARE_ALL_* - _ARE_ENTITIES*",
+			"comment": "Getter for SET_NETWORK_CUTSCENE_ENTITIES.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "2699"
@@ -66726,9 +66732,9 @@
 			"build": "323"
 		},
 		"0x65671A4FB8218930": {
-			"name": "_0x65671A4FB8218930",
+			"name": "_GET_PED_DIES_IN_WATER",
 			"jhash": "",
-			"comment": "_GET_PED_DEFENSIVE_* - _GET_PED_DRAWABLE_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -68741,7 +68747,7 @@
 		"0xB3352E018D6F89DF": {
 			"name": "_0xB3352E018D6F89DF",
 			"jhash": "",
-			"comment": "_SET_PED_HEAD_* - _SET_PED_HEARING_*",
+			"comment": "_SET_PED_HEAD_* - _SET_PED_HEARING_*\n\n_SET_PED_HEALTH_...",
 			"params": [
 				{
 					"type": "BOOL",
@@ -86364,7 +86370,7 @@
 		"0x79D310A861697CC9": {
 			"name": "_0x79D310A861697CC9",
 			"jhash": "",
-			"comment": "_SET_F* - _SET_G*",
+			"comment": "Sets profile setting 940 and 941\n\n_SET_F* - _SET_G*",
 			"params": [
 				{
 					"type": "int",
@@ -105991,9 +105997,9 @@
 			]
 		},
 		"0x00834EAC4A96E010": {
-			"name": "_0x00834EAC4A96E010",
+			"name": "_IS_VEHICLE_MOD_HSW_EXCLUSIVE",
 			"jhash": "",
-			"comment": "_IS_VEHICLE_MODEL_* - _IS_VEHICLE_ON_*",
+			"comment": "mpsum2_g9ec",
 			"params": [
 				{
 					"type": "Vehicle",
