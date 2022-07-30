@@ -54472,11 +54472,11 @@
 			"build": "323"
 		},
 		"0x66D6A5E9C511214A": {
-			"name": "_0x66D6A5E9C511214A",
+			"name": "_ARE_CUTSCENE_ENTITIES_NETWORKED",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2699"
 		},
 		"0x3FA36981311FA4FF": {
@@ -66734,11 +66734,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2699"
 		},
 		"0xD718A22995E2B4BC": {
