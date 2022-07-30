@@ -2029,14 +2029,14 @@
 		"0x0BABC1345ABBFB16": {
 			"name": "_0x0BABC1345ABBFB16",
 			"jhash": "",
-			"comment": "",
+			"comment": "_SET_PED_VOICE_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				}
 			],
@@ -2933,14 +2933,14 @@
 		"0x2B1784DB08AFEA79": {
 			"name": "_0x2B1784DB08AFEA79",
 			"jhash": "",
-			"comment": "",
+			"comment": "_IS_RADIO_R*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2699"
 		},
 		"0xC64A06D939F826F5": {
@@ -5401,16 +5401,16 @@
 			"build": "323"
 		},
 		"0xC2612D223D915A1C": {
-			"name": "_0xC2612D223D915A1C",
+			"name": "_GET_CAM_NEAR_DOF",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "2699"
 		},
 		"0x255F8DAFD540D397": {
@@ -5427,16 +5427,16 @@
 			"build": "323"
 		},
 		"0x06D153C0B99B6128": {
-			"name": "_0x06D153C0B99B6128",
+			"name": "_GET_CAM_DOF_STRENGTH",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "2699"
 		},
 		"0xBFD8727AEA3CCEBA": {
@@ -5743,7 +5743,7 @@
 		"0x731A880555DA3647": {
 			"name": "_0x731A880555DA3647",
 			"jhash": "",
-			"comment": "",
+			"comment": "Only used in R* Script fm_mission_controller_2020\n_SET_USE*",
 			"params": [],
 			"return_type": "void",
 			"build": "2699"
@@ -7318,7 +7318,7 @@
 		"0x7295C203DD659DFE": {
 			"name": "_0x7295C203DD659DFE",
 			"jhash": "",
-			"comment": "",
+			"comment": "_RESET_*",
 			"params": [],
 			"return_type": "void",
 			"build": "2699"
@@ -11559,27 +11559,27 @@
 		"0x764EB96874EFFDC1": {
 			"name": "_0x764EB96874EFFDC1",
 			"jhash": "",
-			"comment": "",
+			"comment": "_DOES_ENTITY_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2699"
 		},
 		"0x2158E81A6AF65EA9": {
 			"name": "_0x2158E81A6AF65EA9",
 			"jhash": "",
-			"comment": "",
+			"comment": "_DOES_ENTITY_E* - _DOES_ENTITY_HAVE*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2699"
 		},
 		"0x20B711662962B472": {
@@ -21684,19 +21684,19 @@
 		"0x1E2E01C00837D26E": {
 			"name": "_0x1E2E01C00837D26E",
 			"jhash": "",
-			"comment": "",
+			"comment": "_SET_PARTICLE_FX_NON_LOOPED_*(SCALE?) - _SET_PARTICLE_FX_OVERRIDE*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -22960,36 +22960,36 @@
 			"build": "323"
 		},
 		"0x126D7F89FE859A5E": {
-			"name": "_0x126D7F89FE859A5E",
+			"name": "_ADD_PETROL_DECAL_2",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "groundLvl"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "width"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "transparency"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "2699"
 		},
 		"0x99AC7F0D8B9C893D": {
@@ -29282,17 +29282,17 @@
 			]
 		},
 		"0xCAC2031EBF79B1A8": {
-			"name": "_0xCAC2031EBF79B1A8",
+			"name": "_SHOW_TICK_ON_BLIP_2",
 			"jhash": "",
-			"comment": "",
+			"comment": "Adds a orange checkmark on top of a given blip handle: https://imgur.com/a/aw5OTMF\n_SHOW_FRIEND_INDICATOR_ON_BLIP* - _SHOW_HEADING_INDICATOR_ON_BLIP*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -41543,7 +41543,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -46184,7 +46184,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -46357,7 +46357,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -49887,7 +49887,7 @@
 		"0x023782EFC70585EE": {
 			"name": "_0x023782EFC70585EE",
 			"jhash": "",
-			"comment": "",
+			"comment": "_CLOUD_* - _NETWORK_C*",
 			"params": [],
 			"return_type": "void",
 			"build": "2699"
@@ -51863,10 +51863,10 @@
 		"0x2C863ACDCD12B3DB": {
 			"name": "_0x2C863ACDCD12B3DB",
 			"jhash": "",
-			"comment": "",
+			"comment": "_NETWORK_SET_CURRENT_* - _NETWORK_SET_ENTITY*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -51876,10 +51876,10 @@
 		"0xAA6D5451DC3448B6": {
 			"name": "_0xAA6D5451DC3448B6",
 			"jhash": "",
-			"comment": "",
+			"comment": "_NETWORK_SET_CURRENT_* - _NETWORK_SET_ENTITY*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -51889,10 +51889,10 @@
 		"0x8C70252FC40F320B": {
 			"name": "_0x8C70252FC40F320B",
 			"jhash": "",
-			"comment": "",
+			"comment": "_NETWORK_SET_TRANSITION_* - _NETWORK_SET_VOICE_ACTIVE*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -51929,15 +51929,15 @@
 					"name": "changetime"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -53021,14 +53021,14 @@
 		"0x559EBF901A8C68E0": {
 			"name": "_0x559EBF901A8C68E0",
 			"jhash": "",
-			"comment": "",
+			"comment": "_NETWORK_CAN_VIEW_* - _NETWORK_CAN_SESSION*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2699"
 		},
 		"0x8F5D1AD832AEB06C": {
@@ -53164,11 +53164,11 @@
 		"0x021ABCBD98EC4320": {
 			"name": "_0x021ABCBD98EC4320",
 			"jhash": "",
-			"comment": "",
+			"comment": "_NETWORK_CAN_VIEW_* - _NETWORK_CAN_SESSION*",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -53177,11 +53177,11 @@
 		"0x421E34C55F125964": {
 			"name": "_0x421E34C55F125964",
 			"jhash": "",
-			"comment": "",
+			"comment": "_NETWORK_CAN_VIEW_* - _NETWORK_CAN_SESSION*",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -54474,7 +54474,7 @@
 		"0x66D6A5E9C511214A": {
 			"name": "_ARE_CUTSCENE_ENTITIES_NETWORKED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Related to network cutscene entities. Getter for SET_NETWORK_CUTSCENE_ENTITIES.\n_ARE_ALL_* - _ARE_ENTITIES*",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "2699"
@@ -66731,11 +66731,11 @@
 		"0x65671A4FB8218930": {
 			"name": "_0x65671A4FB8218930",
 			"jhash": "",
-			"comment": "",
+			"comment": "_GET_PED_DEFENSIVE_* - _GET_PED_DRAWABLE_*",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
@@ -68744,10 +68744,10 @@
 		"0xB3352E018D6F89DF": {
 			"name": "_0xB3352E018D6F89DF",
 			"jhash": "",
-			"comment": "",
+			"comment": "_SET_PED_HEAD_* - _SET_PED_HEARING_*",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -86370,15 +86370,15 @@
 		"0x79D310A861697CC9": {
 			"name": "_0x79D310A861697CC9",
 			"jhash": "",
-			"comment": "",
+			"comment": "_SET_F* - _SET_G*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "profileSetting"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "settingValue"
 				}
 			],
 			"return_type": "void",
@@ -88854,7 +88854,7 @@
 			"build": "2545"
 		},
 		"0x887DAD63CF5B7908": {
-			"name": "_0x887DAD63CF5B7908",
+			"name": "_PLAYSTATS_INVENTORY",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -105999,22 +105999,22 @@
 		"0x00834EAC4A96E010": {
 			"name": "_0x00834EAC4A96E010",
 			"jhash": "",
-			"comment": "",
+			"comment": "_IS_VEHICLE_MODEL_* - _IS_VEHICLE_ON_*",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "modType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "modIndex"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2699"
 		},
 		"0x6AF0636DDEDCB6DD": {
@@ -111133,14 +111133,14 @@
 		"0xEF9D388F8D377F44": {
 			"name": "_0xEF9D388F8D377F44",
 			"jhash": "",
-			"comment": "",
+			"comment": "Only used in R* Script fm_content_cargo",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
