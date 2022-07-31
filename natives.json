@@ -34022,7 +34022,7 @@
 		"0xEF7D17BC6C85264C": {
 			"name": "_LOADINGSCREEN_GET_LOAD_FREEMODE",
 			"jhash": "0xD87F3A9E",
-			"comment": "",
+			"comment": "\"-StraightIntoFreemode\"",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -34232,7 +34232,7 @@
 			"build": "323"
 		},
 		"0x24DA7D7667FD7B09": {
-			"name": "_GET_GLOBAL_CHAR_BUFFER",
+			"name": "_GET_LOADING_LIVEAREA_CONTENT_TYPE",
 			"jhash": "",
 			"comment": "Returns pointer to an empty string.\n\nGET_C*",
 			"params": [],
@@ -34240,106 +34240,106 @@
 			"build": "323"
 		},
 		"0x4DCDF92BF64236CD": {
-			"name": "_0x4DCDF92BF64236CD",
+			"name": "_ACTIVITYFEED_STORY_BEGIN",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "caption"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "condensedCaption"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x31125FD509D9043F": {
-			"name": "_0x31125FD509D9043F",
+			"name": "_ACTIVITYFEED_STORY_ADD_CAPTION_PARAMETER_TEXT_LABEL",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "label"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0xEBD3205A207939ED": {
-			"name": "_0xEBD3205A207939ED",
+			"name": "_ACTIVITYFEED_STORY_ADD_CAPTION_PARAMETER_STRING",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "string"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x97E7E2C04245115B": {
-			"name": "_0x97E7E2C04245115B",
+			"name": "_ACTIVITYFEED_STORY_ADD_CAPTION_PARAMETER_INT",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "integer"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x916CA67D26FD1E37": {
-			"name": "_0x916CA67D26FD1E37",
+			"name": "_ACTIVITYFEED_STORY_SET_LARGE_IMAGE_URL",
 			"jhash": "",
-			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
+			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.\nhttps://prod.cloud.rockstargames.com/ is prepended to the URL if it doesn't start with http:// or https://",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "url"
 				}
 			],
 			"return_type": "void",
 			"build": "2060"
 		},
 		"0xEB078CA2B5E82ADD": {
-			"name": "_0xEB078CA2B5E82ADD",
+			"name": "_ACTIVITYFEED_STORY_ADD_ACTION",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "startArgument"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "buttonCaption"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x703CC7F60CBB2B57": {
-			"name": "_0x703CC7F60CBB2B57",
+			"name": "_ACTIVITYFEED_STORY_ADD_ADDITIONAL_START_ARGUMENT",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "startArgument"
 				}
 			],
 			"return_type": "void",
 			"build": "323"
 		},
 		"0x8951EB9C6906D3C8": {
-			"name": "_0x8951EB9C6906D3C8",
+			"name": "_ACTIVITYFEED_STORY_POST",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.",
 			"params": [],
@@ -34347,7 +34347,7 @@
 			"build": "323"
 		},
 		"0xBA4B8D83BDC75551": {
-			"name": "_0xBA4B8D83BDC75551",
+			"name": "_ACTIVITYFEED_STORY_POST_RECENTLY_PLAYED_WITH",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub). Seems to be PS4 specific.\n\nUsed only once in the scripts (ingamehud) with p0 = \"AF_GAMEMODE\"",
 			"params": [
@@ -47187,7 +47187,7 @@
 		"0xF70EFA14FE091429": {
 			"name": "WITHDRAW_VC",
 			"jhash": "0x8B755993",
-			"comment": "Does nothing and always returns 0.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -47200,7 +47200,7 @@
 		"0xE260E0BB9CD995AC": {
 			"name": "DEPOSIT_VC",
 			"jhash": "0x8F266745",
-			"comment": "Does nothing and always returns false.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -59396,7 +59396,7 @@
 		"0x6BFF5F84102DF80A": {
 			"name": "_0x6BFF5F84102DF80A",
 			"jhash": "",
-			"comment": "Does nothing (it's a nullsub).",
+			"comment": "Does nothing (it's a nullsub).\nOpens some kind of dialog, the player parameter is ignored",
 			"params": [
 				{
 					"type": "Player",
@@ -59415,11 +59415,11 @@
 			"build": "323"
 		},
 		"0x6FB7BB3607D27FA2": {
-			"name": "_0x6FB7BB3607D27FA2",
+			"name": "_NETWORK_IS_GAME_UPDATE_REQUIRED",
 			"jhash": "",
 			"comment": "MulleDK19: This function is hard-coded to always return 0.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x45A83257ED02D9BC": {
@@ -77382,7 +77382,7 @@
 		"0x085DEB493BE80812": {
 			"name": "GET_WANTED_LEVEL_RADIUS",
 			"jhash": "0x1CF7D7DA",
-			"comment": "Remnant from GTA IV. Does nothing in GTA V.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
