@@ -39735,7 +39735,7 @@
 			"build": "323"
 		},
 		"0xFB00CA71DA386228": {
-			"name": "_SET_PROFILE_SETTING_JOHN_MARSTON_UNLOCKED",
+			"name": "_SET_SOCIAL_CLUB_SIGNUP_REWARD_UNLOCKED",
 			"jhash": "0x054EC103",
 			"comment": "SET_T*",
 			"params": [],
