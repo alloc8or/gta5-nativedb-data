@@ -45622,25 +45622,28 @@
 			]
 		},
 		"0xA95CFB4E02390842": {
-			"name": "_NETWORK_EARN_FROM_ARCADE_COLLECTABLES",
+			"name": "_NETWORK_EARN_FROM_CLUE_COLLECTIBLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "p1 is always -1 in scripts",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
 			"return_type": "void",
-			"build": "1868"
+			"build": "1868",
+			"old_names": [
+				"_NETWORK_EARN_FROM_ARCADE_COLLECTABLES"
+			]
 		},
 		"0x0DD362F14F18942A": {
 			"name": "_NETWORK_EARN_FROM_ARCADE_KILLS_CHALLENGE",
@@ -100587,7 +100590,7 @@
 		"0x7AD9E6CE657D69E3": {
 			"name": "ROLL_DOWN_WINDOW",
 			"jhash": "0xF840134C",
-			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window",
+			"comment": "windowIndex:\n0 = Front Left Window\n1 = Front Right Window\n2 = Rear Left Window\n3 = Rear Right Window\n4 = Front Windscreen\n5 = Rear Windscreen\n6 = Mid Left\n7 = Mid Right\n8 = Invalid",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100604,7 +100607,7 @@
 		"0x602E548F46E24D59": {
 			"name": "ROLL_UP_WINDOW",
 			"jhash": "0x83B7E06A",
-			"comment": "Window indexes:\n0 = Front Left Window\n1 = Front Right Window\n2 = Back Left Window\n3 = Back Right Window",
+			"comment": "windowIndex:\n0 = Front Left Window\n1 = Front Right Window\n2 = Rear Left Window\n3 = Rear Right Window\n4 = Front Windscreen\n5 = Rear Windscreen\n6 = Mid Left\n7 = Mid Right\n8 = Invalid",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100621,7 +100624,7 @@
 		"0x9E5B5E4D2CCD2259": {
 			"name": "SMASH_VEHICLE_WINDOW",
 			"jhash": "0xDDD9A8C2",
-			"comment": "`index` = 0 to 13\n0 = front right window\n1 = front left window\n2 = rear right window\n3 = rear left window\n4 = unsure\n5 = unsure\n6 = windowscreen\n7 = rear windowscreen\n8 = unsure\n9 = unsure\n10 = unsure\n11 = unsure\n12 = unsure\n13 = unsure",
+			"comment": "`index` = 0 to 13\n0 = Front Left Window\n1 = Front Right Window\n2 = Rear Left Window\n3 = Rear Right Window\n4 = Front Windscreen\n5 = Rear Windscreen\n6 = Mid Left\n7 = Mid Right\n8 = Invalid\n9 = unsure\n10 = unsure\n11 = unsure\n12 = unsure\n13 = unsure",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -100638,7 +100641,7 @@
 		"0x772282EBEB95E682": {
 			"name": "FIX_VEHICLE_WINDOW",
 			"jhash": "0x6B8E990D",
-			"comment": "`index` = 0 to 13\n0 = front right window\n1 = front left window\n2 = rear right window\n3 = rear left window\n4 = unsure\n5 = unsure\n6 = windowscreen\n7 = rear windowscreen\n8 = unsure\n9 = unsure\n10 = unsure\n11 = unsure\n12 = unsure\n13 = unsure\n\nAdditional information: FIX_VEHICLE_WINDOW (0x140D0BB88) references an array of bone vehicle indices (0x141D4B3E0) { 2Ah, 2Bh, 2Ch, 2Dh, 2Eh, 2Fh, 28h, 29h } that correspond to: window_lf, window_rf, window_lr, window_rr, window_lm, window_rm, windscreen, windscreen_r. This array is used by most vehwindow natives.\n\nAlso, this function is coded to not work on vehicles of type: CBike, Bmx, CBoat, CTrain, and CSubmarine.",
+			"comment": "`index` = 0 to 13\n0 = Front Left Window\n1 = Front Right Window\n2 = Rear Left Window\n3 = Rear Right Window\n4 = Front Windscreen\n5 = Rear Windscreen\n6 = Mid Left\n7 = Mid Right\n8 = Invalid\n9 = unsure\n10 = unsure\n11 = unsure\n12 = unsure\n13 = unsure\n\nAdditional information: FIX_VEHICLE_WINDOW (0x140D0BB88) references an array of bone vehicle indices (0x141D4B3E0) { 2Ah, 2Bh, 2Ch, 2Dh, 2Eh, 2Fh, 28h, 29h } that correspond to: window_lf, window_rf, window_lr, window_rr, window_lm, window_rm, windscreen, windscreen_r. This array is used by most vehwindow natives.\n\nAlso, this function is coded to not work on vehicles of type: CBike, Bmx, CBoat, CTrain, and CSubmarine.",
 			"params": [
 				{
 					"type": "Vehicle",
