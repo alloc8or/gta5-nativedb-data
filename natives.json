@@ -88054,12 +88054,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "propHash"
 				},
 				{
 					"type": "Any",
@@ -88070,15 +88070,15 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "moneyAmount"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "xpAmount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
@@ -88086,7 +88086,7 @@
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				},
 				{
@@ -88802,12 +88802,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "vehicleHash"
 				}
 			],
 			"return_type": "void",
