@@ -48338,56 +48338,40 @@
 		"0x330ED4D05491934F": {
 			"name": "NETWORK_SESSION_ENTER",
 			"jhash": "0x543CD2BE",
-			"comment": "unknown params\n\np0 = 0, 2, or 999 (The global is 999 by default.)\np1 = 0 (Always in every script it's found in atleast.)\np2 = 0, 3, or 4 (Based on a var that is determined by a function.)\np3 = maxPlayers (It's obvious in x360 scripts it's always 18)\np4 = 0 (Always in every script it's found in atleast.)\np5 = 0 or 1. (1 if network_can_enter_multiplayer, but set to 0 if other checks after that are passed.)\np5 is reset to 0 if,\nGlobal_1315318 = 0 or Global_1315323 = 9 or 12 or (Global_1312629 = 0 && Global_1312631 = true/1) those are passed.",
+			"comment": "sessionType: (0 = MP, 1 = Testbed, 2 = Creator, 999 = SP)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
-				},
-				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "sessionType"
 				},
 				{
 					"type": "int",
 					"name": "maxPlayers"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
-				},
-				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "flags"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x2CFC76E0D087C994": {
 			"name": "NETWORK_SESSION_FRIEND_MATCHMAKING",
 			"jhash": "0x4E53202A",
-			"comment": "",
+			"comment": "sessionType: (0 = MP, 1 = Testbed, 2 = Creator, 999 = SP)",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
-				},
-				{
-					"type": "int",
-					"name": "p1"
+					"name": "sessionType"
 				},
 				{
 					"type": "int",
 					"name": "maxPlayers"
 				},
 				{
-					"type": "BOOL",
-					"name": "p3"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "BOOL",
@@ -48396,7 +48380,7 @@
 		"0x94BC51E9449D917F": {
 			"name": "NETWORK_SESSION_CREW_MATCHMAKING",
 			"jhash": "0xD7624E6B",
-			"comment": "p4 seems to be unused in 1.60/build 2628",
+			"comment": "sessionType: (0 = MP, 1 = Testbed, 2 = Creator, 999 = SP)\nCurrent crew is used if crewId is zero",
 			"params": [
 				{
 					"type": "int",
@@ -48404,19 +48388,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
-				},
-				{
-					"type": "int",
-					"name": "p2"
+					"name": "sessionType"
 				},
 				{
 					"type": "int",
 					"name": "maxPlayers"
 				},
 				{
-					"type": "BOOL",
-					"name": "p4"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "BOOL",
@@ -48428,12 +48408,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "sessionType"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "maxPlayers"
 				},
 				{
 					"type": "Any",
@@ -48444,8 +48424,8 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "BOOL",
@@ -48454,11 +48434,11 @@
 		"0x6F3D4ED9BEE4E61D": {
 			"name": "NETWORK_SESSION_HOST",
 			"jhash": "0x6716460F",
-			"comment": "Does nothing in online but in offline it will cause the screen to fade to black. Nothing happens past then, the screen will sit at black until you restart GTA. Other stuff must be needed to actually host a session.",
+			"comment": "Does nothing in online but in offline it will host a new network game. This will not work when using ScriptHookV\nsessionType: (0 = MP, 1 = Testbed, 2 = Creator, 999 = SP)",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "sessionType"
 				},
 				{
 					"type": "int",
@@ -48475,11 +48455,11 @@
 		"0xED34C0C02C098BB7": {
 			"name": "NETWORK_SESSION_HOST_CLOSED",
 			"jhash": "0x8AC9EA19",
-			"comment": "",
+			"comment": "sessionType: (0 = MP, 1 = Testbed, 2 = Creator, 999 = SP)",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "sessionType"
 				},
 				{
 					"type": "int",
@@ -48492,11 +48472,11 @@
 		"0xB9CFD27A5D578D83": {
 			"name": "NETWORK_SESSION_HOST_FRIENDS_ONLY",
 			"jhash": "0x26864403",
-			"comment": "Does nothing in online but in offline it will cause the screen to fade to black. Nothing happens past then, the screen will sit at black until you restart GTA. Other stuff must be needed to actually host a session.",
+			"comment": "sessionType: (0 = MP, 1 = Testbed, 2 = Creator, 999 = SP)",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "sessionType"
 				},
 				{
 					"type": "int",
@@ -49239,11 +49219,11 @@
 		"0xC74C33FCA52856D5": {
 			"name": "NETWORK_SESSION_HOST_SINGLE_PLAYER",
 			"jhash": "0xF3B1CA85",
-			"comment": "Loads up the map that is loaded when beeing in mission creator\nPlayer gets placed in a mix between online/offline mode\np0 is always 2 in R* scripts.\n\nAppears to be patched in gtav b757 (game gets terminated) alonside with most other network natives to prevent online modding ~ghost30812",
+			"comment": "Loads up the map that is loaded when beeing in mission creator\nPlayer gets placed in a mix between online/offline mode\np0 is always 2 in R* scripts.\n\nAppears to be patched when using ScriptHookV, alongside with most other network natives to prevent online modding ~ghost30812",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "sessionType"
 				}
 			],
 			"return_type": "void",
@@ -50358,7 +50338,7 @@
 		"0x9D060B08CD63321A": {
 			"name": "NETWORK_JOIN_TRANSITION",
 			"jhash": "0xB054EC4B",
-			"comment": "int handle[76];\n          NETWORK_HANDLE_FROM_FRIEND(iSelectedPlayer, &handle[0], 13);\n          Player uVar2 = NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(&handle[0]);\n          NETWORK_JOIN_TRANSITION(uVar2);\nnothing doin.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -51323,7 +51303,7 @@
 		"0xA6C90FBC38E395EE": {
 			"name": "NETWORK_GET_MAX_NUM_PARTICIPANTS",
 			"jhash": "0xCCD8C02D",
-			"comment": "Seems to always return 0, but it's used in quite a few loops.\n\nfor (num3 = 0; num3 < NETWORK::0xCCD8C02D(); num3++)\n    {\n        if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::0x98F3B274(num3)) != 0)\n        {\n            var num5 = NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::0x98F3B274(num3));",
+			"comment": "Returns the maximum number of participants allowed in the current networked script",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -51450,14 +51430,14 @@
 		"0x24FB80D107371267": {
 			"name": "NETWORK_GET_PLAYER_INDEX",
 			"jhash": "0xBE1C1506",
-			"comment": "",
+			"comment": "Gets the player index of a participant in the context of the current running script",
 			"params": [
 				{
-					"type": "Player",
-					"name": "player"
+					"type": "int",
+					"name": "participant"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Player",
 			"build": "323"
 		},
 		"0x1B84DF6AF2A46938": {
@@ -51466,8 +51446,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "index"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "int",
