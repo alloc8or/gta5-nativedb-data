@@ -220,7 +220,7 @@
 				}
 			],
 			"return_type": "float",
-			"build": "1604"
+			"build": "1493"
 		},
 		"0x652D2EEEF1D3E62C": {
 			"name": "VMAG",
