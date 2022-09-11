@@ -39751,7 +39751,7 @@
 			"build": "323"
 		},
 		"0xE3D969D2785FFB5E": {
-			"name": "_SET_PREVENT_PLAYER_ARREST_THIS_FRAME",
+			"name": "_PREVENT_PLAYER_ARREST_RESTART_THIS_FRAME",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -89836,11 +89836,11 @@
 			"build": "323"
 		},
 		"0x71E7B2E657449AAD": {
-			"name": "_0x71E7B2E657449AAD",
+			"name": "_IS_LOCAL_PLAYER_PLAYING",
 			"jhash": "0xEAA51103",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xFAA23F2CBA159D67": {
