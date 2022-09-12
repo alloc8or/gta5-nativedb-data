@@ -83800,9 +83800,9 @@
 		"0xC0E0D686DDFC6EAE": {
 			"name": "_0xC0E0D686DDFC6EAE",
 			"jhash": "0x099FCC86",
-			"comment": "",
+			"comment": "Sends a MetricFailureToSynchProfileStats if it fails after a certain point.",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0xB3271D7AB655B441": {
