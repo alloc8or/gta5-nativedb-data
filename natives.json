@@ -93542,7 +93542,7 @@
 			"build": "323"
 		},
 		"0x6100B3CEFD43452E": {
-			"name": "_0x6100B3CEFD43452E",
+			"name": "CLEAR_DEFAULT_PRIMARY_TASK",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -93555,7 +93555,7 @@
 			"build": "2189"
 		},
 		"0xDBBC7A2432524127": {
-			"name": "_CLEAR_VEHICLE_TASKS",
+			"name": "CLEAR_PRIMARY_VEHICLE_TASK",
 			"jhash": "",
 			"comment": "This native is very useful when switching the player to a ped inside a vehicle that has a task assigned prior to the player switch.\nIt is necessary to clear the ped's tasks AND call this native with the vehicle the player is switching into in order to allow the player to control the vehicle after the player switches.",
 			"params": [
@@ -93568,9 +93568,9 @@
 			"build": "1290"
 		},
 		"0x53DDC75BC3AC0A90": {
-			"name": "_0x53DDC75BC3AC0A90",
+			"name": "CLEAR_VEHICLE_CRASH_TASK",
 			"jhash": "",
-			"comment": "CLEAR_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -94311,16 +94311,16 @@
 			"build": "1868"
 		},
 		"0x9D252648778160DF": {
-			"name": "_0x9D252648778160DF",
+			"name": "GET_TASK_RAPPEL_DOWN_WALL_STATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1868"
 		},
 		"0xAAA34F8A7CB32098": {
