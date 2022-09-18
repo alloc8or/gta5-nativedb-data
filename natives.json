@@ -90581,15 +90581,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unused"
+					"name": "usePlayerLaunchForce"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "doSuperJump"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "useFullSuperJumpForce"
 				}
 			],
 			"return_type": "void",
@@ -90631,11 +90631,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "timeToFacePed"
 				},
 				{
-					"type": "BOOL",
-					"name": "p4"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -90717,8 +90717,8 @@
 					"name": "flag"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "const char*",
+					"name": "overrideEntryClipsetName"
 				}
 			],
 			"return_type": "void",
@@ -90776,7 +90776,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "instant"
 				}
 			],
 			"return_type": "void",
@@ -90793,11 +90793,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "giveParachuteItem"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "instant"
 				}
 			],
 			"return_type": "void",
@@ -90934,7 +90934,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "straightLineDistance"
 				}
 			],
 			"return_type": "void",
@@ -91098,32 +91098,32 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "entity1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Entity",
-					"name": "entity2"
+					"name": "entity"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "moveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -91194,7 +91194,7 @@
 				},
 				{
 					"type": "int",
-					"name": "unknown"
+					"name": "mode"
 				}
 			],
 			"return_type": "void",
@@ -91223,15 +91223,15 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "moveBlendRatio"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "slowDownDistance"
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -91268,11 +91268,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "perferPavements"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "quitIfOutOfRange"
 				}
 			],
 			"return_type": "void",
@@ -91293,19 +91293,19 @@
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "safeDistance"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "fleeTime"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "perferPavements"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "updateToNearestHatedPed"
 				}
 			],
 			"return_type": "void",
@@ -91393,11 +91393,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "heading"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -91409,20 +91409,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "conditionalAnimGroupStr"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "conditionalAnimStr"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "heading"
 				}
 			],
 			"return_type": "void",
@@ -91488,15 +91488,15 @@
 				},
 				{
 					"type": "Hash",
-					"name": "actionType"
+					"name": "stealthKillActionResultHash"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "desiredMoveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "stealthFlags"
 				}
 			],
 			"return_type": "void",
@@ -91554,23 +91554,23 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "moveBlendRatio"
 				},
 				{
 					"type": "int",
-					"name": "timeout"
+					"name": "time"
 				},
 				{
 					"type": "float",
-					"name": "stoppingRange"
+					"name": "targetRadius"
 				},
 				{
-					"type": "BOOL",
-					"name": "persistFollowing"
+					"type": "int",
+					"name": "flags"
 				},
 				{
 					"type": "float",
-					"name": "unk"
+					"name": "targetHeading"
 				}
 			],
 			"return_type": "void",
@@ -91599,35 +91599,35 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "moveBlendRatio"
 				},
 				{
 					"type": "int",
-					"name": "timeout"
+					"name": "time"
 				},
 				{
 					"type": "float",
-					"name": "unkFloat"
+					"name": "targetRadius"
 				},
 				{
 					"type": "int",
-					"name": "unkInt"
+					"name": "flags"
 				},
 				{
 					"type": "float",
-					"name": "unkX"
+					"name": "slideToCoordHeading"
 				},
 				{
 					"type": "float",
-					"name": "unkY"
+					"name": "maxSlopeNavigable"
 				},
 				{
 					"type": "float",
-					"name": "unkZ"
+					"name": "clampMaxSearchDistance"
 				},
 				{
 					"type": "float",
-					"name": "unk_40000f"
+					"name": "targetHeading"
 				}
 			],
 			"return_type": "void",
@@ -91803,7 +91803,7 @@
 			"build": "323"
 		},
 		"0x3E38E28A1D80DDF6": {
-			"name": "_0x3E38E28A1D80DDF6",
+			"name": "IS_CONTROLLED_VEHICLE_UNABLE_TO_GET_TO_ROAD",
 			"jhash": "0x54856309",
 			"comment": "IS_*",
 			"params": [
@@ -91838,23 +91838,23 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "moveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "useLongRangeVehiclePathing"
 				},
 				{
 					"type": "int",
-					"name": "walkingStyle"
+					"name": "drivingFlags"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "maxRangeToShootTargets"
 				}
 			],
 			"return_type": "void",
@@ -91883,39 +91883,39 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "moveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "useLongRangeVehiclePathing"
 				},
 				{
 					"type": "int",
-					"name": "walkingStyle"
+					"name": "drivingFlags"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "maxRangeToShootTargets"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "extraVehToTargetDistToPreferVehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "driveStraightLineDistance"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "int",
+					"name": "extraFlags"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "float",
+					"name": "warpTimerMS"
 				}
 			],
 			"return_type": "void",
@@ -91944,43 +91944,43 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "moveBlendRatio"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "useLongRangeVehiclePathing"
 				},
 				{
 					"type": "int",
-					"name": "walkingStyle"
+					"name": "drivingFlags"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "maxRangeToShootTargets"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "extraVehToTargetDistToPreferVehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "driveStraightLineDistance"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "int",
+					"name": "extraFlags"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "float",
+					"name": "cruiseSpeed"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "float",
+					"name": "targetArriveDist"
 				}
 			],
 			"return_type": "void",
@@ -92101,12 +92101,12 @@
 					"name": "animTime"
 				},
 				{
-					"type": "Any",
-					"name": "p14"
+					"type": "int",
+					"name": "rotOrder"
 				},
 				{
-					"type": "Any",
-					"name": "p15"
+					"type": "int",
+					"name": "ikFlags"
 				}
 			],
 			"return_type": "void",
@@ -92118,8 +92118,8 @@
 			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "const char*",
@@ -92131,7 +92131,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "blendDelta"
 				}
 			],
 			"return_type": "void",
@@ -92147,24 +92147,24 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "priorityLowData"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "int*",
+					"name": "priorityMidData"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
-				},
-				{
-					"type": "float",
-					"name": "p4"
+					"type": "int*",
+					"name": "priorityHighData"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "blendInDelta"
+				},
+				{
+					"type": "float",
+					"name": "blendOutDelta"
 				}
 			],
 			"return_type": "void",
@@ -92176,28 +92176,28 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "priorityLowData"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "int*",
+					"name": "priorityMidData"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
-				},
-				{
-					"type": "float",
-					"name": "p4"
+					"type": "int*",
+					"name": "priorityHighData"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "blendInDelta"
+				},
+				{
+					"type": "float",
+					"name": "blendOutDelta"
 				}
 			],
 			"return_type": "void",
@@ -92209,16 +92209,16 @@
 			"comment": "Looks like p1 may be a flag, still need to do some research, though.",
 			"params": [
 				{
-					"type": "Ped",
-					"name": "ped"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "priority"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "secondary"
 				}
 			],
 			"return_type": "void",
@@ -92230,24 +92230,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "weight"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "priority"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "index"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "secondary"
 				}
 			],
 			"return_type": "void",
@@ -92264,15 +92264,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "phase"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "priority"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "secondary"
 				}
 			],
 			"return_type": "void",
@@ -92287,20 +92287,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "rate"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "priority"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "secondary"
 				}
 			],
 			"return_type": "void",
@@ -92312,20 +92312,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "looped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "priority"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "secondary"
 				}
 			],
 			"return_type": "void",
@@ -92354,19 +92354,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "blendInDuration"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "blendOutDuration"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "isLooping"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "holdLastFrame"
 				}
 			],
 			"return_type": "void",
@@ -92382,8 +92382,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "blendOutOverride"
 				}
 			],
 			"return_type": "void",
@@ -92478,12 +92478,12 @@
 					"name": "duration"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "flags"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "priority"
 				}
 			],
 			"return_type": "void",
@@ -92508,11 +92508,11 @@
 				},
 				{
 					"type": "int",
-					"name": "unknown1"
+					"name": "flags"
 				},
 				{
 					"type": "int",
-					"name": "unknown2"
+					"name": "priority"
 				}
 			],
 			"return_type": "void",
@@ -92692,7 +92692,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "delayTime"
 				},
 				{
 					"type": "int",
@@ -92717,11 +92717,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "disableBlockingClip"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "instantBlendToAim"
 				}
 			],
 			"return_type": "void",
@@ -92733,36 +92733,36 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "float",
-					"name": "p2"
+					"type": "Ped",
+					"name": "target"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "int",
+					"name": "gunTaskType"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "disableBlockingClip"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "forceAim"
 				}
 			],
 			"return_type": "void",
@@ -92775,27 +92775,27 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				},
 				{
 					"type": "Ped",
-					"name": "p1"
+					"name": "target"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "z"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "disableBlockingClip"
 				}
 			],
 			"return_type": "void",
@@ -92808,7 +92808,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "gunTaskType"
 				}
 			],
 			"return_type": "const char*",
@@ -92833,7 +92833,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "instantBlendToAim"
 				}
 			],
 			"return_type": "void",
@@ -92887,11 +92887,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "instantBlendToAim"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "playAnimIntro"
 				}
 			],
 			"return_type": "void",
@@ -92944,8 +92944,8 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "useAlternateShuffle"
 				}
 			],
 			"return_type": "void",
@@ -93000,28 +93000,28 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
-				},
-				{
-					"type": "float",
-					"name": "x"
-				},
-				{
-					"type": "float",
-					"name": "y"
-				},
-				{
-					"type": "float",
-					"name": "z"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "time"
+				},
+				{
+					"type": "float",
+					"name": "seekRadius"
+				},
+				{
+					"type": "float",
+					"name": "seekAngleDeg"
+				},
+				{
+					"type": "float",
+					"name": "moveBlendRatio"
+				},
+				{
+					"type": "int",
+					"name": "gotoEntityOffsetFlags"
 				}
 			],
 			"return_type": "void",
@@ -93033,12 +93033,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "int",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Ped",
-					"name": "oed"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "int",
@@ -93046,23 +93046,23 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "targetRadius"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "offsetX"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "offsetY"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "moveBlendRatio"
 				},
 				{
-					"type": "BOOL",
-					"name": "p7"
+					"type": "int",
+					"name": "gotoEntityOffsetFlags"
 				}
 			],
 			"return_type": "void",
@@ -93145,19 +93145,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "cruiseSpeed"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
-				},
-				{
-					"type": "float",
-					"name": "p6"
+					"type": "int",
+					"name": "drivingStyle"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "targetReached"
+				},
+				{
+					"type": "float",
+					"name": "straightLineDistance"
 				},
 				{
 					"type": "BOOL",
@@ -93202,7 +93202,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "straightLineDistance"
 				},
 				{
 					"type": "BOOL",
@@ -93239,23 +93239,23 @@
 				},
 				{
 					"type": "int",
-					"name": "p5"
-				},
-				{
-					"type": "int",
-					"name": "p6"
-				},
-				{
-					"type": "int",
-					"name": "p7"
+					"name": "mission"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "cruiseSpeed"
+				},
+				{
+					"type": "int",
+					"name": "drivingStyle"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "targetReached"
+				},
+				{
+					"type": "float",
+					"name": "straightLineDistance"
 				},
 				{
 					"type": "BOOL",
@@ -93300,7 +93300,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "minHeightAboveTerrain"
 				},
 				{
 					"type": "float",
@@ -93386,7 +93386,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "drivingFlags"
 				},
 				{
 					"type": "float",
@@ -93398,7 +93398,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "heliFlags"
 				}
 			],
 			"return_type": "void",
@@ -93594,36 +93594,36 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "flightHeight"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "minHeightAboveTerrain"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "BOOL",
+					"name": "useDesiredOrientation"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "desiredOrientation"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "BOOL",
+					"name": "autopilot"
 				}
 			],
 			"return_type": "void",
@@ -93635,8 +93635,8 @@
 			"comment": "Used in am_vehicle_spawn.ysc and am_mp_submarine.ysc.\n\np0 is always 0, p5 is always 1\n\np1 is the vehicle handle of the submarine. Submarine must have a driver, but the ped handle is not passed to the native.\n\nSpeed can be set by calling SET_DRIVE_TASK_CRUISE_SPEED after",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Vehicle",
@@ -93655,8 +93655,8 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "BOOL",
+					"name": "autopilot"
 				}
 			],
 			"return_type": "void",
@@ -93721,7 +93721,7 @@
 				},
 				{
 					"type": "float",
-					"name": "unk3"
+					"name": "slowDownDistance"
 				},
 				{
 					"type": "int",
@@ -93750,15 +93750,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "offsetX"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "offsetY"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "offsetZ"
 				}
 			],
 			"return_type": "void",
@@ -93807,7 +93807,7 @@
 				},
 				{
 					"type": "float",
-					"name": "unk"
+					"name": "targetReached"
 				},
 				{
 					"type": "float",
@@ -93822,8 +93822,8 @@
 					"name": "minZ"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "BOOL",
+					"name": "precise"
 				}
 			],
 			"return_type": "void",
@@ -93843,24 +93843,24 @@
 					"name": "aircraft"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "cruiseSpeed"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "targetReached"
 				}
 			],
 			"return_type": "void",
@@ -93877,15 +93877,15 @@
 				},
 				{
 					"type": "Vehicle",
-					"name": "boat"
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Vehicle",
+					"name": "targetVehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Ped",
+					"name": "targetPed"
 				},
 				{
 					"type": "float",
@@ -93900,8 +93900,8 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "mission"
 				},
 				{
 					"type": "float",
@@ -93913,11 +93913,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "targetReached"
 				},
 				{
 					"type": "Any",
-					"name": "p11"
+					"name": "boatFlags"
 				}
 			],
 			"return_type": "void",
@@ -93962,7 +93962,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "pushUnderneathDrivingTaskIfDriving"
 				},
 				{
 					"type": "Hash",
@@ -94074,12 +94074,12 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "taskMode"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "BOOL",
+					"name": "ignoreTargetVehDeadCheck"
 				}
 			],
 			"return_type": "void",
@@ -94108,12 +94108,12 @@
 					"name": "ped"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "usePhone"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "desiredPhoneMode"
 				}
 			],
 			"return_type": "void",
@@ -94150,28 +94150,28 @@
 					"name": "target"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "flags"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "goToLocationX"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "goToLocationY"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "goToLocationZ"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "headingDegs"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "idleTime"
 				}
 			],
 			"return_type": "void",
@@ -94226,7 +94226,7 @@
 		"0x89D9FCC2435112F1": {
 			"name": "TASK_CLIMB",
 			"jhash": "0x90847790",
-			"comment": "Climbs or vaults the nearest thing.",
+			"comment": "Climbs or vaults the nearest thing.\nusePlayerLaunchForce is unused.",
 			"params": [
 				{
 					"type": "Ped",
@@ -94234,7 +94234,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unused"
+					"name": "usePlayerLaunchForce"
 				}
 			],
 			"return_type": "void",
@@ -94250,8 +94250,8 @@
 					"name": "ped"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "fast"
 				}
 			],
 			"return_type": "void",
@@ -94342,20 +94342,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "taskIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "progress1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "progress2"
 				}
 			],
 			"return_type": "void",
@@ -94364,11 +94364,11 @@
 		"0xF1B9F16E89E2C93A": {
 			"name": "SET_NEXT_DESIRED_MOVE_STATE",
 			"jhash": "0x4E937D57",
-			"comment": "This native does absolutely nothing, just a nullsub",
+			"comment": "This native does absolutely nothing, just a nullsub\n\nR* Comment:\nSET_NEXT_DESIRED_MOVE_STATE - Function is deprecated - do not use anymore",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "nextMoveState"
 				}
 			],
 			"return_type": "void",
@@ -94385,7 +94385,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "newMoveBlendRatio"
 				}
 			],
 			"return_type": "void",
@@ -94440,7 +94440,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "decisionMakerId"
 				}
 			],
 			"return_type": "void",
@@ -94452,24 +94452,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "radius"
 				}
 			],
 			"return_type": "void",
@@ -94481,8 +94481,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -94515,7 +94515,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -94548,11 +94548,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "speed"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "headingChangeRate"
 				}
 			],
 			"return_type": "void",
@@ -94565,35 +94565,35 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "direction"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "usage"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "height"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "arc"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "isPriority"
 				}
 			],
 			"return_type": "ScrHandle",
@@ -94686,11 +94686,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "combatFlags"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "threatResponseFlags"
 				}
 			],
 			"return_type": "void",
@@ -94702,20 +94702,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "Ped",
-					"name": "ped"
+					"name": "target"
 				},
 				{
 					"type": "int",
 					"name": "time"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -94748,7 +94748,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "allowPeekingAndFiring"
 				}
 			],
 			"return_type": "void",
@@ -94773,7 +94773,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "allowPeekingAndFiring"
 				}
 			],
 			"return_type": "void",
@@ -94805,12 +94805,12 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "time"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "allowPeekingAndFiring"
 				}
 			],
 			"return_type": "void",
@@ -94884,31 +94884,31 @@
 				},
 				{
 					"type": "int",
-					"name": "timeout"
+					"name": "time"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "allowPeekingAndFiring"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "blendInDuration"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "forceInitialFacingDirection"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "forceFaceLeft"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "identifier"
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "doEntry"
 				}
 			],
 			"return_type": "void",
@@ -94924,24 +94924,24 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
-				},
-				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "time"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "allowPeekingAndFiring"
+				},
+				{
+					"type": "BOOL",
+					"name": "forceInitialFacingDirection"
+				},
+				{
+					"type": "BOOL",
+					"name": "forceFaceLeft"
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "identifier"
 				}
 			],
 			"return_type": "void",
@@ -94958,7 +94958,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "exitType"
 				},
 				{
 					"type": "float",
@@ -94991,19 +94991,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "blendInDuration"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "timeInMelee"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "strafePhaseSync"
 				},
 				{
-					"type": "BOOL",
-					"name": "p5"
+					"type": "int",
+					"name": "aiCombatFlags"
 				}
 			],
 			"return_type": "void",
@@ -95015,12 +95015,12 @@
 			"comment": "used in sequence task\n\nboth parameters seems to be always 0",
 			"params": [
 				{
-					"type": "BOOL",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "BOOL",
-					"name": "p1"
+					"type": "int",
+					"name": "toggleType"
 				}
 			],
 			"return_type": "void",
@@ -95037,15 +95037,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "maxPatrolProximity"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "defensiveAreaRadius"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "setDefensiveArea"
 				}
 			],
 			"return_type": "void",
@@ -95074,15 +95074,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "heading"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "maxPatrolProximity"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "timer"
 				}
 			],
 			"return_type": "void",
@@ -95099,43 +95099,43 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "defendPositionX"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "defendPositionY"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "defendPositionZ"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "heading"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "maxPatrolProximity"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
-				},
-				{
-					"type": "float",
-					"name": "p7"
+					"type": "int",
+					"name": "time"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "z"
+				},
+				{
+					"type": "float",
+					"name": "defensiveAreaRadius"
 				}
 			],
 			"return_type": "void",
@@ -95232,43 +95232,43 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x1"
+					"name": "startX"
 				},
 				{
 					"type": "float",
-					"name": "y1"
+					"name": "startY"
 				},
 				{
 					"type": "float",
-					"name": "z1"
+					"name": "startZ"
 				},
 				{
 					"type": "float",
-					"name": "x2"
+					"name": "endX"
 				},
 				{
 					"type": "float",
-					"name": "y2"
+					"name": "endY"
 				},
 				{
 					"type": "float",
-					"name": "z2"
+					"name": "endZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "blockObjects"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "blockVehicles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "blockMap"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "blockPlayer"	
 				}
 			],
 			"return_type": "void",
@@ -95481,8 +95481,8 @@
 					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "timeToLeave"
 				}
 			],
 			"return_type": "void",
@@ -95511,11 +95511,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "maxRange"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "timeToLeave"
 				}
 			],
 			"return_type": "void",
@@ -95547,8 +95547,8 @@
 					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "timeToLeave"
 				}
 			],
 			"return_type": "void",
@@ -95577,7 +95577,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "b"
+					"name": "mustBeFree"
 				}
 			],
 			"return_type": "BOOL",
@@ -95610,7 +95610,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "mustBeFree"
 				}
 			],
 			"return_type": "BOOL",
@@ -95635,11 +95635,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "maxRange"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "onlyUsersActuallyAtScenario"
 				}
 			],
 			"return_type": "BOOL",
@@ -95716,7 +95716,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
@@ -95826,11 +95826,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "blockIdleClips"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "removeIdleClipIfPlaying"
 				}
 			],
 			"return_type": "void",
@@ -95862,8 +95862,8 @@
 					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "combatFlags"
 				}
 			],
 			"return_type": "void",
@@ -95896,20 +95896,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "time"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "combatFlags"
 				}
 			],
 			"return_type": "void",
@@ -95937,12 +95937,12 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "ignoreCollisionEntityIndex"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "BOOL",
+					"name": "createInvincibleProjectile"
 				}
 			],
 			"return_type": "void",
@@ -95959,7 +95959,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "drawWeapon"
 				}
 			],
 			"return_type": "void",
@@ -95968,7 +95968,7 @@
 		"0x62D2916F56B9CD2D": {
 			"name": "TASK_RELOAD_WEAPON",
 			"jhash": "0xCA6E91FD",
-			"comment": "The 2nd param (unused) is not implemented.\n\n-----------------------------------------------------------------------\n\nThe only occurrence I found in a R* script (\"assassin_construction.ysc.c4\"):\n\n            if (((v_3 < v_4) && (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 0x6a67a5cc) != 1)) && (v_5 > v_3)) {\n                TASK::TASK_RELOAD_WEAPON(PLAYER::PLAYER_PED_ID(), 1);\n            }",
+			"comment": "The 2nd param (drawWeapon) is not implemented.\n\n-----------------------------------------------------------------------\n\nThe only occurrence I found in a R* script (\"assassin_construction.ysc.c4\"):\n\n            if (((v_3 < v_4) && (TASK::GET_SCRIPT_TASK_STATUS(PLAYER::PLAYER_PED_ID(), 0x6a67a5cc) != 1)) && (v_5 > v_3)) {\n                TASK::TASK_RELOAD_WEAPON(PLAYER::PLAYER_PED_ID(), 1);\n            }",
 			"params": [
 				{
 					"type": "Ped",
@@ -95976,7 +95976,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unused"
+					"name": "drawWeapon"
 				}
 			],
 			"return_type": "void",
@@ -96010,19 +96010,19 @@
 				},
 				{
 					"type": "int",
-					"name": "time"
+					"name": "minFireLoops"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "startState"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "forceShootOnGround"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "shootFromGroundTimer"
 				}
 			],
 			"return_type": "void",
@@ -96069,39 +96069,39 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "nodeId"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "nodeType"
 				},
 				{
 					"type": "float",
-					"name": "x1"
+					"name": "posX"
 				},
 				{
 					"type": "float",
-					"name": "y1"
+					"name": "posY"
 				},
 				{
 					"type": "float",
-					"name": "z1"
+					"name": "posZ"
 				},
 				{
 					"type": "float",
-					"name": "x2"
+					"name": "headingX"
 				},
 				{
 					"type": "float",
-					"name": "y2"
+					"name": "headingY"
 				},
 				{
 					"type": "float",
-					"name": "z2"
+					"name": "headingZ"
 				},
 				{
 					"type": "int",
-					"name": "p8"
+					"name": "duration"
 				}
 			],
 			"return_type": "void",
@@ -96113,12 +96113,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "nodeId1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "nodeId2"
 				}
 			],
 			"return_type": "void",
@@ -96177,19 +96177,19 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "patrolRouteName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
-				},
-				{
-					"type": "BOOL",
-					"name": "p3"
+					"type": "int",
+					"name": "alertState"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "canChatToPeds"
+				},
+				{
+					"type": "BOOL",
+					"name": "useHeadLookAt"
 				}
 			],
 			"return_type": "void",
@@ -96702,16 +96702,16 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "minTime"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "maxTime"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "entryType"
 				}
 			],
 			"return_type": "void",
@@ -97434,7 +97434,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceRestart"
 				}
 			],
 			"return_type": "void",
@@ -97487,43 +97487,43 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "network"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "rotX"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "rotY"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "rotOrder"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "blendDuration"
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "allowOverrideCloneUpdate"
 				},
 				{
 					"type": "const char*",
@@ -97541,7 +97541,7 @@
 			]
 		},
 		"0x3D45B0B355C5E0C9": {
-			"name": "_TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS",
+			"name": "TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS",
 			"jhash": "",
 			"comment": "Used only once in the scripts (am_mp_nightclub)",
 			"params": [
@@ -97551,19 +97551,19 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "network"
 				},
 				{
-					"type": "Any*",
-					"name": "data"
+					"type": "int*",
+					"name": "initialParameters"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "blendDuration"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "allowOverrideCloneUpdate"
 				},
 				{
 					"type": "const char*",
@@ -97581,65 +97581,65 @@
 			]
 		},
 		"0x29682E2CCF21E9B5": {
-			"name": "_0x29682E2CCF21E9B5",
+			"name": "TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "network"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "initialParameters"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "rotOrder"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "float",
+					"name": "blendDuration"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "BOOL",
+					"name": "allowOverrideCloneUpdate"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "const char*",
+					"name": "dictionary"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "int",
+					"name": "flags"
 				}
 			],
 			"return_type": "void",
@@ -97689,7 +97689,7 @@
 			"build": "323"
 		},
 		"0xAB13A5565480B6D9": {
-			"name": "_0xAB13A5565480B6D9",
+			"name": "SET_EXPECTED_CLONE_NEXT_TASK_MOVE_NETWORK_STATE",
 			"jhash": "0x1E58A7AD",
 			"comment": "Used only once in the scripts (fm_mission_controller) like so:\n\nTASK::_0xAB13A5565480B6D9(iLocal_3160, \"Cutting\");\n\nSET_*",
 			"params": [
@@ -97699,7 +97699,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "state"
 				}
 			],
 			"return_type": "Any",
@@ -97719,21 +97719,21 @@
 			"build": "323"
 		},
 		"0x8423541E8B3A1589": {
-			"name": "_0x8423541E8B3A1589",
+			"name": "SET_TASK_MOVE_NETWORK_ANIM_SET",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "clipSet"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "variableClipSet"
 				}
 			],
 			"return_type": "void",
@@ -97764,7 +97764,7 @@
 			]
 		},
 		"0x373EF409B82697A3": {
-			"name": "_SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_2",
+			"name": "SET_TASK_MOVE_NETWORK_SIGNAL_LOCAL_FLOAT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -97785,7 +97785,7 @@
 			"build": "1493"
 		},
 		"0x8634CEF2522D987B": {
-			"name": "_0x8634CEF2522D987B",
+			"name": "SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_LERP_RATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -97795,7 +97795,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "signalName"
 				},
 				{
 					"type": "float",
@@ -98037,27 +98037,27 @@
 				},
 				{
 					"type": "float",
-					"name": "speed"
+					"name": "blendIn"
 				},
 				{
 					"type": "float",
-					"name": "speedMultiplier"
+					"name": "blendOut"
 				},
 				{
 					"type": "int",
-					"name": "duration"
+					"name": "flags"
 				},
 				{
 					"type": "int",
-					"name": "flag"
+					"name": "ragdollBlockingFlags"
 				},
 				{
 					"type": "float",
-					"name": "playbackRate"
+					"name": "moverBlendDelta"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "ikFlags"
 				}
 			],
 			"return_type": "void",
@@ -98091,35 +98091,35 @@
 				},
 				{
 					"type": "const char*",
-					"name": "anim"
+					"name": "animDict"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "lowAnimName"
 				},
 				{
 					"type": "const char*",
-					"name": "p3"
+					"name": "medAnimName"
 				},
 				{
 					"type": "const char*",
-					"name": "p4"
+					"name": "hiAnimName"
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "runtime"
 				},
 				{
-					"type": "Vehicle",
-					"name": "vehicle"
-				},
-				{
-					"type": "float",
-					"name": "p7"
+					"type": "Entity",
+					"name": "targetEntity"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "turnRate"
+				},
+				{
+					"type": "float",
+					"name": "blendInDuration"
 				}
 			],
 			"return_type": "void",
@@ -98148,48 +98148,48 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "animDict"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "const char*",
+					"name": "lowAnimName"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "const char*",
+					"name": "medAnimName"
 				},
 				{
-					"type": "Any*",
-					"name": "p4"
+					"type": "const char*",
+					"name": "hiAnimName"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
-				},
-				{
-					"type": "float",
-					"name": "p6"
+					"type": "int",
+					"name": "runtime"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "turnRate"
+				},
+				{
+					"type": "float",
+					"name": "blendInDuration"
 				}
 			],
 			"return_type": "void",
@@ -98201,20 +98201,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
