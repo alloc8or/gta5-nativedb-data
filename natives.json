@@ -91803,9 +91803,9 @@
 			"build": "323"
 		},
 		"0x3E38E28A1D80DDF6": {
-			"name": "_0x3E38E28A1D80DDF6",
+			"name": "IS_CONTROLLED_VEHICLE_UNABLE_TO_GET_TO_ROAD",
 			"jhash": "0x54856309",
-			"comment": "IS_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -94647,7 +94647,7 @@
 			"build": "323"
 		},
 		"0x28B7B9BFDAF274AA": {
-			"name": "_ADD_SCRIPTED_BLOCKING_AREA",
+			"name": "ADD_SCRIPTED_COVER_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -95283,7 +95283,7 @@
 			"build": "323"
 		},
 		"0xFA83CA6776038F64": {
-			"name": "_REMOVE_COVER_BLOCKING_AREAS_AT_COORD",
+			"name": "REMOVE_COVER_BLOCKING_AREAS_AT_POSITION",
 			"jhash": "",
 			"comment": "REMOVE_*",
 			"params": [
@@ -95304,7 +95304,7 @@
 			"build": "1493"
 		},
 		"0x1F351CF1C6475734": {
-			"name": "_REMOVE_SPECIFIC_COVER_BLOCKING_AREA",
+			"name": "REMOVE_SPECIFIC_COVER_BLOCKING_AREAS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -96146,7 +96146,7 @@
 			"build": "323"
 		},
 		"0x52F734CEBE20DFBA": {
-			"name": "_GET_PATROL_TASK_STATUS",
+			"name": "GET_PATROL_TASK_INFO",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -97581,7 +97581,7 @@
 			]
 		},
 		"0x29682E2CCF21E9B5": {
-			"name": "_0x29682E2CCF21E9B5",
+			"name": "TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -97689,7 +97689,7 @@
 			"build": "323"
 		},
 		"0xAB13A5565480B6D9": {
-			"name": "_0xAB13A5565480B6D9",
+			"name": "SET_EXPECTED_CLONE_NEXT_TASK_MOVE_NETWORK_STATE",
 			"jhash": "0x1E58A7AD",
 			"comment": "Used only once in the scripts (fm_mission_controller) like so:\n\nTASK::_0xAB13A5565480B6D9(iLocal_3160, \"Cutting\");\n\nSET_*",
 			"params": [
@@ -97719,7 +97719,7 @@
 			"build": "323"
 		},
 		"0x8423541E8B3A1589": {
-			"name": "_0x8423541E8B3A1589",
+			"name": "SET_TASK_MOVE_NETWORK_ANIM_SET",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -97764,7 +97764,7 @@
 			]
 		},
 		"0x373EF409B82697A3": {
-			"name": "_SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_2",
+			"name": "SET_TASK_MOVE_NETWORK_SIGNAL_LOCAL_FLOAT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -97785,7 +97785,7 @@
 			"build": "1493"
 		},
 		"0x8634CEF2522D987B": {
-			"name": "_0x8634CEF2522D987B",
+			"name": "SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_LERP_RATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -97830,7 +97830,7 @@
 			]
 		},
 		"0x44AB0B3AFECCE242": {
-			"name": "_GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT",
+			"name": "GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -97881,7 +97881,7 @@
 			"build": "323"
 		},
 		"0x0FFB3C758E8C07B9": {
-			"name": "_0x0FFB3C758E8C07B9",
+			"name": "SET_TASK_MOVE_NETWORK_ENABLE_COLLISION_ON_NETWORK_CLONE_WHEN_FIXED",
 			"jhash": "",
 			"comment": "Doesn't actually return anything.",
 			"params": [
