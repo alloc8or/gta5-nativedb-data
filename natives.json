@@ -21568,7 +21568,6 @@
 			"return_type": "void",
 			"build": "323",
 			"old_names": [
-				"_SET_HIDOF_ENV_BLUR_PARAMS",
 				"_SET_HIDOF_ENV_BLUR_PARAMS"
 			]
 		},
@@ -32103,7 +32102,6 @@
 			"return_type": "void",
 			"build": "877",
 			"old_names": [
-				"_SET_MP_GAMER_TAG_UNK",
 				"_SET_MP_GAMER_TAG_UNK"
 			]
 		},
