@@ -24226,7 +24226,7 @@
 			"build": "323"
 		},
 		"0x2FCB133CA50A49EB": {
-			"name": "IS_ACTIVE_SCALEFORM_MOVIE_DELETING ",
+			"name": "IS_ACTIVE_SCALEFORM_MOVIE_DELETING",
 			"jhash": "",
 			"comment": "val is 1-20 (0 will return false)\nSET_???",
 			"params": [
@@ -24239,7 +24239,7 @@
 			"build": "1290"
 		},
 		"0x86255B1FC929E33E": {
-			"name": "IS_SCALEFORM_MOVIE_DELETING ",
+			"name": "IS_SCALEFORM_MOVIE_DELETING",
 			"jhash": "",
 			"comment": "val is 1-20. Return is related to INSTRUCTIONAL_BUTTONS, COLOUR_SWITCHER_02, etc?",
 			"params": [
@@ -76210,7 +76210,7 @@
 			"build": "323"
 		},
 		"0x2B5AA717A181FB4C": {
-			"name": "SET_PED_AO_BLOB_RENDERING              ",
+			"name": "SET_PED_AO_BLOB_RENDERING",
 			"jhash": "0x98E29ED0",
 			"comment": "Enable/disable ped shadow (ambient occlusion). https://gfycat.com/thankfulesteemedgecko",
 			"params": [
@@ -76224,10 +76224,7 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323",
-			"old_names": [
-				"SET_PED_AO_BLOB_RENDERING"
-			]
+			"build": "323"
 		},
 		"0xB8B52E498014F5B0": {
 			"name": "IS_PED_SHELTERED",
