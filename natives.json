@@ -91203,7 +91203,7 @@
 		"0x6A071245EB0D1882": {
 			"name": "TASK_GO_TO_ENTITY",
 			"jhash": "0x374827C2",
-			"comment": "The entity will move towards the target until time is over (duration) or get in target's range (distance). p5 and p6 are unknown, but you could leave p5 = 1073741824 or 100 or even 0 (didn't see any difference but on the decompiled scripts, they use 1073741824 mostly) and p6 = 0\n\nNote: I've only tested it on entity -> ped and target -> vehicle. It could work differently on other entities, didn't try it yet.\n\nExample: TASK::TASK_GO_TO_ENTITY(pedHandle, vehicleHandle, 5000, 4.0, 100, 1073741824, 0)\n\nPed will run towards the vehicle for 5 seconds and stop when time is over or when he gets 4 meters(?) around the vehicle (with duration = -1, the task duration will be ignored).",
+			"comment": "The entity will move towards the target until time is over (duration) or get in target's range (distance). p5 and p6 are unknown, but you could leave p5 = 1073741824 or 100 or even 0 (didn't see any difference but on the decompiled scripts, they use 1073741824 mostly) and p6 = 0\n\nNote: I've only tested it on entity -> ped and target -> vehicle. It could work differently on other entities, didn't try it yet.\n\nExample: TASK::TASK_GO_TO_ENTITY(pedHandle, vehicleHandle, 5000, 4.0, 100, 1073741824, 0)\n\nPed will run towards the vehicle for 5 seconds and stop when time is over or when he gets 4 meters(?) around the vehicle (with duration = -1, the task duration will be ignored).\n\nenum EGOTO_ENTITY_SCRIPT_FLAGS\n{\n\tEGOTO_ENTITY_NEVER_SLOW_FOR_PATH_LENGTH = 0x01,\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -92455,7 +92455,7 @@
 		"0x6FA46612594F7973": {
 			"name": "TASK_LOOK_AT_COORD",
 			"jhash": "0x7B784DD8",
-			"comment": "p5 = 0, p6 = 2",
+			"comment": "enum eScriptLookatFlags\n{\n\tSLF_SLOW_TURN_RATE            = 1,    // turn the head toward the target slowly\n\tSLF_FAST_TURN_RATE            = 2,    // turn the head toward the target quickly\n\tSLF_EXTEND_YAW_LIMIT        = 4,    // wide yaw head limits\n\tSLF_EXTEND_PITCH_LIMIT        = 8,    // wide pitch head limit\n\tSLF_WIDEST_YAW_LIMIT        = 16,   // widest yaw head limit\n\tSLF_WIDEST_PITCH_LIMIT        = 32,   // widest pitch head limit\n\tSLF_NARROW_YAW_LIMIT        = 64,   // narrow yaw head limits\n\tSLF_NARROW_PITCH_LIMIT        = 128,  // narrow pitch head limit\n\tSLF_NARROWEST_YAW_LIMIT        = 256,  // narrowest yaw head limit\n\tSLF_NARROWEST_PITCH_LIMIT    = 512,  // narrowest pitch head limit\n\tSLF_USE_TORSO                = 1024, // use the torso aswell as the neck and head (currently disabled)\n\tSLF_WHILE_NOT_IN_FOV        = 2048, // keep tracking the target even if they are not in the hard coded FOV\n\tSLF_USE_CAMERA_FOCUS        = 4096, // use the camera as the target\n\tSLF_USE_EYES_ONLY            = 8192, // only track the target with the eyes  \n\tSLF_USE_LOOK_DIR            = 16384, // use information in look dir DOF\n\tSLF_FROM_SCRIPT                = 32768, // internal use only\n\tSLF_USE_REF_DIR_ABSOLUTE    = 65536  // use absolute reference direction mode for solver\n};",
 			"params": [
 				{
 					"type": "Entity",
@@ -92492,7 +92492,7 @@
 		"0x69F4BE8C8CC4796C": {
 			"name": "TASK_LOOK_AT_ENTITY",
 			"jhash": "0x991D6619",
-			"comment": "param3: duration in ms, use -1 to look forever\nparam4: using 2048 is fine\nparam5: using 3 is fine",
+			"comment": "For flags, please refer to TASK_LOOK_AT_COORD.",
 			"params": [
 				{
 					"type": "Ped",
@@ -92993,7 +92993,7 @@
 		"0xE39B4FF4FDEBDE27": {
 			"name": "TASK_GOTO_ENTITY_OFFSET",
 			"jhash": "0x1A17A85E",
-			"comment": "",
+			"comment": "enum ESEEK_ENTITY_OFFSET_FLAGS\n{\n\tESEEK_OFFSET_ORIENTATES_WITH_ENTITY = 0x01,\n\tESEEK_KEEP_TO_PAVEMENTS = 0x02\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -93542,20 +93542,20 @@
 			"build": "323"
 		},
 		"0x6100B3CEFD43452E": {
-			"name": "_0x6100B3CEFD43452E",
+			"name": "CLEAR_DEFAULT_PRIMARY_TASK",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
 			"build": "2189"
 		},
 		"0xDBBC7A2432524127": {
-			"name": "_CLEAR_VEHICLE_TASKS",
+			"name": "CLEAR_PRIMARY_VEHICLE_TASK",
 			"jhash": "",
 			"comment": "This native is very useful when switching the player to a ped inside a vehicle that has a task assigned prior to the player switch.\nIt is necessary to clear the ped's tasks AND call this native with the vehicle the player is switching into in order to allow the player to control the vehicle after the player switches.",
 			"params": [
@@ -93565,10 +93565,13 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1290"
+			"build": "1290",
+			"old_names": [
+				"_CLEAR_VEHICLE_TASKS"
+			]
 		},
 		"0x53DDC75BC3AC0A90": {
-			"name": "_0x53DDC75BC3AC0A90",
+			"name": "CLEAR_VEHICLE_CRASH_TASK",
 			"jhash": "",
 			"comment": "CLEAR_*",
 			"params": [
@@ -94311,16 +94314,16 @@
 			"build": "1868"
 		},
 		"0x9D252648778160DF": {
-			"name": "_0x9D252648778160DF",
+			"name": "GET_TASK_RAPPEL_DOWN_WALL_STATE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1868"
 		},
 		"0xAAA34F8A7CB32098": {
@@ -94647,7 +94650,7 @@
 			"build": "323"
 		},
 		"0x28B7B9BFDAF274AA": {
-			"name": "_ADD_SCRIPTED_BLOCKING_AREA",
+			"name": "ADD_SCRIPTED_COVER_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -94669,7 +94672,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "2545"
+			"build": "2545",
+			"old_names": [
+				"_ADD_SCRIPTED_BLOCKING_AREA"
+			]
 		},
 		"0xF166E48407BAC484": {
 			"name": "TASK_COMBAT_PED",
@@ -95283,7 +95289,7 @@
 			"build": "323"
 		},
 		"0xFA83CA6776038F64": {
-			"name": "_REMOVE_COVER_BLOCKING_AREAS_AT_COORD",
+			"name": "REMOVE_COVER_BLOCKING_AREAS_AT_POSITION",
 			"jhash": "",
 			"comment": "REMOVE_*",
 			"params": [
@@ -95301,56 +95307,62 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1493"
+			"build": "1493",
+			"old_names": [
+				"_REMOVE_COVER_BLOCKING_AREAS_AT_COORD"
+			]
 		},
 		"0x1F351CF1C6475734": {
-			"name": "_REMOVE_SPECIFIC_COVER_BLOCKING_AREA",
+			"name": "REMOVE_SPECIFIC_COVER_BLOCKING_AREAS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
 					"type": "float",
-					"name": "x1"
+					"name": "startX"
 				},
 				{
 					"type": "float",
-					"name": "y1"
+					"name": "startY"
 				},
 				{
 					"type": "float",
-					"name": "z1"
+					"name": "startZ"
 				},
 				{
 					"type": "float",
-					"name": "x2"
+					"name": "endX"
 				},
 				{
 					"type": "float",
-					"name": "y2"
+					"name": "endY"
 				},
 				{
 					"type": "float",
-					"name": "z2"
+					"name": "endZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "blockObjects"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "blockVehicles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "blockMap"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "blockPlayer"
 				}
 			],
 			"return_type": "void",
-			"build": "505"
+			"build": "505",
+			"old_names": [
+				"_REMOVE_SPECIFIC_COVER_BLOCKING_AREA"
+			]
 		},
 		"0x142A02425FF02BD9": {
 			"name": "TASK_START_SCENARIO_IN_PLACE",
@@ -95884,7 +95896,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "combatFlags"
 				}
 			],
 			"return_type": "void",
@@ -96146,7 +96158,7 @@
 			"build": "323"
 		},
 		"0x52F734CEBE20DFBA": {
-			"name": "_GET_PATROL_TASK_STATUS",
+			"name": "GET_PATROL_TASK_INFO",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -96156,15 +96168,18 @@
 				},
 				{
 					"type": "int*",
-					"name": "p1"
+					"name": "timeLeftAtNode"
 				},
 				{
 					"type": "int*",
-					"name": "p2"
+					"name": "nodeId"
 				}
 			],
 			"return_type": "BOOL",
-			"build": "2545"
+			"build": "2545",
+			"old_names": [
+				"_GET_PATROL_TASK_STATUS"
+			]
 		},
 		"0xBDA5DF49D080FE4E": {
 			"name": "TASK_PATROL",
@@ -96265,7 +96280,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "fireTolerance"
 				}
 			],
 			"return_type": "void",
@@ -96311,7 +96326,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "fireTolerance"
 				}
 			],
 			"return_type": "void",
@@ -96418,31 +96433,31 @@
 				},
 				{
 					"type": "float",
-					"name": "moveSpeed"
+					"name": "moveBlendRatio"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "shoot"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "targetRadius"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "slowDistance"
 				},
 				{
 					"type": "BOOL",
-					"name": "p11"
+					"name": "useNavMesh"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "navFlags"
 				},
 				{
 					"type": "BOOL",
-					"name": "p13"
+					"name": "instantBlendToAim"
 				},
 				{
 					"type": "Hash",
@@ -96458,60 +96473,60 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Entity",
+					"name": "aimAtID"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "moveBlendRatio"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "shoot"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "targetRadius"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "slowDistance"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "useNavMesh"
 				},
 				{
-					"type": "Any",
-					"name": "p10"
+					"type": "int",
+					"name": "navFlags"
 				},
 				{
 					"type": "BOOL",
-					"name": "p11"
+					"name": "instantBlendToAim"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "Hash",
+					"name": "firingPattern"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "int",
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -96568,15 +96583,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unkTrue"
+					"name": "useNavMesh"
 				},
 				{
 					"type": "int",
-					"name": "unkFlag"
+					"name": "navFlags"
 				},
 				{
 					"type": "int",
-					"name": "aimingFlag"
+					"name": "taskFlags"
 				},
 				{
 					"type": "Hash",
@@ -96592,52 +96607,52 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
-				},
-				{
-					"type": "float",
-					"name": "p2"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "aimX"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "aimY"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "aimZ"
+				},
+				{
+					"type": "float",
+					"name": "moveBlendRatio"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "shoot"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "targetRadius"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "slowDistance"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "useNavMesh"
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "instantBlendToAim"
 				},
 				{
-					"type": "Any",
-					"name": "p11"
+					"type": "Hash",
+					"name": "firingPattern"
 				}
 			],
 			"return_type": "void",
@@ -96670,19 +96685,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "targetRadius"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "slowDistance"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "useNavMesh"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "instantBlendToAim"
 				},
 				{
 					"type": "Hash",
@@ -97459,7 +97474,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "allowOverrideCloneUpdate"
 				},
 				{
 					"type": "const char*",
@@ -97577,7 +97592,8 @@
 			"return_type": "void",
 			"build": "1493",
 			"old_names": [
-				"_TASK_MOVE_NETWORK_SCRIPTED"
+				"_TASK_MOVE_NETWORK_SCRIPTED",
+				"_TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS"
 			]
 		},
 		"0x29682E2CCF21E9B5": {
@@ -97782,7 +97798,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1493"
+			"build": "1493",
+			"old_names": [
+				"_SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_2"
+			]
 		},
 		"0x8634CEF2522D987B": {
 			"name": "SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_LERP_RATE",
@@ -97830,7 +97849,7 @@
 			]
 		},
 		"0x44AB0B3AFECCE242": {
-			"name": "_GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT",
+			"name": "GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -97844,7 +97863,10 @@
 				}
 			],
 			"return_type": "float",
-			"build": "1493"
+			"build": "1493",
+			"old_names": [
+				"_GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT"
+			]
 		},
 		"0xA7FFBA498E4AAF67": {
 			"name": "GET_TASK_MOVE_NETWORK_SIGNAL_BOOL",
@@ -97881,7 +97903,7 @@
 			"build": "323"
 		},
 		"0x0FFB3C758E8C07B9": {
-			"name": "_0x0FFB3C758E8C07B9",
+			"name": "SET_TASK_MOVE_NETWORK_ENABLE_COLLISION_ON_NETWORK_CLONE_WHEN_FIXED",
 			"jhash": "",
 			"comment": "Doesn't actually return anything.",
 			"params": [
@@ -97891,7 +97913,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enable"
 				}
 			],
 			"return_type": "Any",
