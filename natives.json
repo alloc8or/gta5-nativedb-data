@@ -420,9 +420,9 @@
 			"build": "323"
 		},
 		"0x42B65DEEF2EDF2A1": {
-			"name": "SET_THREAD_PRIORITY",
+			"name": "SET_THIS_THREAD_PRIORITY",
 			"jhash": "",
-			"comment": "0 = high\n1 = normal\n2 = low",
+			"comment": "THREAD_PRIO_HIGHEST = 0\nTHREAD_PRIO_NORMAL = 1\nTHREAD_PRIO_LOWEST = 2\nTHREAD_PRIO_MANUAL_UPDATE = 100",
 			"params": [
 				{
 					"type": "int",
@@ -430,7 +430,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "877"
+			"build": "877",
+			"old_names": [
+				"SET_THREAD_PRIORITY"
+			]
 		}
 	},
 	"APP": {
