@@ -101810,7 +101810,7 @@
 		"0xD8050E0EB60CF274": {
 			"name": "SET_VEHICLE_HAS_MUTED_SIRENS",
 			"jhash": "0xC54156A9",
-			"comment": "if set to true, prevents vehicle sirens from having sound, leaving only the lights.",
+			"comment": "If set to true, prevents vehicle sirens from having sound, leaving only the lights.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102320,7 +102320,7 @@
 		"0x3AFDC536C3D01674": {
 			"name": "SET_VEHICLE_ENVEFF_SCALE",
 			"jhash": "0x8332730C",
-			"comment": "formerly known as _SET_VEHICLE_PAINT_FADE\n\nThe parameter fade is a value from 0-1, where 0 is fresh paint.",
+			"comment": "The parameter fade is a value from 0-1, where 0 is fresh paint.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102340,7 +102340,7 @@
 		"0xA82819CAC9C4C403": {
 			"name": "GET_VEHICLE_ENVEFF_SCALE",
 			"jhash": "0xD5F1EEE1",
-			"comment": "formerly known as _GET_VEHICLE_PAINT_FADE\n\nThe result is a value from 0-1, where 0 is fresh paint.",
+			"comment": "The result is a value from 0-1, where 0 is fresh paint.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102373,15 +102373,15 @@
 		"0xAB31EF4DE6800CE9": {
 			"name": "SET_GOON_BOSS_VEHICLE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used for GTAO CEO/Associate spawned vehicles.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -102670,8 +102670,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -102899,15 +102899,15 @@
 		"0x6501129C9E0FFA05": {
 			"name": "SET_VEHICLE_FORWARD_SPEED_XY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Seems to be identical to SET_VEHICLE_FORWARD_SPEED",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -103145,7 +103145,7 @@
 		"0x8AA9180DE2FEDD45": {
 			"name": "SET_VEHICLE_DISABLE_HEIGHT_MAP_AVOIDANCE",
 			"jhash": "0xAE040377",
-			"comment": "SET_VEHICLE_D[ISABLE_HEIGHT_MAP_AVOIDANCE]?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103497,7 +103497,7 @@
 		"0xE38CB9D7D39FDBCC": {
 			"name": "POP_OFF_VEHICLE_ROOF_WITH_IMPULSE",
 			"jhash": "0xFDA7B6CA",
-			"comment": "POPOUT_TEMP_ACTION_IN_DIRECTION?",
+			"comment": "Pops off the \"roof\" bone in the direction of the specified offset from the vehicle.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103834,8 +103834,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -103881,7 +103881,7 @@
 		"0x7CE1CCB9B293020E": {
 			"name": "GET_VEHICLE_NUMBER_PLATE_TEXT",
 			"jhash": "0xE8522D58",
-			"comment": "Returns the license plate text from a vehicle.  8 chars maximum.",
+			"comment": "Returns the license plate text from a vehicle. 8 chars maximum.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -104509,7 +104509,7 @@
 		"0x29DE5FA52D00428C": {
 			"name": "START_PLAYBACK_RECORDED_VEHICLE_USING_AI",
 			"jhash": "0x8DE8E24E",
-			"comment": "AI abides by the provided driving style (e.g., stopping at red lights or waiting behind traffic) while executing the specificed vehicle recording.\n\n0x1F2E4E06DEA8992B is a related native that deals with the AI physics for such recordings.",
+			"comment": "AI abides by the provided driving style (e.g., stopping at red lights or waiting behind traffic) while executing the specificed vehicle recording.\n\nFORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE is a related native that deals with the AI physics for such recordings.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -104925,7 +104925,7 @@
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "vehicle"
+					"name": "train"
 				}
 			],
 			"return_type": "BOOL",
@@ -105048,7 +105048,7 @@
 		"0x7F6DB52EEFC96DF8": {
 			"name": "IS_THIS_MODEL_A_CAR",
 			"jhash": "0x60E4C22F",
-			"comment": "To check if the model is an amphibious car, see gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/page-33#entry1069317363 (for build 944 and above only!)",
+			"comment": "To check if the model is an amphibious car, use IS_THIS_MODEL_AN_AMPHIBIOUS_CAR.",
 			"params": [
 				{
 					"type": "Hash",
@@ -105255,7 +105255,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -105629,7 +105629,7 @@
 		"0x9F243D3919F442FE": {
 			"name": "IS_BIG_VEHICLE",
 			"jhash": "0x9CDBA8DE",
-			"comment": "",
+			"comment": "Returns true if MF_IS_BIG (strModelFlags 0x8) handling model flag is set.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105642,7 +105642,7 @@
 		"0x3B963160CD65D41E": {
 			"name": "GET_NUMBER_OF_VEHICLE_COLOURS",
 			"jhash": "0xF2442EE2",
-			"comment": "Actually number of color combinations",
+			"comment": "Returns the total amount of color combinations found in the vehicle's carvariations.meta entry.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105655,7 +105655,7 @@
 		"0x33E8CD3322E2FE31": {
 			"name": "SET_VEHICLE_COLOUR_COMBINATION",
 			"jhash": "0xA557AEAD",
-			"comment": "Sets the selected vehicle's colors to their default value (specific variant specified using the colorCombination parameter).\nRange of possible values for colorCombination is currently unknown, I couldn't find where these values are stored either (Disquse's guess was vehicles.meta but I haven't seen it in there.)",
+			"comment": "Sets the selected vehicle's colors to the specified index of the color combination found in the vehicle's carvariations.meta entry.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105672,7 +105672,7 @@
 		"0x6A842D197F845D56": {
 			"name": "GET_VEHICLE_COLOUR_COMBINATION",
 			"jhash": "0x77AC1B4C",
-			"comment": "",
+			"comment": "Returns the index of the color combination found in the vehicle's carvariations.meta entry.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105707,7 +105707,7 @@
 		"0x3DFF319A831E0CDB": {
 			"name": "GET_VEHICLE_XENON_LIGHT_COLOR_INDEX",
 			"jhash": "",
-			"comment": "Returns the headlight color index from the vehicle. Value between 0, 12.\nUse _SET_VEHICLE_HEADLIGHTS_COLOUR to set the headlights color for the vehicle.\nMust enable xenon headlights before it'll take affect.\n\nReturns an int, value between 0-12 or 255 if no color is set.",
+			"comment": "Returns the headlight color index from the vehicle. Value between 0, 12.\nUse SET_VEHICLE_XENON_LIGHT_COLOR_INDEX to set the headlights color for the vehicle.\nMust enable xenon headlights before it'll take affect.\n\nReturns an int, value between 0-12 or 255 if no color is set.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105844,7 +105844,7 @@
 		"0xCA4AC3EAAE46EC7B": {
 			"name": "GET_VEHICLE_INDIVIDUAL_DOOR_LOCK_STATUS",
 			"jhash": "",
-			"comment": "Returns vehicle door destroy type previously set with _SET_VEHICLE_DOOR_DESTROY_TYPE",
+			"comment": "Returns vehicle door lock state previously set with SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105931,7 +105931,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "front"
+					"name": "frontBumper"
 				}
 			],
 			"return_type": "BOOL",
@@ -106032,7 +106032,7 @@
 		"0x317B11A312DF5534": {
 			"name": "SET_RENDER_TRAIN_AS_DERAILED",
 			"jhash": "0x899D9092",
-			"comment": "makes the train all jumbled up and derailed as it moves on the tracks (though that wont stop it from its normal operations)",
+			"comment": "Makes the train all jumbled up and derailed as it moves on the tracks (though that wont stop it from its normal operations)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106322,7 +106322,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -106339,7 +106339,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -106474,7 +106474,7 @@
 		"0x534E36D4DB9ECC5D": {
 			"name": "IS_EXTRA_BROKEN_OFF",
 			"jhash": "",
-			"comment": "Checks if vehicle tyre at index exists. Also returns false if tyre was removed.",
+			"comment": "Returns true if specified extra part is broken off. It only works for extras that can break off during collisions, non-breakable extras always return false. Also returns true if the breakable extra is toggled off through script.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106482,7 +106482,7 @@
 				},
 				{
 					"type": "int",
-					"name": "tyreIndex"
+					"name": "extraId"
 				}
 			],
 			"return_type": "BOOL",
@@ -106558,7 +106558,7 @@
 		"0x52F357A30698BCCE": {
 			"name": "IS_VEHICLE_A_CONVERTIBLE",
 			"jhash": "0x6EF54490",
-			"comment": "p1 is false almost always.\n\nHowever, in launcher_carwash/carwash1/carwash2 scripts, p1 is true and is accompanied by DOES_VEHICLE_HAVE_ROOF ",
+			"comment": "Returns true if the vehicle has a convertible roof.\n\np1 is false almost always. However, in launcher_carwash/carwash1/carwash2 scripts, p1 is true and is accompanied by DOES_VEHICLE_HAVE_ROOF. If p1 is true, it seems that every single vehicle will return true irrespective of being a convertible.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106575,7 +106575,7 @@
 		"0xBE4C854FFDB6EEBE": {
 			"name": "TRANSFORM_TO_SUBMARINE",
 			"jhash": "0xCAFE5FE0",
-			"comment": "Transforms the `stormberg` to its \"water vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
+			"comment": "Transforms the `stormberg`/`toreador` to its \"submarine\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106596,7 +106596,7 @@
 		"0x2A69FFD1B42BFF9E": {
 			"name": "TRANSFORM_TO_CAR",
 			"jhash": "0xD8B90941",
-			"comment": "Transforms the `stormberg` to its \"road vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
+			"comment": "Transforms the `stormberg`/`toreador` to its \"road vehicle\" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106713,7 +106713,7 @@
 		"0x45F6D8EEF34ABEF1": {
 			"name": "SET_VEHICLE_ENGINE_HEALTH",
 			"jhash": "0x1B760FB5",
-			"comment": "1000 is max health\nBegins leaking gas at around 650 health\n-999.90002441406 appears to be minimum health, although nothing special occurs <- false statement\n\n-------------------------\nMinimum: -4000\nMaximum: 1000\n\n-4000: Engine is destroyed\n0 and below: Engine catches fire and health rapidly declines\n300: Engine is smoking and losing functionality\n1000: Engine is perfect",
+			"comment": "1000 is max health\nBegins leaking gas at around 650 health\nMinimum: -4000\nMaximum: 1000\n\n-4000: Engine is destroyed\n0 and below: Engine catches fire and health rapidly declines\n300: Engine is smoking and losing functionality\n1000: Engine is perfect",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106730,7 +106730,7 @@
 		"0x2A86A0475B6A1434": {
 			"name": "SET_PLANE_ENGINE_HEALTH",
 			"jhash": "",
-			"comment": "Works just like SET_VEHICLE_ENGINE_HEALTH, didn't saw any difference. But this native works only for planes.",
+			"comment": "Works just like SET_VEHICLE_ENGINE_HEALTH, but only for planes.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106965,7 +106965,7 @@
 		"0xB215AAC32D25D019": {
 			"name": "GET_DISPLAY_NAME_FROM_VEHICLE_MODEL",
 			"jhash": "0xEC86DF39",
-			"comment": "Returns model name of vehicle in all caps. Needs to be displayed through localizing text natives to get proper display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\nWhile often the case, this does not simply return the model name of the vehicle (which could be hashed to return the model hash). Variations of the same vehicle may also use the same display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\n\nReturns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nUsing HUD::_GET_LABEL_TEXT, you can get the localized name.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "Returns model name of vehicle in all caps. Needs to be displayed through localizing text natives to get proper display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\nWhile often the case, this does not simply return the model name of the vehicle (which could be hashed to return the model hash). Variations of the same vehicle may also use the same display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\n\nReturns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nUsing HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION, you can get the localized name.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -107301,7 +107301,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -107351,12 +107351,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -107373,7 +107373,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -108117,7 +108117,7 @@
 		"0xA4A9A4C40E615885": {
 			"name": "NETWORK_CAP_EMPTY_CROWDING_VEHICLES_REMOVAL",
 			"jhash": "",
-			"comment": "Default:1000||This sets a value which is used when _0x51db102f4a3ba5e0(true) is called each frame.",
+			"comment": "Default:1000||This sets a value which is used when NETWORK_ENABLE_EMPTY_CROWDING_VEHICLES_REMOVAL(true) is called each frame.",
 			"params": [
 				{
 					"type": "int",
@@ -108714,7 +108714,7 @@
 		"0xB3ED1BFB4BE636DC": {
 			"name": "GET_VEHICLE_WHEEL_TYPE",
 			"jhash": "0xDA58D7AE",
-			"comment": "Returns an int\n\nWheel Types:\n0: Sport\n1: Muscle\n2: Lowrider\n3: SUV\n4: Offroad\n5: Tuner\n6: Bike Wheels\n7: High End\n\nTested in Los Santos Customs",
+			"comment": "Returns an int\n\nWheel Types:\n0: Sport\n1: Muscle\n2: Lowrider\n3: SUV\n4: Offroad\n5: Tuner\n6: Bike Wheels\n7: High End\n8: Benny's Originals\n9: Benny's Bespoke\n10: Racing\n11: Street\n12: Track\n\nTested in Los Santos Customs",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108727,7 +108727,7 @@
 		"0x487EB21CC7295BA1": {
 			"name": "SET_VEHICLE_WHEEL_TYPE",
 			"jhash": "0x64BDAAAD",
-			"comment": "0: Sport\n1: Muscle\n2: Lowrider\n3: SUV\n4: Offroad\n5: Tuner\n6: Bike Wheels\n7: High End",
+			"comment": "0: Sport\n1: Muscle\n2: Lowrider\n3: SUV\n4: Offroad\n5: Tuner\n6: Bike Wheels\n7: High End\n8: Benny's Originals\n9: Benny's Bespoke\n10: Racing\n11: Street\n12: Track",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108744,7 +108744,7 @@
 		"0xA551BE18C11A476D": {
 			"name": "GET_NUM_MOD_COLORS",
 			"jhash": "0x73722CD9",
-			"comment": "paintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome",
+			"comment": "paintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome\n6: Chameleon",
 			"params": [
 				{
 					"type": "int",
@@ -108761,7 +108761,7 @@
 		"0x43FEB945EE7F85B8": {
 			"name": "SET_VEHICLE_MOD_COLOR_1",
 			"jhash": "0xCBE9A54D",
-			"comment": "paintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome\n\ncolor: number of the color.\n\np3 seems to always be 0.\n\nFull list of vehicle colors and vehicle plates by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
+			"comment": "paintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome\n6: Chameleon\n\ncolor: number of the color.\n\np3 seems to always be 0.\n\nFull list of vehicle colors and vehicle plates by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108786,7 +108786,7 @@
 		"0x816562BADFDEC83E": {
 			"name": "SET_VEHICLE_MOD_COLOR_2",
 			"jhash": "0xC32613C2",
-			"comment": "Changes the secondary paint type and color\npaintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome\n\ncolor: number of the color\n\nFull list of vehicle colors and vehicle plates by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
+			"comment": "Changes the secondary paint type and color\npaintType:\n0: Normal\n1: Metallic\n2: Pearl\n3: Matte\n4: Metal\n5: Chrome\n6: Chameleon\n\ncolor: number of the color\n\nFull list of vehicle colors and vehicle plates by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108853,7 +108853,7 @@
 		"0xB45085B721EFD38C": {
 			"name": "GET_VEHICLE_MOD_COLOR_1_NAME",
 			"jhash": "0x9A0840FD",
-			"comment": "returns a string which is the codename of the vehicle's currently selected primary color\n\np1 is always 0",
+			"comment": "Returns a string which is the codename of the vehicle's currently selected primary color\n\np1 is always 0",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108870,7 +108870,7 @@
 		"0x4967A516ED23A5A1": {
 			"name": "GET_VEHICLE_MOD_COLOR_2_NAME",
 			"jhash": "0x9BDC0B49",
-			"comment": "returns a string which is the codename of the vehicle's currently selected secondary color",
+			"comment": "Returns a string which is the codename of the vehicle's currently selected secondary color",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108899,7 +108899,7 @@
 		"0x00834EAC4A96E010": {
 			"name": "IS_VEHICLE_MOD_GEN9_EXCLUSIVE",
 			"jhash": "",
-			"comment": "mpsum2_g9ec",
+			"comment": "Returns true for any mod part listed in GEN9_EXCLUSIVE_ASSETS_VEHICLES_FILE.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108948,7 +108948,7 @@
 		"0x772960298DA26FDB": {
 			"name": "GET_VEHICLE_MOD",
 			"jhash": "0xDC520069",
-			"comment": "In b944, there are 50 (0 - 49) mod types.\n\nReturns -1 if the vehicle mod is stock",
+			"comment": "In b944, there are 50 (0 - 49) mod types. See SET_VEHICLE_MOD for the list.\n\nReturns -1 if the vehicle mod is stock",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109054,7 +109054,7 @@
 		"0x8935624F8C5592CC": {
 			"name": "GET_MOD_TEXT_LABEL",
 			"jhash": "0x0BA39CA7",
-			"comment": "Returns the text label of a mod type for a given vehicle\n\nUse _GET_LABEL_TEXT to get the part name in the game's language",
+			"comment": "Returns the text label of a mod type for a given vehicle\n\nUse GET_FILENAME_FOR_AUDIO_CONVERSATION to get the part name in the game's language",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109092,7 +109092,7 @@
 		"0xB4C7A93837C91A1F": {
 			"name": "GET_LIVERY_NAME",
 			"jhash": "0xED80B5BE",
-			"comment": "Second Param = LiveryIndex\n\nexample \n\nint count = VEHICLE::GET_VEHICLE_LIVERY_COUNT(veh);\nfor (int i = 0; i < count; i++)  \n  {\n     const char* LiveryName = VEHICLE::GET_LIVERY_NAME(veh, i);\n  }\n\n\nthis example will work fine to fetch all names \nfor example for Sanchez we get \n\nSANC_LV1\nSANC_LV2\nSANC_LV3\nSANC_LV4\nSANC_LV5\n\n\nUse _GET_LABEL_TEXT, to get the localized livery name.\n\nFull list of vehicle mod kits and mods by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleModKits.json",
+			"comment": "Second Param = LiveryIndex\n\nexample \n\nint count = VEHICLE::GET_VEHICLE_LIVERY_COUNT(veh);\nfor (int i = 0; i < count; i++)  \n  {\n     const char* LiveryName = VEHICLE::GET_LIVERY_NAME(veh, i);\n  }\n\n\nthis example will work fine to fetch all names \nfor example for Sanchez we get \n\nSANC_LV1\nSANC_LV2\nSANC_LV3\nSANC_LV4\nSANC_LV5\n\n\nUse GET_FILENAME_FOR_AUDIO_CONVERSATION, to get the localized livery name.\n\nFull list of vehicle mod kits and mods by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleModKits.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109130,7 +109130,7 @@
 		"0x4593CF82AA179706": {
 			"name": "GET_VEHICLE_MOD_IDENTIFIER_HASH",
 			"jhash": "0x94850968",
-			"comment": "Can be used for IS_DLC_VEHICLE_MOD and _0xC098810437312FFF",
+			"comment": "Can be used for IS_DLC_VEHICLE_MOD and GET_DLC_VEHICLE_MOD_LOCK_HASH",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109157,16 +109157,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "int",
 					"name": "modType"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "modIndex"
 				}
 			],
 			"return_type": "void",
@@ -109178,8 +109178,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "BOOL",
@@ -109392,7 +109392,7 @@
 		"0xEC69ADF931AAE0C3": {
 			"name": "GET_BOTH_VEHICLE_HEADLIGHTS_DAMAGED",
 			"jhash": "",
-			"comment": "Only ever used once in decompiled scripts: **am_pi_menu**:\nReturns true if the engine is on fire, or if the vehicle engine health is < 0 and it **has been** on fire.\n\nIt sometimes doesn't return true when the vehicle engine has been on fire, and has since been fixed. I'm not really sure what the exact conditions are.\n\nThis usually returns true even if there are no visible flames yet (engine health > 0). However if you monitor engine health you'll see that it starts decreasing as soon as this returns true.",
+			"comment": "Returns true when both headlights are broken. This does not include extralights.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109610,7 +109610,7 @@
 		"0xF7EC25A3EBEEC726": {
 			"name": "SET_VEHICLE_IS_WANTED",
 			"jhash": "0xDAA388E8",
-			"comment": "Sets the wanted state of this vehicle.\n",
+			"comment": "Sets the wanted state of this vehicle.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109647,7 +109647,7 @@
 		"0xC1F981A6F74F0C23": {
 			"name": "SWING_BOAT_BOOM_FREELY",
 			"jhash": "0x00966934",
-			"comment": "Same call as VEHICLE::_0x0F3B4D4E43177236",
+			"comment": "Same call as ALLOW_BOAT_BOOM_TO_ANIMATE",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109655,7 +109655,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -109675,7 +109675,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -110168,8 +110168,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -110230,12 +110230,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -110277,7 +110277,7 @@
 		"0xF0E4BA16D1DB546C": {
 			"name": "DISABLE_VEHCILE_DYNAMIC_AMBIENT_SCALES",
 			"jhash": "0x5BD8D82D",
-			"comment": "Adds some kind of shadow to the vehicle.\n\n-1 disables the effect.",
+			"comment": "Adds some kind of shadow to the vehicle.\n\np1 and p2 use values from 0-255 and both make the shadow darker the lower the value is. -1 disables the effect.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -110386,7 +110386,7 @@
 		"0x4AF9BD80EEBEB453": {
 			"name": "IS_VEHICLE_STOLEN",
 			"jhash": "0x20B61DDE",
-			"comment": "",
+			"comment": "Only returns true if the vehicle was marked as stolen with SET_VEHICLE_IS_STOLEN.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111057,7 +111057,7 @@
 		"0x2C4A1590ABF43E8B": {
 			"name": "SET_VEHICLE_WILL_TELL_OTHERS_TO_HURRY",
 			"jhash": "0x2EC19A8B",
-			"comment": "SET_VEHICLE_W* (next character is either H or I)",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111126,12 +111126,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -111605,7 +111605,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "togle"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -111725,7 +111725,7 @@
 		"0x7619EEE8C886757F": {
 			"name": "GET_VEHICLE_NEON_COLOUR",
 			"jhash": "",
-			"comment": "Gets the color of the neon lights of the specified vehicle.\n\nSee _SET_VEHICLE_NEON_LIGHTS_COLOUR (0x8E0A582209A62695) for more information",
+			"comment": "Gets the color of the neon lights of the specified vehicle.\n\nSee SET_VEHICLE_NEON_COLOUR (0x8E0A582209A62695) for more information",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111968,15 +111968,15 @@
 		"0x28B18377EB6E25F6": {
 			"name": "SET_HYDRAULICS_CONTROL",
 			"jhash": "",
-			"comment": "",
+			"comment": "If false, lowers hydraulics (if raised) and disables hydraulics controls. If true, raises hydraulics and enables hydraulics controls.\n\nOnly used once in each carmod script, on a car that does not have hydraulics to begin with.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -112095,7 +112095,7 @@
 		"0x50634E348C8D44EF": {
 			"name": "GET_VEHICLE_HAS_KERS",
 			"jhash": "0x0761E635",
-			"comment": "Returns true if the vehicle has a kers boost (for instance the lectro or the vindicator)",
+			"comment": "Returns true if the vehicle has a HF_HAS_KERS (strHandlingFlags 0x4) handing flag set, for instance the lectro/vindicator bikes or the open wheelers.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -112136,7 +112136,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -112161,7 +112161,7 @@
 		"0x84EA99C62CB3EF0C": {
 			"name": "SET_HYDRAULIC_SUSPENSION_RAISE_FACTOR",
 			"jhash": "",
-			"comment": "Works only on vehicles that support hydraulic.",
+			"comment": "Works only on vehicles that support hydraulics.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -112209,12 +112209,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -112226,15 +112226,15 @@
 		"0x8EA86DF356801C7D": {
 			"name": "SET_HYDRAULIC_VEHICLE_STATE",
 			"jhash": "",
-			"comment": "",
+			"comment": "States:\n4 = raise\n5 = lower\n6 = jump",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -112308,18 +112308,18 @@
 		"0x870B8B7A766615C8": {
 			"name": "SET_VEHICLE_BOBBLEHEAD_VELOCITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Controls how fast bobbleheads and tsurikawas move on each axis.\n\np2 is probably z, but changing that value didn't seem to have a noticeable effect.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				}
 			],
@@ -112416,15 +112416,15 @@
 		"0x73561D4425A021A2": {
 			"name": "SET_BIKE_EASY_TO_LAND",
 			"jhash": "",
-			"comment": "",
+			"comment": "When enabled, the player won't fall off the bike when landing from large heights.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -112453,11 +112453,11 @@
 		"0x7BBE7FF626A591FE": {
 			"name": "SET_SPEED_BOOST_EFFECT_DISABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disables the screen effects and sound effects when driving over a speed boost pad.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "disabled"
 				}
 			],
 			"return_type": "void",
@@ -112466,11 +112466,11 @@
 		"0x65B080555EA48149": {
 			"name": "SET_SLOW_DOWN_EFFECT_DISABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disables the screen effects and sound effects when driving over a slowdown pad.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "disabled"
 				}
 			],
 			"return_type": "void",
@@ -112549,12 +112549,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "impulseScale"
 				}
 			],
 			"return_type": "void",
@@ -112975,12 +112975,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -112992,11 +112992,11 @@
 		"0x41290B40FA63E6DA": {
 			"name": "SET_VEHICLE_USE_BOOST_BUTTON_FOR_WHEEL_RETRACT",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used for blazer5. Changes the quadbike-jetski transformation input from raise/lower convertible roof (hold H by default) to horn (press E by default.)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -113152,15 +113152,15 @@
 		"0x1312DDD8385AEE4E": {
 			"name": "SET_WHEELIE_ENABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Enables/disables the ability to wheelie on motorcycles.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
@@ -113260,15 +113260,15 @@
 		"0x78CEEE41F49F421F": {
 			"name": "SET_SHOULD_RESET_TURRET_IN_SCRIPTED_CAMERAS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Resets the vehicle's turret to its default position in scripted cameras. Doesn't seem to affect turrets that are occupied by a ped.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "shouldReset"
 				}
 			],
 			"return_type": "void",
@@ -113280,12 +113280,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "disable"
 				}
 			],
 			"return_type": "void",
@@ -113297,8 +113297,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -113372,8 +113372,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "Any",
@@ -113410,7 +113410,7 @@
 		"0xF4B2ED59DEB5D774": {
 			"name": "SET_VEHICLE_BOMB_AMMO",
 			"jhash": "",
-			"comment": "Sets the amount of bombs that this vehicle has. As far as I know, this does _not_ impact vehicle weapons or the ammo of those weapons in any way, it is just a way to keep track of the amount of bombs in a specific plane. ",
+			"comment": "Sets the amount of bombs that this vehicle has. As far as I know, this does _not_ impact vehicle weapons or the ammo of those weapons in any way, it is just a way to keep track of the amount of bombs in a specific plane.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113432,7 +113432,7 @@
 		"0xEA12BD130D7569A1": {
 			"name": "GET_VEHICLE_BOMB_AMMO",
 			"jhash": "",
-			"comment": "Gets the amount of bombs that this vehicle has. As far as I know, this does _not_ impact vehicle weapons or the ammo of those weapons in any way, it is just a way to keep track of the amount of bombs in a specific plane. ",
+			"comment": "Gets the amount of bombs that this vehicle has. As far as I know, this does _not_ impact vehicle weapons or the ammo of those weapons in any way, it is just a way to keep track of the amount of bombs in a specific plane.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113449,7 +113449,7 @@
 		"0x9BDA23BF666F0855": {
 			"name": "SET_VEHICLE_COUNTERMEASURE_AMMO",
 			"jhash": "",
-			"comment": "Similar to 0xF4B2ED59DEB5D774, this sets the amount of countermeasures that are present on this vehicle.\nUse 0xF846AA63DF56B804 to get the current amount.",
+			"comment": "Similar to SET_VEHICLE_BOMB_AMMO, this sets the amount of countermeasures that are present on this vehicle.\nUse GET_VEHICLE_BOMB_AMMO to get the current amount.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113470,7 +113470,7 @@
 		"0xF846AA63DF56B804": {
 			"name": "GET_VEHICLE_COUNTERMEASURE_AMMO",
 			"jhash": "",
-			"comment": "Similar to `0xEA12BD130D7569A1`, this gets the amount of countermeasures that are present on this vehicle.\nUse 0x9BDA23BF666F0855 to set the current amount.",
+			"comment": "Similar to `GET_VEHICLE_BOMB_AMMO`, this gets the amount of countermeasures that are present on this vehicle.\nUse SET_VEHICLE_COUNTERMEASURE_AMMO to set the current amount.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113512,7 +113512,7 @@
 		"0x51F30DB60626A20E": {
 			"name": "GET_CAN_VEHICLE_BE_PLACED_HERE",
 			"jhash": "",
-			"comment": "Used in decompiled scripts in combination with _GET_VEHICLE_SUSPENSION_BOUNDS\np7 is usually 2\np8 is usually 1",
+			"comment": "Used in decompiled scripts in combination with GET_VEHICLE_SIZE\np7 is usually 2\np8 is usually 1",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113574,7 +113574,7 @@
 		"0xD138FA15C9776837": {
 			"name": "SET_SPECIAL_FLIGHT_MODE_RATIO",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used in conjunction with SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO, in Rockstar's scripts. Using this will instantly transform the vehicle into hover mode starting from the given ratio (ranging from 0.0 to 1.0, values greater than 1.0 will put the vehicle into a glitched state.) If this is not used alongside SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO, the vehicle will automatically transform back into car mode.\n\nUsable only with the deluxo and other vehicles with deluxo-like hover mode toggle, modded or otherwise. Does nothing when used on oppressor2.\n\nExample:\nPed playerPed = PLAYER::PLAYER_PED_ID();\nVehicle veh = PED::GET_VEHICLE_PED_IS_USING(playerPed);\nVEHICLE::SET_SPECIAL_FLIGHT_MODE_RATIO(veh, 0.7f);\nVEHICLE::SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO(veh, 1.0f);",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113594,7 +113594,7 @@
 		"0x438B3D7CA026FE91": {
 			"name": "SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO",
 			"jhash": "",
-			"comment": "According to decompiled scripts this should work with the `deluxo` and `oppressor2` vehicles.\nI've only seen this work for `deluxo` though, can't figure out what it's supposed to do on `oppressor2`.\n\nFor the deluxo:\n- Set `state` to `0.0`: Fully transform to a 'road' vehicle (non-hover mode).\n- Set `state` to `1.0`: Fully transform to a 'flying' vehicle (hover mode).\n\nIf you set it to something like 0.5, then something [weird happens](https://streamable.com/p6wmr), you end up in some 50% hover mode, 50% not hover mode.\n\nThis doesn't need to be called every tick, just once and the vehicle will transform to that state at the usual transform speed. It'll just stop transforming when it reaches the state you provided.\n\nOnce this native is used then players will just be able to hit the vehicle transform key to toggle the transformation cycle; it won't block users from using the key.",
+			"comment": "Used in conjunction with SET_SPECIAL_FLIGHT_MODE_RATIO, in Rockstar's scripts. The vehicle will transform into the given targetRatio, starting from the vehicle's current hover mode transform ratio (which can also be manually set by SET_SPECIAL_FLIGHT_MODE_RATIO,) i.e. setting targetRatio to 0.0 while the vehicle is in hover mode will transform the vehicle into car mode, likewise setting targetRatio to 1.0 while the vehicle is in car mode will transform the vehicle into hover mode, and if the current transform ratio is set to 0.7 while targetRatio is 1.0 the vehicle will transform into hover mode starting from being already partially transformed.\n\ntargetRatio is recommended to always be 0.0 or 1.0, otherwise the vehicle will transform into a glitched state.\n\nUsable only with the deluxo and other vehicles with deluxo-like hover mode toggle, modded or otherwise. Does nothing when used on oppressor2.\n\nExample:\nPed playerPed = PLAYER::PLAYER_PED_ID();\nVehicle veh = PED::GET_VEHICLE_PED_IS_USING(playerPed);\nVEHICLE::SET_SPECIAL_FLIGHT_MODE_RATIO(veh, 0.7f);\nVEHICLE::SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO(veh, 1.0f);",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113602,7 +113602,7 @@
 				},
 				{
 					"type": "float",
-					"name": "percentage"
+					"name": "targetRatio"
 				}
 			],
 			"return_type": "void",
@@ -113615,7 +113615,7 @@
 		"0xF1211889DF15A763": {
 			"name": "SET_SPECIAL_FLIGHT_MODE_ALLOWED",
 			"jhash": "",
-			"comment": "It will override the ability to transform deluxo. For oppressor it will work just like 0x2D55FE374D5FDB91",
+			"comment": "It will override the ability to transform deluxo. For oppressor it will work just like SET_DISABLE_HOVER_MODE_FLIGHT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113822,7 +113822,7 @@
 		"0x498218259FB7C72D": {
 			"name": "SET_TRANSFORM_RATE_FOR_ANIMATION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Affects the playback speed of the submarine car conversion animations. Does not affect hardcoded animations such as the wheels being retracted.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113830,7 +113830,7 @@
 				},
 				{
 					"type": "float",
-					"name": "value"
+					"name": "transformRate"
 				}
 			],
 			"return_type": "void",
@@ -113842,7 +113842,7 @@
 		"0x41B9FB92EDED32A6": {
 			"name": "SET_TRANSFORM_TO_SUBMARINE_USES_ALTERNATE_INPUT",
 			"jhash": "",
-			"comment": "",
+			"comment": "When set to true, the key to transform a car to submarine mode changes from raise/lower convertible roof (hold H by default) to special vehicle transform (press X by default.)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113850,7 +113850,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "value"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -114034,7 +114034,7 @@
 		"0x5BBCF35BF6E456F7": {
 			"name": "SET_USE_DOUBLE_CLICK_FOR_CAR_JUMP",
 			"jhash": "",
-			"comment": "",
+			"comment": "Changes the car jump control to require a double-tap to activate.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -114047,7 +114047,7 @@
 		"0x71AFB258CCED3A27": {
 			"name": "GET_DOES_VEHICLE_HAVE_TOMBSTONE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns true only if the \"tombstone\" bone is attached to the vehicle, irrespective of \"FLAG_HAS_TOMBSTONE\" being present or not. Detaching the tombstone will return false.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114132,7 +114132,7 @@
 		"0x74C68EF97645E79D": {
 			"name": "SET_TYRE_HEALTH",
 			"jhash": "",
-			"comment": "_SET_TYRE_WEAR_MULTIPLIER must be active, otherwise values set to <1000.0f will default to 350.0f\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
+			"comment": "SET_TYRE_WEAR_RATE must be active, otherwise values set to <1000.0f will default to 350.0f\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114156,7 +114156,7 @@
 		"0x6E387895952F4F71": {
 			"name": "GET_TYRE_WEAR_RATE",
 			"jhash": "",
-			"comment": "Returns the multiplier value from _SET_TYRE_WEAR_MULTIPLIER\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
+			"comment": "Returns the multiplier value from SET_TYRE_WEAR_RATE\n\nUsable wheels:\n0: wheel_lf\n1: wheel_rf\n2: wheel_lm1\n3: wheel_rm1\n4: wheel_lr\n5: wheel_rr",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114265,7 +114265,7 @@
 		"0x3A375167F5782A65": {
 			"name": "SET_REDUCED_SUSPENSION_FORCE",
 			"jhash": "",
-			"comment": "Lowers the vehicle's stance. Only works for vehicles that support this feature.",
+			"comment": "Lowers the vehicle's stance. Only works for vehicles that have strAdvancedFlags 0x8000 and 0x4000000 set.",
 			"params": [
 				{
 					"type": "Vehicle",
