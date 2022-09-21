@@ -94029,7 +94029,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "perferPavements"
+					"name": "preferPavements"
 				},
 				{
 					"type": "BOOL",
@@ -94062,7 +94062,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "perferPavements"
+					"name": "preferPavements"
 				},
 				{
 					"type": "BOOL",
