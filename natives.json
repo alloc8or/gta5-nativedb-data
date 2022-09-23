@@ -105383,7 +105383,7 @@
 		"0x79D3B596FE44EE8B": {
 			"name": "SET_VEHICLE_DIRT_LEVEL",
 			"jhash": "0x2B39128B",
-			"comment": "You can't use values greater than 15.0nAlso, R* does (float)(rand() % 15) to get a random dirt level when generating a vehicle.",
+			"comment": "You can't use values greater than 15.0\nAlso, R* does (float)(rand() % 15) to get a random dirt level when generating a vehicle.",
 			"params": [
 				{
 					"type": "Vehicle",
