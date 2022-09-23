@@ -16,7 +16,7 @@
 		"0xE81651AD79516E48": {
 			"name": "START_NEW_SCRIPT",
 			"jhash": "0x3F166D0E",
-			"comment": "Examples:\n g_384A = SYSTEM::START_NEW_SCRIPT(\"cellphone_flashhand\", 1424);\n l_10D = SYSTEM::START_NEW_SCRIPT(\"taxiService\", 1828);\n SYSTEM::START_NEW_SCRIPT(\"AM_MP_YACHT\", 5000);\n SYSTEM::START_NEW_SCRIPT(\"emergencycall\", 512);\n SYSTEM::START_NEW_SCRIPT(\"emergencycall\", 512); \n SYSTEM::START_NEW_SCRIPT(\"FM_maintain_cloud_header_data\", 1424);\n SYSTEM::START_NEW_SCRIPT(\"FM_Mission_Controller\", 31000);\n SYSTEM::START_NEW_SCRIPT(\"tennis_family\", 3650);\n SYSTEM::START_NEW_SCRIPT(\"Celebrations\", 3650);\n\nDecompiled examples of usage when starting a script:\n \n    SCRIPT::REQUEST_SCRIPT(a_0);\n    if (SCRIPT::HAS_SCRIPT_LOADED(a_0)) {\n        SYSTEM::START_NEW_SCRIPT(a_0, v_3);\n        SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(a_0);\n        return 1;\n    }\n \nor:\n\n    v_2 = \"MrsPhilips2\";\n    SCRIPT::REQUEST_SCRIPT(v_2);\n    while (!SCRIPT::HAS_SCRIPT_LOADED(v_2)) {\n    SCRIPT::REQUEST_SCRIPT(v_2);\n    SYSTEM::WAIT(0);\n    }\n    sub_8792(36);\n    SYSTEM::START_NEW_SCRIPT(v_2, 17000);\n    SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(v_2);\n\nAll native script names: pastebin.com/K9adDsu4 and pastebin.com/yLNWicUi",
+			"comment": "Examples:\n g_384A = SYSTEM::START_NEW_SCRIPT(\"cellphone_flashhand\", 1424);\n l_10D = SYSTEM::START_NEW_SCRIPT(\"taxiService\", 1828);\n SYSTEM::START_NEW_SCRIPT(\"AM_MP_YACHT\", 5000);\n SYSTEM::START_NEW_SCRIPT(\"emergencycall\", 512);\n SYSTEM::START_NEW_SCRIPT(\"emergencycall\", 512); \n SYSTEM::START_NEW_SCRIPT(\"FM_maintain_cloud_header_data\", 1424);\n SYSTEM::START_NEW_SCRIPT(\"FM_Mission_Controller\", 31000);\n SYSTEM::START_NEW_SCRIPT(\"tennis_family\", 3650);\n SYSTEM::START_NEW_SCRIPT(\"Celebrations\", 3650);\n\nDecompiled examples of usage when starting a script:\n \n    SCRIPT::REQUEST_SCRIPT(a_0);\n    if (SCRIPT::HAS_SCRIPT_LOADED(a_0)) {\n        SYSTEM::START_NEW_SCRIPT(a_0, v_3);\n        SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(a_0);\n        return 1;\n    }\n \nor:\n\n    v_2 = \"MrsPhilips2\";\n    SCRIPT::REQUEST_SCRIPT(v_2);\n    while (!SCRIPT::HAS_SCRIPT_LOADED(v_2)) {\n    SCRIPT::REQUEST_SCRIPT(v_2);\n    SYSTEM::WAIT(0);\n    }\n    sub_8792(36);\n    SYSTEM::START_NEW_SCRIPT(v_2, 17000);\n    SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(v_2);",
 			"params": [
 				{
 					"type": "const char*",
@@ -640,7 +640,7 @@
 		"0xF9E56683CA8E11A5": {
 			"name": "PLAY_PED_RINGTONE",
 			"jhash": "0x1D530E47",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/RFb4GTny\n\nAUDIO::PLAY_PED_RINGTONE(\"Remote_Ring\", PLAYER::PLAYER_PED_ID(), 1);\nAUDIO::PLAY_PED_RINGTONE(\"Dial_and_Remote_Ring\", PLAYER::PLAYER_PED_ID(), 1);\n",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/RFb4GTny\n\nAUDIO::PLAY_PED_RINGTONE(\"Remote_Ring\", PLAYER::PLAYER_PED_ID(), 1);\nAUDIO::PLAY_PED_RINGTONE(\"Dial_and_Remote_Ring\", PLAYER::PLAYER_PED_ID(), 1);\n",
 			"params": [
 				{
 					"type": "const char*",
@@ -1097,7 +1097,7 @@
 		"0x8A694D7A68F8DC38": {
 			"name": "INTERRUPT_CONVERSATION_AND_PAUSE",
 			"jhash": "0xDD4A3F1F",
-			"comment": "One call found in the b617d scripts:\n\nAUDIO::_8A694D7A68F8DC38(NETWORK::NET_TO_PED(l_3989._f26F[0/*1*/]), \"CONV_INTERRUPT_QUIT_IT\", \"LESTER\");",
+			"comment": "One call found in the b617d scripts:\n\nAUDIO::INTERRUPT_CONVERSATION_AND_PAUSE(NETWORK::NET_TO_PED(l_3989._f26F[0/*1*/]), \"CONV_INTERRUPT_QUIT_IT\", \"LESTER\");",
 			"params": [
 				{
 					"type": "Ped",
@@ -1165,7 +1165,7 @@
 		"0x7345BDD95E62E0F2": {
 			"name": "REQUEST_MISSION_AUDIO_BANK",
 			"jhash": "0x916E37CA",
-			"comment": "All occurrences and usages found in b617d: pastebin.com/NzZZ2Tmm\nFull list of mission audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/missionAudioBankNames.json",
+			"comment": "All occurrences and usages found in b617d: https://pastebin.com/NzZZ2Tmm\nFull list of mission audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/missionAudioBankNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -1186,7 +1186,7 @@
 		"0xFE02FFBED8CA9D99": {
 			"name": "REQUEST_AMBIENT_AUDIO_BANK",
 			"jhash": "0x23C88BC7",
-			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: pastebin.com/XZ1tmGEz\nFull list of ambient audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientAudioBankNames.json",
+			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/XZ1tmGEz\nFull list of ambient audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientAudioBankNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -1207,7 +1207,7 @@
 		"0x2F844A8B08D76685": {
 			"name": "REQUEST_SCRIPT_AUDIO_BANK",
 			"jhash": "0x21322887",
-			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: pastebin.com/AkmDAVn6\nFull list of script audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json",
+			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/AkmDAVn6\nFull list of script audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -1378,7 +1378,7 @@
 		"0x7FF4944CC209192D": {
 			"name": "PLAY_SOUND",
 			"jhash": "0xB6E1917F",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/A8Ny8AHZ\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/A8Ny8AHZ\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
@@ -1453,7 +1453,7 @@
 		"0xE65F427EB70AB1ED": {
 			"name": "PLAY_SOUND_FROM_ENTITY",
 			"jhash": "0x95AE00F8",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/f2A7vTj0 \nNo changes made in b678d.\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/f2A7vTj0 \nNo changes made in b678d.\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
@@ -1519,7 +1519,7 @@
 		"0x8D8686B622B88120": {
 			"name": "PLAY_SOUND_FROM_COORD",
 			"jhash": "0xCAD3E2D5",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/eeFc5DiW\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/eeFc5DiW\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
@@ -1713,7 +1713,7 @@
 		"0x8E04FEDD28D42462": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_NATIVE",
 			"jhash": "0x5C57B85D",
-			"comment": "Plays ambient speech. See also _0x444180DB.\n\nped: The ped to play the ambient speech.\nspeechName: Name of the speech to play, eg. \"GENERIC_HI\".\nspeechParam: Can be one of the following:\nSPEECH_PARAMS_STANDARD\nSPEECH_PARAMS_ALLOW_REPEAT\nSPEECH_PARAMS_BEAT\nSPEECH_PARAMS_FORCE\nSPEECH_PARAMS_FORCE_FRONTEND\nSPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND\nSPEECH_PARAMS_FORCE_NORMAL\nSPEECH_PARAMS_FORCE_NORMAL_CLEAR\nSPEECH_PARAMS_FORCE_NORMAL_CRITICAL\nSPEECH_PARAMS_FORCE_SHOUTED\nSPEECH_PARAMS_FORCE_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_SHOUTED_CRITICAL\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY\nSPEECH_PARAMS_MEGAPHONE\nSPEECH_PARAMS_HELI\nSPEECH_PARAMS_FORCE_MEGAPHONE\nSPEECH_PARAMS_FORCE_HELI\nSPEECH_PARAMS_INTERRUPT\nSPEECH_PARAMS_INTERRUPT_SHOUTED\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL\nSPEECH_PARAMS_INTERRUPT_NO_FORCE\nSPEECH_PARAMS_INTERRUPT_FRONTEND\nSPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND\nSPEECH_PARAMS_ADD_BLIP\nSPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT\nSPEECH_PARAMS_ADD_BLIP_FORCE\nSPEECH_PARAMS_ADD_BLIP_SHOUTED\nSPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL\nSPEECH_PARAMS_SHOUTED\nSPEECH_PARAMS_SHOUTED_CLEAR\nSPEECH_PARAMS_SHOUTED_CRITICAL\n\nNote: A list of Name and Parameters can be found here pastebin.com/1GZS5dCL\n\nFull list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json",
+			"comment": "Plays ambient speech. See also _0x444180DB.\n\nped: The ped to play the ambient speech.\nspeechName: Name of the speech to play, eg. \"GENERIC_HI\".\nspeechParam: Can be one of the following:\nSPEECH_PARAMS_STANDARD\nSPEECH_PARAMS_ALLOW_REPEAT\nSPEECH_PARAMS_BEAT\nSPEECH_PARAMS_FORCE\nSPEECH_PARAMS_FORCE_FRONTEND\nSPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND\nSPEECH_PARAMS_FORCE_NORMAL\nSPEECH_PARAMS_FORCE_NORMAL_CLEAR\nSPEECH_PARAMS_FORCE_NORMAL_CRITICAL\nSPEECH_PARAMS_FORCE_SHOUTED\nSPEECH_PARAMS_FORCE_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_SHOUTED_CRITICAL\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY\nSPEECH_PARAMS_MEGAPHONE\nSPEECH_PARAMS_HELI\nSPEECH_PARAMS_FORCE_MEGAPHONE\nSPEECH_PARAMS_FORCE_HELI\nSPEECH_PARAMS_INTERRUPT\nSPEECH_PARAMS_INTERRUPT_SHOUTED\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR\nSPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL\nSPEECH_PARAMS_INTERRUPT_NO_FORCE\nSPEECH_PARAMS_INTERRUPT_FRONTEND\nSPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND\nSPEECH_PARAMS_ADD_BLIP\nSPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT\nSPEECH_PARAMS_ADD_BLIP_FORCE\nSPEECH_PARAMS_ADD_BLIP_SHOUTED\nSPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT\nSPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR\nSPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL\nSPEECH_PARAMS_SHOUTED\nSPEECH_PARAMS_SHOUTED_CLEAR\nSPEECH_PARAMS_SHOUTED_CRITICAL\n\nNote: A list of Name and Parameters can be found here https://pastebin.com/1GZS5dCL\n\nFull list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -1769,7 +1769,7 @@
 		"0x3523634255FC3318": {
 			"name": "PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE",
 			"jhash": "0x8386AE28",
-			"comment": "This is the same as PLAY_PED_AMBIENT_SPEECH_NATIVE and PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE but it will allow you to play a speech file from a specific voice file. It works on players and all peds, even animals.\n\nEX (C#):\nGTA.Native.Function.Call(Hash._0x3523634255FC3318, Game.Player.Character, \"GENERIC_INSULT_HIGH\", \"s_m_y_sheriff_01_white_full_01\", \"SPEECH_PARAMS_FORCE_SHOUTED\", 0);\n\nThe first param is the ped you want to play it on, the second is the speech name, the third is the voice name, the fourth is the speech param, and the last param is usually always 0.\n\nFull list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json",
+			"comment": "This is the same as PLAY_PED_AMBIENT_SPEECH_NATIVE and PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE but it will allow you to play a speech file from a specific voice file. It works on players and all peds, even animals.\n\nEX (C#):\nGTA.Native.Function.Call(Hash.PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE, Game.Player.Character, \"GENERIC_INSULT_HIGH\", \"s_m_y_sheriff_01_white_full_01\", \"SPEECH_PARAMS_FORCE_SHOUTED\", 0);\n\nThe first param is the ped you want to play it on, the second is the speech name, the third is the voice name, the fourth is the speech param, and the last param is usually always 0.\n\nFull list of speeches and voices names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -1934,7 +1934,7 @@
 		"0x6C8065A3B780185B": {
 			"name": "SET_AMBIENT_VOICE_NAME",
 			"jhash": "0xBD2EA1A1",
-			"comment": "Audio List\ngtaforums.com/topic/795622-audio-for-mods/\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/FTeAj4yZ\n\nYes",
+			"comment": "Audio List\ngtaforums.com/topic/795622-audio-for-mods/\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/FTeAj4yZ",
 			"params": [
 				{
 					"type": "Ped",
@@ -3259,7 +3259,7 @@
 		"0xDFEBD56D9BD1EB16": {
 			"name": "PLAY_POLICE_REPORT",
 			"jhash": "0x3F277B62",
-			"comment": "Plays the given police radio message.\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: pastebin.com/GBnsQ5hr\nFull list of police report names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/policeReportNames.json",
+			"comment": "Plays the given police radio message.\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/GBnsQ5hr\nFull list of police report names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/policeReportNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3415,7 +3415,7 @@
 		"0x1F1F957154EC51DF": {
 			"name": "LOAD_STREAM",
 			"jhash": "0x0D89599D",
-			"comment": "Example:\nAUDIO::LOAD_STREAM(\"CAR_STEAL_1_PASSBY\", \"CAR_STEAL_1_SOUNDSET\");\n\nAll found occurrences in the b678d decompiled scripts: pastebin.com/3rma6w5w\n\nStream names often ends with \"_MASTER\", \"_SMALL\" or \"_STREAM\". Also \"_IN\", \"_OUT\" and numbers.   \n\nsoundSet is often set to 0 in the scripts. These are common to end the soundSets: \"_SOUNDS\", \"_SOUNDSET\" and numbers.\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
+			"comment": "Example:\nAUDIO::LOAD_STREAM(\"CAR_STEAL_1_PASSBY\", \"CAR_STEAL_1_SOUNDSET\");\n\nAll found occurrences in the b678d decompiled scripts: https://pastebin.com/3rma6w5w\n\nStream names often ends with \"_MASTER\", \"_SMALL\" or \"_STREAM\". Also \"_IN\", \"_OUT\" and numbers.   \n\nsoundSet is often set to 0 in the scripts. These are common to end the soundSets: \"_SOUNDS\", \"_SOUNDSET\" and numbers.\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3479,7 +3479,7 @@
 		"0xEBAA9B64D76356FD": {
 			"name": "PLAY_STREAM_FROM_OBJECT",
 			"jhash": "0xC5266BF7",
-			"comment": "Used with AUDIO::LOAD_STREAM\n\nExample from finale_heist2b.c4:\nTASK::TASK_SYNCHRONIZED_SCENE(l_4C8[2/*14*/], l_4C8[2/*14*/]._f7, l_30A, \"push_out_vault_l\", 4.0, -1.5, 5, 713, 4.0, 0);\n                    PED::SET_SYNCHRONIZED_SCENE_PHASE(l_4C8[2/*14*/]._f7, 0.0);\n                    PED::_2208438012482A1A(l_4C8[2/*14*/], 0, 0);\n                    PED::SET_PED_COMBAT_ATTRIBUTES(l_4C8[2/*14*/], 38, 1);\n                    PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(l_4C8[2/*14*/], 1);\n                    if (AUDIO::LOAD_STREAM(\"Gold_Cart_Push_Anim_01\", \"BIG_SCORE_3B_SOUNDS\")) {\n                        AUDIO::PLAY_STREAM_FROM_OBJECT(l_36F[0/*1*/]);\n                    }",
+			"comment": "Used with AUDIO::LOAD_STREAM\n\nExample from finale_heist2b.c4:\nTASK::TASK_SYNCHRONIZED_SCENE(l_4C8[2/*14*/], l_4C8[2/*14*/]._f7, l_30A, \"push_out_vault_l\", 4.0, -1.5, 5, 713, 4.0, 0);\n                    PED::SET_SYNCHRONIZED_SCENE_PHASE(l_4C8[2/*14*/]._f7, 0.0);\n                    PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(l_4C8[2/*14*/], 0, 0);\n                    PED::SET_PED_COMBAT_ATTRIBUTES(l_4C8[2/*14*/], 38, 1);\n                    PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(l_4C8[2/*14*/], 1);\n                    if (AUDIO::LOAD_STREAM(\"Gold_Cart_Push_Anim_01\", \"BIG_SCORE_3B_SOUNDS\")) {\n                        AUDIO::PLAY_STREAM_FROM_OBJECT(l_36F[0/*1*/]);\n                    }",
 			"params": [
 				{
 					"type": "Object",
@@ -4121,7 +4121,7 @@
 		"0x013A80FC08F6E4F2": {
 			"name": "START_AUDIO_SCENE",
 			"jhash": "0xE48D757B",
-			"comment": "Used to prepare a scene where the surrounding sound is muted or a bit changed. This does not play any sound.\n\nList of all usable scene names found in b617d. Sorted alphabetically and identical names removed: pastebin.com/MtM9N9CC\nFull list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
+			"comment": "Used to prepare a scene where the surrounding sound is muted or a bit changed. This does not play any sound.\n\nList of all usable scene names found in b617d. Sorted alphabetically and identical names removed: https://pastebin.com/MtM9N9CC\nFull list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4202,7 +4202,7 @@
 		"0x153973AB99FE8980": {
 			"name": "ADD_ENTITY_TO_AUDIO_MIX_GROUP",
 			"jhash": "0x2BC93264",
-			"comment": "All found occurrences in b678d:\npastebin.com/ceu67jz8",
+			"comment": "All found occurrences in b678d:\nhttps://pastebin.com/ceu67jz8",
 			"params": [
 				{
 					"type": "Entity",
@@ -4265,7 +4265,7 @@
 		"0x1E5185B72EF5158A": {
 			"name": "PREPARE_MUSIC_EVENT",
 			"jhash": "0x534A5C1C",
-			"comment": "All music event names found in the b617d scripts: pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
+			"comment": "All music event names found in the b617d scripts: https://pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4278,7 +4278,7 @@
 		"0x5B17A90291133DA5": {
 			"name": "CANCEL_MUSIC_EVENT",
 			"jhash": "0x89FF942D",
-			"comment": "All music event names found in the b617d scripts: pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
+			"comment": "All music event names found in the b617d scripts: https://pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4291,7 +4291,7 @@
 		"0x706D57B0F50DA710": {
 			"name": "TRIGGER_MUSIC_EVENT",
 			"jhash": "0xB6094948",
-			"comment": "List of all usable event names found in b617d used with this native. Sorted alphabetically and identical names removed: pastebin.com/RzDFmB1W\n\nAll music event names found in the b617d scripts: pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
+			"comment": "List of all usable event names found in b617d used with this native. Sorted alphabetically and identical names removed: https://pastebin.com/RzDFmB1W\n\nAll music event names found in the b617d scripts: https://pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4822,7 +4822,7 @@
 		"0x044DBAD7A7FA2BE5": {
 			"name": "SET_PORTAL_SETTINGS_OVERRIDE",
 			"jhash": "0x8AD670EC",
-			"comment": "Found in the b617d scripts, duplicates removed:  \n\nAUDIO::_044DBAD7A7FA2BE5(\"V_CARSHOWROOM_PS_WINDOW_UNBROKEN\", \"V_CARSHOWROOM_PS_WINDOW_BROKEN\");\n\n AUDIO::_044DBAD7A7FA2BE5(\"V_CIA_PS_WINDOW_UNBROKEN\", \"V_CIA_PS_WINDOW_BROKEN\");\n\n AUDIO::_044DBAD7A7FA2BE5(\"V_DLC_HEIST_APARTMENT_DOOR_CLOSED\", \"V_DLC_HEIST_APARTMENT_DOOR_OPEN\");\n\n AUDIO::_044DBAD7A7FA2BE5(\"V_FINALEBANK_PS_VAULT_INTACT\", \"V_FINALEBANK_PS_VAULT_BLOWN\");\n\n AUDIO::_044DBAD7A7FA2BE5(\"V_MICHAEL_PS_BATHROOM_WITH_WINDOW\", \"V_MICHAEL_PS_BATHROOM_WITHOUT_WINDOW\");",
+			"comment": "Found in the b617d scripts, duplicates removed:  \n\nAUDIO::SET_PORTAL_SETTINGS_OVERRIDE(\"V_CARSHOWROOM_PS_WINDOW_UNBROKEN\", \"V_CARSHOWROOM_PS_WINDOW_BROKEN\");\n\n AUDIO::SET_PORTAL_SETTINGS_OVERRIDE(\"V_CIA_PS_WINDOW_UNBROKEN\", \"V_CIA_PS_WINDOW_BROKEN\");\n\n AUDIO::SET_PORTAL_SETTINGS_OVERRIDE(\"V_DLC_HEIST_APARTMENT_DOOR_CLOSED\", \"V_DLC_HEIST_APARTMENT_DOOR_OPEN\");\n\n AUDIO::SET_PORTAL_SETTINGS_OVERRIDE(\"V_FINALEBANK_PS_VAULT_INTACT\", \"V_FINALEBANK_PS_VAULT_BLOWN\");\n\n AUDIO::SET_PORTAL_SETTINGS_OVERRIDE(\"V_MICHAEL_PS_BATHROOM_WITH_WINDOW\", \"V_MICHAEL_PS_BATHROOM_WITHOUT_WINDOW\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -4839,7 +4839,7 @@
 		"0xB4BBFD9CD8B3922B": {
 			"name": "REMOVE_PORTAL_SETTINGS_OVERRIDE",
 			"jhash": "0xD24B4D0C",
-			"comment": " Found in the b617d scripts, duplicates removed: \n\n AUDIO::_B4BBFD9CD8B3922B(\"V_CARSHOWROOM_PS_WINDOW_UNBROKEN\");\n AUDIO::_B4BBFD9CD8B3922B(\"V_CIA_PS_WINDOW_UNBROKEN\");\n AUDIO::_B4BBFD9CD8B3922B(\"V_DLC_HEIST_APARTMENT_DOOR_CLOSED\");\n AUDIO::_B4BBFD9CD8B3922B(\"V_FINALEBANK_PS_VAULT_INTACT\");\n AUDIO::_B4BBFD9CD8B3922B(\"V_MICHAEL_PS_BATHROOM_WITH_WINDOW\");",
+			"comment": " Found in the b617d scripts, duplicates removed: \n\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_CARSHOWROOM_PS_WINDOW_UNBROKEN\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_CIA_PS_WINDOW_UNBROKEN\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_DLC_HEIST_APARTMENT_DOOR_CLOSED\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_FINALEBANK_PS_VAULT_INTACT\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_MICHAEL_PS_BATHROOM_WITH_WINDOW\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -5290,7 +5290,7 @@
 		"0x6ABFA3E16460F22D": {
 			"name": "CREATE_CAMERA_WITH_PARAMS",
 			"jhash": "0x0688BE9A",
-			"comment": "CAM::_GET_GAMEPLAY_CAM_COORDS can be used instead of posX,Y,Z\nCAM::_GET_GAMEPLAY_CAM_ROT can be used instead of rotX,Y,Z\nCAM::_80EC114669DAEFF4() can be used instead of p7 (Possible p7 is FOV parameter. )\np8 ???\np9 uses 2 by default\n",
+			"comment": "p9 uses 2 by default",
 			"params": [
 				{
 					"type": "Hash",
@@ -6115,7 +6115,7 @@
 		"0x202A5ED9CE01D6E7": {
 			"name": "HARD_ATTACH_CAM_TO_ENTITY",
 			"jhash": "",
-			"comment": "Example from am_mp_drone script: \n\nCAM::_0x202A5ED9CE01D6E7(Local_190.f_169, NETWORK::NET_TO_OBJ(Local_190.f_159), 0f, 0f, 180f, Var0, 1);",
+			"comment": "Example from am_mp_drone script: \n\nCAM::HARD_ATTACH_CAM_TO_ENTITY(Local_190.f_169, NETWORK::NET_TO_OBJ(Local_190.f_159), 0f, 0f, 180f, Var0, 1);",
 			"params": [
 				{
 					"type": "Cam",
@@ -7126,7 +7126,7 @@
 		"0xE32EFE9AB4A9AA0C": {
 			"name": "PLAY_SYNCHRONIZED_CAM_ANIM",
 			"jhash": "0x9458459E",
-			"comment": "Examples:\n\nCAM::PLAY_SYNCHRONIZED_CAM_ANIM(l_2734, NETWORK::_02C40BF885C567B6(l_2739), \"PLAYER_EXIT_L_CAM\", \"mp_doorbell\");\n\nCAM::PLAY_SYNCHRONIZED_CAM_ANIM(l_F0D[7/*1*/], l_F4D[15/*1*/], \"ah3b_attackheli_cam2\", \"missheistfbi3b_helicrash\");",
+			"comment": "Examples:\n\nCAM::PLAY_SYNCHRONIZED_CAM_ANIM(l_2734, NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(l_2739), \"PLAYER_EXIT_L_CAM\", \"mp_doorbell\");\n\nCAM::PLAY_SYNCHRONIZED_CAM_ANIM(l_F0D[7/*1*/], l_F4D[15/*1*/], \"ah3b_attackheli_cam2\", \"missheistfbi3b_helicrash\");",
 			"params": [
 				{
 					"type": "Any",
@@ -7400,7 +7400,7 @@
 		"0x0225778816FDC28C": {
 			"name": "SET_GAMEPLAY_CAM_MAX_MOTION_BLUR_STRENGTH_THIS_UPDATE",
 			"jhash": "0x1126E37C",
-			"comment": "some camera effect that is (also) used in the drunk-cheat, and turned off (by setting it to 0.0) along with the shaking effects once the drunk cheat is disabled. Possibly a cinematic or script-cam version of _0x487A82C650EB7799",
+			"comment": "some camera effect that is (also) used in the drunk-cheat, and turned off (by setting it to 0.0) along with the shaking effects once the drunk cheat is disabled.",
 			"params": [
 				{
 					"type": "float",
@@ -7817,7 +7817,7 @@
 		"0x8F993D26E0CA5E8E": {
 			"name": "SET_THIRD_PERSON_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE",
 			"jhash": "0x749909AC",
-			"comment": "minimum: Degrees between -180f and 180f.\nmaximum: Degrees between -180f and 180f.\n\nClamps the gameplay camera's current yaw.\n\nEg. _CLAMP_GAMEPLAY_CAM_YAW(0.0f, 0.0f) will set the horizontal angle directly behind the player.",
+			"comment": "minimum: Degrees between -180f and 180f.\nmaximum: Degrees between -180f and 180f.\n\nClamps the gameplay camera's current yaw.\n\nEg. SET_THIRD_PERSON_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE(0.0f, 0.0f) will set the horizontal angle directly behind the player.",
 			"params": [
 				{
 					"type": "float",
@@ -7837,7 +7837,7 @@
 		"0xA516C198B7DCA1E1": {
 			"name": "SET_THIRD_PERSON_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE",
 			"jhash": "0xFA3A16E7",
-			"comment": "minimum: Degrees between -90f and 90f.\nmaximum: Degrees between -90f and 90f.\n\nClamps the gameplay camera's current pitch.\n\nEg. _CLAMP_GAMEPLAY_CAM_PITCH(0.0f, 0.0f) will set the vertical angle directly behind the player.",
+			"comment": "minimum: Degrees between -90f and 90f.\nmaximum: Degrees between -90f and 90f.\n\nClamps the gameplay camera's current pitch.\n\nEg. SET_THIRD_PERSON_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE(0.0f, 0.0f) will set the vertical angle directly behind the player.",
 			"params": [
 				{
 					"type": "float",
@@ -7857,7 +7857,7 @@
 		"0xDF2E1F7742402E81": {
 			"name": "SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE",
 			"jhash": "0x77340650",
-			"comment": "Seems to animate the gameplay camera zoom.\n\nEg. _ANIMATE_GAMEPLAY_CAM_ZOOM(1f, 1000f);\nwill animate the camera zooming in from 1000 meters away.\n\nGame scripts use it like this:\n\n// Setting this to 1 prevents V key from changing zoom\nPLAYER::SET_PLAYER_FORCED_ZOOM(PLAYER::PLAYER_ID(), 1);\n\n// These restrict how far you can move cam up/down left/right\nCAM::_CLAMP_GAMEPLAY_CAM_YAW(-20f, 50f);\nCAM::_CLAMP_GAMEPLAY_CAM_PITCH(-60f, 0f);\n\nCAM::_ANIMATE_GAMEPLAY_CAM_ZOOM(1f, 1f);",
+			"comment": "Seems to animate the gameplay camera zoom.\n\nEg. SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE(1f, 1000f);\nwill animate the camera zooming in from 1000 meters away.\n\nGame scripts use it like this:\n\n// Setting this to 1 prevents V key from changing zoom\nPLAYER::SET_PLAYER_FORCED_ZOOM(PLAYER::PLAYER_ID(), 1);\n\n// These restrict how far you can move cam up/down left/right\nCAM::SET_THIRD_PERSON_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE(-20f, 50f);\nCAM::_CLAMP_GAMEPLAY_CAM_PITCH(-60f, 0f);\n\nCAM::_ANIMATE_GAMEPLAY_CAM_ZOOM(1f, 1f);",
 			"params": [
 				{
 					"type": "float",
@@ -7894,7 +7894,7 @@
 		"0xDE2EF5DA284CC8DF": {
 			"name": "DISABLE_ON_FOOT_FIRST_PERSON_VIEW_THIS_UPDATE",
 			"jhash": "",
-			"comment": "Disables first person camera for the current frame.\n\nFound in decompiled scripts:\nGRAPHICS::DRAW_DEBUG_TEXT_2D(\"Disabling First Person Cam\", 0.5, 0.8, 0.0, 0, 0, 255, 255);\nCAM::_DE2EF5DA284CC8DF();",
+			"comment": "Disables first person camera for the current frame.\n\nFound in decompiled scripts:\nGRAPHICS::DRAW_DEBUG_TEXT_2D(\"Disabling First Person Cam\", 0.5, 0.8, 0.0, 0, 0, 255, 255);\nCAM::DISABLE_ON_FOOT_FIRST_PERSON_VIEW_THIS_UPDATE();",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -9160,7 +9160,7 @@
 		"0x21E253A7F8DA5DFB": {
 			"name": "SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_NAME",
 			"jhash": "",
-			"comment": "From b617 scripts:\n\nCAM::_21E253A7F8DA5DFB(\"DINGHY\");\nCAM::_21E253A7F8DA5DFB(\"ISSI2\");\nCAM::_21E253A7F8DA5DFB(\"SPEEDO\");",
+			"comment": "From b617 scripts:\n\nCAM::SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_NAME(\"DINGHY\");\nCAM::SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_NAME(\"ISSI2\");\nCAM::SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_NAME(\"SPEEDO\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -10255,7 +10255,7 @@
 		"0x0546524ADE2E9723": {
 			"name": "SET_CUTSCENE_PED_PROP_VARIATION",
 			"jhash": "0x22E9A9DE",
-			"comment": "Thanks R*! ;)\n\nif ((l_161 == 0) || (l_161 == 2)) {\n    sub_2ea27(\"Trying to set Jimmy prop variation\");\n    CUTSCENE::_0546524ADE2E9723(\"Jimmy_Boston\", 1, 0, 0, 0);\n}\n\nFull list of ped components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json",
+			"comment": "Thanks R*! ;)\n\nif ((l_161 == 0) || (l_161 == 2)) {\n    sub_2ea27(\"Trying to set Jimmy prop variation\");\n    CUTSCENE::SET_CUTSCENE_PED_PROP_VARIATION(\"Jimmy_Boston\", 1, 0, 0, 0);\n}\n\nFull list of ped components by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -10615,7 +10615,7 @@
 		"0x01095C95CD46B624": {
 			"name": "DATAFILE_SELECT_CREATOR_STATS",
 			"jhash": "0xB8515B2F",
-			"comment": "if ((NETWORK::_597F8DBA9B206FC7() > 0) && DATAFILE::_01095C95CD46B624(0)) {\n    v_10 = DATAFILE::_GET_ROOT_OBJECT();\n    v_11 = DATAFILE::_OBJECT_VALUE_GET_INTEGER(v_10, \"pt\");\n    sub_20202(2, v_11);\n    a_0 += 1;\n} else { \n    a_0 += 1;\n}\n",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -10632,7 +10632,7 @@
 		"0xC5238C011AF405E4": {
 			"name": "DATAFILE_LOAD_OFFLINE_UGC",
 			"jhash": "0x660C468E",
-			"comment": "Loads a User-Generated Content (UGC) file. These files can be found in \"[GTA5]\\data\\ugc\" and \"[GTA5]\\common\\patch\\ugc\". They seem to follow a naming convention, most likely of \"[name]_[part].ugc\". See example below for usage.\n\nReturns whether or not the file was successfully loaded.\n\nExample:\nDATAFILE::_LOAD_UGC_FILE(\"RockstarPlaylists\") // loads \"rockstarplaylists_00.ugc\"",
+			"comment": "Loads a User-Generated Content (UGC) file. These files can be found in \"[GTA5]\\data\\ugc\" and \"[GTA5]\\common\\patch\\ugc\". They seem to follow a naming convention, most likely of \"[name]_[part].ugc\". See example below for usage.\n\nReturns whether or not the file was successfully loaded.\n\nExample:\nDATAFILE::DATAFILE_LOAD_OFFLINE_UGC(\"RockstarPlaylists\") // loads \"rockstarplaylists_00.ugc\"",
 			"params": [
 				{
 					"type": "const char*",
@@ -10742,7 +10742,7 @@
 		"0xBEDB96A7584AA8CF": {
 			"name": "DATAFILE_IS_SAVE_PENDING",
 			"jhash": "0x5DCD0796",
-			"comment": "Example:\nif (!DATAFILE::_BEDB96A7584AA8CF())\n{\n    if (!g_109E3)\n {\n        if (((sub_d4f() == 2) == 0) && (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS()))\n      {\n            if (NETWORK::NETWORK_IS_CLOUD_AVAILABLE())\n         {\n                g_17A8B = 0;\n            }\n            if (!g_D52C)\n          {\n                sub_730();\n            }\n        }\n    }\n}\n\n",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -11622,7 +11622,7 @@
 		"0x241FCA5B1AA14F75": {
 			"name": "ARE_ANY_CCS_PENDING",
 			"jhash": "0x0AF83036",
-			"comment": "Only used once in scripts, in maintransition.\n\nmaintransition.c4, line ~82432:\nif (PED::_7350823473013C02(PLAYER::PLAYER_PED_ID()) && (DECORATOR::_241FCA5B1AA14F75() == 0)) {\n    g_2542A5 = a_1; // 'g_2542A5' used in 'building_controller.ysc' for IPL stuff?\n    return 1;\n}\n\nLikely used solely for the players ped. The function it's in seems to only be used for initialization/quitting. Called among natives to discard scaleforms, disable frontend, fading in/out, etc. Neighboring strings to some calls include \"HUD_JOINING\", \"HUD_QUITTING\".",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -11630,7 +11630,7 @@
 		"0x812595A0644CE1DE": {
 			"name": "IS_DLC_PRESENT",
 			"jhash": "0x1F321943",
-			"comment": "Example:\nDLC::IS_DLC_PRESENT($\\mpbusiness2\\);\n($ = gethashkey)\n\nbruteforce these:\n0xB119F6D\n0x96F02EE6",
+			"comment": "Returns true if the given DLC pack is present.",
 			"params": [
 				{
 					"type": "Hash",
@@ -11643,7 +11643,7 @@
 		"0xF2E07819EF1A5289": {
 			"name": "DLC_CHECK_CLOUD_DATA_CORRECT",
 			"jhash": "0x881B1FDB",
-			"comment": "MulleDK19: This function is hard-coded to always return 1.",
+			"comment": "This function is hard-coded to always return 1.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -11651,7 +11651,7 @@
 		"0x9489659372A81585": {
 			"name": "GET_EXTRACONTENT_CLOUD_RESULT",
 			"jhash": "0xC2169164",
-			"comment": "MulleDK19: This function is hard-coded to always return 0.",
+			"comment": "This function is hard-coded to always return 0.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -11659,7 +11659,7 @@
 		"0xA213B11DFF526300": {
 			"name": "DLC_CHECK_COMPAT_PACK_CONFIGURATION",
 			"jhash": "0xF79A97F5",
-			"comment": "MulleDK19: This function is hard-coded to always return 1.",
+			"comment": "This function is hard-coded to always return 1.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -11701,7 +11701,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "unused"
 				}
 			],
@@ -11714,7 +11714,7 @@
 		"0xD7C10C4A637992C9": {
 			"name": "ON_ENTER_SP",
 			"jhash": "0x8BF60FC3",
-			"comment": "Unloads GROUP_MAP (GTAO/MP) DLC data and loads GROUP_MAP_SP DLC. Neither are loaded by default, 0888C3502DBBEEF5 is a cognate to this function and loads MP DLC (and unloads SP DLC by extension).\n\nThe original (and wrong) definition is below:\n\nThis unload the GTA:O DLC map parts (like high end garages/apartments).\nWorks in singleplayer.",
+			"comment": "Unloads GROUP_MAP (GTAO/MP) DLC data and loads GROUP_MAP_SP DLC. Neither are loaded by default, ON_ENTER_MP is a cognate to this function and loads MP DLC (and unloads SP DLC by extension).\nWorks in singleplayer.",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -13601,7 +13601,7 @@
 		"0xFB71170B7E76ACBA": {
 			"name": "GET_ENTITY_BONE_INDEX_BY_NAME",
 			"jhash": "0xE4ECAC22",
-			"comment": "Returns the index of the bone. If the bone was not found, -1 will be returned. \n\nlist:\npastebin.com/D7JMnX1g\n\nBoneNames:\n  chassis,\n  windscreen,\n   seat_pside_r,\n seat_dside_r,\n bodyshell,\n    suspension_lm,\n    suspension_lr,\n    platelight,\n   attach_female,\n    attach_male,\n  bonnet,\n   boot,\n chassis_dummy,  //Center of the dummy\n chassis_Control,    //Not found yet\n   door_dside_f,   //Door left, front\n    door_dside_r,   //Door left, back\n door_pside_f,   //Door right, front\n   door_pside_r,   //Door right, back\n    Gun_GripR,\n    windscreen_f,\n platelight, //Position where the light above the numberplate is located\n   VFX_Emitter,\n  window_lf,  //Window left, front\n  window_lr,  //Window left, back\n   window_rf,  //Window right, front\n window_rr,  //Window right, back\n  engine, //Position of the engine\n  gun_ammo,\n ROPE_ATTATCH,   //Not misspelled. In script \"finale_heist2b.c4\".\n    wheel_lf,   //Wheel left, front\n   wheel_lr,   //Wheel left, back\n    wheel_rf,   //Wheel right, front\n  wheel_rr,   //Wheel right, back\n   exhaust,    //Exhaust. shows only the position of the stock-exhaust\n   overheat,   //A position on the engine(not exactly sure, how to name it)\n  misc_e, //Not a car-bone.\n seat_dside_f,   //Driver-seat\n seat_pside_f,   //Seat next to driver\n Gun_Nuzzle,\n   seat_r\n\nI doubt that the function is case-sensitive, since I found a \"Chassis\" and a \"chassis\". - Just tested: Definitely not case-sensitive.\n\n",
+			"comment": "Returns the index of the bone. If the bone was not found, -1 will be returned. \n\nlist:\nhttps://pastebin.com/D7JMnX1g\n\nBoneNames:\n  chassis,\n  windscreen,\n   seat_pside_r,\n seat_dside_r,\n bodyshell,\n    suspension_lm,\n    suspension_lr,\n    platelight,\n   attach_female,\n    attach_male,\n  bonnet,\n   boot,\n chassis_dummy,  //Center of the dummy\n chassis_Control,    //Not found yet\n   door_dside_f,   //Door left, front\n    door_dside_r,   //Door left, back\n door_pside_f,   //Door right, front\n   door_pside_r,   //Door right, back\n    Gun_GripR,\n    windscreen_f,\n platelight, //Position where the light above the numberplate is located\n   VFX_Emitter,\n  window_lf,  //Window left, front\n  window_lr,  //Window left, back\n   window_rf,  //Window right, front\n window_rr,  //Window right, back\n  engine, //Position of the engine\n  gun_ammo,\n ROPE_ATTATCH,   //Not misspelled. In script \"finale_heist2b.c4\".\n    wheel_lf,   //Wheel left, front\n   wheel_lr,   //Wheel left, back\n    wheel_rf,   //Wheel right, front\n  wheel_rr,   //Wheel right, back\n   exhaust,    //Exhaust. shows only the position of the stock-exhaust\n   overheat,   //A position on the engine(not exactly sure, how to name it)\n  misc_e, //Not a car-bone.\n seat_dside_f,   //Driver-seat\n seat_pside_f,   //Seat next to driver\n Gun_Nuzzle,\n   seat_r\n\nI doubt that the function is case-sensitive, since I found a \"Chassis\" and a \"chassis\". - Just tested: Definitely not case-sensitive.\n\n",
 			"params": [
 				{
 					"type": "Entity",
@@ -13943,7 +13943,7 @@
 		"0x07F1BE2BCCAA27A7": {
 			"name": "FIND_ANIM_EVENT_PHASE",
 			"jhash": "0xC41DDA62",
-			"comment": "In the script \"player_scene_t_bbfight.c4\":\n\"if (ENTITY::FIND_ANIM_EVENT_PHASE(&l_16E, &l_19F[v_4/*16*/], v_9, &v_A, &v_B))\"\n-- &l_16E (p0) is requested as an anim dictionary earlier in the script.\n-- &l_19F[v_4/*16*/] (p1) is used in other natives in the script as the \"animation\" param.\n-- v_9 (p2) is instantiated as \"victim_fall\"; I'm guessing that's another anim\n--v_A and v_B (p3 & p4) are both set as -1.0, but v_A is used immediately after this native for: \n\"if (v_A < ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(...))\"\nBoth v_A and v_B are seemingly used to contain both Vector3's and floats, so I can't say what either really is other than that they are both output parameters. p4 looks more like a *Vector3 though\n-alphazolam\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
+			"comment": "In the script \"player_scene_t_bbfight.c4\":\n\"if (ENTITY::FIND_ANIM_EVENT_PHASE(&l_16E, &l_19F[v_4/*16*/], v_9, &v_A, &v_B))\"\n-- &l_16E (p0) is requested as an anim dictionary earlier in the script.\n-- &l_19F[v_4/*16*/] (p1) is used in other natives in the script as the \"animation\" param.\n-- v_9 (p2) is instantiated as \"victim_fall\"; I'm guessing that's another anim\n--v_A and v_B (p3 & p4) are both set as -1.0, but v_A is used immediately after this native for: \n\"if (v_A < ENTITY::GET_ENTITY_ANIM_CURRENT_TIME(...))\"\nBoth v_A and v_B are seemingly used to contain both Vector3's and floats, so I can't say what either really is other than that they are both output parameters. p4 looks more like a *Vector3 though\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -15050,7 +15050,7 @@
 		"0x92C47782FDA8B2A3": {
 			"name": "CREATE_MODEL_SWAP",
 			"jhash": "0x0BC12F9E",
-			"comment": "Only works with objects!\nNetwork players do not see changes done with this.\n- Did ya try modifying p6 lol",
+			"comment": "Only works with objects!",
 			"params": [
 				{
 					"type": "float",
@@ -15432,7 +15432,7 @@
 		"0x46F8696933A63C9B": {
 			"name": "GET_ENTITY_BONE_POSTION",
 			"jhash": "",
-			"comment": "Gets the world rotation of the specified bone of the specified entity.\nThis native is used in casinoroulette.c but I don't know yet what is the difference with _GET_ENTITY_BONE_ROTATION",
+			"comment": "Gets the world position of the specified bone of the specified entity.",
 			"params": [
 				{
 					"type": "Entity",
@@ -15556,7 +15556,7 @@
 		"0x1F922734E259BD26": {
 			"name": "GET_ENTITY_OF_TYPE_ATTACHED_TO_ENTITY",
 			"jhash": "",
-			"comment": "Gets the handle of an entity with a specific model hash attached to another entity, such as an object attached to a ped.\n This native does not appear to have anything to do with pickups as in scripts it is used with objects.\n\nExample from fm_mission_controller_2020.c:\n\niVar8 = ENTITY::_0x1F922734E259BD26(bParam0->f_9, joaat(\"p_cs_clipboard\"));",
+			"comment": "Gets the handle of an entity with a specific model hash attached to another entity, such as an object attached to a ped.\n This native does not appear to have anything to do with pickups as in scripts it is used with objects.\n\nExample from fm_mission_controller_2020.c:\n\niVar8 = ENTITY::GET_ENTITY_OF_TYPE_ATTACHED_TO_ENTITY(bParam0->f_9, joaat(\"p_cs_clipboard\"));",
 			"params": [
 				{
 					"type": "Entity",
@@ -16362,7 +16362,7 @@
 		"0x6D793F03A631FE56": {
 			"name": "GET_SHOP_PED_QUERY_OUTFIT",
 			"jhash": "0x2F8013A1",
-			"comment": "outfitIndex: from 0 to _GET_NUM_SHOP_PED_OUTFITS(characterIndex, false) - 1.\nSee https://git.io/JtcB8 for example and outfit struct.",
+			"comment": "outfitIndex: from 0 to SETUP_SHOP_PED_OUTFIT_QUERY(characterIndex, false) - 1.\nSee https://git.io/JtcB8 for example and outfit struct.",
 			"params": [
 				{
 					"type": "int",
@@ -20149,7 +20149,7 @@
 		"0xEFABC7722293DA7C": {
 			"name": "ADJUST_NEXT_POS_SIZE_AS_NORMALIZED_16_9",
 			"jhash": "",
-			"comment": "*",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -23992,7 +23992,7 @@
 		"0xFDF3D97C674AFB66": {
 			"name": "GET_TIMECYCLE_MODIFIER_INDEX",
 			"jhash": "0x594FEEC4",
-			"comment": "Only use for this in the PC scripts is:\n\nif (GRAPHICS::GET_TIMECYCLE_MODIFIER_INDEX() != -1)\n\nFor a full list, see here: pastebin.com/cnk7FTF2",
+			"comment": "Only use for this in the PC scripts is:\n\nif (GRAPHICS::GET_TIMECYCLE_MODIFIER_INDEX() != -1)",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -24131,7 +24131,7 @@
 		"0xBB0527EC6341496D": {
 			"name": "GET_EXTRA_TCMODIFIER",
 			"jhash": "",
-			"comment": "See _0xFDF3D97C674AFB66 for use, works the same just for the secondary timecycle modifier.\nReturns an integer representing the Timecycle modifier",
+			"comment": "See GET_TIMECYCLE_MODIFIER_INDEX for use, works the same just for the secondary timecycle modifier.\nReturns an integer representing the Timecycle modifier",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -24985,7 +24985,7 @@
 		"0x80338406F3475E55": {
 			"name": "BEGIN_TEXT_COMMAND_SCALEFORM_STRING",
 			"jhash": "0x3AC9CB55",
-			"comment": "Called prior to adding a text component to the UI. After doing so, GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING is called.\n\nExamples:\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"NUMBER\");\nHUD::ADD_TEXT_COMPONENT_INTEGER(MISC::ABSI(a_1));\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRING\");\nHUD::_ADD_TEXT_COMPONENT_STRING(a_2);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRTNM2\");\nHUD::_0x17299B63C7683A2B(v_3);\nHUD::_0x17299B63C7683A2B(v_4);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRTNM1\");\nHUD::_0x17299B63C7683A2B(v_3);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();",
+			"comment": "Called prior to adding a text component to the UI. After doing so, GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING is called.\n\nExamples:\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"NUMBER\");\nHUD::ADD_TEXT_COMPONENT_INTEGER(MISC::ABSI(a_1));\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRING\");\nHUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(a_2);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRTNM2\");\nHUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(v_3);\nHUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(v_4);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();\n\nGRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(\"STRTNM1\");\nHUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL_HASH_KEY(v_3);\nGRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();",
 			"params": [
 				{
 					"type": "const char*",
@@ -25202,7 +25202,7 @@
 		"0xFDDC2B4ED3C69DF0": {
 			"name": "DRAW_TV_CHANNEL",
 			"jhash": "0x8129EF89",
-			"comment": "All calls to this native are preceded by calls to GRAPHICS::_0x61BB1D9B3A95D802 and GRAPHICS::_0xC6372ECD45D73BCD, respectively.\n\n\"act_cinema.ysc\", line 1483:\nHUD::SET_HUD_COMPONENT_POSITION(15, 0.0, -0.0375);\nHUD::SET_TEXT_RENDER_ID(l_AE);\nGRAPHICS::_0x61BB1D9B3A95D802(4);\nGRAPHICS::_0xC6372ECD45D73BCD(1);\nif (GRAPHICS::_0x0AD973CA1E077B60(${movie_arthouse})) {\n    GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 0.7375, 1.0, 0.0, 255, 255, 255, 255);\n} else { \n    GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255);\n}\n\n\"am_mp_property_int.ysc\", line 102545:\nif (ENTITY::DOES_ENTITY_EXIST(a_2._f3)) {\n    if (HUD::IS_NAMED_RENDERTARGET_LINKED(ENTITY::GET_ENTITY_MODEL(a_2._f3))) {\n        HUD::SET_TEXT_RENDER_ID(a_2._f1);\n        GRAPHICS::_0x61BB1D9B3A95D802(4);\n        GRAPHICS::_0xC6372ECD45D73BCD(1);\n        GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255);\n        if (GRAPHICS::GET_TV_CHANNEL() == -1) {\n            sub_a8fa5(a_2, 1);\n        } else { \n            sub_a8fa5(a_2, 1);\n            GRAPHICS::ATTACH_TV_AUDIO_TO_ENTITY(a_2._f3);\n        }\n        HUD::SET_TEXT_RENDER_ID(HUD::GET_DEFAULT_SCRIPT_RENDERTARGET_RENDER_ID());\n    }\n}\n",
+			"comment": "All calls to this native are preceded by calls to GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER and GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU, respectively.\n\n\"act_cinema.ysc\", line 1483:\nHUD::SET_HUD_COMPONENT_POSITION(15, 0.0, -0.0375);\nHUD::SET_TEXT_RENDER_ID(l_AE);\nGRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(4);\nGRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(1);\nif (GRAPHICS::IS_TVSHOW_CURRENTLY_PLAYING(${movie_arthouse})) {\n    GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 0.7375, 1.0, 0.0, 255, 255, 255, 255);\n} else { \n    GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255);\n}\n\n\"am_mp_property_int.ysc\", line 102545:\nif (ENTITY::DOES_ENTITY_EXIST(a_2._f3)) {\n    if (HUD::IS_NAMED_RENDERTARGET_LINKED(ENTITY::GET_ENTITY_MODEL(a_2._f3))) {\n        HUD::SET_TEXT_RENDER_ID(a_2._f1);\n        GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(4);\n        GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(1);\n        GRAPHICS::DRAW_TV_CHANNEL(0.5, 0.5, 1.0, 1.0, 0.0, 255, 255, 255, 255);\n        if (GRAPHICS::GET_TV_CHANNEL() == -1) {\n            sub_a8fa5(a_2, 1);\n        } else { \n            sub_a8fa5(a_2, 1);\n            GRAPHICS::ATTACH_TV_AUDIO_TO_ENTITY(a_2._f3);\n        }\n        HUD::SET_TEXT_RENDER_ID(HUD::GET_DEFAULT_SCRIPT_RENDERTARGET_RENDER_ID());\n    }\n}\n",
 			"params": [
 				{
 					"type": "float",
@@ -25464,7 +25464,7 @@
 		"0xA356990E161C9E65": {
 			"name": "TERRAINGRID_ACTIVATE",
 			"jhash": "0xA1CB6C94",
-			"comment": "This native enables/disables the gold putting grid display (https://i.imgur.com/TC6cku6.png).\nThis requires these two natives to be called as well to configure the grid: `0x1c4fc5752bcd8e48` and `0x5ce62918f8d703c7`.",
+			"comment": "This native enables/disables the gold putting grid display (https://i.imgur.com/TC6cku6.png).\nThis requires these two natives to be called as well to configure the grid: `TERRAINGRID_SET_PARAMS` and `TERRAINGRID_SET_COLOURS`.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -25477,7 +25477,7 @@
 		"0x1C4FC5752BCD8E48": {
 			"name": "TERRAINGRID_SET_PARAMS",
 			"jhash": "0x3B637AA7",
-			"comment": "This native is used along with these two natives: `0xa356990e161c9e65` and `0x5ce62918f8d703c7`.\nThis native configures the location, size, rotation, normal height, and the difference ratio between min, normal and max.\n\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png\n\nThis native renders a box at the given position, with a special shader that renders a grid on world geometry behind it. This box does not have backface culling.\nThe forward args here are a direction vector, something similar to what's returned by GET_ENTITY_FORWARD_VECTOR.\nnormalHeight and heightDiff are used for positioning the color gradient of the grid, colors specified via TERRAINGRID_SET_COLOURS.\n\nExample with box superimposed on the image to demonstrate: https://i.imgur.com/wdqskxd.jpg",
+			"comment": "This native is used along with these two natives: `TERRAINGRID_ACTIVATE` and `TERRAINGRID_SET_COLOURS`.\nThis native configures the location, size, rotation, normal height, and the difference ratio between min, normal and max.\n\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png\n\nThis native renders a box at the given position, with a special shader that renders a grid on world geometry behind it. This box does not have backface culling.\nThe forward args here are a direction vector, something similar to what's returned by GET_ENTITY_FORWARD_VECTOR.\nnormalHeight and heightDiff are used for positioning the color gradient of the grid, colors specified via TERRAINGRID_SET_COLOURS.\n\nExample with box superimposed on the image to demonstrate: https://i.imgur.com/wdqskxd.jpg",
 			"params": [
 				{
 					"type": "float",
@@ -25538,7 +25538,7 @@
 		"0x5CE62918F8D703C7": {
 			"name": "TERRAINGRID_SET_COLOURS",
 			"jhash": "0xDF552973",
-			"comment": "This native is used along with these two natives: `0xa356990e161c9e65` and `0x1c4fc5752bcd8e48`.\nThis native sets the colors for the golf putting grid. the 'min...' values are for the lower areas that the grid covers, the 'max...' values are for the higher areas that the grid covers, all remaining values are for the 'normal' ground height.\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png",
+			"comment": "This native is used along with these two natives: `TERRAINGRID_ACTIVATE` and `TERRAINGRID_SET_PARAMS`.\nThis native sets the colors for the golf putting grid. the 'min...' values are for the lower areas that the grid covers, the 'max...' values are for the higher areas that the grid covers, all remaining values are for the 'normal' ground height.\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png",
 			"params": [
 				{
 					"type": "int",
@@ -25696,7 +25696,7 @@
 		"0xABA17D7CE615ADBF": {
 			"name": "BEGIN_TEXT_COMMAND_BUSYSPINNER_ON",
 			"jhash": "0xCB7C8994",
-			"comment": "Initializes the text entry for the the text next to a loading prompt. All natives for building UI texts can be used here\n\n\ne.g\nvoid StartLoadingMessage(char *text, int spinnerType = 3)\n  {\n     _SET_LOADING_PROMPT_TEXT_ENTRY(\"STRING\");\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n       _SHOW_LOADING_PROMPT(spinnerType);\n    }\n/*OR*/\n void ShowLoadingMessage(char *text, int spinnerType = 3, int timeMs = 10000)\n  {\n     _SET_LOADING_PROMPT_TEXT_ENTRY(\"STRING\");\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n       _SHOW_LOADING_PROMPT(spinnerType);\n        WAIT(timeMs);\n     _REMOVE_LOADING_PROMPT();\n }\n\n\nThese are some localized strings used in the loading spinner.\n\"PM_WAIT\"                   = Please Wait\n\"CELEB_WPLYRS\"              = Waiting For Players.\n\"CELL_SPINNER2\"             = Scanning storage.\n\"ERROR_CHECKYACHTNAME\" = Registering your yacht's name. Please wait.\n\"ERROR_CHECKPROFANITY\"   = Checking your text for profanity. Please wait.\n\"FM_COR_AUTOD\"                        = Just spinner no text\n\"FM_IHELP_WAT2\"                        = Waiting for other players\n\"FM_JIP_WAITO\"                            = Game options are being set\n\"FMMC_DOWNLOAD\"                    = Downloading\n\"FMMC_PLYLOAD\"                         = Loading\n\"FMMC_STARTTRAN\"                    = Launching session\n\"HUD_QUITTING\"                           =  Quiting session\n\"KILL_STRIP_IDM\"                         = Waiting for to accept\n\"MP_SPINLOADING\"                      = Loading",
+			"comment": "Initializes the text entry for the the text next to a loading prompt. All natives for building UI texts can be used here\n\n\ne.g\nvoid StartLoadingMessage(char *text, int spinnerType = 3)\n  {\n     BEGIN_TEXT_COMMAND_BUSYSPINNER_ON(\"STRING\");\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n       END_TEXT_COMMAND_BUSYSPINNER_ON(spinnerType);\n    }\n/*OR*/\n void ShowLoadingMessage(char *text, int spinnerType = 3, int timeMs = 10000)\n  {\n     BEGIN_TEXT_COMMAND_BUSYSPINNER_ON(\"STRING\");\n       ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n       END_TEXT_COMMAND_BUSYSPINNER_ON(spinnerType);\n        WAIT(timeMs);\n     BUSYSPINNER_OFF();\n }\n\n\nThese are some localized strings used in the loading spinner.\n\"PM_WAIT\"                   = Please Wait\n\"CELEB_WPLYRS\"              = Waiting For Players.\n\"CELL_SPINNER2\"             = Scanning storage.\n\"ERROR_CHECKYACHTNAME\" = Registering your yacht's name. Please wait.\n\"ERROR_CHECKPROFANITY\"   = Checking your text for profanity. Please wait.\n\"FM_COR_AUTOD\"                        = Just spinner no text\n\"FM_IHELP_WAT2\"                        = Waiting for other players\n\"FM_JIP_WAITO\"                            = Game options are being set\n\"FMMC_DOWNLOAD\"                    = Downloading\n\"FMMC_PLYLOAD\"                         = Loading\n\"FMMC_STARTTRAN\"                    = Launching session\n\"HUD_QUITTING\"                           =  Quiting session\n\"KILL_STRIP_IDM\"                         = Waiting for to accept\n\"MP_SPINLOADING\"                      = Loading",
 			"params": [
 				{
 					"type": "const char*",
@@ -25894,7 +25894,7 @@
 		"0x32888337579A5970": {
 			"name": "THEFEED_HIDE",
 			"jhash": "",
-			"comment": "Stops loading screen tips shown by invoking either `0x488043841BBE156F` or `0x15CFA549788D35EF`",
+			"comment": "Stops loading screen tips shown by invoking `THEFEED_SHOW`",
 			"params": [],
 			"return_type": "void",
 			"build": "463",
@@ -25917,7 +25917,7 @@
 		"0x15CFA549788D35EF": {
 			"name": "THEFEED_SHOW",
 			"jhash": "",
-			"comment": "Displays loading screen tips, requires `0x56C8B608CFD49854` to be called beforehand.",
+			"comment": "Displays loading screen tips, requires `THEFEED_AUTO_POST_GAMETIPS_ON` to be called beforehand.",
 			"params": [],
 			"return_type": "void",
 			"build": "463",
@@ -25961,7 +25961,7 @@
 		"0x583049884A2EEE3C": {
 			"name": "THEFEED_FORCE_RENDER_OFF",
 			"jhash": "0xC8BAB2F2",
-			"comment": "Enables loading screen tips to be be shown (`_0x15CFA549788D35EF` and `_0x488043841BBE156F`), blocks other kinds of notifications from being displayed (at least from current script). Call `0xADED7F5748ACAFE6` to display those again.",
+			"comment": "Enables loading screen tips to be be shown (`THEFEED_SHOW`), blocks other kinds of notifications from being displayed (at least from current script). Call `0xADED7F5748ACAFE6` to display those again.",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -26033,7 +26033,7 @@
 		"0x56C8B608CFD49854": {
 			"name": "THEFEED_AUTO_POST_GAMETIPS_ON",
 			"jhash": "0xF881AB87",
-			"comment": "Enables loading screen tips to be be shown (`_0x15CFA549788D35EF` and `_0x488043841BBE156F`), blocks other kinds of notifications from being displayed (at least from current script). Call `0xADED7F5748ACAFE6` to display those again.",
+			"comment": "Enables loading screen tips to be be shown (`THEFEED_SHOW`), blocks other kinds of notifications from being displayed (at least from current script). Call `THEFEED_AUTO_POST_GAMETIPS_OFF` to display those again.",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -26044,7 +26044,7 @@
 		"0xADED7F5748ACAFE6": {
 			"name": "THEFEED_AUTO_POST_GAMETIPS_OFF",
 			"jhash": "0x1D6859CA",
-			"comment": "Displays \"normal\" notifications again after calling `_0x56C8B608CFD49854` (those that were drawn before calling this native too), though those will have a weird offset and stay on screen forever (tested with notifications created from same script).",
+			"comment": "Displays \"normal\" notifications again after calling `THEFEED_AUTO_POST_GAMETIPS_ON` (those that were drawn before calling this native too), though those will have a weird offset and stay on screen forever (tested with notifications created from same script).",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -26056,7 +26056,7 @@
 		"0x92F0DA1E27DB96DC": {
 			"name": "THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST",
 			"jhash": "0x07CE2EA4",
-			"comment": "From the decompiled scripts:\nHUD::_92F0DA1E27DB96DC(6);\nHUD::_92F0DA1E27DB96DC(184);\nHUD::_92F0DA1E27DB96DC(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: gyazo.com/68bd384455fceb0a85a8729e48216e15",
+			"comment": "From the decompiled scripts:\nHUD::THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST(6);\nHUD::THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST(184);\nHUD::THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: https://gyazo.com/68bd384455fceb0a85a8729e48216e15",
 			"params": [
 				{
 					"type": "int",
@@ -26103,7 +26103,7 @@
 		"0x17AD8C9706BDD88A": {
 			"name": "THEFEED_SET_FLASH_DURATION_PARAMETER_FOR_NEXT_MESSAGE",
 			"jhash": "0x24A97AF8",
-			"comment": "Related to notification color flashing, setting p0 to 0 invalidates a `_SET_NOTIFICATION_FLASH_COLOR` call for the target notification.",
+			"comment": "Related to notification color flashing, setting count to 0 invalidates a `THEFEED_SET_RGBA_PARAMETER_FOR_NEXT_MESSAGE` call for the target notification.",
 			"params": [
 				{
 					"type": "int",
@@ -26212,7 +26212,7 @@
 		"0x202709F4C58A0424": {
 			"name": "BEGIN_TEXT_COMMAND_THEFEED_POST",
 			"jhash": "0x574EE85C",
-			"comment": "Declares the entry type of a notification, for example \"STRING\".\n\nint ShowNotification(char *text)\n{\n\tBEGIN_TEXT_COMMAND_THEFEED_POST(\"STRING\");\n\tADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n\treturn _DRAW_NOTIFICATION(1, 1);\n}",
+			"comment": "Declares the entry type of a notification, for example \"STRING\".\n\nint ShowNotification(char *text)\n{\n\tBEGIN_TEXT_COMMAND_THEFEED_POST(\"STRING\");\n\tADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n\treturn END_TEXT_COMMAND_THEFEED_POST_TICKER(1, 1);\n}",
 			"params": [
 				{
 					"type": "const char*",
@@ -26268,7 +26268,7 @@
 		"0x1CCD9A37359072CF": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT",
 			"jhash": "0xE7E3C98B",
-			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: pastebin.com/XdpJVbHz\n\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: https://pastebin.com/XdpJVbHz\n\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.",
 			"params": [
 				{
 					"type": "const char*",
@@ -26304,7 +26304,7 @@
 		"0xC6F580E4C94926AC": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL",
 			"jhash": "",
-			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nNeeds more research.\n\nOnly one type of usage in the scripts:\n\nHUD::_C6F580E4C94926AC(\"CHAR_ACTING_UP\", \"CHAR_ACTING_UP\", 0, 0, \"DI_FEED_CHAR\", a_0);",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nNeeds more research.\n\nOnly one type of usage in the scripts:\n\nHUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL(\"CHAR_ACTING_UP\", \"CHAR_ACTING_UP\", 0, 0, \"DI_FEED_CHAR\", a_0);",
 			"params": [
 				{
 					"type": "const char*",
@@ -26342,7 +26342,7 @@
 		"0x1E6611149DB3DB6B": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU",
 			"jhash": "0x0EB382B7",
-			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nNOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\nExample, only occurrence in the scripts:\nv_8 = HUD::_1E6611149DB3DB6B(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 0, 0, &v_9, \"\", a_5);",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nNOTE: 'duration' is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\nExample, only occurrence in the scripts:\nv_8 = HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 0, 0, &v_9, \"\", a_5);",
 			"params": [
 				{
 					"type": "const char*",
@@ -26382,7 +26382,7 @@
 		"0x5CBF7BADE20DB93E": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG",
 			"jhash": "0x3E807FE3",
-			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames https://pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)",
 			"params": [
 				{
 					"type": "const char*",
@@ -26426,7 +26426,7 @@
 		"0x531B84E7DA981FB6": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON",
 			"jhash": "0xDEB491C8",
-			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)\niconType2 is a mirror of iconType. It shows in the \"subject\" line, right under the original iconType.\n\n\nint IconNotification(char *text, char *text2, char *Subject)\n{\n    _SET_NOTIFICATION_TEXT_ENTRY(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   _SET_NOTIFICATION_MESSAGE_CLAN_TAG_2(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 1, 7, text2, Subject, 1.0f, \"__EXAMPLE\", 7);\n   return _DRAW_NOTIFICATION(1, 1);\n}",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames:  https://pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)\niconType2 is a mirror of iconType. It shows in the \"subject\" line, right under the original iconType.\n\n\nint IconNotification(char *text, char *text2, char *Subject)\n{\n    BEGIN_TEXT_COMMAND_THEFEED_POST(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   _SET_NOTIFICATION_MESSAGE_CLAN_TAG_2(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 1, 7, text2, Subject, 1.0f, \"__EXAMPLE\", 7);\n   return END_TEXT_COMMAND_THEFEED_POST_TICKER(1, 1);\n}",
 			"params": [
 				{
 					"type": "const char*",
@@ -26538,7 +26538,7 @@
 		"0xAA295B6F28BD587D": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_AWARD",
 			"jhash": "0x02DED2B8",
-			"comment": "Shows an \"award\" notification above the minimap, example: https://i.imgur.com/e2DNaKX.png\nExample:\n\nHUD::_SET_NOTIFICATION_TEXT_ENTRY(\"HUNT\");\nHUD::_0xAA295B6F28BD587D(\"Hunting\", \"Hunting_Gold_128\", 0, 109, \"HUD_MED_UNLKED\");",
+			"comment": "Shows an \"award\" notification above the minimap, example: https://i.imgur.com/e2DNaKX.png\nExample:\n\nHUD::BEGIN_TEXT_COMMAND_THEFEED_POST(\"HUNT\");\nHUD::END_TEXT_COMMAND_THEFEED_POST_AWARD(\"Hunting\", \"Hunting_Gold_128\", 0, 109, \"HUD_MED_UNLKED\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -26812,7 +26812,7 @@
 		"0xB6871B0555B02996": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_VERSUS_TU",
 			"jhash": "0x5E93FBFA",
-			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: pastebin.com/XdpJVbHz\nHUD colors and their values: pastebin.com/d9aHPbXN\n\nShows a deathmatch score above the minimap, example: https://i.imgur.com/YmoMklG.png",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: https://pastebin.com/XdpJVbHz\nHUD colors and their values: https://pastebin.com/d9aHPbXN\n\nShows a deathmatch score above the minimap, example: https://i.imgur.com/YmoMklG.png",
 			"params": [
 				{
 					"type": "const char*",
@@ -26853,7 +26853,7 @@
 		"0xD202B92CBF1D816F": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_REPLAY",
 			"jhash": "",
-			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, image goes from 0 - 39 - Xbox you can add text to\n\nexample: \nHUD::_0xD202B92CBF1D816F(1, 20, \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- imgur.com/lGBPCz3",
+			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, image goes from 0 - 39 - Xbox you can add text to\n\nexample: \nHUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1, 20, \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- https://imgur.com/lGBPCz3",
 			"params": [
 				{
 					"type": "int",
@@ -26878,7 +26878,7 @@
 		"0xDD6CB2CCE7C2735C": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT",
 			"jhash": "",
-			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, button accepts \"~INPUT_SOMETHING~\"\n\nexample:\nHUD::_0xDD6CB2CCE7C2735C(1, \"~INPUT_TALK~\", \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- imgur.com/UPy0Ial\n\n\nExamples from the scripts:\nl_D1[1/*1*/]=HUD::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::_DD6CB2CCE7C2735C(1,\"~INPUT_SAVE_REPLAY_CLIP~\",\"\");\nl_D1[1/*1*/]=HUD::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::_DD6CB2CCE7C2735C(1,\"~INPUT_REPLAY_START_STOP_RECORDING_SECONDARY~\",\"\");\n",
+			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, button accepts \"~INPUT_SOMETHING~\"\n\nexample:\nHUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1, \"~INPUT_TALK~\", \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- https://imgur.com/UPy0Ial\n\n\nExamples from the scripts:\nl_D1[1/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_SAVE_REPLAY_CLIP~\",\"\");\nl_D1[1/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_REPLAY_START_STOP_RECORDING_SECONDARY~\",\"\");\n",
 			"params": [
 				{
 					"type": "int",
@@ -26903,7 +26903,7 @@
 		"0xB87A37EEB7FAA67D": {
 			"name": "BEGIN_TEXT_COMMAND_PRINT",
 			"jhash": "0xF42C43C7",
-			"comment": "Used to be known as _SET_TEXT_ENTRY_2\n\nvoid ShowSubtitle(char *text)\n{\n  BEGIN_TEXT_COMMAND_PRINT(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_PRINT(2000, 1);\n}",
+			"comment": "void ShowSubtitle(const char *text)\n{\n  BEGIN_TEXT_COMMAND_PRINT(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_PRINT(2000, true);\n}",
 			"params": [
 				{
 					"type": "const char*",
@@ -27035,7 +27035,7 @@
 		"0x521FB041D93DD0E4": {
 			"name": "BEGIN_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING",
 			"jhash": "0x94B82066",
-			"comment": "int GetLineCount(char *text, float x, float y)\n    {\n     _BEGIN_TEXT_COMMAND_LINE_COUNT(\"STRING\");\n                ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n      return _END_TEXT_COMMAND_GET_LINE_COUNT(x, y);\n    }",
+			"comment": "int GetLineCount(char *text, float x, float y)\n    {\n     BEGIN_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING(\"STRING\");\n                ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n      return BEGIN_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING(x, y);\n    }",
 			"params": [
 				{
 					"type": "const char*",
@@ -27090,7 +27090,7 @@
 		"0x238FFE5C7B0498A6": {
 			"name": "END_TEXT_COMMAND_DISPLAY_HELP",
 			"jhash": "0xB59B530D",
-			"comment": "shape goes from -1 to 50 (may be more).\np0 is always 0.\n\nExample:\nvoid FloatingHelpText(const char* text)\n{\n    BEGIN_TEXT_COMMAND_DISPLAY_HELP(\"STRING\");\n  ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_DISPLAY_HELP (0, 0, 1, -1);\n}\n\nImage:\n- imgbin.org/images/26209.jpg\n\nmore inputs/icons:\n- pastebin.com/nqNYWMSB\n\nUsed to be known as _DISPLAY_HELP_TEXT_FROM_STRING_LABEL",
+			"comment": "shape goes from -1 to 50 (may be more).\np0 is always 0.\n\nExample:\nvoid FloatingHelpText(const char* text)\n{\n    BEGIN_TEXT_COMMAND_DISPLAY_HELP(\"STRING\");\n  ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_DISPLAY_HELP (0, 0, 1, -1);\n}\n\nImage:\n- imgbin.org/images/26209.jpg\n\nmore inputs/icons:\n- https://pastebin.com/nqNYWMSB\n\nUsed to be known as _DISPLAY_HELP_TEXT_FROM_STRING_LABEL",
 			"params": [
 				{
 					"type": "int",
@@ -27144,7 +27144,7 @@
 		"0xF9113A30DE5C6670": {
 			"name": "BEGIN_TEXT_COMMAND_SET_BLIP_NAME",
 			"jhash": "0xF4C211F6",
-			"comment": "Starts a text command to change the name of a blip displayed in the pause menu.\nThis should be paired with `END_TEXT_COMMAND_SET_BLIP_NAME`, once adding all required text components.\nExample:\n\nHUD::BEGIN_TEXT_COMMAND_SET_BLIP_NAME(\"STRING\");\nHUD::_ADD_TEXT_COMPONENT_STRING(\"Name\");\nHUD::END_TEXT_COMMAND_SET_BLIP_NAME(blip);",
+			"comment": "Starts a text command to change the name of a blip displayed in the pause menu.\nThis should be paired with `END_TEXT_COMMAND_SET_BLIP_NAME`, once adding all required text components.\nExample:\n\nHUD::BEGIN_TEXT_COMMAND_SET_BLIP_NAME(\"STRING\");\nHUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(\"Name\");\nHUD::END_TEXT_COMMAND_SET_BLIP_NAME(blip);",
 			"params": [
 				{
 					"type": "const char*",
@@ -27397,7 +27397,7 @@
 		"0x94CF4AC034C9C986": {
 			"name": "ADD_TEXT_COMPONENT_SUBSTRING_WEBSITE",
 			"jhash": "0xC736999E",
-			"comment": "This native (along with 0x5F68520888E69014 and 0x6C188BE134E074AA) do not actually filter anything. They simply add the provided text (as of 944)",
+			"comment": "This native (along with ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY and ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME) do not actually filter anything. They simply add the provided text (as of 944)",
 			"params": [
 				{
 					"type": "const char*",
@@ -27562,7 +27562,7 @@
 		"0xCF708001E1E536DD": {
 			"name": "CLEAR_THIS_PRINT",
 			"jhash": "0x06878327",
-			"comment": "p0: found arguments in the b617d scripts: pastebin.com/X5akCN7z",
+			"comment": "p0: found arguments in the b617d scripts: https://pastebin.com/X5akCN7z",
 			"params": [
 				{
 					"type": "const char*",
@@ -28123,7 +28123,7 @@
 		"0x7C9C91AB74A0360F": {
 			"name": "GET_HUD_COLOUR",
 			"jhash": "0x63F66A0B",
-			"comment": "HUD colors and their values: pastebin.com/d9aHPbXN",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -28205,7 +28205,7 @@
 		"0x1CCC708F0F850613": {
 			"name": "REPLACE_HUD_COLOUR",
 			"jhash": "0x3B216749",
-			"comment": "HUD colors and their values: pastebin.com/d9aHPbXN\n--------------------------------------------------\nmakes hudColorIndex2 color into hudColorIndex color",
+			"comment": "makes hudColorIndex2 color into hudColorIndex color",
 			"params": [
 				{
 					"type": "int",
@@ -28225,7 +28225,7 @@
 		"0xF314CF4F0211894E": {
 			"name": "REPLACE_HUD_COLOUR_WITH_RGBA",
 			"jhash": "0xF6E7E92B",
-			"comment": "HUD colors and their values: pastebin.com/d9aHPbXN",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -29106,7 +29106,7 @@
 		"0xDF735600A4696DAF": {
 			"name": "SET_BLIP_SPRITE",
 			"jhash": "0x8DBBB0B9",
-			"comment": "Sets the displayed sprite for a specific blip..\n\nYou may have your own list, but since dev-c didn't show it I was bored and started looking through scripts and functions to get a presumable almost positive list of a majority of blip IDs\nh t t p://pastebin.com/Bpj9Sfft\n\nBlips Images + IDs:\ngtaxscripting.blogspot.com/2016/05/gta-v-blips-id-and-image.html",
+			"comment": "Sets the displayed sprite for a specific blip..\n\nYou may have your own list, but since dev-c didn't show it I was bored and started looking through scripts and functions to get a presumable almost positive list of a majority of blip IDs\nhttps://pastebin.com/Bpj9Sfft\n\nBlips Images + IDs:\nhttps://gtaxscripting.blogspot.com/2016/05/gta-v-blips-id-and-image.html",
 			"params": [
 				{
 					"type": "Blip",
@@ -29749,7 +29749,7 @@
 		"0x86A652570E5F25DD": {
 			"name": "REMOVE_BLIP",
 			"jhash": "0xD8C3C1CD",
-			"comment": "In the C++ SDK, this seems not to work-- the blip isn't removed immediately. I use it for saving cars.\n\nE.g.:\n\nPed pped = PLAYER::PLAYER_PED_ID();\nVehicle v = PED::GET_VEHICLE_PED_IS_USING(pped);\nBlip b = HUD::ADD_BLIP_FOR_ENTITY(v);\n\nworks fine.\nBut later attempting to delete it with:\n\nBlip b = HUD::GET_BLIP_FROM_ENTITY(v);\nif (HUD::DOES_BLIP_EXIST(b)) HUD::REMOVE_BLIP(&b);\n\ndoesn't work. And yes, doesn't work without the DOES_BLIP_EXIST check either. Also, if you attach multiple blips to the same thing (say, a vehicle), and that thing disappears, the blips randomly attach to other things (in my case, a vehicle).\n\nThus for me, HUD::REMOVE_BLIP(&b) only works if there's one blip, (in my case) the vehicle is marked as no longer needed, you drive away from it and it eventually despawns, AND there is only one blip attached to it. I never intentionally attach multiple blips but if the user saves the car, this adds a blip. Then if they delete it, it is supposed to remove the blip, but it doesn't. Then they can immediately save it again, causing another blip to re-appear.\n-------------\n\nPassing the address of the variable instead of the value works for me.\ne.g.\nint blip = HUD::ADD_BLIP_FOR_ENTITY(ped);\nHUD::REMOVE_BLIP(&blip);\n\n\nRemove blip will currently crash your game, just artificially remove the blip by setting the sprite to a id that is 'invisible'.\n\n--\nIt crashes my game.",
+			"comment": "In the C++ SDK, this seems not to work-- the blip isn't removed immediately. I use it for saving cars.\n\nE.g.:\n\nPed pped = PLAYER::PLAYER_PED_ID();\nVehicle v = PED::GET_VEHICLE_PED_IS_USING(pped);\nBlip b = HUD::ADD_BLIP_FOR_ENTITY(v);\n\nworks fine.\nBut later attempting to delete it with:\n\nBlip b = HUD::GET_BLIP_FROM_ENTITY(v);\nif (HUD::DOES_BLIP_EXIST(b)) HUD::REMOVE_BLIP(&b);\n\ndoesn't work. And yes, doesn't work without the DOES_BLIP_EXIST check either. Also, if you attach multiple blips to the same thing (say, a vehicle), and that thing disappears, the blips randomly attach to other things (in my case, a vehicle).\n\nThus for me, HUD::REMOVE_BLIP(&b) only works if there's one blip, (in my case) the vehicle is marked as no longer needed, you drive away from it and it eventually despawns, AND there is only one blip attached to it. I never intentionally attach multiple blips but if the user saves the car, this adds a blip. Then if they delete it, it is supposed to remove the blip, but it doesn't. Then they can immediately save it again, causing another blip to re-appear.\n-------------\n\nPassing the address of the variable instead of the value works for me.\ne.g.\nint blip = HUD::ADD_BLIP_FOR_ENTITY(ped);\nHUD::REMOVE_BLIP(&blip);\n\n\nRemove blip will currently crash your game, just artificially remove the blip by setting the sprite to a id that is 'invisible'.",
 			"params": [
 				{
 					"type": "Blip*",
@@ -30307,7 +30307,7 @@
 		"0x59E727A1C9D3E31A": {
 			"name": "SET_RADAR_AS_INTERIOR_THIS_FRAME",
 			"jhash": "0x6F2626E1",
-			"comment": "List of interior hashes: pastebin.com/1FUyXNqY\nNot for every interior zoom > 0 available.",
+			"comment": "List of interior hashes: https://pastebin.com/1FUyXNqY\nNot for every interior zoom > 0 available.",
 			"params": [
 				{
 					"type": "Hash",
@@ -30575,7 +30575,7 @@
 		"0x719FF505F097FD20": {
 			"name": "HIDE_HUD_AND_RADAR_THIS_FRAME",
 			"jhash": "0xB75D4AD2",
-			"comment": "I think this works, but seems to prohibit switching to other weapons (or accessing the weapon wheel)",
+			"comment": "Hides HUD and radar this frame and prohibits switching to other weapons (or accessing the weapon wheel)",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -30583,7 +30583,7 @@
 		"0xE67C6DFD386EA5E7": {
 			"name": "ALLOW_DISPLAY_OF_MULTIPLAYER_CASH_TEXT",
 			"jhash": "0x5476B9FD",
-			"comment": "Controls whether to display 'Cash'/'Bank' next to the money balance HUD in Multiplayer (https://i.imgur.com/MiYUtNl.png) \nReal name is somewhere between ADD_TO* and ALLOW_MISSION* alphabetically.",
+			"comment": "Controls whether to display 'Cash'/'Bank' next to the money balance HUD in Multiplayer (https://i.imgur.com/MiYUtNl.png)",
 			"params": [
 				{
 					"type": "BOOL",
@@ -31095,7 +31095,7 @@
 		"0x817B86108EB94E51": {
 			"name": "SET_DESCRIPTION_FOR_UGC_MISSION_EIGHT_STRINGS",
 			"jhash": "0xD2161E77",
-			"comment": "HUD::_817B86108EB94E51(1, &g_189F36._f10CD1[0/*16*/], &g_189F36._f10CD1[1/*16*/], &g_189F36._f10CD1[2/*16*/], &g_189F36._f10CD1[3/*16*/], &g_189F36._f10CD1[4/*16*/], &g_189F36._f10CD1[5/*16*/], &g_189F36._f10CD1[6/*16*/], &g_189F36._f10CD1[7/*16*/]);",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -34092,7 +34092,7 @@
 		"0xAF348AFCB575A441": {
 			"name": "SET_ROOM_FOR_GAME_VIEWPORT_BY_NAME",
 			"jhash": "0x1F6B4B13",
-			"comment": "Exemple of use(carmod_shop.c4)\n INTERIOR::_AF348AFCB575A441(\"V_CarModRoom\");",
+			"comment": "Example of use (carmod_shop)\nINTERIOR::SET_ROOM_FOR_GAME_VIEWPORT_BY_NAME(\"V_CarModRoom\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -34105,7 +34105,7 @@
 		"0x405DC2AEF6AF95B9": {
 			"name": "SET_ROOM_FOR_GAME_VIEWPORT_BY_KEY",
 			"jhash": "0x0E9529CC",
-			"comment": "Usage: INTERIOR::_0x405DC2AEF6AF95B9(INTERIOR::GET_KEY_FOR_ENTITY_IN_ROOM(PLAYER::PLAYER_PED_ID()));",
+			"comment": "Usage: INTERIOR::SET_ROOM_FOR_GAME_VIEWPORT_BY_KEY(INTERIOR::GET_KEY_FOR_ENTITY_IN_ROOM(PLAYER::PLAYER_PED_ID()));",
 			"params": [
 				{
 					"type": "Hash",
@@ -34717,7 +34717,7 @@
 		"0xF2CA003F167E21D2": {
 			"name": "LOBBY_AUTO_MULTIPLAYER_MENU",
 			"jhash": "0x106C8317",
-			"comment": "MulleDK19: This function is hard-coded to always return 0.",
+			"comment": "This function is hard-coded to always return 0.",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -35687,7 +35687,7 @@
 		"0x02DEAAC8F8EA7FE7": {
 			"name": "SET_CLOUD_SETTINGS_OVERRIDE",
 			"jhash": "",
-			"comment": "Found in the scripts:\n\nMISC::_02DEAAC8F8EA7FE7(\"\");",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -35700,7 +35700,7 @@
 		"0x11B56FBBF7224868": {
 			"name": "PRELOAD_CLOUD_HAT",
 			"jhash": "0x8727A4C5",
-			"comment": "Found in the scripts:\n\nMISC::_11B56FBBF7224868(\"CONTRAILS\");",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -35733,7 +35733,7 @@
 		"0xA74802FB8D0B7814": {
 			"name": "UNLOAD_CLOUD_HAT",
 			"jhash": "0xC9FA6E07",
-			"comment": "Called 4 times in the b617d scripts:\nMISC::_A74802FB8D0B7814(\"CONTRAILS\", 0);",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -36714,7 +36714,7 @@
 		"0x957838AAF91BD12D": {
 			"name": "CLEAR_AREA_LEAVE_VEHICLE_HEALTH",
 			"jhash": "0x20E4FFD9",
-			"comment": "MISC::_0x957838AAF91BD12D(x, y, z, radius, false, false, false, false); seem to make all objects go away, peds, vehicles etc. All booleans set to true doesn't seem to change anything. ",
+			"comment": "MISC::CLEAR_AREA_LEAVE_VEHICLE_HEALTH(x, y, z, radius, false, false, false, false); seem to make all objects go away, peds, vehicles etc. All booleans set to true doesn't seem to change anything. ",
 			"params": [
 				{
 					"type": "float",
@@ -37055,7 +37055,7 @@
 		"0x9DC711BC69C548DF": {
 			"name": "TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME",
 			"jhash": "0x9F861FD4",
-			"comment": "For a full list, see here: pastebin.com/yLNWicUi",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -38769,7 +38769,7 @@
 		"0xBBE5D803A5360CBF": {
 			"name": "ADD_STUNT_JUMP_ANGLED",
 			"jhash": "0xB9B7E777",
-			"comment": "Creates a new stunt jump.\n\nThe radius1 and radius2 might actually not be a radius at all, but that's what it seems to me testing them in-game. But they may be 'angle' floats instead, considering this native is named ADD_STUNT_JUMP_**ANGLED**.\n\nInfo about the specific 'parameter sections':\n\n\n**x1, y1, z1, x2, y2, z2 and radius1:**\n\nFirst coordinates are for the jump entry area, and the radius that will be checked around that area. So if you're not exactly within the coordinates, but you are within the outter radius limit then it will still register as entering the stunt jump. Note as mentioned above, the radius is just a guess, I'm not really sure about it's exact purpose.\n\n\n**x3, y3, z3, x4, y4, z4 and radius2:**\n\nNext part is the landing area, again starting with the left bottom (nearest to the stunt jump entry zone) coordinate, and the second one being the top right furthest away part of the landing area. Followed by another (most likely) radius float, this is usually slightly larger than the entry zone 'radius' float value, just because you have quite a lot of places where you can land (I'm guessing).\n\n\n**camX, camY and camZ:**\n\nThe final coordinate in this native is the Camera position. Rotation and zoom/FOV is managed by the game itself, you just need to provide the camera location.\n\n\n**unk1, unk2 and unk3:**\n\nNot sure what these are for, but they're always `150, 0, 0` in decompiled scripts.\n\nVisualized example in-game: https://d.fivem.dev/2019-03-15_18-24_c7802_846.png\n\nHere is a list of almost all of the stunt jumps from GTA V (taken from decompiled scripts): https://pastebin.com/EW1jBPkY",
+			"comment": "Creates a new stunt jump.\n\nThe radius1 and radius2 might actually not be a radius at all, but that's what it seems to me testing them in-game. But they may be 'angle' floats instead, considering this native is named ADD_STUNT_JUMP_**ANGLED**.\n\nInfo about the specific 'parameter sections':\n\n\n**x1, y1, z1, x2, y2, z2 and radius1:**\n\nFirst coordinates are for the jump entry area, and the radius that will be checked around that area. So if you're not exactly within the coordinates, but you are within the outter radius limit then it will still register as entering the stunt jump. Note as mentioned above, the radius is just a guess, I'm not really sure about it's exact purpose.\n\n\n**x3, y3, z3, x4, y4, z4 and radius2:**\n\nNext part is the landing area, again starting with the left bottom (nearest to the stunt jump entry zone) coordinate, and the second one being the top right furthest away part of the landing area. Followed by another (most likely) radius float, this is usually slightly larger than the entry zone 'radius' float value, just because you have quite a lot of places where you can land (I'm guessing).\n\n\n**camX, camY and camZ:**\n\nThe final coordinate in this native is the Camera position. Rotation and zoom/FOV is managed by the game itself, you just need to provide the camera location.\n\n\n**unk1, unk2 and unk3:**\n\nNot sure what these are for, but they're always `150, 0, 0` in decompiled scripts.\n\nHere is a list of almost all of the stunt jumps from GTA V (taken from decompiled scripts): https://pastebin.com/EW1jBPkY",
 			"params": [
 				{
 					"type": "float",
@@ -39022,7 +39022,7 @@
 		"0x557E43C447E700A8": {
 			"name": "HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED",
 			"jhash": "",
-			"comment": "Get inputted \"Cheat code\", for example:\n\nwhile (TRUE)\n{\n    if (MISC::_557E43C447E700A8(${fugitive}))\n    {\n       // Do something.\n    }\n    SYSTEM::WAIT(0);\n}\n\nCalling this will also set the last saved string hash to zero.\n",
+			"comment": "Get inputted \"Cheat code\", for example:\n\nwhile (TRUE)\n{\n    if (MISC::HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED(${fugitive}))\n    {\n       // Do something.\n    }\n    SYSTEM::WAIT(0);\n}\n\nCalling this will also set the last saved string hash to zero.\n",
 			"params": [
 				{
 					"type": "Hash",
@@ -39109,7 +39109,7 @@
 		"0x740E14FAD5842351": {
 			"name": "SET_GRAVITY_LEVEL",
 			"jhash": "0x2D833F4A",
-			"comment": "level can be from 0 to 3\n0: 9.8 - normal\n1: 2.4 - low\n2: 0.1 - very low\n3: 0.0 - off\n\n//SuckMyCoke",
+			"comment": "level can be from 0 to 3\n0: 9.8 - normal\n1: 2.4 - low\n2: 0.1 - very low\n3: 0.0 - off",
 			"params": [
 				{
 					"type": "int",
@@ -39269,7 +39269,7 @@
 		"0x6F7794F28C6B2535": {
 			"name": "REGISTER_TEXT_LABEL_15_TO_SAVE",
 			"jhash": "0xE2089749",
-			"comment": "Seems to have the same functionality as REGISTER_TEXT_LABEL_TO_SAVE?\n\nMISC::_6F7794F28C6B2535(&a_0._f1, \"tlPlateText\");\nMISC::_6F7794F28C6B2535(&a_0._f1C, \"tlPlateText_pending\");\nMISC::_6F7794F28C6B2535(&a_0._f10B, \"tlCarAppPlateText\");\n\n\"tl\" prefix sounds like \"Text Label\"",
+			"comment": "MISC::REGISTER_TEXT_LABEL_15_TO_SAVE(&a_0._f1, \"tlPlateText\");\nMISC::REGISTER_TEXT_LABEL_15_TO_SAVE(&a_0._f1C, \"tlPlateText_pending\");\nMISC::REGISTER_TEXT_LABEL_15_TO_SAVE(&a_0._f10B, \"tlCarAppPlateText\");",
 			"params": [
 				{
 					"type": "Any*",
@@ -39289,7 +39289,7 @@
 		"0x48F069265A0E4BEC": {
 			"name": "REGISTER_TEXT_LABEL_23_TO_SAVE",
 			"jhash": "0xF91B8C33",
-			"comment": "Only found 3 times in decompiled scripts. Not a whole lot to go off of.\n\nMISC::_48F069265A0E4BEC(a_0, \"Movie_Name_For_This_Player\");\nMISC::_48F069265A0E4BEC(&a_0._fB, \"Ringtone_For_This_Player\");\nMISC::_48F069265A0E4BEC(&a_0._f1EC4._f12[v_A/*6*/], &v_13); // where v_13 is \"MPATMLOGSCRS0\" thru \"MPATMLOGSCRS15\"",
+			"comment": "Only found 3 times in decompiled scripts.\n\nMISC::REGISTER_TEXT_LABEL_23_TO_SAVE(a_0, \"Movie_Name_For_This_Player\");\nMISC::REGISTER_TEXT_LABEL_23_TO_SAVE(&a_0._fB, \"Ringtone_For_This_Player\");\nMISC::REGISTER_TEXT_LABEL_23_TO_SAVE(&a_0._f1EC4._f12[v_A/*6*/], &v_13); // where v_13 is \"MPATMLOGSCRS0\" thru \"MPATMLOGSCRS15\"",
 			"params": [
 				{
 					"type": "Any*",
@@ -39306,7 +39306,7 @@
 		"0x8269816F6CFD40F8": {
 			"name": "REGISTER_TEXT_LABEL_31_TO_SAVE",
 			"jhash": "0x74E8FAD9",
-			"comment": "Only found 2 times in decompiled scripts. Not a whole lot to go off of.\n\nMISC::_8269816F6CFD40F8(&a_0._f1F5A._f6[0/*8*/], \"TEMPSTAT_LABEL\"); // gets saved in a struct called \"g_SaveData_STRING_ScriptSaves\"\nMISC::_8269816F6CFD40F8(&a_0._f4B4[v_1A/*8*/], &v_5); // where v_5 is \"Name0\" thru \"Name9\", gets saved in a struct called \"OUTFIT_Name\"",
+			"comment": "Only found 2 times in decompiled scripts.\n\nMISC::REGISTER_TEXT_LABEL_31_TO_SAVE(&a_0._f1F5A._f6[0/*8*/], \"TEMPSTAT_LABEL\"); // gets saved in a struct called \"g_SaveData_STRING_ScriptSaves\"\nMISC::REGISTER_TEXT_LABEL_31_TO_SAVE(&a_0._f4B4[v_1A/*8*/], &v_5); // where v_5 is \"Name0\" thru \"Name9\", gets saved in a struct called \"OUTFIT_Name\"",
 			"params": [
 				{
 					"type": "Any*",
@@ -39323,7 +39323,7 @@
 		"0xFAA457EF263E8763": {
 			"name": "REGISTER_TEXT_LABEL_63_TO_SAVE",
 			"jhash": "0x6B4335DD",
-			"comment": "Another unknown label type...\n\nMISC::_FAA457EF263E8763(a_0, \"Thumb_label\");\nMISC::_FAA457EF263E8763(&a_0._f10, \"Photo_label\");\nMISC::_FAA457EF263E8763(a_0, \"GXTlabel\");\nMISC::_FAA457EF263E8763(&a_0._f21, \"StringComp\");\nMISC::_FAA457EF263E8763(&a_0._f43, \"SecondStringComp\");\nMISC::_FAA457EF263E8763(&a_0._f53, \"ThirdStringComp\");\nMISC::_FAA457EF263E8763(&a_0._f32, \"SenderStringComp\");\nMISC::_FAA457EF263E8763(&a_0._f726[v_1A/*16*/], &v_20); // where v_20 is \"LastJobTL_0_1\" thru \"LastJobTL_2_1\", gets saved in a struct called \"LAST_JobGamer_TL\"\nMISC::_FAA457EF263E8763(&a_0._f4B, \"PAID_PLAYER\");\nMISC::_FAA457EF263E8763(&a_0._f5B, \"RADIO_STATION\");",
+			"comment": "MISC::REGISTER_TEXT_LABEL_63_TO_SAVE(a_0, \"Thumb_label\");\nMISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&a_0._f10, \"Photo_label\");\nMISC::REGISTER_TEXT_LABEL_63_TO_SAVE(a_0, \"GXTlabel\");\nMISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&a_0._f21, \"StringComp\");\nMISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&a_0._f43, \"SecondStringComp\");\nMISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&a_0._f53, \"ThirdStringComp\");\nMISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&a_0._f32, \"SenderStringComp\");\nMISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&a_0._f726[v_1A/*16*/], &v_20); // where v_20 is \"LastJobTL_0_1\" thru \"LastJobTL_2_1\", gets saved in a struct called \"LAST_JobGamer_TL\"\nMISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&a_0._f4B, \"PAID_PLAYER\");\nMISC::REGISTER_TEXT_LABEL_63_TO_SAVE(&a_0._f5B, \"RADIO_STATION\");",
 			"params": [
 				{
 					"type": "Any*",
@@ -39974,7 +39974,7 @@
 		"0x54F157E0336A3822": {
 			"name": "SET_TENNIS_MOVE_NETWORK_SIGNAL_FLOAT",
 			"jhash": "0x49F977A9",
-			"comment": "From the scripts:\n\nMISC::_54F157E0336A3822(sub_aa49(a_0), \"ForcedStopDirection\", v_E);\n\nRelated to tennis mode.",
+			"comment": "From the scripts:\n\nMISC::SET_TENNIS_MOVE_NETWORK_SIGNAL_FLOAT(sub_aa49(a_0), \"ForcedStopDirection\", v_E);\n\nRelated to tennis mode.",
 			"params": [
 				{
 					"type": "Ped",
@@ -40426,15 +40426,15 @@
 		"0x1EAE0A6E978894A2": {
 			"name": "SUPRESS_RANDOM_EVENT_THIS_FRAME",
 			"jhash": "0x8F60366E",
-			"comment": "Unsure about the use of this native but here's an example:\n\nvoid sub_8709() {\n    MISC::_1EAE0A6E978894A2(0, 1);\n    MISC::_1EAE0A6E978894A2(1, 1);\n    MISC::_1EAE0A6E978894A2(2, 1);\n    MISC::_1EAE0A6E978894A2(3, 1);\n    MISC::_1EAE0A6E978894A2(4, 1);\n    MISC::_1EAE0A6E978894A2(5, 1);\n    MISC::_1EAE0A6E978894A2(6, 1);\n    MISC::_1EAE0A6E978894A2(7, 1);\n    MISC::_1EAE0A6E978894A2(8, 1);\n}\n\nSo it appears that p0 ranges from 0 to 8.\n\nENABLE_DISPATCH_SERVICE, seems to have a similar layout.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "eventType"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "suppress"
 				}
 			],
 			"return_type": "void",
@@ -41510,7 +41510,7 @@
 		"0x394DCDB9E836B7A9": {
 			"name": "NETWORK_CASINO_CAN_BET_PVC",
 			"jhash": "",
-			"comment": "Same as 0x8968D4D8C6C40C11.\n\nNETWORK_C*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1734",
@@ -41521,7 +41521,7 @@
 		"0xF62F6D9528358FE4": {
 			"name": "NETWORK_CASINO_CAN_BET_AMOUNT",
 			"jhash": "",
-			"comment": "NETWORK_C*",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -41538,7 +41538,7 @@
 		"0x8968D4D8C6C40C11": {
 			"name": "NETWORK_CASINO_CAN_BUY_CHIPS_PVC",
 			"jhash": "",
-			"comment": "Same as 0x394DCDB9E836B7A9.\n\nNETWORK_C*",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "1734",
@@ -41549,7 +41549,7 @@
 		"0x3BD101471C7F9EEC": {
 			"name": "NETWORK_CASINO_BUY_CHIPS",
 			"jhash": "",
-			"comment": "NETWORK_C*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -41569,7 +41569,7 @@
 		"0xED44897CB336F480": {
 			"name": "NETWORK_CASINO_SELL_CHIPS",
 			"jhash": "",
-			"comment": "NETWORK_C*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -41598,7 +41598,7 @@
 		"0x9777734DAD16992F": {
 			"name": "CAN_PAY_AMOUNT_TO_BOSS",
 			"jhash": "",
-			"comment": "CAN_*",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -43584,8 +43584,13 @@
 			"name": "NETWORK_SPEND_EARNED_FROM_BANK_AND_WALLETS",
 			"jhash": "0xBD64F1B7",
 			"comment": "Hardcoded to return 0.",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "amount"
+				}
+			],
+			"return_type": "int",
 			"build": "323",
 			"unused": true
 		},
@@ -49399,7 +49404,7 @@
 		"0xBD545D44CCE70597": {
 			"name": "NETWORK_IS_NP_AVAILABLE",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 1.",
+			"comment": "This function is hard-coded to always return 1.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -49407,7 +49412,7 @@
 		"0xEBCAB9E5048434F4": {
 			"name": "NETWORK_IS_NP_PENDING",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 1.",
+			"comment": "This function is hard-coded to always return 1.",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -49423,7 +49428,7 @@
 		"0x7808619F31FF22DB": {
 			"name": "NETWORK_IS_CONNETED_TO_NP_PRESENCE",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 1.",
+			"comment": "This function is hard-coded to always return 1.",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -49431,7 +49436,7 @@
 		"0xA0FA4EC6A05DA44E": {
 			"name": "NETWORK_IS_LOGGED_IN_TO_PSN",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 0.",
+			"comment": "This function is hard-coded to always return 0.",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -50974,11 +50979,11 @@
 		"0xABD5E88B8A2D3DB2": {
 			"name": "NETWORK_SESSION_VOICE_CONNECT_TO_PLAYER",
 			"jhash": "0x9DFD89E6",
-			"comment": "Only one occurence in the scripts:\n\nauto sub_cb43(auto a_0, auto a_1) {\n    if (g_2594CB._f1) {\n        if (NETWORK::_855BC38818F6F684()) {\n            NETWORK::_ABD5E88B8A2D3DB2(&a_0._fB93);\n            g_2594CB._f14/*{13}*/ = a_0._fB93;\n            g_2594CB._f4/*\"64\"*/ = a_1;\n            return 1;\n        }\n    }\n    return 0;\n}\n\nother:\nlooks like it passes a player in the paramater\n\nContains string \"NETWORK_VOICE_CONNECT_TO_PLAYER\" in ida",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "void",
@@ -52751,8 +52756,21 @@
 			"name": "TRIGGER_TUNING_CRC_HACKER_CHECK",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				},
+				{
+					"type": "const char*",
+					"name": "p2"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1103",
 			"unused": true
 		},
@@ -52760,8 +52778,17 @@
 			"name": "TRIGGER_FILE_CRC_HACKER_CHECK",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "1103",
 			"unused": true
 		},
@@ -52931,7 +52958,7 @@
 		"0xA6C90FBC38E395EE": {
 			"name": "NETWORK_GET_MAX_NUM_PARTICIPANTS",
 			"jhash": "0xCCD8C02D",
-			"comment": "Seems to always return 0, but it's used in quite a few loops.\n\nfor (num3 = 0; num3 < NETWORK::0xCCD8C02D(); num3++)\n    {\n        if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::0x98F3B274(num3)) != 0)\n        {\n            var num5 = NETWORK::NETWORK_GET_PLAYER_INDEX(PLAYER::0x98F3B274(num3));",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -54175,7 +54202,7 @@
 		"0x58CC181719256197": {
 			"name": "NETWORK_GET_DISPLAYNAMES_FROM_HANDLES",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 0.",
+			"comment": "This function is hard-coded to always return 0.",
 			"params": [
 				{
 					"type": "Any",
@@ -55563,7 +55590,7 @@
 		"0xEEE6EACBE8874FBA": {
 			"name": "NETWORK_CLAN_PLAYER_GET_DESC",
 			"jhash": "0x6EE4A282",
-			"comment": "bufferSize is 35 in the scripts.\n\nbufferSize is the elementCount of p0(desc), sizeof(p0) == 280 == p1*8 == 35 * 8, p2(netHandle) is obtained from NETWORK::NETWORK_HANDLE_FROM_PLAYER.  And no, I can't explain why 35 * sizeof(int) == 280 and not 140, but I'll get back to you on that.\n\nthe answer is: because p0 an int64_t* / int64_t[35].  and FYI p2 is an int64_t[13]\n\npastebin.com/cSZniHak",
+			"comment": "bufferSize is 35 in the scripts.\n\nbufferSize is the elementCount of p0(desc), sizeof(p0) == 280 == p1*8 == 35 * 8, p2(netHandle) is obtained from NETWORK::NETWORK_HANDLE_FROM_PLAYER.  And no, I can't explain why 35 * sizeof(int) == 280 and not 140, but I'll get back to you on that.\n\nthe answer is: because p0 an int64_t* / int64_t[35].  and FYI p2 is an int64_t[13]\n\nhttps://pastebin.com/cSZniHak",
 			"params": [
 				{
 					"type": "Any*",
@@ -57992,7 +58019,7 @@
 		"0x17E0198B3882C2CB": {
 			"name": "NETWORK_START_SOLO_TUTORIAL_SESSION",
 			"jhash": "0x408A9436",
-			"comment": "*",
+			"comment": "",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -59444,7 +59471,7 @@
 		"0x8B0C2964BA471961": {
 			"name": "GET_CONTENT_TO_LOAD_TYPE",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 0.",
+			"comment": "This function is hard-coded to always return 0.",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -59452,7 +59479,7 @@
 		"0x88B588B41FF7868E": {
 			"name": "GET_IS_LAUNCH_FROM_LIVE_AREA",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 0.",
+			"comment": "This function is hard-coded to always return 0.",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -59460,7 +59487,7 @@
 		"0x67FC09BC554A75E5": {
 			"name": "GET_IS_LIVE_AREA_LAUNCH_WITH_CONTENT",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 0.",
+			"comment": "This function is hard-coded to always return 0.",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -61217,7 +61244,7 @@
 		"0x6FB7BB3607D27FA2": {
 			"name": "NETWORK_IS_TITLE_UPDATE_REQUIRED",
 			"jhash": "",
-			"comment": "MulleDK19: This function is hard-coded to always return 0.",
+			"comment": "This function is hard-coded to always return 0.",
 			"params": [],
 			"return_type": "Any",
 			"build": "323"
@@ -61425,7 +61452,7 @@
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub).",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "void",
 			"build": "323",
 			"unused": true
 		},
@@ -61433,8 +61460,13 @@
 			"name": "NETWORK_GET_SIGNALLING_INFO",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub).",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
 			"build": "323",
 			"unused": true
 		},
@@ -61442,8 +61474,13 @@
 			"name": "NETWORK_GET_NET_STATISTICS_INFO",
 			"jhash": "",
 			"comment": "Does nothing (it's a nullsub).",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
 			"build": "323",
 			"unused": true
 		},
@@ -61922,7 +61959,7 @@
 		"0xF82D8F1926A02C3D": {
 			"name": "SET_STATE_OF_CLOSEST_DOOR_OF_TYPE",
 			"jhash": "0x38C951A4",
-			"comment": "Hardcoded to not work in multiplayer.\n\n\nUsed to lock/unlock doors to interior areas of the game.\n\n(Possible) Door Types:\n\npastebin.com/9S2m3qA4\n\nHeading is either 1, 0 or -1 in the scripts. Means default closed(0) or opened either into(1) or out(-1) of the interior.\nLocked means that the heading is locked.  \np6 is always 0. \n\n225 door types, model names and coords found in stripclub.c4:\npastebin.com/gywnbzsH\n\nget door info: pastebin.com/i14rbekD",
+			"comment": "Hardcoded to not work in multiplayer.\n\n\nUsed to lock/unlock doors to interior areas of the game.\n\n(Possible) Door Types:\n\nhttps://pastebin.com/9S2m3qA4\n\nHeading is either 1, 0 or -1 in the scripts. Means default closed(0) or opened either into(1) or out(-1) of the interior.\nLocked means that the heading is locked.  \np6 is always 0. \n\n225 door types, model names and coords found in stripclub.c4:\nhttps://pastebin.com/gywnbzsH\n\nget door info: https://pastebin.com/i14rbekD",
 			"params": [
 				{
 					"type": "Hash",
@@ -61992,7 +62029,7 @@
 		"0x9B12F9A24FABEDB0": {
 			"name": "SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE",
 			"jhash": "0x4E0A260B",
-			"comment": "Hardcoded not to work in multiplayer environments.\nWhen you set locked to 0 the door open and to 1 the door close\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 0, 0.0, 50.0, 0);  //door open\n\nOBJECT::_9B12F9A24FABEDB0(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 1, 0.0, 50.0, 0);  //door close",
+			"comment": "Hardcoded not to work in multiplayer environments.\nWhen you set locked to 0 the door open and to 1 the door close\nOBJECT::SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 0, 0.0, 50.0, 0);  //door open\n\nOBJECT::SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE(${prop_gate_prison_01}, 1845.0, 2605.0, 45.0, 1, 0.0, 50.0, 0);  //door close",
 			"params": [
 				{
 					"type": "Hash",
@@ -63204,7 +63241,7 @@
 		"0xFBA08C503DD5FA58": {
 			"name": "CREATE_PICKUP",
 			"jhash": "0x5E14DF68",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "Full list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -63245,7 +63282,7 @@
 		"0x891804727E0A98B7": {
 			"name": "CREATE_PICKUP_ROTATE",
 			"jhash": "0xF015BFE2",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nflags:\n8 (1 << 3): place on ground\n512 (1 << 9): spin around\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "flags:\n8 (1 << 3): place on ground\n512 (1 << 9): spin around\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -63327,7 +63364,7 @@
 		"0x673966A0C0FD7171": {
 			"name": "CREATE_AMBIENT_PICKUP",
 			"jhash": "0x17B99CE7",
-			"comment": "Used for doing money drop\nPickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "Full list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -63437,7 +63474,7 @@
 		"0x2EAF1FDB2FB55698": {
 			"name": "CREATE_PORTABLE_PICKUP",
 			"jhash": "0x8C886BE5",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "Full list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -63691,7 +63728,7 @@
 		"0x27F9D613092159CF": {
 			"name": "REMOVE_ALL_PICKUPS_OF_TYPE",
 			"jhash": "0x40062C53",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "Full list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -63828,7 +63865,7 @@
 		"0xF9C36251F6E48E33": {
 			"name": "DOES_PICKUP_OF_TYPE_EXIST_IN_AREA",
 			"jhash": "0xF139681B",
-			"comment": "Pickup hashes: pastebin.com/8EuSv2r1\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "Full list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -63890,7 +63927,7 @@
 		"0x616093EC6B139DD9": {
 			"name": "SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE",
 			"jhash": "0x7FADB4B9",
-			"comment": "Disabling/enabling a player from getting pickups. From the scripts:\n\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 1);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 0);\nOBJECT::_616093EC6B139DD9(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 1);\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
+			"comment": "Disabling/enabling a player from getting pickups. From the scripts:\n\nOBJECT::SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 1);\nOBJECT::SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE(PLAYER::PLAYER_ID(), ${pickup_portable_package}, 0);\nOBJECT::SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 0);\nOBJECT::SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE(PLAYER::PLAYER_ID(), ${pickup_armour_standard}, 1);\n\nFull list of pickup types by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json",
 			"params": [
 				{
 					"type": "Player",
@@ -65480,7 +65517,7 @@
 		"0xE1615EC03B3BB4FD": {
 			"name": "IS_MOUSE_LOOK_INVERTED",
 			"jhash": "",
-			"comment": "Used with IS_LOOK_INVERTED() and negates its affect.\n\n--\n\nNot sure how the person above got that description, but here's an actual example:\n\nif (PAD::_GET_LAST_INPUT_METHOD(2)) {\n    if (a_5) {\n        if (PAD::IS_LOOK_INVERTED()) {\n            a_3 *= -1;\n        }\n        if (PAD::_E1615EC03B3BB4FD()) {\n            a_3 *= -1;\n        }\n    }\n}",
+			"comment": "Used with IS_LOOK_INVERTED() and negates its affect.\n\n--\n\nNot sure how the person above got that description, but here's an actual example:\n\nif (PAD::_GET_LAST_INPUT_METHOD(2)) {\n    if (a_5) {\n        if (PAD::IS_LOOK_INVERTED()) {\n            a_3 *= -1;\n        }\n        if (PAD::IS_MOUSE_LOOK_INVERTED()) {\n            a_3 *= -1;\n        }\n    }\n}",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -65854,7 +65891,7 @@
 		"0x240A18690AE96513": {
 			"name": "GET_CLOSEST_VEHICLE_NODE",
 			"jhash": "0x6F5F1E6C",
-			"comment": "FYI: When falling through the map (or however you got under it) you will respawn when your player ped's height is <= -200.0 meters (I think you all know this) and when in a vehicle you will actually respawn at the closest vehicle node.\n\n----------\n\nVector3 nodePos;\nGET_CLOSEST_VEHICLE_NODE(x,y,z,&nodePos,...)\n\nnodeType: 0 = main roads, 1 = any dry path, 3 = water\np5, p6 are always the same:\n0x40400000 (3.0), 0\np5 can also be 100.0 and p6 can be 2.5:\nPATHFIND::GET_CLOSEST_VEHICLE_NODE(a_0, &v_5, v_9, 100.0, 2.5)\n\ngtaforums.com/topic/843561-pathfind-node-types",
+			"comment": "https://gtaforums.com/topic/843561-pathfind-node-types",
 			"params": [
 				{
 					"type": "float",
@@ -65874,7 +65911,7 @@
 				},
 				{
 					"type": "int",
-					"name": "nodeType"
+					"name": "nodeFlags"
 				},
 				{
 					"type": "float",
@@ -65891,7 +65928,7 @@
 		"0x2EABE3B06F58C1BE": {
 			"name": "GET_CLOSEST_MAJOR_VEHICLE_NODE",
 			"jhash": "0x04B5F15B",
-			"comment": "Get the closest vehicle node to a given position, unknown1 = 3.0, unknown2 = 0",
+			"comment": "Get the closest vehicle node to a given position.",
 			"params": [
 				{
 					"type": "float",
@@ -65914,7 +65951,7 @@
 					"name": "unknown1"
 				},
 				{
-					"type": "int",
+					"type": "float",
 					"name": "unknown2"
 				}
 			],
@@ -65924,7 +65961,7 @@
 		"0xFF071FB798B803B0": {
 			"name": "GET_CLOSEST_VEHICLE_NODE_WITH_HEADING",
 			"jhash": "0x8BD5759B",
-			"comment": "p5, p6 and p7 seems to be about the same as p4, p5 and p6 for GET_CLOSEST_VEHICLE_NODE. p6 and/or p7 has something to do with finding a node on the same path/road and same direction(at least for this native, something to do with the heading maybe). Edit this when you find out more.\n\nnodeType: 0 = main roads, 1 = any dry path, 3 = water\np6 is always 3.0\np7 is always 0\n\ngtaforums.com/topic/843561-pathfind-node-types\n\nExample of usage, moving vehicle to closest path/road:\nVector3 coords = ENTITY::GET_ENTITY_COORDS(playerVeh, true);\nVector3 closestVehicleNodeCoords; \nfloat roadHeading; \nPATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(coords.x, coords.y, coords.z, &closestVehicleNodeCoords, &roadHeading, 1, 3, 0); \nENTITY::SET_ENTITY_HEADING(playerVeh, roadHeading);\nENTITY::SET_ENTITY_COORDS(playerVeh, closestVehicleNodeCoords.x, closestVehicleNodeCoords.y, closestVehicleNodeCoords.z, 1, 0, 0, 1);\nVEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(playerVeh);\n\n------------------------------------------------------------------\nC# Example (ins1de) : pastebin.com/fxtMWAHD",
+			"comment": "p5, p6 and p7 seems to be about the same as p4, p5 and p6 for GET_CLOSEST_VEHICLE_NODE. p6 and/or p7 has something to do with finding a node on the same path/road and same direction(at least for this native, something to do with the heading maybe). Edit this when you find out more.\n\nnodeType: 0 = main roads, 1 = any dry path, 3 = water\np6 is always 3.0\np7 is always 0\n\ngtaforums.com/topic/843561-pathfind-node-types\n\nExample of usage, moving vehicle to closest path/road:\nVector3 coords = ENTITY::GET_ENTITY_COORDS(playerVeh, true);\nVector3 closestVehicleNodeCoords; \nfloat roadHeading; \nPATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(coords.x, coords.y, coords.z, &closestVehicleNodeCoords, &roadHeading, 1, 3, 0); \nENTITY::SET_ENTITY_HEADING(playerVeh, roadHeading);\nENTITY::SET_ENTITY_COORDS(playerVeh, closestVehicleNodeCoords.x, closestVehicleNodeCoords.y, closestVehicleNodeCoords.z, 1, 0, 0, 1);\nVEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(playerVeh);\n\n------------------------------------------------------------------\nC# Example (ins1de) : https://pastebin.com/fxtMWAHD",
 			"params": [
 				{
 					"type": "float",
@@ -65955,7 +65992,7 @@
 					"name": "p6"
 				},
 				{
-					"type": "int",
+					"type": "float",
 					"name": "p7"
 				}
 			],
@@ -65988,16 +66025,16 @@
 					"name": "outPosition"
 				},
 				{
-					"type": "Any",
+					"type": "int",
+					"name": "nodeFlags"
+				},
+				{
+					"type": "float",
 					"name": "unknown1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "unknown2"
-				},
-				{
-					"type": "Any",
-					"name": "unknown3"
 				}
 			],
 			"return_type": "BOOL",
@@ -66026,7 +66063,7 @@
 				},
 				{
 					"type": "int",
-					"name": "nodetype"
+					"name": "nodeFlags"
 				},
 				{
 					"type": "float",
@@ -66043,7 +66080,7 @@
 		"0x80CA6A8B6C094CC4": {
 			"name": "GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING",
 			"jhash": "0x7349C856",
-			"comment": "Get the nth closest vehicle node and its heading. (unknown2 = 9, unknown3 = 3.0, unknown4 = 2.5)",
+			"comment": "Get the nth closest vehicle node and its heading.",
 			"params": [
 				{
 					"type": "float",
@@ -66070,12 +66107,12 @@
 					"name": "outHeading"
 				},
 				{
-					"type": "Any*",
-					"name": "unknown1"
+					"type": "int*",
+					"name": "outNumLanes"
 				},
 				{
 					"type": "int",
-					"name": "unknown2"
+					"name": "nodeFlags"
 				},
 				{
 					"type": "float",
@@ -66119,8 +66156,8 @@
 					"name": "outHeading"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "nodeFlags"
 				},
 				{
 					"type": "float",
@@ -66177,14 +66214,14 @@
 				},
 				{
 					"type": "int",
-					"name": "nodetype"
+					"name": "nodeFlags"
 				},
 				{
 					"type": "float",
 					"name": "p10"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p11"
 				}
 			],
@@ -66194,7 +66231,7 @@
 		"0x0568566ACBB5DEDC": {
 			"name": "GET_VEHICLE_NODE_PROPERTIES",
 			"jhash": "0xCC90110B",
-			"comment": "MulleDK19: Gets the density and flags of the closest node to the specified position.\nDensity is a value between 0 and 15, indicating how busy the road is.\nFlags is a bit field.",
+			"comment": "Gets the density and flags of the closest node to the specified position.\nDensity is a value between 0 and 15, indicating how busy the road is.\nFlags is a bit field.",
 			"params": [
 				{
 					"type": "float",
@@ -66872,7 +66909,7 @@
 		"0x125BF4ABFC536B09": {
 			"name": "IS_POINT_ON_ROAD",
 			"jhash": "0xCF198055",
-			"comment": "Gets a value indicating whether the specified position is on a road.\nThe vehicle parameter is not implemented (ignored).\n\n-MulleDK19",
+			"comment": "Gets a value indicating whether the specified position is on a road.\nThe vehicle parameter is not implemented (ignored).",
 			"params": [
 				{
 					"type": "float",
@@ -70376,7 +70413,7 @@
 		"0x9AC577F5A12AD8A9": {
 			"name": "SET_PED_FIRING_PATTERN",
 			"jhash": "0xB4629D66",
-			"comment": "FIRING_PATTERN_BURST_FIRE = 0xD6FF6D61 ( 1073727030 )\nFIRING_PATTERN_BURST_FIRE_IN_COVER = 0x026321F1 ( 40051185 )\nFIRING_PATTERN_BURST_FIRE_DRIVEBY = 0xD31265F2 ( -753768974 )\nFIRING_PATTERN_FROM_GROUND = 0x2264E5D6 ( 577037782 )\nFIRING_PATTERN_DELAY_FIRE_BY_ONE_SEC = 0x7A845691 ( 2055493265 )\nFIRING_PATTERN_FULL_AUTO = 0xC6EE6B4C ( -957453492 )\nFIRING_PATTERN_SINGLE_SHOT = 0x5D60E4E0 ( 1566631136 )\nFIRING_PATTERN_BURST_FIRE_PISTOL = 0xA018DB8A ( -1608983670 )\nFIRING_PATTERN_BURST_FIRE_SMG = 0xD10DADEE ( 1863348768 )\nFIRING_PATTERN_BURST_FIRE_RIFLE = 0x9C74B406 ( -1670073338 )\nFIRING_PATTERN_BURST_FIRE_MG = 0xB573C5B4 ( -1250703948 )\nFIRING_PATTERN_BURST_FIRE_PUMPSHOTGUN = 0x00BAC39B ( 12239771 )\nFIRING_PATTERN_BURST_FIRE_HELI = 0x914E786F ( -1857128337 )\nFIRING_PATTERN_BURST_FIRE_MICRO = 0x42EF03FD ( 1122960381 )\nFIRING_PATTERN_SHORT_BURSTS = 0x1A92D7DF ( 445831135 )\nFIRING_PATTERN_SLOW_FIRE_TANK = 0xE2CA3A71 ( -490063247 )\n\nif anyone is interested firing pattern info: pastebin.com/Px036isB",
+			"comment": "FIRING_PATTERN_BURST_FIRE = 0xD6FF6D61 ( 1073727030 )\nFIRING_PATTERN_BURST_FIRE_IN_COVER = 0x026321F1 ( 40051185 )\nFIRING_PATTERN_BURST_FIRE_DRIVEBY = 0xD31265F2 ( -753768974 )\nFIRING_PATTERN_FROM_GROUND = 0x2264E5D6 ( 577037782 )\nFIRING_PATTERN_DELAY_FIRE_BY_ONE_SEC = 0x7A845691 ( 2055493265 )\nFIRING_PATTERN_FULL_AUTO = 0xC6EE6B4C ( -957453492 )\nFIRING_PATTERN_SINGLE_SHOT = 0x5D60E4E0 ( 1566631136 )\nFIRING_PATTERN_BURST_FIRE_PISTOL = 0xA018DB8A ( -1608983670 )\nFIRING_PATTERN_BURST_FIRE_SMG = 0xD10DADEE ( 1863348768 )\nFIRING_PATTERN_BURST_FIRE_RIFLE = 0x9C74B406 ( -1670073338 )\nFIRING_PATTERN_BURST_FIRE_MG = 0xB573C5B4 ( -1250703948 )\nFIRING_PATTERN_BURST_FIRE_PUMPSHOTGUN = 0x00BAC39B ( 12239771 )\nFIRING_PATTERN_BURST_FIRE_HELI = 0x914E786F ( -1857128337 )\nFIRING_PATTERN_BURST_FIRE_MICRO = 0x42EF03FD ( 1122960381 )\nFIRING_PATTERN_SHORT_BURSTS = 0x1A92D7DF ( 445831135 )\nFIRING_PATTERN_SLOW_FIRE_TANK = 0xE2CA3A71 ( -490063247 )\n\nFiring pattern info: https://pastebin.com/Px036isB",
 			"params": [
 				{
 					"type": "Ped",
@@ -70744,7 +70781,7 @@
 		"0xF5F6378C4F3419D3": {
 			"name": "SET_PED_MAX_HEALTH",
 			"jhash": "0x5533F60B",
-			"comment": "sets the maximum health of a ped\n\nI think it's never been used in any script",
+			"comment": "Sets the maximum health of a ped.",
 			"params": [
 				{
 					"type": "Ped",
@@ -71458,7 +71495,7 @@
 		"0x9DBA107B4937F809": {
 			"name": "SET_PED_MOTION_IN_COVER_CLIPSET_OVERRIDE",
 			"jhash": "",
-			"comment": "Found in the b617d scripts:\nPED::_9DBA107B4937F809(v_7, \"trevor_heist_cover_2h\");",
+			"comment": "Found in the b617d scripts:\nPED::SET_PED_MOTION_IN_COVER_CLIPSET_OVERRIDE(v_7, \"trevor_heist_cover_2h\");",
 			"params": [
 				{
 					"type": "Ped",
@@ -72342,7 +72379,7 @@
 		"0x4852FC386E2E1BB5": {
 			"name": "GET_PED_HAIR_TINT_COLOR",
 			"jhash": "",
-			"comment": "Input: Haircolor index, value between 0 and 63 (inclusive).\nOutput: RGB values for the haircolor specified in the input.\n\nThis is used with the hair color swatches scaleform.\nUse `_0x013E5CFC38CD5387` to get the makeup colors.",
+			"comment": "Input: Haircolor index, value between 0 and 63 (inclusive).\nOutput: RGB values for the haircolor specified in the input.\n\nThis is used with the hair color swatches scaleform.\nUse `GET_PED_MAKEUP_TINT_COLOR` to get the makeup colors.",
 			"params": [
 				{
 					"type": "int",
@@ -72371,7 +72408,7 @@
 		"0x013E5CFC38CD5387": {
 			"name": "GET_PED_MAKEUP_TINT_COLOR",
 			"jhash": "",
-			"comment": "Input: Makeup color index, value between 0 and 63 (inclusive).\nOutput: RGB values for the makeup color specified in the input.\n\nThis is used with the makeup color swatches scaleform.\nUse `_0x4852FC386E2E1BB5` to get the hair colors.",
+			"comment": "Input: Makeup color index, value between 0 and 63 (inclusive).\nOutput: RGB values for the makeup color specified in the input.\n\nThis is used with the makeup color swatches scaleform.\nUse `GET_PED_HAIR_TINT_COLOR` to get the hair colors.",
 			"params": [
 				{
 					"type": "int",
@@ -72700,7 +72737,7 @@
 		"0x39D55A620FCB6A3A": {
 			"name": "SET_PED_PRELOAD_VARIATION_DATA",
 			"jhash": "0x45F3BDFB",
-			"comment": "from extreme3.c4\nPED::_39D55A620FCB6A3A(PLAYER::PLAYER_PED_ID(), 8, PED::GET_PED_DRAWABLE_VARIATION(PLAYER::PLAYER_PED_ID(), 8), PED::GET_PED_TEXTURE_VARIATION(PLAYER::PLAYER_PED_ID(), 8));\n\np1 is probably componentId",
+			"comment": "from extreme3.c4\nPED::SET_PED_PRELOAD_VARIATION_DATA(PLAYER::PLAYER_PED_ID(), 8, PED::GET_PED_DRAWABLE_VARIATION(PLAYER::PLAYER_PED_ID(), 8), PED::GET_PED_TEXTURE_VARIATION(PLAYER::PLAYER_PED_ID(), 8));\n\np1 is probably componentId",
 			"params": [
 				{
 					"type": "Ped",
@@ -73974,7 +74011,7 @@
 		"0xF9ACF4A08098EA25": {
 			"name": "SPECIAL_FUNCTION_DO_NOT_USE",
 			"jhash": "0x141CC936",
-			"comment": "p1 was always 1 (true).\n\nKicks the ped from the current vehicle and keeps the rendering-focus on this ped (also disables its collision). If doing this for your player ped, you'll still be able to drive the vehicle.\n\nActual name begins with 'S'",
+			"comment": "p1 was always 1 (true).\n\nKicks the ped from the current vehicle and keeps the rendering-focus on this ped (also disables its collision). If doing this for your player ped, you'll still be able to drive the vehicle.",
 			"params": [
 				{
 					"type": "Ped",
@@ -74389,7 +74426,7 @@
 		"0x5F5D1665E352A839": {
 			"name": "ADD_PED_DECORATION_FROM_HASHES",
 			"jhash": "0x70559AC7",
-			"comment": "Applies an Item from a PedDecorationCollection to a ped. These include tattoos and shirt decals.\n\ncollection - PedDecorationCollection filename hash\noverlay - Item name hash\n\nExample:\nEntry inside \"mpbeach_overlays.xml\" -\n<Item>\n  <uvPos x=\"0.500000\" y=\"0.500000\" />\n  <scale x=\"0.600000\" y=\"0.500000\" />\n  <rotation value=\"0.000000\" />\n  <nameHash>FM_Hair_Fuzz</nameHash>\n  <txdHash>mp_hair_fuzz</txdHash>\n  <txtHash>mp_hair_fuzz</txtHash>\n  <zone>ZONE_HEAD</zone>\n  <type>TYPE_TATTOO</type>\n  <faction>FM</faction>\n  <garment>All</garment>\n  <gender>GENDER_DONTCARE</gender>\n  <award />\n  <awardLevel />\n</Item>\n\nCode:\nPED::_0x5F5D1665E352A839(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"mpbeach_overlays\"), MISC::GET_HASH_KEY(\"fm_hair_fuzz\"))\n\nFull list of ped overlays / decorations by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedOverlayCollections.json",
+			"comment": "Applies an Item from a PedDecorationCollection to a ped. These include tattoos and shirt decals.\n\ncollection - PedDecorationCollection filename hash\noverlay - Item name hash\n\nExample:\nEntry inside \"mpbeach_overlays.xml\" -\n<Item>\n  <uvPos x=\"0.500000\" y=\"0.500000\" />\n  <scale x=\"0.600000\" y=\"0.500000\" />\n  <rotation value=\"0.000000\" />\n  <nameHash>FM_Hair_Fuzz</nameHash>\n  <txdHash>mp_hair_fuzz</txdHash>\n  <txtHash>mp_hair_fuzz</txtHash>\n  <zone>ZONE_HEAD</zone>\n  <type>TYPE_TATTOO</type>\n  <faction>FM</faction>\n  <garment>All</garment>\n  <gender>GENDER_DONTCARE</gender>\n  <award />\n  <awardLevel />\n</Item>\n\nCode:\nPED::ADD_PED_DECORATION_FROM_HASHES(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"mpbeach_overlays\"), MISC::GET_HASH_KEY(\"fm_hair_fuzz\"))\n\nFull list of ped overlays / decorations by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedOverlayCollections.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -76764,7 +76801,7 @@
 		"0x110F526AB784111F": {
 			"name": "SET_PED_ENVEFF_CPV_ADD",
 			"jhash": "0x3B882533",
-			"comment": "In agency_heist3b.c4, its like this 90% of the time:\n\nPED::_110F526AB784111F(ped, 0.099);\nPED::SET_PED_ENVEFF_SCALE(ped, 1.0);\nPED::_D69411AA0CEBF9E9(ped, 87, 81, 68);\nPED::SET_ENABLE_PED_ENVEFF_SCALE(ped, 1);\n\nand its like this 10% of the time:\n\nPED::_110F526AB784111F(ped, 0.2);\nPED::SET_PED_ENVEFF_SCALE(ped, 0.65);\nPED::_D69411AA0CEBF9E9(ped, 74, 69, 60);\nPED::SET_ENABLE_PED_ENVEFF_SCALE(ped, 1);",
+			"comment": "In agency_heist3b.c4, its like this 90% of the time:\n\nPED::SET_PED_ENVEFF_CPV_ADD(ped, 0.099);\nPED::SET_PED_ENVEFF_SCALE(ped, 1.0);\nPED::SET_PED_ENVEFF_CPV_ADD(ped, 87, 81, 68);\nPED::SET_ENABLE_PED_ENVEFF_SCALE(ped, 1);\n\nand its like this 10% of the time:\n\nPED::SET_PED_ENVEFF_CPV_ADD(ped, 0.2);\nPED::SET_PED_ENVEFF_SCALE(ped, 0.65);\nPED::SET_PED_ENVEFF_COLOR_MODULATOR(ped, 74, 69, 60);\nPED::SET_ENABLE_PED_ENVEFF_SCALE(ped, 1);",
 			"params": [
 				{
 					"type": "Ped",
@@ -77377,7 +77414,7 @@
 		"0x23F8F5FC7E8C4A6B": {
 			"name": "GET_PED_NEARBY_PEDS",
 			"jhash": "0x4D3325F4",
-			"comment": "sizeAndPeds - is a pointer to an array. The array is filled with peds found nearby the ped supplied to the first argument.\nignore - ped type to ignore\n\nReturn value is the number of peds found and added to the array passed.\n\n-----------------------------------\n\nTo make this work in most menu bases at least in C++ do it like so,\n\n Formatted Example: pastebin.com/D8an9wwp\n\n-----------------------------------\n\nExample: gtaforums.com/topic/789788-function-args-to-pedget-ped-nearby-peds/?p=1067386687",
+			"comment": "sizeAndPeds - is a pointer to an array. The array is filled with peds found nearby the ped supplied to the first argument.\nignore - ped type to ignore\n\nReturn value is the number of peds found and added to the array passed.\n\n-----------------------------------\n\nTo make this work in most menu bases at least in C++ do it like so,\n\n Formatted Example: https://pastebin.com/D8an9wwp\n\n-----------------------------------\n\nExample: gtaforums.com/topic/789788-function-args-to-pedget-ped-nearby-peds/?p=1067386687",
 			"params": [
 				{
 					"type": "Ped",
@@ -80038,7 +80075,7 @@
 		"0xE9B09589827545E7": {
 			"name": "REPORT_CRIME",
 			"jhash": "0xD8EB3A44",
-			"comment": "PLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(), 37, PLAYER::GET_WANTED_LEVEL_THRESHOLD(1));\n\nFrom am_armybase.ysc.c4:\n\nPLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(4), 36, PLAYER::GET_WANTED_LEVEL_THRESHOLD(4));\n\n-----\n\nThis was taken from the GTAV.exe v1.334. The function is called sub_140592CE8. For a full decompilation of the function, see here: pastebin.com/09qSMsN7 \n\n-----\ncrimeType:\n1: Firearms possession\n2: Person running a red light (\"5-0-5\")\n3: Reckless driver\n4: Speeding vehicle (a \"5-10\")\n5: Traffic violation (a \"5-0-5\")\n6: Motorcycle rider without a helmet\n7: Vehicle theft (a \"5-0-3\")\n8: Grand Theft Auto\n9: ???\n10: ???\n11: Assault on a civilian (a \"2-40\")\n12: Assault on an officer\n13: Assault with a deadly weapon (a \"2-45\")\n14: Officer shot (a \"2-45\")\n15: Pedestrian struck by a vehicle\n16: Officer struck by a vehicle\n17: Helicopter down (an \"AC\"?)\n18: Civilian on fire (a \"2-40\")\n19: Officer set on fire (a \"10-99\")\n20: Car on fire\n21: Air unit down (an \"AC\"?)\n22: An explosion (a \"9-96\")\n23: A stabbing (a \"2-45\") (also something else I couldn't understand)\n24: Officer stabbed (also something else I couldn't understand)\n25: Attack on a vehicle (\"MDV\"?)\n26: Damage to property\n27: Suspect threatening officer with a firearm\n28: Shots fired\n29: ???\n30: ???\n31: ???\n32: ???\n33: ???\n34: A \"2-45\"\n35: ???\n36: A \"9-25\"\n37: ???\n38: ???\n39: ???\n40: ???\n41: ???\n42: ???\n43: Possible disturbance\n44: Civilian in need of assistance\n45: ???\n46: ???",
+			"comment": "PLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(), 37, PLAYER::GET_WANTED_LEVEL_THRESHOLD(1));\n\nFrom am_armybase.ysc.c4:\n\nPLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(4), 36, PLAYER::GET_WANTED_LEVEL_THRESHOLD(4));\n\n-----\n\nThis was taken from the GTAV.exe v1.334. The function is called sub_140592CE8. For a full decompilation of the function, see here: https://pastebin.com/09qSMsN7 \n\n-----\ncrimeType:\n1: Firearms possession\n2: Person running a red light (\"5-0-5\")\n3: Reckless driver\n4: Speeding vehicle (a \"5-10\")\n5: Traffic violation (a \"5-0-5\")\n6: Motorcycle rider without a helmet\n7: Vehicle theft (a \"5-0-3\")\n8: Grand Theft Auto\n9: ???\n10: ???\n11: Assault on a civilian (a \"2-40\")\n12: Assault on an officer\n13: Assault with a deadly weapon (a \"2-45\")\n14: Officer shot (a \"2-45\")\n15: Pedestrian struck by a vehicle\n16: Officer struck by a vehicle\n17: Helicopter down (an \"AC\"?)\n18: Civilian on fire (a \"2-40\")\n19: Officer set on fire (a \"10-99\")\n20: Car on fire\n21: Air unit down (an \"AC\"?)\n22: An explosion (a \"9-96\")\n23: A stabbing (a \"2-45\") (also something else I couldn't understand)\n24: Officer stabbed (also something else I couldn't understand)\n25: Attack on a vehicle (\"MDV\"?)\n26: Damage to property\n27: Suspect threatening officer with a firearm\n28: Shots fired\n29: ???\n30: ???\n31: ???\n32: ???\n33: ???\n34: A \"2-45\"\n35: ???\n36: A \"9-25\"\n37: ???\n38: ???\n39: ???\n40: ???\n41: ???\n42: ???\n43: Possible disturbance\n44: Civilian in need of assistance\n45: ???\n46: ???",
 			"params": [
 				{
 					"type": "Player",
@@ -80079,7 +80116,7 @@
 		"0xBC9490CA15AEA8FB": {
 			"name": "UPDATE_WANTED_POSITION_THIS_FRAME",
 			"jhash": "0x6B34A160",
-			"comment": "This native is used in both singleplayer and multiplayer scripts.\n\nAlways used like this in scripts\nPLAYER::_BC9490CA15AEA8FB(PLAYER::PLAYER_ID());",
+			"comment": "This native is used in both singleplayer and multiplayer scripts.\n\nAlways used like this in scripts\nPLAYER::UPDATE_WANTED_POSITION_THIS_FRAME(PLAYER::PLAYER_ID());",
 			"params": [
 				{
 					"type": "Player",
@@ -80161,7 +80198,7 @@
 		"0xB45EFF719D8427A6": {
 			"name": "SET_LAW_RESPONSE_DELAY_OVERRIDE",
 			"jhash": "0xBF6993C7",
-			"comment": "PLAYER::0xBF6993C7(rPtr((&l_122) + 71)); // Found in decompilation\n\n***\n\nIn \"am_hold_up.ysc\" used once:\n\nl_8d._f47 = MISC::GET_RANDOM_FLOAT_IN_RANGE(18.0, 28.0);\nPLAYER::_B45EFF719D8427A6((l_8d._f47));",
+			"comment": "PLAYER::SET_LAW_RESPONSE_DELAY_OVERRIDE(rPtr((&l_122) + 71)); // Found in decompilation\n\n***\n\nIn \"am_hold_up.ysc\" used once:\n\nl_8d._f47 = MISC::GET_RANDOM_FLOAT_IN_RANGE(18.0, 28.0);\nPLAYER::SET_LAW_RESPONSE_DELAY_OVERRIDE((l_8d._f47));",
 			"params": [
 				{
 					"type": "float",
@@ -82717,7 +82754,7 @@
 		"0xBC0753C9CA14B506": {
 			"name": "GET_PLAYER_RECEIVED_BATTLE_EVENT_RECENTLY",
 			"jhash": "0x9DF75B2A",
-			"comment": "var num3 = PLAYER::GET_PLAYER_PED(l_2171); // proof l_2171 is a player\n\nvar num17 = PLAYER::0x9DF75B2A(l_2171, 100, 0); // l_2171\n\n.ysc:\n    if (PLAYER::GET_PLAYER_WANTED_LEVEL(l_6EF) < v_4) { // l_6EF is a player\n        PLAYER::SET_PLAYER_WANTED_LEVEL(l_6EF, v_4, 0); // l_6EF\n        PLAYER::SET_PLAYER_WANTED_LEVEL_NOW(l_6EF, 0); // l_6EF\n    } else { \n        PLAYER::_4669B3ED80F24B4E(l_6EF); // l_6EF\n        HUD::_BA8D65C1C65702E5(1);\n        a_0 = 1;\n    }\n\n        if (l_4B24[l_6F2/*156*/]._f8C != PLAYER::_BC0753C9CA14B506(l_6EF, 100, 0)) { // l_6EF\n            l_4B24[l_6F2/*156*/]._f8C = PLAYER::_BC0753C9CA14B506(l_6EF, 100, 0); // l_6EF\n        }\n\nBoth was taken from fm_mission_controller",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -82996,7 +83033,7 @@
 		"0x2F7CEB6520288061": {
 			"name": "SET_PLAYER_SPECTATED_VEHICLE_RADIO_OVERRIDE",
 			"jhash": "0x2849D4B2",
-			"comment": "Used with radios:\n\nvoid sub_cf383(auto _a0) {\n    if ((a_0)==1) {\n        if (MISC::IS_BIT_SET((g_240005._f1), 3)) {\n            PLAYER::_2F7CEB6520288061(0);\n            AUDIO::SET_AUDIO_FLAG(\"AllowRadioDuringSwitch\", 0);\n            AUDIO::SET_MOBILE_PHONE_RADIO_STATE(0);\n            AUDIO::SET_AUDIO_FLAG(\"MobileRadioInGame\", 0);\n        }\n        sub_cf3f6(1);\n    } else { \n        if (MISC::IS_BIT_SET((g_240005._f1), 3)) {\n            PLAYER::_2F7CEB6520288061(1);\n            AUDIO::SET_AUDIO_FLAG(\"AllowRadioDuringSwitch\", 1);\n            AUDIO::SET_MOBILE_PHONE_RADIO_STATE(1);\n            AUDIO::SET_AUDIO_FLAG(\"MobileRadioInGame\", 1);\n        }\n        sub_cf3f6(0);\n    }\n}\n\nSET_PLAYER_S*",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -83995,7 +84032,7 @@
 		"0x75B18E49607874C7": {
 			"name": "BG_START_CONTEXT_HASH",
 			"jhash": "0x67B23E17",
-			"comment": "Hashed version of 0x9D5A25BADB742ACD.",
+			"comment": "Hashed version of BG_START_CONTEXT.",
 			"params": [
 				{
 					"type": "Hash",
@@ -84009,7 +84046,7 @@
 		"0x107E5CC7CA942BC1": {
 			"name": "BG_END_CONTEXT_HASH",
 			"jhash": "0x3D981EBF",
-			"comment": "Hashed version of 0xDC2BACD920D0A0DD.",
+			"comment": "Hashed version of BG_END_CONTEXT.",
 			"params": [
 				{
 					"type": "Hash",
@@ -85043,8 +85080,17 @@
 			"name": "SC_GAMERDATA_GET_INT",
 			"jhash": "0xF8BDA989",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "name"
+				},
+				{
+					"type": "int*",
+					"name": "value"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -85052,8 +85098,17 @@
 			"name": "SC_GAMERDATA_GET_FLOAT",
 			"jhash": "0x515AF67C",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "name"
+				},
+				{
+					"type": "float*",
+					"name": "value"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -85077,8 +85132,17 @@
 			"name": "SC_GAMERDATA_GET_STRING",
 			"jhash": "0x2AE35169",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "name"
+				},
+				{
+					"type": "char*",
+					"name": "value"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -85086,8 +85150,13 @@
 			"name": "SC_GAMERDATA_GET_ACTIVE_XP_BONUS",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "float*",
+					"name": "value"
+				}
+			],
+			"return_type": "BOOL",
 			"build": "323",
 			"unused": true
 		},
@@ -86533,7 +86602,7 @@
 		"0x26D7399B9587FE89": {
 			"name": "STAT_RESET_ALL_ONLINE_CHARACTER_STATS",
 			"jhash": "0x343B27E2",
-			"comment": "STATS::0x343B27E2(0);\nSTATS::0x343B27E2(1);\nSTATS::0x343B27E2(2);\nSTATS::0x343B27E2(3);\nSTATS::0x343B27E2(4);\nSTATS::0x343B27E2(5);\nSTATS::0x343B27E2(6);\nSTATS::0x343B27E2(7);\n\nIdentical in ingamehud & maintransition.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -86546,7 +86615,7 @@
 		"0xA78B8FA58200DA56": {
 			"name": "STAT_LOCAL_RESET_ALL_ONLINE_CHARACTER_STATS",
 			"jhash": "0xE3247582",
-			"comment": "STATS::0xE3247582(0);\nSTATS::0xE3247582(1);\nSTATS::0xE3247582(2);\nSTATS::0xE3247582(3);\nSTATS::0xE3247582(4);\nSTATS::0xE3247582(5);\nSTATS::0xE3247582(6);",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -88591,7 +88660,7 @@
 		"0x5EAD2BF6484852E4": {
 			"name": "GET_PLAYER_HAS_DRIVEN_ALL_VEHICLES",
 			"jhash": "0x23D70C39",
-			"comment": "example from completionpercentage_controller.ysc.c4\n\nif (STATS::_5EAD2BF6484852E4()) {\n            MISC::SET_BIT(g_17b95._f20df._ff10, 15);\n            STATS::_11FF1C80276097ED(0xe9ec4dd1, 200, 0);\n        }",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -91850,7 +91919,7 @@
 		"0xC9156DC11411A9EA": {
 			"name": "REQUEST_ADDITIONAL_COLLISION_AT_COORD",
 			"jhash": "0xC2CC1DF2",
-			"comment": "MulleDK19: Alias of REQUEST_COLLISION_AT_COORD.",
+			"comment": "Alias of REQUEST_COLLISION_AT_COORD.",
 			"params": [
 				{
 					"type": "float",
@@ -92551,7 +92620,7 @@
 		"0xACCFB4ACF53551B0": {
 			"name": "NEW_LOAD_SCENE_START_SPHERE",
 			"jhash": "0xFA037FEB",
-			"comment": "if (!sub_8f12(\"START LOAD SCENE SAFE\")) {\n    if (CUTSCENE::GET_CUTSCENE_TIME() > 4178) {\n        STREAMING::_ACCFB4ACF53551B0(1973.845458984375, 3818.447265625, 32.43629837036133, 15.0, 2);\n        sub_8e9e(\"START LOAD SCENE SAFE\", 1);\n    }\n}\n\n(Previously known as STREAMING::_NEW_LOAD_SCENE_START_SAFE)",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -93651,7 +93720,7 @@
 		"0xE2A2AA2F659D77A7": {
 			"name": "TASK_VEHICLE_DRIVE_TO_COORD",
 			"jhash": "0xE4AC0387",
-			"comment": "info about driving modes: HTTP://gtaforums.com/topic/822314-guide-driving-styles/\n---------------------------------------------------------------\nPassing P6 value as floating value didn't throw any errors, though unsure what is it exactly, looks like radius or something.\n\nP10 though, it is mentioned as float, however, I used bool and set it to true, that too worked.\nHere the e.g. code I used\nFunction.Call(Hash.TASK_VEHICLE_DRIVE_TO_COORD, Ped, Vehicle, Cor X, Cor Y, Cor Z, 30f, 1f, Vehicle.GetHashCode(), 16777216, 1f, true);",
+			"comment": "info about driving modes: https://gtaforums.com/topic/822314-guide-driving-styles/",
 			"params": [
 				{
 					"type": "Ped",
@@ -95282,7 +95351,7 @@
 		"0x0F804F1DB19B9689": {
 			"name": "TASK_CLEAR_LOOK_AT",
 			"jhash": "0x60EB4054",
-			"comment": "Not clear what it actually does, but here's how script uses it - \n\nif (OBJECT::HAS_PICKUP_BEEN_COLLECTED(...) \n{\n if(ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))\n    {\n     TASK::TASK_CLEAR_LOOK_AT(PLAYER::PLAYER_PED_ID());\n  }\n ...\n}\n\nAnother one where it doesn't \"look\" at current player - \n\nTASK::TASK_PLAY_ANIM(l_3ED, \"missheist_agency2aig_2\", \"look_at_phone_a\", 1000.0, -2.0, -1, 48, v_2, 0, 0, 0);\nPED::_2208438012482A1A(l_3ED, 0, 0);\nTASK::TASK_CLEAR_LOOK_AT(l_3ED);",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -97861,7 +97930,7 @@
 		"0xC946FE14BE0EB5E2": {
 			"name": "TASK_GUARD_SPHERE_DEFENSIVE_AREA",
 			"jhash": "0x86B76CB7",
-			"comment": "p0 - Guessing PedID\np1, p2, p3 - XYZ?\np4 - ???\np5 - Maybe the size of sphere from XYZ?\np6 - ???\np7, p8, p9 - XYZ again?\np10 - Maybe the size of sphere from second XYZ?",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -98131,7 +98200,7 @@
 		"0x142A02425FF02BD9": {
 			"name": "TASK_START_SCENARIO_IN_PLACE",
 			"jhash": "0xE50D6DDE",
-			"comment": "Plays a scenario on a Ped at their current location.\n\nunkDelay - Usually 0 or -1, doesn't seem to have any effect. Might be a delay between sequences.\nplayEnterAnim - Plays the \"Enter\" anim if true, otherwise plays the \"Exit\" anim. Scenarios that don't have any \"Enter\" anims won't play if this is set to true.\n\n----\n\nFrom \"am_hold_up.ysc.c4\" at line 339:\n\nTASK::TASK_START_SCENARIO_IN_PLACE(NETWORK::NET_TO_PED(l_8D._f4), sub_adf(), 0, 1);\n\nI'm unsure of what the last two parameters are, however sub_adf() randomly returns 1 of 3 scenarios, those being:\nWORLD_HUMAN_SMOKING\nWORLD_HUMAN_HANG_OUT_STREET\nWORLD_HUMAN_STAND_MOBILE\n\nThis makes sense, as these are what I commonly see when going by a liquor store.\n-------------------------\nList of scenarioNames: pastebin.com/6mrYTdQv\n(^ Thank you so fucking much for this)\n\nAlso these:\nWORLD_FISH_FLEE\nDRIVE\nWORLD_HUMAN_HIKER\nWORLD_VEHICLE_ATTRACTOR\nWORLD_VEHICLE_BICYCLE_MOUNTAIN\nWORLD_VEHICLE_BIKE_OFF_ROAD_RACE\nWORLD_VEHICLE_BIKER\nWORLD_VEHICLE_CONSTRUCTION_PASSENGERS\nWORLD_VEHICLE_CONSTRUCTION_SOLO\nWORLD_VEHICLE_DRIVE_PASSENGERS\nWORLD_VEHICLE_DRIVE_SOLO\nWORLD_VEHICLE_EMPTY\nWORLD_VEHICLE_PARK_PARALLEL\nWORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\nWORLD_VEHICLE_POLICE_BIKE\nWORLD_VEHICLE_POLICE_CAR\nWORLD_VEHICLE_POLICE_NEXT_TO_CAR\nWORLD_VEHICLE_SALTON_DIRT_BIKE\nWORLD_VEHICLE_TRUCK_LOGS\n\nFull list of ped scenarios by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json",
+			"comment": "Plays a scenario on a Ped at their current location.\n\nunkDelay - Usually 0 or -1, doesn't seem to have any effect. Might be a delay between sequences.\nplayEnterAnim - Plays the \"Enter\" anim if true, otherwise plays the \"Exit\" anim. Scenarios that don't have any \"Enter\" anims won't play if this is set to true.\n\n----\n\nFrom \"am_hold_up.ysc.c4\" at line 339:\n\nTASK::TASK_START_SCENARIO_IN_PLACE(NETWORK::NET_TO_PED(l_8D._f4), sub_adf(), 0, 1);\n\nI'm unsure of what the last two parameters are, however sub_adf() randomly returns 1 of 3 scenarios, those being:\nWORLD_HUMAN_SMOKING\nWORLD_HUMAN_HANG_OUT_STREET\nWORLD_HUMAN_STAND_MOBILE\n\nThis makes sense, as these are what I commonly see when going by a liquor store.\n-------------------------\nList of scenarioNames: https://pastebin.com/6mrYTdQv\n(^ Thank you so fucking much for this)\n\nAlso these:\nWORLD_FISH_FLEE\nDRIVE\nWORLD_HUMAN_HIKER\nWORLD_VEHICLE_ATTRACTOR\nWORLD_VEHICLE_BICYCLE_MOUNTAIN\nWORLD_VEHICLE_BIKE_OFF_ROAD_RACE\nWORLD_VEHICLE_BIKER\nWORLD_VEHICLE_CONSTRUCTION_PASSENGERS\nWORLD_VEHICLE_CONSTRUCTION_SOLO\nWORLD_VEHICLE_DRIVE_PASSENGERS\nWORLD_VEHICLE_DRIVE_SOLO\nWORLD_VEHICLE_EMPTY\nWORLD_VEHICLE_PARK_PARALLEL\nWORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\nWORLD_VEHICLE_POLICE_BIKE\nWORLD_VEHICLE_POLICE_CAR\nWORLD_VEHICLE_POLICE_NEXT_TO_CAR\nWORLD_VEHICLE_SALTON_DIRT_BIKE\nWORLD_VEHICLE_TRUCK_LOGS\n\nFull list of ped scenarios by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -98484,7 +98553,7 @@
 		"0x02C8E5B49848664E": {
 			"name": "SET_SCENARIO_GROUP_ENABLED",
 			"jhash": "0x116997B1",
-			"comment": "Full list of scenario groups used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json\nOccurrences in the b617d scripts: pastebin.com/Tvg2PRHU",
+			"comment": "Full list of scenario groups used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json\nOccurrences in the b617d scripts: https://pastebin.com/Tvg2PRHU",
 			"params": [
 				{
 					"type": "const char*",
@@ -98543,7 +98612,7 @@
 		"0xEB47EC4E34FB7EE1": {
 			"name": "SET_SCENARIO_TYPE_ENABLED",
 			"jhash": "0xDB18E5DE",
-			"comment": "Full list of scenario types used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json\nseems to enable/disable specific scenario-types from happening in the game world.\n\nHere are some scenario types from the scripts:\n\"WORLD_MOUNTAIN_LION_REST\"                                             \n\"WORLD_MOUNTAIN_LION_WANDER\"                                            \n\"DRIVE\"                                                                  \n\"WORLD_VEHICLE_POLICE_BIKE\"                                             \n\"WORLD_VEHICLE_POLICE_CAR\"                                             \n\"WORLD_VEHICLE_POLICE_NEXT_TO_CAR\"                                        \n\"WORLD_VEHICLE_DRIVE_SOLO\"                                                 \n\"WORLD_VEHICLE_BIKER\"                                                      \n\"WORLD_VEHICLE_DRIVE_PASSENGERS\"                                           \n\"WORLD_VEHICLE_SALTON_DIRT_BIKE\"                                           \n\"WORLD_VEHICLE_BICYCLE_MOUNTAIN\"                                           \n\"PROP_HUMAN_SEAT_CHAIR\"                                             \n\"WORLD_VEHICLE_ATTRACTOR\"                                             \n\"WORLD_HUMAN_LEANING\"                                                 \n\"WORLD_HUMAN_HANG_OUT_STREET\"                                        \n\"WORLD_HUMAN_DRINKING\"                                                \n\"WORLD_HUMAN_SMOKING\"                                                \n\"WORLD_HUMAN_GUARD_STAND\"                                            \n\"WORLD_HUMAN_CLIPBOARD\"                                              \n\"WORLD_HUMAN_HIKER\"                                                  \n\"WORLD_VEHICLE_EMPTY\"                                                      \n\"WORLD_VEHICLE_BIKE_OFF_ROAD_RACE\"                                      \n\"WORLD_HUMAN_PAPARAZZI\"                                               \n\"WORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\"                            \n\"WORLD_VEHICLE_PARK_PARALLEL\"                                              \n\"WORLD_VEHICLE_CONSTRUCTION_SOLO\"                               \n\"WORLD_VEHICLE_CONSTRUCTION_PASSENGERS\"                                                                    \n\"WORLD_VEHICLE_TRUCK_LOGS\" \n-alphazolam\n\nscenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.",
+			"comment": "Full list of scenario types used in scripts by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json\nseems to enable/disable specific scenario-types from happening in the game world.\n\nHere are some scenario types from the scripts:\n\"WORLD_MOUNTAIN_LION_REST\"                                             \n\"WORLD_MOUNTAIN_LION_WANDER\"                                            \n\"DRIVE\"                                                                  \n\"WORLD_VEHICLE_POLICE_BIKE\"                                             \n\"WORLD_VEHICLE_POLICE_CAR\"                                             \n\"WORLD_VEHICLE_POLICE_NEXT_TO_CAR\"                                        \n\"WORLD_VEHICLE_DRIVE_SOLO\"                                                 \n\"WORLD_VEHICLE_BIKER\"                                                      \n\"WORLD_VEHICLE_DRIVE_PASSENGERS\"                                           \n\"WORLD_VEHICLE_SALTON_DIRT_BIKE\"                                           \n\"WORLD_VEHICLE_BICYCLE_MOUNTAIN\"                                           \n\"PROP_HUMAN_SEAT_CHAIR\"                                             \n\"WORLD_VEHICLE_ATTRACTOR\"                                             \n\"WORLD_HUMAN_LEANING\"                                                 \n\"WORLD_HUMAN_HANG_OUT_STREET\"                                        \n\"WORLD_HUMAN_DRINKING\"                                                \n\"WORLD_HUMAN_SMOKING\"                                                \n\"WORLD_HUMAN_GUARD_STAND\"                                            \n\"WORLD_HUMAN_CLIPBOARD\"                                              \n\"WORLD_HUMAN_HIKER\"                                                  \n\"WORLD_VEHICLE_EMPTY\"                                                      \n\"WORLD_VEHICLE_BIKE_OFF_ROAD_RACE\"                                      \n\"WORLD_HUMAN_PAPARAZZI\"                                               \n\"WORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\"                            \n\"WORLD_VEHICLE_PARK_PARALLEL\"                                              \n\"WORLD_VEHICLE_CONSTRUCTION_SOLO\"                               \n\"WORLD_VEHICLE_CONSTRUCTION_PASSENGERS\"                                                                    \n\"WORLD_VEHICLE_TRUCK_LOGS\"\n\nscenarioType could be the same as scenarioName, used in for example TASK::TASK_START_SCENARIO_AT_POSITION.",
 			"params": [
 				{
 					"type": "const char*",
@@ -98774,7 +98843,7 @@
 		"0xCDDC2B77CE54AC6E": {
 			"name": "TASK_WRITHE",
 			"jhash": "0x0FDC54FC",
-			"comment": "EX: Function.Call(Ped1, Ped2, Time, 0);\n\nThe last parameter is always 0 for some reason I do not know. The first parameter is the pedestrian who will writhe to the pedestrian in the other parameter. The third paremeter is how long until the Writhe task ends. When the task ends, the ped will die. If set to -1, he will not die automatically, and the task will continue until something causes it to end. This can be being touched by an entity, being shot, explosion, going into ragdoll, having task cleared. Anything that ends the current task will kill the ped at this point.\n\n\n\nMulleDK19: Third parameter does not appear to be time. The last parameter is not implemented (It's not used, regardless of value).",
+			"comment": "EX: Function.Call(Ped1, Ped2, Time, 0);\n\nThe last parameter is always 0 for some reason I do not know. The first parameter is the pedestrian who will writhe to the pedestrian in the other parameter. The third paremeter is how long until the Writhe task ends. When the task ends, the ped will die. If set to -1, he will not die automatically, and the task will continue until something causes it to end. This can be being touched by an entity, being shot, explosion, going into ragdoll, having task cleared. Anything that ends the current task will kill the ped at this point.\n\n\n\nThird parameter does not appear to be time. The last parameter is not implemented (It's not used, regardless of value).",
 			"params": [
 				{
 					"type": "Ped",
@@ -100040,7 +100109,7 @@
 		"0x3123FAA6DB1CF7ED": {
 			"name": "TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING",
 			"jhash": "0x959818B6",
-			"comment": "task_vehicle_follow_waypoint_recording(Ped p0, Vehicle p1, string p2, int p3, int p4, int p5, int p6, float.x p7, float.Y p8, float.Z p9, bool p10, int p11)\n\np2 = Waypoint recording string (found in update\\update.rpf\\x64\\levels\\gta5\\waypointrec.rpf\np3 = 786468\np4 = 0\np5 = 16\np6 = -1 (angle?)\np7/8/9 = usually v3.zero\np10 = bool (repeat?)\np11 = 1073741824\n\n-khorio\n\nFull list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json",
+			"comment": "task_vehicle_follow_waypoint_recording(Ped p0, Vehicle p1, string p2, int p3, int p4, int p5, int p6, float.x p7, float.Y p8, float.Z p9, bool p10, int p11)\n\np2 = Waypoint recording string (found in update\\update.rpf\\x64\\levels\\gta5\\waypointrec.rpf\np3 = 786468\np4 = 0\np5 = 16\np6 = -1 (angle?)\np7/8/9 = usually v3.zero\np10 = bool (repeat?)\np11 = 1073741824\n\nFull list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -100471,7 +100540,7 @@
 		"0xAB13A5565480B6D9": {
 			"name": "SET_EXPECTED_CLONE_NEXT_TASK_MOVE_NETWORK_STATE",
 			"jhash": "0x1E58A7AD",
-			"comment": "Used only once in the scripts (fm_mission_controller) like so:\n\nTASK::_0xAB13A5565480B6D9(iLocal_3160, \"Cutting\");",
+			"comment": "Used only once in the scripts (fm_mission_controller) like so:\n\nTASK::SET_EXPECTED_CLONE_NEXT_TASK_MOVE_NETWORK_STATE(iLocal_3160, \"Cutting\");",
 			"params": [
 				{
 					"type": "Ped",
@@ -100522,7 +100591,7 @@
 		"0xD5BB4025AE449A4E": {
 			"name": "SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT",
 			"jhash": "0xA79BE783",
-			"comment": "p0 - PLAYER::PLAYER_PED_ID();\np1 - \"Phase\", \"Wobble\", \"x_axis\",\"y_axis\",\"introphase\",\"speed\".\np2 - From what i can see it goes up to 1f (maybe).\n\n-LcGamingHD\n\nExample: TASK::_D5BB4025AE449A4E(PLAYER::PLAYER_PED_ID(), \"Phase\", 0.5);",
+			"comment": "signalName - \"Phase\", \"Wobble\", \"x_axis\",\"y_axis\",\"introphase\",\"speed\".\np2 - From what i can see it goes up to 1f (maybe).\n\nExample: TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(PLAYER::PLAYER_PED_ID(), \"Phase\", 0.5);",
 			"params": [
 				{
 					"type": "Ped",
@@ -101768,7 +101837,7 @@
 		"0xB664292EAECF7FA6": {
 			"name": "SET_VEHICLE_DOORS_LOCKED",
 			"jhash": "0x4CDD35D0",
-			"comment": "0 - CARLOCK_NONE\n1 - CARLOCK_UNLOCKED\n2 - CARLOCK_LOCKED (locked)\n3 - CARLOCK_LOCKOUT_PLAYER_ONLY\n4 - CARLOCK_LOCKED_PLAYER_INSIDE (can get in, can't leave)\n\n(maybe, these are leftovers from GTA:VC)\n5 - CARLOCK_LOCKED_INITIALLY\n6 - CARLOCK_FORCE_SHUT_DOORS\n7 - CARLOCK_LOCKED_BUT_CAN_BE_DAMAGED\n\n(source: GTA VC miss2 leak, matching constants for 0/2/4, testing)\n\nThey use 10 in am_mp_property_int, don't know what it does atm.",
+			"comment": "enum eVehicleLockState\n{\n\tVEHICLELOCK_NONE,\n\tVEHICLELOCK_UNLOCKED,\n\tVEHICLELOCK_LOCKED,\n\tVEHICLELOCK_LOCKOUT_PLAYER_ONLY,\n\tVEHICLELOCK_LOCKED_PLAYER_INSIDE,\n\tVEHICLELOCK_LOCKED_INITIALLY,\n\tVEHICLELOCK_FORCE_SHUT_DOORS,\n\tVEHICLELOCK_LOCKED_BUT_CAN_BE_DAMAGED,\n\tVEHICLELOCK_LOCKED_BUT_BOOT_UNLOCKED,\n\tVEHICLELOCK_LOCKED_NO_PASSENGERS,\n\tVEHICLELOCK_CANNOT_ENTER\t\n};",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -102110,7 +102179,7 @@
 		"0x4F1D4BE3A7F24601": {
 			"name": "SET_VEHICLE_COLOURS",
 			"jhash": "0x57F24253",
-			"comment": "colorPrimary & colorSecondary are the paint index for the vehicle.\nFor a list of valid paint indexes, view: pastebin.com/pwHci0xK\n-------------------------------------------------------------------------\nUse this to get the number of color indices: pastebin.com/RQEeqTSM\nNote: minimum color index is 0, maximum color index is (numColorIndices - 1)\n\nFull list of vehicle colors by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
+			"comment": "colorPrimary & colorSecondary are the paint index for the vehicle.\nFor a list of valid paint indexes, view: https://pastebin.com/pwHci0xK\n-------------------------------------------------------------------------\nNote: minimum color index is 0, maximum color index is (numColorIndices - 1)\n\nFull list of vehicle colors by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleColors.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103413,7 +103482,7 @@
 		"0x7AD9E6CE657D69E3": {
 			"name": "ROLL_DOWN_WINDOW",
 			"jhash": "0xF840134C",
-			"comment": "windowIndex:\n0 = Front Right Window\n1 = Front Left Window\n2 = Back Right Window\n3 = Back Left Window",
+			"comment": "windowIndex:\n0 = Front Left Window\n1 = Front Right Window\n2 = Rear Left Window\n3 = Rear Right Window\n4 = Front Windscreen\n5 = Rear Windscreen\n6 = Mid Left\n7 = Mid Right\n8 = Invalid",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103430,7 +103499,7 @@
 		"0x602E548F46E24D59": {
 			"name": "ROLL_UP_WINDOW",
 			"jhash": "0x83B7E06A",
-			"comment": "Window indexes:\n0 = Front Left Window\n1 = Front Right Window\n2 = Back Left Window\n3 = Back Right Window",
+			"comment": "windowIndex:\n0 = Front Left Window\n1 = Front Right Window\n2 = Rear Left Window\n3 = Rear Right Window\n4 = Front Windscreen\n5 = Rear Windscreen\n6 = Mid Left\n7 = Mid Right\n8 = Invalid",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103447,7 +103516,7 @@
 		"0x9E5B5E4D2CCD2259": {
 			"name": "SMASH_VEHICLE_WINDOW",
 			"jhash": "0xDDD9A8C2",
-			"comment": "`index` = 0 to 13\n0 = front right window\n1 = front left window\n2 = rear right window\n3 = rear left window\n4 = unsure\n5 = unsure\n6 = windowscreen\n7 = rear windowscreen\n8 = unsure\n9 = unsure\n10 = unsure\n11 = unsure\n12 = unsure\n13 = unsure",
+			"comment": "windowIndex:\n0 = Front Left Window\n1 = Front Right Window\n2 = Rear Left Window\n3 = Rear Right Window\n4 = Front Windscreen\n5 = Rear Windscreen\n6 = Mid Left\n7 = Mid Right\n8 = Invalid",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103455,7 +103524,7 @@
 				},
 				{
 					"type": "int",
-					"name": "index"
+					"name": "windowIndex"
 				}
 			],
 			"return_type": "void",
@@ -103464,7 +103533,7 @@
 		"0x772282EBEB95E682": {
 			"name": "FIX_VEHICLE_WINDOW",
 			"jhash": "0x6B8E990D",
-			"comment": "`index` = 0 to 13\n0 = front right window\n1 = front left window\n2 = rear right window\n3 = rear left window\n4 = unsure\n5 = unsure\n6 = windowscreen\n7 = rear windowscreen\n8 = unsure\n9 = unsure\n10 = unsure\n11 = unsure\n12 = unsure\n13 = unsure\n\nAdditional information: FIX_VEHICLE_WINDOW (0x140D0BB88) references an array of bone vehicle indices (0x141D4B3E0) { 2Ah, 2Bh, 2Ch, 2Dh, 2Eh, 2Fh, 28h, 29h } that correspond to: window_lf, window_rf, window_lr, window_rr, window_lm, window_rm, windscreen, windscreen_r. This array is used by most vehwindow natives.\n\nAlso, this function is coded to not work on vehicles of type: CBike, Bmx, CBoat, CTrain, and CSubmarine.",
+			"comment": "windowIndex:\n0 = Front Left Window\n1 = Front Right Window\n2 = Rear Left Window\n3 = Rear Right Window\n4 = Front Windscreen\n5 = Rear Windscreen\n6 = Mid Left\n7 = Mid Right\n8 = Invalid\n\nAdditional information: FIX_VEHICLE_WINDOW (0x140D0BB88) references an array of bone vehicle indices (0x141D4B3E0) { 2Ah, 2Bh, 2Ch, 2Dh, 2Eh, 2Fh, 28h, 29h } that correspond to: window_lf, window_rf, window_lr, window_rr, window_lm, window_rm, windscreen, windscreen_r. This array is used by most vehwindow natives.\n\nAlso, this function is coded to not work on vehicles of type: CBike, Bmx, CBoat, CTrain, and CSubmarine.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103472,7 +103541,7 @@
 				},
 				{
 					"type": "int",
-					"name": "index"
+					"name": "windowIndex"
 				}
 			],
 			"return_type": "void",
@@ -104871,7 +104940,7 @@
 		"0xF73EB622C4F1689B": {
 			"name": "GET_CLOSEST_VEHICLE",
 			"jhash": "0xD7E26B2C",
-			"comment": "Example usage\nVEHICLE::GET_CLOSEST_VEHICLE(x, y, z, radius, hash, unknown leave at 70) \n\nx, y, z: Position to get closest vehicle to.\nradius: Max radius to get a vehicle.\nmodelHash: Limit to vehicles with this model. 0 for any.\nflags: The bitwise flags altering the function's behaviour.\n\nDoes not return police cars or helicopters.\n\nIt seems to return police cars for me, does not seem to return helicopters, planes or boats for some reason\n\nOnly returns non police cars and motorbikes with the flag set to 70 and modelHash to 0. ModelHash seems to always be 0 when not a modelHash in the scripts, as stated above. \n\nThese flags were found in the b617d scripts: 0,2,4,6,7,23,127,260,2146,2175,12294,16384,16386,20503,32768,67590,67711,98309,100359.\nConverted to binary, each bit probably represents a flag as explained regarding another native here: gtaforums.com/topic/822314-guide-driving-styles\n\nConversion of found flags to binary: pastebin.com/kghNFkRi\n\nAt exactly 16384 which is 0100000000000000 in binary and 4000 in hexadecimal only planes are returned. \n\nIt's probably more convenient to use worldGetAllVehicles(int *arr, int arrSize) and check the shortest distance yourself and sort if you want by checking the vehicle type with for example VEHICLE::IS_THIS_MODEL_A_BOAT\n\n-------------------------------------------------------------------------\n\nConclusion: This native is not worth trying to use. Use something like this instead: pastebin.com/xiFdXa7h\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "Example usage\nVEHICLE::GET_CLOSEST_VEHICLE(x, y, z, radius, hash, unknown leave at 70) \n\nx, y, z: Position to get closest vehicle to.\nradius: Max radius to get a vehicle.\nmodelHash: Limit to vehicles with this model. 0 for any.\nflags: The bitwise flags altering the function's behaviour.\n\nDoes not return police cars or helicopters.\n\nIt seems to return police cars for me, does not seem to return helicopters, planes or boats for some reason\n\nOnly returns non police cars and motorbikes with the flag set to 70 and modelHash to 0. ModelHash seems to always be 0 when not a modelHash in the scripts, as stated above. \n\nThese flags were found in the b617d scripts: 0,2,4,6,7,23,127,260,2146,2175,12294,16384,16386,20503,32768,67590,67711,98309,100359.\nConverted to binary, each bit probably represents a flag as explained regarding another native here: gtaforums.com/topic/822314-guide-driving-styles\n\nConversion of found flags to binary: https://pastebin.com/kghNFkRi\n\nAt exactly 16384 which is 0100000000000000 in binary and 4000 in hexadecimal only planes are returned. \n\nIt's probably more convenient to use worldGetAllVehicles(int *arr, int arrSize) and check the shortest distance yourself and sort if you want by checking the vehicle type with for example VEHICLE::IS_THIS_MODEL_A_BOAT\n\n-------------------------------------------------------------------------\n\nConclusion: This native is not worth trying to use. Use something like this instead: https://pastebin.com/xiFdXa7h\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "float",
@@ -105213,7 +105282,7 @@
 		"0xDBC631F109350B8C": {
 			"name": "SET_DONT_ALLOW_PLAYER_TO_ENTER_VEHICLE_IF_LOCKED_FOR_PLAYER",
 			"jhash": "0x486C1280",
-			"comment": "In the decompiled scripts, its always called after\nVEHICLE::_SET_EXCLUSIVE_DRIVER(a_0, 0, 0);\nVEHICLE::SET_VEHICLE_DOORS_LOCKED_FOR_ALL_PLAYERS(a_0, 1);\nVEHICLE::SET_VEHICLE_DOORS_LOCKED_FOR_PLAYER(a_0, PLAYER::PLAYER_ID(), 0);\n-->VEHICLE::_DBC631F109350B8C(a_0, 1);",
+			"comment": "",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105314,7 +105383,7 @@
 		"0x79D3B596FE44EE8B": {
 			"name": "SET_VEHICLE_DIRT_LEVEL",
 			"jhash": "0x2B39128B",
-			"comment": "You can't use values greater than 15.0\nYou can see why here: pastebin.com/Wbn34fGD\n\nAlso, R* does (float)(rand() % 15) to get a random dirt level when generating a vehicle.",
+			"comment": "You can't use values greater than 15.0nAlso, R* does (float)(rand() % 15) to get a random dirt level when generating a vehicle.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106928,7 +106997,7 @@
 		"0x9D44FCCE98450843": {
 			"name": "SET_VEHICLE_IN_CAR_MOD_SHOP",
 			"jhash": "0x968E5770",
-			"comment": "If set to TRUE, it seems to suppress door noises and doesn't allow the horn to be continuous.\n\n-Doesn't seem to suppress door noises for me, at least with the vehicle add-on I tried",
+			"comment": "If set to TRUE, it seems to suppress door noises and doesn't allow the horn to be continuous.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -108923,7 +108992,7 @@
 		"0x6AF0636DDEDCB6DD": {
 			"name": "SET_VEHICLE_MOD",
 			"jhash": "0xB52E5ED5",
-			"comment": "In b944, there are 50 (0 - 49) mod types.\n\nSets the vehicle mod.\nThe vehicle must have a mod kit first.\n\nAny out of range ModIndex is stock.\n\n#Mod Type\nSpoilers - 0\nFront Bumper - 1\nRear Bumper - 2\nSide Skirt - 3\nExhaust - 4\nFrame - 5\nGrille - 6\nHood - 7\nFender - 8\nRight Fender - 9\nRoof - 10\nEngine - 11\nBrakes - 12\nTransmission - 13\nHorns - 14 (modIndex from 0 to 51)\nSuspension - 15\nArmor - 16\nFront Wheels - 23\nBack Wheels - 24 //only for motocycles\nPlate holders - 25\nTrim Design - 27\nOrnaments - 28\nDial Design - 30\nSteering Wheel - 33\nShifter Leavers - 34\nPlaques - 35\nHydraulics - 38\nLivery - 48\n\nENUMS: pastebin.com/QzEAn02v",
+			"comment": "In b944, there are 50 (0 - 49) mod types.\n\nSets the vehicle mod.\nThe vehicle must have a mod kit first.\n\nAny out of range ModIndex is stock.\n\n#Mod Type\nSpoilers - 0\nFront Bumper - 1\nRear Bumper - 2\nSide Skirt - 3\nExhaust - 4\nFrame - 5\nGrille - 6\nHood - 7\nFender - 8\nRight Fender - 9\nRoof - 10\nEngine - 11\nBrakes - 12\nTransmission - 13\nHorns - 14 (modIndex from 0 to 51)\nSuspension - 15\nArmor - 16\nFront Wheels - 23\nBack Wheels - 24 //only for motocycles\nPlate holders - 25\nTrim Design - 27\nOrnaments - 28\nDial Design - 30\nSteering Wheel - 33\nShifter Leavers - 34\nPlaques - 35\nHydraulics - 38\nLivery - 48\n\nENUMS: https://pastebin.com/QzEAn02v",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -111173,7 +111242,7 @@
 		"0xDEDF1C8BD47C2200": {
 			"name": "GET_VEHICLE_CLASS_FROM_NAME",
 			"jhash": "0xEA469980",
-			"comment": "For a full enum, see here : pastebin.com/i2GGAjY0\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS_FROM_NAME (hash));\n\nconst char* className = HUD::_GET_LABEL_TEXT(buffer);\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "char buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS_FROM_NAME (hash));\n\nconst char* className = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(buffer);\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -111677,7 +111746,7 @@
 		"0x8E0A582209A62695": {
 			"name": "SET_VEHICLE_NEON_COLOUR",
 			"jhash": "",
-			"comment": "Sets the color of the neon lights of the specified vehicle.\n\nMore info: pastebin.com/G49gqy8b",
+			"comment": "Sets the color of the neon lights of the specified vehicle.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114574,7 +114643,7 @@
 		"0xB1252E3E59A82AAF": {
 			"name": "REMOVE_EXTRA_CALMING_QUAD",
 			"jhash": "0x45268B6F",
-			"comment": "p0 is the handle returned from _0xFDBF4CDBC07E1706",
+			"comment": "p0 is the handle returned from ADD_EXTRA_CALMING_QUAD",
 			"params": [
 				{
 					"type": "int",
@@ -115140,7 +115209,7 @@
 		"0x4899CB088EDF59B8": {
 			"name": "REMOVE_WEAPON_FROM_PED",
 			"jhash": "0x9C37F220",
-			"comment": "This native removes a specified weapon from your selected ped.\nWeapon Hashes: pastebin.com/0wwDZgkF\n\nExample:\nC#:\nFunction.Call(Hash.REMOVE_WEAPON_FROM_PED, Game.Player.Character, 0x99B507EA);\n\nC++:\nWEAPON::REMOVE_WEAPON_FROM_PED(PLAYER::PLAYER_PED_ID(), 0x99B507EA);\n\nThe code above removes the knife from the player.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
+			"comment": "This native removes a specified weapon from your selected ped.\n\nExample:\nC#:\nFunction.Call(Hash.REMOVE_WEAPON_FROM_PED, Game.Player.Character, 0x99B507EA);\n\nC++:\nWEAPON::REMOVE_WEAPON_FROM_PED(PLAYER::PLAYER_PED_ID(), 0x99B507EA);\n\nThe code above removes the knife from the player.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -115711,7 +115780,7 @@
 		"0x717C8481234E3B88": {
 			"name": "HAS_VEHICLE_GOT_PROJECTILE_ATTACHED",
 			"jhash": "0xA57E2E80",
-			"comment": "Third Parameter = unsure, but pretty sure it is weapon hash\n--> get_hash_key(\"weapon_stickybomb\")\n\nFourth Parameter = unsure, almost always -1",
+			"comment": "Fourth Parameter = unsure, almost always -1",
 			"params": [
 				{
 					"type": "Ped",
