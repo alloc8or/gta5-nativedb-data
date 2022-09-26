@@ -22417,20 +22417,20 @@
 					"name": "zAxis"
 				},
 				{
-					"type": "Any",
-					"name": "p12"
+					"type": "float",
+					"name": "r"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "float",
+					"name": "g"
 				},
 				{
-					"type": "Any",
-					"name": "p14"
+					"type": "float",
+					"name": "b"
 				},
 				{
-					"type": "Any",
-					"name": "p15"
+					"type": "float",
+					"name": "a"
 				}
 			],
 			"return_type": "int",
@@ -22497,20 +22497,20 @@
 					"name": "zAxis"
 				},
 				{
-					"type": "Any",
-					"name": "p13"
+					"type": "float",
+					"name": "r"
 				},
 				{
-					"type": "Any",
-					"name": "p14"
+					"type": "float",
+					"name": "g"
 				},
 				{
-					"type": "Any",
-					"name": "p15"
+					"type": "float",
+					"name": "b"
 				},
 				{
-					"type": "Any",
-					"name": "p16"
+					"type": "float",
+					"name": "a"
 				}
 			],
 			"return_type": "int",
