@@ -5862,8 +5862,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "camera"
 				},
 				{
 					"type": "float",
@@ -15259,24 +15259,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash",
+					"name": "modelHash"
 				}
 			],
 			"return_type": "void",
@@ -20522,7 +20522,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -20568,7 +20568,7 @@
 					"name": "p0"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "323"
 		},
 		"0x14FC5833464340A8": {
@@ -31102,35 +31102,35 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p3"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p4"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p5"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p6"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p7"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p8"
 				}
 			],
@@ -40166,7 +40166,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -49804,7 +49804,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -55392,11 +55392,11 @@
 			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -64770,8 +64770,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Any",
@@ -68883,8 +68883,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
@@ -71957,7 +71957,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -71970,7 +71970,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -76902,12 +76902,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -83105,16 +83105,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -83223,15 +83223,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
@@ -85993,10 +85993,10 @@
 		"0x49A49BED12794D70": {
 			"name": "STAT_DELETE_SLOT",
 			"jhash": "0x2F171B94",
-			"comment": "",
+			"comment": "p0 is characterSlot? seems range from 0 to 2",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -86009,7 +86009,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -86022,7 +86022,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -86602,7 +86602,7 @@
 		"0x26D7399B9587FE89": {
 			"name": "STAT_RESET_ALL_ONLINE_CHARACTER_STATS",
 			"jhash": "0x343B27E2",
-			"comment": "",
+			"comment": "p0 seems to range from 0 to 7",
 			"params": [
 				{
 					"type": "int",
@@ -86615,7 +86615,7 @@
 		"0xA78B8FA58200DA56": {
 			"name": "STAT_LOCAL_RESET_ALL_ONLINE_CHARACTER_STATS",
 			"jhash": "0xE3247582",
-			"comment": "",
+			"comment": "p0 seems to range from 0 to 7",
 			"params": [
 				{
 					"type": "int",
@@ -89179,7 +89179,7 @@
 			"params": [
 				{
 					"type": "float*",
-					"name": "p0"
+					"name": "outValue"
 				}
 			],
 			"return_type": "BOOL",
@@ -90747,23 +90747,23 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "moneyAmount"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "rpAmount"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "chipsAmount"
 				},
 				{
 					"type": "Any",
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				},
 				{
@@ -91599,12 +91599,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "vehicleModel"
 				}
 			],
 			"return_type": "void",
@@ -106849,7 +106849,7 @@
 		"0x679BE1DAF71DA874": {
 			"name": "IS_VEHICLE_STUCK_TIMER_UP",
 			"jhash": "0x2FCF58C1",
-			"comment": "p1 can be anywhere from 0 to 3 in the scripts. p2 is generally somewhere in the 1000 to 10000 range.",
+			"comment": "p1 can be anywhere from 0 to 3 in the scripts.\np2 being how long in milliseconds the vehicle has been stuck",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106861,7 +106861,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "ms"
 				}
 			],
 			"return_type": "BOOL",
@@ -107808,8 +107808,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "Any",
@@ -107841,11 +107841,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -109615,7 +109615,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
