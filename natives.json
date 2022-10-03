@@ -83106,11 +83106,11 @@
 			"params": [
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "player1"
 				},
 				{
 					"type": "Player",
-					"name": "player"
+					"name": "player2"
 				},
 				{
 					"type": "BOOL",
