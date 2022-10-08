@@ -13790,9 +13790,9 @@
 		"0xB9C54555ED30FBC4": {
 			"name": "PLAY_SYNCHRONIZED_MAP_ENTITY_ANIM",
 			"jhash": "0xEB4CBA74",
-			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
+			"comment": "p6,p7 probably animname and animdict\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
-				{{
+				{
 					"type": "float",
 					"name": "x1"
 				},
@@ -72285,7 +72285,7 @@
 		"0xCF1CE768BB43480E": {
 			"name": "GET_PED_HEAD_OVERLAY_NUM",
 			"jhash": "0xFF43C18D",
-			"comment": "Used with freemode (online) characters.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -72301,7 +72301,7 @@
 		"0x497BF74A7B9CB952": {
 			"name": "SET_PED_HEAD_OVERLAY_TINT",
 			"jhash": "",
-			"comment": "Used for freemode (online) characters.\n\nColorType is 1 for eyebrows, beards, and chest hair; 2 for blush and lipstick; and 0 otherwise, though not called in those cases.\n\nCalled after SET_PED_HEAD_OVERLAY().",
+			"comment": "\n\nColorType is 1 for eyebrows, beards, and chest hair; 2 for blush and lipstick; and 0 otherwise, though not called in those cases.\n\nCalled after SET_PED_HEAD_OVERLAY().",
 			"params": [
 				{
 					"type": "Ped",
@@ -72333,7 +72333,7 @@
 		"0x4CFFC65454C93A49": {
 			"name": "SET_PED_HAIR_TINT",
 			"jhash": "",
-			"comment": "Used for freemode (online) characters.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -72357,7 +72357,7 @@
 		"0xE5C0CF872C2AD150": {
 			"name": "GET_NUM_PED_HAIR_TINTS",
 			"jhash": "",
-			"comment": "Used for freemode (online) characters.",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -73068,15 +73068,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
