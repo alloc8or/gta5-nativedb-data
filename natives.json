@@ -84341,15 +84341,15 @@
 				},
 				{
 					"type": "float",
-					"name": "x1"
+					"name": "dimX"
 				},
 				{
 					"type": "float",
-					"name": "y2"
+					"name": "dimY"
 				},
 				{
 					"type": "float",
-					"name": "z2"
+					"name": "dimZ"
 				},
 				{
 					"type": "float",
