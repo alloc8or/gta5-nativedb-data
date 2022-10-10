@@ -711,7 +711,7 @@
 		"0xC5EF963405593646": {
 			"name": "ADD_LINE_TO_CONVERSATION",
 			"jhash": "0x96CD0513",
-			"comment": "NOTE: ones that are -1, 0 - 35 are determined by a function where it gets a TextLabel from a global then runs,\n_GET_TEXT_SUBSTRING and depending on what the result is it goes in check order of 0 - 9 then A - Z then z (lowercase). So it will then return 0 - 35 or -1 if it's 'z'. The func to handle that ^^ is func_67 in dialog_handler.c atleast in TU27 Xbox360 scripts.\n\np0 is -1, 0 - 35\np1 is a char or string (whatever you wanna call it)\np2 is Global 10597 + i * 6. 'i' is a while(i < 70) loop\np3 is again -1, 0 - 35 \np4 is again -1, 0 - 35 \np5 is either 0 or 1 (bool ?)\np6 is either 0 or 1 (The func to determine this is bool)\np7 is either 0 or 1 (The func to determine this is bool)\np8 is either 0 or 1 (The func to determine this is bool)\np9 is 0 - 3 (Determined by func_60 in dialogue_handler.c)\np10 is either 0 or 1 (The func to determine this is bool)\np11 is either 0 or 1 (The func to determine this is bool)\np12 is unknown as in TU27 X360 scripts it only goes to p11.",
+			"comment": "NOTE: ones that are -1, 0 - 35 are determined by a function where it gets a TextLabel from a global then runs,\nGET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME and depending on what the result is it goes in check order of 0 - 9 then A - Z then z (lowercase). So it will then return 0 - 35 or -1 if it's 'z'. The func to handle that ^^ is func_67 in dialog_handler.c atleast in TU27 Xbox360 scripts.\n\np0 is -1, 0 - 35\np1 is a char or string (whatever you wanna call it)\np2 is Global 10597 + i * 6. 'i' is a while(i < 70) loop\np3 is again -1, 0 - 35 \np4 is again -1, 0 - 35 \np5 is either 0 or 1 (bool ?)\np6 is either 0 or 1 (The func to determine this is bool)\np7 is either 0 or 1 (The func to determine this is bool)\np8 is either 0 or 1 (The func to determine this is bool)\np9 is 0 - 3 (Determined by func_60 in dialogue_handler.c)\np10 is either 0 or 1 (The func to determine this is bool)\np11 is either 0 or 1 (The func to determine this is bool)\np12 is unknown as in TU27 X360 scripts it only goes to p11.",
 			"params": [
 				{
 					"type": "int",
@@ -2024,7 +2024,7 @@
 		"0x7CDC8C3B89F661B3": {
 			"name": "SET_PED_VOICE_GROUP",
 			"jhash": "",
-			"comment": "From the scripts:\n\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"PAIGE_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"TALINA_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"FEMALE_LOST_BLACK_PVG\"));\nAUDIO::_SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"FEMALE_LOST_WHITE_PVG\"));",
+			"comment": "From the scripts:\n\nAUDIO::SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"PAIGE_PVG\"));\nAUDIO::SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"TALINA_PVG\"));\nAUDIO::SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"FEMALE_LOST_BLACK_PVG\"));\nAUDIO::SET_PED_VOICE_GROUP(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY(\"FEMALE_LOST_WHITE_PVG\"));",
 			"params": [
 				{
 					"type": "Ped",
@@ -2302,7 +2302,7 @@
 		"0xB28ECA15046CA8B9": {
 			"name": "GET_RADIO_STATION_NAME",
 			"jhash": "0x3DF493BC",
-			"comment": "Converts radio station index to string. Use HUD::_GET_LABEL_TEXT to get the user-readable text.",
+			"comment": "Converts radio station index to string. Use HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION to get the user-readable text.",
 			"params": [
 				{
 					"type": "int",
@@ -7857,7 +7857,7 @@
 		"0xDF2E1F7742402E81": {
 			"name": "SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE",
 			"jhash": "0x77340650",
-			"comment": "Seems to animate the gameplay camera zoom.\n\nEg. SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE(1f, 1000f);\nwill animate the camera zooming in from 1000 meters away.\n\nGame scripts use it like this:\n\n// Setting this to 1 prevents V key from changing zoom\nPLAYER::SET_PLAYER_FORCED_ZOOM(PLAYER::PLAYER_ID(), 1);\n\n// These restrict how far you can move cam up/down left/right\nCAM::SET_THIRD_PERSON_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE(-20f, 50f);\nCAM::_CLAMP_GAMEPLAY_CAM_PITCH(-60f, 0f);\n\nCAM::_ANIMATE_GAMEPLAY_CAM_ZOOM(1f, 1f);",
+			"comment": "Seems to animate the gameplay camera zoom.\n\nEg. SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE(1f, 1000f);\nwill animate the camera zooming in from 1000 meters away.\n\nGame scripts use it like this:\n\n// Setting this to 1 prevents V key from changing zoom\nPLAYER::SET_PLAYER_FORCED_ZOOM(PLAYER::PLAYER_ID(), 1);\n\n// These restrict how far you can move cam up/down left/right\nCAM::SET_THIRD_PERSON_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE(-20f, 50f);\nCAM::SET_THIRD_PERSON_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE(-60f, 0f);\n\nCAM::SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE(1f, 1f);",
 			"params": [
 				{
 					"type": "float",
@@ -13790,38 +13790,38 @@
 		"0xB9C54555ED30FBC4": {
 			"name": "PLAY_SYNCHRONIZED_MAP_ENTITY_ANIM",
 			"jhash": "0xEB4CBA74",
-			"comment": "Full list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
+			"comment": "p6,p7 probably animname and animdict\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "Any",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p6"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p7"
 				},
 				{
@@ -13851,27 +13851,27 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "Any",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				}
 			],
 			"return_type": "BOOL",
@@ -14152,12 +14152,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -14565,7 +14565,7 @@
 		"0xFAEE099C6F890BB8": {
 			"name": "SET_ENTITY_PROOFS",
 			"jhash": "0x7E9EAB66",
-			"comment": "Enable / disable each type of damage.\n\nCan't get drownProof to work.\n--------------\np7 is to to '1' in am_mp_property_ext/int: entity::set_entity_proofs(uParam0->f_19, true, true, true, true, true, true, 1, true);\n",
+			"comment": "Enable / disable each type of damage.\n\nwaterProof is damage related to water not drowning\n--------------\np7 is to to '1' in am_mp_property_ext/int: ENTITY::SET_ENTITY_PROOFS(uParam0->f_19, true, true, true, true, true, true, 1, true);\n",
 			"params": [
 				{
 					"type": "Entity",
@@ -14593,7 +14593,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "steamProof"
 				},
 				{
 					"type": "BOOL",
@@ -14601,7 +14601,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "drownProof"
+					"name": "waterProof"
 				}
 			],
 			"return_type": "void",
@@ -16524,7 +16524,7 @@
 		"0x79923CD21BECE14E": {
 			"name": "GET_DLC_WEAPON_DATA",
 			"jhash": "0xD88EC8EA",
-			"comment": "\ndlcWeaponIndex takes a number from 0 - GET_NUM_DLC_WEAPONS() - 1.\nstruct DlcWeaponData\n{\nint emptyCheck; //use DLC1::_IS_DLC_DATA_EMPTY on this\nint padding1;\nint weaponHash;\nint padding2;\nint unk;\nint padding3;\nint weaponCost;\nint padding4;\nint ammoCost;\nint padding5;\nint ammoType;\nint padding6;\nint defaultClipSize;\nint padding7;\nchar nameLabel[64];\nchar descLabel[64];\nchar desc2Label[64]; // usually \"the\" + name\nchar upperCaseNameLabel[64];\n};",
+			"comment": "\ndlcWeaponIndex takes a number from 0 - GET_NUM_DLC_WEAPONS() - 1.\nstruct DlcWeaponData\n{\nint emptyCheck; //use DLC1::IS_CONTENT_ITEM_LOCKED on this\nint padding1;\nint weaponHash;\nint padding2;\nint unk;\nint padding3;\nint weaponCost;\nint padding4;\nint ammoCost;\nint padding5;\nint ammoType;\nint padding6;\nint defaultClipSize;\nint padding7;\nchar nameLabel[64];\nchar descLabel[64];\nchar desc2Label[64]; // usually \"the\" + name\nchar upperCaseNameLabel[64];\n};",
 			"params": [
 				{
 					"type": "int",
@@ -16678,7 +16678,7 @@
 		"0x6BEDF5769AC2DC07": {
 			"name": "EXECUTE_CONTENT_CHANGESET_GROUP_FOR_ALL",
 			"jhash": "",
-			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::_UNLOAD_CONTENT_CHANGE_SET_GROUP(joaat(\"GROUP_MAP_SP\"));\nFILES::_LOAD_CONTENT_CHANGE_SET_GROUP(joaat(\"GROUP_MAP\"));",
+			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::REVERT_CONTENT_CHANGESET_GROUP_FOR_ALL(joaat(\"GROUP_MAP_SP\"));\nFILES::EXECUTE_CONTENT_CHANGESET_GROUP_FOR_ALL(joaat(\"GROUP_MAP\"));",
 			"params": [
 				{
 					"type": "Hash",
@@ -16694,7 +16694,7 @@
 		"0x3C1978285B036B25": {
 			"name": "REVERT_CONTENT_CHANGESET_GROUP_FOR_ALL",
 			"jhash": "",
-			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::_UNLOAD_CONTENT_CHANGE_SET_GROUP(joaat(\"GROUP_MAP_SP\"));\nFILES::_LOAD_CONTENT_CHANGE_SET_GROUP(joaat(\"GROUP_MAP\"));",
+			"comment": "From fm_deathmatch_creator and fm_race_creator:\n\nFILES::REVERT_CONTENT_CHANGESET_GROUP_FOR_ALL(joaat(\"GROUP_MAP_SP\"));\nFILES::EXECUTE_CONTENT_CHANGESET_GROUP_FOR_ALL(joaat(\"GROUP_MAP\"));",
 			"params": [
 				{
 					"type": "Hash",
@@ -18964,7 +18964,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -21878,7 +21878,7 @@
 		"0x0D53A3B8DA0809D2": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_ON_ENTITY",
 			"jhash": "0x9604DAD4",
-			"comment": "Starts a particle effect on an entity for example your player.\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json\n\nExample:\nC#:\nFunction.Call(Hash.REQUEST_NAMED_PTFX_ASSET, \"scr_rcbarry2\");                     Function.Call(Hash._SET_PTFX_ASSET_NEXT_CALL, \"scr_rcbarry2\");                             Function.Call(Hash.START_PARTICLE_FX_NON_LOOPED_ON_ENTITY, \"scr_clown_appears\", Game.Player.Character, 0.0, 0.0, -0.5, 0.0, 0.0, 0.0, 1.0, false, false, false);\n\nInternally this calls the same function as GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE\nhowever it uses -1 for the specified bone index, so it should be possible to start a non looped fx on an entity bone using that native\n\n-can confirm START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE does NOT work on vehicle bones.",
+			"comment": "Starts a particle effect on an entity for example your player.\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json\n\nExample:\nC#:\nFunction.Call(Hash.REQUEST_NAMED_PTFX_ASSET, \"scr_rcbarry2\");                     Function.Call(Hash.USE_PARTICLE_FX_ASSET, \"scr_rcbarry2\");                             Function.Call(Hash.START_PARTICLE_FX_NON_LOOPED_ON_ENTITY, \"scr_clown_appears\", Game.Player.Character, 0.0, 0.0, -0.5, 0.0, 0.0, 0.0, 1.0, false, false, false);\n\nInternally this calls the same function as GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE\nhowever it uses -1 for the specified bone index, so it should be possible to start a non looped fx on an entity bone using that native\n\n-can confirm START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE does NOT work on vehicle bones.",
 			"params": [
 				{
 					"type": "const char*",
@@ -23021,7 +23021,7 @@
 		"0x6C38AF3693A69A91": {
 			"name": "USE_PARTICLE_FX_ASSET",
 			"jhash": "0x9C720B61",
-			"comment": "From the b678d decompiled scripts:\n\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"FM_Mission_Controler\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_apartment_mp\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_indep_fireworks\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_mp_cig_plane\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_mp_creator\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_ornate_heist\");\n GRAPHICS::_SET_PTFX_ASSET_NEXT_CALL(\"scr_prison_break_heist_station\");\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
+			"comment": "From the b678d decompiled scripts:\n\n GRAPHICS::USE_PARTICLE_FX_ASSET(\"FM_Mission_Controler\");\n GRAPHICS::USE_PARTICLE_FX_ASSET(\"scr_apartment_mp\");\n GRAPHICS::USE_PARTICLE_FX_ASSET(\"scr_indep_fireworks\");\n GRAPHICS::USE_PARTICLE_FX_ASSET(\"scr_mp_cig_plane\");\n GRAPHICS::USE_PARTICLE_FX_ASSET(\"scr_mp_creator\");\n GRAPHICS::USE_PARTICLE_FX_ASSET(\"scr_ornate_heist\");\n GRAPHICS::USE_PARTICLE_FX_ASSET(\"scr_prison_break_heist_station\");\n\nFull list of particle effect dictionaries and effects by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -24712,7 +24712,7 @@
 		"0xEF662D8D57E290B1": {
 			"name": "CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER_AND_STRING",
 			"jhash": "0x6EAF56DE",
-			"comment": "Calls the Scaleform function and passes both float and string parameters (in their respective order).\n\nThe number of parameters passed to the function varies, so the end of the float parameters is represented by -1.0, and the end of the string parameters is represented by 0 (NULL).\n\nNOTE: The order of parameters in the function prototype is important! All float parameters must come first, followed by the string parameters.\n\nExamples:\n// function MY_FUNCTION(floatParam1, floatParam2, stringParam)\nGRAPHICS::_CALL_SCALEFORM_MOVIE_FUNCTION_MIXED_PARAMS(scaleform, \"MY_FUNCTION\", 10.0, 20.0, -1.0, -1.0, -1.0, \"String param\", 0, 0, 0, 0);\n\n// function MY_FUNCTION_2(floatParam, stringParam1, stringParam2)\nGRAPHICS::_CALL_SCALEFORM_MOVIE_FUNCTION_MIXED_PARAMS(scaleform, \"MY_FUNCTION_2\", 10.0, -1.0, -1.0, -1.0, -1.0, \"String param #1\", \"String param #2\", 0, 0, 0);",
+			"comment": "Calls the Scaleform function and passes both float and string parameters (in their respective order).\n\nThe number of parameters passed to the function varies, so the end of the float parameters is represented by -1.0, and the end of the string parameters is represented by 0 (NULL).\n\nNOTE: The order of parameters in the function prototype is important! All float parameters must come first, followed by the string parameters.\n\nExamples:\n// function MY_FUNCTION(floatParam1, floatParam2, stringParam)\nGRAPHICS::CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER_AND_STRING(scaleform, \"MY_FUNCTION\", 10.0, 20.0, -1.0, -1.0, -1.0, \"String param\", 0, 0, 0, 0);\n\n// function MY_FUNCTION_2(floatParam, stringParam1, stringParam2)\nGRAPHICS::CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER_AND_STRING(scaleform, \"MY_FUNCTION_2\", 10.0, -1.0, -1.0, -1.0, -1.0, \"String param #1\", \"String param #2\", 0, 0, 0);",
 			"params": [
 				{
 					"type": "int",
@@ -27446,7 +27446,7 @@
 		"0x169BD9382084C8C0": {
 			"name": "GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME",
 			"jhash": "0x34A396EE",
-			"comment": "Returns a substring of a specified length starting at a specified position.\n\nExample:\n// Get \"STRING\" text from \"MY_STRING\"\nsubStr = HUD::_GET_TEXT_SUBSTRING(\"MY_STRING\", 3, 6);",
+			"comment": "Returns a substring of a specified length starting at a specified position.\n\nExample:\n// Get \"STRING\" text from \"MY_STRING\"\nsubStr = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(\"MY_STRING\", 3, 6);",
 			"params": [
 				{
 					"type": "const char*",
@@ -27470,7 +27470,7 @@
 		"0xB2798643312205C5": {
 			"name": "GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_WITH_BYTE_LIMIT",
 			"jhash": "0x0183A66C",
-			"comment": "Returns a substring of a specified length starting at a specified position. The result is guaranteed not to exceed the specified max length.\n\nNOTE: The 'maxLength' parameter might actually be the size of the buffer that is returned. More research is needed. -CL69\n\nExample:\n// Condensed example of how Rockstar uses this function\nstrLen = HUD::GET_LENGTH_OF_LITERAL_STRING(MISC::GET_ONSCREEN_KEYBOARD_RESULT());\nsubStr = HUD::_GET_TEXT_SUBSTRING_SAFE(MISC::GET_ONSCREEN_KEYBOARD_RESULT(), 0, strLen, 63);\n\n--\n\n\"fm_race_creator.ysc\", line 85115:\n// parameters modified for clarity\nBOOL sub_8e5aa(char *text, int length) {\n    for (i = 0; i <= (length - 2); i += 1) {\n        if (!MISC::ARE_STRINGS_EQUAL(HUD::_GET_TEXT_SUBSTRING_SAFE(text, i, i + 1, 1), \" \")) {\n            return FALSE;\n        }\n    }\n    return TRUE;\n}",
+			"comment": "Returns a substring of a specified length starting at a specified position. The result is guaranteed not to exceed the specified max length.\n\nNOTE: The 'maxLength' parameter might actually be the size of the buffer that is returned. More research is needed. -CL69\n\nExample:\n// Condensed example of how Rockstar uses this function\nstrLen = HUD::GET_LENGTH_OF_LITERAL_STRING(MISC::GET_ONSCREEN_KEYBOARD_RESULT());\nsubStr = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_WITH_BYTE_LIMIT(MISC::GET_ONSCREEN_KEYBOARD_RESULT(), 0, strLen, 63);\n\n--\n\n\"fm_race_creator.ysc\", line 85115:\n// parameters modified for clarity\nBOOL sub_8e5aa(char *text, int length) {\n    for (i = 0; i <= (length - 2); i += 1) {\n        if (!MISC::ARE_STRINGS_EQUAL(HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_WITH_BYTE_LIMIT(text, i, i + 1, 1), \" \")) {\n            return FALSE;\n        }\n    }\n    return TRUE;\n}",
 			"params": [
 				{
 					"type": "const char*",
@@ -27498,7 +27498,7 @@
 		"0xCE94AEBA5D82908A": {
 			"name": "GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_BYTES",
 			"jhash": "0xFA6373BB",
-			"comment": "Returns a substring that is between two specified positions. The length of the string will be calculated using (endPosition - startPosition).\n\nExample:\n// Get \"STRING\" text from \"MY_STRING\"\nsubStr = HUD::_GET_TEXT_SUBSTRING_SLICE(\"MY_STRING\", 3, 9);\n// Overflows are possibly replaced with underscores (needs verification)\nsubStr = HUD::_GET_TEXT_SUBSTRING_SLICE(\"MY_STRING\", 3, 10); // \"STRING_\"?",
+			"comment": "Returns a substring that is between two specified positions. The length of the string will be calculated using (endPosition - startPosition).\n\nExample:\n// Get \"STRING\" text from \"MY_STRING\"\nsubStr = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_BYTES(\"MY_STRING\", 3, 9);\n// Overflows are possibly replaced with underscores (needs verification)\nsubStr = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_BYTES(\"MY_STRING\", 3, 10); // \"STRING_\"?",
 			"params": [
 				{
 					"type": "const char*",
@@ -30521,7 +30521,7 @@
 		"0x170F541E1CADD1DE": {
 			"name": "USE_FAKE_MP_CASH",
 			"jhash": "0x6253B9D7",
-			"comment": "Related to displaying cash on the HUD\nAlways called before HUD::_SET_SINGLEPLAYER_HUD_CASH in decompiled scripts",
+			"comment": "Related to displaying cash on the HUD\nAlways called before HUD::CHANGE_FAKE_MP_CASH in decompiled scripts",
 			"params": [
 				{
 					"type": "BOOL",
@@ -42032,19 +42032,19 @@
 		"0x6EA318C91C1A8786": {
 			"name": "NETWORK_EARN_FROM_DAILY_OBJECTIVES",
 			"jhash": "0xAB6BD72F",
-			"comment": "",
+			"comment": "type either Monthly,Weekly,Daily",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "amount"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "type"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "characterSlot"
 				}
 			],
 			"return_type": "void",
@@ -46206,15 +46206,15 @@
 		"0x7049BF858601DC0F": {
 			"name": "NETWORK_SPEND_ARENA_SPECTATOR_BOX",
 			"jhash": "",
-			"comment": "",
+			"comment": "type either, 1 for cam spectate, 2 for drone",
 			"params": [
 				{
 					"type": "int",
 					"name": "amount"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "type"
 				},
 				{
 					"type": "BOOL",
@@ -47174,15 +47174,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount1"
 				},
 				{
 					"type": "Any",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
@@ -47190,20 +47190,20 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "amount2"
 				},
 				{
 					"type": "Any",
@@ -47306,8 +47306,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount1"
 				},
 				{
 					"type": "Any",
@@ -47322,11 +47322,11 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "amount2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				}
 			],
@@ -47387,8 +47387,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "amount1"
 				},
 				{
 					"type": "Any",
@@ -47399,8 +47399,8 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "amount2"
 				},
 				{
 					"type": "Any",
@@ -50350,10 +50350,10 @@
 		"0xF1EEA2DDA9FFA69D": {
 			"name": "NETWORK_SESSION_SET_MATCHMAKING_MENTAL_STATE",
 			"jhash": "0x6CC062FC",
-			"comment": "",
+			"comment": "p0 in the decompiled scripts is always the stat mesh_texblend * 0.07 to int",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -50366,8 +50366,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "num"
 				}
 			],
 			"return_type": "void",
@@ -50938,11 +50938,11 @@
 		"0xB4AB419E0D86ACAE": {
 			"name": "NETWORK_SESSION_CHANGE_SLOTS",
 			"jhash": "0x6BB93227",
-			"comment": "",
+			"comment": "num player slots allowed in session, seems to work? 32 max",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "slots"
 				},
 				{
 					"type": "BOOL",
@@ -51900,7 +51900,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -52028,11 +52028,11 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "dataCount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -52056,11 +52056,11 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "dataCount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -52084,11 +52084,11 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "dataCount"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -52104,7 +52104,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52125,7 +52125,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52138,7 +52138,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52151,7 +52151,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52164,7 +52164,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52207,7 +52207,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52220,7 +52220,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52233,7 +52233,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52246,7 +52246,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -52345,7 +52345,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any*",
+					"type": "Any",
 					"name": "p3"
 				}
 			],
@@ -52439,12 +52439,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -52460,8 +52460,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -56832,32 +56832,32 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
 					"type": "Any",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Any*",
+					"name": "out1"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "Any*",
+					"name": "out2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "Any*",
+					"name": "out3"
 				}
 			],
 			"return_type": "void",
@@ -57439,7 +57439,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -58249,27 +58249,27 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				}
 			],
 			"return_type": "int",
@@ -58322,27 +58322,27 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				}
 			],
 			"return_type": "int",
@@ -58357,32 +58357,32 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "radius"
 				}
 			],
 			"return_type": "int",
@@ -58394,8 +58394,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "areaHandle"
 				}
 			],
 			"return_type": "BOOL",
@@ -58466,8 +58466,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				}
 			],
 			"return_type": "void",
@@ -58479,12 +58479,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -58860,8 +58860,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "boneIndex"
 				}
 			],
 			"return_type": "BOOL",
@@ -58924,15 +58924,15 @@
 		"0x3FC795691834481D": {
 			"name": "NETWORK_SET_NO_LONGER_NEEDED",
 			"jhash": "",
-			"comment": "nullsub, doesn't do anything",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -59036,12 +59036,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "netId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -59084,7 +59084,7 @@
 		"0x367EF5E2F439B4C6": {
 			"name": "NETWORK_SET_PLAYER_MENTAL_STATE",
 			"jhash": "0x53C9563C",
-			"comment": "",
+			"comment": "p0 in the decompiled scripts is always the stat mesh_texblend * 0.07 to int",
 			"params": [
 				{
 					"type": "int",
@@ -65517,7 +65517,7 @@
 		"0xE1615EC03B3BB4FD": {
 			"name": "IS_MOUSE_LOOK_INVERTED",
 			"jhash": "",
-			"comment": "Used with IS_LOOK_INVERTED() and negates its affect.\n\n--\n\nNot sure how the person above got that description, but here's an actual example:\n\nif (PAD::_GET_LAST_INPUT_METHOD(2)) {\n    if (a_5) {\n        if (PAD::IS_LOOK_INVERTED()) {\n            a_3 *= -1;\n        }\n        if (PAD::IS_MOUSE_LOOK_INVERTED()) {\n            a_3 *= -1;\n        }\n    }\n}",
+			"comment": "Used with IS_LOOK_INVERTED() and negates its affect.\n\n--\n\nNot sure how the person above got that description, but here's an actual example:\n\nif (PAD::IS_USING_KEYBOARD_AND_MOUSE(2)) {\n    if (a_5) {\n        if (PAD::IS_LOOK_INVERTED()) {\n            a_3 *= -1;\n        }\n        if (PAD::IS_MOUSE_LOOK_INVERTED()) {\n            a_3 *= -1;\n        }\n    }\n}",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -72285,7 +72285,7 @@
 		"0xCF1CE768BB43480E": {
 			"name": "GET_PED_HEAD_OVERLAY_NUM",
 			"jhash": "0xFF43C18D",
-			"comment": "Used with freemode (online) characters.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -72301,7 +72301,7 @@
 		"0x497BF74A7B9CB952": {
 			"name": "SET_PED_HEAD_OVERLAY_TINT",
 			"jhash": "",
-			"comment": "Used for freemode (online) characters.\n\nColorType is 1 for eyebrows, beards, and chest hair; 2 for blush and lipstick; and 0 otherwise, though not called in those cases.\n\nCalled after SET_PED_HEAD_OVERLAY().",
+			"comment": "\n\nColorType is 1 for eyebrows, beards, and chest hair; 2 for blush and lipstick; and 0 otherwise, though not called in those cases.\n\nCalled after SET_PED_HEAD_OVERLAY().",
 			"params": [
 				{
 					"type": "Ped",
@@ -72333,7 +72333,7 @@
 		"0x4CFFC65454C93A49": {
 			"name": "SET_PED_HAIR_TINT",
 			"jhash": "",
-			"comment": "Used for freemode (online) characters.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -72357,7 +72357,7 @@
 		"0xE5C0CF872C2AD150": {
 			"name": "GET_NUM_PED_HAIR_TINTS",
 			"jhash": "",
-			"comment": "Used for freemode (online) characters.",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -73068,15 +73068,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -73364,7 +73364,7 @@
 		"0xD76632D99E4966C8": {
 			"name": "SET_PED_TO_RAGDOLL_WITH_FALL",
 			"jhash": "0xFA12E286",
-			"comment": "Return variable is never used in R*'s scripts.\n\nNot sure what p2 does. It seems like it would be a time judging by it's usage in R*'s scripts, but didn't seem to affect anything in my testings.\n\nx, y, and z are coordinates, most likely to where the ped will fall.\n\np7 is probably the force of the fall, but untested, so I left the variable name the same.\n\np8 to p13 are always 0f in R*'s scripts.\n\n(Simplified) Example of the usage of the function from R*'s scripts:\nped::set_ped_to_ragdoll_with_fall(ped, 1500, 2000, 1, -entity::get_entity_forward_vector(ped), 1f, 0f, 0f, 0f, 0f, 0f, 0f);\n",
+			"comment": "Return variable is never used in R*'s scripts.\n\nNot sure what p2 does. It seems like it would be a time judging by it's usage in R*'s scripts, but didn't seem to affect anything in my testings.\n\nenum eRagdollType\n{\n RD_MALE=0,\n RD_FEMALE = 1,\n RD_MALE_LARGE = 2,\n RD_CUSTOM = 3,\n}\n\nx, y, and z are coordinates, most likely to where the ped will fall.\n\np8 to p13 are always 0f in R*'s scripts.\n\n(Simplified) Example of the usage of the function from R*'s scripts:\nped::set_ped_to_ragdoll_with_fall(ped, 1500, 2000, 1, -entity::get_entity_forward_vector(ped), 1f, 0f, 0f, 0f, 0f, 0f, 0f);\n",
 			"params": [
 				{
 					"type": "Ped",
@@ -73396,7 +73396,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "velocity"
 				},
 				{
 					"type": "float",
@@ -73554,7 +73554,7 @@
 		"0x26695EC767728D84": {
 			"name": "SET_RAGDOLL_BLOCKING_FLAGS",
 			"jhash": "0x9C8F830D",
-			"comment": "Works for both player and peds, but some flags don't seem to work for the player (1, for example)\n\n1 - Blocks ragdolling when shot.\n2 - Blocks ragdolling when hit by a vehicle. The ped still might play a falling animation.\n4 - Blocks ragdolling when set on fire.\n\n-----------------------------------------------------------------------\n\nThere seem to be 26 flags",
+			"comment": "Works for both player and peds,\n\nenum eRagdollBlockingFlags\n{\n RBF_BULLET_IMPACT = 0,\n RBF_VEHICLE_IMPACT = 1,\n RBF_FIRE = 2,\n RBF_ELECTROCUTION = 3,\n RBF_PLAYER_IMPACT = 4,\n RBF_EXPLOSION = 5,0\n RBF_IMPACT_OBJECT = 6,\n RBF_MELEE = 7,\n RBF_RUBBER_BULLET = 8,\n RBF_FALLING = 9,\n RBF_WATER_JET = 10,\n RBF_DROWNING = 11,\n _0x9F52E2C4 = 12,\n RBF_PLAYER_BUMP = 13,\n RBF_PLAYER_RAGDOLL_BUMP = 14,\n RBF_PED_RAGDOLL_BUMP = 15,\n RBF_VEHICLE_GRAB = 16,\n RBF_SMOKE_GRENADE = 17,\n};\n\n",
 			"params": [
 				{
 					"type": "Ped",
@@ -73562,7 +73562,7 @@
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "blockingFlag"
 				}
 			],
 			"return_type": "void",
@@ -73574,7 +73574,7 @@
 		"0xD86D101FCFD00A4B": {
 			"name": "CLEAR_RAGDOLL_BLOCKING_FLAGS",
 			"jhash": "0x77CBA290",
-			"comment": "There seem to be 26 flags",
+			"comment": "See SET_RAGDOLL_BLOCKING_FLAGS for flags",
 			"params": [
 				{
 					"type": "Ped",
@@ -73582,7 +73582,7 @@
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "blockingFlag"
 				}
 			],
 			"return_type": "void",
@@ -77380,7 +77380,7 @@
 		"0x46B05BCAE43856B0": {
 			"name": "PED_HAS_SEXINESS_FLAG_SET",
 			"jhash": "0x79543043",
-			"comment": "Checks if the specified unknown flag is set in the ped's model.\nThe engine itself seems to exclusively check for flags 1 and 4 (Might be inlined code of the check that checks for other flags).\nGame scripts exclusively check for flags 1 and 4.",
+			"comment": "Checks if the specified sexiness flag is set\n\nenum eSexinessFlags\n{\n SF_JEER_AT_HOT_PED = 0,\n SF_HURRIEDFEMALES_SEXY = 1,\n SF_HOT_PERSON = 2,\n };",
 			"params": [
 				{
 					"type": "Ped",
@@ -77388,7 +77388,7 @@
 				},
 				{
 					"type": "int",
-					"name": "flag"
+					"name": "sexinessFlag"
 				}
 			],
 			"return_type": "BOOL",
@@ -84158,7 +84158,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "1103"
+			"build": "1103",
+			"old_names": [
+				"_TRIGGER_SCRIPT_EVENT_2"
+			]
 		}
 	},
 	"SECURITY": {
@@ -86981,12 +86984,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "activityId"
 				}
 			],
 			"return_type": "void",
@@ -88738,8 +88741,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "characterSlot"
 				}
 			],
 			"return_type": "void",
@@ -88755,8 +88758,8 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "characterSlot"
 				}
 			],
 			"return_type": "void",
@@ -88883,7 +88886,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				}
 			],
@@ -88896,7 +88899,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -89256,8 +89259,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "characterSlot"
 				},
 				{
 					"type": "Any",
@@ -89947,11 +89950,11 @@
 					"name": "p3"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "role"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
@@ -90731,12 +90734,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "objectHash"
 				},
 				{
 					"type": "Any",
@@ -96702,7 +96705,7 @@
 		"0x15C86013127CE63F": {
 			"name": "TASK_BOAT_MISSION",
 			"jhash": "0x5865B031",
-			"comment": "You need to call PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS after TASK_BOAT_MISSION in order for the task to execute.\n\nWorking example\nfloat vehicleMaxSpeed = VEHICLE::_GET_VEHICLE_MAX_SPEED(ENTITY::GET_ENTITY_MODEL(pedVehicle));\nTASK::TASK_BOAT_MISSION(pedDriver, pedVehicle, 0, 0, waypointCoord.x, waypointCoord.y, waypointCoord.z, 4, vehicleMaxSpeed, 786469, -1.0, 7);\nPED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(pedDriver, 1);\n\nP8 appears to be driving style flag - see gtaforums.com/topic/822314-guide-driving-styles/ for documentation",
+			"comment": "You need to call PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS after TASK_BOAT_MISSION in order for the task to execute.\n\nWorking example\nfloat vehicleMaxSpeed = VEHICLE::GET_VEHICLE_ESTIMATED_MAX_SPEED(ENTITY::GET_ENTITY_MODEL(pedVehicle));\nTASK::TASK_BOAT_MISSION(pedDriver, pedVehicle, 0, 0, waypointCoord.x, waypointCoord.y, waypointCoord.z, 4, vehicleMaxSpeed, 786469, -1.0, 7);\nPED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(pedDriver, 1);\n\nP8 appears to be driving style flag - see gtaforums.com/topic/822314-guide-driving-styles/ for documentation",
 			"params": [
 				{
 					"type": "Ped",
@@ -107812,23 +107815,23 @@
 					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -111229,7 +111232,7 @@
 		"0x29439776AAA00A62": {
 			"name": "GET_VEHICLE_CLASS",
 			"jhash": "0xC025338E",
-			"comment": "Returns an int\n\nVehicle Classes:\n0: Compacts\n1: Sedans\n2: SUVs\n3: Coupes\n4: Muscle\n5: Sports Classics\n6: Sports\n7: Super\n8: Motorcycles\n9: Off-road\n10: Industrial\n11: Utility\n12: Vans\n13: Cycles\n14: Boats\n15: Helicopters\n16: Planes\n17: Service\n18: Emergency\n19: Military\n20: Commercial\n21: Trains\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS(vehicle));\n\nconst char* className = HUD::_GET_LABEL_TEXT(buffer);",
+			"comment": "Returns an int\n\nVehicle Classes:\n0: Compacts\n1: Sedans\n2: SUVs\n3: Coupes\n4: Muscle\n5: Sports Classics\n6: Sports\n7: Super\n8: Motorcycles\n9: Off-road\n10: Industrial\n11: Utility\n12: Vans\n13: Cycles\n14: Boats\n15: Helicopters\n16: Planes\n17: Service\n18: Emergency\n19: Military\n20: Commercial\n21: Trains\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS(vehicle));\n\nconst char* className = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(buffer);",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -112074,7 +112077,7 @@
 		"0xB8EF61207C2393A9": {
 			"name": "GET_VEHICLE_HEALTH_PERCENTAGE",
 			"jhash": "0x196BA503",
-			"comment": "0 min 100 max\nstarts at 100\nSeams to have health zones\nFront of vehicle when damaged goes from 100-50 and stops at 50.\nRear can be damaged from 100-0\nOnly tested with two cars.\n\nany idea how this differs from the first one?\n\n--\nMay return the vehicle health on a scale of 0.0 - 100.0 (needs to be confirmed)\n\nexample:\n\nv_F = ENTITY::GET_ENTITY_MODEL(v_3);\nif (((v_F == ${tanker}) || (v_F == ${armytanker})) || (v_F == ${tanker2})) {\n    if (VEHICLE::_GET_VEHICLE_BODY_HEALTH_2(v_3) <= 1.0) {\n        NETWORK::NETWORK_EXPLODE_VEHICLE(v_3, 1, 1, -1);\n    }\n}",
+			"comment": "0 min 100 max\nstarts at 100\nSeams to have health zones\nFront of vehicle when damaged goes from 100-50 and stops at 50.\nRear can be damaged from 100-0\nOnly tested with two cars.\n\nany idea how this differs from the first one?\n\n--\nMay return the vehicle health on a scale of 0.0 - 100.0 (needs to be confirmed)\n\nexample:\n\nv_F = ENTITY::GET_ENTITY_MODEL(v_3);\nif (((v_F == ${tanker}) || (v_F == ${armytanker})) || (v_F == ${tanker2})) {\n    if (VEHICLE::GET_VEHICLE_HEALTH_PERCENTAGE(v_3) <= 1.0) {\n        NETWORK::NETWORK_EXPLODE_VEHICLE(v_3, 1, 1, -1);\n    }\n}",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -116014,7 +116017,7 @@
 		"0x33E179436C0B31DB": {
 			"name": "GIVE_WEAPON_COMPONENT_TO_WEAPON_OBJECT",
 			"jhash": "0xF7612A37",
-			"comment": "addonHash:\n(use WEAPON::GET_WEAPON_COMPONENT_TYPE_MODEL() to get hash value)\n${component_at_ar_flsh}, ${component_at_ar_supp}, ${component_at_pi_flsh}, ${component_at_scope_large}, ${component_at_ar_supp_02}",
+			"comment": "componentHash:\n(use WEAPON::GET_WEAPON_COMPONENT_TYPE_MODEL() to get hash value)\n${component_at_ar_flsh}, ${component_at_ar_supp}, ${component_at_pi_flsh}, ${component_at_scope_large}, ${component_at_ar_supp_02}",
 			"params": [
 				{
 					"type": "Object",
@@ -116022,7 +116025,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "addonHash"
+					"name": "componentHash"
 				}
 			],
 			"return_type": "void",
@@ -116031,15 +116034,15 @@
 		"0xF7D82B0D66777611": {
 			"name": "REMOVE_WEAPON_COMPONENT_FROM_WEAPON_OBJECT",
 			"jhash": "0xA6E7ED3C",
-			"comment": "",
+			"comment": "see DOES_WEAPON_TAKE_WEAPON_COMPONENT for full list of weapons & components",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "componentHash"
 				}
 			],
 			"return_type": "void",
@@ -116048,7 +116051,7 @@
 		"0x76A18844E743BF91": {
 			"name": "HAS_WEAPON_GOT_WEAPON_COMPONENT",
 			"jhash": "0x1D368510",
-			"comment": "",
+			"comment": "see DOES_WEAPON_TAKE_WEAPON_COMPONENT for full list of weapons & components",
 			"params": [
 				{
 					"type": "Object",
@@ -116056,7 +116059,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "addonHash"
+					"name": "componentHash"
 				}
 			],
 			"return_type": "BOOL",
@@ -116522,14 +116525,14 @@
 		"0xE6D2CEDD370FF98E": {
 			"name": "SET_WEAPON_EFFECT_DURATION_MODIFIER",
 			"jhash": "",
-			"comment": "",
+			"comment": "ex, WEAPON::SET_WEAPON_EFFECT_DURATION_MODIFIER(joaat(\"vehicle_weapon_mine_slick\"), 1.0);",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -116741,7 +116744,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "radius"
 				},
 				{
 					"type": "Hash",
