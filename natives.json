@@ -1231,7 +1231,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -1252,7 +1252,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -1273,7 +1273,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -1486,14 +1486,14 @@
 		"0x5B9853296731E88D": {
 			"name": "PLAY_SOUND_FROM_ENTITY_HASH",
 			"jhash": "",
-			"comment": "",
+			"comment": "p2 is Entity?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "soundId"
 				},
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p1"
 				},
 				{
@@ -1501,8 +1501,8 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Hash",
+					"name": "soundNameHash"
 				},
 				{
 					"type": "Any",
@@ -1567,20 +1567,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "soundId"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -1635,8 +1635,8 @@
 					"name": "soundId"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "variable"
 				},
 				{
 					"type": "float",
@@ -1653,7 +1653,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "variable"
 				},
 				{
 					"type": "float",
@@ -1669,7 +1669,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -1908,11 +1908,11 @@
 		"0xD01005D2BA2EB778": {
 			"name": "ACTIVATE_AUDIO_SLOWMO_MODE",
 			"jhash": "0x59A3A17D",
-			"comment": "",
+			"comment": "mode can be any of these: \nSLOWMO_T1_TRAILER_SMASH\nSLOWMO_T1_RAYFIRE_EXPLOSION\nSLOWMO_PROLOGUE_VAULT\nNIGEL_02_SLOWMO_SETTING\nJSH_EXIT_TUNNEL_SLOWMO\nSLOWMO_BIG_SCORE_JUMP\nSLOWMO_FIB4_TRUCK_SMASH\nSLOWMO_EXTREME_04\nSLOW_MO_METH_HOUSE_RAYFIRE\nBARRY_02_SLOWMO\nBARRY_01_SLOWMO",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "mode"
 				}
 			],
 			"return_type": "void",
@@ -1921,7 +1921,7 @@
 		"0xDDC635D5B3262C56": {
 			"name": "DEACTIVATE_AUDIO_SLOWMO_MODE",
 			"jhash": "0x0E387BFE",
-			"comment": "",
+			"comment": "see ACTIVATE_AUDIO_SLOWMO_MODE for modes",
 			"params": [
 				{
 					"type": "const char*",
@@ -2010,12 +2010,12 @@
 					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Hash",
+					"name": "voiceGroup"
 				}
 			],
 			"return_type": "void",
@@ -2129,7 +2129,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				}
 			],
@@ -2160,7 +2160,7 @@
 		"0x49B99BF3FDA89A7A": {
 			"name": "DOES_CONTEXT_EXIST_FOR_THIS_PED",
 			"jhash": "0x8BD5F11E",
-			"comment": "Checks if the ped can play the speech or has the speech file, last parameter is usually false.",
+			"comment": "Checks if the ped can play the speech or has the speech file, p2 is usually false.",
 			"params": [
 				{
 					"type": "Ped",
@@ -2172,7 +2172,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unk"
+					"name": "p2"
 				}
 			],
 			"return_type": "BOOL",
@@ -2677,19 +2677,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "radioName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "radioTrack"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p3"
 				}
 			],
@@ -2996,15 +2996,15 @@
 			"params": [
 				{
 					"type": "float*",
-					"name": "p0"
+					"name": "out1"
 				},
 				{
 					"type": "float*",
-					"name": "p1"
+					"name": "out2"
 				},
 				{
 					"type": "int*",
-					"name": "p2"
+					"name": "out3"
 				}
 			],
 			"return_type": "BOOL",
@@ -3381,15 +3381,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -3573,11 +3573,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -5712,11 +5712,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -8809,11 +8809,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "shakeType"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -8913,18 +8913,18 @@
 		"0x741B0129D4560F31": {
 			"name": "CREATE_CINEMATIC_SHOT",
 			"jhash": "0xAC494E35",
-			"comment": "",
+			"comment": "hash is always JOAAT(\"CAMERA_MAN_SHOT\") in decompiled scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "time"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				},
 				{
@@ -8938,10 +8938,10 @@
 		"0xCC9F3371A7C28BC9": {
 			"name": "IS_CINEMATIC_SHOT_ACTIVE",
 			"jhash": "0xA4049042",
-			"comment": "",
+			"comment": "Hash is always JOAAT(\"CAMERA_MAN_SHOT\") in decompiled scripts",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Hash",
 					"name": "p0"
 				}
 			],
@@ -8968,7 +8968,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -9897,8 +9897,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "cutsceneHandle"
 				}
 			],
 			"return_type": "int",
@@ -10297,11 +10297,11 @@
 		"0xAD6875BBC0FC899C": {
 			"name": "DATAFILE_WATCH_REQUEST_ID",
 			"jhash": "0x621388FF",
-			"comment": "Adds the given request ID to the watch list.",
+			"comment": "Adds the given requestID to the watch list.",
 			"params": [
 				{
 					"type": "int",
-					"name": "id"
+					"name": "requestId"
 				}
 			],
 			"return_type": "void",
@@ -10334,8 +10334,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "requestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -10347,8 +10347,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "requestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -10360,8 +10360,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "requestId"
 				},
 				{
 					"type": "Any",
@@ -10377,8 +10377,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "requestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -17261,44 +17261,44 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "r"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "g"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "b"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "alpha"
 				}
 			],
 			"return_type": "void",
@@ -17416,44 +17416,44 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z1"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "x2"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "y2"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "z2"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "int",
+					"name": "r"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "int",
+					"name": "g"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "b"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "alpha"
 				}
 			],
 			"return_type": "void",
@@ -18008,8 +18008,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -18132,7 +18132,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -18148,7 +18148,7 @@
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -19772,7 +19772,7 @@
 					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -20194,7 +20194,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -20206,8 +20206,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -20219,7 +20219,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				}
 			],
@@ -20484,19 +20484,19 @@
 			"comment": "This function is hard-coded to always return 0.",
 			"params": [
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
@@ -20509,8 +20509,8 @@
 			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "handle"
 				}
 			],
 			"return_type": "void",
@@ -20523,23 +20523,23 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "handle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -20551,8 +20551,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "handle"
 				}
 			],
 			"return_type": "void",
@@ -20564,8 +20564,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "handle"
 				}
 			],
 			"return_type": "BOOL",
@@ -20609,36 +20609,36 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
 					"type": "Any",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -21553,7 +21553,7 @@
 		"0xBA3D65906822BED5": {
 			"name": "SET_HIDOF_OVERRIDE",
 			"jhash": "0x513D444B",
-			"comment": "Every p2 - p5 occurrence was 0f.",
+			"comment": "",
 			"params": [
 				{
 					"type": "BOOL",
@@ -21592,7 +21592,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
@@ -23104,23 +23104,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "range"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				}
 			],
@@ -23150,23 +23150,23 @@
 			"comment": "Fades nearby decals within the range specified",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				}
 			],
@@ -23678,7 +23678,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int*",
 					"name": "p0"
 				}
 			],
@@ -24330,12 +24330,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "scaleformHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -26684,16 +26684,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "gxtLabel1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "gxtLabel2"
 				}
 			],
 			"return_type": "int",
@@ -26705,19 +26705,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "gxtLabel1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "gxtLabel2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -30167,31 +30167,31 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p6"
 				},
 				{
@@ -30199,7 +30199,7 @@
 					"name": "p7"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				}
 			],
@@ -30396,15 +30396,15 @@
 		"0xA17784FCA9548D15": {
 			"name": "SET_FAKE_GPS_PLAYER_POSITION_THIS_FRAME",
 			"jhash": "",
-			"comment": "",
+			"comment": "p2 maybe z float?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
 					"type": "Any",
@@ -30631,14 +30631,14 @@
 		"0xFD1D220394BCB824": {
 			"name": "SET_MULTIPLAYER_HUD_CASH",
 			"jhash": "0xA8DB435E",
-			"comment": "This native does absolutely nothing, just a nullsub",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "int",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -33238,18 +33238,18 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "statHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int*",
+					"name": "outValue"
 				},
 				{
 					"type": "int",
+					"name": "mask"
+				},
+				{
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -33262,23 +33262,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "statHash"
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "outValue"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "mask"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -33291,12 +33291,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "statHash"
 				},
 				{
 					"type": "float*",
-					"name": "p1"
+					"name": "outValue"
 				}
 			],
 			"return_type": "BOOL",
@@ -33308,15 +33308,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "statHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "float*",
+					"name": "outValue"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -33330,11 +33330,11 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "statHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "BOOL*",
+					"name": "outValue"
 				}
 			],
 			"return_type": "BOOL",
@@ -37290,26 +37290,26 @@
 		"0xC0714D0A7EEECA54": {
 			"name": "REGISTER_SAVE_HOUSE",
 			"jhash": "0x39C1849A",
-			"comment": "",
+			"comment": "returns savehouseHandle",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z"
 				},
 				{
 					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p4"
 				},
 				{
@@ -37330,8 +37330,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "savehouseHandle"
 				},
 				{
 					"type": "BOOL",
@@ -40039,7 +40039,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "distance"
 				}
 			],
 			"return_type": "void",
@@ -40573,11 +40573,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
@@ -40606,8 +40606,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
 					"type": "Any",
@@ -41162,7 +41162,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "horizontalPan"
 				}
 			],
 			"return_type": "void",
@@ -41175,7 +41175,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "vertPan"
 				}
 			],
 			"return_type": "void",
@@ -41188,7 +41188,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "roll"
 				}
 			],
 			"return_type": "void",
@@ -41201,7 +41201,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "distanceScaling"
 				}
 			],
 			"return_type": "void",
@@ -41214,7 +41214,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "yaw"
 				}
 			],
 			"return_type": "void",
@@ -41227,7 +41227,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "roll"
 				}
 			],
 			"return_type": "void",
@@ -41240,7 +41240,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "pitch"
 				}
 			],
 			"return_type": "void",
@@ -59419,7 +59419,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "handle"
+					"name": "requestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -59432,7 +59432,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "handle"
+					"name": "requestId"
 				}
 			],
 			"return_type": "BOOL",
@@ -77366,11 +77366,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p1"
 				}
 			],
@@ -85920,7 +85920,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "statSlot"
 				}
 			],
 			"return_type": "BOOL",
@@ -85944,7 +85944,7 @@
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -85970,8 +85970,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "statSlot"
 				}
 			],
 			"return_type": "BOOL",
@@ -86013,7 +86013,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "statSlot"
 				}
 			],
 			"return_type": "BOOL",
@@ -86285,11 +86285,11 @@
 					"name": "statName"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
@@ -86408,7 +86408,7 @@
 		"0x8B0FACEFC36C824B": {
 			"name": "STAT_GET_DATE",
 			"jhash": "0xD762D16C",
-			"comment": "",
+			"comment": "p3 is probably characterSlot or BOOL save, always -1",
 			"params": [
 				{
 					"type": "Hash",
@@ -86416,11 +86416,11 @@
 				},
 				{
 					"type": "Any*",
-					"name": "p1"
+					"name": "outValue"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "numFields"
 				},
 				{
 					"type": "Any",
@@ -86450,23 +86450,23 @@
 		"0x350F82CCB186AA1B": {
 			"name": "STAT_GET_POS",
 			"jhash": "0xC846ECCE",
-			"comment": "",
+			"comment": "p3 is probably characterSlot or BOOL save, always -1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "statName"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "float*",
+					"name": "outX"
 				},
 				{
-					"type": "Any*",
-					"name": "p2"
+					"type": "float*",
+					"name": "outY"
 				},
 				{
-					"type": "Any*",
-					"name": "p3"
+					"type": "float*",
+					"name": "outZ"
 				},
 				{
 					"type": "Any",
@@ -86479,22 +86479,22 @@
 		"0x655185A06D9EEAAB": {
 			"name": "STAT_GET_MASKED_INT",
 			"jhash": "0xE9D9B70F",
-			"comment": "",
+			"comment": "p4 is probably characterSlot or BOOL save",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "statHash"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "int*",
+					"name": "outValue"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
@@ -86508,11 +86508,11 @@
 		"0x2365C388E393BBE2": {
 			"name": "STAT_GET_USER_ID",
 			"jhash": "0xE2E8B6BA",
-			"comment": "Needs more research. Seems to return \"STAT_UNKNOWN\" if no such user id exists.",
+			"comment": "Returns the rockstar ID (user id) value of a given stat. Returns \"STAT_UNKNOWN\" if the statHash is invalid or the stat has no userId",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "statHash"
 				}
 			],
 			"return_type": "const char*",
@@ -86929,7 +86929,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				}
 			],
@@ -87030,7 +87030,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -87055,7 +87055,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -87088,7 +87088,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
@@ -87163,7 +87163,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Vehicle",
 					"name": "p0"
 				},
 				{
@@ -87171,11 +87171,11 @@
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
@@ -87384,7 +87384,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -87442,11 +87442,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -87456,18 +87456,18 @@
 		"0x69DEA3E9DB727B4C": {
 			"name": "PLAYSTATS_ODDJOB_DONE",
 			"jhash": "0xFE14A8EA",
-			"comment": "This native does absolutely nothing, just a nullsub",
+			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "totalTimeMs"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p2"
 				}
 			],
@@ -87480,19 +87480,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -87505,7 +87505,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "Ped",
 					"name": "p0"
 				},
 				{
@@ -87686,7 +87686,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "time"
+					"name": "msStoodIdle"
 				}
 			],
 			"return_type": "void",
@@ -88003,7 +88003,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -88020,15 +88020,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
@@ -88041,7 +88041,7 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
@@ -99925,12 +99925,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped1"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped2"
 				},
 				{
 					"type": "BOOL",
@@ -99946,20 +99946,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "BOOL",
@@ -99975,19 +99975,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "BOOL",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -100000,27 +100000,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				},
 				{
 					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -100033,8 +100033,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -100112,7 +100112,7 @@
 		"0x3123FAA6DB1CF7ED": {
 			"name": "TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING",
 			"jhash": "0x959818B6",
-			"comment": "task_vehicle_follow_waypoint_recording(Ped p0, Vehicle p1, string p2, int p3, int p4, int p5, int p6, float.x p7, float.Y p8, float.Z p9, bool p10, int p11)\n\np2 = Waypoint recording string (found in update\\update.rpf\\x64\\levels\\gta5\\waypointrec.rpf\np3 = 786468\np4 = 0\np5 = 16\np6 = -1 (angle?)\np7/8/9 = usually v3.zero\np10 = bool (repeat?)\np11 = 1073741824\n\nFull list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json",
+			"comment": "\n\np2 = Waypoint recording string (found in update\\update.rpf\\x64\\levels\\gta5\\waypointrec.rpf\np3 = 786468\np4 = 0\np5 = 16\np6 = -1 (angle?)\np7/8/9 = usually v3.zero\np10 = bool (repeat?)\np11 = 1073741824\n\nFull list of waypoint recordings by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -100741,7 +100741,7 @@
 		"0x0FFB3C758E8C07B9": {
 			"name": "SET_TASK_MOVE_NETWORK_ENABLE_COLLISION_ON_NETWORK_CLONE_WHEN_FIXED",
 			"jhash": "",
-			"comment": "Doesn't actually return anything.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Ped",
@@ -104701,20 +104701,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -104726,20 +104726,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "z"
 				}
 			],
 			"return_type": "void",
@@ -105373,7 +105373,7 @@
 		"0x8F17BC8BA08DA62B": {
 			"name": "GET_VEHICLE_DIRT_LEVEL",
 			"jhash": "0xFD15C065",
-			"comment": "Dirt level 0..15",
+			"comment": "Dirt level does not become greater than 15.0",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106758,12 +106758,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
