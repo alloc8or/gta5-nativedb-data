@@ -8458,7 +8458,7 @@
 				},
 				{
 					"type": "int",
-					"name": "unk"
+					"name": "p6"
 				}
 			],
 			"return_type": "void",
@@ -14737,7 +14737,7 @@
 		"0xEA1C610A04DB6BBB": {
 			"name": "SET_ENTITY_VISIBLE",
 			"jhash": "0xD043E8E1",
-			"comment": "unk was always 0.",
+			"comment": "p2 is always 0.",
 			"params": [
 				{
 					"type": "Entity",
@@ -14749,7 +14749,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unk"
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -21437,11 +21437,11 @@
 		"0xE3E2C1B4C59DBC77": {
 			"name": "RESET_ADAPTATION",
 			"jhash": "0xD8CC7221",
-			"comment": "Sets an unknown value related to timecycles.",
+			"comment": "Sets an value related to timecycles.",
 			"params": [
 				{
 					"type": "int",
-					"name": "unk"
+					"name": "p0"
 				}
 			],
 			"return_type": "void",
@@ -24404,7 +24404,7 @@
 				},
 				{
 					"type": "int",
-					"name": "unk"
+					"name": "p9"
 				}
 			],
 			"return_type": "void",
@@ -24437,7 +24437,7 @@
 				},
 				{
 					"type": "int",
-					"name": "unk"
+					"name": "p5"
 				}
 			],
 			"return_type": "void",
@@ -41414,7 +41414,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unk"
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -45465,7 +45465,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "unk"
+					"name": "p1"
 				},
 				{
 					"type": "Any",
@@ -45489,7 +45489,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "unk"
+					"name": "p1"
 				},
 				{
 					"type": "int",
@@ -45599,7 +45599,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "unk"
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -45619,7 +45619,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "unk"
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -53587,7 +53587,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unk"
+					"name": "p4"
 				},
 				{
 					"type": "BOOL",
@@ -65845,7 +65845,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unknown"
+					"name": "p6"
 				},
 				{
 					"type": "Any",
@@ -68123,7 +68123,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "unk"
+					"name": "p0"
 				}
 			],
 			"return_type": "BOOL",
@@ -69378,7 +69378,7 @@
 				},
 				{
 					"type": "float",
-					"name": "unk"
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -70493,7 +70493,7 @@
 				},
 				{
 					"type": "Any*",
-					"name": "unknown"
+					"name": "p1"
 				},
 				{
 					"type": "int*",
@@ -80940,7 +80940,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "unk"
+					"name": "p0"
 				}
 			],
 			"return_type": "void",
@@ -101242,7 +101242,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unk"
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -103004,7 +103004,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "unknown"
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -106465,7 +106465,7 @@
 				},
 				{
 					"type": "Any",
-					"name": "unk"
+					"name": "p6"
 				}
 			],
 			"return_type": "void",
