@@ -29366,7 +29366,7 @@
 		"0x14892474891E09EB": {
 			"name": "SET_BLIP_SECONDARY_COLOUR",
 			"jhash": "0xC6384D32",
-			"comment": "",
+			"comment": "Can be used to give blips any RGB colour with SET_BLIP_COLOUR(blip, 84).",
 			"params": [
 				{
 					"type": "Blip",
