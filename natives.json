@@ -21437,7 +21437,7 @@
 		"0xE3E2C1B4C59DBC77": {
 			"name": "RESET_ADAPTATION",
 			"jhash": "0xD8CC7221",
-			"comment": "Sets a value related to timecycles.",
+			"comment": "Sets an value related to timecycles.",
 			"params": [
 				{
 					"type": "int",
@@ -100740,8 +100740,8 @@
 		},
 		"0x0FFB3C758E8C07B9": {
 			"name": "SET_TASK_MOVE_NETWORK_ENABLE_COLLISION_ON_NETWORK_CLONE_WHEN_FIXED",
-			"jhash": "Doesn't actually return anything.",
-			"comment": "",
+			"jhash": "",
+			"comment": "Doesn't actually return anything.",
 			"params": [
 				{
 					"type": "Ped",
