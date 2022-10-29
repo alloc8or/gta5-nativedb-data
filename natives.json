@@ -21437,7 +21437,7 @@
 		"0xE3E2C1B4C59DBC77": {
 			"name": "RESET_ADAPTATION",
 			"jhash": "0xD8CC7221",
-			"comment": "Sets an value related to timecycles.",
+			"comment": "Sets a value related to timecycles.",
 			"params": [
 				{
 					"type": "int",
@@ -30631,7 +30631,7 @@
 		"0xFD1D220394BCB824": {
 			"name": "SET_MULTIPLAYER_HUD_CASH",
 			"jhash": "0xA8DB435E",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "int",
@@ -87456,7 +87456,7 @@
 		"0x69DEA3E9DB727B4C": {
 			"name": "PLAYSTATS_ODDJOB_DONE",
 			"jhash": "0xFE14A8EA",
-			"comment": "",
+			"comment": "This native does absolutely nothing, just a nullsub",
 			"params": [
 				{
 					"type": "int",
@@ -100740,7 +100740,7 @@
 		},
 		"0x0FFB3C758E8C07B9": {
 			"name": "SET_TASK_MOVE_NETWORK_ENABLE_COLLISION_ON_NETWORK_CLONE_WHEN_FIXED",
-			"jhash": "",
+			"jhash": "Doesn't actually return anything.",
 			"comment": "",
 			"params": [
 				{
