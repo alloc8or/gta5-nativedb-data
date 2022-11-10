@@ -22865,8 +22865,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
