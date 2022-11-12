@@ -7929,7 +7929,7 @@
 		"0x8D4D46230B2C353A": {
 			"name": "GET_FOLLOW_PED_CAM_VIEW_MODE",
 			"jhash": "0xA65FF946",
-			"comment": "Returns\n0 - Third Person Close\n1 - Third Person Mid\n2 - Third Person Far\n4 - First Person",
+			"comment": "See viewmode enum in CAM.GET_FOLLOW_VEHICLE_CAM_VIEW_MODE for return value",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -8025,7 +8025,7 @@
 		"0xA4FF579AC0E3AAAE": {
 			"name": "GET_FOLLOW_VEHICLE_CAM_VIEW_MODE",
 			"jhash": "0xA4B4DB03",
-			"comment": "Returns the type of camera:\n\n0 - Third Person Close\n1 - Third Person Mid\n2 - Third Person Far\n4 - First Person",
+			"comment": "Returns the type of camera:\n\nenum _viewmode //0xA11D7CA8\n{\n\tTHIRD_PERSON_NEAR = 0,\n\tTHIRD_PERSON_MEDIUM = 1,\n\tTHIRD_PERSON_FAR = 2,\n\tCINEMATIC = 3,\n\tFIRST_PERSON = 4\n};",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -8033,7 +8033,7 @@
 		"0xAC253D7842768F48": {
 			"name": "SET_FOLLOW_VEHICLE_CAM_VIEW_MODE",
 			"jhash": "0xC4FBBBD3",
-			"comment": "Sets the type of Player camera in vehicles:\n\n0 - Third Person Close\n1 - Third Person Mid\n2 - Third Person Far\n4 - First Person",
+			"comment": "Sets the type of Player camera in vehicles:\nviewmode: see CAM.GET_FOLLOW_VEHICLE_CAM_VIEW_MODE",
 			"params": [
 				{
 					"type": "int",
@@ -8059,7 +8059,7 @@
 		"0x2A2173E46DAECD12": {
 			"name": "SET_CAM_VIEW_MODE_FOR_CONTEXT",
 			"jhash": "0x1DEBCB45",
-			"comment": "context: see _GET_CAM_ACTIVE_VIEW_MODE_CONTEXT",
+			"comment": "context: see _GET_CAM_ACTIVE_VIEW_MODE_CONTEXT, viewmode: see CAM.GET_FOLLOW_VEHICLE_CAM_VIEW_MODE",
 			"params": [
 				{
 					"type": "int",
