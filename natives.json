@@ -104819,7 +104819,7 @@
 		"0x0FC2D89AC25A5814": {
 			"name": "SET_VEHICLE_MODEL_IS_SUPPRESSED",
 			"jhash": "0x42A08C9B",
-			"comment": "seems to make the vehicle stop spawning naturally in traffic. Here's an essential example:\n\nVEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(MISC::GET_HASH_KEY(\"taco\"), true);\n\ngod I hate taco vans\n\nConfirmed to work? Needs to be looped? Can not get it to work.\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "Makes the vehicle stop spawning naturally in traffic. Here's an essential example:\n\nVEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(MISC::GET_HASH_KEY(\"taco\"), true);\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -106508,7 +106508,7 @@
 		"0x7EE3A3C5E4A40CC9": {
 			"name": "SET_VEHICLE_EXTRA",
 			"jhash": "0x642D065C",
-			"comment": "Note: only some vehicle have extras\nextra ids are from 1 - 9 depending on the vehicle\n\n-------------------------------------------------\n\n^ not sure if outdated or simply wrong. Max extra ID for b944 is 14\n\n-------------------------------------------------\np2 is not a on/off toggle. mostly 0 means on and 1 means off.\nnot sure if it really should be a BOOL.",
+			"comment": "Available extraIds are 1-14, however none of the vehicles have extras above 12.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107134,7 +107134,7 @@
 		"0xA6D3A8750DC73270": {
 			"name": "SET_VEHICLE_LIVERY2",
 			"jhash": "",
-			"comment": "Used to set the tornado custom (convertible) rooftop livery.\n\nLivery value that works for tornado custom is between 0 and 9 from what i can tell. Maybe 0-8 even.\n\nMight work on other custom vehicles but im not sure what those might be, only confirmed it working with the tornado custom.",
+			"comment": "Used to set the secondary livery (the roof on Tornado Custom being one such example.)\n\nLivery value is dependent on the amount of liveries present in the vehicle's texture dictionary, for Tornado Custom this would be 0-6.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107154,7 +107154,7 @@
 		"0x60190048C0764A26": {
 			"name": "GET_VEHICLE_LIVERY2",
 			"jhash": "",
-			"comment": "Returns index of the current vehicle's rooftop livery. A getter for _SET_VEHICLE_ROOF_LIVERY.",
+			"comment": "Returns index of the current vehicle's secondary livery. A getter for SET_VEHICLE_LIVERY2.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107170,7 +107170,7 @@
 		"0x5ECB40269053C0D4": {
 			"name": "GET_VEHICLE_LIVERY2_COUNT",
 			"jhash": "",
-			"comment": "Returns a number of available rooftop liveries, or -1 if vehicle has no rooftop liveries available.",
+			"comment": "Returns a number of available secondary liveries, or -1 if vehicle has no secondary liveries available.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107488,7 +107488,7 @@
 		"0xCFC8BE9A5E1FE575": {
 			"name": "CONTROL_LANDING_GEAR",
 			"jhash": "0x24F873FB",
-			"comment": "Works for vehicles with a retractable landing gear\n\nlanding gear states:\n\n0: Deployed\n1: Closing\n2: Opening\n3: Retracted\n\nwhat can I use to make the hydra thing forward?",
+			"comment": "Works for vehicles with a retractable landing gear\n\nLanding gear states:\n\n0: Deployed\n1: Closing\n2: Opening\n3: Retracted",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107508,7 +107508,7 @@
 		"0x9B0F3DCA3DB0F4CD": {
 			"name": "GET_LANDING_GEAR_STATE",
 			"jhash": "0xA6F02670",
-			"comment": "Landing gear states:\n\n0: Deployed\n1: Closing (Retracting)\n2:(Landing gear state 2 is never used.)\n3: Opening (Deploying)\n4: Retracted\n\nReturns the current state of the vehicles landing gear.",
+			"comment": "Landing gear states:\n\n0: Deployed\n1: Closing (Retracting)\n2: (Landing gear state 2 is never used.)\n3: Opening (Deploying)\n4: Retracted\n\nReturns the current state of the vehicles landing gear.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109164,7 +109164,7 @@
 		"0xB4C7A93837C91A1F": {
 			"name": "GET_LIVERY_NAME",
 			"jhash": "0xED80B5BE",
-			"comment": "Second Param = LiveryIndex\n\nexample \n\nint count = VEHICLE::GET_VEHICLE_LIVERY_COUNT(veh);\nfor (int i = 0; i < count; i++)  \n  {\n     const char* LiveryName = VEHICLE::GET_LIVERY_NAME(veh, i);\n  }\n\n\nthis example will work fine to fetch all names \nfor example for Sanchez we get \n\nSANC_LV1\nSANC_LV2\nSANC_LV3\nSANC_LV4\nSANC_LV5\n\n\nUse GET_FILENAME_FOR_AUDIO_CONVERSATION, to get the localized livery name.\n\nFull list of vehicle mod kits and mods by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleModKits.json",
+			"comment": "Returns the text label of the vehicle's liveryIndex, as specified by the liveryNames section of the vehicle's modkit data in the carcols file.\n\nexample \n\nint count = VEHICLE::GET_VEHICLE_LIVERY_COUNT(veh);\nfor (int i = 0; i < count; i++)  \n  {\n     const char* LiveryName = VEHICLE::GET_LIVERY_NAME(veh, i);\n  }\n\n\nthis example will work fine to fetch all names \nfor example for Sanchez we get \n\nSANC_LV1\nSANC_LV2\nSANC_LV3\nSANC_LV4\nSANC_LV5\n\n\nUse GET_FILENAME_FOR_AUDIO_CONVERSATION, to get the localized livery name.\n\nFull list of vehicle mod kits and mods by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleModKits.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -109273,7 +109273,7 @@
 		"0xB5BA80F839791C0F": {
 			"name": "SET_VEHICLE_TYRE_SMOKE_COLOR",
 			"jhash": "0x3EDEC0DB",
-			"comment": "Sets the tire smoke's color of this vehicle.\n\nvehicle: The vehicle that is the target of this method.\nr: The red level in the RGB color code.\ng: The green level in the RGB color code.\nb: The blue level in the RGB color code.\n\nNote:\nsetting r,g,b to 0 will give the car independance day tyre smoke",
+			"comment": "Sets the tire smoke's color of this vehicle.\n\nvehicle: The vehicle that is the target of this method.\nr: The red level in the RGB color code.\ng: The green level in the RGB color code.\nb: The blue level in the RGB color code.\n\nNote: setting r,g,b to 0 will give the car the \"Patriot\" tire smoke.",
 			"params": [
 				{
 					"type": "Vehicle",
