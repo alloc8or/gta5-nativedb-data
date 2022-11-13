@@ -1165,11 +1165,11 @@
 		"0x7345BDD95E62E0F2": {
 			"name": "REQUEST_MISSION_AUDIO_BANK",
 			"jhash": "0x916E37CA",
-			"comment": "All occurrences and usages found in b617d: https://pastebin.com/NzZZ2Tmm\nFull list of mission audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/missionAudioBankNames.json",
+			"comment": "All occurrences and usages found in b617d: https://pastebin.com/NzZZ2Tmm\nFull list of mission audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/missionAudioBankNames.json\np2 is always -1",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioBank"
 				},
 				{
 					"type": "BOOL",
@@ -1186,11 +1186,11 @@
 		"0xFE02FFBED8CA9D99": {
 			"name": "REQUEST_AMBIENT_AUDIO_BANK",
 			"jhash": "0x23C88BC7",
-			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/XZ1tmGEz\nFull list of ambient audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientAudioBankNames.json",
+			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/XZ1tmGEz\nFull list of ambient audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientAudioBankNames.json\np2 is always -1",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioBank"
 				},
 				{
 					"type": "BOOL",
@@ -1207,18 +1207,18 @@
 		"0x2F844A8B08D76685": {
 			"name": "REQUEST_SCRIPT_AUDIO_BANK",
 			"jhash": "0x21322887",
-			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/AkmDAVn6\nFull list of script audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json",
+			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/AkmDAVn6\nFull list of script audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json\np2 is always -1",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioBank"
 				},
 				{
 					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "int",
+					"type": "Any",
 					"name": "p2"
 				}
 			],
@@ -1228,14 +1228,14 @@
 		"0x40763EA7B9B783E7": {
 			"name": "HINT_MISSION_AUDIO_BANK",
 			"jhash": "",
-			"comment": "",
+			"comment": "p2 is always -1",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioBank"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
@@ -1249,14 +1249,14 @@
 		"0x8F8C0E370AE62F5C": {
 			"name": "HINT_AMBIENT_AUDIO_BANK",
 			"jhash": "0xF1850DDC",
-			"comment": "",
+			"comment": "p2 is always -1",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioBank"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
@@ -1270,14 +1270,14 @@
 		"0xFB380A29641EC31A": {
 			"name": "HINT_SCRIPT_AUDIO_BANK",
 			"jhash": "0x41FA0E51",
-			"comment": "",
+			"comment": "p2 is always -1",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioBank"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
@@ -1347,8 +1347,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "audioBank"
 				}
 			],
 			"return_type": "void",
@@ -1486,7 +1486,7 @@
 		"0x5B9853296731E88D": {
 			"name": "PLAY_SOUND_FROM_ENTITY_HASH",
 			"jhash": "",
-			"comment": "p2 is Entity?",
+			"comment": "Only used with \"formation_flying_blips_soundset\" and \"biker_formation_blips_soundset\".\np1 is always the model of p2",
 			"params": [
 				{
 					"type": "int",
@@ -1494,15 +1494,15 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
+					"name": "model"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
 					"type": "Hash",
-					"name": "soundNameHash"
+					"name": "soundSetHash"
 				},
 				{
 					"type": "Any",
@@ -1925,7 +1925,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "mode"
 				}
 			],
 			"return_type": "void",
@@ -3127,8 +3127,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "ambientZone"
 				},
 				{
 					"type": "BOOL",
@@ -3148,8 +3148,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "ambientZone"
 				},
 				{
 					"type": "BOOL",
@@ -4704,11 +4704,11 @@
 		"0xC7ABCACA4985A766": {
 			"name": "PREPARE_SYNCHRONIZED_AUDIO_EVENT",
 			"jhash": "0xE1D91FD0",
-			"comment": "",
+			"comment": "p1 is always 0 in the scripts",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioEvent"
 				},
 				{
 					"type": "Any",
@@ -4724,12 +4724,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "sceneID"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "audioEvent"
 				}
 			],
 			"return_type": "BOOL",
@@ -4741,8 +4741,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "sceneID"
 				}
 			],
 			"return_type": "BOOL",
@@ -4754,8 +4754,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "sceneID"
 				}
 			],
 			"return_type": "BOOL",
@@ -4767,8 +4767,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "audioEvent"
 				},
 				{
 					"type": "float",
@@ -4793,11 +4793,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioEvent"
 				},
 				{
 					"type": "Entity",
-					"name": "p1"
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -10196,15 +10196,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "componentId"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "drawableId"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "textureId"
 				},
 				{
 					"type": "Hash",
@@ -10263,15 +10263,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "componentId"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "drawableId"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "textureId"
 				},
 				{
 					"type": "Hash",
@@ -34350,8 +34350,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -99697,23 +99697,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p4"
 				}
 			],
@@ -99726,8 +99726,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
@@ -99765,20 +99765,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "BOOL",
@@ -99791,11 +99791,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "name"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "point"
 				}
 			],
 			"return_type": "float",
@@ -99926,11 +99926,11 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "ped1"
+					"name": "ped"
 				},
 				{
 					"type": "Ped",
-					"name": "ped2"
+					"name": "target"
 				},
 				{
 					"type": "BOOL",
@@ -99975,12 +99975,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Entity",
-					"name": "entity"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
 					"type": "BOOL",
@@ -100020,8 +100020,8 @@
 					"name": "p4"
 				},
 				{
-					"type": "BOOL",
-					"name": "p5"
+					"type": "Hash",
+					"name": "firingPattern"
 				}
 			],
 			"return_type": "void",
@@ -114650,7 +114650,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "calmingQuad"
 				}
 			],
 			"return_type": "void",
@@ -114695,7 +114695,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "height"
 				}
 			],
 			"return_type": "void",
