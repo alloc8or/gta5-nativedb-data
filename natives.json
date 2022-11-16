@@ -810,7 +810,7 @@
 				{
 					"type": "float",
 					"name": "z"
-				},
+				}
 			],
 			"return_type": "void",
 			"build": "323"
