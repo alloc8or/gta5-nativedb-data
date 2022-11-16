@@ -652,7 +652,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "triggerAsHudSound"
 				}
 			],
 			"return_type": "void",
@@ -711,59 +711,59 @@
 		"0xC5EF963405593646": {
 			"name": "ADD_LINE_TO_CONVERSATION",
 			"jhash": "0x96CD0513",
-			"comment": "NOTE: ones that are -1, 0 - 35 are determined by a function where it gets a TextLabel from a global then runs,\nGET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME and depending on what the result is it goes in check order of 0 - 9 then A - Z then z (lowercase). So it will then return 0 - 35 or -1 if it's 'z'. The func to handle that ^^ is func_67 in dialog_handler.c atleast in TU27 Xbox360 scripts.\n\np0 is -1, 0 - 35\np1 is a char or string (whatever you wanna call it)\np2 is Global 10597 + i * 6. 'i' is a while(i < 70) loop\np3 is again -1, 0 - 35 \np4 is again -1, 0 - 35 \np5 is either 0 or 1 (bool ?)\np6 is either 0 or 1 (The func to determine this is bool)\np7 is either 0 or 1 (The func to determine this is bool)\np8 is either 0 or 1 (The func to determine this is bool)\np9 is 0 - 3 (Determined by func_60 in dialogue_handler.c)\np10 is either 0 or 1 (The func to determine this is bool)\np11 is either 0 or 1 (The func to determine this is bool)\np12 is unknown as in TU27 X360 scripts it only goes to p11.",
+			"comment": "NOTE: ones that are -1, 0 - 35 are determined by a function where it gets a TextLabel from a global then runs,\nGET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME and depending on what the result is it goes in check order of 0 - 9 then A - Z then z (lowercase). So it will then return 0 - 35 or -1 if it's 'z'. The func to handle that ^^ is func_67 in dialog_handler.c atleast in TU27 Xbox360 scripts.\n\np0 is -1, 0 - 35\np1 is a char or string (whatever you wanna call it)\np2 is Global 10597 + i * 6. 'i' is a while(i < 70) loop\np3 is again -1, 0 - 35 \np4 is again -1, 0 - 35 \np5 is either 0 or 1 (bool ?)\np6 is either 0 or 1 (The func to determine this is bool)\np7 is either 0 or 1 (The func to determine this is bool)\np8 is either 0 or 1 (The func to determine this is bool)\np9 is 0 - 3 (Determined by func_60 in dialogue_handler.c)\np10 is either 0 or 1 (The func to determine this is bool)\np11 is either 0 or 1 (The func to determine this is bool)\np12 is unknown as in TU27 X360 scripts it only goes to p11. \nenum eAUDIBILITY\n{\n\tAUD_AUDIBILITY_NORMAL = 0,\n\tAUD_AUDIBILITY_CLEAR,\n\tAUD_AUDIBILITY_CRITICAL,\n\tAUD_AUDIBILITY_LEAD_IN\n};",
 			"params": [
 				{
 					"type": "int",
-					"name": "index"
+					"name": "speakerNumber"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "context"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "subtitle"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "listenerNumber"
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "volumeType"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isRandom"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "interruptible"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "ducksRadio"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "ducksScore"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "audibility"
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "headset"
 				},
 				{
 					"type": "BOOL",
-					"name": "p11"
+					"name": "dontInterruptForSpecialAbility"
 				},
 				{
 					"type": "BOOL",
-					"name": "p12"
+					"name": "isPadSpeakerRoute"
 				}
 			],
 			"return_type": "void",
@@ -784,7 +784,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "voiceName"
 				}
 			],
 			"return_type": "void",
@@ -796,20 +796,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "speakerConversationIndex"
 				},
 				{
-					"type": "float",
-					"name": "p1"
-				},
-				{
-					"type": "float",
-					"name": "p2"
-				},
-				{
-					"type": "float",
-					"name": "p3"
+					"type": "Vector3",
+					"name": "position"
 				}
 			],
 			"return_type": "void",
@@ -822,7 +814,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "speakerConversationIndex"
 				},
 				{
 					"type": "Entity",
@@ -884,11 +876,11 @@
 		"0x0B568201DD99F0EB": {
 			"name": "SET_CONVERSATION_AUDIO_CONTROLLED_BY_ANIM",
 			"jhash": "0x1193ED6E",
-			"comment": "",
+			"comment": "Pass in true to set conversation flow to be controlled by animation triggers.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -897,11 +889,11 @@
 		"0x61631F5DF50D1C34": {
 			"name": "SET_CONVERSATION_AUDIO_PLACEHOLDER",
 			"jhash": "",
-			"comment": "",
+			"comment": "Used to determine whether conversation should use robot speech or not\n\nisPlaceholder: Pass in true to set conversation as placeholder.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "isPlaceholder"
 				}
 			],
 			"return_type": "void",
@@ -914,11 +906,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "displaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				}
 			],
 			"return_type": "void",
@@ -931,11 +923,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "displaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				}
 			],
 			"return_type": "void",
@@ -948,19 +940,19 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "displaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "cloneConversation"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "interruptible"
 				}
 			],
 			"return_type": "void",
@@ -969,23 +961,23 @@
 		"0x3B3CAD6166916D87": {
 			"name": "PRELOAD_SCRIPT_CONVERSATION",
 			"jhash": "0xDDF5C579",
-			"comment": "",
+			"comment": "Similar to START_SCRIPT_CONVERSATION, except that is starts the conversation off paused. A scripter can then kick off the conversation by calling START_PRELOADED_CONVERSATION. If they want to check that the conversation is done preloading, they can use GET_IS_PRELOADED_CONVERSATION_READY",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "displaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "cloneConversation"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "interruptible"
 				}
 			],
 			"return_type": "void",
@@ -1038,7 +1030,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "finishCurrentLine"
 				}
 			],
 			"return_type": "void",
@@ -1059,7 +1051,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "finishCurrentLine"
 				}
 			],
 			"return_type": "int",
@@ -1105,7 +1097,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "voiceline"
 				},
 				{
 					"type": "const char*",
@@ -1118,11 +1110,11 @@
 		"0xAA19F5572C38B564": {
 			"name": "GET_VARIATION_CHOSEN_FOR_SCRIPTED_LINE",
 			"jhash": "0xB58B8FF3",
-			"comment": "",
+			"comment": "Returns the variation chosen for a given scripte speech line. Returns 0 if it hasn't been chosen yet. Returns -1 if there is no conversation active or if the active conversation doesn't contain this line or if the text label can't be found in the currently loaded text blocks",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "textLabel"
 				}
 			],
 			"return_type": "int",
@@ -1131,11 +1123,11 @@
 		"0xB542DE8C3D1CB210": {
 			"name": "SET_NO_DUCKING_FOR_CONVERSATION",
 			"jhash": "0x789D8C6C",
-			"comment": "",
+			"comment": "Pass in true to turn off ducking for the next conversation triggered.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -1148,7 +1140,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "inChargeOfAudio"
 				}
 			],
 			"return_type": "void",
@@ -1165,19 +1157,19 @@
 		"0x7345BDD95E62E0F2": {
 			"name": "REQUEST_MISSION_AUDIO_BANK",
 			"jhash": "0x916E37CA",
-			"comment": "All occurrences and usages found in b617d: https://pastebin.com/NzZZ2Tmm\nFull list of mission audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/missionAudioBankNames.json",
+			"comment": "All occurrences and usages found in b617d: https://pastebin.com/NzZZ2Tmm\nFull list of mission audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/missionAudioBankNames.json.\nThis is a legacy native use REQUEST_SCRIPT_AUDIO_BANK instead.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "bankName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bOverNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1186,19 +1178,19 @@
 		"0xFE02FFBED8CA9D99": {
 			"name": "REQUEST_AMBIENT_AUDIO_BANK",
 			"jhash": "0x23C88BC7",
-			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/XZ1tmGEz\nFull list of ambient audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientAudioBankNames.json",
+			"comment": "All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/XZ1tmGEz\nFull list of ambient audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientAudioBankNames.json\nThis is a legacy native use REQUEST_SCRIPT_AUDIO_BANK instead.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "bankName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bOverNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1211,15 +1203,15 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "bankName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bOverNetwork"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1228,19 +1220,19 @@
 		"0x40763EA7B9B783E7": {
 			"name": "HINT_MISSION_AUDIO_BANK",
 			"jhash": "",
-			"comment": "",
+			"comment": "This is a legacy native use HINT_SCRIPT_AUDIO_BANK instead.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "bankName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "bOverNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1249,19 +1241,19 @@
 		"0x8F8C0E370AE62F5C": {
 			"name": "HINT_AMBIENT_AUDIO_BANK",
 			"jhash": "0xF1850DDC",
-			"comment": "",
+			"comment": "This is a legacy native use HINT_SCRIPT_AUDIO_BANK instead.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "bankName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "bOverNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1270,19 +1262,19 @@
 		"0xFB380A29641EC31A": {
 			"name": "HINT_SCRIPT_AUDIO_BANK",
 			"jhash": "0x41FA0E51",
-			"comment": "",
+			"comment": "Hints that this bank would be good to load if there are free slots.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "bankName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "bOverNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1291,7 +1283,7 @@
 		"0x0EC92A1BF0857187": {
 			"name": "RELEASE_MISSION_AUDIO_BANK",
 			"jhash": "0x8E8824C7",
-			"comment": "",
+			"comment": "This is a legacy native use REQUEST_SCRIPT_AUDIO_BANK instead.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -1299,7 +1291,7 @@
 		"0x65475A218FFAA93D": {
 			"name": "RELEASE_AMBIENT_AUDIO_BANK",
 			"jhash": "0x8C938784",
-			"comment": "",
+			"comment": "This is a legacy native use REQUEST_SCRIPT_AUDIO_BANK instead.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -1307,11 +1299,11 @@
 		"0x77ED170667F50170": {
 			"name": "RELEASE_NAMED_SCRIPT_AUDIO_BANK",
 			"jhash": "0x16707ABC",
-			"comment": "Full list of script audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json",
+			"comment": "Unloads a named script audio bank.\n\nFull list of script audio bank names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "audioBank"
+					"name": "bankName"
 				}
 			],
 			"return_type": "void",
@@ -1320,7 +1312,7 @@
 		"0x7A2D8AD0A9EB9C3F": {
 			"name": "RELEASE_SCRIPT_AUDIO_BANK",
 			"jhash": "0x22F865E5",
-			"comment": "",
+			"comment": "Unloads all audio banks requested by this script.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -1328,7 +1320,7 @@
 		"0x19AF7ED9B9D23058": {
 			"name": "UNHINT_AMBIENT_AUDIO_BANK",
 			"jhash": "0xA58BBF4F",
-			"comment": "",
+			"comment": "Unloads a ambient audio bank.\n\nThis is a legacy native use UNHINT_SCRIPT_AUDIO_BANK instead.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -1336,7 +1328,7 @@
 		"0x9AC92EED5E4793AB": {
 			"name": "UNHINT_SCRIPT_AUDIO_BANK",
 			"jhash": "0xE67446E9",
-			"comment": "",
+			"comment": "Unloads all audio banks requested by this script.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -1344,11 +1336,11 @@
 		"0x11579D940949C49E": {
 			"name": "UNHINT_NAMED_SCRIPT_AUDIO_BANK",
 			"jhash": "",
-			"comment": "",
+			"comment": "Unloads a named script audio bank.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "bankName"
 				}
 			],
 			"return_type": "void",
@@ -1357,7 +1349,7 @@
 		"0x430386FE9BF80B45": {
 			"name": "GET_SOUND_ID",
 			"jhash": "0x6AE0AD56",
-			"comment": "",
+			"comment": "This native returns a new SoundId, which is used for keeping track of sounds after they've been triggered - use this if you need to control a sound after it's been started, for instance to stop a looping sound, or to change a sound's pitch midway through playback. The SoundId is always an integer greater than or equal to zero; if a playback function has a SoundId field but the sound doesn't need to be altered after triggering then pass a value of -1 for fire-and-forget playback, rather than getting a SoundId. SoundIds can be reused, without needing to release them and grab a new one. If a sound's finished playing, you can reuse its SoundId to kick off another one. If the sound's not finished playing, it'll be stopped first (fading out or whatever is set up in RAVE by the sound designer), and the new one kicked off; usually it is safer to just get a new SoundId.",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -1365,7 +1357,7 @@
 		"0x353FC880830B88FA": {
 			"name": "RELEASE_SOUND_ID",
 			"jhash": "0x9C080899",
-			"comment": "",
+			"comment": "This should be called once a sound has finished being manipulated by the script so that its SoundId can be released and re-used.",
 			"params": [
 				{
 					"type": "int",
@@ -1394,15 +1386,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "bOverNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "nNetworkRange"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "enableOnReplay"
 				}
 			],
 			"return_type": "void",
@@ -1427,7 +1419,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "enableOnReplay"
 				}
 			],
 			"return_type": "void",
@@ -1476,8 +1468,8 @@
 					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "nNetworkRange"
 				}
 			],
 			"return_type": "void",
@@ -1485,7 +1477,7 @@
 		},
 		"0x5B9853296731E88D": {
 			"name": "PLAY_SOUND_FROM_ENTITY_HASH",
-			"jhash": "",
+			"jhash": "The sound's position will track the entity's position as it moves. If the sound doesn't need to be stopped (or have variables passed to it) then a soundId of -1 should be used, otherwise use GET_SOUND_ID to assign the sound a SoundId. ",
 			"comment": "p2 is Entity?",
 			"params": [
 				{
@@ -1494,23 +1486,23 @@
 				},
 				{
 					"type": "Hash",
-					"name": "p1"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
-				},
-				{
-					"type": "Hash",
 					"name": "soundNameHash"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "setName"
+				},
+				{
+					"type": "bool",
+					"name": "bOverNetwork"
+				},
+				{
+					"type": "int",
+					"name": "nNetworkRange"
 				}
 			],
 			"return_type": "void",
@@ -1519,7 +1511,7 @@
 		"0x8D8686B622B88120": {
 			"name": "PLAY_SOUND_FROM_COORD",
 			"jhash": "0xCAD3E2D5",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/eeFc5DiW\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/eeFc5DiW\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json\n\nIf isExteriorLoc is set to TRUE, then it will use a portal occlusion environmentGroup.  Only use this if the sound is playing outside and needs occlusion.",
 			"params": [
 				{
 					"type": "int",
@@ -1555,7 +1547,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "isExteriorLoc"
 				}
 			],
 			"return_type": "void",
@@ -1615,7 +1607,7 @@
 		"0x75262FD12D0A1C84": {
 			"name": "GET_SOUND_ID_FROM_NETWORK_ID",
 			"jhash": "0xD064D4DC",
-			"comment": "",
+			"comment": "Convert from network sound ID to network ID",
 			"params": [
 				{
 					"type": "int",
@@ -1628,7 +1620,7 @@
 		"0xAD6B3148A78AE9B6": {
 			"name": "SET_VARIABLE_ON_SOUND",
 			"jhash": "0x606EE5FA",
-			"comment": "",
+			"comment": "This command allows a scripter to communicate with the sound engine in complex ways, by passing a floating point value to a specific sound object. This allows some nice effects such as adjusting the pitch of a sample being to be played back, or varying a lowpass cutoff. The VariableName parameter must be set up in RAVE (the audio scripting tool) as well as instruction on its usage on a case-by-case basis therefore a sound designer must be consulted with before using this command. ",
 			"params": [
 				{
 					"type": "int",
@@ -1636,11 +1628,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "variable"
+					"name": "variableName"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "variableValue"
 				}
 			],
 			"return_type": "void",
@@ -1649,15 +1641,15 @@
 		"0x2F9D3834AEB9EF79": {
 			"name": "SET_VARIABLE_ON_STREAM",
 			"jhash": "0xF67BB44C",
-			"comment": "From the scripts, p0:\n\n\"ArmWrestlingIntensity\",\n\"INOUT\",\n\"Monkey_Stream\",\n\"ZoomLevel\"",
+			"comment": "This command allows a scripter to communicate with the sound engine in complex ways, by passing a floating point value to a specific sound object. This allows some nice effects such as adjusting the pitch of a sample being to be played back, or varying a lowpass cutoff. The VariableName parameter must be set up in RAVE (the audio scripting tool) as well as instruction on its usage on a case-by-case basis therefore a sound designer must be consulted with before using this command.\nFrom the scripts, variableName:\n\n\"ArmWrestlingIntensity\",\n\"INOUT\",\n\"Monkey_Stream\",\n\"ZoomLevel\"\n\nFore more info see SET_VARIABLE_ON_SOUND",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "variable"
+					"name": "variableName"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "variableValue"
 				}
 			],
 			"return_type": "void",
@@ -1670,11 +1662,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "streamName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "override"
 				}
 			],
 			"return_type": "void",
@@ -1683,7 +1675,7 @@
 		"0x733ADF241531E5C2": {
 			"name": "SET_VARIABLE_ON_UNDER_WATER_STREAM",
 			"jhash": "0x62D026BE",
-			"comment": "AUDIO::SET_VARIABLE_ON_UNDER_WATER_STREAM(\"inTunnel\", 1.0);\nAUDIO::SET_VARIABLE_ON_UNDER_WATER_STREAM(\"inTunnel\", 0.0);",
+			"comment": "This command allows a scripter to set variables on the current underwater stream.\n\nAUDIO::SET_VARIABLE_ON_UNDER_WATER_STREAM(\"inTunnel\", 1.0);\nAUDIO::SET_VARIABLE_ON_UNDER_WATER_STREAM(\"inTunnel\", 0.0);",
 			"params": [
 				{
 					"type": "const char*",
@@ -1691,7 +1683,7 @@
 				},
 				{
 					"type": "float",
-					"name": "value"
+					"name": "variableValue"
 				}
 			],
 			"return_type": "void",
@@ -1700,7 +1692,7 @@
 		"0xFCBDCE714A7C88E5": {
 			"name": "HAS_SOUND_FINISHED",
 			"jhash": "0xE85AEC2E",
-			"comment": "",
+			"comment": "Checks that a sound has finished playing.",
 			"params": [
 				{
 					"type": "int",
@@ -1721,15 +1713,15 @@
 				},
 				{
 					"type": "const char*",
-					"name": "speechName"
+					"name": "context"
 				},
 				{
 					"type": "const char*",
-					"name": "speechParam"
+					"name": "params"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "syncOverNetwork"
 				}
 			],
 			"return_type": "void",
@@ -1756,8 +1748,8 @@
 					"name": "speechParam"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "syncOverNetwork"
 				}
 			],
 			"return_type": "void",
@@ -1789,7 +1781,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "syncOverNetwork"
 				}
 			],
 			"return_type": "void",
@@ -1850,7 +1842,7 @@
 		"0xE78503B10C4314E0": {
 			"name": "RESET_TREVOR_RAGE",
 			"jhash": "0xE80CF0D4",
-			"comment": "",
+			"comment": "Undo the overriding of Trevor's rage context",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -1858,7 +1850,7 @@
 		"0xEA241BB04110F091": {
 			"name": "SET_PLAYER_ANGRY",
 			"jhash": "0x782CA58D",
-			"comment": "",
+			"comment": "Sets a player ped to use his ANGRY speech contexts (set back to false when calling script is finished)",
 			"params": [
 				{
 					"type": "Ped",
@@ -1875,7 +1867,7 @@
 		"0xBC9AE166038A5CEC": {
 			"name": "PLAY_PAIN",
 			"jhash": "0x874BD6CB",
-			"comment": "Needs another parameter [int p2]. The signature is PED::PLAY_PAIN(Ped ped, int painID, int p1, int p2);\n\nLast 2 parameters always seem to be 0.\n\nEX: Function.Call(Hash.PLAY_PAIN, TestPed, 6, 0, 0);\n\nKnown Pain IDs\n________________________\n\n1 - Doesn't seem to do anything. Does NOT crash the game like previously said. (Latest patch)\n6 - Scream (Short)\n7 - Scared Scream (Kinda Long)\n8 - On Fire\n",
+			"comment": "Needs another parameter [int p2]. The signature is PED::PLAY_PAIN(Ped ped, int painID, int p1, int p2);\n\nLast 2 parameters always seem to be 0.\n\nEX: Function.Call(Hash.PLAY_PAIN, TestPed, 6, 0, 0);\n\nKnown Pain IDs\n________________________\n\n1 - Doesn't seem to do anything. Does NOT crash the game like previously said. (Latest patch)\n6 - Scream (Short)\n7 - Scared Scream (Kinda Long)\n8 - On Fire\n\nenum AUD_DAMAGE_REASON\n{\n\tAUD_DAMAGE_REASON_DEFAULT,\n\tAUD_DAMAGE_REASON_FALLING,\n\tAUD_DAMAGE_REASON_SUPER_FALLING,\n\tAUD_DAMAGE_REASON_SCREAM_PANIC,\n\tAUD_DAMAGE_REASON_SCREAM_PANIC_SHORT,\n\tAUD_DAMAGE_REASON_SCREAM_SCARED,\n\tAUD_DAMAGE_REASON_SCREAM_SHOCKED,\n\tAUD_DAMAGE_REASON_SCREAM_TERROR,\n\tAUD_DAMAGE_REASON_ON_FIRE,\n\tAUD_DAMAGE_REASON_DROWNING,\n\tAUD_DAMAGE_REASON_SURFACE_DROWNING,\t// drowning on the surface of water, after we time out\n\tAUD_DAMAGE_REASON_INHALE,\n\tAUD_DAMAGE_REASON_EXHALE,\n\tAUD_DAMAGE_REASON_POST_FALL_GRUNT, \n\tAUD_DAMAGE_REASON_ENTERING_RAGDOLL_DEATH,\n\tAUD_DAMAGE_REASON_EXPLOSION,\n\tAUD_DAMAGE_REASON_MELEE,\n\tAUD_DAMAGE_REASON_SHOVE,\n\tAUD_DAMAGE_REASON_WHEEZE,\n\tAUD_DAMAGE_REASON_COUGH,\n\tAUD_DAMAGE_REASON_TAZER,\n\tAUD_DAMAGE_REASON_EXHAUSTION,\n\tAUD_DAMAGE_REASON_CLIMB_LARGE,\n\tAUD_DAMAGE_REASON_CLIMB_SMALL,\n\tAUD_DAMAGE_REASON_JUMP,\n\tAUD_DAMAGE_REASON_COWER,\n\tAUD_DAMAGE_REASON_WHIMPER,\n\tAUD_DAMAGE_REASON_DYING_MOAN,\n\tAUD_DAMAGE_REASON_CYCLING_EXHALE,\n\tAUD_DAMAGE_REASON_PAIN_RAPIDS,\n\tAUD_DAMAGE_REASON_SNEEZE,\n\tAUD_DAMAGE_REASON_MELEE_SMALL_GRUNT,\n\tAUD_DAMAGE_REASON_MELEE_LARGE_GRUNT,\n\tAUD_DAMAGE_REASON_POST_FALL_GRUNT_LOW\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -1883,15 +1875,15 @@
 				},
 				{
 					"type": "int",
-					"name": "painID"
+					"name": "damageReason"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "float",
+					"name": "rawDamage"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "syncOverNetwork"
 				}
 			],
 			"return_type": "void",
@@ -1900,7 +1892,7 @@
 		"0xCE4AC0439F607045": {
 			"name": "RELEASE_WEAPON_AUDIO",
 			"jhash": "0x6096504C",
-			"comment": "",
+			"comment": "Release weapon audio",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -1925,7 +1917,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "mode"
 				}
 			],
 			"return_type": "void",
@@ -1934,7 +1926,7 @@
 		"0x6C8065A3B780185B": {
 			"name": "SET_AMBIENT_VOICE_NAME",
 			"jhash": "0xBD2EA1A1",
-			"comment": "Audio List\ngtaforums.com/topic/795622-audio-for-mods/\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/FTeAj4yZ",
+			"comment": "Purpose: Sets a ped to use a specific voice different to the one associated with their model.\n\nAudio List\ngtaforums.com/topic/795622-audio-for-mods/\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/FTeAj4yZ",
 			"params": [
 				{
 					"type": "Ped",
@@ -1942,7 +1934,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "voiceName"
 				}
 			],
 			"return_type": "void",
@@ -1959,7 +1951,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "voiceNameHash"
 				}
 			],
 			"return_type": "void",
@@ -1971,7 +1963,7 @@
 		"0x5E203DA2BA15D436": {
 			"name": "GET_AMBIENT_VOICE_NAME_HASH",
 			"jhash": "",
-			"comment": "",
+			"comment": "Gets the hash of the voice name in use by Audio",
 			"params": [
 				{
 					"type": "Ped",
@@ -2011,7 +2003,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "pedRace"
 				},
 				{
 					"type": "Hash",
@@ -2064,7 +2056,7 @@
 		"0xA5342D390CDA41D6": {
 			"name": "SET_PED_GENDER",
 			"jhash": "",
-			"comment": "BOOL p1: 0 = Female; 1 = Male",
+			"comment": "Sets the ped gender",
 			"params": [
 				{
 					"type": "Ped",
@@ -2072,7 +2064,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isMale"
 				}
 			],
 			"return_type": "void",
@@ -2084,7 +2076,7 @@
 		"0x7A73D05A607734C7": {
 			"name": "STOP_CURRENT_PLAYING_SPEECH",
 			"jhash": "0x5B7463F4",
-			"comment": "",
+			"comment": "Stops curretly playing speech (Pain, ambient, scripted, breathing).",
 			"params": [
 				{
 					"type": "Ped",
@@ -2100,7 +2092,7 @@
 		"0xB8BEC0CA6F0EDB0F": {
 			"name": "STOP_CURRENT_PLAYING_AMBIENT_SPEECH",
 			"jhash": "0xBB8E64BF",
-			"comment": "",
+			"comment": "Stops curretly playing ambient speech.",
 			"params": [
 				{
 					"type": "Ped",
@@ -2113,7 +2105,7 @@
 		"0x9072C8B49907BFAD": {
 			"name": "IS_AMBIENT_SPEECH_PLAYING",
 			"jhash": "0x1972E8AA",
-			"comment": "",
+			"comment": "Checks if ambient speech is currently playing.",
 			"params": [
 				{
 					"type": "Ped",
@@ -2126,11 +2118,11 @@
 		"0xCC9AA18DCC7084F4": {
 			"name": "IS_SCRIPTED_SPEECH_PLAYING",
 			"jhash": "0x2C653904",
-			"comment": "",
+			"comment": "Checks if scripted speech is currently playing from the given ped.",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
@@ -2139,7 +2131,7 @@
 		"0x729072355FA39EC9": {
 			"name": "IS_ANY_SPEECH_PLAYING",
 			"jhash": "0x2B74A6D6",
-			"comment": "",
+			"comment": "Checks if any type of speech is playing.",
 			"params": [
 				{
 					"type": "Ped",
@@ -2152,7 +2144,7 @@
 		"0x30CA2EF91D15ADF8": {
 			"name": "IS_ANY_POSITIONAL_SPEECH_PLAYING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Checks if any ped-independent positional scripted speech (ie. triggered using PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE) is currently playing",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "2189"
@@ -2160,7 +2152,7 @@
 		"0x49B99BF3FDA89A7A": {
 			"name": "DOES_CONTEXT_EXIST_FOR_THIS_PED",
 			"jhash": "0x8BD5F11E",
-			"comment": "Checks if the ped can play the speech or has the speech file, p2 is usually false.",
+			"comment": "Checks if the ped can play the speech or has the speech file, Checks if the context exists for the ped, searching through the voices in its PedVoiceGroup. The final argument can be set to true to allow searching in backup PVGs (aka. Voice Groupe).",
 			"params": [
 				{
 					"type": "Ped",
@@ -2172,7 +2164,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "allowBackupPVG"
 				}
 			],
 			"return_type": "BOOL",
@@ -2214,15 +2206,15 @@
 		"0xEE066C7006C49C0A": {
 			"name": "PLAY_ANIMAL_VOCALIZATION",
 			"jhash": "0x498849F3",
-			"comment": "Plays sounds from a ped with chop model. For example it used to play bark or sniff sounds. p1 is always 3 or 4294967295 in decompiled scripts. By a quick disassembling I can assume that this arg is unused.\nThis native is works only when you call it on the ped with right model (ac_chop only ?)\nSpeech Name can be: CHOP_SNIFF_SEQ CHOP_WHINE CHOP_LICKS_MOUTH CHOP_PANT bark GROWL SNARL BARK_SEQ",
+			"comment": "Plays sounds from a ped with chop model. For example it used to play bark or sniff sounds. ped is always 3 or 4294967295 in decompiled scripts. By a quick disassembling I can assume that this arg is unused.\nThis native is works only when you call it on the ped with right model (ac_chop only ?)\nSpeech Name can be: CHOP_SNIFF_SEQ CHOP_WHINE CHOP_LICKS_MOUTH CHOP_PANT bark GROWL SNARL BARK_SEQ\n\nenum AUD_ANIMAL_TYPE\n{\n\tAUD_ANIMAL_NONE = -1,\n\tAUD_ANIMAL_BOAR,\n\tAUD_ANIMAL_CHICKEN,\n\tAUD_ANIMAL_DOG,\n\tAUD_ANIMAL_DOG_ROTTWEILER,\n\tAUD_ANIMAL_HORSE,\n\tAUD_NUM_ANIMALS\n};",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "pedHandle"
+					"name": "ped"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "animalType"
 				},
 				{
 					"type": "const char*",
@@ -2235,11 +2227,11 @@
 		"0xC265DF9FB44A9FBD": {
 			"name": "IS_ANIMAL_VOCALIZATION_PLAYING",
 			"jhash": "0x0CBAF2EF",
-			"comment": "",
+			"comment": "Checks if animal sound is currently playing.",
 			"params": [
 				{
 					"type": "Ped",
-					"name": "pedHandle"
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
@@ -2265,7 +2257,7 @@
 		"0xB35CE999E8EF317E": {
 			"name": "IS_MOBILE_PHONE_RADIO_ACTIVE",
 			"jhash": "0x6E502A5B",
-			"comment": "",
+			"comment": "Checks if the moblie phone radio is active",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -2273,7 +2265,7 @@
 		"0xBF286C554784F3DF": {
 			"name": "SET_MOBILE_PHONE_RADIO_STATE",
 			"jhash": "0xE1E0ED34",
-			"comment": "",
+			"comment": "Sets if the phone radio is active",
 			"params": [
 				{
 					"type": "BOOL",
@@ -2315,7 +2307,7 @@
 		"0xA571991A7FE6CCEB": {
 			"name": "GET_PLAYER_RADIO_STATION_GENRE",
 			"jhash": "0x872CF0EA",
-			"comment": "",
+			"comment": "Returns the genre of the players current radio station",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -2323,7 +2315,7 @@
 		"0xA151A7394A214E65": {
 			"name": "IS_RADIO_RETUNING",
 			"jhash": "0xCF29097B",
-			"comment": "",
+			"comment": "Checks if the radio is tuning to a station",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -2331,7 +2323,7 @@
 		"0x0626A247D2405330": {
 			"name": "IS_RADIO_FADED_OUT",
 			"jhash": "0x815CAE99",
-			"comment": "",
+			"comment": "Checks if the radio is currently faded out",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -2339,7 +2331,7 @@
 		"0xFF266D1D0EB1195D": {
 			"name": "SET_RADIO_RETUNE_UP",
 			"jhash": "0x53DB6994",
-			"comment": "Tune Forward...",
+			"comment": "Sets the radio to tune up",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -2347,7 +2339,7 @@
 		"0xDD6BCF9E94425DF9": {
 			"name": "SET_RADIO_RETUNE_DOWN",
 			"jhash": "0xD70ECC80",
-			"comment": "Tune Backwards...",
+			"comment": "Sets the radio to tune down",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -2385,7 +2377,7 @@
 		"0x3E45765F3FBB582F": {
 			"name": "SET_VEH_HAS_NORMAL_RADIO",
 			"jhash": "",
-			"comment": "",
+			"comment": "Tells the vehicle to use a normal radio (instead of an emergency services radio, MP only radio, or other radio type)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -2401,7 +2393,7 @@
 		"0x0BE4BE946463F917": {
 			"name": "IS_VEHICLE_RADIO_ON",
 			"jhash": "",
-			"comment": "",
+			"comment": "Check if a given vehicle radio is on",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -2417,7 +2409,7 @@
 		"0xC1805D05E6D4FE10": {
 			"name": "SET_VEH_FORCED_RADIO_THIS_FRAME",
 			"jhash": "0x7ABB89D2",
-			"comment": "",
+			"comment": "Ensure the specific vehicle gets a radio allocated this frame",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -2547,7 +2539,7 @@
 		"0xCD536C4D33DCC900": {
 			"name": "PLAY_END_CREDITS_MUSIC",
 			"jhash": "0x8E88B3CC",
-			"comment": "",
+			"comment": "Sets the end of credits to play.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -2594,7 +2586,7 @@
 		"0xC1AA9F53CE982990": {
 			"name": "SET_RADIO_AUTO_UNFREEZE",
 			"jhash": "0xA40196BF",
-			"comment": "",
+			"comment": "if true the radio will automatically unfreeze as soon as the player gets in a vehicle",
 			"params": [
 				{
 					"type": "BOOL",
@@ -2620,11 +2612,11 @@
 		"0x19F21E63AE6EAE4E": {
 			"name": "SET_USER_RADIO_CONTROL_ENABLED",
 			"jhash": "0x52E054CE",
-			"comment": "",
+			"comment": "Scripts can call this safely without worrying about conflicts with other scripts - calls can be nested, and if any system wants radio control disabled then it will be.  This does mean that scripts must ensure they only call this function when their state changes, and not every frame",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "enabled"
 				}
 			],
 			"return_type": "void",
@@ -2650,7 +2642,7 @@
 		"0x2CB0075110BE1E56": {
 			"name": "SET_RADIO_TRACK_WITH_START_OFFSET",
 			"jhash": "",
-			"comment": "",
+			"comment": "Forces a specific track on a radio station with a given start offset. The station must be frozen, and the track will be queued for immediate playback",
 			"params": [
 				{
 					"type": "const char*",
@@ -2662,7 +2654,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "timeOffsetMs"
 				}
 			],
 			"return_type": "void",
@@ -2682,15 +2674,15 @@
 				},
 				{
 					"type": "const char*",
-					"name": "radioTrack"
+					"name": "category"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "contextName"
 				},
 				{
 					"type": "const char*",
-					"name": "p3"
+					"name": "trackIndex"
 				}
 			],
 			"return_type": "void",
@@ -2716,7 +2708,7 @@
 		"0x032A116663A4D5AC": {
 			"name": "CAN_VEHICLE_RECEIVE_CB_RADIO",
 			"jhash": "0xCBA99F4A",
-			"comment": "",
+			"comment": "Check if the vehicle can currently receive CB radio (ie. it has a capable radio and is in range of a transmitter)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -2764,7 +2756,7 @@
 		"0x3B988190C0AA6C0B": {
 			"name": "SET_VEHICLE_RADIO_ENABLED",
 			"jhash": "0x6F812CAB",
-			"comment": "can't seem to enable radio on cop cars etc",
+			"comment": "Enables/disables radio for a specific vehicle.\ncan't seem to enable radio on cop cars etc",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -2781,11 +2773,11 @@
 		"0xDA07819E452FFE8F": {
 			"name": "SET_POSITIONED_PLAYER_VEHICLE_RADIO_EMITTER_ENABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Enables/disables a positioned emitter for the player vehicle radio",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -2794,7 +2786,7 @@
 		"0x4E404A9361F75BB2": {
 			"name": "SET_CUSTOM_RADIO_TRACK_LIST",
 			"jhash": "0x128C3873",
-			"comment": "Examples:\n\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_SAVE_MICHAEL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_06_COUNTRY\", \"MAGDEMO2_RADIO_DINGHY\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"SEA_RACE_RADIO_PLAYLIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);",
+			"comment": "If forceNow is TRUE then the current track will be interrupted by the tracklist.\nExamples:\n\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_SAVE_MICHAEL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_06_COUNTRY\", \"MAGDEMO2_RADIO_DINGHY\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"SEA_RACE_RADIO_PLAYLIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);",
 			"params": [
 				{
 					"type": "const char*",
@@ -2806,7 +2798,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceNow"
 				}
 			],
 			"return_type": "void",
@@ -2828,7 +2820,7 @@
 		"0xF1620ECB50E01DE7": {
 			"name": "GET_NUM_UNLOCKED_RADIO_STATIONS",
 			"jhash": "0xCC91FCF5",
-			"comment": "",
+			"comment": "Returns the number of radio stations currently unlocked in the game. This can change as a result of DLC and/or script calls.",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -2839,7 +2831,7 @@
 		"0x8D67489793FF428B": {
 			"name": "FIND_RADIO_STATION_INDEX",
 			"jhash": "0xECA1512F",
-			"comment": "",
+			"comment": "Searches for the current radio station index for the specified hash",
 			"params": [
 				{
 					"type": "Hash",
@@ -2869,11 +2861,11 @@
 		"0x2C96CDB04FCA358E": {
 			"name": "SET_RADIO_FRONTEND_FADE_TIME",
 			"jhash": "0xC8B514E2",
-			"comment": "",
+			"comment": "Override the time to fade radio from stereo to positioned and vice versa.  Default is 0.5s",
 			"params": [
 				{
 					"type": "float",
-					"name": "fadeTime"
+					"name": "fadeTimeSecounds"
 				}
 			],
 			"return_type": "void",
@@ -2882,7 +2874,7 @@
 		"0x031ACB6ABA18C729": {
 			"name": "UNLOCK_RADIO_STATION_TRACK_LIST",
 			"jhash": "0xBE998184",
-			"comment": "AUDIO::UNLOCK_RADIO_STATION_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"MIRRORPARK_LOCKED\");",
+			"comment": "Unlocks the specified radio station track list\nAUDIO::UNLOCK_RADIO_STATION_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"MIRRORPARK_LOCKED\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -2923,7 +2915,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "enableMixes"
+					"name": "allowTrackReprioritization"
 				}
 			],
 			"return_type": "void",
@@ -2956,7 +2948,7 @@
 		"0x4CAFEBFA21EC188D": {
 			"name": "SET_RADIO_STATION_AS_FAVOURITE",
 			"jhash": "",
-			"comment": "Doesn't have an effect in Story Mode.",
+			"comment": "Mark a radio station as a favourite (by default, all stations are favourites). Setting the flag to false will hide the radio station from the radio wheel. Doesn't have an effect in Story Mode.",
 			"params": [
 				{
 					"type": "const char*",
@@ -2996,15 +2988,15 @@
 			"params": [
 				{
 					"type": "float*",
-					"name": "out1"
+					"name": "timeInSecounds"
 				},
 				{
 					"type": "float*",
-					"name": "out2"
+					"name": "beatsPerMinute"
 				},
 				{
 					"type": "int*",
-					"name": "out3"
+					"name": "beatNum"
 				}
 			],
 			"return_type": "BOOL",
@@ -3025,7 +3017,7 @@
 				},
 				{
 					"type": "int",
-					"name": "milliseconds"
+					"name": "timeOffsetMs"
 				}
 			],
 			"return_type": "void",
@@ -3037,7 +3029,7 @@
 		"0x3E65CDE5215832C1": {
 			"name": "GET_CURRENT_TRACK_PLAY_TIME",
 			"jhash": "",
-			"comment": "",
+			"comment": "Get the time in seconds that the current track has been playing on the given radio station",
 			"params": [
 				{
 					"type": "const char*",
@@ -3053,7 +3045,7 @@
 		"0x34D66BC058019CE0": {
 			"name": "GET_CURRENT_TRACK_SOUND_NAME",
 			"jhash": "",
-			"comment": "",
+			"comment": "Get the sound name for the track currently playing on the given station",
 			"params": [
 				{
 					"type": "const char*",
@@ -3069,7 +3061,7 @@
 		"0xF3365489E0DD50F9": {
 			"name": "SET_VEHICLE_MISSILE_WARNING_ENABLED",
 			"jhash": "0x8AFC488D",
-			"comment": "",
+			"comment": "Enables/disables the incoming missile warning system for a specific vehicle",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3086,7 +3078,7 @@
 		"0xBDA07E5950085E46": {
 			"name": "SET_AMBIENT_ZONE_STATE",
 			"jhash": "0x2849CAC9",
-			"comment": "Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
+			"comment": "Use the 'forceUpdate' flag to force a zone to become disabled even if its currently active. The default disabling behaviour is that any state changes only get applied once the player leaves the zone.\n\nFull list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3094,11 +3086,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enabled"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3107,7 +3099,7 @@
 		"0x218DD44AAAC964FF": {
 			"name": "CLEAR_AMBIENT_ZONE_STATE",
 			"jhash": "0xCDFF3C82",
-			"comment": "This function also has a p2, unknown. Signature AUDIO::CLEAR_AMBIENT_ZONE_STATE(const char* zoneName, bool p1, Any p2);\n\nStill needs more research.\n\nFull list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
+			"comment": "Resets the ambient zone enabled/disabled status to its value before it was modified by this script.\nFor more info see SET_AMBIENT_ZONE_STATE.\n\nFull list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3115,7 +3107,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3124,19 +3116,19 @@
 		"0x9748FA4DE50CCE3E": {
 			"name": "SET_AMBIENT_ZONE_LIST_STATE",
 			"jhash": "0xBF80B412",
-			"comment": "",
+			"comment": "Enables/disables a list of ambient zones for the duration of this script.\nFor more info see SET_AMBIENT_ZONE_STATE.",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "zoneListName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enabled"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3145,15 +3137,15 @@
 		"0x120C48C614909FA4": {
 			"name": "CLEAR_AMBIENT_ZONE_LIST_STATE",
 			"jhash": "0x38B9B8D4",
-			"comment": "",
+			"comment": "Resets the list of ambient zones' enabled/disabled status back to their values before they were modified by this script\nFor more info see SET_AMBIENT_ZONE_STATE.",
 			"params": [
 				{
 					"type": "Any*",
-					"name": "p0"
+					"name": "zoneListName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3162,7 +3154,7 @@
 		"0x1D6650420CEC9D3B": {
 			"name": "SET_AMBIENT_ZONE_STATE_PERSISTENT",
 			"jhash": "0xC1FFB672",
-			"comment": "Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
+			"comment": "Enables/disables an ambient zones persistently. This change will be saved to the user's savegame\nFor more info see SET_AMBIENT_ZONE_STATE.\n\nFull list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3170,11 +3162,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enabled"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3183,7 +3175,7 @@
 		"0xF3638DAE8C4045E1": {
 			"name": "SET_AMBIENT_ZONE_LIST_STATE_PERSISTENT",
 			"jhash": "0x5F5A2605",
-			"comment": "Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
+			"comment": "Enables/disables a list of ambient zones persistently. This change will be saved to the user's savegame\nFor more info see SET_AMBIENT_ZONE_STATE.Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3191,11 +3183,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "enabled"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3217,7 +3209,7 @@
 		"0x5D2BFAAB8D956E0E": {
 			"name": "REFRESH_CLOSEST_OCEAN_SHORELINE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Refresh the closest shoreline using the nearest road position.",
 			"params": [],
 			"return_type": "void",
 			"build": "573"
@@ -3225,11 +3217,11 @@
 		"0x3B4BF5F0859204D9": {
 			"name": "SET_CUTSCENE_AUDIO_OVERRIDE",
 			"jhash": "0xCE1332B7",
-			"comment": "All occurrences found in b617d, sorted alphabetically and identical lines removed: \n\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_AK\");\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_CUSTOM\");\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_TOOTHLESS\");\nFull list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
+			"comment": "Add a suffix to the cutscene audio name. Call before loading the cutscene.\nAll occurrences found in b617d, sorted alphabetically and identical lines removed: \n\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_AK\");\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_CUSTOM\");\nAUDIO::SET_CUTSCENE_AUDIO_OVERRIDE(\"_TOOTHLESS\");\nFull list of cutscene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "override"
 				}
 			],
 			"return_type": "void",
@@ -3267,7 +3259,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "applyValue"
 				}
 			],
 			"return_type": "int",
@@ -3276,7 +3268,7 @@
 		"0xB4F90FAF7670B16F": {
 			"name": "CANCEL_ALL_POLICE_REPORTS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Cancels all police reports in the scanner queue.",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -3313,7 +3305,7 @@
 				},
 				{
 					"type": "int",
-					"name": "hornHash"
+					"name": "overridenHornHash"
 				}
 			],
 			"return_type": "void",
@@ -3352,7 +3344,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "mute"
 				}
 			],
 			"return_type": "void",
@@ -3361,15 +3353,15 @@
 		"0x58BB377BEC7CD5F4": {
 			"name": "SET_VEHICLE_CONVERSATIONS_PERSIST",
 			"jhash": "0x8CE63FA1",
-			"comment": "SET_VEHICLE_CONVERSATIONS_PERSIST?",
+			"comment": "Set vehicles conversations carry on even if the vehicle is on fire or upsidedown.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "allowUpsideDown"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "allowOnFire"
 				}
 			],
 			"return_type": "void",
@@ -3378,19 +3370,19 @@
 		"0x9BD7BD55E4533183": {
 			"name": "SET_VEHICLE_CONVERSATIONS_PERSIST_NEW",
 			"jhash": "",
-			"comment": "",
+			"comment": "Set vehicles conversations carry on even if the vehicle is on fire or upsidedown or drowning.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "allowUpsideDown"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "allowOnFire"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "allowDrowning"
 				}
 			],
 			"return_type": "void",
@@ -3399,7 +3391,7 @@
 		"0xD11FA52EB849D978": {
 			"name": "IS_STREAM_PLAYING",
 			"jhash": "0xF1F51A14",
-			"comment": "",
+			"comment": "True if script is currently playing a stream",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -3432,7 +3424,7 @@
 		"0x59C16B79F53B3712": {
 			"name": "LOAD_STREAM_WITH_START_OFFSET",
 			"jhash": "0xE5B5745C",
-			"comment": "Example:\nAUDIO::LOAD_STREAM_WITH_START_OFFSET(\"STASH_TOXIN_STREAM\", 2400, \"FBI_05_SOUNDS\");\n\nOnly called a few times in the scripts.\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
+			"comment": "Load in named stream. Optionally can specify a sound set which contains the sound specified by name.\nExample:\nAUDIO::LOAD_STREAM_WITH_START_OFFSET(\"STASH_TOXIN_STREAM\", 2400, \"FBI_05_SOUNDS\");\n\nOnly called a few times in the scripts.\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3453,7 +3445,7 @@
 		"0x89049DD63C08B5D1": {
 			"name": "PLAY_STREAM_FROM_PED",
 			"jhash": "0xA1D7FABE",
-			"comment": "",
+			"comment": "Plays a preloaded stream back from a specified ped.",
 			"params": [
 				{
 					"type": "Ped",
@@ -3466,7 +3458,7 @@
 		"0xB70374A758007DFA": {
 			"name": "PLAY_STREAM_FROM_VEHICLE",
 			"jhash": "0xF8E4BDA2",
-			"comment": "",
+			"comment": "Plays a preloaded stream back from a specified veh.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3479,7 +3471,7 @@
 		"0xEBAA9B64D76356FD": {
 			"name": "PLAY_STREAM_FROM_OBJECT",
 			"jhash": "0xC5266BF7",
-			"comment": "Used with AUDIO::LOAD_STREAM\n\nExample from finale_heist2b.c4:\nTASK::TASK_SYNCHRONIZED_SCENE(l_4C8[2/*14*/], l_4C8[2/*14*/]._f7, l_30A, \"push_out_vault_l\", 4.0, -1.5, 5, 713, 4.0, 0);\n                    PED::SET_SYNCHRONIZED_SCENE_PHASE(l_4C8[2/*14*/]._f7, 0.0);\n                    PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(l_4C8[2/*14*/], 0, 0);\n                    PED::SET_PED_COMBAT_ATTRIBUTES(l_4C8[2/*14*/], 38, 1);\n                    PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(l_4C8[2/*14*/], 1);\n                    if (AUDIO::LOAD_STREAM(\"Gold_Cart_Push_Anim_01\", \"BIG_SCORE_3B_SOUNDS\")) {\n                        AUDIO::PLAY_STREAM_FROM_OBJECT(l_36F[0/*1*/]);\n                    }",
+			"comment": "Plays a preloaded stream back from a specified object.\nUsed with AUDIO::LOAD_STREAM\n\nExample from finale_heist2b.c4:\nTASK::TASK_SYNCHRONIZED_SCENE(l_4C8[2/*14*/], l_4C8[2/*14*/]._f7, l_30A, \"push_out_vault_l\", 4.0, -1.5, 5, 713, 4.0, 0);\n                    PED::SET_SYNCHRONIZED_SCENE_PHASE(l_4C8[2/*14*/]._f7, 0.0);\n                    PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(l_4C8[2/*14*/], 0, 0);\n                    PED::SET_PED_COMBAT_ATTRIBUTES(l_4C8[2/*14*/], 38, 1);\n                    PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(l_4C8[2/*14*/], 1);\n                    if (AUDIO::LOAD_STREAM(\"Gold_Cart_Push_Anim_01\", \"BIG_SCORE_3B_SOUNDS\")) {\n                        AUDIO::PLAY_STREAM_FROM_OBJECT(l_36F[0/*1*/]);\n                    }",
 			"params": [
 				{
 					"type": "Object",
@@ -3524,7 +3516,7 @@
 		"0xA4718A1419D18151": {
 			"name": "STOP_STREAM",
 			"jhash": "0xD1E364DE",
-			"comment": "",
+			"comment": "Stops a stream that is being played by the script",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -3532,7 +3524,7 @@
 		"0x9D64D7405520E3D3": {
 			"name": "STOP_PED_SPEAKING",
 			"jhash": "0xFF92B49D",
-			"comment": "",
+			"comment": "INFO: This doesn't stop a piece of dialogue that has been triggered. This stops the ability to force ambient dialogue if set to true - however setting it to false, then triggering a context, then setting it to true again will allow this. This does not sync over the network, it will only affect peds locally. Use STOP_PED_SPEAKING_SYNCED if you need to affect peds on other machines too.",
 			"params": [
 				{
 					"type": "Ped",
@@ -3540,7 +3532,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "shaking"
+					"name": "shouldDisable"
 				}
 			],
 			"return_type": "void",
@@ -3549,7 +3541,7 @@
 		"0xF8AD2EED7C47E8FE": {
 			"name": "BLOCK_ALL_SPEECH_FROM_PED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Blocks *all* speech playing on the given ped, including speech triggered by script commands such as PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE The flag itself is not synced, it must be called on each machine that wishes to suppress the speech. The SuppressOutgoingNetworkSpeech flag can be set to false if you want speech triggered locally through PLAY_AMBIENT_SPEECH calls to still be audible on remote machines, even though it was blocked on the local one.",
 			"params": [
 				{
 					"type": "Ped",
@@ -3557,11 +3549,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "shouldBlock"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "suppressOutgoingNetworkSpeech"
 				}
 			],
 			"return_type": "void",
@@ -3570,7 +3562,7 @@
 		"0xAB6781A5F3101470": {
 			"name": "STOP_PED_SPEAKING_SYNCED",
 			"jhash": "",
-			"comment": "",
+			"comment": "This doesn't stop a piece of dialogue that has been triggered. This stops the ability to force ambient dialogue if set to true - however setting it to false, then triggering a context, then setting it to true again will allow this. The ped will also be prevented from speaking on remote machines. Use STOP_PED_SPEAKING if you just want to affect the local machine.",
 			"params": [
 				{
 					"type": "Ped",
@@ -3578,7 +3570,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "shouldDisable"
 				}
 			],
 			"return_type": "void",
@@ -3587,7 +3579,7 @@
 		"0xA9A41C1E940FB0E8": {
 			"name": "DISABLE_PED_PAIN_AUDIO",
 			"jhash": "0x3B8E2D5F",
-			"comment": "",
+			"comment": "Disable ped pain audio",
 			"params": [
 				{
 					"type": "Ped",
@@ -3617,15 +3609,15 @@
 		"0xA8A7D434AFB4B97B": {
 			"name": "BLOCK_SPEECH_CONTEXT_GROUP",
 			"jhash": "",
-			"comment": "",
+			"comment": "Stop a certain group of peds from using a certain group of speech contexts.  Note that the block will be automatically removed when the calling script finishes\ntarget: \nenum AUD_CONTEXT_BLOCK_TARGET\n{\n\tAUD_CONTEXT_BLOCK_PLAYER,\n\tAUD_CONTEXT_BLOCK_NPCS,\n\tAUD_CONTEXT_BLOCK_BUDDYS,\n\tAUD_CONTEXT_BLOCK_EVERYONE,\n\t\n\tAUD_CONTEXT_BLOCK_TARGETS_TOTAL\n};",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "groupName"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "target"
 				}
 			],
 			"return_type": "void",
@@ -3634,11 +3626,11 @@
 		"0x2ACABED337622DF2": {
 			"name": "UNBLOCK_SPEECH_CONTEXT_GROUP",
 			"jhash": "",
-			"comment": "",
+			"comment": "This removes all instances of a given context block.  Unfortunately, this means that if you have called this once blocking the player, then later to block NPCs, and only want the player block removed, you'll have to once again call BLOCK_SPEECH... with NPCs as the target after this is called.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "groupName"
 				}
 			],
 			"return_type": "void",
@@ -3647,7 +3639,7 @@
 		"0x1FEF0683B96EBCF2": {
 			"name": "SET_SIREN_WITH_NO_DRIVER",
 			"jhash": "0x77182D58",
-			"comment": "",
+			"comment": "Plays the siren audio without a driver in a vehicle",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3664,7 +3656,7 @@
 		"0xF584CF8529B51434": {
 			"name": "SET_SIREN_BYPASS_MP_DRIVER_CHECK",
 			"jhash": "",
-			"comment": "",
+			"comment": "Use in conjuction with SET_SIREN_WITH_NO_DRIVER to definitely play the siren with no driver in MP modes",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3684,7 +3676,7 @@
 		"0x66C3FB05206041BA": {
 			"name": "TRIGGER_SIREN_AUDIO",
 			"jhash": "",
-			"comment": "",
+			"comment": "Actually sets the siren audio active. If attempting to enable a siren on a driverless vehicle, you may need to use this to kick off the actual sound (generally we only trigger the audio if a driver is in the vehicle)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3700,7 +3692,7 @@
 		"0x9C11908013EA4715": {
 			"name": "SET_HORN_PERMANENTLY_ON",
 			"jhash": "0xDE8BA3CD",
-			"comment": "",
+			"comment": "Turns the horn on - on every frame, not choosing a pattern of it's own. Needs called every frame.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3733,7 +3725,7 @@
 		"0xE5564483E407F914": {
 			"name": "SET_AUDIO_VEHICLE_PRIORITY",
 			"jhash": "0x271A9766",
-			"comment": "",
+			"comment": "Sets the priority for the given vehicle. This is a hint for the audio system as to what LOD the  vehicle should use. 'High' priority will bump up the activation range significantly and prevent it from dropping when the vehicle is not within the view frustrum. 'Max' will attempt to keep the vehicle at maximum LOD regardless of how far it is from the listener or what it is currently doing. Be careful with this! There is a hard limit of 5 simulataneous granular cars (including the player) so we are quite limited on the number we can play at once, so setting vehicles to max priority will reduce the number of engines availble for regular NPC vehicles\npriority: \nenum AUDIO_VEHICLE_PRIORITY\n{\n\tAUDIO_VEHICLE_PRIORITY_NORMAL,\n\tAUDIO_VEHICLE_PRIORITY_MEDIUM,\n\tAUDIO_VEHICLE_PRIORITY_HIGH,\n\tAUDIO_VEHICLE_PRIORITY_MAX\n};",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3741,7 +3733,7 @@
 				},
 				{
 					"type": "Any",
-					"name": "p1"
+					"name": "priority"
 				}
 			],
 			"return_type": "void",
@@ -3750,7 +3742,7 @@
 		"0x9D3AF56E94C9AE98": {
 			"name": "SET_HORN_PERMANENTLY_ON_TIME",
 			"jhash": "0x2F0A16D1",
-			"comment": "",
+			"comment": "plays a continuous horn beep for the specified time (ms).",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3767,7 +3759,7 @@
 		"0xFA932DE350266EF8": {
 			"name": "USE_SIREN_AS_HORN",
 			"jhash": "0xC6BC16F3",
-			"comment": "",
+			"comment": "sirenAsHorn: true will use a more sireny horn if the vehicle has got a siren, false will use a normal horn",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3784,7 +3776,7 @@
 		"0x4F0C413926060B38": {
 			"name": "FORCE_USE_AUDIO_GAME_OBJECT",
 			"jhash": "0x33B0B007",
-			"comment": "This native sets the audio of the specified vehicle to the audioName (p1).\n\nUse the audioNameHash found in vehicles.meta\n\nExample:\n_SET_VEHICLE_AUDIO(veh, \"ADDER\");\nThe selected vehicle will now have the audio of the Adder.",
+			"comment": "Force this vehicle to use a particular audio game object.\n\nUse the gameObjectName found in vehicles.meta\n\nExample:\n_SET_VEHICLE_AUDIO(veh, \"ADDER\");\nThe selected vehicle will now have the audio of the Adder.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3792,7 +3784,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "audioName"
+					"name": "gameObjectName"
 				}
 			],
 			"return_type": "void",
@@ -3805,7 +3797,7 @@
 		"0xCA4CEA6AE0000A7E": {
 			"name": "PRELOAD_VEHICLE_AUDIO_BANK",
 			"jhash": "",
-			"comment": "",
+			"comment": "Request that we preload the required audio bank for a given vehicle model",
 			"params": [
 				{
 					"type": "Hash",
@@ -3821,7 +3813,7 @@
 		"0xF1F8157B8C3F171C": {
 			"name": "SET_VEHICLE_STARTUP_REV_SOUND",
 			"jhash": "0x1C0C5E4C",
-			"comment": "",
+			"comment": "Set the startup rev sound that this vehicle should use\nsetName can be null",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3829,11 +3821,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "soundName"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "setName"
 				}
 			],
 			"return_type": "void",
@@ -3842,7 +3834,7 @@
 		"0xD2DCCD8E16E20997": {
 			"name": "RESET_VEHICLE_STARTUP_REV_SOUND",
 			"jhash": "",
-			"comment": "",
+			"comment": "Set the startup rev sound that this vehicle should use",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3858,15 +3850,15 @@
 		"0x97FFB4ADEED08066": {
 			"name": "SET_VEHICLE_FORCE_REVERSE_WARNING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Force the reversing beep to be active, even though the vehicle may not be in reverse gear (nb. the beep will not actually play unless the vehicle is also moving backwards)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -3922,7 +3914,7 @@
 		"0x1C073274E065C6D2": {
 			"name": "ENABLE_VEHICLE_FANBELT_DAMAGE",
 			"jhash": "0x9365E042",
-			"comment": "",
+			"comment": "Enable fanbelt damage (if the engine damage level gets high enough)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3939,7 +3931,7 @@
 		"0x2BE4BC731D039D5A": {
 			"name": "ENABLE_VEHICLE_EXHAUST_POPS",
 			"jhash": "0x2A60A90E",
-			"comment": "",
+			"comment": "Enable or disable exhaust pops on the given vehicle",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3956,7 +3948,7 @@
 		"0x4A04DE7CAB2739A1": {
 			"name": "SET_VEHICLE_BOOST_ACTIVE",
 			"jhash": "0x072F15F2",
-			"comment": "SET_VEHICLE_BOOST_ACTIVE(vehicle, 1, 0);\nSET_VEHICLE_BOOST_ACTIVE(vehicle, 0, 0); \n\nWill give a boost-soundeffect.",
+			"comment": "Trigger the vehicle boost effect\nSET_VEHICLE_BOOST_ACTIVE(vehicle, 1, 0);\nSET_VEHICLE_BOOST_ACTIVE(vehicle, 0, 0); \n\nWill give a boost-soundeffect.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3973,7 +3965,7 @@
 		"0x6FDDAD856E36988A": {
 			"name": "SET_PLAYER_VEHICLE_ALARM_AUDIO_ACTIVE",
 			"jhash": "0x934BE749",
-			"comment": "",
+			"comment": "Enable player vehicle specific alarm disarm/arm sound triggering",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -3990,7 +3982,7 @@
 		"0x06C0023BED16DD6B": {
 			"name": "SET_SCRIPT_UPDATE_DOOR_AUDIO",
 			"jhash": "0xE61110A2",
-			"comment": "",
+			"comment": "Script enables the audio door update",
 			"params": [
 				{
 					"type": "Hash",
@@ -4007,7 +3999,7 @@
 		"0x3A539D52857EA82D": {
 			"name": "PLAY_VEHICLE_DOOR_OPEN_SOUND",
 			"jhash": "0x84930330",
-			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
+			"comment": "Trigger a door open sound\ndoorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -4024,7 +4016,7 @@
 		"0x62A456AA4769EF34": {
 			"name": "PLAY_VEHICLE_DOOR_CLOSE_SOUND",
 			"jhash": "0xBA2CF407",
-			"comment": "doorId: see SET_VEHICLE_DOOR_SHUT",
+			"comment": "Trigger a door close sound\ndoorId: see SET_VEHICLE_DOOR_SHUT",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -4041,7 +4033,7 @@
 		"0xC15907D667F7CFB2": {
 			"name": "ENABLE_STALL_WARNING_SOUNDS",
 			"jhash": "0x563B635D",
-			"comment": "Works for planes only.",
+			"comment": "Enable or disable the plane stall warning sounds\nWorks for planes only.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -4092,7 +4084,7 @@
 		"0x19A30C23F5827F8A": {
 			"name": "IS_MISSION_COMPLETE_PLAYING",
 			"jhash": "0x939982A1",
-			"comment": "",
+			"comment": "Checks if the mission complete audio is playing",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -4100,7 +4092,7 @@
 		"0x6F259F82D873B8B8": {
 			"name": "IS_MISSION_COMPLETE_READY_FOR_UI",
 			"jhash": "0xCBE09AEC",
-			"comment": "",
+			"comment": "Checks if script should draw the mission complete UI to be in sync with the audio.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -4108,7 +4100,7 @@
 		"0xF154B8D1775B2DEC": {
 			"name": "BLOCK_DEATH_JINGLE",
 			"jhash": "0xD2858D8A",
-			"comment": "",
+			"comment": "Sets if the death jingle can play when the player dies or not",
 			"params": [
 				{
 					"type": "BOOL",
@@ -4147,7 +4139,7 @@
 		"0xBAC7FC81A75EC1A1": {
 			"name": "STOP_AUDIO_SCENES",
 			"jhash": "0xF6C7342A",
-			"comment": "??",
+			"comment": "stops all mixing scenes (which were previously started by this script)",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4155,7 +4147,7 @@
 		"0xB65B60556E2A9225": {
 			"name": "IS_AUDIO_SCENE_ACTIVE",
 			"jhash": "0xACBED05C",
-			"comment": "Full list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
+			"comment": "returns true if the script is already running the named scene, false if not\nFull list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4168,7 +4160,7 @@
 		"0xEF21A9EF089A2668": {
 			"name": "SET_AUDIO_SCENE_VARIABLE",
 			"jhash": "0x19BB3CE8",
-			"comment": "Full list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
+			"comment": "set the value of a named scene-scoped variable\nFull list of audio scene names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4189,11 +4181,11 @@
 		"0xA5F377B175A699C5": {
 			"name": "SET_AUDIO_SCRIPT_CLEANUP_TIME",
 			"jhash": "0xE812925D",
-			"comment": "",
+			"comment": "Set a delay (ms) for the audio to be cleaned up when the script finishes",
 			"params": [
 				{
 					"type": "int",
-					"name": "time"
+					"name": "timeInMs"
 				}
 			],
 			"return_type": "void",
@@ -4202,7 +4194,7 @@
 		"0x153973AB99FE8980": {
 			"name": "ADD_ENTITY_TO_AUDIO_MIX_GROUP",
 			"jhash": "0x2BC93264",
-			"comment": "All found occurrences in b678d:\nhttps://pastebin.com/ceu67jz8",
+			"comment": "adds an entity to the named mix group so that it's sounds can be dynamically mixed.\nAll found occurrences in b678d:\nhttps://pastebin.com/ceu67jz8",
 			"params": [
 				{
 					"type": "Entity",
@@ -4214,7 +4206,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "fadeIn"
 				}
 			],
 			"return_type": "void",
@@ -4226,7 +4218,7 @@
 		"0x18EB48CFC41F2EA0": {
 			"name": "REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP",
 			"jhash": "0x308ED0EC",
-			"comment": "",
+			"comment": "removes an entity fom its current mix group. ",
 			"params": [
 				{
 					"type": "Entity",
@@ -4234,7 +4226,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "fadeOut"
 				}
 			],
 			"return_type": "void",
@@ -4243,7 +4235,7 @@
 		"0x845FFC3A4FEEFA3E": {
 			"name": "AUDIO_IS_MUSIC_PLAYING",
 			"jhash": "",
-			"comment": "",
+			"comment": "Returns true if music is currently playing, including unscripted and gringo music",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
@@ -4265,7 +4257,7 @@
 		"0x1E5185B72EF5158A": {
 			"name": "PREPARE_MUSIC_EVENT",
 			"jhash": "0x534A5C1C",
-			"comment": "All music event names found in the b617d scripts: https://pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
+			"comment": "Prepares the specified music event. Preparing it in advance will preload any required data so that it's ready to play immediately.\nAll music event names found in the b617d scripts: https://pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4278,7 +4270,7 @@
 		"0x5B17A90291133DA5": {
 			"name": "CANCEL_MUSIC_EVENT",
 			"jhash": "0x89FF942D",
-			"comment": "All music event names found in the b617d scripts: https://pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
+			"comment": "Cancels the specified music event.\nAll music event names found in the b617d scripts: https://pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4291,7 +4283,7 @@
 		"0x706D57B0F50DA710": {
 			"name": "TRIGGER_MUSIC_EVENT",
 			"jhash": "0xB6094948",
-			"comment": "List of all usable event names found in b617d used with this native. Sorted alphabetically and identical names removed: https://pastebin.com/RzDFmB1W\n\nAll music event names found in the b617d scripts: https://pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
+			"comment": "Triggers the specified music event (any associated actions as set up in RAVE)\nList of all usable event names found in b617d used with this native. Sorted alphabetically and identical names removed: https://pastebin.com/RzDFmB1W\n\nAll music event names found in the b617d scripts: https://pastebin.com/GnYt0R3P\nFull list of music event names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/musicEventNames.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4304,7 +4296,7 @@
 		"0xA097AB275061FB21": {
 			"name": "IS_MUSIC_ONESHOT_PLAYING",
 			"jhash": "0x2705C4D5",
-			"comment": "",
+			"comment": "Returns TRUE if a one shot is currently playing/prepared",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -4312,7 +4304,7 @@
 		"0xE7A0D23DC414507B": {
 			"name": "GET_MUSIC_PLAYTIME",
 			"jhash": "0xD633C809",
-			"comment": "",
+			"comment": "Returns the play time in milliseconds of the current score track",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -4320,11 +4312,11 @@
 		"0x159B7318403A1CD8": {
 			"name": "SET_GLOBAL_RADIO_SIGNAL_LEVEL",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets the global radio signal level (reduce towards zero to cause a static interference effect)",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "signalLevel"
 				}
 			],
 			"return_type": "void",
@@ -4333,7 +4325,7 @@
 		"0xFBE20329593DEC9D": {
 			"name": "RECORD_BROKEN_GLASS",
 			"jhash": "0x53FC3FEC",
-			"comment": "",
+			"comment": "Create a broken glass area.",
 			"params": [
 				{
 					"type": "float",
@@ -4358,7 +4350,7 @@
 		"0xB32209EFFDC04913": {
 			"name": "CLEAR_ALL_BROKEN_GLASS",
 			"jhash": "0xE6B033BF",
-			"comment": "",
+			"comment": "Clear all glass areas.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4366,15 +4358,15 @@
 		"0x70B8EC8FC108A634": {
 			"name": "SCRIPT_OVERRIDES_WIND_ELEVATION",
 			"jhash": "0x95050CAD",
-			"comment": "",
+			"comment": "Overrides wind elevation sounds",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "override"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "windElevationHashName"
 				}
 			],
 			"return_type": "void",
@@ -4383,15 +4375,15 @@
 		"0x149AEE66F0CB3A99": {
 			"name": "SET_PED_WALLA_DENSITY",
 			"jhash": "0xE64F97A0",
-			"comment": "",
+			"comment": "Overrides the calculated ped density that is used to modulate the ambient ped walla sounds (in exteriors only)",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "density"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "applyValue"
 				}
 			],
 			"return_type": "void",
@@ -4404,11 +4396,11 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "density"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "applyValue"
 				}
 			],
 			"return_type": "void",
@@ -4417,7 +4409,7 @@
 		"0x062D5EAD4DA2FA6A": {
 			"name": "FORCE_PED_PANIC_WALLA",
 			"jhash": "0xD87AF337",
-			"comment": "",
+			"comment": "Forces the ambient peds into their panic walla state",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4425,7 +4417,7 @@
 		"0x9D74AE343DB65533": {
 			"name": "PREPARE_ALARM",
 			"jhash": "0x084932E8",
-			"comment": "Example:\n\nbool prepareAlarm = AUDIO::PREPARE_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\");\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
+			"comment": "Prepares any banks required to play the given alarm\nExample:\n\nbool prepareAlarm = AUDIO::PREPARE_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\");\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4438,7 +4430,7 @@
 		"0x0355EF116C4C97B2": {
 			"name": "START_ALARM",
 			"jhash": "0x703F524B",
-			"comment": "Example:\n\nThis will start the alarm at Fort Zancudo.\n\nAUDIO::START_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n\nFirst parameter (char) is the name of the alarm.\nSecond parameter (bool) is unknown, it does not seem to make a difference if this one is 0 or 1.\n\n----------\n\nIt DOES make a difference but it has to do with the duration or something I dunno yet\n\n----------\n\n Found in the b617d scripts:\n\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS\", 0);\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS_UPPER\", 1);\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS_UPPER_B\", 0);\n AUDIO::START_ALARM(\"BIG_SCORE_HEIST_VAULT_ALARMS\", a_0);\n AUDIO::START_ALARM(\"FBI_01_MORGUE_ALARMS\", 1);\n AUDIO::START_ALARM(\"FIB_05_BIOTECH_LAB_ALARMS\", 0);\n AUDIO::START_ALARM(\"JEWEL_STORE_HEIST_ALARMS\", 0);\n AUDIO::START_ALARM(\"PALETO_BAY_SCORE_ALARM\", 1);\n AUDIO::START_ALARM(\"PALETO_BAY_SCORE_CHICKEN_FACTORY_ALARM\", 0);\n AUDIO::START_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n AUDIO::START_ALARM(\"PORT_OF_LS_HEIST_SHIP_ALARMS\", 0);\n AUDIO::START_ALARM(\"PRISON_ALARMS\", 0);\n AUDIO::START_ALARM(\"PROLOGUE_VAULT_ALARMS\", 0);\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
+			"comment": "skipStartup: Whether to skip the initial alarm behaviour (starting loud, before fading down)\nExample:\n\nThis will start the alarm at Fort Zancudo.\n\nAUDIO::START_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n\nFirst parameter (char) is the name of the alarm.\nSecond parameter (bool) is unknown, it does not seem to make a difference if this one is 0 or 1.\n\n----------\n\nIt DOES make a difference but it has to do with the duration or something I dunno yet\n\n----------\n\n Found in the b617d scripts:\n\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS\", 0);\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS_UPPER\", 1);\n AUDIO::START_ALARM(\"AGENCY_HEIST_FIB_TOWER_ALARMS_UPPER_B\", 0);\n AUDIO::START_ALARM(\"BIG_SCORE_HEIST_VAULT_ALARMS\", a_0);\n AUDIO::START_ALARM(\"FBI_01_MORGUE_ALARMS\", 1);\n AUDIO::START_ALARM(\"FIB_05_BIOTECH_LAB_ALARMS\", 0);\n AUDIO::START_ALARM(\"JEWEL_STORE_HEIST_ALARMS\", 0);\n AUDIO::START_ALARM(\"PALETO_BAY_SCORE_ALARM\", 1);\n AUDIO::START_ALARM(\"PALETO_BAY_SCORE_CHICKEN_FACTORY_ALARM\", 0);\n AUDIO::START_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n AUDIO::START_ALARM(\"PORT_OF_LS_HEIST_SHIP_ALARMS\", 0);\n AUDIO::START_ALARM(\"PRISON_ALARMS\", 0);\n AUDIO::START_ALARM(\"PROLOGUE_VAULT_ALARMS\", 0);\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4446,7 +4438,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "skipStartup"
 				}
 			],
 			"return_type": "void",
@@ -4455,7 +4447,7 @@
 		"0xA1CADDCD98415A41": {
 			"name": "STOP_ALARM",
 			"jhash": "0xF987BE8C",
-			"comment": "Example:\n\nThis will stop the alarm at Fort Zancudo.\n\nAUDIO::STOP_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n\nFirst parameter (char) is the name of the alarm.\nSecond parameter (bool) has to be true (1) to have any effect.\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
+			"comment": "instantStop: Whether to kill the alarm instantly, or to let the audio system turn it off when it becomes inaudible\nExample:\n\nThis will stop the alarm at Fort Zancudo.\n\nAUDIO::STOP_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\", 1);\n\nFirst parameter (char) is the name of the alarm.\nSecond parameter (bool) has to be true (1) to have any effect.\nFull list of alarm names by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/alarmSounds.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -4472,11 +4464,11 @@
 		"0x2F794A877ADD4C92": {
 			"name": "STOP_ALL_ALARMS",
 			"jhash": "0xC3CB9DC6",
-			"comment": "",
+			"comment": "instantStop: Whether to kill the alarm instantly, or to let the audio system turn it off when it becomes inaudible",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "stop"
+					"name": "instantStop"
 				}
 			],
 			"return_type": "void",
@@ -4597,7 +4589,7 @@
 		"0xBF4DC1784BE94DFA": {
 			"name": "USE_FOOTSTEP_SCRIPT_SWEETENERS",
 			"jhash": "0xD99E275B",
-			"comment": "",
+			"comment": "Allows script to trigger a sweetener footstep sound\nuse: true the sweetener sounds will play",
 			"params": [
 				{
 					"type": "Ped",
@@ -4605,7 +4597,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "use"
 				},
 				{
 					"type": "Hash",
@@ -4638,7 +4630,7 @@
 		"0xD57AAAE0E2214D11": {
 			"name": "FREEZE_MICROPHONE",
 			"jhash": "0x2B9D91E8",
-			"comment": "",
+			"comment": "This native should be called every frame you want to keep the microphone frozen, when you stop calling it it will automatically unfreeze",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4662,7 +4654,7 @@
 		"0x43FA0DFC5DF87815": {
 			"name": "SET_SIREN_CAN_BE_CONTROLLED_BY_AUDIO",
 			"jhash": "0x7BED1872",
-			"comment": "",
+			"comment": "Give support to don't allow conductors to control veh siren.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -4670,7 +4662,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "controlled"
 				}
 			],
 			"return_type": "void",
@@ -4679,7 +4671,7 @@
 		"0xB81CF134AEB56FFB": {
 			"name": "ENABLE_STUNT_JUMP_AUDIO",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native is meant to be called continuously while we want that code active",
 			"params": [],
 			"return_type": "void",
 			"build": "791"
@@ -4708,11 +4700,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioEvent"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "startOffsetMs"
 				}
 			],
 			"return_type": "BOOL",
@@ -4724,12 +4716,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "sceneId"
 				},
 				{
-					"type": "Any*",
-					"name": "p1"
+					"type": "const char*",
+					"name": "audioEvent"
 				}
 			],
 			"return_type": "BOOL",
@@ -4741,8 +4733,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "sceneId"
 				}
 			],
 			"return_type": "BOOL",
@@ -4754,8 +4746,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "sceneId"
 				}
 			],
 			"return_type": "BOOL",
@@ -4767,8 +4759,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "const char*",
+					"name": "audioName"
 				},
 				{
 					"type": "float",
@@ -4793,11 +4785,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "audioName"
 				},
 				{
 					"type": "Entity",
-					"name": "p1"
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
@@ -4826,11 +4818,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "oldPortalSettingsName"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "newPortalSettingsName"
 				}
 			],
 			"return_type": "void",
@@ -4843,7 +4835,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "portalSettingsName"
 				}
 			],
 			"return_type": "void",
@@ -4852,7 +4844,7 @@
 		"0xE4E6DD5566D28C82": {
 			"name": "STOP_SMOKE_GRENADE_EXPLOSION_SOUNDS",
 			"jhash": "0x7262B5BA",
-			"comment": "STOP_S[MOKE_GRENADE_EXPLOSION_SOUNDS]?",
+			"comment": "stops all smoke grenade sounds (should be called, for example, at the start of the yoga minigame)",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4860,7 +4852,7 @@
 		"0x3A48AB4445D499BE": {
 			"name": "GET_MUSIC_VOL_SLIDER",
 			"jhash": "0x93A44A1F",
-			"comment": "",
+			"comment": "Returns the current volume slider position from 0 to 10",
 			"params": [],
 			"return_type": "int",
 			"build": "323"
@@ -4868,7 +4860,7 @@
 		"0x4ADA3F19BE4A6047": {
 			"name": "REQUEST_TENNIS_BANKS",
 			"jhash": "0x13777A0B",
-			"comment": "",
+			"comment": " Loads the tennis vocalization banks into a couple animal slots",
 			"params": [
 				{
 					"type": "Ped",
@@ -4884,7 +4876,7 @@
 		"0x0150B6FF25A9E2E5": {
 			"name": "UNREQUEST_TENNIS_BANKS",
 			"jhash": "0x1134F68B",
-			"comment": "",
+			"comment": "Unloads the tennis vocalization banks. VERY IMPORTANT TO CALL OR WE'LL NEVER HEAR ANIMALS AGAIN!!!",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4892,11 +4884,11 @@
 		"0xBEF34B1D9624D5DD": {
 			"name": "SET_SKIP_MINIGUN_SPIN_UP_AUDIO",
 			"jhash": "0xE0047BFD",
-			"comment": "",
+			"comment": "Set minigun audio skips the spin-up - don't forget to set this back to false after using it!",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "setSkipSpinUp"
 				}
 			],
 			"return_type": "void",
@@ -4905,7 +4897,7 @@
 		"0x806058BBDC136E06": {
 			"name": "STOP_CUTSCENE_AUDIO",
 			"jhash": "0x55461BE6",
-			"comment": "",
+			"comment": "Stops audio for the current cutscene, e.g. when the cutscene is using overrun audio.",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -4913,7 +4905,7 @@
 		"0x544810ED9DB6BBE6": {
 			"name": "HAS_LOADED_MP_DATA_SET",
 			"jhash": "",
-			"comment": "",
+			"comment": "Query whether the audio has loaded the MP data set",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
@@ -4924,7 +4916,7 @@
 		"0x5B50ABB1FE3746F4": {
 			"name": "HAS_LOADED_SP_DATA_SET",
 			"jhash": "",
-			"comment": "",
+			"comment": "Query whether the audio has loaded the MP data set",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
@@ -4935,7 +4927,7 @@
 		"0xD53F3A29BCE2580E": {
 			"name": "GET_VEHICLE_HORN_SOUND_INDEX",
 			"jhash": "",
-			"comment": "",
+			"comment": "Get the horn sound index being used by the given vehicle",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -4951,7 +4943,7 @@
 		"0x0350E7E17BA767D0": {
 			"name": "SET_VEHICLE_HORN_SOUND_INDEX",
 			"jhash": "",
-			"comment": "",
+			"comment": "Get the horn sound index being used by the given vehicle",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -4959,7 +4951,7 @@
 				},
 				{
 					"type": "int",
-					"name": "value"
+					"name": "hornSoundIndex"
 				}
 			],
 			"return_type": "void",
