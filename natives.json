@@ -11694,15 +11694,15 @@
 		"0x46E2B844905BC5F0": {
 			"name": "HAS_CLOUD_REQUESTS_FINISHED",
 			"jhash": "0x6087C10C",
-			"comment": "Sets the value of the specified variable to 0.\nAlways returns true.",
+			"comment": "Default timeout is 30 seconds? If it doesn't succeed in time then timedOut is set to true.",
 			"params": [
 				{
 					"type": "BOOL*",
-					"name": "p0"
+					"name": "timedOut"
 				},
 				{
 					"type": "int",
-					"name": "unused"
+					"name": "waitTime"
 				}
 			],
 			"return_type": "BOOL",
@@ -13065,7 +13065,7 @@
 		"0x1F0B79228E461EC9": {
 			"name": "IS_ENTITY_PLAYING_ANIM",
 			"jhash": "0x0D130D34",
-			"comment": "See also PED::IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM 0x6EC47A344923E1ED 0x3C30B447\n\nTaken from ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), \"creatures@shark@move\", \"attack_player\", 3)\n\np4 is always 3 in the scripts.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
+			"comment": "See also PED::IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM 0x6EC47A344923E1ED 0x3C30B447\n\nTaken from ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), \"creatures@shark@move\", \"attack_player\", 3)\n\ntaskFlag is always 3 in the scripts.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -14022,7 +14022,7 @@
 		"0xAD738C3085FE7E11": {
 			"name": "SET_ENTITY_AS_MISSION_ENTITY",
 			"jhash": "0x5D1F9E0F",
-			"comment": "Makes the specified entity (ped, vehicle or object) persistent. Persistent entities will not automatically be removed by the engine.\n\np1 has no effect when either its on or off \nmaybe a quick disassembly will tell us what it does\n\np2 has no effect when either its on or off \nmaybe a quick disassembly will tell us what it does",
+			"comment": "Makes the specified entity (ped, vehicle or object) persistent. Persistent entities will not automatically be removed by the engine.\n\nisVital dictates whether it is needed or not. (If false then it will be cleaned up when player leaves.)\n\nforceTake says whether it should stay in it's current script or not.",
 			"params": [
 				{
 					"type": "Entity",
@@ -14030,11 +14030,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isVital"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceTake"
 				}
 			],
 			"return_type": "void",
@@ -14737,7 +14737,7 @@
 		"0xEA1C610A04DB6BBB": {
 			"name": "SET_ENTITY_VISIBLE",
 			"jhash": "0xD043E8E1",
-			"comment": "p2 is always 0.",
+			"comment": "resetRender is always 0.",
 			"params": [
 				{
 					"type": "Entity",
@@ -14749,7 +14749,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "resetRender"
 				}
 			],
 			"return_type": "void",
@@ -18327,8 +18327,8 @@
 			"comment": "This function is hard-coded to always return 0.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "photoID"
 				}
 			],
 			"return_type": "BOOL",
@@ -18337,11 +18337,11 @@
 		"0x40AFB081F8ADD4EE": {
 			"name": "GET_LOAD_HIGH_QUALITY_PHOTO_STATUS",
 			"jhash": "0x762E5C5F",
-			"comment": "Hardcoded to always return 2.",
+			"comment": "Hardcoded to always return 2. (Failed)",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "photoID"
 				}
 			],
 			"return_type": "int",
@@ -22522,7 +22522,7 @@
 		"0x8F75998877616996": {
 			"name": "STOP_PARTICLE_FX_LOOPED",
 			"jhash": "0xD245455B",
-			"comment": "p1 is always 0 in the native scripts",
+			"comment": "isLocal is always 0 in the native scripts",
 			"params": [
 				{
 					"type": "int",
@@ -22530,7 +22530,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isLocal"
 				}
 			],
 			"return_type": "void",
@@ -22547,7 +22547,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isLocal"
 				}
 			],
 			"return_type": "void",
@@ -22597,12 +22597,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "ptfxID"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -22677,7 +22677,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "noNetwork"
+					"name": "isLocal"
 				}
 			],
 			"return_type": "void",
@@ -22686,7 +22686,7 @@
 		"0x7F8F65877F88783B": {
 			"name": "SET_PARTICLE_FX_LOOPED_COLOUR",
 			"jhash": "0x5219D530",
-			"comment": "only works on some fx's\n\np4 = 0",
+			"comment": "only works on some fx's\n\nisLocal is normally 0.",
 			"params": [
 				{
 					"type": "int",
@@ -22706,7 +22706,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "isLocal"
 				}
 			],
 			"return_type": "void",
@@ -22773,7 +22773,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -22790,7 +22790,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -22802,8 +22802,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "vehID"
 				}
 			],
 			"return_type": "void",
@@ -22823,8 +22823,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -22921,7 +22921,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -22934,7 +22934,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -22947,7 +22947,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -22960,7 +22960,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -22973,7 +22973,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "ptfxName"
 				}
 			],
 			"return_type": "void",
@@ -22998,8 +22998,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -23012,7 +23012,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -23079,7 +23079,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -23092,7 +23092,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "level"
 				}
 			],
 			"return_type": "void",
@@ -23121,7 +23121,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -23138,7 +23138,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "amount"
 				}
 			],
 			"return_type": "void",
@@ -23163,11 +23163,11 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "range"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -53208,7 +53208,7 @@
 		"0x1D6A14F1F9A736FC": {
 			"name": "NETWORK_GET_HOST_OF_SCRIPT",
 			"jhash": "0x9C95D0BB",
-			"comment": "scriptName examples:\n\"freemode\", \"AM_CR_SecurityVan\", ...\n\nMost of the time, these values are used:\ninstance_id = -1\nposition_hash = 0",
+			"comment": "scriptName examples:\n\"freemode\", \"AM_CR_SecurityVan\", ...\n\nMost of the time, these values are used:\ninstanceId = -1\npositionHash = 0",
 			"params": [
 				{
 					"type": "const char*",
@@ -53216,11 +53216,11 @@
 				},
 				{
 					"type": "int",
-					"name": "instance_id"
+					"name": "instanceId"
 				},
 				{
 					"type": "int",
-					"name": "position_hash"
+					"name": "positionHash"
 				}
 			],
 			"return_type": "Player",
@@ -106630,7 +106630,7 @@
 		"0x52F357A30698BCCE": {
 			"name": "IS_VEHICLE_A_CONVERTIBLE",
 			"jhash": "0x6EF54490",
-			"comment": "Returns true if the vehicle has a convertible roof.\n\np1 is false almost always. However, in launcher_carwash/carwash1/carwash2 scripts, p1 is true and is accompanied by DOES_VEHICLE_HAVE_ROOF. If p1 is true, it seems that every single vehicle will return true irrespective of being a convertible.",
+			"comment": "Returns true if the vehicle has a convertible roof.\n\nnoAnim checks if the vehicle's roof doesn't have animations.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -106638,7 +106638,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "noAnim"
 				}
 			],
 			"return_type": "BOOL",
@@ -114878,7 +114878,7 @@
 		"0x8483E98E8B888AE2": {
 			"name": "GET_BEST_PED_WEAPON",
 			"jhash": "0xB998D444",
-			"comment": "p1 is always 0 in the scripts.",
+			"comment": "includeAmmo is always 0 in the scripts.",
 			"params": [
 				{
 					"type": "Ped",
@@ -114886,7 +114886,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "includeAmmo"
 				}
 			],
 			"return_type": "Hash",
