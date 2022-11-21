@@ -57852,9 +57852,17 @@
           "name": "friendly"
         },
         {
-          "type": "Vector3",
-          "name": "position"
-        }
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
       ],
       "return_type": "BOOL",
       "build": "323"
@@ -57885,8 +57893,16 @@
           "name": "radius"
         },
         {
-          "type": "Vector3",
-          "name": "faceTowardsPos"
+          "type": "float",
+          "name": "faceTowardsPosX"
+        },
+		{
+          "type": "float",
+          "name": "faceTowardsPosY"
+        },
+        {
+          "type": "float",
+          "name": "faceTowardsPosZ"
         },
         {
           "type": "int",
@@ -57933,9 +57949,17 @@
           "type": "float",
           "name": "angledAreaWidth"
         },
+		{
+          "type": "float",
+          "name": "faceTowardsPosX"
+        },
         {
-          "type": "Vector3",
-          "name": "faceTowardsPos"
+          "type": "float",
+          "name": "faceTowardsPosY"
+        },
+        {
+          "type": "float",
+          "name": "faceTowardsPosZ"
         },
         {
           "type": "int",
