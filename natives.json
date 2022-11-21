@@ -57862,7 +57862,7 @@
         {
           "type": "float",
           "name": "z"
-        },
+        }
       ],
       "return_type": "BOOL",
       "build": "323"
