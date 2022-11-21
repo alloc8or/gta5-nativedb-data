@@ -87917,7 +87917,7 @@
             "params":[
                 {
                     "type":"Any",
-                    "name":"p0"
+                    "name":"slot"
                 }
             ],
             "return_type":"int",
@@ -87953,7 +87953,7 @@
             "params":[
                 {
                     "type":"Any",
-                    "name":"p0"
+                    "name":"slot"
                 }
             ],
             "return_type":"BOOL",
@@ -87966,7 +87966,7 @@
             "params":[
                 {
                     "type":"Any",
-                    "name":"p0"
+                    "name":"slot"
                 }
             ],
             "return_type":"void",
@@ -88231,7 +88231,7 @@
         "0x767FBC2AC802EF3D":{
             "name":"STAT_GET_INT",
             "jhash":"0x1C6FE43E",
-            "comment":"player appears to always be -1\n",
+            "comment":"",
             "params":[
                 {
                     "type":"Hash",
@@ -88242,7 +88242,7 @@
                     "name":"data"
                 },
                 {
-                    "type":"int",
+                    "type":"Player",
                     "name":"player"
                 }
             ],
@@ -88263,7 +88263,7 @@
                     "name":"data"
                 },
                 {
-                    "type":"Any",
+                    "type":"Player",
                     "name":"player"
                 }
             ],
@@ -88284,7 +88284,7 @@
                     "name":"data"
                 },
                 {
-                    "type":"Any",
+                    "type":"Player",
                     "name":"player"
                 }
             ],
@@ -88294,7 +88294,7 @@
         "0x8B0FACEFC36C824B":{
             "name":"STAT_GET_DATE",
             "jhash":"0xD762D16C",
-            "comment":"player is probably characterSlot or BOOL save, always -1",
+            "comment":"",
             "params":[
                 {
                     "type":"Hash",
@@ -88309,7 +88309,7 @@
                     "name":"sizeOfData"
                 },
                 {
-                    "type":"Any",
+                    "type":"Player",
                     "name":"player"
                 }
             ],
@@ -88336,7 +88336,7 @@
         "0x350F82CCB186AA1B":{
             "name":"STAT_GET_POS",
             "jhash":"0xC846ECCE",
-            "comment":"p3 is probably characterSlot or BOOL save, always -1",
+            "comment":"",
             "params":[
                 {
                     "type":"Hash",
@@ -88355,7 +88355,7 @@
                     "name":"Z"
                 },
                 {
-                    "type":"Any",
+                    "type":"Player",
                     "name":"player"
                 }
             ],
@@ -88365,7 +88365,7 @@
         "0x655185A06D9EEAAB":{
             "name":"STAT_GET_MASKED_INT",
             "jhash":"0xE9D9B70F",
-            "comment":"player is probably characterSlot or BOOL save",
+            "comment":"",
             "params":[
                 {
                     "type":"Hash",
@@ -88384,7 +88384,7 @@
                     "name":"numberOfBits"
                 },
                 {
-                    "type":"Any",
+					"type":"Player",
                     "name":"player"
                 }
             ],
