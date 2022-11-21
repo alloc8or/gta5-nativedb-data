@@ -53823,7 +53823,7 @@
             "params":[
                 {
                     "type":"Any*",
-                    "name":"gamerHandles[]"
+                    "name":"gamerHandles"
                 },
                 {
                     "type":"Any",
@@ -53844,11 +53844,11 @@
             "params":[
                 {
                     "type":"Any*",
-                    "name":"gamerHandles[]"
+                    "name":"gamerHandles"
                 },
                 {
                     "type":"Any*",
-                    "name":"gamerNames[]"
+                    "name":"gamerNames"
                 },
                 {
                     "type":"Any",
@@ -55587,7 +55587,7 @@
             "params":[
                 {
                     "type":"Any*",
-                    "name":"gamerHandles[]"
+                    "name":"gamerHandles"
                 },
                 {
                     "type":"Any",
@@ -55608,7 +55608,7 @@
                 },
                 {
                     "type":"Any",
-                    "name":"displayNames[]"
+                    "name":"displayName"
                 },
                 {
                     "type":"Any",
@@ -57360,7 +57360,7 @@
             "params":[
                 {
                     "type":"Any*",
-                    "name":"gamerHandleData[]"
+                    "name":"gamerHandleData"
                 },
                 {
                     "type":"Any",
@@ -79115,7 +79115,7 @@
                 },
                 {
                     "type":"Any*",
-                    "name":"array[]"
+                    "name":"array"
                 }
             ],
             "return_type":"int",
@@ -79132,7 +79132,7 @@
                 },
                 {
                     "type":"Any*",
-                    "name":"array[]"
+                    "name":"array"
                 },
                 {
                     "type":"int",
@@ -79561,15 +79561,15 @@
                 },
                 {
                     "type":"float*",
-                    "name":""
+                    "name":"fOut_X"
                 },
                 {
                     "type":"float*",
-                    "name":""
+                    "name":"fOut_Y"
                 },
                 {
                     "type":"float*",
-                    "name":""
+                    "name":"fOut_Z"
                 }
             ],
             "return_type":"void",
@@ -79586,7 +79586,7 @@
                 },
                 {
                     "type":"int*",
-                    "name":""
+                    "name":"iOut_Flags"
                 }
             ],
             "return_type":"void",
@@ -86769,7 +86769,7 @@
             "params":[
                 {
                     "type":"Any*",
-                    "name":"emailIds[]"
+                    "name":"emailIds"
                 },
                 {
                     "type":"Any",
@@ -90042,7 +90042,7 @@
                 },
                 {
                     "type":"Any*",
-                    "name":"pArray_LBGroups[]"
+                    "name":"pArray_LBGroups"
                 },
                 {
                     "type":"Any",
@@ -90092,7 +90092,7 @@
                 },
                 {
                     "type":"Any*",
-                    "name":"lbGamerHandleData[]"
+                    "name":"lbGamerHandleData"
                 },
                 {
                     "type":"Any",
@@ -90100,7 +90100,7 @@
                 },
                 {
                     "type":"Any*",
-                    "name":"pArray_LBClanIds[]"
+                    "name":"pArray_LBClanIds"
                 },
                 {
                     "type":"Any",
@@ -90108,7 +90108,7 @@
                 },
                 {
                     "type":"Any*",
-                    "name":"pArray_LBGroups[]"
+                    "name":"pArray_LBGroups"
                 },
                 {
                     "type":"Any",
@@ -93283,11 +93283,11 @@
                 },
                 {
                     "type":"Any",
-                    "name":"availMis[]"
+                    "name":"availMis"
                 },
                 {
                     "type":"Any",
-                    "name":"availMisDif[]"
+                    "name":"availMisDif"
                 }
             ],
             "return_type":"void",
@@ -96670,11 +96670,11 @@
                 },
                 {
                     "type":"float*",
-                    "name":""
+                    "name":"fOut_DistanceRemaining"
                 },
                 {
                     "type":"BOOL*",
-                    "name":""
+                    "name":"bOut_ThisIsLastRouteSection"
                 }
             ],
             "return_type":"int",
@@ -101688,7 +101688,7 @@
                 },
                 {
                     "type":"int*",
-                    "name":""
+                    "name":"iOutNumPoints"
                 }
             ],
             "return_type":"BOOL",
@@ -105000,11 +105000,11 @@
                 },
                 {
                     "type":"BOOL*",
-                    "name":""
+                    "name":"bLightsOn"
                 },
                 {
                     "type":"BOOL*",
-                    "name":""
+                    "name":"bFullBeam"
                 }
             ],
             "return_type":"BOOL",
