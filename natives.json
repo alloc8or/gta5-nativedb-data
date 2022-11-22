@@ -99976,11 +99976,11 @@
 			"params": [
 				{
 					"type": "Entity",
-					"name": "entity1"
+					"name": "entity"
 				},
 				{
-					"type": "Entity",
-					"name": "entity2"
+					"type": "Ped",
+					"name": "target"
 				},
 				{
 					"type": "BOOL",
