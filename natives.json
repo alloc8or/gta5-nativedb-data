@@ -23061,24 +23061,24 @@
 			"build": "2545"
 		},
 		"0x170911F37F646F29": {
-			"name": "_0x170911F37F646F29",
+			"name": "_REGISTER_NEW_DAMAGE_INDICATOR",
 			"jhash": "",
-			"comment": "",
+			"comment": "Draws a damage indicator pointing towards the given world coord.\nExample: https://imgur.com/a/zZu1cz1",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				}
 			],
