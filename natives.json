@@ -15509,7 +15509,7 @@
 					"name": "p1"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vector3",
 			"build": "2802"
 		},
 		"0xB328DCC3A3AA401B": {
@@ -46067,14 +46067,6 @@
 				{
 					"type": "Any",
 					"name": "p3"
-				},
-				{
-					"type": "Any",
-					"name": "p4"
-				},
-				{
-					"type": "Any",
-					"name": "p5"
 				}
 			],
 			"return_type": "void",
@@ -50570,7 +50562,7 @@
 		"0x330ED4D05491934F": {
 			"name": "NETWORK_SESSION_DO_FREEROAM_QUICKMATCH",
 			"jhash": "",
-			"comment": "unknown params\n\np0 = 0, 2, or 999 (The global is 999 by default.)\np1 = 0 (Always in every script it's found in atleast.)\np2 = 0, 3, or 4 (Based on a var that is determined by a function.)\np3 = maxPlayers (It's obvious in x360 scripts it's always 18)\np4 = 0 (Always in every script it's found in atleast.)\np5 = 0 or 1. (1 if network_can_enter_multiplayer, but set to 0 if other checks after that are passed.)\np5 is reset to 0 if,\nGlobal_1315318 = 0 or Global_1315323 = 9 or 12 or (Global_1312629 = 0 && Global_1312631 = true/1) those are passed.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any",
@@ -50587,21 +50579,10 @@
 				{
 					"type": "int",
 					"name": "maxPlayers"
-				},
-				{
-					"type": "Any",
-					"name": "p4"
-				},
-				{
-					"type": "Any",
-					"name": "p5"
 				}
 			],
 			"return_type": "BOOL",
-			"build": "323",
-			"old_names": [
-				"NETWORK_SESSION_ENTER"
-			]
+			"build": "323"
 		},
 		"0x2CFC76E0D087C994": {
 			"name": "NETWORK_SESSION_DO_FRIEND_MATCHMAKING",
@@ -50619,10 +50600,6 @@
 				{
 					"type": "int",
 					"name": "maxPlayers"
-				},
-				{
-					"type": "BOOL",
-					"name": "p3"
 				}
 			],
 			"return_type": "BOOL",
@@ -50651,10 +50628,6 @@
 				{
 					"type": "int",
 					"name": "maxPlayers"
-				},
-				{
-					"type": "BOOL",
-					"name": "p4"
 				}
 			],
 			"return_type": "BOOL",
