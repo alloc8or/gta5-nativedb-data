@@ -2439,6 +2439,10 @@
 				{
 					"type": "const char*",
 					"name": "radioStation"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -9813,6 +9817,14 @@
 			"return_type": "int",
 			"build": "1734"
 		},
+		"0x5D583F71C901F2A3": {
+			"name": "_0x5D583F71C901F2A3",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "2802"
+		},
 		"0x40C8656EDAEDD569": {
 			"name": "WAS_CUTSCENE_SKIPPED",
 			"jhash": "0xC9B6949D",
@@ -11982,6 +11994,19 @@
 			],
 			"return_type": "BOOL",
 			"build": "323"
+		},
+		"0xA75EE4F689B85391": {
+			"name": "_0xA75EE4F689B85391",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2802"
 		},
 		"0x5C3D0A935F535C4C": {
 			"name": "GET_LAST_MATERIAL_HIT_BY_ENTITY",
@@ -15469,6 +15494,23 @@
 			"old_names": [
 				"_GET_ENTITY_BONE_ROTATION_LOCAL"
 			]
+		},
+		"0xCF1247CC86961FD6": {
+			"name": "_0xCF1247CC86961FD6",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "2802"
 		},
 		"0xB328DCC3A3AA401B": {
 			"name": "GET_ENTITY_BONE_COUNT",
@@ -22090,6 +22132,19 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0xB7EF5850C39FABCA": {
+			"name": "_0xB7EF5850C39FABCA",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
 		"0x1E2E01C00837D26E": {
 			"name": "SET_PARTICLE_FX_NON_LOOPED_EMITTER_SIZE",
 			"jhash": "",
@@ -23004,6 +23059,31 @@
 			],
 			"return_type": "void",
 			"build": "2545"
+		},
+		"0x170911F37F646F29": {
+			"name": "_0x170911F37F646F29",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
 		},
 		"0x9B079E5221D984D3": {
 			"name": "FORCE_POSTFX_BULLET_IMPACTS_AFTER_HUD",
@@ -29877,6 +29957,23 @@
 				"_SHOW_HAS_COMPLETED_INDICATOR_ON_BLIP"
 			]
 		},
+		"0x19BD6E3C0E16A8FA": {
+			"name": "_0x19BD6E3C0E16A8FA",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
 		"0x5FBCA48327B914DF": {
 			"name": "SHOW_HEADING_INDICATOR_ON_BLIP",
 			"jhash": "0xD1C3D71B",
@@ -30470,6 +30567,14 @@
 			"old_names": [
 				"_CENTER_PLAYER_ON_RADAR_THIS_FRAME"
 			]
+		},
+		"0x89DA85D949CE57A0": {
+			"name": "_0x89DA85D949CE57A0",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "void",
+			"build": "2802"
 		},
 		"0x55F5A5F07134DE60": {
 			"name": "DONT_ZOOM_MINIMAP_WHEN_SNIPING_THIS_FRAME",
@@ -37052,6 +37157,14 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0xD19C0826DC20CF1C": {
+			"name": "_0xD19C0826DC20CF1C",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "2802"
+		},
 		"0x9DC711BC69C548DF": {
 			"name": "TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME",
 			"jhash": "0x9F861FD4",
@@ -38247,6 +38360,55 @@
 			"old_names": [
 				"_GET_IS_PROJECTILE_TYPE_IN_AREA"
 			]
+		},
+		"0x3DA8C28346B62CED": {
+			"name": "_0x3DA8C28346B62CED",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				}
+			],
+			"return_type": "Any",
+			"build": "2802"
 		},
 		"0xDFB4138EEFED7B81": {
 			"name": "GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE",
@@ -42721,6 +42883,10 @@
 				{
 					"type": "Any",
 					"name": "p3"
+				},
+				{
+					"type": "Any",
+					"name": "p4"
 				}
 			],
 			"return_type": "void",
@@ -47570,6 +47736,10 @@
 				{
 					"type": "Any",
 					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -48502,6 +48672,498 @@
 			"old_names": [
 				"_NETWORK_EARN_FROM_BUSINESS_HUB_SOURCE"
 			]
+		},
+		"0xA2ED36DCF0FCA413": {
+			"name": "_0xA2ED36DCF0FCA413",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xCF8F346DDDC66643": {
+			"name": "_0xCF8F346DDDC66643",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xB48185C0CA67B16B": {
+			"name": "_0xB48185C0CA67B16B",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "2802",
+			"unused": true
+		},
+		"0xF1E26A7924327152": {
+			"name": "_0xF1E26A7924327152",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0x110EE9D486C23126": {
+			"name": "_0x110EE9D486C23126",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xA7D541C9ACD63133": {
+			"name": "_0xA7D541C9ACD63133",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "2802",
+			"unused": true
+		},
+		"0x2940558E05BCC2EC": {
+			"name": "_0x2940558E05BCC2EC",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "2802",
+			"unused": true
+		},
+		"0x4B99AB08C92C54E4": {
+			"name": "_0x4B99AB08C92C54E4",
+			"jhash": "",
+			"comment": "",
+			"params": [],
+			"return_type": "Any",
+			"build": "2802",
+			"unused": true
+		},
+		"0x842B1C5AF61ACDE9": {
+			"name": "_0x842B1C5AF61ACDE9",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0x446798F7495DD7D8": {
+			"name": "_0x446798F7495DD7D8",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xDDF047577F1A02A7": {
+			"name": "_0xDDF047577F1A02A7",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xD1A8165767AD2D23": {
+			"name": "_0xD1A8165767AD2D23",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xC30650FA74A19D02": {
+			"name": "_0xC30650FA74A19D02",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xD01EBAEA1F905EF6": {
+			"name": "_0xD01EBAEA1F905EF6",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xBEAFBB1B98B7EF55": {
+			"name": "_0xBEAFBB1B98B7EF55",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xA914768AD35CD3A5": {
+			"name": "_0xA914768AD35CD3A5",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xA81017EE1324FDFE": {
+			"name": "_0xA81017EE1324FDFE",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0x79B656937DF6DF5D": {
+			"name": "_0x79B656937DF6DF5D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xE3942D59E8A7F70D": {
+			"name": "_0xE3942D59E8A7F70D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0x136F11B5DF1B304D": {
+			"name": "_0x136F11B5DF1B304D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xCA3EF9B09A8D76B4": {
+			"name": "_0xCA3EF9B09A8D76B4",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xE01D10BA8CD53621": {
+			"name": "_0xE01D10BA8CD53621",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0x40FF6CCCC476185C": {
+			"name": "_0x40FF6CCCC476185C",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xCE4452AE85F5E252": {
+			"name": "_0xCE4452AE85F5E252",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xC376B92D0E060970": {
+			"name": "_0xC376B92D0E060970",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0x991E1588FAD9019D": {
+			"name": "_0x991E1588FAD9019D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xCABC9874AFA70D6D": {
+			"name": "_0xCABC9874AFA70D6D",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0x9C0C6BD0F94CE391": {
+			"name": "_0x9C0C6BD0F94CE391",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
 		},
 		"0x76EF28DA05EA395A": {
 			"name": "NETWORK_GET_VC_BANK_BALANCE",
@@ -52700,6 +53362,23 @@
 				"_NETWORK_GET_RANDOM_INT_IN_RANGE"
 			]
 		},
+		"0x04BD27B5ACB67067": {
+			"name": "_0x04BD27B5ACB67067",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "Any",
+			"build": "2802"
+		},
 		"0x655B91F1495A9090": {
 			"name": "NETWORK_PLAYER_IS_CHEATER",
 			"jhash": "0xA51DC214",
@@ -53531,6 +54210,19 @@
 			"old_names": [
 				"_NETWORK_SET_CURRENT_MISSION_ID"
 			]
+		},
+		"0x3DAD00265FBF356B": {
+			"name": "_0x3DAD00265FBF356B",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
 		},
 		"0xAA6D5451DC3448B6": {
 			"name": "NETWORK_SET_CURRENT_SPAWN_LOCATION_OPTION",
@@ -54616,6 +55308,19 @@
 			"params": [],
 			"return_type": "void",
 			"build": "372"
+		},
+		"0xAD4326FCA30D62F8": {
+			"name": "_0xAD4326FCA30D62F8",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2802"
 		},
 		"0xB309EBEA797E001F": {
 			"name": "NETWORK_SET_SCRIPT_AUTOMUTED",
@@ -56218,6 +56923,23 @@
 				"_NETWORK_CAN_NETWORK_ID_BE_SEEN"
 			]
 		},
+		"0x96320E6549DAE7B4": {
+			"name": "_0x96320E6549DAE7B4",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
 		"0xD1065D68947E7B6E": {
 			"name": "SET_LOCAL_PLAYER_VISIBLE_IN_CUTSCENE",
 			"jhash": "0x59F3479B",
@@ -57270,6 +57992,19 @@
 			],
 			"return_type": "void",
 			"build": "323"
+		},
+		"0xDD7CEF5B3A4DA8A6": {
+			"name": "_0xDD7CEF5B3A4DA8A6",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2802"
 		},
 		"0x6274C4712850841E": {
 			"name": "SET_NETWORK_VEHICLE_AS_GHOST",
@@ -66372,6 +67107,19 @@
 			"return_type": "BOOL",
 			"build": "323"
 		},
+		"0xC2AB6BFE34E92F8B": {
+			"name": "_0xC2AB6BFE34E92F8B",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2802"
+		},
 		"0x228E5C6AD4D74BFD": {
 			"name": "SET_ALLOW_STREAM_PROLOGUE_NODES",
 			"jhash": "0xD6A3B458",
@@ -72851,6 +73599,10 @@
 				{
 					"type": "int",
 					"name": "componentId"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "int",
@@ -72880,6 +73632,10 @@
 				{
 					"type": "BOOL",
 					"name": "attach"
+				},
+				{
+					"type": "Any",
+					"name": "p5"
 				}
 			],
 			"return_type": "void",
@@ -72926,6 +73682,10 @@
 				{
 					"type": "int",
 					"name": "propId"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -72939,6 +73699,10 @@
 				{
 					"type": "Ped",
 					"name": "ped"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
 				}
 			],
 			"return_type": "void",
@@ -74393,6 +75157,23 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0xAC0BB4D87777CAE2": {
+			"name": "_0xAC0BB4D87777CAE2",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
 		"0x6585D955A68452A5": {
 			"name": "CLEAR_PED_ENV_DIRT",
 			"jhash": "0xA993915F",
@@ -74974,6 +75755,19 @@
 			],
 			"return_type": "BOOL",
 			"build": "1868"
+		},
+		"0x007FDE5A7897E426": {
+			"name": "_0x007FDE5A7897E426",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
 		},
 		"0xE1E65CA8AC9C00ED": {
 			"name": "PLAY_FACIAL_ANIM",
@@ -82030,6 +82824,19 @@
 				"_SET_PLAYER_HEALTH_RECHARGE_LIMIT"
 			]
 		},
+		"0xBCB06442F7E52666": {
+			"name": "_0xBCB06442F7E52666",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
 		"0xEFD79FA81DFBA9CB": {
 			"name": "SET_PLAYER_FALL_DISTANCE_TO_TRIGGER_RAGDOLL_OVERRIDE",
 			"jhash": "",
@@ -87773,6 +88580,27 @@
 				"_PLAYSTATS_PEGASAIRCRAFT"
 			]
 		},
+		"0xF96E9EA876D9DC92": {
+			"name": "_0xF96E9EA876D9DC92",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
 		"0x6A60E43998228229": {
 			"name": "PLAYSTATS_FM_EVENT_CHALLENGES",
 			"jhash": "",
@@ -90236,6 +91064,10 @@
 				{
 					"type": "Any",
 					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
 				}
 			],
 			"return_type": "void",
@@ -91152,6 +91984,34 @@
 				{
 					"type": "Any",
 					"name": "p5"
+				},
+				{
+					"type": "Any",
+					"name": "p6"
+				},
+				{
+					"type": "Any",
+					"name": "p7"
+				},
+				{
+					"type": "Any",
+					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
+				},
+				{
+					"type": "Any",
+					"name": "p11"
+				},
+				{
+					"type": "Any",
+					"name": "p12"
 				}
 			],
 			"return_type": "void",
@@ -91464,6 +92324,14 @@
 				{
 					"type": "Any",
 					"name": "p8"
+				},
+				{
+					"type": "Any",
+					"name": "p9"
+				},
+				{
+					"type": "Any",
+					"name": "p10"
 				}
 			],
 			"return_type": "void",
@@ -91628,6 +92496,14 @@
 				{
 					"type": "Any",
 					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
 				}
 			],
 			"return_type": "void",
@@ -91683,6 +92559,66 @@
 			"old_names": [
 				"_PLAYSTATS_INVENTORY"
 			]
+		},
+		"0x8A23D1324F6B2BAC": {
+			"name": "_0x8A23D1324F6B2BAC",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xCEACCF0550FDC5BA": {
+			"name": "_0xCEACCF0550FDC5BA",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0xEC9553A178E8F1D1": {
+			"name": "_0xEC9553A178E8F1D1",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
+		"0x48FAC5DC7AC6EA99": {
+			"name": "_0x48FAC5DC7AC6EA99",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
 		}
 	},
 	"STREAMING": {
@@ -102591,6 +103527,23 @@
 			"return_type": "void",
 			"build": "944"
 		},
+		"0x85FC953F6C6CBDE1": {
+			"name": "_0x85FC953F6C6CBDE1",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
 		"0x75DBEC174AEEAD10": {
 			"name": "SET_BOAT_ANCHOR",
 			"jhash": "0xA3906284",
@@ -103095,6 +104048,19 @@
 			"old_names": [
 				"_IS_VEHICLE_BEING_HALTED"
 			]
+		},
+		"0x923A293361DF44E5": {
+			"name": "_0x923A293361DF44E5",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
 		},
 		"0x37EBBF3117BD6A25": {
 			"name": "SET_FORKLIFT_FORK_HEIGHT",
@@ -108120,6 +109086,23 @@
 			"return_type": "void",
 			"build": "323"
 		},
+		"0x5815BD2763178DF4": {
+			"name": "_0x5815BD2763178DF4",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				},
+				{
+					"type": "Any",
+					"name": "p1"
+				}
+			],
+			"return_type": "void",
+			"build": "2802"
+		},
 		"0x684785568EF26A22": {
 			"name": "SET_VEHICLE_HANDBRAKE",
 			"jhash": "0xBA729A25",
@@ -108215,6 +109198,19 @@
 			],
 			"return_type": "BOOL",
 			"build": "323"
+		},
+		"0x80D9D32636369C92": {
+			"name": "_0x80D9D32636369C92",
+			"jhash": "",
+			"comment": "",
+			"params": [
+				{
+					"type": "Any",
+					"name": "p0"
+				}
+			],
+			"return_type": "Any",
+			"build": "2802"
 		},
 		"0xCAC66558B944DA67": {
 			"name": "SET_VEHICLE_USES_LARGE_REAR_RAMP",
