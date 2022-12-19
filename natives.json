@@ -88554,7 +88554,7 @@
 			]
 		},
 		"0xF96E9EA876D9DC92": {
-			"name": "_0xF96E9EA876D9DC92",
+			"name": "_PLAYSTATS_SHOPMENU_NAV",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -92534,7 +92534,7 @@
 			]
 		},
 		"0x8A23D1324F6B2BAC": {
-			"name": "_0x8A23D1324F6B2BAC",
+			"name": "_PLAYSTATS_ACID_MISSION_END",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -92547,7 +92547,7 @@
 			"build": "2802"
 		},
 		"0xCEACCF0550FDC5BA": {
-			"name": "_0xCEACCF0550FDC5BA",
+			"name": "_PLAYSTATS_ACID_RND",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -92560,7 +92560,7 @@
 			"build": "2802"
 		},
 		"0xEC9553A178E8F1D1": {
-			"name": "_0xEC9553A178E8F1D1",
+			"name": "_PLAYSTATS_IDLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -92581,7 +92581,7 @@
 			"build": "2802"
 		},
 		"0x48FAC5DC7AC6EA99": {
-			"name": "_0x48FAC5DC7AC6EA99",
+			"name": "_PLAYSTATS_PLAYER_STYLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -109060,16 +109060,16 @@
 			"build": "323"
 		},
 		"0x5815BD2763178DF4": {
-			"name": "_0x5815BD2763178DF4",
+			"name": "_SET_VEHICLE_STRONG_DOORS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
