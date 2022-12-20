@@ -9818,11 +9818,11 @@
 			"build": "1734"
 		},
 		"0x5D583F71C901F2A3": {
-			"name": "_0x5D583F71C901F2A3",
+			"name": "GET_CUTSCENE_PLAY_DURATION",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "2802"
 		},
 		"0x40C8656EDAEDD569": {
@@ -11996,16 +11996,16 @@
 			"build": "323"
 		},
 		"0xA75EE4F689B85391": {
-			"name": "_0xA75EE4F689B85391",
+			"name": "_GET_LAST_ENTITY_HIT_BY_ENTITY",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Entity",
 			"build": "2802"
 		},
 		"0x5C3D0A935F535C4C": {
@@ -15496,17 +15496,17 @@
 			]
 		},
 		"0xCF1247CC86961FD6": {
-			"name": "_0xCF1247CC86961FD6",
+			"name": "GET_ENTITY_BONE_OBJECT_POSTION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Entity",
+					"name": "entity"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "boneIndex"
 				}
 			],
 			"return_type": "Vector3",
@@ -22133,13 +22133,13 @@
 			"build": "323"
 		},
 		"0xB7EF5850C39FABCA": {
-			"name": "_0xB7EF5850C39FABCA",
+			"name": "SET_PARTICLE_FX_NON_LOOPED_SCALE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -23061,25 +23061,25 @@
 			"build": "2545"
 		},
 		"0x170911F37F646F29": {
-			"name": "_0x170911F37F646F29",
+			"name": "REGISTER_POSTFX_BULLET_IMPACT",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "weaponWorldPosX"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "weaponWorldPosY"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "weaponWorldPosZ"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "intensity"
 				}
 			],
 			"return_type": "void",
@@ -29958,17 +29958,17 @@
 			]
 		},
 		"0x19BD6E3C0E16A8FA": {
-			"name": "_0x19BD6E3C0E16A8FA",
+			"name": "SHOW_FOR_SALE_ICON_ON_BLIP",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Blip",
+					"name": "blip"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -30569,7 +30569,7 @@
 			]
 		},
 		"0x89DA85D949CE57A0": {
-			"name": "_0x89DA85D949CE57A0",
+			"name": "DONT_ZOOM_MINIMAP_WHEN_RUNNING_THIS_FRAME",
 			"jhash": "",
 			"comment": "",
 			"params": [],
@@ -37158,11 +37158,11 @@
 			"build": "323"
 		},
 		"0xD19C0826DC20CF1C": {
-			"name": "_0xD19C0826DC20CF1C",
+			"name": "ARE_CREDITS_RUNNING",
 			"jhash": "",
 			"comment": "",
 			"params": [],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2802"
 		},
 		"0x9DC711BC69C548DF": {
@@ -38362,52 +38362,52 @@
 			]
 		},
 		"0x3DA8C28346B62CED": {
-			"name": "_0x3DA8C28346B62CED",
+			"name": "GET_COORDS_OF_PROJECTILE_TYPE_IN_ANGLED_AREA",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "vecAngledAreaPoint1X"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "vecAngledAreaPoint1Y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "vecAngledAreaPoint1Z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "vecAngledAreaPoint2X"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "vecAngledAreaPoint2Y"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "vecAngledAreaPoint2Z"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "distanceOfOppositeFace"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "Hash",
+					"name": "weaponType"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "Vector3*",
+					"name": "positionOut"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "BOOL",
+					"name": "bIsPlayer"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2802"
 		},
 		"0xDFB4138EEFED7B81": {
@@ -48666,7 +48666,7 @@
 			]
 		},
 		"0xA2ED36DCF0FCA413": {
-			"name": "_0xA2ED36DCF0FCA413",
+			"name": "_NETWORK_SPEND_BUY_MFGARAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48691,7 +48691,7 @@
 			"build": "2802"
 		},
 		"0xCF8F346DDDC66643": {
-			"name": "_0xCF8F346DDDC66643",
+			"name": "_NETWORK_SPEND_UPGRADE_MFGARAGE",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48716,16 +48716,33 @@
 			"build": "2802"
 		},
 		"0xB48185C0CA67B16B": {
-			"name": "_0xB48185C0CA67B16B",
+			"name": "_NETWORK_SPEND_BUY_SUPPLIES",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "int",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "2802",
 			"unused": true
 		},
 		"0xF1E26A7924327152": {
-			"name": "_0xF1E26A7924327152",
+			"name": "_NETWORK_SPEND_BUY_ACID_LAB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48750,7 +48767,7 @@
 			"build": "2802"
 		},
 		"0x110EE9D486C23126": {
-			"name": "_0x110EE9D486C23126",
+			"name": "_NETWORK_SPEND_UPGRADE_ACID_LAB_EQUIPMENT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48775,34 +48792,85 @@
 			"build": "2802"
 		},
 		"0xA7D541C9ACD63133": {
-			"name": "_0xA7D541C9ACD63133",
+			"name": "_NETWORK_SPEND_UPGRADE_ACID_LAB_ARMOR",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "int",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "2802",
 			"unused": true
 		},
 		"0x2940558E05BCC2EC": {
-			"name": "_0x2940558E05BCC2EC",
+			"name": "_NETWORK_SPEND_UPGRADE_ACID_LAB_SCOOP",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "int",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "2802",
 			"unused": true
 		},
 		"0x4B99AB08C92C54E4": {
-			"name": "_0x4B99AB08C92C54E4",
+			"name": "_NETWORK_SPEND_UPGRADE_ACID_LAB_MINES",
 			"jhash": "",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "int",
+					"name": "p3"
+				}
+			],
+			"return_type": "void",
 			"build": "2802",
 			"unused": true
 		},
 		"0x842B1C5AF61ACDE9": {
-			"name": "_0x842B1C5AF61ACDE9",
+			"name": "_NETWORK_SPEND_RENAME_ACID_LAB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48827,7 +48895,7 @@
 			"build": "2802"
 		},
 		"0x446798F7495DD7D8": {
-			"name": "_0x446798F7495DD7D8",
+			"name": "_NETWORK_SPEND_RENAME_ACID_PRODUCT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48852,7 +48920,7 @@
 			"build": "2802"
 		},
 		"0xDDF047577F1A02A7": {
-			"name": "_0xDDF047577F1A02A7",
+			"name": "_NETWORK_EARN_AWARD_JUGGALO_MISSION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48869,7 +48937,7 @@
 			"build": "2802"
 		},
 		"0xD1A8165767AD2D23": {
-			"name": "_0xD1A8165767AD2D23",
+			"name": "_NETWORK_EARN_AWARD_ACID_LAB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48886,7 +48954,7 @@
 			"build": "2802"
 		},
 		"0xC30650FA74A19D02": {
-			"name": "_0xC30650FA74A19D02",
+			"name": "_NETWORK_EARN_AWARD_DAILY_STASH",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48903,7 +48971,7 @@
 			"build": "2802"
 		},
 		"0xD01EBAEA1F905EF6": {
-			"name": "_0xD01EBAEA1F905EF6",
+			"name": "_NETWORK_EARN_AWARD_DEAD_DROP",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48920,7 +48988,7 @@
 			"build": "2802"
 		},
 		"0xBEAFBB1B98B7EF55": {
-			"name": "_0xBEAFBB1B98B7EF55",
+			"name": "_NETWORK_EARN_AWARD_RANDOM_EVENT",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48937,7 +49005,7 @@
 			"build": "2802"
 		},
 		"0xA914768AD35CD3A5": {
-			"name": "_0xA914768AD35CD3A5",
+			"name": "_NETWORK_EARN_AWARD_TAXI",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48954,7 +49022,7 @@
 			"build": "2802"
 		},
 		"0xA81017EE1324FDFE": {
-			"name": "_0xA81017EE1324FDFE",
+			"name": "_NETWORK_EARN_STREET_DEALER",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48971,7 +49039,7 @@
 			"build": "2802"
 		},
 		"0x79B656937DF6DF5D": {
-			"name": "_0x79B656937DF6DF5D",
+			"name": "_NETWORK_EARN_SELL_ACID",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -48988,7 +49056,7 @@
 			"build": "2802"
 		},
 		"0xE3942D59E8A7F70D": {
-			"name": "_0xE3942D59E8A7F70D",
+			"name": "_NETWORK_EARN_SETUP_PARTICIPATION_ACID_LAB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -49005,7 +49073,7 @@
 			"build": "2802"
 		},
 		"0x136F11B5DF1B304D": {
-			"name": "_0x136F11B5DF1B304D",
+			"name": "_NETWORK_EARN_SOURCE_PARTICIPATION_ACID_LAB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -49022,7 +49090,7 @@
 			"build": "2802"
 		},
 		"0xCA3EF9B09A8D76B4": {
-			"name": "_0xCA3EF9B09A8D76B4",
+			"name": "_NETWORK_EARN_SELL_PARTICIPATION_ACID_LAB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -49039,7 +49107,7 @@
 			"build": "2802"
 		},
 		"0xE01D10BA8CD53621": {
-			"name": "_0xE01D10BA8CD53621",
+			"name": "_NETWORK_EARN_JUGGALO_STORY_MISSION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -49056,7 +49124,7 @@
 			"build": "2802"
 		},
 		"0x40FF6CCCC476185C": {
-			"name": "_0x40FF6CCCC476185C",
+			"name": "_NETWORK_EARN_JUGGALO_STORY_MISSION_PARTICIPATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -49073,9 +49141,9 @@
 			"build": "2802"
 		},
 		"0xCE4452AE85F5E252": {
-			"name": "_0xCE4452AE85F5E252",
+			"name": "_NETWORK_EARN_FOOLIGAN_JOB",
 			"jhash": "",
-			"comment": "",
+			"comment": "JUGGALO_PHONE_MISSION...",
 			"params": [
 				{
 					"type": "Any",
@@ -49090,9 +49158,9 @@
 			"build": "2802"
 		},
 		"0xC376B92D0E060970": {
-			"name": "_0xC376B92D0E060970",
+			"name": "_NETWORK_EARN_FOOLIGAN_JOB_PARTICIPATION",
 			"jhash": "",
-			"comment": "",
+			"comment": "JUGGALO_PHONE_MISSION_PARTICIPATION...",
 			"params": [
 				{
 					"type": "Any",
@@ -49107,7 +49175,7 @@
 			"build": "2802"
 		},
 		"0x991E1588FAD9019D": {
-			"name": "_0x991E1588FAD9019D",
+			"name": "_NETWORK_EARN_TAXI_JOB",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -49124,7 +49192,7 @@
 			"build": "2802"
 		},
 		"0xCABC9874AFA70D6D": {
-			"name": "_0xCABC9874AFA70D6D",
+			"name": "_NETWORK_EARN_DAILY_STASH_HOUSE_COMPLETED",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -49141,7 +49209,7 @@
 			"build": "2802"
 		},
 		"0x9C0C6BD0F94CE391": {
-			"name": "_0x9C0C6BD0F94CE391",
+			"name": "_NETWORK_EARN_DAILY_STASH_HOUSE_PARTICIPATION",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -53336,20 +53404,20 @@
 			]
 		},
 		"0x04BD27B5ACB67067": {
-			"name": "_0x04BD27B5ACB67067",
+			"name": "_NETWORK_GET_RANDOM_FLOAT_RANGED",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "rangeStart"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "rangeEnd"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "float",
 			"build": "2802"
 		},
 		"0x655B91F1495A9090": {
@@ -54185,13 +54253,13 @@
 			]
 		},
 		"0x3DAD00265FBF356B": {
-			"name": "_0x3DAD00265FBF356B",
+			"name": "NETWORK_SET_CURRENT_CHAT_OPTION",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "newChatOption"
 				}
 			],
 			"return_type": "void",
@@ -55283,16 +55351,16 @@
 			"build": "372"
 		},
 		"0xAD4326FCA30D62F8": {
-			"name": "_0xAD4326FCA30D62F8",
+			"name": "NETWORK_IS_PLAYER_ON_BLOCKLIST",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Any*",
+					"name": "gamerHandle"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2802"
 		},
 		"0xB309EBEA797E001F": {
@@ -56897,17 +56965,17 @@
 			]
 		},
 		"0x96320E6549DAE7B4": {
-			"name": "_0x96320E6549DAE7B4",
+			"name": "SET_REMOTE_PLAYER_VISIBLE_IN_CUTSCENE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "locallyVisible"
 				}
 			],
 			"return_type": "void",
@@ -57967,16 +58035,16 @@
 			"build": "323"
 		},
 		"0xDD7CEF5B3A4DA8A6": {
-			"name": "_0xDD7CEF5B3A4DA8A6",
+			"name": "IS_NETWORK_VEHICLE_RUNNING_RESPOT_TIMER",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "networkID"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2802"
 		},
 		"0x6274C4712850841E": {
@@ -67081,16 +67149,16 @@
 			"build": "323"
 		},
 		"0xC2AB6BFE34E92F8B": {
-			"name": "_0xC2AB6BFE34E92F8B",
+			"name": "LOAD_ALL_PATH_NODES",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "set"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "2802"
 		},
 		"0x228E5C6AD4D74BFD": {
@@ -75131,17 +75199,17 @@
 			"build": "323"
 		},
 		"0xAC0BB4D87777CAE2": {
-			"name": "_0xAC0BB4D87777CAE2",
+			"name": "SET_PED_WETNESS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "wetLevel"
 				}
 			],
 			"return_type": "void",
@@ -75730,13 +75798,13 @@
 			"build": "1868"
 		},
 		"0x007FDE5A7897E426": {
-			"name": "_0x007FDE5A7897E426",
+			"name": "RESET_FACIAL_IDLE_ANIM",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
@@ -82798,13 +82866,13 @@
 			]
 		},
 		"0xBCB06442F7E52666": {
-			"name": "_0xBCB06442F7E52666",
+			"name": "DISABLE_PLAYER_HEALTH_RECHARGE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Needs to be called every frame.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				}
 			],
 			"return_type": "void",
@@ -103506,11 +103574,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -104023,13 +104091,13 @@
 			]
 		},
 		"0x923A293361DF44E5": {
-			"name": "_0x923A293361DF44E5",
+			"name": "LOWER_FORKLIFT_FORKS",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "forklift"
 				}
 			],
 			"return_type": "void",
@@ -109060,7 +109128,7 @@
 			"build": "323"
 		},
 		"0x5815BD2763178DF4": {
-			"name": "_SET_VEHICLE_STRONG_DOORS",
+			"name": "SET_VEHICLE_TAIL_LIGHTS",
 			"jhash": "",
 			"comment": "",
 			"params": [
@@ -109070,7 +109138,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -109173,16 +109241,16 @@
 			"build": "323"
 		},
 		"0x80D9D32636369C92": {
-			"name": "_0x80D9D32636369C92",
+			"name": "_GET_VEHICLE_TRAILER_PARENT_VEHICLE",
 			"jhash": "",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "trailer"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "Vehicle",
 			"build": "2802"
 		},
 		"0xCAC66558B944DA67": {
