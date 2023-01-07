@@ -4912,8 +4912,8 @@
 		},
 		"0x544810ED9DB6BBE6": {
 			"name": "HAS_LOADED_MP_DATA_SET",
-			"jhash": "query whether the audio has loaded the mp data set",
-			"comment": "",
+			"jhash": "",
+			"comment": "query whether the audio has loaded the mp data set",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
@@ -4923,8 +4923,8 @@
 		},
 		"0x5B50ABB1FE3746F4": {
 			"name": "HAS_LOADED_SP_DATA_SET",
-			"jhash": "query whether the audio has loaded the SP data set",
-			"comment": "",
+			"jhash": "",
+			"comment": "query whether the audio has loaded the SP data set",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
@@ -7175,8 +7175,8 @@
 		},
 		"0xE827B9382CFB41BA": {
 			"name": "SET_FLY_CAM_VERTICAL_RESPONSE",
-			"jhash": "the acceleration, deceleration and speed limits for vertical translation of the specified scripted fly camera",
-			"comment": "",
+			"jhash": "",
+			"comment": "the acceleration, deceleration and speed limits for vertical translation of the specified scripted fly camera",
 			"params": [
 				{
 					"type": "Cam",
