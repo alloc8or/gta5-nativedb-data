@@ -652,7 +652,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "hudSound"
 				}
 			],
 			"return_type": "void",
@@ -711,59 +711,59 @@
 		"0xC5EF963405593646": {
 			"name": "ADD_LINE_TO_CONVERSATION",
 			"jhash": "0x96CD0513",
-			"comment": "NOTE: ones that are -1, 0 - 35 are determined by a function where it gets a TextLabel from a global then runs,\nGET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME and depending on what the result is it goes in check order of 0 - 9 then A - Z then z (lowercase). So it will then return 0 - 35 or -1 if it's 'z'. The func to handle that ^^ is func_67 in dialog_handler.c atleast in TU27 Xbox360 scripts.\n\np0 is -1, 0 - 35\np1 is a char or string (whatever you wanna call it)\np2 is Global 10597 + i * 6. 'i' is a while(i < 70) loop\np3 is again -1, 0 - 35 \np4 is again -1, 0 - 35 \np5 is either 0 or 1 (bool ?)\np6 is either 0 or 1 (The func to determine this is bool)\np7 is either 0 or 1 (The func to determine this is bool)\np8 is either 0 or 1 (The func to determine this is bool)\np9 is 0 - 3 (Determined by func_60 in dialogue_handler.c)\np10 is either 0 or 1 (The func to determine this is bool)\np11 is either 0 or 1 (The func to determine this is bool)\np12 is unknown as in TU27 X360 scripts it only goes to p11.",
+			"comment": "NOTE: ones that are -1, 0 - 35 are determined by a function where it gets a TextLabel from a global then runs,\nGET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME and depending on what the result is it goes in check order of 0 - 9 then A - Z then z (lowercase). So it will then return 0 - 35 or -1 if it's 'z'. The func to handle that ^^ is func_67 in dialog_handler.c atleast in TU27 Xbox360 scripts.\n\np0 is -1, 0 - 35\np1 is a char or string (whatever you wanna call it)\np2 is Global 10597 + i * 6. 'i' is a while(i < 70) loop\np3 is again -1, 0 - 35 \np4 is again -1, 0 - 35 \np5 is either 0 or 1 (bool ?)\np6 is either 0 or 1 (The func to determine this is bool)\np7 is either 0 or 1 (The func to determine this is bool)\np8 is either 0 or 1 (The func to determine this is bool)\np9 is 0 - 3 (Determined by func_60 in dialogue_handler.c)\np10 is either 0 or 1 (The func to determine this is bool)\np11 is either 0 or 1 (The func to determine this is bool)\np12 is unknown as in TU27 X360 scripts it only goes to p11.\nenum eAudiBility\n{\n\tAUD_AUDIBILITY_NORMAL = 0,\n\tAUD_AUDIBILITY_CLEAR,\n\tAUD_AUDIBILITY_CRITICAL,\n\tAUD_AUDIBILITY_LEAD_IN\n};",
 			"params": [
 				{
 					"type": "int",
-					"name": "index"
+					"name": "speakerNumber"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "context"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "subtitle"
 				},
 				{
 					"type": "int",
-					"name": "p3"
+					"name": "listenerNumber"
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "volumeType"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isRandom"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "interruptible"
 				},
 				{
 					"type": "BOOL",
-					"name": "p7"
+					"name": "ducksRadio"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "ducksScore"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "audiBility"
 				},
 				{
 					"type": "BOOL",
-					"name": "p10"
+					"name": "headset"
 				},
 				{
 					"type": "BOOL",
-					"name": "p11"
+					"name": "dontInterruptForSpecialAbility"
 				},
 				{
 					"type": "BOOL",
-					"name": "p12"
+					"name": "isPadSpeakerRoute"
 				}
 			],
 			"return_type": "void",
@@ -784,7 +784,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "voiceName"
 				}
 			],
 			"return_type": "void",
@@ -796,20 +796,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "speakerConversationIndex"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "posX"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "posY"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "posZ"
 				}
 			],
 			"return_type": "void",
@@ -822,7 +822,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "speakerConversationIndex"
 				},
 				{
 					"type": "Entity",
@@ -888,7 +888,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -901,7 +901,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "isPlaceholder"
 				}
 			],
 			"return_type": "void",
@@ -914,11 +914,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "displaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				}
 			],
 			"return_type": "void",
@@ -931,11 +931,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "displaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				}
 			],
 			"return_type": "void",
@@ -948,19 +948,19 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "displaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "cloneConversation"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "interruptible"
 				}
 			],
 			"return_type": "void",
@@ -969,23 +969,23 @@
 		"0x3B3CAD6166916D87": {
 			"name": "PRELOAD_SCRIPT_CONVERSATION",
 			"jhash": "0xDDF5C579",
-			"comment": "",
+			"comment": "similar to START_SCRIPT_CONVERSATION, except that is starts the conversation off paused",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "displaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "cloneConversation"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "interruptible"
 				}
 			],
 			"return_type": "void",
@@ -1038,7 +1038,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "finishCurrentLine"
 				}
 			],
 			"return_type": "void",
@@ -1047,7 +1047,7 @@
 		"0x9AEB285D1818C9AC": {
 			"name": "RESTART_SCRIPTED_CONVERSATION",
 			"jhash": "0x6CB24B56",
-			"comment": "",
+			"comment": "call this to restart a conversation that you have previously paused with PAUSE_SCRIPTED_CONVERSATION",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -1059,7 +1059,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "finishCurrentLine"
 				}
 			],
 			"return_type": "int",
@@ -1105,7 +1105,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "voiceline"
 				},
 				{
 					"type": "const char*",
@@ -1121,8 +1121,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any*",
-					"name": "p0"
+					"type": "int*",
+					"name": "textLabel"
 				}
 			],
 			"return_type": "int",
@@ -1135,7 +1135,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -1173,11 +1173,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1194,11 +1194,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1215,11 +1215,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1228,7 +1228,7 @@
 		"0x40763EA7B9B783E7": {
 			"name": "HINT_MISSION_AUDIO_BANK",
 			"jhash": "",
-			"comment": "p2 is always -1",
+			"comment": "playerBits is always -1",
 			"params": [
 				{
 					"type": "const char*",
@@ -1236,11 +1236,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1249,7 +1249,7 @@
 		"0x8F8C0E370AE62F5C": {
 			"name": "HINT_AMBIENT_AUDIO_BANK",
 			"jhash": "0xF1850DDC",
-			"comment": "p2 is always -1",
+			"comment": "playerBits is always -1",
 			"params": [
 				{
 					"type": "const char*",
@@ -1257,11 +1257,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1270,7 +1270,7 @@
 		"0xFB380A29641EC31A": {
 			"name": "HINT_SCRIPT_AUDIO_BANK",
 			"jhash": "0x41FA0E51",
-			"comment": "p2 is always -1",
+			"comment": "playerBits is always -1",
 			"params": [
 				{
 					"type": "const char*",
@@ -1278,11 +1278,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "playerBits"
 				}
 			],
 			"return_type": "BOOL",
@@ -1394,15 +1394,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "networkRange"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "enableOnReplay"
 				}
 			],
 			"return_type": "void",
@@ -1427,7 +1427,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "enableOnReplay"
 				}
 			],
 			"return_type": "void",
@@ -1476,8 +1476,8 @@
 					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "networkRange"
 				}
 			],
 			"return_type": "void",
@@ -1494,7 +1494,7 @@
 				},
 				{
 					"type": "Hash",
-					"name": "model"
+					"name": "audioName"
 				},
 				{
 					"type": "Entity",
@@ -1505,12 +1505,12 @@
 					"name": "soundSetHash"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "BOOL",
+					"name": "isNetwork"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "networkRange"
 				}
 			],
 			"return_type": "void",
@@ -1551,11 +1551,11 @@
 				},
 				{
 					"type": "int",
-					"name": "range"
+					"name": "networkRange"
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "isExteriorLoc"
 				}
 			],
 			"return_type": "void",
@@ -1636,11 +1636,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "variable"
+					"name": "variableName"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "variableValue"
 				}
 			],
 			"return_type": "void",
@@ -1653,11 +1653,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "variable"
+					"name": "variableName"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "variableValue"
 				}
 			],
 			"return_type": "void",
@@ -1670,11 +1670,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "streamName"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "override"
 				}
 			],
 			"return_type": "void",
@@ -1691,7 +1691,7 @@
 				},
 				{
 					"type": "float",
-					"name": "value"
+					"name": "variableValue"
 				}
 			],
 			"return_type": "void",
@@ -1728,8 +1728,8 @@
 					"name": "speechParam"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "syncOverNet"
 				}
 			],
 			"return_type": "void",
@@ -1756,8 +1756,8 @@
 					"name": "speechParam"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "syncOverNet"
 				}
 			],
 			"return_type": "void",
@@ -1789,7 +1789,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "syncOverNet"
 				}
 			],
 			"return_type": "void",
@@ -1875,7 +1875,7 @@
 		"0xBC9AE166038A5CEC": {
 			"name": "PLAY_PAIN",
 			"jhash": "0x874BD6CB",
-			"comment": "Needs another parameter [int p2]. The signature is PED::PLAY_PAIN(Ped ped, int painID, int p1, int p2);\n\nLast 2 parameters always seem to be 0.\n\nEX: Function.Call(Hash.PLAY_PAIN, TestPed, 6, 0, 0);\n\nKnown Pain IDs\n________________________\n\n1 - Doesn't seem to do anything. Does NOT crash the game like previously said. (Latest patch)\n6 - Scream (Short)\n7 - Scared Scream (Kinda Long)\n8 - On Fire\n",
+			"comment": "enum eAudDamage\n{\n\tAUD_DAMAGE_REASON_DEFAULT,\n\tAUD_DAMAGE_REASON_FALLING,\n\tAUD_DAMAGE_REASON_SUPER_FALLING,\n\tAUD_DAMAGE_REASON_SCREAM_PANIC,\n\tAUD_DAMAGE_REASON_SCREAM_PANIC_SHORT,\n\tAUD_DAMAGE_REASON_SCREAM_SCARED,\n\tAUD_DAMAGE_REASON_SCREAM_SHOCKED,\n\tAUD_DAMAGE_REASON_SCREAM_TERROR,\n\tAUD_DAMAGE_REASON_ON_FIRE,\n\tAUD_DAMAGE_REASON_DROWNING,\n\tAUD_DAMAGE_REASON_SURFACE_DROWNING,\n\tAUD_DAMAGE_REASON_INHALE,\n\tAUD_DAMAGE_REASON_EXHALE,\n\tAUD_DAMAGE_REASON_POST_FALL_GRUNT,\n\tAUD_DAMAGE_REASON_ENTERING_RAGDOLL_DEATH,\n\tAUD_DAMAGE_REASON_EXPLOSION,\n\tAUD_DAMAGE_REASON_MELEE,\n\tAUD_DAMAGE_REASON_SHOVE,\n\tAUD_DAMAGE_REASON_WHEEZE,\n\tAUD_DAMAGE_REASON_COUGH,\n\tAUD_DAMAGE_REASON_TAZER,\n\tAUD_DAMAGE_REASON_EXHAUSTION,\n\tAUD_DAMAGE_REASON_CLIMB_LARGE,\n\tAUD_DAMAGE_REASON_CLIMB_SMALL,\n\tAUD_DAMAGE_REASON_JUMP,\n\tAUD_DAMAGE_REASON_COWER,\n\tAUD_DAMAGE_REASON_WHIMPER,\n\tAUD_DAMAGE_REASON_DYING_MOAN,\n\tAUD_DAMAGE_REASON_CYCLING_EXHALE,\n\tAUD_DAMAGE_REASON_PAIN_RAPIDS,\n\tAUD_DAMAGE_REASON_SNEEZE,\n\tAUD_DAMAGE_REASON_MELEE_SMALL_GRUNT,\n\tAUD_DAMAGE_REASON_MELEE_LARGE_GRUNT,\n\tAUD_DAMAGE_REASON_POST_FALL_GRUNT_LOW\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -1883,15 +1883,15 @@
 				},
 				{
 					"type": "int",
-					"name": "painID"
+					"name": "damageReason"
 				},
 				{
-					"type": "int",
-					"name": "p1"
+					"type": "float",
+					"name": "rawDamage"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "syncOverNet"
 				}
 			],
 			"return_type": "void",
@@ -2011,7 +2011,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "pedRace"
 				},
 				{
 					"type": "Hash",
@@ -2064,7 +2064,7 @@
 		"0xA5342D390CDA41D6": {
 			"name": "SET_PED_GENDER",
 			"jhash": "",
-			"comment": "BOOL p1: 0 = Female; 1 = Male",
+			"comment": "BOOL isMale: 0 = Female; 1 = Male",
 			"params": [
 				{
 					"type": "Ped",
@@ -2072,7 +2072,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "isMale"
 				}
 			],
 			"return_type": "void",
@@ -2130,7 +2130,7 @@
 			"params": [
 				{
 					"type": "Ped",
-					"name": "p0"
+					"name": "ped"
 				}
 			],
 			"return_type": "BOOL",
@@ -2172,7 +2172,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "allowBackup"
 				}
 			],
 			"return_type": "BOOL",
@@ -2214,7 +2214,7 @@
 		"0xEE066C7006C49C0A": {
 			"name": "PLAY_ANIMAL_VOCALIZATION",
 			"jhash": "0x498849F3",
-			"comment": "Plays sounds from a ped with chop model. For example it used to play bark or sniff sounds. p1 is always 3 or 4294967295 in decompiled scripts. By a quick disassembling I can assume that this arg is unused.\nThis native is works only when you call it on the ped with right model (ac_chop only ?)\nSpeech Name can be: CHOP_SNIFF_SEQ CHOP_WHINE CHOP_LICKS_MOUTH CHOP_PANT bark GROWL SNARL BARK_SEQ",
+			"comment": "Plays sounds from a ped with chop model. For example it used to play bark or sniff sounds. p1 is always 3 or 4294967295 in decompiled scripts. By a quick disassembling I can assume that this arg is unused.\nThis native is works only when you call it on the ped with right model (ac_chop only ?)\nSpeech Name can be: CHOP_SNIFF_SEQ CHOP_WHINE CHOP_LICKS_MOUTH CHOP_PANT bark GROWL SNARL BARK_SEQ\nenum eAudAnimal\n{\n\tAUD_ANIMAL_NONE = -1,\n\tAUD_ANIMAL_BOAR,\n\tAUD_ANIMAL_CHICKEN,\n\tAUD_ANIMAL_DOG,\n\tAUD_ANIMAL_DOG_ROTTWEILER,\n\tAUD_ANIMAL_HORSE\n};",
 			"params": [
 				{
 					"type": "Ped",
@@ -2222,7 +2222,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "animalType"
 				},
 				{
 					"type": "const char*",
@@ -2439,10 +2439,6 @@
 				{
 					"type": "const char*",
 					"name": "radioStation"
-				},
-				{
-					"type": "Any",
-					"name": "p2"
 				}
 			],
 			"return_type": "void",
@@ -2662,11 +2658,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "mixName"
+					"name": "trackName"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "timeOffsetMs"
 				}
 			],
 			"return_type": "void",
@@ -2678,7 +2674,7 @@
 		"0x55ECF4D13D9903B0": {
 			"name": "SET_NEXT_RADIO_TRACK",
 			"jhash": "",
-			"comment": "",
+			"comment": "the track will played following the currently playing track",
 			"params": [
 				{
 					"type": "const char*",
@@ -2690,11 +2686,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "contextName"
 				},
 				{
 					"type": "const char*",
-					"name": "p3"
+					"name": "trackIndex"
 				}
 			],
 			"return_type": "void",
@@ -2785,11 +2781,11 @@
 		"0xDA07819E452FFE8F": {
 			"name": "SET_POSITIONED_PLAYER_VEHICLE_RADIO_EMITTER_ENABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "enable/disable a positioned emitter for the player vehicle radio",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -2798,7 +2794,7 @@
 		"0x4E404A9361F75BB2": {
 			"name": "SET_CUSTOM_RADIO_TRACK_LIST",
 			"jhash": "0x128C3873",
-			"comment": "Examples:\n\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_SAVE_MICHAEL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_06_COUNTRY\", \"MAGDEMO2_RADIO_DINGHY\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"SEA_RACE_RADIO_PLAYLIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);",
+			"comment": "Examples:\n\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_MICHAEL\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_KILL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"END_CREDITS_SAVE_MICHAEL_TREVOR\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_06_COUNTRY\", \"MAGDEMO2_RADIO_DINGHY\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"SEA_RACE_RADIO_PLAYLIST\", 1);\nAUDIO::SET_CUSTOM_RADIO_TRACK_LIST(\"RADIO_01_CLASS_ROCK\", \"OFF_ROAD_RADIO_ROCK_LIST\", 1);\nif forceNow = true then the current track will be interrupted by the tracklist.",
 			"params": [
 				{
 					"type": "const char*",
@@ -2810,7 +2806,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceNow"
 				}
 			],
 			"return_type": "void",
@@ -2832,7 +2828,7 @@
 		"0xF1620ECB50E01DE7": {
 			"name": "GET_NUM_UNLOCKED_RADIO_STATIONS",
 			"jhash": "0xCC91FCF5",
-			"comment": "",
+			"comment": "returns the number of radio stations currently unlocked in the game",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -2843,7 +2839,7 @@
 		"0x8D67489793FF428B": {
 			"name": "FIND_RADIO_STATION_INDEX",
 			"jhash": "0xECA1512F",
-			"comment": "",
+			"comment": "searches for the current radio station index for the specified hash",
 			"params": [
 				{
 					"type": "Hash",
@@ -2873,7 +2869,7 @@
 		"0x2C96CDB04FCA358E": {
 			"name": "SET_RADIO_FRONTEND_FADE_TIME",
 			"jhash": "0xC8B514E2",
-			"comment": "",
+			"comment": "override the time to fade radio from stereo to positioned and vice versa. default is (0.5s);",
 			"params": [
 				{
 					"type": "float",
@@ -2886,7 +2882,7 @@
 		"0x031ACB6ABA18C729": {
 			"name": "UNLOCK_RADIO_STATION_TRACK_LIST",
 			"jhash": "0xBE998184",
-			"comment": "AUDIO::UNLOCK_RADIO_STATION_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"MIRRORPARK_LOCKED\");",
+			"comment": "AUDIO::UNLOCK_RADIO_STATION_TRACK_LIST(\"RADIO_16_SILVERLAKE\", \"MIRRORPARK_LOCKED\");\nunlocks the specified radio station track list.",
 			"params": [
 				{
 					"type": "const char*",
@@ -2903,7 +2899,7 @@
 		"0xFF5E5EA2DCEEACF3": {
 			"name": "LOCK_RADIO_STATION_TRACK_LIST",
 			"jhash": "",
-			"comment": "",
+			"comment": "locks the specified radio station track list.",
 			"params": [
 				{
 					"type": "const char*",
@@ -2995,20 +2991,20 @@
 		},
 		"0xC64A06D939F826F5": {
 			"name": "GET_NEXT_AUDIBLE_BEAT",
-			"jhash": "",
-			"comment": "",
+			"jhash": "0x779F6E40",
+			"comment": "timeS: time in seconds until the start of the next beat, bpm is current tempo in beats per minute, beatNum is integer beat within the bar\n",
 			"params": [
 				{
 					"type": "float*",
-					"name": "out1"
+					"name": "timeS"
 				},
 				{
 					"type": "float*",
-					"name": "out2"
+					"name": "bpm"
 				},
 				{
 					"type": "int*",
-					"name": "out3"
+					"name": "beatNum"
 				}
 			],
 			"return_type": "BOOL",
@@ -3090,7 +3086,7 @@
 		"0xBDA07E5950085E46": {
 			"name": "SET_AMBIENT_ZONE_STATE",
 			"jhash": "0x2849CAC9",
-			"comment": "Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
+			"comment": "Full list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json\nforceUpdate flag to force a zone to become disabled even if its currently active.\n the default disabling behaviour is that any state changes only get applied once the player leaves the zone.",
 			"params": [
 				{
 					"type": "const char*",
@@ -3098,11 +3094,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3111,7 +3107,7 @@
 		"0x218DD44AAAC964FF": {
 			"name": "CLEAR_AMBIENT_ZONE_STATE",
 			"jhash": "0xCDFF3C82",
-			"comment": "This function also has a p2, unknown. Signature AUDIO::CLEAR_AMBIENT_ZONE_STATE(const char* zoneName, bool p1, Any p2);\n\nStill needs more research.\n\nFull list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
+			"comment": "forceUpdate' flag to force a zone to become disabled even if its currently active\nthe default disabling behaviour is that any state changes only get applied once the player leaves the zone;\n\nStill needs more research.\n\nFull list of ambient zones by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json",
 			"params": [
 				{
 					"type": "const char*",
@@ -3119,7 +3115,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3136,11 +3132,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3157,7 +3153,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3174,11 +3170,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3195,11 +3191,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "forceUpdate"
 				}
 			],
 			"return_type": "void",
@@ -3221,7 +3217,7 @@
 		"0x5D2BFAAB8D956E0E": {
 			"name": "REFRESH_CLOSEST_OCEAN_SHORELINE",
 			"jhash": "",
-			"comment": "",
+			"comment": "refresh the closest shoreline using the nearest road position",
 			"params": [],
 			"return_type": "void",
 			"build": "573"
@@ -3271,7 +3267,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "applyValue"
 				}
 			],
 			"return_type": "int",
@@ -3280,7 +3276,7 @@
 		"0xB4F90FAF7670B16F": {
 			"name": "CANCEL_ALL_POLICE_REPORTS",
 			"jhash": "",
-			"comment": "",
+			"comment": "cancels all police reports in the scanner queue",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -3365,15 +3361,15 @@
 		"0x58BB377BEC7CD5F4": {
 			"name": "SET_VEHICLE_CONVERSATIONS_PERSIST",
 			"jhash": "0x8CE63FA1",
-			"comment": "SET_VEHICLE_CONVERSATIONS_PERSIST?",
+			"comment": "set vehicles conversations carry on even if the vehicle is on fire or upsidedown",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "allowUpsideDown"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "allowOnFire"
 				}
 			],
 			"return_type": "void",
@@ -3382,19 +3378,19 @@
 		"0x9BD7BD55E4533183": {
 			"name": "SET_VEHICLE_CONVERSATIONS_PERSIST_NEW",
 			"jhash": "",
-			"comment": "",
+			"comment": "see SET_VEHICLE_CONVERSATIONS_PERSIST",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "allowUpsideDown"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "allowOnFire"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "allowDrowning"
 				}
 			],
 			"return_type": "void",
@@ -3553,7 +3549,7 @@
 		"0xF8AD2EED7C47E8FE": {
 			"name": "BLOCK_ALL_SPEECH_FROM_PED",
 			"jhash": "",
-			"comment": "",
+			"comment": "suppressOutgoingNetSpeech flag can be set to false if you want speech triggered locally through PLAY_AMBIENT_SPEECH calls to still be audible",
 			"params": [
 				{
 					"type": "Ped",
@@ -3561,11 +3557,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "shouldBlock"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "suppressOutgoingNetSpeech"
 				}
 			],
 			"return_type": "void",
@@ -3574,7 +3570,7 @@
 		"0xAB6781A5F3101470": {
 			"name": "STOP_PED_SPEAKING_SYNCED",
 			"jhash": "",
-			"comment": "",
+			"comment": "stops a ped from saying any of their ambient dialogue",
 			"params": [
 				{
 					"type": "Ped",
@@ -3582,7 +3578,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -3621,15 +3617,15 @@
 		"0xA8A7D434AFB4B97B": {
 			"name": "BLOCK_SPEECH_CONTEXT_GROUP",
 			"jhash": "",
-			"comment": "",
+			"comment": "enum eAudContext\n{\n\tAUD_CONTEXT_BLOCK_PLAYER,\n\tAUD_CONTEXT_BLOCK_NPCS,\n\tAUD_CONTEXT_BLOCK_BUDDYS,\n\tAUD_CONTEXT_BLOCK_EVERYONE,\n\tAUD_CONTEXT_BLOCK_TARGETS_TOTAL\n};",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "groupName"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "audContext"
 				}
 			],
 			"return_type": "void",
@@ -3642,7 +3638,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "groupName"
 				}
 			],
 			"return_type": "void",
@@ -3833,11 +3829,11 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "soundName"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "setName"
 				}
 			],
 			"return_type": "void",
@@ -3865,12 +3861,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "forceReverseWarning"
 				}
 			],
 			"return_type": "void",
@@ -4218,7 +4214,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "fadeIn"
 				}
 			],
 			"return_type": "void",
@@ -4238,7 +4234,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "fadeOut"
 				}
 			],
 			"return_type": "void",
@@ -4257,7 +4253,7 @@
 		},
 		"0x2DD39BF3E2F9C47F": {
 			"name": "AUDIO_IS_SCRIPTED_MUSIC_PLAYING",
-			"jhash": "",
+			"jhash": "0x86E995D1",
 			"comment": "This is an alias of AUDIO_IS_MUSIC_PLAYING.",
 			"params": [],
 			"return_type": "BOOL",
@@ -4327,8 +4323,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "signalLevel"
 				}
 			],
 			"return_type": "void",
@@ -4374,11 +4370,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "override"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Hash",
+					"name": "windElevationHashName"
 				}
 			],
 			"return_type": "void",
@@ -4391,11 +4387,11 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "density"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "applyValue"
 				}
 			],
 			"return_type": "void",
@@ -4408,11 +4404,11 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "density"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "applyValue"
 				}
 			],
 			"return_type": "void",
@@ -4450,7 +4446,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "skip"
 				}
 			],
 			"return_type": "void",
@@ -4609,11 +4605,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "use"
 				},
 				{
 					"type": "Hash",
-					"name": "hash"
+					"name": "soundSetHash"
 				}
 			],
 			"return_type": "void",
@@ -4674,7 +4670,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "controlled"
 				}
 			],
 			"return_type": "void",
@@ -4708,15 +4704,15 @@
 		"0xC7ABCACA4985A766": {
 			"name": "PREPARE_SYNCHRONIZED_AUDIO_EVENT",
 			"jhash": "0xE1D91FD0",
-			"comment": "p1 is always 0 in the scripts",
+			"comment": "startOffsetMs is always 0 in the scripts",
 			"params": [
 				{
 					"type": "const char*",
 					"name": "audioEvent"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "startOffsetMs"
 				}
 			],
 			"return_type": "BOOL",
@@ -4830,11 +4826,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "oldSettingsName"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "newSettingsName"
 				}
 			],
 			"return_type": "void",
@@ -4843,11 +4839,11 @@
 		"0xB4BBFD9CD8B3922B": {
 			"name": "REMOVE_PORTAL_SETTINGS_OVERRIDE",
 			"jhash": "0xD24B4D0C",
-			"comment": " Found in the b617d scripts, duplicates removed: \n\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_CARSHOWROOM_PS_WINDOW_UNBROKEN\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_CIA_PS_WINDOW_UNBROKEN\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_DLC_HEIST_APARTMENT_DOOR_CLOSED\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_FINALEBANK_PS_VAULT_INTACT\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_MICHAEL_PS_BATHROOM_WITH_WINDOW\");",
+			"comment": "Found in the b617d scripts, duplicates removed: \n\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_CARSHOWROOM_PS_WINDOW_UNBROKEN\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_CIA_PS_WINDOW_UNBROKEN\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_DLC_HEIST_APARTMENT_DOOR_CLOSED\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_FINALEBANK_PS_VAULT_INTACT\");\n AUDIO::REMOVE_PORTAL_SETTINGS_OVERRIDE(\"V_MICHAEL_PS_BATHROOM_WITH_WINDOW\");",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "settingsName"
 				}
 			],
 			"return_type": "void",
@@ -4900,7 +4896,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "skip"
 				}
 			],
 			"return_type": "void",
@@ -4916,7 +4912,7 @@
 		},
 		"0x544810ED9DB6BBE6": {
 			"name": "HAS_LOADED_MP_DATA_SET",
-			"jhash": "",
+			"jhash": "query whether the audio has loaded the mp data set",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -4927,7 +4923,7 @@
 		},
 		"0x5B50ABB1FE3746F4": {
 			"name": "HAS_LOADED_SP_DATA_SET",
-			"jhash": "",
+			"jhash": "query whether the audio has loaded the SP data set",
 			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
@@ -4981,19 +4977,19 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "scriptName"
 				},
 				{
 					"type": "Hash",
 					"name": "model"
 				},
 				{
-					"type": "float",
-					"name": "p2"
+					"type": "int",
+					"name": "percentageChance"
 				},
 				{
-					"type": "float",
-					"name": "p3"
+					"type": "BOOL",
+					"name": "scenarioPedsOnly"
 				}
 			],
 			"return_type": "void",
@@ -5010,11 +5006,11 @@
 				},
 				{
 					"type": "Hash",
-					"name": "modelHash"
+					"name": "objectModel"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "percentageChance"
 				},
 				{
 					"type": "float",
@@ -5022,11 +5018,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p4"
+					"name": "objectGroupingId"
 				},
 				{
 					"type": "int",
-					"name": "p5"
+					"name": "setToWhichThisBrainBelongs"
 				}
 			],
 			"return_type": "void",
@@ -5060,7 +5056,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "setToWhichThisBrainBelongs"
 				}
 			],
 			"return_type": "void",
@@ -5150,15 +5146,15 @@
 		"0x07E5B515DB0636FC": {
 			"name": "RENDER_SCRIPT_CAMS",
 			"jhash": "0x74337969",
-			"comment": "ease - smooth transition between the camera's positions\neaseTime - Time in milliseconds for the transition to happen\n\nIf you have created a script (rendering) camera, and want to go back to the \ncharacter (gameplay) camera, call this native with render set to 0.\nSetting ease to 1 will smooth the transition.",
+			"comment": "ease - smooth transition between the camera's positions\neaseTime - Time in milliseconds for the transition to happen\n\nIf you have created a script (rendering) camera, and want to go back to the \ncharacter (gameplay) camera, call this native with render set to 0.\nSetting ease to 1 will smooth the transition.\nenum eRenderFlag\n{\n\tRO_NO_OPTIONS = 0,\n\tRO_STOP_RENDERING_OPTION_WHEN_PLAYER_EXITS_INTO_COVER = 1\n};",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "render"
+					"name": "ease"
 				},
 				{
 					"type": "BOOL",
-					"name": "ease"
+					"name": "easeTime"
 				},
 				{
 					"type": "int",
@@ -5166,15 +5162,15 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "lockInterpolationSourceFrame"
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "applyAcrossAllThreads"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "int",
+					"name": "renderFlags"
 				}
 			],
 			"return_type": "void",
@@ -5183,23 +5179,23 @@
 		"0xC819F3CBB62BF692": {
 			"name": "STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP",
 			"jhash": "0xD3C08183",
-			"comment": "This native makes the gameplay camera zoom into first person/third person with a special effect.",
+			"comment": "This native makes the gameplay camera zoom into first person/third person with a special effect.\nenum eCamSplineFlag\n{\n\tCAM_SPLINE_NO_SMOOTH = 0,\n\tCAM_SPLINE_SLOW_IN_SMOOTH = 1,\n\tCAM_SPLINE_SLOW_OUT_SMOOTH = 2,\n\tCAM_SPLINE_SLOW_IN_OUT_SMOOTH = 3,\n\tCAM_SPLINE_VERY_SLOW_IN = 4,\n\tCAM_SPLINE_VERY_SLOW_OUT = 5,\n\tCAM_SPLINE_VERY_SLOW_IN_SLOW_OUT = 6,\n\tCAM_SPLINE_SLOW_IN_VERY_SLOW_OUT = 7,\n\tCAM_SPLINE_VERY_SLOW_IN_VERY_SLOW_OUT = 8,\n\tCAM_SPLINE_EASE_IN = 9,\n\tCAM_SPLINE_EASE_OUT = 10,\n\tCAM_SPLINE_QUADRATIC_EASE_IN = 11,\n\tCAM_SPLINE_QUADRATIC_EASE_OUT = 12,\n\tCAM_SPLINE_QUADRATIC_EASE_IN_OUT = 13,\n\tCAM_SPLINE_CUBIC_EASE_IN = 14,\n\tCAM_SPLINE_CUBIC_EASE_OUT = 15,\n\tCAM_SPLINE_CUBIC_EASE_IN_OUT = 16,\n\tCAM_SPLINE_QUARTIC_EASE_IN = 17,\n\tCAM_SPLINE_QUARTIC_EASE_OUT = 18,\n\tCAM_SPLINE_QUARTIC_EASE_IN_OUT = 19,\n\tCAM_SPLINE_QUINTIC_EASE_IN = 20,\n\tCAM_SPLINE_QUINTIC_EASE_OUT = 21,\n\tCAM_SPLINE_QUINTIC_EASE_IN_OUT = 22,\n\tCAM_SPLINE_CIRCULAR_EASE_IN = 23,\n\tCAM_SPLINE_CIRCULAR_EASE_OUT = 24,\n\tCAM_SPLINE_CIRCULAR_EASE_IN_OUT = 25\n};",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "render"
+					"name": "applyAcrossAllThreads"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "distanceToBlend"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "camSplineFlags"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "renderFlags"
 				}
 			],
 			"return_type": "void",
@@ -5219,7 +5215,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "active"
 				}
 			],
 			"return_type": "Cam",
@@ -5228,7 +5224,7 @@
 		"0xB51194800B257161": {
 			"name": "CREATE_CAM_WITH_PARAMS",
 			"jhash": "0x23B02F15",
-			"comment": "camName is always set to \"DEFAULT_SCRIPTED_CAMERA\" in Rockstar's scripts.\n------------\nCamera names found in the b617d scripts:\n\"DEFAULT_ANIMATED_CAMERA\"\n\"DEFAULT_SCRIPTED_CAMERA\"\n\"DEFAULT_SCRIPTED_FLY_CAMERA\"\n\"DEFAULT_SPLINE_CAMERA\"\n------------\nSide Note: It seems p8 is basically to represent what would be the bool p1 within CREATE_CAM native. As well as the p9 since it's always 2 in scripts seems to represent what would be the last param within SET_CAM_ROT native which normally would be 2.",
+			"comment": "camName is always set to \"DEFAULT_SCRIPTED_CAMERA\" in Rockstar's scripts.\n------------\nCamera names found in the b617d scripts:\n\"DEFAULT_ANIMATED_CAMERA\"\n\"DEFAULT_SCRIPTED_CAMERA\"\n\"DEFAULT_SCRIPTED_FLY_CAMERA\"\n\"DEFAULT_SPLINE_CAMERA\"\n------------\nSide Note: It seems p8 is basically to represent what would be the bool p1 within CREATE_CAM native. As well as the p9 since it's always 2 in scripts seems to represent what would be the last param within SET_CAM_ROT native which normally would be 2.\nenum eRotationOrder\n{\n\tROT_EULER_XYZ,\n\tROT_EULER_XZY,\n\tROT_EULER_YZX,\n\tROT_EULER_YXZ,\n\tROT_EULER_ZXY,\n\tROT_EULER_ZYX\n};",
 			"params": [
 				{
 					"type": "const char*",
@@ -5264,11 +5260,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "active"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "rotOrder"
 				}
 			],
 			"return_type": "Cam",
@@ -5285,7 +5281,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "active"
 				}
 			],
 			"return_type": "Cam",
@@ -5294,7 +5290,7 @@
 		"0x6ABFA3E16460F22D": {
 			"name": "CREATE_CAMERA_WITH_PARAMS",
 			"jhash": "0x0688BE9A",
-			"comment": "p9 uses 2 by default",
+			"comment": "enum eRotationOrder\n{\n\tROT_EULER_XYZ,\n\tROT_EULER_XZY,\n\tROT_EULER_YZX,\n\tROT_EULER_YXZ,\n\tROT_EULER_ZXY,\n\tROT_EULER_ZYX\n};",
 			"params": [
 				{
 					"type": "Hash",
@@ -5330,11 +5326,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p8"
+					"name": "active"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "int",
+					"name": "rotOrder"
 				}
 			],
 			"return_type": "Cam",
@@ -5551,7 +5547,7 @@
 		"0xBFD8727AEA3CCEBA": {
 			"name": "SET_CAM_PARAMS",
 			"jhash": "0x2167CEBF",
-			"comment": "",
+			"comment": "enum eCamGraphType\n{\n\tGRAPH_TYPE_LINEAR = 0,\n\tGRAPH_TYPE_SIN_ACCEL_DECEL,\n\tGRAPH_TYPE_ACCEL,\n\tGRAPH_TYPE_DECEL,\n\tGRAPH_TYPE_SLOW_IN,\n\tGRAPH_TYPE_SLOW_OUT,\n\tGRAPH_TYPE_SLOW_IN_OUT,\n\tGRAPH_TYPE_VERY_SLOW_IN,\n\tGRAPH_TYPE_VERY_SLOW_OUT,\n\tGRAPH_TYPE_VERY_SLOW_IN_SLOW_OUT,\n\tGRAPH_TYPE_SLOW_IN_VERY_SLOW_OUT,\n\tGRAPH_TYPE_VERY_SLOW_IN_VERY_SLOW_OUT,\n\tGRAPH_TYPE_EASE_IN,\n\tGRAPH_TYPE_EASE_OUT,\n\tGRAPH_TYPE_QUADRATIC_EASE_IN,\n\tGRAPH_TYPE_QUADRATIC_EASE_OUT,\n\tGRAPH_TYPE_QUADRATIC_EASE_IN_OUT,\n\tGRAPH_TYPE_CUBIC_EASE_IN,\n\tGRAPH_TYPE_CUBIC_EASE_OUT,\n\tGRAPH_TYPE_CUBIC_EASE_IN_OUT,\n\tGRAPH_TYPE_QUARTIC_EASE_IN,\n\tGRAPH_TYPE_QUARTIC_EASE_OUT,\n\tGRAPH_TYPE_QUARTIC_EASE_IN_OUT,\n\tGRAPH_TYPE_QUINTIC_EASE_IN,\n\tGRAPH_TYPE_QUINTIC_EASE_OUT,\n\tGRAPH_TYPE_QUINTIC_EASE_IN_OUT,\n\tGRAPH_TYPE_CIRCULAR_EASE_IN,\n\tGRAPH_TYPE_CIRCULAR_EASE_OUT,\n\tGRAPH_TYPE_CIRCULAR_EASE_IN_OUT,\n\tGRAPH_TYPE_MAX\n};\nenum eRotationOrder\n{\n\tROT_EULER_XYZ,\n\tROT_EULER_XZY,\n\tROT_EULER_YZX,\n\tROT_EULER_YXZ,\n\tROT_EULER_ZXY,\n\tROT_EULER_ZYX\n};",
 			"params": [
 				{
 					"type": "Cam",
@@ -5586,20 +5582,20 @@
 					"name": "fieldOfView"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "duration"
 				},
 				{
 					"type": "int",
-					"name": "p9"
+					"name": "graphTypePos"
 				},
 				{
 					"type": "int",
-					"name": "p10"
+					"name": "graphTypeRot"
 				},
 				{
 					"type": "int",
-					"name": "p11"
+					"name": "rotOrder"
 				}
 			],
 			"return_type": "void",
@@ -5721,7 +5717,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "farClip"
 				}
 			],
 			"return_type": "void",
@@ -5806,19 +5802,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "nearOutPlane"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "nearInPlane"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "farInPlane"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "farOutPlane"
 				}
 			],
 			"return_type": "void",
@@ -5871,7 +5867,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "distance"
 				}
 			],
 			"return_type": "void",
@@ -5880,15 +5876,15 @@
 		"0xE111A7C0D200CBC5": {
 			"name": "SET_CAM_DOF_OVERRIDDEN_FOCUS_DISTANCE_BLEND_LEVEL",
 			"jhash": "",
-			"comment": "",
+			"comment": "range of blendLevel is 0.0f to 1.0f",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "camera"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "Blendlevel"
 				}
 			],
 			"return_type": "void",
@@ -5897,7 +5893,7 @@
 		"0x7DD234D6F3914C5B": {
 			"name": "SET_CAM_DOF_FNUMBER_OF_LENS",
 			"jhash": "",
-			"comment": "This native has its name defined inside its codE\n",
+			"comment": "range of Fnumber is (f/)0.5f to (f/)256.0f",
 			"params": [
 				{
 					"type": "Cam",
@@ -5905,7 +5901,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "Fnumber"
 				}
 			],
 			"return_type": "void",
@@ -5917,7 +5913,7 @@
 		"0x47B595D60664CFFA": {
 			"name": "SET_CAM_DOF_FOCAL_LENGTH_MULTIPLIER",
 			"jhash": "",
-			"comment": "Native name labeled within its code",
+			"comment": "range of multiplier is 0.1f to 10.0f",
 			"params": [
 				{
 					"type": "Cam",
@@ -5937,7 +5933,7 @@
 		"0xC669EEA5D031B7DE": {
 			"name": "SET_CAM_DOF_FOCUS_DISTANCE_BIAS",
 			"jhash": "",
-			"comment": "This native has a name defined inside its code",
+			"comment": "range of distanceBias is -100.0 to 100.0",
 			"params": [
 				{
 					"type": "Cam",
@@ -5945,7 +5941,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "distanceBias"
 				}
 			],
 			"return_type": "void",
@@ -5957,7 +5953,7 @@
 		"0xC3654A441402562D": {
 			"name": "SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE",
 			"jhash": "",
-			"comment": "This native has a name defined inside its code",
+			"comment": "range of distance is 0.0 to 99999.0",
 			"params": [
 				{
 					"type": "Cam",
@@ -5965,7 +5961,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "distance"
 				}
 			],
 			"return_type": "void",
@@ -5977,7 +5973,7 @@
 		"0x2C654B4943BDDF7C": {
 			"name": "SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE_BLEND_LEVEL",
 			"jhash": "",
-			"comment": "This native has a name defined inside its code",
+			"comment": "range of blendLevel is 0.0 to 1.0",
 			"params": [
 				{
 					"type": "Cam",
@@ -5985,7 +5981,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "blendLevel"
 				}
 			],
 			"return_type": "void",
@@ -6083,31 +6079,31 @@
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "rotX"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "rotY"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "rotZ"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "posX"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "posY"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "posZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "isRelative"
 				}
 			],
 			"return_type": "void",
@@ -6243,8 +6239,8 @@
 					"name": "cam"
 				},
 				{
-					"type": "BOOL",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				}
 			],
 			"return_type": "void",
@@ -6278,7 +6274,7 @@
 		"0x5640BFF86B16E8DC": {
 			"name": "POINT_CAM_AT_ENTITY",
 			"jhash": "0x7597A0F7",
-			"comment": "p5 always seems to be 1 i.e TRUE",
+			"comment": "isRelative is always true",
 			"params": [
 				{
 					"type": "Cam",
@@ -6290,19 +6286,19 @@
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "vecX"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "vecY"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "vecZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isRelative"
 				}
 			],
 			"return_type": "void",
@@ -6311,7 +6307,7 @@
 		"0x68B2B5F33BA63C41": {
 			"name": "POINT_CAM_AT_PED_BONE",
 			"jhash": "0x09F47049",
-			"comment": "Parameters p0-p5 seems correct. The bool p6 is unknown, but through every X360 script it's always 1. Please correct p0-p5 if any prove to be wrong. ",
+			"comment": "isRelative is always true",
 			"params": [
 				{
 					"type": "Cam",
@@ -6327,19 +6323,19 @@
 				},
 				{
 					"type": "float",
-					"name": "x"
+					"name": "vecX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "vecY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "vecZ"
 				},
 				{
 					"type": "BOOL",
-					"name": "p6"
+					"name": "isRelative"
 				}
 			],
 			"return_type": "void",
@@ -6421,12 +6417,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "camera"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -6435,7 +6431,7 @@
 		"0x1B93E0107865DD40": {
 			"name": "SET_CAM_DEBUG_NAME",
 			"jhash": "0x9B00DF3F",
-			"comment": "NOTE: Debugging functions are not present in the retail version of the game.",
+			"comment": "NOTE: Debugging functions are not present in the retail version of the game.\nif used, the value will be returned to 'debug name not in final build'",
 			"params": [
 				{
 					"type": "Cam",
@@ -6452,7 +6448,7 @@
 		"0x77C3CEC46BE286F6": {
 			"name": "GET_DEBUG_CAM",
 			"jhash": "",
-			"comment": "",
+			"comment": "if used, the value will be returned to 'debug name not in final build'",
 			"params": [],
 			"return_type": "Cam",
 			"build": "2372",
@@ -6562,7 +6558,7 @@
 		"0x609278246A29CA34": {
 			"name": "ADD_CAM_SPLINE_NODE_USING_GAMEPLAY_FRAME",
 			"jhash": "0xB4737F03",
-			"comment": "p2 is always 2 in scripts. It might be smoothing style or rotation order.",
+			"comment": "enum eCamSplineMode\n{\n\tCAM_SPLINE_NODE_NO_FLAGS = 0,\n\tCAM_SPLINE_NODE_SMOOTH_ROT = 1,\n\tCAM_SPLINE_NODE_SMOOTH_LENS_PARAMS = 2,\n\tCAM_SPLINE_NODE_EASE_IN = 4,\n\tCAM_SPLINE_NODE_EASE_OUT = 8, \n\tCAM_SPLINE_NODE_EASE_INOUT = 16\n};",
 			"params": [
 				{
 					"type": "Cam",
@@ -6570,11 +6566,11 @@
 				},
 				{
 					"type": "int",
-					"name": "length"
+					"name": "duration"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "splineMode"
 				}
 			],
 			"return_type": "void",
@@ -6583,7 +6579,7 @@
 		"0x242B5874F0A4E052": {
 			"name": "SET_CAM_SPLINE_PHASE",
 			"jhash": "0xF0AED233",
-			"comment": "",
+			"comment": "phase should be between 0.0 and 1.0",
 			"params": [
 				{
 					"type": "Cam",
@@ -6591,7 +6587,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "phase"
 				}
 			],
 			"return_type": "void",
@@ -6643,7 +6639,7 @@
 		"0xD1B0F412F109EA5D": {
 			"name": "SET_CAM_SPLINE_SMOOTHING_STYLE",
 			"jhash": "0x15E141CE",
-			"comment": "",
+			"comment": "enum eCamSplineFlag\n{\n\tCAM_SPLINE_NO_SMOOTH = 0,\n\tCAM_SPLINE_SLOW_IN_SMOOTH = 1,\n\tCAM_SPLINE_SLOW_OUT_SMOOTH = 2,\n\tCAM_SPLINE_SLOW_IN_OUT_SMOOTH = 3,\n\tCAM_SPLINE_VERY_SLOW_IN = 4,\n\tCAM_SPLINE_VERY_SLOW_OUT = 5,\n\tCAM_SPLINE_VERY_SLOW_IN_SLOW_OUT = 6,\n\tCAM_SPLINE_SLOW_IN_VERY_SLOW_OUT = 7,\n\tCAM_SPLINE_VERY_SLOW_IN_VERY_SLOW_OUT = 8,\n\tCAM_SPLINE_EASE_IN = 9,\n\tCAM_SPLINE_EASE_OUT = 10,\n\tCAM_SPLINE_QUADRATIC_EASE_IN = 11,\n\tCAM_SPLINE_QUADRATIC_EASE_OUT = 12,\n\tCAM_SPLINE_QUADRATIC_EASE_IN_OUT = 13,\n\tCAM_SPLINE_CUBIC_EASE_IN = 14,\n\tCAM_SPLINE_CUBIC_EASE_OUT = 15,\n\tCAM_SPLINE_CUBIC_EASE_IN_OUT = 16,\n\tCAM_SPLINE_QUARTIC_EASE_IN = 17,\n\tCAM_SPLINE_QUARTIC_EASE_OUT = 18,\n\tCAM_SPLINE_QUARTIC_EASE_IN_OUT = 19,\n\tCAM_SPLINE_QUINTIC_EASE_IN = 20,\n\tCAM_SPLINE_QUINTIC_EASE_OUT = 21,\n\tCAM_SPLINE_QUINTIC_EASE_IN_OUT = 22,\n\tCAM_SPLINE_CIRCULAR_EASE_IN = 23,\n\tCAM_SPLINE_CIRCULAR_EASE_OUT = 24,\n\tCAM_SPLINE_CIRCULAR_EASE_IN_OUT = 25\n};",
 			"params": [
 				{
 					"type": "Cam",
@@ -6681,15 +6677,15 @@
 				},
 				{
 					"type": "int",
-					"name": "easingFunction"
+					"name": "nodeIndex"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "splineMode"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -6706,7 +6702,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "nodeIndex"
 				},
 				{
 					"type": "float",
@@ -6727,15 +6723,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "entry"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "startPoint"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "speed"
 				}
 			],
 			"return_type": "void",
@@ -6744,7 +6740,7 @@
 		"0x7DCF7C708D292D55": {
 			"name": "OVERRIDE_CAM_SPLINE_MOTION_BLUR",
 			"jhash": "0x633179E6",
-			"comment": "Max value for p1 is 15.",
+			"comment": "Max value for entry is 15.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6752,15 +6748,15 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "entry"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "blurStart"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "motionBlur"
 				}
 			],
 			"return_type": "void",
@@ -6777,11 +6773,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "nodeIndex"
 				},
 				{
 					"type": "int",
-					"name": "flags"
+					"name": "splineMode"
 				}
 			],
 			"return_type": "void",
@@ -6874,15 +6870,15 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "animDictionary"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "animClipName"
 				},
 				{
 					"type": "const char*",
-					"name": "p3"
+					"name": "shakeName"
 				},
 				{
 					"type": "float",
@@ -6946,11 +6942,11 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "shakeName"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "amplitude"
 				}
 			],
 			"return_type": "void",
@@ -6963,19 +6959,19 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "animDictionary"
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "animClipName"
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "shakeName"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "amplitude"
 				}
 			],
 			"return_type": "void",
@@ -6996,7 +6992,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -7013,11 +7009,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "vehiclePart"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "amplitude"
 				}
 			],
 			"return_type": "void",
@@ -7026,7 +7022,7 @@
 		"0x9A2D0FB2E7852392": {
 			"name": "PLAY_CAM_ANIM",
 			"jhash": "0xBCEFB87E",
-			"comment": "Atleast one time in a script for the zRot Rockstar uses GET_ENTITY_HEADING to help fill the parameter.\n\np9 is unknown at this time.\np10 throughout all the X360 Scripts is always 2.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
+			"comment": "Atleast one time in a script for the zRot Rockstar uses GET_ENTITY_HEADING to help fill the parameter.\n\np9 is unknown at this time.\np10 throughout all the X360 Scripts is always 2.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json \nenum eCamAnimFlag\n{\n\tCAF_DEFAULT = 0,\n\tCAF_LOOPING = 1\n};",
 			"params": [
 				{
 					"type": "Cam",
@@ -7066,11 +7062,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "animFlag"
 				},
 				{
 					"type": "int",
-					"name": "p10"
+					"name": "rotOrder"
 				}
 			],
 			"return_type": "BOOL",
@@ -7133,12 +7129,12 @@
 			"comment": "Examples:\n\nCAM::PLAY_SYNCHRONIZED_CAM_ANIM(l_2734, NETWORK::NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID(l_2739), \"PLAYER_EXIT_L_CAM\", \"mp_doorbell\");\n\nCAM::PLAY_SYNCHRONIZED_CAM_ANIM(l_F0D[7/*1*/], l_F4D[15/*1*/], \"ah3b_attackheli_cam2\", \"missheistfbi3b_helicrash\");",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "camera"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "sceneId"
 				},
 				{
 					"type": "const char*",
@@ -7146,7 +7142,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "animDictionary"
+					"name": "animDictName"
 				}
 			],
 			"return_type": "BOOL",
@@ -7155,7 +7151,7 @@
 		"0x503F5920162365B2": {
 			"name": "SET_FLY_CAM_HORIZONTAL_RESPONSE",
 			"jhash": "0x56F9ED27",
-			"comment": "",
+			"comment": "the acceleration, deceleration and speed limits for horizontal translation of the specified scripted fly camera",
 			"params": [
 				{
 					"type": "Cam",
@@ -7163,15 +7159,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "maxSpeed"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "maxAcceleration"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "maxDeceleration"
 				}
 			],
 			"return_type": "void",
@@ -7179,7 +7175,7 @@
 		},
 		"0xE827B9382CFB41BA": {
 			"name": "SET_FLY_CAM_VERTICAL_RESPONSE",
-			"jhash": "",
+			"jhash": "the acceleration, deceleration and speed limits for vertical translation of the specified scripted fly camera",
 			"comment": "",
 			"params": [
 				{
@@ -7188,15 +7184,15 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "maxSpeed"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "maxAcceleration"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "maxDeceleration"
 				}
 			],
 			"return_type": "void",
@@ -7337,15 +7333,15 @@
 		"0xDCD4EA924F42D01A": {
 			"name": "SET_WIDESCREEN_BORDERS",
 			"jhash": "0x1A75DC9A",
-			"comment": "",
+			"comment": "requests to display borders that make the screen look widescreen or wider in running on a widescreen telly",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "set"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "duration"
 				}
 			],
 			"return_type": "void",
@@ -7354,7 +7350,7 @@
 		"0x4879E4FE39074CDF": {
 			"name": "ARE_WIDESCREEN_BORDERS_ACTIVE",
 			"jhash": "",
-			"comment": "",
+			"comment": "are the widescreen borders still visible on the screen",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "372"
@@ -7395,7 +7391,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "scaling"
 				}
 			],
 			"return_type": "void",
@@ -7408,7 +7404,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "maxStrength"
 				}
 			],
 			"return_type": "void",
@@ -7483,7 +7479,7 @@
 				},
 				{
 					"type": "float",
-					"name": "yaw"
+					"name": "pitchRate"
 				}
 			],
 			"return_type": "void",
@@ -7499,11 +7495,11 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "heading"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "pitch"
 				}
 			],
 			"return_type": "void",
@@ -7516,7 +7512,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "yaw"
+					"name": "heading"
 				}
 			],
 			"return_type": "void",
@@ -7548,7 +7544,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -7599,7 +7595,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -7649,7 +7645,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -7784,7 +7780,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "duration"
 				}
 			],
 			"return_type": "BOOL",
@@ -7800,11 +7796,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "vehicles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "peds"
 				}
 			],
 			"return_type": "void",
@@ -7865,11 +7861,11 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "minimum"
 				},
 				{
 					"type": "float",
-					"name": "distance"
+					"name": "maximum"
 				}
 			],
 			"return_type": "void",
@@ -7881,15 +7877,15 @@
 		"0xE9EA16D6E54CDCA4": {
 			"name": "SET_IN_VEHICLE_CAM_STATE_THIS_UPDATE",
 			"jhash": "0x4B22C5CB",
-			"comment": "Forces gameplay cam to specified vehicle as if you were in it",
+			"comment": "Forces gameplay cam to specified vehicle as if you were in it\nenum eCamVehState\n{\n\tCAM_ENTERING_VEHICLE = 0,\n\tCAM_INSIDE_VEHICLE = 1,\n\tCAM_EXITING_VEHICLE = 2,\n\tCAM_OUTSIDE_VEHICLE = 3\n};",
 			"params": [
 				{
 					"type": "Vehicle",
-					"name": "p0"
+					"name": "vehicle"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "inVehState"
 				}
 			],
 			"return_type": "void",
@@ -7966,7 +7962,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -7979,11 +7975,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "mode"
 				}
 			],
 			"return_type": "void",
@@ -8080,7 +8076,7 @@
 		"0x19CAFA3C87F7C2FF": {
 			"name": "GET_CAM_ACTIVE_VIEW_MODE_CONTEXT",
 			"jhash": "",
-			"comment": "enum Context\n{\n\tON_FOOT,\n\tIN_VEHICLE,\n\tON_BIKE,\n\tIN_BOAT,\n\tIN_AIRCRAFT,\n\tIN_SUBMARINE,\n\tIN_HELI,\n\tIN_TURRET\n};",
+			"comment": "enum eContext\n{\n\tON_FOOT,\n\tIN_VEHICLE,\n\tON_BIKE,\n\tIN_BOAT,\n\tIN_AIRCRAFT,\n\tIN_SUBMARINE,\n\tIN_HELI,\n\tIN_TURRET\n};",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -8205,11 +8201,11 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "minZoom"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "maxZoom"
 				}
 			],
 			"return_type": "void",
@@ -8222,11 +8218,11 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "minHeading"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "maxHeading"
 				}
 			],
 			"return_type": "void",
@@ -8239,11 +8235,11 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "minPitch"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "maxPitch"
 				}
 			],
 			"return_type": "void",
@@ -8259,7 +8255,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "nearClip"
 				}
 			],
 			"return_type": "void",
@@ -8275,7 +8271,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "nearClip"
 				}
 			],
 			"return_type": "void",
@@ -8291,7 +8287,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "state"
 				}
 			],
 			"return_type": "void",
@@ -8438,15 +8434,15 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "x"
+					"name": "coordX"
 				},
 				{
 					"type": "float",
-					"name": "y"
+					"name": "coordY"
 				},
 				{
 					"type": "float",
-					"name": "z"
+					"name": "coordZ"
 				},
 				{
 					"type": "int",
@@ -8462,7 +8458,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p6"
+					"name": "hint"
 				}
 			],
 			"return_type": "void",
@@ -8491,7 +8487,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "relative"
 				},
 				{
 					"type": "int",
@@ -8532,7 +8528,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "relative"
 				},
 				{
 					"type": "int",
@@ -8573,7 +8569,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "relative"
 				},
 				{
 					"type": "int",
@@ -8614,7 +8610,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "relative"
 				},
 				{
 					"type": "int",
@@ -8630,7 +8626,7 @@
 				},
 				{
 					"type": "int",
-					"name": "p8"
+					"name": "hint"
 				}
 			],
 			"return_type": "void",
@@ -8651,7 +8647,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -8664,7 +8660,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "cancel"
 				}
 			],
 			"return_type": "void",
@@ -8677,7 +8673,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -8698,7 +8694,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "FOV"
+					"name": "fov"
 				}
 			],
 			"return_type": "void",
@@ -8711,7 +8707,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "value"
+					"name": "distanceScalar"
 				}
 			],
 			"return_type": "void",
@@ -8727,7 +8723,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "value"
+					"name": "basePitch"
 				}
 			],
 			"return_type": "void",
@@ -8743,7 +8739,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "xOffset"
+					"name": "side"
 				}
 			],
 			"return_type": "void",
@@ -8759,7 +8755,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "yOffset"
+					"name": "vertical"
 				}
 			],
 			"return_type": "void",
@@ -8792,7 +8788,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -8838,7 +8834,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "amplitude"
 				}
 			],
 			"return_type": "void",
@@ -8851,7 +8847,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -8921,19 +8917,19 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "shot"
 				},
 				{
 					"type": "int",
 					"name": "time"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "Entity",
+					"name": "attachEntity"
 				},
 				{
 					"type": "Entity",
-					"name": "entity"
+					"name": "lookAtEntity"
 				}
 			],
 			"return_type": "void",
@@ -8946,7 +8942,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "shot"
 				}
 			],
 			"return_type": "BOOL",
@@ -8959,7 +8955,7 @@
 			"params": [
 				{
 					"type": "Hash",
-					"name": "p0"
+					"name": "shot"
 				}
 			],
 			"return_type": "void",
@@ -9055,12 +9051,12 @@
 		},
 		"0x324C5AA411DA7737": {
 			"name": "STOP_CUTSCENE_CAM_SHAKING",
-			"jhash": "",
+			"jhash": "0xF07D603D",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
@@ -9073,7 +9069,7 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "farClip"
 				}
 			],
 			"return_type": "void",
@@ -9086,39 +9082,39 @@
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "maxDistance"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "boneTag"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "maxScreenWidth"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "maxScreenHeigh"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "minRelativeHeading"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "maxScreenCentre"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "maxScreenRatio"
 				},
 				{
 					"type": "int",
-					"name": "p7"
+					"name": "boneTag1"
 				},
 				{
 					"type": "int",
-					"name": "p8"
+					"name": "boneTag2"
 				}
 			],
 			"return_type": "Ped",
@@ -9151,11 +9147,11 @@
 		"0x5C41E6BABC9E2112": {
 			"name": "SET_FIRST_PERSON_FLASH_EFFECT_TYPE",
 			"jhash": "",
-			"comment": "",
+			"comment": "enum eFpsFlashType\n{\n\tFLASH_TYPE_NEUTRAL = 0,\n\tFLASH_TYPE_MICHAEL,\n\tFLASH_TYPE_FRANKLIN,\n\tFLASH_TYPE_TREVOR\n};",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "Flashtype"
 				}
 			],
 			"return_type": "void",
@@ -9225,7 +9221,7 @@
 		"0x47C3B5848C3E45D8": {
 			"name": "SET_CLOCK_TIME",
 			"jhash": "0x26F6AF14",
-			"comment": "SET_CLOCK_TIME(12, 34, 56);",
+			"comment": "SET_CLOCK_TIME(12, 34, 56);\nenum eSimpleTime\n{\n\tST_NIGHT,\n\tST_MIDNIGHT,\n\tST_DAWN,\n\tST_MORNING, \n\tST_AFTERNOON,\n\tST_EVENING\n};",
 			"params": [
 				{
 					"type": "int",
@@ -9325,7 +9321,7 @@
 		"0xB096419DF0D06CE7": {
 			"name": "SET_CLOCK_DATE",
 			"jhash": "0x96891C94",
-			"comment": "",
+			"comment": "enum eMonth\n{\n\tJANUARY = 0,\n\tFEBRUARY,\n\tMARCH,\n\tAPRIL,\n\tMAY,\n\tJUNE,\n\tJULY,\n\tAUGUST,\n\tSEPTEMBER,\n\tOCTOBER,\n\tNOVEMBER,\n\tDECEMBER\n};",
 			"params": [
 				{
 					"type": "int",
