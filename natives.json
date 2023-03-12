@@ -1883,7 +1883,7 @@
         {
           "type": "FLOAT",
           "name": "RawDamage",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -3274,7 +3274,7 @@
         {
           "type": "FLOAT",
           "name": "applyValue",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "INT",
@@ -4218,7 +4218,7 @@
         {
           "type": "FLOAT",
           "name": "fadeIn",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -4239,7 +4239,7 @@
         {
           "type": "FLOAT",
           "name": "fadeOut",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -5182,7 +5182,7 @@
         {
           "type": "FLOAT",
           "name": "DistanceToBlend",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "CAM_SPLINE_SMOOTHING_FLAGS",
@@ -5239,7 +5239,7 @@
         {
           "type": "FLOAT",
           "name": "FOV",
-          "defaultValue": "65"
+          "defaultValue": "65.0"
         },
         {
           "type": "BOOL",
@@ -5294,7 +5294,7 @@
         {
           "type": "FLOAT",
           "name": "FOV",
-          "defaultValue": "65"
+          "defaultValue": "65.0"
         },
         {
           "type": "BOOL",
@@ -6543,7 +6543,7 @@
         {
           "type": "FLOAT",
           "name": "Scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -6714,7 +6714,7 @@
         {
           "type": "FLOAT",
           "name": "fAmplitudeScalar",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -6744,7 +6744,7 @@
         {
           "type": "FLOAT",
           "name": "fAmplitudeScalar",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -6775,7 +6775,7 @@
         {
           "type": "FLOAT",
           "name": "fAmplitudeScalar",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -6811,7 +6811,7 @@
         {
           "type": "FLOAT",
           "name": "fAmplitudeScalar",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -6837,7 +6837,7 @@
         {
           "type": "FLOAT",
           "name": "fAmplitudeScalar",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -6881,7 +6881,7 @@
         {
           "type": "FLOAT",
           "name": "amplitude",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -7014,17 +7014,17 @@
         {
           "type": "FLOAT",
           "name": "maxSpeed",
-          "defaultValue": "40"
+          "defaultValue": "40.0"
         },
         {
           "type": "FLOAT",
           "name": "maxAcceleration",
-          "defaultValue": "40"
+          "defaultValue": "40.0"
         },
         {
           "type": "FLOAT",
           "name": "maxDeceleration",
-          "defaultValue": "200"
+          "defaultValue": "200.0"
         }
       ],
       "return_type": "void",
@@ -7042,17 +7042,17 @@
         {
           "type": "FLOAT",
           "name": "maxSpeed",
-          "defaultValue": "40"
+          "defaultValue": "40.0"
         },
         {
           "type": "FLOAT",
           "name": "maxAcceleration",
-          "defaultValue": "40"
+          "defaultValue": "40.0"
         },
         {
           "type": "FLOAT",
           "name": "maxDeceleration",
-          "defaultValue": "200"
+          "defaultValue": "200.0"
         }
       ],
       "return_type": "void",
@@ -7073,7 +7073,7 @@
         {
           "type": "FLOAT",
           "name": "maxHeight",
-          "defaultValue": "500"
+          "defaultValue": "500.0"
         }
       ],
       "return_type": "void",
@@ -7280,7 +7280,7 @@
         {
           "type": "FLOAT",
           "name": "heading",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -7302,12 +7302,12 @@
         {
           "type": "FLOAT",
           "name": "pitch",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "smoothRate",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -7329,17 +7329,17 @@
         {
           "type": "FLOAT",
           "name": "heading",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "pitch",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "pitchSmoothRate",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -7356,12 +7356,12 @@
         {
           "type": "FLOAT",
           "name": "heading",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "pitch",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -7375,7 +7375,7 @@
         {
           "type": "FLOAT",
           "name": "heading",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -7392,7 +7392,7 @@
         {
           "type": "FLOAT",
           "name": "pitch",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -7427,7 +7427,7 @@
         {
           "type": "FLOAT",
           "name": "fAmplitudeScalar",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -7449,7 +7449,7 @@
         {
           "type": "FLOAT",
           "name": "fAmplitudeScalar",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -8659,7 +8659,7 @@
         {
           "type": "FLOAT",
           "name": "fAmplitudeScalar",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -8681,7 +8681,7 @@
         {
           "type": "FLOAT",
           "name": "fAmplitudeScalar",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -8932,7 +8932,7 @@
         {
           "type": "FLOAT",
           "name": "maxDistanceFromCamera",
-          "defaultValue": "30"
+          "defaultValue": "30.0"
         },
         {
           "type": "PED_BONETAG",
@@ -8942,27 +8942,27 @@
         {
           "type": "FLOAT",
           "name": "maxScreenWidthRatioAroundCentreForTestBone",
-          "defaultValue": "0"
+          "defaultValue": "0.8"
         },
         {
           "type": "FLOAT",
           "name": "maxScreenHeightRatioAroundCentreForTestBone",
-          "defaultValue": "0"
+          "defaultValue": "0.7"
         },
         {
           "type": "FLOAT",
           "name": "minRelativeHeadingScore",
-          "defaultValue": "0"
+          "defaultValue": "0.25"
         },
         {
           "type": "FLOAT",
           "name": "maxScreenCentreScoreBoost",
-          "defaultValue": "8"
+          "defaultValue": "8.0"
         },
         {
           "type": "FLOAT",
           "name": "maxScreenRatioAroundCentreForScoreBoost",
-          "defaultValue": "0"
+          "defaultValue": "0.333"
         },
         {
           "type": "PED_BONETAG",
@@ -12951,7 +12951,7 @@
         {
           "type": "FLOAT",
           "name": "fAngleToVerticalLimit",
-          "defaultValue": "90"
+          "defaultValue": "90.0"
         }
       ],
       "return_type": "BOOL",
@@ -13493,7 +13493,7 @@
         {
           "type": "FLOAT",
           "name": "StartPhase",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "INT",
@@ -13532,7 +13532,7 @@
         {
           "type": "FLOAT",
           "name": "BlendOutDelta",
-          "defaultValue": "8"
+          "defaultValue": "8.0"
         },
         {
           "type": "INT",
@@ -13542,7 +13542,7 @@
         {
           "type": "FLOAT",
           "name": "MoverBlendInDelta",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         }
       ],
       "return_type": "BOOL",
@@ -13583,7 +13583,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "BlendOutDelta"
+          "name": "BlendOutDelta",
+          "defaultValue": "-8.0"
         },
         {
           "type": "INT",
@@ -13593,7 +13594,7 @@
         {
           "type": "FLOAT",
           "name": "MoverBlendInDelta",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         }
       ],
       "return_type": "BOOL",
@@ -14190,7 +14191,7 @@
         {
           "type": "FLOAT",
           "name": "fTargetableDistance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -15361,7 +15362,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "overrideLifeTime"
+          "name": "overrideLifeTime",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "INT",
@@ -15382,7 +15384,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "overrideLifeTime"
+          "name": "overrideLifeTime",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "INT",
@@ -16536,7 +16539,7 @@
         {
           "type": "FLOAT",
           "name": "SizeScale",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "BOOL",
@@ -16551,7 +16554,7 @@
         {
           "type": "FLOAT",
           "name": "CamShakeMultiplier",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -16582,7 +16585,7 @@
         {
           "type": "FLOAT",
           "name": "SizeScale",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "BOOL",
@@ -16597,7 +16600,7 @@
         {
           "type": "FLOAT",
           "name": "CamShakeMultiplier",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -16623,7 +16626,7 @@
         {
           "type": "FLOAT",
           "name": "SizeScale",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "BOOL",
@@ -16638,7 +16641,7 @@
         {
           "type": "FLOAT",
           "name": "CamShakeMultiplier",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -17874,7 +17877,7 @@
         {
           "type": "FLOAT",
           "name": "seconds",
-          "defaultValue": "4"
+          "defaultValue": "4.0"
         }
       ],
       "return_type": "void",
@@ -19884,7 +19887,7 @@
         {
           "type": "FLOAT",
           "name": "interpolationTime",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -20781,7 +20784,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -20822,7 +20825,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -20879,7 +20882,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -20928,7 +20931,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -20976,7 +20979,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21021,7 +21024,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21068,12 +21071,13 @@
         },
         {
           "type": "INT",
-          "name": "boneIndex"
+          "name": "boneIndex",
+          "defaultValue": "-1"
         },
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21193,7 +21197,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21247,7 +21251,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21292,7 +21296,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21336,12 +21340,13 @@
         },
         {
           "type": "INT",
-          "name": "boneIndex"
+          "name": "boneIndex",
+          "defaultValue": "-1"
         },
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21386,7 +21391,7 @@
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21406,17 +21411,17 @@
         {
           "type": "FLOAT",
           "name": "colorR",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "FLOAT",
           "name": "colorG",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "FLOAT",
           "name": "colorB",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21453,12 +21458,13 @@
         },
         {
           "type": "INT",
-          "name": "boneIndex"
+          "name": "boneIndex",
+          "defaultValue": "-1"
         },
         {
           "type": "FLOAT",
           "name": "scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -21478,17 +21484,17 @@
         {
           "type": "FLOAT",
           "name": "colorR",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "FLOAT",
           "name": "colorG",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "FLOAT",
           "name": "colorB",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -25184,7 +25190,7 @@
         {
           "type": "FLOAT",
           "name": "timeMultiplier",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "INT",
@@ -25226,7 +25232,7 @@
         {
           "type": "FLOAT",
           "name": "timeMultiplier",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "STRING",
@@ -25273,7 +25279,7 @@
         {
           "type": "FLOAT",
           "name": "timeMultiplier",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "STRING",
@@ -25683,11 +25689,13 @@
         },
         {
           "type": "HUD_COLOURS",
-          "name": "iCustomColor1"
+          "name": "iCustomColor1",
+          "defaultValue": "-1"
         },
         {
           "type": "HUD_COLOURS",
-          "name": "iCustomColor2"
+          "name": "iCustomColor2",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "INT",
@@ -25950,7 +25958,8 @@
         },
         {
           "type": "INT",
-          "name": "OverrideDuration"
+          "name": "OverrideDuration",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -26936,7 +26945,7 @@
         {
           "type": "FLOAT",
           "name": "fOffset",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -27211,7 +27220,8 @@
       "params": [
         {
           "type": "FLOAT",
-          "name": "TextYScale"
+          "name": "TextYScale",
+          "defaultValue": "-1.0"
         },
         {
           "type": "TEXT_FONTS",
@@ -27601,7 +27611,8 @@
         },
         {
           "type": "INT",
-          "name": "iAlpha"
+          "name": "iAlpha",
+          "defaultValue": "-1"
         },
         {
           "type": "eARROW_DIRECTION",
@@ -27956,7 +27967,7 @@
         {
           "type": "FLOAT",
           "name": "blipScale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -29075,7 +29086,8 @@
         },
         {
           "type": "HUD_COLOURS",
-          "name": "color"
+          "name": "color",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -29150,12 +29162,12 @@
         {
           "type": "FLOAT",
           "name": "fPosX",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "fPosY",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "INT",
@@ -29247,7 +29259,7 @@
         {
           "type": "FLOAT",
           "name": "fPosZ",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -29644,7 +29656,7 @@
         {
           "type": "FLOAT",
           "name": "fBlippedRouteDisplayDistance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -30559,7 +30571,8 @@
         },
         {
           "type": "INT",
-          "name": "iAlpha"
+          "name": "iAlpha",
+          "defaultValue": "-1"
         },
         {
           "type": "eARROW_DIRECTION",
@@ -31079,7 +31092,8 @@
         },
         {
           "type": "INT",
-          "name": "NumberToInsert"
+          "name": "NumberToInsert",
+          "defaultValue": "-1"
         },
         {
           "type": "STRING",
@@ -31134,7 +31148,8 @@
         },
         {
           "type": "INT",
-          "name": "NumberToInsert"
+          "name": "NumberToInsert",
+          "defaultValue": "-1"
         },
         {
           "type": "STRING",
@@ -31192,7 +31207,8 @@
         },
         {
           "type": "INT",
-          "name": "NumberToInsert"
+          "name": "NumberToInsert",
+          "defaultValue": "-1"
         },
         {
           "type": "WARNING_MESSAGE_FLAGS",
@@ -31259,7 +31275,8 @@
         },
         {
           "type": "INT",
-          "name": "NumberToInsert"
+          "name": "NumberToInsert",
+          "defaultValue": "-1"
         },
         {
           "type": "STRING",
@@ -31321,7 +31338,8 @@
         },
         {
           "type": "INT",
-          "name": "NumberToInsert"
+          "name": "NumberToInsert",
+          "defaultValue": "-1"
         },
         {
           "type": "WARNING_MESSAGE_FLAGS",
@@ -32077,7 +32095,8 @@
         },
         {
           "type": "INT",
-          "name": "characterSlot"
+          "name": "characterSlot",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -32169,7 +32188,8 @@
         },
         {
           "type": "INT",
-          "name": "characterSlot"
+          "name": "characterSlot",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -34528,7 +34548,7 @@
         {
           "type": "FLOAT",
           "name": "TransitionTime",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -34549,7 +34569,7 @@
         {
           "type": "FLOAT",
           "name": "TransitionTime",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -34636,12 +34656,12 @@
         {
           "type": "FLOAT",
           "name": "MinFloat",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "MaxFloat",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "FLOAT",
@@ -36168,7 +36188,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "InitialVelocity"
+          "name": "InitialVelocity",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -36218,7 +36239,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "InitialVelocity"
+          "name": "InitialVelocity",
+          "defaultValue": "-1.0"
         },
         {
           "type": "ENTITY_INDEX",
@@ -36281,7 +36303,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "InitialVelocity"
+          "name": "InitialVelocity",
+          "defaultValue": "-1.0"
         },
         {
           "type": "ENTITY_INDEX",
@@ -36496,7 +36519,8 @@
         },
         {
           "type": "INT",
-          "name": "numberOfCharactersToCompare"
+          "name": "numberOfCharactersToCompare",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "INT",
@@ -38185,12 +38209,12 @@
         {
           "type": "FLOAT",
           "name": "startPhase",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "playRate",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -38264,7 +38288,7 @@
         {
           "type": "FLOAT",
           "name": "playRate",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -40863,7 +40887,8 @@
         },
         {
           "type": "INT",
-          "name": "character"
+          "name": "character",
+          "defaultValue": "-1"
         },
         {
           "type": "BOOL",
@@ -40901,7 +40926,8 @@
         },
         {
           "type": "INT",
-          "name": "character"
+          "name": "character",
+          "defaultValue": "-1"
         },
         {
           "type": "BOOL",
@@ -47490,7 +47516,8 @@
       "params": [
         {
           "type": "INT",
-          "name": "character"
+          "name": "character",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "INT",
@@ -47527,7 +47554,8 @@
       "params": [
         {
           "type": "INT",
-          "name": "character"
+          "name": "character",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "STRING",
@@ -47551,7 +47579,8 @@
       "params": [
         {
           "type": "INT",
-          "name": "character"
+          "name": "character",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "STRING",
@@ -47568,7 +47597,8 @@
         },
         {
           "type": "INT",
-          "name": "character"
+          "name": "character",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -47604,7 +47634,8 @@
         },
         {
           "type": "INT",
-          "name": "character"
+          "name": "character",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -48527,7 +48558,8 @@
         },
         {
           "type": "INT",
-          "name": "PlayerIndex"
+          "name": "PlayerIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -49465,11 +49497,13 @@
         },
         {
           "type": "FLOAT",
-          "name": "fLowerLimit"
+          "name": "fLowerLimit",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
-          "name": "fUpperLimit"
+          "name": "fUpperLimit",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "BOOL",
@@ -51912,7 +51946,8 @@
         },
         {
           "type": "int",
-          "name": "InstanceId"
+          "name": "InstanceId",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -51933,7 +51968,8 @@
         },
         {
           "type": "int",
-          "name": "InstanceId"
+          "name": "InstanceId",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -52216,7 +52252,8 @@
         },
         {
           "type": "INT",
-          "name": "instanceId"
+          "name": "instanceId",
+          "defaultValue": "-1"
         },
         {
           "type": "INT",
@@ -52246,7 +52283,8 @@
         },
         {
           "type": "INT",
-          "name": "instanceId"
+          "name": "instanceId",
+          "defaultValue": "-1"
         },
         {
           "type": "BOOL",
@@ -52273,7 +52311,8 @@
         },
         {
           "type": "INT",
-          "name": "instanceId"
+          "name": "instanceId",
+          "defaultValue": "-1"
         },
         {
           "type": "BOOL",
@@ -52316,7 +52355,8 @@
         },
         {
           "type": "INT",
-          "name": "instanceId"
+          "name": "instanceId",
+          "defaultValue": "-1"
         },
         {
           "type": "INT",
@@ -52613,11 +52653,13 @@
         },
         {
           "type": "INT",
-          "name": "spawnLocation"
+          "name": "spawnLocation",
+          "defaultValue": "-1"
         },
         {
           "type": "INT",
-          "name": "spawnReason"
+          "name": "spawnReason",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -56554,17 +56596,17 @@
         {
           "type": "FLOAT",
           "name": "PhaseToStopScene",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "FLOAT",
           "name": "PhaseToStartScene",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "StartRate",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "INT",
@@ -56612,7 +56654,7 @@
         {
           "type": "FLOAT",
           "name": "moverBlendInDelta",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         },
         {
           "type": "IK_CONTROL_FLAGS",
@@ -56665,7 +56707,7 @@
         {
           "type": "FLOAT",
           "name": "moverBlendInDelta",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         },
         {
           "type": "INT",
@@ -57886,7 +57928,8 @@
         },
         {
           "type": "INT",
-          "name": "culprit"
+          "name": "culprit",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -60884,17 +60927,17 @@
         {
           "type": "FLOAT",
           "name": "fAutomaticRate",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "fAutomaticDist",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "fOpenRatio",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -61301,7 +61344,8 @@
         },
         {
           "type": "INT",
-          "name": "boxIndex"
+          "name": "boxIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -61323,11 +61367,12 @@
         {
           "type": "FLOAT",
           "name": "margin",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "INT",
-          "name": "boxIndex"
+          "name": "boxIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -61348,7 +61393,8 @@
         },
         {
           "type": "INT",
-          "name": "boxIndex"
+          "name": "boxIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -61377,7 +61423,8 @@
         },
         {
           "type": "INT",
-          "name": "boxIndex"
+          "name": "boxIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -61406,7 +61453,8 @@
         },
         {
           "type": "INT",
-          "name": "boxIndex"
+          "name": "boxIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -61428,11 +61476,12 @@
         {
           "type": "FLOAT",
           "name": "margin",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "INT",
-          "name": "boxIndex"
+          "name": "boxIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -61453,7 +61502,8 @@
         },
         {
           "type": "INT",
-          "name": "boxIndex"
+          "name": "boxIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -61660,15 +61710,18 @@
         },
         {
           "type": "float",
-          "name": "fCollisionMargin"
+          "name": "fCollisionMargin",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
-          "name": "fMaxAngularSpeed"
+          "name": "fMaxAngularSpeed",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
-          "name": "fBuoyancyFactor"
+          "name": "fBuoyancyFactor",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -61801,7 +61854,7 @@
         {
           "type": "FLOAT",
           "name": "NewHealth",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -62031,7 +62084,8 @@
         },
         {
           "type": "INT",
-          "name": "Amount"
+          "name": "Amount",
+          "defaultValue": "-1"
         },
         {
           "type": "BOOL",
@@ -62071,7 +62125,8 @@
         },
         {
           "type": "INT",
-          "name": "Amount"
+          "name": "Amount",
+          "defaultValue": "-1"
         },
         {
           "type": "EULER_ROT_ORDER",
@@ -62137,7 +62192,8 @@
         },
         {
           "type": "INT",
-          "name": "Amount"
+          "name": "Amount",
+          "defaultValue": "-1"
         },
         {
           "type": "MODEL_NAMES",
@@ -62178,7 +62234,8 @@
         },
         {
           "type": "INT",
-          "name": "Amount"
+          "name": "Amount",
+          "defaultValue": "-1"
         },
         {
           "type": "MODEL_NAMES",
@@ -62381,12 +62438,12 @@
         {
           "type": "FLOAT",
           "name": "minDist",
-          "defaultValue": "1"
+          "defaultValue": "1.2"
         },
         {
           "type": "FLOAT",
           "name": "maxDist",
-          "defaultValue": "1"
+          "defaultValue": "1.5"
         }
       ],
       "return_type": "VECTOR",
@@ -64555,12 +64612,12 @@
         {
           "type": "FLOAT",
           "name": "zMeasureMult",
-          "defaultValue": "3"
+          "defaultValue": "3.0"
         },
         {
           "type": "FLOAT",
           "name": "zTolerance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "BOOL",
@@ -64582,12 +64639,12 @@
         {
           "type": "FLOAT",
           "name": "zMeasureMult",
-          "defaultValue": "3"
+          "defaultValue": "3.0"
         },
         {
           "type": "FLOAT",
           "name": "zTolerance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "BOOL",
@@ -64618,12 +64675,12 @@
         {
           "type": "FLOAT",
           "name": "zMeasureMult",
-          "defaultValue": "3"
+          "defaultValue": "3.0"
         },
         {
           "type": "FLOAT",
           "name": "zTolerance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "BOOL",
@@ -64654,12 +64711,12 @@
         {
           "type": "FLOAT",
           "name": "zMeasureMult",
-          "defaultValue": "3"
+          "defaultValue": "3.0"
         },
         {
           "type": "FLOAT",
           "name": "zTolerance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "BOOL",
@@ -64686,12 +64743,12 @@
         {
           "type": "FLOAT",
           "name": "zMeasureMult",
-          "defaultValue": "3"
+          "defaultValue": "3.0"
         },
         {
           "type": "float",
           "name": "zTolerance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "VEHICLE_NODE_ID",
@@ -64730,12 +64787,12 @@
         {
           "type": "FLOAT",
           "name": "zMeasureMult",
-          "defaultValue": "3"
+          "defaultValue": "3.0"
         },
         {
           "type": "FLOAT",
           "name": "zTolerance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "BOOL",
@@ -64770,12 +64827,12 @@
         {
           "type": "FLOAT",
           "name": "zMeasureMult",
-          "defaultValue": "3"
+          "defaultValue": "3.0"
         },
         {
           "type": "FLOAT",
           "name": "zTolerance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "VEHICLE_NODE_ID",
@@ -64814,12 +64871,12 @@
         {
           "type": "FLOAT",
           "name": "zMeasureMult",
-          "defaultValue": "3"
+          "defaultValue": "3.0"
         },
         {
           "type": "FLOAT",
           "name": "zTolerance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "BOOL",
@@ -65771,7 +65828,7 @@
         {
           "type": "FLOAT",
           "name": "fPedHeading",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -66930,12 +66987,12 @@
         {
           "type": "FLOAT",
           "name": "minDist",
-          "defaultValue": "1"
+          "defaultValue": "1.2"
         },
         {
           "type": "FLOAT",
           "name": "maxDist",
-          "defaultValue": "1"
+          "defaultValue": "1.5"
         }
       ],
       "return_type": "VECTOR",
@@ -67633,35 +67690,37 @@
         {
           "type": "FLOAT",
           "name": "fSeeingRange",
-          "defaultValue": "60"
+          "defaultValue": "60.0"
         },
         {
           "type": "FLOAT",
           "name": "fSeeingRangePeripheral",
-          "defaultValue": "5"
+          "defaultValue": "5.0"
         },
         {
           "type": "FLOAT",
           "name": "fHearingRange",
-          "defaultValue": "60"
+          "defaultValue": "60.0"
         },
         {
           "type": "FLOAT",
-          "name": "fMinAzimuthAngle"
+          "name": "fMinAzimuthAngle",
+          "defaultValue": "-90.0"
         },
         {
           "type": "FLOAT",
           "name": "fMaxAzimuthAngle",
-          "defaultValue": "90"
+          "defaultValue": "90.0"
         },
         {
           "type": "FLOAT",
           "name": "fCentreOfGazeMaxAngle",
-          "defaultValue": "60"
+          "defaultValue": "60.0"
         },
         {
           "type": "FLOAT",
-          "name": "fRearViewSeeingRangeOverride"
+          "name": "fRearViewSeeingRangeOverride",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -68879,11 +68938,13 @@
         },
         {
           "type": "FLOAT",
-          "name": "AdjustSpeedMinDist"
+          "name": "AdjustSpeedMinDist",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
-          "name": "AdjustSpeedMaxDist"
+          "name": "AdjustSpeedMaxDist",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -69660,7 +69721,7 @@
         {
           "type": "FLOAT",
           "name": "BlendDuration",
-          "defaultValue": "0"
+          "defaultValue": "0.25"
         }
       ],
       "return_type": "void",
@@ -69678,7 +69739,7 @@
         {
           "type": "FLOAT",
           "name": "BlendDuration",
-          "defaultValue": "0"
+          "defaultValue": "0.25"
         }
       ],
       "return_type": "void",
@@ -69894,7 +69955,7 @@
         {
           "type": "float",
           "name": "blendDelta",
-          "defaultValue": "8"
+          "defaultValue": "8.0"
         },
         {
           "type": "bool",
@@ -69916,7 +69977,8 @@
         },
         {
           "type": "float",
-          "name": "blendDelta"
+          "name": "blendDelta",
+          "defaultValue": "-8.0"
         }
       ],
       "return_type": "void",
@@ -69946,7 +70008,7 @@
         {
           "type": "float",
           "name": "blendDelta",
-          "defaultValue": "8"
+          "defaultValue": "8.0"
         },
         {
           "type": "bool",
@@ -69972,7 +70034,8 @@
         },
         {
           "type": "float",
-          "name": "blendDelta"
+          "name": "blendDelta",
+          "defaultValue": "-8.0"
         }
       ],
       "return_type": "void",
@@ -70019,7 +70082,7 @@
         {
           "type": "FLOAT",
           "name": "phase",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "EULER_ROT_ORDER",
@@ -70054,7 +70117,7 @@
         {
           "type": "FLOAT",
           "name": "phase",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "EULER_ROT_ORDER",
@@ -70357,7 +70420,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "TexBlend"
+          "name": "TexBlend",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -73793,7 +73857,8 @@
         },
         {
           "type": "INT",
-          "name": "OverwriteHelmetTexId"
+          "name": "OverwriteHelmetTexId",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -73875,7 +73940,8 @@
         },
         {
           "type": "INT",
-          "name": "OverwriteHelmetPropIndex"
+          "name": "OverwriteHelmetPropIndex",
+          "defaultValue": "-1"
         },
         {
           "type": "BOOL",
@@ -73902,11 +73968,13 @@
         },
         {
           "type": "INT",
-          "name": "HelmetVisorUpPropId"
+          "name": "HelmetVisorUpPropId",
+          "defaultValue": "-1"
         },
         {
           "type": "INT",
-          "name": "HelmetVisorDownPropId"
+          "name": "HelmetVisorDownPropId",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -73942,7 +74010,8 @@
         },
         {
           "type": "INT",
-          "name": "OverwriteHelmetTexIndex"
+          "name": "OverwriteHelmetTexIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -75551,7 +75620,8 @@
         },
         {
           "type": "INT",
-          "name": "ActionModeTime"
+          "name": "ActionModeTime",
+          "defaultValue": "-1"
         },
         {
           "type": "STRING",
@@ -75796,7 +75866,7 @@
         {
           "type": "FLOAT",
           "name": "fMinimumSpacing",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "INT",
@@ -75832,7 +75902,7 @@
         {
           "type": "FLOAT",
           "name": "fMinimumSpacing",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "INT",
@@ -75956,11 +76026,13 @@
         },
         {
           "type": "INT",
-          "name": "BlendInTimeMS"
+          "name": "BlendInTimeMS",
+          "defaultValue": "-1"
         },
         {
           "type": "INT",
-          "name": "BlendOutTimeMS"
+          "name": "BlendOutTimeMS",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -76194,19 +76266,23 @@
         },
         {
           "type": "FLOAT",
-          "name": "fFocusAngle"
+          "name": "fFocusAngle",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
-          "name": "fFocusDistance"
+          "name": "fFocusDistance",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
-          "name": "fPeripheralAngle"
+          "name": "fPeripheralAngle",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
-          "name": "fPeripheralDistance"
+          "name": "fPeripheralDistance",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "BOOL",
@@ -76448,17 +76524,18 @@
         },
         {
           "type": "FLOAT",
-          "name": "initialLen"
+          "name": "initialLen",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
           "name": "minLen",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "FLOAT",
           "name": "lengthChangeRate",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "BOOL",
@@ -76478,7 +76555,7 @@
         {
           "type": "FLOAT",
           "name": "timeMultiplier",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "BOOL",
@@ -78078,7 +78155,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "fTimeBeforeAllowReport"
+          "name": "fTimeBeforeAllowReport",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -80152,7 +80230,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "MaxExplosiveDamage"
+          "name": "MaxExplosiveDamage",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -80170,7 +80249,7 @@
         {
           "type": "FLOAT",
           "name": "Modifier",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -80480,7 +80559,7 @@
         {
           "type": "FLOAT",
           "name": "heading",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -81080,7 +81159,8 @@
         },
         {
           "type": "HUD_COLOURS",
-          "name": "color"
+          "name": "color",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -81267,7 +81347,7 @@
         {
           "type": "FLOAT",
           "name": "forwardTime",
-          "defaultValue": "2"
+          "defaultValue": "2.0"
         },
         {
           "type": "REPLAY_IMPORTANCE",
@@ -83831,7 +83911,8 @@
       "params": [
         {
           "type": "INT",
-          "name": "slot"
+          "name": "slot",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -84227,7 +84308,8 @@
         },
         {
           "type": "INT",
-          "name": "playerIndex"
+          "name": "playerIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -84248,7 +84330,8 @@
         },
         {
           "type": "INT",
-          "name": "playerIndex"
+          "name": "playerIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -84269,7 +84352,8 @@
         },
         {
           "type": "INT",
-          "name": "playerIndex"
+          "name": "playerIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -84294,7 +84378,8 @@
         },
         {
           "type": "INT",
-          "name": "playerIndex"
+          "name": "playerIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -84311,7 +84396,8 @@
         },
         {
           "type": "INT",
-          "name": "playerIndex"
+          "name": "playerIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "STRING",
@@ -84340,7 +84426,8 @@
         },
         {
           "type": "INT",
-          "name": "playerIndex"
+          "name": "playerIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -84369,7 +84456,8 @@
         },
         {
           "type": "INT",
-          "name": "playerIndex"
+          "name": "playerIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -84699,7 +84787,8 @@
         },
         {
           "type": "INT",
-          "name": "overrideCharSlot"
+          "name": "overrideCharSlot",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -84719,7 +84808,8 @@
         },
         {
           "type": "INT",
-          "name": "overrideCharSlot"
+          "name": "overrideCharSlot",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "INT",
@@ -84743,7 +84833,8 @@
         },
         {
           "type": "INT",
-          "name": "overrideCharSlot"
+          "name": "overrideCharSlot",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -84767,7 +84858,8 @@
         },
         {
           "type": "INT",
-          "name": "overrideCharSlot"
+          "name": "overrideCharSlot",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -85034,7 +85126,7 @@
         {
           "type": "FLOAT",
           "name": "commission",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         }
       ],
       "return_type": "void",
@@ -85988,7 +86080,8 @@
         },
         {
           "type": "INT",
-          "name": "lbIndex"
+          "name": "lbIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "INT",
@@ -86009,7 +86102,8 @@
         },
         {
           "type": "INT",
-          "name": "lbIndex"
+          "name": "lbIndex",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "BOOL",
@@ -91268,7 +91362,8 @@
         },
         {
           "type": "INT",
-          "name": "Time"
+          "name": "Time",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -91294,7 +91389,8 @@
         },
         {
           "type": "INT",
-          "name": "TimeToFacePed"
+          "name": "TimeToFacePed",
+          "defaultValue": "-1"
         },
         {
           "type": "TASK_HANDS_UP_FLAGS",
@@ -91542,7 +91638,7 @@
         {
           "type": "FLOAT",
           "name": "fMinRappelHeight",
-          "defaultValue": "10"
+          "defaultValue": "10.0"
         }
       ],
       "return_type": "void",
@@ -91674,12 +91770,13 @@
         },
         {
           "type": "INT",
-          "name": "Time"
+          "name": "Time",
+          "defaultValue": "-1"
         },
         {
           "type": "FLOAT",
           "name": "Radius",
-          "defaultValue": "0"
+          "defaultValue": "0.1"
         },
         {
           "type": "BOOL",
@@ -91720,7 +91817,7 @@
         {
           "type": "FLOAT",
           "name": "TargetRadius",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         }
       ],
       "return_type": "void",
@@ -91851,7 +91948,7 @@
         {
           "type": "FLOAT",
           "name": "SlowDownDistance",
-          "defaultValue": "2"
+          "defaultValue": "2.0"
         },
         {
           "type": "EGOTO_ENTITY_FLAGS",
@@ -91986,12 +92083,12 @@
         {
           "type": "FLOAT",
           "name": "MinWaitTime",
-          "defaultValue": "3"
+          "defaultValue": "3.0"
         },
         {
           "type": "FLOAT",
           "name": "MaxWaitTime",
-          "defaultValue": "6"
+          "defaultValue": "6.0"
         }
       ],
       "return_type": "void",
@@ -92074,7 +92171,7 @@
         {
           "type": "FLOAT",
           "name": "ToleranceDegrees",
-          "defaultValue": "10"
+          "defaultValue": "10.0"
         },
         {
           "type": "BOOL",
@@ -92435,7 +92532,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "MaxRangeToShootTargets"
+          "name": "MaxRangeToShootTargets",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -92474,17 +92572,18 @@
         },
         {
           "type": "FLOAT",
-          "name": "MaxRangeToShootTargets"
+          "name": "MaxRangeToShootTargets",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
           "name": "fExtraVehToTargetDistToPreferVeh",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "fDriveStraightLineDistance",
-          "defaultValue": "20"
+          "defaultValue": "20.0"
         },
         {
           "type": "TASK_GO_TO_COORD_ANY_MEANS_FLAGS",
@@ -92493,7 +92592,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "fWarpTimerMS"
+          "name": "fWarpTimerMS",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -92532,17 +92632,18 @@
         },
         {
           "type": "FLOAT",
-          "name": "MaxRangeToShootTargets"
+          "name": "MaxRangeToShootTargets",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
           "name": "fExtraVehToTargetDistToPreferVeh",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "fDriveStraightLineDistance",
-          "defaultValue": "20"
+          "defaultValue": "20.0"
         },
         {
           "type": "TASK_GO_TO_COORD_ANY_MEANS_FLAGS",
@@ -92551,12 +92652,13 @@
         },
         {
           "type": "FLOAT",
-          "name": "fCruiseSpeed"
+          "name": "fCruiseSpeed",
+          "defaultValue": "-1.0"
         },
         {
           "type": "FLOAT",
           "name": "fTargetArriveDist",
-          "defaultValue": "4"
+          "defaultValue": "4.0"
         }
       ],
       "return_type": "void",
@@ -92591,7 +92693,8 @@
         },
         {
           "type": "INT",
-          "name": "nTimeToPlay"
+          "name": "nTimeToPlay",
+          "defaultValue": "-1"
         },
         {
           "type": "ANIMATION_FLAGS",
@@ -92601,7 +92704,7 @@
         {
           "type": "FLOAT",
           "name": "startPhase",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -92659,7 +92762,8 @@
         },
         {
           "type": "INT",
-          "name": "nTimeToPlay"
+          "name": "nTimeToPlay",
+          "defaultValue": "-1"
         },
         {
           "type": "ANIMATION_FLAGS",
@@ -92669,7 +92773,7 @@
         {
           "type": "FLOAT",
           "name": "startPhase",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "EULER_ROT_ORDER",
@@ -92976,7 +93080,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "fBlendOutOverride"
+          "name": "fBlendOutOverride",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -93588,7 +93693,7 @@
         {
           "type": "FLOAT",
           "name": "SeekAngle",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
@@ -93630,12 +93735,12 @@
         {
           "type": "FLOAT",
           "name": "fXOffset",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "fYOffset",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
@@ -93867,7 +93972,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "CustomOffset"
+          "name": "CustomOffset",
+          "defaultValue": "-1.0"
         },
         {
           "type": "INT",
@@ -93877,7 +93983,7 @@
         {
           "type": "FLOAT",
           "name": "StraightLineDistance",
-          "defaultValue": "20"
+          "defaultValue": "20.0"
         }
       ],
       "return_type": "void",
@@ -93964,7 +94070,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "CustomOffset"
+          "name": "CustomOffset",
+          "defaultValue": "-1.0"
         },
         {
           "type": "INT",
@@ -94162,7 +94269,7 @@
         {
           "type": "FLOAT",
           "name": "DesiredOrientation",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -94250,7 +94357,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "fSlowDownDistance"
+          "name": "fSlowDownDistance",
+          "defaultValue": "-1.0"
         },
         {
           "type": "HELIMODE",
@@ -94962,7 +95070,7 @@
         {
           "type": "FLOAT",
           "name": "speed",
-          "defaultValue": "0"
+          "defaultValue": "0.75"
         }
       ],
       "return_type": "void",
@@ -95280,7 +95388,7 @@
         {
           "type": "FLOAT",
           "name": "BlendInDuration",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "bool",
@@ -96285,7 +96393,8 @@
         },
         {
           "type": "INT",
-          "name": "nShootFromGroundTimer"
+          "name": "nShootFromGroundTimer",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -96511,7 +96620,7 @@
         {
           "type": "FLOAT",
           "name": "FireTolerance",
-          "defaultValue": "20"
+          "defaultValue": "20.0"
         }
       ],
       "return_type": "void",
@@ -96550,7 +96659,7 @@
         {
           "type": "FLOAT",
           "name": "FireTolerance",
-          "defaultValue": "20"
+          "defaultValue": "20.0"
         }
       ],
       "return_type": "void",
@@ -96634,12 +96743,12 @@
         {
           "type": "FLOAT",
           "name": "TargetDistance",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "FLOAT",
           "name": "SlowDistance",
-          "defaultValue": "4"
+          "defaultValue": "4.0"
         },
         {
           "type": "BOOL",
@@ -96693,12 +96802,12 @@
         {
           "type": "FLOAT",
           "name": "TargetDistance",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "FLOAT",
           "name": "SlowDistance",
-          "defaultValue": "4"
+          "defaultValue": "4.0"
         },
         {
           "type": "BOOL",
@@ -96757,12 +96866,12 @@
         {
           "type": "FLOAT",
           "name": "TargetDistance",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "FLOAT",
           "name": "SlowDistance",
-          "defaultValue": "4"
+          "defaultValue": "4.0"
         },
         {
           "type": "BOOL",
@@ -96816,12 +96925,12 @@
         {
           "type": "FLOAT",
           "name": "TargetDistance",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "FLOAT",
           "name": "SlowDistance",
-          "defaultValue": "4"
+          "defaultValue": "4.0"
         },
         {
           "type": "BOOL",
@@ -96870,12 +96979,12 @@
         {
           "type": "FLOAT",
           "name": "TargetDistance",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         },
         {
           "type": "FLOAT",
           "name": "SlowDistance",
-          "defaultValue": "4"
+          "defaultValue": "4.0"
         },
         {
           "type": "BOOL",
@@ -97062,7 +97171,8 @@
         },
         {
           "type": "INT",
-          "name": "iTargetProgress"
+          "name": "iTargetProgress",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "void",
@@ -97192,7 +97302,8 @@
         },
         {
           "type": "INT",
-          "name": "iProgressToContinueFrom"
+          "name": "iProgressToContinueFrom",
+          "defaultValue": "-1"
         },
         {
           "type": "INT",
@@ -97254,12 +97365,12 @@
         {
           "type": "FLOAT",
           "name": "fPathWidth",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "FLOAT",
           "name": "fTension",
-          "defaultValue": "0"
+          "defaultValue": "0.5"
         }
       ],
       "return_type": "void",
@@ -97474,11 +97585,13 @@
         },
         {
           "type": "INT",
-          "name": "iTargetProgress"
+          "name": "iTargetProgress",
+          "defaultValue": "-1"
         },
         {
           "type": "FLOAT",
-          "name": "MaxSpeed"
+          "name": "MaxSpeed",
+          "defaultValue": "-1.0"
         },
         {
           "type": "BOOL",
@@ -97488,7 +97601,7 @@
         {
           "type": "FLOAT",
           "name": "fTargetArriveDistance",
-          "defaultValue": "2"
+          "defaultValue": "2.0"
         }
       ],
       "return_type": "void",
@@ -97644,7 +97757,7 @@
         {
           "type": "FLOAT",
           "name": "blendDuration",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -97697,7 +97810,7 @@
         {
           "type": "FLOAT",
           "name": "blendDuration",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -97741,7 +97854,7 @@
         {
           "type": "FLOAT",
           "name": "blendDuration",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -97799,7 +97912,7 @@
         {
           "type": "FLOAT",
           "name": "blendDuration",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -98305,7 +98418,7 @@
         {
           "type": "FLOAT",
           "name": "turnRate",
-          "defaultValue": "1"
+          "defaultValue": "1.57"
         },
         {
           "type": "FLOAT",
@@ -98369,7 +98482,7 @@
         {
           "type": "FLOAT",
           "name": "turnRate",
-          "defaultValue": "1"
+          "defaultValue": "1.57"
         },
         {
           "type": "FLOAT",
@@ -98484,7 +98597,7 @@
         {
           "type": "FLOAT",
           "name": "fVehicleHeading",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -98720,7 +98833,8 @@
         },
         {
           "type": "INT",
-          "name": "livery"
+          "name": "livery",
+          "defaultValue": "-1"
         }
       ],
       "return_type": "VEHICLE_GENERATOR_INDEX",
@@ -98840,7 +98954,7 @@
         {
           "type": "FLOAT",
           "name": "hightSampleRangeUp",
-          "defaultValue": "5"
+          "defaultValue": "5.0"
         }
       ],
       "return_type": "BOOL",
@@ -100657,7 +100771,7 @@
         {
           "type": "FLOAT",
           "name": "Damage",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         }
       ],
       "return_type": "void",
@@ -101090,7 +101204,7 @@
         {
           "type": "FLOAT",
           "name": "InverseMassScale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -101903,7 +102017,7 @@
         {
           "type": "FLOAT",
           "name": "CruiseSpeed",
-          "defaultValue": "10"
+          "defaultValue": "10.0"
         },
         {
           "type": "DRIVINGMODE",
@@ -105187,17 +105301,17 @@
         {
           "type": "FLOAT",
           "name": "DesiredHeading",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "DesiredHeadingTolerance",
-          "defaultValue": "180"
+          "defaultValue": "180.0"
         },
         {
           "type": "float",
           "name": "MinCreationDistance",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "bool",
@@ -106798,7 +106912,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "fVelThreshold"
+          "name": "fVelThreshold",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -108907,7 +109022,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "fDist"
+          "name": "fDist",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "void",
@@ -109282,32 +109398,32 @@
         {
           "type": "FLOAT",
           "name": "maxEngineHealth",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         },
         {
           "type": "FLOAT",
           "name": "maxPetrolTankHealth",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         },
         {
           "type": "FLOAT",
           "name": "maxHealth",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         },
         {
           "type": "FLOAT",
           "name": "maxMainRotorHealth",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         },
         {
           "type": "FLOAT",
           "name": "maxRearRotorHealth",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         },
         {
           "type": "FLOAT",
           "name": "maxTailBoomHealth",
-          "defaultValue": "1000"
+          "defaultValue": "1000.0"
         }
       ],
       "return_type": "FLOAT",
@@ -110620,7 +110736,7 @@
         {
           "type": "FLOAT",
           "name": "collisionWithMapScale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         }
       ],
       "return_type": "void",
@@ -111213,17 +111329,17 @@
         {
           "type": "FLOAT",
           "name": "durationMod",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "powerMod",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "FLOAT",
           "name": "rechargeMod",
-          "defaultValue": "0"
+          "defaultValue": "0.0"
         },
         {
           "type": "BOOL",
@@ -113117,7 +113233,7 @@
         {
           "type": "FLOAT",
           "name": "Scale",
-          "defaultValue": "1"
+          "defaultValue": "1.0"
         },
         {
           "type": "MODEL_NAMES",
@@ -113587,7 +113703,8 @@
         },
         {
           "type": "FLOAT",
-          "name": "fProjectileLifeTime"
+          "name": "fProjectileLifeTime",
+          "defaultValue": "-1.0"
         }
       ],
       "return_type": "ENTITY_INDEX",
