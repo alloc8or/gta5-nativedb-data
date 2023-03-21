@@ -57005,7 +57005,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "bIncludePlayersVehicle"
 				}
 			],
 			"return_type": "void",
@@ -57018,7 +57018,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "bIncludePlayersVehicle"
 				}
 			],
 			"return_type": "void",
@@ -57035,7 +57035,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "bIncludePlayersVehicle"
 				}
 			],
 			"return_type": "void",
@@ -57052,7 +57052,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "toggle"
+					"name": "bIncludePlayersVehicle"
 				}
 			],
 			"return_type": "void",
