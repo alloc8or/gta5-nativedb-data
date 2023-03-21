@@ -69044,7 +69044,7 @@
 		"0x9A9112A0FE9A4713": {
 			"name": "GET_VEHICLE_PED_IS_IN",
 			"jhash": "0xAFE92319",
-			"comment": "Gets the vehicle the specified Ped is in. Returns 0 if the ped is/was not in a vehicle.\nIf the Ped is not in a vehicle and includeLastVehicle is true, the vehicle they were last in is returned.",
+			"comment": "Gets the vehicle the specified Ped is in. Returns 0 if the ped is/was not in a vehicle.",
 			"params": [
 				{
 					"type": "Ped",
@@ -69052,7 +69052,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "includeLastVehicle"
+					"name": "includeEntering"
 				}
 			],
 			"return_type": "Vehicle",
