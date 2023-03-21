@@ -103569,9 +103569,9 @@
 			"build": "944"
 		},
 		"0x85FC953F6C6CBDE1": {
-			"name": "_0x85FC953F6C6CBDE1",
+			"name": "_SET_BOUNDS_AFFECT_WATER_PROBES",
 			"jhash": "",
-			"comment": "",
+			"comment": "Use the vehicle bounds (instead of viewport) when deciding if a vehicle is sufficiently above the water (waterheight.dat), bypassing wave simulation checks",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -103579,7 +103579,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "toggle"
 				}
 			],
 			"return_type": "void",
