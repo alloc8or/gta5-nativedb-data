@@ -14224,7 +14224,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "completelyDisabled"
+					"name": "completelyDisable"
 				}
 			],
 			"return_type": "void",
@@ -14249,7 +14249,7 @@
 		"0x9EBC85ED0FFFE51C": {
 			"name": "SET_ENTITY_COMPLETELY_DISABLE_COLLISION",
 			"jhash": "0xBD0D4831",
-			"comment": "Alias for SET_ENTITY_COLLISION with completelyDisabled always set to true.",
+			"comment": "Alias for SET_ENTITY_COLLISION with completelyDisable always set to true.",
 			"params": [
 				{
 					"type": "Entity",
