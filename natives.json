@@ -18893,7 +18893,7 @@
 		"0x799017F9E3B10112": {
 			"name": "DRAW_MARKER_SPHERE",
 			"jhash": "",
-			"comment": "Draws a 3D sphere, typically seen in the GTA:O freemode event \"Penned In\".\nExample https://imgur.com/nCbtS4H",
+			"comment": "Draws a 3D sphere, typically seen in the GTA:O freemode event \"Penned In\".\nExample https://imgur.com/nCbtS4H\n\nalpha - The alpha for the sphere. Goes from 0.0 to 1.0.",
 			"params": [
 				{
 					"type": "float",
