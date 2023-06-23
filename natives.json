@@ -30686,7 +30686,7 @@
 			"comment": "",
 			"params": [],
 			"return_type": "void",
-			"build": "b2944"
+			"build": "2944"
 		},
 		"0x6D14BFDC33B34F55": {
 			"name": "DONT_TILT_MINIMAP_THIS_FRAME",
@@ -43217,6 +43217,10 @@
 				{
 					"type": "BOOL",
 					"name": "p3"
+				},
+				{
+					"type": "int",
+					"name": "npcProvider"
 				}
 			],
 			"return_type": "void",
@@ -49631,7 +49635,12 @@
 			"name": "NETWORK_GET_STRING_BANK_WALLET_BALANCE",
 			"jhash": "0x7D4FD28C",
 			"comment": "",
-			"params": [],
+			"params": [
+				{
+					"type": "int",
+					"name": "character"
+				}
+			],
 			"return_type": "const char*",
 			"build": "323",
 			"unused": true
@@ -54574,7 +54583,7 @@
 				}
 			],
 			"return_type": "void",
-			"build": "b2944"
+			"build": "2944"
 		},
 		"0xEA23C49EAA83ACFB": {
 			"name": "NETWORK_RESURRECT_LOCAL_PLAYER",
