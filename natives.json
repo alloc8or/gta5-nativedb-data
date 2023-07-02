@@ -62505,6 +62505,10 @@
 				{
 					"type": "Entity",
 					"name": "entity"
+				},
+				{
+					"type": "float",
+					"name": "maxSpeedToPredict"
 				}
 			],
 			"return_type": "Vector3",
