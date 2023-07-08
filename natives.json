@@ -2302,7 +2302,7 @@
 		"0xB28ECA15046CA8B9": {
 			"name": "GET_RADIO_STATION_NAME",
 			"jhash": "0x3DF493BC",
-			"comment": "Converts radio station index to string. Use HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION to get the user-readable text.",
+			"comment": "Converts radio station index to string. Use HUD::GET_LABEL_LOCALIZED_TEXT to get the user-readable text.",
 			"params": [
 				{
 					"type": "int",
@@ -27723,9 +27723,9 @@
 			]
 		},
 		"0x7B5280EBA9840C72": {
-			"name": "GET_FILENAME_FOR_AUDIO_CONVERSATION",
+			"name": "GET_LABEL_LOCALIZED_TEXT",
 			"jhash": "0x95C4B5AD",
-			"comment": "Gets a string literal from a label name.",
+			"comment": "Gets a localized string literal from a label name. Can be used for output of e.g. VEHICLE::GET_LIVERY_NAME",
 			"params": [
 				{
 					"type": "const char*",
@@ -27735,6 +27735,7 @@
 			"return_type": "const char*",
 			"build": "323",
 			"old_names": [
+				"_GET_FILENAME_FOR_AUDIO_CONVERSATION",
 				"_GET_LABEL_TEXT"
 			]
 		},
@@ -108485,7 +108486,7 @@
 		"0xB215AAC32D25D019": {
 			"name": "GET_DISPLAY_NAME_FROM_VEHICLE_MODEL",
 			"jhash": "0xEC86DF39",
-			"comment": "Returns model name of vehicle in all caps. Needs to be displayed through localizing text natives to get proper display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\nWhile often the case, this does not simply return the model name of the vehicle (which could be hashed to return the model hash). Variations of the same vehicle may also use the same display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\n\nReturns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nUsing HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION, you can get the localized name.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "Returns model name of vehicle in all caps. Needs to be displayed through localizing text natives to get proper display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\nWhile often the case, this does not simply return the model name of the vehicle (which could be hashed to return the model hash). Variations of the same vehicle may also use the same display name.\n-----------------------------------------------------------------------------------------------------------------------------------------\n\nReturns \"CARNOTFOUND\" if the hash doesn't match a vehicle hash.\n\nUsing HUD::GET_LABEL_LOCALIZED_TEXT, you can get the localized name.\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
@@ -110604,7 +110605,7 @@
 		"0x8935624F8C5592CC": {
 			"name": "GET_MOD_TEXT_LABEL",
 			"jhash": "0x0BA39CA7",
-			"comment": "Returns the text label of a mod type for a given vehicle\n\nUse GET_FILENAME_FOR_AUDIO_CONVERSATION to get the part name in the game's language",
+			"comment": "Returns the text label of a mod type for a given vehicle\n\nUse GET_LABEL_LOCALIZED_TEXT to get the part name in the game's language",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -110642,7 +110643,7 @@
 		"0xB4C7A93837C91A1F": {
 			"name": "GET_LIVERY_NAME",
 			"jhash": "0xED80B5BE",
-			"comment": "Returns the text label of the vehicle's liveryIndex, as specified by the liveryNames section of the vehicle's modkit data in the carcols file.\n\nexample \n\nint count = VEHICLE::GET_VEHICLE_LIVERY_COUNT(veh);\nfor (int i = 0; i < count; i++)  \n  {\n     const char* LiveryName = VEHICLE::GET_LIVERY_NAME(veh, i);\n  }\n\n\nthis example will work fine to fetch all names \nfor example for Sanchez we get \n\nSANC_LV1\nSANC_LV2\nSANC_LV3\nSANC_LV4\nSANC_LV5\n\n\nUse GET_FILENAME_FOR_AUDIO_CONVERSATION, to get the localized livery name.\n\nFull list of vehicle mod kits and mods by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleModKits.json",
+			"comment": "Returns the text label of the vehicle's liveryIndex, as specified by the liveryNames section of the vehicle's modkit data in the carcols file.\n\nexample \n\nint count = VEHICLE::GET_VEHICLE_LIVERY_COUNT(veh);\nfor (int i = 0; i < count; i++)  \n  {\n     const char* LiveryName = VEHICLE::GET_LIVERY_NAME(veh, i);\n  }\n\n\nthis example will work fine to fetch all names \nfor example for Sanchez we get \n\nSANC_LV1\nSANC_LV2\nSANC_LV3\nSANC_LV4\nSANC_LV5\n\n\nUse GET_LABEL_LOCALIZED_TEXT, to get the localized livery name.\n\nFull list of vehicle mod kits and mods by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicleModKits.json",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -112710,7 +112711,7 @@
 		"0x29439776AAA00A62": {
 			"name": "GET_VEHICLE_CLASS",
 			"jhash": "0xC025338E",
-			"comment": "Returns an int\n\nVehicle Classes:\n0: Compacts\n1: Sedans\n2: SUVs\n3: Coupes\n4: Muscle\n5: Sports Classics\n6: Sports\n7: Super\n8: Motorcycles\n9: Off-road\n10: Industrial\n11: Utility\n12: Vans\n13: Cycles\n14: Boats\n15: Helicopters\n16: Planes\n17: Service\n18: Emergency\n19: Military\n20: Commercial\n21: Trains\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS(vehicle));\n\nconst char* className = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(buffer);",
+			"comment": "Returns an int\n\nVehicle Classes:\n0: Compacts\n1: Sedans\n2: SUVs\n3: Coupes\n4: Muscle\n5: Sports Classics\n6: Sports\n7: Super\n8: Motorcycles\n9: Off-road\n10: Industrial\n11: Utility\n12: Vans\n13: Cycles\n14: Boats\n15: Helicopters\n16: Planes\n17: Service\n18: Emergency\n19: Military\n20: Commercial\n21: Trains\n\nchar buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS(vehicle));\n\nconst char* className = HUD::GET_LABEL_LOCALIZED_TEXT(buffer);",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -112723,7 +112724,7 @@
 		"0xDEDF1C8BD47C2200": {
 			"name": "GET_VEHICLE_CLASS_FROM_NAME",
 			"jhash": "0xEA469980",
-			"comment": "char buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS_FROM_NAME (hash));\n\nconst char* className = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(buffer);\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "char buffer[128];\nstd::sprintf(buffer, \"VEH_CLASS_%i\", VEHICLE::GET_VEHICLE_CLASS_FROM_NAME (hash));\n\nconst char* className = HUD::GET_LABEL_LOCALIZED_TEXT(buffer);\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "Hash",
