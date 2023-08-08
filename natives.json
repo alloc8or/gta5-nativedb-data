@@ -27725,7 +27725,7 @@
 		"0x7B5280EBA9840C72": {
 			"name": "GET_FILENAME_FOR_AUDIO_CONVERSATION",
 			"jhash": "0x95C4B5AD",
-			"comment": "Gets a string literal from a label name.",
+			"comment": "Gets a localized string literal from a label name. Can be used for output of e.g. VEHICLE::GET_LIVERY_NAME. To check if a GXT label can be localized with this, HUD::DOES_TEXT_LABEL_EXIST can be used.",
 			"params": [
 				{
 					"type": "const char*",
