@@ -12150,7 +12150,8 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "alive"
+					"name": "alive",
+					"default": "FALSE"
 				}
 			],
 			"return_type": "Vector3",
