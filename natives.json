@@ -12150,7 +12150,8 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "alive"
+					"name": "alive",
+					"default": "FALSE"
 				}
 			],
 			"return_type": "Vector3",
@@ -14560,7 +14561,8 @@
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "p2",
+					"default": "0"
 				}
 			],
 			"return_type": "void",
@@ -69373,7 +69375,8 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "includeEntering"
+					"name": "includeEntering",
+					"default": "FALSE"
 				}
 			],
 			"return_type": "Vehicle",
@@ -85467,7 +85470,8 @@
 				},
 				{
 					"type": "int",
-					"name": "p8"
+					"name": "p8",
+					"default": "0"
 				}
 			],
 			"return_type": "int",

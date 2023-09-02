@@ -22,6 +22,10 @@
 									"name": {
 										"type": "string",
 										"pattern": "^[A-Za-z_]+[A-Za-z0-9_]*$"
+									},
+									"default": {
+										"type": "string",
+										"pattern": "^(0|TRUE|FALSE)$"
 									}
 								},
 								"required": ["type", "name"],
