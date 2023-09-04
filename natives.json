@@ -6014,7 +6014,7 @@
 		"0xFEDB7D269E8C60E3": {
 			"name": "ATTACH_CAM_TO_ENTITY",
 			"jhash": "0xAD7C45F6",
-			"comment": "Last param determines if its relative to the Entity",
+			"comment": "Attaches a camera to a ped. The camera will only copy the translation components of the ped to its transform matrix as long as it's attached to the ped.\n\nLast param determines if its relative to the Entity.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6047,7 +6047,7 @@
 		"0x61A3DBA14AB7F411": {
 			"name": "ATTACH_CAM_TO_PED_BONE",
 			"jhash": "0x506BB35C",
-			"comment": "",
+			"comment": "Attaches a camera to a ped's bone. The camera will only copy the translation components of the bone to its transform matrix as long as it's attached to the bone.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6059,7 +6059,7 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "boneId"
 				},
 				{
 					"type": "float",
@@ -6075,7 +6075,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "heading"
+					"name": "isRelative"
 				}
 			],
 			"return_type": "void",
@@ -6084,7 +6084,7 @@
 		"0x149916F50C34A40D": {
 			"name": "HARD_ATTACH_CAM_TO_PED_BONE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Attaches a camera to a ped's bone full matrix, making the transform matrix of the camera have the same rotation vector components as those of the bone.\n\nisRelative: see ATTACH_CAM_TO_VEHICLE_BONE",
 			"params": [
 				{
 					"type": "Cam",
@@ -6096,35 +6096,35 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "boneId"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "xRot"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "yRot"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "zRot"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "x"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "y"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "z"
 				},
 				{
 					"type": "BOOL",
-					"name": "p9"
+					"name": "isRelative"
 				}
 			],
 			"return_type": "void",
@@ -6136,7 +6136,7 @@
 		"0x202A5ED9CE01D6E7": {
 			"name": "HARD_ATTACH_CAM_TO_ENTITY",
 			"jhash": "",
-			"comment": "Example from am_mp_drone script: \n\nCAM::HARD_ATTACH_CAM_TO_ENTITY(Local_190.f_169, NETWORK::NET_TO_OBJ(Local_190.f_159), 0f, 0f, 180f, Var0, 1);",
+			"comment": "Attaches a camera to a entity's full matrix, making the transform matrix of the camera have the same rotation vector components as those of the entity.\n\nisRelative: see ATTACH_CAM_TO_VEHICLE_BONE\n\nExample from am_mp_drone script: \n\nCAM::HARD_ATTACH_CAM_TO_ENTITY(Local_190.f_169, NETWORK::NET_TO_OBJ(Local_190.f_159), 0f, 0f, 180f, Var0, 1);",
 			"params": [
 				{
 					"type": "Cam",
@@ -6184,7 +6184,7 @@
 		"0x8DB3F12A02CAEF72": {
 			"name": "ATTACH_CAM_TO_VEHICLE_BONE",
 			"jhash": "",
-			"comment": "This native works with vehicles only. Bone indexes are usually given by this native GET_ENTITY_BONE_INDEX_BY_NAME.",
+			"comment": "hardAttachment: if true, fully atach the camera to the bone transform by copying the rotation vector components of the bone to the transform matrix of the camera; otherwise, only the position of the bone will be copied to the transform matrix of the camera. Rotation pamameters work only if this parameter is true. Always true in the b2944 scripts.\nisRelative: if true, the position offsets are applied relative to the transform of the attached vehicle (not the bone), rather than in world-space. The additional rotation offsets are always in local-space. Always true in the b2944 scripts.\n\nThis native works with vehicles only. Bone indexes are usually given by this native GET_ENTITY_BONE_INDEX_BY_NAME.",
 			"params": [
 				{
 					"type": "Cam",
@@ -6200,7 +6200,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "relativeRotation"
+					"name": "hardAttachment"
 				},
 				{
 					"type": "float",
@@ -6228,7 +6228,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "fixedDirection"
+					"name": "isRelative"
 				}
 			],
 			"return_type": "void",
@@ -13486,7 +13486,7 @@
 		"0x5C48B75732C8456C": {
 			"name": "ATTACH_ENTITY_BONE_TO_ENTITY_BONE",
 			"jhash": "",
-			"comment": "",
+			"comment": "activeCollisions: if true, entity1 can collide with physical entities with active colliders. Does not collide with map collision or physical entities without active colliders.\nuseBasicAttachIfPed: if true, entity1 will use all three rotation vector components of the bone of entity2 even if entity1 is a ped.\n\nIf both entities exists and either of them doesn't have a skeleton, the game will crash for accessing invalid skeleton pointer.",
 			"params": [
 				{
 					"type": "Entity",
@@ -13506,11 +13506,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "activeCollisions"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "useBasicAttachIfPed"
 				}
 			],
 			"return_type": "void",
@@ -13522,7 +13522,7 @@
 		"0xFD1695C5D3B05439": {
 			"name": "ATTACH_ENTITY_BONE_TO_ENTITY_BONE_Y_FORWARD",
 			"jhash": "",
-			"comment": "",
+			"comment": "Same as ATTACH_ENTITY_BONE_TO_ENTITY_BONE but assumes that the bone is facing along the y axis.",
 			"params": [
 				{
 					"type": "Entity",
@@ -13542,11 +13542,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "activeCollisions"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "useBasicAttachIfPed"
 				}
 			],
 			"return_type": "void",
