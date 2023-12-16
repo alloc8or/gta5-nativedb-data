@@ -2222,7 +2222,7 @@
 		"0xEE066C7006C49C0A": {
 			"name": "PLAY_ANIMAL_VOCALIZATION",
 			"jhash": "0x498849F3",
-			"comment": "Plays sounds from a ped with chop model. For example it used to play bark or sniff sounds. p1 is always 3 or 4294967295 in decompiled scripts. By a quick disassembling I can assume that this arg is unused.\nThis native is works only when you call it on the ped with right model (ac_chop only ?)\nSpeech Name can be: CHOP_SNIFF_SEQ CHOP_WHINE CHOP_LICKS_MOUTH CHOP_PANT bark GROWL SNARL BARK_SEQ",
+			"comment": "Plays sounds from a ped with an animal model. For example it used to play bark, whining, or sniff sounds. p1 is always 3 or 4294967295 in decompiled scripts. By a quick disassembling I can assume that this arg is unused.\nThis native is works only when you call it on the animal peds\nChop-specific vocalizations are: CHOP_SNIFF_SEQ CHOP_WHINE CHOP_LICKS_MOUTH CHOP_PANT\nMost dogs can use: BARK BARK_SEQ GROWL WHINE SNARL\nLooks for a given vocalization with the appropriate substring and plays random variants\nDoes not animate the mouth",
 			"params": [
 				{
 					"type": "Ped",
@@ -2243,7 +2243,7 @@
 		"0xC265DF9FB44A9FBD": {
 			"name": "IS_ANIMAL_VOCALIZATION_PLAYING",
 			"jhash": "0x0CBAF2EF",
-			"comment": "",
+			"comment": "Returns true if the ped is currently playing an animal vocalization sound",
 			"params": [
 				{
 					"type": "Ped",
