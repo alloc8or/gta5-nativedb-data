@@ -113392,7 +113392,7 @@
 		"0xE5810AC70602F2F5": {
 			"name": "SET_AIRCRAFT_PILOT_SKILL_NOISE_SCALAR",
 			"jhash": "0xB6BE07E0",
-			"comment": "",
+			"comment": "Noise level go from 0.0 to 1.1",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113400,7 +113400,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "noise"
 				}
 			],
 			"return_type": "void",
