@@ -652,7 +652,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "triggerAsHudSound"
 				}
 			],
 			"return_type": "void",
@@ -792,7 +792,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p2"
+					"name": "VoiceName"
 				}
 			],
 			"return_type": "void",
@@ -830,7 +830,7 @@
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "SpeakerConversationIndex"
 				},
 				{
 					"type": "Entity",
@@ -896,7 +896,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "enable"
 				}
 			],
 			"return_type": "void",
@@ -909,7 +909,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "isPlaceholder"
 				}
 			],
 			"return_type": "void",
@@ -922,11 +922,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "DisplaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				}
 			],
 			"return_type": "void",
@@ -939,11 +939,11 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "DisplaySubtitles"
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "addToBriefScreen"
 				}
 			],
 			"return_type": "void",
@@ -1046,7 +1046,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "FinishCurrentLine"
 				}
 			],
 			"return_type": "void",
@@ -1067,7 +1067,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "FinishCurrentLine"
 				}
 			],
 			"return_type": "int",
@@ -81246,7 +81246,7 @@
 		"0xE0A7D1E497FFCD6F": {
 			"name": "SET_PLAYER_WANTED_LEVEL_NOW",
 			"jhash": "0xAF3AFD83",
-			"comment": "Forces any pending wanted level to be applied to the specified player immediately.\n\nCall SET_PLAYER_WANTED_LEVEL with the desired wanted level, followed by SET_PLAYER_WANTED_LEVEL_NOW.\n\nSecond parameter is unknown (always false).",
+			"comment": "Forces any pending wanted level to be applied to the specified player immediately.\n\nCall SET_PLAYER_WANTED_LEVEL with the desired wanted level, followed by SET_PLAYER_WANTED_LEVEL_NOW.\n\nSecond parameter determines the time it takes for police to arrive (always false).",
 			"params": [
 				{
 					"type": "Player",
@@ -81254,7 +81254,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "bDelayLawResponse"
 				}
 			],
 			"return_type": "void",
