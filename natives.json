@@ -34315,7 +34315,7 @@
 		"0xE4A84ABF135EF91A": {
 			"name": "GET_INTERIOR_GROUP_ID",
 			"jhash": "0x09D6376F",
-			"comment": "Returns the group ID of the specified interior.\n0 = default\n1 = subway station, subway tracks, sewers\n3 = train tunnel under mirror park\n5 = tunnel near del perro\n6 = train tunnel near chilliad\n7 = train tunnel near josiah\n8 = train tunnel in sandy shores\n9 = braddock tunnel (near chilliad)\n12 = tunnel under fort zancudo\n14 = train tunnel under cypress flats\n18 = rockford plaza parking garage\n19 = arcadius parking garage\n20 = union depository parking garage\n21 = fib parking garage",
+			"comment": "Returns the group ID of the specified interior.\n0 = default\n1 = subway station, subway tracks, sewers\n3 = train tunnel under mirror park\n5 = tunnel near del perro\n6 = train tunnel near chilliad\n7 = train tunnel near josiah\n8 = train tunnel in sandy shores\n9 = braddock tunnel (near chilliad)\n12 = tunnel under fort zancudo\n14 = train tunnel under cypress flats\n16 = devin weston hangar\n18 = rockford plaza parking garage\n19 = arcadius parking garage\n20 = union depository parking garage\n21 = fib parking garage",
 			"params": [
 				{
 					"type": "Interior",
