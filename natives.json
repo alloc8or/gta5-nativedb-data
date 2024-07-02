@@ -25211,7 +25211,7 @@
 		"0x98C494FD5BDFBFD5": {
 			"name": "BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD",
 			"jhash": "0x5D66CE1E",
-			"comment": "Pushes a function from the Hud component Scaleform onto the stack. Same behavior as GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD, just a hud component id instead of a Scaleform.\n\nKnown components:\n19 - MP_RANK_BAR\n20 - HUD_DIRECTOR_MODE\n\nThis native requires more research - all information can be found inside of 'hud.gfx'. Using a decompiler, the different components are located under \"scripts\\__Packages\\com\\rockstargames\\gtav\\hud\\hudComponents\" and \"scripts\\__Packages\\com\\rockstargames\\gtav\\Multiplayer\".",
+			"comment": "Pushes a function from the Hud component Scaleform onto the stack. Same behavior as GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD, just a hud component id instead of a Scaleform.\n\nKnown components:\n0 - DRUGS_PURSE_01\n1 - DRUGS_PURSE_02\n2 - DRUGS_PURSE_03\n3 - DRUGS_PURSE_04\n4 - MP_TAG_CASH_FROM_BANK\n5 - MP_TAG_PACKAGES\n6 - MP_TAG_CUFF_KEYS\n7 - MP_TAG_DOWNLOAD_DATA\n8 - MP_TAG_IF_PED_FOLLOWING\n9 - MP_TAG_KEY_CARD\n10 - MP_TAG_RANDOM_OBJECT\n11 - MP_TAG_REMOTE_CONTROL\n12 - MP_TAG_CASH_FROM_SAFE\n13 - MP_TAG_WEAPONS_PACKAGE\n14 - MP_TAG_KEYS\n15 - MP_VEHICLE\n16 - MP_VEHICLE_HELI\n17 - MP_VEHICLE_PLANE\n18 - PLAYER_SWITCH_ALERT\n19 - MP_RANK_BAR\n20 - HUD_DIRECTOR_MODE\n21 - HUD_CHIP\n22 - HUD_CHIP_CHANGE\n\nThis native requires more research - all information can be found inside of 'hud.gfx'. Using a decompiler, the different components are located under \"scripts\\__Packages\\com\\rockstargames\\gtav\\hud\\hudComponents\" and \"scripts\\__Packages\\com\\rockstargames\\gtav\\Multiplayer\".",
 			"params": [
 				{
 					"type": "int",
