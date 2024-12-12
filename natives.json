@@ -270,7 +270,7 @@
 		"0x2A488C176D52CCA5": {
 			"name": "VDIST",
 			"jhash": "0x3C08ECB7",
-			"comment": "Calculates distance between vectors.",
+			"comment": "Calculates the distance between two points in 3D space. For performance reasons, consider using direct mathematical calculations for distance, as they can be more efficient than calling this native function.",
 			"params": [
 				{
 					"type": "float",
@@ -5229,19 +5229,19 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "render"
+					"name": "bShouldApplyAcrossAllThreads"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "distanceToBlend"
 				},
 				{
 					"type": "int",
-					"name": "p2"
+					"name": "blendType"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "renderingOptions"
 				}
 			],
 			"return_type": "void",
@@ -5704,7 +5704,7 @@
 		"0xB13C14F66A00D047": {
 			"name": "SET_CAM_FOV",
 			"jhash": "0xD3D5D74F",
-			"comment": "Sets the field of view of the cam.\n---------------------------------------------\nMin: 1.0f\nMax: 130.0f",
+			"comment": "Adjusts the field of view (FOV) for a specified camera, allowing for a wider or narrower perspective of the game world. The field of view is measured in degrees and affects how much of the game world is visible at any given moment through the camera.\n\nValid range is from `1.0f` (minimum FOV, for a very narrow view) to `130.0f` (maximum FOV, for a very wide view).",
 			"params": [
 				{
 					"type": "Cam",
@@ -7149,7 +7149,7 @@
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "bStopImmediately"
 				}
 			],
 			"return_type": "void",
@@ -8260,7 +8260,7 @@
 		"0x6493CF69859B116A": {
 			"name": "USE_VEHICLE_CAM_STUNT_SETTINGS_THIS_UPDATE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Applies a predefined set of vehicle camera settings optimized for capturing stunts, effective for the current game update/frame.",
 			"params": [],
 			"return_type": "void",
 			"build": "791",
@@ -8816,11 +8816,11 @@
 		"0xF46C581C61718916": {
 			"name": "STOP_GAMEPLAY_HINT",
 			"jhash": "0x1BC28B7B",
-			"comment": "",
+			"comment": "Terminates the current gameplay hint camera, with an option for immediate cessation or a gradual fade out.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "p0"
+					"name": "bStopImmediately"
 				}
 			],
 			"return_type": "void",
@@ -15926,7 +15926,7 @@
 		"0xD7B80E7C3BEFC396": {
 			"name": "SET_PICK_UP_BY_CARGOBOB_DISABLED",
 			"jhash": "",
-			"comment": "",
+			"comment": "Configures an entity to either allow or prevent it from being picked up by Cargobobs.",
 			"params": [
 				{
 					"type": "Entity",
@@ -17935,7 +17935,7 @@
 		"0x6B7256074AE34680": {
 			"name": "DRAW_LINE",
 			"jhash": "0xB3426BCC",
-			"comment": "Draws a depth-tested line from one point to another.\n----------------\nx1, y1, z1 : Coordinates for the first point\nx2, y2, z2 : Coordinates for the second point\nr, g, b, alpha : Color with RGBA-Values\nI recommend using a predefined function to call this.\n[VB.NET]\nPublic Sub DrawLine(from As Vector3, [to] As Vector3, col As Color)\n    [Function].Call(Hash.DRAW_LINE, from.X, from.Y, from.Z, [to].X, [to].Y, [to].Z, col.R, col.G, col.B, col.A)\nEnd Sub\n\n[C#]\npublic void DrawLine(Vector3 from, Vector3 to, Color col)\n{\n    Function.Call(Hash.DRAW_LINE, from.X, from.Y, from.Z, to.X, to.Y, to.Z, col.R, col.G, col.B, col.A);\n}",
+			"comment": "This native draws a line between two vectors in the game world. It is typically used for visualizing paths or connections between points. The color of the line is specified by the red, green, and blue parameters, with alpha determining its opacity. This native should be called every frame for continuous rendering.",
 			"params": [
 				{
 					"type": "float",
@@ -18045,7 +18045,7 @@
 		"0x29280002282F1928": {
 			"name": "DRAW_TEXTURED_POLY",
 			"jhash": "",
-			"comment": "Used for drawling Deadline trailing lights, see deadline.ytd\n\np15 through p23 are values that appear to be related to illiumation, scaling, and rotation; more testing required.\nFor UVW mapping (u,v,w parameters), reference your favourite internet resource for more details.",
+			"comment": "This native draws a textured polygon between three vectors in the game world. It's commonly utilized for rendering deadline trailing lights, with additional details available in the deadline.ytd file. UVW mapping details (u,v,w parameters) can be found on various internet resources. This native is specifically used for drawing textured polygons on the screen, where UV coordinates define the texture mapping and color/alpha parameters define the appearance of the polygon. This native should be called every frame for continuous rendering.",
 			"params": [
 				{
 					"type": "float",
@@ -18293,7 +18293,7 @@
 		"0xD3A9971CADAC7252": {
 			"name": "DRAW_BOX",
 			"jhash": "0xCD4D9DD5",
-			"comment": "x,y,z = start pos\nx2,y2,z2 = end pos\n\nDraw's a 3D Box between the two x,y,z coords.\n--------------\nKeep in mind that the edges of the box do only align to the worlds base-vectors. Therefore something like rotation cannot be applied. That means this function is pretty much useless, unless you want a static unicolor box somewhere.\nI recommend using a predefined function to call this.\n[VB.NET]\nPublic Sub DrawBox(a As Vector3, b As Vector3, col As Color)\n    [Function].Call(Hash.DRAW_BOX,a.X, a.Y, a.Z,b.X, b.Y, b.Z,col.R, col.G, col.B, col.A)\nEnd Sub\n\n[C#]\npublic void DrawBox(Vector3 a, Vector3 b, Color col)\n{\n    Function.Call(Hash.DRAW_BOX,a.X, a.Y, a.Z,b.X, b.Y, b.Z,col.R, col.G, col.B, col.A);\n}",
+			"comment": "This native draws a box between two vectors in the game world. It is typically used for visualizing boundaries or areas of interest. The color of the box is specified by the red, green, and blue parameters, with alpha determining its opacity. This native should be called every frame for continuous rendering.",
 			"params": [
 				{
 					"type": "float",
@@ -20458,11 +20458,11 @@
 		"0xF1307EF624A80D87": {
 			"name": "GET_ASPECT_RATIO",
 			"jhash": "",
-			"comment": "",
+			"comment": "This native retrieves the aspect ratio of the game window. If physicalAspect is true, it returns the physical aspect ratio of the game window, which is useful for 3x1 modes. Otherwise, it returns the aspect ratio of the main game window, considering any custom overrides from the settings menu.",
 			"params": [
 				{
 					"type": "BOOL",
-					"name": "b"
+					"name": "physicalAspect"
 				}
 			],
 			"return_type": "float",
@@ -20491,7 +20491,7 @@
 		"0x84ED31191CC5D2C9": {
 			"name": "GET_IS_HIDEF",
 			"jhash": "0x1C340359",
-			"comment": "false = Any resolution < 1280x720\ntrue = Any resolution >= 1280x720",
+			"comment": "This native indicates whether the game is running in high-definition (HD) resolution. It returns false if the resolution is less than 1280x720 and true if it's equal to or greater than 1280x720.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -24821,7 +24821,7 @@
 		"0x32F34FF7F617643B": {
 			"name": "SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT",
 			"jhash": "",
-			"comment": "",
+			"comment": "Configures a Scaleform movie to render to a large render target (1280x720), which is useful for ensuring higher quality and clarity in certain display scenarios. Such as displaying the name of an organization (CEO Office) in a visually impactful way for example.",
 			"params": [
 				{
 					"type": "int",
@@ -36309,11 +36309,11 @@
 		"0x02DEAAC8F8EA7FE7": {
 			"name": "SET_CLOUD_SETTINGS_OVERRIDE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Overrides the cloud settings, which are normally controlled by the weather, with the specified named version. This native allows for custom cloud formations and behaviors that deviate from the default settings associated with the game's current weather conditions.",
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "overrideSettingsName"
 				}
 			],
 			"return_type": "void",
@@ -36532,7 +36532,7 @@
 		"0x8BDC7BFC57A81E76": {
 			"name": "GET_GROUND_Z_AND_NORMAL_FOR_3D_COORD",
 			"jhash": "0x64D91CED",
-			"comment": "",
+			"comment": "Attempts to identify the highest ground Z-coordinate and determine the corresponding surface normal directly beneath a specified 3D coordinate.",
 			"params": [
 				{
 					"type": "float",
@@ -36564,7 +36564,7 @@
 		"0x9E82F0F362881B29": {
 			"name": "GET_GROUND_Z_EXCLUDING_OBJECTS_FOR_3D_COORD",
 			"jhash": "",
-			"comment": "",
+			"comment": "Determines the highest ground Z-coordinate directly below a specified 3D coordinate, excluding any objects at that point. Optionally, water can be considered as ground when determining the highest point.",
 			"params": [
 				{
 					"type": "float",
@@ -36584,11 +36584,11 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p4"
+					"name": "waterAsGround"
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "ignoreDistToWaterLevelCheck"
 				}
 			],
 			"return_type": "BOOL",
@@ -36849,59 +36849,59 @@
 		"0xF56DFB7B61BE7276": {
 			"name": "GET_LINE_PLANE_INTERSECTION",
 			"jhash": "0xC6CC812C",
-			"comment": "",
+			"comment": "Determines whether a line segment intersects a plane and, if so, returns the parameter value at which this intersection occurs.",
 			"params": [
 				{
 					"type": "float",
-					"name": "p0"
+					"name": "x1"
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "y1"
 				},
 				{
 					"type": "float",
-					"name": "p2"
+					"name": "z1"
 				},
 				{
 					"type": "float",
-					"name": "p3"
+					"name": "x2"
 				},
 				{
 					"type": "float",
-					"name": "p4"
+					"name": "y2"
 				},
 				{
 					"type": "float",
-					"name": "p5"
+					"name": "z2"
 				},
 				{
 					"type": "float",
-					"name": "p6"
+					"name": "planeX"
 				},
 				{
 					"type": "float",
-					"name": "p7"
+					"name": "planeY"
 				},
 				{
 					"type": "float",
-					"name": "p8"
+					"name": "planeZ"
 				},
 				{
 					"type": "float",
-					"name": "p9"
+					"name": "planeNormalX"
 				},
 				{
 					"type": "float",
-					"name": "p10"
+					"name": "planeNormalY"
 				},
 				{
 					"type": "float",
-					"name": "p11"
+					"name": "planeNormalZ"
 				},
 				{
 					"type": "float*",
-					"name": "p12"
+					"name": "intersectionParameter"
 				}
 			],
 			"return_type": "BOOL",
@@ -41105,7 +41105,7 @@
 		"0x1EAE0A6E978894A2": {
 			"name": "SUPRESS_RANDOM_EVENT_THIS_FRAME",
 			"jhash": "0x8F60366E",
-			"comment": "",
+			"comment": "Suppresses or enables a specific type of random event for the current frame.\nenum eEventType {\n\tRC_PED_STEAL_VEHICLE = 0,\n\tRC_PED_JAY_WALK_LIGHT = 1,\n\tRC_COP_PURSUE = 2,\n\tRC_COP_PURSUE_VEHICLE_FLEE_SPAWNED = 3,\n\tRC_COP_VEHICLE_DRIVING_FAST = 4,\n\tRC_COP_VEHICLE_DRIVING_SLOW = 5,\n\tRC_DRIVER_RECKLESS = 6,\n\tRC_DRIVER_PRO = 7,\n\tRC_PED_PURSUE_WHEN_HIT_BY_CAR = 8\n}",
 			"params": [
 				{
 					"type": "int",
@@ -41249,23 +41249,23 @@
 		"0x0A60017F841A54F2": {
 			"name": "SCRIPT_RACE_INIT",
 			"jhash": "0x2D33F15A",
-			"comment": "",
+			"comment": "Initializes a script race in GTA:Online and sets up the helper split time system.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "numCheckpoints"
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "numLaps"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "numPlayers"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "Player",
+					"name": "localPlayer"
 				}
 			],
 			"return_type": "void",
@@ -41282,23 +41282,23 @@
 		"0x1BB299305C3E8C13": {
 			"name": "SCRIPT_RACE_PLAYER_HIT_CHECKPOINT",
 			"jhash": "0xA27F4472",
-			"comment": "",
+			"comment": "Records that a player has successfully passed a checkpoint during a scripted race in GTA:Online. This native should be used after initializing the race with SCRIPT_RACE_INIT.",
 			"params": [
 				{
-					"type": "Player",
-					"name": "player"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "checkpoint"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "lap"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -69725,7 +69725,7 @@
 		"0x3317DEDB88C95038": {
 			"name": "IS_PED_DEAD_OR_DYING",
 			"jhash": "0xCBDB7739",
-			"comment": "Seems to consistently return true if the ped is dead.\n\np1 is always passed 1 in the scripts.\n\nI suggest to remove \"OR_DYING\" part, because it does not detect dying phase.\n\nThat's what the devs call it, cry about it.\n\nlol",
+			"comment": "Determines if a ped is dead. Contrary to what the name might suggest, it does not always detect when a ped is in the 'dying' phase (transitioning to death). The exception is when `checkMeleeDeathFlags` is set to `true`, which then includes peds in the midst of melee takedown moves as being in a dying state, even if the death task has not yet started.",
 			"params": [
 				{
 					"type": "Ped",
@@ -69733,7 +69733,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "checkMeleeDeathFlags"
 				}
 			],
 			"return_type": "BOOL",
@@ -76267,7 +76267,7 @@
 		"0xEF0D582CBF2D9B0F": {
 			"name": "APPLY_PED_BLOOD_SPECIFIC",
 			"jhash": "0xFC13CE80",
-			"comment": "",
+			"comment": "Applies blood damage to a ped with specific parameters for zone, UV offsets, rotation, scale, and initial aging.",
 			"params": [
 				{
 					"type": "Ped",
@@ -80431,15 +80431,15 @@
 		"0x83A169EABCDB10A2": {
 			"name": "SET_PED_PHONE_PALETTE_IDX",
 			"jhash": "",
-			"comment": "",
+			"comment": "Sets the palette index of a ped's phone.\nenum PhonePaletteColor\n{\n\tLightBlue = 0,\n\tGreen = 1,\n\tRed = 2,\n\tOrange = 3,\n\tGrey = 4,\n\tPurple = 5,\n\tPink = 6\n}",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "index"
 				}
 			],
 			"return_type": "void",
@@ -104536,7 +104536,7 @@
 		"0xB664292EAECF7FA6": {
 			"name": "SET_VEHICLE_DOORS_LOCKED",
 			"jhash": "0x4CDD35D0",
-			"comment": "enum eVehicleLockState\n{\n\tVEHICLELOCK_NONE,\n\tVEHICLELOCK_UNLOCKED,\n\tVEHICLELOCK_LOCKED,\n\tVEHICLELOCK_LOCKOUT_PLAYER_ONLY,\n\tVEHICLELOCK_LOCKED_PLAYER_INSIDE,\n\tVEHICLELOCK_LOCKED_INITIALLY,\n\tVEHICLELOCK_FORCE_SHUT_DOORS,\n\tVEHICLELOCK_LOCKED_BUT_CAN_BE_DAMAGED,\n\tVEHICLELOCK_LOCKED_BUT_BOOT_UNLOCKED,\n\tVEHICLELOCK_LOCKED_NO_PASSENGERS,\n\tVEHICLELOCK_CANNOT_ENTER\t\n};",
+			"comment": "Locks the doors of a specified vehicle to a defined lock state, affecting how players and NPCs can interact with the vehicle.\nenum eVehicleLockState {\n\tVEHICLELOCK_NONE = 0, // No specific lock state, vehicle behaves according to the game's default settings.\n\tVEHICLELOCK_UNLOCKED = 1, // Vehicle is fully unlocked, allowing free entry by players and NPCs.\n\tVEHICLELOCK_LOCKED = 2, // Vehicle is locked, preventing entry by players and NPCs.\n\tVEHICLELOCK_LOCKOUT_PLAYER_ONLY = 3, // Vehicle locks out only players, allowing NPCs to enter.\n\tVEHICLELOCK_LOCKED_PLAYER_INSIDE = 4, // Vehicle is locked once a player enters, preventing others from entering.\n\tVEHICLELOCK_LOCKED_INITIALLY = 5, // Vehicle starts in a locked state, but may be unlocked through game events.\n\tVEHICLELOCK_FORCE_SHUT_DOORS = 6, // Forces the vehicle's doors to shut and lock.\n\tVEHICLELOCK_LOCKED_BUT_CAN_BE_DAMAGED = 7, // Vehicle is locked but can still be damaged.\n\tVEHICLELOCK_LOCKED_BUT_BOOT_UNLOCKED = 8, // Vehicle is locked, but its trunk/boot remains unlocked.\n\tVEHICLELOCK_LOCKED_NO_PASSENGERS = 9, // Vehicle is locked and does not allow passengers, except for the driver.\n\tVEHICLELOCK_CANNOT_ENTER = 10 // Vehicle is completely locked, preventing entry entirely, even if previously inside.\n};",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105235,15 +105235,15 @@
 		"0xC67DB108A9ADE3BE": {
 			"name": "FORCE_SUBMARINE_NEURTAL_BUOYANCY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Forces a submarine to maintain neutral buoyancy for a specified duration, preventing it from rising when unoccupied or without a driver.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "submarine"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "time"
 				}
 			],
 			"return_type": "void",
@@ -105284,7 +105284,7 @@
 		"0x3E71D0B300B7AA79": {
 			"name": "GET_SUBMARINE_IS_UNDER_DESIGN_DEPTH",
 			"jhash": "",
-			"comment": "",
+			"comment": "Determines if the submarine is operating below its designated crush depth.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -105300,7 +105300,7 @@
 		"0x093D6DDCA5B8FBAE": {
 			"name": "GET_SUBMARINE_NUMBER_OF_AIR_LEAKS",
 			"jhash": "",
-			"comment": "",
+			"comment": "Checks if a Submarine has any air leaks, when there is more than 4 the player will drown.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113507,7 +113507,7 @@
 		"0xAF03011701811146": {
 			"name": "DETACH_ENTITY_FROM_CARGOBOB",
 			"jhash": "",
-			"comment": "",
+			"comment": "Detaches the specified entity currently being carried by a Cargobob.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -113659,7 +113659,7 @@
 		"0x1F34B0626C594380": {
 			"name": "SET_CARGOBOB_EXCLUDE_FROM_PICKUP_ENTITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Prevents a specified entity from being detached from a Cargobob, even in the event of collisions.",
 			"params": [
 				{
 					"type": "Any",
@@ -113676,7 +113676,7 @@
 		"0x2C1D8B3B19E517CC": {
 			"name": "CAN_CARGOBOB_PICK_UP_ENTITY",
 			"jhash": "",
-			"comment": "",
+			"comment": "Determines whether the specified Cargobob can pick up a given entity.",
 			"params": [
 				{
 					"type": "Any",
@@ -114414,7 +114414,7 @@
 		"0xF78F94D60248C737": {
 			"name": "ARE_PLANE_CONTROL_PANELS_INTACT",
 			"jhash": "0x3B51B348",
-			"comment": "",
+			"comment": "Queries whether the control panels of a plane are intact. This native is used to determine the operational status of a plane's cockpit controls, which can affect the plane's flyability.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -114422,7 +114422,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p1"
+					"name": "checkForZeroHealth"
 				}
 			],
 			"return_type": "BOOL",
@@ -115178,11 +115178,11 @@
 		"0x26D99D5A82FD18E8": {
 			"name": "SET_DISABLE_BMX_EXTRA_TRICK_FORCES",
 			"jhash": "",
-			"comment": "",
+			"comment": "Disables the additional physics forces applied to BMX bikes that enable them to perform tricks.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "disableExtraTrickForces"
 				}
 			],
 			"return_type": "void",
@@ -116229,15 +116229,15 @@
 		"0xEDBC8405B3895CC9": {
 			"name": "SET_DISABLE_HELI_EXPLODE_FROM_BODY_DAMAGE",
 			"jhash": "",
-			"comment": "",
+			"comment": "Prevents a helicopter from exploding due to relatively minor body damage. This native can be particularly useful in gameplay scenarios or missions where helicopters are subject to damage that would not realistically cause an explosion, ensuring they remain operational unless subjected to more significant damage.",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "helicopter"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "disableExplode"
 				}
 			],
 			"return_type": "void",
@@ -116246,15 +116246,15 @@
 		"0x26E13D440E7F6064": {
 			"name": "SET_DISABLE_EXPLODE_FROM_BODY_DAMAGE_ON_COLLISION",
 			"jhash": "",
-			"comment": "",
+			"comment": "Prevents a vehicle from exploding upon sustaining body damage from physical collisions. This can be used to increase the durability of vehicles in high-impact scenarios, such as races or combat situations, by preventing them from being destroyed due to collision-induced body damage.",
 			"params": [
 				{
 					"type": "Vehicle",
 					"name": "vehicle"
 				},
 				{
-					"type": "float",
-					"name": "value"
+					"type": "BOOL",
+					"name": "disableExplode"
 				}
 			],
 			"return_type": "void",
