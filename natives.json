@@ -68584,12 +68584,12 @@
 					"name": "nthClosest"
 				},
 				{
-					"type": "Vector3*",
-					"name": "outPosition"
-				},
-				{
 					"type": "float*",
 					"name": "outHeading"
+				},
+				{
+					"type": "int*",
+					"name": "outNumLanes"
 				},
 				{
 					"type": "int",
