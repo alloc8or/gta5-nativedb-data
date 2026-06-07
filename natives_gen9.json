@@ -82632,16 +82632,24 @@
 					"name": "player"
 				},
 				{
-					"type": "Vector3*",
-					"name": "position"
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
 				},
 				{
 					"type": "BOOL",
-					"name": "p2"
+					"name": "p4"
 				},
 				{
 					"type": "BOOL",
-					"name": "p3"
+					"name": "p5"
 				}
 			],
 			"return_type": "void",
