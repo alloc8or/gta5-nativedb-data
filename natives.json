@@ -82199,16 +82199,16 @@
 					"name": "player"
 				},
 				{
-					"type": "Vector3*",
-					"name": "position"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "BOOL",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "BOOL",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void",
