@@ -383,7 +383,7 @@
 		"0x11E019C8F43ACC8A": {
 			"name": "CEIL",
 			"jhash": "0xD536A1DF",
-			"comment": "I'm guessing this rounds a float value up to the next whole number, and FLOOR rounds it down",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -430,10 +430,7 @@
 				}
 			],
 			"return_type": "void",
-			"build": "877",
-			"old_names": [
-				"SET_THREAD_PRIORITY"
-			]
+			"build": "877"
 		}
 	},
 	"APPS": {
@@ -1461,7 +1458,7 @@
 		"0xE65F427EB70AB1ED": {
 			"name": "PLAY_SOUND_FROM_ENTITY",
 			"jhash": "0x95AE00F8",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/f2A7vTj0 \nNo changes made in b678d.\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/f2A7vTj0 \nNo changes made in b678d.\n\nhttps://gtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
@@ -1527,7 +1524,7 @@
 		"0x8D8686B622B88120": {
 			"name": "PLAY_SOUND_FROM_COORD",
 			"jhash": "0xCAD3E2D5",
-			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/eeFc5DiW\n\ngtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
+			"comment": "All found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/eeFc5DiW\n\nhttps://gtaforums.com/topic/795622-audio-for-mods\n\nFull list of audio / sound names by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/soundNames.json",
 			"params": [
 				{
 					"type": "int",
@@ -1942,7 +1939,7 @@
 		"0x6C8065A3B780185B": {
 			"name": "SET_AMBIENT_VOICE_NAME",
 			"jhash": "0xBD2EA1A1",
-			"comment": "Audio List\ngtaforums.com/topic/795622-audio-for-mods/\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/FTeAj4yZ",
+			"comment": "Audio List\nhttps://gtaforums.com/topic/795622-audio-for-mods/\n\nAll found occurrences in b617d, sorted alphabetically and identical lines removed: https://pastebin.com/FTeAj4yZ",
 			"params": [
 				{
 					"type": "Ped",
@@ -3813,7 +3810,7 @@
 		"0x4F0C413926060B38": {
 			"name": "FORCE_USE_AUDIO_GAME_OBJECT",
 			"jhash": "0x33B0B007",
-			"comment": "This native sets the audio of the specified vehicle to the audioName (p1).\n\nUse the audioNameHash found in vehicles.meta\n\nExample:\n_SET_VEHICLE_AUDIO(veh, \"ADDER\");\nThe selected vehicle will now have the audio of the Adder.",
+			"comment": "This native sets the audio of the specified vehicle to the audioName (p1).\n\nUse the audioNameHash found in vehicles.meta\n\nExample:\nFORCE_USE_AUDIO_GAME_OBJECT(veh, \"ADDER\");\nThe selected vehicle will now have the audio of the Adder.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -5240,7 +5237,7 @@
 		"0x6E91B04E08773030": {
 			"name": "REACTIVATE_NAMED_OBJECT_BRAINS_WAITING_TILL_OUT_OF_RANGE",
 			"jhash": "0x29CE8BAA",
-			"comment": "Looks like a cousin of above function _6D6840CEE8845831 as it was found among them. Must be similar\n\nHere are possible values of argument - \n\n\"ob_tv\"\n\"launcher_Darts\"",
+			"comment": "Here are possible values of argument - \n\n\"ob_tv\"\n\"launcher_Darts\"",
 			"params": [
 				{
 					"type": "const char*",
@@ -8285,7 +8282,7 @@
 		"0xEE778F8C7E1142E2": {
 			"name": "GET_CAM_VIEW_MODE_FOR_CONTEXT",
 			"jhash": "0xF3B148A6",
-			"comment": "context: see _GET_CAM_ACTIVE_VIEW_MODE_CONTEXT",
+			"comment": "context: see GET_CAM_ACTIVE_VIEW_MODE_CONTEXT",
 			"params": [
 				{
 					"type": "int",
@@ -8298,7 +8295,7 @@
 		"0x2A2173E46DAECD12": {
 			"name": "SET_CAM_VIEW_MODE_FOR_CONTEXT",
 			"jhash": "0x1DEBCB45",
-			"comment": "context: see _GET_CAM_ACTIVE_VIEW_MODE_CONTEXT, viewmode: see CAM.GET_FOLLOW_VEHICLE_CAM_VIEW_MODE",
+			"comment": "context: see GET_CAM_ACTIVE_VIEW_MODE_CONTEXT, viewmode: see CAM.GET_FOLLOW_VEHICLE_CAM_VIEW_MODE",
 			"params": [
 				{
 					"type": "int",
@@ -12706,7 +12703,7 @@
 		"0xAFBD61CC738D9EB9": {
 			"name": "GET_ENTITY_ROTATION",
 			"jhash": "0x8FF45B04",
-			"comment": "rotationOrder is the order yaw, pitch and roll is applied. Usually 2. Returns a vector where the Z coordinate is the yaw.\n\nrotationOrder refers to the order yaw pitch roll is applied; value ranges from 0 to 5 and is usually *2* in scripts.\nWhat you use for rotationOrder when getting must be the same as rotationOrder when setting the rotation.\n\nWhat it returns is the yaw on the z part of the vector, which makes sense considering R* considers z as vertical. Here's a picture for those of you who don't understand pitch, yaw, and roll: www.allstar.fiu.edu/aero/images/pic5-1.gif\n\nRotation Orders:\n0: ZYX - Rotate around the z-axis, then the y-axis and finally the x-axis.\n1: YZX - Rotate around the y-axis, then the z-axis and finally the x-axis.\n2: ZXY - Rotate around the z-axis, then the x-axis and finally the y-axis.\n3: XZY - Rotate around the x-axis, then the z-axis and finally the y-axis.\n4: YXZ - Rotate around the y-axis, then the x-axis and finally the z-axis.\n5: XYZ - Rotate around the x-axis, then the y-axis and finally the z-axis.",
+			"comment": "rotationOrder is the order yaw, pitch and roll is applied. Usually 2. Returns a vector where the Z coordinate is the yaw.\n\nrotationOrder refers to the order yaw pitch roll is applied; value ranges from 0 to 5 and is usually *2* in scripts.\nWhat you use for rotationOrder when getting must be the same as rotationOrder when setting the rotation.\n\nWhat it returns is the yaw on the z part of the vector, which makes sense considering R* considers z as vertical. Here's a picture for those of you who don't understand pitch, yaw, and roll: https://web.archive.org/web/20160825124935/www.allstar.fiu.edu/aero/images/pic5-1.gif\n\nRotation Orders:\n0: ZYX - Rotate around the z-axis, then the y-axis and finally the x-axis.\n1: YZX - Rotate around the y-axis, then the z-axis and finally the x-axis.\n2: ZXY - Rotate around the z-axis, then the x-axis and finally the y-axis.\n3: XZY - Rotate around the x-axis, then the z-axis and finally the y-axis.\n4: YXZ - Rotate around the y-axis, then the x-axis and finally the z-axis.\n5: XYZ - Rotate around the x-axis, then the y-axis and finally the z-axis.",
 			"params": [
 				{
 					"type": "Entity",
@@ -13363,7 +13360,7 @@
 		"0x1F0B79228E461EC9": {
 			"name": "IS_ENTITY_PLAYING_ANIM",
 			"jhash": "0x0D130D34",
-			"comment": "See also PED::IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM 0x6EC47A344923E1ED 0x3C30B447\n\nTaken from ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), \"creatures@shark@move\", \"attack_player\", 3)\n\np4 is always 3 in the scripts.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
+			"comment": "See also PED::IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM\n\nTaken from ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), \"creatures@shark@move\", \"attack_player\", 3)\n\np4 is always 3 in the scripts.\n\nFull list of animation dictionaries and anims by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json",
 			"params": [
 				{
 					"type": "Entity",
@@ -13604,7 +13601,7 @@
 		"0xC5F68BE9613E2D18": {
 			"name": "APPLY_FORCE_TO_ENTITY",
 			"jhash": "0xC1C0855A",
-			"comment": "Documented here:\ngtaforums.com/topic/885669-precisely-define-object-physics/\ngtaforums.com/topic/887362-apply-forces-and-momentums-to-entityobject/\n\nforceFlags:\nFirst bit (lowest): Strong force flag, factor 100\nSecond bit: Unkown flag\nThird bit: Momentum flag=1 (vector (x,y,z) is a momentum, more research needed)\nIf higher bits are unequal 0 the function doesn't applay any forces at all.\n(As integer possible values are 0-7)\n\n0: weak force\n1: strong force\n2: same as 0 (2nd bit?)\n3: same as 1\n4: weak momentum\n5: strong momentum\n6: same as 4\n7: same as 5\n\nisLocal: vector defined in local (body-fixed) coordinate frame\nisMassRel: if true the force gets multiplied with the objects mass (this is why it was known as highForce) and different objects will have the same acceleration.",
+			"comment": "Documented here:\nhttps://gtaforums.com/topic/885669-precisely-define-object-physics/\nhttps://gtaforums.com/topic/887362-apply-forces-and-momentums-to-entityobject/\n\nforceFlags:\nFirst bit (lowest): Strong force flag, factor 100\nSecond bit: Unkown flag\nThird bit: Momentum flag=1 (vector (x,y,z) is a momentum, more research needed)\nIf higher bits are unequal 0 the function doesn't applay any forces at all.\n(As integer possible values are 0-7)\n\n0: weak force\n1: strong force\n2: same as 0 (2nd bit?)\n3: same as 1\n4: weak momentum\n5: strong momentum\n6: same as 4\n7: same as 5\n\nisLocal: vector defined in local (body-fixed) coordinate frame\nisMassRel: if true the force gets multiplied with the objects mass (this is why it was known as highForce) and different objects will have the same acceleration.",
 			"params": [
 				{
 					"type": "Entity",
@@ -15461,7 +15458,7 @@
 		"0x57C5DB656185EAC4": {
 			"name": "SET_ENTITY_TRAFFICLIGHT_OVERRIDE",
 			"jhash": "0xC47F5B91",
-			"comment": "Example here: www.gtaforums.com/topic/830463-help-with-turning-lights-green-and-causing-peds-to-crash-into-each-other/#entry1068211340\n\n0 = green\n1 = red\n2 = yellow\n3 = reset changes\nchanging lights may not change the behavior of vehicles",
+			"comment": "Example here: https://gtaforums.com/topic/830463-help-with-turning-lights-green-and-causing-peds-to-crash-into-each-other/#entry1068211340\n\n0 = green\n1 = red\n2 = yellow\n3 = reset changes\nchanging lights may not change the behavior of vehicles",
 			"params": [
 				{
 					"type": "Entity",
@@ -16460,7 +16457,7 @@
 		"0x96E2929292A4DB77": {
 			"name": "GET_SHOP_PED_QUERY_COMPONENT_INDEX",
 			"jhash": "",
-			"comment": "Returns some sort of index/offset for components.\nNeeds _GET_NUM_PROPS_FROM_OUTFIT to be called with p3 = false and componentId with the drawable's component slot first, returns -1 otherwise.",
+			"comment": "Returns some sort of index/offset for components.\nNeeds SETUP_SHOP_PED_APPAREL_QUERY_TU to be called with p3 = false and componentId with the drawable's component slot first, returns -1 otherwise.",
 			"params": [
 				{
 					"type": "Hash",
@@ -16507,7 +16504,7 @@
 		"0x6CEBE002E58DEE97": {
 			"name": "GET_SHOP_PED_QUERY_PROP_INDEX",
 			"jhash": "",
-			"comment": "Returns some sort of index/offset for props.\nNeeds _GET_NUM_PROPS_FROM_OUTFIT to be called with p3 = true and componentId = -1 first, returns -1 otherwise.",
+			"comment": "Returns some sort of index/offset for props.\nNeeds SETUP_SHOP_PED_APPAREL_QUERY_TU to be called with p3 = true and componentId = -1 first, returns -1 otherwise.",
 			"params": [
 				{
 					"type": "Hash",
@@ -18985,7 +18982,7 @@
 		"0xD0F64B265C8C8B33": {
 			"name": "DRAW_SPOT_LIGHT",
 			"jhash": "0xBDBC410C",
-			"comment": "Parameters:\n* pos - coordinate where the spotlight is located\n* dir - the direction vector the spotlight should aim at from its current position\n* r,g,b - color of the spotlight\n* distance - the maximum distance the light can reach\n* brightness - the brightness of the light\n* roundness - \"smoothness\" of the circle edge\n* radius - the radius size of the spotlight\n* falloff - the falloff size of the light's edge (example: www.i.imgur.com/DemAWeO.jpg)\n\nExample in C# (spotlight aims at the closest vehicle):\nVector3 myPos = Game.Player.Character.Position;\nVehicle nearest = World.GetClosestVehicle(myPos , 1000f);\nVector3 destinationCoords = nearest.Position;\nVector3 dirVector = destinationCoords - myPos;\ndirVector.Normalize();\nFunction.Call(Hash.DRAW_SPOT_LIGHT, pos.X, pos.Y, pos.Z, dirVector.X, dirVector.Y, dirVector.Z, 255, 255, 255, 100.0f, 1f, 0.0f, 13.0f, 1f);",
+			"comment": "Parameters:\n* pos - coordinate where the spotlight is located\n* dir - the direction vector the spotlight should aim at from its current position\n* r,g,b - color of the spotlight\n* distance - the maximum distance the light can reach\n* brightness - the brightness of the light\n* roundness - \"smoothness\" of the circle edge\n* radius - the radius size of the spotlight\n* falloff - the falloff size of the light's edge (example: https://i.imgur.com/DemAWeO.jpg)\n\nExample in C# (spotlight aims at the closest vehicle):\nVector3 myPos = Game.Player.Character.Position;\nVehicle nearest = World.GetClosestVehicle(myPos , 1000f);\nVector3 destinationCoords = nearest.Position;\nVector3 dirVector = destinationCoords - myPos;\ndirVector.Normalize();\nFunction.Call(Hash.DRAW_SPOT_LIGHT, pos.X, pos.Y, pos.Z, dirVector.X, dirVector.Y, dirVector.Z, 255, 255, 255, 100.0f, 1f, 0.0f, 13.0f, 1f);",
 			"params": [
 				{
 					"type": "float",
@@ -20228,7 +20225,7 @@
 		"0x2BC54A8188768488": {
 			"name": "DRAW_SPRITE_NAMED_RENDERTARGET",
 			"jhash": "",
-			"comment": "Similar to _DRAW_SPRITE, but seems to be some kind of \"interactive\" sprite, at least used by render targets.\nThese seem to be the only dicts ever requested by this native:\n\nprop_screen_biker_laptop\nProp_Screen_GR_Disruption\nProp_Screen_TaleOfUs\nprop_screen_nightclub\nProp_Screen_IE_Adhawk\nprop_screen_sm_free_trade_shipping\nprop_screen_hacker_truck\nMPDesktop\nProp_Screen_Nightclub\nAnd a few others\n",
+			"comment": "Similar to DRAW_SPRITE, but seems to be some kind of \"interactive\" sprite, at least used by render targets.\nThese seem to be the only dicts ever requested by this native:\n\nprop_screen_biker_laptop\nProp_Screen_GR_Disruption\nProp_Screen_TaleOfUs\nprop_screen_nightclub\nProp_Screen_IE_Adhawk\nprop_screen_sm_free_trade_shipping\nprop_screen_hacker_truck\nMPDesktop\nProp_Screen_Nightclub\nAnd a few others\n",
 			"params": [
 				{
 					"type": "const char*",
@@ -20489,7 +20486,7 @@
 		"0xAA0008F3BBB8F416": {
 			"name": "SET_DRAW_ORIGIN",
 			"jhash": "0xE10198D5",
-			"comment": "Sets the on-screen drawing origin for draw-functions (which is normally x=0,y=0 in the upper left corner of the screen) to a world coordinate.\nFrom now on, the screen coordinate which displays the given world coordinate on the screen is seen as x=0,y=0.\n\nExample in C#:\nVector3 boneCoord = somePed.GetBoneCoord(Bone.SKEL_Head);\nFunction.Call(Hash.SET_DRAW_ORIGIN, boneCoord.X, boneCoord.Y, boneCoord.Z, 0);\nFunction.Call(Hash.DRAW_SPRITE, \"helicopterhud\", \"hud_corner\", -0.01, -0.015, 0.013, 0.013, 0.0, 255, 0, 0, 200);\nFunction.Call(Hash.DRAW_SPRITE, \"helicopterhud\", \"hud_corner\", 0.01, -0.015, 0.013, 0.013, 90.0, 255, 0, 0, 200);\nFunction.Call(Hash.DRAW_SPRITE, \"helicopterhud\", \"hud_corner\", -0.01, 0.015, 0.013, 0.013, 270.0, 255, 0, 0, 200);\nFunction.Call(Hash.DRAW_SPRITE, \"helicopterhud\", \"hud_corner\", 0.01, 0.015, 0.013, 0.013, 180.0, 255, 0, 0, 200);\nFunction.Call(Hash.CLEAR_DRAW_ORIGIN);\n\nResult: www11.pic-upload.de/19.06.15/bkqohvil2uao.jpg\nIf the pedestrian starts walking around now, the sprites are always around her head, no matter where the head is displayed on the screen.\n\nThis function also effects the drawing of texts and other UI-elements.\nThe effect can be reset by calling GRAPHICS::CLEAR_DRAW_ORIGIN().",
+			"comment": "Sets the on-screen drawing origin for draw-functions (which is normally x=0,y=0 in the upper left corner of the screen) to a world coordinate.\nFrom now on, the screen coordinate which displays the given world coordinate on the screen is seen as x=0,y=0.\n\nExample in C#:\nVector3 boneCoord = somePed.GetBoneCoord(Bone.SKEL_Head);\nFunction.Call(Hash.SET_DRAW_ORIGIN, boneCoord.X, boneCoord.Y, boneCoord.Z, 0);\nFunction.Call(Hash.DRAW_SPRITE, \"helicopterhud\", \"hud_corner\", -0.01, -0.015, 0.013, 0.013, 0.0, 255, 0, 0, 200);\nFunction.Call(Hash.DRAW_SPRITE, \"helicopterhud\", \"hud_corner\", 0.01, -0.015, 0.013, 0.013, 90.0, 255, 0, 0, 200);\nFunction.Call(Hash.DRAW_SPRITE, \"helicopterhud\", \"hud_corner\", -0.01, 0.015, 0.013, 0.013, 270.0, 255, 0, 0, 200);\nFunction.Call(Hash.DRAW_SPRITE, \"helicopterhud\", \"hud_corner\", 0.01, 0.015, 0.013, 0.013, 180.0, 255, 0, 0, 200);\nFunction.Call(Hash.CLEAR_DRAW_ORIGIN);\n\nIf the pedestrian starts walking around now, the sprites are always around her head, no matter where the head is displayed on the screen.\n\nThis function also effects the drawing of texts and other UI-elements.\nThe effect can be reset by calling GRAPHICS::CLEAR_DRAW_ORIGIN().",
 			"params": [
 				{
 					"type": "float",
@@ -20987,7 +20984,7 @@
 		"0x34E82F05DF2974F5": {
 			"name": "GET_SCREEN_COORD_FROM_WORLD_COORD",
 			"jhash": "0x1F950E4B",
-			"comment": "Convert a world coordinate into its relative screen coordinate.  (WorldToScreen)\n\nReturns a boolean; whether or not the operation was successful. It will return false if the coordinates given are not visible to the rendering camera.\n\n\nFor .NET users...\n\nVB:\nPublic Shared Function World3DToScreen2d(pos as vector3) As Vector2\n\n        Dim x2dp, y2dp As New Native.OutputArgument\n\n        Native.Function.Call(Of Boolean)(Native.Hash.GET_SCREEN_COORD_FROM_WORLD_COORD , pos.x, pos.y, pos.z, x2dp, y2dp)\n        Return New Vector2(x2dp.GetResult(Of Single), y2dp.GetResult(Of Single))\n      \n    End Function\n\nC#:\nVector2 World3DToScreen2d(Vector3 pos)\n    {\n        var x2dp = new OutputArgument();\n        var y2dp = new OutputArgument();\n\n        Function.Call<bool>(Hash.GET_SCREEN_COORD_FROM_WORLD_COORD , pos.X, pos.Y, pos.Z, x2dp, y2dp);\n        return new Vector2(x2dp.GetResult<float>(), y2dp.GetResult<float>());\n    }\n//USE VERY SMALL VALUES FOR THE SCALE OF RECTS/TEXT because it is dramatically larger on screen than in 3D, e.g '0.05' small.\n\nUsed to be called _WORLD3D_TO_SCREEN2D\n\nI thought we lost you from the scene forever. It does seem however that calling SET_DRAW_ORIGIN then your natives, then ending it. Seems to work better for certain things such as keeping boxes around people for a predator missile e.g.",
+			"comment": "Convert a world coordinate into its relative screen coordinate.  (WorldToScreen)\n\nReturns a boolean; whether or not the operation was successful. It will return false if the coordinates given are not visible to the rendering camera.\n\n\nFor .NET users...\n\nVB:\nPublic Shared Function World3DToScreen2d(pos as vector3) As Vector2\n\n        Dim x2dp, y2dp As New Native.OutputArgument\n\n        Native.Function.Call(Of Boolean)(Native.Hash.GET_SCREEN_COORD_FROM_WORLD_COORD , pos.x, pos.y, pos.z, x2dp, y2dp)\n        Return New Vector2(x2dp.GetResult(Of Single), y2dp.GetResult(Of Single))\n      \n    End Function\n\nC#:\nVector2 World3DToScreen2d(Vector3 pos)\n    {\n        var x2dp = new OutputArgument();\n        var y2dp = new OutputArgument();\n\n        Function.Call<bool>(Hash.GET_SCREEN_COORD_FROM_WORLD_COORD , pos.X, pos.Y, pos.Z, x2dp, y2dp);\n        return new Vector2(x2dp.GetResult<float>(), y2dp.GetResult<float>());\n    }\n//USE VERY SMALL VALUES FOR THE SCALE OF RECTS/TEXT because it is dramatically larger on screen than in 3D, e.g '0.05' small.\n\nIt does seem however that calling SET_DRAW_ORIGIN then your natives, then ending it. Seems to work better for certain things such as keeping boxes around people for a predator missile e.g.",
 			"params": [
 				{
 					"type": "float",
@@ -21379,7 +21376,7 @@
 		"0x6D955F6A9E0295B1": {
 			"name": "GRASSBATCH_ENABLE_FLATTENING_IN_SPHERE",
 			"jhash": "",
-			"comment": "Wraps 0xAAE9BE70EC7C69AB with FLT_MAX as p7",
+			"comment": "Wraps GRASSBATCH_ENABLE_FLATTENING_EXT_IN_SPHERE with FLT_MAX as p7",
 			"params": [
 				{
 					"type": "float",
@@ -24962,7 +24959,7 @@
 		"0x92CCC17A7A2285DA": {
 			"name": "CLEAR_EXTRA_TCMODIFIER",
 			"jhash": "",
-			"comment": "Clears the secondary timecycle modifier usually set with _SET_EXTRA_TIMECYCLE_MODIFIER",
+			"comment": "Clears the secondary timecycle modifier usually set with SET_EXTRA_TCMODIFIER",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -25001,7 +24998,7 @@
 		"0x2BF72AD5B41AA739": {
 			"name": "DISABLE_MOON_CYCLE_OVERRIDE",
 			"jhash": "",
-			"comment": "Resets the extra timecycle modifier strength normally set with 0x2C328AF17210F009",
+			"comment": "Resets the timecycle modifier strength normally set with ENABLE_MOON_CYCLE_OVERRIDE",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -25899,7 +25896,7 @@
 		"0x77FE3402004CD1B0": {
 			"name": "SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING",
 			"jhash": "",
-			"comment": "Same as SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING\nBoth SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING / _SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING_2 works, but _SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING_2 is usually used for \"name\" (organisation, players..).",
+			"comment": "Same as SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING\nBoth SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING / SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING works, but SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING is usually used for \"name\" (organisation, players..).",
 			"params": [
 				{
 					"type": "const char*",
@@ -27399,7 +27396,7 @@
 		"0xFDEC055AB549E328": {
 			"name": "THEFEED_FREEZE_NEXT_POST",
 			"jhash": "0xAFA1148B",
-			"comment": "Requires manual management of game stream handles (i.e., 0xBE4390CB40B3E627).",
+			"comment": "Requires manual management of game stream handles (i.e., THEFEED_REMOVE_ITEM).",
 			"params": [],
 			"return_type": "void",
 			"build": "323",
@@ -27679,7 +27676,7 @@
 		"0x531B84E7DA981FB6": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON",
 			"jhash": "0xDEB491C8",
-			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames:  https://pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)\niconType2 is a mirror of iconType. It shows in the \"subject\" line, right under the original iconType.\n\n\nint IconNotification(char *text, char *text2, char *Subject)\n{\n    BEGIN_TEXT_COMMAND_THEFEED_POST(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   _SET_NOTIFICATION_MESSAGE_CLAN_TAG_2(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 1, 7, text2, Subject, 1.0f, \"__EXAMPLE\", 7);\n   return END_TEXT_COMMAND_THEFEED_POST_TICKER(1, 1);\n}",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames:  https://pastebin.com/XdpJVbHz\n\nflash is a bool for fading in.\niconTypes:\n1 : Chat Box\n2 : Email\n3 : Add Friend Request\n4 : Nothing\n5 : Nothing\n6 : Nothing\n7 : Right Jumping Arrow\n8 : RP Icon\n9 : $ Icon\n\n\"sender\" is the very top header. This can be any old string.\n\"subject\" is the header under the sender.\n\"duration\" is a multiplier, so 1.0 is normal, 2.0 is twice as long (very slow), and 0.5 is half as long.\n\"clanTag\" shows a crew tag in the \"sender\" header, after the text. You need to use 3 underscores as padding. Maximum length of this field seems to be 7. (e.g. \"MK\" becomes \"___MK\", \"ACE\" becomes \"___ACE\", etc.)\niconType2 is a mirror of iconType. It shows in the \"subject\" line, right under the original iconType.\n\n\nint IconNotification(char *text, char *text2, char *Subject)\n{\n    BEGIN_TEXT_COMMAND_THEFEED_POST(\"STRING\");\n ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON(\"CHAR_SOCIAL_CLUB\", \"CHAR_SOCIAL_CLUB\", 1, 7, text2, Subject, 1.0f, \"__EXAMPLE\", 7);\n   return END_TEXT_COMMAND_THEFEED_POST_TICKER(1, 1);\n}",
 			"params": [
 				{
 					"type": "const char*",
@@ -28172,7 +28169,7 @@
 		"0x9D77056A530643F6": {
 			"name": "END_TEXT_COMMAND_PRINT",
 			"jhash": "0x38F82261",
-			"comment": "Draws the subtitle at middle center of the screen.\n\nint duration = time in milliseconds to show text on screen before disappearing\n\ndrawImmediately = If true, the text will be drawn immediately, if false, the text will be drawn after the previous subtitle has finished\n\nUsed to be known as _DRAW_SUBTITLE_TIMED",
+			"comment": "Draws the subtitle at middle center of the screen.\n\nint duration = time in milliseconds to show text on screen before disappearing\n\ndrawImmediately = If true, the text will be drawn immediately, if false, the text will be drawn after the previous subtitle has finished",
 			"params": [
 				{
 					"type": "int",
@@ -28213,7 +28210,7 @@
 		"0x25FBB336DF1804CB": {
 			"name": "BEGIN_TEXT_COMMAND_DISPLAY_TEXT",
 			"jhash": "0x3E35563E",
-			"comment": "The following were found in the decompiled script files:\nSTRING, TWOSTRINGS, NUMBER, PERCENTAGE, FO_TWO_NUM, ESMINDOLLA, ESDOLLA, MTPHPER_XPNO, AHD_DIST, CMOD_STAT_0, CMOD_STAT_1, CMOD_STAT_2, CMOD_STAT_3, DFLT_MNU_OPT, F3A_TRAFDEST, ES_HELP_SOC3\n\nESDOLLA - cash\nESMINDOLLA - cash (negative)\n\nUsed to be known as _SET_TEXT_ENTRY",
+			"comment": "The following were found in the decompiled script files:\nSTRING, TWOSTRINGS, NUMBER, PERCENTAGE, FO_TWO_NUM, ESMINDOLLA, ESDOLLA, MTPHPER_XPNO, AHD_DIST, CMOD_STAT_0, CMOD_STAT_1, CMOD_STAT_2, CMOD_STAT_3, DFLT_MNU_OPT, F3A_TRAFDEST, ES_HELP_SOC3\n\nESDOLLA - cash\nESMINDOLLA - cash (negative)",
 			"params": [
 				{
 					"type": "const char*",
@@ -28229,7 +28226,7 @@
 		"0xCD015E5BB0D96A57": {
 			"name": "END_TEXT_COMMAND_DISPLAY_TEXT",
 			"jhash": "0x6F8350CE",
-			"comment": "After applying the properties to the text (See HUD::SET_TEXT_), this will draw the text in the applied position. Also 0.0f < x, y < 1.0f, percentage of the axis.\n\nUsed to be known as _DRAW_TEXT",
+			"comment": "After applying the properties to the text (See HUD::SET_TEXT_), this will draw the text in the applied position. Also 0.0f < x, y < 1.0f, percentage of the axis.",
 			"params": [
 				{
 					"type": "float",
@@ -28305,7 +28302,7 @@
 		"0x9040DFB09BE75706": {
 			"name": "END_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING",
 			"jhash": "0xAA318785",
-			"comment": "Determines how many lines the text string will use when drawn on screen. \nMust use 0x521FB041D93DD0E4 for setting up",
+			"comment": "Determines how many lines the text string will use when drawn on screen. \nMust use BEGIN_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING for setting up",
 			"params": [
 				{
 					"type": "float",
@@ -28327,7 +28324,7 @@
 		"0x8509B634FBE7DA11": {
 			"name": "BEGIN_TEXT_COMMAND_DISPLAY_HELP",
 			"jhash": "0xB245FC10",
-			"comment": "Used to be known as _SET_TEXT_COMPONENT_FORMAT",
+			"comment": "",
 			"params": [
 				{
 					"type": "const char*",
@@ -28343,7 +28340,7 @@
 		"0x238FFE5C7B0498A6": {
 			"name": "END_TEXT_COMMAND_DISPLAY_HELP",
 			"jhash": "0xB59B530D",
-			"comment": "shape goes from -1 to 50 (may be more).\np0 is always 0.\n\nExample:\nvoid FloatingHelpText(const char* text)\n{\n    BEGIN_TEXT_COMMAND_DISPLAY_HELP(\"STRING\");\n  ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_DISPLAY_HELP (0, 0, 1, -1);\n}\n\nImage:\n- imgbin.org/images/26209.jpg\n\nmore inputs/icons:\n- https://pastebin.com/nqNYWMSB\n\nUsed to be known as _DISPLAY_HELP_TEXT_FROM_STRING_LABEL",
+			"comment": "shape goes from -1 to 50 (may be more).\np0 is always 0.\n\nExample:\nvoid FloatingHelpText(const char* text)\n{\n    BEGIN_TEXT_COMMAND_DISPLAY_HELP(\"STRING\");\n  ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_DISPLAY_HELP (0, 0, 1, -1);\n}\n\nImage:\n- imgbin.org/images/26209.jpg\n\nmore inputs/icons:\n- https://pastebin.com/nqNYWMSB",
 			"params": [
 				{
 					"type": "int",
@@ -30234,7 +30231,7 @@
 		"0xCE5D0E5E315DB238": {
 			"name": "ADD_BLIP_FOR_AREA",
 			"jhash": "",
-			"comment": "Adds a rectangular blip for the specified coordinates/area.\n\nIt is recommended to use SET_BLIP_ROTATION and SET_BLIP_COLOUR to make the blip not rotate along with the camera.\n\nBy default, the blip will show as a _regular_ blip with the specified color/sprite if it is outside of the minimap view.\n\nExample image:\nminimap https://w.wew.wtf/pdcjig.png\nbig map https://w.wew.wtf/zgcjcm.png\n\n(Native name is _likely_ to actually be ADD_BLIP_FOR_AREA, but due to the usual reasons this can't be confirmed)",
+			"comment": "Adds a rectangular blip for the specified coordinates/area.\n\nIt is recommended to use SET_BLIP_ROTATION and SET_BLIP_COLOUR to make the blip not rotate along with the camera.\n\nBy default, the blip will show as a _regular_ blip with the specified color/sprite if it is outside of the minimap view.",
 			"params": [
 				{
 					"type": "float",
@@ -30998,7 +30995,7 @@
 		"0xAE9FC9EF6A9FAC79": {
 			"name": "SET_BLIP_PRIORITY",
 			"jhash": "0xCE87DA6F",
-			"comment": "See this topic for more details : gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/page-35?p=1069477935",
+			"comment": "See this topic for more details : https://gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/page-35?p=1069477935",
 			"params": [
 				{
 					"type": "Blip",
@@ -31159,7 +31156,7 @@
 		"0xCAC2031EBF79B1A8": {
 			"name": "SHOW_GOLD_TICK_ON_BLIP",
 			"jhash": "",
-			"comment": "Adds a orange checkmark on top of a given blip handle: https://imgur.com/a/aw5OTMF\n_SHOW_FRIEND_INDICATOR_ON_BLIP* - _SHOW_HEADING_INDICATOR_ON_BLIP*",
+			"comment": "Adds a orange checkmark on top of a given blip handle: https://imgur.com/a/aw5OTMF",
 			"params": [
 				{
 					"type": "Blip",
@@ -32983,7 +32980,7 @@
 		"0xF9904D11F1ACBEC3": {
 			"name": "GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION",
 			"jhash": "0xFE9A39F8",
-			"comment": "World to relative screen coords, this world to screen will keep the text on screen. Was named _GET_SCREEN_COORD_FROM_WORLD_COORD, but this conflicts with 0x34E82F05DF2974F5. As that hash actually matches GET_SCREEN_COORD_FROM_WORLD_COORD that one supercedes and this one was renamed to _GET_2D_COORD_FROM_3D_COORD",
+			"comment": "World to relative screen coords, this world to screen will keep the text on screen.",
 			"params": [
 				{
 					"type": "float",
@@ -33477,7 +33474,7 @@
 		"0x3158C77A7E888AB4": {
 			"name": "SET_MP_GAMER_TAG_HEALTH_BAR_COLOUR",
 			"jhash": "0x5777EC77",
-			"comment": "Ranges from 0 to 255. 0 is grey health bar, ~50 yellow, 200 purple.\nShould be enabled as flag (2). Has 0 opacity by default.\n\n- This was _SET_MP_GAMER_TAG_HEALTH_BAR_COLOR,\n-> Rockstar use the EU spelling of 'color' so I hashed the same name with COLOUR and it came back as the correct hash, so it has been corrected above.",
+			"comment": "Ranges from 0 to 255. 0 is grey health bar, ~50 yellow, 200 purple.\nShould be enabled as flag (2). Has 0 opacity by default.",
 			"params": [
 				{
 					"type": "int",
@@ -34284,7 +34281,7 @@
 		"0x2162C446DFDF38FD": {
 			"name": "FORCE_SCRIPTED_GFX_WHEN_FRONTEND_ACTIVE",
 			"jhash": "0x2DFD35C7",
-			"comment": "Not present in retail version of the game, actual definiton seems to be\n_LOG_DEBUG_INFO(const char* category, const char* debugText);",
+			"comment": "Not present in retail version of the game",
 			"params": [
 				{
 					"type": "const char*",
@@ -35037,7 +35034,7 @@
 		"0xD30C50DF888D58B5": {
 			"name": "SET_PED_HAS_AI_BLIP",
 			"jhash": "0x96C4C4DD",
-			"comment": "This native turns on the AI blip on the specified ped. It also disappears automatically when the ped is too far or if the ped is dead. You don't need to control it with other natives.\n\nSee gtaforums.com/topic/884370-native-research-ai-blips for further information.",
+			"comment": "This native turns on the AI blip on the specified ped. It also disappears automatically when the ped is too far or if the ped is dead. You don't need to control it with other natives.\n\nSee https://gtaforums.com/topic/884370-native-research-ai-blips for further information.",
 			"params": [
 				{
 					"type": "Ped",
@@ -35796,7 +35793,7 @@
 		"0x55E86AF2712B36A1": {
 			"name": "ACTIVATE_INTERIOR_ENTITY_SET",
 			"jhash": "0xC80A5DDF",
-			"comment": "More info: http://gtaforums.com/topic/836367-adding-props-to-interiors/\n\nFull list of IPLs and interior entity sets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json",
+			"comment": "More info: https://gtaforums.com/topic/836367-adding-props-to-interiors/\n\nFull list of IPLs and interior entity sets by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json",
 			"params": [
 				{
 					"type": "Interior",
@@ -35894,7 +35891,7 @@
 		"0xA97F257D0151A6AB": {
 			"name": "ENABLE_EXTERIOR_CULL_MODEL_THIS_FRAME",
 			"jhash": "0x1F375B4C",
-			"comment": "This is the native that is used to hide the exterior of GTA Online apartment buildings when you are inside an apartment.\n\nMore info: http://gtaforums.com/topic/836301-hiding-gta-online-apartment-exteriors/",
+			"comment": "This is the native that is used to hide the exterior of GTA Online apartment buildings when you are inside an apartment.\n\nMore info: https://gtaforums.com/topic/836301-hiding-gta-online-apartment-exteriors/",
 			"params": [
 				{
 					"type": "Hash",
@@ -35926,7 +35923,7 @@
 		"0x6170941419D7D8EC": {
 			"name": "DISABLE_INTERIOR",
 			"jhash": "0x093ADEA5",
-			"comment": "Example: \nThis removes the interior from the strip club and when trying to walk inside the player just falls:\n\nINTERIOR::DISABLE_INTERIOR(118018, true);",
+			"comment": "",
 			"params": [
 				{
 					"type": "Interior",
@@ -38312,7 +38309,7 @@
 		"0xDD9B9B385AAC7F5B": {
 			"name": "CLEAR_AREA_OF_OBJECTS",
 			"jhash": "0xBB720FE7",
-			"comment": "I looked through the PC scripts that this site provides you with a link to find. It shows the last param mainly uses, (0, 2, 6, 16, and 17) so I am going to assume it is a type of flag. ",
+			"comment": "",
 			"params": [
 				{
 					"type": "float",
@@ -40552,11 +40549,11 @@
 		"0x9BAE5AD2508DF078": {
 			"name": "SET_INSTANCE_PRIORITY_MODE",
 			"jhash": "0x721B2492",
-			"comment": "Formerly known as _LOWER_MAP_PROP_DENSITY and wrongly due to idiots as _ENABLE_MP_DLC_MAPS.\nSets the maximum prop density and changes a loading screen flag from 'loading story mode' to 'loading GTA Online'. Does not touch DLC map data at all.\n\nIn fact, I doubt this changes the flag whatsoever, that's the OTHER native idiots use together with this that does so, this one only causes a loading screen to show as it reloads map data.",
+			"comment": "Sets the maximum prop density and changes a loading screen flag from 'loading story mode' to 'loading GTA Online'. It causes a loading screen to show as it reloads map data.",
 			"params": [
 				{
 					"type": "int",
-					"name": "p0"
+					"name": "mode"
 				}
 			],
 			"return_type": "void",
@@ -41818,7 +41815,7 @@
 		"0x00DC833F2568DBF6": {
 			"name": "DISPLAY_ONSCREEN_KEYBOARD",
 			"jhash": "0xAD99F2CE",
-			"comment": "sfink: note, p0 is set to 6 for PC platform in at least 1 script, or to `unk::_get_ui_language_id() == 0` otherwise.\n\nNOTE: windowTitle uses text labels, and an invalid value will display nothing.\n\nwww.gtaforums.com/topic/788343-vrel-script-hook-v/?p=1067380474\n\nwindowTitle's\n-----------------\nCELL_EMAIL_BOD  =   \"Enter your Eyefind message\"\nCELL_EMAIL_BODE =   \"Message too long. Try again\"\nCELL_EMAIL_BODF    =   \"Forbidden message. Try again\"\nCELL_EMAIL_SOD    =   \"Enter your Eyefind subject\"\nCELL_EMAIL_SODE =   \"Subject too long. Try again\"\nCELL_EMAIL_SODF    =   \"Forbidden text. Try again\"\nCELL_EMASH_BOD   =   \"Enter your Eyefind message\"\nCELL_EMASH_BODE =   \"Message too long. Try again\"\nCELL_EMASH_BODF    =   \"Forbidden message. Try again\"\nCELL_EMASH_SOD    =   \"Enter your Eyefind subject\"\nCELL_EMASH_SODE =   \"Subject too long. Try again\"\nCELL_EMASH_SODF    =   \"Forbidden Text. Try again\"\nFMMC_KEY_TIP10   =   \"Enter Synopsis\"\nFMMC_KEY_TIP12  =   \"Enter Custom Team Name\"\nFMMC_KEY_TIP12F =   \"Forbidden Text. Try again\"\nFMMC_KEY_TIP12N  =   \"Custom Team Name\"\nFMMC_KEY_TIP8 =   \"Enter Message\"\nFMMC_KEY_TIP8F   =   \"Forbidden Text. Try again\"\nFMMC_KEY_TIP8FS  =   \"Invalid Message. Try again\"\nFMMC_KEY_TIP8S  =   \"Enter Message\"\nFMMC_KEY_TIP9    =   \"Enter Outfit Name\"\nFMMC_KEY_TIP9F   =   \"Invalid Outfit Name. Try again\"\nFMMC_KEY_TIP9N  =   \"Outfit Name\"\nPM_NAME_CHALL  =   \"Enter Challenge Name\"",
+			"comment": "note, p0 is set to 6 for PC platform in at least 1 script, or to `GET_CURRENT_LANGUAGE() == 0` otherwise.\n\nNOTE: windowTitle uses text labels, and an invalid value will display nothing.\n\nhttps://gtaforums.com/topic/788343-vrel-script-hook-v/?p=1067380474\n\nwindowTitle's\n-----------------\nCELL_EMAIL_BOD  =   \"Enter your Eyefind message\"\nCELL_EMAIL_BODE =   \"Message too long. Try again\"\nCELL_EMAIL_BODF    =   \"Forbidden message. Try again\"\nCELL_EMAIL_SOD    =   \"Enter your Eyefind subject\"\nCELL_EMAIL_SODE =   \"Subject too long. Try again\"\nCELL_EMAIL_SODF    =   \"Forbidden text. Try again\"\nCELL_EMASH_BOD   =   \"Enter your Eyefind message\"\nCELL_EMASH_BODE =   \"Message too long. Try again\"\nCELL_EMASH_BODF    =   \"Forbidden message. Try again\"\nCELL_EMASH_SOD    =   \"Enter your Eyefind subject\"\nCELL_EMASH_SODE =   \"Subject too long. Try again\"\nCELL_EMASH_SODF    =   \"Forbidden Text. Try again\"\nFMMC_KEY_TIP10   =   \"Enter Synopsis\"\nFMMC_KEY_TIP12  =   \"Enter Custom Team Name\"\nFMMC_KEY_TIP12F =   \"Forbidden Text. Try again\"\nFMMC_KEY_TIP12N  =   \"Custom Team Name\"\nFMMC_KEY_TIP8 =   \"Enter Message\"\nFMMC_KEY_TIP8F   =   \"Forbidden Text. Try again\"\nFMMC_KEY_TIP8FS  =   \"Invalid Message. Try again\"\nFMMC_KEY_TIP8S  =   \"Enter Message\"\nFMMC_KEY_TIP9    =   \"Enter Outfit Name\"\nFMMC_KEY_TIP9F   =   \"Invalid Outfit Name. Try again\"\nFMMC_KEY_TIP9N  =   \"Outfit Name\"\nPM_NAME_CHALL  =   \"Enter Challenge Name\"",
 			"params": [
 				{
 					"type": "int",
@@ -51398,7 +51395,7 @@
 		"0x23789E777D14CE44": {
 			"name": "NET_GAMESERVER_TRANSFER_BANK_TO_WALLET_GET_STATUS",
 			"jhash": "",
-			"comment": "Same as 0x350AA5EBC03D3BD2",
+			"comment": "Same as NET_GAMESERVER_TRANSFER_WALLET_TO_BANK_GET_STATUS",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -51409,7 +51406,7 @@
 		"0x350AA5EBC03D3BD2": {
 			"name": "NET_GAMESERVER_TRANSFER_WALLET_TO_BANK_GET_STATUS",
 			"jhash": "",
-			"comment": "Same as 0x23789E777D14CE44",
+			"comment": "Same as NET_GAMESERVER_TRANSFER_BANK_TO_WALLET_GET_STATUS",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -51420,7 +51417,7 @@
 		"0x498C1E05CE5F7877": {
 			"name": "NET_GAMESERVER_TRANSFER_CASH_SET_TELEMETRY_NONCE_SEED",
 			"jhash": "",
-			"comment": "Used to be NETWORK_SHOP_CASH_TRANSFER_SET_TELEMETRY_NONCE_SEED",
+			"comment": "",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
@@ -51450,7 +51447,7 @@
 		"0xFCA9373EF340AC0A": {
 			"name": "GET_ONLINE_VERSION",
 			"jhash": "",
-			"comment": "Online version is defined here: update\\update.rpf\\common\\data\\version.txt\n\nExample:\n\n[ONLINE_VERSION_NUMBER]\n1.33\n\n_GET_ONLINE_VERSION() will return \"1.33\"",
+			"comment": "Online version is defined here: update\\update.rpf\\common\\data\\version.txt\n\nExample:\n\n[ONLINE_VERSION_NUMBER]\n1.33\n\nGET_ONLINE_VERSION() will return \"1.33\"",
 			"params": [],
 			"return_type": "const char*",
 			"build": "323",
@@ -52995,7 +52992,7 @@
 			"build": "323"
 		},
 		"0x0292BD7F3766CEBC": {
-			"name": "_NETWORK_IS_AMERICAS_VERSION",
+			"name": "_0x0292BD7F3766CEBC",
 			"jhash": "",
 			"comment": "Hardcoded to return 0.",
 			"params": [],
@@ -53005,7 +53002,7 @@
 		"0x9DE624D2FC4B603F": {
 			"name": "NETWORK_IS_SESSION_STARTED",
 			"jhash": "0x9D854A37",
-			"comment": "This checks if player is playing on gta online or not.\nPlease add an if and block your mod if this is \"true\".",
+			"comment": "This checks if player is playing on gta online or not.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323"
@@ -54206,7 +54203,7 @@
 		"0x1171A97A3D3981B6": {
 			"name": "NETWORK_SEND_IMPORTANT_TRANSITION_INVITE_VIA_PRESENCE",
 			"jhash": "",
-			"comment": "Contains the string \"NETWORK_SEND_PRESENCE_TRANSITION_INVITE\" but so does 0xC116FF9B4D488291; seems to fit alphabetically here, tho.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Any*",
@@ -57680,7 +57677,7 @@
 		"0xADB57E5B663CCA8B": {
 			"name": "NETWORK_GET_MUTE_COUNT_FOR_PLAYER",
 			"jhash": "0x92268BB5",
-			"comment": "NETWORK_GET_M[A-U]",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -57714,7 +57711,7 @@
 		"0x5FCF4D7069B09026": {
 			"name": "NETWORK_TEXT_CHAT_IS_TYPING",
 			"jhash": "",
-			"comment": "Same as _IS_TEXT_CHAT_ACTIVE, except it does not check if the text chat HUD component is initialized, and therefore may crash.",
+			"comment": "Same as IS_MP_TEXT_CHAT_TYPING, except it does not check if the text chat HUD component is initialized, and therefore may crash.",
 			"params": [],
 			"return_type": "BOOL",
 			"build": "323",
@@ -61026,7 +61023,7 @@
 		"0x10BD227A753B0D84": {
 			"name": "NETWORK_GET_TUNABLE_CLOUD_CRC",
 			"jhash": "0x231CFD12",
-			"comment": "Actually returns the version (TUNABLE_VERSION)",
+			"comment": "",
 			"params": [],
 			"return_type": "int",
 			"build": "323",
@@ -65195,7 +65192,7 @@
 		"0x701FDA1E82076BA4": {
 			"name": "CLOSE_ALL_BARRIERS_FOR_RACE",
 			"jhash": "0xF592AD10",
-			"comment": "Clears the fields sets by 0xC7F29CA00F46350E (1604 retail: 0x1424A7A10, 0x1424A7A11) and iterates over the global CDoor's bucket-list.\nRelated to its \"Pre-networked state\"?",
+			"comment": "Clears the fields sets by OPEN_ALL_BARRIERS_FOR_RACE and iterates over the global CDoor's bucket-list.\nRelated to its \"Pre-networked state\"?",
 			"params": [],
 			"return_type": "void",
 			"build": "323"
@@ -68142,7 +68139,7 @@
 		"0x0499D7B09FC9B407": {
 			"name": "GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING",
 			"jhash": "",
-			"comment": "allowXOSwap appears to always be true.\n\nEG:\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 201, 1) /*INPUT_FRONTEND_ACCEPT (e.g. Enter button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 202, 1) /*INPUT_FRONTEND_CANCEL (e.g. ESC button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 51, 1) /*INPUT_CONTEXT (e.g. E button)*/\n\ngtaforums.com/topic/819070-c-draw-instructional-buttons-scaleform-movie/#entry1068197378\n\ncontrol: unused parameter",
+			"comment": "allowXOSwap appears to always be true.\n\nEG:\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 201, 1) /*INPUT_FRONTEND_ACCEPT (e.g. Enter button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 202, 1) /*INPUT_FRONTEND_CANCEL (e.g. ESC button)*/\nGET_CONTROL_INSTRUCTIONAL_BUTTON (2, 51, 1) /*INPUT_CONTEXT (e.g. E button)*/\n\nhttps://gtaforums.com/topic/819070-c-draw-instructional-buttons-scaleform-movie/#entry1068197378\n\ncontrol: unused parameter",
 			"params": [
 				{
 					"type": "int",
@@ -68796,7 +68793,7 @@
 		"0xFF071FB798B803B0": {
 			"name": "GET_CLOSEST_VEHICLE_NODE_WITH_HEADING",
 			"jhash": "0x8BD5759B",
-			"comment": "p5, p6 and p7 seems to be about the same as p4, p5 and p6 for GET_CLOSEST_VEHICLE_NODE. p6 and/or p7 has something to do with finding a node on the same path/road and same direction(at least for this native, something to do with the heading maybe). Edit this when you find out more.\n\nnodeType: 0 = main roads, 1 = any dry path, 3 = water\np6 is always 3.0\np7 is always 0\n\ngtaforums.com/topic/843561-pathfind-node-types\n\nExample of usage, moving vehicle to closest path/road:\nVector3 coords = ENTITY::GET_ENTITY_COORDS(playerVeh, true);\nVector3 closestVehicleNodeCoords; \nfloat roadHeading; \nPATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(coords.x, coords.y, coords.z, &closestVehicleNodeCoords, &roadHeading, 1, 3, 0); \nENTITY::SET_ENTITY_HEADING(playerVeh, roadHeading);\nENTITY::SET_ENTITY_COORDS(playerVeh, closestVehicleNodeCoords.x, closestVehicleNodeCoords.y, closestVehicleNodeCoords.z, 1, 0, 0, 1);\nVEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(playerVeh);\n\n------------------------------------------------------------------\nC# Example (ins1de) : https://pastebin.com/fxtMWAHD",
+			"comment": "p5, p6 and p7 seems to be about the same as p4, p5 and p6 for GET_CLOSEST_VEHICLE_NODE. p6 and/or p7 has something to do with finding a node on the same path/road and same direction(at least for this native, something to do with the heading maybe). Edit this when you find out more.\n\nnodeType: 0 = main roads, 1 = any dry path, 3 = water\np6 is always 3.0\np7 is always 0\n\nhttps://gtaforums.com/topic/843561-pathfind-node-types\n\nExample of usage, moving vehicle to closest path/road:\nVector3 coords = ENTITY::GET_ENTITY_COORDS(playerVeh, true);\nVector3 closestVehicleNodeCoords; \nfloat roadHeading; \nPATHFIND::GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(coords.x, coords.y, coords.z, &closestVehicleNodeCoords, &roadHeading, 1, 3, 0); \nENTITY::SET_ENTITY_HEADING(playerVeh, roadHeading);\nENTITY::SET_ENTITY_COORDS(playerVeh, closestVehicleNodeCoords.x, closestVehicleNodeCoords.y, closestVehicleNodeCoords.z, 1, 0, 0, 1);\nVEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(playerVeh);\n\n------------------------------------------------------------------\nC# Example (ins1de) : https://pastebin.com/fxtMWAHD",
 			"params": [
 				{
 					"type": "float",
@@ -69009,7 +69006,7 @@
 		"0x45905BE8654AE067": {
 			"name": "GET_NTH_CLOSEST_VEHICLE_NODE_FAVOUR_DIRECTION",
 			"jhash": "0x928A4DEC",
-			"comment": "See gtaforums.com/topic/843561-pathfind-node-types for node type info. 0 = paved road only, 1 = any road, 3 = water\n\np10 always equals 3.0\np11 always equals 0",
+			"comment": "See https://gtaforums.com/topic/843561-pathfind-node-types for node type info. 0 = paved road only, 1 = any road, 3 = water\n\np10 always equals 3.0\np11 always equals 0",
 			"params": [
 				{
 					"type": "float",
@@ -75086,7 +75083,7 @@
 		"0x9414E18B9434C2FE": {
 			"name": "SET_PED_HEAD_BLEND_DATA",
 			"jhash": "0x60746B88",
-			"comment": "The \"shape\" parameters control the shape of the ped's face. The \"skin\" parameters control the skin tone. ShapeMix and skinMix control how much the first and second IDs contribute,(typically mother and father.) ThirdMix overrides the others in favor of the third IDs. IsParent is set for \"children\" of the player character's grandparents during old-gen character creation. It has unknown effect otherwise.\n\nThe IDs start at zero and go Male Non-DLC, Female Non-DLC, Male DLC, and Female DLC.\n       headBlendData headData;\n       GET_PED_HEAD_BLEND_DATA(PLAYER_PED_ID(), &headData);\n\n       SET_PED_HEAD_BLEND_DATA(PLAYER_PED_ID(), headData.shapeFirst, headData.shapeSecond, headData.shapeThird, headData.skinFirst, headData.skinSecond\n          , headData.skinThird, headData.shapeMix, headData.skinMix, headData.skinThird, 0);\n\n\nFor more info please refer to this topic. \ngtaforums.com/topic/858970-all-gtao-face-ids-pedset-ped-head-blend-data-explained",
+			"comment": "The \"shape\" parameters control the shape of the ped's face. The \"skin\" parameters control the skin tone. ShapeMix and skinMix control how much the first and second IDs contribute,(typically mother and father.) ThirdMix overrides the others in favor of the third IDs. IsParent is set for \"children\" of the player character's grandparents during old-gen character creation. It has unknown effect otherwise.\n\nThe IDs start at zero and go Male Non-DLC, Female Non-DLC, Male DLC, and Female DLC.\n       headBlendData headData;\n       GET_PED_HEAD_BLEND_DATA(PLAYER_PED_ID(), &headData);\n\n       SET_PED_HEAD_BLEND_DATA(PLAYER_PED_ID(), headData.shapeFirst, headData.shapeSecond, headData.shapeThird, headData.skinFirst, headData.skinSecond\n          , headData.skinThird, headData.shapeMix, headData.skinMix, headData.skinThird, 0);\n\n\nFor more info please refer to this topic. \nhttps://gtaforums.com/topic/858970-all-gtao-face-ids-pedset-ped-head-blend-data-explained",
 			"params": [
 				{
 					"type": "Ped",
@@ -75204,7 +75201,7 @@
 		"0x76BBA2CEE66D47E9": {
 			"name": "GET_HEAD_BLEND_EYE_COLOR",
 			"jhash": "",
-			"comment": "A getter for _SET_PED_EYE_COLOR. Returns -1 if fails to get.",
+			"comment": "A getter for SET_HEAD_BLEND_EYE_COLOR. Returns -1 if fails to get.",
 			"params": [
 				{
 					"type": "Ped",
@@ -75220,7 +75217,7 @@
 		"0x48F44967FA05CC1E": {
 			"name": "SET_PED_HEAD_OVERLAY",
 			"jhash": "0xD28DBA90",
-			"comment": "OverlayID ranges from 0 to 12, index from 0 to _GET_NUM_OVERLAY_VALUES(overlayID)-1, and opacity from 0.0 to 1.0. \n\noverlayID       Part                  Index, to disable\n0               Blemishes             0 - 23, 255\n1               Facial Hair           0 - 28, 255\n2               Eyebrows              0 - 33, 255\n3               Ageing                0 - 14, 255\n4               Makeup                0 - 74, 255\n5               Blush                 0 - 6, 255\n6               Complexion            0 - 11, 255\n7               Sun Damage            0 - 10, 255\n8               Lipstick              0 - 9, 255\n9               Moles/Freckles        0 - 17, 255\n10              Chest Hair            0 - 16, 255\n11              Body Blemishes        0 - 11, 255\n12              Add Body Blemishes    0 - 1, 255",
+			"comment": "OverlayID ranges from 0 to 12, index from 0 to GET_PED_HEAD_OVERLAY_NUM(overlayID)-1, and opacity from 0.0 to 1.0. \n\noverlayID       Part                  Index, to disable\n0               Blemishes             0 - 23, 255\n1               Facial Hair           0 - 28, 255\n2               Eyebrows              0 - 33, 255\n3               Ageing                0 - 14, 255\n4               Makeup                0 - 74, 255\n5               Blush                 0 - 6, 255\n6               Complexion            0 - 11, 255\n7               Sun Damage            0 - 10, 255\n8               Lipstick              0 - 9, 255\n9               Moles/Freckles        0 - 17, 255\n10              Chest Hair            0 - 16, 255\n11              Body Blemishes        0 - 11, 255\n12              Add Body Blemishes    0 - 1, 255",
 			"params": [
 				{
 					"type": "Ped",
@@ -77222,7 +77219,7 @@
 		"0x46DF918788CB093F": {
 			"name": "APPLY_PED_DAMAGE_PACK",
 			"jhash": "0x208D0CB8",
-			"comment": "Damage Packs:\n\n\"SCR_TrevorTreeBang\"\n\"HOSPITAL_0\"\n\"HOSPITAL_1\"\n\"HOSPITAL_2\"\n\"HOSPITAL_3\"\n\"HOSPITAL_4\"\n\"HOSPITAL_5\"\n\"HOSPITAL_6\"\n\"HOSPITAL_7\"\n\"HOSPITAL_8\"\n\"HOSPITAL_9\"\n\"SCR_Dumpster\"\n\"BigHitByVehicle\"\n\"SCR_Finale_Michael_Face\"\n\"SCR_Franklin_finb\"\n\"SCR_Finale_Michael\"\n\"SCR_Franklin_finb2\"\n\"Explosion_Med\"\n\"SCR_Torture\"\n\"SCR_TracySplash\"\n\"Skin_Melee_0\"\n\nAdditional damage packs:\n\ngist.github.com/alexguirre/f3f47f75ddcf617f416f3c8a55ae2227\nFull list of ped damage packs by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedDamagePacks.json",
+			"comment": "Damage Packs:\n\n\"SCR_TrevorTreeBang\"\n\"HOSPITAL_0\"\n\"HOSPITAL_1\"\n\"HOSPITAL_2\"\n\"HOSPITAL_3\"\n\"HOSPITAL_4\"\n\"HOSPITAL_5\"\n\"HOSPITAL_6\"\n\"HOSPITAL_7\"\n\"HOSPITAL_8\"\n\"HOSPITAL_9\"\n\"SCR_Dumpster\"\n\"BigHitByVehicle\"\n\"SCR_Finale_Michael_Face\"\n\"SCR_Franklin_finb\"\n\"SCR_Finale_Michael\"\n\"SCR_Franklin_finb2\"\n\"Explosion_Med\"\n\"SCR_Torture\"\n\"SCR_TracySplash\"\n\"Skin_Melee_0\"\n\nAdditional damage packs:\n\nhttps://gist.github.com/alexguirre/f3f47f75ddcf617f416f3c8a55ae2227\nFull list of ped damage packs by DurtyFree https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedDamagePacks.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -79929,7 +79926,7 @@
 		"0x1461B28A06717D68": {
 			"name": "GET_PED_EMISSIVE_SCALE",
 			"jhash": "",
-			"comment": "Use 0x4E90D746056E273D to set the illuminated clothing glow intensity for a specific ped.\nReturns a float between 0.0 and 1.0 representing the current illuminated clothing glow intensity.",
+			"comment": "Use SET_PED_EMISSIVE_SCALE to set the illuminated clothing glow intensity for a specific ped.\nReturns a float between 0.0 and 1.0 representing the current illuminated clothing glow intensity.",
 			"params": [
 				{
 					"type": "Ped",
@@ -80478,7 +80475,7 @@
 		"0x23F8F5FC7E8C4A6B": {
 			"name": "GET_PED_NEARBY_PEDS",
 			"jhash": "0x4D3325F4",
-			"comment": "sizeAndPeds - is a pointer to an array. The array is filled with peds found nearby the ped supplied to the first argument.\nignore - ped type to ignore\n\nReturn value is the number of peds found and added to the array passed.\n\n-----------------------------------\n\nTo make this work in most menu bases at least in C++ do it like so,\n\n Formatted Example: https://pastebin.com/D8an9wwp\n\n-----------------------------------\n\nExample: gtaforums.com/topic/789788-function-args-to-pedget-ped-nearby-peds/?p=1067386687",
+			"comment": "sizeAndPeds - is a pointer to an array. The array is filled with peds found nearby the ped supplied to the first argument.\nignore - ped type to ignore\n\nReturn value is the number of peds found and added to the array passed.\n\n-----------------------------------\n\nTo make this work in most menu bases at least in C++ do it like so,\n\n Formatted Example: https://pastebin.com/D8an9wwp\n\n-----------------------------------\n\nExample: https://gtaforums.com/topic/789788-function-args-to-pedget-ped-nearby-peds/?p=1067386687",
 			"params": [
 				{
 					"type": "Ped",
@@ -80587,7 +80584,7 @@
 		"0x4462658788425076": {
 			"name": "REGISTER_PEDHEADSHOT",
 			"jhash": "0xFFE2667B",
-			"comment": "gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
+			"comment": "https://gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
 			"params": [
 				{
 					"type": "Ped",
@@ -80629,7 +80626,7 @@
 		"0x96B1361D9B24C2FF": {
 			"name": "UNREGISTER_PEDHEADSHOT",
 			"jhash": "0x0879AE45",
-			"comment": "gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
+			"comment": "https://gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
 			"params": [
 				{
 					"type": "int",
@@ -80642,7 +80639,7 @@
 		"0xA0A9668F158129A2": {
 			"name": "IS_PEDHEADSHOT_VALID",
 			"jhash": "0x0B1080C4",
-			"comment": "gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
+			"comment": "https://gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
 			"params": [
 				{
 					"type": "int",
@@ -80655,7 +80652,7 @@
 		"0x7085228842B13A67": {
 			"name": "IS_PEDHEADSHOT_READY",
 			"jhash": "0x761CD02E",
-			"comment": "gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
+			"comment": "https://gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
 			"params": [
 				{
 					"type": "int",
@@ -80668,7 +80665,7 @@
 		"0xDB4EACD4AD0A5D6B": {
 			"name": "GET_PEDHEADSHOT_TXD_STRING",
 			"jhash": "0x76D28E96",
-			"comment": "gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
+			"comment": "https://gtaforums.com/topic/885580-ped-headshotmugshot-txd/",
 			"params": [
 				{
 					"type": "int",
@@ -82464,7 +82461,7 @@
 		"0x50FAC3A3E030A6E1": {
 			"name": "GET_PLAYER_PED_SCRIPT_INDEX",
 			"jhash": "0x6AC64990",
-			"comment": "Does the same like PLAYER::GET_PLAYER_PED",
+			"comment": "Identical to PLAYER::GET_PLAYER_PED",
 			"params": [
 				{
 					"type": "Player",
@@ -84038,7 +84035,7 @@
 		"0x239528EACDC3E7DE": {
 			"name": "SET_PLAYER_INVINCIBLE",
 			"jhash": "0xDFB9A2A2",
-			"comment": "Simply sets you as invincible (Health will not deplete).\n\nUse 0x733A643B5B0C53C1 instead if you want Ragdoll enabled, which is equal to:\n*(DWORD *)(playerPedAddress + 0x188) |= (1 << 9);",
+			"comment": "Simply sets you as invincible (Health will not deplete).\n\nUse SET_PLAYER_INVINCIBLE_BUT_HAS_REACTIONS instead if you want Ragdoll enabled, which is roughly equal to:\n*(DWORD *)(playerPedAddress + 0x188) |= (1 << 9);",
 			"params": [
 				{
 					"type": "Player",
@@ -84055,7 +84052,7 @@
 		"0xB721981B2B939E07": {
 			"name": "GET_PLAYER_INVINCIBLE",
 			"jhash": "0x680C90EE",
-			"comment": "Returns the Player's Invincible status.\n\nThis function will always return false if 0x733A643B5B0C53C1 is used to set the invincibility status. To always get the correct result, use this:\n\n bool IsPlayerInvincible(Player player)\n    {\n     auto addr = getScriptHandleBaseAddress(GET_PLAYER_PED(player)); \n\n        if (addr)\n     {\n         DWORD flag = *(DWORD *)(addr + 0x188);\n            return ((flag & (1 << 8)) != 0) || ((flag & (1 << 9)) != 0);\n      }\n\n       return false;\n }\n\n",
+			"comment": "Returns the Player's Invincible status.\n\nThis function will always return false if SET_PLAYER_INVINCIBLE_BUT_HAS_REACTIONS is used to set the invincibility status. To always get the correct result, use this:\n\n bool IsPlayerInvincible(Player player)\n    {\n     auto addr = getScriptHandleBaseAddress(GET_PLAYER_PED(player)); \n\n        if (addr)\n     {\n         DWORD flag = *(DWORD *)(addr + 0x188);\n            return ((flag & (1 << 8)) != 0) || ((flag & (1 << 9)) != 0);\n      }\n\n       return false;\n }\n\n",
 			"params": [
 				{
 					"type": "Player",
@@ -84762,7 +84759,7 @@
 		"0x3DACA8DDC6FD4980": {
 			"name": "SPECIAL_ABILITY_FILL_METER",
 			"jhash": "0xB71589DA",
-			"comment": "Also known as _RECHARGE_SPECIAL_ABILITY",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -84778,7 +84775,10 @@
 				}
 			],
 			"return_type": "void",
-			"build": "323"
+			"build": "323",
+			"old_names": [
+				"_RECHARGE_SPECIAL_ABILITY"
+			]
 		},
 		"0x1D506DBBBC51E64B": {
 			"name": "SPECIAL_ABILITY_DEPLETE_METER",
@@ -86831,7 +86831,7 @@
 		"0xD62A67D26D9653E6": {
 			"name": "REQUEST_SCRIPT_WITH_NAME_HASH",
 			"jhash": "0x1C68D9DC",
-			"comment": "formerly _REQUEST_STREAMED_SCRIPT",
+			"comment": "",
 			"params": [
 				{
 					"type": "Hash",
@@ -87354,7 +87354,7 @@
 		"0x7EE9F5D83DD4F90E": {
 			"name": "START_SHAPE_TEST_LOS_PROBE",
 			"jhash": "0xEFAF4BA6",
-			"comment": "Asynchronously starts a line-of-sight (raycast) world probe shape test.\n\nUse the handle with 0x3D87450E15D98694 or 0x65287525D951F6BE until it returns 0 or 2.\n\np8 is a bit mask with bits 1, 2 and/or 4, relating to collider types; 4 should usually be used.",
+			"comment": "Asynchronously starts a line-of-sight (raycast) world probe shape test.\n\nUse the handle with GET_SHAPE_TEST_RESULT or GET_SHAPE_TEST_RESULT_INCLUDING_MATERIAL until it returns 0 or 2.\n\np8 is a bit mask with bits 1, 2 and/or 4, relating to collider types; 4 should usually be used.",
 			"params": [
 				{
 					"type": "float",
@@ -87399,7 +87399,7 @@
 		"0x377906D8A31E5586": {
 			"name": "START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE",
 			"jhash": "0x8251485D",
-			"comment": "Does the same as 0x7EE9F5D83DD4F90E, except blocking until the shape test completes.",
+			"comment": "Does the same as START_SHAPE_TEST_LOS_PROBE, except blocking until the shape test completes.",
 			"params": [
 				{
 					"type": "float",
@@ -96570,7 +96570,7 @@
 		"0xAAB3200ED59016BC": {
 			"name": "SWITCH_TO_MULTI_FIRSTPART",
 			"jhash": "0xFB4D062D",
-			"comment": "doesn't act normally when used on mount chilliad\nFlags is a bitflag:\n2^n - Enabled Functionality:\n0 - Skip camera rotate up\n3 - Wait for SET_PLAYER_SWITCH_ESTABLISHING_SHOT / hang at last step. You will still need to run 0x74DE2E8739086740 to exit \"properly\" and then STOP_PLAYER_SWITCH\n6 - Invert Switch Direction (false = out, true = in)\n8 - Hang above ped\n\nswitchType: 0 - 3\n0: 1 step towards ped\n1: 3 steps out from ped\n2: 1 step out from ped\n3: 1 step towards ped",
+			"comment": "doesn't act normally when used on mount chilliad\nFlags is a bitflag:\n2^n - Enabled Functionality:\n0 - Skip camera rotate up\n3 - Wait for SET_PLAYER_SWITCH_ESTABLISHING_SHOT / hang at last step. You will still need to run ALLOW_PLAYER_SWITCH_OUTRO to exit \"properly\" and then STOP_PLAYER_SWITCH\n6 - Invert Switch Direction (false = out, true = in)\n8 - Hang above ped\n\nswitchType: 0 - 3\n0: 1 step towards ped\n1: 3 steps out from ped\n2: 1 step out from ped\n3: 1 step towards ped",
 			"params": [
 				{
 					"type": "Ped",
@@ -99834,7 +99834,7 @@
 		"0x0FA6E4B75F302400": {
 			"name": "TASK_VEHICLE_ESCORT",
 			"jhash": "0x9FDCB250",
-			"comment": "Makes a ped follow the targetVehicle with <minDistance> in between.\n\nnote: minDistance is ignored if drivingstyle is avoiding traffic, but Rushed is fine.\n\nMode: The mode defines the relative position to the targetVehicle. The ped will try to position its vehicle there.\n-1 = behind\n0 = ahead\n1 = left\n2 = right\n3 = back left\n4 = back right\n\nif the target is closer than noRoadsDistance, the driver will ignore pathing/roads and follow you directly.\n\nDriving Styles guide: gtaforums.com/topic/822314-guide-driving-styles/",
+			"comment": "Makes a ped follow the targetVehicle with <minDistance> in between.\n\nnote: minDistance is ignored if drivingstyle is avoiding traffic, but Rushed is fine.\n\nMode: The mode defines the relative position to the targetVehicle. The ped will try to position its vehicle there.\n-1 = behind\n0 = ahead\n1 = left\n2 = right\n3 = back left\n4 = back right\n\nif the target is closer than noRoadsDistance, the driver will ignore pathing/roads and follow you directly.\n\nDriving Styles guide: https://gtaforums.com/topic/822314-guide-driving-styles/",
 			"params": [
 				{
 					"type": "Ped",
@@ -99879,7 +99879,7 @@
 		"0xFC545A9F0626E3B6": {
 			"name": "TASK_VEHICLE_FOLLOW",
 			"jhash": "0xA8B917D7",
-			"comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle: http://gtaforums.com/topic/822314-guide-driving-styles/",
+			"comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle: https://gtaforums.com/topic/822314-guide-driving-styles/",
 			"params": [
 				{
 					"type": "Ped",
@@ -100438,7 +100438,7 @@
 		"0x15C86013127CE63F": {
 			"name": "TASK_BOAT_MISSION",
 			"jhash": "0x5865B031",
-			"comment": "You need to call PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS after TASK_BOAT_MISSION in order for the task to execute.\n\nWorking example\nfloat vehicleMaxSpeed = VEHICLE::GET_VEHICLE_ESTIMATED_MAX_SPEED(ENTITY::GET_ENTITY_MODEL(pedVehicle));\nTASK::TASK_BOAT_MISSION(pedDriver, pedVehicle, 0, 0, waypointCoord.x, waypointCoord.y, waypointCoord.z, 4, vehicleMaxSpeed, 786469, -1.0, 7);\nPED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(pedDriver, 1);\n\nP8 appears to be driving style flag - see gtaforums.com/topic/822314-guide-driving-styles/ for documentation",
+			"comment": "You need to call PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS after TASK_BOAT_MISSION in order for the task to execute.\n\nWorking example\nfloat vehicleMaxSpeed = VEHICLE::GET_VEHICLE_ESTIMATED_MAX_SPEED(ENTITY::GET_ENTITY_MODEL(pedVehicle));\nTASK::TASK_BOAT_MISSION(pedDriver, pedVehicle, 0, 0, waypointCoord.x, waypointCoord.y, waypointCoord.z, 4, vehicleMaxSpeed, 786469, -1.0, 7);\nPED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(pedDriver, 1);\n\nP8 appears to be driving style flag - see https://gtaforums.com/topic/822314-guide-driving-styles/ for documentation",
 			"params": [
 				{
 					"type": "Ped",
@@ -101794,7 +101794,7 @@
 		"0xDACE1BE37D88AF67": {
 			"name": "SET_DRIVE_TASK_DRIVING_STYLE",
 			"jhash": "0x59C5FAD7",
-			"comment": "This native is used to set the driving style for specific ped.\n\nDriving styles id seems to be:\n786468\n262144\n786469\n\nhttp://gtaforums.com/topic/822314-guide-driving-styles/",
+			"comment": "This native is used to set the driving style for specific ped.\n\nDriving styles id seems to be:\n786468\n262144\n786469\n\nhttps://gtaforums.com/topic/822314-guide-driving-styles/",
 			"params": [
 				{
 					"type": "Ped",
@@ -102937,7 +102937,7 @@
 		"0x195AEEB13CEFE2EE": {
 			"name": "TASK_VEHICLE_GOTO_NAVMESH",
 			"jhash": "0x55CF3BCD",
-			"comment": "Differs from TASK_VEHICLE_DRIVE_TO_COORDS in that it will pick the shortest possible road route without taking one-way streets and other \"road laws\" into consideration.\n\nWARNING:\nA behaviorFlag value of 0 will result in a clunky, stupid driver!\n\nRecommended settings:\nspeed = 30.0f,\nbehaviorFlag = 156, \nstoppingRange = 5.0f;\n\nIf you simply want to have your driver move to a fixed location, call it only once, or, when necessary in the event of interruption. \n\nIf using this to continually follow a Ped who is on foot:  You will need to run this in a tick loop.  Call it in with the Ped's updated coordinates every 20 ticks or so and you will have one hell of a smart, fast-reacting NPC driver -- provided he doesn't get stuck.  If your update frequency is too fast, the Ped may not have enough time to figure his way out of being stuck, and thus, remain stuck.  One way around this would be to implement an \"anti-stuck\" mechanism, which allows the driver to realize he's stuck, temporarily pause the tick, unstuck, then resume the tick.\n\nEDIT:  This is being discussed in more detail at http://gtaforums.com/topic/818504-any-idea-on-how-to-make-peds-clever-and-insanely-fast-c/  ",
+			"comment": "Differs from TASK_VEHICLE_DRIVE_TO_COORDS in that it will pick the shortest possible road route without taking one-way streets and other \"road laws\" into consideration.\n\nWARNING:\nA behaviorFlag value of 0 will result in a clunky, stupid driver!\n\nRecommended settings:\nspeed = 30.0f,\nbehaviorFlag = 156, \nstoppingRange = 5.0f;\n\nIf you simply want to have your driver move to a fixed location, call it only once, or, when necessary in the event of interruption. \n\nIf using this to continually follow a Ped who is on foot:  You will need to run this in a tick loop.  Call it in with the Ped's updated coordinates every 20 ticks or so and you will have one hell of a smart, fast-reacting NPC driver -- provided he doesn't get stuck.  If your update frequency is too fast, the Ped may not have enough time to figure his way out of being stuck, and thus, remain stuck.  One way around this would be to implement an \"anti-stuck\" mechanism, which allows the driver to realize he's stuck, temporarily pause the tick, unstuck, then resume the tick.\n\nEDIT: This is being discussed in more detail at https://gtaforums.com/topic/818504-any-idea-on-how-to-make-peds-clever-and-insanely-fast-c/",
 			"params": [
 				{
 					"type": "Ped",
@@ -106832,7 +106832,7 @@
 		"0xAB54A438726D25D5": {
 			"name": "SET_VEHICLE_FORWARD_SPEED",
 			"jhash": "0x69880D14",
-			"comment": "SCALE: Setting the speed to 30 would result in a speed of roughly 60mph, according to speedometer.\n\nSpeed is in meters per second\nYou can convert meters/s to mph here:\nhttp://www.calculateme.com/Speed/MetersperSecond/ToMilesperHour.htm",
+			"comment": "SCALE: Setting the speed to 30 would result in a speed of roughly 60mph, according to speedometer.\n\nSpeed is in meters per second\nYou can convert meters/s to mph here:\nhttps://www.calculateme.com/speed/meters-per-second/to-miles-per-hour/",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107461,7 +107461,7 @@
 		"0x6D645D59FB5F5AD3": {
 			"name": "POP_OUT_VEHICLE_WINDSCREEN",
 			"jhash": "0xCC95C96B",
-			"comment": "Detaches the vehicle's windscreen.\nFor further information, see : gtaforums.com/topic/859570-glass/#entry1068894566",
+			"comment": "Detaches the vehicle's windscreen.\nFor further information, see : https://gtaforums.com/topic/859570-glass/#entry1068894566",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -107724,7 +107724,7 @@
 					"name": "rotationZ"
 				},
 				{
-					"type": "float",
+					"type": "BOOL",
 					"name": "disableCollisions"
 				}
 			],
@@ -107789,7 +107789,7 @@
 				},
 				{
 					"type": "float",
-					"name": "p1"
+					"name": "scale"
 				}
 			],
 			"return_type": "void",
@@ -108851,7 +108851,7 @@
 		"0xF73EB622C4F1689B": {
 			"name": "GET_CLOSEST_VEHICLE",
 			"jhash": "0xD7E26B2C",
-			"comment": "Example usage\nVEHICLE::GET_CLOSEST_VEHICLE(x, y, z, radius, hash, unknown leave at 70) \n\nx, y, z: Position to get closest vehicle to.\nradius: Max radius to get a vehicle.\nmodelHash: Limit to vehicles with this model. 0 for any.\nflags: The bitwise flags altering the function's behaviour.\n\nDoes not return police cars or helicopters.\n\nIt seems to return police cars for me, does not seem to return helicopters, planes or boats for some reason\n\nOnly returns non police cars and motorbikes with the flag set to 70 and modelHash to 0. ModelHash seems to always be 0 when not a modelHash in the scripts, as stated above. \n\nThese flags were found in the b617d scripts: 0,2,4,6,7,23,127,260,2146,2175,12294,16384,16386,20503,32768,67590,67711,98309,100359.\nConverted to binary, each bit probably represents a flag as explained regarding another native here: gtaforums.com/topic/822314-guide-driving-styles\n\nConversion of found flags to binary: https://pastebin.com/kghNFkRi\n\nAt exactly 16384 which is 0100000000000000 in binary and 4000 in hexadecimal only planes are returned. \n\nIt's probably more convenient to use worldGetAllVehicles(int *arr, int arrSize) and check the shortest distance yourself and sort if you want by checking the vehicle type with for example VEHICLE::IS_THIS_MODEL_A_BOAT\n\n-------------------------------------------------------------------------\n\nConclusion: This native is not worth trying to use. Use something like this instead: https://pastebin.com/xiFdXa7h\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
+			"comment": "Example usage\nVEHICLE::GET_CLOSEST_VEHICLE(x, y, z, radius, hash, unknown leave at 70) \n\nx, y, z: Position to get closest vehicle to.\nradius: Max radius to get a vehicle.\nmodelHash: Limit to vehicles with this model. 0 for any.\nflags: The bitwise flags altering the function's behaviour.\n\nDoes not return police cars or helicopters.\n\nIt seems to return police cars for me, does not seem to return helicopters, planes or boats for some reason\n\nOnly returns non police cars and motorbikes with the flag set to 70 and modelHash to 0. ModelHash seems to always be 0 when not a modelHash in the scripts, as stated above. \n\nThese flags were found in the b617d scripts: 0,2,4,6,7,23,127,260,2146,2175,12294,16384,16386,20503,32768,67590,67711,98309,100359.\nConverted to binary, each bit probably represents a flag as explained regarding another native here: https://gtaforums.com/topic/822314-guide-driving-styles\n\nConversion of found flags to binary: https://pastebin.com/kghNFkRi\n\nAt exactly 16384 which is 0100000000000000 in binary and 4000 in hexadecimal only planes are returned. \n\nIt's probably more convenient to use worldGetAllVehicles(int *arr, int arrSize) and check the shortest distance yourself and sort if you want by checking the vehicle type with for example VEHICLE::IS_THIS_MODEL_A_BOAT\n\n-------------------------------------------------------------------------\n\nConclusion: This native is not worth trying to use. Use something like this instead: https://pastebin.com/xiFdXa7h\n\nFull list of vehicles by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json",
 			"params": [
 				{
 					"type": "float",
@@ -113936,7 +113936,7 @@
 		"0x9CFA4896C3A53CBB": {
 			"name": "SET_BIKE_ON_STAND",
 			"jhash": "0x15D40761",
-			"comment": "Only works on bikes, both X and Y work in the -1 - 1 range.\n\nX forces the bike to turn left or right (-1, 1)\nY forces the bike to lean to the left or to the right (-1, 1)\n\nExample with X -1/Y 1\nhttp://i.imgur.com/TgIuAPJ.jpg",
+			"comment": "Only works on bikes, both X and Y work in the -1 - 1 range.\n\nX forces the bike to turn left or right (-1, 1)\nY forces the bike to lean to the left or to the right (-1, 1)\n\nExample with X -1/Y 1\nhttps://i.imgur.com/TgIuAPJ.jpg",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -115415,7 +115415,7 @@
 		"0x068F64F2470F9656": {
 			"name": "SET_VEHICLE_DROPS_MONEY_WHEN_BLOWN_UP",
 			"jhash": "0x4BB5605D",
-			"comment": "Money pickups are created around cars when they explode. Only works when the vehicle model is a car. A single pickup is between 1 and 18 dollars in size. All car models seem to give the same amount of money.\n\nyoutu.be/3arlUxzHl5Y \ni.imgur.com/WrNpYFs.jpg",
+			"comment": "Money pickups are created around cars when they explode. Only works when the vehicle model is a car. A single pickup is between 1 and 18 dollars in size. All car models seem to give the same amount of money.\n\nhttps://youtu.be/3arlUxzHl5Y",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -115663,7 +115663,7 @@
 		"0x41062318F23ED854": {
 			"name": "SET_VEHICLE_AI_CAN_USE_EXCLUSIVE_SEATS",
 			"jhash": "",
-			"comment": "Used to be incorrectly named SET_VEHICLE_EXCLUSIVE_DRIVER\nToggles a flag related to SET_VEHICLE_EXCLUSIVE_DRIVER, however, doesn't enable that feature (or trigger script events related to it).",
+			"comment": "Toggles a flag related to SET_VEHICLE_EXCLUSIVE_DRIVER, however, doesn't enable that feature (or trigger script events related to it).",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -115680,7 +115680,7 @@
 		"0xB5C51B5502E85E83": {
 			"name": "SET_VEHICLE_EXCLUSIVE_DRIVER",
 			"jhash": "0xAA8BD440",
-			"comment": "index: 0 - 1\n\nUsed to be incorrectly named _SET_VEHICLE_EXCLUSIVE_DRIVER_2",
+			"comment": "index: 0 - 1",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -116445,7 +116445,7 @@
 		"0xC24075310A8B9CD1": {
 			"name": "SET_HYDRAULIC_WHEEL_STATE",
 			"jhash": "",
-			"comment": "Sets vehicle wheel hydraulic states transition. Known states:\n0 - reset\n1 - raise wheel (uses value arg, works just like _SET_VEHICLE_HYDRAULIC_WHEEL_VALUE)\n2 - jump using wheel",
+			"comment": "Sets vehicle wheel hydraulic states transition. Known states:\n0 - reset\n1 - raise wheel\n2 - jump using wheel",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -120173,7 +120173,7 @@
 		"0x7FEAD38B326B9F74": {
 			"name": "GET_PED_AMMO_TYPE_FROM_WEAPON",
 			"jhash": "0x09337863",
-			"comment": "Returns the current ammo type of the specified ped's specified weapon.\nMkII magazines will change the return value, like Pistol MkII returning AMMO_PISTOL without any components and returning AMMO_PISTOL_TRACER after Tracer Rounds component is attached.\nUse 0xF489B44DD5AF4BD9 if you always want AMMO_PISTOL.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
+			"comment": "Returns the current ammo type of the specified ped's specified weapon.\nMkII magazines will change the return value, like Pistol MkII returning AMMO_PISTOL without any components and returning AMMO_PISTOL_TRACER after Tracer Rounds component is attached.\nUse GET_PED_ORIGINAL_AMMO_TYPE_FROM_WEAPON if you always want AMMO_PISTOL.\nFull list of weapons by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -121276,7 +121276,7 @@
 		"0x91EF34584710BE99": {
 			"name": "CREATE_AIR_DEFENCE_SPHERE",
 			"jhash": "",
-			"comment": "Both coordinates are from objects in the decompiled scripts. Native related to 0xECDC202B25E5CF48 p1 value. The only weapon hash used in the decompiled scripts is weapon_air_defence_gun. These two natives are used by the yacht script, decompiled scripts suggest it and the weapon hash used (valkyrie's rockets) are also used by yachts.",
+			"comment": "Both coordinates are from objects in the decompiled scripts. The only weapon hash used in the decompiled scripts is weapon_air_defence_gun. These two natives are used by the yacht script, decompiled scripts suggest it and the weapon hash used (valkyrie's rockets) are also used by yachts.",
 			"params": [
 				{
 					"type": "float",
@@ -121529,7 +121529,7 @@
 		"0xEFF296097FF1E509": {
 			"name": "SET_CAN_PED_SELECT_ALL_WEAPONS",
 			"jhash": "",
-			"comment": "Disable all weapons. Does the same as 0xB4771B9AAF4E68E4 except for all weapons.",
+			"comment": "Disable all weapons. Does the same as SET_CAN_PED_SELECT_INVENTORY_WEAPON except for all weapons.",
 			"params": [
 				{
 					"type": "Ped",
