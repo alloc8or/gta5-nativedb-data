@@ -2377,7 +2377,7 @@
 		"0xC69EDA28699D5107": {
 			"name": "SET_RADIO_TO_STATION_NAME",
 			"jhash": "0x7B36E35E",
-			"comment": "List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: https://git.io/J8a3k\nAn older list including hidden radio stations: https://pastebin.com/Kj9t38KF",
+			"comment": "List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: https://git.io/J8a3k",
 			"params": [
 				{
 					"type": "const char*",
@@ -2390,7 +2390,7 @@
 		"0x1B9C0099CB942AC6": {
 			"name": "SET_VEH_RADIO_STATION",
 			"jhash": "0xE391F55F",
-			"comment": "List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: https://git.io/J8a3k\nAn older list including hidden radio stations: https://pastebin.com/Kj9t38KF",
+			"comment": "List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: https://git.io/J8a3k",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -18982,7 +18982,7 @@
 		"0xD0F64B265C8C8B33": {
 			"name": "DRAW_SPOT_LIGHT",
 			"jhash": "0xBDBC410C",
-			"comment": "Parameters:\n* pos - coordinate where the spotlight is located\n* dir - the direction vector the spotlight should aim at from its current position\n* r,g,b - color of the spotlight\n* distance - the maximum distance the light can reach\n* brightness - the brightness of the light\n* roundness - \"smoothness\" of the circle edge\n* radius - the radius size of the spotlight\n* falloff - the falloff size of the light's edge (example: https://i.imgur.com/DemAWeO.jpg)\n\nExample in C# (spotlight aims at the closest vehicle):\nVector3 myPos = Game.Player.Character.Position;\nVehicle nearest = World.GetClosestVehicle(myPos , 1000f);\nVector3 destinationCoords = nearest.Position;\nVector3 dirVector = destinationCoords - myPos;\ndirVector.Normalize();\nFunction.Call(Hash.DRAW_SPOT_LIGHT, pos.X, pos.Y, pos.Z, dirVector.X, dirVector.Y, dirVector.Z, 255, 255, 255, 100.0f, 1f, 0.0f, 13.0f, 1f);",
+			"comment": "Parameters:\n* pos - coordinate where the spotlight is located\n* dir - the direction vector the spotlight should aim at from its current position\n* r,g,b - color of the spotlight\n* distance - the maximum distance the light can reach\n* brightness - the brightness of the light\n* roundness - \"smoothness\" of the circle edge\n* radius - the radius size of the spotlight\n* falloff - the falloff size of the light's edge\n\nExample in C# (spotlight aims at the closest vehicle):\nVector3 myPos = Game.Player.Character.Position;\nVehicle nearest = World.GetClosestVehicle(myPos , 1000f);\nVector3 destinationCoords = nearest.Position;\nVector3 dirVector = destinationCoords - myPos;\ndirVector.Normalize();\nFunction.Call(Hash.DRAW_SPOT_LIGHT, pos.X, pos.Y, pos.Z, dirVector.X, dirVector.Y, dirVector.Z, 255, 255, 255, 100.0f, 1f, 0.0f, 13.0f, 1f);",
 			"params": [
 				{
 					"type": "float",
@@ -19749,7 +19749,7 @@
 		"0xF51D36185993515D": {
 			"name": "SET_CHECKPOINT_CLIPPLANE_WITH_POS_NORM",
 			"jhash": "0x20EABD0F",
-			"comment": "This does not move an existing checkpoint... so wtf.",
+			"comment": "",
 			"params": [
 				{
 					"type": "int",
@@ -21998,7 +21998,7 @@
 		"0x0C8FAC83902A62DF": {
 			"name": "SEETHROUGH_SET_MAX_THICKNESS",
 			"jhash": "",
-			"comment": "0.0 = you will not be able to see people behind the walls. 50.0 and more = you will see everyone through the walls. More value is \"better\" view. See https://gfycat.com/FirmFlippantGourami\nmin: 1.0\nmax: 10000.0",
+			"comment": "0.0 = you will not be able to see people behind the walls. 50.0 and more = you will see everyone through the walls. More value is \"better\" view.\nmin: 1.0\nmax: 10000.0",
 			"params": [
 				{
 					"type": "float",
@@ -26354,7 +26354,7 @@
 		"0xA356990E161C9E65": {
 			"name": "TERRAINGRID_ACTIVATE",
 			"jhash": "0xA1CB6C94",
-			"comment": "This native enables/disables the gold putting grid display (https://i.imgur.com/TC6cku6.png).\nThis requires these two natives to be called as well to configure the grid: `TERRAINGRID_SET_PARAMS` and `TERRAINGRID_SET_COLOURS`.",
+			"comment": "This native enables/disables the gold putting grid display.\nThis requires these two natives to be called as well to configure the grid: `TERRAINGRID_SET_PARAMS` and `TERRAINGRID_SET_COLOURS`.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -26367,7 +26367,7 @@
 		"0x1C4FC5752BCD8E48": {
 			"name": "TERRAINGRID_SET_PARAMS",
 			"jhash": "0x3B637AA7",
-			"comment": "This native is used along with these two natives: `TERRAINGRID_ACTIVATE` and `TERRAINGRID_SET_COLOURS`.\nThis native configures the location, size, rotation, normal height, and the difference ratio between min, normal and max.\n\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png\n\nThis native renders a box at the given position, with a special shader that renders a grid on world geometry behind it. This box does not have backface culling.\nThe forward args here are a direction vector, something similar to what's returned by GET_ENTITY_FORWARD_VECTOR.\nnormalHeight and heightDiff are used for positioning the color gradient of the grid, colors specified via TERRAINGRID_SET_COLOURS.\n\nExample with box superimposed on the image to demonstrate: https://i.imgur.com/wdqskxd.jpg",
+			"comment": "This native is used along with these two natives: `TERRAINGRID_ACTIVATE` and `TERRAINGRID_SET_COLOURS`.\nThis native configures the location, size, rotation, normal height, and the difference ratio between min, normal and max.\n\nThis native renders a box at the given position, with a special shader that renders a grid on world geometry behind it. This box does not have backface culling.\nThe forward args here are a direction vector, something similar to what's returned by GET_ENTITY_FORWARD_VECTOR.\nnormalHeight and heightDiff are used for positioning the color gradient of the grid, colors specified via TERRAINGRID_SET_COLOURS.\n\nExample with box superimposed on the image to demonstrate: https://i.imgur.com/wdqskxd.jpg",
 			"params": [
 				{
 					"type": "float",
@@ -26428,7 +26428,7 @@
 		"0x5CE62918F8D703C7": {
 			"name": "TERRAINGRID_SET_COLOURS",
 			"jhash": "0xDF552973",
-			"comment": "This native is used along with these two natives: `TERRAINGRID_ACTIVATE` and `TERRAINGRID_SET_PARAMS`.\nThis native sets the colors for the golf putting grid. the 'min...' values are for the lower areas that the grid covers, the 'max...' values are for the higher areas that the grid covers, all remaining values are for the 'normal' ground height.\nAll those natives combined they will output something like this: https://i.imgur.com/TC6cku6.png",
+			"comment": "This native is used along with these two natives: `TERRAINGRID_ACTIVATE` and `TERRAINGRID_SET_PARAMS`.\nThis native sets the colors for the golf putting grid. the 'min...' values are for the lower areas that the grid covers, the 'max...' values are for the higher areas that the grid covers, all remaining values are for the 'normal' ground height.",
 			"params": [
 				{
 					"type": "int",
@@ -27478,7 +27478,7 @@
 		"0x2B7E9A4EAAA93C89": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_STATS",
 			"jhash": "0xED130FA1",
-			"comment": "List of picture names: https://pastebin.com/XdpJVbHz\nExample result: https://i.imgur.com/SdEZ22m.png",
+			"comment": "List of picture names: https://pastebin.com/XdpJVbHz",
 			"params": [
 				{
 					"type": "const char*",
@@ -27788,7 +27788,7 @@
 		"0xAA295B6F28BD587D": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_AWARD",
 			"jhash": "0x02DED2B8",
-			"comment": "Shows an \"award\" notification above the minimap, example: https://i.imgur.com/e2DNaKX.png\nExample:\n\nHUD::BEGIN_TEXT_COMMAND_THEFEED_POST(\"HUNT\");\nHUD::END_TEXT_COMMAND_THEFEED_POST_AWARD(\"Hunting\", \"Hunting_Gold_128\", 0, 109, \"HUD_MED_UNLKED\");",
+			"comment": "Shows an \"award\" notification above the minimap\nExample:\n\nHUD::BEGIN_TEXT_COMMAND_THEFEED_POST(\"HUNT\");\nHUD::END_TEXT_COMMAND_THEFEED_POST_AWARD(\"Hunting\", \"Hunting_Gold_128\", 0, 109, \"HUD_MED_UNLKED\");",
 			"params": [
 				{
 					"type": "const char*",
@@ -28062,7 +28062,7 @@
 		"0xB6871B0555B02996": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_VERSUS_TU",
 			"jhash": "0x5E93FBFA",
-			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: https://pastebin.com/XdpJVbHz\nHUD colors and their values: https://pastebin.com/d9aHPbXN\n\nShows a deathmatch score above the minimap, example: https://i.imgur.com/YmoMklG.png",
+			"comment": "This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.\n\nList of picNames: https://pastebin.com/XdpJVbHz\n\nShows a deathmatch score above the minimap, example: https://i.imgur.com/YmoMklG.png",
 			"params": [
 				{
 					"type": "const char*",
@@ -28128,7 +28128,7 @@
 		"0xDD6CB2CCE7C2735C": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT",
 			"jhash": "",
-			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, button accepts \"~INPUT_SOMETHING~\"\n\nexample:\nHUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1, \"~INPUT_TALK~\", \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- https://imgur.com/UPy0Ial\n\n\nExamples from the scripts:\nl_D1[1/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_SAVE_REPLAY_CLIP~\",\"\");\nl_D1[1/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_REPLAY_START_STOP_RECORDING_SECONDARY~\",\"\");\n",
+			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, button accepts \"~INPUT_SOMETHING~\"\n\nexample:\nHUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1, \"~INPUT_TALK~\", \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n\nExamples from the scripts:\nl_D1[1/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_SAVE_REPLAY_CLIP~\",\"\");\nl_D1[1/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_REPLAY_START_STOP_RECORDING~\",\"\");\nl_D1[2/*1*/]=HUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1,\"~INPUT_REPLAY_START_STOP_RECORDING_SECONDARY~\",\"\");\n",
 			"params": [
 				{
 					"type": "int",
@@ -28340,7 +28340,7 @@
 		"0x238FFE5C7B0498A6": {
 			"name": "END_TEXT_COMMAND_DISPLAY_HELP",
 			"jhash": "0xB59B530D",
-			"comment": "shape goes from -1 to 50 (may be more).\np0 is always 0.\n\nExample:\nvoid FloatingHelpText(const char* text)\n{\n    BEGIN_TEXT_COMMAND_DISPLAY_HELP(\"STRING\");\n  ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_DISPLAY_HELP (0, 0, 1, -1);\n}\n\nImage:\n- imgbin.org/images/26209.jpg\n\nmore inputs/icons:\n- https://pastebin.com/nqNYWMSB",
+			"comment": "shape goes from -1 to 50 (may be more).\np0 is always 0.\n\nExample:\nvoid FloatingHelpText(const char* text)\n{\n    BEGIN_TEXT_COMMAND_DISPLAY_HELP(\"STRING\");\n  ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text);\n   END_TEXT_COMMAND_DISPLAY_HELP (0, 0, 1, -1);\n}\n\nmore inputs/icons:\n- https://pastebin.com/nqNYWMSB",
 			"params": [
 				{
 					"type": "int",
@@ -31029,7 +31029,7 @@
 		"0x234CDD44D996FD9A": {
 			"name": "SET_BLIP_CATEGORY",
 			"jhash": "0xEF72F533",
-			"comment": "Example: https://i.imgur.com/skY6vAJ.png\n\nIndex:\n1 = No distance shown in legend\n2 = Distance shown in legend\n7 = \"Other Players\" category, also shows distance in legend\n10 = \"Property\" category\n11 = \"Owned Property\" category\n\nAny other value behaves like index = 1, index wraps around after 255\nBlips with categories 7, 10 or 11 will all show under the specific categories listing in the map legend, regardless of sprite or name.\nLegend entries:\n7 = Other Players (BLIP_OTHPLYR)\n10 = Property (BLIP_PROPCAT)\n11 = Owned Property (BLIP_APARTCAT)\n\nCategory needs to be `7` in order for blip names to show on the expanded minimap when using DISPLAY_PLAYER_NAME_TAGS_ON_BLIPS.",
+			"comment": "Index:\n1 = No distance shown in legend\n2 = Distance shown in legend\n7 = \"Other Players\" category, also shows distance in legend\n10 = \"Property\" category\n11 = \"Owned Property\" category\n\nAny other value behaves like index = 1, index wraps around after 255\nBlips with categories 7, 10 or 11 will all show under the specific categories listing in the map legend, regardless of sprite or name.\nLegend entries:\n7 = Other Players (BLIP_OTHPLYR)\n10 = Property (BLIP_PROPCAT)\n11 = Owned Property (BLIP_APARTCAT)\n\nCategory needs to be `7` in order for blip names to show on the expanded minimap when using DISPLAY_PLAYER_NAME_TAGS_ON_BLIPS.",
 			"params": [
 				{
 					"type": "Blip",
@@ -31231,7 +31231,7 @@
 		"0x23C3EB807312F01A": {
 			"name": "SHOW_FRIEND_INDICATOR_ON_BLIP",
 			"jhash": "0x4C8F02B4",
-			"comment": "Highlights a blip by a half cyan circle on the right side of the blip. https://i.imgur.com/FrV9M4e.png\n.Indicating that that player is a friend (in GTA:O). This color can not be changed.\nTo toggle the left side (crew member indicator) of the half circle around the blip, use: `SHOW_CREW_INDICATOR_ON_BLIP`",
+			"comment": "Highlights a blip by a half cyan circle on the right side of the blip. Indicating that that player is a friend (in GTA:O). This color can not be changed.\nTo toggle the left side (crew member indicator) of the half circle around the blip, use: `SHOW_CREW_INDICATOR_ON_BLIP`",
 			"params": [
 				{
 					"type": "Blip",
@@ -31251,7 +31251,7 @@
 		"0xDCFB5D4DB8BF367E": {
 			"name": "SHOW_CREW_INDICATOR_ON_BLIP",
 			"jhash": "0xABBE1E45",
-			"comment": "Enables or disables the blue half circle https://i.imgur.com/iZes9Ec.png around the specified blip on the left side of the blip. This is used to indicate that the player is in your crew in GTA:O. Color is changeable by using `SET_BLIP_SECONDARY_COLOUR`.",
+			"comment": "Enables or disables the blue half circle around the specified blip on the left side of the blip. This is used to indicate that the player is in your crew in GTA:O. Color is changeable by using `SET_BLIP_SECONDARY_COLOUR`.",
 			"params": [
 				{
 					"type": "Blip",
@@ -31345,7 +31345,7 @@
 		"0x25615540D894B814": {
 			"name": "SET_RADIUS_BLIP_EDGE",
 			"jhash": "0x40E25DB8",
-			"comment": "Enabling this on a radius blip will make it outline only. See https://cdn.discordapp.com/attachments/553235301632573459/575132227935928330/unknown.png",
+			"comment": "Enabling this on a radius blip will make it outline only.",
 			"params": [
 				{
 					"type": "Blip",
@@ -31586,7 +31586,7 @@
 		"0x75A9A10948D1DEA6": {
 			"name": "SET_MINIMAP_COMPONENT",
 			"jhash": "0x419DCDC4",
-			"comment": "This native is used to colorize certain map components like the army base at the top of the map.\np2 appears to be always -1. If p2 is -1 then native wouldn't change the color. See https://gfycat.com/SkinnyPinkChupacabra",
+			"comment": "This native is used to colorize certain map components like the army base at the top of the map.\np2 appears to be always -1. If p2 is -1 then native wouldn't change the color.",
 			"params": [
 				{
 					"type": "int",
@@ -32205,7 +32205,7 @@
 		"0xDB34E8D56FC13B08": {
 			"name": "START_GPS_CUSTOM_ROUTE",
 			"jhash": "0x7F93799B",
-			"comment": "Starts a new GPS custom-route, allowing you to plot lines on the map.\nLines are drawn directly between points.\nThe GPS custom route works like the GPS multi route, except it does not follow roads.\nExample result: https://i.imgur.com/BDm5pzt.png\nhudColor: The HUD color of the GPS path.\ndisplayOnFoot: Draws the path regardless if the player is in a vehicle or not.\nfollowPlayer: Draw the path partially between the previous and next point based on the players position between them. When false, the GPS appears to not disappear after the last leg is completed.",
+			"comment": "Starts a new GPS custom-route, allowing you to plot lines on the map.\nLines are drawn directly between points.\nThe GPS custom route works like the GPS multi route, except it does not follow roads.\nhudColor: The HUD color of the GPS path.\ndisplayOnFoot: Draws the path regardless if the player is in a vehicle or not.\nfollowPlayer: Draw the path partially between the previous and next point based on the players position between them. When false, the GPS appears to not disappear after the last leg is completed.",
 			"params": [
 				{
 					"type": "int",
@@ -32276,7 +32276,7 @@
 		"0x3D3D15AF7BCAAF83": {
 			"name": "START_GPS_MULTI_ROUTE",
 			"jhash": "0xC3DCBEDB",
-			"comment": "Starts a new GPS multi-route, allowing you to create custom GPS paths.\nGPS functions like the waypoint, except it can contain multiple points it's forced to go through.\nOnce the player has passed a point, the GPS will no longer force its path through it.\n\nWorks independently from the player-placed waypoint and blip routes.\nExample result: https://i.imgur.com/ZZHQatX.png\nhudColor: The HUD color of the GPS path.\nrouteFromPlayer: Makes the GPS draw a path from the player to the next point, rather than the original path from the previous point.\ndisplayOnFoot: Draws the GPS path regardless if the player is in a vehicle or not.",
+			"comment": "Starts a new GPS multi-route, allowing you to create custom GPS paths.\nGPS functions like the waypoint, except it can contain multiple points it's forced to go through.\nOnce the player has passed a point, the GPS will no longer force its path through it.\n\nWorks independently from the player-placed waypoint and blip routes.\nhudColor: The HUD color of the GPS path.\nrouteFromPlayer: Makes the GPS draw a path from the player to the next point, rather than the original path from the previous point.\ndisplayOnFoot: Draws the GPS path regardless if the player is in a vehicle or not.",
 			"params": [
 				{
 					"type": "int",
@@ -33872,7 +33872,7 @@
 		"0x15803FEC3B9A872B": {
 			"name": "SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS_EXTENDED",
 			"jhash": "",
-			"comment": "labelTitle: Label of the alert's title.\nlabelMsg: Label of the alert's message.\np2: This is an enum, check the description for a list.\np3: This is an enum, check the description for a list.\nlabelMsg2: Label of another message line\np5: usually 0\np6: usually -1\np7: usually 0\np8: unknown label\np9: unknown label\nbackground: Set to anything other than 0 or false (even any string) and it will draw a background. Setting it to 0 or false will draw no background.\nerrorCode: Error code, shown at the bottom left if set to value other than 0.\n\ninstructionalKey enum list:\nButtons = {\n      Empty = 0,\n      Select = 1, -- (RETURN)\n      Ok = 2, -- (RETURN)\n      Yes = 4, -- (RETURN)\n      Back = 8, -- (ESC)\n      Cancel = 16, -- (ESC)\n      No = 32, -- (ESC)\n      RetrySpace = 64, -- (SPACE)\n      Restart = 128, -- (SPACE)\n      Skip = 256, -- (SPACE)\n      Quit = 512, -- (ESC)\n      Adjust = 1024, -- (ARROWS)\n      SpaceKey = 2048, -- (SPACE)\n      Share = 4096, -- (SPACE)\n      SignIn = 8192, -- (SPACE)\n      Continue = 16384, -- (RETURN)\n      AdjustLeftRight = 32768, -- (SCROLL L/R)\n      AdjustUpDown = 65536, -- (SCROLL U/D)\n      Overwrite = 131072, -- (SPACE)\n      SocialClubSignup = 262144, -- (RETURN)\n      Confirm = 524288, -- (RETURN)\n      Queue = 1048576, -- (RETURN)\n      RetryReturn = 2097152, -- (RETURN)\n      BackEsc = 4194304, -- (ESC)\n      SocialClub = 8388608, -- (RETURN)\n      Spectate = 16777216, -- (SPACE)\n      OkEsc = 33554432, -- (ESC)\n      CancelTransfer = 67108864, -- (ESC)\n      LoadingSpinner = 134217728,\n      NoReturnToGTA = 268435456, -- (ESC)\n      CancelEsc = 536870912, -- (ESC)\n}\n\nAlt = {\n      Empty = 0,\n      No = 1, -- (SPACE)\n      Host = 2, -- (ESC)\n      SearchForJob = 4, -- (RETURN)\n      ReturnKey = 8, -- (TURN)\n      Freemode = 16, -- (ESC)\n}\n\nExample: https://i.imgur.com/TvmNF4k.png",
+			"comment": "labelTitle: Label of the alert's title.\nlabelMsg: Label of the alert's message.\np2: This is an enum, check the description for a list.\np3: This is an enum, check the description for a list.\nlabelMsg2: Label of another message line\np5: usually 0\np6: usually -1\np7: usually 0\np8: unknown label\np9: unknown label\nbackground: Set to anything other than 0 or false (even any string) and it will draw a background. Setting it to 0 or false will draw no background.\nerrorCode: Error code, shown at the bottom left if set to value other than 0.\n\ninstructionalKey enum list:\nButtons = {\n      Empty = 0,\n      Select = 1, -- (RETURN)\n      Ok = 2, -- (RETURN)\n      Yes = 4, -- (RETURN)\n      Back = 8, -- (ESC)\n      Cancel = 16, -- (ESC)\n      No = 32, -- (ESC)\n      RetrySpace = 64, -- (SPACE)\n      Restart = 128, -- (SPACE)\n      Skip = 256, -- (SPACE)\n      Quit = 512, -- (ESC)\n      Adjust = 1024, -- (ARROWS)\n      SpaceKey = 2048, -- (SPACE)\n      Share = 4096, -- (SPACE)\n      SignIn = 8192, -- (SPACE)\n      Continue = 16384, -- (RETURN)\n      AdjustLeftRight = 32768, -- (SCROLL L/R)\n      AdjustUpDown = 65536, -- (SCROLL U/D)\n      Overwrite = 131072, -- (SPACE)\n      SocialClubSignup = 262144, -- (RETURN)\n      Confirm = 524288, -- (RETURN)\n      Queue = 1048576, -- (RETURN)\n      RetryReturn = 2097152, -- (RETURN)\n      BackEsc = 4194304, -- (ESC)\n      SocialClub = 8388608, -- (RETURN)\n      Spectate = 16777216, -- (SPACE)\n      OkEsc = 33554432, -- (ESC)\n      CancelTransfer = 67108864, -- (ESC)\n      LoadingSpinner = 134217728,\n      NoReturnToGTA = 268435456, -- (ESC)\n      CancelEsc = 536870912, -- (ESC)\n}\n\nAlt = {\n      Empty = 0,\n      No = 1, -- (SPACE)\n      Host = 2, -- (ESC)\n      SearchForJob = 4, -- (RETURN)\n      ReturnKey = 8, -- (TURN)\n      Freemode = 16, -- (ESC)\n}",
 			"params": [
 				{
 					"type": "const char*",
@@ -34110,7 +34110,7 @@
 		"0x82CEDC33687E1F50": {
 			"name": "DISPLAY_PLAYER_NAME_TAGS_ON_BLIPS",
 			"jhash": "0x2F28F0A6",
-			"comment": "Toggles whether or not name labels are shown on the expanded minimap next to player blips, like in GTA:O.\nDoesn't need to be called every frame.\nPreview: https://i.imgur.com/DfqKWfJ.png\n\nMake sure to call SET_BLIP_CATEGORY with index 7 for this to work on the desired blip.",
+			"comment": "Toggles whether or not name labels are shown on the expanded minimap next to player blips, like in GTA:O.\nDoesn't need to be called every frame.\n\nMake sure to call SET_BLIP_CATEGORY with index 7 for this to work on the desired blip.",
 			"params": [
 				{
 					"type": "BOOL",
@@ -37310,7 +37310,7 @@
 		"0xC906A7DAB05C8D2B": {
 			"name": "GET_GROUND_Z_FOR_3D_COORD",
 			"jhash": "0xA1BFD5E0",
-			"comment": "Gets the ground elevation at the specified position. Note that if the specified position is below ground level, the function will output zero!\n\nx: Position on the X-axis to get ground elevation at.\ny: Position on the Y-axis to get ground elevation at.\nz: Position on the Z-axis to get ground elevation at.\ngroundZ: The ground elevation at the specified position.\nignoreWater: Nearly always 0, very rarely 1 in the scripts: https://gfycat.com/NiftyTatteredCricket\n\nBear in mind this native can only calculate the elevation when the coordinates are within the client's render distance.",
+			"comment": "Gets the ground elevation at the specified position. Note that if the specified position is below ground level, the function will output zero!\n\nx: Position on the X-axis to get ground elevation at.\ny: Position on the Y-axis to get ground elevation at.\nz: Position on the Z-axis to get ground elevation at.\ngroundZ: The ground elevation at the specified position.\nignoreWater: Nearly always 0, very rarely 1 in the scripts\n\nBear in mind this native can only calculate the elevation when the coordinates are within the client's render distance.",
 			"params": [
 				{
 					"type": "float",
@@ -65537,7 +65537,7 @@
 		"0x2A70BAE8883E4C81": {
 			"name": "IS_POINT_IN_ANGLED_AREA",
 			"jhash": "0x73BCFFDC",
-			"comment": "An angled area is an X-Z oriented rectangle with three parameters:\n1. origin: the mid-point along a base edge of the rectangle;\n2. extent: the mid-point of opposite base edge on the other Z;\n3. width: the length of the base edge; (named derived from logging strings ``CNetworkRoadNodeWorldStateData``).\n\nThe oriented rectangle can then be derived from the direction of the two points (``norm(origin - extent)``), its orthonormal, and the width, e.g:\n1. golf_mp https://i.imgur.com/JhsQAK9.png\n2. am_taxi https://i.imgur.com/TJWCZaT.jpg",
+			"comment": "An angled area is an X-Z oriented rectangle with three parameters:\n1. origin: the mid-point along a base edge of the rectangle;\n2. extent: the mid-point of opposite base edge on the other Z;\n3. width: the length of the base edge; (named derived from logging strings ``CNetworkRoadNodeWorldStateData``).\n\nThe oriented rectangle can then be derived from the direction of the two points (``norm(origin - extent)``), its orthonormal, and the width.",
 			"params": [
 				{
 					"type": "float",
@@ -69820,7 +69820,7 @@
 		"0xD0BC1C6FB18EE154": {
 			"name": "SET_GPS_DISABLED_ZONE_AT_INDEX",
 			"jhash": "0x98BDB311",
-			"comment": "Disables the GPS route displayed on the minimap while within a certain zone (area). When in a disabled zone and creating a waypoint, the GPS route is not shown on the minimap until you are outside of the zone. When disabled, the direct distance is shown on minimap opposed to distance to travel. Seems to only work before setting a waypoint.\nYou can clear the disabled zone with CLEAR_GPS_DISABLED_ZONE_AT_INDEX.\n\n**Setting a waypoint at the same coordinate:**\nDisabled Zone: https://i.imgur.com/P9VUuxM.png\nEnabled Zone (normal): https://i.imgur.com/BPi24aw.png",
+			"comment": "Disables the GPS route displayed on the minimap while within a certain zone (area). When in a disabled zone and creating a waypoint, the GPS route is not shown on the minimap until you are outside of the zone. When disabled, the direct distance is shown on minimap opposed to distance to travel. Seems to only work before setting a waypoint.\nYou can clear the disabled zone with CLEAR_GPS_DISABLED_ZONE_AT_INDEX.\n\n**Setting a waypoint at the same coordinate:**\nDisabled Zone: https://i.imgur.com/P9VUuxM.png",
 			"params": [
 				{
 					"type": "float",
@@ -75640,7 +75640,7 @@
 		"0xCC9682B8951C5229": {
 			"name": "SET_HEAD_BLEND_PALETTE_COLOR",
 			"jhash": "0x57E5B3F9",
-			"comment": "p4 seems to vary from 0 to 3.\nPreview: https://gfycat.com/MaleRareAmazonparrot",
+			"comment": "p4 seems to vary from 0 to 3.",
 			"params": [
 				{
 					"type": "Ped",
@@ -79994,7 +79994,7 @@
 		"0x2B5AA717A181FB4C": {
 			"name": "SET_PED_AO_BLOB_RENDERING",
 			"jhash": "0x98E29ED0",
-			"comment": "Enable/disable ped shadow (ambient occlusion). https://gfycat.com/thankfulesteemedgecko",
+			"comment": "Enable/disable ped shadow (ambient occlusion).",
 			"params": [
 				{
 					"type": "Ped",
@@ -80613,7 +80613,7 @@
 		"0x953563CE563143AF": {
 			"name": "REGISTER_PEDHEADSHOT_TRANSPARENT",
 			"jhash": "0x4DD03628",
-			"comment": "Similar to REGISTER_PEDHEADSHOT but creates a transparent background instead of black. Example: https://i.imgur.com/iHz8ztn.png",
+			"comment": "Similar to REGISTER_PEDHEADSHOT but creates a transparent background instead of black.",
 			"params": [
 				{
 					"type": "Ped",
@@ -96664,7 +96664,7 @@
 		"0xA76359FC80B2438E": {
 			"name": "OVERRIDE_LODSCALE_THIS_FRAME",
 			"jhash": "0xE5612C1A",
-			"comment": "This allows you to override \"extended distance scaling\" setting. Needs to be called each frame.\nMax scaling seems to be 200.0, normal is 1.0\nSee https://gfycat.com/DetailedHauntingIncatern",
+			"comment": "This allows you to override \"extended distance scaling\" setting. Needs to be called each frame.\nMax scaling seems to be 200.0, normal is 1.0",
 			"params": [
 				{
 					"type": "float",
@@ -101944,7 +101944,7 @@
 		"0x142A02425FF02BD9": {
 			"name": "TASK_START_SCENARIO_IN_PLACE",
 			"jhash": "0xE50D6DDE",
-			"comment": "Plays a scenario on a Ped at their current location.\n\nunkDelay - Usually 0 or -1, doesn't seem to have any effect. Might be a delay between sequences.\nplayEnterAnim - Plays the \"Enter\" anim if true, otherwise plays the \"Exit\" anim. Scenarios that don't have any \"Enter\" anims won't play if this is set to true.\n\n----\n\nFrom \"am_hold_up.ysc.c4\" at line 339:\n\nTASK::TASK_START_SCENARIO_IN_PLACE(NETWORK::NET_TO_PED(l_8D._f4), sub_adf(), 0, 1);\n\nI'm unsure of what the last two parameters are, however sub_adf() randomly returns 1 of 3 scenarios, those being:\nWORLD_HUMAN_SMOKING\nWORLD_HUMAN_HANG_OUT_STREET\nWORLD_HUMAN_STAND_MOBILE\n\nThis makes sense, as these are what I commonly see when going by a liquor store.\n-------------------------\nList of scenarioNames: https://pastebin.com/6mrYTdQv\n(^ Thank you so fucking much for this)\n\nAlso these:\nWORLD_FISH_FLEE\nDRIVE\nWORLD_HUMAN_HIKER\nWORLD_VEHICLE_ATTRACTOR\nWORLD_VEHICLE_BICYCLE_MOUNTAIN\nWORLD_VEHICLE_BIKE_OFF_ROAD_RACE\nWORLD_VEHICLE_BIKER\nWORLD_VEHICLE_CONSTRUCTION_PASSENGERS\nWORLD_VEHICLE_CONSTRUCTION_SOLO\nWORLD_VEHICLE_DRIVE_PASSENGERS\nWORLD_VEHICLE_DRIVE_SOLO\nWORLD_VEHICLE_EMPTY\nWORLD_VEHICLE_PARK_PARALLEL\nWORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\nWORLD_VEHICLE_POLICE_BIKE\nWORLD_VEHICLE_POLICE_CAR\nWORLD_VEHICLE_POLICE_NEXT_TO_CAR\nWORLD_VEHICLE_SALTON_DIRT_BIKE\nWORLD_VEHICLE_TRUCK_LOGS\n\nFull list of ped scenarios by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json",
+			"comment": "Plays a scenario on a Ped at their current location.\n\nunkDelay - Usually 0 or -1, doesn't seem to have any effect. Might be a delay between sequences.\nplayEnterAnim - Plays the \"Enter\" anim if true, otherwise plays the \"Exit\" anim. Scenarios that don't have any \"Enter\" anims won't play if this is set to true.\n\n----\n\nFrom \"am_hold_up.ysc.c4\" at line 339:\n\nTASK::TASK_START_SCENARIO_IN_PLACE(NETWORK::NET_TO_PED(l_8D._f4), sub_adf(), 0, 1);\n\nI'm unsure of what the last two parameters are, however sub_adf() randomly returns 1 of 3 scenarios, those being:\nWORLD_HUMAN_SMOKING\nWORLD_HUMAN_HANG_OUT_STREET\nWORLD_HUMAN_STAND_MOBILE\n\nThis makes sense, as these are what I commonly see when going by a liquor store.\n-------------------------\nList of scenarioNames: https://pastebin.com/6mrYTdQv\n\nAlso these:\nWORLD_FISH_FLEE\nDRIVE\nWORLD_HUMAN_HIKER\nWORLD_VEHICLE_ATTRACTOR\nWORLD_VEHICLE_BICYCLE_MOUNTAIN\nWORLD_VEHICLE_BIKE_OFF_ROAD_RACE\nWORLD_VEHICLE_BIKER\nWORLD_VEHICLE_CONSTRUCTION_PASSENGERS\nWORLD_VEHICLE_CONSTRUCTION_SOLO\nWORLD_VEHICLE_DRIVE_PASSENGERS\nWORLD_VEHICLE_DRIVE_SOLO\nWORLD_VEHICLE_EMPTY\nWORLD_VEHICLE_PARK_PARALLEL\nWORLD_VEHICLE_PARK_PERPENDICULAR_NOSE_IN\nWORLD_VEHICLE_POLICE_BIKE\nWORLD_VEHICLE_POLICE_CAR\nWORLD_VEHICLE_POLICE_NEXT_TO_CAR\nWORLD_VEHICLE_SALTON_DIRT_BIKE\nWORLD_VEHICLE_TRUCK_LOGS\n\nFull list of ped scenarios by DurtyFree: https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json",
 			"params": [
 				{
 					"type": "Ped",
@@ -113936,7 +113936,7 @@
 		"0x9CFA4896C3A53CBB": {
 			"name": "SET_BIKE_ON_STAND",
 			"jhash": "0x15D40761",
-			"comment": "Only works on bikes, both X and Y work in the -1 - 1 range.\n\nX forces the bike to turn left or right (-1, 1)\nY forces the bike to lean to the left or to the right (-1, 1)\n\nExample with X -1/Y 1\nhttps://i.imgur.com/TgIuAPJ.jpg",
+			"comment": "Only works on bikes, both X and Y work in the -1 - 1 range.\n\nX forces the bike to turn left or right (-1, 1)\nY forces the bike to lean to the left or to the right (-1, 1)",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -117553,7 +117553,7 @@
 		"0x75627043C6AA90AD": {
 			"name": "SET_DISABLE_MAP_COLLISION",
 			"jhash": "",
-			"comment": "Disables collision for this vehicle (maybe it also supports other entities, not sure).\nOnly world/building/fixed world objects will have their collisions disabled, props, peds, or any other entity still collides with the vehicle.\nExample: https://streamable.com/6n45d5\nNot sure if there is a native (and if so, which one) that resets the collisions.",
+			"comment": "Disables collision for this vehicle (maybe it also supports other entities, not sure).\nOnly world/building/fixed world objects will have their collisions disabled, props, peds, or any other entity still collides with the vehicle.",
 			"params": [
 				{
 					"type": "Vehicle",
@@ -118531,7 +118531,7 @@
 		"0xAE71FB656C600587": {
 			"name": "HIDE_TOMBSTONE",
 			"jhash": "",
-			"comment": "Disables detachable bumber from domnator4, dominator5, dominator6, see https://gfycat.com/SecondUnluckyGosling",
+			"comment": "Disables detachable bumber from domnator4, dominator5, dominator6",
 			"params": [
 				{
 					"type": "Vehicle",
