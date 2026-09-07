@@ -19464,7 +19464,7 @@
 		"0x799017F9E3B10112": {
 			"name": "DRAW_MARKER_SPHERE",
 			"jhash": "",
-			"comment": "Draws a 3D sphere, typically seen in the GTA:O freemode event \"Penned In\".\nExample https://imgur.com/nCbtS4H\n\nalpha - The alpha for the sphere. Goes from 0.0 to 1.0.",
+			"comment": "Draws a 3D sphere, typically seen in the GTA:O freemode event \"Penned In\".\nExample: https://i.imgur.com/nCbtS4H.png\n\nalpha - The alpha for the sphere. Goes from 0.0 to 1.0.",
 			"params": [
 				{
 					"type": "float",
@@ -28103,7 +28103,7 @@
 		"0xD202B92CBF1D816F": {
 			"name": "END_TEXT_COMMAND_THEFEED_POST_REPLAY",
 			"jhash": "",
-			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, image goes from 0 - 39 - Xbox you can add text to\n\nexample: \nHUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1, 20, \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- https://imgur.com/lGBPCz3",
+			"comment": "returns a notification handle, prints out a notification like below:\ntype range: 0 - 2\nif you set type to 1, image goes from 0 - 39 - Xbox you can add text to\n\nexample: \nHUD::END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT(1, 20, \"Who you trynna get crazy with, ese? Don't you know I'm LOCO?!\");\n- https://i.imgur.com/lGBPCz3.jpeg",
 			"params": [
 				{
 					"type": "int",
@@ -30971,7 +30971,7 @@
 		"0xCD6524439909C979": {
 			"name": "SET_BLIP_SCALE_2D",
 			"jhash": "",
-			"comment": "See https://imgur.com/a/lLkEsMN",
+			"comment": "https://i.imgur.com/jH2JMUl.png",
 			"params": [
 				{
 					"type": "Blip",
@@ -31156,7 +31156,7 @@
 		"0xCAC2031EBF79B1A8": {
 			"name": "SHOW_GOLD_TICK_ON_BLIP",
 			"jhash": "",
-			"comment": "Adds a orange checkmark on top of a given blip handle: https://imgur.com/a/aw5OTMF",
+			"comment": "Adds an orange checkmark on top of a given blip handle: https://i.imgur.com/KG9k6Fk.png",
 			"params": [
 				{
 					"type": "Blip",
@@ -33760,7 +33760,7 @@
 		"0x701919482C74B5AB": {
 			"name": "SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS",
 			"jhash": "0x749929D3",
-			"comment": "You can use this native for custom input, without having to use any scaleform-related natives.\nThe native must be called on tick.\nThe entryHeader must be a valid label.\nFor Single lines use JL_INVITE_N as entryLine1, JL_INVITE_ND for multiple.\nNotes:\n- additionalIntInfo: replaces first occurrence of ~1~ in provided label with an integer\n- additionalTextInfoLine1: replaces first occurrence of ~a~ in provided label, with your custom text\n- additionalTextInfoLine2: replaces second occurrence of ~a~ in provided label, with your custom text\n- showBackground: shows black background of the warning screen\n- errorCode: shows an error code at the bottom left if nonzero\nExample of usage:\nSET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS(\"ALERT\", \"JL_INVITE_ND\", 66, \"\", true, -1, -1, \"Testing line 1\", \"Testing line 2\", true, 0);\nScreenshot:\nhttps://imgur.com/a/IYA7vJ8",
+			"comment": "You can use this native for custom input, without having to use any scaleform-related natives.\nThe native must be called on tick.\nThe entryHeader must be a valid label.\nFor Single lines use JL_INVITE_N as entryLine1, JL_INVITE_ND for multiple.\nNotes:\n- additionalIntInfo: replaces first occurrence of ~1~ in provided label with an integer\n- additionalTextInfoLine1: replaces first occurrence of ~a~ in provided label, with your custom text\n- additionalTextInfoLine2: replaces second occurrence of ~a~ in provided label, with your custom text\n- showBackground: shows black background of the warning screen\n- errorCode: shows an error code at the bottom left if nonzero\nExample of usage:\nSET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS(\"ALERT\", \"JL_INVITE_ND\", 66, \"\", true, -1, -1, \"Testing line 1\", \"Testing line 2\", true, 0);\nScreenshot:\nhttps://i.imgur.com/MsSIhPV.png",
 			"params": [
 				{
 					"type": "const char*",
