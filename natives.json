@@ -11847,7 +11847,7 @@
 		"0x9FD90732F56403CE": {
 			"name": "DECOR_REGISTER",
 			"jhash": "0x68BD42A9",
-			"comment": "https://alloc8or.re/gta5/doc/enums/eDecorType.txt",
+			"comment": "enum eDecorType\n{\n\tDECOR_TYPE_FLOAT = 1,\n\tDECOR_TYPE_BOOL = 2,\n\tDECOR_TYPE_INT = 3,\n\tDECOR_TYPE_STRING = 4,\n\tDECOR_TYPE_TIME = 5\n};",
 			"params": [
 				{
 					"type": "const char*",
@@ -27306,7 +27306,7 @@
 		"0x92F0DA1E27DB96DC": {
 			"name": "THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST",
 			"jhash": "0x07CE2EA4",
-			"comment": "From the decompiled scripts:\nHUD::THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST(6);\nHUD::THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST(184);\nHUD::THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: https://gyazo.com/68bd384455fceb0a85a8729e48216e15",
+			"comment": "From the decompiled scripts:\nHUD::THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST(6);\nHUD::THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST(184);\nHUD::THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: https://i.gyazo.com/68bd384455fceb0a85a8729e48216e15.gif",
 			"params": [
 				{
 					"type": "int",
@@ -34139,7 +34139,7 @@
 		"0xEF01D36B9C9D0C7B": {
 			"name": "ACTIVATE_FRONTEND_MENU",
 			"jhash": "0x01D83872",
-			"comment": "Does stuff like this:\ngyazo.com/7fcb78ea3520e3dbc5b2c0c0f3712617\n\nExample:\nint GetHash = GET_HASH_KEY(\"fe_menu_version_corona_lobby\");\nACTIVATE_FRONTEND_MENU(GetHash, 0, -1);\n\nBOOL p1 is a toggle to define the game in pause.\nint p2 is unknown but -1 always works, not sure why though.\n\n[30/03/2017] ins1de :\n\nthe int p2 is actually a component variable. When the pause menu is visible, it opens the tab related to it.\n\nExample : Function.Call(Hash.ACTIVATE_FRONTEND_MENU,-1171018317, 0, 42);\nResult : Opens the \"Online\" tab without pausing the menu, with -1 it opens the map.Below is a list of all known Frontend Menu Hashes.\n- FE_MENU_VERSION_SP_PAUSE\n- FE_MENU_VERSION_MP_PAUSE\n- FE_MENU_VERSION_CREATOR_PAUSE\n- FE_MENU_VERSION_CUTSCENE_PAUSE\n- FE_MENU_VERSION_SAVEGAME\n- FE_MENU_VERSION_PRE_LOBBY\n- FE_MENU_VERSION_LOBBY\n- FE_MENU_VERSION_MP_CHARACTER_SELECT\n- FE_MENU_VERSION_MP_CHARACTER_CREATION\n- FE_MENU_VERSION_EMPTY\n- FE_MENU_VERSION_EMPTY_NO_BACKGROUND\n- FE_MENU_VERSION_TEXT_SELECTION\n- FE_MENU_VERSION_CORONA\n- FE_MENU_VERSION_CORONA_LOBBY\n- FE_MENU_VERSION_CORONA_JOINED_PLAYERS\n- FE_MENU_VERSION_CORONA_INVITE_PLAYERS\n- FE_MENU_VERSION_CORONA_INVITE_FRIENDS\n- FE_MENU_VERSION_CORONA_INVITE_CREWS\n- FE_MENU_VERSION_CORONA_INVITE_MATCHED_PLAYERS\n- FE_MENU_VERSION_CORONA_INVITE_LAST_JOB_PLAYERS\n- FE_MENU_VERSION_CORONA_RACE\n- FE_MENU_VERSION_CORONA_BETTING\n- FE_MENU_VERSION_JOINING_SCREEN\n- FE_MENU_VERSION_LANDING_MENU\n- FE_MENU_VERSION_LANDING_KEYMAPPING_MENU",
+			"comment": "Does stuff like this:\nhttps://i.gyazo.com/7fcb78ea3520e3dbc5b2c0c0f3712617.png\n\nExample:\nint GetHash = GET_HASH_KEY(\"fe_menu_version_corona_lobby\");\nACTIVATE_FRONTEND_MENU(GetHash, 0, -1);\n\nBOOL p1 is a toggle to define the game in pause.\nint p2 is unknown but -1 always works, not sure why though.\n\n[30/03/2017] ins1de :\n\nthe int p2 is actually a component variable. When the pause menu is visible, it opens the tab related to it.\n\nExample : Function.Call(Hash.ACTIVATE_FRONTEND_MENU,-1171018317, 0, 42);\nResult : Opens the \"Online\" tab without pausing the menu, with -1 it opens the map.Below is a list of all known Frontend Menu Hashes.\n- FE_MENU_VERSION_SP_PAUSE\n- FE_MENU_VERSION_MP_PAUSE\n- FE_MENU_VERSION_CREATOR_PAUSE\n- FE_MENU_VERSION_CUTSCENE_PAUSE\n- FE_MENU_VERSION_SAVEGAME\n- FE_MENU_VERSION_PRE_LOBBY\n- FE_MENU_VERSION_LOBBY\n- FE_MENU_VERSION_MP_CHARACTER_SELECT\n- FE_MENU_VERSION_MP_CHARACTER_CREATION\n- FE_MENU_VERSION_EMPTY\n- FE_MENU_VERSION_EMPTY_NO_BACKGROUND\n- FE_MENU_VERSION_TEXT_SELECTION\n- FE_MENU_VERSION_CORONA\n- FE_MENU_VERSION_CORONA_LOBBY\n- FE_MENU_VERSION_CORONA_JOINED_PLAYERS\n- FE_MENU_VERSION_CORONA_INVITE_PLAYERS\n- FE_MENU_VERSION_CORONA_INVITE_FRIENDS\n- FE_MENU_VERSION_CORONA_INVITE_CREWS\n- FE_MENU_VERSION_CORONA_INVITE_MATCHED_PLAYERS\n- FE_MENU_VERSION_CORONA_INVITE_LAST_JOB_PLAYERS\n- FE_MENU_VERSION_CORONA_RACE\n- FE_MENU_VERSION_CORONA_BETTING\n- FE_MENU_VERSION_JOINING_SCREEN\n- FE_MENU_VERSION_LANDING_MENU\n- FE_MENU_VERSION_LANDING_KEYMAPPING_MENU",
 			"params": [
 				{
 					"type": "Hash",
@@ -69820,7 +69820,7 @@
 		"0xD0BC1C6FB18EE154": {
 			"name": "SET_GPS_DISABLED_ZONE_AT_INDEX",
 			"jhash": "0x98BDB311",
-			"comment": "Disables the GPS route displayed on the minimap while within a certain zone (area). When in a disabled zone and creating a waypoint, the GPS route is not shown on the minimap until you are outside of the zone. When disabled, the direct distance is shown on minimap opposed to distance to travel. Seems to only work before setting a waypoint.\nYou can clear the disabled zone with CLEAR_GPS_DISABLED_ZONE_AT_INDEX.\n\n**Setting a waypoint at the same coordinate:**\nDisabled Zone: https://i.imgur.com/P9VUuxM.png",
+			"comment": "Disables the GPS route displayed on the minimap while within a certain zone (area). When in a disabled zone and creating a waypoint, the GPS route is not shown on the minimap until you are outside of the zone. When disabled, the direct distance is shown on minimap opposed to distance to travel. Seems to only work before setting a waypoint.\nYou can clear the disabled zone with CLEAR_GPS_DISABLED_ZONE_AT_INDEX.\n\n**Setting a waypoint at the same coordinate:**\nDisabled Zone: https://i.imgur.com/vsxkvjC.png\nEnabled Zone (normal): https://i.imgur.com/OUZYLWL.png",
 			"params": [
 				{
 					"type": "float",
